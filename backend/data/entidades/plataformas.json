@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "nome": "Crunchyroll"
+    },
+    {
+        "id": 2,
+        "nome": "Netflix"
+    },
+    {
+        "id": 3,
+        "nome": "Amazon Prime Video"
+    },
+    {
+        "id": 4,
+        "nome": "HIDIVE"
+    },
+    {
+        "id": 5,
+        "nome": "Disney+"
+    },
+    {
+        "id": 6,
+        "nome": "Globoplay"
+    },
+    {
+        "id": 7,
+        "nome": "Looke"
+    },
+    {
+        "id": 8,
+        "nome": "Pluto TV"
+    },
+    {
+        "id": 9,
+        "nome": "Vix"
+    },
+    {
+        "id": 10,
+        "nome": "SBT Videos"
+    },
+    {
+        "id": 11,
+        "nome": "TV Brasil Play"
+    },
+    {
+        "id": 12,
+        "nome": "Claro Vídeo"
+    },
+    {
+        "id": 13,
+        "nome": "Oi Play"
+    }
+]

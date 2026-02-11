@@ -1,0 +1,244 @@
+{
+  "animes": [
+    {
+      "anime_id": 1,
+      "nome": "Shingeki no Kyojin",
+      "titulo_portugues": "Ataque dos Titãs",
+      "titulo_ingles": "Attack on Titan",
+      "titulo_japones": "進撃の巨人",
+      "estudio_id": 1
+    },
+    {
+      "anime_id": 2,
+      "nome": "Demon Slayer",
+      "titulo_portugues": "Demon Slayer",
+      "titulo_ingles": "Demon Slayer",
+      "titulo_japones": "鬼滅の刃",
+      "estudio_id": 10
+    },
+    {
+      "anime_id": 3,
+      "nome": "Tokyo Ghoul",
+      "titulo_portugues": "Tokyo Ghoul",
+      "titulo_ingles": "Tokyo Ghoul",
+      "titulo_japones": "東京喰種トーキョーグール",
+      "estudio_id": 8
+    },
+    {
+      "anime_id": 4,
+      "nome": "Jujutsu Kaisen",
+      "titulo_portugues": "Jujutsu Kaisen",
+      "titulo_ingles": "Jujutsu Kaisen",
+      "titulo_japones": "呪術廻戦",
+      "estudio_id": 3
+    },
+    {
+      "anime_id": 5,
+      "nome": "Death Note",
+      "titulo_portugues": "Death Note",
+      "titulo_ingles": "Death Note",
+      "titulo_japones": "デスノート",
+      "estudio_id": 2
+    },
+    {
+      "anime_id": 6,
+      "nome": "Vinland Saga",
+      "titulo_portugues": "Vinland Saga",
+      "titulo_ingles": "Vinland Saga",
+      "titulo_japones": "ヴィンランド・サガ",
+      "estudio_id": 1
+    },
+    {
+      "anime_id": 7,
+      "nome": "Ousama Ranking",
+      "titulo_portugues": "Ranking of Kings",
+      "titulo_ingles": "Ranking of Kings",
+      "titulo_japones": "王様ランキング",
+      "estudio_id": 1
+    },
+    {
+      "anime_id": 8,
+      "nome": "Hunter x Hunter",
+      "titulo_portugues": "Hunter x Hunter",
+      "titulo_ingles": "Hunter x Hunter",
+      "titulo_japones": "ハンター×ハンター",
+      "estudio_id": 2
+    },
+    {
+      "anime_id": 9,
+      "nome": "Frieren",
+      "titulo_portugues": "Frieren: Além do Fim da Jornada",
+      "titulo_ingles": "Frieren: Beyond Journey’s End",
+      "titulo_japones": "葬送のフリーレン",
+      "estudio_id": 2
+    },
+    {
+      "anime_id": 10,
+      "nome": "Chainsaw Man",
+      "titulo_portugues": "Chainsaw Man",
+      "titulo_ingles": "Chainsaw Man",
+      "titulo_japones": "チェンソーマン",
+      "estudio_id": 3
+    },
+    {
+      "anime_id": 11,
+      "nome": "Hell’s Paradise",
+      "titulo_portugues": "Hell’s Paradise",
+      "titulo_ingles": "Hell’s Paradise",
+      "titulo_japones": "地獄楽",
+      "estudio_id": 3
+    },
+    {
+      "anime_id": 12,
+      "nome": "Fullmetal Alchemist: Brotherhood",
+      "titulo_portugues": "Fullmetal Alchemist: Brotherhood",
+      "titulo_ingles": "Fullmetal Alchemist: Brotherhood",
+      "titulo_japones": "鋼の錬金術師",
+      "estudio_id": 4
+    },
+    {
+      "anime_id": 13,
+      "nome": "Mob Psycho 100",
+      "titulo_portugues": "Mob Psycho 100",
+      "titulo_ingles": "Mob Psycho 100",
+      "titulo_japones": "モブサイコ100",
+      "estudio_id": 4
+    },
+    {
+      "anime_id": 14,
+      "nome": "Sword Art Online",
+      "titulo_portugues": "Sword Art Online",
+      "titulo_ingles": "Sword Art Online",
+      "titulo_japones": "ソードアート・オンライン",
+      "estudio_id": 5
+    },
+    {
+      "anime_id": 15,
+      "nome": "Your Lie in April",
+      "titulo_portugues": "Sua Mentira em Abril",
+      "titulo_ingles": "Your Lie in April",
+      "titulo_japones": "四月は君の嘘",
+      "estudio_id": 5
+    },
+    {
+      "anime_id": 16,
+      "nome": "Horimiya",
+      "titulo_portugues": "Horimiya",
+      "titulo_ingles": "Horimiya",
+      "titulo_japones": "ホリミヤ",
+      "estudio_id": 6
+    },
+    {
+      "anime_id": 17,
+      "nome": "Bocchi the Rock!",
+      "titulo_portugues": "Bocchi the Rock!",
+      "titulo_ingles": "Bocchi the Rock!",
+      "titulo_japones": "ぼっち・ざ・ろっく！",
+      "estudio_id": 6
+    },
+    {
+      "anime_id": 18,
+      "nome": "One Piece",
+      "titulo_portugues": "One Piece",
+      "titulo_ingles": "One Piece",
+      "titulo_japones": "ワンピース",
+      "estudio_id": 7
+    },
+    {
+      "anime_id": 19,
+      "nome": "Dragon Ball Z",
+      "titulo_portugues": "Dragon Ball Z",
+      "titulo_ingles": "Dragon Ball Z",
+      "titulo_japones": "ドラゴンボールZ",
+      "estudio_id": 7
+    },
+    {
+      "anime_id": 20,
+      "nome": "Naruto",
+      "titulo_portugues": "Naruto",
+      "titulo_ingles": "Naruto",
+      "titulo_japones": "ナルト",
+      "estudio_id": 8
+    },
+    {
+      "anime_id": 21,
+      "nome": "Bleach",
+      "titulo_portugues": "Bleach",
+      "titulo_ingles": "Bleach",
+      "titulo_japones": "ブリーチ",
+      "estudio_id": 8
+    },
+    {
+      "anime_id": 22,
+      "nome": "Haikyuu!!",
+      "titulo_portugues": "Haikyuu!!",
+      "titulo_ingles": "Haikyuu!!",
+      "titulo_japones": "ハイキュー!!",
+      "estudio_id": 9
+    },
+    {
+      "anime_id": 23,
+      "nome": "Psycho-Pass",
+      "titulo_portugues": "Psycho-Pass",
+      "titulo_ingles": "Psycho-Pass",
+      "titulo_japones": "サイコパス",
+      "estudio_id": 9
+    },
+    {
+      "anime_id": 24,
+      "nome": "Fate/Zero",
+      "titulo_portugues": "Fate/Zero",
+      "titulo_ingles": "Fate/Zero",
+      "titulo_japones": "フェイト／ゼロ",
+      "estudio_id": 10
+    },
+    {
+      "anime_id": 25,
+      "nome": "Violet Evergarden",
+      "titulo_portugues": "Violet Evergarden",
+      "titulo_ingles": "Violet Evergarden",
+      "titulo_japones": "ヴァイオレット・エヴァーガーデン",
+      "estudio_id": 12
+    },
+    {
+      "anime_id": 26,
+      "nome": "Great Pretender",
+      "titulo_portugues": "Great Pretender",
+      "titulo_ingles": "Great Pretender",
+      "titulo_japones": "グレートプリテンダー",
+      "estudio_id": 1
+    },
+    {
+      "anime_id": 27,
+      "nome": "No Game No Life",
+      "titulo_portugues": "No Game No Life",
+      "titulo_ingles": "No Game No Life",
+      "titulo_japones": "ノーゲーム・ノーライフ",
+      "estudio_id": 2
+    },
+    {
+      "anime_id": 28,
+      "nome": "Dororo",
+      "titulo_portugues": "Dororo",
+      "titulo_ingles": "Dororo",
+      "titulo_japones": "どろろ",
+      "estudio_id": 3
+    },
+    {
+      "anime_id": 29,
+      "nome": "Noragami",
+      "titulo_portugues": "Noragami",
+      "titulo_ingles": "Noragami",
+      "titulo_japones": "ノラガミ",
+      "estudio_id": 4
+    },
+    {
+      "anime_id": 30,
+      "nome": "Spy x Family",
+      "titulo_portugues": "Spy x Family",
+      "titulo_ingles": "Spy x Family",
+      "titulo_japones": "スパイファミリー",
+      "estudio_id": 6
+    }
+  ]
+}

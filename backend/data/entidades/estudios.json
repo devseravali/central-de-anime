@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "nome": "Wit Studio",
+        "principais_obras": "Shingeki no Kyojin (Temporadas 1 a 3), Vinland Saga (Temporada 1), Ousama Ranking, Great Pretender, Kabaneri of the Iron Fortress"
+    },
+    {
+        "id": 2,
+        "nome": "Madhouse",
+        "principais_obras": "Death Note, Hunter x Hunter (2011), One Punch Man (Temporada 1), Parasyte (Kiseijuu), No Game No Life, Frieren: Beyond Journey’s End"
+    },
+    {
+        "id": 3,
+        "nome": "MAPPA",
+        "principais_obras": "Jujutsu Kaisen, Shingeki no Kyojin: The Final Season, Chainsaw Man, Vinland Saga (Temporada 2), Dororo (2019), Hell’s Paradise"
+    },
+    {
+        "id": 4,
+        "nome": "Bones",
+        "principais_obras": "Fullmetal Alchemist: Brotherhood, My Hero Academia, Mob Psycho 100, Bungou Stray Dogs, Soul Eater, Noragami"
+    },
+    {
+        "id": 5,
+        "nome": "A-1 Pictures",
+        "principais_obras": "Sword Art Online, Your Lie in April, Erased, Kaguya-sama: Love Is War, 86: Eighty-Six, Solo Leveling"
+    },
+    {
+        "id": 6,
+        "nome": "CloverWorks",
+        "principais_obras": "The Promised Neverland (Temporada 1), Horimiya, My Dress-Up Darling, Bocchi the Rock!, Wonder Egg Priority, Spy x Family"
+    },
+    {
+        "id": 7,
+        "nome": "Toei Animation",
+        "principais_obras": "One Piece, Dragon Ball (Clássico, Z, Super), Saint Seiya, Digimon, Sailor Moon, Pretty Cure"
+    },
+    {
+        "id": 8,
+        "nome": "Pierrot",
+        "principais_obras": "Naruto, Naruto Shippuden, Boruto, Bleach, Tokyo Ghoul, Black Clover"
+    },
+    {
+        "id": 9,
+        "nome": "Production I.G",
+        "principais_obras": "Ghost in the Shell, Haikyuu!!, Psycho-Pass, Kuroko no Basket, Eden of the East"
+    },
+    {
+        "id": 10,
+        "nome": "Ufotable",
+        "principais_obras": "Demon Slayer, Fate/Zero, Fate/stay night: Unlimited Blade Works, Heaven’s Feel, The Garden of Sinners"
+    },
+    {
+        "id": 11,
+        "nome": "Studio Deen",
+        "principais_obras": "Higurashi no Naku Koro ni, Fate/stay night (2006), Rurouni Kenshin, Konosuba, The Seven Deadly Sins (Temporada 1)"
+    },
+    {
+        "id": 12,
+        "nome": "Kyoto Animation",
+        "principais_obras": "Violet Evergarden, Clannad, A Silent Voice, K-On!, Hibike! Euphonium, Miss Kobayashi’s Dragon Maid"
+    }
+]

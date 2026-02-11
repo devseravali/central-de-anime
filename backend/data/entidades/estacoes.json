@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nome": "Primavera",
+        "slug": "primavera"
+    },
+    {
+        "id": 2,
+        "nome": "Verão",
+        "slug": "verao"
+    },
+    {
+        "id": 3,
+        "nome": "Outono",
+        "slug": "outono"
+    },
+    {
+        "id": 4,
+        "nome": "Inverno",
+        "slug": "inverno"
+    }
+]

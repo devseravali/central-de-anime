@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "nome": "Ação"
+    },
+    {
+        "id": 2,
+        "nome": "Aventura"
+    },
+    {
+        "id": 3,
+        "nome": "Comédia"
+    },
+    {
+        "id": 4,
+        "nome": "Drama"
+    },
+    {
+        "id": 5,
+        "nome": "Fantasia"
+    },
+    {
+        "id": 6,
+        "nome": "Romance"
+    },
+    {
+        "id": 7,
+        "nome": "Slice of Life"
+    },
+    {
+        "id": 8,
+        "nome": "Terror"
+    },
+    {
+        "id": 9,
+        "nome": "Mistério"
+    },
+    {
+        "id": 10,
+        "nome": "Sobrenatural"
+    },
+    {
+        "id": 11,
+        "nome": "Shounen"
+    },
+    {
+        "id": 12,
+        "nome": "Seinen"
+    },
+    {
+        "id": 13,
+        "nome": "Shojo"
+    },
+    {
+        "id": 14,
+        "nome": "Josei"
+    },
+    {
+        "id": 15,
+        "nome": "Psicológico"
+    },
+    {
+        "id": 16,
+        "nome": "Suspense"
+    },
+    {
+        "id": 17,
+        "nome": "Ficção Científica"
+    },
+    {
+        "id": 18,
+        "nome": "Mecha"
+    },
+    {
+        "id": 19,
+        "nome": "Esportes"
+    },
+    {
+        "id": 20,
+        "nome": "Musical"
+    },
+    {
+        "id": 21,
+        "nome": "Horror"
+    },
+    {
+        "id": 22,
+        "nome": "Thriller"
+    },
+    {
+        "id": 23,
+        "nome": "Magia"
+    },
+    {
+        "id": 24,
+        "nome": "Escolar"
+    },
+    {
+        "id": 25,
+        "nome": "Histórico"
+    },
+    {
+        "id": 26,
+        "nome": "Militar"
+    },
+    {
+        "id": 27,
+        "nome": "Pós-Apocalíptico"
+    },
+    {
+        "id": 28,
+        "nome": "Cyberpunk"
+    },
+    {
+        "id": 29,
+        "nome": "Isekai"
+    },
+    {
+        "id": 30,
+        "nome": "Ecchi"
+    },
+    {
+        "id": 31,
+        "nome": "Harem"
+    },
+    {
+        "id": 32,
+        "nome": "Artes Marciais"
+    },
+    {
+        "id": 33,
+        "nome": "Vampiros"
+    },
+    {
+        "id": 34,
+        "nome": "Demônios"
+    },
+    {
+        "id": 35,
+        "nome": "Samurai"
+    },
+    {
+        "id": 36,
+        "nome": "Espaço"
+    },
+    {
+        "id": 37,
+        "nome": "Investigação"
+    },
+    {
+        "id": 38,
+        "nome": "Crime"
+    },
+    {
+        "id": 39,
+        "nome": "Gore"
+    },
+    {
+        "id": 40,
+        "nome": "Tragédia"
+    }
+]
