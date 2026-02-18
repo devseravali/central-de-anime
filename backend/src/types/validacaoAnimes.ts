@@ -1,21 +1,31 @@
 export interface ValidacaoAnimes {
   id: number;
   anime_id: number;
-  nome: string;
-  titulo_portugues: string;
-  titulo_ingles: string;
-  titulo_japones: string;
+  titulo: string;
   estudio_id: number;
+  tipo?: string;
+  temporada?: number;
+  status_id?: number;
+  ano?: number;
+  estacao_id?: number;
+  episodios?: number;
+  sinopse?: string;
+  capaUrl?: string;
 }
 
 export type ValidacaoAnimesInput = {
   id?: number | string;
   anime_id?: number | string;
-  nome?: string;
-  titulo_portugues?: string;
-  titulo_ingles?: string;
-  titulo_japones?: string;
+  titulo?: string;
   estudio_id?: number | string;
+  tipo?: string;
+  temporada?: number | string;
+  status_id?: number | string;
+  ano?: number | string;
+  estacao_id?: number | string;
+  episodios?: number | string;
+  sinopse?: string;
+  capaUrl?: string;
 };
 
 function toPositiveInt(value: unknown): number | null {
@@ -43,22 +53,36 @@ export function validarAnimePayload(data: unknown): ValidacaoAnimes | null {
 
   const p = data as ValidacaoAnimesInput;
 
-  const nome = toStringOrEmpty(p.nome);
-  if (nome.length < 2) return null;
+  const titulo = toStringOrEmpty(p.titulo);
+  if (titulo.length < 2) return null;
 
-  const estudioId = toPositiveInt(p.estudio_id);
-  if (!estudioId) return null;
+  const estudio_id = toPositiveInt(p.estudio_id);
+  if (!estudio_id) return null;
 
   const id = toPositiveInt(p.id) ?? 0;
-  const animeId = toPositiveInt(p.anime_id) ?? 0;
+  const anime_id = toPositiveInt(p.anime_id) ?? 0;
+
+  const tipo = toStringOrEmpty(p.tipo);
+  const temporada = toPositiveInt(p.temporada);
+  const status_id = toPositiveInt(p.status_id);
+  const ano = toPositiveInt(p.ano);
+  const estacao_id = toPositiveInt(p.estacao_id);
+  const episodios = toPositiveInt(p.episodios);
+  const sinopse = toStringOrEmpty(p.sinopse);
+  const capaUrl = toStringOrEmpty(p.capaUrl);
 
   return {
     id,
-    anime_id: animeId,
-    nome,
-    titulo_portugues: toStringOrEmpty(p.titulo_portugues),
-    titulo_ingles: toStringOrEmpty(p.titulo_ingles),
-    titulo_japones: toStringOrEmpty(p.titulo_japones),
-    estudio_id: estudioId,
+    anime_id,
+    titulo,
+    estudio_id,
+    ...(tipo ? { tipo } : {}),
+    ...(temporada ? { temporada } : {}),
+    ...(status_id ? { status_id } : {}),
+    ...(ano ? { ano } : {}),
+    ...(estacao_id ? { estacao_id } : {}),
+    ...(episodios ? { episodios } : {}),
+    ...(sinopse ? { sinopse } : {}),
+    ...(capaUrl ? { capaUrl } : {}),
   };
 }
