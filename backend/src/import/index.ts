@@ -1,8 +1,4 @@
 async function runSeed() {
-  // Limpar o banco antes de importar os dados
-  const { resetDb } = await import('./resetDb.js');
-  await resetDb();
-  // Entidades primeiro
 
   await import('./importStatus');
   const { importEstudios } = await import('./importEstudios');
@@ -12,11 +8,9 @@ async function runSeed() {
   await import('./importPlataformas');
   await import('./importTags');
   await import('./importPersonagens');
-  const { importAnimes } = await import('./importAnimes.js');
+  const { importAnimes } = await import('./importAnimes');
   await importAnimes();
-  await import('./importTemporadas');
 
-  // Relacionamentos (todos após entidades)
   await import('./importAnimeEstacao');
   await import('./importAnimeEstudio');
   await import('./importAnimeGenero');
