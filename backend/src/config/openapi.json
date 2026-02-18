@@ -1,0 +1,3007 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Central de Anime API",
+    "version": "1.0.0",
+    "description": "Documentação da API Central de Anime"
+  },
+  "paths": {
+    "/animes": {
+      "get": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Listar todos os animes",
+        "responses": {
+          "200": {
+            "description": "Lista de animes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resposta"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Criar anime",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Anime"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Anime criado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resposta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/animes/nomes": {
+      "get": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Listar nomes dos animes",
+        "responses": {
+          "200": {
+            "description": "Lista de nomes de animes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resposta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/animes/titulos": {
+      "get": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Listar animes com títulos",
+        "responses": {
+          "200": {
+            "description": "Lista de animes com títulos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resposta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/animes/temporadas/quantidade": {
+      "get": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Listar temporadas com quantidade de animes",
+        "description": "Retorna todas as temporadas distintas e a quantidade de animes em cada uma.",
+        "responses": {
+          "200": {
+            "description": "Lista de temporadas com quantidade",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "sucesso": {
+                      "type": "boolean"
+                    },
+                    "dados": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "temporada": {
+                            "type": "string",
+                            "example": "Primavera"
+                          },
+                          "quantidade": {
+                            "type": "integer",
+                            "example": 12
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "$ref": "#/components/schemas/Resposta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/animes/{id}": {
+      "put": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Atualizar anime",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Anime"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Anime atualizado"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Remover anime",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Anime removido"
+          }
+        }
+      }
+    },
+    "/animes/temporadas": {
+      "get": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Listar todas as temporadas distintas",
+        "responses": {
+          "200": {
+            "description": "Lista de temporadas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resposta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/animes/temporadas/anos": {
+      "get": {
+        "tags": [
+          "Animes"
+        ],
+        "summary": "Listar anos distintos das temporadas",
+        "responses": {
+          "200": {
+            "description": "Lista de anos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resposta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dados": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar todos os dados",
+        "responses": {
+          "200": {
+            "description": "Dados agregados"
+          }
+        }
+      }
+    },
+    "/dados/generos": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar gêneros",
+        "responses": {
+          "200": {
+            "description": "Lista de gêneros"
+          }
+        }
+      }
+    },
+    "/dados/plataformas": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar plataformas",
+        "responses": {
+          "200": {
+            "description": "Lista de plataformas"
+          }
+        }
+      }
+    },
+    "/dados/status": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar status",
+        "responses": {
+          "200": {
+            "description": "Lista de status"
+          }
+        }
+      }
+    },
+    "/dados/tags": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar tags",
+        "responses": {
+          "200": {
+            "description": "Lista de tags"
+          }
+        }
+      }
+    },
+    "/dados/temporadas": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar temporadas",
+        "responses": {
+          "200": {
+            "description": "Lista de temporadas"
+          }
+        }
+      }
+    },
+    "/dados/estudios": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar estúdios",
+        "responses": {
+          "200": {
+            "description": "Lista de estúdios"
+          }
+        }
+      }
+    },
+    "/dados/estacoes": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar estações",
+        "responses": {
+          "200": {
+            "description": "Lista de estações"
+          }
+        }
+      }
+    },
+    "/dados/animes": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar animes",
+        "responses": {
+          "200": {
+            "description": "Lista de animes"
+          }
+        }
+      }
+    },
+    "/dados/personagens": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Listar personagens",
+        "responses": {
+          "200": {
+            "description": "Lista de personagens"
+          }
+        }
+      }
+    },
+    "/dados/buscar/{entidade}/{nome}": {
+      "get": {
+        "tags": [
+          "Dados"
+        ],
+        "summary": "Buscar entidade por nome",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entidade",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado da busca"
+          }
+        }
+      }
+    },
+    "/email/solicitar": {
+      "post": {
+        "tags": [
+          "Email"
+        ],
+        "summary": "Solicitar verificação de email",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Solicitação enviada"
+          }
+        }
+      }
+    },
+    "/email/verificar": {
+      "get": {
+        "tags": [
+          "Email"
+        ],
+        "summary": "Verificar email",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Email verificado"
+          }
+        }
+      }
+    },
+    "/email/teste": {
+      "get": {
+        "tags": [
+          "Email"
+        ],
+        "summary": "Testar verificação de email",
+        "responses": {
+          "200": {
+            "description": "Teste de verificação"
+          }
+        }
+      }
+    },
+    "/estacoes": {
+      "get": {
+        "summary": "Lista todas as estações",
+        "tags": [
+          "Estacoes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de estações retornada com sucesso"
+          }
+        }
+      },
+      "post": {
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Adiciona uma nova estação",
+        "tags": [
+          "Estacoes"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string",
+                    "description": "Nome da estação"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Estação criada com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          }
+        }
+      }
+    },
+    "/estacoes/{id}": {
+      "get": {
+        "summary": "Busca uma estação por ID",
+        "tags": [
+          "Estacoes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID da estação"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estação encontrada"
+          },
+          "404": {
+            "description": "Estação não encontrada"
+          }
+        }
+      },
+      "put": {
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Atualiza uma estação",
+        "tags": [
+          "Estacoes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID da estação"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string",
+                    "description": "Nome da estação"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Estação atualizada com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          },
+          "404": {
+            "description": "Estação não encontrada"
+          }
+        }
+      },
+      "delete": {
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Remove uma estação",
+        "tags": [
+          "Estacoes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID da estação"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Estação removida com sucesso"
+          },
+          "404": {
+            "description": "Estação não encontrada"
+          }
+        }
+      }
+    },
+    "/estacoes/buscar/nome": {
+      "get": {
+        "summary": "Busca estação por nome (query param)",
+        "tags": [
+          "Estacoes"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nome da estação"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estação encontrada"
+          },
+          "404": {
+            "description": "Estação não encontrada"
+          }
+        }
+      }
+    },
+    "/estacoes/buscar/{nome}": {
+      "get": {
+        "summary": "Busca estação por nome (path param)",
+        "tags": [
+          "Estacoes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nome da estação"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estação encontrada"
+          },
+          "404": {
+            "description": "Estação não encontrada"
+          }
+        }
+      }
+    },
+    "/estatisticas/populares": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatísticas populares (tags, status, gêneros, estúdios, plataformas)",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 5
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estatísticas populares das principais entidades"
+          }
+        }
+      }
+    },
+    "/estatisticas": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas gerais",
+        "responses": {
+          "200": {
+            "description": "Estatisticas gerais"
+          }
+        }
+      }
+    },
+    "/estatisticas/simples": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas simples",
+        "responses": {
+          "200": {
+            "description": "Estatisticas simples"
+          }
+        }
+      }
+    },
+    "/estatisticas/generos": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por genero",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por genero"
+          }
+        }
+      }
+    },
+    "/estatisticas/estudios": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por estudio",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por estudio"
+          }
+        }
+      }
+    },
+    "/estatisticas/plataformas": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por plataforma",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por plataforma"
+          }
+        }
+      }
+    },
+    "/estatisticas/status": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por status",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por status"
+          }
+        }
+      }
+    },
+    "/estatisticas/tags": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por tags",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por tags"
+          }
+        }
+      }
+    },
+    "/estatisticas/temporadas": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por temporadas",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "ano",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estatisticas por temporadas"
+          }
+        }
+      }
+    },
+    "/estatisticas/estacoes": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por estacoes",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por estacoes"
+          }
+        }
+      }
+    },
+    "/estatisticas/personagens": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por personagens",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por personagens"
+          }
+        }
+      }
+    },
+    "/estatisticas/animes": {
+      "get": {
+        "tags": [
+          "Estatisticas"
+        ],
+        "summary": "Estatisticas por animes",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por animes"
+          }
+        }
+      }
+    },
+    "/estudios": {
+      "get": {
+        "tags": [
+          "Estudios"
+        ],
+        "summary": "Listar estudios",
+        "responses": {
+          "200": {
+            "description": "Lista de estudios"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Estudios"
+        ],
+        "summary": "Criar estudio",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Estudio criado"
+          }
+        }
+      }
+    },
+    "/estudios/{id}": {
+      "get": {
+        "tags": [
+          "Estudios"
+        ],
+        "summary": "Buscar estudio por id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estudio encontrado"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Estudios"
+        ],
+        "summary": "Atualizar estudio",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Estudio atualizado"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Estudios"
+        ],
+        "summary": "Remover estudio",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estudio removido"
+          }
+        }
+      }
+    },
+    "/estudios/{nome}/principais-obras": {
+      "get": {
+        "tags": [
+          "Estudios"
+        ],
+        "summary": "Listar animes por nome do estudio",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes por estudio"
+          }
+        }
+      }
+    },
+    "/estudios/{id}/animes": {
+      "get": {
+        "tags": [
+          "Estudios"
+        ],
+        "summary": "Listar animes por estudio",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes por estudio"
+          }
+        }
+      }
+    },
+    "/estudios/nome/{nome}/animes": {
+      "get": {
+        "tags": [
+          "Estudios"
+        ],
+        "summary": "Listar animes por nome do estudio",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes por estudio"
+          }
+        }
+      }
+    },
+    "/generos": {
+      "get": {
+        "tags": [
+          "Generos"
+        ],
+        "summary": "Listar generos",
+        "responses": {
+          "200": {
+            "description": "Lista de generos"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Generos"
+        ],
+        "summary": "Criar genero",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Genero criado"
+          }
+        }
+      }
+    },
+    "/generos/{id}": {
+      "get": {
+        "tags": [
+          "Generos"
+        ],
+        "summary": "Buscar genero por id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Genero encontrado"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Generos"
+        ],
+        "summary": "Atualizar genero",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Genero atualizado"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Generos"
+        ],
+        "summary": "Remover genero",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Genero removido"
+          }
+        }
+      }
+    },
+    "/generos/busca/{nome}": {
+      "get": {
+        "tags": [
+          "Generos"
+        ],
+        "summary": "Buscar genero por nome",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Genero encontrado"
+          }
+        }
+      }
+    },
+    "/generos/{nome}/animes": {
+      "get": {
+        "tags": [
+          "Generos"
+        ],
+        "summary": "Listar animes por genero",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes por genero"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "summary": "Verifica o status da API",
+        "responses": {
+          "200": {
+            "description": "API online"
+          }
+        }
+      }
+    },
+    "/health/detailed": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "summary": "Verifica o status detalhado da API",
+        "responses": {
+          "200": {
+            "description": "API online com detalhes de uptime e memória"
+          }
+        }
+      }
+    },
+    "/personagens": {
+      "get": {
+        "tags": [
+          "Personagens"
+        ],
+        "summary": "Listar personagens",
+        "responses": {
+          "200": {
+            "description": "Lista de personagens"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Personagens"
+        ],
+        "summary": "Criar personagem",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Personagem criado"
+          }
+        }
+      }
+    },
+    "/personagens/{id}/animes": {
+      "get": {
+        "tags": [
+          "Personagens"
+        ],
+        "summary": "Listar animes por personagem",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes do personagem"
+          }
+        }
+      }
+    },
+    "/personagens/{id}": {
+      "get": {
+        "tags": [
+          "Personagens"
+        ],
+        "summary": "Buscar personagem por id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Personagem encontrado"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Personagens"
+        ],
+        "summary": "Atualizar personagem",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Personagem atualizado"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Personagens"
+        ],
+        "summary": "Remover personagem",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Personagem removido"
+          }
+        }
+      }
+    },
+    "/personagens/nome/{nome}": {
+      "get": {
+        "tags": [
+          "Personagens"
+        ],
+        "summary": "Buscar personagem por nome",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Personagem encontrado"
+          }
+        }
+      }
+    },
+    "/plataformas": {
+      "get": {
+        "tags": [
+          "Plataformas"
+        ],
+        "summary": "Listar plataformas",
+        "responses": {
+          "200": {
+            "description": "Lista de plataformas"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Plataformas"
+        ],
+        "summary": "Criar plataforma",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Plataforma criada"
+          }
+        }
+      }
+    },
+    "/plataformas/{id}": {
+      "get": {
+        "tags": [
+          "Plataformas"
+        ],
+        "summary": "Buscar plataforma por id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plataforma encontrada"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Plataformas"
+        ],
+        "summary": "Atualizar plataforma",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Plataforma atualizada"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Plataformas"
+        ],
+        "summary": "Remover plataforma",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plataforma removida"
+          }
+        }
+      }
+    },
+    "/plataformas/{id}/animes": {
+      "get": {
+        "tags": [
+          "Plataformas"
+        ],
+        "summary": "Listar animes por plataforma",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes da plataforma"
+          }
+        }
+      }
+    },
+    "/relacoes/temporadas": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Buscar temporadas por nome",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de temporadas"
+          }
+        }
+      }
+    },
+    "/relacoes/estacoes": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Buscar estacoes por nome",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de estacoes"
+          }
+        }
+      }
+    },
+    "/relacoes/status": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Buscar status por nome",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de status"
+          }
+        }
+      }
+    },
+    "/relacoes/estudios": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Buscar estudios por nome",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de estudios"
+          }
+        }
+      }
+    },
+    "/relacoes/plataformas": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Buscar plataformas por nome",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de plataformas"
+          }
+        }
+      }
+    },
+    "/relacoes/tags": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Buscar tags por nome",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de tags"
+          }
+        }
+      }
+    },
+    "/relacoes/animes": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Buscar animes por título",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "titulo",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes"
+          }
+        }
+      }
+    },
+    "/relacoes/personagens": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Buscar personagens por nome",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de personagens"
+          }
+        }
+      }
+    },
+    "/relacoes/animes/personagem/{personagemId}": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Listar animes de um personagem",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "personagemId",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes do personagem"
+          }
+        }
+      }
+    },
+    "/relacoes/personagens/anime/{animeId}": {
+      "get": {
+        "tags": [
+          "Relacoes"
+        ],
+        "summary": "Listar personagens de um anime",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "animeId",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de personagens do anime"
+          }
+        }
+      }
+    },
+    "/status": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "summary": "Listar todos os status",
+        "responses": {
+          "200": {
+            "description": "Lista de status"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Status"
+        ],
+        "summary": "Criar status",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Status criado"
+          }
+        }
+      }
+    },
+    "/status/{id}": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "summary": "Buscar status por id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Status encontrado"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Status"
+        ],
+        "summary": "Atualizar status",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Status atualizado"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Status"
+        ],
+        "summary": "Remover status",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Status removido"
+          }
+        }
+      }
+    },
+    "/status/nome/{nome}": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "summary": "Buscar status por nome",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Status encontrado"
+          }
+        }
+      }
+    },
+    "/tags": {
+      "get": {
+        "tags": [
+          "Tags"
+        ],
+        "summary": "Listar todas as tags",
+        "responses": {
+          "200": {
+            "description": "Lista de tags"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Tags"
+        ],
+        "summary": "Criar tag",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Tag criada"
+          }
+        }
+      }
+    },
+    "/tags/{id}": {
+      "get": {
+        "tags": [
+          "Tags"
+        ],
+        "summary": "Buscar tag por id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Tag encontrada"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Tags"
+        ],
+        "summary": "Atualizar tag",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Tag atualizada"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Tags"
+        ],
+        "summary": "Remover tag",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Tag removida"
+          }
+        }
+      }
+    },
+    "/tags/buscar/nome": {
+      "get": {
+        "tags": [
+          "Tags"
+        ],
+        "summary": "Buscar tag por nome",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "nome",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Tag encontrada"
+          }
+        }
+      }
+    },
+    "/upload/capa/{nome}": {
+      "get": {
+        "summary": "Baixar uma imagem de capa específica",
+        "description": "Retorna o arquivo binário da imagem de capa pelo nome do arquivo.\nExemplo de uso: `/upload/capa/nome-da-capa.jpg`\n",
+        "tags": [
+          "Uploads"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "description": "Nome do arquivo da capa (ex: capa1.jpg)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Imagem retornada com sucesso",
+            "content": {
+              "image/*": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Imagem não encontrada"
+          }
+        }
+      }
+    },
+    "/upload/personagem/{nome}": {
+      "get": {
+        "summary": "Baixar uma imagem de personagem específica",
+        "description": "Retorna o arquivo binário da imagem de personagem pelo nome do arquivo.\nExemplo de uso: `/upload/personagem/nome-do-personagem.jpg`\n",
+        "tags": [
+          "Uploads"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "nome",
+            "required": true,
+            "description": "Nome do arquivo do personagem (ex: personagem1.jpg)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Imagem retornada com sucesso",
+            "content": {
+              "image/*": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Imagem não encontrada"
+          }
+        }
+      }
+    },
+    "/upload/capa": {
+      "get": {
+        "summary": "Lista todas as capas disponíveis",
+        "tags": [
+          "Uploads"
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de arquivos de capas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "capas": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/upload/personagem": {
+      "get": {
+        "summary": "Lista todas as imagens de personagens disponíveis",
+        "tags": [
+          "Uploads"
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de arquivos de personagens",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "personagens": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/health": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Healthcheck da API admin",
+        "responses": {
+          "200": {
+            "description": "Admin API OK"
+          }
+        }
+      }
+    },
+    "/admin/login": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Autenticar admin e gerar token JWT",
+        "description": "Opcao 1: Envie JSON com email e senha.\nOpcao 2: Envie Authorization Bearer com ID token Google (sem body).\n",
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "senha": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token gerado"
+          }
+        }
+      }
+    },
+    "/admin/auth/login": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Autenticar admin e gerar token JWT (alias)",
+        "description": "Opcao 1: Envie JSON com email e senha.\nOpcao 2: Envie Authorization Bearer com ID token Google (sem body).\n",
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "senha": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token gerado"
+          }
+        }
+      }
+    },
+    "/admin/stats": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas gerais (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas gerais"
+          }
+        }
+      }
+    },
+    "/admin/stats/simples": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas simples (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas simples"
+          }
+        }
+      }
+    },
+    "/admin/stats/generos": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por genero (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por genero"
+          }
+        }
+      }
+    },
+    "/admin/stats/estudios": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por estudio (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por estudio"
+          }
+        }
+      }
+    },
+    "/admin/stats/plataformas": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por plataforma (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por plataforma"
+          }
+        }
+      }
+    },
+    "/admin/stats/status": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por status (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por status"
+          }
+        }
+      }
+    },
+    "/admin/stats/tags": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por tags (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por tags"
+          }
+        }
+      }
+    },
+    "/admin/stats/temporadas": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por temporadas (admin)",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "ano",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Estatisticas por temporadas"
+          }
+        }
+      }
+    },
+    "/admin/stats/estacoes": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por estacoes (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por estacoes"
+          }
+        }
+      }
+    },
+    "/admin/stats/personagens": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por personagens (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por personagens"
+          }
+        }
+      }
+    },
+    "/admin/stats/animes": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Estatisticas por animes (admin)",
+        "responses": {
+          "200": {
+            "description": "Estatisticas por animes"
+          }
+        }
+      }
+    },
+    "/admin/mod/sancoes": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Listar sancoes",
+        "responses": {
+          "200": {
+            "description": "Lista de sancoes"
+          }
+        }
+      }
+    },
+    "/admin/mod/usuarios/{id}/sancoes": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Listar sancoes do usuario",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de sancoes do usuario"
+          }
+        }
+      }
+    },
+    "/admin/mod/usuarios/{id}/suspender": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Suspender usuario",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuario suspenso"
+          }
+        }
+      }
+    },
+    "/admin/mod/usuarios/{id}/banir": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Banir usuario",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuario banido"
+          }
+        }
+      }
+    },
+    "/admin/mod/usuarios/{id}/reativar": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Reativar usuario",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuario reativado"
+          }
+        }
+      }
+    },
+    "/admin/mod/conteudo/aprovar": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Aprovar conteudo",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tipo": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Conteudo aprovado"
+          }
+        }
+      }
+    },
+    "/admin/mod/conteudo/rejeitar": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Rejeitar conteudo",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tipo": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Conteudo rejeitado"
+          }
+        }
+      }
+    },
+    "/admin/mod/conteudo/remover": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Remover conteudo",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tipo": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Conteudo removido"
+          }
+        }
+      }
+    },
+    "/sessoes/validate": {
+      "get": {
+        "tags": [
+          "Sessoes"
+        ],
+        "summary": "Validar sessão do usuário autenticado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sessão válida"
+          },
+          "401": {
+            "description": "Não autenticado"
+          }
+        }
+      }
+    },
+    "/sessoes/create": {
+      "post": {
+        "tags": [
+          "Sessoes"
+        ],
+        "summary": "Criar nova sessão para o usuário autenticado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sessão criada"
+          },
+          "401": {
+            "description": "Não autenticado"
+          }
+        }
+      }
+    },
+    "/sessoes/logout": {
+      "post": {
+        "tags": [
+          "Sessoes"
+        ],
+        "summary": "Encerrar sessão ativa do usuário autenticado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sessão encerrada"
+          },
+          "401": {
+            "description": "Não autenticado"
+          }
+        }
+      }
+    },
+    "/sessoes/logout-all": {
+      "post": {
+        "tags": [
+          "Sessoes"
+        ],
+        "summary": "Encerrar todas as sessões do usuário autenticado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Todas as sessões encerradas"
+          },
+          "401": {
+            "description": "Não autenticado"
+          }
+        }
+      }
+    },
+    "/sessoes/auth/google": {
+      "get": {
+        "tags": [
+          "Sessoes"
+        ],
+        "summary": "Iniciar autenticação Google OAuth2",
+        "responses": {
+          "302": {
+            "description": "Redirecionamento para Google"
+          }
+        }
+      }
+    },
+    "/sessoes/auth/google/callback": {
+      "get": {
+        "tags": [
+          "Sessoes"
+        ],
+        "summary": "Callback do Google OAuth2",
+        "responses": {
+          "200": {
+            "description": "Usuário autenticado com sucesso"
+          },
+          "302": {
+            "description": "Redirecionamento em caso de falha"
+          }
+        }
+      }
+    },
+    "/usuarios/register": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Registrar usuario",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Usuario criado"
+          }
+        }
+      }
+    },
+    "/usuarios/login": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Autenticar usuario",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "senha": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token gerado"
+          }
+        }
+      }
+    },
+    "/usuarios/{id}/enviar-verificacao": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Enviar token de verificacao de email",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Token gerado"
+          }
+        }
+      }
+    },
+    "/usuarios/verificar-email": {
+      "put": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Verificar email do usuario",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Email verificado"
+          }
+        }
+      }
+    },
+    "/usuarios/logout": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Logout do usuario",
+        "responses": {
+          "200": {
+            "description": "Logout realizado"
+          }
+        }
+      }
+    },
+    "/usuarios/me": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Listar usuarios",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de usuarios"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Atualizar usuario autenticado",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Usuario atualizado"
+          }
+        }
+      }
+    },
+    "/usuarios/me/{id}": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Buscar usuario por id",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuario encontrado"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Usuarios"
+        ],
+        "summary": "Remover usuario por id",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuario removido"
+          }
+        }
+      }
+    }
+  },
+  "components": {},
+  "tags": []
+}
