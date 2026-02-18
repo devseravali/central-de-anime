@@ -22,23 +22,7 @@ export function readPersonagemBody(body: unknown) {
   }
   const b = body as Record<string, unknown>;
   const personagem: Record<string, string | number> = {};
-  if (typeof b.nome === 'string') personagem.nome = b.nome;
-  if (typeof b.idade === 'number') personagem.idade_inicial = b.idade;
-  if (typeof b.idade_inicial === 'number')
-    personagem.idade_inicial = b.idade_inicial;
-  if (typeof b.sexo === 'string') personagem.sexo = b.sexo;
-  if (typeof b.papel === 'string') personagem.papel = b.papel;
-  if (typeof b.imagem === 'string') personagem.imagem = b.imagem;
-  if (typeof b.aniversario === 'string') personagem.aniversario = b.aniversario;
-  if (
-    typeof b.altura_inicial === 'string' ||
-    typeof b.altura_inicial === 'number'
-  )
-    personagem.altura_inicial = b.altura_inicial;
-  if (
-    typeof b.alturaInicial === 'string' ||
-    typeof b.alturaInicial === 'number'
-  )
+  if (typeof b.alturaInicial === 'number')
     personagem.altura_inicial = b.alturaInicial;
   if (typeof b.afiliacao === 'string') personagem.afiliacao = b.afiliacao;
   if (typeof b.sobre === 'string') personagem.sobre = b.sobre;

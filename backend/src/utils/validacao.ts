@@ -1,30 +1,129 @@
-import type { AnimeInput } from '../types/anime';
-import type { EstacaoInput } from '../types/estacao';
+export function validarEstacaoPayload(data: unknown): { id?: number; nome: string; slug: string } | false {
+  if (typeof data !== 'object' || data === null) return false;
+  const p = data as Record<string, unknown>;
+  const nome = toRequiredString(p.nome);
+  const slug = toRequiredString(p.slug);
+  let id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
+  if (p.id !== undefined && id === null) return false;
+  if (!nome || !slug) return false;
+  return buildObject({ id: id === null ? undefined : id, nome, slug });
+}
 import type { ValidacaoPersonagem } from '../types/validacaoPersonagens';
-import type { ValidacaoTemporada } from '../types/validacaoTemporadas';
-import type { ValidacaoGenero } from '../types/validacaoGeneros';
-import type { ValidacaoEstudio } from '../types/validacaoEstudios';
-import type { ValidacaoTag } from '../types/validacaoTags';
-import type { ValidacaoRelacao } from '../types/validacaoRelacoes';
-import type { ValidacaoPlataforma } from '../types/validacaoPlataformas';
+import type { AnimeInput } from '../types/anime';
 
-type ValidacaoStatus = {
-  id?: number;
-  nome: string;
-};
 
 function toPositiveInt(value: unknown): number | null {
   if (value === undefined || value === null || value === '') return null;
-
   const n =
     typeof value === 'number'
       ? value
       : typeof value === 'string'
         ? Number(value)
         : NaN;
-
   if (!Number.isInteger(n) || n <= 0) return null;
   return n;
+}
+
+export function validarPersonagemPayload(
+  data: unknown,
+): ValidacaoPersonagem | false {
+  if (typeof data !== 'object' || data === null) return false;
+  const p = data as Record<string, unknown>;
+  const id =
+    p.id !== undefined ? (toPositiveInt(p.id) ?? undefined) : undefined;
+  const nome = toRequiredString(p.nome);
+  const idade_inicial = toPositiveInt(p.idade_inicial);
+  const sexo =
+    typeof p.sexo === 'string' &&
+    ['Masculino', 'Feminino', 'Outro'].includes(p.sexo)
+      ? p.sexo
+      : null;
+  const papel = toRequiredString(p.papel);
+  const imagem = toRequiredString(p.imagem);
+  const aniversario = toRequiredString(p.aniversario);
+  const altura_inicial = toPositiveInt(p.altura_inicial);
+  const afiliacao = toRequiredString(p.afiliacao);
+  const sobre = toRequiredString(p.sobre);
+  if (
+    nome &&
+    idade_inicial &&
+    sexo &&
+    papel &&
+    imagem &&
+    aniversario &&
+    altura_inicial &&
+    afiliacao &&
+    sobre
+  ) {
+    return {
+      ...(id ? { id } : {}),
+      nome,
+      idade_inicial,
+      sexo: sexo as 'Masculino' | 'Feminino' | 'Outro',
+      papel,
+      imagem,
+      aniversario,
+      altura_inicial,
+      afiliacao,
+      sobre,
+    };
+  }
+  return false;
+}
+
+export function validarTemporadaPayload(data: unknown): any | false {
+  if (typeof data !== 'object' || data === null) return false;
+  const p = data as Record<string, unknown>;
+  const id =
+    p.id !== undefined ? (toPositiveInt(p.id) ?? undefined) : undefined;
+  const anime_id = toPositiveInt(p.anime_id);
+  const slug = toRequiredString(p.slug);
+  const tipo = toOptionalTrimmedString(p.tipo);
+  const temporada = toPositiveInt(p.temporada);
+  const status_id =
+    p.status_id !== undefined
+      ? (toPositiveInt(p.status_id) ?? undefined)
+      : undefined;
+  const ano =
+    p.ano !== undefined ? (toPositiveInt(p.ano) ?? undefined) : undefined;
+  const estacao_id =
+    p.estacao_id !== undefined
+      ? (toPositiveInt(p.estacao_id) ?? undefined)
+      : undefined;
+  const episodios =
+    p.episodios !== undefined
+      ? (toPositiveInt(p.episodios) ?? undefined)
+      : undefined;
+  const sinopse = toOptionalTrimmedString(p.sinopse);
+
+  const nome = toOptionalTrimmedString(p.nome) ?? slug ?? tipo;
+  if (
+    anime_id &&
+    slug &&
+    nome &&
+    tipo &&
+    temporada &&
+    status_id &&
+    ano &&
+    estacao_id &&
+    episodios &&
+    sinopse
+  ) {
+    return {
+      ...(id ? { id } : {}),
+      anime_id,
+      slug,
+      nome,
+      tipo,
+      temporada,
+      status_id,
+      ano,
+      estacao_id,
+      episodios,
+      sinopse,
+    };
+  }
+  return false;
 }
 
 function toRequiredString(value: unknown): string | null {
@@ -36,299 +135,151 @@ function toRequiredString(value: unknown): string | null {
 function toOptionalTrimmedString(value: unknown): string | undefined {
   if (value === undefined || value === null) return undefined;
   if (typeof value !== 'string') return undefined;
-  return value.trim();
+  const trimmed = value.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
 }
 
-export function validarAnimePayload(data: unknown):
-  | (AnimeInput & {
-      id?: number;
-      anime_id?: number;
-    })
-  | false {
-  if (typeof data !== 'object' || data === null) return false;
+function buildObject<T extends object>(obj: T): T {
+  return Object.entries(obj).reduce((acc, [key, value]) => {
+    if (value !== undefined && value !== null) (acc as any)[key] = value;
+    return acc;
+  }, {} as T);
+}
 
+export function validarAnimePayload(data: unknown): AnimeInput | false {
+  if (typeof data !== 'object' || data === null) return false;
   const p = data as Record<string, unknown>;
 
-  const nome = toRequiredString(p.nome);
-  if (!nome) return false;
-
+  const anime_id = toPositiveInt(p.anime_id);
+  if (anime_id === null) return false;
   const estudio_id = toPositiveInt(p.estudio_id);
   if (estudio_id === null) return false;
-
-  if (
-    p.titulo_portugues !== undefined &&
-    typeof p.titulo_portugues !== 'string'
-  )
-    return false;
-
-  if (p.titulo_ingles !== undefined && typeof p.titulo_ingles !== 'string')
-    return false;
-
-  if (p.titulo_japones !== undefined && typeof p.titulo_japones !== 'string')
-    return false;
-
-  if (p.slug !== undefined && typeof p.slug !== 'string') return false;
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : null;
-  if (p.id !== undefined && id === null) return false;
-
-  const anime_id = p.anime_id !== undefined ? toPositiveInt(p.anime_id) : null;
-  if (p.anime_id !== undefined && anime_id === null) return false;
-
-  const result: AnimeInput & { id?: number; anime_id?: number } = {
-    nome,
+  const slug = toRequiredString(p.slug);
+  if (!slug) return false;
+  const titulo = toRequiredString(p.titulo);
+  if (!titulo) return false;
+  const tipo = toOptionalTrimmedString(p.tipo);
+  const temporada =
+    p.temporada !== undefined
+      ? (toPositiveInt(p.temporada) ?? undefined)
+      : undefined;
+  const status_id =
+    p.status_id !== undefined
+      ? (toPositiveInt(p.status_id) ?? undefined)
+      : undefined;
+  const ano =
+    p.ano !== undefined ? (toPositiveInt(p.ano) ?? undefined) : undefined;
+  const estacao_id =
+    p.estacao_id !== undefined
+      ? (toPositiveInt(p.estacao_id) ?? undefined)
+      : undefined;
+  const episodios =
+    p.episodios !== undefined
+      ? (toPositiveInt(p.episodios) ?? undefined)
+      : undefined;
+  const sinopse = toOptionalTrimmedString(p.sinopse);
+  const capaUrl = toOptionalTrimmedString(p.capaUrl);
+  const result: AnimeInput = {
+    anime_id,
     estudio_id,
+    slug,
+    titulo,
+    ...(tipo ? { tipo } : {}),
+    ...(temporada !== undefined ? { temporada } : {}),
+    ...(status_id !== undefined ? { status_id } : {}),
+    ...(ano !== undefined ? { ano } : {}),
+    ...(estacao_id !== undefined ? { estacao_id } : {}),
+    ...(episodios !== undefined ? { episodios } : {}),
+    ...(sinopse ? { sinopse } : {}),
+    ...(capaUrl ? { capaUrl } : {}),
   };
-
-  if (id !== null) result.id = id;
-  if (anime_id !== null) result.anime_id = anime_id;
-
-  const titulo_portugues = toOptionalTrimmedString(p.titulo_portugues);
-  if (titulo_portugues !== undefined)
-    result.titulo_portugues = titulo_portugues;
-
-  const titulo_ingles = toOptionalTrimmedString(p.titulo_ingles);
-  if (titulo_ingles !== undefined) result.titulo_ingles = titulo_ingles;
-
-  const titulo_japones = toOptionalTrimmedString(p.titulo_japones);
-  if (titulo_japones !== undefined) result.titulo_japones = titulo_japones;
-
-  const slug = toOptionalTrimmedString(p.slug);
-  if (slug !== undefined) result.slug = slug;
-
   return result;
 }
 
-export function validarEstacaoPayload(data: unknown): EstacaoInput | false {
-  if (typeof data !== 'object' || data === null) return false;
+export type ValidacaoStatus = { id?: number; nome: string };
+export type ValidacaoGenero = { id?: number; nome: string };
+export type ValidacaoEstudio = {
+  id?: number;
+  nome: string;
+  principaisObras?: string;
+};
+export type ValidacaoPlataforma = { id?: number; nome: string; url?: string };
+export type ValidacaoTag = { id?: number; nome: string };
+export type ValidacaoRelacao = {
+  id?: number;
+  anime_id: number;
+  relacionado_id: number;
+  tipo: string;
+};
 
+export function validarStatusPayload(data: unknown): ValidacaoStatus | false {
+  if (typeof data !== 'object' || data === null) return false;
   const p = data as Record<string, unknown>;
   const nome = toRequiredString(p.nome);
   if (!nome) return false;
-
-  if (p.slug !== undefined && typeof p.slug !== 'string') return false;
-  const slug = toOptionalTrimmedString(p.slug);
-
-  return {
-    nome,
-    slug,
-  };
+  let id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
+  if (p.id !== undefined && id === null) return false;
+  return buildObject({ id: id === null ? undefined : id, nome });
 }
 
 export function validarGeneroPayload(data: unknown): ValidacaoGenero | false {
   if (typeof data !== 'object' || data === null) return false;
-
   const p = data as Record<string, unknown>;
   const nome = toRequiredString(p.nome);
   if (!nome) return false;
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
+  let id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
   if (p.id !== undefined && id === null) return false;
+  return buildObject({ id: id === null ? undefined : id, nome });
+}
 
-  return {
-    id: id ?? 0,
-    nome,
-  };
+export function validarEstudioPayload(data: unknown): ValidacaoEstudio | false {
+  if (typeof data !== 'object' || data === null) return false;
+  const p = data as Record<string, unknown>;
+  const nome = toRequiredString(p.nome);
+  if (!nome) return false;
+  let id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
+  if (p.id !== undefined && id === null) return false;
+  id = id === null ? undefined : id;
+  const principaisObras = toOptionalTrimmedString(
+    p.principaisObras ?? p.principais_obras,
+  );
+  return buildObject({ id, nome, principaisObras });
 }
 
 export function validarPlataformaPayload(
   data: unknown,
 ): ValidacaoPlataforma | false {
   if (typeof data !== 'object' || data === null) return false;
-
   const p = data as Record<string, unknown>;
   const nome = toRequiredString(p.nome);
   if (!nome) return false;
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
+  let id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
   if (p.id !== undefined && id === null) return false;
-
-  const url =
-    p.url === null
-      ? null
-      : p.url !== undefined
-        ? toOptionalTrimmedString(p.url)
-        : undefined;
-
-  return {
-    ...(id !== undefined ? { id } : {}),
-    nome,
-    ...(url !== undefined ? { url } : {}),
-  };
-}
-
-export function validarStatusPayload(data: unknown): ValidacaoStatus | false {
-  if (typeof data !== 'object' || data === null) return false;
-
-  const p = data as Record<string, unknown>;
-  const nome = toRequiredString(p.nome);
-  if (!nome) return false;
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
-  if (p.id !== undefined && id === null) return false;
-
-  return {
-    ...(id !== undefined ? { id } : {}),
-    nome,
-  };
+  id = id === null ? undefined : id;
+  const url = toOptionalTrimmedString(p.url);
+  return buildObject({ id, nome, url });
 }
 
 export function validarTagPayload(data: unknown): ValidacaoTag | false {
   if (typeof data !== 'object' || data === null) return false;
-
   const p = data as Record<string, unknown>;
   const nome = toRequiredString(p.nome);
   if (!nome) return false;
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
+  let id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
   if (p.id !== undefined && id === null) return false;
-
-  return {
-    id: id ?? 0,
-    nome,
-  };
-}
-
-export function validarEstudioPayload(data: unknown): ValidacaoEstudio | false {
-  if (typeof data !== 'object' || data === null) return false;
-
-  const p = data as Record<string, unknown>;
-  const nome = toRequiredString(p.nome);
-  if (!nome) return false;
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
-  if (p.id !== undefined && id === null) return false;
-
-  const principaisObras = toOptionalTrimmedString(
-    p.principaisObras ?? p.principais_obras,
-  );
-
-  return {
-    id: id ?? 0,
-    nome,
-    principaisObras: principaisObras ?? '',
-  };
-}
-
-export function validarPersonagemPayload(
-  data: unknown,
-): ValidacaoPersonagem | false {
-  if (typeof data !== 'object' || data === null) return false;
-
-  const p = data as Record<string, unknown>;
-
-  const nome = toRequiredString(p.nome);
-  const sexo = toRequiredString(p.sexo);
-  const papel = toRequiredString(p.papel);
-  const imagem = toRequiredString(p.imagem);
-  const aniversario = toRequiredString(p.aniversario);
-  const afiliacao = toRequiredString(p.afiliacao);
-  const sobre = toRequiredString(p.sobre ?? p.Sobre);
-
-  const idade_inicial = toPositiveInt(p.idade_inicial);
-  const altura_inicial = toPositiveInt(p.altura_inicial);
-
-  if (
-    !nome ||
-    !sexo ||
-    !papel ||
-    !imagem ||
-    !aniversario ||
-    !afiliacao ||
-    !sobre ||
-    idade_inicial === null ||
-    altura_inicial === null
-  ) {
-    return false;
-  }
-
-  if (!['Masculino', 'Feminino', 'Outro'].includes(sexo)) return false;
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
-  if (p.id !== undefined && id === null) return false;
-
-  return {
-    ...(id !== undefined ? { id } : {}),
-    nome,
-    idade_inicial,
-    sexo: sexo as ValidacaoPersonagem['sexo'],
-    papel,
-    imagem,
-    aniversario,
-    altura_inicial,
-    afiliacao,
-    sobre,
-  };
-}
-
-export function validarTemporadaPayload(
-  data: unknown,
-): ValidacaoTemporada | false {
-  if (typeof data !== 'object' || data === null) return false;
-
-  const p = data as Record<string, unknown>;
-
-  const slug = toRequiredString(p.slug);
-  const nome = toRequiredString(p.nome);
-  const tipo = toRequiredString(p.tipo);
-  const sinopse = toOptionalTrimmedString(p.sinopse) ?? '';
-
-  const anime_id = toPositiveInt(p.anime_id);
-  const temporada = toPositiveInt(p.temporada);
-  const status_id = toPositiveInt(p.status_id);
-  const ano = toPositiveInt(p.ano);
-  const estacao_id = toPositiveInt(p.estacao_id);
-  const episodios = toPositiveInt(p.episodios) ?? 0;
-
-  if (
-    !slug ||
-    !nome ||
-    !tipo ||
-    anime_id === null ||
-    temporada === null ||
-    status_id === null ||
-    ano === null ||
-    estacao_id === null ||
-    episodios === null
-  ) {
-    return false;
-  }
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
-  if (p.id !== undefined && id === null) return false;
-
-  return {
-    id: id ?? 0,
-    anime_id,
-    slug,
-    nome,
-    tipo,
-    temporada,
-    status_id,
-    ano,
-    estacao_id,
-    episodios,
-    sinopse,
-  };
+  id = id === null ? undefined : id;
+  return buildObject({ id, nome });
 }
 
 export function validarRelacaoPayload(data: unknown): ValidacaoRelacao | false {
   if (typeof data !== 'object' || data === null) return false;
-
   const p = data as Record<string, unknown>;
   const tipo = toRequiredString(p.tipo);
   const anime_id = toPositiveInt(p.anime_id);
   const relacionado_id = toPositiveInt(p.relacionado_id);
-
   if (!tipo || anime_id === null || relacionado_id === null) return false;
-
-  const id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
+  let id = p.id !== undefined ? toPositiveInt(p.id) : undefined;
   if (p.id !== undefined && id === null) return false;
-
-  return {
-    id: id ?? 0,
-    anime_id,
-    relacionado_id,
-    tipo,
-  };
+  id = id === null ? undefined : id;
+  return buildObject({ id, anime_id, relacionado_id, tipo });
 }
