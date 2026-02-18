@@ -1,3 +1,10 @@
+export const listarTemporadas = asyncHandler(
+  async (_req: Request, res: Response) => {
+  
+    const temporadas = await dadosServico.listarTemporadas();
+    return respostaLista(res, temporadas);
+  },
+);
 import { Request, Response } from 'express';
 import { asyncHandler } from '../middleware/errorHandler';
 import { dadosServico } from '../services/dadosServico';
@@ -5,14 +12,13 @@ import { respostaLista, respostaSucesso } from '../helpers/responseHelpers';
 
 export const listarDados = asyncHandler(
   async (_req: Request, res: Response) => {
-    const [generos, plataformas, status, tags, temporadas, estudios, estacoes] =
+    const [generos, plataformas, status, tags, animes, estacoes] =
       await Promise.all([
         dadosServico.listarGeneros(),
         dadosServico.listarPlataformas(),
         dadosServico.listarStatus(),
         dadosServico.listarTags(),
-        dadosServico.listarTemporadas(),
-        dadosServico.listarEstudios(),
+        dadosServico.listarAnimes(),
         dadosServico.listarEstacoes(),
       ]);
 
@@ -21,8 +27,7 @@ export const listarDados = asyncHandler(
       plataformas,
       status,
       tags,
-      temporadas,
-      estudios,
+      animes,
       estacoes,
     });
   },
@@ -53,13 +58,6 @@ export const listarTags = asyncHandler(async (_req: Request, res: Response) => {
   const tags = await dadosServico.listarTags();
   return respostaLista(res, tags);
 });
-
-export const listarTemporadas = asyncHandler(
-  async (_req: Request, res: Response) => {
-    const temporadas = await dadosServico.listarTemporadas();
-    return respostaLista(res, temporadas);
-  },
-);
 
 export const listarEstudios = asyncHandler(
   async (_req: Request, res: Response) => {

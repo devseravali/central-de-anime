@@ -1,3 +1,10 @@
+export const obterEstatisticasTemporadas = asyncHandler(
+  async (req: Request, res: Response) => {
+    const ano = req.query.ano ? String(req.query.ano) : undefined;
+    const dados = await estatisticasServico.obterEstatisticasTemporadas(ano);
+    return respostaSucesso(res, dados);
+  },
+);
 import { Request, Response } from 'express';
 import { asyncHandler } from '../middleware/errorHandler';
 import { estatisticasServico } from '../services/estatisticasServico';
@@ -56,15 +63,6 @@ export const obterEstatisticasPopulares = asyncHandler(
   async (req: Request, res: Response) => {
     const limit = req.query.limit ? Number(req.query.limit) : 5;
     const dados = await estatisticasServico.obterEstatisticasTags();
-    return respostaSucesso(res, dados);
-  },
-);
-
-export const obterEstatisticasTemporadas = asyncHandler(
-  async (req: Request, res: Response) => {
-    const ano = typeof req.query.ano === 'string' ? req.query.ano : undefined;
-
-    const dados = await estatisticasServico.obterEstatisticasTemporadas(ano);
     return respostaSucesso(res, dados);
   },
 );

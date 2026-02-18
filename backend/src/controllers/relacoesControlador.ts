@@ -1,10 +1,68 @@
 import { Request, Response } from 'express';
 import { asyncHandler } from '../middleware/errorHandler';
+import { respostaLista, respostaSucesso } from '../helpers/responseHelpers';
 import { ErroApi } from '../errors/ErroApi';
 import { relacoesServico } from '../services/relacoesServico';
-import { animesServico } from '../services/animesServico';
+import { animes as animesTable } from '../schema/animes';
+import { db } from '../db';
 import { parseIdParam } from '../utils/parsers';
-import { respostaLista, respostaSucesso } from '../helpers/responseHelpers';
+import { asc } from 'drizzle-orm';
+import { isNotNull, and } from 'drizzle-orm/sql/expressions/conditions';
+import { animesServico } from '../services/animesServico';
+import { eq } from 'drizzle-orm'; // Adicionando a importação do método eq
+
+export const buscarTemporadadeUmAnime = asyncHandler(
+  async (req: Request, res: Response) => {
+    const animeId = Number(req.params.animeId);
+    if (!animeId || isNaN(animeId)) {
+      throw ErroApi.badRequest(
+        'Parâmetro animeId inválido',
+        'INVALID_ANIME_ID',
+      );
+    }
+
+    const temporadas = await db
+      .select({ id: animesTable.id })
+      .from(animesTable)
+      .where(eq(animesTable.id, animeId));
+    return respostaLista(res, temporadas);
+  },
+);
+
+export const listarAnimesdeUmaTemporada = asyncHandler(
+  async (req: Request, res: Response) => {
+    const temporadaId = Number(req.params.temporadaId);
+    if (!temporadaId || isNaN(temporadaId)) {
+      throw ErroApi.badRequest(
+        'Parâmetro temporadaId inválido',
+        'INVALID_TEMPORADA_ID',
+      );
+    }
+
+    const animes = await db
+      .select()
+      .from(animesTable)
+      .where(eq(animesTable.temporada, temporadaId));
+    return respostaLista(res, animes);
+  },
+);
+
+export const buscarTemporadasPorNome = asyncHandler(
+  async (req: Request, res: Response) => {
+    const temporadas = await db
+      .select({ ano: animesTable.ano, temporada: animesTable.temporada })
+      .from(animesTable)
+      .where(and(isNotNull(animesTable.ano), isNotNull(animesTable.temporada)))
+      .groupBy(animesTable.ano, animesTable.temporada)
+      .orderBy(asc(animesTable.ano), asc(animesTable.temporada));
+
+    const temporadasFiltradas = temporadas.filter(
+      (t: { ano: number | null; temporada: number | null }) =>
+        t.ano !== null && t.temporada !== null,
+    );
+    return respostaLista(res, temporadasFiltradas);
+  },
+);
 
 function queryString(
   req: Request,
@@ -95,8 +153,11 @@ export const buscaEntidadesRelacionadasComAnime = asyncHandler(
 // ---- buscas query
 export const buscarTagsPorNome = asyncHandler(
   async (req: Request, res: Response) => {
-    const nome = queryString(req, 'nome');
-    const dados = await relacoesServico.buscarTagsPorNome(nome);
+    let nome: string | undefined = undefined;
+    if (typeof req.query.nome === 'string' && req.query.nome.trim() !== '') {
+      nome = req.query.nome.trim();
+    }
+    const dados = await relacoesServico.buscarTagsPorNome(nome ?? '');
     return respostaLista(res, dados);
   },
 );
@@ -129,14 +190,6 @@ export const buscarEstudiosPorNome = asyncHandler(
   async (req: Request, res: Response) => {
     const nome = queryString(req, 'nome');
     const dados = await relacoesServico.buscarEstudiosPorNome(nome);
-    return respostaLista(res, dados);
-  },
-);
-
-export const buscarTemporadasPorNome = asyncHandler(
-  async (req: Request, res: Response) => {
-    const nome = queryString(req, 'nome', 'INVALID_NOME_PARAM');
-    const dados = await relacoesServico.buscarTemporadasPorNome(nome);
     return respostaLista(res, dados);
   },
 );
@@ -176,7 +229,6 @@ export const buscarAnimePorId = asyncHandler(
   },
 );
 
-// ---- rotas específicas mantidas
 export const listarPersonagensdeUmAnime = asyncHandler(
   async (req: Request, res: Response) => {
     const animeId = parseIdParam(req);
@@ -283,32 +335,6 @@ export const listarAnimesdeUmaPlataforma = asyncHandler(
   },
 );
 
-export const buscarTemporadadeUmAnime = asyncHandler(
-  async (req: Request, res: Response) => {
-    const animeId = parseIdParam(req);
-    if (animeId === null)
-      throw ErroApi.badRequest(
-        'Parâmetro animeId inválido',
-        'INVALID_ANIME_ID',
-      );
-    const dados = await relacoesServico.buscarTemporadadeUmAnime(animeId);
-    return respostaLista(res, dados);
-  },
-);
-
-export const listarAnimesdeUmaTemporada = asyncHandler(
-  async (req: Request, res: Response) => {
-    const temporadaId = parseIdParam(req);
-    if (temporadaId === null)
-      throw ErroApi.badRequest(
-        'Parâmetro temporadaId inválido',
-        'INVALID_TEMPORADA_ID',
-      );
-    const dados = await relacoesServico.listarAnimesdeUmaTemporada(temporadaId);
-    return respostaLista(res, dados);
-  },
-);
-
 export const buscarEstacaodeUmAnime = asyncHandler(
   async (req: Request, res: Response) => {
     const animeId = parseIdParam(req);
@@ -376,10 +402,14 @@ export const listarTagsdeUmAnime = asyncHandler(
 
 export const listarAnimesdeUmaTag = asyncHandler(
   async (req: Request, res: Response) => {
-    const tagId = parseIdParam(req);
-    if (tagId === null)
+    const tagId = Number(req.params.tagId);
+    if (!tagId || isNaN(tagId)) {
       throw ErroApi.badRequest('Parâmetro tagId inválido', 'INVALID_TAG_ID');
+    }
     const dados = await relacoesServico.listarAnimesdeUmaTag(tagId);
-    return respostaLista(res, dados);
+    const animes = Array.isArray(dados)
+      ? dados.map((item) => ('animes' in item ? item.animes : item))
+      : [];
+    return respostaLista(res, animes);
   },
 );
