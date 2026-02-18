@@ -1,1 +1,0 @@
-ALTER TABLE "animes" DROP CONSTRAINT "animes_nome_unique";

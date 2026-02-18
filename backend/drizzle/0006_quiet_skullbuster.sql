@@ -1,1 +1,0 @@
-ALTER TABLE "generos" ALTER COLUMN "nome" SET NOT NULL;

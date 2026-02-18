@@ -1,1 +1,0 @@
-ALTER TABLE "temporadas" ADD COLUMN "capa_url" varchar(255);

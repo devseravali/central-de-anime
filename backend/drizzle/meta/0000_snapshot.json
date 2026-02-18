@@ -1,9 +1,325 @@
 {
-  "id": "f2347365-2fc0-4584-be8f-7b071ea2df76",
+  "id": "e6183b63-07bb-4e38-bddb-85bc97901ec7",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
+    "public.permissoes": {
+      "name": "permissoes",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "chave": {
+          "name": "chave",
+          "type": "varchar(80)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "descricao": {
+          "name": "descricao",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "permissoes_chave_unica": {
+          "name": "permissoes_chave_unica",
+          "columns": [
+            {
+              "expression": "chave",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.role_permissoes": {
+      "name": "role_permissoes",
+      "schema": "",
+      "columns": {
+        "role_id": {
+          "name": "role_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "permissao_id": {
+          "name": "permissao_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "role_permissoes_unico": {
+          "name": "role_permissoes_unico",
+          "columns": [
+            {
+              "expression": "role_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "permissao_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "role_permissoes_role_idx": {
+          "name": "role_permissoes_role_idx",
+          "columns": [
+            {
+              "expression": "role_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "role_permissoes_permissao_idx": {
+          "name": "role_permissoes_permissao_idx",
+          "columns": [
+            {
+              "expression": "permissao_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "role_permissoes_role_id_roles_id_fk": {
+          "name": "role_permissoes_role_id_roles_id_fk",
+          "tableFrom": "role_permissoes",
+          "tableTo": "roles",
+          "columnsFrom": [
+            "role_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "role_permissoes_permissao_id_permissoes_id_fk": {
+          "name": "role_permissoes_permissao_id_permissoes_id_fk",
+          "tableFrom": "role_permissoes",
+          "tableTo": "permissoes",
+          "columnsFrom": [
+            "permissao_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.roles": {
+      "name": "roles",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "nome": {
+          "name": "nome",
+          "type": "varchar(60)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "descricao": {
+          "name": "descricao",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criado_em": {
+          "name": "criado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "roles_nome_unico": {
+          "name": "roles_nome_unico",
+          "columns": [
+            {
+              "expression": "nome",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.usuario_roles": {
+      "name": "usuario_roles",
+      "schema": "",
+      "columns": {
+        "usuario_id": {
+          "name": "usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "role_id": {
+          "name": "role_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "atribuido_em": {
+          "name": "atribuido_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "usuario_roles_unico": {
+          "name": "usuario_roles_unico",
+          "columns": [
+            {
+              "expression": "usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "role_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "usuario_roles_usuario_idx": {
+          "name": "usuario_roles_usuario_idx",
+          "columns": [
+            {
+              "expression": "usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "usuario_roles_role_idx": {
+          "name": "usuario_roles_role_idx",
+          "columns": [
+            {
+              "expression": "role_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "usuario_roles_usuario_id_usuarios_id_fk": {
+          "name": "usuario_roles_usuario_id_usuarios_id_fk",
+          "tableFrom": "usuario_roles",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "usuario_roles_role_id_roles_id_fk": {
+          "name": "usuario_roles_role_id_roles_id_fk",
+          "tableFrom": "usuario_roles",
+          "tableTo": "roles",
+          "columnsFrom": [
+            "role_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
     "public.anime_estacao": {
       "name": "anime_estacao",
       "schema": "",
@@ -18,22 +334,68 @@
           "name": "anime_id",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false
-        },
-        "temporada": {
-          "name": "temporada",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
+          "notNull": true
         },
         "estacao_id": {
           "name": "estacao_id",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         }
       },
-      "indexes": {},
+      "indexes": {
+        "anime_estacao_unico": {
+          "name": "anime_estacao_unico",
+          "columns": [
+            {
+              "expression": "anime_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "estacao_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "anime_estacao_anime_idx": {
+          "name": "anime_estacao_anime_idx",
+          "columns": [
+            {
+              "expression": "anime_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "anime_estacao_estacao_idx": {
+          "name": "anime_estacao_estacao_idx",
+          "columns": [
+            {
+              "expression": "estacao_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
       "foreignKeys": {
         "anime_estacao_anime_id_animes_id_fk": {
           "name": "anime_estacao_anime_id_animes_id_fk",
@@ -45,7 +407,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "cascade",
           "onUpdate": "no action"
         },
         "anime_estacao_estacao_id_estacoes_id_fk": {
@@ -58,7 +420,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "cascade",
           "onUpdate": "no action"
         }
       },
@@ -426,29 +788,349 @@
           "primaryKey": true,
           "notNull": true
         },
-        "nome": {
-          "name": "nome",
+        "anime_id": {
+          "name": "anime_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "slug": {
+          "name": "slug",
           "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "titulo": {
+          "name": "titulo",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "estudio_id": {
+          "name": "estudio_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tipo": {
+          "name": "tipo",
+          "type": "varchar(32)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "temporada": {
+          "name": "temporada",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false
         },
-        "titulo_portugues": {
-          "name": "titulo_portugues",
-          "type": "varchar(255)",
+        "status_id": {
+          "name": "status_id",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false
         },
-        "titulo_ingles": {
-          "name": "titulo_ingles",
-          "type": "varchar(255)",
+        "ano": {
+          "name": "ano",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false
         },
-        "titulo_japones": {
-          "name": "titulo_japones",
+        "estacao_id": {
+          "name": "estacao_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "episodios": {
+          "name": "episodios",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sinopse": {
+          "name": "sinopse",
+          "type": "varchar(2048)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "capaUrl": {
+          "name": "capaUrl",
           "type": "varchar(255)",
           "primaryKey": false,
           "notNull": false
+        }
+      },
+      "indexes": {
+        "animes_estudio_idx": {
+          "name": "animes_estudio_idx",
+          "columns": [
+            {
+              "expression": "estudio_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "animes_anime_id_idx": {
+          "name": "animes_anime_id_idx",
+          "columns": [
+            {
+              "expression": "anime_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "animes_status_idx": {
+          "name": "animes_status_idx",
+          "columns": [
+            {
+              "expression": "status_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "animes_estacao_idx": {
+          "name": "animes_estacao_idx",
+          "columns": [
+            {
+              "expression": "estacao_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "animes_estudio_id_estudios_id_fk": {
+          "name": "animes_estudio_id_estudios_id_fk",
+          "tableFrom": "animes",
+          "tableTo": "estudios",
+          "columnsFrom": [
+            "estudio_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.audit_logs": {
+      "name": "audit_logs",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "ator_usuario_id": {
+          "name": "ator_usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "alvo_usuario_id": {
+          "name": "alvo_usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "acao": {
+          "name": "acao",
+          "type": "audit_acao",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "detalhes": {
+          "name": "detalhes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ip": {
+          "name": "ip",
+          "type": "varchar(45)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "user_agent": {
+          "name": "user_agent",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criado_em": {
+          "name": "criado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "audit_logs_ator_idx": {
+          "name": "audit_logs_ator_idx",
+          "columns": [
+            {
+              "expression": "ator_usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "audit_logs_alvo_idx": {
+          "name": "audit_logs_alvo_idx",
+          "columns": [
+            {
+              "expression": "alvo_usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "audit_logs_acao_idx": {
+          "name": "audit_logs_acao_idx",
+          "columns": [
+            {
+              "expression": "acao",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "audit_logs_ator_usuario_id_usuarios_id_fk": {
+          "name": "audit_logs_ator_usuario_id_usuarios_id_fk",
+          "tableFrom": "audit_logs",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "ator_usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "audit_logs_alvo_usuario_id_usuarios_id_fk": {
+          "name": "audit_logs_alvo_usuario_id_usuarios_id_fk",
+          "tableFrom": "audit_logs",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "alvo_usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.capas": {
+      "name": "capas",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "nome_original": {
+          "name": "nome_original",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nome_salvo": {
+          "name": "nome_salvo",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "caminho": {
+          "name": "caminho",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "mimetype": {
+          "name": "mimetype",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tamanho": {
+          "name": "tamanho",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "usuario_id": {
+          "name": "usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "data_upload": {
+          "name": "data_upload",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
         }
       },
       "indexes": {},
@@ -473,16 +1155,32 @@
           "name": "nome",
           "type": "varchar(100)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         },
         "slug": {
           "name": "slug",
           "type": "varchar(100)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         }
       },
-      "indexes": {},
+      "indexes": {
+        "estacoes_slug_unico": {
+          "name": "estacoes_slug_unico",
+          "columns": [
+            {
+              "expression": "slug",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
@@ -510,7 +1208,8 @@
           "name": "principais_obras",
           "type": "varchar(1000)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true,
+          "default": "'pendente'"
         }
       },
       "indexes": {},
@@ -535,11 +1234,132 @@
           "name": "nome",
           "type": "varchar(255)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         }
       },
       "indexes": {},
       "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "generos_nome_unique": {
+          "name": "generos_nome_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "nome"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.sessoes": {
+      "name": "sessoes",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "usuario_id": {
+          "name": "usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "refresh_token_hash": {
+          "name": "refresh_token_hash",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "dispositivo": {
+          "name": "dispositivo",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ip": {
+          "name": "ip",
+          "type": "varchar(45)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "user_agent": {
+          "name": "user_agent",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criado_em": {
+          "name": "criado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "expira_em": {
+          "name": "expira_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "revogado_em": {
+          "name": "revogado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "sessoes_usuario_idx": {
+          "name": "sessoes_usuario_idx",
+          "columns": [
+            {
+              "expression": "usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "sessoes_expira_idx": {
+          "name": "sessoes_expira_idx",
+          "columns": [
+            {
+              "expression": "expira_em",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "sessoes_usuario_id_usuarios_id_fk": {
+          "name": "sessoes_usuario_id_usuarios_id_fk",
+          "tableFrom": "sessoes",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
@@ -608,7 +1428,8 @@
           "name": "sobre",
           "type": "text",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true,
+          "default": "'pendente'"
         }
       },
       "indexes": {},
@@ -633,11 +1454,119 @@
           "name": "nome",
           "type": "varchar(255)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true,
+          "default": "'pendente'"
         }
       },
       "indexes": {},
       "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.resets_senha": {
+      "name": "resets_senha",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "usuario_id": {
+          "name": "usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "token": {
+          "name": "token",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expira_em": {
+          "name": "expira_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "usado_em": {
+          "name": "usado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ip_solicitacao": {
+          "name": "ip_solicitacao",
+          "type": "varchar(45)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "user_agent": {
+          "name": "user_agent",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criado_em": {
+          "name": "criado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "resets_senha_token_unico": {
+          "name": "resets_senha_token_unico",
+          "columns": [
+            {
+              "expression": "token",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "resets_senha_usuario_idx": {
+          "name": "resets_senha_usuario_idx",
+          "columns": [
+            {
+              "expression": "usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "resets_senha_usuario_id_usuarios_id_fk": {
+          "name": "resets_senha_usuario_id_usuarios_id_fk",
+          "tableFrom": "resets_senha",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
@@ -658,11 +1587,152 @@
           "name": "nome",
           "type": "varchar(100)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true,
+          "default": "'pendente'"
         }
       },
       "indexes": {},
       "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.sancoes_usuarios": {
+      "name": "sancoes_usuarios",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "usuario_id": {
+          "name": "usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tipo": {
+          "name": "tipo",
+          "type": "sancao_tipo",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "motivo": {
+          "name": "motivo",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expira_em": {
+          "name": "expira_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "aplicado_por_usuario_id": {
+          "name": "aplicado_por_usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criado_em": {
+          "name": "criado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "revogado_em": {
+          "name": "revogado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "revogado_por_usuario_id": {
+          "name": "revogado_por_usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "sancoes_usuarios_usuario_idx": {
+          "name": "sancoes_usuarios_usuario_idx",
+          "columns": [
+            {
+              "expression": "usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "sancoes_usuarios_tipo_idx": {
+          "name": "sancoes_usuarios_tipo_idx",
+          "columns": [
+            {
+              "expression": "tipo",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "sancoes_usuarios_usuario_id_usuarios_id_fk": {
+          "name": "sancoes_usuarios_usuario_id_usuarios_id_fk",
+          "tableFrom": "sancoes_usuarios",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "sancoes_usuarios_aplicado_por_usuario_id_usuarios_id_fk": {
+          "name": "sancoes_usuarios_aplicado_por_usuario_id_usuarios_id_fk",
+          "tableFrom": "sancoes_usuarios",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "aplicado_por_usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "sancoes_usuarios_revogado_por_usuario_id_usuarios_id_fk": {
+          "name": "sancoes_usuarios_revogado_por_usuario_id_usuarios_id_fk",
+          "tableFrom": "sancoes_usuarios",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "revogado_por_usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
@@ -683,7 +1753,8 @@
           "name": "nome",
           "type": "varchar(255)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true,
+          "default": "'pendente'"
         }
       },
       "indexes": {},
@@ -694,8 +1765,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.temporadas": {
-      "name": "temporadas",
+    "public.sessoes_usuario": {
+      "name": "sessoes_usuario",
       "schema": "",
       "columns": {
         "id": {
@@ -704,95 +1775,296 @@
           "primaryKey": true,
           "notNull": true
         },
-        "anime_id": {
-          "name": "anime_id",
+        "usuario_id": {
+          "name": "usuario_id",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         },
-        "slug": {
-          "name": "slug",
+        "token": {
+          "name": "token",
           "type": "varchar(255)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
+        },
+        "expira_em": {
+          "name": "expira_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "criado_em": {
+          "name": "criado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "sessoes_usuario_token_unico": {
+          "name": "sessoes_usuario_token_unico",
+          "columns": [
+            {
+              "expression": "token",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "sessoes_usuario_usuario_idx": {
+          "name": "sessoes_usuario_usuario_idx",
+          "columns": [
+            {
+              "expression": "usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "sessoes_usuario_usuario_id_usuarios_id_fk": {
+          "name": "sessoes_usuario_usuario_id_usuarios_id_fk",
+          "tableFrom": "sessoes_usuario",
+          "tableTo": "usuarios",
+          "columnsFrom": [
+            "usuario_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.usuarios": {
+      "name": "usuarios",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
         },
         "nome": {
           "name": "nome",
           "type": "varchar(255)",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         },
-        "temporada": {
-          "name": "temporada",
-          "type": "integer",
+        "email": {
+          "name": "email",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "senha_hash": {
+          "name": "senha_hash",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "status": {
+          "name": "status",
+          "type": "usuario_status",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'pendente'"
+        },
+        "email_verificado": {
+          "name": "email_verificado",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "username": {
+          "name": "username",
+          "type": "varchar(40)",
           "primaryKey": false,
           "notNull": false
         },
-        "status_id": {
-          "name": "status_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "ano": {
-          "name": "ano",
-          "type": "varchar(4)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "estacao_id": {
-          "name": "estacao_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "episodios": {
-          "name": "episodios",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "sinopse": {
-          "name": "sinopse",
+        "avatar_url": {
+          "name": "avatar_url",
           "type": "text",
           "primaryKey": false,
           "notNull": false
+        },
+        "bio": {
+          "name": "bio",
+          "type": "varchar(160)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criado_em": {
+          "name": "criado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "atualizado_em": {
+          "name": "atualizado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
         }
       },
-      "indexes": {},
+      "indexes": {
+        "usuarios_email_unico": {
+          "name": "usuarios_email_unico",
+          "columns": [
+            {
+              "expression": "email",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "usuarios_username_unico": {
+          "name": "usuarios_username_unico",
+          "columns": [
+            {
+              "expression": "username",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "usuarios_status_idx": {
+          "name": "usuarios_status_idx",
+          "columns": [
+            {
+              "expression": "status",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.verificacoes_email": {
+      "name": "verificacoes_email",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "usuario_id": {
+          "name": "usuario_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "token": {
+          "name": "token",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expira_em": {
+          "name": "expira_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "usado_em": {
+          "name": "usado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "criado_em": {
+          "name": "criado_em",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "verificacoes_email_token_unico": {
+          "name": "verificacoes_email_token_unico",
+          "columns": [
+            {
+              "expression": "token",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "verificacoes_email_usuario_idx": {
+          "name": "verificacoes_email_usuario_idx",
+          "columns": [
+            {
+              "expression": "usuario_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
       "foreignKeys": {
-        "temporadas_anime_id_animes_id_fk": {
-          "name": "temporadas_anime_id_animes_id_fk",
-          "tableFrom": "temporadas",
-          "tableTo": "animes",
+        "verificacoes_email_usuario_id_usuarios_id_fk": {
+          "name": "verificacoes_email_usuario_id_usuarios_id_fk",
+          "tableFrom": "verificacoes_email",
+          "tableTo": "usuarios",
           "columnsFrom": [
-            "anime_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "temporadas_status_id_status_id_fk": {
-          "name": "temporadas_status_id_status_id_fk",
-          "tableFrom": "temporadas",
-          "tableTo": "status",
-          "columnsFrom": [
-            "status_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "temporadas_estacao_id_estacoes_id_fk": {
-          "name": "temporadas_estacao_id_estacoes_id_fk",
-          "tableFrom": "temporadas",
-          "tableTo": "estacoes",
-          "columnsFrom": [
-            "estacao_id"
+            "usuario_id"
           ],
           "columnsTo": [
             "id"
@@ -808,7 +2080,42 @@
       "isRLSEnabled": false
     }
   },
-  "enums": {},
+  "enums": {
+    "public.audit_acao": {
+      "name": "audit_acao",
+      "schema": "public",
+      "values": [
+        "login_falhou",
+        "login_sucesso",
+        "logout",
+        "usuario_suspender",
+        "usuario_banir",
+        "usuario_reativar",
+        "usuario_trocar_role",
+        "conteudo_aprovar",
+        "conteudo_rejeitar",
+        "conteudo_remover"
+      ]
+    },
+    "public.sancao_tipo": {
+      "name": "sancao_tipo",
+      "schema": "public",
+      "values": [
+        "suspensao",
+        "banimento"
+      ]
+    },
+    "public.usuario_status": {
+      "name": "usuario_status",
+      "schema": "public",
+      "values": [
+        "ativo",
+        "pendente",
+        "suspenso",
+        "banido"
+      ]
+    }
+  },
   "schemas": {},
   "sequences": {},
   "roles": {},
