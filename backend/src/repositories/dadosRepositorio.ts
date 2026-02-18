@@ -2,16 +2,15 @@ import { generos } from '../schema/generos';
 import { plataformas } from '../schema/plataformas';
 import { status } from '../schema/status';
 import { tags } from '../schema/tags';
-import { temporadas } from '../schema/temporadas';
 import { estudios } from '../schema/estudios';
 import { estacoes } from '../schema/estacoes';
 import { animes } from '../schema/animes';
 import { personagens } from '../schema/personagens';
-import { relacoesRepositorio } from './relacoesRepositorio';
 import { db } from '../db';
+import { isNotNull } from 'drizzle-orm/sql/expressions/conditions';
+import { and } from 'drizzle-orm';
 
 export interface BuscaPorNomeResultado {
-  temporadas?: Array<{ id: number; nome: string }>;
   estacoes?: Array<{ id: number; nome: string }>;
   status?: Array<{ id: number; nome: string }>;
   estudios?: Array<{ id: number; nome: string }>;
@@ -31,12 +30,8 @@ function mapIdNome<T extends { id: number; nome: string | null }>(rows: T[]) {
     .filter(isNonNull);
 }
 
-function pickAnimeTitulo(a: {
-  titulo_portugues: string | null;
-  titulo_ingles: string | null;
-  titulo_japones: string | null;
-}) {
-  return a.titulo_portugues ?? a.titulo_ingles ?? a.titulo_japones;
+function pickAnimeTitulo(a: { titulo: string | null }) {
+  return a.titulo;
 }
 
 export const dadosRepositorio = {
@@ -56,10 +51,6 @@ export const dadosRepositorio = {
     return db.select().from(tags);
   },
 
-  listarTemporadas() {
-    return db.select().from(temporadas);
-  },
-
   listarEstudios() {
     return db.select().from(estudios);
   },
@@ -76,68 +67,32 @@ export const dadosRepositorio = {
     return db.select().from(personagens);
   },
 
-  buscarPorNome(
+  buscarPorNomeRepositorio(
     entidade: string,
     nome: string,
   ): Promise<BuscaPorNomeResultado> {
-    return buscarPorNome(entidade, nome);
+    return buscarPorNomeServico(entidade, nome);
+  },
+
+  listarTemporadas(): Promise<Array<{ ano: number; temporada: number }>> {
+    return db
+      .select({ ano: animes.ano, temporada: animes.temporada })
+      .from(animes)
+      .where(and(isNotNull(animes.ano), isNotNull(animes.temporada)))
+      .groupBy(animes.ano, animes.temporada)
+      .then((rows) =>
+        rows
+          .filter(
+            (row): row is { ano: number; temporada: number } =>
+              row.ano !== null && row.temporada !== null,
+          )
+          .map((row) => ({ ano: row.ano, temporada: row.temporada })),
+      );
   },
 };
-
-export async function buscarPorNome(
+function buscarPorNomeServico(
   entidade: string,
   nome: string,
 ): Promise<BuscaPorNomeResultado> {
-  switch (entidade) {
-    case 'temporadas': {
-      const rows = await relacoesRepositorio.buscarTemporadasPorNome(nome);
-      return { temporadas: mapIdNome(rows) };
-    }
-
-    case 'estacoes': {
-      const rows = await relacoesRepositorio.buscarEstacoesPorNome(nome);
-      return { estacoes: mapIdNome(rows) };
-    }
-
-    case 'status': {
-      const rows = await relacoesRepositorio.buscarStatusPorNome(nome);
-      return { status: mapIdNome(rows) };
-    }
-
-    case 'estudios': {
-      const rows = await relacoesRepositorio.buscarEstudiosPorNome(nome);
-      return { estudios: mapIdNome(rows) };
-    }
-
-    case 'plataformas': {
-      const rows = await relacoesRepositorio.buscarPlataformasPorNome(nome);
-      return { plataformas: mapIdNome(rows) };
-    }
-
-    case 'tags': {
-      const rows = await relacoesRepositorio.buscarTagsPorNome(nome);
-      return { tags: mapIdNome(rows) };
-    }
-
-    case 'personagens': {
-      const rows = await relacoesRepositorio.buscarPersonagensPorNome(nome);
-      return { personagens: mapIdNome(rows) };
-    }
-
-    case 'animes': {
-      const rows = await relacoesRepositorio.buscarAnimesPorTitulo(nome);
-
-      const animesResult = rows
-        .map((a) => {
-          const titulo = pickAnimeTitulo(a);
-          return titulo ? { id: a.id, titulo } : null;
-        })
-        .filter(isNonNull);
-
-      return { animes: animesResult };
-    }
-
-    default:
-      return {};
-  }
+  throw new Error('Function not implemented.');
 }

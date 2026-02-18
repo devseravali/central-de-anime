@@ -1,16 +1,8 @@
 import { db } from '../db';
 import { sql } from 'drizzle-orm';
 
-import type {
-  EstacaoPopular,
-  TemporadaPopular,
-  AnimePopular,
-} from '../types/estatisticas';
 import type { Estacao } from '../types/estacao';
-import type { Temporada } from '../types/temporada';
-import type { Anime } from '../types/anime';
 import type { Plataforma } from '../types/plataforma';
-import type { Tag } from '../types/tag';
 import type { Status } from '../types/status';
 import type { Genero } from '../types/genero';
 import type { Estudio } from '../types/estudio';
@@ -21,12 +13,10 @@ import { generos } from '../schema/generos';
 import { plataformas } from '../schema/plataformas';
 import { status } from '../schema/status';
 import { tags } from '../schema/tags';
-import { temporadas } from '../schema/temporadas';
 import { estudios } from '../schema/estudios';
 import { estacoes } from '../schema/estacoes';
 import { animes } from '../schema/animes';
 import { personagens } from '../schema/personagens';
-import { anime_personagem } from '../schema/anime_personagem';
 
 export const estatisticasRepositorio = {
   contarAnimes: () => contarTabela(animes),
@@ -35,7 +25,7 @@ export const estatisticasRepositorio = {
   contarPlataformas: () => contarTabela(plataformas),
   contarStatus: () => contarTabela(status),
   contarTags: () => contarTabela(tags),
-  contarTemporadas: () => contarTabela(temporadas),
+
   contarEstacoes: () => contarTabela(estacoes),
   contarPersonagens: () => contarTabela(personagens),
 
@@ -73,90 +63,6 @@ export const estatisticasRepositorio = {
       .groupBy(estacoes.id)
       .orderBy(sql`COUNT(*) DESC`)
       .limit(limit) as Promise<(Estacao & { total: number })[]>;
-  },
-
-  async listarTemporadasPopulares(
-    ano?: string,
-    limit = 5,
-  ): Promise<(Temporada & { episodios: number; slug: string })[]> {
-    const base = db
-      .select({
-        id: temporadas.id,
-        nome: temporadas.nome,
-        episodios: temporadas.episodios,
-        ano: temporadas.ano,
-        slug: temporadas.slug,
-      })
-      .from(temporadas);
-
-    const result = ano
-      ? await base
-          .where(sql`temporadas.ano = ${ano}`)
-          .orderBy(sql`episodios DESC`)
-          .limit(limit)
-      : await base.orderBy(sql`episodios DESC`).limit(limit);
-
-    return result
-      .filter(
-        (item) =>
-          item.nome !== null &&
-          item.episodios !== null &&
-          item.slug !== null &&
-          item.ano !== null,
-      )
-      .map((item) => ({
-        id: item.id,
-        nome: item.nome as string,
-        episodios: item.episodios as number,
-        slug: item.slug as string,
-        ano: typeof item.ano === 'number' ? item.ano : Number(item.ano),
-        animeId: (item as any).animeId ?? 0,
-        tipo: (item as any).tipo ?? '',
-        temporada: (item as any).temporada ?? 0,
-        statusId: (item as any).statusId ?? 0,
-        estacaoId: (item as any).estacaoId ?? 0,
-        sinopse: (item as any).sinopse ?? undefined,
-      })) as (Temporada & { episodios: number; slug: string })[];
-  },
-
-  async listarAnimesPopulares(
-    ano?: string,
-    limit = 5,
-  ): Promise<(Anime & { totalPersonagens: number })[]> {
-    const base = db
-      .select({
-        id: animes.id,
-        nome: animes.nome,
-        totalPersonagens: sql<number>`COUNT(anime_personagem.personagem_id)`,
-      })
-      .from(animes)
-      .leftJoin(anime_personagem, sql`anime_personagem.anime_id = animes.id`)
-      .groupBy(animes.id);
-
-    return ano
-      ? ((await base
-          .where(sql`animes.ano = ${ano}`)
-          .orderBy(sql`COUNT(anime_personagem.personagem_id) DESC`)
-          .limit(limit)) as (Anime & { totalPersonagens: number })[])
-      : ((await base
-          .orderBy(sql`COUNT(anime_personagem.personagem_id) DESC`)
-          .limit(limit)) as (Anime & { totalPersonagens: number })[]);
-  },
-  async listarTagsPopulares(
-    limit = 5,
-  ): Promise<(Tag & { totalAnimes: number })[]> {
-    const { anime_tag } = await import('../schema/anime_tag');
-    return db
-      .select({
-        id: tags.id,
-        nome: tags.nome,
-        totalAnimes: sql<number>`COUNT(anime_tag.anime_id)`,
-      })
-      .from(tags)
-      .leftJoin(anime_tag, sql`anime_tag.tag_id = tags.id`)
-      .groupBy(tags.id)
-      .orderBy(sql`COUNT(anime_tag.anime_id) DESC`)
-      .limit(limit) as Promise<(Tag & { totalAnimes: number })[]>;
   },
 
   async listarStatusPopulares(
@@ -209,5 +115,28 @@ export const estatisticasRepositorio = {
       .groupBy(estudios.id, estudios.principaisObras)
       .orderBy(sql`COUNT(anime_estudio.anime_id) DESC`)
       .limit(limit) as Promise<(Estudio & { totalAnimes: number })[]>;
+  },
+
+  async listarTemporadasPorAnime(
+    ano?: string,
+  ): Promise<{ temporada: string; ano: string; total: number }[]> {
+    const whereClause = ano ? sql`ano = ${ano}` : undefined;
+
+    const result = await db
+      .select({
+        temporada: animes.temporada,
+        ano: animes.ano,
+        total: sql<number>`COUNT(*)`,
+      })
+      .from(animes)
+      .where(whereClause)
+      .groupBy(animes.temporada, animes.ano)
+      .orderBy(sql`COUNT(*) DESC`);
+
+    return result.map((item) => ({
+      temporada: item.temporada !== null ? String(item.temporada) : '',
+      ano: item.ano !== null ? String(item.ano) : '',
+      total: item.total,
+    }));
   },
 };

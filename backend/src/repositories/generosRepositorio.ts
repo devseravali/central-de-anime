@@ -85,12 +85,18 @@ export const generosRepositorio = {
     return db
       .select({
         id: animes.id,
-        nome: animes.nome,
         anime_id: animes.anime_id,
-        titulo_portugues: animes.titulo_portugues,
-        titulo_ingles: animes.titulo_ingles,
-        titulo_japones: animes.titulo_japones,
         estudio_id: animes.estudio_id,
+        slug: animes.slug,
+        titulo: animes.titulo,
+        tipo: animes.tipo,
+        temporada: animes.temporada,
+        status_id: animes.status_id,
+        ano: animes.ano,
+        estacao_id: animes.estacao_id,
+        episodios: animes.episodios,
+        sinopse: animes.sinopse,
+        capaUrl: animes.capaUrl,
       })
       .from(animes)
       .innerJoin(anime_genero, eq(animes.id, anime_genero.anime_id))
