@@ -16,25 +16,51 @@ uploadsRouter.use(
 const enviarImagem = (pasta: string) => {
   return (req: Request, res: Response) => {
     try {
-      const nomeArquivo = Array.isArray(req.params.nome) ? req.params.nome[0] : req.params.nome;
+      const nomeArquivo = Array.isArray(req.params.nome)
+        ? req.params.nome[0]
+        : req.params.nome;
       const file = path.resolve(__dirname, pasta, nomeArquivo);
 
       fs.access(file, fs.constants.F_OK, (err) => {
         if (err) {
           console.error('Arquivo não encontrado:', file);
-          return res.status(404).json({ erro: 'Imagem não encontrada' });
+          return res.status(404).json({
+            sucesso: false,
+            dados: null,
+            erro: {
+              mensagem: 'Imagem não encontrada',
+              codigo: 'IMAGEM_NAO_ENCONTRADA',
+              timestamp: new Date().toISOString(),
+            },
+          });
         }
 
         res.sendFile(file, (errSend) => {
           if (errSend) {
             console.error('Erro ao enviar arquivo:', errSend);
-            return res.status(500).json({ erro: 'Erro ao enviar a imagem' });
+            return res.status(500).json({
+              sucesso: false,
+              dados: null,
+              erro: {
+                mensagem: 'Erro ao enviar a imagem',
+                codigo: 'UPLOAD_ERRO',
+                timestamp: new Date().toISOString(),
+              },
+            });
           }
         });
       });
     } catch (error) {
       console.error('Erro interno:', error);
-      res.status(500).json({ erro: 'Erro interno ao buscar imagem' });
+      res.status(500).json({
+        sucesso: false,
+        dados: null,
+        erro: {
+          mensagem: 'Erro interno ao buscar imagem',
+          codigo: 'BUSCA_IMAGEM_ERRO',
+          timestamp: new Date().toISOString(),
+        },
+      });
     }
   };
 };
@@ -124,7 +150,15 @@ uploadsRouter.get('/upload/capa', (req: Request, res: Response) => {
 
   fs.readdir(dir, (err, files) => {
     if (err)
-      return res.status(500).json({ erro: 'Não foi possível ler a pasta' });
+      return res.status(500).json({
+        sucesso: false,
+        dados: null,
+        erro: {
+          mensagem: 'Não foi possível ler a pasta',
+          codigo: 'LEITURA_PASTA_ERRO',
+          timestamp: new Date().toISOString(),
+        },
+      });
 
     res.json({ capas: files });
   });
@@ -154,7 +188,15 @@ uploadsRouter.get('/upload/personagem', (req: Request, res: Response) => {
 
   fs.readdir(dir, (err, files) => {
     if (err)
-      return res.status(500).json({ erro: 'Não foi possível ler a pasta' });
+      return res.status(500).json({
+        sucesso: false,
+        dados: null,
+        erro: {
+          mensagem: 'Não foi possível ler a pasta',
+          codigo: 'LEITURA_PASTA_ERRO',
+          timestamp: new Date().toISOString(),
+        },
+      });
 
     res.json({ personagens: files });
   });

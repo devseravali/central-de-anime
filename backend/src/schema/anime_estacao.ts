@@ -17,18 +17,12 @@ export const anime_estacao = pgTable(
       .references(() => animes.id, { onDelete: 'cascade' })
       .notNull(),
 
-    temporada: integer('temporada').notNull(),
-
     estacao_id: integer('estacao_id')
       .references(() => estacoes.id, { onDelete: 'cascade' })
       .notNull(),
   },
   (t) => ({
-    unico: uniqueIndex('anime_estacao_unico').on(
-      t.anime_id,
-      t.temporada,
-      t.estacao_id,
-    ),
+    unico: uniqueIndex('anime_estacao_unico').on(t.anime_id, t.estacao_id),
     animeIdx: index('anime_estacao_anime_idx').on(t.anime_id),
     estacaoIdx: index('anime_estacao_estacao_idx').on(t.estacao_id),
   }),
