@@ -9,7 +9,7 @@ const schemaPath = resolve(__dirname, 'src', 'schema');
 const outPath = resolve(__dirname, 'drizzle');
 
 export default defineConfig({
-  schema: `${schemaPath}/**/*.ts`,
+  schema: './src/schema/**/*.ts',
   out: outPath,
   dialect: 'postgresql',
   dbCredentials: {
