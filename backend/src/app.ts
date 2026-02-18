@@ -8,7 +8,6 @@ import { plataformasRouter } from './routes/plataformasRouter';
 import { statusRouter } from './routes/statusRouter';
 import { tagsRouter } from './routes/tagsRouter';
 import { estacoesRouter } from './routes/estacoesRouter';
-import { temporadasRouter } from './routes/temporadasRouter';
 import { relacoesRouter } from './routes/relacoesRouter';
 import adminRouter from './routes/admin/adminRouter';
 import { healthRouter } from './routes/healthRouter';
@@ -57,7 +56,6 @@ app.use('/plataformas', plataformasRouter);
 app.use('/status', statusRouter);
 app.use('/tags', tagsRouter);
 app.use('/estacoes', estacoesRouter);
-app.use('/temporadas', temporadasRouter);
 app.use('/relacoes', relacoesRouter);
 
 app.use('/dados', dadosRouter);
