@@ -1,417 +1,326 @@
 [
-    {
-        "anime_id": 1,
-        "temporada": 1,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 1,
-        "temporada": 2,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 1,
-        "temporada": 3,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 1,
-        "temporada": 3,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 1,
-        "temporada": 4,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 1,
-        "temporada": 4,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 1,
-        "temporada": 4,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 1,
-        "temporada": 4,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 2,
-        "temporada": 1,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 2,
-        "temporada": 3,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 2,
-        "temporada": 3,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 2,
-        "temporada": 4,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 2,
-        "temporada": 5,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 2,
-        "temporada": 6,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 2,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 3,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 3,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 3,
-        "temporada": 3,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 3,
-        "temporada": 4,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 4,
-        "temporada": 3,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 4,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 4,
-        "temporada": 3,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 4,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 4,
-        "temporada": 3,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 4,
-        "temporada": 3,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 5,
-        "temporada": 1,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 6,
-        "temporada": 1,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 6,
-        "temporada": 2,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 7,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 7,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 8,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 8,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 9,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 10,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 10,
-        "temporada": 2,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 11,
-        "temporada": 1,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 12,
-        "temporada": 1,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 13,
-        "temporada": 1,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 13,
-        "temporada": 2,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 13,
-        "temporada": 3,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 14,
-        "temporada": 1,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 14,
-        "temporada": 2,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 14,
-        "temporada": 3,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 14,
-        "temporada": 4,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 15,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 16,
-        "temporada": 1,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 16,
-        "temporada": 2,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 17,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 17,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 17,
-        "temporada": 3,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 18,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 19,
-        "temporada": 1,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 20,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 20,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 20,
-        "temporada": 3,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 20,
-        "temporada": 4,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 21,
-        "temporada": 1,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 21,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 21,
-        "temporada": 3,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 21,
-        "temporada": 4,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 21,
-        "temporada": 5,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 22,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 22,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 22,
-        "temporada": 3,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 22,
-        "temporada": 4,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 22,
-        "temporada": 5,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 23,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 23,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 23,
-        "temporada": 3,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 23,
-        "temporada": 4,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 24,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 24,
-        "temporada": 2,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 25,
-        "temporada": 1,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 25,
-        "temporada": 1,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 26,
-        "temporada": 1,
-        "estacao_id": 2
-    },
-    {
-        "anime_id": 27,
-        "temporada": 2,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 28,
-        "temporada": 1,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 29,
-        "temporada": 1,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 29,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 30,
-        "temporada": 1,
-        "estacao_id": 1
-    },
-    {
-        "anime_id": 30,
-        "temporada": 2,
-        "estacao_id": 3
-    },
-    {
-        "anime_id": 30,
-        "temporada": 3,
-        "estacao_id": 4
-    },
-    {
-        "anime_id": 30,
-        "temporada": 4,
-        "estacao_id": 4
-    }
+  {
+    "anime_id": 1,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 2,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 3,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 4,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 5,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 6,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 7,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 8,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 9,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 10,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 11,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 12,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 13,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 14,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 15,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 16,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 17,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 18,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 19,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 20,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 21,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 22,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 23,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 24,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 25,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 26,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 27,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 28,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 29,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 30,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 31,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 32,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 33,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 34,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 35,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 36,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 37,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 38,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 39,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 40,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 41,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 42,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 43,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 44,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 45,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 46,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 47,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 48,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 49,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 50,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 51,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 52,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 53,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 54,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 55,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 56,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 57,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 58,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 59,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 60,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 61,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 62,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 63,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 64,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 65,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 66,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 67,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 68,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 69,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 70,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 71,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 72,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 73,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 74,
+    "estacao": "Outono"
+  },
+  {
+    "anime_id": 75,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 76,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 77,
+    "estacao": "Inverno"
+  },
+  {
+    "anime_id": 78,
+    "estacao": "Primavera"
+  },
+  {
+    "anime_id": 79,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 80,
+    "estacao": "Verão"
+  },
+  {
+    "anime_id": 81,
+    "estacao": "Outono"
+  }
 ]
