@@ -10,13 +10,12 @@ export const estatisticasServico = {
       plataformas,
       status,
       tags,
-      temporadas,
       estacoes,
       personagens,
     ] = await Promise.all([
       obterResumo(
         estatisticasRepositorio.contarAnimes,
-        estatisticasRepositorio.listarAnimesPopulares,
+        estatisticasRepositorio.listarGenerosPopulares,
       ),
       obterResumo(
         estatisticasRepositorio.contarEstudios,
@@ -24,7 +23,7 @@ export const estatisticasServico = {
       ),
       obterResumo(
         estatisticasRepositorio.contarGeneros,
-        estatisticasRepositorio.listarAnimesPopulares,
+        estatisticasRepositorio.listarGenerosPopulares,
       ),
       obterResumo(
         estatisticasRepositorio.contarPlataformas,
@@ -37,10 +36,6 @@ export const estatisticasServico = {
       obterResumo(
         estatisticasRepositorio.contarTags,
         estatisticasRepositorio.listarEstacoesPopulares,
-      ),
-      obterResumo(
-        estatisticasRepositorio.contarTemporadas,
-        estatisticasRepositorio.listarTemporadasPopulares,
       ),
       obterResumo(
         estatisticasRepositorio.contarEstacoes,
@@ -71,8 +66,7 @@ export const estatisticasServico = {
       totalTags: tags.total,
       tagsPopulares: tags.populares,
 
-      totalTemporadas: temporadas.total,
-      temporadasPopulares: temporadas.populares,
+      // totalTemporadas e temporadasPopulares removidos: agora obtidos via campo do anime
 
       totalEstacoes: estacoes.total,
       estacoesPopulares: estacoes.populares,
@@ -83,22 +77,18 @@ export const estatisticasServico = {
   },
 
   async obterEstatisticasTemporadas(ano?: string) {
-    const { total, populares } = await obterResumo(
-      estatisticasRepositorio.contarTemporadas,
-      estatisticasRepositorio.listarTemporadasPopulares,
-      [ano],
-    );
-
+    const temporadas =
+      await estatisticasRepositorio.listarTemporadasPorAnime(ano);
     return {
-      totalTemporadas: total,
-      temporadasPopulares: populares,
+      totalTemporadas: temporadas.length,
+      temporadasPopulares: temporadas,
     };
   },
 
   async obterEstatisticasAnimes() {
     const { total, populares } = await obterResumo(
       estatisticasRepositorio.contarAnimes,
-      estatisticasRepositorio.listarAnimesPopulares,
+      estatisticasRepositorio.listarGenerosPopulares,
     );
 
     return {
@@ -110,7 +100,7 @@ export const estatisticasServico = {
   async obterEstatisticasGeneros() {
     const { total, populares } = await obterResumo(
       estatisticasRepositorio.contarGeneros,
-      estatisticasRepositorio.listarAnimesPopulares,
+      estatisticasRepositorio.listarGenerosPopulares,
     );
 
     return {
@@ -192,7 +182,7 @@ export const estatisticasServico = {
   },
   async obterEstatisticasPopulares(limit = 5) {
     const [tags, status, generos, estudios, plataformas] = await Promise.all([
-      estatisticasRepositorio.listarTagsPopulares(limit),
+      estatisticasRepositorio.listarStatusPopulares(limit),
       estatisticasRepositorio.listarStatusPopulares(limit),
       estatisticasRepositorio.listarGenerosPopulares(limit),
       estatisticasRepositorio.listarEstudiosPopulares(limit),

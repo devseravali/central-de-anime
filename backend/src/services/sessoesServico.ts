@@ -1,10 +1,10 @@
 import { sessoesRepositorio } from '../repositories/sessoesRepositorio';
-import { ErroAPI } from '../errors/ErroApi';
+import { ErroApi } from '../errors/ErroApi';
 import type { CriarSessaoInput, Sessao } from '../types/sessoes';
 
 function assertPositiveInt(value: number, field: string) {
   if (!Number.isInteger(value) || value <= 0) {
-    throw ErroAPI.badRequest(
+    throw ErroApi.badRequest(
       `${field} inválido.`,
       `INVALID_${field.toUpperCase()}`,
     );
@@ -13,7 +13,7 @@ function assertPositiveInt(value: number, field: string) {
 
 function assertNonEmptyString(value: string, field: string) {
   if (typeof value !== 'string' || value.trim() === '') {
-    throw ErroAPI.badRequest(
+    throw ErroApi.badRequest(
       `${field} inválido.`,
       `INVALID_${field.toUpperCase()}`,
     );
@@ -22,7 +22,7 @@ function assertNonEmptyString(value: string, field: string) {
 
 function assertValidDate(value: Date, field: string) {
   if (!(value instanceof Date) || Number.isNaN(value.getTime())) {
-    throw ErroAPI.badRequest(
+    throw ErroApi.badRequest(
       `${field} inválido.`,
       `INVALID_${field.toUpperCase()}`,
     );
@@ -37,7 +37,7 @@ export const sessoesServico = {
 
     const agora = new Date();
     if (input.expiraEm.getTime() <= agora.getTime()) {
-      throw ErroAPI.badRequest(
+      throw ErroApi.badRequest(
         'expiraEm deve ser uma data futura.',
         'INVALID_EXPIRAEM',
       );
@@ -51,12 +51,12 @@ export const sessoesServico = {
 
     const sessao = await sessoesRepositorio.obterSessao(token);
     if (!sessao) {
-      throw ErroAPI.unauthorized('Sessão inválida ou expirada.');
+      throw ErroApi.unauthorized('Sessão inválida ou expirada.');
     }
 
     if (Date.now() > sessao.expiraEm.getTime()) {
       await sessoesRepositorio.deletarSessao(sessao.id);
-      throw ErroAPI.unauthorized('Sessão expirada.');
+      throw ErroApi.unauthorized('Sessão expirada.');
     }
 
     return sessao;

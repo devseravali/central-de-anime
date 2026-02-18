@@ -32,22 +32,25 @@ export const dadosServico = {
     return dadosRepositorio.listarTags();
   },
 
-  async listarTemporadas() {
-    return dadosRepositorio.listarTemporadas();
-  },
-
   async listarEstudios() {
     return dadosRepositorio.listarEstudios();
   },
 
+  async listarTemporadas() {
+    return dadosRepositorio.listarTemporadas();
+  },
+
+  async buscarPorNome(entidade: string, nome: string) {
+    return dadosRepositorio.buscarPorNomeRepositorio(entidade, nome);
+  },
+
   async obterDadosIniciais() {
-    const [generos, plataformas, status, tags, temporadas, estudios, estacoes] =
+    const [generos, plataformas, status, tags, estudios, estacoes] =
       await Promise.all([
         dadosRepositorio.listarGeneros(),
         dadosRepositorio.listarPlataformas(),
         dadosRepositorio.listarStatus(),
         dadosRepositorio.listarTags(),
-        dadosRepositorio.listarTemporadas(),
         dadosRepositorio.listarEstudios(),
         dadosRepositorio.listarEstacoes(),
       ]);
@@ -57,16 +60,9 @@ export const dadosServico = {
       plataformas,
       status,
       tags,
-      temporadas,
       estudios,
       estacoes,
     };
-  },
-
-  async buscarPorNome(
-    entidade: string,
-    nome: string,
-  ): Promise<BuscaPorNomeResultado> {
-    return dadosRepositorio.buscarPorNome(entidade, nome);
-  },
+  }
 };
+

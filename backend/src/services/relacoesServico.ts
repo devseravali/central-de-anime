@@ -38,14 +38,6 @@ export const relacoesServico = {
     return relacoesRepositorio.listarAnimesDeUmaPlataforma(plataformaId);
   },
 
-  buscarTemporadadeUmAnime(animeId: number) {
-    return relacoesRepositorio.buscarTemporadasDeUmAnime(animeId);
-  },
-
-  listarAnimesdeUmaTemporada(temporadaId: number) {
-    return relacoesRepositorio.listarAnimesDeUmaTemporada(temporadaId);
-  },
-
   buscarEstacaodeUmAnime(animeId: number) {
     return relacoesRepositorio.buscarEstacaoDeUmAnime(animeId);
   },
@@ -82,10 +74,6 @@ export const relacoesServico = {
     return relacoesRepositorio.buscarTagsPorNome(nome);
   },
 
-  buscarTemporadasPorNome(nome: string) {
-    return relacoesRepositorio.buscarTemporadasPorNome(nome);
-  },
-
   buscarStatusPorNome(nome: string) {
     return relacoesRepositorio.buscarStatusPorNome(nome);
   },
@@ -114,7 +102,6 @@ export const relacoesServico = {
       generos,
       estudios,
       plataformas,
-      temporadas,
       estacoes,
       status,
       tags,
@@ -123,7 +110,6 @@ export const relacoesServico = {
       relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'generos'),
       relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'estudios'),
       relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'plataformas'),
-      relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'temporadas'),
       relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'estacoes'),
       relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'status'),
       relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'tags'),
@@ -132,7 +118,6 @@ export const relacoesServico = {
       EntidadesDoAnimeMap['generos'] | null,
       EntidadesDoAnimeMap['estudios'] | null,
       EntidadesDoAnimeMap['plataformas'] | null,
-      EntidadesDoAnimeMap['temporadas'] | null,
       EntidadesDoAnimeMap['estacoes'] | null,
       EntidadesDoAnimeMap['status'] | null,
       EntidadesDoAnimeMap['tags'] | null,
@@ -143,7 +128,6 @@ export const relacoesServico = {
       generos: generos ?? [],
       estudios: estudios ?? [],
       plataformas: plataformas ?? [],
-      temporadas: temporadas ?? [],
       estacoes: estacoes ?? null,
       status: status ?? [],
       tags: tags ?? [],
@@ -168,7 +152,6 @@ export const relacoesServico = {
         | 'generos'
         | 'personagens'
         | 'plataformas'
-        | 'temporadas'
         | 'estacoes'
         | 'status'
         | 'tags',
