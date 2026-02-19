@@ -1,9 +1,7 @@
 import type { Request, Response } from 'express';
 import { asyncHandler } from '../middleware/errorHandler';
 import { ErroApi } from '../errors/ErroApi';
-
 import { usuariosServico } from '../services/usuariosServico';
-
 import { respostaSucesso, respostaCriado } from '../helpers/responseHelpers';
 
 import {
@@ -53,34 +51,6 @@ export const registrarUsuario = asyncHandler(
     const novo = await usuariosServico.registrar(dados);
 
     return respostaCriado(res, novo, 'Usuário criado com sucesso');
-  },
-);
-
-export const autenticarUsuario = asyncHandler(
-  async (req: Request, res: Response) => {
-    if (req.authProvider === 'google') {
-      const email = (req.email ?? '').trim();
-      if (!email) {
-        throw ErroApi.unauthorized('Email não encontrado no provider.');
-      }
-
-      const usuario = await usuariosServico.loginGoogle(email);
-      return respostaSucesso(res, usuario);
-    }
-
-    const dados = usuarioLoginDTO.parse(req.body);
-    // LOG: Dados recebidos no login
-    // eslint-disable-next-line no-console
-    console.log('[LOGIN] Email recebido:', dados.email);
-    // Não logar senha em produção, mas aqui é para depuração
-    console.log('[LOGIN] Senha recebida:', dados.senha);
-
-    const token = await usuariosServico.loginLocal({
-      ...dados,
-      // logar senha para depuração
-    });
-
-    return respostaSucesso(res, token);
   },
 );
 

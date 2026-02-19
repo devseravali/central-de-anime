@@ -3,7 +3,6 @@ import { ErroApi } from '../errors/ErroApi';
 
 import { usuariosRepositorio } from '../repositories/usuariosRepositorio';
 import { verificacoesEmailServico } from '../services/verificacoesEmailServico';
-import { gerarToken } from '../helpers/tokenHelper';
 
 import type {
   AtualizarUsuarioDTO,
@@ -30,33 +29,7 @@ export const usuariosServico = {
     return usuariosRepositorio.criar(dados);
   },
 
-  async loginLocal(dados: LoginDTO): Promise<TokenResponse> {
-    const usuario = await usuariosRepositorio.buscarPorEmail(dados.email);
-    // LOG: Usuário encontrado no banco
-    // eslint-disable-next-line no-console
-    console.log('[LOGIN] Usuário encontrado:', usuario ? usuario.email : null);
-    if (usuario) {
-      // eslint-disable-next-line no-console
-      console.log('[LOGIN] Hash no banco:', usuario.senhaHash);
-    }
-    if (!usuario) {
-      // eslint-disable-next-line no-console
-      console.log('[LOGIN] Usuário não encontrado para o email informado.');
-      throw ErroApi.unauthorized('Credenciais inválidas.');
-    }
-
-    const ok = await bcrypt.compare(dados.senha, usuario.senhaHash);
-    // LOG: Resultado do bcrypt.compare
-    // eslint-disable-next-line no-console
-    console.log('[LOGIN] bcrypt.compare:', ok);
-    if (!ok) {
-      // eslint-disable-next-line no-console
-      console.log('[LOGIN] Senha inválida para o email informado.');
-      throw ErroApi.unauthorized('Credenciais inválidas.');
-    }
-
-    return { token: gerarToken(usuario.id) };
-  },
+  // loginLocal removido para rodar sem autenticação
 
   async loginGoogle(email: string): Promise<UsuarioPublico> {
     const usuario = await usuariosRepositorio.buscarPorEmail(email);
