@@ -1,3 +1,11 @@
+// Faz o parse de JSON e retorna null se inválido
+export function parseJson(json: string): any {
+  try {
+    return JSON.parse(json);
+  } catch {
+    return null;
+  }
+}
 import { ErroApi } from '../errors/ErroApi';
 
 type ReqComId = {

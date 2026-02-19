@@ -1,3 +1,8 @@
+// Calcula a média de um array de números
+export function calcularMedia(valores: number[]): number {
+  if (!valores.length) return 0;
+  return valores.reduce((a, b) => a + b, 0) / valores.length;
+}
 import type { MaybeFactory } from '../types/utils';
 import { executar } from '../types/asyncExecutor';
 

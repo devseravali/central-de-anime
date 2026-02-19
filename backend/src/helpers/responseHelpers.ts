@@ -1,3 +1,15 @@
+// Função utilitária para resposta de erro (usada em testes)
+export function respostaErro(mensagem: string, codigo = 400) {
+  return {
+    sucesso: false,
+    dados: null,
+    erro: {
+      mensagem,
+      codigo,
+      timestamp: Date.now(),
+    },
+  };
+}
 import { Response } from 'express';
 import type { ApiSucesso, SucessoOptions } from '../types/http';
 

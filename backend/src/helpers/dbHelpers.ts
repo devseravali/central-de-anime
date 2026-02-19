@@ -1,3 +1,7 @@
+// Formata uma data para o padrão YYYY-MM-DD
+export function formatarData(data: Date): string {
+  return data.toISOString().slice(0, 10);
+}
 import { db } from '../db';
 import { sql } from 'drizzle-orm';
 
