@@ -64,8 +64,7 @@ plataformasRouter.get('/:id/animes', listarAnimesPorPlataforma);
  *   post:
  *     tags: [Plataformas]
  *     summary: Criar plataforma
- *     security:
- *       - bearerAuth: []
+
  *     requestBody:
  *       required: true
  *       content:
@@ -84,8 +83,7 @@ plataformasRouter.post('/', criarPlataforma);
  *   put:
  *     tags: [Plataformas]
  *     summary: Atualizar plataforma
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id
@@ -110,8 +108,7 @@ plataformasRouter.put('/:id', atualizarPlataforma);
  *   delete:
  *     tags: [Plataformas]
  *     summary: Remover plataforma
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id

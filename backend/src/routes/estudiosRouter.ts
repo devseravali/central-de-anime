@@ -102,8 +102,7 @@ estudiosRouter.get(
  *   post:
  *     tags: [Estudios]
  *     summary: Criar estudio
- *     security:
- *       - bearerAuth: []
+
  *     requestBody:
  *       required: true
  *       content:
@@ -125,8 +124,6 @@ estudiosRouter.post('/', estudiosControlador.adicionarEstudio);
  *   put:
  *     tags: [Estudios]
  *     summary: Atualizar estudio
- *     security:
- *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -154,8 +151,6 @@ estudiosRouter.put('/:id', estudiosControlador.atualizarEstudio);
  *   delete:
  *     tags: [Estudios]
  *     summary: Remover estudio
- *     security:
- *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id

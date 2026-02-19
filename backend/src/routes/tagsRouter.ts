@@ -64,8 +64,7 @@ tagsRouter.get('/buscar/nome', buscarTagPorNome);
  *   post:
  *     tags: [Tags]
  *     summary: Criar tag
- *     security:
- *       - bearerAuth: []
+
  *     requestBody:
  *       required: true
  *       content:
@@ -84,8 +83,7 @@ tagsRouter.post('/', criarTag);
  *   put:
  *     tags: [Tags]
  *     summary: Atualizar tag
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id
@@ -110,8 +108,7 @@ tagsRouter.put('/:id', atualizarTag);
  *   delete:
  *     tags: [Tags]
  *     summary: Remover tag
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id

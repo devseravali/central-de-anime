@@ -57,8 +57,7 @@ statusRouter.get('/nome/:nome', statusControlador.buscarStatusPorNome);
  *   post:
  *     tags: [Status]
  *     summary: Criar status
- *     security:
- *       - bearerAuth: []
+
  *     requestBody:
  *       required: true
  *       content:
@@ -77,8 +76,7 @@ statusRouter.post('/', statusControlador.adicionarStatus);
  *   put:
  *     tags: [Status]
  *     summary: Atualizar status
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id
@@ -103,8 +101,7 @@ statusRouter.put('/:id', statusControlador.atualizarStatus);
  *   delete:
  *     tags: [Status]
  *     summary: Remover status
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id

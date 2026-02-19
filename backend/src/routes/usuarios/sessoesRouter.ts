@@ -4,8 +4,7 @@
  *   get:
  *     tags: [Sessoes]
  *     summary: Validar sessão do usuário autenticado
- *     security:
- *       - bearerAuth: []
+
  *     responses:
  *       200:
  *         description: Sessão válida
@@ -19,8 +18,7 @@
  *   post:
  *     tags: [Sessoes]
  *     summary: Criar nova sessão para o usuário autenticado
- *     security:
- *       - bearerAuth: []
+
  *     responses:
  *       200:
  *         description: Sessão criada
@@ -34,8 +32,7 @@
  *   post:
  *     tags: [Sessoes]
  *     summary: Encerrar sessão ativa do usuário autenticado
- *     security:
- *       - bearerAuth: []
+
  *     responses:
  *       200:
  *         description: Sessão encerrada
@@ -49,8 +46,7 @@
  *   post:
  *     tags: [Sessoes]
  *     summary: Encerrar todas as sessões do usuário autenticado
- *     security:
- *       - bearerAuth: []
+
  *     responses:
  *       200:
  *         description: Todas as sessões encerradas
@@ -89,17 +85,16 @@ import {
   encerrarTodasSessoes,
   validarSessao,
 } from '../../controllers/sessoesControlador';
-import { autenticacao } from '../../middleware/autenticacao';
 
 const sessoesRouter = Router();
 
-sessoesRouter.get('/validate', autenticacao, validarSessao);
+sessoesRouter.get('/validate', validarSessao);
 
-sessoesRouter.post('/create', autenticacao, criarSessao);
+sessoesRouter.post('/create', criarSessao);
 
-sessoesRouter.post('/logout', autenticacao, encerrarSessaoAtiva);
+sessoesRouter.post('/logout', encerrarSessaoAtiva);
 
-sessoesRouter.post('/logout-all', autenticacao, encerrarTodasSessoes);
+sessoesRouter.post('/logout-all', encerrarTodasSessoes);
 
 sessoesRouter.get(
   '/auth/google',

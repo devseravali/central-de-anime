@@ -63,43 +63,74 @@ animesRouter.get('/nomes', buscarNomes);
 animesRouter.get('/titulos', buscarComTitulos);
 
 /**
-// Bloco duplicado removido: havia dois blocos @swagger para /animes/titulos com 'tags: [Animes]'. Mantido apenas o primeiro bloco corretamente documentado.
+ * @swagger
+ * /animes/temporadas:
+ *   get:
+ *     tags: [Animes]
+ *     summary: Listar todas as temporadas distintas
+ *     responses:
+ *       200:
+ *         description: Lista de temporadas
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
+ */
+animesRouter.get('/temporadas', buscarTemporadas);
 
+/**
  * @swagger
  * /animes/temporadas/quantidade:
  *   get:
  *     tags: [Animes]
  *     summary: Listar temporadas com quantidade de animes
- *     description: Retorna todas as temporadas distintas e a quantidade de animes em cada uma.
+ *     description: Retorna todas as temporadas distintas e a quantidade de animes em cada uma
  *     responses:
  *       200:
  *         description: Lista de temporadas com quantidade de animes
  *         content:
  *           application/json:
  *             schema:
- *               type: object
- *               properties:
- *                 sucesso:
- *                   type: boolean
- *                 dados:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       temporada:
- *                         type: string
- *                         example: "Primavera"
- *                       quantidade:
- *                         type: integer
- *                         example: 12
+ *               $ref: '#/components/schemas/Resposta'
  */
-
-// Rotas específicas devem vir antes da rota genérica /:id
-animesRouter.get('/temporadas', buscarTemporadas);
 animesRouter.get('/temporadas/quantidade', buscarTemporadasQuantidade);
+
+/**
+ * @swagger
+ * /animes/temporadas/anos:
+ *   get:
+ *     tags: [Animes]
+ *     summary: Listar anos distintos das temporadas
+ *     responses:
+ *       200:
+ *         description: Lista de anos
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
+ */
 animesRouter.get('/temporadas/anos', buscarTemporadasAnos);
-animesRouter.get('/titulos', buscarComTitulos);
-animesRouter.get('/nomes', buscarNomes);
+
+/**
+ * @swagger
+ * /animes/{id}:
+ *   get:
+ *     tags: [Animes]
+ *     summary: Buscar anime por ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Anime encontrado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
+ */
 animesRouter.get('/:id', buscarPorId);
 
 /**
@@ -108,8 +139,6 @@ animesRouter.get('/:id', buscarPorId);
  *   post:
  *     tags: [Animes]
  *     summary: Criar anime
- *     security:
- *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -132,8 +161,6 @@ animesRouter.post('/', adicionarAnime);
  *   put:
  *     tags: [Animes]
  *     summary: Atualizar anime
- *     security:
- *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -158,8 +185,6 @@ animesRouter.put('/:id', atualizarAnime);
  *   delete:
  *     tags: [Animes]
  *     summary: Remover anime
- *     security:
- *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -171,53 +196,5 @@ animesRouter.put('/:id', atualizarAnime);
  *         description: Anime removido
  */
 animesRouter.delete('/:id', deletarAnime);
-
-/**
- * @swagger
- * /animes/temporadas:
- *   get:
- *     tags: [Animes]
- *     summary: Listar todas as temporadas distintas
- *     responses:
- *       200:
- *         description: Lista de temporadas
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Resposta'
- */
-animesRouter.get('/temporadas', buscarTemporadas);
-
-/**
- * @swagger
- * /animes/temporadas/quantidade:
- *   get:
- *     tags: [Animes]
- *     summary: Listar temporadas com quantidade de animes
- *     responses:
- *       200:
- *         description: Lista de temporadas com quantidade
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Resposta'
- */
-animesRouter.get('/temporadas/quantidade', buscarTemporadasQuantidade);
-
-/**
- * @swagger
- * /animes/temporadas/anos:
- *   get:
- *     tags: [Animes]
- *     summary: Listar anos distintos das temporadas
- *     responses:
- *       200:
- *         description: Lista de anos
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Resposta'
- */
-animesRouter.get('/temporadas/anos', buscarTemporadasAnos);
 
 export default animesRouter;

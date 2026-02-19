@@ -78,8 +78,7 @@ generosRouter.get('/:nome/animes', generosControlador.listarAnimesPorGenero);
  *   post:
  *     tags: [Generos]
  *     summary: Criar genero
- *     security:
- *       - bearerAuth: []
+
  *     requestBody:
  *       required: true
  *       content:
@@ -101,8 +100,7 @@ generosRouter.post('/', generosControlador.adicionarGenero);
  *   put:
  *     tags: [Generos]
  *     summary: Atualizar genero
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id
@@ -130,8 +128,7 @@ generosRouter.put('/:id', generosControlador.atualizarGenero);
  *   delete:
  *     tags: [Generos]
  *     summary: Remover genero
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id

@@ -1,7 +1,5 @@
 import { Router } from 'express';
-import { autenticacao } from '../../middleware/autenticacao';
 import {
-  autenticarUsuario,
   registrarUsuario,
   listarUsuarios,
   obterUsuario,
@@ -53,7 +51,6 @@ usuariosRouter.post('/register', registrarUsuario);
  *       200:
  *         description: Token gerado
  */
-usuariosRouter.post('/login', autenticarUsuario);
 
 /**
  * @swagger
@@ -112,13 +109,12 @@ usuariosRouter.post('/logout', logoutUsuario);
  *   get:
  *     tags: [Usuarios]
  *     summary: Listar usuarios
- *     security:
- *       - bearerAuth: []
+ 
  *     responses:
  *       200:
  *         description: Lista de usuarios
  */
-usuariosRouter.get('/me', autenticacao, listarUsuarios);
+usuariosRouter.get('/me', listarUsuarios);
 
 /**
  * @swagger
@@ -126,8 +122,7 @@ usuariosRouter.get('/me', autenticacao, listarUsuarios);
  *   get:
  *     tags: [Usuarios]
  *     summary: Buscar usuario por id
- *     security:
- *       - bearerAuth: []
+ 
  *     parameters:
  *       - in: path
  *         name: id
@@ -138,7 +133,7 @@ usuariosRouter.get('/me', autenticacao, listarUsuarios);
  *       200:
  *         description: Usuario encontrado
  */
-usuariosRouter.get('/me/:id', autenticacao, obterUsuario);
+usuariosRouter.get('/me/:id', obterUsuario);
 
 /**
  * @swagger
@@ -146,8 +141,7 @@ usuariosRouter.get('/me/:id', autenticacao, obterUsuario);
  *   put:
  *     tags: [Usuarios]
  *     summary: Atualizar usuario autenticado
- *     security:
- *       - bearerAuth: []
+ 
  *     requestBody:
  *       required: true
  *       content:
@@ -158,7 +152,7 @@ usuariosRouter.get('/me/:id', autenticacao, obterUsuario);
  *       200:
  *         description: Usuario atualizado
  */
-usuariosRouter.put('/me', autenticacao, atualizarUsuario);
+usuariosRouter.put('/me', atualizarUsuario);
 
 /**
  * @swagger
@@ -166,8 +160,7 @@ usuariosRouter.put('/me', autenticacao, atualizarUsuario);
  *   delete:
  *     tags: [Usuarios]
  *     summary: Remover usuario por id
- *     security:
- *       - bearerAuth: []
+ 
  *     parameters:
  *       - in: path
  *         name: id
@@ -178,4 +171,4 @@ usuariosRouter.put('/me', autenticacao, atualizarUsuario);
  *       200:
  *         description: Usuario removido
  */
-usuariosRouter.delete('/me/:id', autenticacao, removerUsuario);
+usuariosRouter.delete('/me/:id', removerUsuario);

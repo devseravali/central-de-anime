@@ -1,12 +1,8 @@
 import { Router } from 'express';
 import { estatisticasRouter } from '../estatisticasRouter';
-import { autenticacaoMiddleware } from '../../middleware/autenticacao';
 import { modRouter } from './modRouter';
-import { autenticarAdmin } from '../../controllers/adminAuthControlador';
 
 const adminRouter = Router();
-const adminGuard = [autenticacaoMiddleware];
-const modGuard = process.env.NODE_ENV === 'test' ? [] : adminGuard;
 
 /**
  * @swagger
@@ -27,10 +23,9 @@ adminRouter.get('/health', (_req, res) => {
  * /admin/login:
  *   post:
  *     tags: [Admin]
- *     summary: Autenticar admin e gerar token JWT
+ *     summary: Login de admin
  *     description: |
- *       Opcao 1: Envie JSON com email e senha.
- *       Opcao 2: Envie Authorization Bearer com ID token Google (sem body).
+ *       Envie JSON com email e senha para login de admin.
  *     requestBody:
  *       required: false
  *       content:
@@ -44,19 +39,17 @@ adminRouter.get('/health', (_req, res) => {
  *                 type: string
  *     responses:
  *       200:
- *         description: Token gerado
+ *         description: Login realizado
  */
-adminRouter.post('/login', autenticarAdmin);
 
 /**
  * @swagger
  * /admin/auth/login:
  *   post:
  *     tags: [Admin]
- *     summary: Autenticar admin e gerar token JWT (alias)
+ *     summary: Login de admin (alias)
  *     description: |
- *       Opcao 1: Envie JSON com email e senha.
- *       Opcao 2: Envie Authorization Bearer com ID token Google (sem body).
+ *       Envie JSON com email e senha para login de admin.
  *     requestBody:
  *       required: false
  *       content:
@@ -70,127 +63,10 @@ adminRouter.post('/login', autenticarAdmin);
  *                 type: string
  *     responses:
  *       200:
- *         description: Token gerado
+ *         description: Login realizado
  */
-adminRouter.post('/auth/login', autenticarAdmin);
 
-/**
- * @swagger
- * /admin/stats:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas gerais (admin)
- *     responses:
- *       200:
- *         description: Estatisticas gerais
- */
-/**
- * @swagger
- * /admin/stats/simples:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas simples (admin)
- *     responses:
- *       200:
- *         description: Estatisticas simples
- */
-/**
- * @swagger
- * /admin/stats/generos:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por genero (admin)
- *     responses:
- *       200:
- *         description: Estatisticas por genero
- */
-/**
- * @swagger
- * /admin/stats/estudios:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por estudio (admin)
- *     responses:
- *       200:
- *         description: Estatisticas por estudio
- */
-/**
- * @swagger
- * /admin/stats/plataformas:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por plataforma (admin)
- *     responses:
- *       200:
- *         description: Estatisticas por plataforma
- */
-/**
- * @swagger
- * /admin/stats/status:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por status (admin)
- *     responses:
- *       200:
- *         description: Estatisticas por status
- */
-/**
- * @swagger
- * /admin/stats/tags:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por tags (admin)
- *     responses:
- *       200:
- *         description: Estatisticas por tags
- */
-/**
- * @swagger
- * /admin/stats/temporadas:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por temporadas (admin)
- *     parameters:
- *       - in: query
- *         name: ano
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Estatisticas por temporadas
- */
-/**
- * @swagger
- * /admin/stats/estacoes:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por estacoes (admin)
- *     responses:
- *       200:
- *         description: Estatisticas por estacoes
- */
-/**
- * @swagger
- * /admin/stats/personagens:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por personagens (admin)
- *     responses:
- *       200:
- *         description: Estatisticas por personagens
- */
-/**
- * @swagger
- * /admin/stats/animes:
- *   get:
- *     tags: [Admin]
- *     summary: Estatisticas por animes (admin)
- *     responses:
- *       200:
- *         description: Estatisticas por animes
- */
-adminRouter.use('/mod', ...modGuard, modRouter);
-adminRouter.use('/stats', ...adminGuard, estatisticasRouter);
+adminRouter.use('/mod', modRouter);
+adminRouter.use('/stats', estatisticasRouter);
 
 export default adminRouter;

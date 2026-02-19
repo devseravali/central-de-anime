@@ -2,7 +2,6 @@ import { db } from '../db';
 import { animes } from '../schema/animes';
 import { estudios } from '../schema/estudios';
 import { Router } from 'express';
-import { autenticacao } from '../middleware/autenticacao';
 import { exigirAdmin } from '../middleware/permissoes';
 import {
   listarEstacoes,
@@ -93,8 +92,7 @@ estacoesRouter.get('/buscar/:nome', listarEstacaoPorNome);
  * @swagger
  * /estacoes:
  *   post:
- *     security:
- *       - bearerAuth: []
+
  *     summary: Adiciona uma nova estação
  *     tags: [Estacoes]
  *     requestBody:
@@ -113,14 +111,13 @@ estacoesRouter.get('/buscar/:nome', listarEstacaoPorNome);
  *       400:
  *         description: Dados inválidos
  */
-estacoesRouter.post('/', autenticacao, exigirAdmin, adicionarEstacao);
+estacoesRouter.post('/', adicionarEstacao);
 
 /**
  * @swagger
  * /estacoes/{id}:
  *   put:
- *     security:
- *       - bearerAuth: []
+
  *     summary: Atualiza uma estação
  *     tags: [Estacoes]
  *     parameters:
@@ -148,14 +145,13 @@ estacoesRouter.post('/', autenticacao, exigirAdmin, adicionarEstacao);
  *       404:
  *         description: Estação não encontrada
  */
-estacoesRouter.put('/:id', autenticacao, exigirAdmin, atualizarEstacao);
+estacoesRouter.put('/:id', atualizarEstacao);
 
 /**
  * @swagger
  * /estacoes/{id}:
  *   delete:
- *     security:
- *       - bearerAuth: []
+
  *     summary: Remove uma estação
  *     tags: [Estacoes]
  *     parameters:
@@ -171,4 +167,4 @@ estacoesRouter.put('/:id', autenticacao, exigirAdmin, atualizarEstacao);
  *       404:
  *         description: Estação não encontrada
  */
-estacoesRouter.delete('/:id', autenticacao, exigirAdmin, removerEstacao);
+estacoesRouter.delete('/:id', removerEstacao);

@@ -86,8 +86,7 @@ personagensRouter.get('/nome/:nome', obterPersonagemPorNome);
  *   post:
  *     tags: [Personagens]
  *     summary: Criar personagem
- *     security:
- *       - bearerAuth: []
+
  *     requestBody:
  *       required: true
  *       content:
@@ -106,8 +105,7 @@ personagensRouter.post('/', criarPersonagem);
  *   put:
  *     tags: [Personagens]
  *     summary: Atualizar personagem
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id
@@ -132,8 +130,7 @@ personagensRouter.put('/:id', atualizarPersonagem);
  *   delete:
  *     tags: [Personagens]
  *     summary: Remover personagem
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: path
  *         name: id

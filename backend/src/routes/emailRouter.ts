@@ -13,8 +13,7 @@ const emailRouter = Router();
  *   post:
  *     tags: [Email]
  *     summary: Solicitar verificação de email
- *     security:
- *       - bearerAuth: []
+
  *     requestBody:
  *       required: true
  *       content:
@@ -28,8 +27,7 @@ const emailRouter = Router();
  *       200:
  *         description: Solicitação enviada
  */
-import { autenticacao } from '../middleware/autenticacao';
-emailRouter.post('/solicitar', autenticacao, solicitarVerificacaoEmail);
+emailRouter.post('/solicitar', solicitarVerificacaoEmail);
 
 /**
  * @swagger
@@ -37,8 +35,7 @@ emailRouter.post('/solicitar', autenticacao, solicitarVerificacaoEmail);
  *   get:
  *     tags: [Email]
  *     summary: Verificar email
- *     security:
- *       - bearerAuth: []
+
  *     parameters:
  *       - in: query
  *         name: token
