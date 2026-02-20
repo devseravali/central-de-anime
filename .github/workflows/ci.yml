@@ -16,7 +16,7 @@ jobs:
         image: postgres:15
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: 0711
+          POSTGRES_PASSWORD: postgres
           POSTGRES_DB: centraldeanimetest
         ports:
           - 5432:5432
@@ -39,8 +39,8 @@ jobs:
 
       - name: Criar .env.test
         run: |
-          echo "DATABASE_URL=postgres://postgres:0711@127.0.0.1:5432/centraldeanimetest" > backend/.env.test
-          echo "DATABASE_TEST_URL=postgres://postgres:0711@127.0.0.1:5432/centraldeanimetest" >> backend/.env.test
+          echo "DATABASE_URL=postgres://postgres:postgres@127.0.0.1:5432/centraldeanimetest" > backend/.env.test
+          echo "DATABASE_TEST_URL=postgres://postgres:postgres@127.0.0.1:5432/centraldeanimetest" >> backend/.env.test
 
       - name: Rodar testes do backend
         run: npm test
