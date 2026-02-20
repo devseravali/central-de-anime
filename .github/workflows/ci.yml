@@ -1,26 +1,31 @@
 name: CI
-
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Instalar Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
+
       - name: Instalar dependências
         run: cd backend && npm install
+
       - name: Rodar testes e gerar cobertura com Vitest
         run: cd backend && npx vitest run --coverage
+
       - name: Salvar cobertura como artefato
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cobertura-tests
           path: backend/coverage/
