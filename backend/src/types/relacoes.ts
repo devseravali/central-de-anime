@@ -1,6 +1,6 @@
 import type { InferSelectModel } from 'drizzle-orm';
 
-import { Animes } from '../schema/animes';
+import { animes } from '../schema/animes';
 import { personagens } from '../schema/personagens';
 import { generos } from '../schema/generos';
 import { estudios } from '../schema/estudios';
@@ -16,7 +16,7 @@ import { anime_plataforma } from '../schema/anime_plataforma';
 import { anime_status } from '../schema/anime_status';
 import { anime_tag } from '../schema/anime_tag';
 
-export type Anime = InferSelectModel<typeof Animes>;
+export type Anime = InferSelectModel<typeof animes>;
 export type Personagem = InferSelectModel<typeof personagens>;
 export type Genero = InferSelectModel<typeof generos>;
 export type Estudio = InferSelectModel<typeof estudios>;
