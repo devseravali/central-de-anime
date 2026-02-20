@@ -42,12 +42,6 @@ jobs:
           echo "DATABASE_URL=postgres://postgres:0711@127.0.0.1:5432/centraldeanimetest" > backend/.env.test
           echo "DATABASE_TEST_URL=postgres://postgres:0711@127.0.0.1:5432/centraldeanimetest" >> backend/.env.test
 
-      - name: Run tests with coverage
-        run: npm run test:coverage
+      - name: Rodar testes do backend
+        run: npm test
         working-directory: backend
-
-      - name: Upload coverage artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: cobertura-tests
-          path: backend/coverage/cobertura-coverage.xml
