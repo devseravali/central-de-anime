@@ -43,7 +43,8 @@ jobs:
           echo "DATABASE_TEST_URL=postgres://postgres:0711@127.0.0.1:5432/centraldeanimetest" >> backend/.env.test
 
       - name: Run tests with coverage
-        run: cd backend && npx vitest run --coverage
+        run: npm run test:coverage
+        working-directory: backend
 
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
