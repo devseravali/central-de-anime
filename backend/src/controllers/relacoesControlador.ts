@@ -407,9 +407,8 @@ export const listarAnimesdeUmaTag = asyncHandler(
       throw ErroApi.badRequest('Parâmetro tagId inválido', 'INVALID_TAG_ID');
     }
     const dados = await relacoesServico.listarAnimesdeUmaTag(tagId);
-    const animes = Array.isArray(dados)
-      ? dados.map((item) => ('animes' in item ? item.animes : item))
-      : [];
+    // O resultado esperado é um array de objetos { animes: { ... }, anime_tag: { ... } }
+    const animes = Array.isArray(dados) ? dados.map((item) => item.animes) : [];
     return respostaLista(res, animes);
   },
 );

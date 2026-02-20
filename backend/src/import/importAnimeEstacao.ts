@@ -9,8 +9,8 @@ export async function importAnimeEstacao() {
 
   for (const rel of animeEstacaoData) {
     await db.insert(anime_estacao).values({
-      anime_id: rel.anime_id,
-      estacao_id: rel.estacao_id,
+      anime_id: Number(rel.anime_id),
+      estacao_id: Number(rel.estacao),
     });
   }
   console.log('Importação de anime_estacao concluída!');
