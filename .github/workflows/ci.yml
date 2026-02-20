@@ -50,6 +50,20 @@ jobs:
         run: npm run seed:test
         working-directory: backend
 
+      - name: Sincronizar sequências das tabelas
+        run: |
+          sudo apt-get update && sudo apt-get install -y postgresql-client
+          psql "postgres://postgres:postgres@127.0.0.1:5432/centraldeanimetest" -c "\
+            SELECT setval(pg_get_serial_sequence('tags','id'), COALESCE(MAX(id),1), true) FROM tags;
+            SELECT setval(pg_get_serial_sequence('status','id'), COALESCE(MAX(id),1), true) FROM status;
+            SELECT setval(pg_get_serial_sequence('estacoes','id'), COALESCE(MAX(id),1), true) FROM estacoes;
+            SELECT setval(pg_get_serial_sequence('estudios','id'), COALESCE(MAX(id),1), true) FROM estudios;
+            SELECT setval(pg_get_serial_sequence('animes','id'), COALESCE(MAX(id),1), true) FROM animes;
+            SELECT setval(pg_get_serial_sequence('plataformas','id'), COALESCE(MAX(id),1), true) FROM plataformas;
+            SELECT setval(pg_get_serial_sequence('usuarios','id'), COALESCE(MAX(id),1), true) FROM usuarios;
+          "
+        working-directory: backend
+
       - name: Listar tabelas do banco de teste (debug)
         run: |
           sudo apt-get update && sudo apt-get install -y postgresql-client
