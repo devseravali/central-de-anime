@@ -1,4 +1,5 @@
 name: CI
+
 on:
   push:
     branches:
@@ -10,22 +11,40 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: 0711
+          POSTGRES_DB: centraldeanimetest
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d centraldeanimetest"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
       - uses: actions/checkout@v3
 
-      - name: Instalar Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      - name: Instalar dependências
+      - name: Install dependencies
         run: cd backend && npm install
 
-      - name: Rodar testes e gerar cobertura com Vitest
+      - name: Set database URL
+        run: echo "DATABASE_URL=postgres://postgres:0711@localhost:5432/centraldeanimetest" >> $GITHUB_ENV
+
+      - name: Run tests with coverage
         run: cd backend && npx vitest run --coverage
 
-      - name: Salvar cobertura como artefato
+      - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
         with:
           name: cobertura-tests
-          path: backend/coverage/
+          path: backend/coverage/cobertura-coverage.xml
