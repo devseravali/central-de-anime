@@ -3,7 +3,7 @@
     "id": 1,
     "anime_id": 1,
     "slug": "shingeki-no-kyojin-t1",
-    "titulo": "Ataque dos Titãs",
+    "titulo": "Shingeki no Kyojin - 1ª temporada",
     "estudio_id": 1,
     "tipo": "Temporada",
     "temporada": 1,
@@ -20,7 +20,6 @@
     "slug": "shingeki-no-kyojin-t2",
     "titulo": "Shingeki no Kyojin - 2ª temporada",
     "estudio_id": 1,
-    "tipo": "Temporada",
     "temporada": 2,
     "status_id": 2,
     "ano": 2017,
@@ -35,13 +34,12 @@
     "slug": "shingeki-no-kyojin-t3-1",
     "titulo": "Shingeki no Kyojin - 3ª temporada Parte 1",
     "estudio_id": 1,
-    "tipo": "Temporada",
     "temporada": 3,
     "status_id": 2,
     "ano": 2018,
     "episodios": 12,
     "sinopse": "Eren e seus companheiros do 104º Esquadrão são designados para o recém-formado Esquadrão Levi, cuja missão é proteger Eren e Historia, dado o poder recém-descoberto de Eren e o conhecimento e linhagem de Historia. Levi e Erwin têm bons motivos para se preocupar, pois o padre da Igreja que Hanji havia escondido foi encontrado torturado até a morte, deixando claro que a Polícia Militar está envolvida no acobertamento. A situação se complica ainda mais quando a Polícia Militar ataca Erwin e o Esquadrão Levi escapa por pouco da captura. Eren também está tendo problemas com sua transformação em Titã, e um assassino implacável foi contratado para proteger Eren e Historia, um homem que Levi conhece muito bem de sua juventude.",
-    "capaUrl": "images/shingeki-no-kyojin-t3-p1.jpg",
+    "capaUrl": "images/capas/shingeki-no-kyojin-t3-p1.jpg",
     "estacao": "Verão"
   },
   {
@@ -56,7 +54,7 @@
     "ano": 2019,
     "episodios": 10,
     "sinopse": "A batalha para retomar a Muralha Maria começa agora! Com a nova habilidade de endurecimento de Eren, a Tropa de Exploração está confiante de que pode selar a muralha e retomar o Distrito de Shiganshina. Se tiverem sucesso, Eren finalmente poderá desvendar os segredos do porão — e do mundo. Mas o perigo espreita, pois Reiner, Bertholdt e o Titã Bestial têm seus próprios planos. Será esta a batalha final da humanidade pela sobrevivência?",
-    "capaUrl": "images/shingeki-no-kyojin-t3-p2.jpg",
+    "capaUrl": "images/capas/shingeki-no-kyojin-t3-p2.jpg",
     "estacao": "Primavera"
   },
   {
@@ -116,7 +114,7 @@
     "ano": 2024,
     "episodios": 12,
     "sinopse": "A conclusão épica de Shingeki no Kyojin está aqui! Com o destino do mundo pendendo na balança, Eren Jaeger enfrenta seus antigos amigos em uma batalha final que determinará o futuro da humanidade. Segredos serão revelados, alianças serão testadas e sacrifícios serão feitos. Prepare-se para uma jornada inesquecível enquanto o destino de Eldia e Marley é decidido de uma vez por todas.",
-    "capaUrl": "images/capas/shingeki-no-kyojin-t4-pt4.jpg",
+    "capaUrl": "images/capas/shingeki-no-kyojin-gaiden-kuinaki-sentaku.jpg",
     "estacao": "Verão"
   },
   {
@@ -131,14 +129,14 @@
     "ano": 2019,
     "episodios": 26,
     "sinopse": "É o período Taisho no Japão. Tanjiro, um garoto bondoso que vende carvão para sobreviver, encontra sua família massacrada por um demônio. Para piorar a situação, sua irmã mais nova, Nezuko, a única sobrevivente, foi transformada em um demônio. Embora devastado por essa triste realidade, Tanjiro decide se tornar um \"caçador de demônios\" para que possa transformar sua irmã de volta em humana e matar o demônio que massacrou sua família.",
-    "capaUrl": "images/capas/kimestu-no-yaiba-t1.jpg",
+    "capaUrl": "images/capas/kimetsu-no-yaiba-t1.jpg",
     "estacao": "Primavera"
   },
   {
     "id": 10,
     "anime_id": 2,
     "slug": "demon-slayer-mugen",
-    "titulo": "Demon Slayer: Mugen Ressha-hen",
+    "titulo": "Demon Slayer: Mugen Ressha-hen - Filme",
     "estudio_id": 10,
     "tipo": "Filme",
     "temporada": 3,
@@ -146,7 +144,7 @@
     "ano": 2020,
     "episodios": 1,
     "sinopse": "Neste filme de Demon Slayer, Tanjiro Kamado e seus amigos do Corpo de Exterminadores de Demônios embarcam no Trem Infinito em uma nova missão para investigar uma misteriosa série de desaparecimentos, perpetrados por um demônio que vem atormentando pessoas e matando os exterminadores de demônios que se opõem a ele.",
-    "capaUrl": "images/capas/kimestu-no-yaiba-mugen.jpg",
+    "capaUrl": "images/capas/kimestu-no-yaiba-mugen-filme.jpg",
     "estacao": "Outono"
   },
   {
@@ -155,13 +153,12 @@
     "slug": "demon-slayer-t2",
     "titulo": "Demon Slayer: Mugen Ressha-hen",
     "estudio_id": 10,
-    "tipo": "Temporada",
     "temporada": 3,
     "status_id": 2,
     "ano": 2021,
-    "episodios": 7,
+    "episodios": 10,
     "sinopse": "Tanjiro Kamado e seus companheiros Caçadores de Demônios embarcam em uma missão a bordo do Trem Infinito. Sua nova missão é investigar uma série de desaparecimentos misteriosos, perpetrados por um demônio que vem aterrorizando os passageiros e matando os Caçadores de Demônios que o enfrentam. Juntos, eles devem enfrentar esse inimigo formidável e proteger os inocentes a bordo do trem.",
-    "capaUrl": "images/capas/kimestu-no-yaiba-t2.jpg",
+    "capaUrl": "images/capas/kimetsu-no-yaiba-t2.jpg",
     "estacao": "Outono"
   },
   {
@@ -176,7 +173,7 @@
     "ano": 2025,
     "episodios": 11,
     "sinopse": "Após visitar a residência Rengoku, Tanjirou e seus companheiros se oferecem para uma missão no Distrito do Entretenimento, um lugar onde desejos são vendidos e demônios habitam. Eles viajam ao lado do extravagante Hashira do Som, Tengen Uzui, em busca de um inimigo monstruoso que aterroriza a cidade. Jurados a exterminar criaturas da noite, a caçada continua.",
-    "capaUrl": "images/capas/kimestu-no-yaiba-t3.jpg",
+    "capaUrl": "images/capas/kimetsu-no-yaiba-t3.jpg",
     "estacao": "Inverno"
   },
   {
