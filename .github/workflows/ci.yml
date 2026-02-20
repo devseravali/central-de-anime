@@ -42,6 +42,20 @@ jobs:
           echo "DATABASE_URL=postgres://postgres:postgres@127.0.0.1:5432/centraldeanimetest" > backend/.env.test
           echo "DATABASE_TEST_URL=postgres://postgres:postgres@127.0.0.1:5432/centraldeanimetest" >> backend/.env.test
 
+      - name: Rodar migrações no banco de teste
+        run: npm run db:migrate:test
+        working-directory: backend
+
+      - name: Popular banco de teste (seed)
+        run: npm run seed:test
+        working-directory: backend
+
+      - name: Listar tabelas do banco de teste (debug)
+        run: |
+          sudo apt-get update && sudo apt-get install -y postgresql-client
+          psql "postgres://postgres:postgres@127.0.0.1:5432/centraldeanimetest" -c "\dt"
+        working-directory: backend
+
       - name: Rodar testes do backend
         run: npm test
         working-directory: backend
