@@ -16,18 +16,7 @@ const swaggerOptions = {
       description: `
     API centralizada para dados de animes.
 
-    ### Fluxo de autenticação:
-    - As rotas **/admin** exigem token JWT.
-    - Algumas rotas de **/usuarios/me** (listar, buscar por id, atualizar, remover) e **/usuarios/register** também exigem token.
-    - Somente admin pode **adicionar**, **editar** ou **remover** qualquer entidade (animes, gêneros, estúdios, temporadas, personagens, etc).
-    - As demais rotas de usuário são públicas; o fluxo do usuário depende da verificação de e-mail.
-    - Para admin, faça login em **/admin/login** e use o token no **Authorize**.
-    - Observação: a documentação pode não exibir o cadeado, mas a validação ocorre no backend.
-
-     ### Login admin com Google:
-     1. Envie **POST /admin/login** com o header Authorization:
-       **Bearer SEU_ID_TOKEN_GOOGLE**
-     2. O endpoint retorna um JWT admin
+    Todas as rotas são públicas nesta versão da API. Não há autenticação ou rotas protegidas.
       `,
     },
     servers: [
@@ -37,13 +26,6 @@ const swaggerOptions = {
       },
     ],
     components: {
-      securitySchemes: {
-        bearerAuth: {
-          type: 'http',
-          scheme: 'bearer',
-          bearerFormat: 'JWT',
-        },
-      },
       schemas: {
         LoginRequest: {
           type: 'object',
