@@ -1,6 +1,5 @@
 # Google OAuth client secrets
 backend/client_secret_*.json
-# Node
 
 # Node e build
 node_modules/
@@ -10,51 +9,49 @@ build/
 .env.*
 
 # Logs
-
-# Logs
+debug.log*
 logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# OS
+pnpm-debug.log*
+lerna-debug.log*
 
 # OS
 .DS_Store
 Thumbs.db
 
 # VSCode
-
-# VSCode
 .vscode/
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# Test
-
-# Test
+# Test coverage
 coverage/
-
-# Drizzle
+backend/coverage/
+frontend/coverage/
 
 # Drizzle
 .drizzle/
 backend/.drizzle/
 
 # Docker
-
-# Docker
-*.local
-*.pid
 docker/
 backend/docker/
+*.local
+*.pid
 
-# Ignorar arquivos/pastas de build, dependências, env, coverage, imagens e temporários
+# Build, dependências, env, imagens e temporários
 backend/node_modules/
 frontend/node_modules/
 backend/dist/
 frontend/dist/
-backend/coverage/
-frontend/coverage/
 backend/.env
 frontend/.env
 backend/.env.*
