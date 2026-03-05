@@ -1,5 +1,4 @@
 name: CI
-
 on:
   push:
     branches:
@@ -43,11 +42,11 @@ jobs:
           echo "DATABASE_TEST_URL=postgres://postgres:postgres@127.0.0.1:5432/centraldeanimetest" >> backend/.env.test
 
       - name: Rodar migrações no banco de teste
-        run: npm run db:migrate:test
+        run: npx prisma migrate deploy
         working-directory: backend
 
       - name: Popular banco de teste (seed)
-        run: npm run seed:test
+        run: npx prisma db seed
         working-directory: backend
 
       - name: Sincronizar sequências das tabelas
