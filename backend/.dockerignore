@@ -3,5 +3,3 @@ dist
 .git
 .env
 npm-debug.log
-Dockerfile
-docker-compose.yml

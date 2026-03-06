@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: centraldeanime
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 0711
+    ports:
+      - "5432:5432"
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://postgres:0711@db:5432/centraldeanime
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
