@@ -1,342 +1,1966 @@
 [
-  {
-    "anime_id": 1,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 1,
-    "tag_id": 2
-  },
-  {
-    "anime_id": 1,
-    "tag_id": 3
-  },
-  {
-    "anime_id": 1,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 1,
-    "tag_id": 5
-  },
-  {
-    "anime_id": 2,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 2,
-    "tag_id": 2
-  },
-  {
-    "anime_id": 2,
-    "tag_id": 3
-  },
-  {
-    "anime_id": 2,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 2,
-    "tag_id": 5
-  },
-  {
-    "anime_id": 3,
-    "tag_id": 8
-  },
-  {
-    "anime_id": 3,
-    "tag_id": 9
-  },
-  {
-    "anime_id": 4,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 4,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 4,
-    "tag_id": 7
-  },
-  {
-    "anime_id": 5,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 5,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 5,
-    "tag_id": 7
-  },
-  {
-    "anime_id": 6,
-    "tag_id": 2
-  },
-  {
-    "anime_id": 6,
-    "tag_id": 3
-  },
-  {
-    "anime_id": 6,
-    "tag_id": 6
-  },
-  {
-    "anime_id": 6,
-    "tag_id": 9
-  },
-  {
-    "anime_id": 7,
-    "tag_id": 10
-  },
-  {
-    "anime_id": 7,
-    "tag_id": 11
-  },
-  {
-    "anime_id": 8,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 8,
-    "tag_id": 2
-  },
-  {
-    "anime_id": 8,
-    "tag_id": 3
-  },
-  {
-    "anime_id": 9,
-    "tag_id": 12
-  },
-  {
-    "anime_id": 9,
-    "tag_id": 13
-  },
-  {
-    "anime_id": 10,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 10,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 10,
-    "tag_id": 5
-  },
-  {
-    "anime_id": 11,
-    "tag_id": 14
-  },
-  {
-    "anime_id": 11,
-    "tag_id": 15
-  },
-  {
-    "anime_id": 12,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 12,
-    "tag_id": 2
-  },
-  {
-    "anime_id": 12,
-    "tag_id": 3
-  },
-  {
-    "anime_id": 13,
-    "tag_id": 16
-  },
-  {
-    "anime_id": 13,
-    "tag_id": 17
-  },
-  {
-    "anime_id": 14,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 14,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 14,
-    "tag_id": 7
-  },
-  {
-    "anime_id": 15,
-    "tag_id": 18
-  },
-  {
-    "anime_id": 15,
-    "tag_id": 19
-  },
-  {
-    "anime_id": 16,
-    "tag_id": 2
-  },
-  {
-    "anime_id": 16,
-    "tag_id": 3
-  },
-  {
-    "anime_id": 16,
-    "tag_id": 6
-  },
-  {
-    "anime_id": 16,
-    "tag_id": 9
-  },
-  {
-    "anime_id": 17,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 17,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 17,
-    "tag_id": 7
-  },
-  {
-    "anime_id": 18,
-    "tag_id": 10
-  },
-  {
-    "anime_id": 18,
-    "tag_id": 11
-  },
-  {
-    "anime_id": 19,
-    "tag_id": 12
-  },
-  {
-    "anime_id": 19,
-    "tag_id": 13
-  },
-  {
-    "anime_id": 20,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 20,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 20,
-    "tag_id": 5
-  },
-  {
-    "anime_id": 21,
-    "tag_id": 14
-  },
-  {
-    "anime_id": 21,
-    "tag_id": 15
-  },
-  {
-    "anime_id": 22,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 22,
-    "tag_id": 2
-  },
-  {
-    "anime_id": 22,
-    "tag_id": 19
-  },
-  {
-    "anime_id": 22,
-    "tag_id": 3
-  },
-  {
-    "anime_id": 23,
-    "tag_id": 16
-  },
-  {
-    "anime_id": 23,
-    "tag_id": 17
-  },
-  {
-    "anime_id": 24,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 24,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 24,
-    "tag_id": 7
-  },
-  {
-    "anime_id": 25,
-    "tag_id": 18
-  },
-  {
-    "anime_id": 25,
-    "tag_id": 19
-  },
-  {
-    "anime_id": 26,
-    "tag_id": 2
-  },
-  {
-    "anime_id": 26,
-    "tag_id": 3
-  },
-  {
-    "anime_id": 26,
-    "tag_id": 6
-  },
-  {
-    "anime_id": 26,
-    "tag_id": 9
-  },
-  {
-    "anime_id": 27,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 27,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 27,
-    "tag_id": 7
-  },
-  {
-    "anime_id": 28,
-    "tag_id": 10
-  },
-  {
-    "anime_id": 28,
-    "tag_id": 11
-  },
-  {
-    "anime_id": 29,
-    "tag_id": 12
-  },
-  {
-    "anime_id": 29,
-    "tag_id": 13
-  },
-  {
-    "anime_id": 30,
-    "tag_id": 1
-  },
-  {
-    "anime_id": 30,
-    "tag_id": 4
-  },
-  {
-    "anime_id": 30,
-    "tag_id": 5
-  }
+    {
+        "anime_id": 1,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 1,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 1,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 1,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 1,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 1,
+        "tag_id": 27
+    },
+    {
+        "anime_id": 1,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 1,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 2,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 2,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 2,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 2,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 2,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 2,
+        "tag_id": 27
+    },
+    {
+        "anime_id": 2,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 2,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 3,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 3,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 3,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 3,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 3,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 3,
+        "tag_id": 27
+    },
+    {
+        "anime_id": 3,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 3,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 4,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 4,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 4,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 4,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 4,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 4,
+        "tag_id": 27
+    },
+    {
+        "anime_id": 4,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 4,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 5,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 5,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 5,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 5,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 5,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 5,
+        "tag_id": 27
+    },
+    {
+        "anime_id": 5,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 5,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 6,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 6,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 6,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 6,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 6,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 6,
+        "tag_id": 27
+    },
+    {
+        "anime_id": 6,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 6,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 7,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 7,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 7,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 7,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 7,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 7,
+        "tag_id": 27
+    },
+    {
+        "anime_id": 7,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 7,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 8,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 8,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 8,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 8,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 8,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 8,
+        "tag_id": 27
+    },
+    {
+        "anime_id": 8,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 8,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 9,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 9,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 9,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 9,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 9,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 9,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 9,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 10,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 10,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 10,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 10,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 10,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 10,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 10,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 11,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 11,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 11,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 11,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 11,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 11,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 11,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 12,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 12,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 12,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 12,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 12,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 12,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 12,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 13,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 13,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 13,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 13,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 13,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 13,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 13,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 14,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 14,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 14,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 14,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 14,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 14,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 14,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 15,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 15,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 15,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 15,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 15,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 15,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 15,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 16,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 16,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 16,
+        "tag_id": 8
+    },
+    {
+        "anime_id": 16,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 16,
+        "tag_id": 12
+    },
+    {
+        "anime_id": 16,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 16,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 16,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 17,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 17,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 17,
+        "tag_id": 8
+    },
+    {
+        "anime_id": 17,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 17,
+        "tag_id": 12
+    },
+    {
+        "anime_id": 17,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 17,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 17,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 18,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 18,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 18,
+        "tag_id": 8
+    },
+    {
+        "anime_id": 18,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 18,
+        "tag_id": 12
+    },
+    {
+        "anime_id": 18,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 18,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 18,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 19,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 19,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 19,
+        "tag_id": 8
+    },
+    {
+        "anime_id": 19,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 19,
+        "tag_id": 12
+    },
+    {
+        "anime_id": 19,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 19,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 19,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 20,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 20,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 20,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 20,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 20,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 20,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 21,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 21,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 21,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 21,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 21,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 21,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 22,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 22,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 22,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 22,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 22,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 22,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 23,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 23,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 23,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 23,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 23,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 23,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 24,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 24,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 24,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 24,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 24,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 24,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 25,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 25,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 25,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 25,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 25,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 25,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 26,
+        "tag_id": 9
+    },
+    {
+        "anime_id": 26,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 26,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 26,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 26,
+        "tag_id": 16
+    },
+    {
+        "anime_id": 26,
+        "tag_id": 22
+    },
+    {
+        "anime_id": 26,
+        "tag_id": 37
+    },
+    {
+        "anime_id": 26,
+        "tag_id": 38
+    },
+    {
+        "anime_id": 27,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 27,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 27,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 27,
+        "tag_id": 12
+    },
+    {
+        "anime_id": 27,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 27,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 28,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 28,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 28,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 28,
+        "tag_id": 12
+    },
+    {
+        "anime_id": 28,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 28,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 29,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 29,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 29,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 30,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 30,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 30,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 31,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 31,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 31,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 31,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 32,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 32,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 32,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 32,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 33,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 33,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 33,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 33,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 33,
+        "tag_id": 23
+    },
+    {
+        "anime_id": 34,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 34,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 34,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 34,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 34,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 34,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 34,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 35,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 35,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 35,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 35,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 35,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 35,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 35,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 36,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 36,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 36,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 36,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 36,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 36,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 36,
+        "tag_id": 39
+    },
+    {
+        "anime_id": 37,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 37,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 37,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 37,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 37,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 37,
+        "tag_id": 23
+    },
+    {
+        "anime_id": 37,
+        "tag_id": 26
+    },
+    {
+        "anime_id": 38,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 38,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 38,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 38,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 38,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 38,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 39,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 39,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 39,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 39,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 39,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 39,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 40,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 40,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 40,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 40,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 40,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 40,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 41,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 41,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 41,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 41,
+        "tag_id": 6
+    },
+    {
+        "anime_id": 41,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 41,
+        "tag_id": 29
+    },
+    {
+        "anime_id": 42,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 42,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 42,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 42,
+        "tag_id": 6
+    },
+    {
+        "anime_id": 42,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 42,
+        "tag_id": 29
+    },
+    {
+        "anime_id": 43,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 43,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 43,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 43,
+        "tag_id": 6
+    },
+    {
+        "anime_id": 43,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 43,
+        "tag_id": 29
+    },
+    {
+        "anime_id": 44,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 44,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 44,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 44,
+        "tag_id": 6
+    },
+    {
+        "anime_id": 44,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 44,
+        "tag_id": 29
+    },
+    {
+        "anime_id": 45,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 45,
+        "tag_id": 6
+    },
+    {
+        "anime_id": 45,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 45,
+        "tag_id": 20
+    },
+    {
+        "anime_id": 45,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 45,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 46,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 46,
+        "tag_id": 6
+    },
+    {
+        "anime_id": 46,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 46,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 46,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 47,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 47,
+        "tag_id": 6
+    },
+    {
+        "anime_id": 47,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 47,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 47,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 48,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 48,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 48,
+        "tag_id": 20
+    },
+    {
+        "anime_id": 48,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 49,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 49,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 49,
+        "tag_id": 20
+    },
+    {
+        "anime_id": 49,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 50,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 50,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 50,
+        "tag_id": 20
+    },
+    {
+        "anime_id": 50,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 51,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 51,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 51,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 51,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 51,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 52,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 52,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 52,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 52,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 52,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 52,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 52,
+        "tag_id": 32
+    },
+    {
+        "anime_id": 53,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 53,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 53,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 53,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 53,
+        "tag_id": 32
+    },
+    {
+        "anime_id": 54,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 54,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 54,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 54,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 54,
+        "tag_id": 32
+    },
+    {
+        "anime_id": 55,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 55,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 55,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 55,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 55,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 56,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 56,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 56,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 56,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 56,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 57,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 57,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 57,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 57,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 57,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 58,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 58,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 58,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 58,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 58,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 59,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 59,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 59,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 59,
+        "tag_id": 19
+    },
+    {
+        "anime_id": 59,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 60,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 60,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 60,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 60,
+        "tag_id": 19
+    },
+    {
+        "anime_id": 60,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 61,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 61,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 61,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 61,
+        "tag_id": 19
+    },
+    {
+        "anime_id": 61,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 62,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 62,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 62,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 62,
+        "tag_id": 19
+    },
+    {
+        "anime_id": 62,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 63,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 63,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 63,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 63,
+        "tag_id": 19
+    },
+    {
+        "anime_id": 63,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 64,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 64,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 64,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 64,
+        "tag_id": 19
+    },
+    {
+        "anime_id": 64,
+        "tag_id": 24
+    },
+    {
+        "anime_id": 65,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 65,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 65,
+        "tag_id": 16
+    },
+    {
+        "anime_id": 65,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 65,
+        "tag_id": 28
+    },
+    {
+        "anime_id": 65,
+        "tag_id": 37
+    },
+    {
+        "anime_id": 65,
+        "tag_id": 38
+    },
+    {
+        "anime_id": 66,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 66,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 66,
+        "tag_id": 16
+    },
+    {
+        "anime_id": 66,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 66,
+        "tag_id": 28
+    },
+    {
+        "anime_id": 66,
+        "tag_id": 37
+    },
+    {
+        "anime_id": 66,
+        "tag_id": 38
+    },
+    {
+        "anime_id": 67,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 67,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 67,
+        "tag_id": 16
+    },
+    {
+        "anime_id": 67,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 67,
+        "tag_id": 28
+    },
+    {
+        "anime_id": 67,
+        "tag_id": 37
+    },
+    {
+        "anime_id": 67,
+        "tag_id": 38
+    },
+    {
+        "anime_id": 68,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 68,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 68,
+        "tag_id": 16
+    },
+    {
+        "anime_id": 68,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 68,
+        "tag_id": 28
+    },
+    {
+        "anime_id": 68,
+        "tag_id": 37
+    },
+    {
+        "anime_id": 68,
+        "tag_id": 38
+    },
+    {
+        "anime_id": 69,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 69,
+        "tag_id": 15
+    },
+    {
+        "anime_id": 69,
+        "tag_id": 16
+    },
+    {
+        "anime_id": 69,
+        "tag_id": 17
+    },
+    {
+        "anime_id": 69,
+        "tag_id": 28
+    },
+    {
+        "anime_id": 69,
+        "tag_id": 37
+    },
+    {
+        "anime_id": 69,
+        "tag_id": 38
+    },
+    {
+        "anime_id": 70,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 70,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 70,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 70,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 70,
+        "tag_id": 23
+    },
+    {
+        "anime_id": 70,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 71,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 71,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 71,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 71,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 71,
+        "tag_id": 23
+    },
+    {
+        "anime_id": 71,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 72,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 72,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 72,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 72,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 73,
+        "tag_id": 4
+    },
+    {
+        "anime_id": 73,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 73,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 73,
+        "tag_id": 40
+    },
+    {
+        "anime_id": 74,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 74,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 74,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 74,
+        "tag_id": 9
+    },
+    {
+        "anime_id": 74,
+        "tag_id": 38
+    },
+    {
+        "anime_id": 75,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 75,
+        "tag_id": 5
+    },
+    {
+        "anime_id": 75,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 75,
+        "tag_id": 29
+    },
+    {
+        "anime_id": 75,
+        "tag_id": 30
+    },
+    {
+        "anime_id": 76,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 76,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 76,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 76,
+        "tag_id": 25
+    },
+    {
+        "anime_id": 76,
+        "tag_id": 34
+    },
+    {
+        "anime_id": 76,
+        "tag_id": 35
+    },
+    {
+        "anime_id": 77,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 77,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 77,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 77,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 77,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 78,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 78,
+        "tag_id": 2
+    },
+    {
+        "anime_id": 78,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 78,
+        "tag_id": 10
+    },
+    {
+        "anime_id": 78,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 79,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 79,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 79,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 79,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 80,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 80,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 80,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 80,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 81,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 81,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 81,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 81,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 82,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 82,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 82,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 82,
+        "tag_id": 11
+    },
+    {
+        "anime_id": 83,
+        "tag_id": 1
+    },
+    {
+        "anime_id": 83,
+        "tag_id": 3
+    },
+    {
+        "anime_id": 83,
+        "tag_id": 7
+    },
+    {
+        "anime_id": 83,
+        "tag_id": 11
+    }
 ]

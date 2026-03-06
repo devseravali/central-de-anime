@@ -1,39 +1,39 @@
 [
     {
         "anime_id": 1,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 2,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 3,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 4,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 5,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 6,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 7,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 8,
-        "status_id": 2
+        "status_id": 7
     },
     {
         "anime_id": 9,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 10,
@@ -41,11 +41,11 @@
     },
     {
         "anime_id": 11,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 12,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 13,
@@ -53,7 +53,11 @@
     },
     {
         "anime_id": 14,
-        "status_id": 2
+        "status_id": 1
+    },
+    {
+        "anime_id": 15,
+        "status_id": 5
     },
     {
         "anime_id": 15,
@@ -61,27 +65,27 @@
     },
     {
         "anime_id": 16,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 17,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 18,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 19,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 20,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 21,
-        "status_id": 2
+        "status_id": 1
     },
     {
         "anime_id": 22,
@@ -89,15 +93,15 @@
     },
     {
         "anime_id": 23,
-        "status_id": 6
+        "status_id": 1
     },
     {
         "anime_id": 24,
-        "status_id": 6
+        "status_id": 7
     },
     {
         "anime_id": 25,
-        "status_id": 1
+        "status_id": 5
     },
     {
         "anime_id": 26,
@@ -134,6 +138,10 @@
     {
         "anime_id": 34,
         "status_id": 1
+    },
+    {
+        "anime_id": 35,
+        "status_id": 5
     },
     {
         "anime_id": 35,
@@ -201,7 +209,7 @@
     },
     {
         "anime_id": 51,
-        "status_id": 1
+        "status_id": 3
     },
     {
         "anime_id": 52,
@@ -229,7 +237,7 @@
     },
     {
         "anime_id": 58,
-        "status_id": 1
+        "status_id": 5
     },
     {
         "anime_id": 59,
@@ -245,7 +253,7 @@
     },
     {
         "anime_id": 62,
-        "status_id": 6
+        "status_id": 1
     },
     {
         "anime_id": 63,
@@ -253,7 +261,7 @@
     },
     {
         "anime_id": 64,
-        "status_id": 1
+        "status_id": 6
     },
     {
         "anime_id": 65,
@@ -265,15 +273,15 @@
     },
     {
         "anime_id": 67,
-        "status_id": 1
+        "status_id": 6
     },
     {
         "anime_id": 68,
-        "status_id": 1
+        "status_id": 6
     },
     {
         "anime_id": 69,
-        "status_id": 1
+        "status_id": 6
     },
     {
         "anime_id": 70,
@@ -289,7 +297,7 @@
     },
     {
         "anime_id": 73,
-        "status_id": 1
+        "status_id": 6
     },
     {
         "anime_id": 74,
@@ -321,6 +329,14 @@
     },
     {
         "anime_id": 81,
+        "status_id": 1
+    },
+    {
+        "anime_id": 82,
+        "status_id": 1
+    },
+    {
+        "anime_id": 83,
         "status_id": 6
     }
 ]

@@ -446,5 +446,801 @@
     {
         "anime_id": 30,
         "genero_id": 7
+    },
+    {
+        "anime_id": 31,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 31,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 31,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 31,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 32,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 32,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 32,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 33,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 33,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 33,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 33,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 34,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 34,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 34,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 34,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 35,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 35,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 35,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 35,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 36,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 36,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 36,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 37,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 37,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 37,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 37,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 38,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 38,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 38,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 38,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 39,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 39,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 39,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 39,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 40,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 40,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 40,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 41,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 41,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 41,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 41,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 42,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 42,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 42,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 42,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 43,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 43,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 43,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 43,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 44,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 44,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 44,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 45,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 45,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 45,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 45,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 46,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 46,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 46,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 46,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 47,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 47,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 47,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 47,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 48,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 48,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 48,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 49,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 49,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 49,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 49,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 50,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 50,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 50,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 50,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 51,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 51,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 51,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 51,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 52,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 52,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 52,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 53,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 53,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 53,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 53,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 54,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 54,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 54,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 54,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 55,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 55,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 55,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 55,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 56,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 56,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 56,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 57,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 57,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 57,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 57,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 58,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 58,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 58,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 58,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 59,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 59,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 59,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 59,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 60,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 60,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 60,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 61,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 61,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 61,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 61,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 62,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 62,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 62,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 62,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 63,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 63,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 63,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 63,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 64,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 64,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 64,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 65,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 65,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 65,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 65,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 66,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 66,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 66,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 66,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 67,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 67,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 67,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 67,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 68,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 68,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 68,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 69,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 69,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 69,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 69,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 70,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 70,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 70,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 70,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 71,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 71,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 71,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 71,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 72,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 72,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 72,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 73,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 73,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 73,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 73,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 74,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 74,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 74,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 74,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 75,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 75,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 75,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 75,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 76,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 76,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 76,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 77,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 77,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 77,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 77,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 78,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 78,
+        "genero_id": 5
+    },
+    {
+        "anime_id": 78,
+        "genero_id": 6
+    },
+    {
+        "anime_id": 78,
+        "genero_id": 7
+    },
+    {
+        "anime_id": 79,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 79,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 79,
+        "genero_id": 8
+    },
+    {
+        "anime_id": 79,
+        "genero_id": 9
+    },
+    {
+        "anime_id": 80,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 80,
+        "genero_id": 10
+    },
+    {
+        "anime_id": 80,
+        "genero_id": 13
+    },
+    {
+        "anime_id": 81,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 81,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 81,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 81,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 82,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 82,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 82,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 82,
+        "genero_id": 15
+    },
+    {
+        "anime_id": 83,
+        "genero_id": 1
+    },
+    {
+        "anime_id": 83,
+        "genero_id": 2
+    },
+    {
+        "anime_id": 83,
+        "genero_id": 4
+    },
+    {
+        "anime_id": 83,
+        "genero_id": 15
     }
 ]
