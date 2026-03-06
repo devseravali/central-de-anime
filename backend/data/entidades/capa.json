@@ -1,0 +1,613 @@
+[
+  {
+    "id": 1,
+    "nome_original": "shingeki-no-kyojin-t1",
+    "nome_salvo": "shingeki-no-kyojin-t1.jpg",
+    "caminho": "images/capas/shingeki-no-kyojin-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 2,
+    "nome_original": "shingeki-no-kyojin-t2",
+    "nome_salvo": "shingeki-no-kyojin-t2.jpg",
+    "caminho": "images/capas/shingeki-no-kyojin-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 3,
+    "nome_original": "shingeki-no-kyojin-t3-p1",
+    "nome_salvo": "shingeki-no-kyojin-t3-p1.jpg",
+    "caminho": "images/capas/shingeki-no-kyojin-t3-p1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 4,
+    "nome_original": "shingeki-no-kyojin-t3-p2",
+    "nome_salvo": "shingeki-no-kyojin-t3-p2.jpg",
+    "caminho": "images/capas/shingeki-no-kyojin-t3-p2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 5,
+    "nome_original": "shingeki-no-kyojin-t4-p1",
+    "nome_salvo": "shingeki-no-kyojin-t4-p1.jpg",
+    "caminho": "images/capas/shingeki-no-kyojin-t4-p1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 6,
+    "nome_original": "shingeki-no-kyojin-t4-p2",
+    "nome_salvo": "shingeki-no-kyojin-t4-p2.jpg",
+    "caminho": "images/capas/shingeki-no-kyojin-t4-p2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 7,
+    "nome_original": "shingeki-no-kyojin-t4-pt3",
+    "nome_salvo": "shingeki-no-kyojin-t4-pt3.jpg",
+    "caminho": "images/capas/shingeki-no-kyojin-t4-pt3.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 8,
+    "nome_original": "shingeki-no-kyojin-gaiden-kuinaki-sentaku",
+    "nome_salvo": "shingeki-no-kyojin-gaiden-kuinaki-sentaku.jpg",
+    "caminho": "images/capas/shingeki-no-kyojin-gaiden-kuinaki-sentaku.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 9,
+    "nome_original": "kimetsu-no-yaiba-t1",
+    "nome_salvo": "kimetsu-no-yaiba-t1.jpg",
+    "caminho": "images/capas/kimetsu-no-yaiba-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 10,
+    "nome_original": "kimestu-no-yaiba-mugen-filme",
+    "nome_salvo": "kimestu-no-yaiba-mugen-filme.jpg",
+    "caminho": "images/capas/kimestu-no-yaiba-mugen-filme.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 11,
+    "nome_original": "kimetsu-no-yaiba-t2",
+    "nome_salvo": "kimetsu-no-yaiba-t2.jpg",
+    "caminho": "images/capas/kimetsu-no-yaiba-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 12,
+    "nome_original": "kimetsu-no-yaiba-t3",
+    "nome_salvo": "kimetsu-no-yaiba-t3.jpg",
+    "caminho": "images/capas/kimetsu-no-yaiba-t3.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 13,
+    "nome_original": "kimestu-no-yaiba-t4",
+    "nome_salvo": "kimestu-no-yaiba-t4.jpg",
+    "caminho": "images/capas/kimestu-no-yaiba-t4.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 14,
+    "nome_original": "kimestu-no-yaiba-t5",
+    "nome_salvo": "kimestu-no-yaiba-t5.jpg",
+    "caminho": "images/capas/kimestu-no-yaiba-t5.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 15,
+    "nome_original": "kimestu-no-yaiba-filme-1-akaza-sairai",
+    "nome_salvo": "kimestu-no-yaiba-filme-1-akaza-sairai.jpg",
+    "caminho": "images/capas/kimestu-no-yaiba-filme-1-akaza-sairai.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 16,
+    "nome_original": "tokyo-ghoul-t1",
+    "nome_salvo": "tokyo-ghoul-t1.jpg",
+    "caminho": "images/capas/tokyo-ghoul-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 17,
+    "nome_original": "tokyo-ghoul-t2",
+    "nome_salvo": "tokyo-ghoul-t2.jpg",
+    "caminho": "images/capas/tokyo-ghoul-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 18,
+    "nome_original": "tokyo-ghoul-re-t1",
+    "nome_salvo": "tokyo-ghoul-re-t1.jpg",
+    "caminho": "images/capas/tokyo-ghoul-re-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 19,
+    "nome_original": "tokyo-ghoul-re-t2",
+    "nome_salvo": "tokyo-ghoul-re-t2.jpg",
+    "caminho": "images/capas/tokyo-ghoul-re-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 20,
+    "nome_original": "jujutsu-kaisen-t1",
+    "nome_salvo": "jujutsu-kaisen-t1.jpg",
+    "caminho": "images/capas/jujutsu-kaisen-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 21,
+    "nome_original": "jujutsu-kaisen-t2",
+    "nome_salvo": "jujutsu-kaisen-t2.jpg",
+    "caminho": "images/capas/jujutsu-kaisen-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 22,
+    "nome_original": "jujutsu-kaisen-0",
+    "nome_salvo": "jujutsu-kaisen-0.jpg",
+    "caminho": "images/capas/jujutsu-kaisen-0.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 23,
+    "nome_original": "jujutsu-kaisen-kaigyoku-gyokusetsu",
+    "nome_salvo": "jujutsu-kaisen-kaigyoku-gyokusetsu.jpg",
+    "caminho": "images/capas/jujutsu-kaisen-kaigyoku-gyokusetsu.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 24,
+    "nome_original": "jujutsu-kaisen-shibuya-x-shimetsu",
+    "nome_salvo": "jujutsu-kaisen-shibuya-x-shimetsu.jpg",
+    "caminho": "images/capas/jujutsu-kaisen-shibuya-x-shimetsu.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 25,
+    "nome_original": "jujutsu-kaisen-t3",
+    "nome_salvo": "jujutsu-kaisen-t3.jpg",
+    "caminho": "images/capas/jujutsu-kaisen-t3.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 26,
+    "nome_original": "death-note-t1",
+    "nome_salvo": "death-note-t1.jpg",
+    "caminho": "images/capas/death-note-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 27,
+    "nome_original": "vinland-saga-t1",
+    "nome_salvo": "vinland-saga-t1.jpg",
+    "caminho": "images/capas/vinland-saga-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 28,
+    "nome_original": "vinland-saga-t2",
+    "nome_salvo": "vinland-saga-t2.jpg",
+    "caminho": "images/capas/vinland-saga-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 29,
+    "nome_original": "ousama-ranking-t1",
+    "nome_salvo": "ousama-ranking-t1.jpg",
+    "caminho": "images/capas/ousama-ranking-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 30,
+    "nome_original": "ousama-ranking-t2",
+    "nome_salvo": "ousama-ranking-t2.jpg",
+    "caminho": "images/capas/ousama-ranking-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 31,
+    "nome_original": "hunter-x-hunter-1999",
+    "nome_salvo": "hunter-x-hunter-1999.jpg",
+    "caminho": "images/capas/hunter-x-hunter-1999.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 32,
+    "nome_original": "hunter-x-hunter-2011",
+    "nome_salvo": "hunter-x-hunter-2011.jpg",
+    "caminho": "images/capas/hunter-x-hunter-2011.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 33,
+    "nome_original": "frieren-t1",
+    "nome_salvo": "frieren-t1.jpg",
+    "caminho": "images/capas/frieren-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 34,
+    "nome_original": "chainsaw-man-t1",
+    "nome_salvo": "chainsaw-man-t1.jpg",
+    "caminho": "images/capas/chainsaw-man-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 35,
+    "nome_original": "chainsaw-man-reze",
+    "nome_salvo": "chainsaw-man-reze.jpg",
+    "caminho": "images/capas/chainsaw-man-reze.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 36,
+    "nome_original": "hells-paradise-t1",
+    "nome_salvo": "hells-paradise-t1.jpg",
+    "caminho": "images/capas/hells-paradise-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 37,
+    "nome_original": "fullmetal-alchemist-brotherhood",
+    "nome_salvo": "fullmetal-alchemist-brotherhood.jpg",
+    "caminho": "images/capas/fullmetal-alchemist-brotherhood.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 38,
+    "nome_original": "mob-psycho-100-t1",
+    "nome_salvo": "mob-psycho-100-t1.jpg",
+    "caminho": "images/capas/mob-psycho-100-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 39,
+    "nome_original": "mob-psycho-100-t2",
+    "nome_salvo": "mob-psycho-100-t2.jpg",
+    "caminho": "images/capas/mob-psycho-100-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 40,
+    "nome_original": "mob-psycho-100-t3",
+    "nome_salvo": "mob-psycho-100-t3.jpg",
+    "caminho": "images/capas/mob-psycho-100-t3.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 41,
+    "nome_original": "sword-art-online-t1",
+    "nome_salvo": "sword-art-online-t1.jpg",
+    "caminho": "images/capas/sword-art-online-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 42,
+    "nome_original": "sword-art-online-t2",
+    "nome_salvo": "sword-art-online-t2.jpg",
+    "caminho": "images/capas/sword-art-online-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 43,
+    "nome_original": "sword-art-online-t3",
+    "nome_salvo": "sword-art-online-t3.jpg",
+    "caminho": "images/capas/sword-art-online-t3.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 44,
+    "nome_original": "sword-art-online-t4",
+    "nome_salvo": "sword-art-online-t4.jpg",
+    "caminho": "images/capas/sword-art-online-t4.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 45,
+    "nome_original": "your-lie-in-april",
+    "nome_salvo": "your-lie-in-april.jpg",
+    "caminho": "images/capas/your-lie-in-april.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 46,
+    "nome_original": "horimiya-t1",
+    "nome_salvo": "horimiya-t1.jpg",
+    "caminho": "images/capas/horimiya-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 47,
+    "nome_original": "horimiya-t2",
+    "nome_salvo": "horimiya-t2.jpg",
+    "caminho": "images/capas/horimiya-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 48,
+    "nome_original": "bocchi-the-rock-t1",
+    "nome_salvo": "bocchi-the-rock-t1.jpg",
+    "caminho": "images/capas/bocchi-the-rock-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 49,
+    "nome_original": "bocchi-the-rock-re",
+    "nome_salvo": "bocchi-the-rock-re.jpg",
+    "caminho": "images/capas/bocchi-the-rock-re.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 50,
+    "nome_original": "bocchi-the-rock-rere",
+    "nome_salvo": "bocchi-the-rock-rere.jpg",
+    "caminho": "images/capas/bocchi-the-rock-rere.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 51,
+    "nome_original": "one-piece-t1",
+    "nome_salvo": "one-piece-t1.jpg",
+    "caminho": "images/capas/one-piece-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 52,
+    "nome_original": "dragon-ball-z-t1",
+    "nome_salvo": "dragon-ball-z-t1.jpg",
+    "caminho": "images/capas/dragon-ball-z-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 53,
+    "nome_original": "naruto-t1",
+    "nome_salvo": "naruto-t1.jpg",
+    "caminho": "images/capas/naruto-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 54,
+    "nome_original": "naruto-shippuden-t2",
+    "nome_salvo": "naruto-shippuden-t2.jpg",
+    "caminho": "images/capas/naruto-shippuden-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 55,
+    "nome_original": "bleach-t1",
+    "nome_salvo": "bleach-t1.jpg",
+    "caminho": "images/capas/bleach-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 56,
+    "nome_original": "bleach-t2",
+    "nome_salvo": "bleach-t2.jpg",
+    "caminho": "images/capas/bleach-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 57,
+    "nome_original": "bleach-t3",
+    "nome_salvo": "bleach-t3.jpg",
+    "caminho": "images/capas/bleach-t3.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 58,
+    "nome_original": "bleach-t4",
+    "nome_salvo": "bleach-t4.jpg",
+    "caminho": "images/capas/bleach-t4.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 59,
+    "nome_original": "haikyuu-t1",
+    "nome_salvo": "haikyuu-t1.jpg",
+    "caminho": "images/capas/haikyuu-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 60,
+    "nome_original": "haikyuu-t2",
+    "nome_salvo": "haikyuu-t2.jpg",
+    "caminho": "images/capas/haikyuu-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 61,
+    "nome_original": "haikyuu-t3",
+    "nome_salvo": "haikyuu-t3.jpg",
+    "caminho": "images/capas/haikyuu-t3.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 62,
+    "nome_original": "haikyuu-t4-1",
+    "nome_salvo": "haikyuu-t4-1.jpg",
+    "caminho": "images/capas/haikyuu-t4-1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 63,
+    "nome_original": "haikyuu-t4-2",
+    "nome_salvo": "haikyuu-t4-2.jpg",
+    "caminho": "images/capas/haikyuu-t4-2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 64,
+    "nome_original": "haikyuu-filme-1",
+    "nome_salvo": "haikyuu-filme-1.jpg",
+    "caminho": "images/capas/haikyuu-filme-1.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 65,
+    "nome_original": "psycho-pass-t1",
+    "nome_salvo": "psycho-pass-t1.jpg",
+    "caminho": "images/capas/psycho-pass-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 66,
+    "nome_original": "psycho-pass-t2",
+    "nome_salvo": "psycho-pass-t2.jpg",
+    "caminho": "images/capas/psycho-pass-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 67,
+    "nome_original": "psycho-pass-filme-1",
+    "nome_salvo": "psycho-pass-filme-1.jpg",
+    "caminho": "images/capas/psycho-pass-filme-1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 68,
+    "nome_original": "psycho-pass-filme-2",
+    "nome_salvo": "psycho-pass-filme-2.jpg",
+    "caminho": "images/capas/psycho-pass-filme-2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 69,
+    "nome_original": "psycho-pass-filme-3",
+    "nome_salvo": "psycho-pass-filme-3.jpg",
+    "caminho": "images/capas/psycho-pass-filme-3.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 70,
+    "nome_original": "fate-zero-t1",
+    "nome_salvo": "fate-zero-t1.jpg",
+    "caminho": "images/capas/fate-zero-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 71,
+    "nome_original": "fate-zero-t2",
+    "nome_salvo": "fate-zero-t2.jpg",
+    "caminho": "images/capas/fate-zero-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 72,
+    "nome_original": "violet-evergarden",
+    "nome_salvo": "violet-evergarden.jpg",
+    "caminho": "images/capas/violet-evergarden.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 73,
+    "nome_original": "violet-evergarden-filme-1",
+    "nome_salvo": "violet-evergarden-filme-1.jpg",
+    "caminho": "images/capas/violet-evergarden-filme-1.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 74,
+    "nome_original": "great-pretender",
+    "nome_salvo": "great-pretender.jpg",
+    "caminho": "images/capas/great-pretender.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 75,
+    "nome_original": "no-game-no-life-t1",
+    "nome_salvo": "no-game-no-life-t1.jpg",
+    "caminho": "images/capas/no-game-no-life-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 76,
+    "nome_original": "dororo-t1",
+    "nome_salvo": "dororo-t1.jpg",
+    "caminho": "images/capas/dororo-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 77,
+    "nome_original": "noragami-t1",
+    "nome_salvo": "noragami-t1.jpg",
+    "caminho": "images/capas/noragami-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 78,
+    "nome_original": "noragami-t2",
+    "nome_salvo": "noragami-t2.jpg",
+    "caminho": "images/capas/noragami-t2.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 79,
+    "nome_original": "spy-x-family-t1",
+    "nome_salvo": "spy-x-family-t1.jpg",
+    "caminho": "images/capas/spy-x-family-t1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 80,
+    "nome_original": "spy-x-family-t2-pt-1",
+    "nome_salvo": "spy-x-family-t2-pt-1.jpg",
+    "caminho": "images/capas/spy-x-family-t2-pt-1.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 81,
+    "nome_original": "spy-x-family-t2-pt-2",
+    "nome_salvo": "spy-x-family-t2-pt-2.jpg",
+    "caminho": "images/capas/spy-x-family-t2-pt-2.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 82,
+    "nome_original": "spy-x-family-t3",
+    "nome_salvo": "spy-x-family-t3.jpg",
+    "caminho": "images/capas/spy-x-family-t3.jpg",
+    "mimetype": "image/jpeg"
+  },
+  {
+    "id": 83,
+    "nome_original": "spy-x-family-code-white",
+    "nome_salvo": "spy-x-family-code-white.jpg",
+    "caminho": "images/capas/spy-x-family-code-white.jpg",
+    "mimetype": "image/jpeg"
+  },
+
+  {
+    "id": 84,
+    "nome_original": "one-piece-t1",
+    "nome_salvo": "one-piece-t1.jpg",
+    "caminho": "images/capas/one-piece-t1.jpg",
+    "mimetype": "image/jpeg"
+  }
+]
