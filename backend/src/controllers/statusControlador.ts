@@ -8,11 +8,7 @@ import {
   respostaCriado,
   respostaAtualizado,
 } from '../helpers/responseHelpers';
-
-import {
-  statusCriacaoDTO,
-  statusAtualizacaoDTO,
-} from '../types/dtos/statusDTO';
+import { statusSchema } from '../schemas/statusSchema';
 
 export const listarStatus = asyncHandler(
   async (_req: Request, res: Response) => {
@@ -26,11 +22,13 @@ export const buscarTodosStatus = listarStatus;
 export const buscarStatusPorId = asyncHandler(
   async (req: Request, res: Response) => {
     const id = Number(req.params.id);
+
     if (Number.isNaN(id)) {
       throw ErroApi.badRequest('ID do status inválido', 'INVALID_STATUS_ID');
     }
 
     const item = await statusServico.buscarPorId(id);
+
     if (!item) {
       throw ErroApi.notFound('Status', 'STATUS_NOT_FOUND');
     }
@@ -42,6 +40,7 @@ export const buscarStatusPorId = asyncHandler(
 export const buscarStatusPorNome = asyncHandler(
   async (req: Request, res: Response) => {
     const { nome } = req.params;
+
     if (!nome || typeof nome !== 'string' || nome.trim() === '') {
       throw ErroApi.badRequest(
         'Nome do status inválido',
@@ -50,6 +49,7 @@ export const buscarStatusPorNome = asyncHandler(
     }
 
     const item = await statusServico.buscarPorNome(nome);
+
     if (!item) {
       throw ErroApi.notFound('Status', 'STATUS_NOT_FOUND');
     }
@@ -59,8 +59,10 @@ export const buscarStatusPorNome = asyncHandler(
 );
 
 export const criarStatus = asyncHandler(async (req: Request, res: Response) => {
-  const dados = statusCriacaoDTO.parse(req.body);
+  const dados = statusSchema.parse(req.body);
+
   const criado = await statusServico.criar(dados);
+
   return respostaCriado(res, criado, 'Status criado com sucesso');
 });
 
@@ -69,11 +71,13 @@ export const adicionarStatus = criarStatus;
 export const atualizarStatus = asyncHandler(
   async (req: Request, res: Response) => {
     const id = Number(req.params.id);
+
     if (Number.isNaN(id)) {
       throw ErroApi.badRequest('ID do status inválido', 'INVALID_STATUS_ID');
     }
 
-    const dados = statusAtualizacaoDTO.parse(req.body);
+    const dados = statusSchema.parse(req.body);
+
     const atualizado = await statusServico.atualizar(id, dados);
 
     if (!atualizado) {
@@ -87,16 +91,19 @@ export const atualizarStatus = asyncHandler(
 export const deletarStatus = asyncHandler(
   async (req: Request, res: Response) => {
     const id = Number(req.params.id);
+
     if (Number.isNaN(id)) {
       throw ErroApi.badRequest('ID do status inválido', 'INVALID_STATUS_ID');
     }
 
     const deletado = await statusServico.deletar(id);
+
     if (!deletado) {
       throw ErroApi.notFound('Status', 'STATUS_NOT_FOUND');
     }
 
-    return respostaSucesso(res, null, {
+    return res.status(200).json({
+      sucesso: true,
       mensagem: 'Status removido com sucesso',
     });
   },
