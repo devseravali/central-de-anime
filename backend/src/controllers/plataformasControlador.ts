@@ -1,150 +1,120 @@
-import { Request, Response } from 'express';
-import { asyncHandler } from '../middleware/errorHandler';
-import { ErroApi } from '../errors/ErroApi';
 import { plataformaServico } from '../services/plataformasServico';
-import {
-  respostaLista,
-  respostaSucesso,
-  respostaCriado,
-  respostaAtualizado,
-} from '../helpers/responseHelpers';
-import {
-  plataformaCriacaoDTO,
-  plataformaAtualizacaoDTO,
-} from '../types/dtos/plataformaDTO';
+import type { Request, Response } from 'express';
+import { PlataformasSchema } from '../schemas/plataformasSchema';
 
-function exigirId(req: Request): number {
-  const id = Number(req.params.id);
-  if (Number.isNaN(id)) {
-    throw ErroApi.badRequest(
-      'ID da plataforma inválido',
-      'INVALID_PLATAFORMA_ID',
-    );
-  }
-  return id;
-}
-
-function exigirNomeParam(req: Request): string {
-  const nome =
-    typeof req.params.nome === 'string' ? req.params.nome.trim() : '';
-  if (!nome) {
-    throw ErroApi.badRequest(
-      'Nome da plataforma inválido',
-      'INVALID_PLATAFORMA_NAME',
-    );
-  }
-  return nome;
-}
-
-export const listarPlataformas = asyncHandler(
-  async (_req: Request, res: Response) => {
+export async function obterTodasPlataformas(req: Request, res: Response) {
+  try {
     const plataformas = await plataformaServico.listar();
-    return respostaLista(res, plataformas);
-  },
-);
+    res.json(plataformas);
+  } catch (err) {
+    res.status(500).json({ erro: 'Erro ao listar plataformas.' });
+  }
+}
 
-export const obterTodasPlataformas = listarPlataformas;
+export async function obterPlataformaPorId(req: Request, res: Response) {
+  try {
+    const { id } = req.params;
 
-export const buscarPlataformaPorId = asyncHandler(
-  async (req: Request, res: Response) => {
-    const id = exigirId(req);
+    const plataforma = await plataformaServico.buscarPorId(Number(id));
 
-    const plataforma = await plataformaServico.buscarPorId(id);
-    if (!plataforma) {
-      throw ErroApi.notFound('Plataforma', 'PLATAFORMA_NOT_FOUND');
+    if (!plataforma)
+      return res.status(404).json({ erro: 'Plataforma não encontrada.' });
+
+    res.json(plataforma);
+  } catch (err) {
+    res.status(500).json({ erro: 'Erro ao buscar plataforma.' });
+  }
+}
+
+export async function obterPlataformaPorNome(req: Request, res: Response) {
+  try {
+    let { nome } = req.params;
+
+    if (Array.isArray(nome)) {
+      nome = nome[0];
     }
-
-    return respostaSucesso(res, plataforma);
-  },
-);
-
-export const obterPlataformaPorId = buscarPlataformaPorId;
-
-export const buscarPlataformaPorNome = asyncHandler(
-  async (req: Request, res: Response) => {
-    const nome = exigirNomeParam(req);
 
     const plataforma = await plataformaServico.buscarPorNome(nome);
-    if (!plataforma) {
-      throw ErroApi.notFound('Plataforma', 'PLATAFORMA_NOT_FOUND');
+
+    if (!plataforma)
+      return res.status(404).json({ erro: 'Plataforma não encontrada.' });
+
+    res.json(plataforma);
+  } catch (err) {
+    res.status(500).json({ erro: 'Erro ao buscar plataforma.' });
+  }
+}
+
+export async function listarAnimesPorPlataforma(req: Request, res: Response) {
+  try {
+    const { id } = req.params;
+
+    const animes = await plataformaServico.listarAnimes(Number(id));
+
+    res.json(animes);
+  } catch (err) {
+    console.log('Erro ao listar animes da plataforma:', err);
+    res.status(500).json({ erro: 'Erro ao listar animes da plataforma.' });
+  }
+}
+
+export async function criarPlataforma(req: Request, res: Response) {
+  try {
+    const resultado = PlataformasSchema.safeParse(req.body);
+
+    if (!resultado.success) {
+      return res.status(400).json({
+        erro: 'Dados inválidos',
+        detalhes: resultado.error.flatten().fieldErrors,
+      });
     }
 
-    return respostaSucesso(res, plataforma);
-  },
-);
+    const plataforma = await plataformaServico.criar(resultado.data);
 
-export const listarAnimesPorPlataforma = asyncHandler(
-  async (req: Request, res: Response) => {
-    const id = exigirId(req);
+    res.status(201).json(plataforma);
+  } catch (err) {
+    res.status(500).json({ erro: 'Erro ao criar plataforma.' });
+  }
+}
 
-    const animes = await plataformaServico.listarAnimes(id);
-    if (!animes || animes.length === 0) {
-      throw ErroApi.notFound(
-        'Plataforma sem animes cadastrados',
-        'NO_ANIMES_FOR_PLATAFORMA',
-      );
+export async function atualizarPlataforma(req: Request, res: Response) {
+  try {
+    const { id } = req.params;
+
+    const resultado = PlataformasSchema.safeParse(req.body);
+
+    if (!resultado.success) {
+      return res.status(400).json({
+        erro: 'Dados inválidos',
+        detalhes: resultado.error.flatten().fieldErrors,
+      });
     }
 
-    return respostaLista(res, animes);
-  },
-);
-
-export const criarPlataforma = asyncHandler(
-  async (req: Request, res: Response) => {
-    const dados = plataformaCriacaoDTO.parse(req.body);
-
-    const existente = await plataformaServico.buscarPorNome(dados.nome);
-    if (existente) {
-      throw ErroApi.conflict(
-        'Plataforma já existe no banco de dados',
-        'PLATAFORMA_ALREADY_EXISTS',
-      );
-    }
-
-    const criada = await plataformaServico.criar(dados);
-    return respostaCriado(res, criada, 'Plataforma criada com sucesso');
-  },
-);
-
-export const atualizarPlataforma = asyncHandler(
-  async (req: Request, res: Response) => {
-    const id = exigirId(req);
-    const dados = plataformaAtualizacaoDTO.parse(req.body);
-
-    if (dados.nome) {
-      const existente = await plataformaServico.buscarPorNome(dados.nome);
-      if (existente && existente.id !== id) {
-        throw ErroApi.conflict(
-          'Nome de plataforma já existe',
-          'PLATAFORMA_ALREADY_EXISTS',
-        );
-      }
-    }
-
-    const atualizada = await plataformaServico.atualizar(id, dados);
-    if (!atualizada) {
-      throw ErroApi.notFound('Plataforma', 'PLATAFORMA_NOT_FOUND');
-    }
-
-    return respostaAtualizado(
-      res,
-      atualizada,
-      'Plataforma atualizada com sucesso',
+    const plataforma = await plataformaServico.atualizar(
+      Number(id),
+      resultado.data,
     );
-  },
-);
 
-export const deletarPlataforma = asyncHandler(
-  async (req: Request, res: Response) => {
-    const id = exigirId(req);
+    if (!plataforma)
+      return res.status(404).json({ erro: 'Plataforma não encontrada.' });
 
-    const deletada = await plataformaServico.deletar(id);
-    if (!deletada) {
-      throw ErroApi.notFound('Plataforma', 'PLATAFORMA_NOT_FOUND');
-    }
+    res.json(plataforma);
+  } catch (err) {
+    res.status(500).json({ erro: 'Erro ao atualizar plataforma.' });
+  }
+}
 
-    return respostaSucesso(res, null, {
-      mensagem: 'Plataforma removida com sucesso',
-    });
-  },
-);
+export async function deletarPlataforma(req: Request, res: Response) {
+  try {
+    const { id } = req.params;
+
+    const plataforma = await plataformaServico.deletar(Number(id));
+
+    if (!plataforma)
+      return res.status(404).json({ erro: 'Plataforma não encontrada.' });
+
+    res.json(plataforma);
+  } catch (err) {
+    res.status(500).json({ erro: 'Erro ao deletar plataforma.' });
+  }
+}
