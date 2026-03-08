@@ -1,144 +1,135 @@
-import { Request, Response } from 'express';
-import { asyncHandler } from '../middleware/errorHandler';
-import { ErroApi } from '../errors/ErroApi';
 import { generosServico } from '../services/generosServico';
-import {
-  respostaLista,
-  respostaSucesso,
-  respostaCriado,
-  respostaAtualizado,
-} from '../helpers/responseHelpers';
-import {
-  generoCriacaoDTO,
-  generoAtualizacaoDTO,
-} from '../types/dtos/generoDTO';
+import type { Request, Response } from 'express';
+import { generosSchema } from '../schemas/generosSchema';
 
-function validarIdParam(idParam: string | string[] | undefined): number {
-  const idString = Array.isArray(idParam) ? idParam[0] : idParam;
-  const id = Number(idString);
-  if (!idString || Number.isNaN(id)) {
-    throw ErroApi.badRequest('ID do gênero inválido', 'INVALID_GENERO_ID');
-  }
-  return id;
-}
+export const buscarTodosGeneros = async (req: Request, res: Response) => {
+  const pagina = Number(req.query.pagina ?? 1);
+  const limite = Number(req.query.limite ?? 20);
 
-function validarNomeParam(nome: string | undefined): string {
-  const value = nome?.trim();
-  if (!value) {
-    throw ErroApi.badRequest('Nome do gênero inválido', 'INVALID_GENERO_NAME');
-  }
-  return value;
-}
-
-export const buscarTodosGeneros = asyncHandler(
-  async (req: Request, res: Response) => {
-    const pagina = parseInt(String(req.query.pagina ?? 1), 10);
-    const limite = parseInt(String(req.query.limite ?? 20), 10);
-    const generos = await generosServico.listar({ pagina, limite });
-    return respostaLista(res, generos);
-  },
-);
-
-export const buscarGeneroPorId = asyncHandler(
-  async (req: Request, res: Response) => {
-    const id = validarIdParam(req.params.id);
-
-    const genero = await generosServico.buscarPorId(id);
-    if (!genero) {
-      throw ErroApi.notFound('Gênero', 'GENERO_NOT_FOUND');
-    }
-
-    return respostaSucesso(res, genero);
-  },
-);
-
-export const buscarGeneroPorNome = asyncHandler(
-  async (req: Request, res: Response) => {
-    const nomeParam = Array.isArray(req.params.nome)
-      ? req.params.nome[0]
-      : req.params.nome;
-    const nome = validarNomeParam(nomeParam);
-
-    const genero = await generosServico.buscarPorNome(nome);
-    if (!genero) {
-      throw ErroApi.notFound('Gênero', 'GENERO_NOT_FOUND');
-    }
-
-    return respostaSucesso(res, genero);
-  },
-);
-
-export const listarAnimesPorGenero = asyncHandler(
-  async (req: Request, res: Response) => {
-    const nomeParam = Array.isArray(req.params.nome)
-      ? req.params.nome[0]
-      : req.params.nome;
-    const nome = validarNomeParam(nomeParam);
-
-    const animes = await generosServico.listarAnimesPorNomeGenero(nome);
-    if (!animes || animes.length === 0) {
-      throw ErroApi.notFound(
-        'Gênero sem animes cadastrados',
-        'NO_ANIMES_FOR_GENERO',
-      );
-    }
-
-    return respostaLista(res, animes);
-  },
-);
-
-export const adicionarGenero = asyncHandler(
-  async (req: Request, res: Response) => {
-    const dados = generoCriacaoDTO.parse(req.body);
-
-    const existente = await generosServico.buscarPorNome(dados.nome);
-    if (existente) {
-      throw ErroApi.conflict(
-        'Gênero já existe no banco de dados',
-        'GENERO_ALREADY_EXISTS',
-      );
-    }
-
-    const novo = await generosServico.criar(dados);
-    return respostaCriado(res, novo, 'Gênero criado com sucesso');
-  },
-);
-
-export const atualizarGenero = asyncHandler(
-  async (req: Request, res: Response) => {
-    const id = validarIdParam(req.params.id);
-    const dados = generoAtualizacaoDTO.parse(req.body);
-
-    if (dados.nome) {
-      const existente = await generosServico.buscarPorNome(dados.nome);
-      if (existente && existente.id !== id) {
-        throw ErroApi.conflict(
-          'Nome de gênero já existe',
-          'GENERO_ALREADY_EXISTS',
-        );
-      }
-    }
-
-    const atualizado = await generosServico.atualizar(id, dados);
-    if (!atualizado) {
-      throw ErroApi.notFound('Gênero', 'GENERO_NOT_FOUND');
-    }
-
-    return respostaAtualizado(res, atualizado, 'Gênero atualizado com sucesso');
-  },
-);
-
-export const deletarGenero = asyncHandler(
-  async (req: Request, res: Response) => {
-    const id = validarIdParam(req.params.id);
-
-    const deletado = await generosServico.deletar(id);
-    if (!deletado) {
-      throw ErroApi.notFound('Gênero', 'GENERO_NOT_FOUND');
-    }
-
-    return respostaSucesso(res, null, {
-      mensagem: 'Gênero removido com sucesso',
+  if (pagina <= 0 || limite <= 0) {
+    return res.status(400).json({
+      error: 'Página ou limite inválido',
     });
-  },
-);
+  }
+
+  const generos = await generosServico.listar({ pagina, limite });
+
+  return res.status(200).json(generos);
+};
+
+export const buscarGeneroPorId = async (req: Request, res: Response) => {
+  const id = Number(req.params.id);
+
+  if (!Number.isInteger(id) || id <= 0) {
+    return res.status(400).json({ error: 'ID inválido' });
+  }
+
+  const genero = await generosServico.buscarPorId(id);
+
+  if (!genero) {
+    return res.status(404).json({ error: 'Gênero não encontrado' });
+  }
+
+  return res.status(200).json(genero);
+};
+
+export const buscarGeneroPorNome = async (req: Request, res: Response) => {
+  const nomeParam = req.params.nome;
+  const nome = Array.isArray(nomeParam) ? nomeParam[0] : nomeParam;
+
+  if (!nome) {
+    return res.status(400).json({ error: 'Nome inválido' });
+  }
+
+  const genero = await generosServico.buscarPorNome(nome);
+
+  if (!genero) {
+    return res.status(404).json({ error: 'Gênero não encontrado' });
+  }
+
+  return res.status(200).json(genero);
+};
+
+export const listarAnimesPorGenero = async (req: Request, res: Response) => {
+  const nomeParam = req.params.nome;
+  const nome = Array.isArray(nomeParam) ? nomeParam[0] : nomeParam;
+
+  if (!nome) {
+    return res.status(400).json({ error: 'Nome do gênero inválido' });
+  }
+
+  const animes = await generosServico.listarAnimesPorNomeGenero(nome);
+
+  return res.status(200).json(animes);
+};
+
+export const adicionarGenero = async (req: Request, res: Response) => {
+  const parseResult = generosSchema.safeParse(req.body);
+
+  if (!parseResult.success) {
+    return res.status(400).json({
+      error: 'Dados inválidos',
+      detalhes: parseResult.error.format(),
+    });
+  }
+
+  try {
+    const genero = await generosServico.criar(parseResult.data);
+
+    return res.status(201).json(genero);
+  } catch (error: any) {
+    if (error.code === 'P2002') {
+      return res.status(409).json({
+        error: 'Já existe um gênero com esse nome.',
+      });
+    }
+
+    return res.status(500).json({
+      error: 'Erro ao criar gênero.',
+      detalhes: error,
+    });
+  }
+};
+
+export const atualizarGenero = async (req: Request, res: Response) => {
+  const id = Number(req.params.id);
+
+  if (!Number.isInteger(id) || id <= 0) {
+    return res.status(400).json({ error: 'ID inválido' });
+  }
+
+  const parseResult = generosSchema.safeParse(req.body);
+
+  if (!parseResult.success) {
+    return res.status(400).json({
+      error: 'Dados inválidos',
+      detalhes: parseResult.error.format(),
+    });
+  }
+
+  const genero = await generosServico.atualizar(id, parseResult.data);
+
+  if (!genero) {
+    return res.status(404).json({ error: 'Gênero não encontrado' });
+  }
+
+  return res.status(200).json(genero);
+};
+
+export const deletarGenero = async (req: Request, res: Response) => {
+  const id = Number(req.params.id);
+
+  if (!Number.isInteger(id) || id <= 0) {
+    return res.status(400).json({ error: 'ID inválido' });
+  }
+
+  const genero = await generosServico.deletar(id);
+
+  if (!genero) {
+    return res.status(404).json({ error: 'Gênero não encontrado' });
+  }
+
+  return res.status(200).json({
+    message: 'Gênero removido com sucesso',
+  });
+};

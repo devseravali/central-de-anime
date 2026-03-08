@@ -1,45 +1,35 @@
 import { Request, Response } from 'express';
 import { asyncHandler } from '../middleware/errorHandler';
-import { ErroApi } from '../errors/ErroApi';
 import { estudiosServico } from '../services/estudiosServico';
+import { ErroApi } from '../errors/ErroApi';
 import {
   respostaLista,
   respostaSucesso,
   respostaCriado,
   respostaAtualizado,
 } from '../helpers/responseHelpers';
+import { estudiosSchema } from '../schemas/estudiosSchema';
 
-import {
-  estudioCriacaoDTO,
-  estudioAtualizacaoDTO,
-} from '../types/dtos/estudioDTO';
-import { db } from '../db';
-import { estudios } from '../schema/estudios';
-
-const isErrorWithCode = (err: unknown): err is Error & { code: string } =>
-  err instanceof Error &&
-  'code' in err &&
-  typeof (err as { code?: unknown }).code === 'string';
+function parsePositiveInt(value: unknown, errorCode: string) {
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed) || parsed <= 0) {
+    throw ErroApi.badRequest('ID inválido', errorCode);
+  }
+  return parsed;
+}
 
 export const listarEstudios = asyncHandler(
-  async (req: Request, res: Response) => {
-    const pagina = parseInt(String(req.query.pagina ?? 1), 10);
-    const limite = parseInt(String(req.query.limite ?? 20), 10);
-    const estudios = await estudiosServico.listar({ pagina, limite });
+  async (_req: Request, res: Response) => {
+    const estudios = await estudiosServico.listar();
     return respostaLista(res, estudios);
   },
 );
 
-export const buscarTodosEstudios = listarEstudios;
-
 export const buscarEstudioPorId = asyncHandler(
   async (req: Request, res: Response) => {
-    const id = Number(req.params.id);
-    if (Number.isNaN(id)) {
-      throw ErroApi.badRequest('ID inválido', 'INVALID_ESTUDIO_ID');
-    }
-
+    const id = parsePositiveInt(req.params.id, 'INVALID_ESTUDIO_ID');
     const estudio = await estudiosServico.buscarPorId(id);
+
     if (!estudio) {
       throw ErroApi.notFound('Estúdio', 'ESTUDIO_NOT_FOUND');
     }
@@ -50,46 +40,31 @@ export const buscarEstudioPorId = asyncHandler(
 
 export const buscarEstudioPorNome = asyncHandler(
   async (req: Request, res: Response) => {
-    const { nome } = req.params;
+    const nomeParam = req.params.nome;
+    const nome = Array.isArray(nomeParam) ? nomeParam[0] : nomeParam;
 
-    const nomeString = Array.isArray(nome) ? nome[0] : nome;
-
-    if (!nomeString) {
+    if (!nome) {
       throw ErroApi.badRequest('Nome inválido', 'INVALID_ESTUDIO_NAME');
     }
 
-    const estudio = await estudiosServico.buscarPorNome(nomeString);
+    const estudio = await estudiosServico.buscarPorNome(nome);
+
     if (!estudio) {
       throw ErroApi.notFound('Estúdio', 'ESTUDIO_NOT_FOUND');
     }
 
-    const animes = await estudiosServico.listarAnimes(estudio.id);
-    if (!animes.length) {
-      throw ErroApi.notFound(
-        'Estúdio sem animes cadastrados',
-        'NO_ANIMES_FOR_ESTUDIO',
-      );
-    }
-
-    return respostaLista(res, animes);
+    return respostaSucesso(res, estudio);
   },
 );
 
-export const listarAnimesPorNomeEstudio = buscarEstudioPorNome;
-
 export const listarAnimesPorEstudio = asyncHandler(
   async (req: Request, res: Response) => {
-    const id = Number(req.params.id);
-    if (Number.isNaN(id)) {
-      throw ErroApi.badRequest('ID inválido', 'INVALID_ESTUDIO_ID');
-    }
+    const id = parsePositiveInt(req.params.id, 'INVALID_ESTUDIO_ID');
 
     const animes = await estudiosServico.listarAnimes(id);
+
     if (!animes.length) {
-      throw ErroApi.notFound(
-        'Estúdio sem animes cadastrados',
-        'NO_ANIMES_FOR_ESTUDIO',
-      );
+      throw ErroApi.notFound('Estúdio sem animes', 'NO_ANIMES_FOR_ESTUDIO');
     }
 
     return respostaLista(res, animes);
@@ -98,68 +73,64 @@ export const listarAnimesPorEstudio = asyncHandler(
 
 export const criarEstudio = asyncHandler(
   async (req: Request, res: Response) => {
-    const dados = estudioCriacaoDTO.parse(req.body);
-    const novo = await estudiosServico.criar(dados);
-    return respostaCriado(res, novo, 'Estúdio criado com sucesso');
-  },
-);
+    const parseResult = estudiosSchema.safeParse(req.body);
 
-export const adicionarEstudio = asyncHandler(
-  async (req: Request, res: Response) => {
-    const dados = estudioCriacaoDTO.parse(req.body);
-    try {
-      const [novoEstudio] = await db
-        .insert(estudios)
-        .values({
-          nome: dados.nome,
-        })
-        .returning();
-      return respostaCriado(res, novoEstudio, 'Estúdio adicionado com sucesso');
-    } catch (err: unknown) {
-      if (isErrorWithCode(err) && err.code === '23505') {
-        throw ErroApi.conflict('Estúdio já existe', 'ESTUDIO_DUPLICADO');
-      }
-      throw err;
+    if (!parseResult.success) {
+      throw ErroApi.badRequest(
+        'Dados inválidos para estúdio',
+        'INVALID_ESTUDIO_DATA',
+      );
     }
+
+    const estudio = await estudiosServico.criar(parseResult.data);
+
+    return respostaCriado(res, estudio, 'Estúdio criado com sucesso');
   },
 );
 
 export const atualizarEstudio = asyncHandler(
   async (req: Request, res: Response) => {
-    const id = Number(req.params.id);
-    if (Number.isNaN(id)) {
-      throw ErroApi.badRequest('ID inválido', 'INVALID_ESTUDIO_ID');
+    const id = parsePositiveInt(req.params.id, 'INVALID_ESTUDIO_ID');
+
+    const parseResult = estudiosSchema.safeParse(req.body);
+
+    if (!parseResult.success) {
+      throw ErroApi.badRequest(
+        'Dados inválidos para estúdio',
+        'INVALID_ESTUDIO_DATA',
+      );
     }
 
-    const dados = estudioAtualizacaoDTO.parse(req.body);
-    const atualizado = await estudiosServico.atualizar(id, dados);
+    const estudio = await estudiosServico.atualizar(id, parseResult.data);
 
-    if (!atualizado) {
+    if (!estudio) {
       throw ErroApi.notFound('Estúdio', 'ESTUDIO_NOT_FOUND');
     }
 
-    return respostaAtualizado(
-      res,
-      atualizado,
-      'Estúdio atualizado com sucesso',
-    );
+    return respostaAtualizado(res, estudio, 'Estúdio atualizado com sucesso');
   },
 );
 
 export const deletarEstudio = asyncHandler(
   async (req: Request, res: Response) => {
-    const id = Number(req.params.id);
-    if (Number.isNaN(id)) {
-      throw ErroApi.badRequest('ID inválido', 'INVALID_ESTUDIO_ID');
-    }
+    const id = parsePositiveInt(req.params.id, 'INVALID_ESTUDIO_ID');
 
-    const deletado = await estudiosServico.deletar(id);
-    if (!deletado) {
-      throw ErroApi.notFound('Estúdio', 'ESTUDIO_NOT_FOUND');
-    }
+    try {
+      await estudiosServico.deletar(id);
 
-    return respostaSucesso(res, null, {
-      mensagem: 'Estúdio removido com sucesso',
-    });
+      return res.status(200).json({
+        sucesso: true,
+        mensagem: 'Estúdio removido com sucesso',
+      });
+    } catch (error) {
+      if (
+        error instanceof Error &&
+        error.message.includes('ESTUDIO_NAO_ENCONTRADO')
+      ) {
+        throw ErroApi.notFound('Estúdio', 'ESTUDIO_NOT_FOUND');
+      }
+
+      throw error;
+    }
   },
 );
