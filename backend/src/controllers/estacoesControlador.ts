@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import { asyncHandler } from '../middleware/errorHandler';
 import { ErroApi } from '../errors/ErroApi';
 import { estacoesServico } from '../services/estacoesServico';
-import { validarEstacaoPayload } from '../utils/validacao';
 import { parseIdParam } from '../helpers/httpParsers';
 import {
   respostaLista,
@@ -10,38 +9,50 @@ import {
   respostaCriado,
   respostaAtualizado,
 } from '../helpers/responseHelpers';
-
-function getQueryString(req: Request, key: string) {
-  const v = req.query[key];
-  if (typeof v === 'string') return v.trim();
-  if (Array.isArray(v) && typeof v[0] === 'string') return v[0].trim();
-  return '';
-}
+import { estacoesSchema } from '../schemas/estacoesSchema';
 
 const estacaoNaoEncontrada = () =>
   ErroApi.notFound('Estação', 'ESTACAO_NOT_FOUND');
 
+function getQueryString(req: Request, key: string): string {
+  const v = req.query[key];
+
+  if (typeof v === 'string') return v.trim();
+  if (Array.isArray(v) && typeof v[0] === 'string') return v[0].trim();
+
+  return '';
+}
+
 export const listarEstacoes = asyncHandler(
   async (_req: Request, res: Response) => {
-    const estacoes = await estacoesServico.listarEstacoes();
+    const estacoes = await estacoesServico.listarTodos();
     return respostaLista(res, estacoes);
   },
 );
 
-export const listarEstacaoPorId = asyncHandler(
+// Buscar estação por ID
+export const buscarEstacaoPorId = asyncHandler(
   async (req: Request, res: Response) => {
-    const id = parseIdParam(req, 'estação');
+    const id = Number(parseIdParam(req, 'estacao'));
 
-    const estacao = await estacoesServico.listarEstacaoPorId(id);
-    if (!estacao) throw estacaoNaoEncontrada();
+    if (!Number.isInteger(id) || id <= 0) {
+      throw ErroApi.badRequest('ID inválido', 'INVALID_ESTACAO_ID');
+    }
+
+    const estacao = await estacoesServico.buscarPorId(id);
+
+    if (!estacao) {
+      throw estacaoNaoEncontrada();
+    }
 
     return respostaSucesso(res, estacao);
   },
 );
 
-export const listarEstacaoPorNome = asyncHandler(
+export const buscarEstacaoPorNome = asyncHandler(
   async (req: Request, res: Response) => {
     const nome = getQueryString(req, 'nome');
+
     if (!nome) {
       throw ErroApi.badRequest(
         'Nome da estação não fornecido',
@@ -49,45 +60,59 @@ export const listarEstacaoPorNome = asyncHandler(
       );
     }
 
-    const estacao = await estacoesServico.listarEstacaoPorNome(nome);
-    if (!estacao) throw estacaoNaoEncontrada();
+    const estacao = await estacoesServico.buscarPorNome(nome);
+
+    if (!estacao) {
+      throw estacaoNaoEncontrada();
+    }
 
     return respostaSucesso(res, estacao);
   },
 );
 
-export const adicionarEstacao = asyncHandler(
+export const criarEstacao = asyncHandler(
   async (req: Request, res: Response) => {
-    const validado = validarEstacaoPayload(req.body);
-    if (!validado) {
+    const parseResult = estacoesSchema.safeParse(req.body);
+
+    if (!parseResult.success) {
       throw ErroApi.badRequest(
         'Dados inválidos para estação',
         'INVALID_ESTACAO_DATA',
       );
     }
 
-    const estacao = await estacoesServico.adicionarEstacao(validado);
+    const estacao = await estacoesServico.criar({
+      nome: parseResult.data.nome,
+    });
+
     return respostaCriado(res, estacao, 'Estação criada com sucesso');
   },
 );
 
 export const atualizarEstacao = asyncHandler(
   async (req: Request, res: Response) => {
-    const id = parseIdParam(req, 'estação');
+    const id = Number(parseIdParam(req, 'estacao'));
 
-    const validado = validarEstacaoPayload(req.body);
-    if (!validado) {
+    if (!Number.isInteger(id) || id <= 0) {
+      throw ErroApi.badRequest('ID inválido', 'INVALID_ESTACAO_ID');
+    }
+
+    const parseResult = estacoesSchema.safeParse(req.body);
+
+    if (!parseResult.success) {
       throw ErroApi.badRequest(
         'Dados inválidos para estação',
         'INVALID_ESTACAO_DATA',
       );
     }
 
-    const estacaoAtualizada = await estacoesServico.atualizarEstacao(
-      Number(id),
-      validado,
-    );
-    if (!estacaoAtualizada) throw estacaoNaoEncontrada();
+    const estacaoAtualizada = await estacoesServico.atualizar(id, {
+      nome: parseResult.data.nome,
+    });
+
+    if (!estacaoAtualizada) {
+      throw estacaoNaoEncontrada();
+    }
 
     return respostaAtualizado(
       res,
@@ -99,12 +124,16 @@ export const atualizarEstacao = asyncHandler(
 
 export const removerEstacao = asyncHandler(
   async (req: Request, res: Response) => {
-    const id = parseIdParam(req, 'estação');
+    const id = Number(parseIdParam(req, 'estacao'));
 
-    const existe = await estacoesServico.listarEstacaoPorId(id);
-    if (!existe) throw estacaoNaoEncontrada();
+    if (!Number.isInteger(id) || id <= 0) {
+      throw ErroApi.badRequest('ID inválido', 'INVALID_ESTACAO_ID');
+    }
 
-    await estacoesServico.removerEstacao(Number(id));
-    return respostaSucesso(res, { mensagem: 'Estação removida com sucesso' });
+    await estacoesServico.remover(id);
+
+    return respostaSucesso(res, {
+      mensagem: 'Estação removida com sucesso',
+    });
   },
 );
