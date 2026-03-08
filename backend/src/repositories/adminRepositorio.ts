@@ -1,107 +1,105 @@
-import { db } from '../db';
-import { usuarios } from '../schema/usuario';
-import { eq } from 'drizzle-orm';
+import { prisma } from '../lib/prisma';
 import bcrypt from 'bcrypt';
 
-import {
-  CriarUsuarioDTO,
-  AtualizarUsuarioDTO,
-  Usuario,
-} from '../types/usuario';
-
-const SALT_ROUNDS = 10;
-
 export const adminRepositorio = {
-  async listarTodosUsuarios(): Promise<Usuario[]> {
-    return db
-      .select({
-        id: usuarios.id,
-        nome: usuarios.nome,
-        email: usuarios.email,
-        senhaHash: usuarios.senhaHash,
-        criadoEm: usuarios.criadoEm,
-      })
-      .from(usuarios);
+  async promoverParaAdmin(id: number) {
+    const adminExistente = await prisma.admin.findUnique({
+      where: { usuarioId: id },
+    });
+
+    if (adminExistente) {
+      return adminExistente;
+    }
+
+    return prisma.admin.create({
+      data: { usuarioId: id },
+    });
   },
 
-  async buscarUsuarioPorId(id: number): Promise<Usuario | null> {
-    const rows = await db
-      .select({
-        id: usuarios.id,
-        nome: usuarios.nome,
-        email: usuarios.email,
-        senhaHash: usuarios.senhaHash,
-        criadoEm: usuarios.criadoEm,
-      })
-      .from(usuarios)
-      .where(eq(usuarios.id, id))
-      .limit(1);
-
-    return rows[0] ?? null;
+  listarAdmins() {
+    return prisma.usuario.findMany({
+      where: {
+        admin: { isNot: null },
+      },
+      orderBy: { id: 'asc' },
+      include: { admin: true },
+    });
   },
 
-  async buscarUsuarioPorEmail(email: string) {
-    const rows = await db
-      .select()
-      .from(usuarios)
-      .where(eq(usuarios.email, email))
-      .limit(1);
-
-    return rows[0] ?? null;
+  buscarUsuarioPorId(id: number, incluirAdmin = false) {
+    return prisma.usuario.findUnique({
+      where: { id },
+      include: incluirAdmin ? { admin: true } : undefined,
+    });
   },
 
-  async criarUsuario(dados: CriarUsuarioDTO): Promise<Usuario | null> {
-    const senhaHash = await bcrypt.hash(dados.senha, SALT_ROUNDS);
+  buscarUsuarioPorEmail(email: string) {
+    return prisma.usuario.findUnique({
+      where: { email },
+    });
+  },
 
-    const rows = await db
-      .insert(usuarios)
-      .values({
-        nome: dados.nome,
-        email: dados.email,
-        senhaHash,
-      })
-      .returning({
-        id: usuarios.id,
-        nome: usuarios.nome,
-        email: usuarios.email,
-        senhaHash: usuarios.senhaHash,
-        criadoEm: usuarios.criadoEm,
-      });
+  async criarUsuario(data: { nome: string; email: string; senha: string }) {
+    const senhaHash = await bcrypt.hash(data.senha, 10);
 
-    return rows[0] ?? null;
+    const usuario = await prisma.usuario.create({
+      data: {
+        nome: data.nome,
+        email: data.email,
+        senha: data.senha,
+        senhaHash: senhaHash,
+      },
+    });
+
+    await prisma.admin.create({
+      data: {
+        usuarioId: usuario.id,
+      },
+    });
+
+    return prisma.usuario.findUnique({
+      where: { id: usuario.id },
+      include: { admin: true },
+    });
   },
 
   async atualizarUsuario(
     id: number,
-    dados: AtualizarUsuarioDTO,
-  ): Promise<Usuario | null> {
-    const patch: AtualizarUsuarioDTO = {};
-    if (dados.nome !== undefined) patch.nome = dados.nome;
-    if (dados.email !== undefined) patch.email = dados.email;
+    data: { nome?: string; email?: string; senha?: string },
+  ) {
+    const updateData: { nome?: string; email?: string; senha?: string } = {
+      ...data,
+    };
 
-    if (Object.keys(patch).length === 0) return null;
+    if (data.senha) {
+      updateData.senha = await bcrypt.hash(data.senha, 10);
+    }
 
-    const rows = await db
-      .update(usuarios)
-      .set(patch)
-      .where(eq(usuarios.id, id))
-      .returning({
-        id: usuarios.id,
-        nome: usuarios.nome,
-        email: usuarios.email,
-        senhaHash: usuarios.senhaHash,
-        criadoEm: usuarios.criadoEm,
-      });
+    await prisma.usuario.update({
+      where: { id },
+      data: updateData,
+    });
 
-    return rows[0] ?? null;
+    return prisma.usuario.findUnique({
+      where: { id },
+      include: { admin: true },
+    });
   },
 
-  async removerUsuario(id: number): Promise<boolean> {
-    const rows = await db
-      .delete(usuarios)
-      .where(eq(usuarios.id, id))
-      .returning({ id: usuarios.id });
+  async removerUsuario(id: number) {
+    await prisma.admin.deleteMany({
+      where: { usuarioId: id },
+    });
 
-    return rows.length > 0;
+    return prisma.usuario.delete({
+      where: { id },
+    });
+  },
+
+  atualizarStatus(id: number, status: 'ativo' | 'suspenso' | 'banido') {
+    return prisma.usuario.update({
+      where: { id },
+      data: { status },
+    });
   },
 };
