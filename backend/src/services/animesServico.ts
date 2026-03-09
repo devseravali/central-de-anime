@@ -1,128 +1,57 @@
-import { animesRepositorio } from '../repositories/animesRepositorio';
-import type { Anime, AnimeInput, AnimePatch } from '../types/anime';
+import { animeRepositorio } from '../repositories/animesRepositorio';
+import { ErroApi } from '../errors/ErroApi';
+import { AnimeCreateDTO, AnimeUpdateDTO } from '../types/dtos/animeDTO';
+import { validarAnimeOuFalhar } from '../utils/validators';
 
-function normalizarAnimeInput(data: AnimeInput): Omit<
-  {
-    temporada: number | null;
-    ano: number | null;
-    id: number;
-    anime_id: number;
-    slug: string;
-    titulo: string;
-    estudio_id: number;
-    tipo: string;
-    status_id: number | null;
-    estacao_id: number | null;
-    episodios: number | null;
-    sinopse: string | null;
-    capaUrl: string | null;
+const animeNaoEncontrado = () => ErroApi.notFound('Anime', 'ANIME_NOT_FOUND');
+
+export const animeServico = {
+  async listarTodosAnimes(params?: {
+    offset: number;
+    limit: number;
+    filtros?: any;
+  }) {
+    const animes = await animeRepositorio.listarTodosAnimes(params);
+    return animes;
   },
-  'id'
-> {
-  return {
-    anime_id: data.anime_id,
-    estudio_id: data.estudio_id,
-    slug: data.slug,
-    titulo: data.titulo,
-    tipo: data.tipo ?? '',
-    temporada: data.temporada !== undefined ? data.temporada : null,
-    status_id: data.status_id !== undefined ? data.status_id : null,
-    ano: data.ano !== undefined ? data.ano : null,
-    estacao_id: data.estacao_id !== undefined ? data.estacao_id : null,
-    episodios: data.episodios !== undefined ? data.episodios : null,
-    sinopse: data.sinopse ?? null,
-    capaUrl: data.capaUrl ?? null,
-  };
-}
-
-export const animesServico = {
-  async buscarTodos({
-    pagina = 1,
-    limite = 20,
-  }: { pagina?: number; limite?: number } = {}): Promise<Anime[]> {
-    return animesRepositorio.animes({ pagina, limite }) as Promise<Anime[]>;
+  async listarNomes() {
+    const animes = await animeRepositorio.listarNomes();
+    return animes.map((a: { titulo: string }) => a.titulo);
   },
-
-  async buscarComTitulos(): Promise<Anime[]> {
-    return animesRepositorio.animesTitulos() as Promise<Anime[]>;
+  async buscarPorId(id: number) {
+    const anime = await animeRepositorio.buscarPorId(id);
+    if (!anime) throw animeNaoEncontrado();
+    return anime;
   },
-
-  async buscarNomes(): Promise<string[]> {
-    return animesRepositorio.animesNomes() as Promise<string[]>;
+  async criar(data: AnimeCreateDTO) {
+    const validData = validarAnimeOuFalhar(data) as AnimeCreateDTO;
+    return animeRepositorio.criar(validData);
   },
-
-  async buscarPorId(id: string): Promise<Anime | null> {
-    return animesRepositorio.animesPorId(id) as Promise<Anime | null>;
-  },
-
-  async adicionarAnime(data: AnimeInput): Promise<Anime> {
-    const payload = normalizarAnimeInput(data);
-    console.log('Dados normalizados no serviço:', payload);
-    const anime = await animesRepositorio.adicionarAnime(payload);
-    if (!anime) {
-      throw new Error('Não foi possível adicionar o anime.');
+  async atualizar(id: number, data: AnimeUpdateDTO) {
+    const validData = validarAnimeOuFalhar(data) as AnimeUpdateDTO;
+    try {
+      return await animeRepositorio.atualizar(id, validData);
+    } catch {
+      throw animeNaoEncontrado();
     }
-    return anime as Anime;
   },
-
-  async atualizarAnime(id: string, dados: AnimePatch): Promise<Anime | null> {
-    const patch: AnimePatch = {};
-
-    if (dados.anime_id !== undefined) patch.anime_id = dados.anime_id;
-    if (dados.estudio_id !== undefined) patch.estudio_id = dados.estudio_id;
-    if (dados.slug !== undefined) patch.slug = dados.slug;
-    if (dados.titulo !== undefined) patch.titulo = dados.titulo;
-    if (dados.tipo !== undefined) patch.tipo = dados.tipo;
-    if (dados.temporada !== undefined) patch.temporada = dados.temporada;
-    if (dados.status_id !== undefined) patch.status_id = dados.status_id;
-    if (dados.ano !== undefined) patch.ano = dados.ano;
-    if (dados.estacao_id !== undefined) patch.estacao_id = dados.estacao_id;
-    if (dados.episodios !== undefined) patch.episodios = dados.episodios;
-    if (dados.sinopse !== undefined) patch.sinopse = dados.sinopse;
-    if (dados.capaUrl !== undefined) patch.capaUrl = dados.capaUrl;
-
-    if (Object.keys(patch).length === 0) return null;
-
-    const updated = await animesRepositorio.atualizarAnime(id, patch);
-    return updated as Anime | null;
+  async deletar(id: number) {
+    try {
+      await animeRepositorio.deletar(id);
+    } catch {
+      throw animeNaoEncontrado();
+    }
   },
-
-  async deletarAnime(id: string): Promise<boolean> {
-    const result = await animesRepositorio.deletarAnime(id);
-    return result !== null;
+  async buscarComTitulos() {
+    return animeRepositorio.listarNomes();
   },
-
-  async buscarTemporadas(): Promise<string[]> {
-    return animesRepositorio.listarTemporadas() as Promise<string[]>;
+  async listarAnimesPorTemporada() {
+    return animeRepositorio.listarPorTemporada();
   },
-
-  async buscarTemporadasQuantidade(): Promise<
-    { temporada: string; quantidade: number }[]
-  > {
-    const temporadas = await animesRepositorio.listarTemporadas();
-    const animes = (await animesRepositorio.animes({
-      pagina: 1,
-      limite: 9999,
-    })) as Anime[];
-    return temporadas.map((temporada) => ({
-      temporada,
-      quantidade: animes.filter(
-        (anime) => String(anime.temporada) === temporada,
-      ).length,
-    }));
+  async listarQuantidadePorTemporada() {
+    return animeRepositorio.listarQuantidadePorTemporada();
   },
-
-  async buscarTemporadasAnos(): Promise<number[]> {
-    const animes = (await animesRepositorio.animes({
-      pagina: 1,
-      limite: 9999,
-    })) as Anime[];
-    return Array.from(
-      new Set(
-        animes
-          .map((anime) => anime.ano)
-          .filter((ano): ano is number => typeof ano === 'number'),
-      ),
-    );
+  async listarAnosAnimes() {
+    return animeRepositorio.listarAnos();
   },
 };
