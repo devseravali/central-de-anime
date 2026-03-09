@@ -23,6 +23,7 @@ export const animeRepositorio = {
       skip: params?.offset,
       take: params?.limit,
       where,
+      orderBy: { id: 'asc' },
       include: {
         generos: true,
         estudio: true,

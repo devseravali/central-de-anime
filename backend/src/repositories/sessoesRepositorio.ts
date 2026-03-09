@@ -1,53 +1,51 @@
-import { db } from '../db';
-import { sessoesUsuario } from '../schema/usuario';
-import { eq } from 'drizzle-orm';
+import { prisma } from '../lib/prisma';
 import type { CriarSessaoInput, Sessao } from '../types/sessoes';
 
 export const sessoesRepositorio = {
   async criarSessao(dados: CriarSessaoInput): Promise<Sessao> {
-    const [registro] = await db
-      .insert(sessoesUsuario)
-      .values({
+    const registro = await prisma.sessao.create({
+      data: {
         usuarioId: dados.usuarioId,
-        token: dados.token,
+        refreshTokenHash: dados.refreshTokenHash,
+        dispositivo: dados.dispositivo,
+        ip: dados.ip,
+        userAgent: dados.userAgent,
         expiraEm: dados.expiraEm,
-      })
-      .returning();
+      },
+    });
 
-    return {
-      id: Number(registro.id),
-      usuarioId: Number(registro.usuarioId),
-      token: String(registro.token),
-      expiraEm: new Date(registro.expiraEm),
-      criadoEm: registro.criadoEm ? new Date(registro.criadoEm) : undefined,
-    };
+    return registro;
   },
 
-  async obterSessao(token: string): Promise<Sessao | null> {
-    const [registro] = await db
-      .select()
-      .from(sessoesUsuario)
-      .where(eq(sessoesUsuario.token, token))
-      .limit(1);
+  async buscarPorRefreshTokenHash(hash: string): Promise<Sessao | null> {
+    const registro = await prisma.sessao.findFirst({
+      where: {
+        refreshTokenHash: hash,
+        revogadoEm: null,
+      },
+    });
 
-    if (!registro) return null;
-
-    return {
-      id: Number(registro.id),
-      usuarioId: Number(registro.usuarioId),
-      token: String(registro.token),
-      expiraEm: new Date(registro.expiraEm),
-      criadoEm: registro.criadoEm ? new Date(registro.criadoEm) : undefined,
-    };
+    return registro;
   },
 
-  async deletarSessao(id: number): Promise<void> {
-    await db.delete(sessoesUsuario).where(eq(sessoesUsuario.id, id));
+  async revogarSessao(id: number): Promise<void> {
+    await prisma.sessao.update({
+      where: { id },
+      data: {
+        revogadoEm: new Date(),
+      },
+    });
   },
 
-  async deletarSessoesPorUsuario(usuarioId: number): Promise<void> {
-    await db
-      .delete(sessoesUsuario)
-      .where(eq(sessoesUsuario.usuarioId, usuarioId));
+  async revogarSessoesDoUsuario(usuarioId: number): Promise<void> {
+    await prisma.sessao.updateMany({
+      where: {
+        usuarioId,
+        revogadoEm: null,
+      },
+      data: {
+        revogadoEm: new Date(),
+      },
+    });
   },
 };
