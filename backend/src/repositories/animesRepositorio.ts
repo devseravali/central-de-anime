@@ -2,10 +2,31 @@ import { prisma } from '../lib/prisma';
 import { AnimeCreateDTO, AnimeUpdateDTO } from '../types/dtos/animeDTO';
 
 export const animeRepositorio = {
-  async listarTodosAnimes(params?: { offset: number; limit: number }) {
+  async listarTodosAnimes(params?: {
+    offset: number;
+    limit: number;
+    filtros?: any;
+  }) {
+    const where: any = {};
+    if (params?.filtros) {
+      if (params.filtros.status)
+        where.status_id = Number(params.filtros.status);
+      if (params.filtros.genero)
+        where.generos = { some: { id: Number(params.filtros.genero) } };
+      if (params.filtros.estudio)
+        where.estudio_id = Number(params.filtros.estudio);
+      if (params.filtros.estacao)
+        where.estacao_id = Number(params.filtros.estacao);
+      if (params.filtros.ano) where.ano = Number(params.filtros.ano);
+    }
     const animes = await prisma.anime.findMany({
       skip: params?.offset,
       take: params?.limit,
+      where,
+      include: {
+        generos: true,
+        estudio: true,
+      },
     });
     return animes;
   },

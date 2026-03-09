@@ -1,98 +1,108 @@
-import { generos } from '../schema/generos';
-import { plataformas } from '../schema/plataformas';
-import { status } from '../schema/status';
-import { tags } from '../schema/tags';
-import { estudios } from '../schema/estudios';
-import { estacoes } from '../schema/estacoes';
-import { animes } from '../schema/animes';
-import { personagens } from '../schema/personagens';
-import { db } from '../db';
-import { isNotNull } from 'drizzle-orm/sql/expressions/conditions';
-import { and } from 'drizzle-orm';
-
-export interface BuscaPorNomeResultado {
-  estacoes?: Array<{ id: number; nome: string }>;
-  status?: Array<{ id: number; nome: string }>;
-  estudios?: Array<{ id: number; nome: string }>;
-  plataformas?: Array<{ id: number; nome: string }>;
-  tags?: Array<{ id: number; nome: string }>;
-  animes?: Array<{ id: number; titulo: string }>;
-  personagens?: Array<{ id: number; nome: string }>;
-}
-
-function isNonNull<T>(value: T | null): value is T {
-  return value !== null;
-}
-
-function mapIdNome<T extends { id: number; nome: string | null }>(rows: T[]) {
-  return rows
-    .map((r) => (isNonNull(r.nome) ? { id: r.id, nome: r.nome } : null))
-    .filter(isNonNull);
-}
-
-function pickAnimeTitulo(a: { titulo: string | null }) {
-  return a.titulo;
-}
+import { prisma } from '../lib/prisma';
+import { BuscaPorNomeResultado } from '../types/dados';
 
 export const dadosRepositorio = {
   listarGeneros() {
-    return db.select().from(generos);
+    return prisma.genero.findMany();
   },
 
   listarPlataformas() {
-    return db.select().from(plataformas);
+    return prisma.plataforma.findMany();
   },
 
   listarStatus() {
-    return db.select().from(status);
+    return prisma.status.findMany();
   },
 
   listarTags() {
-    return db.select().from(tags);
+    return prisma.tags.findMany();
   },
 
   listarEstudios() {
-    return db.select().from(estudios);
+    return prisma.estudio.findMany();
   },
 
   listarEstacoes() {
-    return db.select().from(estacoes);
+    return prisma.estacao.findMany();
   },
 
   listarAnimes() {
-    return db.select().from(animes);
+    return prisma.anime.findMany();
   },
 
   listarPersonagens() {
-    return db.select().from(personagens);
+    return prisma.personagem.findMany();
   },
 
-  buscarPorNomeRepositorio(
-    entidade: string,
+  async listarTemporadas(): Promise<Array<{ ano: number; temporada: number }>> {
+    const agrupado = await prisma.anime.groupBy({
+      by: ['ano', 'temporada'],
+      _count: { id: true },
+    });
+
+    return agrupado
+      .filter((row: { ano: number | null; temporada: number | null }) => row.ano !== null && row.temporada !== null)
+      .map((row: { ano: number | null; temporada: number | null }) => ({
+        ano: row.ano as number,
+        temporada: row.temporada as number,
+      }));
+  },
+
+  async buscarPorNomeRepositorio(
+    entidade: keyof BuscaPorNomeResultado,
     nome: string,
   ): Promise<BuscaPorNomeResultado> {
-    return buscarPorNomeServico(entidade, nome);
-  },
-
-  listarTemporadas(): Promise<Array<{ ano: number; temporada: number }>> {
-    return db
-      .select({ ano: animes.ano, temporada: animes.temporada })
-      .from(animes)
-      .where(and(isNotNull(animes.ano), isNotNull(animes.temporada)))
-      .groupBy(animes.ano, animes.temporada)
-      .then((rows) =>
-        rows
-          .filter(
-            (row): row is { ano: number; temporada: number } =>
-              row.ano !== null && row.temporada !== null,
-          )
-          .map((row) => ({ ano: row.ano, temporada: row.temporada })),
-      );
+    switch (entidade) {
+      case 'estacoes':
+        return {
+          estacoes: await prisma.estacao.findMany({
+            where: { nome: { contains: nome } },
+          }),
+        };
+      case 'status':
+        return {
+          status: await prisma.status.findMany({
+            where: { nome: { contains: nome } },
+          }),
+        };
+      case 'estudios':
+        const estudiosResult = await prisma.estudio.findMany({
+          where: { nome: { contains: nome } },
+        });
+        return {
+          estudios: estudiosResult.map((estudio: typeof estudiosResult[number]) => ({
+            id: estudio.id,
+            nome: estudio.nome ?? "",
+          })),
+        };
+      case 'plataformas':
+        return {
+          plataformas: await prisma.plataforma.findMany({
+            where: { nome: { contains: nome } },
+          }),
+        };
+      case 'tags':
+        return {
+          tags: await prisma.tags.findMany({
+            where: { nome: { contains: nome } },
+          }),
+        };
+      case 'animes':
+        return {
+          animes: await prisma.anime.findMany({
+            where: { titulo: { contains: nome } },
+          }),
+        };
+      case 'personagens':
+        return {
+          personagens: await prisma.personagem.findMany({
+            where: { nome: { contains: nome } },
+          }),
+        };
+      default:
+        return {};
+    }
   },
 };
-function buscarPorNomeServico(
-  entidade: string,
-  nome: string,
-): Promise<BuscaPorNomeResultado> {
-  throw new Error('Function not implemented.');
-}
+
+export { BuscaPorNomeResultado };

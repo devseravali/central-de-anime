@@ -1,51 +1,41 @@
-import { db } from '../db';
-import { estacoes } from '../schema/estacoes';
-import { eq } from 'drizzle-orm';
-import type { Estacao } from '../types/estacao';
+import { Estacao } from '../../generated/prisma/client';
 import { normalizarTextoComparacao } from '../helpers/textHelpers';
+import { prisma } from '../lib/prisma';
 
 export const estacoesRepositorio = {
-  async listarTodos(): Promise<Estacao[]> {
-    const rows = await db.select().from(estacoes);
-    return rows as Estacao[];
+  listarTodos: async (): Promise<Estacao[]> => {
+    return prisma.estacao.findMany({ orderBy: { id: 'asc' } });
   },
 
-  async listarEstacaoPorId(id: number): Promise<Estacao | null> {
-    const [estacao] = await db
-      .select()
-      .from(estacoes)
-      .where(eq(estacoes.id, id))
-      .limit(1);
-    return estacao ? (estacao as Estacao) : null;
+  buscarPorId: async (id: number): Promise<Estacao | null> => {
+    return prisma.estacao.findUnique({ where: { id } });
   },
 
-  async listarEstacaoPorNome(nome: string): Promise<Estacao | null> {
-    const todas = await db.select().from(estacoes);
+  buscarPorNome: async (nome: string): Promise<Estacao | null> => {
+    const todas = await prisma.estacao.findMany();
     const termo = normalizarTextoComparacao(nome);
     const estacao = todas.find(
-      (e) => normalizarTextoComparacao(e.nome) === termo,
+      (e: Estacao) => normalizarTextoComparacao(e.nome) === termo,
     );
-    return estacao ? (estacao as Estacao) : null;
+    return estacao ?? null;
   },
 
-  async adicionarEstacao(nome: string, slug: string): Promise<Estacao> {
-    const [novaEstacao] = await db
-      .insert(estacoes)
-      .values({ nome, slug })
-      .returning();
-    return novaEstacao as Estacao;
+  criar: async (dados: { nome: string; slug: string }): Promise<Estacao> => {
+    return prisma.estacao.create({ data: dados });
   },
 
-  async atualizarEstacao(id: number, nome: string): Promise<Estacao | null> {
-    const [estacaoAtualizada] = await db
-      .update(estacoes)
-      .set({ nome })
-      .where(eq(estacoes.id, id))
-      .returning();
-    return estacaoAtualizada ? (estacaoAtualizada as Estacao) : null;
+  atualizar: async (
+    id: number,
+    dados: { nome: string; slug?: string },
+  ): Promise<Estacao | null> => {
+    try {
+      return await prisma.estacao.update({ where: { id }, data: dados });
+    } catch {
+      return null;
+    }
   },
 
-  async removerEstacao(id: number): Promise<void> {
-    await db.delete(estacoes).where(eq(estacoes.id, id));
+  remover: async (id: number): Promise<void> => {
+    await prisma.estacao.delete({ where: { id } });
   },
 };
