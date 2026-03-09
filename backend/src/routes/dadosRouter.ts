@@ -1,149 +1,140 @@
 import { Router } from 'express';
-import * as dadosControlador from '../controllers/dadosControlador';
+import {
+  buscarDados,
+  buscarPlataformas,
+  buscarTags,
+  buscarStatus,
+  buscarTemporadas,
+  buscarEstudios,
+  buscarEstacoes,
+  buscarAnimes,
+  buscarPersonagens,
+  buscarGeneros,
+} from '../controllers/dadosControlador';
 
-const dadosRouter = Router();
+export const dadosRouter = Router();
 
 /**
  * @swagger
  * /dados:
  *   get:
  *     tags: [Dados]
- *     summary: Listar todos os dados
+ *     summary: Retorna dados gerais (animes, generos, plataformas, tags, estacoes)
  *     responses:
  *       200:
- *         description: Dados agregados
- */
-dadosRouter.get('/', dadosControlador.listarDados);
-
-/**
- * @swagger
+ *         description: Dados gerais
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /dados/generos:
  *   get:
  *     tags: [Dados]
- *     summary: Listar gêneros
+ *     summary: Lista todos os gêneros
  *     responses:
  *       200:
  *         description: Lista de gêneros
- */
-dadosRouter.get('/generos', dadosControlador.listarGeneros);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /dados/plataformas:
  *   get:
  *     tags: [Dados]
- *     summary: Listar plataformas
+ *     summary: Lista todas as plataformas
  *     responses:
  *       200:
  *         description: Lista de plataformas
- */
-dadosRouter.get('/plataformas', dadosControlador.listarPlataformas);
-
-/**
- * @swagger
- * /dados/status:
- *   get:
- *     tags: [Dados]
- *     summary: Listar status
- *     responses:
- *       200:
- *         description: Lista de status
- */
-dadosRouter.get('/status', dadosControlador.listarStatus);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /dados/tags:
  *   get:
  *     tags: [Dados]
- *     summary: Listar tags
+ *     summary: Lista todas as tags
  *     responses:
  *       200:
  *         description: Lista de tags
- */
-dadosRouter.get('/tags', dadosControlador.listarTags);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
+ * /dados/status:
+ *   get:
+ *     tags: [Dados]
+ *     summary: Lista todos os status
+ *     responses:
+ *       200:
+ *         description: Lista de status
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /dados/temporadas:
  *   get:
  *     tags: [Dados]
- *     summary: Listar temporadas
+ *     summary: Lista todas as temporadas
  *     responses:
  *       200:
  *         description: Lista de temporadas
- */
-dadosRouter.get('/temporadas', dadosControlador.listarTemporadas);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /dados/estudios:
  *   get:
  *     tags: [Dados]
- *     summary: Listar estúdios
+ *     summary: Lista todos os estúdios
  *     responses:
  *       200:
  *         description: Lista de estúdios
- */
-dadosRouter.get('/estudios', dadosControlador.listarEstudios);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /dados/estacoes:
  *   get:
  *     tags: [Dados]
- *     summary: Listar estações
+ *     summary: Lista todas as estações
  *     responses:
  *       200:
  *         description: Lista de estações
- */
-dadosRouter.get('/estacoes', dadosControlador.listarEstacoes);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /dados/animes:
  *   get:
  *     tags: [Dados]
- *     summary: Listar animes
+ *     summary: Lista todos os animes
  *     responses:
  *       200:
  *         description: Lista de animes
- */
-dadosRouter.get('/animes', dadosControlador.listarAnimes);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /dados/personagens:
  *   get:
  *     tags: [Dados]
- *     summary: Listar personagens
+ *     summary: Lista todos os personagens
  *     responses:
  *       200:
  *         description: Lista de personagens
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  */
-dadosRouter.get('/personagens', dadosControlador.listarPersonagens);
 
-/**
- * @swagger
- * /dados/buscar/{entidade}/{nome}:
- *   get:
- *     tags: [Dados]
- *     summary: Buscar entidade por nome
- *     parameters:
- *       - in: path
- *         name: entidade
- *         required: true
- *         schema:
- *           type: string
- *       - in: path
- *         name: nome
- *         required: true
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Resultado da busca
- */
-dadosRouter.get('/buscar/:entidade/:nome', dadosControlador.buscarPorNome);
-
-export { dadosRouter };
+dadosRouter.get('/', buscarDados);
+dadosRouter.get('/generos', buscarGeneros);
+dadosRouter.get('/plataformas', buscarPlataformas);
+dadosRouter.get('/tags', buscarTags);
+dadosRouter.get('/status', buscarStatus);
+dadosRouter.get('/temporadas', buscarTemporadas);
+dadosRouter.get('/estudios', buscarEstudios);
+dadosRouter.get('/estacoes', buscarEstacoes);
+dadosRouter.get('/animes', buscarAnimes);
+dadosRouter.get('/personagens', buscarPersonagens);

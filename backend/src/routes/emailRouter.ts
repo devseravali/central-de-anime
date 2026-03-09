@@ -3,17 +3,15 @@ import {
   solicitarVerificacaoEmail,
   verificarEmail,
 } from '../controllers/verificacoesEmailControlador';
-import { email } from 'zod';
 
-const emailRouter = Router();
+export const emailRouter = Router();
 
 /**
  * @swagger
  * /email/solicitar:
  *   post:
  *     tags: [Email]
- *     summary: Solicitar verificação de email
-
+ *     summary: Solicita verificação de e-mail
  *     requestBody:
  *       required: true
  *       content:
@@ -23,19 +21,18 @@ const emailRouter = Router();
  *             properties:
  *               email:
  *                 type: string
+ *                 format: email
  *     responses:
  *       200:
- *         description: Solicitação enviada
- */
-emailRouter.post('/solicitar', solicitarVerificacaoEmail);
-
-/**
- * @swagger
+ *         description: E-mail de verificação enviado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  * /email/verificar:
  *   get:
  *     tags: [Email]
- *     summary: Verificar email
-
+ *     summary: Verifica e-mail do usuário
  *     parameters:
  *       - in: query
  *         name: token
@@ -44,20 +41,12 @@ emailRouter.post('/solicitar', solicitarVerificacaoEmail);
  *           type: string
  *     responses:
  *       200:
- *         description: Email verificado
+ *         description: E-mail verificado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Resposta'
  */
+
+emailRouter.post('/solicitar', solicitarVerificacaoEmail);
 emailRouter.get('/verificar', verificarEmail);
-
-/**
- * @swagger
- * /email/teste:
- *   get:
- *     tags: [Email]
- *     summary: Testar verificação de email
- *     responses:
- *       200:
- *         description: Teste de verificação
- */
-emailRouter.get('/teste', verificarEmail);
-
-export { emailRouter };
