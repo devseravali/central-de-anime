@@ -1,33 +1,5 @@
-import { db } from '../db';
-import { eq, ilike } from 'drizzle-orm';
-
-import { personagens } from '../schema/personagens';
-import { generos } from '../schema/generos';
-import { estudios } from '../schema/estudios';
-import { plataformas } from '../schema/plataformas';
-import { status } from '../schema/status';
-import { tags } from '../schema/tags';
-import { estacoes } from '../schema/estacoes';
-import { anime_personagem } from '../schema/anime_personagem';
-import { animes } from '../schema/animes';
-import { anime_estudio } from '../schema/anime_estudio';
-import { anime_plataforma } from '../schema/anime_plataforma';
-import { anime_status } from '../schema/anime_status';
-import { anime_tag } from '../schema/anime_tag';
-import {
-  PersonagensDeUmAnimeRow,
-  AnimesDeUmPersonagemRow,
-  GenerosDeUmAnimeRow,
-  AnimesDeUmGeneroRow,
-  EstudiosDeUmAnimeRow,
-  AnimesDeUmEstudioRow,
-  PlataformasDeUmAnimeRow,
-  AnimesDeUmaPlataformaRow,
-  StatusDeUmAnimeRow,
-  AnimesDeUmStatusRow,
-  TagsDeUmAnimeRow,
-  AnimesDeUmaTagRow,
-  Estacao,
+import { prisma } from '../lib/prisma';
+import type {
   Anime,
   Personagem,
   Genero,
@@ -35,255 +7,168 @@ import {
   Plataforma,
   Status,
   Tag,
+  Estacao,
   EntidadesDoAnimeMap,
   AnimesDaEntidadeMap,
 } from '../types/relacoes';
-import { anime_genero } from '../schema/anime_genero';
-
-export type EntidadeCanonica =
-  | 'personagens'
-  | 'generos'
-  | 'estudios'
-  | 'plataformas'
-  | 'status'
-  | 'tags'
-  | 'estacoes';
-export type AnimesDeUmaEstacaoRow = Anime & { estacao_id: number };
-
-function canonizarEntidade(entidade: string): EntidadeCanonica | null {
-  const e = entidade.trim().toLowerCase();
-
-  if (e === 'personagem' || e === 'personagens') return 'personagens';
-  if (e === 'genero' || e === 'generos') return 'generos';
-  if (e === 'estudio' || e === 'estudios') return 'estudios';
-  if (e === 'plataforma' || e === 'plataformas') return 'plataformas';
-  if (e === 'status') return 'status';
-  if (e === 'tag' || e === 'tags') return 'tags';
-  if (e === 'estacao' || e === 'estacoes') return 'estacoes';
-
-  return null;
-}
 
 export const relacoesRepositorio = {
-  listarPersonagensDeUmAnime(
-    animeId: number,
-  ): Promise<PersonagensDeUmAnimeRow[]> {
-    return db
-      .select()
-      .from(personagens)
-      .innerJoin(
-        anime_personagem,
-        eq(personagens.id, anime_personagem.personagem_id),
-      )
-      .where(eq(anime_personagem.anime_id, animeId));
+  listarAnimesdeUmGenero(_generoId: number) {
+    throw new Error('Não implementado');
   },
 
-  listarGenerosDeUmAnime(animeId: number): Promise<GenerosDeUmAnimeRow[]> {
-    return db
-      .select()
-      .from(generos)
-      .innerJoin(anime_genero, eq(generos.id, anime_genero.genero_id))
-      .where(eq(anime_genero.anime_id, animeId))
-      .execute();
+async buscarTodasTags() {
+    return prisma.tags.findMany();
   },
 
-  buscarEstudioDeUmAnime(animeId: number): Promise<EstudiosDeUmAnimeRow[]> {
-    return db
-      .select()
-      .from(estudios)
-      .innerJoin(anime_estudio, eq(estudios.id, anime_estudio.estudio_id))
-      .where(eq(anime_estudio.anime_id, animeId));
+  async listarTemporadas() {
+    const temporadas = await prisma.anime.findMany({
+      distinct: ['temporada'],
+      select: { temporada: true },
+      where: { temporada: { not: undefined } },
+    });
+    return temporadas.map((t: { temporada: number | null }) => t.temporada);
   },
 
-  listarPlataformasDeUmAnime(
-    animeId: number,
-  ): Promise<PlataformasDeUmAnimeRow[]> {
-    return db
-      .select()
-      .from(plataformas)
-      .innerJoin(
-        anime_plataforma,
-        eq(plataformas.id, anime_plataforma.plataforma_id),
-      )
-      .where(eq(anime_plataforma.anime_id, animeId));
+  async listarAnimesDeUmaTemporada(temporada: number) {
+    return prisma.anime.findMany({
+      where: { temporada },
+    });
+  },
+  listarPersonagensDeUmAnime(animeId: number) {
+    return prisma.personagem.findMany({
+      where: { animePersonagens: { some: { anime_id: animeId } } },
+    });
   },
 
-  buscarStatusDeUmAnime(animeId: number): Promise<StatusDeUmAnimeRow[]> {
-    return db
-      .select()
-      .from(status)
-      .innerJoin(anime_status, eq(status.id, anime_status.status_id))
-      .where(eq(anime_status.anime_id, animeId));
+  listarAnimesDeUmPersonagem(personagemId: number) {
+    return prisma.anime.findMany({
+      where: { animePersonagems: { some: { personagem_id: personagemId } } },
+    });
   },
 
-  listarTagsDeUmAnime(animeId: number): Promise<TagsDeUmAnimeRow[]> {
-    return db
-      .select()
-      .from(tags)
-      .innerJoin(anime_tag, eq(tags.id, anime_tag.tag_id))
-      .where(eq(anime_tag.anime_id, animeId));
+  listarGenerosDeUmAnime(animeId: number) {
+    return prisma.genero.findMany({
+      where: { animeGeneros: { some: { anime_id: animeId } } },
+    });
   },
 
-  listarAnimesDeUmPersonagem(
-    personagemId: number,
-  ): Promise<AnimesDeUmPersonagemRow[]> {
-    return db
-      .select({ animes: animes, anime_personagem })
-      .from(animes)
-      .innerJoin(anime_personagem, eq(animes.id, anime_personagem.anime_id))
-      .where(eq(anime_personagem.personagem_id, personagemId))
-      .execute();
+  listarAnimesDeUmGenero(generoId: number) {
+    return prisma.anime.findMany({
+      where: { animeGeneros: { some: { genero_id: generoId } } },
+    });
   },
 
-  listarAnimesDeUmGenero(generoId: number): Promise<AnimesDeUmGeneroRow[]> {
-    return db
-      .select({
-        animes: animes,
-        anime_genero: anime_genero,
-      })
-      .from(animes)
-      .innerJoin(anime_genero, eq(animes.id, anime_genero.anime_id))
-      .where(eq(anime_genero.genero_id, generoId))
-      .execute();
+  buscarEstudioDeUmAnime(animeId: number) {
+    return prisma.estudio.findMany({
+      where: { animeEstudios: { some: { anime_id: animeId } } },
+    });
   },
 
-  listarAnimesDeUmEstudio(estudioId: number): Promise<AnimesDeUmEstudioRow[]> {
-    return db
-      .select({
-        animes: animes,
-        anime_estudio: anime_estudio,
-      })
-      .from(animes)
-      .innerJoin(anime_estudio, eq(animes.id, anime_estudio.anime_id))
-      .where(eq(anime_estudio.estudio_id, estudioId))
-      .execute();
+  listarAnimesDeUmEstudio(estudioId: number) {
+    return prisma.anime.findMany({
+      where: { animeEstudios: { some: { estudio_id: estudioId } } },
+    });
   },
 
-  listarAnimesDeUmaPlataforma(
-    plataformaId: number,
-  ): Promise<AnimesDeUmaPlataformaRow[]> {
-    return db
-      .select({
-        animes: animes,
-        anime_plataforma: anime_plataforma,
-      })
-      .from(animes)
-      .innerJoin(anime_plataforma, eq(animes.id, anime_plataforma.anime_id))
-      .where(eq(anime_plataforma.plataforma_id, plataformaId))
-      .execute();
+  listarPlataformasDeUmAnime(animeId: number) {
+    return prisma.plataforma.findMany({
+      where: { animePlataformas: { some: { anime_id: animeId } } },
+    });
   },
 
-  listarAnimesDeUmStatus(statusId: number): Promise<AnimesDeUmStatusRow[]> {
-    return db
-      .select({
-        animes: animes,
-        anime_status: anime_status,
-      })
-      .from(animes)
-      .innerJoin(anime_status, eq(animes.id, anime_status.anime_id))
-      .where(eq(anime_status.status_id, statusId))
-      .execute();
+  listarAnimesDeUmaPlataforma(plataformaId: number) {
+    return prisma.anime.findMany({
+      where: { animePlataformas: { some: { plataforma_id: plataformaId } } },
+    });
   },
 
-  listarAnimesDeUmaTag(tagId: number): Promise<AnimesDeUmaTagRow[]> {
-    return db
-      .select({
-        animes: animes,
-        anime_tag: anime_tag,
-      })
-      .from(animes)
-      .innerJoin(anime_tag, eq(animes.id, anime_tag.anime_id))
-      .where(eq(anime_tag.tag_id, tagId))
-      .execute();
+  buscarStatusDeUmAnime(animeId: number) {
+    return prisma.status.findMany({
+      where: { animeStatuses: { some: { anime_id: animeId } } },
+    });
   },
 
-  buscarAnimesPorTitulo(titulo: string): Promise<Anime[]> {
-    return db
-      .select()
-      .from(animes)
-      .where(ilike(animes.titulo, `%${titulo}%`));
+  listarAnimesDeUmStatus(statusId: number) {
+    return prisma.anime.findMany({
+      where: { animeStatuses: { some: { status_id: statusId } } },
+    });
   },
 
-  buscarPersonagensPorNome(nome: string): Promise<Personagem[]> {
-    return db
-      .select()
-      .from(personagens)
-      .where(ilike(personagens.nome, `%${nome}%`));
+  listarTagsDeUmAnime(animeId: number) {
+    return prisma.tags.findMany({
+      where: { animeTags: { some: { anime_id: animeId } } },
+    });
   },
 
-  buscarGenerosPorNome(nome: string): Promise<Genero[]> {
-    return db
-      .select()
-      .from(generos)
-      .where(ilike(generos.nome, `%${nome}%`));
+  listarAnimesDeUmaTag(tagId: number) {
+    return prisma.anime.findMany({
+      where: { animeTags: { some: { tag_id: tagId } } },
+    });
   },
 
-  buscarEstudiosPorNome(nome: string): Promise<Estudio[]> {
-    return db
-      .select()
-      .from(estudios)
-      .where(ilike(estudios.nome, `%${nome}%`));
+  buscarAnimesPorTitulo(titulo: string) {
+    return prisma.anime.findMany({
+      where: { titulo: { contains: titulo, mode: 'insensitive' } },
+    });
   },
 
-  buscarPlataformasPorNome(nome: string): Promise<Plataforma[]> {
-    return db
-      .select()
-      .from(plataformas)
-      .where(ilike(plataformas.nome, `%${nome}%`));
+  buscarPersonagensPorNome(nome: string) {
+    return prisma.personagem.findMany({
+      where: { nome: { contains: nome, mode: 'insensitive' } },
+    });
   },
 
-  buscarTagsPorNome(nome?: string): Promise<Tag[]> {
-    if (!nome) {
-      return db.select().from(tags);
-    }
-    return db
-      .select()
-      .from(tags)
-      .where(ilike(tags.nome, `%${nome}%`));
+  buscarGenerosPorNome(nome: string) {
+    return prisma.genero.findMany({
+      where: { nome: { contains: nome, mode: 'insensitive' } },
+    });
   },
 
-  listarAnimesDeUmaEstacao(
-    estacaoId: number,
-  ): Promise<AnimesDeUmaEstacaoRow[]> {
-    return db
-      .select()
-      .from(animes)
-      .where(eq(animes.estacao_id, estacaoId))
-      .then((rows) =>
-        rows
-          .filter((row) => row.estacao_id !== null)
-          .map((row) => ({
-            ...row,
-            estacao_id: row.estacao_id as number,
-          })) as AnimesDeUmaEstacaoRow[]
-      );
+  buscarEstudiosPorNome(nome: string) {
+    return prisma.estudio.findMany({
+      where: { nome: { contains: nome, mode: 'insensitive' } },
+    });
   },
 
-  buscarEstacoesPorNome(nome: string): Promise<Estacao[]> {
-    return db
-      .select()
-      .from(estacoes)
-      .where(ilike(estacoes.nome, `%${nome}%`));
+  buscarPlataformasPorNome(nome: string) {
+    return prisma.plataforma.findMany({
+      where: { nome: { contains: nome, mode: 'insensitive' } },
+    });
   },
 
-  buscarStatusPorNome(nome: string): Promise<Status[]> {
-    return db
-      .select()
-      .from(status)
-      .where(ilike(status.nome, `%${nome}%`));
+  buscarTagsPorNome(nome?: string) {
+    if (!nome) return prisma.tags.findMany();
+    return prisma.tags.findMany({
+      where: { nome: { contains: nome, mode: 'insensitive' } },
+    });
+  },
+
+  listarAnimesDeUmaEstacao(estacaoId: number) {
+    return prisma.anime.findMany({ where: { estacao_id: estacaoId } });
+  },
+
+  buscarEstacoesPorNome(nome: string) {
+    return prisma.estacao.findMany({
+      where: { nome: { contains: nome, mode: 'insensitive' } },
+    });
+  },
+
+  buscarStatusPorNome(nome: string) {
+    return prisma.status.findMany({
+      where: { nome: { contains: nome, mode: 'insensitive' } },
+    });
+  },
+
+  buscarAnimePorId(id: number) {
+    return prisma.anime.findUnique({ where: { id } });
   },
 
   buscarEntidadesDeUmAnime(
     animeId: number,
-    entidade: EntidadeCanonica | string,
-  ): Promise<EntidadesDoAnimeMap[keyof EntidadesDoAnimeMap]> | null {
-    const canon = canonizarEntidade(entidade);
-    if (!canon) return null;
-
-    const map: Record<
-      keyof EntidadesDoAnimeMap,
-      () => Promise<EntidadesDoAnimeMap[keyof EntidadesDoAnimeMap]>
-    > = {
+    entidade: keyof EntidadesDoAnimeMap,
+  ) {
+    const map: Record<keyof EntidadesDoAnimeMap, () => Promise<any>> = {
       personagens: () => this.listarPersonagensDeUmAnime(animeId),
       generos: () => this.listarGenerosDeUmAnime(animeId),
       estudios: () => this.buscarEstudioDeUmAnime(animeId),
@@ -291,57 +176,57 @@ export const relacoesRepositorio = {
       status: () => this.buscarStatusDeUmAnime(animeId),
       tags: () => this.listarTagsDeUmAnime(animeId),
       estacoes: async () => {
-        const anime: Anime[] = await db
-          .select()
-          .from(animes)
-          .where(eq(animes.id, animeId))
-          .limit(1);
-        if (!anime.length || typeof anime[0].estacao_id !== 'number') return [];
-        const estacao = await db
-          .select()
-          .from(estacoes)
-          .where(eq(estacoes.id, anime[0].estacao_id));
-        return estacao;
+        const anime = await prisma.anime.findUnique({
+          where: { id: animeId },
+          select: { estacao_id: true },
+        });
+        if (!anime?.estacao_id) return [];
+        return prisma.estacao.findMany({ where: { id: anime.estacao_id } });
+      },
+      temporadas: async () => {
+        return prisma.anime.findMany({
+          where: { id: animeId, temporada: { not: undefined } },
+          select: { temporada: true },
+        });
       },
     };
-
-    return map[canon as keyof EntidadesDoAnimeMap]();
-  },
-
-  async buscarEstacaoDeUmAnime(animeId: number): Promise<Estacao[] | null> {
-    const anime: Anime[] = await db
-      .select()
-      .from(animes)
-      .where(eq(animes.id, animeId))
-      .limit(1);
-    if (!anime.length || typeof anime[0].estacao_id !== 'number') return null;
-    const estacao = await db
-      .select()
-      .from(estacoes)
-      .where(eq(estacoes.id, anime[0].estacao_id));
-    return estacao.length ? estacao : null;
+    return map[entidade]();
   },
 
   buscarAnimesDeUmaEntidade(
     entidadeId: number,
-    entidade: EntidadeCanonica | string,
-  ): Promise<AnimesDaEntidadeMap[EntidadeCanonica]> | null {
-    const canon = canonizarEntidade(entidade);
-    if (!canon) return null;
-
-    const map: Record<
-      EntidadeCanonica,
-      () => Promise<AnimesDaEntidadeMap[EntidadeCanonica]>
-    > = {
+    entidade: keyof AnimesDaEntidadeMap,
+  ) {
+    const map: Record<string, () => Promise<any>> = {
       personagens: () => this.listarAnimesDeUmPersonagem(entidadeId),
       generos: () => this.listarAnimesDeUmGenero(entidadeId),
       estudios: () => this.listarAnimesDeUmEstudio(entidadeId),
       plataformas: () => this.listarAnimesDeUmaPlataforma(entidadeId),
       status: () => this.listarAnimesDeUmStatus(entidadeId),
       tags: () => this.listarAnimesDeUmaTag(entidadeId),
-      estacoes: () => this.listarAnimesDeUmaTag(entidadeId),
+      estacoes: () => this.listarAnimesDeUmaEstacao(entidadeId),
+      temporadas: async () => {
+        const temporadaNum = Number(entidadeId);
+        if (isNaN(temporadaNum) || temporadaNum <= 0) return [];
+        return prisma.anime.findMany({
+          where: { temporada: temporadaNum },
+        });
+      },
+      temporada: async () => {
+        const temporadaNum = Number(entidadeId);
+        if (isNaN(temporadaNum) || temporadaNum <= 0) return [];
+        return prisma.anime.findMany({
+          where: { temporada: temporadaNum },
+        });
+      },
     };
+    if (!map[entidade]) return [];
+    return map[entidade]();
+  },
 
-    return map[canon]();
+  listarAnimesPorAno(ano: number) {
+    return prisma.anime.findMany({
+      where: { ano },
+    });
   },
 };

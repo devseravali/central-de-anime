@@ -1,72 +1,53 @@
-import { db } from '../db';
-import { plataformas } from '../schema/plataformas';
-import { animes } from '../schema/animes';
-import { anime_plataforma } from '../schema/anime_plataforma';
-import { eq, sql } from 'drizzle-orm';
-
+import { prisma } from '../lib/prisma';
+import type { Plataforma } from '../types/plataforma';
 import type {
-  Plataforma,
-  CriarPlataformaDTO,
   AtualizarPlataformaDTO,
-} from '../types/plataforma';
-
+  PlataformaDTO,
+} from '../types/dtos/plataformaDTO';
 import { normalizarTextoComparacao } from '../helpers/textHelpers';
 
-function toPlataforma(row: typeof plataformas.$inferSelect): Plataforma {
+function toPlataforma(model: { id: number; nome: string }): Plataforma {
   return {
-    id: Number(row.id),
-    nome: String(row.nome ?? ''),
+    id: model.id,
+    nome: model.nome ?? '',
   };
-}
-
-function matchNomePlataformaSQL(nome: string) {
-  const normalizado = normalizarTextoComparacao(nome);
-  return sql`replace(lower(${plataformas.nome}), ' ', '') = ${normalizado}`;
 }
 
 export const plataformaRepositorio = {
   async listar(): Promise<Plataforma[]> {
-    const rows = await db.select().from(plataformas);
+    const rows = await prisma.plataforma.findMany();
     return rows.map(toPlataforma);
   },
 
   async porId(id: number): Promise<Plataforma | undefined> {
-    const [row] = await db
-      .select()
-      .from(plataformas)
-      .where(eq(plataformas.id, id))
-      .limit(1);
-
+    const row = await prisma.plataforma.findUnique({ where: { id } });
     return row ? toPlataforma(row) : undefined;
   },
 
   async porNome(nome: string): Promise<Plataforma | undefined> {
-    const [row] = await db
-      .select()
-      .from(plataformas)
-      .where(matchNomePlataformaSQL(nome))
-      .limit(1);
+    const normalizado = normalizarTextoComparacao(nome);
 
-    return row ? toPlataforma(row) : undefined;
+    const all = await prisma.plataforma.findMany();
+    const match = all.find(
+      (p: { nome: string }) =>
+        normalizarTextoComparacao(p.nome) === normalizado,
+    );
+    return match ? toPlataforma(match) : undefined;
   },
 
-  animesPorPlataformaId(plataformaId: number) {
-    return db
-      .select()
-      .from(animes)
-      .innerJoin(anime_plataforma, eq(animes.id, anime_plataforma.anime_id))
-      .where(eq(anime_plataforma.plataforma_id, plataformaId));
+  async animesPorPlataformaId(plataformaId: number) {
+    const relacoes = await prisma.animePlataforma.findMany({
+      where: { plataforma_id: plataformaId },
+      include: { anime: true },
+    });
+    return relacoes.map((r) => r.anime);
   },
 
-  async criar(dados: CriarPlataformaDTO): Promise<Plataforma> {
+  async criar(dados: { nome: string }): Promise<Plataforma> {
     const nomeNormalizado = normalizarTextoComparacao(dados.nome);
-    const [row] = await db
-      .insert(plataformas)
-      .values({
-        nome: nomeNormalizado,
-      })
-      .returning();
-
+    const row = await prisma.plataforma.create({
+      data: { nome: nomeNormalizado },
+    });
     return toPlataforma(row);
   },
 
@@ -74,25 +55,28 @@ export const plataformaRepositorio = {
     id: number,
     dados: AtualizarPlataformaDTO,
   ): Promise<Plataforma | undefined> {
-    const atualizacao: Partial<typeof plataformas.$inferInsert> = {};
-    if (dados.nome !== undefined) {
-      atualizacao.nome = normalizarTextoComparacao(dados.nome);
-    }
-    const [row] = await db
-      .update(plataformas)
-      .set(atualizacao)
-      .where(eq(plataformas.id, id))
-      .returning();
+    try {
+      const updateData: { nome?: string } = {};
+      if (dados.nome !== undefined) {
+        updateData.nome = normalizarTextoComparacao(dados.nome);
+      }
 
-    return row ? toPlataforma(row) : undefined;
+      const row = await prisma.plataforma.update({
+        where: { id },
+        data: updateData,
+      });
+      return toPlataforma(row);
+    } catch {
+      return undefined;
+    }
   },
 
   async deletar(id: number): Promise<Plataforma | undefined> {
-    const [row] = await db
-      .delete(plataformas)
-      .where(eq(plataformas.id, id))
-      .returning();
-
-    return row ? toPlataforma(row) : undefined;
+    try {
+      const row = await prisma.plataforma.delete({ where: { id } });
+      return toPlataforma(row);
+    } catch {
+      return undefined;
+    }
   },
 };

@@ -1,113 +1,62 @@
-import { db } from '../db';
-import { generos } from '../schema/generos';
-import { animes } from '../schema/animes';
-import { anime_genero } from '../schema/anime_genero';
-import { eq, sql } from 'drizzle-orm';
+import { prisma } from '../lib/prisma';
 import type {
   Genero,
   CriarGeneroDTO,
   AtualizarGeneroDTO,
 } from '../types/genero';
-import { normalizarTextoComparacao } from '../helpers/textHelpers';
-
-function matchNomeGeneroSQL(nome: string) {
-  const normalizado = normalizarTextoComparacao(nome);
-  return sql`replace(lower(${generos.nome}), ' ', '') = ${normalizado}`;
-}
+import { Anime } from '../../src/types/anime';
 
 export const generosRepositorio = {
   listar({ pagina = 1, limite = 20 } = {}): Promise<Genero[]> {
-    const offset = (pagina - 1) * limite;
-    return db.select().from(generos).limit(limite).offset(offset) as Promise<
-      Genero[]
-    >;
+    return prisma.genero.findMany({
+      skip: (pagina - 1) * limite,
+      take: limite,
+      orderBy: { id: 'asc' },
+    });
   },
 
-  async porId(id: number): Promise<Genero | undefined> {
-    const [genero] = await db
-      .select()
-      .from(generos)
-      .where(eq(generos.id, id))
-      .limit(1);
-
-    return genero as Genero | undefined;
+  async porId(id: number): Promise<Genero | null> {
+    return prisma.genero.findUnique({ where: { id } });
   },
 
-  async porNome(nome: string): Promise<Genero | undefined> {
-    const [genero] = await db
-      .select()
-      .from(generos)
-      .where(matchNomeGeneroSQL(nome))
-      .limit(1);
-
-    return genero as Genero | undefined;
+  async porNome(nome: string): Promise<Genero | null> {
+    return prisma.genero.findFirst({ where: { nome } });
   },
 
   async criar(dados: CriarGeneroDTO): Promise<Genero> {
-    const nomeNormalizado = normalizarTextoComparacao(dados.nome);
-    const [novo] = await db
-      .insert(generos)
-      .values({
-        nome: nomeNormalizado,
-      })
-      .returning();
-    return novo as Genero;
+    console.log('[generosRepositorio.criar] Dados recebidos:', dados);
+    const result = await prisma.genero.create({ data: { nome: dados.nome } });
+    console.log('[generosRepositorio.criar] Resultado do create:', result);
+    return result;
   },
 
   async atualizar(
     id: number,
     dados: AtualizarGeneroDTO,
-  ): Promise<Genero | undefined> {
-    const atualizacao: AtualizarGeneroDTO = { ...dados };
-    if (dados.nome !== undefined) {
-      atualizacao.nome = normalizarTextoComparacao(dados.nome);
-    }
-    const [atualizado] = await db
-      .update(generos)
-      .set(atualizacao)
-      .where(eq(generos.id, id))
-      .returning();
-    return atualizado as Genero | undefined;
+  ): Promise<Genero | null> {
+    return prisma.genero.update({
+      where: { id },
+      data: { nome: dados.nome },
+    });
   },
 
-  async deletar(id: number): Promise<Genero | undefined> {
-    await db.delete(anime_genero).where(eq(anime_genero.genero_id, id));
-
-    const [deletado] = await db
-      .delete(generos)
-      .where(eq(generos.id, id))
-      .returning();
-
-    return deletado as Genero | undefined;
+  async deletar(id: number): Promise<Genero | null> {
+    await prisma.animeGenero.deleteMany({ where: { genero_id: id } });
+    return prisma.genero.delete({ where: { id } });
   },
 
-  animesPorGeneroId(id: number): Promise<(typeof animes.$inferSelect)[]> {
-    return db
-      .select({
-        id: animes.id,
-        anime_id: animes.anime_id,
-        estudio_id: animes.estudio_id,
-        slug: animes.slug,
-        titulo: animes.titulo,
-        tipo: animes.tipo,
-        temporada: animes.temporada,
-        status_id: animes.status_id,
-        ano: animes.ano,
-        estacao_id: animes.estacao_id,
-        episodios: animes.episodios,
-        sinopse: animes.sinopse,
-        capaUrl: animes.capaUrl,
+  listarAnimesPorGeneroId(id: number) {
+    return prisma.animeGenero
+      .findMany({
+        where: { genero_id: id },
+        include: { animes: true },
       })
-      .from(animes)
-      .innerJoin(anime_genero, eq(animes.id, anime_genero.anime_id))
-      .where(eq(anime_genero.genero_id, id));
+      .then((res: { animes: Anime }[]) => res.map((r) => r.animes));
   },
 
-  async animesPorNomeGenero(
-    nome: string,
-  ): Promise<(typeof animes.$inferSelect)[]> {
-    const genero = await this.porNome(nome);
+  async listarAnimesPorNomeGenero(nome: string) {
+    const genero = await prisma.genero.findFirst({ where: { nome } });
     if (!genero) return [];
-    return this.animesPorGeneroId(genero.id);
+    return this.listarAnimesPorGeneroId(genero.id);
   },
 };
