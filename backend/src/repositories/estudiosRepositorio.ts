@@ -1,97 +1,137 @@
-import { db } from '../db';
-import { animes } from '../schema/animes';
-import { estudios } from '../schema/estudios';
-import { eq } from 'drizzle-orm';
-import type { Estudio, AtualizarEstudioDTO } from '../types/estudio';
-import { normalizarTextoComparacao } from '../helpers/textHelpers';
-
-type ErrorWithCode = Error & { code?: string };
-const isErrorWithCode = (err: Error): err is ErrorWithCode =>
-  'code' in err && typeof (err as ErrorWithCode).code === 'string';
+import { prisma } from '../lib/prisma';
+import { ErroApi } from '../errors/ErroApi';
+import type {
+  Estudio,
+  CriarEstudioDTO,
+  AtualizarEstudioDTO,
+} from '../types/estudio';
 
 export const estudiosRepositorio = {
-  async estudioPorNome(nome: string) {
-    const nomeNormalizado = normalizarTextoComparacao(nome);
-
-    const estudiosExistentes = await db.select().from(estudios);
-    return estudiosExistentes.find((e) => {
-      if (!e.nome) return false;
-      const nomeEstudioNormalizado = normalizarTextoComparacao(e.nome);
-      return nomeEstudioNormalizado === nomeNormalizado;
+  async listarEstudios(): Promise<Estudio[]> {
+    return prisma.estudio.findMany({
+      orderBy: { id: 'asc' },
     });
   },
-  async estudios({ pagina = 1, limite = 20 } = {}) {
-    const offset = (pagina - 1) * limite;
-    return await db.select().from(estudios).limit(limite).offset(offset);
+
+  async estudioPorId(id: number): Promise<Estudio | null> {
+    return prisma.estudio.findUnique({
+      where: { id },
+      include: { animes: true },
+    });
   },
 
-  async estudioPorId(id: string) {
-    const [estudioExistente] = await db
-      .select()
-      .from(estudios)
-      .where(eq(estudios.id, Number(id)));
-    return estudioExistente;
+  async estudioPorNome(nome: string): Promise<Estudio | null> {
+    return prisma.estudio.findFirst({
+      where: {
+        nome: {
+          contains: nome,
+          mode: 'insensitive',
+        },
+      },
+      include: { animes: true },
+    });
   },
 
-  async estudioPrincipaisObrasPorNome(nome: string) {
-    const estudio = await this.estudioPorNome(nome);
+  async animesPorEstudios(id: number) {
+    const estudio = await prisma.estudio.findUnique({
+      where: { id },
+      include: { animes: true },
+    });
+
     if (!estudio) {
-      return [];
+      throw ErroApi.notFound(
+        'Estúdio não encontrado.',
+        'ESTUDIO_NAO_ENCONTRADO',
+      );
     }
-    return await db
-      .select()
-      .from(animes)
-      .where(eq(animes.estudio_id, estudio.id));
+
+    return estudio.animes;
   },
 
-  async animesPorEstudios(id: string) {
-    return await db
-      .select()
-      .from(animes)
-      .where(eq(animes.estudio_id, Number(id)));
-  },
+  async adicionarEstudio(dados: CriarEstudioDTO): Promise<Estudio> {
+    if (!dados.nome || !dados.principaisObras) {
+      throw ErroApi.badRequest(
+        'Nome e principaisObras são obrigatórios.',
+        'ESTUDIO_CAMPOS_OBRIGATORIOS',
+      );
+    }
 
-  async adicionarEstudio(estudio: { nome: string; principaisObras: string }) {
     try {
-      const [novoEstudio] = await db
-        .insert(estudios)
-        .values({
-          nome: estudio.nome,
-          principaisObras: estudio.principaisObras,
-        })
-        .returning();
-      return novoEstudio;
-    } catch (err) {
+      return await prisma.estudio.create({
+        data: dados,
+      });
+    } catch (error: any) {
+      console.error(error);
+
       if (
-        err instanceof Error &&
-        isErrorWithCode(err) &&
-        err.code === '23505'
+        (error.code && error.code === 'P2002') ||
+        (error.message && error.message.includes('Unique constraint')) ||
+        (error.message && error.message.includes('unique constraint failed'))
       ) {
-        const { ErroApi } = await import('../errors/ErroApi');
-        throw ErroApi.conflict('Estúdio já existe', 'ESTUDIO_DUPLICADO');
+        throw ErroApi.conflict(
+          'Já existe um estúdio com esse nome.',
+          'ESTUDIO_DUPLICADO',
+        );
       }
-      throw err;
+
+      throw ErroApi.internalServerError(
+        'Erro ao criar estúdio.',
+        'ERRO_CRIAR_ESTUDIO',
+      );
     }
   },
 
-  async atualizarEstudio(id: number, dados: AtualizarEstudioDTO) {
-    const atualizacao: Partial<typeof estudios.$inferInsert> = {};
-    if (dados.nome !== undefined) atualizacao.nome = dados.nome;
+  async atualizarEstudio(
+    id: number,
+    dados: AtualizarEstudioDTO,
+  ): Promise<Estudio> {
+    try {
+      const estudio = await prisma.estudio.update({
+        where: { id },
+        data: dados,
+      });
 
-    const [atualizado] = await db
-      .update(estudios)
-      .set(atualizacao)
-      .where(eq(estudios.id, id))
-      .returning();
+      return estudio;
+    } catch (error) {
+      console.error(error);
 
-    return atualizado;
+      if (error instanceof Error) {
+        if (error.message.includes('Record to update not found')) {
+          throw ErroApi.notFound(
+            'Estúdio não encontrado.',
+            'ESTUDIO_NAO_ENCONTRADO',
+          );
+        }
+      }
+
+      throw ErroApi.internalServerError(
+        'Erro ao atualizar estúdio.',
+        'ERRO_ATUALIZAR_ESTUDIO',
+      );
+    }
   },
 
-  async deletarEstudio(id: string) {
-    const [deletado] = await db
-      .delete(estudios)
-      .where(eq(estudios.id, Number(id)))
-      .returning();
-    return deletado;
+  async deletarEstudio(id: number): Promise<void> {
+    try {
+      await prisma.estudio.delete({
+        where: { id },
+      });
+    } catch (error) {
+      console.error(error);
+
+      if (error instanceof Error) {
+        if (error.message.includes('Record to delete does not exist')) {
+          throw ErroApi.notFound(
+            'Estúdio não encontrado.',
+            'ESTUDIO_NAO_ENCONTRADO',
+          );
+        }
+      }
+
+      throw ErroApi.internalServerError(
+        'Erro ao deletar estúdio.',
+        'ERRO_DELETAR_ESTUDIO',
+      );
+    }
   },
 };
