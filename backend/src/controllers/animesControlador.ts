@@ -29,7 +29,20 @@ export const listarTodosAnimes = asyncHandler(
     const page = parsePositiveInt(req.query.page, 1);
     const limit = Math.min(parsePositiveInt(req.query.limit, 8), 8);
     const offset = (page - 1) * limit;
-    const animes = await animeServico.listarTodosAnimes({ offset, limit });
+
+    const { status, genero, estudio, estacao, ano } = req.query;
+    const filtros = {
+      status: status ? String(status) : undefined,
+      genero: genero ? String(genero) : undefined,
+      estudio: estudio ? String(estudio) : undefined,
+      estacao: estacao ? String(estacao) : undefined,
+      ano: ano ? Number(ano) : undefined,
+    };
+    const animes = await animeServico.listarTodosAnimes({
+      offset,
+      limit,
+      filtros,
+    });
     return respostaLista(res, animes);
   },
 );

@@ -6,6 +6,10 @@ import { sessoesServico } from '../services/sessoesServico';
 import { respostaSucesso, respostaCriado } from '../helpers/responseHelpers';
 import jwt from 'jsonwebtoken';
 import { usuariosSchema } from '../schemas/usuariosSchema';
+import {
+  recuperarSenhaSchema,
+  redefinirSenhaSchema,
+} from '../schemas/recuperacaoSenhaSchema';
 
 function parseIdParamOrThrow(
   idStr: string | undefined,
@@ -175,6 +179,34 @@ export const obterUsuario = asyncHandler(
     }
 
     return respostaSucesso(res, sanitizarUsuario(usuario));
+  },
+);
+
+export const solicitarRecuperacaoSenha = asyncHandler(
+  async (req: Request, res: Response) => {
+    const parseResult = recuperarSenhaSchema.safeParse(req.body);
+    if (!parseResult.success) {
+      throw ErroApi.badRequest('Dados inválidos', 'INVALID_RECUPERACAO_DATA');
+    }
+    const { email } = parseResult.data;
+    await usuariosServico.solicitarRecuperacaoSenha(email);
+    return respostaSucesso(res, null, {
+      mensagem: 'E-mail de recuperação enviado.',
+    });
+  },
+);
+
+export const redefinirSenha = asyncHandler(
+  async (req: Request, res: Response) => {
+    const parseResult = redefinirSenhaSchema.safeParse(req.body);
+    if (!parseResult.success) {
+      throw ErroApi.badRequest('Dados inválidos', 'INVALID_REDEFINIR_DATA');
+    }
+    const { token, novaSenha } = parseResult.data;
+    await usuariosServico.redefinirSenha(token, novaSenha);
+    return respostaSucesso(res, null, {
+      mensagem: 'Senha redefinida com sucesso.',
+    });
   },
 );
 
