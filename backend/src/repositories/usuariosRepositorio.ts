@@ -1,94 +1,129 @@
-import { db } from '../db';
-import { usuarios } from '../schema/usuario';
-import { eq } from 'drizzle-orm';
-import bcrypt from 'bcrypt';
-
+import { prisma } from '../lib/prisma';
 import type {
   AtualizarUsuarioDTO,
   CriarUsuarioDTO,
-  Usuario,
+  StatusUsuario,
   UsuarioPublico,
 } from '../types/usuario';
 
-const SALT_ROUNDS = 10;
-
-function toPublico(u: Usuario): UsuarioPublico {
-  const { senhaHash: _senhaHash, ...publico } = u;
-  return publico;
+function toPublico(usuario: {
+  senha?: string;
+  senhaHash?: string;
+  id: number;
+  nome: string;
+  email: string;
+  emailVerificado?: boolean;
+  status?: string | null;
+}): UsuarioPublico {
+  const { senha, senhaHash, ...publico } = usuario;
+  return {
+    ...publico,
+    status: publico.status as StatusUsuario | null | undefined,
+  };
 }
 
 export const usuariosRepositorio = {
+  async buscarPorTokenRecuperacao(
+    token: string,
+  ): Promise<UsuarioPublico | null> {
+    const tokenRecuperacao = await prisma.tokenRecuperacao.findUnique({
+      where: { valor: token },
+      include: { usuario: true },
+    });
+    if (!tokenRecuperacao || !tokenRecuperacao.usuario) return null;
+    return toPublico(tokenRecuperacao.usuario);
+  },
+
+  async atualizarSenha(id: number, senhaHash: string) {
+    await prisma.usuario.update({
+      where: { id },
+      data: { senhaHash },
+    });
+  },
   async listarTodos({ pagina = 1, limite = 20 } = {}): Promise<
     UsuarioPublico[]
   > {
-    const offset = (pagina - 1) * limite;
-    const rows = await db.select().from(usuarios).limit(limite).offset(offset);
-    return rows.map((u) => toPublico(u as Usuario));
+    const skip = (pagina - 1) * limite;
+
+    const usuarios = await prisma.usuario.findMany({
+      skip,
+      take: limite,
+      orderBy: { id: 'desc' },
+    });
+
+    return usuarios.map(toPublico);
   },
 
   async buscarPorId(id: number): Promise<UsuarioPublico | null> {
-    const [row] = await db
-      .select()
-      .from(usuarios)
-      .where(eq(usuarios.id, id))
-      .limit(1);
-    if (!row) return null;
-    return toPublico(row as Usuario);
+    const usuario = await prisma.usuario.findUnique({
+      where: { id },
+    });
+
+    if (!usuario) return null;
+
+    return toPublico(usuario);
   },
 
-  async buscarPorEmail(email: string): Promise<Usuario | null> {
-    const [row] = await db
-      .select()
-      .from(usuarios)
-      .where(eq(usuarios.email, email))
-      .limit(1);
-    if (!row) return null;
-    return row as Usuario;
+  async buscarPorEmail(email: string) {
+    return prisma.usuario.findUnique({
+      where: { email },
+      select: {
+        id: true,
+        nome: true,
+        email: true,
+        emailVerificado: true,
+        status: true,
+      },
+    });
+  },
+
+  async buscarPorEmailComSenha(email: string) {
+    return prisma.usuario.findUnique({
+      where: { email },
+    });
   },
 
   async criar(dados: CriarUsuarioDTO): Promise<UsuarioPublico> {
-    const senhaHash = await bcrypt.hash(dados.senha, SALT_ROUNDS);
-
-    const [novo] = await db
-      .insert(usuarios)
-      .values({
+    const usuario = await prisma.usuario.create({
+      data: {
         nome: dados.nome,
         email: dados.email,
-        senhaHash,
-      })
-      .returning();
+        senha: dados.senha, 
+        senhaHash: dados.senha, 
+      },
+    });
 
-    return toPublico(novo as Usuario);
+    return toPublico(usuario);
   },
 
   async atualizar(
     id: number,
     dados: AtualizarUsuarioDTO,
   ): Promise<UsuarioPublico> {
-    const [atualizado] = await db
-      .update(usuarios)
-      .set({
+    const usuario = await prisma.usuario.update({
+      where: { id },
+      data: {
         ...(dados.nome !== undefined ? { nome: dados.nome } : {}),
         ...(dados.email !== undefined ? { email: dados.email } : {}),
-      })
-      .where(eq(usuarios.id, id))
-      .returning();
+      },
+    });
 
-    if (!atualizado) {
-      throw new Error('USUARIO_NOT_FOUND');
-    }
-
-    return toPublico(atualizado as Usuario);
+    return toPublico(usuario);
   },
 
   async marcarEmailVerificado(id: number): Promise<void> {
-    await db
-      .update(usuarios)
-      .set({ emailVerificado: true, status: 'ativo' })
-      .where(eq(usuarios.id, id));
+    await prisma.usuario.update({
+      where: { id },
+      data: {
+        emailVerificado: true,
+        status: 'ativo',
+      },
+    });
   },
 
   async remover(id: number): Promise<void> {
-    await db.delete(usuarios).where(eq(usuarios.id, id));
+    await prisma.usuario.delete({
+      where: { id },
+    });
   },
 };

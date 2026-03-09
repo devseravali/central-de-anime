@@ -1,76 +1,109 @@
-import { db } from '../db';
-import { tags } from '../schema/tags';
-import { anime_tag } from '../schema/anime_tag';
-import { eq, ilike } from 'drizzle-orm';
+import { prisma } from '../lib/prisma';
 import { normalizarTextoComparacao } from '../helpers/textHelpers';
 import type { Tag, CriarTagDTO, AtualizarTagDTO } from '../types/tag';
+import { criarTag } from '../controllers/tagsControlador';
 
 export const tagsRepositorio = {
   async listar(): Promise<Tag[]> {
-    const rows = await db.select().from(tags);
-    return rows.map((row) => ({
+    const rows = await prisma.tags.findMany();
+
+    return rows.map((row: Tag) => ({
       ...row,
       nome: normalizarTextoComparacao(row.nome),
     }));
   },
 
   async porId(id: number): Promise<Tag | null> {
-    const [tag] = await db.select().from(tags).where(eq(tags.id, id)).limit(1);
+    const tag = await prisma.tags.findUnique({
+      where: { id },
+    });
+
     return tag ? { ...tag, nome: normalizarTextoComparacao(tag.nome) } : null;
   },
 
   async buscarPorNome(nome: string): Promise<Tag[]> {
     const nomeNormalizado = normalizarTextoComparacao(nome);
-    const rows = await db.select().from(tags);
-    return rows
-      .filter((row) =>
-        normalizarTextoComparacao(row.nome).includes(nomeNormalizado),
-      )
-      .map((row) => ({ ...row, nome: normalizarTextoComparacao(row.nome) }));
+
+    const rows = await prisma.tags.findMany({
+      where: {
+        nome: {
+          contains: nomeNormalizado,
+          mode: 'insensitive',
+        },
+      },
+    });
+
+    return rows.map((row: Tag) => ({
+      ...row,
+      nome: normalizarTextoComparacao(row.nome),
+    }));
   },
 
-  async criar(dados: CriarTagDTO): Promise<Tag> {
-    const nomeNormalizado = normalizarTextoComparacao(dados.nome);
-    const [nova] = await db
-      .insert(tags)
-      .values({ ...dados, nome: nomeNormalizado })
-      .returning();
-    return { ...nova, nome: nomeNormalizado };
+  async criarTag(dados: CriarTagDTO): Promise<Tag> {
+    try {
+      const nova = await prisma.tags.create({
+        data: {
+          ...dados,
+          nome: dados.nome,
+        },
+      });
+      return {
+        ...nova,
+        nome: normalizarTextoComparacao(nova.nome),
+      };
+    } catch (error: any) {
+      if (error.code === 'P2002') {
+        throw new Error('Tag já existe');
+      }
+      throw error;
+    }
   },
 
   async atualizar(id: number, dados: AtualizarTagDTO): Promise<Tag | null> {
-    const existente = await this.porId(id);
+    const existente = await prisma.tags.findUnique({
+      where: { id },
+    });
+
     if (!existente) return null;
 
-    let nomeNormalizado: string | undefined = undefined;
+    let nomeNormalizado: string | undefined;
+
     if (dados.nome !== undefined) {
       nomeNormalizado = normalizarTextoComparacao(dados.nome);
     }
 
-    const [atualizada] = await db
-      .update(tags)
-      .set({
+    const atualizada = await prisma.tags.update({
+      where: { id },
+      data: {
         ...dados,
         ...(nomeNormalizado !== undefined ? { nome: nomeNormalizado } : {}),
-      })
-      .where(eq(tags.id, id))
-      .returning();
+      },
+    });
 
-    return atualizada
-      ? { ...atualizada, nome: normalizarTextoComparacao(atualizada.nome) }
-      : null;
+    return {
+      ...atualizada,
+      nome: normalizarTextoComparacao(atualizada.nome),
+    };
   },
 
   async deletar(id: number): Promise<Tag | null> {
-    const existente = await this.porId(id);
+    const existente = await prisma.tags.findUnique({
+      where: { id },
+    });
+
     if (!existente) return null;
 
-    await db.delete(anime_tag).where(eq(anime_tag.tag_id, id));
+    await prisma.animeTag.deleteMany({
+      where: { tag_id: id },
+    });
 
-    const [removida] = await db.delete(tags).where(eq(tags.id, id)).returning();
+    const removida = await prisma.tags.delete({
+      where: { id },
+    });
 
-    return removida
-      ? { ...removida, nome: normalizarTextoComparacao(removida.nome) }
-      : null;
+    return {
+      ...removida,
+      nome: normalizarTextoComparacao(removida.nome),
+    };
   },
 };

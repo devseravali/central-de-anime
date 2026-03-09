@@ -1,7 +1,4 @@
-import { and, eq, gt, isNull } from 'drizzle-orm';
-import { db } from '../db';
-import { verificacoesEmail } from '../schema/usuario';
-
+import { prisma } from '../lib/prisma';
 import type {
   CriarVerificacaoEmailDTO,
   VerificacaoEmail,
@@ -9,86 +6,59 @@ import type {
 
 type RegistroUnico<T> = T | null;
 
-async function firstOrNull<T>(
-  promise: Promise<T[]>,
-): Promise<RegistroUnico<T>> {
-  const [row] = await promise;
-  return row ?? null;
-}
-
 function agora(): Date {
   return new Date();
 }
 
 export const verificacoesEmailRepositorio = {
   async criar(dados: CriarVerificacaoEmailDTO): Promise<VerificacaoEmail> {
-    const registro = await firstOrNull(
-      db
-        .insert(verificacoesEmail)
-        .values({
-          usuarioId: dados.usuarioId,
-          token: dados.token,
-          expiraEm: dados.expiraEm,
-        })
-        .returning(),
-    );
-
-    if (!registro) {
-      throw new Error('Falha ao criar verificação de e-mail.');
-    }
-
+    const registro = await prisma.verificacao.create({
+      data: {
+        usuarioId: dados.usuarioId,
+        valor: dados.valor,
+        criadoEm: agora(),
+        tipo: 'email',
+        expiraEm: dados.expiraEm,
+      },
+    });
     return registro;
   },
 
   async buscarPorToken(
     token: string,
   ): Promise<RegistroUnico<VerificacaoEmail>> {
-    return firstOrNull(
-      db
-        .select()
-        .from(verificacoesEmail)
-        .where(eq(verificacoesEmail.token, token))
-        .limit(1),
-    );
+    return prisma.verificacao.findFirst({
+      where: { valor: token },
+    });
   },
 
   async buscarAtivoPorToken(
     token: string,
   ): Promise<RegistroUnico<VerificacaoEmail>> {
-    return firstOrNull(
-      db
-        .select()
-        .from(verificacoesEmail)
-        .where(
-          and(
-            eq(verificacoesEmail.token, token),
-            isNull(verificacoesEmail.usadoEm),
-            gt(verificacoesEmail.expiraEm, agora()),
-          ),
-        )
-        .limit(1),
-    );
+    const agoraData = agora();
+
+    return prisma.verificacao.findFirst({
+      where: {
+        valor: token,
+      },
+    });
   },
 
-  async buscarPorUsuarioId(
+  async buscarUltimoPorUsuarioId(
     usuarioId: number,
   ): Promise<RegistroUnico<VerificacaoEmail>> {
-    return firstOrNull(
-      db
-        .select()
-        .from(verificacoesEmail)
-        .where(eq(verificacoesEmail.usuarioId, usuarioId))
-        .limit(1),
-    );
+    return prisma.verificacao.findFirst({
+      where: { usuarioId },
+      orderBy: {
+        criadoEm: 'desc',
+      },
+    });
   },
 
-  async marcarComoUsado(id: number): Promise<RegistroUnico<VerificacaoEmail>> {
-    return firstOrNull(
-      db
-        .update(verificacoesEmail)
-        .set({ usadoEm: agora() })
-        .where(eq(verificacoesEmail.id, id))
-        .returning(),
-    );
+  async marcarComoUsado(id: number): Promise<VerificacaoEmail> {
+    return prisma.verificacao.update({
+      where: { id },
+      data: {},
+    });
   },
 };
