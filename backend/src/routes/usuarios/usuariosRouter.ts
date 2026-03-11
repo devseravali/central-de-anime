@@ -8,34 +8,26 @@ import {
   enviarVerificacaoEmail,
   verificarEmail,
   logoutUsuario,
+  loginUsuario,
+  solicitarRecuperacaoSenha,
+  redefinirSenha,
+  loginGoogleUsuario,
 } from '../../controllers/usuariosControlador';
+import { autenticacaoJWT } from '../../middleware/autenticacaoJWT';
 
 export const usuariosRouter = Router();
 
+usuariosRouter.post('/login-google', loginGoogleUsuario);
 /**
  * @swagger
- * /usuarios/register:
+ * tags:
+ *   - name: Usuários
+ *     description: Cadastro, autenticação e gerenciamento de usuários
+ *
+ * /usuarios/recuperar-senha:
  *   post:
- *     tags: [Usuarios]
- *     summary: Registrar usuario
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             $ref: '#/components/schemas/Usuario'
- *     responses:
- *       201:
- *         description: Usuario criado
- */
-usuariosRouter.post('/register', registrarUsuario);
-
-/**
- * @swagger
- * /usuarios/login:
- *   post:
- *     tags: [Usuarios]
- *     summary: Autenticar usuario
+ *     tags: [Usuários]
+ *     summary: Solicita recuperação de senha por e-mail
  *     requestBody:
  *       required: true
  *       content:
@@ -45,19 +37,81 @@ usuariosRouter.post('/register', registrarUsuario);
  *             properties:
  *               email:
  *                 type: string
+ *                 format: email
+ *     responses:
+ *       200:
+ *         description: E-mail de recuperação enviado
+ *
+ * /usuarios/redefinir-senha:
+ *   put:
+ *     tags: [Usuários]
+ *     summary: Redefine a senha usando token
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               token:
+ *                 type: string
+ *               novaSenha:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Senha redefinida com sucesso
+ *       400:
+ *         description: Token inválido ou expirado
+ * /usuarios/register:
+ *   post:
+ *     tags: [Usuários]
+ *     summary: Registra um novo usuário
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [nome, email, senha]
+ *             properties:
+ *               nome:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               senha:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: Usuário registrado
+ *
+ * /usuarios/login:
+ *   post:
+ *     tags: [Usuários]
+ *     summary: Realiza login do usuário
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [email, senha]
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
  *               senha:
  *                 type: string
  *     responses:
  *       200:
- *         description: Token gerado
- */
-
-/**
- * @swagger
+ *         description: Login realizado
+ *       401:
+ *         description: Credenciais inválidas
+ *
  * /usuarios/{id}/enviar-verificacao:
  *   post:
- *     tags: [Usuarios]
- *     summary: Enviar token de verificacao de email
+ *     tags: [Usuários]
+ *     summary: Envia e-mail de verificação para o usuário
  *     parameters:
  *       - in: path
  *         name: id
@@ -66,16 +120,12 @@ usuariosRouter.post('/register', registrarUsuario);
  *           type: integer
  *     responses:
  *       200:
- *         description: Token gerado
- */
-usuariosRouter.post('/:id/enviar-verificacao', enviarVerificacaoEmail);
-
-/**
- * @swagger
+ *         description: E-mail de verificação enviado
+ *
  * /usuarios/verificar-email:
  *   put:
- *     tags: [Usuarios]
- *     summary: Verificar email do usuario
+ *     tags: [Usuários]
+ *     summary: Verifica e-mail do usuário
  *     requestBody:
  *       required: true
  *       content:
@@ -87,80 +137,53 @@ usuariosRouter.post('/:id/enviar-verificacao', enviarVerificacaoEmail);
  *                 type: string
  *     responses:
  *       200:
- *         description: Email verificado
- */
-usuariosRouter.put('/verificar-email', verificarEmail);
-
-/**
- * @swagger
+ *         description: E-mail verificado
+ *
  * /usuarios/logout:
  *   post:
- *     tags: [Usuarios]
- *     summary: Logout do usuario
+ *     tags: [Usuários]
+ *     summary: Encerra sessão do usuário autenticado
  *     responses:
  *       200:
  *         description: Logout realizado
- */
-usuariosRouter.post('/logout', logoutUsuario);
-
-/**
- * @swagger
+ *       401:
+ *         description: Não autenticado
+ *
  * /usuarios/me:
  *   get:
- *     tags: [Usuarios]
- *     summary: Listar usuarios
- 
+ *     tags: [Usuários]
+ *     summary: Lista usuários
  *     responses:
  *       200:
- *         description: Lista de usuarios
- */
-usuariosRouter.get('/me', listarUsuarios);
-
-/**
- * @swagger
- * /usuarios/me/{id}:
- *   get:
- *     tags: [Usuarios]
- *     summary: Buscar usuario por id
- 
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: Usuario encontrado
- */
-usuariosRouter.get('/me/:id', obterUsuario);
-
-/**
- * @swagger
- * /usuarios/me:
+ *         description: Lista retornada
+ *
  *   put:
- *     tags: [Usuarios]
- *     summary: Atualizar usuario autenticado
- 
+ *     tags: [Usuários]
+ *     summary: Atualiza usuário autenticado
  *     requestBody:
  *       required: true
  *       content:
  *         application/json:
  *           schema:
  *             type: object
+ *             properties:
+ *               nome:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               senha:
+ *                 type: string
  *     responses:
  *       200:
- *         description: Usuario atualizado
- */
-usuariosRouter.put('/me', atualizarUsuario);
-
-/**
- * @swagger
+ *         description: Usuário atualizado
+ *       401:
+ *         description: Não autenticado
+ *
  * /usuarios/me/{id}:
- *   delete:
- *     tags: [Usuarios]
- *     summary: Remover usuario por id
- 
+ *   get:
+ *     tags: [Usuários]
+ *     summary: Obtém usuário por ID
  *     parameters:
  *       - in: path
  *         name: id
@@ -169,6 +192,30 @@ usuariosRouter.put('/me', atualizarUsuario);
  *           type: integer
  *     responses:
  *       200:
- *         description: Usuario removido
+ *         description: Usuário encontrado
+ *
+ *   delete:
+ *     tags: [Usuários]
+ *     summary: Remove usuário por ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       204:
+ *         description: Usuário removido
  */
+
+usuariosRouter.post('/register', registrarUsuario);
+usuariosRouter.post('/login', loginUsuario);
+usuariosRouter.post('/:id/enviar-verificacao', enviarVerificacaoEmail);
+usuariosRouter.put('/verificar-email', verificarEmail);
+usuariosRouter.post('/logout', autenticacaoJWT, logoutUsuario);
+usuariosRouter.get('/me', listarUsuarios);
+usuariosRouter.get('/me/:id', obterUsuario);
+usuariosRouter.put('/me', autenticacaoJWT, atualizarUsuario);
 usuariosRouter.delete('/me/:id', removerUsuario);
+usuariosRouter.post('/recuperar-senha', solicitarRecuperacaoSenha);
+usuariosRouter.put('/redefinir-senha', redefinirSenha);

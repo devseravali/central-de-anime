@@ -1,82 +1,3 @@
-/**
- * @swagger
- * /sessoes/validate:
- *   get:
- *     tags: [Sessoes]
- *     summary: Validar sessão do usuário autenticado
-
- *     responses:
- *       200:
- *         description: Sessão válida
- *       401:
- *         description: Não autenticado
- */
-
-/**
- * @swagger
- * /sessoes/create:
- *   post:
- *     tags: [Sessoes]
- *     summary: Criar nova sessão para o usuário autenticado
-
- *     responses:
- *       200:
- *         description: Sessão criada
- *       401:
- *         description: Não autenticado
- */
-
-/**
- * @swagger
- * /sessoes/logout:
- *   post:
- *     tags: [Sessoes]
- *     summary: Encerrar sessão ativa do usuário autenticado
-
- *     responses:
- *       200:
- *         description: Sessão encerrada
- *       401:
- *         description: Não autenticado
- */
-
-/**
- * @swagger
- * /sessoes/logout-all:
- *   post:
- *     tags: [Sessoes]
- *     summary: Encerrar todas as sessões do usuário autenticado
-
- *     responses:
- *       200:
- *         description: Todas as sessões encerradas
- *       401:
- *         description: Não autenticado
- */
-
-/**
- * @swagger
- * /sessoes/auth/google:
- *   get:
- *     tags: [Sessoes]
- *     summary: Iniciar autenticação Google OAuth2
- *     responses:
- *       302:
- *         description: Redirecionamento para Google
- */
-
-/**
- * @swagger
- * /sessoes/auth/google/callback:
- *   get:
- *     tags: [Sessoes]
- *     summary: Callback do Google OAuth2
- *     responses:
- *       200:
- *         description: Usuário autenticado com sucesso
- *       302:
- *         description: Redirecionamento em caso de falha
- */
 import { Router } from 'express';
 import passport from 'passport';
 import {
@@ -85,26 +6,93 @@ import {
   encerrarTodasSessoes,
   validarSessao,
 } from '../../controllers/sessoesControlador';
+import { autenticacaoJWT } from '../../middleware/autenticacaoJWT';
 
-const sessoesRouter = Router();
+export const sessoesRouter = Router();
+
+/**
+ * @swagger
+ * tags:
+ *   - name: Sessões
+ *     description: Autenticação e gerenciamento de sessões
+ *
+ * /sessoes/validate:
+ *   get:
+ *     tags: [Sessões]
+ *     summary: Valida sessão atual
+ *     responses:
+ *       200:
+ *         description: Sessão válida
+ *
+ * /sessoes/create:
+ *   post:
+ *     tags: [Sessões]
+ *     summary: Cria uma sessão (login)
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *               senha:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Sessão criada com sucesso
+ *       401:
+ *         description: Credenciais inválidas
+ *
+ * /sessoes/logout:
+ *   post:
+ *     tags: [Sessões]
+ *     summary: Encerra sessão ativa
+ *     responses:
+ *       200:
+ *         description: Sessão encerrada
+ *       401:
+ *         description: Não autenticado
+ *
+ * /sessoes/logout-all:
+ *   post:
+ *     tags: [Sessões]
+ *     summary: Encerra todas as sessões do usuário
+ *     responses:
+ *       200:
+ *         description: Todas as sessões encerradas
+ *       401:
+ *         description: Não autenticado
+ *
+ * /sessoes/auth/google:
+ *   get:
+ *     tags: [Sessões]
+ *     summary: Inicia autenticação com Google
+ *     responses:
+ *       302:
+ *         description: Redireciona para autenticação Google
+ *
+ * /sessoes/auth/google/callback:
+ *   get:
+ *     tags: [Sessões]
+ *     summary: Callback da autenticação Google
+ *     responses:
+ *       302:
+ *         description: Redireciona após autenticação
+ */
 
 sessoesRouter.get('/validate', validarSessao);
-
 sessoesRouter.post('/create', criarSessao);
-
-sessoesRouter.post('/logout', encerrarSessaoAtiva);
-
-sessoesRouter.post('/logout-all', encerrarTodasSessoes);
+sessoesRouter.post('/logout', autenticacaoJWT, encerrarSessaoAtiva);
+sessoesRouter.post('/logout-all', autenticacaoJWT, encerrarTodasSessoes);
 
 sessoesRouter.get(
   '/auth/google',
   passport.authenticate('google', { scope: ['profile', 'email'] }),
 );
-
 sessoesRouter.get(
   '/auth/google/callback',
   passport.authenticate('google', { failureRedirect: '/' }),
-  (req, res) => {
-    res.json({ sucesso: true, usuario: req.user });
-  },
 );

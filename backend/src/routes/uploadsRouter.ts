@@ -6,7 +6,90 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const uploadsRouter = Router();
+export const uploadsRouter = Router();
+/**
+ * @swagger
+ * /upload/capa/{nome}:
+ *   get:
+ *     tags: [Uploads]
+ *     summary: Retorna imagem de capa pelo nome
+ *     parameters:
+ *       - in: path
+ *         name: nome
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Imagem de capa
+ *         content:
+ *           image/jpeg:
+ *             schema:
+ *               type: string
+ *               format: binary
+ *           image/png:
+ *             schema:
+ *               type: string
+ *               format: binary
+ *       404:
+ *         description: Imagem não encontrada
+ * /upload/personagem/{nome}:
+ *   get:
+ *     tags: [Uploads]
+ *     summary: Retorna imagem de personagem pelo nome
+ *     parameters:
+ *       - in: path
+ *         name: nome
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Imagem de personagem
+ *         content:
+ *           image/jpeg:
+ *             schema:
+ *               type: string
+ *               format: binary
+ *           image/png:
+ *             schema:
+ *               type: string
+ *               format: binary
+ *       404:
+ *         description: Imagem não encontrada
+ * /upload/capa:
+ *   get:
+ *     tags: [Uploads]
+ *     summary: Lista todos os arquivos de capa
+ *     responses:
+ *       200:
+ *         description: Lista de arquivos de capa
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 capas:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ * /upload/personagem:
+ *   get:
+ *     tags: [Uploads]
+ *     summary: Lista todos os arquivos de personagem
+ *     responses:
+ *       200:
+ *         description: Lista de arquivos de personagem
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 personagens:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ */
 
 uploadsRouter.use(
   '/images',
@@ -65,86 +148,11 @@ const enviarImagem = (pasta: string) => {
   };
 };
 
-/**
- * @swagger
- * /upload/capa/{nome}:
- *   get:
- *     summary: Baixar uma imagem de capa específica
- *     description: |
- *       Retorna o arquivo binário da imagem de capa pelo nome do arquivo.
- *       Exemplo de uso: `/upload/capa/nome-da-capa.jpg`
- *     tags: [Uploads]
- *     parameters:
- *       - in: path
- *         name: nome
- *         required: true
- *         description: "Nome do arquivo da capa (ex: capa1.jpg)"
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Imagem retornada com sucesso
- *         content:
- *           image/*:
- *             schema:
- *               type: string
- *               format: binary
- *       404:
- *         description: Imagem não encontrada
- */
 uploadsRouter.get('/upload/capa/:nome', enviarImagem('../../images/capas'));
-
-/**
- * @swagger
- * /upload/personagem/{nome}:
- *   get:
- *     summary: Baixar uma imagem de personagem específica
- *     description: |
- *       Retorna o arquivo binário da imagem de personagem pelo nome do arquivo.
- *       Exemplo de uso: `/upload/personagem/nome-do-personagem.jpg`
- *     tags: [Uploads]
- *     parameters:
- *       - in: path
- *         name: nome
- *         required: true
- *         description: "Nome do arquivo do personagem (ex: personagem1.jpg)"
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Imagem retornada com sucesso
- *         content:
- *           image/*:
- *             schema:
- *               type: string
- *               format: binary
- *       404:
- *         description: Imagem não encontrada
- */
 uploadsRouter.get(
   '/upload/personagem/:nome',
   enviarImagem('../../images/personagens'),
 );
-
-/**
- * @swagger
- * /upload/capa:
- *   get:
- *     summary: Lista todas as capas disponíveis
- *     tags: [Uploads]
- *     responses:
- *       200:
- *         description: Lista de arquivos de capas
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 capas:
- *                   type: array
- *                   items:
- *                     type: string
- */
 uploadsRouter.get('/upload/capa', (req: Request, res: Response) => {
   const dir = path.resolve(__dirname, '../../images/capas');
 
@@ -164,25 +172,6 @@ uploadsRouter.get('/upload/capa', (req: Request, res: Response) => {
   });
 });
 
-/**
- * @swagger
- * /upload/personagem:
- *   get:
- *     summary: Lista todas as imagens de personagens disponíveis
- *     tags: [Uploads]
- *     responses:
- *       200:
- *         description: Lista de arquivos de personagens
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 personagens:
- *                   type: array
- *                   items:
- *                     type: string
- */
 uploadsRouter.get('/upload/personagem', (req: Request, res: Response) => {
   const dir = path.resolve(__dirname, '../../images/personagens');
 
@@ -201,5 +190,3 @@ uploadsRouter.get('/upload/personagem', (req: Request, res: Response) => {
     res.json({ personagens: files });
   });
 });
-
-export default uploadsRouter;

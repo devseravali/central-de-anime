@@ -9,25 +9,41 @@ import {
 } from '../controllers/tagsControlador';
 
 export const tagsRouter = Router();
-
 /**
  * @swagger
  * /tags:
  *   get:
  *     tags: [Tags]
- *     summary: Listar todas as tags
+ *     summary: Lista todas as tags
  *     responses:
  *       200:
  *         description: Lista de tags
- */
-tagsRouter.get('/', listarTags);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Tag'
+ *   post:
+ *     tags: [Tags]
+ *     summary: Cria uma nova tag
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/TagInput'
+ *     responses:
+ *       201:
+ *         description: Tag criada
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Tag'
  * /tags/{id}:
  *   get:
  *     tags: [Tags]
- *     summary: Buscar tag por id
+ *     summary: Busca tag por ID
  *     parameters:
  *       - in: path
  *         name: id
@@ -37,15 +53,48 @@ tagsRouter.get('/', listarTags);
  *     responses:
  *       200:
  *         description: Tag encontrada
- */
-tagsRouter.get('/:id', buscarTagPorId);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Tag'
+ *   put:
+ *     tags: [Tags]
+ *     summary: Atualiza tag por ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/TagInput'
+ *     responses:
+ *       200:
+ *         description: Tag atualizada
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Tag'
+ *   delete:
+ *     tags: [Tags]
+ *     summary: Deleta tag por ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       204:
+ *         description: Tag deletada
  * /tags/buscar/nome:
  *   get:
  *     tags: [Tags]
- *     summary: Buscar tag por nome
+ *     summary: Busca tag por nome
  *     parameters:
  *       - in: query
  *         name: nome
@@ -55,68 +104,15 @@ tagsRouter.get('/:id', buscarTagPorId);
  *     responses:
  *       200:
  *         description: Tag encontrada
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Tag'
  */
+
+tagsRouter.get('/', listarTags);
+tagsRouter.get('/:id', buscarTagPorId);
 tagsRouter.get('/buscar/nome', buscarTagPorNome);
-
-/**
- * @swagger
- * /tags:
- *   post:
- *     tags: [Tags]
- *     summary: Criar tag
-
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *     responses:
- *       201:
- *         description: Tag criada
- */
 tagsRouter.post('/', criarTag);
-
-/**
- * @swagger
- * /tags/{id}:
- *   put:
- *     tags: [Tags]
- *     summary: Atualizar tag
-
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *     responses:
- *       200:
- *         description: Tag atualizada
- */
 tagsRouter.put('/:id', atualizarTag);
-
-/**
- * @swagger
- * /tags/{id}:
- *   delete:
- *     tags: [Tags]
- *     summary: Remover tag
-
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: Tag removida
- */
 tagsRouter.delete('/:id', deletarTag);
