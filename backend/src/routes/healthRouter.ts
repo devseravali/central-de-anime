@@ -1,17 +1,32 @@
 import { Router } from 'express';
+import os from 'os';
+import { prisma } from '../lib/prisma';
 
-const healthRouter = Router();
+export const healthRouter = Router();
 
 /**
  * @swagger
+ * tags:
+ *   - name: Health
+ *     description: Monitoramento e disponibilidade da API
+ *
  * /health:
  *   get:
  *     tags: [Health]
- *     summary: Verifica o status da API
+ *     summary: Verifica saúde básica da API
  *     responses:
  *       200:
  *         description: API online
+ *
+ * /health/detailed:
+ *   get:
+ *     tags: [Health]
+ *     summary: Verifica saúde detalhada da API e do banco
+ *     responses:
+ *       200:
+ *         description: Informações detalhadas de saúde da aplicação
  */
+
 healthRouter.get('/', (req, res) => {
   res.status(200).json({
     sucesso: true,
@@ -24,19 +39,16 @@ healthRouter.get('/', (req, res) => {
   });
 });
 
-/**
- * @swagger
- * /health/detailed:
- *   get:
- *     tags: [Health]
- *     summary: Verifica o status detalhado da API
- *     responses:
- *       200:
- *         description: API online com detalhes de uptime e memória
- */
-healthRouter.get('/detailed', (req, res) => {
+healthRouter.get('/detailed', async (req, res) => {
   const uptime = process.uptime();
   const memory = process.memoryUsage();
+  let dbStatus = 'unknown';
+  try {
+    await prisma.$queryRaw`SELECT 1`;
+    dbStatus = 'online';
+  } catch {
+    dbStatus = 'offline';
+  }
 
   res.status(200).json({
     sucesso: true,
@@ -55,8 +67,15 @@ healthRouter.get('/detailed', (req, res) => {
         heapLimite: `${Math.round(memory.heapTotal / 1024 / 1024)} MB`,
         external: `${Math.round(memory.external / 1024 / 1024)} MB`,
       },
+      banco: dbStatus,
+      host: {
+        hostname: os.hostname(),
+        ip:
+          Object.values(os.networkInterfaces())
+            .flat()
+            .find((i) => i && i.family === 'IPv4' && !i.internal)?.address ||
+          'N/A',
+      },
     },
   });
 });
-
-export { healthRouter };
