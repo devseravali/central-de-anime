@@ -1,6 +1,3 @@
-import { db } from '../db';
-import { animes } from '../schema/animes';
-import { estudios } from '../schema/estudios';
 import { Router } from 'express';
 import * as estudiosControlador from '../controllers/estudiosControlador';
 
@@ -11,19 +8,47 @@ export const estudiosRouter = Router();
  * /estudios:
  *   get:
  *     tags: [Estudios]
- *     summary: Listar estudios
+ *     summary: Lista todos os estúdios
  *     responses:
  *       200:
- *         description: Lista de estudios
- */
-estudiosRouter.get('/', estudiosControlador.buscarTodosEstudios);
-
-/**
- * @swagger
+ *         description: Lista de estúdios
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Estudio'
+ *   post:
+ *     tags: [Estudios]
+ *     summary: Cria um novo estúdio
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/EstudioInput'
+ *     responses:
+ *       201:
+ *         description: Estúdio criado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Estudio'
+ * /estudios/estatisticas:
+ *   get:
+ *     tags: [Estudios]
+ *     summary: Estatísticas dos estúdios
+ *     responses:
+ *       200:
+ *         description: Estatísticas dos estúdios
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Estatistica'
  * /estudios/{id}:
  *   get:
  *     tags: [Estudios]
- *     summary: Buscar estudio por id
+ *     summary: Busca estúdio por ID
  *     parameters:
  *       - in: path
  *         name: id
@@ -32,16 +57,49 @@ estudiosRouter.get('/', estudiosControlador.buscarTodosEstudios);
  *           type: integer
  *     responses:
  *       200:
- *         description: Estudio encontrado
- */
-estudiosRouter.get('/:id', estudiosControlador.buscarEstudioPorId);
-
-/**
- * @swagger
- * /estudios/{nome}/principais-obras:
+ *         description: Estúdio encontrado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Estudio'
+ *   put:
+ *     tags: [Estudios]
+ *     summary: Atualiza estúdio por ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/EstudioInput'
+ *     responses:
+ *       200:
+ *         description: Estúdio atualizado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Estudio'
+ *   delete:
+ *     tags: [Estudios]
+ *     summary: Deleta estúdio por ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       204:
+ *         description: Estúdio deletado
+ * /estudios/nome/{nome}:
  *   get:
  *     tags: [Estudios]
- *     summary: Listar animes por nome do estudio
+ *     summary: Busca estúdio por nome
  *     parameters:
  *       - in: path
  *         name: nome
@@ -50,19 +108,15 @@ estudiosRouter.get('/:id', estudiosControlador.buscarEstudioPorId);
  *           type: string
  *     responses:
  *       200:
- *         description: Lista de animes por estudio
- */
-estudiosRouter.get(
-  '/:nome/principais-obras',
-  estudiosControlador.listarAnimesPorNomeEstudio,
-);
-
-/**
- * @swagger
+ *         description: Estúdio encontrado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Estudio'
  * /estudios/{id}/animes:
  *   get:
  *     tags: [Estudios]
- *     summary: Listar animes por estudio
+ *     summary: Lista animes de um estúdio
  *     parameters:
  *       - in: path
  *         name: id
@@ -71,94 +125,20 @@ estudiosRouter.get(
  *           type: integer
  *     responses:
  *       200:
- *         description: Lista de animes por estudio
+ *         description: Lista de animes do estúdio
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Anime'
  */
+
+estudiosRouter.get('/', estudiosControlador.listarEstudios);
+estudiosRouter.get('/estatisticas', estudiosControlador.listarEstudios);
+estudiosRouter.get('/:id', estudiosControlador.buscarEstudioPorId);
+estudiosRouter.get('/nome/:nome', estudiosControlador.buscarEstudioPorNome);
 estudiosRouter.get('/:id/animes', estudiosControlador.listarAnimesPorEstudio);
-
-/**
- * @swagger
- * /estudios/nome/{nome}/animes:
- *   get:
- *     tags: [Estudios]
- *     summary: Listar animes por nome do estudio
- *     parameters:
- *       - in: path
- *         name: nome
- *         required: true
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de animes por estudio
- */
-estudiosRouter.get(
-  '/nome/:nome/animes',
-  estudiosControlador.listarAnimesPorNomeEstudio,
-);
-
-/**
- * @swagger
- * /estudios:
- *   post:
- *     tags: [Estudios]
- *     summary: Criar estudio
-
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               nome:
- *                 type: string
- *     responses:
- *       201:
- *         description: Estudio criado
- */
-estudiosRouter.post('/', estudiosControlador.adicionarEstudio);
-
-/**
- * @swagger
- * /estudios/{id}:
- *   put:
- *     tags: [Estudios]
- *     summary: Atualizar estudio
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               nome:
- *                 type: string
- *     responses:
- *       200:
- *         description: Estudio atualizado
- */
+estudiosRouter.post('/', estudiosControlador.criarEstudio);
 estudiosRouter.put('/:id', estudiosControlador.atualizarEstudio);
-
-/**
- * @swagger
- * /estudios/{id}:
- *   delete:
- *     tags: [Estudios]
- *     summary: Remover estudio
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: Estudio removido
- */
 estudiosRouter.delete('/:id', estudiosControlador.deletarEstudio);
