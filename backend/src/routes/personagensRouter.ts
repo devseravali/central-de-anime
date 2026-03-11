@@ -1,37 +1,42 @@
-import { db } from '../db';
-import { animes } from '../schema/animes';
-import { personagens } from '../schema/personagens';
 import { Router } from 'express';
-import {
-  obterPersonagens,
-  obterPersonagemPorId,
-  obterPersonagemPorNome,
-  obterAnimesPorPersonagem,
-  criarPersonagem,
-  atualizarPersonagem,
-  deletarPersonagem,
-} from '../controllers/personagensControlador';
+import { personagensControlador } from '../controllers/personagemControlador';
 
 export const personagensRouter = Router();
-
 /**
  * @swagger
  * /personagens:
  *   get:
  *     tags: [Personagens]
- *     summary: Listar personagens
+ *     summary: Lista todos os personagens
  *     responses:
  *       200:
  *         description: Lista de personagens
- */
-personagensRouter.get('/', obterPersonagens);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Personagem'
+ *   post:
+ *     tags: [Personagens]
+ *     summary: Cria um novo personagem
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/PersonagemInput'
+ *     responses:
+ *       201:
+ *         description: Personagem criado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Personagem'
  * /personagens/{id}/animes:
  *   get:
  *     tags: [Personagens]
- *     summary: Listar animes por personagem
+ *     summary: Lista animes de um personagem
  *     parameters:
  *       - in: path
  *         name: id
@@ -41,15 +46,16 @@ personagensRouter.get('/', obterPersonagens);
  *     responses:
  *       200:
  *         description: Lista de animes do personagem
- */
-personagensRouter.get('/:id/animes', obterAnimesPorPersonagem);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Anime'
  * /personagens/{id}:
  *   get:
  *     tags: [Personagens]
- *     summary: Buscar personagem por id
+ *     summary: Busca personagem por ID
  *     parameters:
  *       - in: path
  *         name: id
@@ -59,15 +65,48 @@ personagensRouter.get('/:id/animes', obterAnimesPorPersonagem);
  *     responses:
  *       200:
  *         description: Personagem encontrado
- */
-personagensRouter.get('/:id', obterPersonagemPorId);
-
-/**
- * @swagger
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Personagem'
+ *   put:
+ *     tags: [Personagens]
+ *     summary: Atualiza personagem por ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/PersonagemInput'
+ *     responses:
+ *       200:
+ *         description: Personagem atualizado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Personagem'
+ *   delete:
+ *     tags: [Personagens]
+ *     summary: Deleta personagem por ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       204:
+ *         description: Personagem deletado
  * /personagens/nome/{nome}:
  *   get:
  *     tags: [Personagens]
- *     summary: Buscar personagem por nome
+ *     summary: Busca personagem por nome
  *     parameters:
  *       - in: path
  *         name: nome
@@ -77,68 +116,22 @@ personagensRouter.get('/:id', obterPersonagemPorId);
  *     responses:
  *       200:
  *         description: Personagem encontrado
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Personagem'
  */
-personagensRouter.get('/nome/:nome', obterPersonagemPorNome);
 
-/**
- * @swagger
- * /personagens:
- *   post:
- *     tags: [Personagens]
- *     summary: Criar personagem
-
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *     responses:
- *       201:
- *         description: Personagem criado
- */
-personagensRouter.post('/', criarPersonagem);
-
-/**
- * @swagger
- * /personagens/{id}:
- *   put:
- *     tags: [Personagens]
- *     summary: Atualizar personagem
-
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *     responses:
- *       200:
- *         description: Personagem atualizado
- */
-personagensRouter.put('/:id', atualizarPersonagem);
-
-/**
- * @swagger
- * /personagens/{id}:
- *   delete:
- *     tags: [Personagens]
- *     summary: Remover personagem
-
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: Personagem removido
- */
-personagensRouter.delete('/:id', deletarPersonagem);
+personagensRouter.get('/', personagensControlador.obterPersonagens);
+personagensRouter.get(
+  '/:id/animes',
+  personagensControlador.obterAnimesPorPersonagem,
+);
+personagensRouter.get('/:id', personagensControlador.obterPersonagemPorId);
+personagensRouter.get(
+  '/nome/:nome',
+  personagensControlador.obterPersonagemPorNome,
+);
+personagensRouter.post('/', personagensControlador.criarPersonagem);
+personagensRouter.put('/:id', personagensControlador.atualizarPersonagem);
+personagensRouter.delete('/:id', personagensControlador.deletarPersonagem);

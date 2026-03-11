@@ -1,259 +1,92 @@
 import { Router } from 'express';
-import * as relacoesControlador from '../controllers/relacoesControlador';
+import { relacoesControlador } from '../controllers/relacoesControlador';
 
-export const relacoesRouter = Router();
+const relacoesRouter = Router();
 
-/**
- * @swagger
- * /relacoes/temporadas:
- *   get:
- *     tags: [Relacoes]
- *     summary: Buscar temporadas por nome
- *     parameters:
- *       - in: query
- *         name: nome
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de temporadas
- */
-relacoesRouter.get('/temporadas', relacoesControlador.buscarTemporadasPorNome);
-/**
- * @swagger
- * /relacoes/estacoes:
- *   get:
- *     tags: [Relacoes]
- *     summary: Buscar estacoes por nome
- *     parameters:
- *       - in: query
- *         name: nome
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de estacoes
- */
-relacoesRouter.get('/estacoes', relacoesControlador.buscarEstacoesPorNome);
-/**
- * @swagger
- * /relacoes/status:
- *   get:
- *     tags: [Relacoes]
- *     summary: Buscar status por nome
- *     parameters:
- *       - in: query
- *         name: nome
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de status
- */
-relacoesRouter.get('/status', relacoesControlador.buscarStatusPorNome);
-/**
- * @swagger
- * /relacoes/estudios:
- *   get:
- *     tags: [Relacoes]
- *     summary: Buscar estudios por nome
- *     parameters:
- *       - in: query
- *         name: nome
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de estudios
- */
-relacoesRouter.get('/estudios', relacoesControlador.buscarEstudiosPorNome);
-/**
- * @swagger
- * /relacoes/plataformas:
- *   get:
- *     tags: [Relacoes]
- *     summary: Buscar plataformas por nome
- *     parameters:
- *       - in: query
- *         name: nome
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de plataformas
- */
+relacoesRouter.get('/animes/ano/:ano', relacoesControlador.listarAnimesPorAno);
+relacoesRouter.get('/animes/titulo', relacoesControlador.buscarAnimesPorTitulo);
 relacoesRouter.get(
-  '/plataformas',
+  '/estudios/:estudioId/animes',
+  relacoesControlador.listarAnimesdeUmEstudio,
+);
+relacoesRouter.get(
+  '/animes/:animeId/personagens',
+  relacoesControlador.listarPersonagensdeUmAnime,
+);
+relacoesRouter.get(
+  '/personagens/:personagemId/animes',
+  relacoesControlador.listarAnimesdeUmPersonagem,
+);
+relacoesRouter.get('/estacoes/nome', relacoesControlador.buscarEstacoesPorNome);
+relacoesRouter.get('/status/nome', relacoesControlador.buscarStatusPorNome);
+relacoesRouter.get('/estudios/nome', relacoesControlador.buscarEstudiosPorNome);
+relacoesRouter.get(
+  '/plataformas/nome',
   relacoesControlador.buscarPlataformasPorNome,
 );
-/**
- * @swagger
- * /relacoes/tags:
- *   get:
- *     tags: [Relacoes]
- *     summary: Buscar tags por nome
- *     parameters:
- *       - in: query
- *         name: nome
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de tags
- */
-relacoesRouter.get('/tags', relacoesControlador.buscarTagsPorNome);
-/**
- * @swagger
- * /relacoes/animes:
- *   get:
- *     tags: [Relacoes]
- *     summary: Buscar animes por título
- *     parameters:
- *       - in: query
- *         name: titulo
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de animes
- */
-relacoesRouter.get('/animes', relacoesControlador.buscarAnimesPorTitulo);
-/**
- * @swagger
- * /relacoes/personagens:
- *   get:
- *     tags: [Relacoes]
- *     summary: Buscar personagens por nome
- *     parameters:
- *       - in: query
- *         name: nome
- *         required: false
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Lista de personagens
- */
+
+relacoesRouter.get('/tags', relacoesControlador.buscarTodasTags);
+
+relacoesRouter.get('/tags/nome', relacoesControlador.buscarTagsPorNome);
 relacoesRouter.get(
-  '/personagens',
+  '/personagens/nome',
   relacoesControlador.buscarPersonagensPorNome,
 );
 
-/**
- * @swagger
- * /relacoes/animes/personagem/{personagemId}:
- *   get:
- *     tags: [Relacoes]
- *     summary: Listar animes de um personagem
- *     parameters:
- *       - in: path
- *         name: personagemId
- *         required: true
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: Lista de animes do personagem
- */
 relacoesRouter.get(
-  '/animes/personagem/:personagemId',
-  relacoesControlador.listarAnimesdeUmPersonagem,
+  '/animes/tag/:tagId',
+  relacoesControlador.listarAnimesdeUmaTag,
 );
-/**
- * @swagger
- * /relacoes/personagens/anime/{animeId}:
- *   get:
- *     tags: [Relacoes]
- *     summary: Listar personagens de um anime
- *     parameters:
- *       - in: path
- *         name: animeId
- *         required: true
- *         schema:
- *           type: integer
- *     responses:
- *       200:
- *         description: Lista de personagens do anime
- */
 relacoesRouter.get(
-  '/personagens/anime/:animeId',
-  relacoesControlador.listarPersonagensdeUmAnime,
+  '/animes/status/:statusId',
+  relacoesControlador.listarAnimesdeUmStatus,
+);
+// Alias por entidade para manter consistencia com o padrao /:entidade/:id/animes
+relacoesRouter.get(
+  '/status/:statusId/animes',
+  relacoesControlador.listarAnimesdeUmStatus,
 );
 relacoesRouter.get(
   '/animes/genero/:generoId',
   relacoesControlador.listarAnimesdeUmGenero,
 );
 relacoesRouter.get(
-  '/generos/anime/:animeId',
-  relacoesControlador.listarGenerosdeUmAnime,
-);
-relacoesRouter.get(
-  '/animes/estudio/:estudioId',
-  relacoesControlador.listarAnimesdeUmEstudio,
-);
-relacoesRouter.get(
-  '/estudio/anime/:animeId',
-  relacoesControlador.buscarEstudiodeUmAnime,
-);
-relacoesRouter.get(
-  '/animes/plataforma/:plataformaId',
-  relacoesControlador.listarAnimesdeUmaPlataforma,
-);
-relacoesRouter.get(
-  '/plataformas/anime/:animeId',
-  relacoesControlador.listarPlataformasdeUmAnime,
-);
-relacoesRouter.get(
-  '/animes/temporada/:temporadaId',
-  relacoesControlador.listarAnimesdeUmaTemporada,
-);
-relacoesRouter.get(
-  '/temporada/anime/:animeId',
-  relacoesControlador.buscarTemporadadeUmAnime,
+  '/generos/:generoId/animes',
+  relacoesControlador.listarAnimesdeUmGenero,
 );
 relacoesRouter.get(
   '/animes/estacao/:estacaoId',
   relacoesControlador.listarAnimesdeUmaEstacao,
 );
 relacoesRouter.get(
-  '/estacao/anime/:animeId',
-  relacoesControlador.buscarEstacaodeUmAnime,
+  '/estacoes/:estacaoId/animes',
+  relacoesControlador.listarAnimesdeUmaEstacao,
 );
 relacoesRouter.get(
-  '/animes/status/:statusId',
-  relacoesControlador.listarAnimesdeUmStatus,
+  '/animes/plataforma/:plataformaId',
+  relacoesControlador.listarAnimesdeUmaPlataforma,
 );
 relacoesRouter.get(
-  '/status/anime/:animeId',
-  relacoesControlador.buscarStatusdeUmAnime,
+  '/plataformas/:plataformaId/animes',
+  relacoesControlador.listarAnimesdeUmaPlataforma,
 );
 relacoesRouter.get(
-  '/animes/tag/:tagId',
+  '/animes/estudio/:estudioId',
+  relacoesControlador.listarAnimesdeUmEstudio,
+);
+relacoesRouter.get(
+  '/animes/personagem/:personagemId',
+  relacoesControlador.listarAnimesdeUmPersonagem,
+);
+relacoesRouter.get(
+  '/personagens/:personagemId/animes',
+  relacoesControlador.listarAnimesdeUmPersonagem,
+);
+relacoesRouter.get(
+  '/tags/:tagId/animes',
   relacoesControlador.listarAnimesdeUmaTag,
 );
-relacoesRouter.get(
-  '/tags/anime/:animeId',
-  relacoesControlador.listarTagsdeUmAnime,
-);
 
-relacoesRouter.get(
-  '/entidades/anime/:animeId',
-  relacoesControlador.buscaEntidadesRelacionadasComAnime,
-);
-relacoesRouter.get(
-  '/animes/entidade/:entidadeType/:entidadeId',
-  relacoesControlador.buscarAnimesRelacionadosComUmaEntidade,
-);
-relacoesRouter.get(
-  '/entidade/animes/:entidadeType/:entidadeId',
-  relacoesControlador.buscarAnimesDeUmaEntidade,
-);
+relacoesRouter.get('/overview', relacoesControlador.overviewRelacoes);
 
-relacoesRouter.get('/animes/:id', relacoesControlador.buscarAnimePorId);
+export { relacoesRouter };
