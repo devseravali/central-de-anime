@@ -210,6 +210,44 @@ export const redefinirSenha = asyncHandler(
   },
 );
 
+export const loginGoogleUsuario = asyncHandler(
+  async (req: Request, res: Response) => {
+    const token = req.body?.token;
+    const email = typeof token === 'string' ? token : '';
+    if (!email) {
+      throw ErroApi.badRequest(
+        'Token Google inválido.',
+        'INVALID_GOOGLE_TOKEN',
+      );
+    }
+    const usuario = await usuariosServico.loginGoogle(email);
+    const JWT_SECRET = process.env.JWT_SECRET || 'sua-chave-secreta';
+    const expiraEm = new Date(Date.now() + 24 * 60 * 60 * 1000);
+    const refreshTokenHash =
+      Math.random().toString(36).substring(2) + Date.now();
+    const sessao = await sessoesServico.criarSessao({
+      usuarioId: usuario.id,
+      refreshTokenHash,
+      expiraEm,
+    });
+    const tokenJwt = jwt.sign(
+      { usuarioId: usuario.id, sessaoId: sessao.id },
+      JWT_SECRET,
+      { expiresIn: '1d' },
+    );
+    return respostaSucesso(
+      res,
+      {
+        usuario: sanitizarUsuario(usuario),
+        token: tokenJwt,
+      },
+      {
+        mensagem: 'Login Google realizado com sucesso.',
+      },
+    );
+  },
+);
+
 export const atualizarUsuario = asyncHandler(
   async (req: Request, res: Response) => {
     if (typeof req.usuarioId !== 'number') {

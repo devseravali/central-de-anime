@@ -27,7 +27,7 @@ function parsePositiveInt(value: unknown, fallback: number): number {
 export const listarTodosAnimes = asyncHandler(
   async (req: Request, res: Response) => {
     const page = parsePositiveInt(req.query.page, 1);
-    const limit = Math.min(parsePositiveInt(req.query.limit, 8), 8);
+    const limit = parsePositiveInt(req.query.limit, 1000);
     const offset = (page - 1) * limit;
 
     const { status, genero, estudio, estacao, ano } = req.query;
@@ -86,7 +86,6 @@ export const atualizarAnime = asyncHandler(
       : req.params.id;
     const id = parseIdParam(idParam);
 
-    // Validação com Zod
     const animeData = { ...req.body };
     if ('id' in animeData) delete animeData.id;
     if ('anime_id' in animeData) delete animeData.anime_id;

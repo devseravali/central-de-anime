@@ -30,7 +30,6 @@ export const listarEstacoes = asyncHandler(
   },
 );
 
-// Buscar estação por ID
 export const buscarEstacaoPorId = asyncHandler(
   async (req: Request, res: Response) => {
     const id = Number(parseIdParam(req, 'estacao'));
