@@ -4,65 +4,41 @@ import {
 } from '../repositories/dadosRepositorio';
 
 export const dadosServico = {
-  async listarPersonagens() {
-    return dadosRepositorio.listarPersonagens();
+  listarTodos() {
+    return Promise.all([
+      dadosRepositorio.listarGeneros(),
+      dadosRepositorio.listarPlataformas(),
+      dadosRepositorio.listarStatus(),
+      dadosRepositorio.listarTags(),
+      dadosRepositorio.listarAnimes(),
+      dadosRepositorio.listarEstacoes(),
+      dadosRepositorio.listarPersonagens(),
+    ]).then(
+      ([
+        generos,
+        plataformas,
+        status,
+        tags,
+        animes,
+        estacoes,
+        personagens,
+      ]) => ({
+        generos,
+        plataformas,
+        status,
+        tags,
+        animes,
+        estacoes,
+        personagens,
+      }),
+    );
   },
 
-  async listarAnimes() {
-    return dadosRepositorio.listarAnimes();
-  },
-
-  async listarEstacoes() {
-    return dadosRepositorio.listarEstacoes();
-  },
-
-  async listarGeneros() {
-    return dadosRepositorio.listarGeneros();
-  },
-
-  async listarPlataformas() {
-    return dadosRepositorio.listarPlataformas();
-  },
-
-  async listarStatus() {
-    return dadosRepositorio.listarStatus();
-  },
-
-  async listarTags() {
-    return dadosRepositorio.listarTags();
-  },
-
-  async listarEstudios() {
-    return dadosRepositorio.listarEstudios();
-  },
-
-  async listarTemporadas() {
+  listarTemporadas() {
     return dadosRepositorio.listarTemporadas();
   },
 
-  async buscarPorNome(entidade: string, nome: string) {
+  async buscarPorNome(entidade: keyof BuscaPorNomeResultado, nome: string) {
     return dadosRepositorio.buscarPorNomeRepositorio(entidade, nome);
   },
-
-  async obterDadosIniciais() {
-    const [generos, plataformas, status, tags, estudios, estacoes] =
-      await Promise.all([
-        dadosRepositorio.listarGeneros(),
-        dadosRepositorio.listarPlataformas(),
-        dadosRepositorio.listarStatus(),
-        dadosRepositorio.listarTags(),
-        dadosRepositorio.listarEstudios(),
-        dadosRepositorio.listarEstacoes(),
-      ]);
-
-    return {
-      generos,
-      plataformas,
-      status,
-      tags,
-      estudios,
-      estacoes,
-    };
-  }
 };
-
