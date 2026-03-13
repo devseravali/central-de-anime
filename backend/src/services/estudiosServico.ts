@@ -5,65 +5,50 @@ import type {
   AtualizarEstudioDTO,
 } from '../types/estudio';
 
-type EstudioComNomePossivelmenteNulo = Omit<Estudio, 'nome'> & {
-  nome: string | null;
-};
-
 const normalizarEstudio = (
-  estudio: EstudioComNomePossivelmenteNulo | undefined,
+  estudio: Estudio | null | undefined,
 ): Estudio | undefined => {
   if (!estudio || !estudio.nome) return undefined;
-  return { ...estudio, nome: estudio.nome };
+  return estudio;
 };
 
 export const estudiosServico = {
-  listar({ pagina = 1, limite = 20 } = {}): Promise<Estudio[]> {
-    return estudiosRepositorio
-      .estudios({ pagina, limite })
-      .then((estudios) =>
-        estudios
-          .map(normalizarEstudio)
-          .filter((estudio): estudio is Estudio => Boolean(estudio)),
-      );
+  async listar(): Promise<Estudio[]> {
+    const estudios = await estudiosRepositorio.listarEstudios();
+    return estudios.map(normalizarEstudio).filter(Boolean) as Estudio[];
   },
 
-  buscarPorId(id: number): Promise<Estudio | undefined> {
-    return estudiosRepositorio.estudioPorId(String(id)).then(normalizarEstudio);
+  async buscarPorId(id: number): Promise<Estudio | undefined> {
+    const estudio = await estudiosRepositorio.estudioPorId(id);
+    return normalizarEstudio(estudio);
   },
 
-  buscarPorNome(nome: string): Promise<Estudio | undefined> {
-    return estudiosRepositorio.estudioPorNome(nome).then(normalizarEstudio);
+  async buscarPorNome(nome: string): Promise<Estudio | undefined> {
+    const estudio = await estudiosRepositorio.estudioPorNome(nome);
+    return normalizarEstudio(estudio);
   },
 
-  listarAnimes(estudioId: number) {
-    return estudiosRepositorio.animesPorEstudios(String(estudioId));
+  async listarAnimes(estudioId: number) {
+    return estudiosRepositorio.animesPorEstudios(estudioId);
   },
 
-  criar(dados: CriarEstudioDTO): Promise<Estudio> {
-    return estudiosRepositorio
-      .adicionarEstudio({
-        nome: dados.nome,
-        principaisObras: 'pendente',
-      })
-      .then((estudio) => {
-        const normalizado = normalizarEstudio(estudio);
-        if (!normalizado) throw new Error('Falha ao criar estúdio');
-        return normalizado;
-      });
+  async criar(dados: CriarEstudioDTO): Promise<Estudio> {
+    const estudio = await estudiosRepositorio.adicionarEstudio(dados);
+    const normalizado = normalizarEstudio(estudio);
+    if (!normalizado) throw new Error('Falha ao criar estúdio');
+    return normalizado;
   },
 
-  atualizar(
+  async atualizar(
     id: number,
     dados: AtualizarEstudioDTO,
   ): Promise<Estudio | undefined> {
-    return estudiosRepositorio
-      .atualizarEstudio(id, dados)
-      .then(normalizarEstudio);
+    const estudio = await estudiosRepositorio.atualizarEstudio(id, dados);
+    return normalizarEstudio(estudio);
   },
 
-  deletar(id: number): Promise<Estudio | undefined> {
-    return estudiosRepositorio
-      .deletarEstudio(String(id))
-      .then(normalizarEstudio);
+  async deletar(id: number): Promise<Estudio | undefined> {
+    await estudiosRepositorio.deletarEstudio(id);
+    return undefined;
   },
 };
