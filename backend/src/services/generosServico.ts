@@ -10,34 +10,31 @@ export const generosServico = {
     return generosRepositorio.listar({ pagina, limite });
   },
 
-  buscarPorId(id: number): Promise<Genero | undefined> {
+  buscarPorId(id: number): Promise<Genero | null> {
     return generosRepositorio.porId(id);
   },
 
-  buscarPorNome(nome: string): Promise<Genero | undefined> {
+  buscarPorNome(nome: string): Promise<Genero | null> {
     return generosRepositorio.porNome(nome);
   },
 
   listarAnimesPorGeneroId(id: number) {
-    return generosRepositorio.animesPorGeneroId(id);
+    return generosRepositorio.listarAnimesPorGeneroId(id);
   },
 
   listarAnimesPorNomeGenero(nome: string) {
-    return generosRepositorio.animesPorNomeGenero(nome);
+    return generosRepositorio.listarAnimesPorNomeGenero(nome);
   },
 
   criar(dados: CriarGeneroDTO): Promise<Genero> {
     return generosRepositorio.criar(dados);
   },
 
-  atualizar(
-    id: number,
-    dados: AtualizarGeneroDTO,
-  ): Promise<Genero | undefined> {
+  atualizar(id: number, dados: AtualizarGeneroDTO): Promise<Genero | null> {
     return generosRepositorio.atualizar(id, dados);
   },
 
-  deletar(id: number): Promise<Genero | undefined> {
+  deletar(id: number): Promise<Genero | null> {
     return generosRepositorio.deletar(id);
   },
 };

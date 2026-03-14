@@ -1,9 +1,7 @@
 import { plataformaRepositorio } from '../repositories/plataformasRepositorio';
-import type {
-  Plataforma,
-  CriarPlataformaDTO,
-  AtualizarPlataformaDTO,
-} from '../types/plataforma';
+import type { Plataforma } from '../types/plataforma';
+import type { PlataformaDTO } from '../types/dtos/plataformaDTO';
+import type { AtualizarPlataformaDTO } from '../types/dtos/plataformaDTO';
 
 export const plataformaServico = {
   listar(): Promise<Plataforma[]> {
@@ -22,7 +20,7 @@ export const plataformaServico = {
     return plataformaRepositorio.animesPorPlataformaId(plataformaId);
   },
 
-  criar(dados: CriarPlataformaDTO): Promise<Plataforma> {
+  criar(dados: PlataformaDTO): Promise<Plataforma> {
     return plataformaRepositorio.criar(dados);
   },
 

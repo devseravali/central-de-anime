@@ -1,5 +1,6 @@
 import { relacoesRepositorio } from '../repositories/relacoesRepositorio';
-import type { EntidadesDoAnime, EntidadesDoAnimeMap } from '../types/relacoes';
+import type { AnimesDaEntidadeMap } from '../types/relacoes';
+import { prisma } from '../lib/prisma';
 
 function toNumber(value: string | number): number {
   return typeof value === 'string' ? Number(value) : value;
@@ -10,16 +11,16 @@ export const relacoesServico = {
     return relacoesRepositorio.listarPersonagensDeUmAnime(animeId);
   },
 
+  buscarTodasTags() {
+    return relacoesRepositorio.buscarTodasTags();
+  },
+
   listarAnimesdeUmPersonagem(personagemId: number) {
     return relacoesRepositorio.listarAnimesDeUmPersonagem(personagemId);
   },
 
   listarGenerosdeUmAnime(animeId: number) {
     return relacoesRepositorio.listarGenerosDeUmAnime(animeId);
-  },
-
-  listarAnimesdeUmGenero(generoId: number) {
-    return relacoesRepositorio.listarAnimesDeUmGenero(generoId);
   },
 
   buscarEstudiodeUmAnime(animeId: number) {
@@ -34,43 +35,31 @@ export const relacoesServico = {
     return relacoesRepositorio.listarPlataformasDeUmAnime(animeId);
   },
 
-  listarAnimesdeUmaPlataforma(plataformaId: number) {
-    return relacoesRepositorio.listarAnimesDeUmaPlataforma(plataformaId);
-  },
-
-  buscarEstacaodeUmAnime(animeId: number) {
-    return relacoesRepositorio.buscarEstacaoDeUmAnime(animeId);
-  },
-
-  listarAnimesdeUmaEstacao(estacaoId: number) {
-    return relacoesRepositorio.listarAnimesDeUmaEstacao(estacaoId);
-  },
-
-  buscarAnimesPorTitulo(titulo: string) {
-    return relacoesRepositorio.buscarAnimesPorTitulo(titulo);
-  },
-
-  buscarPersonagensPorNome(nome: string) {
-    return relacoesRepositorio.buscarPersonagensPorNome(nome);
-  },
-
   buscarStatusdeUmAnime(animeId: number) {
     return relacoesRepositorio.buscarStatusDeUmAnime(animeId);
-  },
-
-  listarAnimesdeUmStatus(statusId: number) {
-    return relacoesRepositorio.listarAnimesDeUmStatus(statusId);
   },
 
   listarTagsdeUmAnime(animeId: number) {
     return relacoesRepositorio.listarTagsDeUmAnime(animeId);
   },
 
-  listarAnimesdeUmaTag(tagId: number) {
-    return relacoesRepositorio.listarAnimesDeUmaTag(tagId);
+  listarTemporadas() {
+    return relacoesRepositorio.listarTemporadas();
   },
 
-  buscarTagsPorNome(nome: string) {
+  listarAnimesdeUmaTemporada(temporadaId: number) {
+    return relacoesRepositorio.listarAnimesDeUmaTemporada(temporadaId);
+  },
+
+  buscarEstacaodeUmAnime(animeId: number) {
+    return relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'estacoes');
+  },
+
+  buscarTemporadadeUmAnime(animeId: number) {
+    return relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'temporadas');
+  },
+
+  buscarTagsPorNome(nome?: string) {
     return relacoesRepositorio.buscarTagsPorNome(nome);
   },
 
@@ -94,48 +83,20 @@ export const relacoesServico = {
     return relacoesRepositorio.buscarPlataformasPorNome(nome);
   },
 
-  async buscaEntidadesRelacionadasComAnime(
-    animeId: number,
-  ): Promise<EntidadesDoAnime> {
-    const [
-      personagens,
-      generos,
-      estudios,
-      plataformas,
-      estacoes,
-      status,
-      tags,
-    ] = (await Promise.all([
-      relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'personagens'),
-      relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'generos'),
-      relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'estudios'),
-      relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'plataformas'),
-      relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'estacoes'),
-      relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'status'),
-      relacoesRepositorio.buscarEntidadesDeUmAnime(animeId, 'tags'),
-    ])) as [
-      EntidadesDoAnimeMap['personagens'] | null,
-      EntidadesDoAnimeMap['generos'] | null,
-      EntidadesDoAnimeMap['estudios'] | null,
-      EntidadesDoAnimeMap['plataformas'] | null,
-      EntidadesDoAnimeMap['estacoes'] | null,
-      EntidadesDoAnimeMap['status'] | null,
-      EntidadesDoAnimeMap['tags'] | null,
-    ];
+  buscarPersonagensPorNome(nome: string) {
+    return relacoesRepositorio.buscarPersonagensPorNome(nome);
+  },
 
-    return {
-      personagens: personagens ?? [],
-      generos: generos ?? [],
-      estudios: estudios ?? [],
-      plataformas: plataformas ?? [],
-      estacoes: estacoes ?? null,
-      status: status ?? [],
-      tags: tags ?? [],
-    };
+  buscarAnimesPorTitulo(titulo: string) {
+    return relacoesRepositorio.buscarAnimesPorTitulo(titulo);
+  },
+
+  buscarAnimePorId(id: number) {
+    return relacoesRepositorio.buscarAnimePorId(id);
   },
 
   buscarAnimesRelacionadosComUmaEntidade(
-    entidadeType: string,
+    entidadeType: keyof AnimesDaEntidadeMap,
     entidadeId: number,
   ) {
     return relacoesRepositorio.buscarAnimesDeUmaEntidade(
@@ -144,17 +105,47 @@ export const relacoesServico = {
     );
   },
 
-  buscarAnimesDeUmaEntidade(entidadeType: string, entidadeId: string | number) {
+  buscarAnimesDeUmaEntidade(
+    entidadeType: keyof AnimesDaEntidadeMap,
+    entidadeId: string | number,
+  ) {
     return relacoesRepositorio.buscarAnimesDeUmaEntidade(
       toNumber(entidadeId),
-      entidadeType as
-        | 'estudios'
-        | 'generos'
-        | 'personagens'
-        | 'plataformas'
-        | 'estacoes'
-        | 'status'
-        | 'tags',
+      entidadeType,
     );
+  },
+
+  async buscarTemporadasPorNome(nome?: string) {
+    return await prisma.anime.findMany({
+      distinct: ['temporada'],
+      select: { temporada: true },
+      where: nome
+        ? { temporada: { equals: Number(nome) } }
+        : { temporada: { not: undefined } },
+    });
+  },
+
+  listarAnimesPorAno(ano: number) {
+    return relacoesRepositorio.listarAnimesPorAno(ano);
+  },
+
+  listarAnimesdeUmaTag(tagId: number) {
+    return relacoesRepositorio.listarAnimesDeUmaTag(tagId);
+  },
+
+  listarAnimesdeUmStatus(statusId: number) {
+    return relacoesRepositorio.listarAnimesDeUmStatus(statusId);
+  },
+
+  listarAnimesdeUmGenero(generoId: number) {
+    return relacoesRepositorio.listarAnimesDeUmGenero(generoId);
+  },
+
+  listarAnimesdeUmaEstacao(estacaoId: number) {
+    return relacoesRepositorio.listarAnimesDeUmaEstacao(estacaoId);
+  },
+
+  listarAnimesdeUmaPlataforma(plataformaId: number) {
+    return relacoesRepositorio.listarAnimesDeUmaPlataforma(plataformaId);
   },
 };
