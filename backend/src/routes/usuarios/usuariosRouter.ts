@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { usuariosServico } from '../../services/usuariosServico';
 import {
   registrarUsuario,
   listarUsuarios,
@@ -11,13 +12,12 @@ import {
   loginUsuario,
   solicitarRecuperacaoSenha,
   redefinirSenha,
-  loginGoogleUsuario,
 } from '../../controllers/usuariosControlador';
 import { autenticacaoJWT } from '../../middleware/autenticacaoJWT';
+import { avatarRouter } from './avatarRouter';
 
 export const usuariosRouter = Router();
 
-usuariosRouter.post('/login-google', loginGoogleUsuario);
 /**
  * @swagger
  * tags:
@@ -213,9 +213,49 @@ usuariosRouter.post('/login', loginUsuario);
 usuariosRouter.post('/:id/enviar-verificacao', enviarVerificacaoEmail);
 usuariosRouter.put('/verificar-email', verificarEmail);
 usuariosRouter.post('/logout', autenticacaoJWT, logoutUsuario);
-usuariosRouter.get('/me', listarUsuarios);
+usuariosRouter.get('/me', async (req, res, next) => {
+  try {
+    const usuarioId = req.session?.usuarioId;
+    if (!usuarioId) {
+      return res.status(401).json({ erro: 'Não autenticado.' });
+    }
+    const usuario =
+      await require('../../services/usuariosServico').usuariosServico.buscarPorId(
+        usuarioId,
+      );
+    if (!usuario) {
+      return res.status(404).json({ erro: 'Usuário não encontrado.' });
+    }
+    res.json({ dados: usuario });
+  } catch (err) {
+    next(err);
+  }
+});
 usuariosRouter.get('/me/:id', obterUsuario);
 usuariosRouter.put('/me', autenticacaoJWT, atualizarUsuario);
 usuariosRouter.delete('/me/:id', removerUsuario);
 usuariosRouter.post('/recuperar-senha', solicitarRecuperacaoSenha);
 usuariosRouter.put('/redefinir-senha', redefinirSenha);
+
+// Retorna o id do usuário a partir do email
+usuariosRouter.get('/id', async (req, res) => {
+  const { email } = req.query;
+  if (!email || typeof email !== 'string') {
+    return res.status(400).json({ erro: 'Email obrigatório.' });
+  }
+  try {
+    console.log('Email recebido:', email);
+    const usuario = await usuariosServico.buscarPorEmail(email);
+    console.log('Usuário retornado:', usuario);
+    if (!usuario) {
+      return res.status(404).json({ erro: 'Usuário não encontrado.' });
+    }
+    return res.json({ id: usuario.id });
+  } catch (err) {
+    console.log('Erro ao buscar usuário:', err);
+    return res.status(500).json({ erro: 'Erro ao buscar usuário.' });
+  }
+});
+
+// Adiciona o endpoint de avatar diretamente em /usuarios/avatar
+usuariosRouter.use('/avatar', autenticacaoJWT, avatarRouter);

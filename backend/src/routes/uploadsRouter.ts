@@ -89,6 +89,30 @@ export const uploadsRouter = Router();
  *                   type: array
  *                   items:
  *                     type: string
+ * /avatars/{nome}:
+ *   get:
+ *     tags: [Uploads]
+ *     summary: Retorna avatar pelo nome
+ *     parameters:
+ *       - in: path
+ *         name: nome
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Avatar
+ *         content:
+ *           image/jpeg:
+ *             schema:
+ *               type: string
+ *               format: binary
+ *           image/png:
+ *             schema:
+ *               type: string
+ *               format: binary
+ *       404:
+ *         description: Avatar não encontrado
  */
 
 uploadsRouter.use(
@@ -188,5 +212,27 @@ uploadsRouter.get('/upload/personagem', (req: Request, res: Response) => {
       });
 
     res.json({ personagens: files });
+  });
+});
+
+uploadsRouter.get('/avatars/:nome', (req: Request, res: Response) => {
+  const nomeArquivo = Array.isArray(req.params.nome)
+    ? req.params.nome[0]
+    : req.params.nome;
+  const file = path.resolve(__dirname, '../../images/avatars', nomeArquivo);
+
+  fs.access(file, fs.constants.F_OK, (err) => {
+    if (err) {
+      return res.status(404).json({
+        sucesso: false,
+        dados: null,
+        erro: {
+          mensagem: 'Avatar não encontrado',
+          codigo: 'AVATAR_NAO_ENCONTRADO',
+          timestamp: new Date().toISOString(),
+        },
+      });
+    }
+    res.sendFile(file);
   });
 });

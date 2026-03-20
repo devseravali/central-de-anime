@@ -66,33 +66,9 @@ export const sessoesRouter = Router();
  *       401:
  *         description: Não autenticado
  *
- * /sessoes/auth/google:
- *   get:
- *     tags: [Sessões]
- *     summary: Inicia autenticação com Google
- *     responses:
- *       302:
- *         description: Redireciona para autenticação Google
- *
- * /sessoes/auth/google/callback:
- *   get:
- *     tags: [Sessões]
- *     summary: Callback da autenticação Google
- *     responses:
- *       302:
- *         description: Redireciona após autenticação
  */
 
 sessoesRouter.get('/validate', validarSessao);
 sessoesRouter.post('/create', criarSessao);
 sessoesRouter.post('/logout', autenticacaoJWT, encerrarSessaoAtiva);
 sessoesRouter.post('/logout-all', autenticacaoJWT, encerrarTodasSessoes);
-
-sessoesRouter.get(
-  '/auth/google',
-  passport.authenticate('google', { scope: ['profile', 'email'] }),
-);
-sessoesRouter.get(
-  '/auth/google/callback',
-  passport.authenticate('google', { failureRedirect: '/' }),
-);
