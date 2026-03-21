@@ -6,15 +6,7 @@ import type {
   UsuarioPublico,
 } from '../types/usuario';
 
-function toPublico(usuario: {
-  senha?: string;
-  senhaHash?: string;
-  id: number;
-  nome: string;
-  email: string;
-  emailVerificado?: boolean;
-  status?: string | null;
-}): UsuarioPublico {
+export function toPublico(usuario: any): UsuarioPublico {
   const { senha, senhaHash, ...publico } = usuario;
   return {
     ...publico,
@@ -61,7 +53,11 @@ export const usuariosRepositorio = {
 
     if (!usuario) return null;
 
-    return toPublico(usuario);
+    const avatarUrl = usuario.avatar || null;
+    return {
+      ...toPublico(usuario),
+      avatarUrl,
+    };
   },
 
   async buscarPorEmail(email: string) {
@@ -88,8 +84,8 @@ export const usuariosRepositorio = {
       data: {
         nome: dados.nome,
         email: dados.email,
-        senha: dados.senha, 
-        senhaHash: dados.senha, 
+        senha: dados.senha,
+        senhaHash: dados.senha,
       },
     });
 
@@ -109,6 +105,13 @@ export const usuariosRepositorio = {
     });
 
     return toPublico(usuario);
+  },
+
+  async atualizarAvatar(id: number, avatarUrl: string): Promise<void> {
+    await prisma.usuario.update({
+      where: { id },
+      data: { avatar: avatarUrl },
+    });
   },
 
   async marcarEmailVerificado(id: number): Promise<void> {

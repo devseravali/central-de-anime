@@ -1,11 +1,12 @@
 import { prisma } from '../lib/prisma';
 import { AnimeCreateDTO, AnimeUpdateDTO } from '../types/dtos/animeDTO';
+import type { AnimeFiltros } from '../types/anime';
 
 export const animeRepositorio = {
   async listarTodosAnimes(params?: {
     offset: number;
     limit: number;
-    filtros?: any;
+    filtros?: AnimeFiltros;
   }) {
     const where: any = {};
     if (params?.filtros) {

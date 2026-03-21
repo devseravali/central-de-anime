@@ -26,10 +26,19 @@ export const adminRepositorio = {
     });
   },
 
-  buscarUsuarioPorId(id: number, incluirAdmin = false) {
+  buscarUsuarioPorId(id: number) {
     return prisma.usuario.findUnique({
       where: { id },
-      include: incluirAdmin ? { admin: true } : undefined,
+      select: {
+        id: true,
+        nome: true,
+        email: true,
+        senha: true,
+        senhaHash: true,
+        status: true,
+        emailVerificado: true,
+        admin: true,
+      },
     });
   },
 
@@ -67,21 +76,20 @@ export const adminRepositorio = {
     id: number,
     data: { nome?: string; email?: string; senha?: string },
   ) {
-    const updateData: { nome?: string; email?: string; senha?: string } = {
-      ...data,
-    };
+    let senhaHash;
 
     if (data.senha) {
-      updateData.senha = await bcrypt.hash(data.senha, 10);
+      senhaHash = await bcrypt.hash(data.senha, 10);
     }
 
-    await prisma.usuario.update({
+    return prisma.usuario.update({
       where: { id },
-      data: updateData,
-    });
-
-    return prisma.usuario.findUnique({
-      where: { id },
+      data: {
+        nome: data.nome,
+        email: data.email,
+        senha: data.senha,
+        senhaHash: senhaHash,
+      },
       include: { admin: true },
     });
   },
