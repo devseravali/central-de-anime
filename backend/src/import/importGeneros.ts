@@ -1,15 +1,16 @@
-import { db } from '../db';
-import { generos } from '../schema/generos';
+import 'dotenv/config';
 import GenerosData from '../../data/entidades/generos.json';
+import { prisma, PrismaClient } from '../lib/prisma';
 
-async function importGeneros() {
-  await db.delete(generos);
-  await db.execute('ALTER SEQUENCE generos_id_seq RESTART WITH 1;');
+export async function importGeneros(prismaProd: PrismaClient) {
+  await prismaProd.genero.deleteMany({});
   for (const genero of GenerosData) {
     try {
-      await db.insert(generos).values({
-        id: genero.id,
-        nome: genero.nome,
+      await prismaProd.genero.create({
+        data: {
+          id: genero.id,
+          nome: genero.nome,
+        },
       });
     } catch (error) {
       console.error(
@@ -21,4 +22,4 @@ async function importGeneros() {
   console.log('Importação de gêneros concluída!');
 }
 
-importGeneros();
+importGeneros(prisma);
