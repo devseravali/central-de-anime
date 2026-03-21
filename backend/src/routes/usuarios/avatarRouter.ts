@@ -5,14 +5,12 @@ import { usuariosServico } from '../../services/usuariosServico';
 
 export const avatarRouter = Router();
 
-// Endpoint para remover avatar e definir como padrão
 avatarRouter.post('/remover', async (req, res) => {
   try {
     const usuarioId = req.usuarioId;
     if (!usuarioId) {
       return res.status(401).json({ erro: 'Usuário não autenticado.' });
     }
-    // Define o avatar padrão
     const avatarPadrao = 'images/personagens/default.jpg';
     await usuariosServico.atualizarAvatar(usuarioId, avatarPadrao);
     const usuarioAtualizado = await prisma.usuario.findUnique({
@@ -25,7 +23,7 @@ avatarRouter.post('/remover', async (req, res) => {
   }
 });
 
-// Endpoint único para troca de avatar por personagem
+
 avatarRouter.post('/', async (req, res) => {
   console.log('[avatarRouter] req.body:', req.body);
   console.log('[avatarRouter] req.usuarioId:', req.usuarioId);
@@ -38,14 +36,14 @@ avatarRouter.post('/', async (req, res) => {
     if (!personagemId) {
       return res.status(400).json({ erro: 'personagemId obrigatório.' });
     }
-    // Buscar usuário
+
     const usuario = await prisma.usuario.findUnique({
       where: { id: usuarioId },
     });
     if (!usuario) {
       return res.status(404).json({ erro: 'Usuário não encontrado.' });
     }
-    // Buscar personagem direto no banco
+
     const personagem = await prisma.personagem.findUnique({
       where: { id: Number(personagemId) },
       select: { id: true, nome: true, imagem: true },
