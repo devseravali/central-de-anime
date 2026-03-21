@@ -4,8 +4,10 @@ import { ErroApi } from '../errors/ErroApi';
 import { sessoesServico } from '../services/sessoesServico';
 import { respostaSucesso, respostaCriado } from '../helpers/responseHelpers';
 import { sessoesSchema } from '../schemas/sessoesSchema';
+import jwt from 'jsonwebtoken';
 
 const DURACAO_SESSAO_MS = 7 * 24 * 60 * 60 * 1000;
+const JWT_SECRET = process.env.JWT_SECRET || 'sua-chave-secreta';
 
 export const criarSessao = asyncHandler(async (req: Request, res: Response) => {
   const parsed = sessoesSchema.safeParse(req.body);
@@ -34,10 +36,22 @@ export const criarSessao = asyncHandler(async (req: Request, res: Response) => {
     expiraEm,
   });
 
+  // Gerar token JWT
+  const token = jwt.sign(
+    {
+      usuarioId: usuario.id,
+      sessaoId: sessao.id,
+      email: usuario.email,
+    },
+    JWT_SECRET,
+    { expiresIn: '7d' },
+  );
+
   return respostaCriado(res, {
     id: sessao.id,
     refreshTokenHash,
     expiraEm: sessao.expiraEm,
+    token,
     usuario: {
       id: usuario.id,
       email: usuario.email,
