@@ -1,0 +1,335 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Anime {
+  id                    Int                    @id @default(autoincrement())
+  titulo                String
+  estudio_id            Int
+  estacao_id            Int
+  tipo                  String
+  temporada             Int
+  status_id             Int
+  ano                   Int
+  quantidadeEpisodios   Int                    @default(0)
+  sinopse               String                 @db.VarChar(5000)
+  capaUrl               String
+  estacao               Estacao                @relation(fields: [estacao_id], references: [id])
+  estudio               Estudio                @relation(fields: [estudio_id], references: [id])
+  status                Status                 @relation(fields: [status_id], references: [id])
+  animeEstacaos         AnimeEstacao[]
+  animeEstudios         AnimeEstudio[]
+  animeGeneros          AnimeGenero[]
+  animePersonagems      AnimePersonagem[]
+  animePlataformas      AnimePlataforma[]
+  animeStatuses         AnimeStatus[]
+  animeTags             AnimeTag[]
+  generos               Genero[]               @relation("AnimeToGenero")
+  plataformas           Plataforma[]           @relation("AnimeToPlataforma")
+  tags                  Tags[]                 @relation("AnimeToTags")
+  usuarioFavoritoAnimes UsuarioFavoritoAnime[]
+  notaAnimeUsuarios     NotaAnimeUsuario[]
+  temporadas            Temporada[]
+  episodios             Episodio[]
+
+  @@map("Anime")
+}
+
+model Estudio {
+  id              Int            @id @default(autoincrement())
+  nome            String         @unique
+  principaisObras String         @db.VarChar(5000)
+  animes          Anime[]
+  animeEstudios   AnimeEstudio[]
+
+  @@map("Estudio")
+}
+
+model Estacao {
+  id            Int            @id @default(autoincrement())
+  nome          String         @unique
+  animes        Anime[]
+  animeEstacaos AnimeEstacao[]
+
+  @@map("Estacao")
+}
+
+model Genero {
+  id           Int           @id @default(autoincrement())
+  nome         String        @unique
+  animeGeneros AnimeGenero[]
+  animes       Anime[]       @relation("AnimeToGenero")
+
+  @@map("Genero")
+}
+
+model Status {
+  id            Int           @id @default(autoincrement())
+  nome          String        @unique
+  animes        Anime[]
+  animeStatuses AnimeStatus[]
+
+  @@map("Status")
+}
+
+model Tags {
+  id        Int        @id @default(autoincrement())
+  nome      String     @unique
+  animeTags AnimeTag[]
+  animes    Anime[]    @relation("AnimeToTags")
+
+  @@map("Tags")
+}
+
+model Plataforma {
+  id               Int               @id @default(autoincrement())
+  nome             String            @unique
+  animePlataformas AnimePlataforma[]
+  animes           Anime[]           @relation("AnimeToPlataforma")
+
+  @@map("Plataforma")
+}
+
+model Personagem {
+  id               Int                  @id @default(autoincrement())
+  nome             String
+  idade_inicial    Int
+  sexo             String
+  papel            String
+  imagem           String
+  aniversario      String
+  altura_inicial   String
+  afiliacao        String
+  sobre            String               @db.VarChar(5000)
+  animePersonagens AnimePersonagem[]
+  favoritos        PersonagemFavorito[]
+
+  @@map("Personagem")
+}
+
+model AnimeEstacao {
+  anime_id   Int
+  estacao_id Int
+  anime      Anime   @relation(fields: [anime_id], references: [id])
+  estacao    Estacao @relation(fields: [estacao_id], references: [id])
+
+  @@id([anime_id, estacao_id])
+  @@map("AnimeEstacao")
+}
+
+model AnimeEstudio {
+  anime_id   Int
+  estudio_id Int
+  anime      Anime   @relation(fields: [anime_id], references: [id])
+  estudio    Estudio @relation(fields: [estudio_id], references: [id])
+
+  @@id([anime_id, estudio_id])
+  @@map("AnimeEstudio")
+}
+
+model AnimeGenero {
+  anime_id  Int
+  genero_id Int
+  anime     Anime  @relation(fields: [anime_id], references: [id])
+  genero    Genero @relation(fields: [genero_id], references: [id])
+
+  @@id([anime_id, genero_id])
+  @@map("AnimeGenero")
+}
+
+model AnimePersonagem {
+  anime_id      Int
+  personagem_id Int
+  anime         Anime      @relation(fields: [anime_id], references: [id])
+  personagem    Personagem @relation(fields: [personagem_id], references: [id])
+
+  @@id([anime_id, personagem_id])
+  @@map("AnimePersonagem")
+}
+
+model AnimePlataforma {
+  anime_id      Int
+  plataforma_id Int
+  anime         Anime      @relation(fields: [anime_id], references: [id])
+  plataforma    Plataforma @relation(fields: [plataforma_id], references: [id])
+
+  @@id([anime_id, plataforma_id])
+  @@map("AnimePlataforma")
+}
+
+model AnimeTag {
+  anime_id Int
+  tag_id   Int
+  anime    Anime @relation(fields: [anime_id], references: [id])
+  tag      Tags  @relation(fields: [tag_id], references: [id])
+
+  @@id([anime_id, tag_id])
+  @@map("AnimeTag")
+}
+
+model AnimeStatus {
+  anime_id  Int
+  status_id Int
+  anime     Anime  @relation(fields: [anime_id], references: [id])
+  status    Status @relation(fields: [status_id], references: [id])
+
+  @@id([anime_id, status_id])
+  @@map("AnimeStatus")
+}
+
+model capas {
+  id            Int    @id @default(autoincrement())
+  nome_original String
+  nome_salvo    String
+  caminho       String
+  mime_type     String
+
+  @@map("capas")
+}
+
+model Usuario {
+  id                Int                @id @default(autoincrement())
+  nome              String
+  email             String             @unique
+  senha             String
+  senhaHash         String
+  status            String             @default("ativo")
+  emailVerificado   Boolean            @default(false)
+  admin             Admin?
+  verificacoes      Verificacao[]
+  sessaos           Sessao[]
+  tokensRecuperacao TokenRecuperacao[]
+  avatar            String?
+  criadoEm          DateTime           @default(now())
+  atualizadoEm      DateTime           @default(now()) @updatedAt
+  deletadoEm        DateTime?
+
+  usuarioFavoritoAnimes UsuarioFavoritoAnime[]
+  notaAnimeUsuarios     NotaAnimeUsuario[]
+  personagemFavoritos   PersonagemFavorito[]
+
+  @@map("Usuario")
+}
+
+model UsuarioFavoritoAnime {
+  usuarioId Int
+  animeId   Int
+  usuario   Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  anime     Anime   @relation(fields: [animeId], references: [id], onDelete: Cascade)
+
+  @@id([usuarioId, animeId])
+  @@map("UsuarioFavoritoAnime")
+}
+
+model TokenRecuperacao {
+  id        Int       @id @default(autoincrement())
+  usuarioId Int
+  valor     String    @unique
+  criadoEm  DateTime  @default(now())
+  expiraEm  DateTime?
+  usadoEm   DateTime?
+  usuario   Usuario   @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+
+  @@map("TokenRecuperacao")
+}
+
+model Admin {
+  id        Int     @id @default(autoincrement())
+  usuarioId Int     @unique
+  usuario   Usuario @relation(fields: [usuarioId], references: [id])
+
+  @@map("Admin")
+}
+
+model Verificacao {
+  id        Int       @id @default(autoincrement())
+  usuarioId Int
+  tipo      String
+  valor     String
+  criadoEm  DateTime  @default(now())
+  expiraEm  DateTime?
+  usadoEm   DateTime?
+  usuario   Usuario   @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+
+  @@map("Verificacao")
+}
+
+model Filtro {
+  id    Int    @id @default(autoincrement())
+  nome  String @unique
+  valor String
+
+  @@map("Filtro")
+}
+
+model Sessao {
+  id               Int       @id @default(autoincrement())
+  usuarioId        Int
+  refreshTokenHash String
+  dispositivo      String?
+  ip               String?
+  userAgent        String?
+  expiraEm         DateTime
+  revogadoEm       DateTime?
+  usuario          Usuario   @relation(fields: [usuarioId], references: [id])
+
+  @@map("Sessao")
+}
+
+model NotaAnimeUsuario {
+  id        Int      @id @default(autoincrement())
+  usuarioId Int
+  animeId   Int
+  nota      Float
+  criadoEm  DateTime @default(now())
+
+  usuario Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  anime   Anime   @relation(fields: [animeId], references: [id], onDelete: Cascade)
+
+  @@unique([usuarioId, animeId])
+  @@map("NotaAnimeUsuario")
+}
+
+model PersonagemFavorito {
+  id            Int        @id @default(autoincrement())
+  usuario_id    Int
+  personagem_id Int
+  usuario       Usuario    @relation(fields: [usuario_id], references: [id], onDelete: Cascade)
+  personagem    Personagem @relation(fields: [personagem_id], references: [id], onDelete: Cascade)
+
+  @@unique([usuario_id, personagem_id])
+  @@map("PersonagemFavorito")
+}
+
+model Temporada {
+  id        Int        @id @default(autoincrement())
+  numero    Int
+  ano       Int
+  animeId   Int
+  anime     Anime      @relation(fields: [animeId], references: [id])
+  episodios Episodio[]
+
+  @@unique([animeId, numero])
+  @@map("Temporada")
+}
+
+model Episodio {
+  id           Int       @id @default(autoincrement())
+  numero       Int
+  titulo       String
+  sinopse      String    @db.VarChar(2000)
+  dataExibicao DateTime?
+  imagem       String?
+  temporadaId  Int
+  animeId      Int
+  temporada    Temporada @relation(fields: [temporadaId], references: [id])
+  anime        Anime     @relation(fields: [animeId], references: [id])
+
+  @@unique([temporadaId, numero])
+  @@map("Episodio")
+}
