@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nome": "Concluído"
+    },
+    {
+        "id": 2,
+        "nome": "Em andamento"
+    },
+    {
+        "id": 3,
+        "nome": "Em lançamento"
+    },
+    {
+        "id": 4,
+        "nome": "Cancelado"
+    },
+    {
+        "id": 5,
+        "nome": "Planejado"
+    },
+    {
+        "id": 6,
+        "nome": "Filme"
+    },
+    {
+        "id": 7,
+        "nome": "OVA"
+    }
+]
