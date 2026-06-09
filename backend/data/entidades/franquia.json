@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nome": "Shingeki no Kyojin",
+    "descricao": "Humanos lutam contra titãs em um mundo pós-apocalíptico.",
+    "anoInicio": 2013
+  },
+  {
+    "id": 2,
+    "nome": "Demon Slayer",
+    "descricao": "Caçadores de demônios enfrentam criaturas sobrenaturais.",
+    "anoInicio": 2019
+  },
+  {
+    "id": 3,
+    "nome": "Tokyo Ghoul",
+    "descricao": "Humano vira meio-ghoul e luta para sobreviver.",
+    "anoInicio": 2014
+  },
+  {
+    "id": 4,
+    "nome": "Jujutsu Kaisen",
+    "descricao": "Feiticeiros enfrentam maldições mortais.",
+    "anoInicio": 2020
+  },
+  {
+    "id": 5,
+    "nome": "Death Note",
+    "descricao": "Um caderno que mata qualquer pessoa cujo nome é escrito nele.",
+    "anoInicio": 2006
+  },
+  {
+    "id": 6,
+    "nome": "Naruto",
+    "descricao": "Um ninja busca reconhecimento e se torna Hokage.",
+    "anoInicio": 2002
+  },
+  {
+    "id": 7,
+    "nome": "Dragon Ball",
+    "descricao": "Guerreiros Saiyajins protegem a Terra contra ameaças cósmicas.",
+    "anoInicio": 1986
+  },
+  {
+    "id": 8,
+    "nome": "One Piece",
+    "descricao": "Piratas em busca do maior tesouro do mundo.",
+    "anoInicio": 1999
+  },
+  {
+    "id": 9,
+    "nome": "Bleach",
+    "descricao": "Shinigamis protegem o mundo espiritual dos Hollows.",
+    "anoInicio": 2004
+  },
+  {
+    "id": 10,
+    "nome": "Hunter x Hunter",
+    "descricao": "Caçadores exploram o mundo em aventuras perigosas.",
+    "anoInicio": 1999
+  },
+  {
+    "id": 11,
+    "nome": "Spy x Family",
+    "descricao": "Uma família falsa formada por espião, assassina e telepata.",
+    "anoInicio": 2022
+  },
+  {
+    "id": 12,
+    "nome": "Fullmetal Alchemist",
+    "descricao": "Irmãos alquimistas buscam a Pedra Filosofal.",
+    "anoInicio": 2003
+  },
+  {
+    "id": 13,
+    "nome": "Mob Psycho 100",
+    "descricao": "Um garoto com poderes psíquicos extremamente fortes.",
+    "anoInicio": 2016
+  },
+  {
+    "id": 14,
+    "nome": "Vinland Saga",
+    "descricao": "História de vingança e guerra viking.",
+    "anoInicio": 2019
+  },
+  {
+    "id": 15,
+    "nome": "Steins;Gate",
+    "descricao": "Viagem no tempo com consequências perigosas.",
+    "anoInicio": 2011
+  },
+  {
+    "id": 16,
+    "nome": "Made in Abyss",
+    "descricao": "Exploração de um abismo misterioso e mortal.",
+    "anoInicio": 2017
+  },
+  {
+    "id": 17,
+    "nome": "Haikyuu!!",
+    "descricao": "Vôlei escolar competitivo de alto nível.",
+    "anoInicio": 2014
+  },
+  {
+    "id": 18,
+    "nome": "Black Clover",
+    "descricao": "Dois órfãos competem para se tornar o Rei Mago.",
+    "anoInicio": 2017
+  },
+  {
+    "id": 19,
+    "nome": "Noragami",
+    "descricao": "Deuses e espíritos convivendo no mundo humano.",
+    "anoInicio": 2014
+  },
+  {
+    "id": 20,
+    "nome": "Boku no Hero Academia",
+    "descricao": "Heróis em treinamento em um mundo com superpoderes (quirks).",
+    "anoInicio": 2016
+  }
+]
