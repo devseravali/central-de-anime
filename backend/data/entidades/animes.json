@@ -402,21 +402,47 @@
     "sinopse": "Gon Freecss descobre que seu pai é um lendário Hunter e decide seguir seus passos. Durante o Exame Hunter, ele conhece aliados e enfrenta desafios perigosos em um mundo cheio de mistérios.",
     "capaUrl": "images/capas/hunter-x-hunter-1999.jpg"
   },
+{
+  "id": 32,
+  "titulo": "Hunter x Hunter (2011)",
+  "estudioId": 9,
+  "estacaoId": 2,
+  "tipo": "temporada",
+  "temporada": 1,
+  "statusId": 1,
+  "ano": 2011,
+  "quantidadeEpisodios": 62,
+  "sinopse": "Gon Freecss inicia sua jornada para se tornar um Hunter e encontrar seu pai, Ging. Durante o Exame Hunter, ele conhece Killua, Kurapika e Leorio, enfrentando desafios, aprendendo sobre Nen e encarando a perigosa Trupe Fantasma em Yorknew City.",
+  "capaUrl": "images/capas/hunter-x-hunter-2011-t1.jpg"
+},
+{
+  "id": 33,
+  "titulo": "Hunter x Hunter (2011) 2ª temporada",
+  "estudioId": 9,
+  "estacaoId": 2,
+  "tipo": "temporada",
+  "temporada": 2,
+  "statusId": 1,
+  "ano": 2012,
+  "quantidadeEpisodios": 74,
+  "sinopse": "Gon e Killua continuam sua busca por pistas de Ging em Greed Island. Após isso, enfrentam a maior ameaça de suas vidas durante o arco das Formigas Quimera e os eventos que mudam o mundo dos Hunters.",
+  "capaUrl": "images/capas/hunter-x-hunter-2011-t2.jpg"
+},
+{
+  "id": 34,
+  "titulo": "Hunter x Hunter (2011) 3ª temporada",
+  "estudioId": 9,
+  "estacaoId": 2,
+  "tipo": "temporada",
+  "temporada": 3,
+  "statusId": 1,
+  "ano": 2014,
+  "quantidadeEpisodios": 12,
+  "sinopse": "Após os acontecimentos das Formigas Quimera, a Associação Hunter realiza uma nova eleição para escolher seu presidente. Enquanto Killua luta para salvar Gon, antigos segredos sobre o passado de Ging vêm à tona.",
+  "capaUrl": "images/capas/hunter-x-hunter-2011-t3.jpg"
+},
   {
-    "id": 32,
-    "titulo": "Hunter x Hunter (2011)",
-    "estudioId": 9,
-    "estacaoId": 2,
-    "tipo": "temporada",
-    "temporada": 2,
-    "statusId": 1,
-    "ano": 2011,
-    "quantidadeEpisodios": 148,
-    "sinopse": "Gon parte em uma jornada para encontrar seu pai enquanto participa do rigoroso Exame Hunter. Ao lado de Killua, Kurapika e Leorio, ele enfrenta organizações criminosas e inimigos poderosos.",
-    "capaUrl": "images/capas/hunter-x-hunter-2011.jpg"
-  },
-  {
-    "id": 33,
+    "id": 35,
     "titulo": "Sousou no Frieren",
     "estudioId": 2,
     "estacaoId": 2,
@@ -429,7 +455,7 @@
     "capaUrl": "images/capas/frieren-t1.jpg"
   },
   {
-    "id": 34,
+    "id": 36,
     "titulo": "Chainsaw Man",
     "estudioId": 3,
     "estacaoId": 2,
@@ -442,7 +468,7 @@
     "capaUrl": "images/capas/chainsaw-man-t1.jpg"
   },
   {
-    "id": 35,
+    "id": 37,
     "titulo": "Chainsaw Man: Reze-hen",
     "estudioId": 3,
     "estacaoId": 1,
@@ -455,7 +481,7 @@
     "capaUrl": "images/capas/chainsaw-man-reze.jpg"
   },
   {
-    "id": 36,
+    "id": 38,
     "titulo": "Hell's Paradise: Jigokuraku",
     "estudioId": 3,
     "estacaoId": 4,
@@ -468,7 +494,7 @@
     "capaUrl": "images/capas/hells-paradise-t1.jpg"
   },
   {
-    "id": 37,
+    "id": 39,
     "titulo": "Fullmetal Alchemist: Brotherhood",
     "estudioId": 4,
     "estacaoId": 4,
@@ -481,7 +507,7 @@
     "capaUrl": "images/capas/fullmetal-alchemist-brotherhood.jpg"
   },
   {
-    "id": 38,
+    "id": 40,
     "titulo": "Mob Psycho 100",
     "estudioId": 3,
     "estacaoId": 1,
@@ -494,7 +520,7 @@
     "capaUrl": "images/capas/mob-psycho-100-t1.jpg"
   },
   {
-    "id": 39,
+    "id": 41,
     "titulo": "Mob Psycho 100 II",
     "estudioId": 3,
     "estacaoId": 3,
@@ -507,7 +533,7 @@
     "capaUrl": "images/capas/mob-psycho-100-t2.jpg"
   },
   {
-    "id": 40,
+    "id": 42,
     "titulo": "Mob Psycho 100 III",
     "estudioId": 3,
     "estacaoId": 2,
@@ -520,7 +546,7 @@
     "capaUrl": "images/capas/mob-psycho-100-t3.jpg"
   },
   {
-    "id": 41,
+    "id": 43,
     "titulo": "Sword Art Online",
     "estudioId": 5,
     "estacaoId": 1,
@@ -533,7 +559,7 @@
     "capaUrl": "images/capas/sword-art-online-t1.jpg"
   },
   {
-    "id": 42,
+    "id": 44,
     "titulo": "Sword Art Online II",
     "estudioId": 5,
     "estacaoId": 1,
@@ -546,7 +572,7 @@
     "capaUrl": "images/capas/sword-art-online-t2.jpg"
   },
   {
-    "id": 43,
+    "id": 45,
     "titulo": "Sword Art Online: Alicization",
     "estudioId": 5,
     "estacaoId": 2,
@@ -559,7 +585,7 @@
     "capaUrl": "images/capas/sword-art-online-t3.jpg"
   },
   {
-    "id": 44,
+    "id": 46,
     "titulo": "Sword Art Online: Alicization War of Underworld",
     "estudioId": 5,
     "estacaoId": 2,
@@ -572,7 +598,7 @@
     "capaUrl": "images/capas/sword-art-online-t4.jpg"
   },
   {
-    "id": 45,
+    "id": 47,
     "titulo": "Your Lie in April",
     "estudioId": 5,
     "estacaoId": 2,
@@ -585,7 +611,7 @@
     "capaUrl": "images/capas/your-lie-in-april.jpg"
   },
   {
-    "id": 46,
+    "id": 48,
     "titulo": "Horimiya",
     "estudioId": 6,
     "estacaoId": 3,
@@ -598,7 +624,7 @@
     "capaUrl": "images/capas/horimiya-t1.jpg"
   },
   {
-    "id": 47,
+    "id": 49,
     "titulo": "Horimiya: The Missing Pieces",
     "estudioId": 6,
     "estacaoId": 1,
@@ -611,7 +637,7 @@
     "capaUrl": "images/capas/horimiya-t2.jpg"
   },
   {
-    "id": 48,
+    "id": 50,
     "titulo": "Bocchi the Rock!",
     "estudioId": 6,
     "estacaoId": 2,
@@ -624,7 +650,7 @@
     "capaUrl": "images/capas/bocchi-the-rock-t1.jpg"
   },
   {
-    "id": 49,
+    "id": 51,
     "titulo": "Bocchi the Rock! Re:",
     "estudioId": 6,
     "estacaoId": 2,
@@ -637,7 +663,7 @@
     "capaUrl": "images/capas/bocchi-the-rock-re.jpg"
   },
   {
-    "id": 50,
+    "id": 52,
     "titulo": "Bocchi the Rock! Re:Re:",
     "estudioId": 6,
     "estacaoId": 2,
@@ -650,7 +676,7 @@
     "capaUrl": "images/capas/bocchi-the-rock-rere.jpg"
   },
   {
-    "id": 51,
+    "id": 53,
     "titulo": "One Piece",
     "estudioId": 7,
     "estacaoId": 2,
@@ -663,7 +689,7 @@
     "capaUrl": "images/capas/one-piece-t1.jpg"
   },
   {
-    "id": 52,
+    "id": 54,
     "titulo": "Dragon Ball Z",
     "estudioId": 7,
     "estacaoId": 4,
@@ -676,7 +702,7 @@
     "capaUrl": "images/capas/dragon-ball-z-t1.jpg"
   },
   {
-    "id": 53,
+    "id": 55,
     "titulo": "Naruto",
     "estudioId": 8,
     "estacaoId": 2,
@@ -689,7 +715,7 @@
     "capaUrl": "images/capas/naruto-t1.jpg"
   },
   {
-    "id": 54,
+    "id": 56,
     "titulo": "Naruto Shippuden",
     "estudioId": 8,
     "estacaoId": 2,
@@ -702,7 +728,7 @@
     "capaUrl": "images/capas/naruto-shippuden-t2.jpg"
   },
   {
-    "id": 55,
+    "id": 57,
     "titulo": "Bleach",
     "estudioId": 8,
     "estacaoId": 2,
@@ -715,7 +741,7 @@
     "capaUrl": "images/capas/bleach-t1.jpg"
   },
   {
-    "id": 56,
+    "id": 58,
     "titulo": "Bleach: Thousand-Year Blood War",
     "estudioId": 8,
     "estacaoId": 2,
@@ -728,7 +754,7 @@
     "capaUrl": "images/capas/bleach-t2.jpg"
   },
   {
-    "id": 57,
+    "id": 59,
     "titulo": "Bleach: Sennen Kessen-hen – Soukoku-tan",
     "estudioId": 8,
     "estacaoId": 1,
@@ -741,7 +767,7 @@
     "capaUrl": "images/capas/bleach-t3.jpg"
   },
   {
-    "id": 58,
+    "id": 60,
     "titulo": "Bleach: Sennen Kessen-hen - Kashin-tan",
     "estudioId": 8,
     "estacaoId": 1,
@@ -754,7 +780,7 @@
     "capaUrl": "images/capas/bleach-t4.jpg"
   },
   {
-    "id": 59,
+    "id": 61,
     "titulo": "Haikyuu!!",
     "estudioId": 9,
     "estacaoId": 4,
@@ -767,7 +793,7 @@
     "capaUrl": "images/capas/haikyuu-t1.jpg"
   },
   {
-    "id": 60,
+    "id": 62,
     "titulo": "Haikyuu!! 2ª Temporada",
     "estudioId": 9,
     "estacaoId": 2,
@@ -780,7 +806,7 @@
     "capaUrl": "images/capas/haikyuu-t2.jpg"
   },
   {
-    "id": 61,
+    "id": 63,
     "titulo": "Haikyuu!!: Karasuno VS Shiratorizawa",
     "estudioId": 9,
     "estacaoId": 2,
@@ -793,7 +819,7 @@
     "capaUrl": "images/capas/haikyuu-t3.jpg"
   },
   {
-    "id": 62,
+    "id": 64,
     "titulo": "Haikyuu!! TO THE TOP",
     "estudioId": 9,
     "estacaoId": 4,
@@ -806,7 +832,7 @@
     "capaUrl": "images/capas/haikyuu-t4-1.jpg"
   },
   {
-    "id": 63,
+    "id": 65,
     "titulo": "Haikyuu!! TO THE TOP 2",
     "estudioId": 9,
     "estacaoId": 2,
@@ -819,7 +845,7 @@
     "capaUrl": "images/capas/haikyuu-t4-2.jpg"
   },
   {
-    "id": 64,
+    "id": 66,
     "titulo": "Haikyuu!!: Gomi Suteba no Kessen",
     "estudioId": 9,
     "estacaoId": 3,
@@ -832,7 +858,7 @@
     "capaUrl": "images/capas/haikyuu-filme-1.jpg"
   },
   {
-    "id": 65,
+    "id": 67,
     "titulo": "Psycho Pass",
     "estudioId": 9,
     "estacaoId": 2,
@@ -845,7 +871,7 @@
     "capaUrl": "images/capas/psycho-pass-t1.jpg"
   },
   {
-    "id": 66,
+    "id": 68,
     "titulo": "Psycho Pass 2",
     "estudioId": 9,
     "estacaoId": 2,
@@ -858,7 +884,7 @@
     "capaUrl": "images/capas/psycho-pass-t2.jpg"
   },
   {
-    "id": 67,
+    "id": 69, 
     "titulo": "Psycho Pass: O Movie",
     "estudioId": 9,
     "estacaoId": 3,
@@ -871,7 +897,7 @@
     "capaUrl": "images/capas/psycho-pass-filme-1.jpg"
   },
   {
-    "id": 68,
+    "id": 70,
     "titulo": "Psycho-Pass: Sinners of the System Case.1 Tsumi to Batsu",
     "estudioId": 9,
     "estacaoId": 3,
@@ -884,7 +910,7 @@
     "capaUrl": "images/capas/psycho-pass-filme-2.jpg"
   },
   {
-    "id": 69,
+    "id": 71,
     "titulo": "Psycho-Pass: Sinners of the System Case.2 First Guardian",
     "estudioId": 9,
     "estacaoId": 3,
@@ -897,7 +923,7 @@
     "capaUrl": "images/capas/psycho-pass-filme-3.jpg"
   },
   {
-    "id": 70,
+    "id": 72,
     "titulo": "Fate/Zero",
     "estudioId": 10,
     "estacaoId": 2,
@@ -910,7 +936,7 @@
     "capaUrl": "images/capas/fate-zero-t1.jpg"
   },
   {
-    "id": 71,
+    "id": 73,
     "titulo": "Fate/Zero 2ª Temporada",
     "estudioId": 10,
     "estacaoId": 4,
@@ -923,7 +949,7 @@
     "capaUrl": "images/capas/fate-zero-t2.jpg"
   },
   {
-    "id": 72,
+    "id": 74,
     "titulo": "Violet Evergarden",
     "estudioId": 12,
     "estacaoId": 3,
@@ -936,7 +962,7 @@
     "capaUrl": "images/capas/violet-evergarden.jpg"
   },
   {
-    "id": 73,
+    "id": 75,
     "titulo": "Violet Evergarden: O Filme",
     "estudioId": 12,
     "estacaoId": 1,
@@ -949,7 +975,7 @@
     "capaUrl": "images/capas/violet-evergarden-filme-1.jpg"
   },
   {
-    "id": 74,
+    "id": 76,
     "titulo": "Great Pretender",
     "estudioId": 1,
     "estacaoId": 1,
@@ -962,7 +988,7 @@
     "capaUrl": "images/capas/great-pretender.jpg"
   },
   {
-    "id": 75,
+    "id": 77,
     "titulo": "No Game No Life",
     "estudioId": 2,
     "estacaoId": 3,
@@ -975,7 +1001,7 @@
     "capaUrl": "images/capas/no-game-no-life-t1.jpg"
   },
   {
-    "id": 76,
+    "id": 78,
     "titulo": "Dororo",
     "estudioId": 3,
     "estacaoId": 3,
@@ -988,7 +1014,7 @@
     "capaUrl": "images/capas/dororo-t1.jpg"
   },
   {
-    "id": 77,
+    "id": 79,
     "titulo": "Noragami",
     "estudioId": 4,
     "estacaoId": 4,
@@ -1001,7 +1027,7 @@
     "capaUrl": "images/capas/noragami-t1.jpg"
   },
   {
-    "id": 78,
+    "id": 80,
     "titulo": "Noragami Aragoto",
     "estudioId": 4,
     "estacaoId": 2,
@@ -1014,7 +1040,7 @@
     "capaUrl": "images/capas/noragami-t2.jpg"
   },
   {
-    "id": 79,
+    "id": 81,
     "titulo": "Spy x Family",
     "estudioId": 6,
     "estacaoId": 4,
@@ -1027,7 +1053,7 @@
     "capaUrl": "images/capas/spy-x-family-t1.jpg"
   },
   {
-    "id": 80,
+    "id": 82,
     "titulo": "Spy x Family 2ª Temporada - Parte 1",
     "estudioId": 6,
     "estacaoId": 1,
@@ -1040,7 +1066,7 @@
     "capaUrl": "images/capas/spy-x-family-t2-pt-1.jpg"
   },
   {
-    "id": 81,
+    "id": 83,
     "titulo": "Spy x Family 2ª Temporada - Parte 2",
     "estudioId": 6,
     "estacaoId": 2,
@@ -1053,7 +1079,7 @@
     "capaUrl": "images/capas/spy-x-family-t2-pt-2.jpg"
   },
   {
-    "id": 82,
+    "id": 84,
     "titulo": "Spy x Family 3ª Temporada",
     "estudioId": 6,
     "estacaoId": 2,
@@ -1066,7 +1092,7 @@
     "capaUrl": "images/capas/spy-x-family-t3.jpg"
   },
   {
-    "id": 83,
+    "id": 85,
     "titulo": "Spy x Family Code: White",
     "estudioId": 6,
     "estacaoId": 3,
@@ -1079,7 +1105,7 @@
     "capaUrl": "images/capas/spy-x-family-code-white.jpg"
   },
   {
-    "id": 84,
+    "id": 86,
     "titulo": "Steins;Gate",
     "estudioId": 9,
     "estacaoId": 2,
@@ -1092,7 +1118,7 @@
     "capaUrl": "images/capas/steins-gate.jpg"
   },
   {
-    "id": 85,
+    "id": 87,
     "titulo": "Steins;Gate 0",
     "estudioId": 9,
     "estacaoId": 2,
@@ -1105,7 +1131,7 @@
     "capaUrl": "images/capas/steins-gate-zero.jpg"
   },
   {
-    "id": 86,
+    "id": 88,
     "titulo": "Steins;Gate: The Movie - Load Region of Déjà Vu",
     "estudioId": 9,
     "estacaoId": 3,
@@ -1118,7 +1144,7 @@
     "capaUrl": "images/capas/steins-gate-movie.jpg"
   },
   {
-    "id": 87,
+    "id": 89,
     "titulo": "Made in Abyss",
     "estudioId": 2,
     "estacaoId": 2,
@@ -1131,7 +1157,7 @@
     "capaUrl": "images/capas/made-in-abyss.jpg"
   },
   {
-    "id": 88,
+    "id": 90,
     "titulo": "Made in Abyss: Dawn of the Deep Soul",
     "estudioId": 2,
     "estacaoId": 3,
@@ -1144,7 +1170,7 @@
     "capaUrl": "images/capas/made-in-abyss-dawn-of-the-deep-soul.jpg"
   },
   {
-    "id": 89,
+    "id": 91,
     "titulo": "Made in Abyss: Retsujitsu no Ougonkyou",
     "estudioId": 2,
     "estacaoId": 4,
@@ -1157,7 +1183,7 @@
     "capaUrl": "images/capas/made-in-abyss-the-retsujitsu-no-ougonkyou.jpg"
   },
   {
-    "id": 90,
+    "id": 92,
     "titulo": "Black Clover",
     "estudioId": 8,
     "estacaoId": 1,
@@ -1170,7 +1196,7 @@
     "capaUrl": "images/capas/black-clover.jpg"
   },
   {
-    "id": 91,
+    "id": 93,
     "titulo": "Black Clover: Sword of the Wizard King",
     "estudioId": 8,
     "estacaoId": 3,
@@ -1183,7 +1209,7 @@
     "capaUrl": "images/capas/black-clover-sword-of-the-wizard-king.jpg"
   },
   {
-    "id": 92,
+    "id": 94,
     "titulo": "My Hero Academia",
     "estudioId": 4,
     "estacaoId": 1,
@@ -1196,7 +1222,7 @@
     "capaUrl": "images/capas/my-hero-academia-t1.jpg"
   },
   {
-    "id": 93,
+    "id": 95,
     "titulo": "My Hero Academia: 2ª temporada",
     "estudioId": 4,
     "estacaoId": 1,
@@ -1209,7 +1235,7 @@
     "capaUrl": "images/capas/my-hero-academia-t2.jpg"
   },
   {
-    "id": 94,
+    "id": 96,
     "titulo": "My Hero Academia: 3ª temporada",
     "estudioId": 4,
     "estacaoId": 2,
@@ -1222,7 +1248,7 @@
     "capaUrl": "images/capas/my-hero-academia-t3.jpg"
   },
   {
-    "id": 95,
+    "id": 97,
     "titulo": "My Hero Academia: 4ª temporada",
     "estudioId": 4,
     "estacaoId": 4,
@@ -1235,7 +1261,7 @@
     "capaUrl": "images/capas/my-hero-academia-t4.jpg"
   },
   {
-    "id": 96,
+    "id": 98,
     "titulo": "My Hero Academia: 5ª temporada",
     "estudioId": 4,
     "estacaoId": 1,
@@ -1248,7 +1274,7 @@
     "capaUrl": "images/capas/my-hero-academia-t5.jpg"
   },
   {
-    "id": 97,
+    "id": 99,
     "titulo": "My Hero Academia: 6ª temporada",
     "estudioId": 4,
     "estacaoId": 2,
@@ -1261,7 +1287,7 @@
     "capaUrl": "images/capas/my-hero-academia-t6.jpg"
   },
   {
-    "id": 98,
+    "id": 100,
     "titulo": "My Hero Academia: 7ª temporada",
     "estudioId": 4,
     "estacaoId": 3,
@@ -1274,7 +1300,7 @@
     "capaUrl": "images/capas/my-hero-academia-t7.jpg"
   },
   {
-    "id": 99,
+    "id": 101,
     "titulo": "My Hero Academia: Heroes Rising",
     "estudioId": 4,
     "estacaoId": 3,
@@ -1287,7 +1313,7 @@
     "capaUrl": "images/capas/my-hero-academia-heroes-rising.jpg"
   },
   {
-    "id": 100,
+    "id": 102,
     "titulo": "My Hero Academia: World Heroes' Mission",
     "estudioId": 4,
     "estacaoId": 3,
@@ -1300,7 +1326,7 @@
     "capaUrl": "images/capas/my-hero-academia-world-heroes-mission.jpg"
   },
   {
-    "id": 101,
+    "id": 103,
     "titulo": "My Hero Academia: Two Heroes",
     "estudioId": 4,
     "estacaoId": 3,
@@ -1313,7 +1339,7 @@
     "capaUrl": "images/capas/my-hero-academia-two-heroes.jpg"
   },
   {
-    "id": 102,
+    "id": 104,
     "titulo": "My Hero Academia: Youre Next",
     "estudioId": 4,
     "estacaoId": 3,
