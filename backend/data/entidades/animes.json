@@ -402,45 +402,45 @@
     "sinopse": "Gon Freecss descobre que seu pai é um lendário Hunter e decide seguir seus passos. Durante o Exame Hunter, ele conhece aliados e enfrenta desafios perigosos em um mundo cheio de mistérios.",
     "capaUrl": "images/capas/hunter-x-hunter-1999.jpg"
   },
-{
-  "id": 32,
-  "titulo": "Hunter x Hunter (2011)",
-  "estudioId": 9,
-  "estacaoId": 2,
-  "tipo": "temporada",
-  "temporada": 1,
-  "statusId": 1,
-  "ano": 2011,
-  "quantidadeEpisodios": 62,
-  "sinopse": "Gon Freecss inicia sua jornada para se tornar um Hunter e encontrar seu pai, Ging. Durante o Exame Hunter, ele conhece Killua, Kurapika e Leorio, enfrentando desafios, aprendendo sobre Nen e encarando a perigosa Trupe Fantasma em Yorknew City.",
-  "capaUrl": "images/capas/hunter-x-hunter-2011-t1.jpg"
-},
-{
-  "id": 33,
-  "titulo": "Hunter x Hunter (2011) 2ª temporada",
-  "estudioId": 9,
-  "estacaoId": 2,
-  "tipo": "temporada",
-  "temporada": 2,
-  "statusId": 1,
-  "ano": 2012,
-  "quantidadeEpisodios": 74,
-  "sinopse": "Gon e Killua continuam sua busca por pistas de Ging em Greed Island. Após isso, enfrentam a maior ameaça de suas vidas durante o arco das Formigas Quimera e os eventos que mudam o mundo dos Hunters.",
-  "capaUrl": "images/capas/hunter-x-hunter-2011-t2.jpg"
-},
-{
-  "id": 34,
-  "titulo": "Hunter x Hunter (2011) 3ª temporada",
-  "estudioId": 9,
-  "estacaoId": 2,
-  "tipo": "temporada",
-  "temporada": 3,
-  "statusId": 1,
-  "ano": 2014,
-  "quantidadeEpisodios": 12,
-  "sinopse": "Após os acontecimentos das Formigas Quimera, a Associação Hunter realiza uma nova eleição para escolher seu presidente. Enquanto Killua luta para salvar Gon, antigos segredos sobre o passado de Ging vêm à tona.",
-  "capaUrl": "images/capas/hunter-x-hunter-2011-t3.jpg"
-},
+  {
+    "id": 32,
+    "titulo": "Hunter x Hunter (2011)",
+    "estudioId": 9,
+    "estacaoId": 2,
+    "tipo": "temporada",
+    "temporada": 1,
+    "statusId": 1,
+    "ano": 2011,
+    "quantidadeEpisodios": 62,
+    "sinopse": "Gon Freecss inicia sua jornada para se tornar um Hunter e encontrar seu pai, Ging. Durante o Exame Hunter, ele conhece Killua, Kurapika e Leorio, enfrentando desafios, aprendendo sobre Nen e encarando a perigosa Trupe Fantasma em Yorknew City.",
+    "capaUrl": "images/capas/hunter-x-hunter-2011-t1.jpg"
+  },
+  {
+    "id": 33,
+    "titulo": "Hunter x Hunter (2011) 2ª temporada",
+    "estudioId": 9,
+    "estacaoId": 2,
+    "tipo": "temporada",
+    "temporada": 2,
+    "statusId": 1,
+    "ano": 2012,
+    "quantidadeEpisodios": 74,
+    "sinopse": "Gon e Killua continuam sua busca por pistas de Ging em Greed Island. Após isso, enfrentam a maior ameaça de suas vidas durante o arco das Formigas Quimera e os eventos que mudam o mundo dos Hunters.",
+    "capaUrl": "images/capas/hunter-x-hunter-2011-t2.jpg"
+  },
+  {
+    "id": 34,
+    "titulo": "Hunter x Hunter (2011) 3ª temporada",
+    "estudioId": 9,
+    "estacaoId": 2,
+    "tipo": "temporada",
+    "temporada": 3,
+    "statusId": 1,
+    "ano": 2014,
+    "quantidadeEpisodios": 12,
+    "sinopse": "Após os acontecimentos das Formigas Quimera, a Associação Hunter realiza uma nova eleição para escolher seu presidente. Enquanto Killua luta para salvar Gon, antigos segredos sobre o passado de Ging vêm à tona.",
+    "capaUrl": "images/capas/hunter-x-hunter-2011-t3.jpg"
+  },
   {
     "id": 35,
     "titulo": "Sousou no Frieren",
@@ -884,7 +884,7 @@
     "capaUrl": "images/capas/psycho-pass-t2.jpg"
   },
   {
-    "id": 69, 
+    "id": 69,
     "titulo": "Psycho Pass: O Movie",
     "estudioId": 9,
     "estacaoId": 3,
