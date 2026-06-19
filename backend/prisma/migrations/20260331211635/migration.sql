@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "NotaAnimeUsuario" ALTER COLUMN "nota" SET DATA TYPE DOUBLE PRECISION;
