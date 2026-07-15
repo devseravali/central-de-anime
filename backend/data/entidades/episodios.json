@@ -1538,5 +1538,485 @@
     "animeId": 12,
     "imagemUrl": "../../images/episodios/demon-slayer/filmes/infinity-castle-1.jpg",
     "dataExibicao": "2025-07-18"
+  },
+  {
+    "id": 155,
+    "numero": 1,
+    "titulo": "Tragédia",
+    "sinopse": "Ken Kaneki é um estudante universitário que se interessa por Rize Kamishiro. Após um encontro que termina em tragédia, Kaneki sofre uma transformação que muda completamente sua vida.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep1.jpg",
+    "dataExibicao": "2014-07-04"
+  },
+  {
+    "id": 156,
+    "numero": 2,
+    "titulo": "Incubação",
+    "sinopse": "Kaneki luta contra a vontade de consumir carne humana, a única coisa capaz de satisfazer sua fome como ghoul. Enquanto tenta manter sua humanidade, ele reencontra Hide.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep2.jpg",
+    "dataExibicao": "2014-07-11"
+  },
+  {
+    "id": 157,
+    "numero": 3,
+    "titulo": "Pomba",
+    "sinopse": "Yoshimura ensina Kaneki a conviver entre humanos. Enquanto isso, os investigadores Mado e Amon chegam ao 20º Distrito para investigar os ghouls.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep3.jpg",
+    "dataExibicao": "2014-07-18"
+  },
+  {
+    "id": 158,
+    "numero": 4,
+    "titulo": "Banquete",
+    "sinopse": "Kaneki começa seu treinamento de defesa com Yomo e conhece novos aliados. Ele também se aproxima de Tsukiyama, um ghoul com interesses perigosos.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep4.jpg",
+    "dataExibicao": "2014-07-25"
+  },
+  {
+    "id": 159,
+    "numero": 5,
+    "titulo": "Cicatrizes",
+    "sinopse": "Kaneki visita Touka quando ela fica doente. Enquanto isso, Nishiki se recupera e Tsukiyama continua obcecado pelo sabor e pelos poderes de Kaneki.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep5.jpg",
+    "dataExibicao": "2014-08-01"
+  },
+  {
+    "id": 160,
+    "numero": 6,
+    "titulo": "Tempestade",
+    "sinopse": "O confronto contra Tsukiyama chega ao fim. Touka descobre que Kimi sabe sobre os ghouls e Hinami enfrenta dificuldades relacionadas ao seu passado.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep6.jpg",
+    "dataExibicao": "2014-08-08"
+  },
+  {
+    "id": 161,
+    "numero": 7,
+    "titulo": "Cativeiro",
+    "sinopse": "Após testemunhar o destino de Ryoko, Kaneki decide que não pode mais permanecer distante dos conflitos entre ghouls e investigadores.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep7.jpg",
+    "dataExibicao": "2014-08-15"
+  },
+  {
+    "id": 162,
+    "numero": 8,
+    "titulo": "Circular",
+    "sinopse": "Touka tenta enfrentar os investigadores, mas acaba encontrando Kaneki e Hinami em uma situação perigosa contra Amon e Mado.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep8.jpg",
+    "dataExibicao": "2014-08-22"
+  },
+  {
+    "id": 163,
+    "numero": 9,
+    "titulo": "Gaiola",
+    "sinopse": "Após semanas de tranquilidade, Kaneki tenta descobrir mais informações sobre Rize enquanto todos tentam voltar às suas vidas normais.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep9.jpg",
+    "dataExibicao": "2014-08-29"
+  },
+  {
+    "id": 164,
+    "numero": 10,
+    "titulo": "Aogiri",
+    "sinopse": "A sede da CCG no 11º Distrito é atacada pela organização Aogiri Tree. Banjo chega à Anteiku procurando por Rize e alerta sobre a nova ameaça.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep10.jpg",
+    "dataExibicao": "2014-09-05"
+  },
+  {
+    "id": 165,
+    "numero": 11,
+    "titulo": "Alto Astral",
+    "sinopse": "Kaneki é capturado por Yamori e sofre uma intensa tortura. Enquanto isso, a CCG inicia uma operação contra Aogiri Tree.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep11.jpg",
+    "dataExibicao": "2014-09-12"
+  },
+  {
+    "id": 166,
+    "numero": 12,
+    "titulo": "Ghoul",
+    "sinopse": "Durante a tortura de Yamori, Kaneki enfrenta suas memórias e faz uma escolha que muda completamente sua personalidade e seu destino.",
+    "temporadaId": 1,
+    "animeId": 13,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep12.jpg",
+    "dataExibicao": "2014-09-19"
+  },
+  {
+    "id": 167,
+    "numero": 1,
+    "titulo": "Nova Ascensão",
+    "sinopse": "Após derrotar Jason e aceitar sua metade ghoul, Kaneki se junta à Árvore Aogiri para proteger aqueles que são importantes para ele na Anteiku.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep1.jpg",
+    "dataExibicao": "2015-01-09"
+  },
+  {
+    "id": 168,
+    "numero": 2,
+    "titulo": "Flores Dançantes",
+    "sinopse": "Agora com Kaneki entre suas fileiras, a Árvore Aogiri inicia ataques contra a CCG, enquanto Amon recebe Akira Mado como sua nova parceira.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep2.jpg",
+    "dataExibicao": "2015-01-16"
+  },
+  {
+    "id": 169,
+    "numero": 3,
+    "titulo": "O Enforcado",
+    "sinopse": "Kaneki e Ayato resgatam Naki da custódia da CCG e se preparam para invadir Cochlea, a prisão de segurança máxima para ghouls.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep3.jpg",
+    "dataExibicao": "2015-01-23"
+  },
+  {
+    "id": 170,
+    "numero": 4,
+    "titulo": "Camadas Mais Profundas",
+    "sinopse": "A Árvore Aogiri invade Cochlea e liberta diversos ghouls presos. Enquanto isso, a CCG tenta descobrir os planos da organização.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep4.jpg",
+    "dataExibicao": "2015-01-30"
+  },
+  {
+    "id": 171,
+    "numero": 5,
+    "titulo": "Ruptura",
+    "sinopse": "A batalha em Cochlea se intensifica. Kaneki salva Ayato e passa por uma transformação após consumir corpos de outros ghouls para aumentar seu poder.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep5.jpg",
+    "dataExibicao": "2015-02-06"
+  },
+  {
+    "id": 172,
+    "numero": 6,
+    "titulo": "Mil Caminhos",
+    "sinopse": "O surgimento do Ghoul de Um Olho deixa a CCG em alerta enquanto Kaneki sofre com sua nova condição.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep6.jpg",
+    "dataExibicao": "2015-02-13"
+  },
+  {
+    "id": 173,
+    "numero": 7,
+    "titulo": "Permeação",
+    "sinopse": "Preocupada com o desaparecimento de Kaneki, Hinami tenta encontrá-lo até que ele retorna à Anteiku e reencontra Touka.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep7.jpg",
+    "dataExibicao": "2015-02-20"
+  },
+  {
+    "id": 174,
+    "numero": 8,
+    "titulo": "Os Nove Antigos",
+    "sinopse": "Kaneki conversa com Yoshimura sobre a Coruja e descobre a história de Kuzen. Enquanto isso, Touka decide deixar a Anteiku.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep8.jpg",
+    "dataExibicao": "2015-02-27"
+  },
+  {
+    "id": 175,
+    "numero": 9,
+    "titulo": "Cidade em Espera",
+    "sinopse": "A CCG recebe autorização para iniciar a operação contra a Coruja. Os investigadores se preparam para uma batalha decisiva no 20º Distrito.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep9.jpg",
+    "dataExibicao": "2015-03-06"
+  },
+  {
+    "id": 176,
+    "numero": 10,
+    "titulo": "Última Chuva",
+    "sinopse": "A batalha entre a CCG e a Anteiku continua. Koma, Irimi e Yoshimura enfrentam os investigadores especiais durante o confronto.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep10.jpg",
+    "dataExibicao": "2015-03-13"
+  },
+  {
+    "id": 177,
+    "numero": 11,
+    "titulo": "Dilúvio de Flores",
+    "sinopse": "Suzuya enfrenta a Coruja de Um Olho enquanto a Árvore Aogiri entra na batalha contra a CCG. Kaneki fica frente a frente com Amon.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep11.jpg",
+    "dataExibicao": "2015-03-20"
+  },
+  {
+    "id": 178,
+    "numero": 12,
+    "titulo": "Ken",
+    "sinopse": "Após acordar na Anteiku, Kaneki descobre que Hide sabia sobre sua verdadeira identidade. O encontro marca um momento decisivo para Kaneki.",
+    "temporadaId": 2,
+    "animeId": 14,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep12.jpg",
+    "dataExibicao": "2015-03-27"
+  },
+  {
+    "id": 179,
+    "numero": 1,
+    "titulo": "INÍCIO: Aqueles Que Caçam",
+    "sinopse": "Os membros do Esquadrão Quinx, uma divisão experimental da CCG composta por investigadores que receberam habilidades de ghoul por cirurgia, trabalham para capturar o ghoul de classificação A chamado Torso.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep1.jpg",
+    "dataExibicao": "2018-04-03"
+  },
+  {
+    "id": 180,
+    "numero": 2,
+    "titulo": "Membro: Fragmentos",
+    "sinopse": "Haise perde o controle durante a luta contra Orochi e precisa ser contido. Depois, no Chateau, ele repreende Urie por colocar o esquadrão em perigo e decide removê-lo da liderança.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep2.jpg",
+    "dataExibicao": "2018-04-10"
+  },
+  {
+    "id": 181,
+    "numero": 3,
+    "titulo": "Fresco: Eva",
+    "sinopse": "Urie conversa com o Chefe Washu para aumentar seu nível de Frame. Enquanto uma nova missão se aproxima, o Esquadrão Quinx tenta convencer Saiko a voltar ao trabalho.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep3.jpg",
+    "dataExibicao": "2018-04-17"
+  },
+  {
+    "id": 182,
+    "numero": 4,
+    "titulo": "PRINCIPAL: Leilão",
+    "sinopse": "Os Palhaços organizam um leilão humano onde Mutsuki acaba envolvido. As forças da CCG cercam o local para exterminar os ghouls presentes, especialmente Big Madam.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep4.jpg",
+    "dataExibicao": "2018-04-24"
+  },
+  {
+    "id": 183,
+    "numero": 5,
+    "titulo": "Pressão: Noite da Dispersão",
+    "sinopse": "O Esquadrão Quinx corre para salvar Mutsuki de Kanae. A Coruja inicia um ataque devastador enquanto a CCG enfrenta resistência durante a operação.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep5.jpg",
+    "dataExibicao": "2018-05-01"
+  },
+  {
+    "id": 184,
+    "numero": 6,
+    "titulo": "Virada: No Fim",
+    "sinopse": "Takizawa continua seu ataque contra Haise. Shirazu tenta controlar a Nutcracker enquanto Urie enfrenta as consequências de aumentar seu nível de Frame.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep6.jpg",
+    "dataExibicao": "2018-05-08"
+  },
+  {
+    "id": 185,
+    "numero": 7,
+    "titulo": "Mente: Dias de Memórias",
+    "sinopse": "Haise pede a Arima permissão para cuidar de Hinami. Após uma cerimônia de promoção dos investigadores, Haise organiza um jantar comemorativo no Chateau.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep7.jpg",
+    "dataExibicao": "2018-05-15"
+  },
+  {
+    "id": 186,
+    "numero": 8,
+    "titulo": "Pegue: Aquele Que Se Contorce",
+    "sinopse": "A condição de Tsukiyama piora. Tatara e Ayato discutem sobre resgatar Hinami. O Esquadrão Quinx inicia uma nova investigação conjunta.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep8.jpg",
+    "dataExibicao": "2018-05-22"
+  },
+  {
+    "id": 187,
+    "numero": 9,
+    "titulo": "Jogo: Espírito Partindo",
+    "sinopse": "Após ver uma foto de Haise, Tsukiyama recupera suas esperanças e corre para encontrá-lo. Haise leva o esquadrão até a loja de Uta para criar suas máscaras.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep9.jpg",
+    "dataExibicao": "2018-05-29"
+  },
+  {
+    "id": 188,
+    "numero": 10,
+    "titulo": "Pensar: Oscilação",
+    "sinopse": "Eto aparece para Kanae derrotado oferecendo ajuda. Shirazu decide recomeçar, enquanto Haise continua buscando respostas sobre seu passado.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep10.jpg",
+    "dataExibicao": "2018-06-05"
+  },
+  {
+    "id": 189,
+    "numero": 11,
+    "titulo": "Escrever: O Ausente",
+    "sinopse": "Matsumae e Mairo tentam proteger Shu dos investigadores. Haise e Shu se enfrentam no topo do prédio enquanto o Esquadrão Quinx encara um poderoso ghoul.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep11.jpg",
+    "dataExibicao": "2018-06-12"
+  },
+  {
+    "id": 190,
+    "numero": 12,
+    "titulo": "Belo Sonho: Amanhecer",
+    "sinopse": "Eto chega ao telhado e incentiva Kanae a atacar Haise, que precisa lidar com Kaneki dentro de si. Shirazu enfrenta Noro em uma batalha decisiva.",
+    "temporadaId": 3,
+    "animeId": 15,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep12.jpg",
+    "dataExibicao": "2018-06-19"
+  },
+  {
+    "id": 191,
+    "numero": 1,
+    "titulo": "Aqueles Que Espalham a Notícia",
+    "sinopse": "Dois anos após o ataque à Anteiku, Kaneki agora vive como Haise Sasaki e lidera o Esquadrão Quinx da CCG. Enquanto tenta equilibrar suas duas identidades, uma nova ameaça surge em Tóquio.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep1.jpg",
+    "dataExibicao": "2018-10-09"
+  },
+  {
+    "id": 192,
+    "numero": 2,
+    "titulo": "Fragmentos",
+    "sinopse": "Haise enfrenta conflitos internos enquanto suas memórias de Kaneki começam a retornar. O Esquadrão Quinx continua sua investigação contra os ghouls.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep2.jpg",
+    "dataExibicao": "2018-10-16"
+  },
+  {
+    "id": 193,
+    "numero": 3,
+    "titulo": "Ecos do Passado",
+    "sinopse": "As lembranças esquecidas de Haise começam a despertar enquanto antigos inimigos e aliados retornam ao conflito.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep3.jpg",
+    "dataExibicao": "2018-10-23"
+  },
+  {
+    "id": 194,
+    "numero": 4,
+    "titulo": "A Batalha Decisiva",
+    "sinopse": "A guerra entre a CCG e os ghouls chega a um ponto crítico, colocando diversos personagens em situações perigosas.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep4.jpg",
+    "dataExibicao": "2018-10-30"
+  },
+  {
+    "id": 195,
+    "numero": 5,
+    "titulo": "A Verdade Revelada",
+    "sinopse": "Segredos sobre Kaneki, a CCG e os ghouls começam a ser revelados enquanto todos se preparam para o confronto final.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep5.jpg",
+    "dataExibicao": "2018-11-06"
+  },
+  {
+    "id": 196,
+    "numero": 6,
+    "titulo": "Um Novo Caminho",
+    "sinopse": "Kaneki precisa decidir qual caminho seguir enquanto tenta criar uma nova realidade onde humanos e ghouls possam coexistir.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep6.jpg",
+    "dataExibicao": "2018-11-13"
+  },
+  {
+    "id": 197,
+    "numero": 7,
+    "titulo": "Memórias",
+    "sinopse": "O passado de Kaneki volta à tona e antigas feridas são reabertas durante a luta pelo futuro de Tóquio.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep7.jpg",
+    "dataExibicao": "2018-11-20"
+  },
+  {
+    "id": 198,
+    "numero": 8,
+    "titulo": "A Última Resistência",
+    "sinopse": "Os aliados de Kaneki enfrentam seus maiores desafios enquanto a batalha final se aproxima.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep8.jpg",
+    "dataExibicao": "2018-11-27"
+  },
+  {
+    "id": 199,
+    "numero": 9,
+    "titulo": "O Confronto Final",
+    "sinopse": "Humanos e ghouls entram em uma batalha decisiva que mudará completamente o destino da cidade.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep9.jpg",
+    "dataExibicao": "2018-12-04"
+  },
+  {
+    "id": 200,
+    "numero": 10,
+    "titulo": "A Última Guerra",
+    "sinopse": "Kaneki luta para proteger aqueles que ama enquanto enfrenta as consequências de todas as suas escolhas.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep10.jpg",
+    "dataExibicao": "2018-12-11"
+  },
+  {
+    "id": 201,
+    "numero": 11,
+    "titulo": "O Mundo Que Queremos",
+    "sinopse": "Com o fim da batalha se aproximando, Kaneki e seus aliados lutam por um futuro diferente entre humanos e ghouls.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep11.jpg",
+    "dataExibicao": "2018-12-18"
+  },
+  {
+    "id": 202,
+    "numero": 12,
+    "titulo": "Amanhecer",
+    "sinopse": "A história de Kaneki chega ao seu desfecho enquanto humanos e ghouls encontram um novo caminho para coexistir.",
+    "temporadaId": 4,
+    "animeId": 16,
+    "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep12.jpg",
+    "dataExibicao": "2018-12-25"
   }
 ]
