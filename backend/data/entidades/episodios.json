@@ -888,5 +888,655 @@
     "animeId": 5,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/gaiden-kuinaki-sentaku/ep2.jpg",
     "dataExibicao": "2015-04-09"
+  },
+  {
+    "id": 90,
+    "numero": 1,
+    "titulo": "Crueldade",
+    "sinopse": "Tanjiro Kamado vive uma vida simples nas montanhas com sua família. Ao retornar para casa depois de vender carvão, encontra sua família assassinada por um demônio e sua irmã Nezuko transformada em uma criatura demoníaca.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep1.jpg",
+    "dataExibicao": "2019-04-06"
+  },
+  {
+    "id": 91,
+    "numero": 2,
+    "titulo": "Mestre Sakonji Urokodaki",
+    "sinopse": "Após o encontro com Giyu Tomioka, Tanjiro segue para o Monte Sagiri levando Nezuko e inicia sua jornada para encontrar uma forma de transformar sua irmã novamente em humana.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep2.jpg",
+    "dataExibicao": "2019-04-13"
+  },
+  {
+    "id": 92,
+    "numero": 3,
+    "titulo": "Sabito e Makomo",
+    "sinopse": "Tanjiro começa seu treinamento com Sakonji Urokodaki para se preparar para a Seleção Final dos Caçadores de Demônios.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep3.jpg",
+    "dataExibicao": "2019-04-20"
+  },
+  {
+    "id": 93,
+    "numero": 4,
+    "titulo": "Seleção Final",
+    "sinopse": "Tanjiro participa da Seleção Final no Monte Fujikasane, onde precisa sobreviver durante sete dias enfrentando diversos demônios.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep4.jpg",
+    "dataExibicao": "2019-04-27"
+  },
+  {
+    "id": 94,
+    "numero": 5,
+    "titulo": "Meu Próprio Aço",
+    "sinopse": "Após sobreviver à Seleção Final, Tanjiro recebe seu uniforme, seu corvo Kasugai e escolhe o minério para criar sua espada Nichirin.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep5.jpg",
+    "dataExibicao": "2019-05-04"
+  },
+  {
+    "id": 95,
+    "numero": 6,
+    "titulo": "O Espadachim Acompanhado por um Demônio",
+    "sinopse": "Tanjiro recebe sua primeira missão como Caçador de Demônios e investiga o desaparecimento de garotas em uma cidade.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep6.jpg",
+    "dataExibicao": "2019-05-11"
+  },
+  {
+    "id": 96,
+    "numero": 7,
+    "titulo": "Muzan Kibutsuji",
+    "sinopse": "Tanjiro finalmente encontra Muzan Kibutsuji, o demônio responsável pela transformação de Nezuko e pelo massacre de sua família.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep7.jpg",
+    "dataExibicao": "2019-05-18"
+  },
+  {
+    "id": 97,
+    "numero": 8,
+    "titulo": "O Aroma do Sangue Encantado",
+    "sinopse": "Em Asakusa, Tanjiro encontra Tamayo e Yushiro, que podem ajudá-lo em sua busca para transformar Nezuko novamente em humana.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep8.jpg",
+    "dataExibicao": "2019-05-25"
+  },
+  {
+    "id": 98,
+    "numero": 9,
+    "titulo": "Demônio do Temari e Demônio da Flecha",
+    "sinopse": "Dois demônios atacam a casa de Tamayo enquanto Tanjiro tenta proteger seus aliados e descobrir mais sobre os demônios.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep9.jpg",
+    "dataExibicao": "2019-06-01"
+  },
+  {
+    "id": 99,
+    "numero": 10,
+    "titulo": "Juntos Para Sempre",
+    "sinopse": "Tanjiro enfrenta Yahaba enquanto Nezuko luta contra Susamaru. Ambos precisam usar suas habilidades para sobreviver.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep10.jpg",
+    "dataExibicao": "2019-06-08"
+  },
+  {
+    "id": 100,
+    "numero": 11,
+    "titulo": "Mansão do Tambor",
+    "sinopse": "Tanjiro recebe uma nova missão ao sul e encontra Zenitsu Agatsuma durante o caminho. Eles chegam a uma mansão misteriosa onde crianças foram atacadas por um demônio que controla tambores.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep11.jpg",
+    "dataExibicao": "2019-06-15"
+  },
+  {
+    "id": 101,
+    "numero": 12,
+    "titulo": "O Javali Mostra Suas Presas, Zenitsu Dorme",
+    "sinopse": "Dentro da mansão, Tanjiro enfrenta salas que mudam de posição com o som dos tambores enquanto Zenitsu e um estranho espadachim com máscara de javali entram em confronto.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep12.jpg",
+    "dataExibicao": "2019-06-22"
+  },
+  {
+    "id": 102,
+    "numero": 13,
+    "titulo": "Algo Mais Importante Que a Vida",
+    "sinopse": "Tanjiro enfrenta Kyogai, o demônio dos tambores, enquanto tenta superar seus ferimentos e encontrar uma maneira de derrotá-lo.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep13.jpg",
+    "dataExibicao": "2019-06-29"
+  },
+  {
+    "id": 103,
+    "numero": 14,
+    "titulo": "A Casa Com o Brasão da Família das Glicínias",
+    "sinopse": "Após derrotar Kyogai, Tanjiro encontra Zenitsu e Inosuke, que acabam se envolvendo em uma disputa por causa da caixa onde Nezuko está protegida.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep14.jpg",
+    "dataExibicao": "2019-07-06"
+  },
+  {
+    "id": 104,
+    "numero": 15,
+    "titulo": "Monte Natagumo",
+    "sinopse": "Tanjiro, Zenitsu e Inosuke seguem para o Monte Natagumo, onde encontram uma floresta controlada por demônios semelhantes a aranhas.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep15.jpg",
+    "dataExibicao": "2019-07-13"
+  },
+  {
+    "id": 105,
+    "numero": 16,
+    "titulo": "Deixar Alguém Ir Primeiro",
+    "sinopse": "Tanjiro e Inosuke enfrentam Caçadores de Demônios controlados pelas teias dos demônios aranha enquanto avançam pela montanha.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep16.jpg",
+    "dataExibicao": "2019-07-20"
+  },
+  {
+    "id": 106,
+    "numero": 17,
+    "titulo": "Você Precisa Dominar Uma Única Coisa",
+    "sinopse": "Tanjiro descobre que um dos Doze Kizuki está escondido no Monte Natagumo enquanto Zenitsu enfrenta um inimigo perigoso.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep17.jpg",
+    "dataExibicao": "2019-07-27"
+  },
+  {
+    "id": 107,
+    "numero": 18,
+    "titulo": "Um Laço Forjado",
+    "sinopse": "Tanjiro e Inosuke enfrentam o Pai Aranha enquanto Rui revela sua visão distorcida sobre família e laços.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep18.jpg",
+    "dataExibicao": "2019-08-03"
+  },
+  {
+    "id": 108,
+    "numero": 19,
+    "titulo": "Hinokami",
+    "sinopse": "Tanjiro enfrenta Rui em uma batalha desesperadora e desperta uma nova técnica herdada de seu pai.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep19.jpg",
+    "dataExibicao": "2019-08-10"
+  },
+  {
+    "id": 109,
+    "numero": 20,
+    "titulo": "Família Falsa",
+    "sinopse": "A batalha contra Rui continua enquanto o passado do demônio revela sua busca por uma família perfeita.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep20.jpg",
+    "dataExibicao": "2019-08-17"
+  },
+  {
+    "id": 110,
+    "numero": 21,
+    "titulo": "Contra as Regras do Esquadrão",
+    "sinopse": "Após a batalha contra Rui, Tanjiro demonstra sua determinação em proteger Nezuko. O passado de Rui é revelado, mostrando sua busca por uma família que nunca conseguiu ter.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep21.jpg",
+    "dataExibicao": "2019-08-24"
+  },
+  {
+    "id": 111,
+    "numero": 22,
+    "titulo": "O Mestre da Mansão",
+    "sinopse": "Tanjiro e Nezuko são levados para a sede do Esquadrão de Exterminadores de Demônios, onde os Hashiras decidem o destino dos dois.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep22.jpg",
+    "dataExibicao": "2019-08-31"
+  },
+  {
+    "id": 112,
+    "numero": 23,
+    "titulo": "Reunião dos Hashiras",
+    "sinopse": "O líder do Esquadrão, Kagaya Ubuyashiki, permite que Tanjiro e Nezuko continuem juntos, mas alguns Hashiras ainda desconfiam da garota demônio.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep23.jpg",
+    "dataExibicao": "2019-09-07"
+  },
+  {
+    "id": 113,
+    "numero": 24,
+    "titulo": "Treinamento de Reabilitação",
+    "sinopse": "Após a batalha, Tanjiro, Zenitsu e Inosuke são enviados para a Mansão Borboleta para se recuperarem e iniciarem um novo treinamento.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep24.jpg",
+    "dataExibicao": "2019-09-14"
+  },
+  {
+    "id": 114,
+    "numero": 25,
+    "titulo": "Tsuguko, Kanao Tsuyuri",
+    "sinopse": "Tanjiro continua seu treinamento de Respiração da Concentração Total enquanto tenta acompanhar Kanao e melhorar suas habilidades.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep25.jpg",
+    "dataExibicao": "2019-09-21"
+  },
+  {
+    "id": 115,
+    "numero": 26,
+    "titulo": "Nova Missão",
+    "sinopse": "Enquanto Tanjiro e seus companheiros finalizam o treinamento, Muzan Kibutsuji reúne as Luas Inferiores dos Doze Kizuki. Tanjiro recebe uma nova missão de seu corvo Kasugai.",
+    "temporadaId": 1,
+    "animeId": 6,
+    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep26.jpg",
+    "dataExibicao": "2019-09-28"
+  },
+  {
+    "id": 116,
+    "numero": 1,
+    "titulo": "Demon Slayer: Mugen Train",
+    "sinopse": "Tanjiro, Nezuko, Zenitsu e Inosuke embarcam no Trem Infinito para investigar o desaparecimento de passageiros. Lá eles encontram o Hashira das Chamas, Kyojuro Rengoku, e juntos enfrentam o demônio Enmu, que coloca todos em um sono profundo e perigoso.",
+    "temporadaId": 0,
+    "animeId": 7,
+    "imagemUrl": "../../images/demon-slayer/filmes/mugen-train.jpg",
+    "dataExibicao": "2020-10-16"
+  },
+  {
+    "id": 117,
+    "numero": 1,
+    "titulo": "Hashira das Chamas: Kyojuro Rengoku",
+    "sinopse": "Kyojuro Rengoku recebe uma nova missão da Corporação de Exterminadores de Demônios: investigar o misterioso desaparecimento de mais de quarenta pessoas no Trem Infinito. O Hashira das Chamas parte sozinho para descobrir a verdade por trás dos acontecimentos.",
+    "temporadaId": 2,
+    "animeId": 8,
+    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep1.jpg",
+    "dataExibicao": "2021-10-10"
+  },
+  {
+    "id": 118,
+    "numero": 2,
+    "titulo": "Sono Profundo",
+    "sinopse": "Tanjiro, Nezuko, Zenitsu e Inosuke seguem para o Trem Infinito após o treinamento na Mansão Borboleta. No local, eles encontram Rengoku e embarcam na missão, mas uma nova ameaça começa a surgir dentro do trem.",
+    "temporadaId": 2,
+    "animeId": 8,
+    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep2.jpg",
+    "dataExibicao": "2021-10-17"
+  },
+  {
+    "id": 119,
+    "numero": 3,
+    "titulo": "Deveria Ter Sido",
+    "sinopse": "Tanjiro e seus companheiros embarcam no Trem Infinito ao lado de Rengoku. Após começarem a investigação, todos acabam caindo em um sono profundo causado pela Arte Demoníaca de Sangue de Enmu.",
+    "temporadaId": 2,
+    "animeId": 8,
+    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep3.jpg",
+    "dataExibicao": "2021-10-24"
+  },
+  {
+    "id": 120,
+    "numero": 4,
+    "titulo": "Insulto",
+    "sinopse": "Presos em seus sonhos, Tanjiro e seus aliados enfrentam ilusões criadas por Enmu. Para escapar, Tanjiro precisa tomar uma decisão dolorosa enquanto tenta encontrar uma forma de despertar.",
+    "temporadaId": 2,
+    "animeId": 8,
+    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep4.jpg",
+    "dataExibicao": "2021-11-07"
+  },
+  {
+    "id": 121,
+    "numero": 5,
+    "titulo": "Avance!",
+    "sinopse": "Após despertar do sonho, Tanjiro enfrenta Enmu e descobre que o demônio se fundiu ao próprio Trem Infinito. Com os passageiros em perigo, os caçadores precisam encontrar uma maneira de derrotar o inimigo.",
+    "temporadaId": 2,
+    "animeId": 8,
+    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep5.jpg",
+    "dataExibicao": "2021-11-14"
+  },
+  {
+    "id": 122,
+    "numero": 6,
+    "titulo": "Akaza",
+    "sinopse": "Após derrotarem Enmu e salvarem os passageiros, Tanjiro e seus amigos enfrentam as consequências da batalha. Porém, um novo inimigo surge: Akaza, a Lua Superior Três, que desafia Rengoku para um combate mortal.",
+    "temporadaId": 2,
+    "animeId": 8,
+    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep6.jpg",
+    "dataExibicao": "2021-11-21"
+  },
+  {
+    "id": 123,
+    "numero": 7,
+    "titulo": "Acenda Seu Coração",
+    "sinopse": "Rengoku enfrenta Akaza em uma batalha intensa. Mesmo ferido e no limite de suas forças, o Hashira das Chamas permanece firme e luta para proteger Tanjiro e seus companheiros.",
+    "temporadaId": 2,
+    "animeId": 8,
+    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep7.jpg",
+    "dataExibicao": "2021-11-28"
+  },
+  {
+    "id": 124,
+    "numero": 1,
+    "titulo": "Hashira do Som: Tengen Uzui",
+    "sinopse": "Após o incidente no Trem Infinito, Akaza retorna até Muzan Kibutsuji. Tanjiro visita a residência dos Rengoku para entregar as últimas palavras de Kyojuro ao seu pai e irmão mais novo. Depois disso, Tanjiro e seus amigos retornam para a Mansão Borboleta.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep1.jpg",
+    "dataExibicao": "2021-12-05"
+  },
+  {
+    "id": 125,
+    "numero": 2,
+    "titulo": "Infiltrando o Distrito do Entretenimento",
+    "sinopse": "Tanjiro continua suas missões até encontrar Tengen Uzui tentando levar Aoi e Naho para uma missão perigosa. Tanjiro, Zenitsu e Inosuke se oferecem para participar e seguem com o Hashira do Som para o Distrito do Entretenimento.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep2.jpg",
+    "dataExibicao": "2021-12-12"
+  },
+  {
+    "id": 126,
+    "numero": 3,
+    "titulo": "O Que Você É?",
+    "sinopse": "No Distrito do Entretenimento, Tanjiro, Zenitsu e Inosuke se infiltram nas casas onde as esposas de Tengen trabalham. Enquanto procuram pistas, eles descobrem informações sobre os demônios escondidos no local.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep3.jpg",
+    "dataExibicao": "2021-12-19"
+  },
+  {
+    "id": 127,
+    "numero": 4,
+    "titulo": "Esta Noite",
+    "sinopse": "Tanjiro se aproxima do demônio responsável pelos ataques no Distrito do Entretenimento. Enquanto isso, seus companheiros continuam seguindo pistas separadas em busca da verdade.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep4.jpg",
+    "dataExibicao": "2021-12-26"
+  },
+  {
+    "id": 128,
+    "numero": 5,
+    "titulo": "As Coisas Vão Ficar Muito Chamativas!!",
+    "sinopse": "Após Zenitsu desaparecer, Tanjiro e Inosuke decidem resgatá-lo. Tanjiro sente o cheiro de um demônio e encontra a Oiran Koinatsu sendo capturada pela faixa de Daki. Sem a ajuda de Uzui, ele precisa enfrentar a Lua Superior sozinho.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep5.jpg",
+    "dataExibicao": "2022-01-02"
+  },
+  {
+    "id": 129,
+    "numero": 6,
+    "titulo": "Memórias Sobrepostas",
+    "sinopse": "Durante a batalha contra Daki, Tanjiro continua usando a Hinokami Kagura, colocando seu corpo sob enorme pressão. Inosuke invade o esconderijo da faixa demoníaca para salvar os prisioneiros, enquanto Tengen chega para entrar na batalha.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep6.jpg",
+    "dataExibicao": "2022-01-09"
+  },
+  {
+    "id": 130,
+    "numero": 7,
+    "titulo": "Transformação",
+    "sinopse": "Furioso com o desprezo de Daki pela vida humana, Tanjiro ultrapassa seus limites durante a luta. Quando ele está prestes a perder, Nezuko aparece e libera uma transformação demoníaca poderosa.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep7.jpg",
+    "dataExibicao": "2022-01-16"
+  },
+  {
+    "id": 131,
+    "numero": 8,
+    "titulo": "Reunião",
+    "sinopse": "Tanjiro consegue impedir Nezuko de atacar inocentes. Enquanto isso, Gyutaro surge do corpo de Daki revelando ser o verdadeiro portador do posto de Lua Superior Seis.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep8.jpg",
+    "dataExibicao": "2022-01-23"
+  },
+  {
+    "id": 132,
+    "numero": 9,
+    "titulo": "Derrotando uma Lua Superior",
+    "sinopse": "Tanjiro, Zenitsu e Inosuke se juntam a Tengen na batalha contra Daki e Gyutaro. Mesmo trabalhando juntos, eles percebem que os irmãos demônios possuem uma vantagem assustadora.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep9.jpg",
+    "dataExibicao": "2022-01-30"
+  },
+  {
+    "id": 133,
+    "numero": 10,
+    "titulo": "Nunca Desista",
+    "sinopse": "Separado de Tengen, Tanjiro tenta ajudar seus companheiros contra os irmãos demônios. Com muito esforço, eles conseguem cortar a cabeça de Daki, mas Gyutaro continua sendo uma ameaça mortal.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep10.jpg",
+    "dataExibicao": "2022-02-06"
+  },
+  {
+    "id": 134,
+    "numero": 11,
+    "titulo": "Não Importa Quantas Vidas",
+    "sinopse": "Tengen consegue bloquear os ataques de Gyutaro enquanto Tanjiro encontra forças para cortar sua cabeça. Zenitsu e Inosuke também derrotam Daki, mas a batalha ainda não terminou.",
+    "temporadaId": 3,
+    "animeId": 9,
+    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep11.jpg",
+    "dataExibicao": "2022-02-13"
+  },
+  {
+    "id": 135,
+    "numero": 1,
+    "titulo": "O Sonho de Alguém",
+    "sinopse": "Após a derrota de uma Lua Superior pela primeira vez em cem anos, a notícia causa impacto entre os Caçadores de Demônios e as Luas Superiores. Enquanto se recupera na Mansão Borboleta, Tanjiro descobre que sua espada foi danificada e decide viajar até a Vila dos Ferreiros para conversar com Haganezuka.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep1.jpg",
+    "dataExibicao": "2023-04-09"
+  },
+  {
+    "id": 136,
+    "numero": 2,
+    "titulo": "Yoriichi Type Zero",
+    "sinopse": "Tanjiro chega à Vila dos Ferreiros e presencia uma discussão entre um Hashira e um jovem aprendiz. Durante o conflito, ele descobre um método de treinamento especial baseado em um antigo boneco de combate.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep2.jpg",
+    "dataExibicao": "2023-04-16"
+  },
+  {
+    "id": 137,
+    "numero": 3,
+    "titulo": "Uma Espada de Mais de 300 Anos Atrás",
+    "sinopse": "Tanjiro inicia seu treinamento com Yoriichi Type Zero e é levado ao limite pelos métodos rigorosos de Kotetsu. Durante o treinamento, ele destrói o boneco e encontra uma antiga espada escondida em seu interior.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep3.jpg",
+    "dataExibicao": "2023-04-23"
+  },
+  {
+    "id": 138,
+    "numero": 4,
+    "titulo": "Obrigado, Tokito",
+    "sinopse": "Muichiro enfrenta Hantengu e suas divisões enquanto Tanjiro, Nezuko e Genya lutam contra os clones do demônio. O Hashira da Névoa salva Kotetsu de um demônio peixe e continua sua batalha.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep4.jpg",
+    "dataExibicao": "2023-04-30"
+  },
+  {
+    "id": 139,
+    "numero": 5,
+    "titulo": "Espada Vermelha Brilhante",
+    "sinopse": "Muichiro continua avançando pela floresta e encontra Kanamori. Enquanto isso, Tanjiro continua sua luta contra Hantengu e os inimigos começam a revelar suas verdadeiras forças.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep5.jpg",
+    "dataExibicao": "2023-05-07"
+  },
+  {
+    "id": 140,
+    "numero": 6,
+    "titulo": "Você Não Quer Se Tornar um Hashira?",
+    "sinopse": "As duas batalhas continuam: Tanjiro, Nezuko e Genya enfrentam Hantengu enquanto Tokito luta contra Gyokko. Genya começa a demonstrar uma habilidade demoníaca enquanto tenta encontrar o verdadeiro corpo do inimigo.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep6.jpg",
+    "dataExibicao": "2023-05-14"
+  },
+  {
+    "id": 141,
+    "numero": 7,
+    "titulo": "Vilão Terrível",
+    "sinopse": "Genya tenta cortar o pescoço do quinto demônio criado por Hantengu, mas sua força não é suficiente. Sem conseguir derrotá-lo sozinho, ele confia a missão a Tanjiro.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep7.jpg",
+    "dataExibicao": "2023-05-21"
+  },
+  {
+    "id": 142,
+    "numero": 8,
+    "titulo": "O Mu de Muichiro",
+    "sinopse": "Muichiro consegue escapar da Prisão de Água de Gyokko com a ajuda de Kotetsu. Ao recuperar suas memórias perdidas, ele finalmente entende sua verdadeira força.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep8.jpg",
+    "dataExibicao": "2023-05-28"
+  },
+  {
+    "id": 143,
+    "numero": 9,
+    "titulo": "Hashira da Névoa: Muichiro Tokito",
+    "sinopse": "Com suas memórias recuperadas, Muichiro desperta todo seu potencial e enfrenta Gyokko acreditando que a Lua Superior Cinco não representa mais uma ameaça para ele.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep9.jpg",
+    "dataExibicao": "2023-06-04"
+  },
+  {
+    "id": 144,
+    "numero": 10,
+    "titulo": "Hashira do Amor: Mitsuri Kanroji",
+    "sinopse": "Tanjiro, Nezuko e Genya enfrentam Zohakuten e seus dragões de madeira. Quando Tanjiro está prestes a ser derrotado, Mitsuri chega para salvar seus companheiros e enfrenta a Lua Superior.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep10.jpg",
+    "dataExibicao": "2023-06-11"
+  },
+  {
+    "id": 145,
+    "numero": 11,
+    "titulo": "Um Laço Conectado: Amanhecer e Primeira Luz",
+    "sinopse": "Tanjiro continua sua luta contra Hantengu enquanto a batalha se aproxima do fim. Os Caçadores de Demônios precisam derrotar o inimigo antes do nascer do sol.",
+    "temporadaId": 4,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep11.jpg",
+    "dataExibicao": "2023-06-18"
+  },
+  {
+    "id": 146,
+    "numero": 1,
+    "titulo": "Para Derrotar Muzan Kibutsuji",
+    "sinopse": "Os Hashira recebem uma nova missão e iniciam os preparativos para a batalha final contra Muzan Kibutsuji. Enquanto Tanjiro se recupera dos ferimentos da Vila dos Ferreiros, o Treinamento dos Hashira começa para fortalecer todos os membros da Tropa de Extermínio.",
+    "temporadaId": 5,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep1.jpg",
+    "dataExibicao": "2024-05-12"
+  },
+  {
+    "id": 147,
+    "numero": 2,
+    "titulo": "A Dor do Hashira da Água Giyu Tomioka",
+    "sinopse": "Tanjiro tenta convencer Giyu Tomioka a participar do Treinamento dos Hashira. Enquanto isso, Tamayo recebe um convite inesperado da Tropa de Extermínio.",
+    "temporadaId": 5,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep2.jpg",
+    "dataExibicao": "2024-05-19"
+  },
+  {
+    "id": 148,
+    "numero": 3,
+    "titulo": "Tanjiro Totalmente Recuperado Participa do Treinamento dos Hashira",
+    "sinopse": "Após se recuperar completamente, Tanjiro inicia o treinamento com Tengen Uzui. Os caçadores de demônios começam uma nova etapa de preparação para a batalha contra Muzan.",
+    "temporadaId": 5,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep3.jpg",
+    "dataExibicao": "2024-05-26"
+  },
+  {
+    "id": 149,
+    "numero": 4,
+    "titulo": "Para Trazer um Sorriso ao Rosto de Alguém",
+    "sinopse": "Após completar o treinamento com Uzui, Tanjiro segue para o treinamento de Muichiro Tokito e ajuda outros caçadores a superar seus limites.",
+    "temporadaId": 5,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep4.jpg",
+    "dataExibicao": "2024-06-02"
+  },
+  {
+    "id": 150,
+    "numero": 5,
+    "titulo": "Eu Até Comi Demônios...",
+    "sinopse": "Tanjiro continua seu treinamento e enfrenta os desafios impostos por Mitsuri Kanroji e Obanai Iguro para melhorar suas habilidades de combate.",
+    "temporadaId": 5,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep5.jpg",
+    "dataExibicao": "2024-06-09"
+  },
+  {
+    "id": 151,
+    "numero": 6,
+    "titulo": "O Mais Forte da Tropa de Extermínio",
+    "sinopse": "Tanjiro e Zenitsu chegam ao treinamento de Gyomei Himejima, onde enfrentam desafios extremos para fortalecer seus corpos antes da batalha final.",
+    "temporadaId": 5,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep6.jpg",
+    "dataExibicao": "2024-06-16"
+  },
+  {
+    "id": 152,
+    "numero": 7,
+    "titulo": "Hashira da Pedra: Gyomei Himejima",
+    "sinopse": "Tanjiro continua seu treinamento com Gyomei Himejima e finalmente consegue superar uma grande barreira antes do confronto decisivo contra Muzan.",
+    "temporadaId": 5,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep7.jpg",
+    "dataExibicao": "2024-06-23"
+  },
+  {
+    "id": 153,
+    "numero": 8,
+    "titulo": "Os Hashira se Unem",
+    "sinopse": "Kagaya Ubuyashiki finalmente encontra Muzan Kibutsuji. O encontro entre os dois inicia a batalha final entre os Caçadores de Demônios e o rei dos demônios.",
+    "temporadaId": 5,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep8.jpg",
+    "dataExibicao": "2024-06-30"
+  },
+  {
+    "id": 154,
+    "numero": 1,
+    "titulo": "Demon Slayer: Castelo Infinito",
+    "sinopse": "Após o início da batalha final contra Muzan Kibutsuji, Tanjiro e os Caçadores de Demônios são levados para o Castelo Infinito, um labirinto criado por Muzan. Dentro desse cenário mortal, os Hashira e seus aliados enfrentam as Luas Superiores em confrontos decisivos que definirão o destino da humanidade.",
+    "temporadaId": 0,
+    "animeId": 11,
+    "imagemUrl": "../../images/episodios/demon-slayer/filmes/infinity-castle-1.jpg",
+    "dataExibicao": "2025-07-18"
   }
 ]
