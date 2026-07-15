@@ -1250,6 +1250,7 @@
     "dataExibicao": "2020-05-17"
   },
   {
+    "id": 126,
     "numero": 1,
     "titulo": "Hashira do Som Tengen Uzui",
     "sinopse": "Tanjiro, Zenitsu e Inosuke acompanham Tengen Uzui em uma missão no Distrito do Entretenimento.",
@@ -1259,6 +1260,7 @@
     "dataExibicao": "2020-10-04"
   },
   {
+    "id": 127,
     "numero": 2,
     "titulo": "Infiltrando-se no Distrito do Entretenimento",
     "sinopse": "Os três caçadores se infiltram em diferentes casas para investigar misteriosos desaparecimentos.",
@@ -1268,6 +1270,7 @@
     "dataExibicao": "2020-10-11"
   },
   {
+    "id": 128,
     "numero": 3,
     "titulo": "O Que Você É?",
     "sinopse": "Tanjiro suspeita da identidade de uma poderosa demônio escondida no distrito.",
@@ -1277,6 +1280,7 @@
     "dataExibicao": "2020-10-18"
   },
   {
+    "id": 129,
     "numero": 4,
     "titulo": "Esta Noite",
     "sinopse": "A verdadeira ameaça começa a agir, colocando os habitantes da região em perigo.",
@@ -1286,6 +1290,7 @@
     "dataExibicao": "2020-10-25"
   },
   {
+    "id": 130,
     "numero": 5,
     "titulo": "Vai Ficar Muito Chamativo!",
     "sinopse": "Tengen entra em combate enquanto Tanjiro leva suas habilidades ao limite.",
@@ -1295,6 +1300,7 @@
     "dataExibicao": "2020-10-30"
   },
   {
+    "id": 131,
     "numero": 6,
     "titulo": "Camadas de Memórias",
     "sinopse": "Tanjiro desperta novas forças durante sua batalha contra Daki.",
@@ -1304,6 +1310,7 @@
     "dataExibicao": "2020-11-07"
   },
   {
+    "id": 132,
     "numero": 7,
     "titulo": "Transformação",
     "sinopse": "Nezuko manifesta um novo poder para proteger seu irmão.",
@@ -1313,6 +1320,7 @@
     "dataExibicao": "2020-11-14"
   },
   {
+    "id": 133,
     "numero": 8,
     "titulo": "Reunião",
     "sinopse": "A chegada de Gyutaro revela a verdadeira força dos inimigos.",
@@ -1322,6 +1330,7 @@
     "dataExibicao": "2020-11-21"
   },
   {
+    "id": 134,
     "numero": 9,
     "titulo": "Derrotando um Lua Superior",
     "sinopse": "Os caçadores unem forças para enfrentar Daki e Gyutaro.",
@@ -1331,6 +1340,7 @@
     "dataExibicao": "2020-11-28"
   },
   {
+    "id": 135,
     "numero": 10,
     "titulo": "Nunca Desistirei",
     "sinopse": "Mesmo feridos, os heróis continuam lutando para proteger o distrito.",
@@ -1340,6 +1350,7 @@
     "dataExibicao": "2020-12-05"
   },
   {
+    "id": 136,
     "numero": 11,
     "titulo": "Não Importa Quantas Vidas",
     "sinopse": "A batalha chega ao fim e as consequências do confronto são reveladas.",
@@ -1349,7 +1360,7 @@
     "dataExibicao": "2020-12-12"
   },
   {
-    "id": 117,
+    "id": 137,
     "numero": 1,
     "titulo": "O Sonho de Alguém",
     "sinopse": "Após a batalha no Distrito do Entretenimento, as Luas Superiores se reúnem enquanto Tanjiro segue para a Vila dos Ferreiros.",
@@ -1359,7 +1370,7 @@
     "dataExibicao": "2023-10-01"
   },
   {
-    "id": 118,
+    "id": 138,
     "numero": 2,
     "titulo": "Yoriichi Tipo Zero",
     "sinopse": "Tanjiro conhece um boneco mecânico de treinamento e inicia um novo período de aperfeiçoamento.",
@@ -1369,7 +1380,7 @@
     "dataExibicao": "2023-10-08"
   },
   {
-    "id": 119,
+    "id": 139,
     "numero": 3,
     "titulo": "Uma Espada de Mais de 300 Anos",
     "sinopse": "Uma antiga espada é descoberta dentro do boneco Yoriichi Tipo Zero.",
@@ -1379,7 +1390,7 @@
     "dataExibicao": "2023-10-15"
   },
   {
-    "id": 120,
+    "id": 140,
     "numero": 4,
     "titulo": "Obrigado, Tokito",
     "sinopse": "Muichiro ajuda Kotetsu enquanto novos inimigos atacam a vila.",
@@ -1389,7 +1400,7 @@
     "dataExibicao": "2023-10-22"
   },
   {
-    "id": 121,
+    "id": 141,
     "numero": 5,
     "titulo": "Lâmina Vermelha Brilhante",
     "sinopse": "Tanjiro, Nezuko e Genya enfrentam os clones criados pelo poder de Hantengu.",
@@ -1399,7 +1410,7 @@
     "dataExibicao": "2023-10-29"
   },
   {
-    "id": 122,
+    "id": 142,
     "numero": 6,
     "titulo": "Você Não Vai se Tornar um Hashira?",
     "sinopse": "O passado de Genya começa a ser revelado durante a batalha.",
@@ -1409,7 +1420,7 @@
     "dataExibicao": "2023-11-05"
   },
   {
-    "id": 123,
+    "id": 143,
     "numero": 7,
     "titulo": "Vilão Horrível",
     "sinopse": "Hantengu demonstra seu verdadeiro poder enquanto os caçadores lutam para sobreviver.",
@@ -1419,7 +1430,7 @@
     "dataExibicao": "2023-11-12"
   },
   {
-    "id": 124,
+    "id": 144,
     "numero": 8,
     "titulo": "O Mu de Muichiro",
     "sinopse": "Muichiro recupera suas memórias e desperta uma nova força.",
@@ -1429,7 +1440,7 @@
     "dataExibicao": "2023-11-19"
   },
   {
-    "id": 125,
+    "id": 145,
     "numero": 9,
     "titulo": "Hashira da Névoa Muichiro Tokito",
     "sinopse": "Muichiro enfrenta Gyokko em um confronto decisivo para proteger a vila.",
@@ -1439,7 +1450,7 @@
     "dataExibicao": "2023-11-26"
   },
   {
-    "id": 126,
+    "id": 146,
     "numero": 10,
     "titulo": "Hashira do Amor Mitsuri Kanroji",
     "sinopse": "Mitsuri entra em combate para enfrentar Zohakuten e defender os habitantes da vila.",
@@ -1449,7 +1460,7 @@
     "dataExibicao": "2023-12-03"
   },
   {
-    "id": 127,
+    "id": 147,
     "numero": 11,
     "titulo": "Laços Conectados: Amanhecer e Primeira Luz",
     "sinopse": "A batalha final termina e uma descoberta envolvendo Nezuko muda o rumo da guerra contra os demônios.",
@@ -1459,7 +1470,7 @@
     "dataExibicao": "2023-12-10"
   },
   {
-    "id": 120,
+    "id": 148,
     "numero": 1,
     "titulo": "Para Derrotar Muzan Kibutsuji",
     "sinopse": "Os Hashiras se reúnem para planejar os próximos passos da Corporação dos Caçadores de Demônios contra Muzan.",
@@ -1469,7 +1480,7 @@
     "dataExibicao": "2024-05-12"
   },
   {
-    "id": 121,
+    "id": 149,
     "numero": 2,
     "titulo": "A Dor do Hashira da Água",
     "sinopse": "Tanjiro procura Giyu Tomioka para ajudá-lo a superar conflitos internos relacionados ao seu passado.",
@@ -1479,7 +1490,7 @@
     "dataExibicao": "2024-05-19"
   },
   {
-    "id": 122,
+    "id": 150,
     "numero": 3,
     "titulo": "Treinamento com o Hashira da Água",
     "sinopse": "Tanjiro inicia o rigoroso Treinamento Hashira para se preparar para a batalha final.",
@@ -1489,7 +1500,7 @@
     "dataExibicao": "2024-05-26"
   },
   {
-    "id": 123,
+    "id": 151,
     "numero": 4,
     "titulo": "Sorria!",
     "sinopse": "Os caçadores continuam seu treinamento e enfrentam desafios físicos e mentais cada vez maiores.",
@@ -1499,7 +1510,7 @@
     "dataExibicao": "2024-06-02"
   },
   {
-    "id": 124,
+    "id": 152,
     "numero": 5,
     "titulo": "Vou Até o Fim",
     "sinopse": "Tanjiro inspira outros caçadores enquanto avança nas etapas mais difíceis do treinamento.",
@@ -1509,7 +1520,7 @@
     "dataExibicao": "2024-06-09"
   },
   {
-    "id": 125,
+    "id": 153,
     "numero": 6,
     "titulo": "O Mais Forte da Corporação dos Caçadores",
     "sinopse": "Gyomei Himejima demonstra sua força extraordinária e coloca os caçadores à prova.",
@@ -1519,7 +1530,7 @@
     "dataExibicao": "2024-06-16"
   },
   {
-    "id": 126,
+    "id": 154,
     "numero": 7,
     "titulo": "Pedra Fundamental",
     "sinopse": "O passado de Gyomei é revelado, mostrando como ele se tornou o Hashira da Pedra.",
@@ -1529,7 +1540,7 @@
     "dataExibicao": "2024-06-23"
   },
   {
-    "id": 127,
+    "id": 155,
     "numero": 8,
     "titulo": "Os Hashiras se Unem",
     "sinopse": "O Treinamento Hashira chega ao fim quando Muzan inicia seu ataque, dando início à batalha final.",
@@ -1539,7 +1550,7 @@
     "dataExibicao": "2024-06-30"
   },
   {
-    "id": 128,
+    "id": 156,
     "numero": 1,
     "titulo": "Mugen Train",
     "sinopse": "Tanjiro, Nezuko, Zenitsu e Inosuke embarcam no Trem Infinito ao lado de Kyojuro Rengoku para investigar uma série de desaparecimentos causados por um poderoso demônio.",
@@ -1549,7 +1560,7 @@
     "dataExibicao": "2020-10-16"
   },
   {
-    "id": 129,
+    "id": 157,
     "numero": 1,
     "titulo": "Infinity Castle",
     "sinopse": "Após os eventos do Treinamento Hashira, os Caçadores de Demônios são arrastados para o Castelo Infinito, onde se inicia a batalha final contra Muzan Kibutsuji e as Luas Superiores.",
@@ -1559,7 +1570,7 @@
     "dataExibicao": "2025-07-18"
   },
   {
-    "id": 130,
+    "id": 158,
     "numero": 1,
     "titulo": "Tragédia",
     "sinopse": "Kaneki conhece Rize e sofre um acidente que mudará sua vida para sempre.",
@@ -1569,7 +1580,7 @@
     "dataExibicao": "2014-07-04"
   },
   {
-    "id": 131,
+    "id": 159,
     "numero": 2,
     "titulo": "Incubação",
     "sinopse": "Kaneki desperta como meio-ghoul e tenta entender sua nova condição.",
@@ -1579,7 +1590,7 @@
     "dataExibicao": "2014-07-11"
   },
   {
-    "id": 132,
+    "id": 160,
     "numero": 3,
     "titulo": "Pombo",
     "sinopse": "Investigadores da CCG iniciam sua busca pelos ghouls da região.",
@@ -1589,7 +1600,7 @@
     "dataExibicao": "2014-07-18"
   },
   {
-    "id": 133,
+    "id": 161,
     "numero": 4,
     "titulo": "Ceia",
     "sinopse": "Kaneki conhece Tsukiyama, um ghoul misterioso e perigoso.",
@@ -1599,7 +1610,7 @@
     "dataExibicao": "2014-07-25"
   },
   {
-    "id": 134,
+    "id": 162,
     "numero": 5,
     "titulo": "Cicatrizes",
     "sinopse": "Novos confrontos forçam Kaneki a aceitar seus instintos de ghoul.",
@@ -1609,7 +1620,7 @@
     "dataExibicao": "2014-08-01"
   },
   {
-    "id": 135,
+    "id": 163,
     "numero": 6,
     "titulo": "Chuva Torrencial",
     "sinopse": "A batalha entre ghouls e investigadores se torna cada vez mais intensa.",
@@ -1619,7 +1630,7 @@
     "dataExibicao": "2014-08-08"
   },
   {
-    "id": 136,
+    "id": 164,
     "numero": 7,
     "titulo": "Cativeiro",
     "sinopse": "Kaneki é colocado em uma situação perigosa que desafia sua resistência.",
@@ -1629,7 +1640,7 @@
     "dataExibicao": "2014-08-15"
   },
   {
-    "id": 137,
+    "id": 165,
     "numero": 8,
     "titulo": "Círculo",
     "sinopse": "Segredos sobre o passado de alguns personagens começam a surgir.",
@@ -1639,7 +1650,7 @@
     "dataExibicao": "2014-08-22"
   },
   {
-    "id": 138,
+    "id": 166,
     "numero": 9,
     "titulo": "Gaiola",
     "sinopse": "Kaneki enfrenta escolhas difíceis para proteger seus amigos.",
@@ -1649,7 +1660,7 @@
     "dataExibicao": "2014-08-29"
   },
   {
-    "id": 139,
+    "id": 167,
     "numero": 10,
     "titulo": "Aogiri",
     "sinopse": "A organização Árvore Aogiri entra em cena e altera o equilíbrio do conflito.",
@@ -1659,7 +1670,7 @@
     "dataExibicao": "2014-09-05"
   },
   {
-    "id": 140,
+    "id": 168,
     "numero": 11,
     "titulo": "Impulso",
     "sinopse": "Os conflitos aumentam e Kaneki precisa enfrentar seus limites.",
@@ -1669,7 +1680,7 @@
     "dataExibicao": "2014-09-12"
   },
   {
-    "id": 141,
+    "id": 169,
     "numero": 12,
     "titulo": "Ghoul",
     "sinopse": "Kaneki passa por uma transformação decisiva no final da temporada.",
@@ -1679,7 +1690,7 @@
     "dataExibicao": "2014-09-19"
   },
   {
-    "id": 142,
+    "id": 170,
     "numero": 1,
     "titulo": "Nova Onda",
     "sinopse": "Kaneki decide seguir seu próprio caminho e se junta à Árvore Aogiri.",
@@ -1689,7 +1700,7 @@
     "dataExibicao": "2015-01-09"
   },
   {
-    "id": 143,
+    "id": 171,
     "numero": 2,
     "titulo": "Dança das Flores",
     "sinopse": "A CCG amplia suas investigações enquanto Kaneki busca mais poder.",
@@ -1699,7 +1710,7 @@
     "dataExibicao": "2015-01-16"
   },
   {
-    "id": 144,
+    "id": 172,
     "numero": 3,
     "titulo": "Carrasco",
     "sinopse": "Investigadores e ghouls entram em confronto em diversas regiões de Tóquio.",
@@ -1709,7 +1720,7 @@
     "dataExibicao": "2015-01-23"
   },
   {
-    "id": 145,
+    "id": 173,
     "numero": 4,
     "titulo": "Profundezas",
     "sinopse": "Kaneki mergulha ainda mais fundo no mundo dos ghouls.",
@@ -1719,7 +1730,7 @@
     "dataExibicao": "2015-01-30"
   },
   {
-    "id": 146,
+    "id": 174,
     "numero": 5,
     "titulo": "Rachadura",
     "sinopse": "As tensões aumentam e antigas alianças começam a se desfazer.",
@@ -1729,7 +1740,7 @@
     "dataExibicao": "2015-02-06"
   },
   {
-    "id": 147,
+    "id": 175,
     "numero": 6,
     "titulo": "Mil Caminhos",
     "sinopse": "Touka e seus amigos tentam compreender as escolhas de Kaneki.",
@@ -1739,7 +1750,7 @@
     "dataExibicao": "2015-02-13"
   },
   {
-    "id": 148,
+    "id": 176,
     "numero": 7,
     "titulo": "Perigo",
     "sinopse": "Uma nova operação da CCG coloca vários ghouls em risco.",
@@ -1749,7 +1760,7 @@
     "dataExibicao": "2015-02-20"
   },
   {
-    "id": 149,
+    "id": 177,
     "numero": 8,
     "titulo": "Velho Nove",
     "sinopse": "Segredos envolvendo experimentos e organizações começam a surgir.",
@@ -1759,7 +1770,7 @@
     "dataExibicao": "2015-02-27"
   },
   {
-    "id": 150,
+    "id": 178,
     "numero": 9,
     "titulo": "Cidade em Espera",
     "sinopse": "Tóquio se prepara para uma batalha que pode mudar tudo.",
@@ -1769,7 +1780,7 @@
     "dataExibicao": "2015-03-06"
   },
   {
-    "id": 151,
+    "id": 179,
     "numero": 10,
     "titulo": "Última Chuva",
     "sinopse": "Os confrontos se intensificam à medida que os planos entram em ação.",
@@ -1779,7 +1790,7 @@
     "dataExibicao": "2015-03-13"
   },
   {
-    "id": 152,
+    "id": 180,
     "numero": 11,
     "titulo": "Dilúvio de Flores",
     "sinopse": "Diversos personagens enfrentam decisões que definirão seus destinos.",
@@ -1789,7 +1800,7 @@
     "dataExibicao": "2015-03-20"
   },
   {
-    "id": 153,
+    "id": 181,
     "numero": 12,
     "titulo": "Ken",
     "sinopse": "Kaneki enfrenta seu maior desafio enquanto a temporada chega ao fim.",
@@ -1798,9 +1809,8 @@
     "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep12.jpg",
     "dataExibicao": "2015-03-27"
   },
-
   {
-    "id": 154,
+    "id": 182,
     "numero": 1,
     "titulo": "Aqueles que Caçam",
     "sinopse": "Haise Sasaki lidera o Esquadrão Quinx em uma missão para capturar um perigoso ghoul.",
@@ -1810,7 +1820,7 @@
     "dataExibicao": "2018-04-03"
   },
   {
-    "id": 155,
+    "id": 183,
     "numero": 2,
     "titulo": "Fragmentos",
     "sinopse": "Haise enfrenta conflitos internos enquanto os Quinx continuam suas investigações.",
@@ -1820,7 +1830,7 @@
     "dataExibicao": "2018-04-10"
   },
   {
-    "id": 156,
+    "id": 184,
     "numero": 3,
     "titulo": "Véspera",
     "sinopse": "Novas pistas levam o Esquadrão Quinx a uma ameaça crescente.",
@@ -1830,7 +1840,7 @@
     "dataExibicao": "2018-04-17"
   },
   {
-    "id": 157,
+    "id": 185,
     "numero": 4,
     "titulo": "Leilão",
     "sinopse": "A CCG prepara uma grande operação contra um leilão clandestino de ghouls.",
@@ -1840,7 +1850,7 @@
     "dataExibicao": "2018-04-24"
   },
   {
-    "id": 158,
+    "id": 186,
     "numero": 5,
     "titulo": "Noite da Dispersão",
     "sinopse": "A operação do leilão resulta em batalhas intensas e revelações inesperadas.",
@@ -1850,7 +1860,7 @@
     "dataExibicao": "2018-05-01"
   },
   {
-    "id": 159,
+    "id": 187,
     "numero": 6,
     "titulo": "No Final",
     "sinopse": "As consequências da operação começam a afetar todos os envolvidos.",
@@ -1860,7 +1870,7 @@
     "dataExibicao": "2018-05-08"
   },
   {
-    "id": 160,
+    "id": 188,
     "numero": 7,
     "titulo": "Dias de Recordações",
     "sinopse": "Memórias esquecidas começam a retornar para Haise Sasaki.",
@@ -1870,7 +1880,7 @@
     "dataExibicao": "2018-05-15"
   },
   {
-    "id": 161,
+    "id": 189,
     "numero": 8,
     "titulo": "Aquele que se Contorce",
     "sinopse": "Os membros do Esquadrão Quinx enfrentam desafios cada vez maiores.",
@@ -1880,7 +1890,7 @@
     "dataExibicao": "2018-05-22"
   },
   {
-    "id": 162,
+    "id": 190,
     "numero": 9,
     "titulo": "Espírito Ausente",
     "sinopse": "Haise busca respostas sobre seu passado e sua verdadeira identidade.",
@@ -1890,7 +1900,7 @@
     "dataExibicao": "2018-05-29"
   },
   {
-    "id": 163,
+    "id": 191,
     "numero": 10,
     "titulo": "Oscilação",
     "sinopse": "As memórias de Kaneki retornam e mudam o rumo da história.",
@@ -1900,7 +1910,7 @@
     "dataExibicao": "2018-06-05"
   },
   {
-    "id": 164,
+    "id": 192,
     "numero": 11,
     "titulo": "O Ausente",
     "sinopse": "Velhos conhecidos reaparecem enquanto a verdade finalmente emerge.",
@@ -1910,7 +1920,7 @@
     "dataExibicao": "2018-06-12"
   },
   {
-    "id": 165,
+    "id": 193,
     "numero": 12,
     "titulo": "Sonho Belo: Amanhecer",
     "sinopse": "Haise toma uma decisão que mudará seu destino para sempre.",
@@ -1920,7 +1930,7 @@
     "dataExibicao": "2018-06-19"
   },
   {
-    "id": 166,
+    "id": 194,
     "numero": 1,
     "titulo": "E Então, Mais Uma Vez",
     "sinopse": "Kaneki recupera suas memórias e reassume seu papel na guerra entre humanos e ghouls.",
@@ -1930,7 +1940,7 @@
     "dataExibicao": "2018-10-09"
   },
   {
-    "id": 167,
+    "id": 195,
     "numero": 2,
     "titulo": "Volte de Onde Veio",
     "sinopse": "A tensão aumenta enquanto novas ameaças surgem em Tóquio.",
@@ -1940,7 +1950,7 @@
     "dataExibicao": "2018-10-16"
   },
   {
-    "id": 168,
+    "id": 196,
     "numero": 3,
     "titulo": "Movimentos de Massa",
     "sinopse": "Grandes organizações iniciam seus planos enquanto o conflito se expande.",
@@ -1950,7 +1960,7 @@
     "dataExibicao": "2018-10-23"
   },
   {
-    "id": 169,
+    "id": 197,
     "numero": 4,
     "titulo": "Despertar",
     "sinopse": "Novos poderes e revelações mudam o rumo da batalha.",
@@ -1960,7 +1970,7 @@
     "dataExibicao": "2018-10-30"
   },
   {
-    "id": 170,
+    "id": 198,
     "numero": 5,
     "titulo": "Encontro",
     "sinopse": "Aliados e inimigos se reencontram em circunstâncias inesperadas.",
@@ -1970,7 +1980,7 @@
     "dataExibicao": "2018-11-06"
   },
   {
-    "id": 171,
+    "id": 199,
     "numero": 6,
     "titulo": "Face",
     "sinopse": "Verdades ocultas começam a ser reveladas em meio ao caos.",
@@ -1980,7 +1990,7 @@
     "dataExibicao": "2018-11-13"
   },
   {
-    "id": 172,
+    "id": 200,
     "numero": 7,
     "titulo": "Perdido",
     "sinopse": "A situação em Tóquio se torna cada vez mais desesperadora.",
@@ -1990,7 +2000,7 @@
     "dataExibicao": "2018-11-20"
   },
   {
-    "id": 173,
+    "id": 201,
     "numero": 8,
     "titulo": "Prova",
     "sinopse": "Kaneki e seus aliados enfrentam um desafio decisivo.",
@@ -2000,7 +2010,7 @@
     "dataExibicao": "2018-11-27"
   },
   {
-    "id": 174,
+    "id": 202,
     "numero": 9,
     "titulo": "Recordações",
     "sinopse": "O passado retorna para influenciar escolhas importantes.",
@@ -2010,7 +2020,7 @@
     "dataExibicao": "2018-12-04"
   },
   {
-    "id": 175,
+    "id": 203,
     "numero": 10,
     "titulo": "Colapso",
     "sinopse": "A guerra alcança um ponto crítico e suas consequências se espalham.",
@@ -2020,7 +2030,7 @@
     "dataExibicao": "2018-12-11"
   },
   {
-    "id": 176,
+    "id": 204,
     "numero": 11,
     "titulo": "Última Esperança",
     "sinopse": "Humanos e ghouls lutam juntos contra uma ameaça comum.",
@@ -2030,7 +2040,7 @@
     "dataExibicao": "2018-12-18"
   },
   {
-    "id": 177,
+    "id": 205,
     "numero": 12,
     "titulo": "O Fim e o Começo",
     "sinopse": "A história de Kaneki chega à sua conclusão enquanto um novo futuro se inicia.",
@@ -2040,7 +2050,7 @@
     "dataExibicao": "2018-12-25"
   },
   {
-    "id": 178,
+    "id": 206,
     "numero": 1,
     "titulo": "Ryomen Sukuna",
     "sinopse": "Yuji Itadori encontra um objeto amaldiçoado e acaba se tornando o hospedeiro de Sukuna.",
@@ -2050,7 +2060,7 @@
     "dataExibicao": "2020-10-03"
   },
   {
-    "id": 179,
+    "id": 207,
     "numero": 2,
     "titulo": "Por Mim Mesmo",
     "sinopse": "Yuji é apresentado ao mundo dos feiticeiros Jujutsu e recebe uma difícil decisão.",
@@ -2060,7 +2070,7 @@
     "dataExibicao": "2020-10-10"
   },
   {
-    "id": 180,
+    "id": 208,
     "numero": 3,
     "titulo": "Garota de Aço",
     "sinopse": "Nobara Kugisaki entra para a equipe e participa de sua primeira missão.",
@@ -2070,7 +2080,7 @@
     "dataExibicao": "2020-10-17"
   },
   {
-    "id": 181,
+    "id": 209,
     "numero": 4,
     "titulo": "Existência Terrena Amaldiçoada",
     "sinopse": "Yuji, Megumi e Nobara enfrentam uma perigosa maldição especial.",
@@ -2080,7 +2090,7 @@
     "dataExibicao": "2020-10-24"
   },
   {
-    "id": 182,
+    "id": 210,
     "numero": 5,
     "titulo": "Existência Terrena Amaldiçoada - Parte 2",
     "sinopse": "A batalha contra a maldição especial continua enquanto Sukuna mostra seu poder.",
@@ -2090,7 +2100,7 @@
     "dataExibicao": "2020-10-31"
   },
   {
-    "id": 183,
+    "id": 211,
     "numero": 6,
     "titulo": "Depois da Chuva",
     "sinopse": "Os acontecimentos da missão afetam profundamente os estudantes.",
@@ -2100,7 +2110,7 @@
     "dataExibicao": "2020-11-07"
   },
   {
-    "id": 184,
+    "id": 212,
     "numero": 7,
     "titulo": "Ataque",
     "sinopse": "Gojo enfrenta Jogo em uma demonstração impressionante de poder.",
@@ -2110,7 +2120,7 @@
     "dataExibicao": "2020-11-14"
   },
   {
-    "id": 185,
+    "id": 213,
     "numero": 8,
     "titulo": "Tédio",
     "sinopse": "Yuji inicia um treinamento especial enquanto seus aliados continuam as missões.",
@@ -2120,7 +2130,7 @@
     "dataExibicao": "2020-11-21"
   },
   {
-    "id": 186,
+    "id": 214,
     "numero": 9,
     "titulo": "Peixes Pequenos e Punição Reversa",
     "sinopse": "Yuji conhece Junpei, um jovem envolvido com forças malignas.",
@@ -2130,7 +2140,7 @@
     "dataExibicao": "2020-11-28"
   },
   {
-    "id": 187,
+    "id": 215,
     "numero": 10,
     "titulo": "Transformação Ociosa",
     "sinopse": "Mahito continua manipulando Junpei para seus próprios objetivos.",
@@ -2140,7 +2150,7 @@
     "dataExibicao": "2020-12-05"
   },
   {
-    "id": 188,
+    "id": 216,
     "numero": 11,
     "titulo": "Mente Fechada",
     "sinopse": "Yuji tenta salvar Junpei antes que seja tarde demais.",
@@ -2150,7 +2160,7 @@
     "dataExibicao": "2020-12-12"
   },
   {
-    "id": 189,
+    "id": 217,
     "numero": 12,
     "titulo": "Para Você, Algum Dia",
     "sinopse": "Yuji enfrenta Mahito em uma batalha movida pela raiva e tristeza.",
@@ -2160,7 +2170,7 @@
     "dataExibicao": "2020-12-19"
   },
   {
-    "id": 190,
+    "id": 218,
     "numero": 13,
     "titulo": "Adeus Ontem",
     "sinopse": "As consequências da luta contra Mahito começam a aparecer.",
@@ -2170,7 +2180,7 @@
     "dataExibicao": "2020-12-26"
   },
   {
-    "id": 191,
+    "id": 219,
     "numero": 14,
     "titulo": "Evento de Intercâmbio de Kyoto - Batalha em Grupo 0",
     "sinopse": "Tem início o evento entre as escolas de Tóquio e Kyoto.",
@@ -2180,7 +2190,7 @@
     "dataExibicao": "2021-01-16"
   },
   {
-    "id": 192,
+    "id": 220,
     "numero": 15,
     "titulo": "Evento de Intercâmbio de Kyoto - Batalha em Grupo 1",
     "sinopse": "Os alunos iniciam os confrontos durante a competição.",
@@ -2190,7 +2200,7 @@
     "dataExibicao": "2021-01-23"
   },
   {
-    "id": 193,
+    "id": 221,
     "numero": 16,
     "titulo": "Evento de Intercâmbio de Kyoto - Batalha em Grupo 2",
     "sinopse": "As batalhas continuam enquanto novas estratégias são reveladas.",
@@ -2200,7 +2210,7 @@
     "dataExibicao": "2021-01-30"
   },
   {
-    "id": 194,
+    "id": 222,
     "numero": 17,
     "titulo": "Evento de Intercâmbio de Kyoto - Batalha em Grupo 3",
     "sinopse": "Os feiticeiros enfrentam uma ameaça inesperada durante o evento.",
@@ -2210,7 +2220,7 @@
     "dataExibicao": "2021-02-06"
   },
   {
-    "id": 195,
+    "id": 223,
     "numero": 18,
     "titulo": "Sábios",
     "sinopse": "A batalha contra Hanami coloca todos os estudantes à prova.",
@@ -2220,7 +2230,7 @@
     "dataExibicao": "2021-02-13"
   },
   {
-    "id": 196,
+    "id": 224,
     "numero": 19,
     "titulo": "Raio Negro",
     "sinopse": "Yuji e Todo unem forças contra um poderoso inimigo.",
@@ -2230,7 +2240,7 @@
     "dataExibicao": "2021-02-20"
   },
   {
-    "id": 197,
+    "id": 225,
     "numero": 20,
     "titulo": "Não Padronizado",
     "sinopse": "A luta contra Hanami atinge seu ponto mais intenso.",
@@ -2240,7 +2250,7 @@
     "dataExibicao": "2021-02-27"
   },
   {
-    "id": 198,
+    "id": 226,
     "numero": 21,
     "titulo": "Jujutsu Koshien",
     "sinopse": "Os alunos retomam a competição após os acontecimentos recentes.",
@@ -2250,7 +2260,7 @@
     "dataExibicao": "2021-03-06"
   },
   {
-    "id": 199,
+    "id": 227,
     "numero": 22,
     "titulo": "Origem da Obediência",
     "sinopse": "Uma nova missão leva Yuji, Megumi e Nobara a enfrentar uma ameaça sombria.",
@@ -2260,7 +2270,7 @@
     "dataExibicao": "2021-03-13"
   },
   {
-    "id": 200,
+    "id": 228,
     "numero": 23,
     "titulo": "Origem da Obediência - Parte 2",
     "sinopse": "Os estudantes enfrentam inimigos perigosos ligados às Pinturas da Morte.",
@@ -2270,7 +2280,7 @@
     "dataExibicao": "2021-03-20"
   },
   {
-    "id": 201,
+    "id": 229,
     "numero": 24,
     "titulo": "Cumplicidade",
     "sinopse": "A temporada termina com uma grande batalha e o fortalecimento da equipe.",
@@ -2280,7 +2290,7 @@
     "dataExibicao": "2021-03-27"
   },
   {
-    "id": 202,
+    "id": 230,
     "numero": 1,
     "titulo": "Inventário Oculto",
     "sinopse": "Gojo e Geto recebem a missão de proteger Riko Amanai.",
@@ -2290,7 +2300,7 @@
     "dataExibicao": "2023-07-06"
   },
   {
-    "id": 203,
+    "id": 231,
     "numero": 2,
     "titulo": "Inventário Oculto - Parte 2",
     "sinopse": "A missão de escolta continua enquanto novos inimigos aparecem.",
@@ -2300,7 +2310,7 @@
     "dataExibicao": "2023-07-13"
   },
   {
-    "id": 204,
+    "id": 232,
     "numero": 3,
     "titulo": "Inventário Oculto - Parte 3",
     "sinopse": "Toji Fushiguro entra em ação e muda o rumo da missão.",
@@ -2310,7 +2320,7 @@
     "dataExibicao": "2023-07-20"
   },
   {
-    "id": 205,
+    "id": 233,
     "numero": 4,
     "titulo": "Inventário Oculto - Parte 4",
     "sinopse": "Gojo desperta um novo nível de poder contra Toji.",
@@ -2320,7 +2330,7 @@
     "dataExibicao": "2023-07-27"
   },
   {
-    "id": 206,
+    "id": 234,
     "numero": 5,
     "titulo": "Morte Prematura",
     "sinopse": "Os acontecimentos do passado transformam para sempre a relação entre Gojo e Geto.",
@@ -2330,7 +2340,7 @@
     "dataExibicao": "2023-08-03"
   },
   {
-    "id": 207,
+    "id": 235,
     "numero": 6,
     "titulo": "É Assim",
     "sinopse": "O foco retorna para Yuji enquanto uma nova ameaça se aproxima.",
@@ -2340,7 +2350,7 @@
     "dataExibicao": "2023-08-31"
   },
   {
-    "id": 208,
+    "id": 236,
     "numero": 7,
     "titulo": "Festival Noturno",
     "sinopse": "Os preparativos para o Incidente de Shibuya começam.",
@@ -2350,7 +2360,7 @@
     "dataExibicao": "2023-09-07"
   },
   {
-    "id": 209,
+    "id": 237,
     "numero": 8,
     "titulo": "Incidente de Shibuya",
     "sinopse": "As maldições iniciam seu plano em Shibuya.",
@@ -2360,7 +2370,7 @@
     "dataExibicao": "2023-09-14"
   },
   {
-    "id": 210,
+    "id": 238,
     "numero": 9,
     "titulo": "Incidente de Shibuya - Portão Aberto",
     "sinopse": "Gojo enfrenta múltiplos inimigos em uma batalha intensa.",
@@ -2370,7 +2380,7 @@
     "dataExibicao": "2023-09-21"
   },
   {
-    "id": 211,
+    "id": 239,
     "numero": 10,
     "titulo": "Pandemônio",
     "sinopse": "A situação em Shibuya se torna cada vez mais caótica.",
@@ -2380,7 +2390,7 @@
     "dataExibicao": "2023-09-28"
   },
   {
-    "id": 212,
+    "id": 240,
     "numero": 11,
     "titulo": "Invocação",
     "sinopse": "Novos participantes entram na batalha em Shibuya.",
@@ -2390,7 +2400,7 @@
     "dataExibicao": "2023-10-05"
   },
   {
-    "id": 213,
+    "id": 241,
     "numero": 12,
     "titulo": "Lâmina Cega",
     "sinopse": "Nanami e os demais feiticeiros enfrentam situações extremas.",
@@ -2400,7 +2410,7 @@
     "dataExibicao": "2023-10-12"
   },
   {
-    "id": 214,
+    "id": 242,
     "numero": 13,
     "titulo": "Escala Vermelha",
     "sinopse": "Yuji encontra um poderoso adversário.",
@@ -2410,7 +2420,7 @@
     "dataExibicao": "2023-10-19"
   },
   {
-    "id": 215,
+    "id": 243,
     "numero": 14,
     "titulo": "Oscilações",
     "sinopse": "As batalhas se espalham por toda Shibuya.",
@@ -2420,7 +2430,7 @@
     "dataExibicao": "2023-10-26"
   },
   {
-    "id": 216,
+    "id": 244,
     "numero": 15,
     "titulo": "Oscilações - Parte 2",
     "sinopse": "Os confrontos atingem um novo nível de intensidade.",
@@ -2430,7 +2440,7 @@
     "dataExibicao": "2023-11-02"
   },
   {
-    "id": 217,
+    "id": 245,
     "numero": 16,
     "titulo": "Trovão",
     "sinopse": "Sukuna assume o controle e mostra seu verdadeiro poder.",
@@ -2440,7 +2450,7 @@
     "dataExibicao": "2023-11-09"
   },
   {
-    "id": 218,
+    "id": 246,
     "numero": 17,
     "titulo": "Trovão - Parte 2",
     "sinopse": "A destruição causada por Sukuna deixa marcas profundas.",
@@ -2450,7 +2460,7 @@
     "dataExibicao": "2023-11-16"
   },
   {
-    "id": 219,
+    "id": 247,
     "numero": 18,
     "titulo": "Certo e Errado",
     "sinopse": "Yuji precisa lidar com as consequências dos acontecimentos recentes.",
@@ -2460,7 +2470,7 @@
     "dataExibicao": "2023-11-23"
   },
   {
-    "id": 220,
+    "id": 248,
     "numero": 19,
     "titulo": "Certo e Errado - Parte 2",
     "sinopse": "Uma tragédia muda para sempre a determinação de Yuji.",
@@ -2470,7 +2480,7 @@
     "dataExibicao": "2023-11-30"
   },
   {
-    "id": 221,
+    "id": 249,
     "numero": 20,
     "titulo": "Certo e Errado - Parte 3",
     "sinopse": "A batalha contra Mahito se aproxima do fim.",
@@ -2480,7 +2490,7 @@
     "dataExibicao": "2023-12-07"
   },
   {
-    "id": 222,
+    "id": 250,
     "numero": 22,
     "titulo": "Metamorfose",
     "sinopse": "Mahito revela sua forma mais poderosa.",
@@ -2490,7 +2500,7 @@
     "dataExibicao": "2023-12-14"
   },
   {
-    "id": 223,
+    "id": 251,
     "numero": 23,
     "titulo": "Metamorfose - Parte 2",
     "sinopse": "O confronto final entre Yuji e Mahito chega ao ápice.",
@@ -2500,7 +2510,7 @@
     "dataExibicao": "2023-12-21"
   },
   {
-    "id": 224,
+    "id": 252,
     "numero": 23,
     "titulo": "Incidente de Shibuya - Encerramento",
     "sinopse": "As consequências do Incidente de Shibuya mudam o mundo Jujutsu para sempre.",
@@ -2510,7 +2520,7 @@
     "dataExibicao": "2023-12-28"
   },
   {
-    "id": 225,
+    "id": 253,
     "numero": 1,
     "titulo": "Execução",
     "sinopse": "Enquanto Yuji lida com a culpa pelos eventos de Shibuya, Naoya Zenin e Yuta Okkotsu recebem a missão de executá-lo.",
@@ -2520,7 +2530,7 @@
     "dataExibicao": "2026-01-09"
   },
   {
-    "id": 226,
+    "id": 254,
     "numero": 2,
     "titulo": "Mais Uma Vez",
     "sinopse": "Após enfrentar Yuta, Yuji descobre seu verdadeiro objetivo. Megumi pede ajuda para salvar sua irmã.",
@@ -2530,7 +2540,7 @@
     "dataExibicao": "2026-01-16"
   },
   {
-    "id": 227,
+    "id": 255,
     "numero": 3,
     "titulo": "Sobre o Jogo do Abate",
     "sinopse": "Yuji e seus aliados conversam com Tengen sobre os planos de Kenjaku e o funcionamento do Jogo do Abate.",
@@ -2540,7 +2550,7 @@
     "dataExibicao": "2026-01-23"
   },
   {
-    "id": 228,
+    "id": 256,
     "numero": 4,
     "titulo": "Preparação Perfeita",
     "sinopse": "Após recuperar ferramentas amaldiçoadas, Maki desperta todo o seu potencial e confronta o Clã Zenin.",
@@ -2550,7 +2560,7 @@
     "dataExibicao": "2026-01-23"
   },
   {
-    "id": 229,
+    "id": 257,
     "numero": 5,
     "titulo": "Paixão",
     "sinopse": "Yaga é executado. Yuji e Megumi procuram Kinji Hakari para recrutá-lo para o Jogo do Abate.",
@@ -2560,7 +2570,7 @@
     "dataExibicao": "2026-01-30"
   },
   {
-    "id": 230,
+    "id": 258,
     "numero": 6,
     "titulo": "Engrenagem",
     "sinopse": "Megumi e Panda enfrentam Kirara enquanto Yuji tenta convencer Hakari a ajudá-los.",
@@ -2570,7 +2580,7 @@
     "dataExibicao": "2026-02-06"
   },
   {
-    "id": 231,
+    "id": 259,
     "numero": 7,
     "titulo": "Colônia Nº 1 de Tóquio",
     "sinopse": "O grupo entra em duas colônias do Jogo do Abate e enfrenta caçadores de novatos.",
@@ -2580,7 +2590,7 @@
     "dataExibicao": "2026-02-13"
   },
   {
-    "id": 232,
+    "id": 260,
     "numero": 8,
     "titulo": "Colônia Nº 1 de Tóquio - Parte 2",
     "sinopse": "Yuji conhece Hiromi Higuruma, enquanto Megumi é atraído para uma armadilha de Reggie Star.",
@@ -2590,7 +2600,7 @@
     "dataExibicao": "2026-02-27"
   },
   {
-    "id": 233,
+    "id": 261,
     "numero": 9,
     "titulo": "Colônia Nº 1 de Tóquio - Parte 3",
     "sinopse": "Yuji enfrenta Hiromi Higuruma em uma batalha decisiva dentro da colônia.",
@@ -2600,7 +2610,7 @@
     "dataExibicao": "2026-03-06"
   },
   {
-    "id": 234,
+    "id": 262,
     "numero": 10,
     "titulo": "Colônia Nº 1 de Tóquio - Parte 4",
     "sinopse": "Takaba enfrenta diversos inimigos enquanto Megumi inicia seu confronto final contra Reggie.",
@@ -2610,7 +2620,7 @@
     "dataExibicao": "2026-03-13"
   },
   {
-    "id": 235,
+    "id": 263,
     "numero": 11,
     "titulo": "Colônia Nº 1 de Tóquio - Parte 5",
     "sinopse": "Megumi utiliza sua Expansão de Domínio em sua batalha climática contra Reggie Star.",
@@ -2620,7 +2630,7 @@
     "dataExibicao": "2026-03-20"
   },
   {
-    "id": 236,
+    "id": 264,
     "numero": 12,
     "titulo": "Colônia de Sendai",
     "sinopse": "Yuta Okkotsu enfrenta três poderosos feiticeiros na Colônia de Sendai no encerramento da temporada.",
@@ -2630,7 +2640,7 @@
     "dataExibicao": "2026-03-27"
   },
   {
-    "id": 237,
+    "id": 265,
     "numero": 1,
     "titulo": "Jujutsu Kaisen 0: The Movie",
     "sinopse": "O filme segue a história de Yuji Itadori, um estudante que se envolve com uma maldição enquanto busca um amuleto para salvar sua amiga de infância, Rika Orimoto.",
@@ -2640,7 +2650,7 @@
     "dataExibicao": "2023-06-06"
   },
   {
-    "id": 238,
+    "id": 266,
     "numero": 1,
     "titulo": "Jujutsu Kaisen: Kaigyoku - Gyokusetsu",
     "sinopse": "Compilação do arco Kaigyoku/Gyokusetsu, mostrando a juventude de Gojo e Geto e os eventos que moldaram suas visões sobre o mundo dos feiticeiros e maldições.",
@@ -2650,7 +2660,7 @@
     "dataExibicao": "2025-06-22"
   },
   {
-    "id": 239,
+    "id": 267,
     "numero": 1,
     "titulo": "Jujutsu Kaisen: Shibuya Incident Compilation",
     "sinopse": "Compilação dos eventos do Incidente de Shibuya, onde uma grande batalha entre feiticeiros e maldições muda drasticamente o equilíbrio do mundo do Jujutsu.",
