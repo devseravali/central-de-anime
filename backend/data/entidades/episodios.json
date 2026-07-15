@@ -2,8 +2,8 @@
   {
     "id": 1,
     "numero": 1,
-    "titulo": "A Você, em 2000 Anos - A Queda de Shiganshina (Parte 1)",
-    "sinopse": "Eren, Mikasa e Armin são treinados para se tornarem soldados da Milícia de Defesa. Eles enfrentam seus primeiros desafios e descobrem o verdadeiro significado da luta.",
+    "titulo": "Para Você, Daqui a 2.000 Anos: A Queda de Shiganshina - Parte 1",
+    "sinopse": "Após cem anos de paz, a humanidade é novamente ameaçada quando o Titã Colossal aparece diante da Muralha Maria e inicia uma invasão devastadora.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep1.jpg",
@@ -12,8 +12,8 @@
   {
     "id": 2,
     "numero": 2,
-    "titulo": "Naquele Dia - A Queda de Shiganshina (Parte 2)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Aquele Dia: A Queda de Shiganshina - Parte 2",
+    "sinopse": "Com a queda da muralha, Eren presencia a destruição de sua cidade e faz uma promessa de exterminar todos os Titãs.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep2.jpg",
@@ -22,8 +22,8 @@
   {
     "id": 3,
     "numero": 3,
-    "titulo": "Uma Fraca Luz em Meio ao Desespero - O Retorno da Humanidade (Parte 1)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Uma Fraca Luz em Meio ao Desespero: O Recomeço da Humanidade - Parte 1",
+    "sinopse": "Eren, Mikasa e Armin entram no treinamento militar para se prepararem contra a ameaça dos Titãs.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep3.jpg",
@@ -32,8 +32,8 @@
   {
     "id": 4,
     "numero": 4,
-    "titulo": "A Noite da Cerimônia de Formatura - O Retorno da Humanidade (Parte 2)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "A Noite da Cerimônia de Formatura: O Recomeço da Humanidade - Parte 2",
+    "sinopse": "Os cadetes se formam e escolhem seus caminhos, mas a ameaça dos Titãs retorna inesperadamente.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep4.jpg",
@@ -42,8 +42,8 @@
   {
     "id": 5,
     "numero": 5,
-    "titulo": "Primeira Batalha - A Luta por Trost (Parte 1)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Primeira Batalha: A Luta por Trost - Parte 1",
+    "sinopse": "O Titã Colossal reaparece cinco anos depois e destrói a Muralha Rose, iniciando uma nova batalha pela sobrevivência.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep5.jpg",
@@ -52,8 +52,8 @@
   {
     "id": 6,
     "numero": 6,
-    "titulo": "O Mundo Visto Pela Garota - A Luta por Trost (Parte 2)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "O Mundo que a Garota Viu: A Luta por Trost - Parte 2",
+    "sinopse": "Mikasa relembra seu passado enquanto luta para sobreviver no campo de batalha após a invasão dos Titãs.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep6.jpg",
@@ -62,8 +62,8 @@
   {
     "id": 7,
     "numero": 7,
-    "titulo": "Pequena Lâmina - A Luta por Trost (Parte 3)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Pequena Lâmina: A Luta por Trost - Parte 3",
+    "sinopse": "Com poucos recursos e cercados por Titãs, os soldados precisam encontrar uma forma de escapar e sobreviver.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep7.jpg",
@@ -72,8 +72,8 @@
   {
     "id": 8,
     "numero": 8,
-    "titulo": "Posso Ouvir Seu Coração Batendo - A Luta por Trost (Parte 4)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Posso Ouvir o Batimento do Seu Coração: A Luta por Trost - Parte 4",
+    "sinopse": "Armin descobre uma maneira de usar o misterioso poder de Eren para recuperar o território perdido.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep8.jpg",
@@ -82,8 +82,8 @@
   {
     "id": 9,
     "numero": 9,
-    "titulo": "O Paradeiro de Seu Braço Esquerdo - A Luta por Trost (Parte 5)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "O Paradeiro do Braço Esquerdo: A Luta por Trost - Parte 5",
+    "sinopse": "Eren retorna transformado em Titã e os militares precisam decidir se ele representa uma ameaça ou uma esperança.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep9.jpg",
@@ -92,8 +92,8 @@
   {
     "id": 10,
     "numero": 10,
-    "titulo": "Resposta - A Luta por Trost (Parte 6)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Resposta: A Luta por Trost - Parte 6",
+    "sinopse": "Armin tenta convencer os comandantes militares a utilizarem o poder de Eren para salvar Trost.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep10.jpg",
@@ -102,8 +102,8 @@
   {
     "id": 11,
     "numero": 11,
-    "titulo": "Ídolo - A Luta por Trost (Parte 7)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Ídolo: A Luta por Trost - Parte 7",
+    "sinopse": "O plano para recuperar a muralha começa enquanto os soldados enfrentam dúvidas sobre confiar em Eren.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep11.jpg",
@@ -112,8 +112,8 @@
   {
     "id": 12,
     "numero": 12,
-    "titulo": "Ferida - A Luta por Trost (Parte 8)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Ferimento: A Luta por Trost - Parte 8",
+    "sinopse": "Eren perde o controle de sua transformação e Mikasa e Armin tentam fazê-lo recuperar sua consciência.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep12.jpg",
@@ -122,8 +122,8 @@
   {
     "id": 13,
     "numero": 13,
-    "titulo": "Desejo Primitivo - A Luta por Trost (Parte 9)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Desejo Primitivo: A Luta por Trost - Parte 9",
+    "sinopse": "A operação para recuperar Trost é concluída e a humanidade conquista sua primeira grande vitória contra os Titãs.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep13.jpg",
@@ -132,128 +132,128 @@
   {
     "id": 14,
     "numero": 14,
-    "titulo": "Ainda Não Consigo Olhar nos Seus Olhos - Véspera do Contra-Ataque (Parte 1)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Ainda Não Posso Olhar em Seus Olhos: Véspera do Contra-Ataque - Parte 1",
+    "sinopse": "Eren é levado a julgamento para decidir seu destino após revelar possuir o poder de um Titã.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep14.jpg",
-    "dataExibicao": "2013-07-07"
+    "dataExibicao": "2013-07-14"
   },
   {
     "id": 15,
     "numero": 15,
-    "titulo": "Esquadrão de Operações Especiais - Véspera do Contra-Ataque (Parte 2)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Esquadrão de Operações Especiais: Véspera do Contra-Ataque - Parte 2",
+    "sinopse": "Eren se junta ao esquadrão de Levi e começa uma nova etapa dentro da Tropa de Exploração.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep15.jpg",
-    "dataExibicao": "2013-07-14"
+    "dataExibicao": "2013-07-21"
   },
   {
     "id": 16,
     "numero": 16,
-    "titulo": "O Que Deve Ser Feito Agora - Véspera do Contra-Ataque (Parte 3)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "O Que Precisa Ser Feito Agora: Véspera do Contra-Ataque - Parte 3",
+    "sinopse": "A Tropa de Exploração investiga a morte dos Titãs capturados por Hange e prepara uma nova missão.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep16.jpg",
-    "dataExibicao": "2013-07-21"
+    "dataExibicao": "2013-07-28"
   },
   {
     "id": 17,
     "numero": 17,
-    "titulo": "Titã Fêmea - 57ª Expedição Extramuros (Parte 1)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Titã Fêmea: A 57ª Expedição Além das Muralhas - Parte 1",
+    "sinopse": "Durante uma expedição, a Tropa de Exploração encontra um Titã inteligente capaz de comandar outros Titãs.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep17.jpg",
-    "dataExibicao": "2013-07-28"
+    "dataExibicao": "2013-08-04"
   },
   {
     "id": 18,
     "numero": 18,
-    "titulo": "Floresta das Árvores Gigantes - 57ª Expedição Extramuros (Parte 2)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "A Floresta das Árvores Gigantes: A 57ª Expedição Além das Muralhas - Parte 2",
+    "sinopse": "Levi e seu esquadrão tentam escapar do ataque do Titã Fêmea durante a expedição.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep18.jpg",
-    "dataExibicao": "2013-08-04"
+    "dataExibicao": "2013-08-11"
   },
   {
     "id": 19,
     "numero": 19,
-    "titulo": "Mordida - 57ª Expedição Extramuros (Parte 3)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Mordida: A 57ª Expedição Além das Muralhas - Parte 3",
+    "sinopse": "Eren precisa decidir se confia em seus companheiros ou usa seu poder de Titã para lutar.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep19.jpg",
-    "dataExibicao": "2013-08-11"
+    "dataExibicao": "2013-08-18"
   },
   {
     "id": 20,
     "numero": 20,
-    "titulo": "Erwin Smith - 57ª Expedição Extramuros (Parte 4)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Erwin Smith: A 57ª Expedição Além das Muralhas - Parte 4",
+    "sinopse": "A Tropa de Exploração tenta capturar o Titã Fêmea e descobrir a identidade de sua verdadeira ameaça.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep20.jpg",
-    "dataExibicao": "2013-08-18"
+    "dataExibicao": "2013-08-25"
   },
   {
     "id": 21,
     "numero": 21,
-    "titulo": "Golpe Devastador - 57ª Expedição Extramuros (Parte 5)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Golpe Devastador: A 57ª Expedição Além das Muralhas - Parte 5",
+    "sinopse": "O Titã Fêmea continua sua perseguição e a Tropa de Exploração enfrenta grandes perdas durante o confronto.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep21.jpg",
-    "dataExibicao": "2013-08-25"
+    "dataExibicao": "2013-09-01"
   },
   {
     "id": 22,
     "numero": 22,
-    "titulo": "Os Derrotados - 57ª Expedição Extramuros (Parte 6)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Os Derrotados: A 57ª Expedição Além das Muralhas - Parte 6",
+    "sinopse": "Levi e Mikasa tentam recuperar Eren enquanto a Tropa de Exploração retorna para as muralhas após uma missão devastadora.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep22.jpg",
-    "dataExibicao": "2013-09-02"
+    "dataExibicao": "2013-09-08"
   },
   {
     "id": 23,
     "numero": 23,
-    "titulo": "Sorriso - Ataque a Stohess (Parte 1)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Sorriso: Ataque ao Distrito de Stohess - Parte 1",
+    "sinopse": "Armin cria um plano para revelar a identidade do Titã Fêmea escondida dentro das muralhas.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep23.jpg",
-    "dataExibicao": "2013-09-09"
+    "dataExibicao": "2013-09-15"
   },
   {
     "id": 24,
     "numero": 24,
-    "titulo": "Misericórdia - Ataque a Stohess (Parte 2)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Misericórdia: Ataque ao Distrito de Stohess - Parte 2",
+    "sinopse": "Eren enfrenta uma antiga companheira enquanto a batalha entre Titãs destrói parte do Distrito de Stohess.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep24.jpg",
-    "dataExibicao": "2013-09-16"
+    "dataExibicao": "2013-09-22"
   },
   {
     "id": 25,
     "numero": 25,
-    "titulo": "Muralha - Ataque a Stohess (Parte 3)",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Muralha: Ataque ao Distrito de Stohess - Parte 3",
+    "sinopse": "A batalha contra o Titã Fêmea chega ao fim, mas um novo mistério dentro das muralhas revela que ainda existem muitos segredos.",
     "temporadaId": 1,
     "animeId": 1,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t1/ep25.jpg",
-    "dataExibicao": "2013-09-23"
+    "dataExibicao": "2013-09-29"
   },
   {
     "id": 26,
     "numero": 1,
     "titulo": "Titã Bestial",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Após a batalha de Trost, uma nova ameaça surge quando um misterioso Titã capaz de falar aparece e revela possuir uma inteligência incomum.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep1.jpg",
@@ -263,7 +263,7 @@
     "id": 27,
     "numero": 2,
     "titulo": "Estou em Casa",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Com a descoberta de Titãs dentro da Muralha Rose, a Tropa de Exploração tenta descobrir como eles entraram e proteger os moradores.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep2.jpg",
@@ -272,8 +272,8 @@
   {
     "id": 28,
     "numero": 3,
-    "titulo": "Ao Sudoeste",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Rumo ao Sudoeste",
+    "sinopse": "Os soldados se dividem para investigar a origem dos Titãs dentro da muralha enquanto procuram sobreviventes das aldeias próximas.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep3.jpg",
@@ -283,7 +283,7 @@
     "id": 29,
     "numero": 4,
     "titulo": "Soldado",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Cercados por Titãs no Castelo Utgard, os soldados lutam pela sobrevivência enquanto antigos segredos começam a aparecer.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep4.jpg",
@@ -292,8 +292,8 @@
   {
     "id": 30,
     "numero": 5,
-    "titulo": "História",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Historia",
+    "sinopse": "Ymir revela parte de sua história enquanto tenta proteger seus companheiros, especialmente Historia, durante o ataque dos Titãs.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep5.jpg",
@@ -303,7 +303,7 @@
     "id": 31,
     "numero": 6,
     "titulo": "Guerreiro",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Uma revelação inesperada muda completamente a compreensão de Eren sobre seus inimigos e inicia um confronto decisivo.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep6.jpg",
@@ -312,8 +312,8 @@
   {
     "id": 32,
     "numero": 7,
-    "titulo": "Golpe",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Combate Corpo a Corpo",
+    "sinopse": "Eren enfrenta Reiner e Bertholdt em uma batalha intensa enquanto tenta impedir que seus planos sejam realizados.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep7.jpg",
@@ -322,8 +322,8 @@
   {
     "id": 33,
     "numero": 8,
-    "titulo": "Os Perseguidores",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Os Caçadores",
+    "sinopse": "Após o confronto, a Tropa de Exploração tenta escapar enquanto decide como lidar com os novos inimigos revelados.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep8.jpg",
@@ -333,7 +333,7 @@
     "id": 34,
     "numero": 9,
     "titulo": "Abertura",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "A perseguição continua e os soldados precisam lidar com as consequências das descobertas sobre os Titãs.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep9.jpg",
@@ -343,7 +343,7 @@
     "id": 35,
     "numero": 10,
     "titulo": "Crianças",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Ymir enfrenta uma decisão difícil entre seu passado e o desejo de proteger aqueles que ama.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep10.jpg",
@@ -353,7 +353,7 @@
     "id": 36,
     "numero": 11,
     "titulo": "Investida",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "A Tropa de Exploração inicia uma operação desesperada para resgatar Eren e seus companheiros.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep11.jpg",
@@ -363,7 +363,7 @@
     "id": 37,
     "numero": 12,
     "titulo": "Grito",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Durante o confronto final, Eren desperta um novo poder que pode mudar o destino da humanidade.",
     "temporadaId": 2,
     "animeId": 2,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t2/ep12.jpg",
@@ -372,8 +372,8 @@
   {
     "id": 38,
     "numero": 1,
-    "titulo": "Fumaça de Sinal",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Sinal de Fumaça",
+    "sinopse": "Após os acontecimentos da batalha contra o Titã Bestial, a Tropa de Exploração enfrenta uma nova ameaça enquanto segredos dentro das muralhas começam a surgir.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep1.jpg",
@@ -383,7 +383,7 @@
     "id": 39,
     "numero": 2,
     "titulo": "Dor",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Levi e seus companheiros enfrentam uma nova ameaça humana enquanto a Tropa de Exploração descobre que os inimigos podem estar dentro das próprias muralhas.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep2.jpg",
@@ -392,2281 +392,501 @@
   {
     "id": 40,
     "numero": 3,
-    "titulo": "Memórias",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Velha História",
+    "sinopse": "A verdadeira identidade de Historia começa a ser revelada enquanto a Tropa de Exploração descobre segredos sobre a família real.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep3.jpg",
-    "dataExibicao": "2018-08-07"
+    "dataExibicao": "2018-08-06"
   },
   {
     "id": 41,
     "numero": 4,
     "titulo": "Confiança",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "A Tropa de Exploração tenta escapar dos inimigos enquanto Levi enfrenta uma antiga ameaça do passado.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep4.jpg",
-    "dataExibicao": "2018-08-14"
+    "dataExibicao": "2018-08-13"
   },
   {
     "id": 42,
     "numero": 5,
     "titulo": "Resposta",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Enquanto Erwin busca uma solução para a crise, a verdade sobre o governo das muralhas começa a aparecer.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep5.jpg",
-    "dataExibicao": "2018-08-21"
+    "dataExibicao": "2018-08-20"
   },
   {
     "id": 43,
     "numero": 6,
     "titulo": "Pecado",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Memórias do passado revelam informações importantes sobre Grisha Yeager e o poder dos Titãs.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep6.jpg",
-    "dataExibicao": "2018-08-28"
+    "dataExibicao": "2018-08-27"
   },
   {
     "id": 44,
     "numero": 7,
     "titulo": "Desejo",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Historia precisa escolher seu próprio caminho enquanto a batalha pelo futuro da humanidade se intensifica.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep7.jpg",
-    "dataExibicao": "2018-09-05"
+    "dataExibicao": "2018-09-03"
   },
   {
     "id": 45,
     "numero": 8,
-    "titulo": "Do Lado de Fora das Muralhas de Orvud",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Nos Arredores do Distrito de Orvud",
+    "sinopse": "A Tropa de Exploração se prepara para enfrentar o Titã de Rod Reiss em uma batalha decisiva.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep8.jpg",
-    "dataExibicao": "2018-09-12"
+    "dataExibicao": "2018-09-10"
   },
   {
     "id": 46,
     "numero": 9,
-    "titulo": "Rainha das Muralhas",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Governante das Muralhas",
+    "sinopse": "A batalha contra o Titã colossal de Rod Reiss começa enquanto Historia assume uma importante decisão.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep9.jpg",
-    "dataExibicao": "2018-09-19"
+    "dataExibicao": "2018-09-17"
   },
   {
     "id": 47,
     "numero": 10,
     "titulo": "Amigos",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Kenny Ackerman relembra seu passado e sua ligação com a família real e Levi.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep10.jpg",
-    "dataExibicao": "2018-09-26"
+    "dataExibicao": "2018-09-24"
   },
   {
     "id": 48,
     "numero": 11,
     "titulo": "Espectador",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Eren descobre parte das memórias de seu pai e começa a entender os segredos escondidos sobre a origem dos Titãs.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep11.jpg",
-    "dataExibicao": "2018-10-03"
+    "dataExibicao": "2018-10-08"
   },
   {
     "id": 49,
     "numero": 12,
-    "titulo": "Ataque",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "A Noite da Batalha para Retomar a Muralha",
+    "sinopse": "A Tropa de Exploração se prepara para a missão de recuperar a Muralha Maria e descobrir a verdade escondida no porão de Grisha.",
     "temporadaId": 3,
     "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep12.jpg",
-    "dataExibicao": "2018-10-10"
+    "dataExibicao": "2018-10-15"
   },
   {
     "id": 50,
-    "numero": 1,
-    "titulo": "Cidade na Muralha",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 13,
+    "titulo": "A Cidade Onde Tudo Começou",
+    "sinopse": "A Tropa de Exploração retorna a Shiganshina para recuperar a Muralha Maria, mas encontra uma armadilha preparada pelos inimigos.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep13.jpg",
-    "dataExibicao": "2020-12-07"
+    "dataExibicao": "2019-04-29"
   },
   {
     "id": 51,
-    "numero": 2,
-    "titulo": "Trovão",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 14,
+    "titulo": "Lanças do Trovão",
+    "sinopse": "A Tropa de Exploração utiliza uma nova arma contra o Titã Blindado enquanto enfrenta uma batalha desesperadora.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep14.jpg",
-    "dataExibicao": "2020-12-14"
+    "dataExibicao": "2019-05-06"
   },
   {
     "id": 52,
-    "numero": 3,
-    "titulo": "Jogo Perfeito",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 15,
+    "titulo": "Descida",
+    "sinopse": "Enquanto a batalha em Shiganshina continua, novos perigos surgem e colocam a missão em risco.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep15.jpg",
-    "dataExibicao": "2020-12-21"
+    "dataExibicao": "2019-05-13"
   },
   {
     "id": 53,
-    "numero": 4,
-    "titulo": "Herói",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 16,
+    "titulo": "Jogo Perfeito",
+    "sinopse": "O Titã Bestial inicia seu ataque enquanto a Tropa de Exploração tenta sobreviver em uma batalha sem saída.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep16.jpg",
-    "dataExibicao": "2020-12-28"
+    "dataExibicao": "2019-05-20"
   },
   {
     "id": 54,
-    "numero": 5,
-    "titulo": "Porão",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 17,
+    "titulo": "Herói",
+    "sinopse": "Levi enfrenta o Titã Bestial enquanto Erwin lidera uma última investida para criar uma oportunidade de vitória.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep17.jpg",
-    "dataExibicao": "2021-01-04"
+    "dataExibicao": "2019-05-27"
   },
   {
     "id": 55,
-    "numero": 6,
-    "titulo": "O Porão",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 18,
+    "titulo": "Sol da Meia-Noite",
+    "sinopse": "Após a batalha, os sobreviventes precisam decidir quem receberá o poder do Titã após uma escolha extremamente difícil.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep18.jpg",
-    "dataExibicao": "2021-01-11"
+    "dataExibicao": "2019-06-03"
   },
   {
     "id": 56,
-    "numero": 7,
-    "titulo": "Aquele Dia",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 19,
+    "titulo": "O Porão",
+    "sinopse": "Eren e seus companheiros finalmente chegam ao porão da casa dos Yeager e descobrem a verdade escondida por anos.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep19.jpg",
-    "dataExibicao": "2021-01-18"
+    "dataExibicao": "2019-06-10"
   },
   {
     "id": 57,
-    "numero": 8,
-    "titulo": "Titã de Ataque",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 20,
+    "titulo": "Naquele Dia",
+    "sinopse": "As memórias de Grisha revelam a história do mundo exterior e os acontecimentos que levaram à existência dos Titãs.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep20.jpg",
-    "dataExibicao": "2021-01-25"
+    "dataExibicao": "2019-06-17"
   },
   {
     "id": 58,
-    "numero": 9,
-    "titulo": "O Outro Lado da Muralha",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 21,
+    "titulo": "Titã de Ataque",
+    "sinopse": "Eren descobre a verdadeira origem de seus poderes e entende o papel do Titã de Ataque na história da humanidade.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep21.jpg",
-    "dataExibicao": "2021-02-01"
+    "dataExibicao": "2019-06-24"
   },
   {
     "id": 59,
-    "numero": 10,
-    "titulo": "A Árvore na Colina",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 4,
+    "numero": 22,
+    "titulo": "O Outro Lado da Muralha",
+    "sinopse": "A humanidade finalmente alcança o mar e descobre que existe um mundo muito maior além das muralhas.",
+    "temporadaId": 3,
+    "animeId": 3,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t3/ep22.jpg",
-    "dataExibicao": "2021-02-08"
+    "dataExibicao": "2019-07-01"
   },
   {
     "id": 60,
     "numero": 1,
     "titulo": "O Outro Lado do Mar",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Quatro anos após os acontecimentos na Ilha Paradis, Marley enfrenta uma guerra enquanto os Guerreiros lutam para manter o poder dos Titãs.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep1.jpg",
-    "dataExibicao": "2022-12-07"
+    "dataExibicao": "2020-12-07"
   },
   {
     "id": 61,
     "numero": 2,
     "titulo": "Trem da Meia-Noite",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Após a guerra, Marley começa a questionar o futuro dos Titãs enquanto os Guerreiros retornam para casa.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep2.jpg",
-    "dataExibicao": "2022-12-14"
+    "dataExibicao": "2020-12-14"
   },
   {
     "id": 62,
     "numero": 3,
     "titulo": "A Porta da Esperança",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 5,
-    "animeId": 1,
+    "sinopse": "Reiner relembra sua infância, sua missão em Paradis e os acontecimentos que moldaram sua vida como Guerreiro de Marley.",
+    "temporadaId": 4,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep3.jpg",
-    "dataExibicao": "2022-12-21"
+    "dataExibicao": "2020-12-21"
   },
   {
     "id": 63,
     "numero": 4,
-    "titulo": "De Uma Mão para Outra",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "De Uma Mão Para Outra",
+    "sinopse": "A família Tybur prepara sua apresentação ao mundo enquanto Falco ajuda um misterioso soldado ferido.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep4.jpg",
-    "dataExibicao": "2022-12-28"
+    "dataExibicao": "2020-12-28"
   },
   {
     "id": 64,
     "numero": 5,
     "titulo": "Declaração de Guerra",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Willy Tybur revela a história dos Eldianos ao mundo enquanto Eren toma uma decisão que muda tudo.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep5.jpg",
-    "dataExibicao": "2023-01-04"
+    "dataExibicao": "2021-01-11"
   },
   {
     "id": 65,
     "numero": 6,
     "titulo": "O Titã Martelo de Guerra",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Eren inicia seu ataque em Liberio e enfrenta o poderoso Titã Martelo de Guerra em uma batalha intensa.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep6.jpg",
-    "dataExibicao": "2023-01-11"
+    "dataExibicao": "2021-01-18"
   },
   {
     "id": 66,
     "numero": 7,
-    "titulo": "Assalto",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Ataque",
+    "sinopse": "As forças de Paradis atacam Marley enquanto os Guerreiros tentam impedir a fuga de Eren.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep7.jpg",
-    "dataExibicao": "2023-01-18"
+    "dataExibicao": "2021-01-25"
   },
   {
     "id": 67,
     "numero": 8,
-    "titulo": "Bala Assassina",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Bala do Assassino",
+    "sinopse": "Após o ataque em Liberio, a Tropa de Exploração retorna para Paradis enfrentando consequências inesperadas.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep8.jpg",
-    "dataExibicao": "2023-01-25"
+    "dataExibicao": "2021-02-01"
   },
   {
     "id": 68,
     "numero": 9,
-    "titulo": "Voluntários Corajosos",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Voluntários Valentes",
+    "sinopse": "A relação entre Paradis e os voluntários de Marley é revelada enquanto surgem conflitos internos.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep9.jpg",
-    "dataExibicao": "2023-02-01"
+    "dataExibicao": "2021-02-08"
   },
   {
     "id": 69,
     "numero": 10,
-    "titulo": "Um Argumento Convincente",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Um Argumento Sólido",
+    "sinopse": "O passado dos voluntários é revelado e novas informações sobre os planos para Paradis vêm à tona.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep10.jpg",
-    "dataExibicao": "2023-02-08"
+    "dataExibicao": "2021-02-15"
   },
   {
     "id": 70,
     "numero": 11,
-    "titulo": "Impostores",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Enganador",
+    "sinopse": "Gabi e Falco conseguem escapar e acabam encontrando uma família que mostra uma realidade diferente daquela que aprenderam em Marley. Enquanto isso, Paradis enfrenta conflitos internos causados pelos seguidores de Eren.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep11.jpg",
-    "dataExibicao": "2023-02-15"
+    "dataExibicao": "2021-02-22"
   },
   {
     "id": 71,
     "numero": 12,
     "titulo": "Guias",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "A Tropa de Exploração investiga os planos de Zeke enquanto Armin e Mikasa tentam entender as verdadeiras intenções de Eren.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep12.jpg",
-    "dataExibicao": "2023-02-22"
+    "dataExibicao": "2021-03-01"
   },
   {
     "id": 72,
     "numero": 13,
     "titulo": "Filhos da Floresta",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Gabi e Falco descobrem que o mundo não é dividido apenas entre inimigos e aliados. Enquanto isso, os planos envolvendo Zeke e Eren começam a causar divisões.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep13.jpg",
-    "dataExibicao": "2023-03-01"
+    "dataExibicao": "2021-03-08"
   },
   {
     "id": 73,
     "numero": 14,
     "titulo": "Selvageria",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Eren conversa com Armin e Mikasa revelando seus pensamentos sobre liberdade e o futuro. Enquanto isso, Levi enfrenta Zeke em uma batalha inesperada.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep14.jpg",
-    "dataExibicao": "2023-03-08"
+    "dataExibicao": "2021-03-15"
   },
   {
     "id": 74,
     "numero": 15,
-    "titulo": "Único Julgamento",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "titulo": "Salvação Suprema",
+    "sinopse": "O passado de Zeke é revelado, mostrando sua infância, sua família e os acontecimentos que moldaram suas crenças sobre os Eldianos.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep15.jpg",
-    "dataExibicao": "2023-03-15"
+    "dataExibicao": "2021-03-22"
   },
   {
     "id": 75,
     "numero": 16,
     "titulo": "Acima e Abaixo",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "A situação em Paradis muda completamente quando os Jaegeristas assumem o controle. Eren começa a colocar seu plano em movimento.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep16.jpg",
-    "dataExibicao": "2023-03-22"
+    "dataExibicao": "2021-03-29"
   },
   {
     "id": 76,
-    "numero": 1,
+    "numero": 17,
     "titulo": "Julgamento",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Após um ataque inesperado de Marley, a batalha pela Ilha Paradis recomeça. Eren enfrenta seus inimigos enquanto antigos aliados questionam suas escolhas.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep17.jpg",
-    "dataExibicao": "2023-03-29"
+    "dataExibicao": "2022-01-10"
   },
   {
     "id": 77,
-    "numero": 2,
+    "numero": 18,
     "titulo": "Ataque Surpresa",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "O Titã Bestial entra no campo de batalha enquanto Marley e Paradis travam um confronto decisivo pelo futuro do mundo.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep18.jpg",
-    "dataExibicao": "2023-04-05"
+    "dataExibicao": "2022-01-17"
   },
   {
     "id": 78,
-    "numero": 3,
+    "numero": 19,
     "titulo": "Dois Irmãos",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Eren tenta alcançar Zeke para colocar seu plano em prática, enquanto os guerreiros de Marley lutam para impedir seus objetivos.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep19.jpg",
-    "dataExibicao": "2023-04-12"
+    "dataExibicao": "2022-01-24"
   },
   {
     "id": 79,
-    "numero": 4,
+    "numero": 20,
     "titulo": "Memórias do Futuro",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Zeke leva Eren pelas memórias de Grisha e descobre verdades inesperadas sobre o passado e as escolhas de seu irmão.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep20.jpg",
-    "dataExibicao": "2023-04-19"
+    "dataExibicao": "2022-01-31"
   },
   {
     "id": 80,
-    "numero": 5,
-    "titulo": "O Que Você Precisa Fazer",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "numero": 21,
+    "titulo": "De Você, Há 2.000 Anos",
+    "sinopse": "A história de Ymir Fritz é revelada, mostrando a origem dos Titãs e o sofrimento que atravessou gerações.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep21.jpg",
-    "dataExibicao": "2023-04-26"
+    "dataExibicao": "2022-02-07"
   },
   {
     "id": 81,
-    "numero": 6,
-    "titulo": "Retrospectiva",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "numero": 22,
+    "titulo": "Degelo",
+    "sinopse": "Com o Estrondo iniciado, a Tropa de Exploração precisa lidar com antigos inimigos transformados em aliados para impedir a destruição do mundo.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep22.jpg",
-    "dataExibicao": "2023-05-03"
+    "dataExibicao": "2022-02-14"
   },
   {
     "id": 82,
-    "numero": 7,
+    "numero": 23,
     "titulo": "Pôr do Sol",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "O Estrondo continua avançando enquanto Annie finalmente é libertada de seu cristal. Connie toma uma decisão desesperada envolvendo Falco.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep23.jpg",
-    "dataExibicao": "2023-05-10"
+    "dataExibicao": "2022-02-21"
   },
   {
     "id": 83,
-    "numero": 8,
+    "numero": 24,
     "titulo": "Orgulho",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "A aliança formada por antigos inimigos tenta encontrar uma maneira de impedir Eren enquanto enfrenta conflitos internos e escolhas difíceis.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep24.jpg",
-    "dataExibicao": "2023-05-17"
+    "dataExibicao": "2022-02-28"
   },
   {
     "id": 84,
-    "numero": 9,
-    "titulo": "Noite do Fim",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "numero": 25,
+    "titulo": "A Noite do Fim",
+    "sinopse": "Antigos inimigos deixam suas diferenças de lado e unem forças para tentar impedir a destruição causada pelo Estrondo.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep25.jpg",
-    "dataExibicao": "2023-05-24"
+    "dataExibicao": "2022-03-07"
   },
   {
     "id": 85,
-    "numero": 10,
+    "numero": 26,
     "titulo": "Traidor",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "A aliança tenta recuperar o hidroavião protegido pelos Jaegeristas, mas precisa enfrentar antigos companheiros durante a missão.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep26.jpg",
-    "dataExibicao": "2023-05-31"
+    "dataExibicao": "2022-03-14"
   },
   {
     "id": 86,
-    "numero": 11,
+    "numero": 27,
     "titulo": "Retrospectiva",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "Enquanto aguardam os reparos do hidroavião, os membros da aliança relembram os acontecimentos que levaram ao conflito atual.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep27.jpg",
-    "dataExibicao": "2023-06-07"
+    "dataExibicao": "2022-03-21"
   },
   {
     "id": 87,
-    "numero": 12,
+    "numero": 28,
     "titulo": "O Amanhecer da Humanidade",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
+    "sinopse": "A história mostra a viagem de Eren, Mikasa e Armin ao continente de Marley e os acontecimentos que levaram Eren a tomar sua decisão.",
     "temporadaId": 4,
-    "animeId": 5,
+    "animeId": 4,
     "imagemUrl": "../../images/episodios/shingeki-no-kyojin/t4/ep28.jpg",
-    "dataExibicao": "2023-06-14"
+    "dataExibicao": "2022-04-04"
   },
   {
     "id": 88,
     "numero": 1,
-    "titulo": "The Final Chapters - Special 1",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
+    "titulo": "Escolha Sem Arrependimentos: Parte 1",
+    "sinopse": "Antes de se tornar o Capitão da Tropa de Exploração, Levi vivia na Cidade Subterrânea junto de seus amigos Farlan Church e Isabel Magnolia. Após uma missão inesperada, Levi conhece Erwin Smith e acaba envolvido em acontecimentos que mudarão seu destino.",
+    "temporadaId": 0,
     "animeId": 5,
-    "imagemUrl": "../../images/episodios/shingeki-no-kyojin/special/special-1.jpg",
-    "dataExibicao": "2024-06-01"
+    "imagemUrl": "../../images/episodios/shingeki-no-kyojin/gaiden-kuinaki-sentaku/ep1.jpg",
+    "dataExibicao": "2014-12-09"
   },
   {
     "id": 89,
     "numero": 2,
-    "titulo": "The Final Chapters - Special 2",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 6,
-    "imagemUrl": "../../images/episodios/shingeki-no-kyojin/special/special-2.jpg",
-    "dataExibicao": "2024-06-08"
-  },
-  {
-    "id": 90,
-    "numero": 3,
-    "titulo": "The Final Chapters - Special 3",
-    "sinopse": "Eren, Mikasa e Armin enfrentam os desafios da vida militar e descobrem mais sobre o mundo ao redor.",
-    "temporadaId": 4,
-    "animeId": 7,
-    "imagemUrl": "../../images/episodios/shingeki-no-kyojin/special/special-3.jpg",
-    "dataExibicao": "2024-06-15"
-  },
-  {
-    "id": 91,
-    "numero": 1,
-    "titulo": "Shingeki no Kyojin Gaiden: Kuinaki Sentaku",
-    "sinopse": "Antes de se tornar o lendário capitão da Tropa de Exploração, Levi Ackerman vivia na Cidade Subterrânea ao lado de seus companheiros Isabel Magnolia e Farlan Church.",
+    "titulo": "Escolha Sem Arrependimentos: Parte 2",
+    "sinopse": "Levi e seus companheiros enfrentam as consequências de suas escolhas enquanto a missão de Erwin revela o verdadeiro valor da humanidade fora das muralhas. O passado de Levi e sua entrada na Tropa de Exploração são finalmente revelados.",
     "temporadaId": 0,
-    "animeId": 8,
-    "imagemUrl": "../../images/episodios/shingeki-no-kyojin/special/kuinaki-sentaku.jpg",
-    "dataExibicao": "2024-06-22"
-  },
-  {
-    "id": 92,
-    "numero": 2,
-    "titulo": "Shingeki no Kyojin Gaiden: Kuinaki Sentaku",
-    "sinopse": "Após receber uma missão perigosa na superfície, Levi cruza o caminho de Erwin Smith e acaba envolvido em eventos que mudarão sua vida para sempre. Esta história revela as origens de Levi e sua entrada na Tropa de Exploração.",
-    "temporadaId": 0,
-    "animeId": 8,
-    "imagemUrl": "../../images/episodios/shingeki-no-kyojin/special/kuinaki-sentaku-2.jpg",
-    "dataExibicao": "2024-06-29"
-  },
-  {
-    "id": 93,
-    "numero": 1,
-    "titulo": "Crueldade",
-    "sinopse": "Tanjiro encontra sua família massacrada por demônios e descobre que Nezuko foi transformada em uma deles.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep1.jpg",
-    "dataExibicao": "2019-04-06"
-  },
-  {
-    "id": 94,
-    "numero": 2,
-    "titulo": "Sakonji Urokodaki, o Treinador",
-    "sinopse": "Tanjiro inicia seu treinamento para se tornar um Caçador de Demônios.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep2.jpg",
-    "dataExibicao": "2019-04-13"
-  },
-  {
-    "id": 95,
-    "numero": 3,
-    "titulo": "Sabito e Makomo",
-    "sinopse": "Durante o treinamento, Tanjiro recebe ajuda de dois misteriosos jovens.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep3.jpg",
-    "dataExibicao": "2019-04-20"
-  },
-  {
-    "id": 96,
-    "numero": 4,
-    "titulo": "Seleção Final",
-    "sinopse": "Tanjiro participa do exame que decidirá seu ingresso na Corporação dos Caçadores.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep4.jpg",
-    "dataExibicao": "2019-04-27"
-  },
-  {
-    "id": 97,
-    "numero": 5,
-    "titulo": "Meu Próprio Aço",
-    "sinopse": "Após sobreviver à seleção, Tanjiro recebe sua espada Nichirin.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep5.jpg",
-    "dataExibicao": "2019-05-04"
-  },
-  {
-    "id": 98,
-    "numero": 6,
-    "titulo": "O Espadachim Acompanhado por um Demônio",
-    "sinopse": "Tanjiro parte para sua primeira missão oficial ao lado de Nezuko.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep6.jpg",
-    "dataExibicao": "2019-05-11"
-  },
-  {
-    "id": 99,
-    "numero": 7,
-    "titulo": "Muzan Kibutsuji",
-    "sinopse": "Tanjiro encontra o demônio responsável pela tragédia de sua família.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep7.jpg",
-    "dataExibicao": "2019-05-18"
-  },
-  {
-    "id": 100,
-    "numero": 8,
-    "titulo": "O Aroma do Sangue Encantado",
-    "sinopse": "Tamayo e Yushiro ajudam Tanjiro a enfrentar novos inimigos.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep8.jpg",
-    "dataExibicao": "2019-05-25"
-  },
-  {
-    "id": 101,
-    "numero": 9,
-    "titulo": "Demônio Temari e Demônio das Setas",
-    "sinopse": "A batalha contra os subordinados de Muzan se intensifica.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep9.jpg",
-    "dataExibicao": "2019-06-01"
-  },
-  {
-    "id": 102,
-    "numero": 10,
-    "titulo": "Juntos Para Sempre",
-    "sinopse": "Tanjiro e Nezuko enfrentam um demônio que manipula laços familiares.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep10.jpg",
-    "dataExibicao": "2019-06-08"
-  },
-  {
-    "id": 103,
-    "numero": 11,
-    "titulo": "Mansão Tsuzumi",
-    "sinopse": "Uma nova missão leva Tanjiro a uma mansão cheia de armadilhas.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep11.jpg",
-    "dataExibicao": "2019-06-15"
-  },
-  {
-    "id": 104,
-    "numero": 12,
-    "titulo": "O Javali Mostra as Presas, Zenitsu Dorme",
-    "sinopse": "Zenitsu e Inosuke demonstram suas habilidades em combate.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep12.jpg",
-    "dataExibicao": "2019-06-22"
-  },
-  {
-    "id": 105,
-    "numero": 13,
-    "titulo": "Algo Mais Importante Que a Vida",
-    "sinopse": "Tanjiro conclui a missão na mansão e fortalece seus laços com os companheiros.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep13.jpg",
-    "dataExibicao": "2019-06-29"
-  },
-  {
-    "id": 106,
-    "numero": 14,
-    "titulo": "A Casa com o Brasão da Glicínia",
-    "sinopse": "O grupo descansa e recebe uma nova missão.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep14.jpg",
-    "dataExibicao": "2019-07-06"
-  },
-  {
-    "id": 107,
-    "numero": 15,
-    "titulo": "Monte Natagumo",
-    "sinopse": "Os caçadores chegam à montanha infestada por demônios-aranha.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep15.jpg",
-    "dataExibicao": "2019-07-13"
-  },
-  {
-    "id": 108,
-    "numero": 16,
-    "titulo": "Deixar Outra Pessoa Ir Primeiro",
-    "sinopse": "Os caçadores enfrentam os membros da família de aranhas.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep16.jpg",
-    "dataExibicao": "2019-07-20"
-  },
-  {
-    "id": 109,
-    "numero": 17,
-    "titulo": "Você Deve Dominar Uma Única Coisa",
-    "sinopse": "Zenitsu enfrenta sozinho um poderoso inimigo.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep17.jpg",
-    "dataExibicao": "2019-07-27"
-  },
-  {
-    "id": 110,
-    "numero": 18,
-    "titulo": "Um Laço Forjado",
-    "sinopse": "Inosuke encara um adversário que testa seus limites.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep18.jpg",
-    "dataExibicao": "2019-08-04"
-  },
-  {
-    "id": 111,
-    "numero": 19,
-    "titulo": "Hinokami",
-    "sinopse": "Tanjiro desperta uma nova técnica durante uma batalha desesperadora.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep19.jpg",
-    "dataExibicao": "2019-08-11"
-  },
-  {
-    "id": 112,
-    "numero": 20,
-    "titulo": "Família Falsa",
-    "sinopse": "A luta contra Rui revela o verdadeiro significado dos laços familiares.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep20.jpg",
-    "dataExibicao": "2019-08-18"
-  },
-  {
-    "id": 113,
-    "numero": 21,
-    "titulo": "Contra as Regras da Corporação",
-    "sinopse": "Os Hashiras entram em cena após os acontecimentos do Monte Natagumo.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep21.jpg",
-    "dataExibicao": "2019-08-25"
-  },
-  {
-    "id": 114,
-    "numero": 22,
-    "titulo": "Mestre da Mansão",
-    "sinopse": "Tanjiro conhece o líder da Corporação dos Caçadores de Demônios.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep22.jpg",
-    "dataExibicao": "2019-09-01"
-  },
-  {
-    "id": 115,
-    "numero": 23,
-    "titulo": "Reunião dos Hashiras",
-    "sinopse": "Os Hashiras discutem o destino de Nezuko.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep23.jpg",
-    "dataExibicao": "2019-09-08"
-  },
-  {
-    "id": 116,
-    "numero": 24,
-    "titulo": "Treinamento de Reabilitação",
-    "sinopse": "Tanjiro, Zenitsu e Inosuke iniciam um intenso período de recuperação.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep24.jpg",
-    "dataExibicao": "2019-09-15"
-  },
-  {
-    "id": 117,
-    "numero": 25,
-    "titulo": "Tsuguko, Kanao Tsuyuri",
-    "sinopse": "Tanjiro continua seu treinamento e conhece melhor Kanao.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep25.jpg",
-    "dataExibicao": "2019-09-22"
-  },
-  {
-    "id": 118,
-    "numero": 26,
-    "titulo": "Nova Missão",
-    "sinopse": "Uma nova ameaça surge enquanto os protagonistas partem para sua próxima jornada.",
-    "temporadaId": 1,
-    "animeId": 9,
-    "imagemUrl": "../../images/episodios/demon-slayer/t1/ep26.jpg",
-    "dataExibicao": "2019-09-29"
-  },
-  {
-    "id": 119,
-    "numero": 1,
-    "titulo": "Hashira das Chamas Kyojuro Rengoku",
-    "sinopse": "Rengoku investiga misteriosos desaparecimentos ligados ao Trem Infinito.",
-    "temporadaId": 2,
-    "animeId": 11,
-    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep1.jpg",
-    "dataExibicao": "2020-04-05"
-  },
-  {
-    "id": 120,
-    "numero": 2,
-    "titulo": "Sono Profundo",
-    "sinopse": "Tanjiro e seus amigos embarcam no Trem Infinito e caem em um sonho induzido por um demônio.",
-    "temporadaId": 2,
-    "animeId": 11,
-    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep2.jpg",
-    "dataExibicao": "2020-04-12"
-  },
-  {
-    "id": 121,
-    "numero": 3,
-    "titulo": "Deveria Ter Sido",
-    "sinopse": "Os passageiros lutam para escapar dos sonhos criados por Enmu.",
-    "temporadaId": 2,
-    "animeId": 11,
-    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep3.jpg",
-    "dataExibicao": "2020-04-19"
-  },
-  {
-    "id": 122,
-    "numero": 4,
-    "titulo": "Insulto",
-    "sinopse": "Tanjiro desperta e inicia o confronto contra o Lua Inferior Enmu.",
-    "temporadaId": 2,
-    "animeId": 11,
-    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep4.jpg",
-    "dataExibicao": "2020-04-26"
-  },
-  {
-    "id": 123,
-    "numero": 5,
-    "titulo": "Siga em Frente!",
-    "sinopse": "A batalha se intensifica enquanto o próprio trem se torna uma ameaça.",
-    "temporadaId": 2,
-    "animeId": 11,
-    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep5.jpg",
-    "dataExibicao": "2020-05-03"
-  },
-  {
-    "id": 124,
-    "numero": 6,
-    "titulo": "Akaza",
-    "sinopse": "Após a derrota de Enmu, um poderoso Lua Superior aparece.",
-    "temporadaId": 2,
-    "animeId": 11,
-    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep6.jpg",
-    "dataExibicao": "2020-05-10"
-  },
-  {
-    "id": 125,
-    "numero": 7,
-    "titulo": "Incendeie Seu Coração",
-    "sinopse": "Rengoku trava sua batalha final e inspira a próxima geração de caçadores.",
-    "temporadaId": 2,
-    "animeId": 11,
-    "imagemUrl": "../../images/episodios/demon-slayer/t2/ep7.jpg",
-    "dataExibicao": "2020-05-17"
-  },
-  {
-    "id": 126,
-    "numero": 1,
-    "titulo": "Hashira do Som Tengen Uzui",
-    "sinopse": "Tanjiro, Zenitsu e Inosuke acompanham Tengen Uzui em uma missão no Distrito do Entretenimento.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep1.jpg",
-    "dataExibicao": "2020-10-04"
-  },
-  {
-    "id": 127,
-    "numero": 2,
-    "titulo": "Infiltrando-se no Distrito do Entretenimento",
-    "sinopse": "Os três caçadores se infiltram em diferentes casas para investigar misteriosos desaparecimentos.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep2.jpg",
-    "dataExibicao": "2020-10-11"
-  },
-  {
-    "id": 128,
-    "numero": 3,
-    "titulo": "O Que Você É?",
-    "sinopse": "Tanjiro suspeita da identidade de uma poderosa demônio escondida no distrito.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep3.jpg",
-    "dataExibicao": "2020-10-18"
-  },
-  {
-    "id": 129,
-    "numero": 4,
-    "titulo": "Esta Noite",
-    "sinopse": "A verdadeira ameaça começa a agir, colocando os habitantes da região em perigo.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep4.jpg",
-    "dataExibicao": "2020-10-25"
-  },
-  {
-    "id": 130,
-    "numero": 5,
-    "titulo": "Vai Ficar Muito Chamativo!",
-    "sinopse": "Tengen entra em combate enquanto Tanjiro leva suas habilidades ao limite.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep5.jpg",
-    "dataExibicao": "2020-10-30"
-  },
-  {
-    "id": 131,
-    "numero": 6,
-    "titulo": "Camadas de Memórias",
-    "sinopse": "Tanjiro desperta novas forças durante sua batalha contra Daki.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep6.jpg",
-    "dataExibicao": "2020-11-07"
-  },
-  {
-    "id": 132,
-    "numero": 7,
-    "titulo": "Transformação",
-    "sinopse": "Nezuko manifesta um novo poder para proteger seu irmão.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep7.jpg",
-    "dataExibicao": "2020-11-14"
-  },
-  {
-    "id": 133,
-    "numero": 8,
-    "titulo": "Reunião",
-    "sinopse": "A chegada de Gyutaro revela a verdadeira força dos inimigos.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep8.jpg",
-    "dataExibicao": "2020-11-21"
-  },
-  {
-    "id": 134,
-    "numero": 9,
-    "titulo": "Derrotando um Lua Superior",
-    "sinopse": "Os caçadores unem forças para enfrentar Daki e Gyutaro.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep9.jpg",
-    "dataExibicao": "2020-11-28"
-  },
-  {
-    "id": 135,
-    "numero": 10,
-    "titulo": "Nunca Desistirei",
-    "sinopse": "Mesmo feridos, os heróis continuam lutando para proteger o distrito.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep10.jpg",
-    "dataExibicao": "2020-12-05"
-  },
-  {
-    "id": 136,
-    "numero": 11,
-    "titulo": "Não Importa Quantas Vidas",
-    "sinopse": "A batalha chega ao fim e as consequências do confronto são reveladas.",
-    "temporadaId": 3,
-    "animeId": 12,
-    "imagemUrl": "../../images/episodios/demon-slayer/t3/ep11.jpg",
-    "dataExibicao": "2020-12-12"
-  },
-  {
-    "id": 137,
-    "numero": 1,
-    "titulo": "O Sonho de Alguém",
-    "sinopse": "Após a batalha no Distrito do Entretenimento, as Luas Superiores se reúnem enquanto Tanjiro segue para a Vila dos Ferreiros.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep1.jpg",
-    "dataExibicao": "2023-10-01"
-  },
-  {
-    "id": 138,
-    "numero": 2,
-    "titulo": "Yoriichi Tipo Zero",
-    "sinopse": "Tanjiro conhece um boneco mecânico de treinamento e inicia um novo período de aperfeiçoamento.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep2.jpg",
-    "dataExibicao": "2023-10-08"
-  },
-  {
-    "id": 139,
-    "numero": 3,
-    "titulo": "Uma Espada de Mais de 300 Anos",
-    "sinopse": "Uma antiga espada é descoberta dentro do boneco Yoriichi Tipo Zero.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep3.jpg",
-    "dataExibicao": "2023-10-15"
-  },
-  {
-    "id": 140,
-    "numero": 4,
-    "titulo": "Obrigado, Tokito",
-    "sinopse": "Muichiro ajuda Kotetsu enquanto novos inimigos atacam a vila.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep4.jpg",
-    "dataExibicao": "2023-10-22"
-  },
-  {
-    "id": 141,
-    "numero": 5,
-    "titulo": "Lâmina Vermelha Brilhante",
-    "sinopse": "Tanjiro, Nezuko e Genya enfrentam os clones criados pelo poder de Hantengu.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep5.jpg",
-    "dataExibicao": "2023-10-29"
-  },
-  {
-    "id": 142,
-    "numero": 6,
-    "titulo": "Você Não Vai se Tornar um Hashira?",
-    "sinopse": "O passado de Genya começa a ser revelado durante a batalha.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep6.jpg",
-    "dataExibicao": "2023-11-05"
-  },
-  {
-    "id": 143,
-    "numero": 7,
-    "titulo": "Vilão Horrível",
-    "sinopse": "Hantengu demonstra seu verdadeiro poder enquanto os caçadores lutam para sobreviver.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep7.jpg",
-    "dataExibicao": "2023-11-12"
-  },
-  {
-    "id": 144,
-    "numero": 8,
-    "titulo": "O Mu de Muichiro",
-    "sinopse": "Muichiro recupera suas memórias e desperta uma nova força.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep8.jpg",
-    "dataExibicao": "2023-11-19"
-  },
-  {
-    "id": 145,
-    "numero": 9,
-    "titulo": "Hashira da Névoa Muichiro Tokito",
-    "sinopse": "Muichiro enfrenta Gyokko em um confronto decisivo para proteger a vila.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep9.jpg",
-    "dataExibicao": "2023-11-26"
-  },
-  {
-    "id": 146,
-    "numero": 10,
-    "titulo": "Hashira do Amor Mitsuri Kanroji",
-    "sinopse": "Mitsuri entra em combate para enfrentar Zohakuten e defender os habitantes da vila.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep10.jpg",
-    "dataExibicao": "2023-12-03"
-  },
-  {
-    "id": 147,
-    "numero": 11,
-    "titulo": "Laços Conectados: Amanhecer e Primeira Luz",
-    "sinopse": "A batalha final termina e uma descoberta envolvendo Nezuko muda o rumo da guerra contra os demônios.",
-    "temporadaId": 4,
-    "animeId": 13,
-    "imagemUrl": "../../images/episodios/demon-slayer/t4/ep11.jpg",
-    "dataExibicao": "2023-12-10"
-  },
-  {
-    "id": 148,
-    "numero": 1,
-    "titulo": "Para Derrotar Muzan Kibutsuji",
-    "sinopse": "Os Hashiras se reúnem para planejar os próximos passos da Corporação dos Caçadores de Demônios contra Muzan.",
-    "temporadaId": 5,
-    "animeId": 14,
-    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep1.jpg",
-    "dataExibicao": "2024-05-12"
-  },
-  {
-    "id": 149,
-    "numero": 2,
-    "titulo": "A Dor do Hashira da Água",
-    "sinopse": "Tanjiro procura Giyu Tomioka para ajudá-lo a superar conflitos internos relacionados ao seu passado.",
-    "temporadaId": 5,
-    "animeId": 14,
-    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep2.jpg",
-    "dataExibicao": "2024-05-19"
-  },
-  {
-    "id": 150,
-    "numero": 3,
-    "titulo": "Treinamento com o Hashira da Água",
-    "sinopse": "Tanjiro inicia o rigoroso Treinamento Hashira para se preparar para a batalha final.",
-    "temporadaId": 5,
-    "animeId": 14,
-    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep3.jpg",
-    "dataExibicao": "2024-05-26"
-  },
-  {
-    "id": 151,
-    "numero": 4,
-    "titulo": "Sorria!",
-    "sinopse": "Os caçadores continuam seu treinamento e enfrentam desafios físicos e mentais cada vez maiores.",
-    "temporadaId": 5,
-    "animeId": 14,
-    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep4.jpg",
-    "dataExibicao": "2024-06-02"
-  },
-  {
-    "id": 152,
-    "numero": 5,
-    "titulo": "Vou Até o Fim",
-    "sinopse": "Tanjiro inspira outros caçadores enquanto avança nas etapas mais difíceis do treinamento.",
-    "temporadaId": 5,
-    "animeId": 14,
-    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep5.jpg",
-    "dataExibicao": "2024-06-09"
-  },
-  {
-    "id": 153,
-    "numero": 6,
-    "titulo": "O Mais Forte da Corporação dos Caçadores",
-    "sinopse": "Gyomei Himejima demonstra sua força extraordinária e coloca os caçadores à prova.",
-    "temporadaId": 5,
-    "animeId": 14,
-    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep6.jpg",
-    "dataExibicao": "2024-06-16"
-  },
-  {
-    "id": 154,
-    "numero": 7,
-    "titulo": "Pedra Fundamental",
-    "sinopse": "O passado de Gyomei é revelado, mostrando como ele se tornou o Hashira da Pedra.",
-    "temporadaId": 5,
-    "animeId": 14,
-    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep7.jpg",
-    "dataExibicao": "2024-06-23"
-  },
-  {
-    "id": 155,
-    "numero": 8,
-    "titulo": "Os Hashiras se Unem",
-    "sinopse": "O Treinamento Hashira chega ao fim quando Muzan inicia seu ataque, dando início à batalha final.",
-    "temporadaId": 5,
-    "animeId": 14,
-    "imagemUrl": "../../images/episodios/demon-slayer/t5/ep8.jpg",
-    "dataExibicao": "2024-06-30"
-  },
-  {
-    "id": 156,
-    "numero": 1,
-    "titulo": "Mugen Train",
-    "sinopse": "Tanjiro, Nezuko, Zenitsu e Inosuke embarcam no Trem Infinito ao lado de Kyojuro Rengoku para investigar uma série de desaparecimentos causados por um poderoso demônio.",
-    "temporadaId": 0,
-    "animeId": 10,
-    "imagemUrl": "../../images/episodios/demon-slayer/filmes/mugen-train.jpg",
-    "dataExibicao": "2020-10-16"
-  },
-  {
-    "id": 157,
-    "numero": 1,
-    "titulo": "Infinity Castle",
-    "sinopse": "Após os eventos do Treinamento Hashira, os Caçadores de Demônios são arrastados para o Castelo Infinito, onde se inicia a batalha final contra Muzan Kibutsuji e as Luas Superiores.",
-    "temporadaId": 0,
-    "animeId": 15,
-    "imagemUrl": "../../images/episodios/demon-slayer/filmes/infinity-castle-1.jpg",
-    "dataExibicao": "2025-07-18"
-  },
-  {
-    "id": 158,
-    "numero": 1,
-    "titulo": "Tragédia",
-    "sinopse": "Kaneki conhece Rize e sofre um acidente que mudará sua vida para sempre.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep1.jpg",
-    "dataExibicao": "2014-07-04"
-  },
-  {
-    "id": 159,
-    "numero": 2,
-    "titulo": "Incubação",
-    "sinopse": "Kaneki desperta como meio-ghoul e tenta entender sua nova condição.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep2.jpg",
-    "dataExibicao": "2014-07-11"
-  },
-  {
-    "id": 160,
-    "numero": 3,
-    "titulo": "Pombo",
-    "sinopse": "Investigadores da CCG iniciam sua busca pelos ghouls da região.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep3.jpg",
-    "dataExibicao": "2014-07-18"
-  },
-  {
-    "id": 161,
-    "numero": 4,
-    "titulo": "Ceia",
-    "sinopse": "Kaneki conhece Tsukiyama, um ghoul misterioso e perigoso.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep4.jpg",
-    "dataExibicao": "2014-07-25"
-  },
-  {
-    "id": 162,
-    "numero": 5,
-    "titulo": "Cicatrizes",
-    "sinopse": "Novos confrontos forçam Kaneki a aceitar seus instintos de ghoul.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep5.jpg",
-    "dataExibicao": "2014-08-01"
-  },
-  {
-    "id": 163,
-    "numero": 6,
-    "titulo": "Chuva Torrencial",
-    "sinopse": "A batalha entre ghouls e investigadores se torna cada vez mais intensa.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep6.jpg",
-    "dataExibicao": "2014-08-08"
-  },
-  {
-    "id": 164,
-    "numero": 7,
-    "titulo": "Cativeiro",
-    "sinopse": "Kaneki é colocado em uma situação perigosa que desafia sua resistência.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep7.jpg",
-    "dataExibicao": "2014-08-15"
-  },
-  {
-    "id": 165,
-    "numero": 8,
-    "titulo": "Círculo",
-    "sinopse": "Segredos sobre o passado de alguns personagens começam a surgir.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep8.jpg",
-    "dataExibicao": "2014-08-22"
-  },
-  {
-    "id": 166,
-    "numero": 9,
-    "titulo": "Gaiola",
-    "sinopse": "Kaneki enfrenta escolhas difíceis para proteger seus amigos.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep9.jpg",
-    "dataExibicao": "2014-08-29"
-  },
-  {
-    "id": 167,
-    "numero": 10,
-    "titulo": "Aogiri",
-    "sinopse": "A organização Árvore Aogiri entra em cena e altera o equilíbrio do conflito.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep10.jpg",
-    "dataExibicao": "2014-09-05"
-  },
-  {
-    "id": 168,
-    "numero": 11,
-    "titulo": "Impulso",
-    "sinopse": "Os conflitos aumentam e Kaneki precisa enfrentar seus limites.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep11.jpg",
-    "dataExibicao": "2014-09-12"
-  },
-  {
-    "id": 169,
-    "numero": 12,
-    "titulo": "Ghoul",
-    "sinopse": "Kaneki passa por uma transformação decisiva no final da temporada.",
-    "temporadaId": 1,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t1/ep12.jpg",
-    "dataExibicao": "2014-09-19"
-  },
-  {
-    "id": 170,
-    "numero": 1,
-    "titulo": "Nova Onda",
-    "sinopse": "Kaneki decide seguir seu próprio caminho e se junta à Árvore Aogiri.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep1.jpg",
-    "dataExibicao": "2015-01-09"
-  },
-  {
-    "id": 171,
-    "numero": 2,
-    "titulo": "Dança das Flores",
-    "sinopse": "A CCG amplia suas investigações enquanto Kaneki busca mais poder.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep2.jpg",
-    "dataExibicao": "2015-01-16"
-  },
-  {
-    "id": 172,
-    "numero": 3,
-    "titulo": "Carrasco",
-    "sinopse": "Investigadores e ghouls entram em confronto em diversas regiões de Tóquio.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep3.jpg",
-    "dataExibicao": "2015-01-23"
-  },
-  {
-    "id": 173,
-    "numero": 4,
-    "titulo": "Profundezas",
-    "sinopse": "Kaneki mergulha ainda mais fundo no mundo dos ghouls.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep4.jpg",
-    "dataExibicao": "2015-01-30"
-  },
-  {
-    "id": 174,
-    "numero": 5,
-    "titulo": "Rachadura",
-    "sinopse": "As tensões aumentam e antigas alianças começam a se desfazer.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep5.jpg",
-    "dataExibicao": "2015-02-06"
-  },
-  {
-    "id": 175,
-    "numero": 6,
-    "titulo": "Mil Caminhos",
-    "sinopse": "Touka e seus amigos tentam compreender as escolhas de Kaneki.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep6.jpg",
-    "dataExibicao": "2015-02-13"
-  },
-  {
-    "id": 176,
-    "numero": 7,
-    "titulo": "Perigo",
-    "sinopse": "Uma nova operação da CCG coloca vários ghouls em risco.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep7.jpg",
-    "dataExibicao": "2015-02-20"
-  },
-  {
-    "id": 177,
-    "numero": 8,
-    "titulo": "Velho Nove",
-    "sinopse": "Segredos envolvendo experimentos e organizações começam a surgir.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep8.jpg",
-    "dataExibicao": "2015-02-27"
-  },
-  {
-    "id": 178,
-    "numero": 9,
-    "titulo": "Cidade em Espera",
-    "sinopse": "Tóquio se prepara para uma batalha que pode mudar tudo.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep9.jpg",
-    "dataExibicao": "2015-03-06"
-  },
-  {
-    "id": 179,
-    "numero": 10,
-    "titulo": "Última Chuva",
-    "sinopse": "Os confrontos se intensificam à medida que os planos entram em ação.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep10.jpg",
-    "dataExibicao": "2015-03-13"
-  },
-  {
-    "id": 180,
-    "numero": 11,
-    "titulo": "Dilúvio de Flores",
-    "sinopse": "Diversos personagens enfrentam decisões que definirão seus destinos.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep11.jpg",
-    "dataExibicao": "2015-03-20"
-  },
-  {
-    "id": 181,
-    "numero": 12,
-    "titulo": "Ken",
-    "sinopse": "Kaneki enfrenta seu maior desafio enquanto a temporada chega ao fim.",
-    "temporadaId": 17,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t2/ep12.jpg",
-    "dataExibicao": "2015-03-27"
-  },
-  {
-    "id": 182,
-    "numero": 1,
-    "titulo": "Aqueles que Caçam",
-    "sinopse": "Haise Sasaki lidera o Esquadrão Quinx em uma missão para capturar um perigoso ghoul.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep1.jpg",
-    "dataExibicao": "2018-04-03"
-  },
-  {
-    "id": 183,
-    "numero": 2,
-    "titulo": "Fragmentos",
-    "sinopse": "Haise enfrenta conflitos internos enquanto os Quinx continuam suas investigações.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep2.jpg",
-    "dataExibicao": "2018-04-10"
-  },
-  {
-    "id": 184,
-    "numero": 3,
-    "titulo": "Véspera",
-    "sinopse": "Novas pistas levam o Esquadrão Quinx a uma ameaça crescente.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep3.jpg",
-    "dataExibicao": "2018-04-17"
-  },
-  {
-    "id": 185,
-    "numero": 4,
-    "titulo": "Leilão",
-    "sinopse": "A CCG prepara uma grande operação contra um leilão clandestino de ghouls.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep4.jpg",
-    "dataExibicao": "2018-04-24"
-  },
-  {
-    "id": 186,
-    "numero": 5,
-    "titulo": "Noite da Dispersão",
-    "sinopse": "A operação do leilão resulta em batalhas intensas e revelações inesperadas.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep5.jpg",
-    "dataExibicao": "2018-05-01"
-  },
-  {
-    "id": 187,
-    "numero": 6,
-    "titulo": "No Final",
-    "sinopse": "As consequências da operação começam a afetar todos os envolvidos.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep6.jpg",
-    "dataExibicao": "2018-05-08"
-  },
-  {
-    "id": 188,
-    "numero": 7,
-    "titulo": "Dias de Recordações",
-    "sinopse": "Memórias esquecidas começam a retornar para Haise Sasaki.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep7.jpg",
-    "dataExibicao": "2018-05-15"
-  },
-  {
-    "id": 189,
-    "numero": 8,
-    "titulo": "Aquele que se Contorce",
-    "sinopse": "Os membros do Esquadrão Quinx enfrentam desafios cada vez maiores.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep8.jpg",
-    "dataExibicao": "2018-05-22"
-  },
-  {
-    "id": 190,
-    "numero": 9,
-    "titulo": "Espírito Ausente",
-    "sinopse": "Haise busca respostas sobre seu passado e sua verdadeira identidade.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep9.jpg",
-    "dataExibicao": "2018-05-29"
-  },
-  {
-    "id": 191,
-    "numero": 10,
-    "titulo": "Oscilação",
-    "sinopse": "As memórias de Kaneki retornam e mudam o rumo da história.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep10.jpg",
-    "dataExibicao": "2018-06-05"
-  },
-  {
-    "id": 192,
-    "numero": 11,
-    "titulo": "O Ausente",
-    "sinopse": "Velhos conhecidos reaparecem enquanto a verdade finalmente emerge.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep11.jpg",
-    "dataExibicao": "2018-06-12"
-  },
-  {
-    "id": 193,
-    "numero": 12,
-    "titulo": "Sonho Belo: Amanhecer",
-    "sinopse": "Haise toma uma decisão que mudará seu destino para sempre.",
-    "temporadaId": 18,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep12.jpg",
-    "dataExibicao": "2018-06-19"
-  },
-  {
-    "id": 194,
-    "numero": 1,
-    "titulo": "E Então, Mais Uma Vez",
-    "sinopse": "Kaneki recupera suas memórias e reassume seu papel na guerra entre humanos e ghouls.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep13.jpg",
-    "dataExibicao": "2018-10-09"
-  },
-  {
-    "id": 195,
-    "numero": 2,
-    "titulo": "Volte de Onde Veio",
-    "sinopse": "A tensão aumenta enquanto novas ameaças surgem em Tóquio.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep14.jpg",
-    "dataExibicao": "2018-10-16"
-  },
-  {
-    "id": 196,
-    "numero": 3,
-    "titulo": "Movimentos de Massa",
-    "sinopse": "Grandes organizações iniciam seus planos enquanto o conflito se expande.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep15.jpg",
-    "dataExibicao": "2018-10-23"
-  },
-  {
-    "id": 197,
-    "numero": 4,
-    "titulo": "Despertar",
-    "sinopse": "Novos poderes e revelações mudam o rumo da batalha.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep16.jpg",
-    "dataExibicao": "2018-10-30"
-  },
-  {
-    "id": 198,
-    "numero": 5,
-    "titulo": "Encontro",
-    "sinopse": "Aliados e inimigos se reencontram em circunstâncias inesperadas.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep17.jpg",
-    "dataExibicao": "2018-11-06"
-  },
-  {
-    "id": 199,
-    "numero": 6,
-    "titulo": "Face",
-    "sinopse": "Verdades ocultas começam a ser reveladas em meio ao caos.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep18.jpg",
-    "dataExibicao": "2018-11-13"
-  },
-  {
-    "id": 200,
-    "numero": 7,
-    "titulo": "Perdido",
-    "sinopse": "A situação em Tóquio se torna cada vez mais desesperadora.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep19.jpg",
-    "dataExibicao": "2018-11-20"
-  },
-  {
-    "id": 201,
-    "numero": 8,
-    "titulo": "Prova",
-    "sinopse": "Kaneki e seus aliados enfrentam um desafio decisivo.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep20.jpg",
-    "dataExibicao": "2018-11-27"
-  },
-  {
-    "id": 202,
-    "numero": 9,
-    "titulo": "Recordações",
-    "sinopse": "O passado retorna para influenciar escolhas importantes.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep21.jpg",
-    "dataExibicao": "2018-12-04"
-  },
-  {
-    "id": 203,
-    "numero": 10,
-    "titulo": "Colapso",
-    "sinopse": "A guerra alcança um ponto crítico e suas consequências se espalham.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep22.jpg",
-    "dataExibicao": "2018-12-11"
-  },
-  {
-    "id": 204,
-    "numero": 11,
-    "titulo": "Última Esperança",
-    "sinopse": "Humanos e ghouls lutam juntos contra uma ameaça comum.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep23.jpg",
-    "dataExibicao": "2018-12-18"
-  },
-  {
-    "id": 205,
-    "numero": 12,
-    "titulo": "O Fim e o Começo",
-    "sinopse": "A história de Kaneki chega à sua conclusão enquanto um novo futuro se inicia.",
-    "temporadaId": 19,
-    "animeId": 16,
-    "imagemUrl": "../../images/episodios/tokyo-ghoul/t3/ep24.jpg",
-    "dataExibicao": "2018-12-25"
-  },
-  {
-    "id": 206,
-    "numero": 1,
-    "titulo": "Ryomen Sukuna",
-    "sinopse": "Yuji Itadori encontra um objeto amaldiçoado e acaba se tornando o hospedeiro de Sukuna.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep1.jpg",
-    "dataExibicao": "2020-10-03"
-  },
-  {
-    "id": 207,
-    "numero": 2,
-    "titulo": "Por Mim Mesmo",
-    "sinopse": "Yuji é apresentado ao mundo dos feiticeiros Jujutsu e recebe uma difícil decisão.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep2.jpg",
-    "dataExibicao": "2020-10-10"
-  },
-  {
-    "id": 208,
-    "numero": 3,
-    "titulo": "Garota de Aço",
-    "sinopse": "Nobara Kugisaki entra para a equipe e participa de sua primeira missão.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep3.jpg",
-    "dataExibicao": "2020-10-17"
-  },
-  {
-    "id": 209,
-    "numero": 4,
-    "titulo": "Existência Terrena Amaldiçoada",
-    "sinopse": "Yuji, Megumi e Nobara enfrentam uma perigosa maldição especial.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep4.jpg",
-    "dataExibicao": "2020-10-24"
-  },
-  {
-    "id": 210,
-    "numero": 5,
-    "titulo": "Existência Terrena Amaldiçoada - Parte 2",
-    "sinopse": "A batalha contra a maldição especial continua enquanto Sukuna mostra seu poder.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep5.jpg",
-    "dataExibicao": "2020-10-31"
-  },
-  {
-    "id": 211,
-    "numero": 6,
-    "titulo": "Depois da Chuva",
-    "sinopse": "Os acontecimentos da missão afetam profundamente os estudantes.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep6.jpg",
-    "dataExibicao": "2020-11-07"
-  },
-  {
-    "id": 212,
-    "numero": 7,
-    "titulo": "Ataque",
-    "sinopse": "Gojo enfrenta Jogo em uma demonstração impressionante de poder.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep7.jpg",
-    "dataExibicao": "2020-11-14"
-  },
-  {
-    "id": 213,
-    "numero": 8,
-    "titulo": "Tédio",
-    "sinopse": "Yuji inicia um treinamento especial enquanto seus aliados continuam as missões.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep8.jpg",
-    "dataExibicao": "2020-11-21"
-  },
-  {
-    "id": 214,
-    "numero": 9,
-    "titulo": "Peixes Pequenos e Punição Reversa",
-    "sinopse": "Yuji conhece Junpei, um jovem envolvido com forças malignas.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep9.jpg",
-    "dataExibicao": "2020-11-28"
-  },
-  {
-    "id": 215,
-    "numero": 10,
-    "titulo": "Transformação Ociosa",
-    "sinopse": "Mahito continua manipulando Junpei para seus próprios objetivos.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep10.jpg",
-    "dataExibicao": "2020-12-05"
-  },
-  {
-    "id": 216,
-    "numero": 11,
-    "titulo": "Mente Fechada",
-    "sinopse": "Yuji tenta salvar Junpei antes que seja tarde demais.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep11.jpg",
-    "dataExibicao": "2020-12-12"
-  },
-  {
-    "id": 217,
-    "numero": 12,
-    "titulo": "Para Você, Algum Dia",
-    "sinopse": "Yuji enfrenta Mahito em uma batalha movida pela raiva e tristeza.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep12.jpg",
-    "dataExibicao": "2020-12-19"
-  },
-  {
-    "id": 218,
-    "numero": 13,
-    "titulo": "Adeus Ontem",
-    "sinopse": "As consequências da luta contra Mahito começam a aparecer.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep13.jpg",
-    "dataExibicao": "2020-12-26"
-  },
-  {
-    "id": 219,
-    "numero": 14,
-    "titulo": "Evento de Intercâmbio de Kyoto - Batalha em Grupo 0",
-    "sinopse": "Tem início o evento entre as escolas de Tóquio e Kyoto.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep14.jpg",
-    "dataExibicao": "2021-01-16"
-  },
-  {
-    "id": 220,
-    "numero": 15,
-    "titulo": "Evento de Intercâmbio de Kyoto - Batalha em Grupo 1",
-    "sinopse": "Os alunos iniciam os confrontos durante a competição.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep15.jpg",
-    "dataExibicao": "2021-01-23"
-  },
-  {
-    "id": 221,
-    "numero": 16,
-    "titulo": "Evento de Intercâmbio de Kyoto - Batalha em Grupo 2",
-    "sinopse": "As batalhas continuam enquanto novas estratégias são reveladas.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep16.jpg",
-    "dataExibicao": "2021-01-30"
-  },
-  {
-    "id": 222,
-    "numero": 17,
-    "titulo": "Evento de Intercâmbio de Kyoto - Batalha em Grupo 3",
-    "sinopse": "Os feiticeiros enfrentam uma ameaça inesperada durante o evento.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep17.jpg",
-    "dataExibicao": "2021-02-06"
-  },
-  {
-    "id": 223,
-    "numero": 18,
-    "titulo": "Sábios",
-    "sinopse": "A batalha contra Hanami coloca todos os estudantes à prova.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep18.jpg",
-    "dataExibicao": "2021-02-13"
-  },
-  {
-    "id": 224,
-    "numero": 19,
-    "titulo": "Raio Negro",
-    "sinopse": "Yuji e Todo unem forças contra um poderoso inimigo.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep19.jpg",
-    "dataExibicao": "2021-02-20"
-  },
-  {
-    "id": 225,
-    "numero": 20,
-    "titulo": "Não Padronizado",
-    "sinopse": "A luta contra Hanami atinge seu ponto mais intenso.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep20.jpg",
-    "dataExibicao": "2021-02-27"
-  },
-  {
-    "id": 226,
-    "numero": 21,
-    "titulo": "Jujutsu Koshien",
-    "sinopse": "Os alunos retomam a competição após os acontecimentos recentes.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep21.jpg",
-    "dataExibicao": "2021-03-06"
-  },
-  {
-    "id": 227,
-    "numero": 22,
-    "titulo": "Origem da Obediência",
-    "sinopse": "Uma nova missão leva Yuji, Megumi e Nobara a enfrentar uma ameaça sombria.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep22.jpg",
-    "dataExibicao": "2021-03-13"
-  },
-  {
-    "id": 228,
-    "numero": 23,
-    "titulo": "Origem da Obediência - Parte 2",
-    "sinopse": "Os estudantes enfrentam inimigos perigosos ligados às Pinturas da Morte.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep23.jpg",
-    "dataExibicao": "2021-03-20"
-  },
-  {
-    "id": 229,
-    "numero": 24,
-    "titulo": "Cumplicidade",
-    "sinopse": "A temporada termina com uma grande batalha e o fortalecimento da equipe.",
-    "temporadaId": 20,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep24.jpg",
-    "dataExibicao": "2021-03-27"
-  },
-  {
-    "id": 230,
-    "numero": 1,
-    "titulo": "Inventário Oculto",
-    "sinopse": "Gojo e Geto recebem a missão de proteger Riko Amanai.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep1.jpg",
-    "dataExibicao": "2023-07-06"
-  },
-  {
-    "id": 231,
-    "numero": 2,
-    "titulo": "Inventário Oculto - Parte 2",
-    "sinopse": "A missão de escolta continua enquanto novos inimigos aparecem.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep2.jpg",
-    "dataExibicao": "2023-07-13"
-  },
-  {
-    "id": 232,
-    "numero": 3,
-    "titulo": "Inventário Oculto - Parte 3",
-    "sinopse": "Toji Fushiguro entra em ação e muda o rumo da missão.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep3.jpg",
-    "dataExibicao": "2023-07-20"
-  },
-  {
-    "id": 233,
-    "numero": 4,
-    "titulo": "Inventário Oculto - Parte 4",
-    "sinopse": "Gojo desperta um novo nível de poder contra Toji.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep4.jpg",
-    "dataExibicao": "2023-07-27"
-  },
-  {
-    "id": 234,
-    "numero": 5,
-    "titulo": "Morte Prematura",
-    "sinopse": "Os acontecimentos do passado transformam para sempre a relação entre Gojo e Geto.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep5.jpg",
-    "dataExibicao": "2023-08-03"
-  },
-  {
-    "id": 235,
-    "numero": 6,
-    "titulo": "É Assim",
-    "sinopse": "O foco retorna para Yuji enquanto uma nova ameaça se aproxima.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep6.jpg",
-    "dataExibicao": "2023-08-31"
-  },
-  {
-    "id": 236,
-    "numero": 7,
-    "titulo": "Festival Noturno",
-    "sinopse": "Os preparativos para o Incidente de Shibuya começam.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep7.jpg",
-    "dataExibicao": "2023-09-07"
-  },
-  {
-    "id": 237,
-    "numero": 8,
-    "titulo": "Incidente de Shibuya",
-    "sinopse": "As maldições iniciam seu plano em Shibuya.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep8.jpg",
-    "dataExibicao": "2023-09-14"
-  },
-  {
-    "id": 238,
-    "numero": 9,
-    "titulo": "Incidente de Shibuya - Portão Aberto",
-    "sinopse": "Gojo enfrenta múltiplos inimigos em uma batalha intensa.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep9.jpg",
-    "dataExibicao": "2023-09-21"
-  },
-  {
-    "id": 239,
-    "numero": 10,
-    "titulo": "Pandemônio",
-    "sinopse": "A situação em Shibuya se torna cada vez mais caótica.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep10.jpg",
-    "dataExibicao": "2023-09-28"
-  },
-  {
-    "id": 240,
-    "numero": 11,
-    "titulo": "Invocação",
-    "sinopse": "Novos participantes entram na batalha em Shibuya.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep11.jpg",
-    "dataExibicao": "2023-10-05"
-  },
-  {
-    "id": 241,
-    "numero": 12,
-    "titulo": "Lâmina Cega",
-    "sinopse": "Nanami e os demais feiticeiros enfrentam situações extremas.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep12.jpg",
-    "dataExibicao": "2023-10-12"
-  },
-  {
-    "id": 242,
-    "numero": 13,
-    "titulo": "Escala Vermelha",
-    "sinopse": "Yuji encontra um poderoso adversário.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep13.jpg",
-    "dataExibicao": "2023-10-19"
-  },
-  {
-    "id": 243,
-    "numero": 14,
-    "titulo": "Oscilações",
-    "sinopse": "As batalhas se espalham por toda Shibuya.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep14.jpg",
-    "dataExibicao": "2023-10-26"
-  },
-  {
-    "id": 244,
-    "numero": 15,
-    "titulo": "Oscilações - Parte 2",
-    "sinopse": "Os confrontos atingem um novo nível de intensidade.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep15.jpg",
-    "dataExibicao": "2023-11-02"
-  },
-  {
-    "id": 245,
-    "numero": 16,
-    "titulo": "Trovão",
-    "sinopse": "Sukuna assume o controle e mostra seu verdadeiro poder.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep16.jpg",
-    "dataExibicao": "2023-11-09"
-  },
-  {
-    "id": 246,
-    "numero": 17,
-    "titulo": "Trovão - Parte 2",
-    "sinopse": "A destruição causada por Sukuna deixa marcas profundas.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep17.jpg",
-    "dataExibicao": "2023-11-16"
-  },
-  {
-    "id": 247,
-    "numero": 18,
-    "titulo": "Certo e Errado",
-    "sinopse": "Yuji precisa lidar com as consequências dos acontecimentos recentes.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep18.jpg",
-    "dataExibicao": "2023-11-23"
-  },
-  {
-    "id": 248,
-    "numero": 19,
-    "titulo": "Certo e Errado - Parte 2",
-    "sinopse": "Uma tragédia muda para sempre a determinação de Yuji.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep19.jpg",
-    "dataExibicao": "2023-11-30"
-  },
-  {
-    "id": 249,
-    "numero": 20,
-    "titulo": "Certo e Errado - Parte 3",
-    "sinopse": "A batalha contra Mahito se aproxima do fim.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep20.jpg",
-    "dataExibicao": "2023-12-07"
-  },
-  {
-    "id": 250,
-    "numero": 22,
-    "titulo": "Metamorfose",
-    "sinopse": "Mahito revela sua forma mais poderosa.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep21.jpg",
-    "dataExibicao": "2023-12-14"
-  },
-  {
-    "id": 251,
-    "numero": 23,
-    "titulo": "Metamorfose - Parte 2",
-    "sinopse": "O confronto final entre Yuji e Mahito chega ao ápice.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep22.jpg",
-    "dataExibicao": "2023-12-21"
-  },
-  {
-    "id": 252,
-    "numero": 23,
-    "titulo": "Incidente de Shibuya - Encerramento",
-    "sinopse": "As consequências do Incidente de Shibuya mudam o mundo Jujutsu para sempre.",
-    "temporadaId": 21,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep23.jpg",
-    "dataExibicao": "2023-12-28"
-  },
-  {
-    "id": 253,
-    "numero": 1,
-    "titulo": "Execução",
-    "sinopse": "Enquanto Yuji lida com a culpa pelos eventos de Shibuya, Naoya Zenin e Yuta Okkotsu recebem a missão de executá-lo.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep1.jpg",
-    "dataExibicao": "2026-01-09"
-  },
-  {
-    "id": 254,
-    "numero": 2,
-    "titulo": "Mais Uma Vez",
-    "sinopse": "Após enfrentar Yuta, Yuji descobre seu verdadeiro objetivo. Megumi pede ajuda para salvar sua irmã.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep2.jpg",
-    "dataExibicao": "2026-01-16"
-  },
-  {
-    "id": 255,
-    "numero": 3,
-    "titulo": "Sobre o Jogo do Abate",
-    "sinopse": "Yuji e seus aliados conversam com Tengen sobre os planos de Kenjaku e o funcionamento do Jogo do Abate.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep3.jpg",
-    "dataExibicao": "2026-01-23"
-  },
-  {
-    "id": 256,
-    "numero": 4,
-    "titulo": "Preparação Perfeita",
-    "sinopse": "Após recuperar ferramentas amaldiçoadas, Maki desperta todo o seu potencial e confronta o Clã Zenin.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep4.jpg",
-    "dataExibicao": "2026-01-23"
-  },
-  {
-    "id": 257,
-    "numero": 5,
-    "titulo": "Paixão",
-    "sinopse": "Yaga é executado. Yuji e Megumi procuram Kinji Hakari para recrutá-lo para o Jogo do Abate.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep5.jpg",
-    "dataExibicao": "2026-01-30"
-  },
-  {
-    "id": 258,
-    "numero": 6,
-    "titulo": "Engrenagem",
-    "sinopse": "Megumi e Panda enfrentam Kirara enquanto Yuji tenta convencer Hakari a ajudá-los.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep6.jpg",
-    "dataExibicao": "2026-02-06"
-  },
-  {
-    "id": 259,
-    "numero": 7,
-    "titulo": "Colônia Nº 1 de Tóquio",
-    "sinopse": "O grupo entra em duas colônias do Jogo do Abate e enfrenta caçadores de novatos.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep7.jpg",
-    "dataExibicao": "2026-02-13"
-  },
-  {
-    "id": 260,
-    "numero": 8,
-    "titulo": "Colônia Nº 1 de Tóquio - Parte 2",
-    "sinopse": "Yuji conhece Hiromi Higuruma, enquanto Megumi é atraído para uma armadilha de Reggie Star.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep8.jpg",
-    "dataExibicao": "2026-02-27"
-  },
-  {
-    "id": 261,
-    "numero": 9,
-    "titulo": "Colônia Nº 1 de Tóquio - Parte 3",
-    "sinopse": "Yuji enfrenta Hiromi Higuruma em uma batalha decisiva dentro da colônia.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep9.jpg",
-    "dataExibicao": "2026-03-06"
-  },
-  {
-    "id": 262,
-    "numero": 10,
-    "titulo": "Colônia Nº 1 de Tóquio - Parte 4",
-    "sinopse": "Takaba enfrenta diversos inimigos enquanto Megumi inicia seu confronto final contra Reggie.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep10.jpg",
-    "dataExibicao": "2026-03-13"
-  },
-  {
-    "id": 263,
-    "numero": 11,
-    "titulo": "Colônia Nº 1 de Tóquio - Parte 5",
-    "sinopse": "Megumi utiliza sua Expansão de Domínio em sua batalha climática contra Reggie Star.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep11.jpg",
-    "dataExibicao": "2026-03-20"
-  },
-  {
-    "id": 264,
-    "numero": 12,
-    "titulo": "Colônia de Sendai",
-    "sinopse": "Yuta Okkotsu enfrenta três poderosos feiticeiros na Colônia de Sendai no encerramento da temporada.",
-    "temporadaId": 25,
-    "animeId": 20,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep12.jpg",
-    "dataExibicao": "2026-03-27"
-  },
-  {
-    "id": 265,
-    "numero": 1,
-    "titulo": "Jujutsu Kaisen 0: The Movie",
-    "sinopse": "O filme segue a história de Yuji Itadori, um estudante que se envolve com uma maldição enquanto busca um amuleto para salvar sua amiga de infância, Rika Orimoto.",
-    "temporadaId": 0,
-    "animeId": 22,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/special/jujutsu-kaisen-0.jpg",
-    "dataExibicao": "2023-06-06"
-  },
-  {
-    "id": 266,
-    "numero": 1,
-    "titulo": "Jujutsu Kaisen: Kaigyoku - Gyokusetsu",
-    "sinopse": "Compilação do arco Kaigyoku/Gyokusetsu, mostrando a juventude de Gojo e Geto e os eventos que moldaram suas visões sobre o mundo dos feiticeiros e maldições.",
-    "temporadaId": 0,
-    "animeId": 23,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/special/jujutsu-kaisen-kaigyoku-gyokusetsu.jpg",
-    "dataExibicao": "2025-06-22"
-  },
-  {
-    "id": 267,
-    "numero": 1,
-    "titulo": "Jujutsu Kaisen: Shibuya Incident Compilation",
-    "sinopse": "Compilação dos eventos do Incidente de Shibuya, onde uma grande batalha entre feiticeiros e maldições muda drasticamente o equilíbrio do mundo do Jujutsu.",
-    "temporadaId": 0,
-    "animeId": 24,
-    "imagemUrl": "../../images/episodios/jujutsu-kaisen/special/jujutsu-kaisen-shibuya-incident.jpg",
-    "dataExibicao": "2025-06-29"
+    "animeId": 5,
+    "imagemUrl": "../../images/episodios/shingeki-no-kyojin/gaiden-kuinaki-sentaku/ep2.jpg",
+    "dataExibicao": "2015-04-09"
   }
 ]
