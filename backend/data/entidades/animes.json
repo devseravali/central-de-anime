@@ -1,110 +1,71 @@
 [
-    {
-        "id": 1,
-        "titulo": "Shingeki no Kyojin: 1ª temporada",
-        "estudioId": 1,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 1,
-        "statusId": 2,
-        "ano": 2013,
-        "quantidadeEpisodios": 25,
-        "sinopse": "Há várias centenas de anos, a humanidade foi quase exterminada pelos Titãs. Para sobreviver, os humanos passaram a viver protegidos por enormes muralhas. Após cem anos de paz, a aparição de um Titã Colossal destrói a Muralha Maria, permitindo a invasão dos Titãs. Depois de testemunhar a morte de sua mãe, Eren Yeager jura exterminar todos os Titãs e se junta à Tropa de Exploração ao lado de Mikasa Ackerman e Armin Arlert para lutar pela sobrevivência da humanidade.",
-        "capaUrl": "images/capas/shingeki-no-kyojin-t1.jpg"
-    },
-    {
-        "id": 2,
-        "titulo": "Shingeki no Kyojin: 2ª temporada",
-        "estudioId": 1,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 2,
-        "statusId": 2,
-        "ano": 2017,
-        "quantidadeEpisodios": 12,
-        "sinopse": "Após os eventos da batalha contra a Titã Fêmea, novos mistérios surgem quando Titãs são encontrados dentro das muralhas. Enquanto a Tropa de Exploração investiga a origem dessas criaturas, segredos envolvendo seus próprios companheiros começam a ser revelados. Eren e seus aliados enfrentam ameaças cada vez maiores em uma luta que mudará sua compreensão sobre os Titãs e o mundo em que vivem.",
-        "capaUrl": "images/capas/shingeki-no-kyojin-t2.jpg"
-    },
-    {
-        "id": 3,
-        "titulo": "Shingeki no Kyojin: 3ª temporada Parte 1",
-        "estudioId": 1,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 3,
-        "statusId": 2,
-        "ano": 2018,
-        "quantidadeEpisodios": 12,
-        "sinopse": "A Tropa de Exploração passa a ser perseguida pelo governo dentro das muralhas. Enquanto tentam proteger Eren e Historia, os soldados descobrem segredos sobre a família real e a verdadeira história da humanidade. Conspirações políticas, traições e revelações importantes colocam em risco o futuro daqueles que lutam pela liberdade.",
-        "capaUrl": "images/capas/shingeki-no-kyojin-t3-p1.jpg"
-    },
-    {
-        "id": 4,
-        "titulo": "Shingeki no Kyojin: 3ª temporada Parte 2",
-        "estudioId": 1,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 3,
-        "statusId": 2,
-        "ano": 2019,
-        "quantidadeEpisodios": 10,
-        "sinopse": "A Tropa de Exploração inicia a operação para recuperar a Muralha Maria. Em uma batalha decisiva contra Reiner Braun, Bertholdt Hoover e o Titã Bestial, vidas são colocadas em risco para garantir a vitória. Ao alcançar o porão da antiga casa de Eren, segredos escondidos há gerações revelam a verdadeira história dos Titãs e do mundo além das muralhas.",
-        "capaUrl": "images/capas/shingeki-no-kyojin-t3-p2.jpg"
-    },
-    {
-        "id": 5,
-        "titulo": "Shingeki no Kyojin: The Final Season",
-        "estudioId": 2,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 4,
-        "statusId": 2,
-        "ano": 2020,
-        "quantidadeEpisodios": 16,
-        "sinopse": "Quatro anos após a retomada da Muralha Maria, a guerra entre Marley e outras nações continua. Enquanto soldados marleyanos enfrentam novos conflitos, Eren Yeager toma uma decisão inesperada que muda o rumo da história. O mundo além das muralhas é finalmente revelado, trazendo à tona antigos segredos, novas alianças e o início de um confronto que decidirá o destino da humanidade.",
-        "capaUrl": "images/capas/shingeki-no-kyojin-t4-p1.jpg"
+  {
+    "id": 1,
+    "titulo": "Shingeki no Kyojin: 1ª temporada",
+    "estudioId": 1,
+    "estacaoId": 1,
+    "tipo": "temporada",
+    "temporada": 1,
+    "statusId": 2,
+    "ano": 2013,
+    "quantidadeEpisodios": 25,
+    "sinopse": "Há várias centenas de anos, a humanidade foi quase exterminada pelos Titãs. Para sobreviver, os humanos passaram a viver protegidos por enormes muralhas. Após cem anos de paz, a aparição de um Titã Colossal destrói a Muralha Maria, permitindo a invasão dos Titãs. Depois de testemunhar a morte de sua mãe, Eren Yeager jura exterminar todos os Titãs e se junta à Tropa de Exploração ao lado de Mikasa Ackerman e Armin Arlert para lutar pela sobrevivência da humanidade.",
+    "capaUrl": "images/capas/shingeki-no-kyojin-t1.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Shingeki no Kyojin: 2ª temporada",
+    "estudioId": 1,
+    "estacaoId": 1,
+    "tipo": "temporada",
+    "temporada": 2,
+    "statusId": 2,
+    "ano": 2017,
+    "quantidadeEpisodios": 12,
+    "sinopse": "Após os eventos da batalha contra a Titã Fêmea, novos mistérios surgem quando Titãs aparecem dentro das muralhas. A Tropa de Exploração investiga a origem dessas criaturas enquanto segredos envolvendo seus próprios companheiros começam a ser revelados.",
+    "capaUrl": "images/capas/shingeki-no-kyojin-t2.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Shingeki no Kyojin: 3ª temporada",
+    "estudioId": 1,
+    "estacaoId": 1,
+    "tipo": "temporada",
+    "temporada": 3,
+    "statusId": 2,
+    "ano": 2018,
+    "quantidadeEpisodios": 22,
+    "sinopse": "A Tropa de Exploração enfrenta conflitos políticos dentro das muralhas e descobre segredos sobre a família real, os Titãs e a verdadeira história da humanidade. A temporada culmina na batalha para recuperar a Muralha Maria e revelar os segredos escondidos no porão da família Yeager.",
+    "capaUrl": "images/capas/shingeki-no-kyojin-t3.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Shingeki no Kyojin: The Final Season",
+    "estudioId": 2,
+    "estacaoId": 1,
+    "tipo": "temporada",
+    "temporada": 4,
+    "statusId": 2,
+    "ano": 2020,
+    "quantidadeEpisodios": 28,
+    "sinopse": "Quatro anos após os eventos da terceira temporada, o mundo além das muralhas é revelado. A guerra entre Marley e Paradis começa enquanto Eren Yeager toma decisões que mudam completamente o destino da humanidade. A batalha final entre antigos aliados e inimigos define o futuro do mundo.",
+    "capaUrl": "images/capas/shingeki-no-kyojin-t4.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Shingeki no Kyojin Gaiden: Kuinaki Sentaku",
+    "estudioId": 1,
+    "estacaoId": 3,
+    "tipo": "especial",
+    "temporada": 0,
+    "statusId": 2,
+    "ano": 2014,
+    "quantidadeEpisodios": 2,
+    "sinopse": "Antes de se tornar o lendário Capitão Levi da Tropa de Exploração, Levi vivia na Cidade Subterrânea ao lado de seus companheiros Isabel Magnolia e Farlan Church. A história mostra sua origem e como ele conheceu Erwin Smith.",
+    "capaUrl": "images/capas/shingeki-no-kyojin-gaiden-kuinaki-sentaku.jpg"
     },
     {
         "id": 6,
-        "titulo": "Shingeki no Kyojin: The Final Season Parte 2",
-        "estudioId": 2,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 4,
-        "statusId": 2,
-        "ano": 2022,
-        "quantidadeEpisodios": 1,
-        "sinopse": "A batalha entre Marley e a Ilha de Paradis chega ao seu ponto mais crítico. Enquanto Eren busca concretizar seus próprios objetivos, antigos amigos e inimigos são forçados a escolher lados em meio ao caos. Verdades ocultas sobre os Titãs vêm à tona, e o destino do mundo passa a depender das decisões tomadas por aqueles que carregam o poder dos Nove Titãs.",
-        "capaUrl": "images/capas/shingeki-no-kyojin-t4-p2.jpg"
-    },
-    {
-        "id": 7,
-        "titulo": "Shingeki no Kyojin: The Final Season Parte 3",
-        "estudioId": 2,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 4,
-        "statusId": 2,
-        "ano": 2023,
-        "quantidadeEpisodios": 1,
-        "sinopse": "Com o Rumbling em andamento, o mundo enfrenta sua maior ameaça. Antigos companheiros se unem em uma última missão para deter Eren antes que toda a humanidade seja destruída. Em meio a batalhas decisivas, sacrifícios e revelações finais, o conflito que começou além das muralhas chega ao seu desfecho definitivo.",
-        "capaUrl": "images/capas/shingeki-no-kyojin-t4-p3.jpg"
-    },
-    {
-        "id": 8,
-        "titulo": "Shingeki no Kyojin Gaiden: Kuinaki Sentaku",
-        "estudioId": 1,
-        "estacaoId": 3,
-        "tipo": "Especial",
-        "temporada": 0,
-        "statusId": 2,
-        "ano": 2014,
-        "quantidadeEpisodios": 2,
-        "sinopse": "Antes de se tornar o lendário capitão da Tropa de Exploração, Levi Ackerman vivia na Cidade Subterrânea ao lado de seus companheiros Isabel Magnolia e Farlan Church. Após receber uma missão perigosa na superfície, Levi cruza o caminho de Erwin Smith e acaba envolvido em eventos que mudarão sua vida para sempre. Esta história revela as origens de Levi e sua entrada na Tropa de Exploração.",
-        "capaUrl": "images/capas/shingeki-no-kyojin-gaiden-kuinaki-sentaku.jpg"
-    },
-    {
-        "id": 9,
         "titulo": "Demon Slayer: Kimetsu no Yaiba",
         "estudioId": 10,
         "estacaoId": 1,
@@ -117,11 +78,11 @@
         "capaUrl": "images/capas/kimetsu-no-yaiba-t1.jpg"
     },
     {
-        "id": 10,
+        "id": 7,
         "titulo": "Demon Slayer: Mugen Ressha-hen (Filme)",
         "estudioId": 10,
         "estacaoId": 2,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2020,
@@ -130,7 +91,7 @@
         "capaUrl": "images/capas/kimestu-no-yaiba-mugen-filme.jpg"
     },
     {
-        "id": 11,
+        "id": 8,
         "titulo": "Demon Slayer: Mugen Ressha-hen (Arco do Trem Infinito - TV)",
         "estudioId": 10,
         "estacaoId": 1,
@@ -143,7 +104,7 @@
         "capaUrl": "images/capas/kimetsu-no-yaiba-mugen-t2.jpg"
     },
     {
-        "id": 12,
+        "id": 9,
         "titulo": "Demon Slayer: Yuukaku-hen",
         "estudioId": 10,
         "estacaoId": 1,
@@ -156,7 +117,7 @@
         "capaUrl": "images/capas/kimetsu-no-yaiba-t3.jpg"
     },
     {
-        "id": 13,
+        "id": 10,
         "titulo": "Demon Slayer: Katanakaji no Sato-hen",
         "estudioId": 10,
         "estacaoId": 1,
@@ -169,7 +130,7 @@
         "capaUrl": "images/capas/kimetsu-no-yaiba-t4.jpg"
     },
     {
-        "id": 14,
+        "id": 11,
         "titulo": "Demon Slayer: Hashira Geiko-hen",
         "estudioId": 10,
         "estacaoId": 1,
@@ -182,11 +143,11 @@
         "capaUrl": "images/capas/kimetsu-no-yaiba-t5.jpg"
     },
     {
-        "id": 15,
+        "id": 12,
         "titulo": "Demon Slayer: Infinity Castle",
         "estudioId": 10,
         "estacaoId": 2,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2025,
@@ -195,7 +156,7 @@
         "capaUrl": "images/capas/kimetsu-no-yaiba-filme-1-akaza-sairai.jpg"
     },
     {
-        "id": 16,
+        "id": 13,
         "titulo": "Tokyo Ghoul",
         "estudioId": 8,
         "estacaoId": 1,
@@ -208,7 +169,7 @@
         "capaUrl": "images/capas/tokyo-ghoul-t1.jpg"
     },
     {
-        "id": 17,
+        "id": 14,
         "titulo": "Tokyo Ghoul √A",
         "estudioId": 8,
         "estacaoId": 1,
@@ -221,7 +182,7 @@
         "capaUrl": "images/capas/tokyo-ghoul-t2.jpg"
     },
     {
-        "id": 18,
+        "id": 15,
         "titulo": "Tokyo Ghoul:re",
         "estudioId": 8,
         "estacaoId": 1,
@@ -234,7 +195,7 @@
         "capaUrl": "images/capas/tokyo-ghoul-re-t1.jpg"
     },
     {
-        "id": 19,
+        "id": 16,
         "titulo": "Tokyo Ghoul:re 2ª Temporada",
         "estudioId": 8,
         "estacaoId": 1,
@@ -246,86 +207,87 @@
         "sinopse": "Com suas memórias restauradas, Kaneki assume um papel central na guerra entre humanos e ghouls. Enquanto Tóquio mergulha no caos, antigas alianças são testadas e uma ameaça sem precedentes coloca em risco a sobrevivência de ambos os lados.",
         "capaUrl": "images/capas/tokyo-ghoul-re-t2.jpg"
     },
-    {
-        "id": 20,
-        "titulo": "Jujutsu Kaisen",
-        "estudioId": 3,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 1,
-        "statusId": 2,
-        "ano": 2020,
-        "quantidadeEpisodios": 24,
-        "sinopse": "Yuji Itadori é um estudante do ensino médio que, após engolir um objeto amaldiçoado para salvar seus amigos, torna-se hospedeiro de Sukuna, uma poderosa maldição. Ele ingressa na Escola de Jujutsu para aprender a combater maldições enquanto tenta encontrar uma forma de eliminar Sukuna.",
-        "capaUrl": "images/capas/jujutsu-kaisen-t1.jpg"
-    },
-    {
-        "id": 21,
-        "titulo": "Jujutsu Kaisen 2ª temporada",
-        "estudioId": 3,
-        "estacaoId": 1,
-        "tipo": "temporada",
-        "temporada": 2,
-        "statusId": 2,
-        "ano": 2023,
-        "quantidadeEpisodios": 23,
-        "sinopse": "A história explora o passado de Satoru Gojo e Suguru Geto durante uma missão de proteção de Riko Amanai, revelando eventos que mudam profundamente o destino dos dois feiticeiros e da Escola de Jujutsu.",
-        "capaUrl": "images/capas/jujutsu-kaisen-t2.jpg"
-    },
-    {
-        "id": 22,
-        "titulo": "Jujutsu Kaisen 0",
-        "estudioId": 3,
-        "estacaoId": 3,
-        "tipo": "Filme",
-        "temporada": 0,
-        "statusId": 6,
-        "ano": 2021,
-        "quantidadeEpisodios": 1,
-        "sinopse": "Yuta Okkotsu é um jovem assombrado pela maldição de sua amiga de infância, Rika Orimoto. Ao ingressar na Escola de Jujutsu, ele aprende a controlar seu poder e lidar com o peso dessa conexão amaldiçoada.",
-        "capaUrl": "images/capas/jujutsu-kaisen-0.jpg"
-    },
+  {
+    "id": 17,
+    "titulo": "Jujutsu Kaisen",
+    "estudioId": 3,
+    "estacaoId": 1,
+    "tipo": "temporada",
+    "temporada": 1,
+    "statusId": 2,
+    "ano": 2020,
+    "quantidadeEpisodios": 24,
+    "sinopse": "Yuji Itadori é um estudante do ensino médio que, após ingerir um dos dedos de Ryomen Sukuna para salvar seus amigos, torna-se o hospedeiro da mais poderosa maldição. Agora, como aluno da Escola Técnica de Jujutsu de Tóquio, ele luta contra maldições enquanto busca reunir todos os dedos de Sukuna para destruí-lo definitivamente.",
+    "capaUrl": "images/capas/jujutsu-kaisen-t1.jpg"
+  },
+  {
+    "id": 18,
+    "titulo": "Jujutsu Kaisen 2ª Temporada",
+    "estudioId": 3,
+    "estacaoId": 1,
+    "tipo": "temporada",
+    "temporada": 2,
+    "statusId": 2,
+    "ano": 2023,
+    "quantidadeEpisodios": 23,
+    "sinopse": "A temporada adapta os arcos Inventário Oculto e Incidente de Shibuya. Enquanto revela o passado de Satoru Gojo e Suguru Geto, também acompanha Yuji Itadori e os demais feiticeiros durante a maior tragédia da história do mundo Jujutsu.",
+    "capaUrl": "images/capas/jujutsu-kaisen-t2.jpg"
+  },
+  {
+    "id": 19,
+    "titulo": "Jujutsu Kaisen 0",
+    "estudioId": 3,
+    "estacaoId": 3,
+    "tipo": "filme",
+    "temporada": 0,
+    "statusId": 6,
+    "ano": 2021,
+    "quantidadeEpisodios": 1,
+    "sinopse": "Yuta Okkotsu é assombrado pelo espírito amaldiçoado de sua amiga de infância, Rika Orimoto. Sob a orientação de Satoru Gojo, ele ingressa na Escola Técnica de Jujutsu para aprender a controlar seu imenso poder e enfrentar Suguru Geto.",
+    "capaUrl": "images/capas/jujutsu-kaisen-0.jpg"
+  },
+  {
+    "id": 20,
+    "titulo": "Jujutsu Kaisen: Inventário Oculto / Morte Prematura",
+    "estudioId": 3,
+    "estacaoId": 3,
+    "tipo": "filme",
+    "temporada": 0,
+    "statusId": 6,
+    "ano": 2025,
+    "quantidadeEpisodios": 1,
+    "sinopse": "Filme compilatório que reúne o arco Inventário Oculto / Morte Prematura, mostrando a juventude de Satoru Gojo e Suguru Geto e os acontecimentos que mudaram para sempre o mundo Jujutsu.",
+    "capaUrl": "images/capas/jujutsu-kaisen-inventario-oculto.jpg"
+  },
+  {
+    "id": 21,
+    "titulo": "Jujutsu Kaisen: Incidente de Shibuya",
+    "estudioId": 3,
+    "estacaoId": 3,
+    "tipo": "filme",
+    "temporada": 0,
+    "statusId": 6,
+    "ano": 2025,
+    "quantidadeEpisodios": 1,
+    "sinopse": "Filme compilatório que reúne os principais acontecimentos do Incidente de Shibuya, a batalha que mudou definitivamente o destino dos feiticeiros Jujutsu.",
+    "capaUrl": "images/capas/jujutsu-kaisen-incidente-de-shibuya.jpg"
+  },
+  {
+    "id": 22,
+    "titulo": "Jujutsu Kaisen 3ª Temporada",
+    "estudioId": 3,
+    "estacaoId": 2,
+    "tipo": "temporada",
+    "temporada": 3,
+    "statusId": 3,
+    "ano": 2026,
+    "quantidadeEpisodios": 12,
+    "sinopse": "Após o Incidente de Shibuya, Yuji Itadori e seus aliados enfrentam as consequências do caos enquanto Kenjaku inicia o Jogo do Abate, um ritual mortal que obriga feiticeiros e usuários de energia amaldiçoada a lutarem pela sobrevivência.",
+    "capaUrl": "images/capas/jujutsu-kaisen-t3.jpg"
+  },  
+
     {
         "id": 23,
-        "titulo": "Jujutsu Kaisen: Kaigyoku - Gyokusetsu",
-        "estudioId": 3,
-        "estacaoId": 3,
-        "tipo": "Especial",
-        "temporada": 0,
-        "statusId": 6,
-        "ano": 2025,
-        "quantidadeEpisodios": 1,
-        "sinopse": "Compilação do arco Kaigyoku/Gyokusetsu, mostrando a juventude de Gojo e Geto e os eventos que moldaram suas visões sobre o mundo dos feiticeiros e maldições.",
-        "capaUrl": "images/capas/jujutsu-kaisen-kaigyoku-gyokusetsu.jpg"
-    },
-    {
-        "id": 24,
-        "titulo": "Jujutsu Kaisen: Shibuya Incident Compilation",
-        "estudioId": 3,
-        "estacaoId": 2,
-        "tipo": "Especial",
-        "temporada": 0,
-        "statusId": 6,
-        "ano": 2025,
-        "quantidadeEpisodios": 1,
-        "sinopse": "Compilação dos eventos do Incidente de Shibuya, onde uma grande batalha entre feiticeiros e maldições muda drasticamente o equilíbrio do mundo do Jujutsu.",
-        "capaUrl": "images/capas/jujutsu-kaisen-shibuya-x-shimetsu.jpg"
-    },
-    {
-        "id": 25,
-        "titulo": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
-        "estudioId": 3,
-        "estacaoId": 2,
-        "tipo": "temporada",
-        "temporada": 3,
-        "statusId": 3,
-        "ano": 2026,
-        "quantidadeEpisodios": 12,
-        "sinopse": "Após o Incidente de Shibuya, o Jogo da Eliminação começa em todo o Japão, forçando feiticeiros e jogadores a lutarem em um sistema mortal criado por Kenjaku.",
-        "capaUrl": "images/capas/jujutsu-kaisen-t3.jpg"
-    },
-    {
-        "id": 26,
         "titulo": "Death Note",
         "estudioId": 9,
         "estacaoId": 3,
@@ -338,7 +300,7 @@
         "capaUrl": "images/capas/death-note-t1.jpg"
     },
     {
-        "id": 27,
+        "id": 24,
         "titulo": "Vinland Saga",
         "estudioId": 10,
         "estacaoId": 1,
@@ -351,7 +313,7 @@
         "capaUrl": "images/capas/vinland-saga-t1.jpg"
     },
     {
-        "id": 28,
+        "id": 25,
         "titulo": "Vinland Saga 2ª temporada",
         "estudioId": 10,
         "estacaoId": 1,
@@ -364,7 +326,7 @@
         "capaUrl": "images/capas/vinland-saga-t2.jpg"
     },
     {
-        "id": 29,
+        "id": 26,
         "titulo": "Ousama Ranking",
         "estudioId": 3,
         "estacaoId": 2,
@@ -377,7 +339,7 @@
         "capaUrl": "images/capas/ousama-ranking-t1.jpg"
     },
     {
-        "id": 30,
+        "id": 27,
         "titulo": "Ousama Ranking: Yuuki no Takarabako",
         "estudioId": 3,
         "estacaoId": 2,
@@ -390,7 +352,7 @@
         "capaUrl": "images/capas/ousama-ranking-t2.jpg"
     },
     {
-        "id": 31,
+        "id": 28,
         "titulo": "Hunter x Hunter (1999)",
         "estudioId": 9,
         "estacaoId": 2,
@@ -403,7 +365,7 @@
         "capaUrl": "images/capas/hunter-x-hunter-1999.jpg"
     },
     {
-        "id": 32,
+        "id": 29,
         "titulo": "Hunter x Hunter (2011)",
         "estudioId": 9,
         "estacaoId": 2,
@@ -416,7 +378,7 @@
         "capaUrl": "images/capas/hunter-x-hunter-2011-t1.jpg"
     },
     {
-        "id": 33,
+        "id": 30,
         "titulo": "Hunter x Hunter (2011) 2ª temporada",
         "estudioId": 9,
         "estacaoId": 2,
@@ -429,7 +391,7 @@
         "capaUrl": "images/capas/hunter-x-hunter-2011-t2.jpg"
     },
     {
-        "id": 34,
+        "id": 31,
         "titulo": "Hunter x Hunter (2011) 3ª temporada",
         "estudioId": 9,
         "estacaoId": 2,
@@ -442,7 +404,7 @@
         "capaUrl": "images/capas/hunter-x-hunter-2011-t3.jpg"
     },
     {
-        "id": 35,
+        "id": 32,
         "titulo": "Sousou no Frieren",
         "estudioId": 2,
         "estacaoId": 2,
@@ -455,7 +417,7 @@
         "capaUrl": "images/capas/frieren-t1.jpg"
     },
     {
-        "id": 36,
+        "id": 33,
         "titulo": "Sousou no Frieren 2ª temporada",
         "estudioId": 2,
         "estacaoId": 2,
@@ -468,7 +430,7 @@
         "capaUrl": "images/capas/frieren-t2.jpg"
     },
     {
-        "id": 37,
+        "id": 34,
         "titulo": "Chainsaw Man",
         "estudioId": 3,
         "estacaoId": 2,
@@ -481,11 +443,11 @@
         "capaUrl": "images/capas/chainsaw-man-t1.jpg"
     },
     {
-        "id": 38,
+        "id": 35,
         "titulo": "Chainsaw Man: Reze-hen",
         "estudioId": 3,
         "estacaoId": 1,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 2,
         "statusId": 6,
         "ano": 2024,
@@ -494,7 +456,7 @@
         "capaUrl": "images/capas/chainsaw-man-reze.jpg"
     },
     {
-        "id": 39,
+        "id": 36,
         "titulo": "Hell's Paradise: Jigokuraku",
         "estudioId": 3,
         "estacaoId": 4,
@@ -507,7 +469,7 @@
         "capaUrl": "images/capas/hells-paradise-t1.jpg"
     },
     {
-        "id": 40,
+        "id": 37,
         "titulo": "Hell's Paradise: Jigokuraku 2ª temporada",
         "estudioId": 3,
         "estacaoId": 4,
@@ -520,7 +482,7 @@
         "capaUrl": "images/capas/hells-paradise-t2.jpg"
     },
     {
-        "id": 41,
+        "id": 38,
         "titulo": "Fullmetal Alchemist: Brotherhood",
         "estudioId": 4,
         "estacaoId": 4,
@@ -533,7 +495,7 @@
         "capaUrl": "images/capas/fullmetal-alchemist-brotherhood.jpg"
     },
     {
-        "id": 42,
+        "id": 39,
         "titulo": "Mob Psycho 100",
         "estudioId": 3,
         "estacaoId": 1,
@@ -546,7 +508,7 @@
         "capaUrl": "images/capas/mob-psycho-100-t1.jpg"
     },
     {
-        "id": 43,
+        "id": 40,
         "titulo": "Mob Psycho 100 II",
         "estudioId": 3,
         "estacaoId": 3,
@@ -559,7 +521,7 @@
         "capaUrl": "images/capas/mob-psycho-100-t2.jpg"
     },
     {
-        "id": 44,
+        "id": 41,
         "titulo": "Mob Psycho 100 III",
         "estudioId": 3,
         "estacaoId": 2,
@@ -572,7 +534,7 @@
         "capaUrl": "images/capas/mob-psycho-100-t3.jpg"
     },
     {
-        "id": 45,
+        "id": 42,
         "titulo": "Sword Art Online",
         "estudioId": 5,
         "estacaoId": 1,
@@ -585,7 +547,7 @@
         "capaUrl": "images/capas/sword-art-online-t1.jpg"
     },
     {
-        "id": 46,
+        "id": 43,
         "titulo": "Sword Art Online II",
         "estudioId": 5,
         "estacaoId": 1,
@@ -598,7 +560,7 @@
         "capaUrl": "images/capas/sword-art-online-t2.jpg"
     },
     {
-        "id": 47,
+        "id": 44,
         "titulo": "Sword Art Online: Alicization",
         "estudioId": 5,
         "estacaoId": 2,
@@ -611,7 +573,7 @@
         "capaUrl": "images/capas/sword-art-online-t3.jpg"
     },
     {
-        "id": 48,
+        "id": 45,
         "titulo": "Sword Art Online: Alicization War of Underworld",
         "estudioId": 5,
         "estacaoId": 2,
@@ -624,7 +586,7 @@
         "capaUrl": "images/capas/sword-art-online-t4.jpg"
     },
     {
-        "id": 49,
+        "id": 46,
         "titulo": "Your Lie in April",
         "estudioId": 5,
         "estacaoId": 2,
@@ -637,7 +599,7 @@
         "capaUrl": "images/capas/your-lie-in-april.jpg"
     },
     {
-        "id": 50,
+        "id": 47,
         "titulo": "Horimiya",
         "estudioId": 6,
         "estacaoId": 3,
@@ -650,7 +612,7 @@
         "capaUrl": "images/capas/horimiya-t1.jpg"
     },
     {
-        "id": 51,
+        "id": 48,
         "titulo": "Horimiya: The Missing Pieces",
         "estudioId": 6,
         "estacaoId": 1,
@@ -663,7 +625,7 @@
         "capaUrl": "images/capas/horimiya-t2.jpg"
     },
     {
-        "id": 52,
+        "id": 49,
         "titulo": "Bocchi the Rock!",
         "estudioId": 6,
         "estacaoId": 2,
@@ -676,11 +638,11 @@
         "capaUrl": "images/capas/bocchi-the-rock-t1.jpg"
     },
     {
-        "id": 53,
+        "id": 50,
         "titulo": "Bocchi the Rock! Re:",
         "estudioId": 6,
         "estacaoId": 2,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 1,
         "statusId": 6,
         "ano": 2022,
@@ -689,11 +651,11 @@
         "capaUrl": "images/capas/bocchi-the-rock-re.jpg"
     },
     {
-        "id": 54,
+        "id": 51,
         "titulo": "Bocchi the Rock! Re:Re:",
         "estudioId": 6,
         "estacaoId": 2,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 1,
         "statusId": 6,
         "ano": 2022,
@@ -702,7 +664,7 @@
         "capaUrl": "images/capas/bocchi-the-rock-rere.jpg"
     },
     {
-        "id": 55,
+        "id": 52,
         "titulo": "One Piece",
         "estudioId": 7,
         "estacaoId": 2,
@@ -715,7 +677,7 @@
         "capaUrl": "images/capas/one-piece-t1.jpg"
     },
     {
-        "id": 56,
+        "id": 53,
         "titulo": "Dragon Ball Z",
         "estudioId": 7,
         "estacaoId": 4,
@@ -728,7 +690,7 @@
         "capaUrl": "images/capas/dragon-ball-z-t1.jpg"
     },
     {
-        "id": 57,
+        "id": 54,
         "titulo": "Naruto",
         "estudioId": 8,
         "estacaoId": 2,
@@ -741,7 +703,7 @@
         "capaUrl": "images/capas/naruto-t1.jpg"
     },
     {
-        "id": 58,
+        "id": 55,
         "titulo": "Naruto Shippuden",
         "estudioId": 8,
         "estacaoId": 2,
@@ -754,7 +716,7 @@
         "capaUrl": "images/capas/naruto-shippuden-t2.jpg"
     },
     {
-        "id": 59,
+        "id": 56,
         "titulo": "Bleach",
         "estudioId": 8,
         "estacaoId": 2,
@@ -767,7 +729,7 @@
         "capaUrl": "images/capas/bleach-t1.jpg"
     },
     {
-        "id": 60,
+        "id": 57,
         "titulo": "Bleach: Thousand-Year Blood War",
         "estudioId": 8,
         "estacaoId": 2,
@@ -780,7 +742,7 @@
         "capaUrl": "images/capas/bleach-t2.jpg"
     },
     {
-        "id": 61,
+        "id": 58,
         "titulo": "Bleach: Sennen Kessen-hen – Soukoku-tan",
         "estudioId": 8,
         "estacaoId": 1,
@@ -793,7 +755,7 @@
         "capaUrl": "images/capas/bleach-t3.jpg"
     },
     {
-        "id": 62,
+        "id": 59,
         "titulo": "Bleach: Sennen Kessen-hen - Kashin-tan",
         "estudioId": 8,
         "estacaoId": 1,
@@ -806,7 +768,7 @@
         "capaUrl": "images/capas/bleach-t4.jpg"
     },
     {
-        "id": 63,
+        "id": 60,
         "titulo": "Haikyuu!!",
         "estudioId": 9,
         "estacaoId": 4,
@@ -819,7 +781,7 @@
         "capaUrl": "images/capas/haikyuu-t1.jpg"
     },
     {
-        "id": 64,
+        "id": 61,
         "titulo": "Haikyuu!! 2ª Temporada",
         "estudioId": 9,
         "estacaoId": 2,
@@ -832,7 +794,7 @@
         "capaUrl": "images/capas/haikyuu-t2.jpg"
     },
     {
-        "id": 65,
+        "id": 62,
         "titulo": "Haikyuu!!: Karasuno VS Shiratorizawa",
         "estudioId": 9,
         "estacaoId": 2,
@@ -845,7 +807,7 @@
         "capaUrl": "images/capas/haikyuu-t3.jpg"
     },
     {
-        "id": 66,
+        "id": 63,
         "titulo": "Haikyuu!! TO THE TOP",
         "estudioId": 9,
         "estacaoId": 4,
@@ -858,7 +820,7 @@
         "capaUrl": "images/capas/haikyuu-t4-1.jpg"
     },
     {
-        "id": 67,
+        "id": 64,
         "titulo": "Haikyuu!! TO THE TOP 2",
         "estudioId": 9,
         "estacaoId": 2,
@@ -871,11 +833,11 @@
         "capaUrl": "images/capas/haikyuu-t4-2.jpg"
     },
     {
-        "id": 68,
+        "id": 65,
         "titulo": "Haikyuu!!: Gomi Suteba no Kessen",
         "estudioId": 9,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 1,
         "statusId": 6,
         "ano": 2024,
@@ -884,7 +846,7 @@
         "capaUrl": "images/capas/haikyuu-filme-1.jpg"
     },
     {
-        "id": 69,
+        "id": 66,
         "titulo": "Psycho Pass",
         "estudioId": 9,
         "estacaoId": 2,
@@ -897,7 +859,7 @@
         "capaUrl": "images/capas/psycho-pass-t1.jpg"
     },
     {
-        "id": 70,
+        "id": 67,
         "titulo": "Psycho Pass 2",
         "estudioId": 9,
         "estacaoId": 2,
@@ -910,11 +872,11 @@
         "capaUrl": "images/capas/psycho-pass-t2.jpg"
     },
     {
-        "id": 71,
+        "id": 68,
         "titulo": "Psycho Pass: O Movie",
         "estudioId": 9,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 3,
         "statusId": 1,
         "ano": 2015,
@@ -923,11 +885,11 @@
         "capaUrl": "images/capas/psycho-pass-filme-1.jpg"
     },
     {
-        "id": 72,
+        "id": 69,
         "titulo": "Psycho-Pass: Sinners of the System Case.1 Tsumi to Batsu",
         "estudioId": 9,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 4,
         "statusId": 1,
         "ano": 2019,
@@ -936,11 +898,11 @@
         "capaUrl": "images/capas/psycho-pass-filme-2.jpg"
     },
     {
-        "id": 73,
+        "id": 70,
         "titulo": "Psycho-Pass: Sinners of the System Case.2 First Guardian",
         "estudioId": 9,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 5,
         "statusId": 1,
         "ano": 2019,
@@ -949,7 +911,7 @@
         "capaUrl": "images/capas/psycho-pass-filme-3.jpg"
     },
     {
-        "id": 74,
+        "id": 71,
         "titulo": "Fate/Zero",
         "estudioId": 10,
         "estacaoId": 2,
@@ -962,7 +924,7 @@
         "capaUrl": "images/capas/fate-zero-t1.jpg"
     },
     {
-        "id": 75,
+        "id": 72,
         "titulo": "Fate/Zero 2ª Temporada",
         "estudioId": 10,
         "estacaoId": 4,
@@ -975,7 +937,7 @@
         "capaUrl": "images/capas/fate-zero-t2.jpg"
     },
     {
-        "id": 76,
+        "id": 73,
         "titulo": "Violet Evergarden",
         "estudioId": 12,
         "estacaoId": 3,
@@ -988,11 +950,11 @@
         "capaUrl": "images/capas/violet-evergarden.jpg"
     },
     {
-        "id": 77,
+        "id": 74,
         "titulo": "Violet Evergarden: O Filme",
         "estudioId": 12,
         "estacaoId": 1,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 1,
         "statusId": 1,
         "ano": 2020,
@@ -1001,7 +963,7 @@
         "capaUrl": "images/capas/violet-evergarden-filme-1.jpg"
     },
     {
-        "id": 78,
+        "id": 75,
         "titulo": "Great Pretender",
         "estudioId": 1,
         "estacaoId": 1,
@@ -1014,7 +976,7 @@
         "capaUrl": "images/capas/great-pretender.jpg"
     },
     {
-        "id": 79,
+        "id": 76,
         "titulo": "No Game No Life",
         "estudioId": 2,
         "estacaoId": 3,
@@ -1027,7 +989,7 @@
         "capaUrl": "images/capas/no-game-no-life-t1.jpg"
     },
     {
-        "id": 80,
+        "id": 77,
         "titulo": "Dororo",
         "estudioId": 3,
         "estacaoId": 3,
@@ -1040,7 +1002,7 @@
         "capaUrl": "images/capas/dororo-t1.jpg"
     },
     {
-        "id": 81,
+        "id": 78,
         "titulo": "Noragami",
         "estudioId": 4,
         "estacaoId": 4,
@@ -1053,7 +1015,7 @@
         "capaUrl": "images/capas/noragami-t1.jpg"
     },
     {
-        "id": 82,
+        "id": 79,
         "titulo": "Noragami Aragoto",
         "estudioId": 4,
         "estacaoId": 2,
@@ -1066,7 +1028,7 @@
         "capaUrl": "images/capas/noragami-t2.jpg"
     },
     {
-        "id": 83,
+        "id": 80,
         "titulo": "Spy x Family",
         "estudioId": 6,
         "estacaoId": 4,
@@ -1079,7 +1041,7 @@
         "capaUrl": "images/capas/spy-x-family-t1.jpg"
     },
     {
-        "id": 84,
+        "id": 81,
         "titulo": "Spy x Family 2ª Temporada - Parte 1",
         "estudioId": 6,
         "estacaoId": 1,
@@ -1092,7 +1054,7 @@
         "capaUrl": "images/capas/spy-x-family-t2-pt-1.jpg"
     },
     {
-        "id": 85,
+        "id": 82,
         "titulo": "Spy x Family 2ª Temporada - Parte 2",
         "estudioId": 6,
         "estacaoId": 2,
@@ -1105,7 +1067,7 @@
         "capaUrl": "images/capas/spy-x-family-t2-pt-2.jpg"
     },
     {
-        "id": 86,
+        "id": 83,
         "titulo": "Spy x Family 3ª Temporada",
         "estudioId": 6,
         "estacaoId": 2,
@@ -1118,7 +1080,7 @@
         "capaUrl": "images/capas/spy-x-family-t3.jpg"
     },
     {
-        "id": 87,
+        "id": 84,
         "titulo": "Spy x Family Code: White",
         "estudioId": 6,
         "estacaoId": 3,
@@ -1131,7 +1093,7 @@
         "capaUrl": "images/capas/spy-x-family-code-white.jpg"
     },
     {
-        "id": 88,
+        "id": 85,
         "titulo": "Steins;Gate",
         "estudioId": 9,
         "estacaoId": 2,
@@ -1144,7 +1106,7 @@
         "capaUrl": "images/capas/steins-gate.jpg"
     },
     {
-        "id": 89,
+        "id": 86,
         "titulo": "Steins;Gate 0",
         "estudioId": 9,
         "estacaoId": 2,
@@ -1157,11 +1119,11 @@
         "capaUrl": "images/capas/steins-gate-zero.jpg"
     },
     {
-        "id": 90,
+        "id": 87,
         "titulo": "Steins;Gate: The Movie - Load Region of Déjà Vu",
         "estudioId": 9,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2013,
@@ -1170,7 +1132,7 @@
         "capaUrl": "images/capas/steins-gate-movie.jpg"
     },
     {
-        "id": 91,
+        "id": 88,
         "titulo": "Made in Abyss",
         "estudioId": 2,
         "estacaoId": 2,
@@ -1183,11 +1145,11 @@
         "capaUrl": "images/capas/made-in-abyss.jpg"
     },
     {
-        "id": 92,
+        "id": 89,
         "titulo": "Made in Abyss: Dawn of the Deep Soul",
         "estudioId": 2,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2020,
@@ -1196,7 +1158,7 @@
         "capaUrl": "images/capas/made-in-abyss-dawn-of-the-deep-soul.jpg"
     },
     {
-        "id": 93,
+        "id": 90,
         "titulo": "Made in Abyss: Retsujitsu no Ougonkyou",
         "estudioId": 2,
         "estacaoId": 4,
@@ -1209,7 +1171,7 @@
         "capaUrl": "images/capas/made-in-abyss-the-retsujitsu-no-ougonkyou.jpg"
     },
     {
-        "id": 94,
+        "id": 91,
         "titulo": "Black Clover",
         "estudioId": 8,
         "estacaoId": 1,
@@ -1222,11 +1184,11 @@
         "capaUrl": "images/capas/black-clover.jpg"
     },
     {
-        "id": 95,
+        "id": 92,
         "titulo": "Black Clover: Sword of the Wizard King",
         "estudioId": 8,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2023,
@@ -1235,7 +1197,7 @@
         "capaUrl": "images/capas/black-clover-sword-of-the-wizard-king.jpg"
     },
     {
-        "id": 96,
+        "id": 93,
         "titulo": "My Hero Academia",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1248,7 +1210,7 @@
         "capaUrl": "images/capas/my-hero-academia-t1.jpg"
     },
     {
-        "id": 97,
+        "id": 94,
         "titulo": "My Hero Academia: 2ª temporada",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1261,7 +1223,7 @@
         "capaUrl": "images/capas/my-hero-academia-t2.jpg"
     },
     {
-        "id": 98,
+        "id": 95,
         "titulo": "My Hero Academia: 3ª temporada",
         "estudioId": 4,
         "estacaoId": 2,
@@ -1274,7 +1236,7 @@
         "capaUrl": "images/capas/my-hero-academia-t3.jpg"
     },
     {
-        "id": 99,
+        "id": 96,
         "titulo": "My Hero Academia: 4ª temporada",
         "estudioId": 4,
         "estacaoId": 4,
@@ -1287,7 +1249,7 @@
         "capaUrl": "images/capas/my-hero-academia-t4.jpg"
     },
     {
-        "id": 100,
+        "id": 97,
         "titulo": "My Hero Academia: 5ª temporada",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1300,7 +1262,7 @@
         "capaUrl": "images/capas/my-hero-academia-t5.jpg"
     },
     {
-        "id": 101,
+        "id": 98,
         "titulo": "My Hero Academia: 6ª temporada",
         "estudioId": 4,
         "estacaoId": 2,
@@ -1313,7 +1275,7 @@
         "capaUrl": "images/capas/my-hero-academia-t6.jpg"
     },
     {
-        "id": 102,
+        "id": 99,
         "titulo": "My Hero Academia: 7ª temporada",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1326,11 +1288,11 @@
         "capaUrl": "images/capas/my-hero-academia-t7.jpg"
     },
     {
-        "id": 103,
+        "id": 100,
         "titulo": "My Hero Academia: Heroes Rising",
         "estudioId": 4,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2019,
@@ -1339,11 +1301,11 @@
         "capaUrl": "images/capas/my-hero-academia-heroes-rising.jpg"
     },
     {
-        "id": 104,
+        "id": 101,
         "titulo": "My Hero Academia: World Heroes' Mission",
         "estudioId": 4,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2020,
@@ -1352,11 +1314,11 @@
         "capaUrl": "images/capas/my-hero-academia-world-heroes-mission.jpg"
     },
     {
-        "id": 105,
+        "id": 102,
         "titulo": "My Hero Academia: Two Heroes",
         "estudioId": 4,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2018,
@@ -1365,11 +1327,11 @@
         "capaUrl": "images/capas/my-hero-academia-two-heroes.jpg"
     },
     {
-        "id": 106,
+        "id": 103,
         "titulo": "My Hero Academia: Youre Next",
         "estudioId": 4,
         "estacaoId": 3,
-        "tipo": "Filme",
+        "tipo": "filme",
         "temporada": 0,
         "statusId": 6,
         "ano": 2024,
