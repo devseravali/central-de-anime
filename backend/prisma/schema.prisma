@@ -11,6 +11,7 @@ model Anime {
   id                  Int     @id @default(autoincrement())
   titulo              String
   tipo                String
+  temporada           Int
   ano                 Int
   sinopse             String  @db.VarChar(5000)
   capaUrl             String?
@@ -57,8 +58,9 @@ model Franquia {
 }
 
 model Estudio {
-  id   Int    @id @default(autoincrement())
-  nome String @unique
+  id              Int    @id @default(autoincrement())
+  nome            String @unique
+  principaisObras String @db.VarChar(5000)
 
   animes Anime[]
 }
@@ -89,7 +91,7 @@ model Episodio {
   titulo  String
   sinopse String @db.VarChar(2000)
 
-  imagem       String?
+  imagemUrl    String?
   dataExibicao DateTime?
 
   temporadaId Int
@@ -281,6 +283,16 @@ model Capas {
   nome_salvo    String
   caminho       String
   mime_type     String
+}
+
+model Genero {
+  id   Int    @id @default(autoincrement())
+  nome String @unique
+}
+
+model Plataforma {
+  id   Int    @id @default(autoincrement())
+  nome String @unique
 }
 
 model Filtro {
