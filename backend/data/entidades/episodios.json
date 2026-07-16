@@ -3008,5 +3008,485 @@
     "animeId": 23,
     "imagemUrl": "../../images/episodios/death-note/t1/ep37.jpg",
     "dataExibicao": "2007-06-27"
+  },
+  {
+    "id": 302,
+    "numero": 1,
+    "titulo": "Algum Lugar Além Daqui",
+    "sinopse": "Thorfinn é um garoto da Islândia que sonha em conhecer o mundo além do mar. Inspirado pelas histórias de Leif Erikson sobre uma terra paradisíaca chamada Vinland, ele vive em paz com sua família até que o passado de seu pai, Thors, começa a trazer consequências.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep1.jpg",
+    "dataExibicao": "2019-07-08"
+  },
+  {
+    "id": 303,
+    "numero": 2,
+    "titulo": "Espada",
+    "sinopse": "Em 1002, a guerra entre Inglaterra e Dinamarca se intensifica. Os Jomsvikings visitam a vila de Thors para convocá-lo novamente à batalha, forçando-o a enfrentar seu passado para proteger sua família.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep2.jpg",
+    "dataExibicao": "2019-07-08"
+  },
+  {
+    "id": 304,
+    "numero": 3,
+    "titulo": "O Troll",
+    "sinopse": "Askeladd recebe ordens para matar Thors, antigo guerreiro conhecido como o Troll de Jom. Enquanto isso, Thorfinn se prepara para sua primeira batalha sem saber o perigo que aguarda seu pai.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep3.jpg",
+    "dataExibicao": "2019-07-08"
+  },
+  {
+    "id": 305,
+    "numero": 4,
+    "titulo": "Um Verdadeiro Guerreiro",
+    "sinopse": "Thors cai na armadilha de Askeladd e enfrenta sozinho diversos guerreiros. Mesmo com sua força superior, ele percebe que precisa tomar uma difícil decisão para salvar seu filho e seus companheiros.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep4.jpg",
+    "dataExibicao": "2019-07-29"
+  },
+  {
+    "id": 306,
+    "numero": 5,
+    "titulo": "O Filho do Troll",
+    "sinopse": "Após a morte de Thors pelas mãos de Askeladd, Thorfinn se esconde no navio inimigo e decide esperar pela oportunidade de se vingar.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep5.jpg",
+    "dataExibicao": "2019-08-05"
+  },
+  {
+    "id": 307,
+    "numero": 6,
+    "titulo": "A Jornada Começa",
+    "sinopse": "Thorfinn realiza seu primeiro assassinato e passa a acompanhar os vikings em batalhas, tornando-se cada vez mais habilidoso e frio enquanto busca vingança.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep6.jpg",
+    "dataExibicao": "2019-08-12"
+  },
+  {
+    "id": 308,
+    "numero": 7,
+    "titulo": "Normandos",
+    "sinopse": "Askeladd se afasta temporariamente da guerra contra a Inglaterra e encontra uma oportunidade de roubar um tesouro dos francos. Thorfinn, agora com 16 anos, participa da missão.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep7.jpg",
+    "dataExibicao": "2019-08-19"
+  },
+  {
+    "id": 309,
+    "numero": 8,
+    "titulo": "Além da Margem do Mar",
+    "sinopse": "Após conquistar o tesouro dos francos, o grupo retorna para passar o inverno na Dinamarca. Thorfinn desafia Askeladd para um duelo como recompensa por seus feitos.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep8.jpg",
+    "dataExibicao": "2019-08-26"
+  },
+  {
+    "id": 310,
+    "numero": 9,
+    "titulo": "A Batalha da Ponte de Londres",
+    "sinopse": "Em outubro de 1013, o rei Sweyn lidera uma invasão à Inglaterra. O exército de Askeladd participa do ataque, mas encontra resistência liderada pelo poderoso Thorkell.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep9.jpg",
+    "dataExibicao": "2019-09-02"
+  },
+  {
+    "id": 311,
+    "numero": 10,
+    "titulo": "Ragnarok",
+    "sinopse": "O grupo de Askeladd se separa do exército dinamarquês e ataca uma vila. Thorfinn continua consumido pelo desejo de vingança enquanto ouve histórias sobre o fim dos tempos.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep10.jpg",
+    "dataExibicao": "2019-09-16"
+  },
+  {
+    "id": 312,
+    "numero": 11,
+    "titulo": "Uma Aposta",
+    "sinopse": "Thorkell captura Canute e decide seguir o exército dinamarquês. Enquanto isso, ele conta a Ragnar sobre Valhalla e o orgulho dos guerreiros nórdicos que buscam uma morte gloriosa em batalha.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep11.jpg",
+    "dataExibicao": "2019-09-23"
+  },
+  {
+    "id": 313,
+    "numero": 12,
+    "titulo": "A Terra na Outra Margem",
+    "sinopse": "Askeladd e seus homens continuam fugindo de Thorkell, mas são impedidos pelo rio Severn. Askeladd entrega uma carta a um barqueiro e prepara sua próxima estratégia.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep12.jpg",
+    "dataExibicao": "2019-09-30"
+  },
+  {
+    "id": 314,
+    "numero": 13,
+    "titulo": "Filho de um Herói",
+    "sinopse": "Askeladd atravessa o rio e foge para o País de Gales com Canute. Durante o caminho, seus homens são atacados por soldados escondidos na fronteira do reino de Brycheiniog.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep13.jpg",
+    "dataExibicao": "2019-10-07"
+  },
+  {
+    "id": 315,
+    "numero": 14,
+    "titulo": "A Luz do Amanhecer",
+    "sinopse": "Askeladd decide retornar para Gainsborough atravessando Mercia durante uma forte tempestade de neve. O grupo encontra uma vila isolada e toma uma decisão perigosa.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep14.jpg",
+    "dataExibicao": "2019-10-14"
+  },
+  {
+    "id": 316,
+    "numero": 15,
+    "titulo": "Depois do Yule",
+    "sinopse": "Após perder Canute, Thorkell interrompe seu avanço pela Inglaterra. Ao descobrir que a guerra pode estar chegando ao fim, ele fica frustrado e procura uma nova oportunidade.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep15.jpg",
+    "dataExibicao": "2019-10-21"
+  },
+  {
+    "id": 317,
+    "numero": 16,
+    "titulo": "A História das Feras",
+    "sinopse": "Askeladd e seus homens são atacados pelo exército inglês. Ao capturar o comandante inimigo, descobrem que Thorkell está se aproximando rapidamente.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep16.jpg",
+    "dataExibicao": "2019-10-28"
+  },
+  {
+    "id": 318,
+    "numero": 17,
+    "titulo": "Servo",
+    "sinopse": "Enquanto continuam fugindo de Thorkell, alguns guerreiros de Askeladd planejam uma traição para mudar de lado e entregar Canute.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep17.jpg",
+    "dataExibicao": "2019-11-04"
+  },
+  {
+    "id": 319,
+    "numero": 18,
+    "titulo": "Fora do Berço",
+    "sinopse": "Thorfinn e Thorkell concordam em lutar um duelo pelo destino de Askeladd. Enquanto isso, Canute enfrenta uma emboscada e começa a mudar sua visão sobre o mundo.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep18.jpg",
+    "dataExibicao": "2019-11-18"
+  },
+  {
+    "id": 320,
+    "numero": 19,
+    "titulo": "Frente Unida",
+    "sinopse": "Thorfinn sofre ferimentos graves em sua luta contra Thorkell. Askeladd trata seus ferimentos e propõe uma estratégia para que ambos consigam sobreviver.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep19.jpg",
+    "dataExibicao": "2019-11-25"
+  },
+  {
+    "id": 321,
+    "numero": 20,
+    "titulo": "Coroa",
+    "sinopse": "Thorfinn continua sua batalha contra Thorkell enquanto Canute começa a assumir uma nova postura diante dos acontecimentos ao seu redor.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep20.jpg",
+    "dataExibicao": "2019-12-02"
+  },
+  {
+    "id": 322,
+    "numero": 21,
+    "titulo": "Reencontro",
+    "sinopse": "O grupo de Canute chega a York para participar do conselho imperial. Enquanto Canute busca uma forma de enfrentar o rei Sweyn, Askeladd elabora um novo plano. Thorfinn reencontra alguém que conhecia seu antigo eu.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep21.jpg",
+    "dataExibicao": "2019-12-09"
+  },
+  {
+    "id": 323,
+    "numero": 22,
+    "titulo": "Lobo Solitário",
+    "sinopse": "Thorfinn inicia seu duelo contra Askeladd diante de Canute e Thorkell. Porém, as lembranças de Bjorn afetam o confronto e despertam a fúria de Thorfinn.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep22.jpg",
+    "dataExibicao": "2019-12-16"
+  },
+  {
+    "id": 324,
+    "numero": 23,
+    "titulo": "Erro de Cálculo",
+    "sinopse": "Após a tentativa de assassinato contra Canute, rumores se espalham em York. Askeladd acredita que seu plano está funcionando, mas uma decisão do rei Sweyn muda completamente a situação.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep23.jpg",
+    "dataExibicao": "2019-12-23"
+  },
+  {
+    "id": 325,
+    "numero": 24,
+    "titulo": "Fim do Prólogo",
+    "sinopse": "Askeladd enfrenta o rei Sweyn e tenta proteger o País de Gales. Enquanto isso, Thorfinn decide retornar para casa após o conselho de Leif, mas uma última visão desperta algo dentro dele.",
+    "temporadaId": 1,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t1/ep24.jpg",
+    "dataExibicao": "2019-12-30"
+  },
+  {
+    "id": 326,
+    "numero": 1,
+    "titulo": "Escravo",
+    "sinopse": "Einar vive tranquilamente no norte da Inglaterra com sua mãe e irmã, até que sua vila é atacada. Após perder tudo, ele acaba sendo levado como escravo para uma nova vida.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep1.jpg",
+    "dataExibicao": "2023-01-10"
+  },
+  {
+    "id": 327,
+    "numero": 2,
+    "titulo": "Fazenda de Ketil",
+    "sinopse": "Einar conhece Thorfinn e descobre que os dois precisam transformar uma floresta selvagem em um campo de trigo. Caso consigam, terão a chance de comprar suas próprias liberdades.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep2.jpg",
+    "dataExibicao": "2023-01-17"
+  },
+  {
+    "id": 328,
+    "numero": 3,
+    "titulo": "Serpente",
+    "sinopse": "Os guardas da fazenda convencem o jovem filho de Ketil a realizar seu primeiro assassinato para provar que se tornou um homem.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep3.jpg",
+    "dataExibicao": "2023-01-24"
+  },
+  {
+    "id": 329,
+    "numero": 4,
+    "titulo": "Despertar",
+    "sinopse": "Após acontecimentos difíceis, Einar pergunta a Thorfinn sobre seu passado, suas batalhas e se ele já matou alguém durante a guerra.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep4.jpg",
+    "dataExibicao": "2023-01-31"
+  },
+  {
+    "id": 330,
+    "numero": 5,
+    "titulo": "Caminho de Sangue",
+    "sinopse": "O jovem Canute precisa assumir o trono e lutar para manter seu reino enfraquecido enquanto enfrenta novos inimigos e desafios políticos.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep5.jpg",
+    "dataExibicao": "2023-02-07"
+  },
+  {
+    "id": 331,
+    "numero": 6,
+    "titulo": "Precisamos de um Cavalo",
+    "sinopse": "Thorfinn e Einar trabalham intensamente para limpar a floresta, mas percebem que precisam de cavalos para acelerar o trabalho.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep6.jpg",
+    "dataExibicao": "2023-02-14"
+  },
+  {
+    "id": 332,
+    "numero": 7,
+    "titulo": "Punho de Ferro Ketil",
+    "sinopse": "Alimentos começam a desaparecer na fazenda de Ketil. Enquanto isso, Thorgil, o filho mais velho de Ketil, retorna para casa.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep7.jpg",
+    "dataExibicao": "2023-02-21"
+  },
+  {
+    "id": 333,
+    "numero": 8,
+    "titulo": "Um Homem Vazio",
+    "sinopse": "Thorfinn começa a ter pesadelos frequentes, mas nunca consegue lembrar do que sonhou, deixando-o perturbado por seu passado.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep8.jpg",
+    "dataExibicao": "2023-02-28"
+  },
+  {
+    "id": 334,
+    "numero": 9,
+    "titulo": "Juramento",
+    "sinopse": "Thorfinn encontra um lugar de paz em seus sonhos e reencontra seu pai. Porém, ele precisa enfrentar novamente as dores do passado.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep9.jpg",
+    "dataExibicao": "2023-03-07"
+  },
+  {
+    "id": 335,
+    "numero": 10,
+    "titulo": "A Cabeça Amaldiçoada",
+    "sinopse": "Após três anos de trabalho, Einar e Thorfinn derrubam a última árvore da floresta e começam a imaginar um futuro livre.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep10.jpg",
+    "dataExibicao": "2023-03-14"
+  },
+  {
+    "id": 336,
+    "numero": 11,
+    "titulo": "Reis e Espadas",
+    "sinopse": "Em Jelling, Ketil, Thorgil e Olmar encontram Leif Erikson, que continua procurando por Thorfinn, filho de seu antigo amigo.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep11.jpg",
+    "dataExibicao": "2023-03-21"
+  },
+  {
+    "id": 337,
+    "numero": 12,
+    "titulo": "Por Amor Perdido",
+    "sinopse": "Olmar se sente humilhado pelo mensageiro de Canute e, incentivado por seu irmão Thorgil, decide tomar uma atitude impulsiva.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep12.jpg",
+    "dataExibicao": "2023-03-28"
+  },
+  {
+    "id": 338,
+    "numero": 13,
+    "titulo": "Nuvens Escuras",
+    "sinopse": "Einar revela que, mesmo após conquistar sua liberdade, deseja permanecer próximo de Arnheid. Enquanto isso, Snake recebe notícias sobre um escravo fugitivo perigoso.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep13.jpg",
+    "dataExibicao": "2023-04-04"
+  },
+  {
+    "id": 339,
+    "numero": 14,
+    "titulo": "Liberdade",
+    "sinopse": "Um escravo fugitivo chega à fazenda de Ketil afirmando ser Gardar, marido de Arnheid. Antes de conseguir libertá-la, ele precisa enfrentar Snake.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep14.jpg",
+    "dataExibicao": "2023-04-11"
+  },
+  {
+    "id": 340,
+    "numero": 15,
+    "titulo": "Tempestade",
+    "sinopse": "Arnheid vai até o local onde Gardar está preso para encontrá-lo e cuidar dos ferimentos de seu marido.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep15.jpg",
+    "dataExibicao": "2023-04-18"
+  },
+  {
+    "id": 341,
+    "numero": 16,
+    "titulo": "Grande Propósito",
+    "sinopse": "Enquanto Snake intensifica sua busca, Arnheid conta a Einar e Thorfinn tudo o que aconteceu. Mesmo sabendo dos riscos, eles decidem ajudá-la.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep16.jpg",
+    "dataExibicao": "2023-04-25"
+  },
+  {
+    "id": 342,
+    "numero": 17,
+    "titulo": "O Caminho de Volta",
+    "sinopse": "Snake ataca rapidamente e surpreende Thorfinn com sua velocidade. Enquanto está ferido, Gardar relembra sua vida ao lado de Arnheid.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep17.jpg",
+    "dataExibicao": "2023-05-02"
+  },
+  {
+    "id": 343,
+    "numero": 18,
+    "titulo": "O Primeiro Método",
+    "sinopse": "Após retornar para sua fazenda, Ketil descobre o que aconteceu durante sua ausência e começa a procurar por Arnheid.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep18.jpg",
+    "dataExibicao": "2023-05-09"
+  },
+  {
+    "id": 344,
+    "numero": 19,
+    "titulo": "A Batalha da Fazenda de Ketil",
+    "sinopse": "Durante uma revolta camponesa, Thorfinn e seus aliados tentam escapar levando Arnheid, que está gravemente ferida e grávida.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep19.jpg",
+    "dataExibicao": "2023-05-16"
+  },
+  {
+    "id": 345,
+    "numero": 20,
+    "titulo": "Dor",
+    "sinopse": "Enquanto Thorfinn e Einar tentam fugir, Arnheid recupera a consciência e questiona para onde eles estão indo e se ainda existem escravos e guerras naquele lugar.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep20.jpg",
+    "dataExibicao": "2023-05-23"
+  },
+  {
+    "id": 346,
+    "numero": 21,
+    "titulo": "Coragem",
+    "sinopse": "A batalha deixa muitas perdas e consequências. Enquanto Thorgil e a esposa de Ketil querem continuar lutando, Canute exige a rendição do grupo.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep21.jpg",
+    "dataExibicao": "2023-05-30"
+  },
+  {
+    "id": 347,
+    "numero": 22,
+    "titulo": "O Rei da Rebelião",
+    "sinopse": "Snake tenta impedir o confronto, mas Thorfinn decide enfrentar Drott, o guarda de Canute, aceitando receber cem golpes para provar sua determinação.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep22.jpg",
+    "dataExibicao": "2023-06-06"
+  },
+  {
+    "id": 348,
+    "numero": 23,
+    "titulo": "Dois Caminhos",
+    "sinopse": "Thorfinn e Einar tentam convencer Canute a abandonar a tomada da Fazenda de Ketil. Diante do impasse, Thorfinn toma uma decisão que muda o destino de todos.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep23.jpg",
+    "dataExibicao": "2023-06-13"
+  },
+  {
+    "id": 349,
+    "numero": 24,
+    "titulo": "Lar",
+    "sinopse": "Depois de muitos anos, Thorfinn finalmente retorna à Islândia e reencontra sua família. Porém, ele logo revela que possui um novo objetivo e uma nova jornada pela frente.",
+    "temporadaId": 2,
+    "animeId": 24,
+    "imagemUrl": "../../images/episodios/vinland-saga/t2/ep24.jpg",
+    "dataExibicao": "2023-06-20"
   }
 ]
