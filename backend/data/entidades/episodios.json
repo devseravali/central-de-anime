@@ -3488,5 +3488,335 @@
     "animeId": 24,
     "imagemUrl": "../../images/episodios/vinland-saga/t2/ep24.jpg",
     "dataExibicao": "2023-06-20"
+  },
+  {
+    "id": 350,
+    "numero": 1,
+    "titulo": "As Novas Roupas do Príncipe",
+    "sinopse": "Bojji, um príncipe surdo e considerado incapaz de governar por suas limitações, conhece Kage, um sobrevivente de um clã das sombras que acaba se aproveitando da bondade do jovem príncipe.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep1.jpg",
+    "dataExibicao": "2021-10-15"
+  },
+  {
+    "id": 351,
+    "numero": 2,
+    "titulo": "O Príncipe e Kage",
+    "sinopse": "A infância trágica de Kage é revelada. Enquanto isso, Bojji continua seu treinamento e seu estilo de luta é criticado por parecer inadequado para um príncipe.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep2.jpg",
+    "dataExibicao": "2021-10-22"
+  },
+  {
+    "id": 352,
+    "numero": 3,
+    "titulo": "O Novo Rei",
+    "sinopse": "Após a morte do rei Bosse, Bojji é anunciado como o próximo rei. Porém, a decisão não acontece como ele esperava e ele decide iniciar sua própria jornada.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep3.jpg",
+    "dataExibicao": "2021-10-29"
+  },
+  {
+    "id": 353,
+    "numero": 4,
+    "titulo": "Sua Primeira Jornada",
+    "sinopse": "Bojji deixa o reino e encontra um caçador misterioso que lhe ensina sobre os mistérios da vida. Durante a viagem, alguém tenta tirar sua vida.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep4.jpg",
+    "dataExibicao": "2021-11-05"
+  },
+  {
+    "id": 354,
+    "numero": 5,
+    "titulo": "Planos Entrelaçados",
+    "sinopse": "Bojji descobre que possui um guardião secreto. Enquanto isso, Domas tenta conquistar a confiança de Daida e o Espelho Mágico revela uma forma de obter o poder de Bosse.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep5.jpg",
+    "dataExibicao": "2021-11-12"
+  },
+  {
+    "id": 355,
+    "numero": 6,
+    "titulo": "O Rei do Submundo",
+    "sinopse": "Bojji e Kage encontram Desha, o rei do submundo, que testa as habilidades de Bojji e decide não treiná-lo.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep6.jpg",
+    "dataExibicao": "2021-11-19"
+  },
+  {
+    "id": 356,
+    "numero": 7,
+    "titulo": "O Aprendizado do Príncipe",
+    "sinopse": "Kage convence Despa a treinar Bojji. Mesmo descobrindo que o príncipe possui pouca força física, Despa decide ajudá-lo a desenvolver suas verdadeiras habilidades.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep7.jpg",
+    "dataExibicao": "2021-11-26"
+  },
+  {
+    "id": 357,
+    "numero": 8,
+    "titulo": "O Sacrifício dos Sonhos",
+    "sinopse": "A história da ascensão de Bosse e do nascimento de Bojji é revelada. Enquanto isso, conspirações começam a surgir dentro do reino.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep8.jpg",
+    "dataExibicao": "2021-12-03"
+  },
+  {
+    "id": 358,
+    "numero": 9,
+    "titulo": "A Rainha e o Escudo",
+    "sinopse": "O passado de Dorshe e Hiling é revelado. No presente, Dorshe precisa proteger a rainha de uma ameaça mortal.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep9.jpg",
+    "dataExibicao": "2021-12-10"
+  },
+  {
+    "id": 359,
+    "numero": 10,
+    "titulo": "A Espada do Príncipe",
+    "sinopse": "Bojji conclui seu treinamento com Despa. Durante uma refeição comemorativa, ele precisa provar suas habilidades em uma batalha inesperada.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep10.jpg",
+    "dataExibicao": "2021-12-17"
+  },
+  {
+    "id": 360,
+    "numero": 11,
+    "titulo": "Irmãos Mais Velho e Mais Novo",
+    "sinopse": "Daida relembra ensinamentos sobre o valor da vida e descobre que não está sozinho em seu exílio. Enquanto isso, Desha envia seus cavaleiros atrás de criminosos que escaparam do submundo.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep11.jpg",
+    "dataExibicao": "2021-12-24"
+  },
+  {
+    "id": 361,
+    "numero": 12,
+    "titulo": "Os Passos da Guerra",
+    "sinopse": "Hiling e seus cavaleiros se preparam para agir fora do castelo. Enquanto isso, o Espelho Mágico e Apeas conduzem os criminosos até a sala do trono.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep12.jpg",
+    "dataExibicao": "2022-01-07"
+  },
+  {
+    "id": 362,
+    "numero": 13,
+    "titulo": "O Reino em Caos",
+    "sinopse": "Hiling enfrenta uma forte resistência das forças controladas pelo Espelho Mágico. Enquanto isso, Ouken inicia seu próprio ataque ao reino.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep13.jpg",
+    "dataExibicao": "2022-01-14"
+  },
+  {
+    "id": 363,
+    "numero": 14,
+    "titulo": "O Retorno do Príncipe",
+    "sinopse": "Gravemente ferido, Dorshe tenta proteger Hiling e recebe ajuda inesperada. A situação se torna crítica até o retorno de Bojji e Kage ao castelo.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep14.jpg",
+    "dataExibicao": "2022-01-21"
+  },
+  {
+    "id": 364,
+    "numero": 15,
+    "titulo": "A Ordem do Submundo",
+    "sinopse": "Bojji e Kage lideram um grupo até a entrada do submundo para enviar as criaturas mágicas de volta. Enquanto isso, Domas e Hokuro encontram a Ordem do Submundo.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep15.jpg",
+    "dataExibicao": "2022-01-28"
+  },
+  {
+    "id": 365,
+    "numero": 16,
+    "titulo": "Majestade Real",
+    "sinopse": "O nome Miranjo desperta lembranças traumáticas em Bojji. Desha revela o passado de Gigan e decide mudar seus planos.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep16.jpg",
+    "dataExibicao": "2022-02-04"
+  },
+  {
+    "id": 366,
+    "numero": 17,
+    "titulo": "A Maldição da Imortalidade",
+    "sinopse": "Bojji e Kage descobrem mais sobre o sonho de Miranjo. Enquanto isso, o Espelho Mágico chama Ouken para ajudá-la.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep17.jpg",
+    "dataExibicao": "2022-02-11"
+  },
+  {
+    "id": 367,
+    "numero": 18,
+    "titulo": "Batalha Contra os Deuses",
+    "sinopse": "Bosse revela a Bebin como conheceu Miranjo quando ela era criança. Bojji enfrenta Ouken e recebe ajuda de Despa.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep18.jpg",
+    "dataExibicao": "2022-02-18"
+  },
+  {
+    "id": 368,
+    "numero": 19,
+    "titulo": "O Último Bastião",
+    "sinopse": "Bosse conta a história de Miranjo para Bebin. Enquanto isso, Kage enfrenta uma decisão de vida ou morte e os Quatro Grandes enfrentam Ouken.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep19.jpg",
+    "dataExibicao": "2022-02-25"
+  },
+  {
+    "id": 369,
+    "numero": 20,
+    "titulo": "Imortal Contra Invencível",
+    "sinopse": "Miranjo enfrenta as consequências de suas ações. Bojji precisa decidir o destino dela enquanto a batalha contra Ouken se intensifica.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep20.jpg",
+    "dataExibicao": "2022-03-04"
+  },
+  {
+    "id": 370,
+    "numero": 21,
+    "titulo": "A Técnica de Espada de um Rei",
+    "sinopse": "Bosse revela que não queria retornar à vida. O confronto entre Bojji e Bosse começa, colocando em prova tudo que o príncipe aprendeu.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep21.jpg",
+    "dataExibicao": "2022-03-11"
+  },
+  {
+    "id": 371,
+    "numero": 22,
+    "titulo": "Uma Promessa ao Demônio",
+    "sinopse": "Bosse mostra a Daida suas memórias com Miranjo e revela como recebeu seu poder do demônio. Despa tenta realizar seu desejo para Ouken.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep22.jpg",
+    "dataExibicao": "2022-03-18"
+  },
+  {
+    "id": 372,
+    "numero": 23,
+    "titulo": "O Rei e o Sol",
+    "sinopse": "Daida aceita os crimes de Miranjo e decide perdoá-la. Como forma de redenção, ele entrega o trono para Bojji. Porém, Kage sente que não pertence mais ao lado do novo rei.",
+    "temporadaId": 1,
+    "animeId": 26,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t1/ep23.jpg",
+    "dataExibicao": "2022-03-25"
+  },
+  {
+    "id": 373,
+    "numero": 1,
+    "titulo": "O Príncipe e o Tesouro",
+    "sinopse": "Bojji e Kage continuam suas aventuras enquanto novas histórias do reino são reveladas. A amizade entre os dois é colocada à prova diante de novos desafios.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep1.jpg",
+    "dataExibicao": "2023-04-14"
+  },
+  {
+    "id": 374,
+    "numero": 2,
+    "titulo": "O Segredo de Despa",
+    "sinopse": "Novas histórias sobre Despa são reveladas, mostrando momentos de seu passado e sua relação com aqueles que cruzaram seu caminho.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep2.jpg",
+    "dataExibicao": "2023-04-21"
+  },
+  {
+    "id": 375,
+    "numero": 3,
+    "titulo": "O Herói do Submundo",
+    "sinopse": "Bojji e seus companheiros enfrentam novas situações envolvendo o submundo e descobrem mais sobre os guerreiros que vivem naquele lugar.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep3.jpg",
+    "dataExibicao": "2023-04-28"
+  },
+  {
+    "id": 376,
+    "numero": 4,
+    "titulo": "A Coragem de Kage",
+    "sinopse": "Kage enfrenta seus medos e relembra acontecimentos importantes de sua vida enquanto fortalece ainda mais seu vínculo com Bojji.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep4.jpg",
+    "dataExibicao": "2023-05-05"
+  },
+  {
+    "id": 377,
+    "numero": 5,
+    "titulo": "O Passado de Bebin",
+    "sinopse": "A história de Bebin é explorada, revelando sua trajetória como guerreiro e sua ligação com a família real.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep5.jpg",
+    "dataExibicao": "2023-05-12"
+  },
+  {
+    "id": 378,
+    "numero": 6,
+    "titulo": "A Jornada de Bojji",
+    "sinopse": "Bojji continua sua caminhada como rei, aprendendo sobre responsabilidade, amizade e o verdadeiro significado de liderar.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep6.jpg",
+    "dataExibicao": "2023-05-19"
+  },
+  {
+    "id": 379,
+    "numero": 7,
+    "titulo": "Memórias do Reino",
+    "sinopse": "Personagens do reino relembram acontecimentos importantes que ajudaram a moldar a história de Bojji e sua família.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep7.jpg",
+    "dataExibicao": "2023-05-26"
+  },
+  {
+    "id": 380,
+    "numero": 8,
+    "titulo": "Novos Laços",
+    "sinopse": "Bojji e seus aliados descobrem novas formas de superar desafios enquanto fortalecem seus laços de amizade.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep8.jpg",
+    "dataExibicao": "2023-06-02"
+  },
+  {
+    "id": 381,
+    "numero": 9,
+    "titulo": "O Valor de um Rei",
+    "sinopse": "Bojji encara novas responsabilidades e mostra que um verdadeiro rei não depende apenas de força, mas também de bondade e determinação.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep9.jpg",
+    "dataExibicao": "2023-06-09"
+  },
+  {
+    "id": 382,
+    "numero": 10,
+    "titulo": "O Tesouro da Coragem",
+    "sinopse": "As histórias de Bojji e Kage chegam ao fim com novos momentos que celebram a amizade, a coragem e as lições aprendidas durante suas jornadas.",
+    "temporadaId": 2,
+    "animeId": 27,
+    "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep10.jpg",
+    "dataExibicao": "2023-06-16"
   }
 ]
