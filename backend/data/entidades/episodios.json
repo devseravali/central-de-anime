@@ -3818,5 +3818,725 @@
     "animeId": 27,
     "imagemUrl": "../../images/episodios/ousama-ranking/t2/ep10.jpg",
     "dataExibicao": "2023-06-16"
+  },
+  {
+    "id": 383,
+    "numero": 1,
+    "titulo": "Partida × Som do Vento × Novo Começo",
+    "sinopse": "Gon Freecss encontra Kite, um caçador que revela que seu pai Ging está vivo. Inspirado por essa descoberta, Gon decide se tornar um Hunter e parte em busca de sua própria aventura.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep1.jpg",
+    "dataExibicao": "1999-10-16"
+  },
+  {
+    "id": 384,
+    "numero": 2,
+    "titulo": "Encontro × Hesitação × Partida",
+    "sinopse": "Após receber permissão de sua tia Mito, Gon parte para o Exame Hunter. Durante a viagem, ele conhece Leorio e juntos enfrentam desafios antes de chegar ao local do exame.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep2.jpg",
+    "dataExibicao": "1999-10-23"
+  },
+  {
+    "id": 385,
+    "numero": 3,
+    "titulo": "Orgulho × Tempestade × Duelo",
+    "sinopse": "Durante a viagem para o Exame Hunter, Gon e Leorio conhecem Kurapika. O capitão do navio testa os candidatos perguntando seus motivos para se tornarem Hunters.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep3.jpg",
+    "dataExibicao": "1999-10-30"
+  },
+  {
+    "id": 386,
+    "numero": 4,
+    "titulo": "Decisão × Atalho × Desvio",
+    "sinopse": "Gon, Kurapika e Leorio seguem caminhos diferentes para chegar ao local do exame. Após enfrentarem uma armadilha, eles conseguem avançar para a próxima etapa.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep4.jpg",
+    "dataExibicao": "1999-11-06"
+  },
+  {
+    "id": 387,
+    "numero": 5,
+    "titulo": "Mentiras × Verdades × Kiriko",
+    "sinopse": "Os candidatos encontram uma família misteriosa na floresta durante o teste. Gon, Kurapika e Leorio precisam descobrir a verdade para continuar no exame.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep5.jpg",
+    "dataExibicao": "1999-11-13"
+  },
+  {
+    "id": 388,
+    "numero": 6,
+    "titulo": "Bife × Maratona × O Exame Começa",
+    "sinopse": "Começa oficialmente a primeira fase do Exame Hunter. Os candidatos precisam acompanhar o examinador Satotz em uma longa corrida pelo túnel.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep6.jpg",
+    "dataExibicao": "1999-11-20"
+  },
+  {
+    "id": 389,
+    "numero": 7,
+    "titulo": "Trauma × Limite × Armadilha Doce",
+    "sinopse": "Tonpa tenta eliminar candidatos usando seus truques. Enquanto isso, Gon e Killua começam a criar uma amizade durante o exame.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep7.jpg",
+    "dataExibicao": "1999-11-27"
+  },
+  {
+    "id": 390,
+    "numero": 8,
+    "titulo": "Conjurador × Sorriso × Cuidado com as Feras",
+    "sinopse": "Hisoka identifica o verdadeiro examinador e demonstra seu poder, eliminando diversos candidatos enquanto observa o potencial de Gon e seus amigos.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep8.jpg",
+    "dataExibicao": "1999-12-04"
+  },
+  {
+    "id": 391,
+    "numero": 9,
+    "titulo": "Menchi × Fúria × Segunda Fase",
+    "sinopse": "A segunda fase do Exame Hunter exige que os candidatos preparem pratos para os Gourmet Hunters Buhara e Menchi.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep9.jpg",
+    "dataExibicao": "1999-12-11"
+  },
+  {
+    "id": 392,
+    "numero": 10,
+    "titulo": "Falha × Pânico × Voz Celestial",
+    "sinopse": "Após todos falharem no teste de culinária, o presidente Netero aparece e oferece uma nova chance aos candidatos.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep10.jpg",
+    "dataExibicao": "1999-12-18"
+  },
+  {
+    "id": 393,
+    "numero": 11,
+    "titulo": "Exploração × Coragem × Passageiro Oculto",
+    "sinopse": "Após passarem pela segunda fase do Exame Hunter, Gon e os demais candidatos seguem em um dirigível para a próxima etapa. Uma garota tenta se vingar de Killua pelo passado de sua família.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep11.jpg",
+    "dataExibicao": "2000-01-08"
+  },
+  {
+    "id": 394,
+    "numero": 12,
+    "titulo": "Bom Garoto? × Mau Garoto? × Killua",
+    "sinopse": "Killua tenta roubar a bola de Netero durante o teste, mas percebe o conflito dentro de si. Gon continua tentando alcançar o presidente usando apenas sua determinação.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep12.jpg",
+    "dataExibicao": "2000-01-15"
+  },
+  {
+    "id": 395,
+    "numero": 13,
+    "titulo": "Pró × Contra × Armadilha",
+    "sinopse": "A terceira fase do exame começa na Torre dos Truques. Os candidatos precisam trabalhar juntos para sobreviver aos desafios impostos pelos prisioneiros.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep13.jpg",
+    "dataExibicao": "2000-01-22"
+  },
+  {
+    "id": 396,
+    "numero": 14,
+    "titulo": "Velas × Estratégia × Conflito",
+    "sinopse": "Gon enfrenta Sedokan em um desafio envolvendo velas, enquanto Kurapika participa de um confronto contra um prisioneiro da torre.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep14.jpg",
+    "dataExibicao": "2000-01-29"
+  },
+  {
+    "id": 397,
+    "numero": 15,
+    "titulo": "Vida Passageira × Majitani × Aposta",
+    "sinopse": "Majitani tenta enganar os candidatos fingindo estar derrotado. Leorio e os outros precisam decidir como lidar com a situação.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep15.jpg",
+    "dataExibicao": "2000-02-05"
+  },
+  {
+    "id": 398,
+    "numero": 16,
+    "titulo": "Pedra × Papel × Tesoura",
+    "sinopse": "Leorio enfrenta uma adversária usando apostas, enquanto Killua encara Johness, um assassino conhecido por sua brutalidade.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep16.jpg",
+    "dataExibicao": "2000-02-12"
+  },
+  {
+    "id": 399,
+    "numero": 17,
+    "titulo": "Três Pessoas × Cinco Pessoas × Última Escolha",
+    "sinopse": "O grupo precisa escolher entre dois caminhos na última parte da Torre dos Truques. Gon encontra uma solução para que todos possam avançar.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep17.jpg",
+    "dataExibicao": "2000-02-19"
+  },
+  {
+    "id": 400,
+    "numero": 18,
+    "titulo": "Tesouro × Memória × Quarto Apertado",
+    "sinopse": "Os candidatos chegam a uma ilha onde precisam encontrar tesouros para continuar no exame. Kurapika revela a história do clã Kurta.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep18.jpg",
+    "dataExibicao": "2000-02-26"
+  },
+  {
+    "id": 401,
+    "numero": 19,
+    "titulo": "Isolados × Diário × Molhados",
+    "sinopse": "Os candidatos ficam presos em uma ilha durante uma tempestade. Eles precisam trabalhar juntos para sobreviver e escapar antes que tudo seja destruído.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep19.jpg",
+    "dataExibicao": "2000-03-04"
+  },
+  {
+    "id": 402,
+    "numero": 20,
+    "titulo": "Ondas Gigantes × Canhão Gigante × Grande Corrida",
+    "sinopse": "Gon e seus amigos tentam separar o navio da ilha antes que a segunda onda da tempestade chegue. O grupo consegue escapar graças ao trabalho em equipe.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep20.jpg",
+    "dataExibicao": "2000-03-11"
+  },
+  {
+    "id": 403,
+    "numero": 21,
+    "titulo": "Quarta Fase × Quarenta e Quatro × Número da Morte",
+    "sinopse": "A quarta fase do Exame Hunter começa na Ilha Zevil. Cada participante precisa conseguir pontos roubando os distintivos dos seus alvos. Gon recebe Hisoka como alvo e começa a preparar uma estratégia para enfrentá-lo.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep21.jpg",
+    "dataExibicao": "2000-03-18"
+  },
+  {
+    "id": 404,
+    "numero": 22,
+    "titulo": "Encontrar × Esconder × Capturar",
+    "sinopse": "Gon segue Hisoka tentando encontrar uma oportunidade para pegar seu distintivo. Enquanto isso, Hisoka decide enfrentar outros participantes do exame.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep22.jpg",
+    "dataExibicao": "2000-03-25"
+  },
+  {
+    "id": 405,
+    "numero": 23,
+    "titulo": "Hisoka × Impacto × Gon",
+    "sinopse": "Gon consegue pegar o distintivo de Hisoka, mas acaba sendo atacado por outro candidato. Hisoka derrota o inimigo e devolve os distintivos para Gon, esperando pelo dia em que ele poderá retribuir o golpe.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep23.jpg",
+    "dataExibicao": "2000-04-01"
+  },
+  {
+    "id": 406,
+    "numero": 24,
+    "titulo": "Dano × Reencontro × Coragem",
+    "sinopse": "Enquanto Gon se recupera do envenenamento, Killua enfrenta os irmãos Amori. Leorio continua procurando seu alvo para completar a quarta fase do exame.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep24.jpg",
+    "dataExibicao": "2000-04-15"
+  },
+  {
+    "id": 407,
+    "numero": 25,
+    "titulo": "Pegajoso × Picante × Dentro da Caverna",
+    "sinopse": "Gon, Leorio e Kurapika ficam presos em uma caverna com Ponzu. Eles precisam encontrar uma forma de escapar enquanto enfrentam diversos perigos.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep25.jpg",
+    "dataExibicao": "2000-04-22"
+  },
+  {
+    "id": 408,
+    "numero": 26,
+    "titulo": "Presidente × Entrevista × Teste Escrito",
+    "sinopse": "Os nove candidatos restantes passam por uma entrevista com o presidente Netero antes da fase final do Exame Hunter.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep26.jpg",
+    "dataExibicao": "2000-05-06"
+  },
+  {
+    "id": 409,
+    "numero": 27,
+    "titulo": "Hisoka × Kurapika × Sussurro da Aranha",
+    "sinopse": "Hisoka e Kurapika iniciam a primeira luta da fase final. O confronto revela a força e a determinação dos dois candidatos.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep27.jpg",
+    "dataExibicao": "2000-05-13"
+  },
+  {
+    "id": 410,
+    "numero": 28,
+    "titulo": "Conversa × Desculpas × Comparando Forças",
+    "sinopse": "Gon enfrenta Hanzo na fase final do exame. Mesmo estando em desvantagem, ele se recusa a desistir e mostra sua enorme força de vontade.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep28.jpg",
+    "dataExibicao": "2000-05-20"
+  },
+  {
+    "id": 411,
+    "numero": 29,
+    "titulo": "Aprovado × Reprovado × Fim do Exame",
+    "sinopse": "Hanzo reconhece a determinação de Gon e decide desistir da luta. Os resultados do Exame Hunter são revelados e novos acontecimentos começam.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep29.jpg",
+    "dataExibicao": "2000-05-27"
+  },
+  {
+    "id": 412,
+    "numero": 30,
+    "titulo": "Killua × Desclassificado × Expulso",
+    "sinopse": "Killua enfrenta seu irmão Illumi durante a fase final do exame e acaba sendo eliminado após uma decisão inesperada. Gon decide ir atrás do amigo.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep30.jpg",
+    "dataExibicao": "2000-06-03"
+  },
+  {
+    "id": 413,
+    "numero": 21,
+    "titulo": "Quarta Fase × Quarenta e Quatro × Número da Morte",
+    "sinopse": "A quarta fase do Exame Hunter começa na Ilha Zevil. Cada participante precisa conseguir seis pontos roubando o distintivo do seu alvo. Gon recebe Hisoka como alvo e começa a planejar uma forma de enfrentá-lo.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep21.jpg",
+    "dataExibicao": "2000-03-18"
+  },
+  {
+    "id": 414,
+    "numero": 22,
+    "titulo": "Encontrado × Escondido × Perseguido",
+    "sinopse": "Gon segue Hisoka pela ilha tentando encontrar uma oportunidade para pegar seu distintivo. Enquanto isso, Hisoka revela seu verdadeiro interesse nos participantes mais promissores.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep22.jpg",
+    "dataExibicao": "2000-03-25"
+  },
+  {
+    "id": 415,
+    "numero": 23,
+    "titulo": "Hisoka × Confronto × Gon",
+    "sinopse": "Gon finalmente consegue pegar o distintivo de Hisoka, mas acaba sendo atacado por outro participante. Hisoka derrota o inimigo e devolve os distintivos para Gon, esperando o dia em que ele poderá enfrentá-lo de igual para igual.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep23.jpg",
+    "dataExibicao": "2000-04-01"
+  },
+  {
+    "id": 416,
+    "numero": 24,
+    "titulo": "Ferido × Reencontro × Coragem",
+    "sinopse": "Após se recuperar dos ferimentos, Gon encontra Killua novamente. Os amigos continuam o exame enquanto Leorio procura seu alvo para completar sua pontuação.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep24.jpg",
+    "dataExibicao": "2000-04-15"
+  },
+  {
+    "id": 417,
+    "numero": 25,
+    "titulo": "Pegajoso × Doloroso × Dentro da Caverna",
+    "sinopse": "Gon, Leorio e Kurapika ficam presos em uma caverna com Ponzu. Para salvar seus amigos, Gon enfrenta diversos perigos e consegue encontrar o antídoto necessário.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep25.jpg",
+    "dataExibicao": "2000-04-22"
+  },
+  {
+    "id": 418,
+    "numero": 26,
+    "titulo": "Presidente × Entrevista × Prova Escrita",
+    "sinopse": "Os nove candidatos restantes passam por uma entrevista com Netero antes da fase final do Exame Hunter. O presidente anuncia um torneio de batalhas individuais para decidir os aprovados.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep26.jpg",
+    "dataExibicao": "2000-05-06"
+  },
+  {
+    "id": 419,
+    "numero": 27,
+    "titulo": "Hisoka × Kurapika × Sussurro da Aranha",
+    "sinopse": "Hisoka e Kurapika iniciam a primeira luta da fase final. Hisoka testa Kurapika, mas reconhece seu potencial e decide desistir do combate.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep27.jpg",
+    "dataExibicao": "2000-05-13"
+  },
+  {
+    "id": 420,
+    "numero": 28,
+    "titulo": "Conversa × Desculpas × Comparando Forças",
+    "sinopse": "Gon enfrenta Hanzo na fase final. Mesmo estando em grande desvantagem, Gon se recusa a desistir e mostra sua determinação para encontrar seu pai.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep28.jpg",
+    "dataExibicao": "2000-05-20"
+  },
+  {
+    "id": 421,
+    "numero": 29,
+    "titulo": "Passou × Falhou × Fim do Exame",
+    "sinopse": "Hanzo reconhece a força de vontade de Gon e aceita perder a luta. O resultado do Exame Hunter é revelado e os candidatos aprovados são anunciados.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep29.jpg",
+    "dataExibicao": "2000-05-27"
+  },
+  {
+    "id": 422,
+    "numero": 30,
+    "titulo": "Killua × Desclassificado × Forçado a Partir",
+    "sinopse": "Killua enfrenta uma situação inesperada ao descobrir a verdadeira identidade de seu adversário. Manipulado pelo irmão Illumi, ele abandona o exame e acaba sendo desclassificado.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep30.jpg",
+    "dataExibicao": "2000-06-03"
+  },
+  {
+    "id": 423,
+    "numero": 31,
+    "titulo": "Separação × Festa × Laços Desagradáveis",
+    "sinopse": "Gon decide procurar Killua depois que ele abandona o Exame Hunter. Leorio e Kurapika também mudam seus planos e resolvem acompanhar Gon em sua busca.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep31.jpg",
+    "dataExibicao": "2000-06-10"
+  },
+  {
+    "id": 424,
+    "numero": 32,
+    "titulo": "Turismo × Local Marcante × Casa de Killua",
+    "sinopse": "Gon, Leorio e Kurapika viajam até a Montanha Kukuroo para encontrar Killua. Eles chegam ao território da família Zoldyck e descobrem que o local é protegido por perigosos guardiões.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep32.jpg",
+    "dataExibicao": "2000-06-17"
+  },
+  {
+    "id": 425,
+    "numero": 33,
+    "titulo": "Treinamento × Cão de Guarda × Exaustos",
+    "sinopse": "Gon e seus amigos permanecem na área dos empregados da família Zoldyck e começam um treinamento para conseguir abrir o portão da propriedade.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep33.jpg",
+    "dataExibicao": "2000-07-01"
+  },
+  {
+    "id": 426,
+    "numero": 34,
+    "titulo": "Skate × Aprendiz × Honestidade",
+    "sinopse": "O grupo encontra Canary, uma aprendiz de mordomo que protege a propriedade dos Zoldyck. Gon insiste em provar que é amigo verdadeiro de Killua.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep34.jpg",
+    "dataExibicao": "2000-07-15"
+  },
+  {
+    "id": 427,
+    "numero": 35,
+    "titulo": "Killua × Punição × Reunião Familiar",
+    "sinopse": "Killua conversa com sua família e enfrenta as expectativas dos Zoldyck. Enquanto isso, Gon e seus amigos continuam tentando chegar até ele.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep35.jpg",
+    "dataExibicao": "2000-07-22"
+  },
+  {
+    "id": 428,
+    "numero": 36,
+    "titulo": "Cara ou Coroa × Reencontro × Mudança de Roupa",
+    "sinopse": "Gotoh, o mordomo da família Zoldyck, testa Gon e seus amigos com um jogo de moedas. Após superar o desafio, Killua finalmente aparece e reencontra seus companheiros.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep36.jpg",
+    "dataExibicao": "2000-08-08"
+  },
+  {
+    "id": 429,
+    "numero": 37,
+    "titulo": "Céu × Luta × Treinamento",
+    "sinopse": "Gon e Killua chegam à Arena Celestial para treinar e ganhar dinheiro. Eles começam a enfrentar novos desafios enquanto descobrem adversários cada vez mais fortes.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep37.jpg",
+    "dataExibicao": "2000-08-19"
+  },
+  {
+    "id": 430,
+    "numero": 38,
+    "titulo": "Nen × Nen × Nen?",
+    "sinopse": "Gon e Killua conhecem Wing e descobrem o poder do Nen. Antes de avançarem na Arena Celestial, precisam aprender a controlar sua aura.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep38.jpg",
+    "dataExibicao": "2000-09-09"
+  },
+  {
+    "id": 431,
+    "numero": 39,
+    "titulo": "Técnica Secreta × Registro × A Batalha Começa",
+    "sinopse": "Depois de aprenderem os fundamentos do Nen, Gon e Killua conseguem entrar no andar 200 da Arena Celestial e começam novas batalhas.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep39.jpg",
+    "dataExibicao": "2000-09-16"
+  },
+  {
+    "id": 432,
+    "numero": 40,
+    "titulo": "Dois Meses × Pausa × Apenas Por Garantia",
+    "sinopse": "Gon continua treinando seu Nen enquanto se recupera dos ferimentos. Kurapika inicia sua busca por trabalho e Hisoka enfrenta Kastro em uma batalha importante.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep40.jpg",
+    "dataExibicao": "2000-09-23"
+  },
+  {
+    "id": 433,
+    "numero": 41,
+    "titulo": "Bungee × Soco × Batalha de Uma Rodada",
+    "sinopse": "Gon e Killua descobrem seus tipos de Nen. Gon enfrenta Hisoka em uma luta intensa, conseguindo finalmente devolver o distintivo que recebeu durante o Exame Hunter.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep41.jpg",
+    "dataExibicao": "2000-09-30"
+  },
+  {
+    "id": 434,
+    "numero": 42,
+    "titulo": "Amor de Hisoka × Confronto × Determinação de Gon",
+    "sinopse": "Gon continua sua batalha contra Hisoka, mas percebe a enorme diferença de poder entre eles. Mesmo derrotado, ele conquista o respeito do adversário.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep42.jpg",
+    "dataExibicao": "2000-10-21"
+  },
+  {
+    "id": 435,
+    "numero": 43,
+    "titulo": "Talento × Agonia × Instinto Assassino",
+    "sinopse": "Killua decide participar das batalhas da Arena Celestial para testar suas habilidades. Enquanto isso, Gon continua aprimorando seu controle sobre o Nen.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep43.jpg",
+    "dataExibicao": "2000-10-28"
+  },
+  {
+    "id": 436,
+    "numero": 44,
+    "titulo": "Pequenos Inimigos × Limpeza × Exame Encerrado?",
+    "sinopse": "Gon e Killua dominam suas técnicas de Nen e conseguem avançar na Arena Celestial. Wing revela uma importante informação sobre o Exame Hunter de Gon.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep44.jpg",
+    "dataExibicao": "2000-11-04"
+  },
+  {
+    "id": 437,
+    "numero": 45,
+    "titulo": "Restrição × Juramento × Corrente do Julgamento",
+    "sinopse": "Kurapika relembra seu treinamento e sua jornada para se tornar um Hunter. Ele desenvolve suas habilidades de Nen e começa sua busca contra a Trupe Fantasma.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep45.jpg",
+    "dataExibicao": "2000-11-11"
+  },
+  {
+    "id": 438,
+    "numero": 46,
+    "titulo": "Estou em Casa × Bem-vindo de Volta × Sou Killua",
+    "sinopse": "Gon e Killua retornam à Ilha Baleia e conhecem melhor a origem de Gon. Os dois enfrentam caçadores ilegais e usam suas habilidades para proteger um filhote.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep46.jpg",
+    "dataExibicao": "2000-11-18"
+  },
+  {
+    "id": 439,
+    "numero": 47,
+    "titulo": "Pai × Segredo × Confissão",
+    "sinopse": "Gon recebe uma caixa deixada por seu pai Ging. Ao abrir usando Nen, ele encontra uma fita e informações que podem ajudá-lo em sua busca.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep47.jpg",
+    "dataExibicao": "2000-11-25"
+  },
+  {
+    "id": 440,
+    "numero": 48,
+    "titulo": "Kurapika × Olhos Escarlates × Primeiro Trabalho",
+    "sinopse": "Kurapika inicia seu primeiro trabalho como Hunter e passa por um teste para entrar em uma equipe de segurança. Enquanto isso, Gon e Killua descobrem informações sobre Greed Island.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep48.jpg",
+    "dataExibicao": "2000-12-02"
+  },
+  {
+    "id": 441,
+    "numero": 49,
+    "titulo": "Tom do Coração × Kurapika × Radiestesia",
+    "sinopse": "Gon e Killua descobrem que o cartão encontrado com os objetos de Ging está ligado ao misterioso jogo Greed Island. Kurapika continua investigando seus novos aliados.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep49.jpg",
+    "dataExibicao": "2000-12-09"
+  },
+  {
+    "id": 442,
+    "numero": 50,
+    "titulo": "Killua × Grande Fortuna × Taverna dos Hunters",
+    "sinopse": "Gon e Killua viajam para Yorknew em busca de informações sobre Greed Island. Kurapika consegue um novo emprego e descobre que sua missão envolve pessoas perigosas.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep50.jpg",
+    "dataExibicao": "2000-12-16"
+  },
+  {
+    "id": 443,
+    "numero": 51,
+    "titulo": "Aranha × Yorknew × Reunião",
+    "sinopse": "Neon e seus guarda-costas chegam a Yorknew City para o leilão subterrâneo. A Trupe Fantasma começa a se reunir enquanto Gon e Killua procuram informações sobre Greed Island.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep51.jpg",
+    "dataExibicao": "2000-12-23"
+  },
+  {
+    "id": 444,
+    "numero": 52,
+    "titulo": "Leilão Subterrâneo × Aniquilação × Metralhadora",
+    "sinopse": "Chrollo Lucilfer ordena que a Trupe Fantasma ataque o leilão subterrâneo. Os membros da organização demonstram seu enorme poder usando suas habilidades de Nen.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep52.jpg",
+    "dataExibicao": "2001-01-13"
+  },
+  {
+    "id": 445,
+    "numero": 53,
+    "titulo": "Trupe Fantasma × Feras das Sombras × Comunidade",
+    "sinopse": "A máfia envia as Feras das Sombras para enfrentar a Trupe Fantasma. Mesmo com seus poderes especiais, os inimigos descobrem a diferença de força entre eles.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep53.jpg",
+    "dataExibicao": "2001-01-20"
+  },
+  {
+    "id": 446,
+    "numero": 54,
+    "titulo": "Hisoka × Aliança × Caçando a Aranha",
+    "sinopse": "Kurapika captura Uvogin usando suas correntes de Nen. Ele se encontra com Hisoka em busca de informações sobre a Trupe Fantasma.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep54.jpg",
+    "dataExibicao": "2001-01-27"
+  },
+  {
+    "id": 447,
+    "numero": 55,
+    "titulo": "Uvo × Kurapika × Melodia da Determinação",
+    "sinopse": "Kurapika enfrenta Uvogin em uma batalha decisiva. Usando suas correntes e seu juramento de vingança, ele mostra o verdadeiro poder de seu Nen.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep55.jpg",
+    "dataExibicao": "2001-02-03"
+  },
+  {
+    "id": 448,
+    "numero": 56,
+    "titulo": "Olhos Escarlates × Duelo × Custo da Vida",
+    "sinopse": "Kurapika continua seu confronto contra Uvogin, enquanto Gon, Killua e Leorio tentam encontrar uma forma de obter dinheiro para comprar informações sobre Greed Island.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep56.jpg",
+    "dataExibicao": "2001-02-10"
+  },
+  {
+    "id": 449,
+    "numero": 57,
+    "titulo": "Gon × Tesouro × Homem Perigoso",
+    "sinopse": "Gon e Killua procuram itens com aura de Nen para conseguir dinheiro. Eles conhecem Zepile, um especialista em antiguidades que ajuda na busca.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep57.jpg",
+    "dataExibicao": "2001-02-17"
+  },
+  {
+    "id": 450,
+    "numero": 58,
+    "titulo": "Gon × Killua × Perseguição Mortal",
+    "sinopse": "Gon e Killua encontram membros da Trupe Fantasma em Yorknew, mas percebem que ainda não possuem força suficiente para enfrentá-los.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep58.jpg",
+    "dataExibicao": "2001-02-24"
+  },
+  {
+    "id": 451,
+    "numero": 59,
+    "titulo": "Teia da Aranha × Capturados × Técnica Assassina",
+    "sinopse": "Gon e Killua são capturados pela Trupe Fantasma. Enquanto isso, a máfia contrata assassinos profissionais para eliminar os membros da organização.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep59.jpg",
+    "dataExibicao": "2001-03-03"
+  },
+  {
+    "id": 452,
+    "numero": 60,
+    "titulo": "Kurapika × Assassinos Secretos × Zoldyck",
+    "sinopse": "Gon e Killua conseguem escapar e descobrem a ligação de Kurapika com a Trupe Fantasma. Chrollo encontra Neon e usa sua habilidade de prever o futuro.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep60.jpg",
+    "dataExibicao": "2001-03-10"
+  },
+  {
+    "id": 453,
+    "numero": 61,
+    "titulo": "Reunião da Aranha × Família Zoldyck × Batalha Final",
+    "sinopse": "Os assassinos Zoldyck enfrentam Chrollo Lucilfer em uma batalha intensa. Enquanto isso, a Trupe Fantasma continua seu plano e a máfia descobre que os corpos encontrados eram falsos.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep61.jpg",
+    "dataExibicao": "2001-03-17"
+  },
+  {
+    "id": 454,
+    "numero": 62,
+    "titulo": "Kurapika × Amigos × Destruição da Aranha",
+    "sinopse": "Zeno e Silva enfrentam Chrollo, mas deixam a batalha após a morte dos líderes da máfia. O leilão acontece normalmente e Kurapika reencontra Gon, Killua e Leorio. No final, Hisoka revela que os corpos da Trupe Fantasma eram falsos.",
+    "temporadaId": 1,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep62.jpg",
+    "dataExibicao": "2001-03-31"
   }
 ]
