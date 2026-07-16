@@ -2490,35 +2490,35 @@
     "dataExibicao": "2023-12-28"
   },
   {
-  "id": 250,
-  "numero": 1,
-  "titulo": "Jujutsu Kaisen 0",
-  "sinopse": "Yuta Okkotsu é assombrado pelo espírito amaldiçoado de sua amiga de infância, Rika Orimoto. Sob a orientação de Satoru Gojo, ele ingressa na Escola Técnica de Jujutsu para aprender a controlar seu imenso poder enquanto enfrenta Suguru Geto em uma batalha que definirá o futuro do mundo Jujutsu.",
-  "temporadaId": 0,
-  "animeId": 19,
-  "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-0.jpg",
-  "dataExibicao": "2021-12-24"
-},
+    "id": 250,
+    "numero": 1,
+    "titulo": "Jujutsu Kaisen 0",
+    "sinopse": "Yuta Okkotsu é assombrado pelo espírito amaldiçoado de sua amiga de infância, Rika Orimoto. Sob a orientação de Satoru Gojo, ele ingressa na Escola Técnica de Jujutsu para aprender a controlar seu imenso poder enquanto enfrenta Suguru Geto em uma batalha que definirá o futuro do mundo Jujutsu.",
+    "temporadaId": 0,
+    "animeId": 19,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-0.jpg",
+    "dataExibicao": "2021-12-24"
+  },
   {
-  "id": 251,
-  "numero": 1,
-  "titulo": "Jujutsu Kaisen: Inventário Oculto / Morte Prematura",
-  "sinopse": "Filme compilatório que reúne o arco Inventário Oculto / Morte Prematura, mostrando a juventude de Satoru Gojo e Suguru Geto. A história acompanha a missão para proteger Riko Amanai, o confronto contra Toji Fushiguro e os acontecimentos que mudaram para sempre a amizade entre Gojo e Geto, dando origem ao conflito que moldaria o futuro do mundo Jujutsu.",
-  "temporadaId": 0,
-  "animeId": 20,
-  "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-kaigyoku.jpg",
-  "dataExibicao": "2025-05-30"
-},
-{
-  "id": 252,
-  "numero": 1,
-  "titulo": "Jujutsu Kaisen: Incidente de Shibuya",
-  "sinopse": "Filme compilatório que reúne os acontecimentos do Incidente de Shibuya. Enquanto Satoru Gojo é selado, Yuji Itadori, Megumi Fushiguro, Nobara Kugisaki e os demais feiticeiros enfrentam maldições especiais em uma batalha desesperadora. O conflito deixa inúmeras perdas, muda o equilíbrio do mundo Jujutsu e prepara o início do Jogo do Abate.",
-  "temporadaId": 0,
-  "animeId": 21,
-  "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-shibuya-incident.jpg",
-  "dataExibicao": "2025-10-17"
-},
+    "id": 251,
+    "numero": 1,
+    "titulo": "Jujutsu Kaisen: Inventário Oculto / Morte Prematura",
+    "sinopse": "Filme compilatório que reúne o arco Inventário Oculto / Morte Prematura, mostrando a juventude de Satoru Gojo e Suguru Geto. A história acompanha a missão para proteger Riko Amanai, o confronto contra Toji Fushiguro e os acontecimentos que mudaram para sempre a amizade entre Gojo e Geto, dando origem ao conflito que moldaria o futuro do mundo Jujutsu.",
+    "temporadaId": 0,
+    "animeId": 20,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-kaigyoku.jpg",
+    "dataExibicao": "2025-05-30"
+  },
+  {
+    "id": 252,
+    "numero": 1,
+    "titulo": "Jujutsu Kaisen: Incidente de Shibuya",
+    "sinopse": "Filme compilatório que reúne os acontecimentos do Incidente de Shibuya. Enquanto Satoru Gojo é selado, Yuji Itadori, Megumi Fushiguro, Nobara Kugisaki e os demais feiticeiros enfrentam maldições especiais em uma batalha desesperadora. O conflito deixa inúmeras perdas, muda o equilíbrio do mundo Jujutsu e prepara o início do Jogo do Abate.",
+    "temporadaId": 0,
+    "animeId": 21,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-shibuya-incident.jpg",
+    "dataExibicao": "2025-10-17"
+  },
   {
     "id": 253,
     "numero": 48,
@@ -2638,5 +2638,375 @@
     "animeId": 22,
     "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep59.jpg",
     "dataExibicao": "2026-03-27"
+  },
+  {
+    "id": 265,
+    "numero": 1,
+    "titulo": "Renascimento",
+    "sinopse": "Light Yagami, um brilhante estudante do ensino médio entediado com o mundo, encontra um misterioso caderno chamado Death Note, capaz de matar qualquer pessoa cujo nome seja escrito nele. Decidido a criar um mundo livre de criminosos, Light começa sua missão como Kira.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep1.jpg",
+    "dataExibicao": "2006-10-04"
+  },
+  {
+    "id": 266,
+    "numero": 2,
+    "titulo": "Confronto",
+    "sinopse": "Enquanto criminosos continuam morrendo misteriosamente, o detetive L inicia uma investigação mundial para capturar Kira e cria uma força-tarefa no Japão liderada por Soichiro Yagami, pai de Light.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep2.jpg",
+    "dataExibicao": "2006-10-11"
+  },
+  {
+    "id": 267,
+    "numero": 3,
+    "titulo": "Negociações",
+    "sinopse": "Ryuk, o shinigami que deixou o Death Note no mundo humano, revela a Light que alguém está seguindo seus passos. O jovem Kira começa a perceber que precisará lidar com novos desafios.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep3.jpg",
+    "dataExibicao": "2006-10-18"
+  },
+  {
+    "id": 268,
+    "numero": 4,
+    "titulo": "Perseguição",
+    "sinopse": "Light testa os limites do Death Note e confirma que pode controlar as ações das vítimas antes de suas mortes. Enquanto isso, L continua se aproximando de sua identidade.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep4.jpg",
+    "dataExibicao": "2006-10-25"
+  },
+  {
+    "id": 269,
+    "numero": 5,
+    "titulo": "Táticas",
+    "sinopse": "Soichiro Yagami confronta L após descobrir que agentes do FBI foram enviados ao Japão. Light encontra uma maneira de eliminar aqueles que investigam Kira.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep5.jpg",
+    "dataExibicao": "2006-11-01"
+  },
+  {
+    "id": 270,
+    "numero": 6,
+    "titulo": "Desvendando",
+    "sinopse": "Light encontra uma mulher que possui informações capazes de revelar sua identidade como Kira. Ele precisa agir rapidamente antes que seu segredo seja descoberto.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep6.jpg",
+    "dataExibicao": "2006-11-08"
+  },
+  {
+    "id": 271,
+    "numero": 7,
+    "titulo": "Nublado",
+    "sinopse": "Light tenta eliminar uma ameaça usando o Death Note, mas descobre que a pessoa à sua frente não revelou seu verdadeiro nome.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep7.jpg",
+    "dataExibicao": "2006-11-15"
+  },
+  {
+    "id": 272,
+    "numero": 8,
+    "titulo": "Olhar",
+    "sinopse": "L instala câmeras e escutas nas casas dos investigadores suspeitos, mas Light percebe que está sendo observado e prepara uma estratégia para escapar.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep8.jpg",
+    "dataExibicao": "2006-11-22"
+  },
+  {
+    "id": 273,
+    "numero": 9,
+    "titulo": "Encontro",
+    "sinopse": "L começa a suspeitar ainda mais de Light e decide se aproximar dele. Os dois se encontram na universidade, iniciando uma batalha de inteligência.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep9.jpg",
+    "dataExibicao": "2006-11-29"
+  },
+  {
+    "id": 274,
+    "numero": 10,
+    "titulo": "Dúvida",
+    "sinopse": "As suspeitas de L sobre Light aumentam, enquanto uma emergência envolvendo Soichiro Yagami coloca a investigação em risco.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep10.jpg",
+    "dataExibicao": "2006-12-06"
+  },
+  {
+    "id": 275,
+    "numero": 11,
+    "titulo": "Assalto",
+    "sinopse": "Após mensagens enviadas à Sakura TV, pessoas que criticavam Kira começam a morrer. L conclui que existe um segundo Kira com uma habilidade diferente do original.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep11.jpg",
+    "dataExibicao": "2006-12-13"
+  },
+  {
+    "id": 276,
+    "numero": 12,
+    "titulo": "Amor",
+    "sinopse": "Com um segundo Kira à solta, L pede ajuda a Light para capturar o novo assassino. Enquanto isso, a nova Kira revela possuir uma habilidade que Light não tem.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep12.jpg",
+    "dataExibicao": "2006-12-27"
+  },
+  {
+    "id": 277,
+    "numero": 13,
+    "titulo": "Confissão",
+    "sinopse": "Light tenta descobrir a identidade do segundo Kira antes que L aumente suas suspeitas. Porém, Misa Amane usa seus olhos de shinigami para encontrar Light primeiro.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep13.jpg",
+    "dataExibicao": "2007-01-10"
+  },
+  {
+    "id": 278,
+    "numero": 14,
+    "titulo": "Amigo",
+    "sinopse": "Light e Misa revelam um ao outro seus Death Notes. Light pede que Misa use o shinigami Rem para eliminar L, mas ela exige que ele demonstre amor por ela.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep14.jpg",
+    "dataExibicao": "2007-01-17"
+  },
+  {
+    "id": 279,
+    "numero": 15,
+    "titulo": "Aposta",
+    "sinopse": "Novas evidências apontam Misa como a segunda Kira. Para protegê-la, Rem força Misa a abandonar a posse do Death Note.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep15.jpg",
+    "dataExibicao": "2007-01-24"
+  },
+  {
+    "id": 280,
+    "numero": 16,
+    "titulo": "Decisão",
+    "sinopse": "Misa é mantida sob custódia e perde suas memórias relacionadas ao Death Note. Quando Light também é preso, os assassinatos param e a investigação muda de direção.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep16.jpg",
+    "dataExibicao": "2007-01-31"
+  },
+  {
+    "id": 281,
+    "numero": 17,
+    "titulo": "Execução",
+    "sinopse": "Após cinquenta dias de confinamento, os assassinatos continuam. Light e Misa são libertados, mas L prepara um plano para descobrir a verdade.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep17.jpg",
+    "dataExibicao": "2007-02-07"
+  },
+  {
+    "id": 282,
+    "numero": 18,
+    "titulo": "Aliado",
+    "sinopse": "Mesmo sem suas memórias como Kira, Light e Misa retornam à investigação. Light percebe uma ligação entre os novos assassinatos e a Corporação Yotsuba.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep18.jpg",
+    "dataExibicao": "2007-02-14"
+  },
+  {
+    "id": 283,
+    "numero": 19,
+    "titulo": "Matsuda",
+    "sinopse": "Matsuda tenta provar seu valor e acaba investigando a Corporação Yotsuba por conta própria, descobrindo informações importantes.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep19.jpg",
+    "dataExibicao": "2007-02-21"
+  },
+  {
+    "id": 284,
+    "numero": 20,
+    "titulo": "Improviso",
+    "sinopse": "A equipe de investigação descobre que executivos da Yotsuba se reúnem secretamente para decidir quem deve morrer. Light tenta descobrir quem é o novo Kira.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep20.jpg",
+    "dataExibicao": "2007-02-28"
+  },
+  {
+    "id": 285,
+    "numero": 21,
+    "titulo": "Desempenho",
+    "sinopse": "A equipe de investigação usa Misa para se aproximar da Corporação Yotsuba, enquanto Rem tenta se comunicar com ela e interfere nos planos.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep21.jpg",
+    "dataExibicao": "2007-03-07"
+  },
+  {
+    "id": 286,
+    "numero": 22,
+    "titulo": "Orientação",
+    "sinopse": "Com a ajuda de Misa, a equipe descobre a identidade do novo Kira. L cria um plano elaborado para revelar o assassino escondido entre os executivos da Yotsuba.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep22.jpg",
+    "dataExibicao": "2007-03-14"
+  },
+  {
+    "id": 287,
+    "numero": 23,
+    "titulo": "Frenesi",
+    "sinopse": "L, Light e Misa observam Higuchi e começam a suspeitar que ele possui ligação com um shinigami. Rem tenta guiá-lo para uma armadilha.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep23.jpg",
+    "dataExibicao": "2007-03-21"
+  },
+  {
+    "id": 288,
+    "numero": 24,
+    "titulo": "Renascimento",
+    "sinopse": "Higuchi finalmente é capturado. Durante o confronto, Light recupera suas memórias como Kira e retoma seus planos originais.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep24.jpg",
+    "dataExibicao": "2007-03-28"
+  },
+  {
+    "id": 289,
+    "numero": 25,
+    "titulo": "Silêncio",
+    "sinopse": "Com suas memórias restauradas, Light coloca seu plano em ação novamente. Rem percebe que L está próximo de descobrir a verdade sobre Kira.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep25.jpg",
+    "dataExibicao": "2007-04-04"
+  },
+  {
+    "id": 290,
+    "numero": 26,
+    "titulo": "Renovação",
+    "sinopse": "Light elimina os obstáculos restantes e assume completamente o controle da investigação, aproximando-se cada vez mais de criar seu novo mundo.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep26.jpg",
+    "dataExibicao": "2007-04-11"
+  },
+  {
+    "id": 291,
+    "numero": 27,
+    "titulo": "Sequestro",
+    "sinopse": "Anos depois, Near surge como um novo investigador ligado à SPK e começa sua busca para capturar Kira e recuperar os Death Notes.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep27.jpg",
+    "dataExibicao": "2007-04-18"
+  },
+  {
+    "id": 292,
+    "numero": 28,
+    "titulo": "Impaciência",
+    "sinopse": "Sayu Yagami é sequestrada e os criminosos exigem o Death Note como troca. Near acompanha a negociação enquanto planeja capturar Kira.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep28.jpg",
+    "dataExibicao": "2007-04-25"
+  },
+  {
+    "id": 293,
+    "numero": 29,
+    "titulo": "Pai",
+    "sinopse": "Soichiro Yagami arrisca sua vida para recuperar o Death Note entregue aos criminosos e salvar sua filha Sayu.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep29.jpg",
+    "dataExibicao": "2007-05-02"
+  },
+  {
+    "id": 294,
+    "numero": 30,
+    "titulo": "Justiça",
+    "sinopse": "Mello invade a sede da SPK para recuperar uma fotografia importante. Ele revela que algumas regras do Death Note podem ser falsas.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep30.jpg",
+    "dataExibicao": "2007-05-09"
+  },
+  {
+    "id": 295,
+    "numero": 31,
+    "titulo": "Transferência",
+    "sinopse": "Near entra em contato com a força-tarefa japonesa e descobre que Kira pode estar entre seus próprios membros. Aizawa começa a questionar as ações de Light.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep31.jpg",
+    "dataExibicao": "2007-05-16"
+  },
+  {
+    "id": 296,
+    "numero": 32,
+    "titulo": "Seleção",
+    "sinopse": "Kiyomi Takada se torna a porta-voz de Kira para o mundo. Light usa sua antiga colega para fortalecer seu plano enquanto Aizawa aumenta suas suspeitas.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep32.jpg",
+    "dataExibicao": "2007-05-23"
+  },
+  {
+    "id": 297,
+    "numero": 33,
+    "titulo": "Desprezo",
+    "sinopse": "Near chega ao Japão para confrontar Kira. Seguindo as ordens de Light, Takada orienta Mikami a enviar páginas do Death Note para continuar o plano.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep33.jpg",
+    "dataExibicao": "2007-05-30"
+  },
+  {
+    "id": 298,
+    "numero": 34,
+    "titulo": "Vigilância",
+    "sinopse": "Aizawa descobre informações importantes sobre o plano de Light e comunica Near. A investigação começa a se aproximar do confronto final.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep34.jpg",
+    "dataExibicao": "2007-06-06"
+  },
+  {
+    "id": 299,
+    "numero": 35,
+    "titulo": "Malícia",
+    "sinopse": "Light e Near combinam um encontro para a batalha definitiva. Uma peça importante do plano de Kira é colocada em risco, mudando o destino da investigação.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep35.jpg",
+    "dataExibicao": "2007-06-13"
+  },
+  {
+    "id": 300,
+    "numero": 36,
+    "titulo": "1.28",
+    "sinopse": "A força-tarefa japonesa e a SPK se encontram no armazém Yellow Box para o confronto final. Porém, um terceiro participante aparece seguindo as ordens de Kira.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep36.jpg",
+    "dataExibicao": "2007-06-20"
+  },
+  {
+    "id": 301,
+    "numero": 37,
+    "titulo": "Novo Mundo",
+    "sinopse": "Mikami escreve os nomes dos investigadores no Death Note, mas nada acontece. Near captura o caderno e finalmente revela toda a verdade sobre Kira.",
+    "temporadaId": 1,
+    "animeId": 23,
+    "imagemUrl": "../../images/episodios/death-note/t1/ep37.jpg",
+    "dataExibicao": "2007-06-27"
   }
 ]
