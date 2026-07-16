@@ -2018,5 +2018,625 @@
     "animeId": 16,
     "imagemUrl": "../../images/episodios/tokyo-ghoul/t4/ep12.jpg",
     "dataExibicao": "2018-12-25"
+  },
+  {
+    "id": 203,
+    "numero": 1,
+    "titulo": "Ryomen Sukuna",
+    "sinopse": "Yuji Itadori encontra um objeto amaldiçoado e acaba se tornando o hospedeiro de Ryomen Sukuna para salvar seus amigos.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep1.jpg",
+    "dataExibicao": "2020-10-03"
+  },
+  {
+    "id": 204,
+    "numero": 2,
+    "titulo": "Por Mim Mesmo",
+    "sinopse": "Yuji conhece Satoru Gojo e ingressa na Escola Técnica de Jujutsu para aprender a controlar Sukuna.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep2.jpg",
+    "dataExibicao": "2020-10-10"
+  },
+  {
+    "id": 205,
+    "numero": 3,
+    "titulo": "A Garota de Aço",
+    "sinopse": "Nobara Kugisaki realiza sua primeira missão ao lado de Yuji e Megumi.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep3.jpg",
+    "dataExibicao": "2020-10-17"
+  },
+  {
+    "id": 206,
+    "numero": 4,
+    "titulo": "Existência Amaldiçoada",
+    "sinopse": "Yuji, Megumi e Nobara enfrentam uma poderosa maldição durante uma missão de resgate.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep4.jpg",
+    "dataExibicao": "2020-10-24"
+  },
+  {
+    "id": 207,
+    "numero": 5,
+    "titulo": "Existência Amaldiçoada - Parte 2",
+    "sinopse": "Sukuna assume o controle do corpo de Yuji durante a batalha contra a maldição especial.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep5.jpg",
+    "dataExibicao": "2020-10-31"
+  },
+  {
+    "id": 208,
+    "numero": 6,
+    "titulo": "Depois da Chuva",
+    "sinopse": "Yuji inicia seu treinamento secreto com Gojo enquanto seus amigos acreditam que ele morreu.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep6.jpg",
+    "dataExibicao": "2020-11-07"
+  },
+  {
+    "id": 209,
+    "numero": 7,
+    "titulo": "Ataque",
+    "sinopse": "Gojo enfrenta Jogo e demonstra o verdadeiro poder da Expansão de Domínio.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep7.jpg",
+    "dataExibicao": "2020-11-14"
+  },
+  {
+    "id": 210,
+    "numero": 8,
+    "titulo": "Tédio",
+    "sinopse": "Yuji continua seu treinamento enquanto Mahito começa a colocar seus planos em prática.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep8.jpg",
+    "dataExibicao": "2020-11-21"
+  },
+  {
+    "id": 211,
+    "numero": 9,
+    "titulo": "Peixes Pequenos e Punição Reversa",
+    "sinopse": "Nanami investiga assassinatos misteriosos ligados à maldição Mahito.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep9.jpg",
+    "dataExibicao": "2020-11-28"
+  },
+  {
+    "id": 212,
+    "numero": 10,
+    "titulo": "Transfiguração Ociosa",
+    "sinopse": "Yuji e Nanami enfrentam Mahito em uma batalha extremamente perigosa.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep10.jpg",
+    "dataExibicao": "2020-12-05"
+  },
+  {
+    "id": 213,
+    "numero": 11,
+    "titulo": "Mente Fechada",
+    "sinopse": "Junpei toma uma decisão irreversível após ser manipulado por Mahito, levando Yuji a enfrentar um de seus maiores desafios.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep11.jpg",
+    "dataExibicao": "2020-12-12"
+  },
+  {
+    "id": 214,
+    "numero": 12,
+    "titulo": "Para Você, Algum Dia",
+    "sinopse": "Yuji encara Mahito tomado pela raiva, enquanto Nanami retorna para ajudá-lo em uma batalha intensa.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep12.jpg",
+    "dataExibicao": "2020-12-19"
+  },
+  {
+    "id": 215,
+    "numero": 13,
+    "titulo": "Adeus",
+    "sinopse": "Mahito revela um novo nível de poder durante o confronto contra Yuji e Nanami.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep13.jpg",
+    "dataExibicao": "2020-12-26"
+  },
+  {
+    "id": 216,
+    "numero": 14,
+    "titulo": "Evento de Intercâmbio da Escola de Kyoto - Batalha em Grupo 0",
+    "sinopse": "Tem início o Evento de Intercâmbio entre as escolas de Tóquio e Kyoto, com o retorno inesperado de Yuji.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep14.jpg",
+    "dataExibicao": "2021-01-16"
+  },
+  {
+    "id": 217,
+    "numero": 15,
+    "titulo": "Evento de Intercâmbio da Escola de Kyoto - Batalha em Grupo 1",
+    "sinopse": "Os estudantes iniciam a competição, enquanto os alunos de Kyoto recebem ordens secretas envolvendo Yuji.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep15.jpg",
+    "dataExibicao": "2021-01-23"
+  },
+  {
+    "id": 218,
+    "numero": 16,
+    "titulo": "Evento de Intercâmbio da Escola de Kyoto - Batalha em Grupo 2",
+    "sinopse": "Megumi enfrenta Noritoshi Kamo enquanto a rivalidade entre as escolas se intensifica.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep16.jpg",
+    "dataExibicao": "2021-01-30"
+  },
+  {
+    "id": 219,
+    "numero": 17,
+    "titulo": "Evento de Intercâmbio da Escola de Kyoto - Batalha em Grupo 3",
+    "sinopse": "A competição é interrompida quando maldições poderosas invadem o local do torneio.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep17.jpg",
+    "dataExibicao": "2021-02-06"
+  },
+  {
+    "id": 220,
+    "numero": 18,
+    "titulo": "Sábios",
+    "sinopse": "Yuji e Todo unem forças para enfrentar Hanami, desenvolvendo uma poderosa sintonia em combate.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep18.jpg",
+    "dataExibicao": "2021-02-13"
+  },
+  {
+    "id": 221,
+    "numero": 19,
+    "titulo": "Black Flash",
+    "sinopse": "Yuji desperta a técnica Black Flash durante a batalha contra Hanami, surpreendendo aliados e inimigos.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep19.jpg",
+    "dataExibicao": "2021-02-20"
+  },
+  {
+    "id": 222,
+    "numero": 20,
+    "titulo": "Fora do Padrão",
+    "sinopse": "A luta contra Hanami chega ao ápice quando Satoru Gojo entra em ação para proteger seus alunos.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep20.jpg",
+    "dataExibicao": "2021-02-27"
+  },
+  {
+    "id": 223,
+    "numero": 21,
+    "titulo": "Jujutsu Koshien",
+    "sinopse": "Com o ataque encerrado, o evento estudantil continua de forma descontraída com uma competição de beisebol.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep21.jpg",
+    "dataExibicao": "2021-03-06"
+  },
+  {
+    "id": 224,
+    "numero": 22,
+    "titulo": "Origem da Obediência",
+    "sinopse": "Yuji, Nobara e Megumi investigam uma série de mortes ligadas a uma poderosa maldição.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep22.jpg",
+    "dataExibicao": "2021-03-13"
+  },
+  {
+    "id": 225,
+    "numero": 23,
+    "titulo": "Origem da Obediência - Parte 2",
+    "sinopse": "Nobara e Yuji enfrentam os irmãos amaldiçoados Eso e Kechizu em uma batalha decisiva.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep23.jpg",
+    "dataExibicao": "2021-03-20"
+  },
+  {
+    "id": 226,
+    "numero": 24,
+    "titulo": "Cúmplices",
+    "sinopse": "Yuji e Nobara conquistam a vitória enquanto Megumi desperta um novo poder. A temporada termina preparando os próximos confrontos.",
+    "temporadaId": 1,
+    "animeId": 17,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t1/ep24.jpg",
+    "dataExibicao": "2021-03-27"
+  },
+  {
+    "id": 227,
+    "numero": 1,
+    "titulo": "Inventário Oculto",
+    "sinopse": "Em 2006, Satoru Gojo e Suguru Geto recebem a missão de proteger Riko Amanai, a Receptáculo do Plasma Estelar, antes de sua fusão com Tengen.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep25.jpg",
+    "dataExibicao": "2023-07-06"
+  },
+  {
+    "id": 228,
+    "numero": 2,
+    "titulo": "Inventário Oculto - Parte 2",
+    "sinopse": "Gojo e Geto continuam escoltando Riko enquanto enfrentam diversos usuários de maldição enviados para eliminá-la.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep26.jpg",
+    "dataExibicao": "2023-07-13"
+  },
+  {
+    "id": 229,
+    "numero": 3,
+    "titulo": "Inventário Oculto - Parte 3",
+    "sinopse": "Toji Fushiguro coloca seu plano em ação e enfrenta Satoru Gojo em um combate que muda completamente o rumo da missão.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep27.jpg",
+    "dataExibicao": "2023-07-20"
+  },
+  {
+    "id": 230,
+    "numero": 4,
+    "titulo": "Inventário Oculto - Parte 4",
+    "sinopse": "Após despertar um novo poder, Gojo retorna para enfrentar Toji, enquanto Geto precisa lidar com as consequências da missão.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep28.jpg",
+    "dataExibicao": "2023-07-27"
+  },
+  {
+    "id": 231,
+    "numero": 5,
+    "titulo": "Morte Prematura",
+    "sinopse": "Anos depois, Geto passa a questionar sua visão sobre a humanidade, iniciando o caminho que o levará a se tornar um dos maiores inimigos do mundo Jujutsu.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep29.jpg",
+    "dataExibicao": "2023-08-03"
+  },
+  {
+    "id": 232,
+    "numero": 6,
+    "titulo": "É Assim Mesmo",
+    "sinopse": "No presente, Yuji retoma sua rotina enquanto forças malignas iniciam os preparativos para o Incidente de Shibuya.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep30.jpg",
+    "dataExibicao": "2023-08-31"
+  },
+  {
+    "id": 233,
+    "numero": 7,
+    "titulo": "Festival Noturno",
+    "sinopse": "Kokichi Muta revela seu acordo secreto com Mahito e Kenjaku, culminando em uma batalha decisiva.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep31.jpg",
+    "dataExibicao": "2023-09-07"
+  },
+  {
+    "id": 234,
+    "numero": 8,
+    "titulo": "Incidente de Shibuya",
+    "sinopse": "As cortinas descem sobre Shibuya e centenas de civis ficam presos enquanto os feiticeiros iniciam a operação de resgate.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep32.jpg",
+    "dataExibicao": "2023-09-14"
+  },
+  {
+    "id": 235,
+    "numero": 9,
+    "titulo": "Incidente de Shibuya - Portão Aberto",
+    "sinopse": "Gojo enfrenta Jogo, Hanami e Choso enquanto tenta salvar os civis presos na estação de Shibuya.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep33.jpg",
+    "dataExibicao": "2023-09-21"
+  },
+  {
+    "id": 236,
+    "numero": 10,
+    "titulo": "Pandemônio",
+    "sinopse": "Kenjaku coloca em prática seu plano e consegue selar Satoru Gojo utilizando o Reino da Prisão.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep34.jpg",
+    "dataExibicao": "2023-09-28"
+  },
+  {
+    "id": 237,
+    "numero": 11,
+    "titulo": "Invocação",
+    "sinopse": "Yuji e seus aliados enfrentam uma situação desesperadora enquanto as maldições continuam espalhando o caos por Shibuya. Megumi toma uma decisão arriscada que pode mudar o rumo da batalha.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep35.jpg",
+    "dataExibicao": "2023-10-05"
+  },
+  {
+    "id": 238,
+    "numero": 12,
+    "titulo": "Lâmina Cega",
+    "sinopse": "Nanami e os demais feiticeiros enfrentam inimigos cada vez mais poderosos. Enquanto isso, Yuji tenta alcançar seus companheiros antes que seja tarde demais.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep36.jpg",
+    "dataExibicao": "2023-10-12"
+  },
+  {
+    "id": 239,
+    "numero": 13,
+    "titulo": "Vermelho Escarlate",
+    "sinopse": "A batalha em Shibuya se intensifica quando novos confrontos colocam os feiticeiros diante de adversários extremamente perigosos.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep37.jpg",
+    "dataExibicao": "2023-10-19"
+  },
+  {
+    "id": 240,
+    "numero": 14,
+    "titulo": "Oscilações",
+    "sinopse": "Os acontecimentos em Shibuya fogem do controle e antigos aliados precisam improvisar estratégias para sobreviver ao massacre.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep38.jpg",
+    "dataExibicao": "2023-10-26"
+  },
+  {
+    "id": 241,
+    "numero": 15,
+    "titulo": "Flutuações",
+    "sinopse": "A luta entre os feiticeiros e as maldições alcança um novo nível, enquanto Yuji enfrenta as consequências das escolhas feitas durante o incidente.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep39.jpg",
+    "dataExibicao": "2023-11-02"
+  },
+  {
+    "id": 242,
+    "numero": 16,
+    "titulo": "Trovão",
+    "sinopse": "Megumi encara um poderoso inimigo enquanto Yuji tenta impedir que o desastre em Shibuya se torne irreversível.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep40.jpg",
+    "dataExibicao": "2023-11-09"
+  },
+  {
+    "id": 243,
+    "numero": 17,
+    "titulo": "Trovão – Parte 2",
+    "sinopse": "O confronto continua e o verdadeiro poder de Sukuna é revelado, deixando um rastro de destruição por toda Shibuya.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep41.jpg",
+    "dataExibicao": "2023-11-16"
+  },
+  {
+    "id": 244,
+    "numero": 18,
+    "titulo": "Correto e Errado",
+    "sinopse": "Yuji enfrenta o peso de suas ações enquanto tenta encontrar forças para continuar lutando diante da devastação causada.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep42.jpg",
+    "dataExibicao": "2023-11-23"
+  },
+  {
+    "id": 245,
+    "numero": 19,
+    "titulo": "Correto e Errado – Parte 2",
+    "sinopse": "Mesmo abalado, Yuji recebe apoio inesperado para enfrentar Mahito em uma das batalhas mais importantes da temporada.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep43.jpg",
+    "dataExibicao": "2023-11-30"
+  },
+  {
+    "id": 246,
+    "numero": 20,
+    "titulo": "Correto e Errado – Parte 3",
+    "sinopse": "A batalha contra Mahito chega ao auge, revelando novas habilidades e colocando em risco o destino de todos os envolvidos.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep44.jpg",
+    "dataExibicao": "2023-12-07"
+  },
+  {
+    "id": 247,
+    "numero": 21,
+    "titulo": "Metamorfose",
+    "sinopse": "Mahito desperta uma forma ainda mais poderosa, obrigando Yuji e seus aliados a lutarem além de seus próprios limites.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep45.jpg",
+    "dataExibicao": "2023-12-14"
+  },
+  {
+    "id": 248,
+    "numero": 22,
+    "titulo": "Metamorfose – Parte 2",
+    "sinopse": "A batalha decisiva finalmente chega ao fim, mas as consequências do Incidente de Shibuya deixam marcas profundas em todos.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep46.jpg",
+    "dataExibicao": "2023-12-21"
+  },
+  {
+    "id": 249,
+    "numero": 23,
+    "titulo": "Incidente de Shibuya – Portão Fechado",
+    "sinopse": "Com o incidente encerrado, o mundo Jujutsu muda completamente. Novas ameaças surgem e um perigoso plano começa a ser colocado em prática.",
+    "temporadaId": 2,
+    "animeId": 18,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t2/ep47.jpg",
+    "dataExibicao": "2023-12-28"
+  },
+  {
+  "id": 250,
+  "numero": 1,
+  "titulo": "Jujutsu Kaisen 0",
+  "sinopse": "Yuta Okkotsu é assombrado pelo espírito amaldiçoado de sua amiga de infância, Rika Orimoto. Sob a orientação de Satoru Gojo, ele ingressa na Escola Técnica de Jujutsu para aprender a controlar seu imenso poder enquanto enfrenta Suguru Geto em uma batalha que definirá o futuro do mundo Jujutsu.",
+  "temporadaId": 0,
+  "animeId": 19,
+  "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-0.jpg",
+  "dataExibicao": "2021-12-24"
+},
+  {
+  "id": 251,
+  "numero": 1,
+  "titulo": "Jujutsu Kaisen: Inventário Oculto / Morte Prematura",
+  "sinopse": "Filme compilatório que reúne o arco Inventário Oculto / Morte Prematura, mostrando a juventude de Satoru Gojo e Suguru Geto. A história acompanha a missão para proteger Riko Amanai, o confronto contra Toji Fushiguro e os acontecimentos que mudaram para sempre a amizade entre Gojo e Geto, dando origem ao conflito que moldaria o futuro do mundo Jujutsu.",
+  "temporadaId": 0,
+  "animeId": 20,
+  "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-kaigyoku.jpg",
+  "dataExibicao": "2025-05-30"
+},
+{
+  "id": 252,
+  "numero": 1,
+  "titulo": "Jujutsu Kaisen: Incidente de Shibuya",
+  "sinopse": "Filme compilatório que reúne os acontecimentos do Incidente de Shibuya. Enquanto Satoru Gojo é selado, Yuji Itadori, Megumi Fushiguro, Nobara Kugisaki e os demais feiticeiros enfrentam maldições especiais em uma batalha desesperadora. O conflito deixa inúmeras perdas, muda o equilíbrio do mundo Jujutsu e prepara o início do Jogo do Abate.",
+  "temporadaId": 0,
+  "animeId": 21,
+  "imagemUrl": "../../images/episodios/jujutsu-kaisen/filmes/jujutsu-kaisen-shibuya-incident.jpg",
+  "dataExibicao": "2025-10-17"
+},
+  {
+    "id": 253,
+    "numero": 48,
+    "titulo": "Execução",
+    "sinopse": "Enquanto Yuji luta contra o peso de seus pecados após o Incidente de Shibuya, Naoya Zen'in e Yuta Okkotsu recebem a missão de executá-lo conforme as ordens da alta cúpula do mundo Jujutsu.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep48.jpg",
+    "dataExibicao": "2026-01-09"
+  },
+  {
+    "id": 254,
+    "numero": 49,
+    "titulo": "Mais Uma Vez",
+    "sinopse": "Após enfrentar Yuta, Yuji descobre suas verdadeiras intenções. Enquanto isso, Megumi pede sua ajuda para salvar sua irmã e impedir que ela seja envolvida no Jogo do Abate.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep49.jpg",
+    "dataExibicao": "2026-01-09"
+  },
+  {
+    "id": 255,
+    "numero": 50,
+    "titulo": "Sobre o Jogo do Abate",
+    "sinopse": "Yuji, Megumi e seus aliados encontram Tengen, que revela os verdadeiros objetivos de Kenjaku e explica as regras do mortal Jogo do Abate.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep50.jpg",
+    "dataExibicao": "2026-01-16"
+  },
+  {
+    "id": 256,
+    "numero": 51,
+    "titulo": "Preparação Perfeita",
+    "sinopse": "Em busca de ferramentas amaldiçoadas, Maki desperta seu verdadeiro potencial e promove um massacre dentro do Clã Zen'in, mudando o rumo da história.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep51.jpg",
+    "dataExibicao": "2026-01-23"
+  },
+  {
+    "id": 257,
+    "numero": 52,
+    "titulo": "Paixão",
+    "sinopse": "Após a execução de Yaga, Yuji e Megumi procuram Kinji Hakari em seu clube de lutas clandestinas, esperando convencê-lo a participar do plano.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep52.jpg",
+    "dataExibicao": "2026-01-30"
+  },
+  {
+    "id": 258,
+    "numero": 53,
+    "titulo": "Engrenagem",
+    "sinopse": "Enquanto Panda e Fushiguro enfrentam Kirara, Yuji tenta convencer Hakari a ajudá-los antes do início do Jogo do Abate.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep53.jpg",
+    "dataExibicao": "2026-02-06"
+  },
+  {
+    "id": 259,
+    "numero": 54,
+    "titulo": "Colônia de Tóquio Nº 1",
+    "sinopse": "Os grupos entram nas colônias do Jogo do Abate e enfrentam feiticeiros que caçam novos participantes para acumular pontos.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep54.jpg",
+    "dataExibicao": "2026-02-13"
+  },
+  {
+    "id": 260,
+    "numero": 55,
+    "titulo": "Colônia de Tóquio Nº 1 (Parte 2)",
+    "sinopse": "Yuji encontra Hiromi Higuruma e tenta convencê-lo a colaborar, enquanto Megumi acaba caindo na armadilha preparada por Reggie.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep55.jpg",
+    "dataExibicao": "2026-02-27"
+  },
+  {
+    "id": 261,
+    "numero": 56,
+    "titulo": "Colônia de Tóquio Nº 1 (Parte 3)",
+    "sinopse": "Yuji Itadori enfrenta Hiromi Higuruma em um intenso duelo durante o Jogo do Abate.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep56.jpg",
+    "dataExibicao": "2026-03-06"
+  },
+  {
+    "id": 262,
+    "numero": 57,
+    "titulo": "Colônia de Tóquio Nº 1 (Parte 4)",
+    "sinopse": "Takaba enfrenta diversos inimigos enquanto Megumi trava sua batalha decisiva contra Reggie Star.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep57.jpg",
+    "dataExibicao": "2026-03-13"
+  },
+  {
+    "id": 263,
+    "numero": 58,
+    "titulo": "Colônia de Tóquio Nº 1 (Parte 5)",
+    "sinopse": "Megumi utiliza sua Expansão de Domínio em sua luta final contra Reggie, levando o confronto ao limite.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep58.jpg",
+    "dataExibicao": "2026-03-20"
+  },
+  {
+    "id": 264,
+    "numero": 59,
+    "titulo": "Colônia de Sendai",
+    "sinopse": "Yuta Okkotsu enfrenta poderosos feiticeiros na Colônia de Sendai, encerrando a primeira parte do arco Jogo do Abate.",
+    "temporadaId": 3,
+    "animeId": 22,
+    "imagemUrl": "../../images/episodios/jujutsu-kaisen/t3/ep59.jpg",
+    "dataExibicao": "2026-03-27"
   }
 ]
