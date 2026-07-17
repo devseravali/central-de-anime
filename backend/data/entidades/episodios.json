@@ -4538,5 +4538,1485 @@
     "animeId": 28,
     "imagemUrl": "../../images/episodios/hunter-x-hunter-1999/t1/ep62.jpg",
     "dataExibicao": "2001-03-31"
+  },
+  {
+    "id": 1,
+    "numero": 1,
+    "titulo": "Partida × E × Amigos",
+    "sinopse": "Gon Freecss decide seguir os passos de seu pai e parte para realizar o Exame Hunter, iniciando sua jornada em busca de Ging.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep1.jpg",
+    "dataExibicao": "2011-10-02"
+  },
+  {
+    "id": 2,
+    "numero": 2,
+    "titulo": "Teste × De × Testes",
+    "sinopse": "Gon conhece Kurapika e Leorio enquanto seguem para o local do Exame Hunter e enfrentam um primeiro teste inesperado.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep2.jpg",
+    "dataExibicao": "2011-10-09"
+  },
+  {
+    "id": 3,
+    "numero": 3,
+    "titulo": "Rivais × Pela × Sobrevivência",
+    "sinopse": "Os candidatos chegam ao local do exame, recebem seus números de inscrição e conhecem participantes perigosos.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep3.jpg",
+    "dataExibicao": "2011-10-16"
+  },
+  {
+    "id": 4,
+    "numero": 4,
+    "titulo": "Esperança × E × Ambição",
+    "sinopse": "A primeira fase do Exame Hunter continua enquanto Gon, Leorio e Kurapika enfrentam o exaustivo percurso liderado por Satotz.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep4.jpg",
+    "dataExibicao": "2011-10-23"
+  },
+  {
+    "id": 5,
+    "numero": 5,
+    "titulo": "Hisoka × É × Astuto",
+    "sinopse": "Durante a travessia do Pântano dos Trapaceiros, Hisoka demonstra sua força assustadora diante dos candidatos.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep5.jpg",
+    "dataExibicao": "2011-10-30"
+  },
+  {
+    "id": 6,
+    "numero": 6,
+    "titulo": "Um × Desafio × Surpreendente",
+    "sinopse": "Os candidatos iniciam a segunda fase do exame, que testa suas habilidades culinárias diante dos Hunters Gourmet.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep6.jpg",
+    "dataExibicao": "2011-11-06"
+  },
+  {
+    "id": 7,
+    "numero": 7,
+    "titulo": "Confronto × No × Dirigível",
+    "sinopse": "Durante a viagem para a próxima fase, Gon e Killua enfrentam um desafio proposto pelo presidente Netero.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep7.jpg",
+    "dataExibicao": "2011-11-13"
+  },
+  {
+    "id": 8,
+    "numero": 8,
+    "titulo": "Decisão × Pela × Maioria",
+    "sinopse": "Os candidatos entram na Torre das Armadilhas, onde precisam tomar decisões em grupo para continuar avançando.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep8.jpg",
+    "dataExibicao": "2011-11-20"
+  },
+  {
+    "id": 9,
+    "numero": 9,
+    "titulo": "Cuidado × Com × Os Prisioneiros",
+    "sinopse": "Gon e seus companheiros enfrentam prisioneiros em desafios individuais para conquistar a passagem pela torre.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep9.jpg",
+    "dataExibicao": "2011-11-27"
+  },
+  {
+    "id": 10,
+    "numero": 10,
+    "titulo": "Truque × Contra × Truque",
+    "sinopse": "Leorio aposta o tempo restante do grupo enquanto tenta superar os desafios dos prisioneiros da Torre das Armadilhas.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep10.jpg",
+    "dataExibicao": "2011-12-04"
+  },
+  {
+    "id": 11,
+    "numero": 11,
+    "titulo": "Problemas × Com × A Aposta",
+    "sinopse": "Killua entra em ação para garantir a vitória do grupo, revelando habilidades impressionantes durante o exame.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep11.jpg",
+    "dataExibicao": "2011-12-11"
+  },
+  {
+    "id": 12,
+    "numero": 12,
+    "titulo": "Último × Teste × De Determinação",
+    "sinopse": "O grupo precisa encontrar uma maneira de concluir a terceira fase sem abandonar nenhum de seus integrantes.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep12.jpg",
+    "dataExibicao": "2011-12-18"
+  },
+  {
+    "id": 13,
+    "numero": 13,
+    "titulo": "Carta × De × Gon",
+    "sinopse": "Gon escreve para Mito enquanto relembra tudo o que viveu desde o início de sua jornada até o Exame Hunter.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep13.jpg",
+    "dataExibicao": "2011-12-25"
+  },
+  {
+    "id": 14,
+    "numero": 14,
+    "titulo": "Acerte × O × Alvo",
+    "sinopse": "Gon treina sua precisão para conseguir roubar a placa de Hisoka durante a quarta fase do exame.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep14.jpg",
+    "dataExibicao": "2012-01-08"
+  },
+  {
+    "id": 15,
+    "numero": 15,
+    "titulo": "Explosão × De × Enganos",
+    "sinopse": "As alianças começam a mudar enquanto Gon tenta colocar seu plano em prática contra Hisoka.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep15.jpg",
+    "dataExibicao": "2012-01-15"
+  },
+  {
+    "id": 16,
+    "numero": 16,
+    "titulo": "Derrota × E × Humilhação",
+    "sinopse": "Após conseguir a placa de Hisoka, Gon enfrenta um inesperado revés que coloca sua aprovação em risco.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep16.jpg",
+    "dataExibicao": "2012-01-22"
+  },
+  {
+    "id": 17,
+    "numero": 17,
+    "titulo": "Armadilha × Na × Caverna",
+    "sinopse": "Gon, Kurapika e Leorio entram em uma caverna repleta de serpentes para recuperar a placa de Ponzu.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep17.jpg",
+    "dataExibicao": "2012-01-29"
+  },
+  {
+    "id": 18,
+    "numero": 18,
+    "titulo": "Grande × Entrevista × Final",
+    "sinopse": "Após concluir a quarta fase, os candidatos restantes são entrevistados por Netero antes da etapa decisiva.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep18.jpg",
+    "dataExibicao": "2012-02-05"
+  },
+  {
+    "id": 19,
+    "numero": 19,
+    "titulo": "Não Pode × Vencer × Nem Perder",
+    "sinopse": "A fase final do Exame Hunter começa com o intenso confronto entre Gon e Hanzo.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep19.jpg",
+    "dataExibicao": "2012-02-12"
+  },
+  {
+    "id": 20,
+    "numero": 20,
+    "titulo": "Uma × Reviravolta × Inesperada",
+    "sinopse": "Gon descobre como terminaram as lutas finais do exame e o verdadeiro destino de Killua.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep20.jpg",
+    "dataExibicao": "2012-02-19"
+  },
+  {
+    "id": 21,
+    "numero": 21,
+    "titulo": "Problemas × Com × O Irmão",
+    "sinopse": "Determinados a reencontrar Killua, Gon e seus amigos partem rumo à propriedade da família Zoldyck.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep21.jpg",
+    "dataExibicao": "2012-03-04"
+  },
+  {
+    "id": 22,
+    "numero": 22,
+    "titulo": "Um × Cão × Perigoso",
+    "sinopse": "Ao chegar à Montanha Kukuroo, Gon descobre que entrar na propriedade dos Zoldyck será mais difícil do que imaginava.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep22.jpg",
+    "dataExibicao": "2012-03-11"
+  },
+  {
+    "id": 23,
+    "numero": 23,
+    "titulo": "O × Dever × Do Guarda",
+    "sinopse": "Após um intenso treinamento, Gon e seus amigos atravessam o Portão de Testes, mas encontram Canary em seu caminho.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep23.jpg",
+    "dataExibicao": "2012-03-18"
+  },
+  {
+    "id": 24,
+    "numero": 24,
+    "titulo": "A × Família × Zoldyck",
+    "sinopse": "Killua finalmente reencontra Gon após conversar com seu pai e decidir seguir seu próprio caminho.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep24.jpg",
+    "dataExibicao": "2012-03-25"
+  },
+  {
+    "id": 25,
+    "numero": 25,
+    "titulo": "Não Pode × Ver × Se Está Cego",
+    "sinopse": "Enquanto aguardam Killua, Gon e seus amigos participam de um jogo organizado pelo mordomo-chefe Gotoh.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep25.jpg",
+    "dataExibicao": "2012-04-01"
+  },
+  {
+    "id": 26,
+    "numero": 26,
+    "titulo": "Então × E × Depois",
+    "sinopse": "Um episódio especial de recapitulação relembra os principais acontecimentos da jornada de Gon até aqui.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep26.jpg",
+    "dataExibicao": "2012-04-15"
+  },
+  {
+    "id": 27,
+    "numero": 27,
+    "titulo": "Chegada × À × Arena",
+    "sinopse": "Gon e Killua iniciam seus desafios na Arena Celestial em busca de experiência e dinheiro.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep27.jpg",
+    "dataExibicao": "2012-04-15"
+  },
+  {
+    "id": 28,
+    "numero": 28,
+    "titulo": "Nen × E × Nen",
+    "sinopse": "Wing começa a revelar a Gon e Killua os fundamentos da misteriosa energia conhecida como Nen.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep28.jpg",
+    "dataExibicao": "2012-04-22"
+  },
+  {
+    "id": 29,
+    "numero": 29,
+    "titulo": "Despertar × E × Potencial",
+    "sinopse": "Wing desperta o Nen de Gon e Killua, iniciando um novo estágio em seu treinamento.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep29.jpg",
+    "dataExibicao": "2012-04-29"
+  },
+  {
+    "id": 30,
+    "numero": 30,
+    "titulo": "Feroz × E × Violento",
+    "sinopse": "Gon enfrenta Gido em sua primeira luta no 200º andar da Arena Celestial e coloca em prática seu treinamento de Nen.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep30.jpg",
+    "dataExibicao": "2012-05-06"
+  },
+  {
+    "id": 31,
+    "numero": 31,
+    "titulo": "Destino × E × Tenacidade",
+    "sinopse": "Um mês após Gon ser gravemente ferido, Hisoka e Kastro se preparam para um confronto na Arena Celestial. Kastro demonstra grande confiança, enquanto Hisoka permanece calmo diante do desafio.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep31.jpg",
+    "dataExibicao": "2012-05-13"
+  },
+  {
+    "id": 32,
+    "numero": 32,
+    "titulo": "Uma × Vitória × Surpreendente",
+    "sinopse": "Kastro utiliza sua habilidade de Nen para criar um clone e surpreender Hisoka durante a luta. Mesmo em desvantagem, Hisoka mantém sua compostura.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep32.jpg",
+    "dataExibicao": "2012-05-20"
+  },
+  {
+    "id": 33,
+    "numero": 33,
+    "titulo": "Uma × Ameaça × Vazia",
+    "sinopse": "Gon e Killua voltam a treinar Nen após dois meses, mas são desafiados por Gido, Sadaso e Riehlvelt na Arena Celestial.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep33.jpg",
+    "dataExibicao": "2012-05-27"
+  },
+  {
+    "id": 34,
+    "numero": 34,
+    "titulo": "Poder × Para × Vingar",
+    "sinopse": "Determinado a vingar Zushi, Gon enfrenta Gido e Riehlvelt utilizando as habilidades que aprendeu com o Nen.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep34.jpg",
+    "dataExibicao": "2012-06-03"
+  },
+  {
+    "id": 35,
+    "numero": 35,
+    "titulo": "A × Verdadeira × Aprovação",
+    "sinopse": "Gon e Killua iniciam o treinamento de Hatsu, o estágio mais avançado do aprendizado de Nen.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep35.jpg",
+    "dataExibicao": "2012-06-17"
+  },
+  {
+    "id": 36,
+    "numero": 36,
+    "titulo": "Uma Grande Dívida × E × Um Pequeno Chute",
+    "sinopse": "Gon devolve a Hisoka a placa recebida durante o Exame Hunter e enfrenta o poderoso lutador em um novo combate.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep36.jpg",
+    "dataExibicao": "2012-06-24"
+  },
+  {
+    "id": 37,
+    "numero": 37,
+    "titulo": "Ging × E × Gon",
+    "sinopse": "Após se tornar um verdadeiro Hunter, Gon retorna à Ilha da Baleia e recebe uma misteriosa caixa deixada por seu pai, Ging.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep37.jpg",
+    "dataExibicao": "2012-07-01"
+  },
+  {
+    "id": 38,
+    "numero": 38,
+    "titulo": "Resposta × Do × Pai",
+    "sinopse": "Gon e Killua escutam a fita cassete deixada por Ging, contendo uma mensagem especial para Gon.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep38.jpg",
+    "dataExibicao": "2012-07-08"
+  },
+  {
+    "id": 39,
+    "numero": 39,
+    "titulo": "Desejo × E × Promessa",
+    "sinopse": "Kurapika busca um trabalho que o aproxime do grande leilão de Yorknew e de sua vingança contra a Trupe Fantasma.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep39.jpg",
+    "dataExibicao": "2012-07-15"
+  },
+  {
+    "id": 40,
+    "numero": 40,
+    "titulo": "Usuários × De × Nen × Unidos?",
+    "sinopse": "Kurapika e outros candidatos enfrentam desafios perigosos para conseguir um emprego ligado ao leilão de Yorknew.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep40.jpg",
+    "dataExibicao": "2012-07-22"
+  },
+  {
+    "id": 41,
+    "numero": 41,
+    "titulo": "Reunião × De × Heróis",
+    "sinopse": "O maior leilão do mundo está prestes a acontecer em Yorknew, enquanto a Trupe Fantasma reúne seus membros na cidade.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep41.jpg",
+    "dataExibicao": "2012-07-29"
+  },
+  {
+    "id": 42,
+    "numero": 42,
+    "titulo": "Defender × E × Atacar",
+    "sinopse": "Os caminhos de Gon, Killua, Leorio, Kurapika e da Trupe Fantasma começam a se cruzar em Yorknew.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep42.jpg",
+    "dataExibicao": "2012-08-05"
+  },
+  {
+    "id": 43,
+    "numero": 43,
+    "titulo": "Uma × Tragédia × Chocante",
+    "sinopse": "A Trupe Fantasma ataca o leilão subterrâneo da Máfia, causando uma enorme tragédia e atraindo a atenção de Kurapika.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep43.jpg",
+    "dataExibicao": "2012-08-12"
+  },
+  {
+    "id": 44,
+    "numero": 44,
+    "titulo": "Preparação × Para × Uma Batalha Feroz",
+    "sinopse": "Uvogin enfrenta os poderosos Shadow Beasts enviados pela Máfia, enquanto Kurapika se aproxima de sua vingança.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep44.jpg",
+    "dataExibicao": "2012-08-19"
+  },
+  {
+    "id": 45,
+    "numero": 45,
+    "titulo": "Restrição × E × Juramento",
+    "sinopse": "Kurapika captura Uvogin e revela parte de suas habilidades especiais de Nen, criadas especificamente para enfrentar a Trupe Fantasma.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep45.jpg",
+    "dataExibicao": "2012-09-02"
+  },
+  {
+    "id": 46,
+    "numero": 46,
+    "titulo": "Perseguição × E × Espera",
+    "sinopse": "Após escapar, Uvogin decide caçar Kurapika para recuperar sua honra e derrotar o usuário das correntes.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep46.jpg",
+    "dataExibicao": "2012-09-09"
+  },
+  {
+    "id": 47,
+    "numero": 47,
+    "titulo": "Condição × E × Condição",
+    "sinopse": "Kurapika enfrenta Uvogin em uma batalha decisiva, revelando o verdadeiro poder de suas correntes.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep47.jpg",
+    "dataExibicao": "2012-09-16"
+  },
+  {
+    "id": 48,
+    "numero": 48,
+    "titulo": "Olho × Muito × Aguçado",
+    "sinopse": "Gon e seus amigos procuram maneiras de ganhar dinheiro suficiente para comprar Greed Island durante o leilão de Yorknew.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep48.jpg",
+    "dataExibicao": "2012-09-23"
+  },
+  {
+    "id": 49,
+    "numero": 49,
+    "titulo": "Perseguição × E × Análise",
+    "sinopse": "Gon e Killua seguem membros da Trupe Fantasma em Yorknew, tentando descobrir pistas sobre o grupo criminoso.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep49.jpg",
+    "dataExibicao": "2012-09-30"
+  },
+  {
+    "id": 50,
+    "numero": 50,
+    "titulo": "Aliado × E × Espada",
+    "sinopse": "Gon e Killua são capturados pela Trupe Fantasma e interrogados sobre o misterioso usuário das correntes.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep50.jpg",
+    "dataExibicao": "2012-10-07"
+  },
+  {
+    "id": 51,
+    "numero": 51,
+    "titulo": "Um × Campo × De Batalha Brutal",
+    "sinopse": "A Máfia contrata assassinos poderosos para enfrentar a Trupe Fantasma durante o leilão em Yorknew.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep51.jpg",
+    "dataExibicao": "2012-10-14"
+  },
+  {
+    "id": 52,
+    "numero": 52,
+    "titulo": "Ataque × E × Impacto",
+    "sinopse": "A Trupe Fantasma invade o leilão com força total, mas encontra resistência dos assassinos Zoldyck.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep52.jpg",
+    "dataExibicao": "2012-10-21"
+  },
+  {
+    "id": 53,
+    "numero": 53,
+    "titulo": "Falso × E × Psique",
+    "sinopse": "A notícia da suposta morte de Chrollo e dos membros da Trupe Fantasma deixa Kurapika desconfiado.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep53.jpg",
+    "dataExibicao": "2012-10-28"
+  },
+  {
+    "id": 54,
+    "numero": 54,
+    "titulo": "Fortunas × Não × Estão Certas?",
+    "sinopse": "Chrollo utiliza a habilidade de previsão de Neon para descobrir o futuro dos membros da Trupe Fantasma.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep54.jpg",
+    "dataExibicao": "2012-11-04"
+  },
+  {
+    "id": 55,
+    "numero": 55,
+    "titulo": "Aliados × E × Mentiras",
+    "sinopse": "Hisoka arrisca sua posição dentro da Trupe Fantasma para conseguir lutar contra Chrollo.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep55.jpg",
+    "dataExibicao": "2012-11-11"
+  },
+  {
+    "id": 56,
+    "numero": 56,
+    "titulo": "Amado × E × Atormentado",
+    "sinopse": "A Trupe Fantasma descobre a localização de Kurapika e se aproxima cada vez mais de seu esconderijo.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep56.jpg",
+    "dataExibicao": "2012-11-18"
+  },
+  {
+    "id": 57,
+    "numero": 57,
+    "titulo": "Iniciativa × E × Lei",
+    "sinopse": "Kurapika coloca em prática um plano arriscado para enfrentar a Trupe Fantasma e proteger seus amigos.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep57.jpg",
+    "dataExibicao": "2012-12-02"
+  },
+  {
+    "id": 58,
+    "numero": 58,
+    "titulo": "Sinal × Para × Retirada",
+    "sinopse": "Kurapika captura Chrollo e propõe uma troca perigosa envolvendo Gon e Killua.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep58.jpg",
+    "dataExibicao": "2012-12-09"
+  },
+  {
+    "id": 59,
+    "numero": 59,
+    "titulo": "Lance × E × Pressa",
+    "sinopse": "Greed Island finalmente vai a leilão, e Gon e Killua buscam uma maneira de participar do misterioso jogo.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep59.jpg",
+    "dataExibicao": "2012-12-16"
+  },
+  {
+    "id": 60,
+    "numero": 60,
+    "titulo": "Fim × E × Começo",
+    "sinopse": "Gon e Killua tentam provar que são fortes o suficiente para serem escolhidos como jogadores de Greed Island.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep60.jpg",
+    "dataExibicao": "2012-12-23"
+  },
+  {
+    "id": 61,
+    "numero": 61,
+    "titulo": "Convite × E × Amigo",
+    "sinopse": "Gon e Killua entram no mundo de Greed Island e recebem um convite para se juntar a um grupo de jogadores.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep61.jpg",
+    "dataExibicao": "2013-01-06"
+  },
+  {
+    "id": 62,
+    "numero": 62,
+    "titulo": "Realidade? × E × Crua",
+    "sinopse": "Em Greed Island, Gon e Killua enfrentam monstros perigosos e conhecem a misteriosa Biscuit Krueger.",
+    "temporadaId": 1,
+    "animeId": 1,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t1/ep62.jpg",
+    "dataExibicao": "2013-01-13"
+  },
+  {
+    "id": 453,
+    "numero": 63,
+    "titulo": "Um Mestre Difícil?",
+    "sinopse": "Gon e Killua descobrem a verdadeira força de Biscuit e pedem para que ela os ensine Nen. Assim, inicia-se um treinamento intenso para superar seus próprios limites.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep63.jpg",
+    "dataExibicao": "2013-01-20"
+  },
+  {
+    "id": 454,
+    "numero": 64,
+    "titulo": "Fortalecer e Ameaçar",
+    "sinopse": "Sob a orientação de Biscuit, Gon e Killua evoluem rapidamente no uso do Nen. Enquanto isso, Genthru inicia seu plano para eliminar os demais jogadores de Greed Island.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep64.jpg",
+    "dataExibicao": "2013-01-27"
+  },
+  {
+    "id": 455,
+    "numero": 65,
+    "titulo": "Punho Maligno e Pedra, Papel e Tesoura",
+    "sinopse": "Inspirado pelos ensinamentos de Biscuit, Gon desenvolve sua própria técnica baseada em Pedra, Papel e Tesoura. Enquanto isso, Killua deixa Greed Island para refazer o Exame Hunter.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep65.jpg",
+    "dataExibicao": "2013-02-03"
+  },
+  {
+    "id": 456,
+    "numero": 66,
+    "titulo": "Estratégia e Plano",
+    "sinopse": "Após retornar como Hunter licenciado, Killua reúne-se novamente com Gon e Biscuit. Juntos, eles traçam estratégias para completar Greed Island antes que Genthru alcance seu objetivo.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep66.jpg",
+    "dataExibicao": "2013-02-10"
+  },
+  {
+    "id": 457,
+    "numero": 67,
+    "titulo": "15 x 15",
+    "sinopse": "Com Genthru cada vez mais próximo de concluir Greed Island, Gon e seus aliados unem forças com outros jogadores para impedir seus planos e conquistar cartas essenciais.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep67.jpg",
+    "dataExibicao": "2013-02-17"
+  },
+  {
+    "id": 458,
+    "numero": 68,
+    "titulo": "Piratas e Suposições",
+    "sinopse": "A equipe enfrenta o desafio de derrotar um grupo de piratas liderados por Razor. Após uma derrota inicial, Gon decide reunir aliados ainda mais fortes para uma nova tentativa.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep68.jpg",
+    "dataExibicao": "2013-02-24"
+  },
+  {
+    "id": 459,
+    "numero": 69,
+    "titulo": "Um Confronto Ardente",
+    "sinopse": "Com a ajuda de Hisoka, Goreinu e outros jogadores, Gon inicia a aguardada partida de queimada contra Razor, colocando à prova toda a experiência adquirida em Greed Island.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep69.jpg",
+    "dataExibicao": "2013-03-03"
+  },
+  {
+    "id": 460,
+    "numero": 70,
+    "titulo": "Coragem e Determinação",
+    "sinopse": "Mesmo diante da força esmagadora de Razor, Gon e Killua elaboram uma estratégia ousada para virar o jogo e conquistar uma das cartas mais importantes de Greed Island.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep70.jpg",
+    "dataExibicao": "2013-03-10"
+  },
+  {
+    "id": 461,
+    "numero": 71,
+    "titulo": "Negociação e Acordo",
+    "sinopse": "Após vencer Razor, Gon e seus aliados voltam o foco para Genthru. Enquanto Tsezguerra tenta ganhar tempo, Gon intensifica seu treinamento para o confronto decisivo.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep71.jpg",
+    "dataExibicao": "2013-03-17"
+  },
+  {
+    "id": 462,
+    "numero": 72,
+    "titulo": "Perseguição e Oportunidade",
+    "sinopse": "Com o tempo se esgotando em Greed Island, Gon e seus companheiros elaboram um plano para enfrentar Genthru. Cada decisão pode definir o destino do jogo.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep72.jpg",
+    "dataExibicao": "2013-03-24"
+  },
+  {
+    "id": 463,
+    "numero": 73,
+    "titulo": "Insanidade e Sanidade",
+    "sinopse": "O confronto final contra Genthru começa. Gon, Killua e Biscuit enfrentam seus adversários em batalhas simultâneas, colocando à prova todo o treinamento adquirido.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep73.jpg",
+    "dataExibicao": "2013-03-31"
+  },
+  {
+    "id": 464,
+    "numero": 74,
+    "titulo": "Vencedor e Perdedor",
+    "sinopse": "Mesmo gravemente ferido, Gon se recusa a desistir diante de Genthru. Sua determinação transforma a batalha em um duelo de estratégia, coragem e sacrifício.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep74.jpg",
+    "dataExibicao": "2013-04-07"
+  },
+  {
+    "id": 465,
+    "numero": 75,
+    "titulo": "Os Amigos de Ging e os Verdadeiros Amigos",
+    "sinopse": "Após derrotar Genthru e concluir Greed Island, Gon e seus amigos participam do desafio final do jogo e finalmente recebem a recompensa deixada por Ging.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep75.jpg",
+    "dataExibicao": "2013-04-14"
+  },
+  {
+    "id": 466,
+    "numero": 76,
+    "titulo": "Reencontro e Compreensão",
+    "sinopse": "Utilizando uma carta especial de Greed Island, Gon e Killua acreditam estar prestes a encontrar Ging, mas acabam conhecendo uma pessoa inesperadamente ligada ao seu passado.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep76.jpg",
+    "dataExibicao": "2013-04-21"
+  },
+  {
+    "id": 467,
+    "numero": 77,
+    "titulo": "Inquietação e Avistamento",
+    "sinopse": "Gon e Killua unem forças com Kite para investigar misteriosos ataques provocados pelas Formigas Quimera, iniciando uma das jornadas mais perigosas de suas vidas.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep77.jpg",
+    "dataExibicao": "2013-04-28"
+  },
+  {
+    "id": 468,
+    "numero": 78,
+    "titulo": "Reprodução Muito Rápida",
+    "sinopse": "Enquanto as Formigas Quimera evoluem em um ritmo alarmante, Kite identifica a origem da ameaça. O grupo percebe que está diante de um inimigo muito mais perigoso do que imaginava.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep78.jpg",
+    "dataExibicao": "2013-05-05"
+  },
+  {
+    "id": 469,
+    "numero": 79,
+    "titulo": "Nada Bom em NGL",
+    "sinopse": "Após atravessar a rígida fronteira de NGL, Gon, Killua e Kite descobrem o verdadeiro alcance da ameaça das Formigas Quimera, enquanto os ataques contra humanos se tornam cada vez mais frequentes.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep79.jpg",
+    "dataExibicao": "2013-05-12"
+  },
+  {
+    "id": 470,
+    "numero": 80,
+    "titulo": "Mal e Terrível",
+    "sinopse": "As Formigas Quimera expandem rapidamente seu domínio e a situação foge do controle. Com o perigo aumentando, a Associação Hunter começa a organizar uma ofensiva para impedir a catástrofe.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep80.jpg",
+    "dataExibicao": "2013-05-19"
+  },
+  {
+    "id": 471,
+    "numero": 81,
+    "titulo": "A Luta Começa",
+    "sinopse": "Ao encontrarem uma vila completamente devastada, Gon, Killua e Kite enfrentam pela primeira vez uma Formiga Quimera em combate, percebendo o enorme perigo que os aguarda.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep81.jpg",
+    "dataExibicao": "2013-05-26"
+  },
+  {
+    "id": 472,
+    "numero": 82,
+    "titulo": "Kite e as Roletas",
+    "sinopse": "Durante uma batalha intensa contra as Formigas Quimera, Kite revela o poder de sua habilidade Crazy Slots, enquanto um dos inimigos desperta interesse pelo Nen.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep82.jpg",
+    "dataExibicao": "2013-06-02"
+  },
+  {
+    "id": 473,
+    "numero": 83,
+    "titulo": "Inspiração para Evoluir",
+    "sinopse": "A Associação Hunter envia reforços para eliminar as Formigas Quimera, enquanto Gon, Killua e Kite enfrentam capitães inimigos cada vez mais fortes e inteligentes.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep83.jpg",
+    "dataExibicao": "2013-06-09"
+  },
+  {
+    "id": 474,
+    "numero": 84,
+    "titulo": "Um Despertar Predestinado",
+    "sinopse": "Neferpitou, uma das Guardas Reais das Formigas Quimera, desperta. Seu nascimento muda completamente o rumo da batalha e marca o surgimento de um inimigo aterrorizante.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep84.jpg",
+    "dataExibicao": "2013-06-16"
+  },
+  {
+    "id": 475,
+    "numero": 85,
+    "titulo": "Luz e Escuridão",
+    "sinopse": "Ao enfrentar Neferpitou, Kite percebe que o poder da Guarda Real é muito superior ao esperado. Para proteger Gon e Killua, ele faz um enorme sacrifício.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep85.jpg",
+    "dataExibicao": "2013-06-23"
+  },
+  {
+    "id": 476,
+    "numero": 86,
+    "titulo": "Promessa e Reencontro",
+    "sinopse": "Determinados a voltar para enfrentar as Formigas Quimera, Gon e Killua iniciam um treinamento rigoroso sob a supervisão de Biscuit e recebem um novo desafio de Morel.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep86.jpg",
+    "dataExibicao": "2013-06-30"
+  },
+  {
+    "id": 477,
+    "numero": 87,
+    "titulo": "Duelo e Fuga",
+    "sinopse": "Após semanas de treinamento, Gon e Killua enfrentam Knuckle. Enquanto isso, Neferpitou tenta restaurar Kite e a equipe de extermínio continua sua ofensiva contra as Formigas Quimera.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep87.jpg",
+    "dataExibicao": "2013-07-07"
+  },
+  {
+    "id": 478,
+    "numero": 88,
+    "titulo": "Pedra, Papel e Tesoura e Fraqueza",
+    "sinopse": "Gon aperfeiçoa seu Jajanken durante o confronto contra Knuckle, enquanto a Guarda Real recebe seu último integrante, tornando o exército das Formigas Quimera ainda mais poderoso.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep88.jpg",
+    "dataExibicao": "2013-07-14"
+  },
+  {
+    "id": 479,
+    "numero": 89,
+    "titulo": "Compaixão e Força",
+    "sinopse": "Durante a batalha contra Knuckle, Gon demonstra sua evolução e determinação. Paralelamente, Biscuit ajuda Killua a superar uma importante limitação psicológica.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep89.jpg",
+    "dataExibicao": "2013-07-21"
+  },
+  {
+    "id": 480,
+    "numero": 90,
+    "titulo": "Lento e Amaldiçoado",
+    "sinopse": "Chega o confronto decisivo contra Knuckle e Shoot. Enquanto Gon enfrenta as consequências da habilidade APR, Killua trava uma difícil batalha para provar sua força.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep90.jpg",
+    "dataExibicao": "2013-07-28"
+  },
+  {
+    "id": 481,
+    "numero": 91,
+    "titulo": "O Forte e o Fraco",
+    "sinopse": "A Rainha das Formigas Quimera finalmente dá à luz Meruem. Enquanto o novo rei demonstra um poder avassalador, a Guarda Real abandona a Rainha para servir seu verdadeiro soberano.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep91.jpg",
+    "dataExibicao": "2013-08-04"
+  },
+  {
+    "id": 482,
+    "numero": 92,
+    "titulo": "Um Desejo e Duas Promessas",
+    "sinopse": "Após a morte da Rainha, Colt promete proteger a última larva sobrevivente. Enquanto isso, Meruem e sua Guarda Real assumem o controle de East Gorteau para iniciar seus planos.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep92.jpg",
+    "dataExibicao": "2013-08-11"
+  },
+  {
+    "id": 483,
+    "numero": 93,
+    "titulo": "Encontro com Palm",
+    "sinopse": "Gon aceita sair com Palm para cumprir uma promessa. Paralelamente, Killua enfrenta um antigo inimigo e a equipe recebe notícias importantes sobre Kite.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep93.jpg",
+    "dataExibicao": "2013-08-18"
+  },
+  {
+    "id": 484,
+    "numero": 94,
+    "titulo": "Amigo e Jornada",
+    "sinopse": "Killua supera os efeitos da agulha de Illumi e derrota Rammot, libertando-se de seus medos. Enquanto isso, Gon conclui seu encontro com Palm e novos confrontos se aproximam.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep94.jpg",
+    "dataExibicao": "2013-09-01"
+  },
+  {
+    "id": 485,
+    "numero": 95,
+    "titulo": "Rancor e Terror",
+    "sinopse": "Ao reencontrar Kite em uma condição irreversível, Gon promete derrotar Neferpitou. A equipe inicia os preparativos para a invasão ao palácio de East Gorteau.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep95.jpg",
+    "dataExibicao": "2013-09-08"
+  },
+  {
+    "id": 486,
+    "numero": 96,
+    "titulo": "Um Lar Sem Lei",
+    "sinopse": "Enquanto a ameaça das Formigas Quimera se espalha pelo mundo, parte da Trupe Fantasma retorna à Cidade Meteoro para eliminar uma colônia que surgiu na região.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep96.jpg",
+    "dataExibicao": "2013-09-15"
+  },
+  {
+    "id": 487,
+    "numero": 97,
+    "titulo": "Carnificina e Devastação",
+    "sinopse": "Feitan enfrenta Zazan em uma batalha brutal, revelando uma de suas habilidades mais devastadoras enquanto a Trupe Fantasma elimina a colônia de Formigas Quimera.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep97.jpg",
+    "dataExibicao": "2013-09-22"
+  },
+  {
+    "id": 488,
+    "numero": 98,
+    "titulo": "Infiltração e Seleção",
+    "sinopse": "Com o plano de invasão em andamento, Gon e Killua entram secretamente em East Gorteau. Gon conhece Meleoron, uma Formiga Quimera com objetivos inesperados.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep98.jpg",
+    "dataExibicao": "2013-09-29"
+  },
+  {
+    "id": 489,
+    "numero": 99,
+    "titulo": "Combinação e Evolução",
+    "sinopse": "Killua tenta proteger os habitantes das aldeias enquanto Gon fortalece sua aliança com Meleoron. Ao mesmo tempo, os Caçadores ajustam seus preparativos para a invasão final.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep99.jpg",
+    "dataExibicao": "2013-10-08"
+  },
+  {
+    "id": 490,
+    "numero": 100,
+    "titulo": "Rastreamento e Perseguição",
+    "sinopse": "Leol envia seus subordinados para deter Killua, enquanto Gon conhece as verdadeiras intenções de Meleoron. A batalha contra as Formigas Quimera se aproxima de seu ponto decisivo.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep100.jpg",
+    "dataExibicao": "2013-10-15"
+  },
+  {
+    "id": 491,
+    "numero": 101,
+    "titulo": "Ikalgo e o Relâmpago",
+    "sinopse": "Killua enfrenta Ikalgo, mas acaba salvando sua vida. Em seguida, enfrenta os Irmãos Ortho em um combate mortal e supera seus adversários, enquanto Ikalgo decide retribuir sua bondade.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep101.jpg",
+    "dataExibicao": "2013-10-22"
+  },
+  {
+    "id": 492,
+    "numero": 102,
+    "titulo": "Poder e Jogos",
+    "sinopse": "Gon forma uma aliança com Meleoron, que revela seus verdadeiros poderes e sua motivação para derrotar o Rei. Enquanto isso, Meruem encontra uma adversária inesperada no jogo de Gungi.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep102.jpg",
+    "dataExibicao": "2013-10-29"
+  },
+  {
+    "id": 493,
+    "numero": 103,
+    "titulo": "Xeque e Xeque-mate",
+    "sinopse": "Meruem continua desafiando Komugi no Gungi sem conseguir derrotá-la. Ao mesmo tempo, Morel é preso em uma armadilha criada por Cheetu e precisa encontrar uma forma de escapar.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep103.jpg",
+    "dataExibicao": "2013-11-05"
+  },
+  {
+    "id": 494,
+    "numero": 104,
+    "titulo": "Dúvida e Hesitação",
+    "sinopse": "Enquanto Meruem segue obcecado em vencer Komugi, Knov percebe os perigos da vigilância inimiga e prepara medidas para garantir o sucesso da futura invasão ao palácio.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep104.jpg",
+    "dataExibicao": "2013-11-12"
+  },
+  {
+    "id": 495,
+    "numero": 105,
+    "titulo": "Determinação e Despertar",
+    "sinopse": "Após reconhecer a coragem de Komugi, Meruem muda sua postura. Enquanto Pitou cuida dos ferimentos do Rei, Knov aproveita a oportunidade para infiltrar-se no palácio.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep105.jpg",
+    "dataExibicao": "2013-11-19"
+  },
+  {
+    "id": 496,
+    "numero": 106,
+    "titulo": "Knov e Morel",
+    "sinopse": "Knov consegue cumprir sua missão de infiltração, mas o poder dos Guardas Reais abala sua sanidade. Enquanto isso, Morel enfrenta Leol em uma intensa batalha de Nen.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep106.jpg",
+    "dataExibicao": "2013-11-26"
+  },
+  {
+    "id": 497,
+    "numero": 107,
+    "titulo": "Retorno e Aposentadoria",
+    "sinopse": "Morel derrota Leol, enquanto Killua se recupera dos ferimentos e convida Ikalgo para lutar ao lado dos Caçadores. Ao mesmo tempo, Palm continua sua perigosa missão infiltrada.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep107.jpg",
+    "dataExibicao": "2013-12-03"
+  },
+  {
+    "id": 498,
+    "numero": 108,
+    "titulo": "Komugi e Gungi",
+    "sinopse": "Meruem continua enfrentando Komugi em partidas de Gungi e passa a questionar seus próprios sentimentos. Enquanto isso, Gon e seus aliados concluem os preparativos para a invasão.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep108.jpg",
+    "dataExibicao": "2013-12-10"
+  },
+  {
+    "id": 499,
+    "numero": 109,
+    "titulo": "Fazendo um Balanço e Agindo",
+    "sinopse": "Chega o momento de colocar o plano em prática. Enquanto Meruem reflete sobre sua própria existência, Gon e os demais iniciam a ofensiva contra o palácio.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep109.jpg",
+    "dataExibicao": "2013-12-17"
+  },
+  {
+    "id": 500,
+    "numero": 110,
+    "titulo": "Confusão e Expectativa",
+    "sinopse": "A seleção dos humanos está prestes a começar, mas Meruem se afasta de seus subordinados. Enquanto isso, os Caçadores assumem suas posições para iniciar o ataque ao palácio.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep110.jpg",
+    "dataExibicao": "2013-12-24"
+  },
+  {
+    "id": 501,
+    "numero": 111,
+    "titulo": "Investida e Invasão",
+    "sinopse": "O ataque dos Caçadores ao palácio finalmente começa. Enquanto Gon e seus aliados enfrentam Youpi, Netero e Zeno atraem Meruem para o confronto decisivo.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep111.jpg",
+    "dataExibicao": "2014-01-07"
+  },
+  {
+    "id": 502,
+    "numero": 112,
+    "titulo": "Monstro e Monstro",
+    "sinopse": "Os Caçadores enfrentam Youpi enquanto Pouf e Pitou tentam retornar ao lado do Rei. Meruem demonstra uma preocupação inesperada com Komugi.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep112.jpg",
+    "dataExibicao": "2014-01-14"
+  },
+  {
+    "id": 503,
+    "numero": 113,
+    "titulo": "Um Inseto Endividado",
+    "sinopse": "Shoot e Knuckle permanecem enfrentando Youpi enquanto Morel confronta Pouf. Ao mesmo tempo, Killua retorna para ajudar Ikalgo em uma missão perigosa.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep113.jpg",
+    "dataExibicao": "2014-01-21"
+  },
+  {
+    "id": 504,
+    "numero": 114,
+    "titulo": "Dividir e Conquistar",
+    "sinopse": "Meruem deixa o palácio acompanhado por Netero para o duelo final. Enquanto isso, Gon se prepara para encontrar Neferpitou e enfrentar seu maior inimigo.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep114.jpg",
+    "dataExibicao": "2014-01-28"
+  },
+  {
+    "id": 505,
+    "numero": 115,
+    "titulo": "Dever e Questionamento",
+    "sinopse": "Ikalgo segue sua missão para encontrar Palm enquanto Gon e Killua finalmente encontram Pitou, que está ocupada salvando Komugi.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep115.jpg",
+    "dataExibicao": "2014-02-04"
+  },
+  {
+    "id": 506,
+    "numero": 116,
+    "titulo": "Vingança e Recuperação",
+    "sinopse": "Dominado pela raiva, Gon exige que Pitou restaure Kite. Para salvar Komugi, Pitou aceita acompanhá-lo após concluir o tratamento.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep116.jpg",
+    "dataExibicao": "2014-02-11"
+  },
+  {
+    "id": 507,
+    "numero": 117,
+    "titulo": "Insulto e Retaliação",
+    "sinopse": "Silva elimina Cheetu instantaneamente, enquanto Youpi libera um poder devastador contra Knuckle e Shoot durante a batalha no palácio.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep117.jpg",
+    "dataExibicao": "2014-02-18"
+  },
+  {
+    "id": 508,
+    "numero": 118,
+    "titulo": "Uma Falsa Fúria",
+    "sinopse": "Youpi cria uma armadilha para enganar Knuckle, mas Killua intervém utilizando seus poderes elétricos para salvar seu companheiro.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep118.jpg",
+    "dataExibicao": "2014-02-25"
+  },
+  {
+    "id": 509,
+    "numero": 119,
+    "titulo": "Forte ou Fraco",
+    "sinopse": "Killua recua após esgotar sua eletricidade, enquanto Ikalgo tenta escapar dos subterrâneos e Morel decide como enfrentar Pouf.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep119.jpg",
+    "dataExibicao": "2014-03-04"
+  },
+  {
+    "id": 510,
+    "numero": 120,
+    "titulo": "Falso e Verdadeiro",
+    "sinopse": "Morel enfrenta Pouf após libertá-lo involuntariamente. Enquanto Knuckle desafia Youpi, Gon permanece vigiando Pitou durante o tratamento de Komugi.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep120.jpg",
+    "dataExibicao": "2014-03-11"
+  },
+  {
+    "id": 511,
+    "numero": 121,
+    "titulo": "Derrota e Dignidade",
+    "sinopse": "Knuckle e Morel enfrentam Youpi em uma batalha desesperadora. Quando a vitória parece próxima, Knuckle precisa decidir entre derrotar o inimigo ou preservar sua própria humanidade.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep121.jpg",
+    "dataExibicao": "2014-03-18"
+  },
+  {
+    "id": 512,
+    "numero": 122,
+    "titulo": "Pose e Nome",
+    "sinopse": "Netero finalmente encara Meruem em seu duelo definitivo. Enquanto isso, Pouf e Youpi deixam o palácio para localizar o Rei antes que seja tarde demais.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep122.jpg",
+    "dataExibicao": "2014-03-25"
+  },
+  {
+    "id": 513,
+    "numero": 123,
+    "titulo": "Centopeia e Memória",
+    "sinopse": "Ikalgo enfrenta Welfin em um confronto psicológico que desperta lembranças de seu passado humano, revelando pistas importantes sobre o paradeiro de Palm.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep123.jpg",
+    "dataExibicao": "2014-04-01"
+  },
+  {
+    "id": 514,
+    "numero": 124,
+    "titulo": "Colapso e Despertar",
+    "sinopse": "Killua reencontra Palm, agora transformada em uma Formiga Quimera. Enquanto tenta trazê-la de volta à razão, descobre que ela está sob o controle de Pouf.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep124.jpg",
+    "dataExibicao": "2014-04-08"
+  },
+  {
+    "id": 515,
+    "numero": 125,
+    "titulo": "Grande Poder e Poder Supremo",
+    "sinopse": "Netero revela toda a força de sua lendária técnica contra Meruem. Mesmo após inúmeros golpes, o Rei continua demonstrando um poder assustador.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep125.jpg",
+    "dataExibicao": "2014-04-15"
+  },
+  {
+    "id": 516,
+    "numero": 126,
+    "titulo": "Zero e Rosa",
+    "sinopse": "O confronto entre Netero e Meruem chega ao seu desfecho em uma batalha histórica, cujo resultado mudará para sempre o destino do mundo.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep126.jpg",
+    "dataExibicao": "2014-04-22"
+  },
+  {
+    "id": 517,
+    "numero": 127,
+    "titulo": "Hostilidade e Determinação",
+    "sinopse": "Após Komugi ser salva, Gon força Pitou a acompanhá-lo até Kite. Enquanto isso, Pouf e Youpi encontram Meruem gravemente ferido após sua luta contra Netero.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep127.jpg",
+    "dataExibicao": "2014-04-29"
+  },
+  {
+    "id": 518,
+    "numero": 128,
+    "titulo": "Alegria Incomparável e Amor Incondicional",
+    "sinopse": "Pouf e Youpi sacrificam parte de seus corpos para restaurar Meruem. Sem suas memórias completas, o Rei retorna ainda mais poderoso enquanto seus guardas escondem a verdade sobre Komugi.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep128.jpg",
+    "dataExibicao": "2014-05-06"
+  },
+  {
+    "id": 519,
+    "numero": 129,
+    "titulo": "Inimigo Formidável e Objetivo Claro",
+    "sinopse": "Killua protege Komugi enquanto Pouf tenta eliminar qualquer lembrança que possa restaurar a memória de Meruem. Ao mesmo tempo, Gon finalmente chega ao confronto decisivo contra Pitou.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep129.jpg",
+    "dataExibicao": "2014-05-13"
+  },
+  {
+    "id": 520,
+    "numero": 130,
+    "titulo": "Magia para Destruir",
+    "sinopse": "Meruem se aproxima de recuperar suas lembranças enquanto Killua continua protegendo Komugi. Diante de Kite, Gon finalmente encara a dolorosa verdade sobre seu mestre.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep130.jpg",
+    "dataExibicao": "2014-05-20"
+  },
+  {
+    "id": 521,
+    "numero": 131,
+    "titulo": "Raiva x e x Luz",
+    "sinopse": "Consumido pelo desespero, Gon desperta um poder inimaginável para enfrentar Neferpitou em uma batalha decisiva.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep131.jpg",
+    "dataExibicao": "2014-05-27"
+  },
+  {
+    "id": 522,
+    "numero": 132,
+    "titulo": "Clarão x e x Início",
+    "sinopse": "Meruem busca recuperar suas lembranças enquanto Palm e Ikalgo escondem Komugi dos Guardas Reais.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep132.jpg",
+    "dataExibicao": "2014-06-03"
+  },
+  {
+    "id": 523,
+    "numero": 133,
+    "titulo": "Prazo x Para x Viver",
+    "sinopse": "Os efeitos do veneno começam a atingir Meruem e seus Guardas, enquanto Welfin recebe uma missão decisiva.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep133.jpg",
+    "dataExibicao": "2014-06-10"
+  },
+  {
+    "id": 524,
+    "numero": 134,
+    "titulo": "A Palavra x É x Você",
+    "sinopse": "Ao ouvir o nome de Komugi, Meruem recupera completamente suas memórias e compreende seus verdadeiros sentimentos.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep134.jpg",
+    "dataExibicao": "2014-06-17"
+  },
+  {
+    "id": 525,
+    "numero": 135,
+    "titulo": "Esta Pessoa x e x Este Momento",
+    "sinopse": "Meruem decide passar seus últimos momentos ao lado de Komugi, encerrando sua jornada de forma emocionante.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep135.jpg",
+    "dataExibicao": "2014-06-24"
+  },
+  {
+    "id": 526,
+    "numero": 136,
+    "titulo": "Retorno ao Lar x e x Nome Verdadeiro",
+    "sinopse": "Enquanto Gon luta entre a vida e a morte, a Associação Hunter inicia a eleição para escolher o sucessor de Netero.",
+    "temporadaId": 2,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t2/ep136.jpg",
+    "dataExibicao": "2014-07-01"
+  },
+  {
+    "id": 527,
+    "numero": 137,
+    "titulo": "Debate x Entre x Zodíacos",
+    "sinopse": "Os Zodíacos iniciam a eleição para escolher o sucessor de Netero, enquanto Illumi coloca em prática um plano envolvendo Killua e Alluka.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep137.jpg",
+    "dataExibicao": "2014-07-08"
+  },
+  {
+    "id": 528,
+    "numero": 138,
+    "titulo": "Pedido x e x Desejo",
+    "sinopse": "Killua retorna à Mansão Zoldyck para pedir ajuda a Alluka, cuja misteriosa habilidade pode salvar a vida de Gon.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep138.jpg",
+    "dataExibicao": "2014-07-15"
+  },
+  {
+    "id": 529,
+    "numero": 139,
+    "titulo": "Alluka x e x Algo",
+    "sinopse": "Killua reúne-se com Alluka e tenta deixá-la livre, enquanto Illumi mobiliza seus planos para impedir que ela salve Gon.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep139.jpg",
+    "dataExibicao": "2014-07-22"
+  },
+  {
+    "id": 530,
+    "numero": 140,
+    "titulo": "Entrar na Batalha x e x Confronto Aberto",
+    "sinopse": "Killua deixa a propriedade dos Zoldyck acompanhado de Alluka, enquanto Leorio enfrenta Ging diante da Associação Hunter.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep140.jpg",
+    "dataExibicao": "2014-07-29"
+  },
+  {
+    "id": 531,
+    "numero": 141,
+    "titulo": "Mágico x e x Mordomo",
+    "sinopse": "Leorio ganha apoio dos Hunters após confrontar Ging, enquanto Hisoka e Illumi perseguem Killua e Alluka.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep141.jpg",
+    "dataExibicao": "2014-08-05"
+  },
+  {
+    "id": 532,
+    "numero": 142,
+    "titulo": "Agulhas x e x Dívida",
+    "sinopse": "Hisoka derrota Gotoh, Illumi controla diversas pessoas com suas agulhas e a perseguição a Killua se intensifica.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep142.jpg",
+    "dataExibicao": "2014-08-12"
+  },
+  {
+    "id": 533,
+    "numero": 143,
+    "titulo": "Pecado x e x Garra",
+    "sinopse": "A eleição continua sem definição enquanto Illumi confronta Killua para descobrir os segredos dos poderes de Alluka.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep143.jpg",
+    "dataExibicao": "2014-08-19"
+  },
+  {
+    "id": 534,
+    "numero": 144,
+    "titulo": "Aprovação x e x Coalizão",
+    "sinopse": "A eleição chega à reta final com Leorio recebendo apoio inesperado, enquanto Killua finalmente leva Alluka até Gon.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep144.jpg",
+    "dataExibicao": "2014-08-26"
+  },
+  {
+    "id": 535,
+    "numero": 145,
+    "titulo": "Derrota x e x Reencontro",
+    "sinopse": "Gon é curado graças ao poder de Alluka, reencontra seus amigos e finalmente conhece seu pai, Ging Freecss.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep145.jpg",
+    "dataExibicao": "2014-09-02"
+  },
+  {
+    "id": 536,
+    "numero": 146,
+    "titulo": "Presidente x e x Renúncia",
+    "sinopse": "Pariston vence a eleição, mas renuncia ao cargo em favor de Cheadle, enquanto Killua decide proteger Alluka de todos.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep146.jpg",
+    "dataExibicao": "2014-09-09"
+  },
+  {
+    "id": 537,
+    "numero": 147,
+    "titulo": "Salvação x e x Futuro",
+    "sinopse": "Gon se despede de Killua após agradecer por tudo, enquanto ambos seguem caminhos diferentes em busca de seus próprios objetivos.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep147.jpg",
+    "dataExibicao": "2014-09-16"
+  },
+  {
+    "id": 538,
+    "numero": 148,
+    "titulo": "Passado x e x Futuro",
+    "sinopse": "No topo da Árvore do Mundo, Gon conversa com Ging sobre suas jornadas e descobre novos horizontes além do mundo conhecido.",
+    "temporadaId": 3,
+    "animeId": 28,
+    "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep148.jpg",
+    "dataExibicao": "2014-09-23"
   }
 ]
