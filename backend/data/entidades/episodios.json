@@ -6018,5 +6018,385 @@
     "animeId": 28,
     "imagemUrl": "../../images/episodios/hunter-x-hunter/t3/ep148.jpg",
     "dataExibicao": "2014-09-23"
+  },
+  {
+    "id": 539,
+    "numero": 1,
+    "titulo": "O Fim da Jornada",
+    "sinopse": "Após a derrota do Rei Demônio, Frieren e seus antigos companheiros retornam como heróis. Enquanto cada um segue seu caminho, a elfa começa a perceber o verdadeiro valor do tempo e dos laços que construiu durante a jornada.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep1.jpg",
+    "dataExibicao": "2023-09-29"
+  },
+  {
+    "id": 540,
+    "numero": 2,
+    "titulo": "Não Precisava Ser Magia...",
+    "sinopse": "Enquanto decifra um antigo grimório para Heiter, Frieren ensina Fern a aperfeiçoar o uso da magia e reflete sobre as pequenas lembranças deixadas por seus antigos amigos.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep2.jpg",
+    "dataExibicao": "2023-09-29"
+  },
+  {
+    "id": 541,
+    "numero": 3,
+    "titulo": "Magia para Matar",
+    "sinopse": "Seguindo o antigo caminho de sua aventura, Frieren reencontra um poderoso inimigo do passado e precisa usar toda sua experiência para proteger seus companheiros.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep3.jpg",
+    "dataExibicao": "2023-09-29"
+  },
+  {
+    "id": 542,
+    "numero": 4,
+    "titulo": "A Terra Onde as Almas Descansam",
+    "sinopse": "Frieren e Fern visitam Eisen, que pede ajuda para localizar os escritos de Flamme, a lendária maga que foi mestra de Frieren.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep4.jpg",
+    "dataExibicao": "2023-09-29"
+  },
+  {
+    "id": 543,
+    "numero": 5,
+    "titulo": "Fantasmas dos Mortos",
+    "sinopse": "Ao investigarem uma vila onde pessoas desaparecem misteriosamente, Frieren e Fern descobrem que estranhas aparições escondem um perigo real.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep5.jpg",
+    "dataExibicao": "2023-10-06"
+  },
+  {
+    "id": 544,
+    "numero": 6,
+    "titulo": "O Herói da Vila",
+    "sinopse": "Frieren e Fern recrutam Stark para enfrentar um poderoso dragão solar, mas o jovem guerreiro precisa superar seus próprios medos antes da batalha.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep6.jpg",
+    "dataExibicao": "2023-10-13"
+  },
+  {
+    "id": 545,
+    "numero": 7,
+    "titulo": "Como um Conto de Fadas",
+    "sinopse": "Enquanto relembra as histórias deixadas por Himmel, Frieren encontra inesperadamente um antigo inimigo e revive lembranças marcantes do passado.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep7.jpg",
+    "dataExibicao": "2023-10-20"
+  },
+  {
+    "id": 546,
+    "numero": 8,
+    "titulo": "Frieren, a Exterminadora",
+    "sinopse": "Com a situação no domínio de Graf Granat chegando ao limite, Fern e Stark demonstram sua determinação enquanto Frieren assume novamente seu antigo papel de caçadora de demônios.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep8.jpg",
+    "dataExibicao": "2023-10-27"
+  },
+  {
+    "id": 547,
+    "numero": 9,
+    "titulo": "Aura, a Guilhotina",
+    "sinopse": "Enquanto Fern e Stark recuam para proteger os habitantes da cidade, Frieren finalmente enfrenta Aura, uma das mais perigosas demônias de seu passado.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep9.jpg",
+    "dataExibicao": "2023-11-03"
+  },
+  {
+    "id": 548,
+    "numero": 10,
+    "titulo": "Uma Maga Poderosa",
+    "sinopse": "O longo treinamento de Frieren sob a orientação de Flamme é colocado à prova em seu confronto decisivo contra Aura.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep10.jpg",
+    "dataExibicao": "2023-11-10"
+  },
+  {
+    "id": 549,
+    "numero": 11,
+    "titulo": "Inverno nas Terras do Norte",
+    "sinopse": "Frieren, Fern e Stark continuam sua viagem pelas terras do norte, enfrentando o rigor do inverno e novos desafios em seu caminho.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep11.jpg",
+    "dataExibicao": "2023-11-17"
+  },
+  {
+    "id": 550,
+    "numero": 12,
+    "titulo": "Um Verdadeiro Herói",
+    "sinopse": "O grupo chega à Vila da Espada, onde uma antiga missão aguarda Frieren e traz à tona lembranças do lendário herói Himmel.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep12.jpg",
+    "dataExibicao": "2023-11-24"
+  },
+  {
+    "id": 551,
+    "numero": 13,
+    "titulo": "Aversão aos da Própria Espécie",
+    "sinopse": "Durante a viagem, Frieren conhece Sein, um sacerdote extremamente talentoso que esconde um passado marcante por trás de seu comportamento descontraído.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep13.jpg",
+    "dataExibicao": "2023-12-01"
+  },
+  {
+    "id": 552,
+    "numero": 14,
+    "titulo": "O Privilégio da Juventude",
+    "sinopse": "Ao visitarem uma movimentada cidade comercial, Fern e Stark enfrentam pequenos desentendimentos enquanto Frieren relembra momentos vividos ao lado de Himmel.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep14.jpg",
+    "dataExibicao": "2023-12-08"
+  },
+  {
+    "id": 553,
+    "numero": 15,
+    "titulo": "Cheiro de Problema",
+    "sinopse": "Os moradores de uma cidade inteira caem em um misterioso sono profundo, obrigando o novo companheiro do grupo a provar seu verdadeiro valor.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep15.jpg",
+    "dataExibicao": "2023-12-15"
+  },
+  {
+    "id": 554,
+    "numero": 16,
+    "titulo": "Amigos de Longa Data",
+    "sinopse": "Frieren visita Voll, um velho amigo de vida longa, e compartilha com seus companheiros reflexões sobre amizade e a passagem do tempo.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep16.jpg",
+    "dataExibicao": "2023-12-22"
+  },
+  {
+    "id": 555,
+    "numero": 17,
+    "titulo": "Cuide-se",
+    "sinopse": "Sein finalmente encontra uma pista sobre seu amigo desaparecido, fazendo com que o grupo reflita sobre despedidas e novos caminhos.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep17.jpg",
+    "dataExibicao": "2024-01-05"
+  },
+  {
+    "id": 556,
+    "numero": 18,
+    "titulo": "Exame para Mago de Primeira Classe",
+    "sinopse": "Frieren e seus companheiros chegam a Äußerst para participar do rigoroso exame de mago de primeira classe, conhecendo diversos candidatos talentosos.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep18.jpg",
+    "dataExibicao": "2024-01-12"
+  },
+  {
+    "id": 557,
+    "numero": 19,
+    "titulo": "Planos Bem Elaborados",
+    "sinopse": "Frieren e sua equipe criam uma estratégia para capturar um Stille, enquanto outras equipes competem ferozmente pelo sucesso na primeira prova.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep19.jpg",
+    "dataExibicao": "2024-01-19"
+  },
+  {
+    "id": 558,
+    "numero": 20,
+    "titulo": "Matar é Necessário",
+    "sinopse": "O exame se intensifica quando confrontos entre os participantes mostram que alguns estão dispostos a tudo para conquistar a aprovação.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep20.jpg",
+    "dataExibicao": "2024-01-26"
+  },
+  {
+    "id": 559,
+    "numero": 21,
+    "titulo": "O Mundo da Magia",
+    "sinopse": "Frieren, Kanne e Lawine lutam para manter a posse do Stille, enquanto a primeira fase do exame chega ao fim com revelações inesperadas.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep21.jpg",
+    "dataExibicao": "2024-02-02"
+  },
+  {
+    "id": 560,
+    "numero": 22,
+    "titulo": "Futuros Inimigos",
+    "sinopse": "Após a primeira etapa do exame, os candidatos aproveitam um breve descanso na cidade, onde novas amizades e futuras rivalidades começam a surgir.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep22.jpg",
+    "dataExibicao": "2024-02-09"
+  },
+  {
+    "id": 561,
+    "numero": 23,
+    "titulo": "Conquistando o Labirinto",
+    "sinopse": "Os candidatos enfrentam a segunda prova do exame ao explorar as misteriosas Ruínas do Túmulo do Rei, um labirinto repleto de perigos desconhecidos.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep23.jpg",
+    "dataExibicao": "2024-02-16"
+  },
+  {
+    "id": 562,
+    "numero": 24,
+    "titulo": "Réplicas Perfeitas",
+    "sinopse": "Dentro das ruínas, um monstro lendário cria cópias perfeitas dos participantes, obrigando cada mago a enfrentar uma versão de si mesmo.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep24.jpg",
+    "dataExibicao": "2024-02-23"
+  },
+  {
+    "id": 563,
+    "numero": 25,
+    "titulo": "Uma Fraqueza Fatal",
+    "sinopse": "A réplica perfeita de Frieren impede o avanço dos candidatos, mas Fern acredita ter descoberto a única maneira de derrotá-la.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep25.jpg",
+    "dataExibicao": "2024-03-01"
+  },
+  {
+    "id": 564,
+    "numero": 26,
+    "titulo": "O Auge da Magia",
+    "sinopse": "Frieren e Fern enfrentam sua poderosa réplica enquanto os demais candidatos travam batalhas decisivas para concluir a segunda etapa do exame.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep26.jpg",
+    "dataExibicao": "2024-03-08"
+  },
+  {
+    "id": 565,
+    "numero": 27,
+    "titulo": "A Era dos Humanos",
+    "sinopse": "Com a segunda prova encerrada, resta apenas o teste final. Antes disso, Frieren e Fern resolvem alguns assuntos importantes na cidade.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep27.jpg",
+    "dataExibicao": "2024-03-15"
+  },
+  {
+    "id": 566,
+    "numero": 28,
+    "titulo": "Seria Vergonhoso Nos Encontrarmos Novamente",
+    "sinopse": "O exame para mago de primeira classe chega ao fim e cada participante segue seu próprio caminho, enquanto uma nova etapa da jornada de Frieren começa.",
+    "temporadaId": 1,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t1/ep28.jpg",
+    "dataExibicao": "2024-03-22"
+  },
+  {
+    "id": 567,
+    "numero": 1,
+    "titulo": "Então, Vamos?",
+    "sinopse": "Após deixarem Äußerst, Frieren, Fern e Stark retomam sua viagem pelas terras do norte em direção a novos destinos e desafios.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep1.jpg",
+    "dataExibicao": "2026-01-16"
+  },
+  {
+    "id": 568,
+    "numero": 2,
+    "titulo": "O Herói do Sul",
+    "sinopse": "Em uma pequena vila, o grupo recebe a missão de restaurar a estátua de um antigo herói, trazendo à tona histórias esquecidas do passado.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep2.jpg",
+    "dataExibicao": "2026-01-23"
+  },
+  {
+    "id": 569,
+    "numero": 3,
+    "titulo": "Um Lugar Onde Ela Gostaria de Estar",
+    "sinopse": "Enquanto seguem viagem pelas terras do norte, Frieren e seus companheiros chegam a uma vila abandonada onde antigas lembranças voltam à tona.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep3.jpg",
+    "dataExibicao": "2026-01-30"
+  },
+  {
+    "id": 570,
+    "numero": 4,
+    "titulo": "Casas de Outras Pessoas",
+    "sinopse": "Durante a viagem, Stark e Fern acabam vivendo uma situação inesperada que aproxima ainda mais os dois companheiros.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep4.jpg",
+    "dataExibicao": "2026-02-06"
+  },
+  {
+    "id": 571,
+    "numero": 5,
+    "titulo": "Logística no Planalto Norte",
+    "sinopse": "Frieren reencontra um velho conhecido enquanto o grupo enfrenta novos desafios durante sua jornada pelo Planalto Norte.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep5.jpg",
+    "dataExibicao": "2026-02-13"
+  },
+  {
+    "id": 572,
+    "numero": 6,
+    "titulo": "Um Pedido para Derrotar um Demônio",
+    "sinopse": "Após uma vila ser destruída por uma ameaça demoníaca, Frieren e seus companheiros investigam o perigo e partem para enfrentá-lo.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep6.jpg",
+    "dataExibicao": "2026-02-27"
+  },
+  {
+    "id": 573,
+    "numero": 7,
+    "titulo": "A Revolta Divina",
+    "sinopse": "Frieren, Fern e Methode entram em uma floresta em busca de uma poderosa criatura conhecida como Revolte.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep7.jpg",
+    "dataExibicao": "2026-03-06"
+  },
+  {
+    "id": 574,
+    "numero": 8,
+    "titulo": "Um Final Magnífico",
+    "sinopse": "O confronto contra os inimigos chega ao seu ápice enquanto Frieren e seus aliados lutam para proteger a vila.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep8.jpg",
+    "dataExibicao": "2026-03-13"
+  },
+  {
+    "id": 575,
+    "numero": 9,
+    "titulo": "As Memórias de Himmel",
+    "sinopse": "Durante a viagem, Frieren se depara com lembranças do herói Himmel e momentos importantes do passado.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep9.jpg",
+    "dataExibicao": "2026-03-20"
+  },
+  {
+    "id": 576,
+    "numero": 10,
+    "titulo": "Uma Bela Visão",
+    "sinopse": "Frieren e seus companheiros descobrem uma história escondida enquanto continuam sua jornada rumo ao seu objetivo final.",
+    "temporadaId": 2,
+    "animeId": 10,
+    "imagemUrl": "../../images/episodios/frieren/t2/ep10.jpg",
+    "dataExibicao": "2026-03-27"
   }
 ]
