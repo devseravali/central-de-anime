@@ -6778,5 +6778,645 @@
     "animeId": 37,
     "imagemUrl": "../../images/episodios/jigokuraku/t2/ep12.jpg",
     "dataExibicao": "2026-03-29"
+  },
+  {
+    "id": 615,
+    "numero": 1,
+    "titulo": "Fullmetal Alchemist",
+    "sinopse": "O Alquimista Congelante Isaac McDougal escapa da prisão de Central e inicia um plano para matar o Führer King Bradley. Roy Mustang e os Alquimistas Federais tentam impedi-lo.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep1.jpg",
+    "dataExibicao": "2009-04-05"
+  },
+  {
+    "id": 616,
+    "numero": 2,
+    "titulo": "O Primeiro Dia",
+    "sinopse": "A caminho de Lior, Ed e Al relembram os acontecimentos que os levaram a perder seus corpos após quebrarem o tabu da transmutação humana.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep2.jpg",
+    "dataExibicao": "2009-04-12"
+  },
+  {
+    "id": 617,
+    "numero": 3,
+    "titulo": "Cidade da Heresia",
+    "sinopse": "Ed e Al chegam a Lior em busca da Pedra Filosofal e encontram o padre Cornello, que realiza supostos milagres usando alquimia.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep3.jpg",
+    "dataExibicao": "2009-04-19"
+  },
+  {
+    "id": 618,
+    "numero": 4,
+    "titulo": "A Angústia de um Alquimista",
+    "sinopse": "Os irmãos Elric investigam uma quimera criada pelo alquimista Shou Tucker enquanto um assassino de Alquimistas Federais age em Central.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep4.jpg",
+    "dataExibicao": "2009-04-25"
+  },
+  {
+    "id": 619,
+    "numero": 5,
+    "titulo": "Chuva de Tristeza",
+    "sinopse": "Após descobrirem a verdade sobre Shou Tucker e Nina, Ed e Al começam a questionar o verdadeiro significado da alquimia.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep5.jpg",
+    "dataExibicao": "2009-05-03"
+  },
+  {
+    "id": 620,
+    "numero": 6,
+    "titulo": "Estrada da Esperança",
+    "sinopse": "Depois do encontro com Scar, Ed e Al precisam reparar seus corpos e retornam para Resembool acompanhados pelo Major Armstrong.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep6.jpg",
+    "dataExibicao": "2009-05-10"
+  },
+  {
+    "id": 621,
+    "numero": 7,
+    "titulo": "Verdades Ocultas",
+    "sinopse": "Ao chegarem à Biblioteca Central destruída, Ed e Al procuram Sheska para recuperar informações sobre a Pedra Filosofal.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep7.jpg",
+    "dataExibicao": "2009-05-17"
+  },
+  {
+    "id": 622,
+    "numero": 8,
+    "titulo": "O Quinto Laboratório",
+    "sinopse": "Ed e Al invadem o Quinto Laboratório para descobrir mais sobre a origem da Pedra Filosofal, mas encontram perigosos inimigos.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep8.jpg",
+    "dataExibicao": "2009-05-24"
+  },
+  {
+    "id": 623,
+    "numero": 9,
+    "titulo": "Sentimentos Criados",
+    "sinopse": "Enquanto Ed se recupera no hospital, Al luta contra as dúvidas sobre sua própria existência após os acontecimentos no laboratório.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep9.jpg",
+    "dataExibicao": "2009-05-31"
+  },
+  {
+    "id": 624,
+    "numero": 10,
+    "titulo": "Destinos Separados",
+    "sinopse": "A conspiração envolvendo a Pedra Filosofal chega aos altos escalões militares e um importante aliado de Mustang é assassinado.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep10.jpg",
+    "dataExibicao": "2009-06-07"
+  },
+  {
+    "id": 625,
+    "numero": 11,
+    "titulo": "Milagre em Rush Valley",
+    "sinopse": "Os irmãos Elric percebem que a alquimia ainda não consegue criar vida quando uma nova amiga entra em trabalho de parto.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep11.jpg",
+    "dataExibicao": "2009-06-14"
+  },
+  {
+    "id": 626,
+    "numero": 12,
+    "titulo": "Um é Tudo, Tudo é Um",
+    "sinopse": "Durante a visita à sua antiga mestra Izumi, Ed e Al relembram as dificuldades do princípio equivalente e descobrem que ela também conhece o maior tabu da alquimia.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep12.jpg",
+    "dataExibicao": "2009-06-21"
+  },
+  {
+    "id": 627,
+    "numero": 13,
+    "titulo": "Feras de Dublith",
+    "sinopse": "Alphonse é sequestrado por quimeras lideradas pelo Homúnculo Greed. Edward tenta resgatá-lo enquanto Izumi demonstra novamente sua força.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep13.jpg",
+    "dataExibicao": "2009-06-28"
+  },
+  {
+    "id": 628,
+    "numero": 14,
+    "titulo": "Aqueles que Espreitam no Subsolo",
+    "sinopse": "Em um confronto contra Greed, King Bradley mostra seu verdadeiro poder. Um inimigo ainda mais poderoso surge para destruir o Escudo Supremo.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep14.jpg",
+    "dataExibicao": "2009-07-05"
+  },
+  {
+    "id": 629,
+    "numero": 15,
+    "titulo": "O Mensageiro do Oriente",
+    "sinopse": "Os irmãos Elric encontram Ling Yao e seus guarda-costas Lan Fan e Fu, visitantes de Xing que procuram a Pedra Filosofal.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep15.jpg",
+    "dataExibicao": "2009-07-12"
+  },
+  {
+    "id": 630,
+    "numero": 16,
+    "titulo": "Passos de um Companheiro de Armas",
+    "sinopse": "Após descobrirem a morte de Hughes, Ed e Al enfrentam tristeza e culpa. Enquanto isso, Envy continua escondido entre os militares.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep16.jpg",
+    "dataExibicao": "2009-07-19"
+  },
+  {
+    "id": 631,
+    "numero": 17,
+    "titulo": "Chama Fria",
+    "sinopse": "Roy Mustang toma uma atitude inesperada após Ross ser acusada pela morte de Maes Hughes, surpreendendo até seus aliados mais próximos.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep17.jpg",
+    "dataExibicao": "2009-07-26"
+  },
+  {
+    "id": 632,
+    "numero": 18,
+    "titulo": "A Arrogante Palma de uma Pequena Pessoa",
+    "sinopse": "Edward descobre novos detalhes sobre o passado de Mustang e também recebe uma revelação surpreendente sobre os pais de Winry.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep18.jpg",
+    "dataExibicao": "2009-08-02"
+  },
+  {
+    "id": 633,
+    "numero": 19,
+    "titulo": "Morte do Imortal",
+    "sinopse": "Mustang, Alphonse, Havoc e Hawkeye investigam um laboratório militar enquanto Lust prepara uma armadilha mortal.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep19.jpg",
+    "dataExibicao": "2009-08-09"
+  },
+  {
+    "id": 634,
+    "numero": 20,
+    "titulo": "Pai Antes do Túmulo",
+    "sinopse": "A visita de Hohenheim termina com um aviso sombrio para Pinako, enquanto Ed encontra esperança nas ruínas queimadas de sua infância.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep20.jpg",
+    "dataExibicao": "2009-08-16"
+  },
+  {
+    "id": 635,
+    "numero": 21,
+    "titulo": "Avanço do Tolo",
+    "sinopse": "Ed e Al criam um plano arriscado para atrair os Homúnculos para fora do esconderijo, colocando suas vidas em perigo.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep21.jpg",
+    "dataExibicao": "2009-08-30"
+  },
+  {
+    "id": 636,
+    "numero": 22,
+    "titulo": "Costas ao Longe",
+    "sinopse": "A missão de Scar para destruir aqueles que exterminaram seu povo é movida pela raiva. Ao descobrir o papel de Scar na morte de seus pais, Winry enfrenta seus próprios sentimentos.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep22.jpg",
+    "dataExibicao": "2009-09-06"
+  },
+  {
+    "id": 637,
+    "numero": 23,
+    "titulo": "Garota no Campo de Batalha",
+    "sinopse": "A cooperação entre o grupo de Mustang e os aliados de Ling leva à captura de um Homúnculo, mas também chama a atenção dos inimigos.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep23.jpg",
+    "dataExibicao": "2009-09-13"
+  },
+  {
+    "id": 638,
+    "numero": 24,
+    "titulo": "Dentro da Barriga",
+    "sinopse": "Os poderes distorcidos de Gluttony dominam os irmãos Elric. Enquanto isso, Mustang investiga suas suspeitas sobre Bradley.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep24.jpg",
+    "dataExibicao": "2009-09-20"
+  },
+  {
+    "id": 639,
+    "numero": 25,
+    "titulo": "Portal da Escuridão",
+    "sinopse": "Ed e Ling enfrentam um inimigo terrível dentro do estômago de Gluttony enquanto os Homúnculos continuam avançando seus planos.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep25.jpg",
+    "dataExibicao": "2009-09-27"
+  },
+  {
+    "id": 640,
+    "numero": 26,
+    "titulo": "Reencontro",
+    "sinopse": "Al encontra aquele conhecido como Pai e Mustang descobre a verdade sobre a criação de Bradley. Ed enfrenta novamente o maior tabu da alquimia.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep26.jpg",
+    "dataExibicao": "2009-10-04"
+  },
+  {
+    "id": 641,
+    "numero": 27,
+    "titulo": "Festa de Intervalo",
+    "sinopse": "Hohenheim relembra o passado e reflete sobre os erros da humanidade, o sofrimento causado pela família e as consequências da guerra.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep27.jpg",
+    "dataExibicao": "2009-10-11"
+  },
+  {
+    "id": 642,
+    "numero": 28,
+    "titulo": "Pai",
+    "sinopse": "Os irmãos Elric ficam frente a frente com Pai, cuja aparência revela uma conexão inesperada com o passado deles.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep28.jpg",
+    "dataExibicao": "2009-10-18"
+  },
+  {
+    "id": 643,
+    "numero": 29,
+    "titulo": "Luta do Tolo",
+    "sinopse": "Os irmãos Elric ficam sob o controle de Bradley enquanto Mustang reúne aliados em segredo para enfrentar a ameaça dos Homúnculos.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep29.jpg",
+    "dataExibicao": "2009-10-25"
+  },
+  {
+    "id": 644,
+    "numero": 30,
+    "titulo": "A Guerra de Extermínio de Ishval",
+    "sinopse": "Edward ouve o relato de Hawkeye sobre os acontecimentos da guerra de Ishval e os horrores cometidos pelos militares.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep30.jpg",
+    "dataExibicao": "2009-11-01"
+  },
+  {
+    "id": 645,
+    "numero": 31,
+    "titulo": "A Promessa dos 520 Cens",
+    "sinopse": "Mesmo com seus aliados separados, Mustang continua sua luta enquanto os Homúnculos libertam um dos assassinos mais perigosos de Ishval.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep31.jpg",
+    "dataExibicao": "2009-11-08"
+  },
+  {
+    "id": 646,
+    "numero": 32,
+    "titulo": "O Filho do Führer",
+    "sinopse": "Mustang encontra um antigo aliado para fortalecer sua causa enquanto Ed e Al conhecem Selim Bradley, o filho do Führer.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep32.jpg",
+    "dataExibicao": "2009-11-15"
+  },
+  {
+    "id": 647,
+    "numero": 33,
+    "titulo": "A Muralha Norte de Briggs",
+    "sinopse": "As terras geladas do norte se tornam um campo de batalha quando Kimblee se aproxima de Scar. Enquanto isso, Ed e Al enfrentam as dificuldades para chegar ao Forte Briggs.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep33.jpg",
+    "dataExibicao": "2009-11-22"
+  },
+  {
+    "id": 648,
+    "numero": 34,
+    "titulo": "A Rainha do Gelo",
+    "sinopse": "Os soldados do Forte Briggs permanecem atentos contra possíveis espiões de Drachma. Uma invasão inesperada prova que nem mesmo a fortaleza é invencível.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep34.jpg",
+    "dataExibicao": "2009-11-29"
+  },
+  {
+    "id": 649,
+    "numero": 35,
+    "titulo": "A Forma Deste País",
+    "sinopse": "Ed descobre uma conspiração de proporções gigantescas que já causou inúmeras vítimas e ameaça todo o país de Amestris.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep35.jpg",
+    "dataExibicao": "2009-12-06"
+  },
+  {
+    "id": 650,
+    "numero": 36,
+    "titulo": "Retrato de Família",
+    "sinopse": "Enquanto Raven tenta corromper Armstrong, Ed e Al ficam presos. Hohenheim relembra seu próprio passado e o sofrimento de sua existência.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep36.jpg",
+    "dataExibicao": "2009-12-13"
+  },
+  {
+    "id": 651,
+    "numero": 37,
+    "titulo": "O Primeiro Homúnculo",
+    "sinopse": "Hawkeye fica chocada ao descobrir a identidade do primeiro Homúnculo. Edward recebe uma proposta perigosa de Kimblee.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep37.jpg",
+    "dataExibicao": "2009-12-20"
+  },
+  {
+    "id": 652,
+    "numero": 38,
+    "titulo": "Conflito em Baschool",
+    "sinopse": "Scar é encurralado por quimeras e recebe ajuda inesperada dos irmãos Elric. Winry tenta confrontá-lo pela morte de seus pais.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep38.jpg",
+    "dataExibicao": "2009-12-27"
+  },
+  {
+    "id": 653,
+    "numero": 39,
+    "titulo": "Devaneio",
+    "sinopse": "O plano envolvendo o sequestro de Winry por Scar é revelado, mas ainda é necessário criar uma estratégia de resgate.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep39.jpg",
+    "dataExibicao": "2010-01-10"
+  },
+  {
+    "id": 654,
+    "numero": 40,
+    "titulo": "Homúnculo (O Anão no Frasco)",
+    "sinopse": "Há muito tempo, o sangue de um simples escravo foi usado em uma experiência que criou uma criatura misteriosa. Em troca da existência, ela concedeu um nome e uma maldição.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep40.jpg",
+    "dataExibicao": "2010-01-17"
+  },
+  {
+    "id": 655,
+    "numero": 41,
+    "titulo": "O Abismo",
+    "sinopse": "A ligação entre os irmãos Elric é colocada à prova quando Al enfrenta o vazio congelante e Ed sofre graves ferimentos.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep41.jpg",
+    "dataExibicao": "2010-01-24"
+  },
+  {
+    "id": 656,
+    "numero": 42,
+    "titulo": "Sinais de uma Contraofensiva",
+    "sinopse": "May e Marcoh avançam na pesquisa de Scar, mas uma grande ameaça cresce pelo país enquanto a violência se espalha.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep42.jpg",
+    "dataExibicao": "2010-01-31"
+  },
+  {
+    "id": 657,
+    "numero": 43,
+    "titulo": "A Mordida da Formiga",
+    "sinopse": "Os soldados do Forte Briggs enfrentam um exército invasor enquanto Marcoh combate Envy e Olivier Armstrong descobre um segredo chocante.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep43.jpg",
+    "dataExibicao": "2010-02-07"
+  },
+  {
+    "id": 658,
+    "numero": 44,
+    "titulo": "A Todo Vapor",
+    "sinopse": "Hohenheim e Alphonse aproveitam a oportunidade para se reconectar. O pai revela segredos importantes aos filhos, enquanto Edward continua desaparecido.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep44.jpg",
+    "dataExibicao": "2010-02-14"
+  },
+  {
+    "id": 659,
+    "numero": 45,
+    "titulo": "O Dia Prometido",
+    "sinopse": "Avisos sobre o Dia Prometido começam a surgir. Edward reúne novos aliados entre humanos, quimeras e até Homúnculos para enfrentar o caos que se aproxima.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep45.jpg",
+    "dataExibicao": "2010-02-21"
+  },
+  {
+    "id": 660,
+    "numero": 46,
+    "titulo": "Sombras Crescentes",
+    "sinopse": "Os planos daqueles que pretendem recuperar a nação são descobertos. Enquanto isso, Alphonse enfrenta criaturas perigosas nas sombras.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep46.jpg",
+    "dataExibicao": "2010-02-28"
+  },
+  {
+    "id": 661,
+    "numero": 47,
+    "titulo": "Emissário da Escuridão",
+    "sinopse": "Uma voz sinistra surge da armadura de Al. Ed e Greed são atacados enquanto os Homúnculos usam a escuridão a seu favor.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep47.jpg",
+    "dataExibicao": "2010-03-07"
+  },
+  {
+    "id": 662,
+    "numero": 48,
+    "titulo": "O Juramento no Túnel",
+    "sinopse": "Após investigar a família Bradley, Mustang reúne seus soldados mais leais enquanto Ed e seus aliados enfrentam Selim.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep48.jpg",
+    "dataExibicao": "2010-03-14"
+  },
+  {
+    "id": 663,
+    "numero": 49,
+    "titulo": "Afeto Familiar",
+    "sinopse": "Com a ajuda de seu pai, Al consegue conter Pride. Enquanto o Dia Prometido se aproxima, o Homúnculo reflete sobre sua mãe humana.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep49.jpg",
+    "dataExibicao": "2010-03-21"
+  },
+  {
+    "id": 664,
+    "numero": 50,
+    "titulo": "Revolta em Central",
+    "sinopse": "Mustang lidera um ataque contra as defesas de Central com soldados do norte e antigos aliados. Uma terrível revelação muda tudo.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep50.jpg",
+    "dataExibicao": "2010-03-28"
+  },
+  {
+    "id": 665,
+    "numero": 51,
+    "titulo": "A Legião Imortal",
+    "sinopse": "O grupo de Edward enfrenta uma horda de manequins movidos por almas humanas enquanto Pride, Sloth e Envy entram em ação.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep51.jpg",
+    "dataExibicao": "2010-04-04"
+  },
+  {
+    "id": 666,
+    "numero": 52,
+    "titulo": "Força Combinada",
+    "sinopse": "Com uma Pedra Filosofal em mãos, Alphonse enfrenta Pride e Kimblee. Enquanto isso, os Armstrong lutam contra Sloth.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep52.jpg",
+    "dataExibicao": "2010-04-11"
+  },
+  {
+    "id": 667,
+    "numero": 53,
+    "titulo": "Chama da Vingança",
+    "sinopse": "Após uma transmissão de rádio favorecer as forças de Mustang, o Alquimista das Chamas libera sua fúria contra o assassino de Maes Hughes.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep53.jpg",
+    "dataExibicao": "2010-04-18"
+  },
+  {
+    "id": 668,
+    "numero": 54,
+    "titulo": "Além do Inferno",
+    "sinopse": "Enquanto Envy sofre com o ataque de Mustang, Hawkeye tenta impedir que o ódio do Alquimista das Chamas o consuma.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep54.jpg",
+    "dataExibicao": "2010-04-25"
+  },
+  {
+    "id": 669,
+    "numero": 55,
+    "titulo": "O Modo de Vida dos Adultos",
+    "sinopse": "A vitória dos rebeldes parece próxima e a esperança cresce entre as tropas de Mustang e Armstrong. Porém, um antigo líder retorna para assumir o controle.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep55.jpg",
+    "dataExibicao": "2010-05-02"
+  },
+  {
+    "id": 670,
+    "numero": 56,
+    "titulo": "O Retorno do Führer",
+    "sinopse": "As forças de Central recuperam sua confiança após o retorno de Bradley. O próprio Führer entra na batalha contra seus inimigos.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep56.jpg",
+    "dataExibicao": "2010-05-09"
+  },
+  {
+    "id": 671,
+    "numero": 57,
+    "titulo": "Partida Eterna",
+    "sinopse": "A batalha pelo futuro de Amestris mergulha no caos. Bradley mostra sua força enquanto algo ainda mais perigoso é libertado sob Central.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep57.jpg",
+    "dataExibicao": "2010-05-16"
+  },
+  {
+    "id": 672,
+    "numero": 58,
+    "titulo": "Sacrifícios",
+    "sinopse": "Mustang precisa escolher entre quebrar o maior tabu da alquimia ou perder alguém importante. Enquanto isso, Ling luta para manter o controle sobre Greed.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep58.jpg",
+    "dataExibicao": "2010-05-23"
+  },
+  {
+    "id": 673,
+    "numero": 59,
+    "titulo": "Luz Perdida",
+    "sinopse": "Após atravessar o Portal da Verdade, Mustang descobre o preço de enxergar o outro lado. Os cinco sacrifícios se reúnem diante de Pai.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep59.jpg",
+    "dataExibicao": "2010-05-30"
+  },
+  {
+    "id": 674,
+    "numero": 60,
+    "titulo": "Olho do Céu, Portal da Terra",
+    "sinopse": "A luz desaparece e as sombras tomam conta de tudo. Enquanto o mundo treme, o círculo de transmutação finalmente se completa.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep60.jpg",
+    "dataExibicao": "2010-06-06"
+  },
+  {
+    "id": 675,
+    "numero": 61,
+    "titulo": "Aquele que Engoliria Deus",
+    "sinopse": "Milhões de corpos sem vida cobrem Amestris e uma entidade com poder semelhante ao de um deus surge para destruir o mundo.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep61.jpg",
+    "dataExibicao": "2010-06-13"
+  },
+  {
+    "id": 676,
+    "numero": 62,
+    "titulo": "Um Contra-Ataque Feroz",
+    "sinopse": "Edward, Mustang, Hawkeye, Greed, Izumi e Armstrong enfrentam Pai em uma batalha épica. Quando tudo parece perdido, um sacrifício inesperado muda o rumo da luta.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep62.jpg",
+    "dataExibicao": "2010-06-20"
+  },
+  {
+    "id": 677,
+    "numero": 63,
+    "titulo": "O Outro Lado do Portal",
+    "sinopse": "Após a batalha final, Pai encontra seu destino além do Portal da Verdade. Edward descobre uma nova possibilidade para seu futuro.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep63.jpg",
+    "dataExibicao": "2010-06-27"
+  },
+  {
+    "id": 678,
+    "numero": 64,
+    "titulo": "O Fim da Jornada",
+    "sinopse": "Após todas as batalhas, os irmãos Elric finalmente encontram o caminho para seguir em frente e encerram sua longa jornada.",
+    "temporadaId": 1,
+    "animeId": 38,
+    "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep64.jpg",
+    "dataExibicao": "2010-07-04"
   }
 ]
