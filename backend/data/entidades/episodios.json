@@ -7418,5 +7418,345 @@
     "animeId": 38,
     "imagemUrl": "../../images/episodios/fullmetal-alchemist/t1/ep64.jpg",
     "dataExibicao": "2010-07-04"
+  },
+  {
+    "id": 679,
+    "numero": 1,
+    "titulo": "Psíquico Autoproclamado: Reigen Arataka ~E Mob~",
+    "sinopse": "Pessoas com poderes psíquicos enfrentam fenômenos sobrenaturais inexplicáveis pela ciência. Reigen Arataka administra um escritório de consulta espiritual, mas apesar de se chamar de médium, ele é apenas um farsante. Sua única esperança é Shigeo Kageyama, conhecido como Mob, um estudante do ensino fundamental com poderes incríveis.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep1.jpg",
+    "dataExibicao": "2016-07-12"
+  },
+  {
+    "id": 680,
+    "numero": 2,
+    "titulo": "Dúvidas Sobre a Juventude ~O Clube de Telepatia Aparece~",
+    "sinopse": "O Clube de Telepatia corre o risco de ser fechado pelo conselho estudantil por falta de membros. Enquanto isso, Mob recebe uma ligação de Reigen para investigar um incidente em uma escola feminina.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep2.jpg",
+    "dataExibicao": "2016-07-19"
+  },
+  {
+    "id": 681,
+    "numero": 3,
+    "titulo": "Um Convite Para Uma Reunião ~Eu Só Quero Ser Popular~",
+    "sinopse": "Mob deseja ficar mais forte para se aproximar de Tsubomi. Enquanto enfrenta suas inseguranças, ele encontra uma pessoa misteriosa usando uma máscara estranha.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep3.jpg",
+    "dataExibicao": "2016-07-26"
+  },
+  {
+    "id": 682,
+    "numero": 4,
+    "titulo": "Evento Apenas Para Idiotas ~Kin~",
+    "sinopse": "Após o incidente com a organização religiosa LOL, o espírito maligno Dimple continua seguindo Mob. Enquanto isso, novos acontecimentos fazem Mob chamar atenção dos outros estudantes.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep4.jpg",
+    "dataExibicao": "2016-08-02"
+  },
+  {
+    "id": 683,
+    "numero": 5,
+    "titulo": "OCHIMUSHA ~Poderes Psíquicos e Eu~",
+    "sinopse": "Mob é desafiado para uma luta contra Teruki Hanazawa, um poderoso médium conhecido como Teru. Mob tenta vencer sem usar seus poderes, mas uma lembrança dolorosa muda tudo.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep5.jpg",
+    "dataExibicao": "2016-08-09"
+  },
+  {
+    "id": 684,
+    "numero": 6,
+    "titulo": "Discordância ~Para Se Tornar Um Só~",
+    "sinopse": "Após a batalha contra Teru, dias tranquilos retornam. Reigen continua enganando clientes como falso médium, enquanto Ritsu começa a mostrar sinais de seus próprios poderes.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep6.jpg",
+    "dataExibicao": "2016-08-16"
+  },
+  {
+    "id": 685,
+    "numero": 7,
+    "titulo": "Exaltação ~Eu Obtive Uma Perda~",
+    "sinopse": "Após a limpeza da escola, vários delinquentes são derrotados. Enquanto Mob ganha fama como White T Poison, Ritsu finalmente desperta seus poderes psíquicos.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep7.jpg",
+    "dataExibicao": "2016-08-23"
+  },
+  {
+    "id": 686,
+    "numero": 8,
+    "titulo": "O Irmão Mais Velho Se Curva ~Intenção Destrutiva~",
+    "sinopse": "Ritsu começa a se sentir superior após despertar seus poderes. Quando encontra Mob, seus sentimentos reprimidos vêm à tona e uma situação perigosa se inicia.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep8.jpg",
+    "dataExibicao": "2016-08-30"
+  },
+  {
+    "id": 687,
+    "numero": 9,
+    "titulo": "Garra ~7ª Divisão~",
+    "sinopse": "Ritsu e outros jovens médiuns são sequestrados pela organização Claw. Mob e Teru partem para resgatá-los e descobrem a verdadeira ameaça por trás da organização.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep9.jpg",
+    "dataExibicao": "2016-09-06"
+  },
+  {
+    "id": 688,
+    "numero": 10,
+    "titulo": "Aura Terrível ~Mestre~",
+    "sinopse": "Mob e Teru invadem a 7ª Divisão da Claw para salvar Ritsu. Enquanto isso, o líder da organização finalmente revela sua presença.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep10.jpg",
+    "dataExibicao": "2016-09-13"
+  },
+  {
+    "id": 689,
+    "numero": 11,
+    "titulo": "Mestre ~Líder~",
+    "sinopse": "Mob, Ritsu e Teru ficam presos sem poder usar suas habilidades. Reigen aparece inesperadamente e acaba sendo confundido com o líder da Claw.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep11.jpg",
+    "dataExibicao": "2016-09-20"
+  },
+  {
+    "id": 690,
+    "numero": 12,
+    "titulo": "Mob e Reigen ~Um Tsuchinoko Gigante Aparece~",
+    "sinopse": "Mob chega ao seu limite ao enfrentar os membros da elite da Claw. Porém, ele toma uma decisão inesperada que muda o rumo da batalha.",
+    "temporadaId": 1,
+    "animeId": 39,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t1/ep12.jpg",
+    "dataExibicao": "2016-09-27"
+  },
+  {
+    "id": 691,
+    "numero": 1,
+    "titulo": "Despedaçado ~Alguém Está Observando~",
+    "sinopse": "Reigen recebe uma ligação em seu escritório de consultas espirituais. O cliente pede ajuda para descobrir a sombra negra que está destruindo seus campos. Enquanto isso, Mob é incentivado por Mezato a concorrer à presidência do conselho estudantil.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep1.jpg",
+    "dataExibicao": "2019-01-07"
+  },
+  {
+    "id": 692,
+    "numero": 2,
+    "titulo": "Lendas Urbanas ~Encontrando Rumores~",
+    "sinopse": "Com poucos clientes, Reigen decide levar seu negócio para outras cidades. Em Cuticle City, eles encontram diversos rumores sobre lendas urbanas e recebem uma missão para investigar criaturas misteriosas.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep2.jpg",
+    "dataExibicao": "2019-01-14"
+  },
+  {
+    "id": 693,
+    "numero": 3,
+    "titulo": "Um Perigo Após o Outro ~Degeneração~",
+    "sinopse": "Após criar uma página oficial para seu escritório, Reigen começa a receber muitos trabalhos. Mob percebe uma diferença na forma como as pessoas tratam humanos e espíritos.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep3.jpg",
+    "dataExibicao": "2019-01-21"
+  },
+  {
+    "id": 694,
+    "numero": 4,
+    "titulo": "Interior ~Espírito Maligno~",
+    "sinopse": "Reigen e Mob recebem um trabalho de um homem extremamente rico chamado Asagiri Masashi. Eles chegam à mansão e encontram outros médiuns autoproclamados tentando exorcizar um espírito maligno.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep4.jpg",
+    "dataExibicao": "2019-01-28"
+  },
+  {
+    "id": 695,
+    "numero": 5,
+    "titulo": "Discordância ~Escolhas~",
+    "sinopse": "Mob fica preso em um mundo paralelo criado por Mogami Keiji. Enquanto enfrenta uma realidade de sofrimento e perseguição, suas emoções negativas começam a crescer.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep5.jpg",
+    "dataExibicao": "2019-02-04"
+  },
+  {
+    "id": 696,
+    "numero": 6,
+    "titulo": "Pobre, Solitário, Whitey",
+    "sinopse": "Mob começa a aproveitar mais seus momentos com o Clube de Aprimoramento Corporal e o Clube de Telepatia. Porém, uma pequena discussão com Reigen cria uma distância entre os dois.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep6.jpg",
+    "dataExibicao": "2019-02-11"
+  },
+  {
+    "id": 697,
+    "numero": 7,
+    "titulo": "Encurralado ~Verdadeira Identidade~",
+    "sinopse": "Após se afastar de Mob, Reigen começa a trabalhar sozinho e recebe uma proposta para aparecer na televisão. Porém, tudo se revela uma armadilha para expor sua verdadeira identidade.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep7.jpg",
+    "dataExibicao": "2019-02-18"
+  },
+  {
+    "id": 698,
+    "numero": 8,
+    "titulo": "Mesmo Assim ~Continue Avançando~",
+    "sinopse": "Mob se prepara para a maratona anual da escola e promete que revelará seus sentimentos para Tsubomi caso fique entre os dez primeiros colocados.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep8.jpg",
+    "dataExibicao": "2019-02-25"
+  },
+  {
+    "id": 699,
+    "numero": 9,
+    "titulo": "Mostre o Que Você Tem ~Unidos~",
+    "sinopse": "Após um incêndio em sua casa, Mob e Dimple descobrem algo relacionado à sua família. Eles investigam e encontram membros da organização Claw.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep9.jpg",
+    "dataExibicao": "2019-03-04"
+  },
+  {
+    "id": 700,
+    "numero": 10,
+    "titulo": "Colisão ~Tipo de Poder~",
+    "sinopse": "O líder da Claw, Suzuki Toichiro, declara guerra ao mundo e se isola na Torre Cultural da Cidade do Tempero. Enquanto isso, Mob e seus aliados se preparam para enfrentá-lo.",
+    "temporadaId": 2,
+    "animeId": 40,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t2/ep10.jpg",
+    "dataExibicao": "2019-03-11"
+  },
+  {
+    "id": 704,
+    "numero": 1,
+    "titulo": "Futuro ~Caminhos da Carreira~",
+    "sinopse": "Uma enorme árvore de brócolis conhecida como Árvore Divina cresce no centro da cidade. Enquanto os alunos da Escola Salt preenchem formulários sobre seus futuros, Mob percebe que ainda não sabe qual caminho deseja seguir.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep1.jpg",
+    "dataExibicao": "2022-10-06"
+  },
+  {
+    "id": 705,
+    "numero": 2,
+    "titulo": "O Caçador de Yokais Amakusa Haruaki Aparece! ~A Ameaça dos Cem Demônios!!~",
+    "sinopse": "Mob está ocupado se preparando para a feira cultural que acontecerá em duas semanas. Enquanto isso, Serizawa tenta recomeçar sua vida e considera estudar à noite.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep2.jpg",
+    "dataExibicao": "2022-10-13"
+  },
+  {
+    "id": 706,
+    "numero": 3,
+    "titulo": "Se Deixando Levar ~100%~",
+    "sinopse": "Mob fica feliz após conversar novamente com Tsubomi depois de muito tempo. Enquanto caminha pela cidade, ele percebe que está chamando atenção das garotas ao seu redor.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep3.jpg",
+    "dataExibicao": "2022-10-20"
+  },
+  {
+    "id": 707,
+    "numero": 4,
+    "titulo": "Árvore Divina 1 ~O Fundador Aparece~",
+    "sinopse": "Após a aparição do Psycho Helmet, raízes da Árvore Divina começam a surgir pela cidade. Mob, Reigen e Ritsu tentam destruir a árvore, mas acabam cercados pelos seguidores da religião Psycho Helmet.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep4.jpg",
+    "dataExibicao": "2022-10-27"
+  },
+  {
+    "id": 708,
+    "numero": 5,
+    "titulo": "Árvore Divina 2 ~Paz~",
+    "sinopse": "Mob entra na Árvore Divina e precisa enfrentar Teru, que foi completamente influenciado pela religião Psycho Helmet.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep5.jpg",
+    "dataExibicao": "2022-11-03"
+  },
+  {
+    "id": 709,
+    "numero": 6,
+    "titulo": "Árvore Divina 3 ~Dimple É~",
+    "sinopse": "A atitude de Mob muda após ouvir o que Dimple tem a dizer. Mob percebe que estava obcecado em ser popular e se desculpa por não ter escutado seu amigo.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep6.jpg",
+    "dataExibicao": "2022-11-10"
+  },
+  {
+    "id": 710,
+    "numero": 7,
+    "titulo": "Transmissão 1 ~Férias de Inverno~",
+    "sinopse": "Kurata Tome sempre sonhou em se comunicar com o universo através da telepatia. Com a formatura se aproximando, ela decide encerrar o Clube de Telepatia.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep7.jpg",
+    "dataExibicao": "2022-11-17"
+  },
+  {
+    "id": 711,
+    "numero": 8,
+    "titulo": "Transmissão 2 ~Encontrando o Desconhecido~",
+    "sinopse": "O Clube de Telepatia finalmente chega ao topo do Monte Mudboat para enviar uma mensagem telepática ao espaço, esperando encontrar um OVNI.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep8.jpg",
+    "dataExibicao": "2022-11-24"
+  },
+  {
+    "id": 712,
+    "numero": 9,
+    "titulo": "Mob 1 ~Movimento~",
+    "sinopse": "Após as férias de inverno, Mob recebe uma notícia inesperada: Tsubomi irá se transferir de escola no próximo mês.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep9.jpg",
+    "dataExibicao": "2022-12-01"
+  },
+  {
+    "id": 713,
+    "numero": 10,
+    "titulo": "Mob 2 ~Rival~",
+    "sinopse": "Mob tenta salvar uma criança prestes a ser atropelada e acaba sofrendo o acidente. Enquanto as pessoas se reúnem ao redor dele, Mob permanece em silêncio.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep10.jpg",
+    "dataExibicao": "2022-12-08"
+  },
+  {
+    "id": 714,
+    "numero": 11,
+    "titulo": "Mob 3 ~Trauma~",
+    "sinopse": "Mob continua caminhando até o parque onde Tsubomi o espera, destruindo tudo ao seu redor. Antigos membros da elite da Claw tentam impedir seu avanço.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep11.jpg",
+    "dataExibicao": "2022-12-15"
+  },
+  {
+    "id": 715,
+    "numero": 12,
+    "titulo": "Confissão ~O Futuro~",
+    "sinopse": "Mob continua seguindo seu caminho de destruição. Em meio ao caos, Reigen finalmente alcança Mob com a ajuda de Serizawa e tenta desesperadamente falar com ele.",
+    "temporadaId": 3,
+    "animeId": 41,
+    "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep12.jpg",
+    "dataExibicao": "2022-12-22"
   }
 ]
