@@ -7758,5 +7758,965 @@
     "animeId": 41,
     "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep12.jpg",
     "dataExibicao": "2022-12-22"
+  },
+  {
+    "id": 716,
+    "numero": 1,
+    "titulo": "O Mundo das Espadas",
+    "sinopse": "É o dia de lançamento de um dos jogos mais aguardados de todos os tempos. O jogador Kirito inicia sua jornada no mundo virtual de Sword Art Online.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep1.jpg",
+    "dataExibicao": "2012-07-08"
+  },
+  {
+    "id": 717,
+    "numero": 2,
+    "titulo": "O Beater",
+    "sinopse": "Um mês se passou desde que os jogadores ficaram presos no jogo. Cerca de 2000 pessoas morreram e o primeiro andar ainda não foi concluído.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep2.jpg",
+    "dataExibicao": "2012-07-15"
+  },
+  {
+    "id": 718,
+    "numero": 3,
+    "titulo": "A Rena do Nariz Vermelho",
+    "sinopse": "Kirito finalmente entra para uma guilda formada por amigos próximos. Tudo parecia perfeito até que um acidente trágico muda completamente sua vida.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep3.jpg",
+    "dataExibicao": "2012-07-22"
+  },
+  {
+    "id": 719,
+    "numero": 4,
+    "titulo": "O Espadachim Negro",
+    "sinopse": "Silica, conhecida como a Domadora de Dragões, perde seu grupo e seu companheiro Pina fica gravemente ferido. Antes que seja tarde, Kirito aparece para ajudá-la.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep4.jpg",
+    "dataExibicao": "2012-07-29"
+  },
+  {
+    "id": 720,
+    "numero": 5,
+    "titulo": "Assassinato na Área Segura",
+    "sinopse": "Um jogador é morto dentro de uma área segura, algo considerado impossível. Kirito e Asuna investigam como e por que isso aconteceu.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep5.jpg",
+    "dataExibicao": "2012-08-05"
+  },
+  {
+    "id": 721,
+    "numero": 6,
+    "titulo": "Vingador Ilusório",
+    "sinopse": "Kirito descobre como o assassinato aconteceu e agora precisa descobrir a verdadeira motivação por trás do crime.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep6.jpg",
+    "dataExibicao": "2012-08-12"
+  },
+  {
+    "id": 722,
+    "numero": 7,
+    "titulo": "A Temperatura do Coração",
+    "sinopse": "Uma viagem em busca de uma nova espada coloca Kirito diante de um dragão e dos próprios medos.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep7.jpg",
+    "dataExibicao": "2012-08-19"
+  },
+  {
+    "id": 723,
+    "numero": 8,
+    "titulo": "A Dança das Espadas em Preto e Branco",
+    "sinopse": "Após dois anos vivendo em SAO, muitos jogadores se acostumaram ao mundo virtual. Agora Kirito e Asuna podem ser a esperança da linha de frente.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep8.jpg",
+    "dataExibicao": "2012-08-26"
+  },
+  {
+    "id": 724,
+    "numero": 9,
+    "titulo": "O Demônio de Olhos Azuis",
+    "sinopse": "Para salvar jogadores e Asuna de um chefe poderoso, Kirito precisa revelar sua carta secreta.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep9.jpg",
+    "dataExibicao": "2012-09-02"
+  },
+  {
+    "id": 725,
+    "numero": 10,
+    "titulo": "Intenção Assassina Carmesim",
+    "sinopse": "Kirito aceita um duelo contra o líder da Brigada dos Cavaleiros de Sangue. Se vencer, Asuna poderá deixar a guilda.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep10.jpg",
+    "dataExibicao": "2012-09-09"
+  },
+  {
+    "id": 726,
+    "numero": 11,
+    "titulo": "A Garota do Orvalho da Manhã",
+    "sinopse": "O casal recém-casado aproveita um tempo longe da linha de frente, até que uma nova visitante os leva novamente ao início de tudo.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep11.jpg",
+    "dataExibicao": "2012-09-16"
+  },
+  {
+    "id": 727,
+    "numero": 12,
+    "titulo": "O Coração de Yui",
+    "sinopse": "Kirito e Asuna recebem um pedido de ajuda para salvar uma jogadora e sua guilda.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep12.jpg",
+    "dataExibicao": "2012-09-23"
+  },
+  {
+    "id": 728,
+    "numero": 13,
+    "titulo": "O Limite do Abismo do Inferno",
+    "sinopse": "Enquanto participa de um torneio de pesca, Kirito recebe um e-mail urgente do líder de sua guilda pedindo seu retorno.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep13.jpg",
+    "dataExibicao": "2012-09-30"
+  },
+  {
+    "id": 729,
+    "numero": 14,
+    "titulo": "O Fim do Mundo",
+    "sinopse": "A batalha final em Sword Art Online chega ao seu momento decisivo.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep14.jpg",
+    "dataExibicao": "2012-10-07"
+  },
+  {
+    "id": 730,
+    "numero": 15,
+    "titulo": "Retorno",
+    "sinopse": "Kazuto começa a se adaptar à vida fora do jogo, mas ainda não esqueceu Asuna. Durante uma visita ao hospital, ele conhece Sugou Nobuyuki.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep15.jpg",
+    "dataExibicao": "2012-10-14"
+  },
+  {
+    "id": 731,
+    "numero": 16,
+    "titulo": "Terra das Fadas",
+    "sinopse": "Um novo MMORPG permite que os jogadores voem. Kirito entra nesse mundo em busca de Asuna e encontra uma grande surpresa.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep16.jpg",
+    "dataExibicao": "2012-10-21"
+  },
+  {
+    "id": 732,
+    "numero": 17,
+    "titulo": "Rainha Cativa",
+    "sinopse": "Kirito aprende mais sobre o jogo através de Leafa e sobre o conflito entre as raças. Enquanto isso, Asuna descobre a verdade sobre seu papel no mundo das fadas.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep17.jpg",
+    "dataExibicao": "2012-10-28"
+  },
+  {
+    "id": 733,
+    "numero": 18,
+    "titulo": "Para a Árvore do Mundo",
+    "sinopse": "Leafa abandona seu grupo para se unir a Kirito. Durante a jornada, eles aprendem mais sobre as regras e regiões de Alfheim Online.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep18.jpg",
+    "dataExibicao": "2012-11-04"
+  },
+  {
+    "id": 734,
+    "numero": 19,
+    "titulo": "O Corredor de Lugru",
+    "sinopse": "Uma mensagem misteriosa enviada para Leafa alerta sobre um perigo. Kirito e seus aliados precisam descobrir o que está acontecendo.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep19.jpg",
+    "dataExibicao": "2012-11-11"
+  },
+  {
+    "id": 735,
+    "numero": 20,
+    "titulo": "General da Chama Ardente",
+    "sinopse": "Kirito e Leafa chegam ao encontro entre as raças. Para impedir uma guerra, Kirito precisa enfrentar o poderoso General Eugene.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep20.jpg",
+    "dataExibicao": "2012-11-18"
+  },
+  {
+    "id": 736,
+    "numero": 21,
+    "titulo": "A Verdade Sobre Alfheim",
+    "sinopse": "Enquanto Asuna continua tentando escapar, outra pessoa importante na vida de Kirito começa a entender seus próprios sentimentos.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep21.jpg",
+    "dataExibicao": "2012-11-25"
+  },
+  {
+    "id": 737,
+    "numero": 22,
+    "titulo": "Grande Missão",
+    "sinopse": "A determinação de Kirito para salvar Asuna o leva a enfrentar desafios quase impossíveis.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep22.jpg",
+    "dataExibicao": "2012-12-02"
+  },
+  {
+    "id": 738,
+    "numero": 23,
+    "titulo": "Laços",
+    "sinopse": "Mesmo com uma barreira entre Kirito e Suguha, ele continua determinado a salvar Asuna. Desta vez, ele não enfrentará o desafio sozinho.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep23.jpg",
+    "dataExibicao": "2012-12-09"
+  },
+  {
+    "id": 739,
+    "numero": 24,
+    "titulo": "Herói Dourado",
+    "sinopse": "Kirito, Asuna e Yui finalmente estão juntos novamente, mas os bloqueios que prendem Asuna parecem impossíveis de quebrar.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep24.jpg",
+    "dataExibicao": "2012-12-16"
+  },
+  {
+    "id": 740,
+    "numero": 25,
+    "titulo": "A Semente do Mundo",
+    "sinopse": "Kazuto Kirigaya já venceu a morte duas vezes, mas ainda existe uma última coisa que ele precisa fazer.",
+    "temporadaId": 1,
+    "animeId": 42,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep25.jpg",
+    "dataExibicao": "2012-12-23"
+  },
+  {
+    "id": 741,
+    "numero": 1,
+    "titulo": "O Mundo das Armas",
+    "sinopse": "Um ano após a conclusão de SAO, Kazuto é convocado por Kikuoka da Divisão Virtual para investigar uma série de mortes misteriosas ligadas ao jogo Gun Gale Online.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep1.jpg",
+    "dataExibicao": "2014-07-05"
+  },
+  {
+    "id": 742,
+    "numero": 2,
+    "titulo": "Atiradora de Coração Frio",
+    "sinopse": "Sinon se destaca como a melhor atiradora de Gun Gale Online usando seu poderoso rifle Hecate II. Durante uma batalha, ela encontra um adversário misterioso que consegue escapar de seu disparo.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep2.jpg",
+    "dataExibicao": "2014-07-12"
+  },
+  {
+    "id": 743,
+    "numero": 3,
+    "titulo": "Memórias de Sangue",
+    "sinopse": "Na vida real, Sinon é Shino Asada, uma estudante que carrega um trauma do passado envolvendo um assalto.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep3.jpg",
+    "dataExibicao": "2014-07-19"
+  },
+  {
+    "id": 744,
+    "numero": 4,
+    "titulo": "GGO (Gun Gale Online)",
+    "sinopse": "Kirito entra em Gun Gale Online para investigar Death Gun e participa do torneio Bullet of Bullets, onde conhece Sinon.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep4.jpg",
+    "dataExibicao": "2014-07-26"
+  },
+  {
+    "id": 745,
+    "numero": 5,
+    "titulo": "Armas e Espadas",
+    "sinopse": "Kirito se registra no torneio Bullet of Bullets e descobre que algumas informações pessoais são exigidas para participar da competição.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep5.jpg",
+    "dataExibicao": "2014-08-02"
+  },
+  {
+    "id": 746,
+    "numero": 6,
+    "titulo": "Confronto na Floresta",
+    "sinopse": "Após sua primeira batalha em GGO, Kirito encontra um sobrevivente de SAO ligado à guilda assassina Laughing Coffin.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep6.jpg",
+    "dataExibicao": "2014-08-09"
+  },
+  {
+    "id": 747,
+    "numero": 7,
+    "titulo": "Memórias Carmesim",
+    "sinopse": "As lembranças do passado de Kirito em SAO retornam quando ele suspeita que Death Gun possa estar ligado aos antigos acontecimentos.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep7.jpg",
+    "dataExibicao": "2014-08-16"
+  },
+  {
+    "id": 748,
+    "numero": 8,
+    "titulo": "Bullet of Bullets",
+    "sinopse": "Kirito acredita que Death Gun aparecerá no torneio Bullet of Bullets. A competição começa com 30 jogadores espalhados pelo campo de batalha.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep8.jpg",
+    "dataExibicao": "2014-08-23"
+  },
+  {
+    "id": 749,
+    "numero": 9,
+    "titulo": "Death Gun",
+    "sinopse": "Death Gun revela sua identidade e promete trazer uma morte verdadeira. Asuna e seus amigos percebem sua ligação com a antiga Laughing Coffin.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep9.jpg",
+    "dataExibicao": "2014-08-30"
+  },
+  {
+    "id": 750,
+    "numero": 10,
+    "titulo": "Perseguidor da Morte",
+    "sinopse": "Sinon é atacada por Death Gun e suas memórias traumáticas retornam. Kirito aparece para salvá-la e tenta escapar do inimigo.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep10.jpg",
+    "dataExibicao": "2014-09-06"
+  },
+  {
+    "id": 751,
+    "numero": 11,
+    "titulo": "O Significado de Ser Forte",
+    "sinopse": "Kirito e Sinon se escondem em uma caverna no deserto enquanto tentam descobrir como Death Gun consegue matar jogadores no mundo real.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep11.jpg",
+    "dataExibicao": "2014-09-13"
+  },
+  {
+    "id": 752,
+    "numero": 12,
+    "titulo": "Bala Fantasma",
+    "sinopse": "O torneio Bullet of Bullets chega ao fim. Kirito e Sinon enfrentam seus últimos adversários enquanto Death Gun se aproxima.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep12.jpg",
+    "dataExibicao": "2014-09-20"
+  },
+  {
+    "id": 753,
+    "numero": 13,
+    "titulo": "Bala Fantasma",
+    "sinopse": "O ataque de Death Gun revela uma técnica semelhante a uma habilidade de SAO. Kirito enfrenta um inimigo habilidoso tanto com armas quanto com espadas, enquanto Sinon tenta encontrar uma forma de ajudá-lo.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep13.jpg",
+    "dataExibicao": "2014-09-27"
+  },
+  {
+    "id": 754,
+    "numero": 14,
+    "titulo": "Um Pequeno Passo",
+    "sinopse": "Kyouji ataca Shino e ameaça tirar sua própria vida. Kazuto chega a tempo de salvá-la e, no dia seguinte, eles se encontram com Kikuoka para discutir o caso Death Gun.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep14.jpg",
+    "dataExibicao": "2014-10-04"
+  },
+  {
+    "id": 755,
+    "numero": 15,
+    "titulo": "A Rainha do Lago",
+    "sinopse": "A lendária espada sagrada Excalibur é descoberta em Alfheim Online. Kirito e Leafa decidem recuperá-la antes dos outros jogadores.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep15.jpg",
+    "dataExibicao": "2014-10-18"
+  },
+  {
+    "id": 756,
+    "numero": 16,
+    "titulo": "O Rei dos Gigantes",
+    "sinopse": "Kirito e seus amigos recebem a missão de derrotar o Rei do Gelo Thrym e recuperar a espada Excalibur.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep16.jpg",
+    "dataExibicao": "2014-10-25"
+  },
+  {
+    "id": 757,
+    "numero": 17,
+    "titulo": "Excalibur",
+    "sinopse": "Kirito e o grupo enfrentam Thrym no nível mais profundo da masmorra. Quando a batalha parece perdida, uma nova esperança surge.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep17.jpg",
+    "dataExibicao": "2014-11-01"
+  },
+  {
+    "id": 758,
+    "numero": 18,
+    "titulo": "Casa na Floresta",
+    "sinopse": "Com uma atualização de ALO liberando novos andares de Aincrad, Kirito, Asuna e Yui relembram o sonho de viver juntos novamente.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep18.jpg",
+    "dataExibicao": "2014-11-08"
+  },
+  {
+    "id": 759,
+    "numero": 19,
+    "titulo": "Zekken",
+    "sinopse": "Asuna decide desafiar uma jogadora lendária conhecida como Zekken. Ao sair do jogo, ela recebe uma notícia inesperada sobre seu futuro escolar.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep19.jpg",
+    "dataExibicao": "2014-11-15"
+  },
+  {
+    "id": 760,
+    "numero": 20,
+    "titulo": "Os Cavaleiros Adormecidos",
+    "sinopse": "Asuna é convidada a ajudar a guilda Cavaleiros Adormecidos, que deseja derrotar um chefe de andar antes de se separar.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep20.jpg",
+    "dataExibicao": "2014-11-22"
+  },
+  {
+    "id": 761,
+    "numero": 21,
+    "titulo": "O Monumento dos Espadachins",
+    "sinopse": "A tentativa dos Cavaleiros Adormecidos de derrotar um chefe é observada por uma grande guilda de invasores. Asuna precisa superar o desafio com seus aliados.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep21.jpg",
+    "dataExibicao": "2014-11-29"
+  },
+  {
+    "id": 762,
+    "numero": 22,
+    "titulo": "O Fim da Jornada",
+    "sinopse": "Após o desaparecimento repentino de Yuuki, Asuna procura respostas. Kazuto entrega uma mensagem que pode revelar onde ela está.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep22.jpg",
+    "dataExibicao": "2014-12-06"
+  },
+  {
+    "id": 763,
+    "numero": 23,
+    "titulo": "O Sonho Começa",
+    "sinopse": "Yuuki participa de testes com um dispositivo FullDive de uso médico. Incapaz de sair do hospital, ela deseja voltar a frequentar a escola.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep23.jpg",
+    "dataExibicao": "2014-12-13"
+  },
+  {
+    "id": 764,
+    "numero": 24,
+    "titulo": "Rosário da Mãe",
+    "sinopse": "Yuuki aproveita ao máximo suas experiências no mundo exterior. Enquanto isso, Asuna e suas amigas viajam para Kyoto antes de receber uma mensagem inesperada.",
+    "temporadaId": 2,
+    "animeId": 43,
+    "imagemUrl": "../../images/episodios/sword-art-online/t2/ep24.jpg",
+    "dataExibicao": "2014-12-20"
+  },
+  {
+    "id": 765,
+    "numero": 1,
+    "titulo": "No Extremo Norte",
+    "sinopse": "Após a batalha contra Administrator, Kirito permanece inconsciente enquanto o Mundo Inferior entra em uma nova fase. Alice retorna para Rulid e decide proteger a vila, enquanto os inimigos do Dark Territory começam seus movimentos.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep1.jpg",
+    "dataExibicao": "2019-10-13"
+  },
+  {
+    "id": 766,
+    "numero": 2,
+    "titulo": "Batalha dos Cavaleiros",
+    "sinopse": "A guerra entre o Império Humano e o Dark Territory se aproxima. Alice e os Cavaleiros da Integridade se preparam para defender a fronteira enquanto as forças inimigas avançam.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep2.jpg",
+    "dataExibicao": "2019-10-20"
+  },
+  {
+    "id": 767,
+    "numero": 3,
+    "titulo": "A Batalha Contra o Exército Negro",
+    "sinopse": "As forças do Dark Territory iniciam seu ataque contra o Mundo Inferior. Os Cavaleiros da Integridade enfrentam uma batalha difícil enquanto tentam impedir a invasão.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t1/ep3.jpg",
+    "dataExibicao": "2019-10-27"
+  },
+  {
+    "id": 768,
+    "numero": 4,
+    "titulo": "O Poder da Criação",
+    "sinopse": "Alice percebe que a guerra está apenas começando e busca uma forma de proteger todos aqueles que dependem dela. Enquanto isso, novos jogadores entram no conflito.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep4.jpg",
+    "dataExibicao": "2019-11-03"
+  },
+  {
+    "id": 769,
+    "numero": 5,
+    "titulo": "Ascensão",
+    "sinopse": "Os guerreiros do Mundo Inferior enfrentam grandes perdas enquanto a batalha continua. As forças inimigas revelam novas estratégias para dominar o território humano.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep5.jpg",
+    "dataExibicao": "2019-11-10"
+  },
+  {
+    "id": 770,
+    "numero": 6,
+    "titulo": "Batalha dos Cavaleiros Negros",
+    "sinopse": "A guerra no Mundo Inferior se intensifica. Alice e os Cavaleiros da Integridade enfrentam o exército do Dark Territory enquanto novas ameaças surgem no campo de batalha.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep6.jpg",
+    "dataExibicao": "2019-11-17"
+  },
+  {
+    "id": 771,
+    "numero": 7,
+    "titulo": "A Batalha do Submundo",
+    "sinopse": "Os guerreiros humanos continuam resistindo ao ataque inimigo. Enquanto isso, Alice precisa lidar com o peso de ser a esperança do Império Humano.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep7.jpg",
+    "dataExibicao": "2019-11-24"
+  },
+  {
+    "id": 772,
+    "numero": 8,
+    "titulo": "Sangue e Vida",
+    "sinopse": "A batalha chega ao seu ponto crítico quando os dois lados sofrem grandes perdas. Os Cavaleiros da Integridade lutam para manter a linha de defesa.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep8.jpg",
+    "dataExibicao": "2019-12-01"
+  },
+  {
+    "id": 773,
+    "numero": 9,
+    "titulo": "Senhor Supremo",
+    "sinopse": "Os verdadeiros objetivos por trás da invasão começam a aparecer. Alice e seus aliados descobrem que a guerra envolve muito mais do que uma simples disputa territorial.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep9.jpg",
+    "dataExibicao": "2019-12-08"
+  },
+  {
+    "id": 774,
+    "numero": 10,
+    "titulo": "Código 871",
+    "sinopse": "No mundo real, novas informações sobre o Projeto Alicization são reveladas. Enquanto isso, no Mundo Inferior, a batalha continua sem descanso.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep10.jpg",
+    "dataExibicao": "2019-12-15"
+  },
+  {
+    "id": 775,
+    "numero": 11,
+    "titulo": "O Herói Perdido",
+    "sinopse": "Com Kirito ainda incapaz de lutar, seus amigos precisam seguir em frente sem o maior espadachim do Mundo Inferior.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep11.jpg",
+    "dataExibicao": "2019-12-22"
+  },
+  {
+    "id": 776,
+    "numero": 12,
+    "titulo": "Raio de Esperança",
+    "sinopse": "A batalha chega ao fim de uma etapa enquanto os sobreviventes enfrentam as consequências da guerra. Alice continua lutando para proteger o futuro do Mundo Inferior.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep12.jpg",
+    "dataExibicao": "2019-12-29"
+  },
+  {
+    "id": 777,
+    "numero": 13,
+    "titulo": "Raios de Luz",
+    "sinopse": "Após a pausa na guerra, Alice continua protegendo o Mundo Inferior enquanto Kirito permanece adormecido. No mundo real, Asuna e seus aliados descobrem que algo grave está acontecendo com o projeto Alicization.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep13.jpg",
+    "dataExibicao": "2020-07-12"
+  },
+  {
+    "id": 778,
+    "numero": 14,
+    "titulo": "O Cavaleiro Dourado",
+    "sinopse": "Alice se torna o principal alvo das forças inimigas por causa de sua importância estratégica. Enquanto isso, novos jogadores entram no Mundo Inferior para mudar o rumo da guerra.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep14.jpg",
+    "dataExibicao": "2020-07-19"
+  },
+  {
+    "id": 779,
+    "numero": 15,
+    "titulo": "Movimentos Misteriosos",
+    "sinopse": "As forças do Dark Territory avançam novamente. Os defensores do Mundo Inferior precisam encontrar uma maneira de sobreviver enquanto aguardam o retorno de Kirito.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep15.jpg",
+    "dataExibicao": "2020-07-26"
+  },
+  {
+    "id": 780,
+    "numero": 16,
+    "titulo": "Código do Mundo",
+    "sinopse": "O conflito atinge um novo nível quando segredos sobre o Mundo Inferior e o Projeto Alicization são revelados.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep16.jpg",
+    "dataExibicao": "2020-08-02"
+  },
+  {
+    "id": 781,
+    "numero": 17,
+    "titulo": "A Espada do Céu",
+    "sinopse": "Os guerreiros enfrentam batalhas decisivas enquanto Alice e seus companheiros lutam para impedir a destruição do Mundo Inferior.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep17.jpg",
+    "dataExibicao": "2020-08-09"
+  },
+  {
+    "id": 782,
+    "numero": 18,
+    "titulo": "Memórias",
+    "sinopse": "As lembranças de Kirito e seus amigos começam a despertar. O passado e o presente se encontram em meio à batalha final.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep18.jpg",
+    "dataExibicao": "2020-08-16"
+  },
+  {
+    "id": 783,
+    "numero": 19,
+    "titulo": "Código de Ataque",
+    "sinopse": "A batalha final no Mundo Inferior se aproxima. Os aliados de Kirito enfrentam seus maiores desafios enquanto as forças inimigas revelam todo o seu poder.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep19.jpg",
+    "dataExibicao": "2020-08-23"
+  },
+  {
+    "id": 784,
+    "numero": 20,
+    "titulo": "O Último Ataque",
+    "sinopse": "Com o destino do Mundo Inferior em jogo, os guerreiros restantes unem forças para enfrentar a ameaça definitiva e proteger tudo que construíram.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep20.jpg",
+    "dataExibicao": "2020-08-30"
+  },
+  {
+    "id": 785,
+    "numero": 21,
+    "titulo": "Além do Tempo",
+    "sinopse": "Novas revelações sobre o Mundo Inferior surgem enquanto Kirito começa a retornar ao campo de batalha. Seus amigos depositam nele a esperança de vencer.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep21.jpg",
+    "dataExibicao": "2020-09-06"
+  },
+  {
+    "id": 786,
+    "numero": 22,
+    "titulo": "Alice",
+    "sinopse": "Alice encara seu destino enquanto a batalha chega ao seu momento decisivo. As escolhas feitas no Mundo Inferior terão consequências para todos.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep22.jpg",
+    "dataExibicao": "2020-09-13"
+  },
+  {
+    "id": 787,
+    "numero": 23,
+    "titulo": "Novo Mundo",
+    "sinopse": "Kirito e seus companheiros enfrentam a última ameaça. O futuro do Mundo Inferior e de seus habitantes será decidido nesta batalha final.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep23.jpg",
+    "dataExibicao": "2020-09-20"
+  },
+  {
+    "id": 788,
+    "numero": 24,
+    "titulo": "Meu Herói",
+    "sinopse": "A guerra termina e os sobreviventes começam uma nova era. Kirito, Asuna e Alice descobrem o verdadeiro significado do Mundo Inferior e de suas jornadas.",
+    "temporadaId": 3,
+    "animeId": 44,
+    "imagemUrl": "../../images/episodios/sword-art-online/t3/ep24.jpg",
+    "dataExibicao": "2020-09-27"
+  },
+  {
+    "id": 789,
+    "numero": 1,
+    "titulo": "No Extremo Norte",
+    "sinopse": "Seis meses após a batalha contra Administrator, Alice vive em Rulid Village cuidando de Kirito, que permanece inconsciente. Ela relembra tudo que aconteceu e o mundo que ajudou a salvar.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep1.jpg",
+    "dataExibicao": "2019-10-13"
+  },
+  {
+    "id": 790,
+    "numero": 2,
+    "titulo": "Ataques",
+    "sinopse": "Rulid Village é atacada pelas forças do Dark Territory. Alice volta a empunhar sua espada para proteger sua família e aqueles que Kirito e Eugeo queriam proteger.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep2.jpg",
+    "dataExibicao": "2019-10-20"
+  },
+  {
+    "id": 791,
+    "numero": 3,
+    "titulo": "O Teste Final de Carga",
+    "sinopse": "O ataque à Ocean Turtle revela uma unidade secreta ligada ao governo americano. Gabriel Miller, antigo inimigo de Kirito e Sinon, entra em cena.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep3.jpg",
+    "dataExibicao": "2019-10-27"
+  },
+  {
+    "id": 792,
+    "numero": 4,
+    "titulo": "Território Sombrio",
+    "sinopse": "O comandante dos Cavaleiros Negros do Dark Territory busca uma possibilidade de paz, mas o retorno do Imperador Vecta muda tudo.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep4.jpg",
+    "dataExibicao": "2019-11-03"
+  },
+  {
+    "id": 793,
+    "numero": 5,
+    "titulo": "A Noite Antes da Batalha",
+    "sinopse": "Alice se junta ao exército do Império Humano. Com poucos Cavaleiros da Integridade disponíveis, a batalha contra um exército gigantesco se aproxima.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep5.jpg",
+    "dataExibicao": "2019-11-10"
+  },
+  {
+    "id": 794,
+    "numero": 6,
+    "titulo": "Batalha dos Cavaleiros",
+    "sinopse": "O Teste Final de Carga começa e o exército do Dark Territory avança após a queda do Portão Oriental.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep6.jpg",
+    "dataExibicao": "2019-11-17"
+  },
+  {
+    "id": 795,
+    "numero": 7,
+    "titulo": "O Estigma do Desqualificado",
+    "sinopse": "Renly Synthesis Twenty-Seven enfrenta sua primeira batalha, mas seu medo coloca a defesa humana em risco.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep7.jpg",
+    "dataExibicao": "2019-11-24"
+  },
+  {
+    "id": 796,
+    "numero": 8,
+    "titulo": "Sangue e Vida",
+    "sinopse": "Alice usa seu poder contra o exército inimigo e descobre que o objetivo de Vecta é capturar a Sacerdotisa da Luz.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep8.jpg",
+    "dataExibicao": "2019-12-01"
+  },
+  {
+    "id": 797,
+    "numero": 9,
+    "titulo": "Espada e Punho",
+    "sinopse": "Gabriel ordena a captura de Alice. Os pugilistas avançam e Sheyta Synthesis Twelve entra na batalha.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep9.jpg",
+    "dataExibicao": "2019-12-08"
+  },
+  {
+    "id": 798,
+    "numero": 10,
+    "titulo": "Stacia, a Deusa da Criação",
+    "sinopse": "Asuna entra no Mundo Inferior usando a conta de Stacia e reencontra Kirito, enquanto Alice chega ao local.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep10.jpg",
+    "dataExibicao": "2019-12-15"
+  },
+  {
+    "id": 799,
+    "numero": 11,
+    "titulo": "Escolha Sem Coração",
+    "sinopse": "Asuna cria um enorme abismo para impedir o avanço inimigo, enquanto uma nova ameaça surge no Mundo Inferior.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep11.jpg",
+    "dataExibicao": "2019-12-22"
+  },
+  {
+    "id": 800,
+    "numero": 12,
+    "titulo": "Raio de Luz",
+    "sinopse": "Jogadores americanos começam a entrar no Mundo Inferior e atacam todos os lados. A guerra chega ao seu ponto mais cruel.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep12.jpg",
+    "dataExibicao": "2019-12-29"
+  },
+  {
+    "id": 801,
+    "numero": 13,
+    "titulo": "A Guerra do Mundo Inferior",
+    "sinopse": "Sinon entra no Mundo Inferior usando a conta da superusuária Solus, a Deusa do Sol, e salva Asuna e os outros no último momento. Enquanto isso, Leafa também entra usando a conta de Terraria, a Deusa da Terra.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep13.jpg",
+    "dataExibicao": "2020-07-12"
+  },
+  {
+    "id": 802,
+    "numero": 14,
+    "titulo": "Fim da Eternidade",
+    "sinopse": "Mesmo com um exército pequeno, as forças do Império Humano e Asuna lutam bravamente contra a enorme quantidade de jogadores inimigos, mas começam a sofrer grandes perdas.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep14.jpg",
+    "dataExibicao": "2020-07-19"
+  },
+  {
+    "id": 803,
+    "numero": 15,
+    "titulo": "Instigação",
+    "sinopse": "Bercouli persegue Vecta, que sequestrou Alice. Após uma batalha intensa, ele usa sua técnica secreta e consegue derrotar o inimigo, mesmo sofrendo ferimentos graves.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep15.jpg",
+    "dataExibicao": "2020-07-26"
+  },
+  {
+    "id": 804,
+    "numero": 16,
+    "titulo": "Código 871",
+    "sinopse": "O traidor dentro da Rath é revelado como Yanai. Enquanto Higa tenta restaurar Kirito, Yanai tenta impedir a operação. No Mundo Inferior, Sinon enfrenta Gabriel novamente.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep16.jpg",
+    "dataExibicao": "2020-08-02"
+  },
+  {
+    "id": 805,
+    "numero": 17,
+    "titulo": "Príncipe do Inferno",
+    "sinopse": "Asuna e os outros são derrotados por Vassago e pelos jogadores inimigos. Ao encontrar Kirito em estado catatônico, Vassago tenta destruí-lo, mas uma presença inesperada aparece.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep17.jpg",
+    "dataExibicao": "2020-08-09"
+  },
+  {
+    "id": 806,
+    "numero": 18,
+    "titulo": "Memórias",
+    "sinopse": "Sinon consegue causar grandes danos em Gabriel, mas perde suas forças. Leafa também chega ao limite após enfrentar os inimigos. Enquanto isso, Asuna observa Kirito esperando por sua recuperação.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep18.jpg",
+    "dataExibicao": "2020-08-16"
+  },
+  {
+    "id": 807,
+    "numero": 19,
+    "titulo": "Despertar",
+    "sinopse": "Kirito finalmente desperta de seus pesadelos e retorna à batalha usando a Espada do Céu Noturno e a Espada Azul Quebrada contra Vassago.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep19.jpg",
+    "dataExibicao": "2020-08-23"
+  },
+  {
+    "id": 808,
+    "numero": 20,
+    "titulo": "A Espada do Céu Noturno",
+    "sinopse": "Alice e Asuna seguem para o Altar do Fim do Mundo enquanto Kirito enfrenta Gabriel. Ele precisa vencer antes que a fase de aceleração máxima comece.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep20.jpg",
+    "dataExibicao": "2020-08-30"
+  },
+  {
+    "id": 809,
+    "numero": 21,
+    "titulo": "Além do Tempo",
+    "sinopse": "A fase de aceleração máxima começa. Alice consegue sair do Mundo Inferior, mas Kirito não consegue retornar a tempo e fica preso no sistema.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep21.jpg",
+    "dataExibicao": "2020-09-06"
+  },
+  {
+    "id": 810,
+    "numero": 22,
+    "titulo": "Alice",
+    "sinopse": "O incidente do ataque à Rath chega ao fim. Rinko apresenta Alice ao mundo como uma verdadeira inteligência artificial geral.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep22.jpg",
+    "dataExibicao": "2020-09-13"
+  },
+  {
+    "id": 811,
+    "numero": 23,
+    "titulo": "Novo Mundo",
+    "sinopse": "Rinko informa Kazuto que Alice desapareceu. Ao correr para a filial da Rath, ele encontra uma grande surpresa esperando por ele na porta de sua casa.",
+    "temporadaId": 4,
+    "animeId": 45,
+    "imagemUrl": "../../images/episodios/sword-art-online/t4/ep23.jpg",
+    "dataExibicao": "2020-09-20"
   }
 ]
