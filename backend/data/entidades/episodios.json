@@ -6524,9 +6524,259 @@
     "numero": 1,
     "titulo": "Chainsaw Man - O Filme: Arco da Reze",
     "sinopse": "Após os acontecimentos da primeira temporada, Denji conhece Reze, uma misteriosa garota que muda completamente sua rotina. Enquanto os dois se aproximam, uma nova ameaça surge e coloca em risco a vida de Denji e seus aliados.",
-    "temporadaId": 2,
-    "animeId": 34,
+    "temporadaId": 0,
+    "animeId": 35,
     "imagemUrl": "../../images/episodios/chainsaw-man/filme/reze-arc.jpg",
     "dataExibicao": "2025-09-19"
+  },
+  {
+    "id": 590,
+    "numero": 1,
+    "titulo": "O Condenado à Morte e o Executor",
+    "sinopse": "Gabimaru, um ninja de um clã de assassinos, é condenado à morte. Porém, nenhum método de execução consegue tirar sua vida. Seu encontro com Sagiri Yamada Asaemon muda completamente seu destino.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep1.jpg",
+    "dataExibicao": "2023-04-01"
+  },
+  {
+    "id": 591,
+    "numero": 2,
+    "titulo": "Avaliação e Escolha",
+    "sinopse": "Os criminosos condenados são reunidos na praia para iniciar a expedição até Shinsenkyo, mas antes precisam reduzir seus números.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep2.jpg",
+    "dataExibicao": "2023-04-08"
+  },
+  {
+    "id": 592,
+    "numero": 3,
+    "titulo": "Fraqueza e Força",
+    "sinopse": "Gabimaru, Sagiri e os demais chegam a Shinsenkyo, onde começa uma batalha pela sobrevivência.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep3.jpg",
+    "dataExibicao": "2023-04-15"
+  },
+  {
+    "id": 593,
+    "numero": 4,
+    "titulo": "Inferno e Paraíso",
+    "sinopse": "Gabimaru e Sagiri enfrentam criaturas misteriosas da ilha. A chegada da ninja Yuzuriha muda o rumo da batalha.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep4.jpg",
+    "dataExibicao": "2023-04-22"
+  },
+  {
+    "id": 594,
+    "numero": 5,
+    "titulo": "O Samurai e a Mulher",
+    "sinopse": "O grupo de Gabimaru encontra outro Yamada Asaemon. Enquanto isso, Tenza tenta encontrar uma saída da ilha junto de Nurugai.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep5.jpg",
+    "dataExibicao": "2023-04-29"
+  },
+  {
+    "id": 595,
+    "numero": 6,
+    "titulo": "Coração e Razão",
+    "sinopse": "Rokurota começa a causar grandes problemas e Gabimaru e Sagiri precisam encontrar uma estratégia para derrotá-lo.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep6.jpg",
+    "dataExibicao": "2023-05-06"
+  },
+  {
+    "id": 596,
+    "numero": 7,
+    "titulo": "Flores e Oferendas",
+    "sinopse": "Chobe e Toma encontram seres desconhecidos enquanto Gabimaru e Sagiri finalmente encontram habitantes da ilha.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep7.jpg",
+    "dataExibicao": "2023-05-13"
+  },
+  {
+    "id": 597,
+    "numero": 8,
+    "titulo": "Aluno e Mestre",
+    "sinopse": "Tenza e Nurugai encontram uma criatura poderosa da ilha. Quando tudo parece perdido, outro Yamada Asaemon aparece.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep8.jpg",
+    "dataExibicao": "2023-05-20"
+  },
+  {
+    "id": 598,
+    "numero": 9,
+    "titulo": "Deuses e Pessoas",
+    "sinopse": "O grupo de Sagiri parte em busca de Horai enquanto Gabimaru encontra novamente uma poderosa criatura.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep9.jpg",
+    "dataExibicao": "2023-06-03"
+  },
+  {
+    "id": 599,
+    "numero": 10,
+    "titulo": "Yin e Yang",
+    "sinopse": "Mei revela informações importantes sobre a ilha enquanto Shion explica sua visão de mundo para Nurugai.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep10.jpg",
+    "dataExibicao": "2023-06-10"
+  },
+  {
+    "id": 600,
+    "numero": 11,
+    "titulo": "Fraco e Forte",
+    "sinopse": "Chobe revela novas habilidades ao enfrentar os servos dos Tensen. Um segredo de Mei é revelado a Gabimaru, fortalecendo sua determinação.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep11.jpg",
+    "dataExibicao": "2023-06-17"
+  },
+  {
+    "id": 601,
+    "numero": 12,
+    "titulo": "Guarda-Chuva e Tinta",
+    "sinopse": "Mu Dan confronta o grupo de Sagiri e revela verdades surpreendentes sobre a verdadeira natureza da ilha.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep12.jpg",
+    "dataExibicao": "2023-06-24"
+  },
+  {
+    "id": 602,
+    "numero": 13,
+    "titulo": "Sonhos e Realidade",
+    "sinopse": "O grupo de Sagiri enfrenta a verdadeira forma de Mu Dan. Shion usa toda sua habilidade para superar o desafio.",
+    "temporadaId": 1,
+    "animeId": 36,
+    "imagemUrl": "../../images/episodios/jigokuraku/t1/ep13.jpg",
+    "dataExibicao": "2023-07-01"
+  },
+  {
+    "id": 603,
+    "numero": 14,
+    "titulo": "Amanhecer e Confusão",
+    "sinopse": "Shugen e Jikka são enviados para Shinsenkyo enquanto Gabimaru e seus companheiros enfrentam Aza Chobe e Toma.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep1.jpg",
+    "dataExibicao": "2026-01-11"
+  },
+  {
+    "id": 604,
+    "numero": 15,
+    "titulo": "Realidade e Fantasia",
+    "sinopse": "Aza Chobe e Gabimaru se perdem na batalha, mas Mei intervém para impedir o confronto.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep2.jpg",
+    "dataExibicao": "2026-01-18"
+  },
+  {
+    "id": 605,
+    "numero": 16,
+    "titulo": "Imutabilidade e Mudança",
+    "sinopse": "Enquanto Aza Chobe enfrenta Rien, Gabimaru recupera suas memórias e começa a treinar o uso do Tao.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep3.jpg",
+    "dataExibicao": "2026-01-25"
+  },
+  {
+    "id": 606,
+    "numero": 17,
+    "titulo": "Código Samurai e Carnificina",
+    "sinopse": "Sagiri acredita que Shugen pode ser um aliado, mas Shion mantém suas dúvidas sobre suas verdadeiras intenções.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep4.jpg",
+    "dataExibicao": "2026-02-01"
+  },
+  {
+    "id": 607,
+    "numero": 18,
+    "titulo": "Humanos e Sábios",
+    "sinopse": "Enquanto a expedição se prepara, Gabimaru pergunta a Mei se ela realmente deseja deixar a ilha com eles.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep5.jpg",
+    "dataExibicao": "2026-02-08"
+  },
+  {
+    "id": 608,
+    "numero": 19,
+    "titulo": "Obstrução e Restauração",
+    "sinopse": "O grupo de Gabimaru finalmente entra na montanha sagrada, mas os Tensen acompanham cada movimento deles.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep6.jpg",
+    "dataExibicao": "2026-02-15"
+  },
+  {
+    "id": 609,
+    "numero": 20,
+    "titulo": "Duas Pessoas e Uma Pessoa",
+    "sinopse": "Gantetsusai e Fuchi enfrentam Tao Fa e parecem aproveitar a batalha enquanto lutam contra seu poderoso inimigo.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep7.jpg",
+    "dataExibicao": "2026-02-22"
+  },
+  {
+    "id": 610,
+    "numero": 21,
+    "titulo": "Crisântemo e Pêssego",
+    "sinopse": "Quando Tao Fa pede ajuda a Ju Fa, antigas lembranças do tempo que passaram juntos vêm à tona.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep8.jpg",
+    "dataExibicao": "2026-03-01"
+  },
+  {
+    "id": 611,
+    "numero": 22,
+    "titulo": "Amor e Carma",
+    "sinopse": "Os membros da expedição unem forças para enfrentar Tao Fa e Ju Fa após suas transformações Kishikai.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep9.jpg",
+    "dataExibicao": "2026-03-08"
+  },
+  {
+    "id": 612,
+    "numero": 23,
+    "titulo": "Mestre e Discípulo",
+    "sinopse": "Shion e Nurugai enfrentam Zhu Jin, mas nenhum dos lados consegue encontrar uma maneira de finalizar a batalha.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep10.jpg",
+    "dataExibicao": "2026-03-15"
+  },
+  {
+    "id": 613,
+    "numero": 24,
+    "titulo": "Efemeridade e Fogo",
+    "sinopse": "Gabimaru relembra os dias que passou com Yui enquanto sua batalha contra Rien chega ao momento decisivo.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep11.jpg",
+    "dataExibicao": "2026-03-22"
+  },
+  {
+    "id": 614,
+    "numero": 25,
+    "titulo": "Finais e Começos",
+    "sinopse": "Enquanto Gabimaru e seus companheiros encerram suas respectivas batalhas, uma nova expedição chega à ilha.",
+    "temporadaId": 2,
+    "animeId": 37,
+    "imagemUrl": "../../images/episodios/jigokuraku/t2/ep12.jpg",
+    "dataExibicao": "2026-03-29"
   }
 ]
