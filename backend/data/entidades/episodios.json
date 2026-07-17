@@ -6398,5 +6398,135 @@
     "animeId": 33,
     "imagemUrl": "../../images/episodios/sousou-no-frieren/t2/ep10.jpg",
     "dataExibicao": "2026-03-27"
+  },
+  {
+    "id": 577,
+    "numero": 1,
+    "titulo": "Cão e Motosserra",
+    "sinopse": "Denji é um adolescente que vive como Caçador de Demônios para pagar a dívida deixada por seu pai. Ao lado de Pochita, o Demônio da Motosserra, ele enfrenta uma vida miserável até ser traído pela yakuza e descobrir um novo poder.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep1.jpg",
+    "dataExibicao": "2022-10-12"
+  },
+  {
+    "id": 578,
+    "numero": 2,
+    "titulo": "Chegada a Tóquio",
+    "sinopse": "Após ser levado por Makima para a Segurança Pública, Denji chega à sede dos Caçadores de Demônios em Tóquio e conhece Aki Hayakawa, seu novo parceiro de equipe.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep2.jpg",
+    "dataExibicao": "2022-10-19"
+  },
+  {
+    "id": 579,
+    "numero": 3,
+    "titulo": "O Paradeiro de Meowy",
+    "sinopse": "Denji descobre que pode realizar seu sonho de tocar em seios se ajudar Power, a Demônio do Sangue, a resgatar sua gata Meowy de um demônio perigoso.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep3.jpg",
+    "dataExibicao": "2022-10-26"
+  },
+  {
+    "id": 580,
+    "numero": 4,
+    "titulo": "Resgate",
+    "sinopse": "Depois de derrotar o Demônio Morcego e salvar Power, Denji finalmente se aproxima de realizar seu desejo, mas um novo inimigo surge inesperadamente.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep4.jpg",
+    "dataExibicao": "2022-11-02"
+  },
+  {
+    "id": 581,
+    "numero": 5,
+    "titulo": "Demônio Pistola",
+    "sinopse": "Denji, Aki e Power começam a viver juntos. Após perceber que alcançar seus sonhos pode ser diferente do que imaginava, Denji recebe uma nova missão envolvendo o Demônio Pistola.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep5.jpg",
+    "dataExibicao": "2022-11-09"
+  },
+  {
+    "id": 582,
+    "numero": 6,
+    "titulo": "Mate Denji",
+    "sinopse": "A Divisão Especial 4 entra em um hotel para recuperar uma parte do Demônio Pistola, mas acaba presa em um andar infinito por causa de um poderoso demônio.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep6.jpg",
+    "dataExibicao": "2022-11-16"
+  },
+  {
+    "id": 583,
+    "numero": 7,
+    "titulo": "O Sabor de um Beijo",
+    "sinopse": "Denji enfrenta o Demônio da Eternidade enquanto Aki e os outros Caçadores de Demônios tentam sobreviver ao confronto. Após recuperar suas forças, Denji volta à batalha.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep7.jpg",
+    "dataExibicao": "2022-11-23"
+  },
+  {
+    "id": 584,
+    "numero": 8,
+    "titulo": "Tiroteio",
+    "sinopse": "Denji vive seu primeiro beijo, mas a situação acaba sendo muito diferente do que ele imaginava. Enquanto isso, uma ameaça inesperada surge contra os Caçadores de Demônios.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep8.jpg",
+    "dataExibicao": "2022-11-30"
+  },
+  {
+    "id": 585,
+    "numero": 9,
+    "titulo": "De Kyoto",
+    "sinopse": "Enquanto Denji enfrenta Samurai Sword, Makima revela estar viva e retorna com reforços da Segurança Pública para resgatar Denji.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep9.jpg",
+    "dataExibicao": "2022-12-07"
+  },
+  {
+    "id": 586,
+    "numero": 10,
+    "titulo": "Feridos e Machucados",
+    "sinopse": "Após o ataque de Samurai Sword, Aki enfrenta a perda de Himeno enquanto Denji e Power recebem um novo treinamento para fortalecer a Divisão 4.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep10.jpg",
+    "dataExibicao": "2022-12-14"
+  },
+  {
+    "id": 587,
+    "numero": 11,
+    "titulo": "Início da Missão",
+    "sinopse": "Denji e Power completam seu treinamento com Kishibe. Aki faz um novo contrato com o Demônio do Futuro e a Segurança Pública inicia sua contraofensiva.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep11.jpg",
+    "dataExibicao": "2022-12-21"
+  },
+  {
+    "id": 588,
+    "numero": 12,
+    "titulo": "Katana Contra Motosserra",
+    "sinopse": "A batalha final entre Denji e Samurai Sword começa. Após transformar-se novamente em Chainsaw Man, Denji enfrenta seu inimigo em um confronto decisivo.",
+    "temporadaId": 1,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/t1/ep12.jpg",
+    "dataExibicao": "2022-12-28"
+  },
+  {
+    "id": 589,
+    "numero": 1,
+    "titulo": "Chainsaw Man - O Filme: Arco da Reze",
+    "sinopse": "Após os acontecimentos da primeira temporada, Denji conhece Reze, uma misteriosa garota que muda completamente sua rotina. Enquanto os dois se aproximam, uma nova ameaça surge e coloca em risco a vida de Denji e seus aliados.",
+    "temporadaId": 2,
+    "animeId": 34,
+    "imagemUrl": "../../images/episodios/chainsaw-man/filme/reze-arc.jpg",
+    "dataExibicao": "2025-09-19"
   }
 ]
