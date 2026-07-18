@@ -8938,5 +8938,265 @@
     "animeId": 46,
     "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep22.jpg",
     "dataExibicao": "2015-03-20"
+  },
+  {
+    "id": 895,
+    "numero": 1,
+    "titulo": "Um Pequeno Acaso",
+    "sinopse": "Kyoko Hori e Izumi Miyamura descobrem, por acaso, que ambos escondem lados completamente diferentes de suas vidas fora da escola.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep1.jpg",
+    "dataExibicao": "2021-01-10"
+  },
+  {
+    "id": 896,
+    "numero": 2,
+    "titulo": "Você Tem Mais de Uma Face",
+    "sinopse": "Hori percebe seus sentimentos por Miyamura enquanto ambos se aproximam ainda mais. Um problema no conselho estudantil fortalece sua amizade.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep2.jpg",
+    "dataExibicao": "2021-01-17"
+  },
+  {
+    "id": 897,
+    "numero": 3,
+    "titulo": "É Por Isso Que Está Tudo Bem",
+    "sinopse": "Miyamura relembra seu passado difícil e enfrenta conflitos com Ishikawa, enquanto Hori demonstra sua personalidade sincera.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep3.jpg",
+    "dataExibicao": "2021-01-24"
+  },
+  {
+    "id": 898,
+    "numero": 4,
+    "titulo": "Todo Mundo Ama Alguém",
+    "sinopse": "A relação entre Hori e Miyamura continua evoluindo, e um momento de fragilidade aproxima ainda mais os dois.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep4.jpg",
+    "dataExibicao": "2021-01-31"
+  },
+  {
+    "id": 899,
+    "numero": 5,
+    "titulo": "Não Consigo Dizer em Voz Alta",
+    "sinopse": "Boatos sobre Hori e Miyamura começam a circular pela escola, enquanto novos laços são formados entre seus amigos.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep5.jpg",
+    "dataExibicao": "2021-02-07"
+  },
+  {
+    "id": 900,
+    "numero": 6,
+    "titulo": "Este Verão Vai Ser Quente",
+    "sinopse": "As férias trazem momentos especiais para o casal, mas também despertam curiosidade e rumores entre os colegas.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep6.jpg",
+    "dataExibicao": "2021-02-14"
+  },
+  {
+    "id": 901,
+    "numero": 7,
+    "titulo": "Você Está Aqui, Eu Estou Aqui",
+    "sinopse": "Enquanto Miyamura viaja por alguns dias, Hori percebe o quanto sente sua falta e outros relacionamentos começam a evoluir.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep7.jpg",
+    "dataExibicao": "2021-02-21"
+  },
+  {
+    "id": 902,
+    "numero": 8,
+    "titulo": "A Verdade Revelada Pela Mentira",
+    "sinopse": "O passado de Sengoku e Remi é revelado, enquanto Miyamura descobre um lado inesperado da personalidade de Hori.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep8.jpg",
+    "dataExibicao": "2021-02-28"
+  },
+  {
+    "id": 903,
+    "numero": 9,
+    "titulo": "É Difícil, Mas Não Impossível",
+    "sinopse": "Miyamura enfrenta pessoas de seu passado, enquanto Hori compartilha um desejo incomum que fortalece ainda mais a confiança entre eles.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep9.jpg",
+    "dataExibicao": "2021-03-07"
+  },
+  {
+    "id": 904,
+    "numero": 10,
+    "titulo": "Até a Neve Derreter",
+    "sinopse": "Os sentimentos de Yoshikawa e Ishikawa ficam cada vez mais difíceis de esconder, enquanto Hori faz um pedido inesperado a Miyamura.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep10.jpg",
+    "dataExibicao": "2021-03-14"
+  },
+  {
+    "id": 905,
+    "numero": 11,
+    "titulo": "Pode Parecer Ódio",
+    "sinopse": "Os amigos ajudam Yanagi a se integrar melhor ao grupo, enquanto novas situações aproximam ainda mais os colegas.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep11.jpg",
+    "dataExibicao": "2021-03-21"
+  },
+  {
+    "id": 906,
+    "numero": 12,
+    "titulo": "Até Agora e Para Sempre",
+    "sinopse": "O Natal aproxima os casais e Hori e Miyamura conversam seriamente sobre o futuro que desejam construir juntos.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep12.jpg",
+    "dataExibicao": "2021-03-28"
+  },
+  {
+    "id": 907,
+    "numero": 13,
+    "titulo": "Eu Lhe Daria o Céu",
+    "sinopse": "Com a formatura se aproximando, Miyamura relembra tudo o que viveu ao lado de Hori e dos amigos, celebrando um novo começo.",
+    "temporadaId": 1,
+    "animeId": 47,
+    "imagemUrl": "../../images/episodios/horimiya/t1/ep13.jpg",
+    "dataExibicao": "2021-04-04"
+  },
+  {
+    "id": 908,
+    "numero": 1,
+    "titulo": "Viagem Escolar",
+    "sinopse": "A turma embarca para uma viagem escolar a Kyoto. Enquanto todos aproveitam o passeio, Miyamura tenta esconder seus segredos com a ajuda de Hori.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep1.jpg",
+    "dataExibicao": "2023-07-01"
+  },
+  {
+    "id": 909,
+    "numero": 2,
+    "titulo": "Aula de Culinária",
+    "sinopse": "O festival esportivo se aproxima e alguns alunos enfrentam dificuldades. Enquanto isso, Sakura encara uma desastrosa aula de culinária com o conselho estudantil.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep2.jpg",
+    "dataExibicao": "2023-07-08"
+  },
+  {
+    "id": 910,
+    "numero": 3,
+    "titulo": "Festival Esportivo",
+    "sinopse": "Chega o grande dia do festival esportivo. Miyamura encontra uma nova motivação para aproveitar o último evento escolar ao lado de seus amigos.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep3.jpg",
+    "dataExibicao": "2023-07-15"
+  },
+  {
+    "id": 911,
+    "numero": 4,
+    "titulo": "O Kotatsu da Família Hori",
+    "sinopse": "Reunidos ao redor do kotatsu, amigos e familiares compartilham momentos divertidos, constrangedores e emocionantes.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep4.jpg",
+    "dataExibicao": "2023-07-22"
+  },
+  {
+    "id": 912,
+    "numero": 5,
+    "titulo": "Iura",
+    "sinopse": "Os irmãos Iura vivem situações inesperadas quando um garoto acaba interferindo em sua dinâmica familiar de maneiras curiosas.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep5.jpg",
+    "dataExibicao": "2023-07-29"
+  },
+  {
+    "id": 913,
+    "numero": 6,
+    "titulo": "Festa do Pijama",
+    "sinopse": "Miyamura, Iura e Ishikawa passam a noite na casa de Sengoku, onde conversas inesperadas revelam um pouco mais sobre Miyamura.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep6.jpg",
+    "dataExibicao": "2023-08-05"
+  },
+  {
+    "id": 914,
+    "numero": 7,
+    "titulo": "Amigos",
+    "sinopse": "Sakura encontra alguém com interesses parecidos, enquanto Sawada fortalece seus laços com as pessoas ao seu redor.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep7.jpg",
+    "dataExibicao": "2023-08-12"
+  },
+  {
+    "id": 915,
+    "numero": 8,
+    "titulo": "Yanagi-kun",
+    "sinopse": "Yanagi enfrenta suas dificuldades do dia a dia, mas conta com o apoio de seus amigos para superar cada desafio.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep8.jpg",
+    "dataExibicao": "2023-08-19"
+  },
+  {
+    "id": 916,
+    "numero": 9,
+    "titulo": "Professor",
+    "sinopse": "Os professores da Escola Katagiri mostram lados inusitados de suas personalidades em meio às situações do cotidiano escolar.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep9.jpg",
+    "dataExibicao": "2023-08-26"
+  },
+  {
+    "id": 917,
+    "numero": 10,
+    "titulo": "Ciúmes",
+    "sinopse": "Uma pequena discussão entre Hori e Miyamura faz com que Hori perceba a dificuldade de expressar seus verdadeiros sentimentos.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep10.jpg",
+    "dataExibicao": "2023-09-02"
+  },
+  {
+    "id": 918,
+    "numero": 11,
+    "titulo": "Chocolate",
+    "sinopse": "O Dia dos Namorados movimenta a escola, trazendo expectativas, declarações e o medo de corações partidos.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep11.jpg",
+    "dataExibicao": "2023-09-09"
+  },
+  {
+    "id": 919,
+    "numero": 12,
+    "titulo": "A Casa dos Hori",
+    "sinopse": "Entre momentos engraçados, discussões e reconciliações, a família Hori continua proporcionando cenas calorosas e divertidas.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep12.jpg",
+    "dataExibicao": "2023-09-16"
+  },
+  {
+    "id": 920,
+    "numero": 13,
+    "titulo": "Formatura",
+    "sinopse": "Com a formatura chegando, os alunos da Escola Katagiri relembram os momentos que viveram juntos e se preparam para seguir novos caminhos.",
+    "temporadaId": 2,
+    "animeId": 48,
+    "imagemUrl": "../../images/episodios/horimiya/t2/ep13.jpg",
+    "dataExibicao": "2023-09-23"
   }
 ]
