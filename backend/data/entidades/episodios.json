@@ -13638,5 +13638,1015 @@
         "animeId": 63,
         "imagemUrl": "../../images/episodios/one-piece/t12/ep421.jpg",
         "dataExibicao": "2009-10-11"
+    },
+    {
+        "id": 1344,
+        "numero": 408,
+        "titulo": "Chegada! A Ilha das Mulheres, Amazon Lily",
+        "sinopse": "Luffy chega a uma ilha habitada apenas por mulheres guerreiras e precisa encontrar uma maneira de sobreviver enquanto tenta reencontrar seus companheiros.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep408.jpg",
+        "dataExibicao": "2009-07-05"
+    },
+    {
+        "id": 1345,
+        "numero": 409,
+        "titulo": "Volte Logo para Seus Amigos! A Aventura na Ilha das Mulheres",
+        "sinopse": "Luffy tenta deixar Amazon Lily para salvar Ace, mas acaba chamando a atenção das guerreiras Kuja.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep409.jpg",
+        "dataExibicao": "2009-07-12"
+    },
+    {
+        "id": 1346,
+        "numero": 410,
+        "titulo": "Todos se Apaixonam! A Imperatriz Pirata Hancock",
+        "sinopse": "Luffy conhece Boa Hancock, uma das Sete Grandes Corsárias, e descobre o poder e a influência da imperatriz pirata.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep410.jpg",
+        "dataExibicao": "2009-07-19"
+    },
+    {
+        "id": 1347,
+        "numero": 411,
+        "titulo": "O Segredo Escondido nas Costas! Luffy e a Princesa Serpente se Encontram",
+        "sinopse": "Luffy acaba descobrindo um segredo sobre Boa Hancock e seu passado enquanto procura uma forma de chegar até Ace.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep411.jpg",
+        "dataExibicao": "2009-08-02"
+    },
+    {
+        "id": 1348,
+        "numero": 412,
+        "titulo": "Julgamento Sem Coração! Margaret é Transformada em Pedra!",
+        "sinopse": "Hancock transforma Margaret em pedra, deixando Luffy furioso e pronto para enfrentar a imperatriz pirata.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep412.jpg",
+        "dataExibicao": "2009-08-09"
+    },
+    {
+        "id": 1349,
+        "numero": 413,
+        "titulo": "Uma Luta Difícil para Luffy! O Poder do Haki das Irmãs Serpente!",
+        "sinopse": "Luffy enfrenta as irmãs de Hancock e descobre o poder do Haki durante uma batalha intensa.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep413.jpg",
+        "dataExibicao": "2009-08-16"
+    },
+    {
+        "id": 1350,
+        "numero": 414,
+        "titulo": "Batalha de Poder Especial! Borracha-Borracha contra Cobra-Cobra",
+        "sinopse": "Luffy usa o Gear Second em uma batalha contra as irmãs serpente enquanto tenta proteger seus amigos.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep414.jpg",
+        "dataExibicao": "2009-08-23"
+    },
+    {
+        "id": 1351,
+        "numero": 415,
+        "titulo": "A Confissão de Hancock! O Passado Terrível das Irmãs",
+        "sinopse": "Hancock revela seu passado doloroso e conta a Luffy a verdade sobre sua história.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep415.jpg",
+        "dataExibicao": "2009-08-30"
+    },
+    {
+        "id": 1352,
+        "numero": 416,
+        "titulo": "Salvando Ace! O Próximo Destino: A Grande Prisão",
+        "sinopse": "Luffy descobre que Ace está preso em Impel Down e decide invadir a prisão para salvá-lo.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep416.jpg",
+        "dataExibicao": "2009-09-06"
+    },
+    {
+        "id": 1353,
+        "numero": 417,
+        "titulo": "O Amor é um Furacão! Hancock Apaixonada",
+        "sinopse": "Boa Hancock decide ajudar Luffy em sua missão de resgate enquanto seus sentimentos começam a crescer.",
+        "temporadaId": 13,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep417.jpg",
+        "dataExibicao": "2009-09-13"
+    },
+    {
+        "id": 1354,
+        "numero": 432,
+        "titulo": "O Cisne Desencadeado! Uma Reunião com Bon Clay",
+        "sinopse": "Luffy encontra Bon Clay novamente em Impel Down e recebe ajuda para continuar sua missão de resgate de Ace.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep432.jpg",
+        "dataExibicao": "2009-12-27"
+    },
+    {
+        "id": 1355,
+        "numero": 433,
+        "titulo": "A Estratégia de Magellan! A Prisão dos Chapéus de Palha Está Completa!",
+        "sinopse": "Luffy e Bon Clay tentam avançar dentro da prisão, mas o diretor Magellan prepara uma armadilha para impedir sua fuga.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep433.jpg",
+        "dataExibicao": "2010-01-10"
+    },
+    {
+        "id": 1356,
+        "numero": 434,
+        "titulo": "Todas as Forças Reunidas! A Batalha no Nível 4, Inferno de Calor Ardente!",
+        "sinopse": "Luffy enfrenta Magellan enquanto a situação em Impel Down fica cada vez mais desesperadora.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep434.jpg",
+        "dataExibicao": "2010-01-17"
+    },
+    {
+        "id": 1357,
+        "numero": 435,
+        "titulo": "O Poderoso Magellan! Bon Clay Foge",
+        "sinopse": "Magellan mostra sua força esmagadora e Luffy precisa encontrar uma maneira de sobreviver ao veneno do diretor da prisão.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep435.jpg",
+        "dataExibicao": "2010-01-24"
+    },
+    {
+        "id": 1358,
+        "numero": 436,
+        "titulo": "O Confronto Chegou! O Último Ataque Desesperado de Luffy!",
+        "sinopse": "Luffy faz uma tentativa final contra Magellan, mesmo estando gravemente ferido pelo veneno.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep436.jpg",
+        "dataExibicao": "2010-01-31"
+    },
+    {
+        "id": 1359,
+        "numero": 437,
+        "titulo": "Por Seu Amigo! Bon Clay Parte para o Resgate Mortal!",
+        "sinopse": "Bon Clay arrisca sua própria vida para salvar Luffy e encontrar uma forma de curá-lo.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep437.jpg",
+        "dataExibicao": "2010-02-07"
+    },
+    {
+        "id": 1360,
+        "numero": 438,
+        "titulo": "Um Paraíso no Inferno! Impel Down Nível 5.5!",
+        "sinopse": "Bon Clay leva Luffy até um lugar secreto dentro da prisão onde uma possível cura pode existir.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep438.jpg",
+        "dataExibicao": "2010-02-14"
+    },
+    {
+        "id": 1361,
+        "numero": 439,
+        "titulo": "O Tratamento de Luffy Começa! O Poder Milagroso de Ivan-san!",
+        "sinopse": "Luffy começa um tratamento extremo para sobreviver ao veneno de Magellan e continuar sua missão.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep439.jpg",
+        "dataExibicao": "2010-02-21"
+    },
+    {
+        "id": 1362,
+        "numero": 440,
+        "titulo": "Acredite nos Milagres! Os Gritos do Coração de Bon Clay",
+        "sinopse": "Bon Clay permanece ao lado de Luffy enquanto o tempo para salvar Ace continua diminuindo.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep440.jpg",
+        "dataExibicao": "2010-02-28"
+    },
+    {
+        "id": 1363,
+        "numero": 441,
+        "titulo": "Luffy Está de Volta! Ivan-san Começa o Plano de Fuga!",
+        "sinopse": "Depois de sobreviver ao tratamento, Luffy retorna à ação e prepara uma fuga de Impel Down.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep441.jpg",
+        "dataExibicao": "2010-03-07"
+    },
+    {
+        "id": 1364,
+        "numero": 442,
+        "titulo": "O Comboio de Ace Começa! Batalha no Último Andar, Nível 6!",
+        "sinopse": "A transferência de Ace começa e Luffy precisa correr contra o tempo para impedir sua execução.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep442.jpg",
+        "dataExibicao": "2010-03-14"
+    },
+    {
+        "id": 1365,
+        "numero": 443,
+        "titulo": "A Equipe Definitiva Formada! Sacudindo Impel Down!",
+        "sinopse": "Luffy reúne aliados inesperados, incluindo Crocodile e Jinbe, para escapar da prisão submarina.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep443.jpg",
+        "dataExibicao": "2010-03-21"
+    },
+    {
+        "id": 1366,
+        "numero": 444,
+        "titulo": "Mais Caos Ainda! Aqui Vem Blackbeard Teach!",
+        "sinopse": "Enquanto Luffy e seus aliados causam uma grande confusão em Impel Down, Barba Negra aparece com seus próprios planos misteriosos.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep444.jpg",
+        "dataExibicao": "2010-03-28"
+    },
+    {
+        "id": 1367,
+        "numero": 445,
+        "titulo": "O Encontro Perigoso! Blackbeard e Shiryu da Chuva!",
+        "sinopse": "Diversas batalhas acontecem dentro de Impel Down enquanto Shiryu e Barba Negra revelam suas intenções.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep445.jpg",
+        "dataExibicao": "2010-04-04"
+    },
+    {
+        "id": 1368,
+        "numero": 446,
+        "titulo": "Nenhum Preço é Alto Demais! O Sério Hannyabal",
+        "sinopse": "Hannyabal tenta impedir a fuga dos prisioneiros enquanto Luffy continua sua corrida contra o tempo.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep446.jpg",
+        "dataExibicao": "2010-04-11"
+    },
+    {
+        "id": 1369,
+        "numero": 447,
+        "titulo": "Pistola Jet da Raiva! Luffy contra Blackbeard!",
+        "sinopse": "Luffy enfrenta Barba Negra em um breve confronto e descobre a força assustadora do poder de seu inimigo.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep447.jpg",
+        "dataExibicao": "2010-04-18"
+    },
+    {
+        "id": 1370,
+        "numero": 448,
+        "titulo": "Pare Magellan! A Técnica Misteriosa de Ivan-san Explode",
+        "sinopse": "Ivankov tenta ganhar tempo contra Magellan enquanto Luffy e os fugitivos procuram escapar da prisão.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep448.jpg",
+        "dataExibicao": "2010-04-25"
+    },
+    {
+        "id": 1371,
+        "numero": 449,
+        "titulo": "O Movimento Astuto de Magellan! Um Plano de Fuga Fracassado!",
+        "sinopse": "Magellan coloca em prática uma estratégia para impedir a fuga dos prisioneiros de Impel Down.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep449.jpg",
+        "dataExibicao": "2010-05-02"
+    },
+    {
+        "id": 1372,
+        "numero": 450,
+        "titulo": "A Equipe de Fugitivos em Perigo! O Movimento Proibido: Demônio Veneno",
+        "sinopse": "Magellan libera seu ataque mais poderoso, colocando Luffy e seus aliados em uma situação desesperadora.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep450.jpg",
+        "dataExibicao": "2010-05-09"
+    },
+    {
+        "id": 1373,
+        "numero": 451,
+        "titulo": "Venha, Milagre Final! Atravessem o Portão da Justiça!",
+        "sinopse": "Luffy e os fugitivos conseguem um navio de fuga, mas ainda precisam atravessar o perigoso Portão da Justiça.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep451.jpg",
+        "dataExibicao": "2010-05-16"
+    },
+    {
+        "id": 1374,
+        "numero": 452,
+        "titulo": "Para o Quartel-General da Marinha! Rumo ao Resgate de Ace!",
+        "sinopse": "Luffy e seus aliados finalmente deixam Impel Down e seguem em direção ao Quartel-General da Marinha para salvar Ace.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep452.jpg",
+        "dataExibicao": "2010-05-23"
+    },
+    {
+        "id": 1375,
+        "numero": 453,
+        "titulo": "O Paradeiro dos Amigos! O Relatório de Weatheria e os Animais Ciborgues",
+        "sinopse": "Enquanto Luffy continua sua missão, Nami e Franky enfrentam novos desafios nos locais onde foram enviados.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep453.jpg",
+        "dataExibicao": "2010-05-30"
+    },
+    {
+        "id": 1376,
+        "numero": 454,
+        "titulo": "O Paradeiro dos Amigos! Um Bando de Pássaros Gigantes e um Duelo Rosa!",
+        "sinopse": "Sanji e Chopper tentam sobreviver em suas novas ilhas enquanto procuram uma forma de retornar aos seus companheiros.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep454.jpg",
+        "dataExibicao": "2010-06-06"
+    },
+    {
+        "id": 1377,
+        "numero": 455,
+        "titulo": "O Paradeiro dos Amigos! Revolucionários e a Armadilha da Floresta Voraz",
+        "sinopse": "Robin encontra os revolucionários em uma terra congelada, enquanto Usopp enfrenta perigos em uma floresta mortal.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep455.jpg",
+        "dataExibicao": "2010-06-13"
+    },
+    {
+        "id": 1378,
+        "numero": 456,
+        "titulo": "O Paradeiro dos Amigos! Uma Tumba Gigante e a Dívida das Calcinhas",
+        "sinopse": "Zoro enfrenta novos desafios em uma ilha misteriosa, enquanto Brook continua sua aventura peculiar.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep456.jpg",
+        "dataExibicao": "2010-06-20"
+    },
+    {
+        "id": 1379,
+        "numero": 457,
+        "titulo": "Retrospectiva Especial Antes de Marineford! O Juramento dos Irmãos",
+        "sinopse": "Luffy relembra sua relação com Ace e os momentos importantes que marcaram sua infância.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep457.jpg",
+        "dataExibicao": "2010-06-27"
+    },
+    {
+        "id": 1380,
+        "numero": 458,
+        "titulo": "Retrospectiva Especial Antes de Marineford! Os Três Almirantes da Marinha se Reúnem",
+        "sinopse": "A batalha de Marineford se aproxima e os maiores poderes da Marinha se preparam para o confronto.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep458.jpg",
+        "dataExibicao": "2010-07-11"
+    },
+    {
+        "id": 1381,
+        "numero": 459,
+        "titulo": "A Contagem Regressiva para a Batalha! A Formação Mais Forte da Marinha em Posição",
+        "sinopse": "Ace é levado ao local da execução enquanto o mundo acompanha o início da maior guerra dos piratas.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep459.jpg",
+        "dataExibicao": "2010-07-18"
+    },
+    {
+        "id": 1382,
+        "numero": 460,
+        "titulo": "Uma Grande Frota Aparece! Chegam os Piratas do Barba Branca!",
+        "sinopse": "A tripulação do Barba Branca chega a Marineford para iniciar o resgate de Ace.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep460.jpg",
+        "dataExibicao": "2010-08-01"
+    },
+    {
+        "id": 1383,
+        "numero": 461,
+        "titulo": "O Começo da Guerra! O Passado de Ace e Barba Branca!",
+        "sinopse": "Enquanto Marineford é abalada pelo início da guerra, Ace relembra seu passado e seu encontro com Barba Branca, revelando sua jornada como pirata.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep461.jpg",
+        "dataExibicao": "2010-08-08"
+    },
+    {
+        "id": 1384,
+        "numero": 462,
+        "titulo": "O Poder que Pode Destruir o Mundo! O Poder da Fruta do Tremor!",
+        "sinopse": "Barba Branca demonstra o poder devastador da Fruta do Tremor enquanto inicia seu ataque contra a Marinha em Marineford.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep462.jpg",
+        "dataExibicao": "2010-08-15"
+    },
+    {
+        "id": 1385,
+        "numero": 463,
+        "titulo": "Um Inferno Consumidor! O Poder do Almirante Akainu!",
+        "sinopse": "A batalha em Marineford se intensifica quando o poder de magma de Akainu entra em ação contra os piratas.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep463.jpg",
+        "dataExibicao": "2010-08-22"
+    },
+    {
+        "id": 1386,
+        "numero": 464,
+        "titulo": "Um Descendente da Fera! Little Oars Jr. Avança a Toda Velocidade!",
+        "sinopse": "Little Oars Jr. abre caminho pelo campo de batalha para salvar Ace, enfrentando grandes inimigos da Marinha.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep464.jpg",
+        "dataExibicao": "2010-08-29"
+    },
+    {
+        "id": 1387,
+        "numero": 465,
+        "titulo": "Justiça para os Vencedores! A Estratégia de Sengoku em Ação!",
+        "sinopse": "Sengoku coloca seu plano em prática enquanto a execução de Ace se aproxima e a guerra fica cada vez mais desesperadora.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep465.jpg",
+        "dataExibicao": "2010-09-05"
+    },
+    {
+        "id": 1388,
+        "numero": 466,
+        "titulo": "A Equipe Chapéu de Palha Chega! A Tensão Cresce no Campo de Batalha!",
+        "sinopse": "Luffy finalmente chega ao campo de batalha de Marineford e todos ficam surpresos com sua determinação para salvar Ace.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep466.jpg",
+        "dataExibicao": "2010-09-12"
+    },
+    {
+        "id": 1389,
+        "numero": 467,
+        "titulo": "Mesmo que Signifique a Morte! Luffy Contra a Marinha! A Batalha Começa!",
+        "sinopse": "Luffy invade o campo de batalha enfrentando soldados da Marinha e mostrando que fará qualquer coisa para salvar seu irmão.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep467.jpg",
+        "dataExibicao": "2010-09-19"
+    },
+    {
+        "id": 1390,
+        "numero": 468,
+        "titulo": "Batalhas Difíceis Uma Após Outra! Usuários de Frutas contra Usuários de Frutas!",
+        "sinopse": "Poderes de Frutas do Diabo entram em confronto enquanto piratas e marinheiros travam batalhas intensas.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep468.jpg",
+        "dataExibicao": "2010-09-26"
+    },
+    {
+        "id": 1391,
+        "numero": 469,
+        "titulo": "A Transformação de Kuma! O Golpe de Fúria de Ivankov!",
+        "sinopse": "Luffy continua sua corrida até Ace enquanto enfrenta novos obstáculos e antigos inimigos no campo de batalha.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep469.jpg",
+        "dataExibicao": "2010-10-03"
+    },
+    {
+        "id": 1392,
+        "numero": 470,
+        "titulo": "O Grande Espadachim Mihawk! Luffy Sob o Ataque da Espada Negra!",
+        "sinopse": "Luffy encontra o lendário espadachim Mihawk, que bloqueia seu caminho até Ace.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep470.jpg",
+        "dataExibicao": "2010-10-10"
+    },
+    {
+        "id": 1393,
+        "numero": 471,
+        "titulo": "A Estratégia de Extermínio em Ação! O Poder dos Pacifistas!",
+        "sinopse": "Luffy e seus aliados enfrentam uma grande ameaça formada pelos Pacifistas enquanto Barba Branca encara antigos conflitos.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep471.jpg",
+        "dataExibicao": "2010-10-17"
+    },
+    {
+        "id": 1394,
+        "numero": 472,
+        "titulo": "O Plano de Akainu! Barba Branca Cai em uma Armadilha!",
+        "sinopse": "Barba Branca é traído por um de seus próprios homens enquanto Akainu coloca seu plano em movimento.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep472.jpg",
+        "dataExibicao": "2010-10-17"
+    },
+    {
+        "id": 1395,
+        "numero": 473,
+        "titulo": "As Paredes Cercam o Campo de Batalha! Os Piratas do Barba Branca Encurralados!",
+        "sinopse": "A Marinha ativa sua estratégia final e tenta prender os piratas de Barba Branca dentro de Marineford.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep473.jpg",
+        "dataExibicao": "2010-10-31"
+    },
+    {
+        "id": 1396,
+        "numero": 474,
+        "titulo": "Ordem de Execução Emitida! Rompam as Paredes Cercadoras!",
+        "sinopse": "Luffy faz uma corrida desesperada para chegar até Ace enquanto os piratas tentam romper a defesa da Marinha.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep474.jpg",
+        "dataExibicao": "2010-11-07"
+    },
+    {
+        "id": 1397,
+        "numero": 475,
+        "titulo": "Entrando na Fase Final! O Trunfo de Barba Branca para a Recuperação!",
+        "sinopse": "Barba Branca revela uma estratégia inesperada enquanto Luffy continua avançando para salvar Ace.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep475.jpg",
+        "dataExibicao": "2010-11-14"
+    },
+    {
+        "id": 1398,
+        "numero": 476,
+        "titulo": "Luffy no Limite! Uma Batalha Total na Praça Oris!",
+        "sinopse": "A batalha fica cada vez mais intensa enquanto Luffy tenta resistir aos grandes poderes presentes em Marineford.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep476.jpg",
+        "dataExibicao": "2010-11-21"
+    },
+    {
+        "id": 1399,
+        "numero": 477,
+        "titulo": "O Poder que Encurta a Vida! Hormônio de Energia, Novamente!",
+        "sinopse": "Luffy usa uma técnica arriscada para continuar lutando enquanto Ace relembra seu passado.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep477.jpg",
+        "dataExibicao": "2010-11-28"
+    },
+    {
+        "id": 1400,
+        "numero": 478,
+        "titulo": "Para Cumprir uma Promessa! Luffy e Coby Colidem!",
+        "sinopse": "Luffy enfrenta antigos conhecidos enquanto a batalha de Marineford chega a um momento decisivo.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep478.jpg",
+        "dataExibicao": "2010-12-05"
+    },
+    {
+        "id": 1401,
+        "numero": 479,
+        "titulo": "O Andaime Finalmente! O Caminho até Ace Está Aberto!",
+        "sinopse": "Luffy consegue uma oportunidade para alcançar Ace, mas um obstáculo inesperado surge em seu caminho.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep479.jpg",
+        "dataExibicao": "2010-12-12"
+    },
+    {
+        "id": 1402,
+        "numero": 480,
+        "titulo": "Cada Um em Seu Caminho! Luffy Contra Garp!",
+        "sinopse": "Luffy precisa enfrentar seu próprio avô para continuar sua missão de salvar Ace.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep480.jpg",
+        "dataExibicao": "2010-12-19"
+    },
+    {
+        "id": 1403,
+        "numero": 481,
+        "titulo": "Ace Resgatado! A Última Ordem de Barba Branca!",
+        "sinopse": "Ace finalmente é libertado e os irmãos Luffy e Ace lutam juntos para escapar de Marineford.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep481.jpg",
+        "dataExibicao": "2010-12-26"
+    },
+    {
+        "id": 1404,
+        "numero": 482,
+        "titulo": "O Poder que Pode Queimar até o Fogo! A Perseguição Implacável de Akainu!",
+        "sinopse": "Akainu continua sua perseguição enquanto Ace decide enfrentar o perigo para proteger Luffy.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep482.jpg",
+        "dataExibicao": "2011-01-09"
+    },
+    {
+        "id": 1405,
+        "numero": 483,
+        "titulo": "Procurando a Resposta!",
+        "sinopse": "Luffy e Ace vivem um momento trágico no campo de batalha enquanto a guerra muda para sempre.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep483.jpg",
+        "dataExibicao": "2011-01-16"
+    },
+    {
+        "id": 1406,
+        "numero": 484,
+        "titulo": "O Quartel-General da Marinha Cai! A Ira Inacreditável de Barba Branca!",
+        "sinopse": "Após a perda de Ace, Barba Branca libera sua fúria e prepara seu último ataque contra a Marinha.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep484.jpg",
+        "dataExibicao": "2011-01-23"
+    },
+    {
+        "id": 1407,
+        "numero": 485,
+        "titulo": "Encerrando o Assunto! Barba Branca Contra os Piratas do Barba Negra!",
+        "sinopse": "Barba Branca enfrenta Barba Negra e sua tripulação em uma batalha final que marca uma nova era.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep485.jpg",
+        "dataExibicao": "2011-01-30"
+    },
+    {
+        "id": 1408,
+        "numero": 486,
+        "titulo": "O Show Começa! O Plano de Barba Negra é Revelado!",
+        "sinopse": "O mundo reage à morte de Barba Branca enquanto Barba Negra revela suas verdadeiras intenções e seu plano ambicioso.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep486.jpg",
+        "dataExibicao": "2011-02-06"
+    },
+    {
+        "id": 1409,
+        "numero": 487,
+        "titulo": "A Persistência de Akainu! O Punho de Magma Ataca Luffy!",
+        "sinopse": "Akainu continua perseguindo Luffy enquanto Jinbe tenta proteger o capitão dos Chapéus de Palha.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep487.jpg",
+        "dataExibicao": "2011-02-13"
+    },
+    {
+        "id": 1410,
+        "numero": 488,
+        "titulo": "O Grito Desesperado! Momentos de Coragem que Mudarão o Futuro!",
+        "sinopse": "Luffy está em perigo até que antigos aliados aparecem para ajudá-lo enquanto a guerra chega ao fim.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep488.jpg",
+        "dataExibicao": "2011-02-20"
+    },
+    {
+        "id": 1411,
+        "numero": 489,
+        "titulo": "Shanks Chega! A Guerra dos Grandes Finalmente Acaba!",
+        "sinopse": "A chegada de Shanks encerra a batalha de Marineford e impede que o conflito continue.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep489.jpg",
+        "dataExibicao": "2011-03-06"
+    },
+    {
+        "id": 1412,
+        "numero": 490,
+        "titulo": "Grandes Líderes se Enfrentam! Anunciando a Nova Era!",
+        "sinopse": "O mundo começa a mudar após a guerra enquanto novos piratas disputam o lugar deixado por Barba Branca.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep490.jpg",
+        "dataExibicao": "2011-03-20"
+    },
+    {
+        "id": 1413,
+        "numero": 491,
+        "titulo": "Chegando à Ilha das Mulheres! A Dura Realidade Cai Sobre Luffy!",
+        "sinopse": "Luffy chega à Amazon Lily após a guerra e enfrenta o sofrimento causado pela perda de Ace.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep491.jpg",
+        "dataExibicao": "2011-03-27"
+    },
+    {
+        "id": 1414,
+        "numero": 492,
+        "titulo": "A Dupla Mais Forte! Luffy e Toriko Enfrentam uma Difícil Luta!",
+        "sinopse": "Luffy e Toriko unem forças em uma aventura especial para enfrentar novos inimigos.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep492.jpg",
+        "dataExibicao": "2011-04-03"
+    },
+    {
+        "id": 1415,
+        "numero": 493,
+        "titulo": "Luffy e Ace! A História de Como os Irmãos se Conheceram!",
+        "sinopse": "O passado de Luffy e Ace é revelado, mostrando como os dois irmãos começaram sua forte ligação.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep493.jpg",
+        "dataExibicao": "2011-04-10"
+    },
+    {
+        "id": 1416,
+        "numero": 494,
+        "titulo": "Aqui Vem Sabo! O Garoto do Terminal Cinza!",
+        "sinopse": "Luffy e Ace conhecem Sabo, um garoto que compartilha com eles o sonho de liberdade e aventura.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep494.jpg",
+        "dataExibicao": "2011-04-17"
+    },
+    {
+        "id": 1417,
+        "numero": 495,
+        "titulo": "Eu Não Vou Fugir! A Operação de Resgate Desesperada de Ace!",
+        "sinopse": "Ace e Sabo arriscam suas vidas para salvar Luffy das mãos de piratas perigosos.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep495.jpg",
+        "dataExibicao": "2011-04-24"
+    },
+    {
+        "id": 1418,
+        "numero": 496,
+        "titulo": "Um Dia Iremos ao Mar! O Juramento dos Três Garotos!",
+        "sinopse": "Luffy, Ace e Sabo fazem uma promessa de se tornarem piratas e viverem livres pelo oceano.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep496.jpg",
+        "dataExibicao": "2011-05-01"
+    },
+    {
+        "id": 1419,
+        "numero": 497,
+        "titulo": "Deixando a Família Dadan Para Trás?! O Esconderijo dos Garotos Foi Construído!",
+        "sinopse": "Luffy, Ace e Sabo constroem um esconderijo próprio e continuam suas aventuras na infância.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep497.jpg",
+        "dataExibicao": "2011-05-08"
+    },
+    {
+        "id": 1420,
+        "numero": 498,
+        "titulo": "Luffy se Tornando Aprendiz?! Um Homem que Lutou Contra o Rei dos Piratas!",
+        "sinopse": "Os jovens irmãos encontram um homem misterioso ligado ao passado do Rei dos Piratas.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep498.jpg",
+        "dataExibicao": "2011-05-15"
+    },
+    {
+        "id": 1421,
+        "numero": 499,
+        "titulo": "A Batalha Contra o Grande Tigre! Quem Será o Capitão?!",
+        "sinopse": "Luffy, Ace e Sabo enfrentam um grande desafio enquanto treinam para se tornarem piratas.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep499.jpg",
+        "dataExibicao": "2011-05-22"
+    },
+    {
+        "id": 1422,
+        "numero": 500,
+        "titulo": "A Liberdade Tomada! O Plano dos Nobres Contra os Irmãos!",
+        "sinopse": "Os irmãos enfrentam uma ameaça dos nobres enquanto tentam proteger sua liberdade.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep500.jpg",
+        "dataExibicao": "2011-05-29"
+    },
+    {
+        "id": 1423,
+        "numero": 501,
+        "titulo": "O Fogo Foi Acendido! O Terminal Cinza em Crise!",
+        "sinopse": "As chamas tomam conta do Terminal Cinza enquanto Sabo tenta escapar e salvar seus irmãos do perigo.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep501.jpg",
+        "dataExibicao": "2011-06-05"
+    },
+    {
+        "id": 1424,
+        "numero": 502,
+        "titulo": "Onde a Liberdade Pode Ser Encontrada? A Triste Partida de um Garoto!",
+        "sinopse": "Luffy e Ace sobrevivem ao incêndio enquanto Sabo tenta conquistar sua liberdade e seguir seu próprio caminho.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep502.jpg",
+        "dataExibicao": "2011-06-12"
+    },
+    {
+        "id": 1425,
+        "numero": 503,
+        "titulo": "Cuide Bem Dele! Uma Carta do Irmão!",
+        "sinopse": "Luffy e Ace recebem notícias sobre Sabo e descobrem acontecimentos que mudarão suas vidas.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep503.jpg",
+        "dataExibicao": "2011-06-19"
+    },
+    {
+        "id": 1426,
+        "numero": 504,
+        "titulo": "Para Cumprir a Promessa! As Partidas dos Irmãos!",
+        "sinopse": "Luffy e Ace finalmente começam suas jornadas individuais em busca de seus sonhos no mar.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep504.jpg",
+        "dataExibicao": "2011-06-26"
+    },
+    {
+        "id": 1427,
+        "numero": 505,
+        "titulo": "Eu Quero Vê-los! O Grito Doloroso de Luffy!",
+        "sinopse": "Após a guerra, Luffy enfrenta sua dor pela perda de Ace e encontra uma razão para continuar lutando.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep505.jpg",
+        "dataExibicao": "2011-07-03"
+    },
+    {
+        "id": 1428,
+        "numero": 506,
+        "titulo": "Os Chapéus de Palha em Choque! As Más Notícias Chegaram!",
+        "sinopse": "Os membros da tripulação descobrem as notícias da guerra e se preocupam com o destino de Luffy.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep506.jpg",
+        "dataExibicao": "2011-07-10"
+    },
+    {
+        "id": 1429,
+        "numero": 507,
+        "titulo": "Reencontro com o Rei das Trevas Rayleigh! A Decisão de Luffy!",
+        "sinopse": "Luffy reencontra Rayleigh e decide mudar seus planos para se preparar melhor para o futuro.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep507.jpg",
+        "dataExibicao": "2011-07-17"
+    },
+    {
+        "id": 1430,
+        "numero": 508,
+        "titulo": "De Volta ao Nosso Capitão! Fuga da Ilha do Céu e o Incidente na Ilha de Inverno!",
+        "sinopse": "Os Chapéus de Palha continuam suas aventuras separadamente enquanto tentam voltar para Luffy.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep508.jpg",
+        "dataExibicao": "2011-07-31"
+    },
+    {
+        "id": 1431,
+        "numero": 509,
+        "titulo": "Encontro! O Grande Espadachim Mihawk! A Luta Mortal de Zoro!",
+        "sinopse": "Zoro encontra Mihawk novamente e busca uma forma de se tornar mais forte para seu capitão.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep509.jpg",
+        "dataExibicao": "2011-08-07"
+    },
+    {
+        "id": 1432,
+        "numero": 510,
+        "titulo": "Um Desastre para Sanji! O Retorno da Rainha ao Reino!",
+        "sinopse": "Sanji enfrenta novos desafios enquanto os Chapéus de Palha continuam seu treinamento.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep510.jpg",
+        "dataExibicao": "2011-08-14"
+    },
+    {
+        "id": 1433,
+        "numero": 511,
+        "titulo": "Um Reencontro Inesperado! Luffy Retorna a Marineford!",
+        "sinopse": "Luffy volta ao local da guerra para enviar uma mensagem importante aos seus companheiros.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep511.jpg",
+        "dataExibicao": "2011-08-21"
+    },
+    {
+        "id": 1434,
+        "numero": 512,
+        "titulo": "Com Esperança de Chegar aos Meus Amigos! As Grandes Notícias se Espalham!",
+        "sinopse": "A mensagem de Luffy começa a circular pelo mundo enquanto seus amigos descobrem seu significado.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep512.jpg",
+        "dataExibicao": "2011-08-28"
+    },
+    {
+        "id": 1435,
+        "numero": 513,
+        "titulo": "Os Piratas Entram em Movimento! O Incrível Novo Mundo!",
+        "sinopse": "Grandes piratas começam seus movimentos enquanto a era do Novo Mundo se aproxima.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep513.jpg",
+        "dataExibicao": "2011-09-04"
+    },
+    {
+        "id": 1436,
+        "numero": 514,
+        "titulo": "Vivendo no Inferno! A Luta de Sanji por Sua Masculinidade!",
+        "sinopse": "Sanji enfrenta situações extremas enquanto tenta sobreviver ao treinamento em sua ilha.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep514.jpg",
+        "dataExibicao": "2011-09-11"
+    },
+    {
+        "id": 1437,
+        "numero": 515,
+        "titulo": "Eu Vou Ficar Muito, Muito Mais Forte! O Juramento de Zoro ao Capitão!",
+        "sinopse": "Zoro decide ficar mais forte para nunca mais falhar em proteger seu capitão.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep515.jpg",
+        "dataExibicao": "2011-09-18"
+    },
+    {
+        "id": 1438,
+        "numero": 516,
+        "titulo": "O Treinamento de Luffy Começa! Para o Lugar Prometido em 2 Anos!",
+        "sinopse": "Luffy inicia seu treinamento com Rayleigh para dominar seus poderes e se preparar para o Novo Mundo.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep516.jpg",
+        "dataExibicao": "2011-09-25"
+    },
+    {
+        "id": 1439,
+        "numero": 517,
+        "titulo": "O Início do Novo Capítulo! Os Chapéus de Palha Reunidos!",
+        "sinopse": "Após dois anos de treinamento, os Chapéus de Palha finalmente se reencontram em Sabaody.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep517.jpg",
+        "dataExibicao": "2011-10-02"
+    },
+    {
+        "id": 1440,
+        "numero": 518,
+        "titulo": "Uma Situação Explosiva! Luffy Contra o Luffy Falso!",
+        "sinopse": "Luffy enfrenta impostores que tentam se passar pelos Chapéus de Palha antes da nova viagem.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep518.jpg",
+        "dataExibicao": "2011-10-09"
+    },
+    {
+        "id": 1441,
+        "numero": 519,
+        "titulo": "A Marinha Partiu! Os Chapéus de Palha em Perigo!",
+        "sinopse": "A Marinha começa sua perseguição enquanto os verdadeiros Chapéus de Palha se preparam para partir.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep519.jpg",
+        "dataExibicao": "2011-10-16"
+    },
+    {
+        "id": 1442,
+        "numero": 520,
+        "titulo": "Grandes Forças Reunidas! O Perigo dos Chapéus de Palha Falsos!",
+        "sinopse": "Os impostores atraem problemas enquanto os verdadeiros membros da tripulação mostram suas novas habilidades.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep520.jpg",
+        "dataExibicao": "2011-10-23"
+    },
+    {
+        "id": 1443,
+        "numero": 521,
+        "titulo": "A Batalha Começa! Mostrem o Que Vocês Aprenderam no Treinamento!",
+        "sinopse": "Os Chapéus de Palha demonstram suas novas habilidades após dois anos de treinamento.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep521.jpg",
+        "dataExibicao": "2011-10-30"
+    },
+    {
+        "id": 1444,
+        "numero": 522,
+        "titulo": "Todos Juntos! Luffy Parte Rumo ao Novo Mundo!",
+        "sinopse": "A tripulação finalmente se reúne e parte para uma nova aventura rumo ao Novo Mundo.",
+        "temporadaId": 13,
+        "animeId": 64,
+        "imagemUrl": "../../images/episodios/one-piece/t13/ep522.jpg",
+        "dataExibicao": "2011-11-06"
     }
 ]
