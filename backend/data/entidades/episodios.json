@@ -10249,1044 +10249,2304 @@
         "imagemUrl": "../../images/episodios/one-piece/t3/ep91.jpg",
         "dataExibicao": "2001-12-09"
     },
-  {
+    {
         "id": 1026,
-    "numero": 92,
-    "titulo": "O Herói de Alabasta e uma Bailarina no Navio!",
-    "sinopse": "Crocodile aparece para conter piratas que causam tumulto. Luffy e sua tripulação conhecem Mr. 2 Bon Clay, que demonstra o poder de sua Fruta do Diabo, enquanto Vivi presencia uma cena surpreendente.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep92.jpg",
-    "dataExibicao": "2001-12-09"
-  },
+        "numero": 92,
+        "titulo": "O Herói de Alabasta e uma Bailarina no Navio!",
+        "sinopse": "Crocodile aparece para conter piratas que causam tumulto. Luffy e sua tripulação conhecem Mr. 2 Bon Clay, que demonstra o poder de sua Fruta do Diabo, enquanto Vivi presencia uma cena surpreendente.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep92.jpg",
+        "dataExibicao": "2001-12-09"
+    },
     {
         "id": 1027,
-    "numero": 93,
-    "titulo": "Rumo ao Reino do Deserto! O Pó da Chuva e o Exército Rebelde!",
-    "sinopse": "Após chegar ao porto de Nanohana, Luffy se separa do restante da tripulação. Enquanto seus companheiros seguem disfarçados, ele descobre a existência do Dance Powder.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep93.jpg",
-    "dataExibicao": "2001-12-16"
-  },
+        "numero": 93,
+        "titulo": "Rumo ao Reino do Deserto! O Pó da Chuva e o Exército Rebelde!",
+        "sinopse": "Após chegar ao porto de Nanohana, Luffy se separa do restante da tripulação. Enquanto seus companheiros seguem disfarçados, ele descobre a existência do Dance Powder.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep93.jpg",
+        "dataExibicao": "2001-12-16"
+    },
     {
         "id": 1028,
-    "numero": 94,
-    "titulo": "O Reencontro dos Heróis! Seu Nome é Ace dos Punhos de Fogo!",
-    "sinopse": "Enquanto estão em Nanohana, os Chapéus de Palha encontram Smoker e Tashigi. Nesse momento, surge Portgas D. Ace, um poderoso pirata e irmão mais velho de Luffy.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep94.jpg",
-    "dataExibicao": "2001-12-23"
-  },
+        "numero": 94,
+        "titulo": "O Reencontro dos Heróis! Seu Nome é Ace dos Punhos de Fogo!",
+        "sinopse": "Enquanto estão em Nanohana, os Chapéus de Palha encontram Smoker e Tashigi. Nesse momento, surge Portgas D. Ace, um poderoso pirata e irmão mais velho de Luffy.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep94.jpg",
+        "dataExibicao": "2001-12-23"
+    },
     {
         "id": 1029,
         "numero": 95,
         "titulo": "Ace e Luffy! Emoções Ardentes e Laços de Irmãos!",
-    "sinopse": "Ace enfrenta Smoker enquanto os Chapéus de Palha escapam. Luffy reencontra seu irmão, agora integrante dos Piratas do Barba Branca, que está em busca de Barba Negra.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep95.jpg",
-    "dataExibicao": "2002-01-06"
-  },
-  {
+        "sinopse": "Ace enfrenta Smoker enquanto os Chapéus de Palha escapam. Luffy reencontra seu irmão, agora integrante dos Piratas do Barba Branca, que está em busca de Barba Negra.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep95.jpg",
+        "dataExibicao": "2002-01-06"
+    },
+    {
         "id": 1030,
         "numero": 96,
-    "titulo": "Erumalu, a Cidade Verde e os Dugongues Kung Fu!",
-    "sinopse": "Ace decide viajar temporariamente com os Chapéus de Palha enquanto continua sua caçada por Barba Negra através do Reino de Alabasta.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep96.jpg",
-    "dataExibicao": "2002-01-13"
-  },
-  {
+        "titulo": "Erumalu, a Cidade Verde e os Dugongues Kung Fu!",
+        "sinopse": "Ace decide viajar temporariamente com os Chapéus de Palha enquanto continua sua caçada por Barba Negra através do Reino de Alabasta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep96.jpg",
+        "dataExibicao": "2002-01-13"
+    },
+    {
         "id": 1031,
         "numero": 97,
-    "titulo": "Aventura no Reino da Areia! Os Monstros da Terra Escaldante!",
-    "sinopse": "Após deixarem Erumalu, Luffy, seus companheiros, Vivi e Ace atravessam o deserto de Alabasta enfrentando os inúmeros perigos da região.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep97.jpg",
-    "dataExibicao": "2002-01-20"
-  },
-  {
+        "titulo": "Aventura no Reino da Areia! Os Monstros da Terra Escaldante!",
+        "sinopse": "Após deixarem Erumalu, Luffy, seus companheiros, Vivi e Ace atravessam o deserto de Alabasta enfrentando os inúmeros perigos da região.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep97.jpg",
+        "dataExibicao": "2002-01-20"
+    },
+    {
         "id": 1032,
         "numero": 98,
-    "titulo": "A Chegada dos Piratas do Deserto! Homens que Vivem Livremente!",
-    "sinopse": "Nami e Vivi encontram uma forma mais fácil de atravessar o deserto, deixando os demais integrantes da tripulação seguirem por conta própria.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep98.jpg",
-    "dataExibicao": "2002-01-27"
-  },
-  {
+        "titulo": "A Chegada dos Piratas do Deserto! Homens que Vivem Livremente!",
+        "sinopse": "Nami e Vivi encontram uma forma mais fácil de atravessar o deserto, deixando os demais integrantes da tripulação seguirem por conta própria.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep98.jpg",
+        "dataExibicao": "2002-01-27"
+    },
+    {
         "id": 1033,
         "numero": 99,
-    "titulo": "Uma Falsa Coragem! Camu, o Soldado Rebelde de Coração!",
-    "sinopse": "Após descobrir uma pequena vila protegida por falsos soldados do Exército Rebelde, Vivi pede aos companheiros que testem se eles realmente merecem defender aquele lugar.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep99.jpg",
-    "dataExibicao": "2002-02-03"
-  },
-  {
+        "titulo": "Uma Falsa Coragem! Camu, o Soldado Rebelde de Coração!",
+        "sinopse": "Após descobrir uma pequena vila protegida por falsos soldados do Exército Rebelde, Vivi pede aos companheiros que testem se eles realmente merecem defender aquele lugar.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep99.jpg",
+        "dataExibicao": "2002-02-03"
+    },
+    {
         "id": 1034,
         "numero": 100,
-    "titulo": "Koza, o Guerreiro Rebelde! O Sonho Prometido a Vivi!",
-    "sinopse": "Enquanto atravessam o deserto, a tripulação derrota um enorme escorpião para conseguir alimento. Vivi relembra sua amizade de infância com Koza.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep100.jpg",
-    "dataExibicao": "2002-02-10"
-  },
-  {
+        "titulo": "Koza, o Guerreiro Rebelde! O Sonho Prometido a Vivi!",
+        "sinopse": "Enquanto atravessam o deserto, a tripulação derrota um enorme escorpião para conseguir alimento. Vivi relembra sua amizade de infância com Koza.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep100.jpg",
+        "dataExibicao": "2002-02-10"
+    },
+    {
         "id": 1035,
         "numero": 101,
-    "titulo": "Confronto Sob a Miragem! Ace Contra o Valente Escorpião!",
-    "sinopse": "Ace enfrenta um caçador de recompensas que afirma ter derrotado Barba Negra. Na verdade, tudo fazia parte de um plano para desafiá-lo e inspirar seus filhos.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep101.jpg",
-    "dataExibicao": "2002-02-17"
-  },
-  {
-    "id": 1036,
-    "numero": 102,
-    "titulo": "Ruínas e Caminhos Perdidos! Vivi, Seus Amigos e a História do Reino!",
-    "sinopse": "Zoro, Chopper e Luffy acabam se perdendo no deserto e encontram enormes ruínas subterrâneas, enquanto Vivi continua revelando detalhes sobre o Reino de Alabasta.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep102.jpg",
-    "dataExibicao": "2002-02-24"
-  },
-  {
-    "id": 1037,
-    "numero": 103,
-    "titulo": "Café Spiders às Oito Horas! Os Líderes Inimigos se Reúnem!",
-    "sinopse": "O plano da Baroque Works começa a entrar em ação. Os Agentes Numéricos se reúnem com Mr. 0, enquanto os Chapéus de Palha descobrem que o Exército Rebelde está marchando para Katorea.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep103.jpg",
-    "dataExibicao": "2002-03-02"
-  },
-  {
-    "id": 1038,
-    "numero": 104,
-    "titulo": "Luffy Contra Vivi! A Promessa Entre Amigos Feita em Lágrimas!",
-    "sinopse": "Em Yuba, Luffy confronta Vivi sobre a realidade da guerra iminente, fazendo-a compreender que apenas palavras não serão suficientes para salvar Alabasta.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep104.jpg",
-    "dataExibicao": "2002-03-10"
-  },
-  {
-    "id": 1039,
-    "numero": 105,
-    "titulo": "A Linha de Frente de Alabasta! Rainbase, a Cidade dos Sonhos!",
-    "sinopse": "Determinada a enfrentar Crocodile, Vivi segue para Rainbase com os Chapéus de Palha. No caminho, o grupo reencontra Smoker e Tashigi.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep105.jpg",
-    "dataExibicao": "2002-03-17"
-  },
-  {
-    "id": 1040,
-    "numero": 106,
-    "titulo": "A Armadilha da Derrota Certa! Invadindo o Rain Dinners!",
-    "sinopse": "Grande parte da tripulação acaba presa por Crocodile. Vivi reencontra Pell, mas é capturada por Miss All Sunday, enquanto Crocodile revela o poder da Suna Suna no Mi.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep106.jpg",
-    "dataExibicao": "2002-03-24"
-  },
-  {
-    "id": 1041,
-    "numero": 107,
-    "titulo": "A Operação Utopia Começa! A Revolta Entra em Ação!",
-    "sinopse": "O plano da Baroque Works para tomar o controle de Alabasta finalmente entra em sua fase decisiva, dando início ao levante que ameaça destruir o reino.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep107.jpg",
-    "dataExibicao": "2002-04-14"
-  },
-  {
-    "id": 1042,
-    "numero": 108,
-    "titulo": "Os Aterrorizantes Crocodilos-Banana e o Sr. Príncipe!",
-    "sinopse": "Enquanto Vivi tenta libertar seus amigos, Crocodile recebe uma ligação inesperada de alguém que se apresenta como 'Mr. Prince', frustrando seus planos.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep108.jpg",
-    "dataExibicao": "2002-04-21"
-  },
-  {
-    "id": 1043,
-    "numero": 109,
-    "titulo": "A Chave para a Grande Fuga! A Bola de Cera!",
-    "sinopse": "A identidade de Mr. Prince é revelada. Graças ao seu plano, os Chapéus de Palha encontram uma oportunidade para escapar da armadilha de Crocodile.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep109.jpg",
-    "dataExibicao": "2002-04-28"
-  },
-  {
-    "id": 1044,
-    "numero": 110,
-    "titulo": "Combate Mortal Sem Piedade! Luffy Contra Crocodile!",
-    "sinopse": "Após escaparem de Rain Dinners, os Chapéus de Palha seguem para Alubarna. Luffy enfrenta Crocodile pela primeira vez em uma batalha decisiva.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep110.jpg",
-    "dataExibicao": "2002-05-05"
-  },
-  {
-    "id": 1045,
-    "numero": 111,
-    "titulo": "Corrida por um Milagre! A Terra dos Animais de Alabasta!",
-    "sinopse": "Gravemente ferido após a luta contra Crocodile, Luffy é salvo por Nico Robin. Enquanto isso, os demais Chapéus de Palha chegam a Alubarna para impedir a guerra.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep111.jpg",
-    "dataExibicao": "2002-05-12"
-  },
-  {
-    "id": 1046,
-    "numero": 112,
-    "titulo": "Exército Rebelde contra Exército Real! O Confronto em Alubarna!",
-    "sinopse": "A guerra civil finalmente começa em Alubarna. Enquanto os dois exércitos entram em confronto, os Chapéus de Palha elaboram um plano para impedir o massacre.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep112.jpg",
-    "dataExibicao": "2002-05-19"
-  },
-  {
-    "id": 1047,
-    "numero": 113,
-    "titulo": "Alubarna em Luto! O Valente Capitão Karoo!",
-    "sinopse": "Vivi tenta desesperadamente deter a batalha entre os exércitos, mas um infiltrado da Baroque Works impede que sua voz seja ouvida.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep113.jpg",
-    "dataExibicao": "2002-06-02"
-  },
-  {
-    "id": 1048,
-    "numero": 114,
-    "titulo": "O Sonho de um Amigo! A Batalha no Monte das Toupeiras, Bloco 4!",
-    "sinopse": "Usopp e Chopper enfrentam Mr. 4 e Miss Merry Christmas em uma batalha difícil. Mesmo gravemente ferido, Usopp decide lutar até o fim para proteger o sonho de seu capitão.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep114.jpg",
-    "dataExibicao": "2002-06-09"
-  },
-  {
-    "id": 1049,
-    "numero": 115,
-    "titulo": "Grande Estreia de Hoje! A Montagem da Mane-Mane!",
-    "sinopse": "Após derrotarem a equipe de Mr. 4, Usopp e Chopper comemoram a vitória. Enquanto isso, Bon Clay descobre o ponto fraco de Sanji.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep115.jpg",
-    "dataExibicao": "2002-06-16"
-  },
-  {
-    "id": 1050,
-    "numero": 116,
-    "titulo": "Transformado em Nami! O Ballet Kenpo de Bon Clay!",
-    "sinopse": "Bon Clay utiliza seu poder para assumir a aparência de Nami e confundir Sanji, mas o cozinheiro supera suas dúvidas e continua a luta.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep116.jpg",
-    "dataExibicao": "2002-06-23"
-  },
-  {
-    "id": 1051,
-    "numero": 117,
-    "titulo": "Alerta de Ciclone para Nami! A Explosão do Clima-Tact!",
-    "sinopse": "Nami enfrenta Miss Doublefinger e tenta dominar sua nova arma criada por Usopp, o Clima-Tact.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep117.jpg",
-    "dataExibicao": "2002-06-30"
-  },
-  {
-    "id": 1052,
-    "numero": 118,
-    "titulo": "O Segredo Herdado pela Família Real! A Arma Ancestral Pluton!",
-    "sinopse": "Enquanto Crocodile revela seu interesse pela arma ancestral Pluton, Nami coloca em prática seu ataque mais poderoso para derrotar Miss Doublefinger.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep118.jpg",
-    "dataExibicao": "2002-07-14"
-  },
-  {
-    "id": 1053,
-    "numero": 119,
-    "titulo": "O Segredo da Espadachim Poderosa! A Habilidade de Cortar o Aço!",
-    "sinopse": "Zoro trava uma batalha decisiva contra Mr. 1 e, diante da morte, desperta a capacidade de compreender o 'ritmo de todas as coisas', conseguindo cortar o aço.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep119.jpg",
-    "dataExibicao": "2002-07-21"
-  },
-  {
-    "id": 1054,
-    "numero": 120,
-    "titulo": "A Batalha Acabou! Koza Ergue a Bandeira Branca!",
-    "sinopse": "Vivi revela a verdade para Koza, que tenta interromper a guerra. Entretanto, Crocodile revela que preparou uma enorme bomba para destruir Alubarna.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep120.jpg",
-    "dataExibicao": "2002-08-04"
-  },
-  {
-    "id": 1055,
-    "numero": 121,
-    "titulo": "Onde a Voz de Vivi é Ouvida! O Herói Desce à Arena!",
-    "sinopse": "Mesmo tentando parar a guerra, Koza não consegue impedir o confronto. Luffy retorna para salvar Vivi e desafia Crocodile para uma segunda batalha.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep121.jpg",
-    "dataExibicao": "2002-08-11"
-  },
-  {
-    "id": 1056,
-    "numero": 122,
-    "titulo": "Crocodilo da Areia e Luffy de Água! O Segundo Round do Duelo!",
-    "sinopse": "Luffy enfrenta Crocodile novamente utilizando água para neutralizar seus poderes. Enquanto isso, os Chapéus de Palha procuram desesperadamente pela bomba escondida em Alubarna.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep122.jpg",
-    "dataExibicao": "2002-08-18"
-  },
-  {
-    "id": 1057,
-    "numero": 123,
-    "titulo": "Parece um Crocodilo! Luffy Corre para o Túmulo Real!",
-    "sinopse": "Crocodile obriga Nico Robin a traduzir o Poneglyph escondido no Túmulo Real. Após descobrir que ela mentiu, ele a ataca. Recuperado, Luffy corre até o túmulo para enfrentá-lo novamente.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep123.jpg",
-    "dataExibicao": "2002-08-25"
-  },
-  {
-    "id": 1058,
-    "numero": 124,
-    "titulo": "O Pesadelo se Aproxima! Esta é a Base Secreta do Clã da Areia!",
-    "sinopse": "Usando o próprio sangue para atingir Crocodile, Luffy continua a batalha. Enquanto isso, Vivi encontra a bomba e reúne seus companheiros para impedir a tragédia.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep124.jpg",
-    "dataExibicao": "2002-09-01"
-  },
-  {
-    "id": 1059,
-    "numero": 125,
-    "titulo": "As Magníficas Asas! Meu Nome é Pell, Guardião do Reino!",
-    "sinopse": "Vivi encontra a bomba escondida na torre do relógio, mas percebe que não há tempo para desarmá-la. Pell se sacrifica carregando o explosivo para o céu para salvar Alabasta.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep125.jpg",
-    "dataExibicao": "2002-09-08"
-  },
-  {
-    "id": 1060,
-    "numero": 126,
-    "titulo": "Eu Vou Superar Você! A Chuva Cai Sobre Alabasta!",
-    "sinopse": "Luffy derrota Crocodile com um golpe devastador, atravessando a rocha sólida. Com a queda do vilão, a chuva finalmente retorna ao reino e a guerra chega ao fim.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep126.jpg",
-    "dataExibicao": "2002-09-15"
-  },
-  {
-    "id": 1061,
-    "numero": 127,
-    "titulo": "Adeus às Armas! Piratas e os Diferentes Ideais de Justiça!",
-    "sinopse": "Com a guerra encerrada, a inocência do rei Cobra é comprovada. Smoker e Tashigi recebem o crédito pela derrota de Crocodile, embora saibam que os verdadeiros heróis foram os Chapéus de Palha.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep127.jpg",
-    "dataExibicao": "2002-10-06"
-  },
-  {
-    "id": 1062,
-    "numero": 128,
-    "titulo": "O Banquete dos Piratas e a Operação de Fuga de Alabasta!",
-    "sinopse": "Após despertar de seus ferimentos, Luffy participa de um grande banquete oferecido pelo rei Cobra. Em seguida, a tripulação prepara uma fuga antes da chegada da Marinha.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep128.jpg",
-    "dataExibicao": "2002-10-06"
-  },
-  {
-    "id": 1063,
-    "numero": 129,
-    "titulo": "Tudo Começou Naquele Dia! Vivi Conta a História de Sua Aventura!",
-    "sinopse": "Chega o momento de Vivi decidir se continuará viajando com os Chapéus de Palha. Enquanto isso, Bon Clay sacrifica sua própria liberdade para ajudar seus amigos a escaparem da perseguição da Marinha.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep129.jpg",
-    "dataExibicao": "2002-10-20"
-  },
-  {
-    "id": 1064,
-    "numero": 130,
-    "titulo": "Cheiro de Perigo! O Sétimo Membro é Nico Robin!",
-    "sinopse": "Após escaparem da Marinha, os Chapéus de Palha recebem uma visita inesperada de Nico Robin. A antiga Miss All Sunday convence Luffy a aceitá-la como a mais nova integrante da tripulação.",
-    "temporadaId": 4,
-    "animeId": 55,
-    "imagemUrl": "../../images/episodios/one-piece/t4/ep130.jpg",
-    "dataExibicao": "2002-10-27"
-  },
-  {
-    "id": 1065,
-    "numero": 131,
-    "titulo": "O Primeiro Paciente! A História Desconhecida da Rumble Ball!",
-    "sinopse": "Após os acontecimentos em Alabasta, os Chapéus de Palha chegam a uma ilha deserta. Enquanto guarda o Going Merry, Chopper relembra como criou a Rumble Ball e quem foi seu primeiro paciente, passando um tempo ao lado da recém-chegada Nico Robin.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep131.jpg",
-    "dataExibicao": "2002-11-03"
-  },
-  {
-    "id": 1066,
-    "numero": 132,
-    "titulo": "A Revolta da Navegadora! Pelo Sonho que Nunca Desiste!",
-    "sinopse": "Um vendedor excêntrico é resgatado do mar e convence Nami a comprar um misterioso papel de mil anos para desenhar seus mapas. Porém, a bagunça da tripulação dificulta seu trabalho.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep132.jpg",
-    "dataExibicao": "2002-11-10"
-  },
-  {
-    "id": 1067,
-    "numero": 133,
-    "titulo": "A Receita Herdada! Sanji, o Mestre do Curry de Ferro!",
-    "sinopse": "O Going Merry cruza com diversos navios da Marinha em meio à neblina. Sanji conhece Tajio, um jovem cozinheiro da Marinha, e o ajuda a preparar um curry especial.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep133.jpg",
-    "dataExibicao": "2002-11-17"
-  },
-  {
-    "id": 1068,
-    "numero": 134,
-    "titulo": "Eu Vou Fazer Florescer! Usopp, o Homem e a Concha de Oito Metros!",
-    "sinopse": "Durante um festival de fogos de artifício, Usopp conhece Kodama, uma jovem fabricante de fogos, e decide ajudá-la a realizar seu sonho.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep134.jpg",
-    "dataExibicao": "2002-11-24"
-  },
-  {
-    "id": 1069,
-    "numero": 135,
-    "titulo": "O Lendário Caçador de Piratas! Zoro, o Espadachim Errante!",
-    "sinopse": "Zoro relembra seu passado e o momento em que conheceu Johnny e Yosaku, além da batalha contra um perigoso grupo de bandidos.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep135.jpg",
-    "dataExibicao": "2002-12-01"
-  },
-  {
-    "id": 1070,
-    "numero": 136,
-    "titulo": "Zenny da Ilha das Cabras e o Navio Pirata na Montanha!",
-    "sinopse": "Após escaparem da Marinha, os Chapéus de Palha chegam a uma ilha desconhecida e conhecem Zenny, um velho cercado por cabras que sonha em se tornar pirata.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep136.jpg",
-    "dataExibicao": "2002-12-08"
-  },
-  {
-    "id": 1071,
-    "numero": 137,
-    "titulo": "Qual é o Plano? As Estratégias de Zenny, o Agiota!",
-    "sinopse": "Enquanto ajudam Zenny em seus últimos desejos, os Chapéus de Palha descobrem seu passado como agiota e seu antigo sonho de navegar pelos mares como pirata.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep137.jpg",
-    "dataExibicao": "2002-12-15"
-  },
-  {
-    "id": 1072,
-    "numero": 138,
-    "titulo": "O Paradeiro do Tesouro da Ilha! O Ataque dos Piratas de Zenny!",
-    "sinopse": "Zenny finalmente decide seguir seu sonho e tornar-se um pirata. Antes da despedida, ele ajuda os Chapéus de Palha a escaparem da perseguição da Marinha.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep138.jpg",
-    "dataExibicao": "2002-12-22"
-  },
-  {
-    "id": 1073,
-    "numero": 139,
-    "titulo": "A Lenda da Névoa Arco-Íris! O Velho Henzo da Ilha Ruluka!",
-    "sinopse": "Na Ilha Ruluka, parte da tripulação entra em conflito com o prefeito corrupto. Luffy, Robin e Usopp conhecem o Professor Henzo, que pesquisa o misterioso fenômeno conhecido como Névoa Arco-Íris.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep139.jpg",
-    "dataExibicao": "2003-01-05"
-  },
-  {
-    "id": 1074,
-    "numero": 140,
-    "titulo": "Os Habitantes da Terra da Eternidade! Os Piratas Abóbora!",
-    "sinopse": "Dentro da Névoa Arco-Íris, a tripulação encontra um cemitério de navios e cinco crianças que, na verdade, desapareceram há mais de cinquenta anos.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep140.jpg",
-    "dataExibicao": "2003-01-12"
-  },
-  {
-    "id": 1075,
-    "numero": 141,
-    "titulo": "Saudades de Casa! O Cemitério de Navios sem Saída!",
-    "sinopse": "Henzo e seus antigos amigos procuram uma maneira de escapar do cemitério de navios. Enquanto isso, o prefeito de Ruluka descobre o segredo da Névoa Arco-Íris e decide explorá-la para conseguir o tesouro escondido.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep141.jpg",
-    "dataExibicao": "2003-01-19"
-  },
-  {
-    "id": 1076,
-    "numero": 142,
-    "titulo": "Uma Batalha Inevitável! Os Planos de Wetton e a Torre do Arco-Íris!",
-    "sinopse": "Wetton invade a Névoa Arco-Íris em busca do lendário tesouro. Os Chapéus de Palha enfrentam seus soldados enquanto tentam encontrar uma forma de escapar antes que seja tarde demais.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep142.jpg",
-    "dataExibicao": "2003-01-26"
-  },
-  {
-    "id": 1077,
-    "numero": 143,
-    "titulo": "E Assim a Lenda Começa! Para o Outro Lado do Arco-Íris!",
-    "sinopse": "O Going Merry consegue escapar da Névoa Arco-Íris. Os antigos amigos de Henzo finalmente retornam após décadas desaparecidos, Wetton é preso e a aventura em Ruluka chega ao fim.",
-    "temporadaId": 5,
-    "animeId": 56,
-    "imagemUrl": "../../images/episodios/one-piece/t5/ep143.jpg",
-    "dataExibicao": "2003-02-02"
-  },
-  {
-    "id": 1078,
-    "numero": 144,
-    "titulo": "Monstros Aparecem! Não Mexa com os Piratas do Barba Branca!",
-    "sinopse": "Os Chapéus de Palha decidem ir para a ilha Jaya em busca de informações sobre Skypiea. Enquanto isso, Ace aparece no navio de Buggy, que impede seus homens de atacá-lo por medo da vingança de Barba Branca.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep144.jpg",
-    "dataExibicao": "2003-02-16"
-  },
-  {
-    "id": 1079,
-    "numero": 145,
-    "titulo": "Pare de Sonhar! Mock Town, a Cidade da Ridicularização!",
-    "sinopse": "Jaya é uma cidade cheia de piratas famosos que vivem brigando. Luffy e Zoro encontram Bellamy, o Hiena, que zomba dos sonhos deles e acaba os derrotando.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep145.jpg",
-    "dataExibicao": "2003-02-23"
-  },
-  {
-    "id": 1080,
-    "numero": 146,
-    "titulo": "Piratas Distintos! Um Homem que Fala de Sonhos e o Rei da Busca Submarina!",
-    "sinopse": "Após se recusarem a lutar contra Bellamy, Luffy, Zoro e Nami encontram um homem que ama tortas de cereja e depois enfrentam Shoujou, irmão de Masira.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep146.jpg",
-    "dataExibicao": "2003-03-09"
-  },
-  {
-    "id": 1081,
-    "numero": 147,
-    "titulo": "Família Lendária! Noland, o Mentiroso!",
-    "sinopse": "Os Chapéus de Palha encontram Mont Blanc Cricket, descendente de Noland, o homem conhecido como mentiroso por falar sobre uma cidade de ouro em Jaya.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep147.jpg",
-    "dataExibicao": "2003-03-16"
-  },
-  {
-    "id": 1082,
-    "numero": 148,
-    "titulo": "Rumo às Nuvens! Capturem o Pássaro do Sul!",
-    "sinopse": "Cricket explica que o caminho para Skypiea depende da Corrente de Jato Ascendente. Para encontrá-la, eles precisam capturar um Pássaro do Sul.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep148.jpg",
-    "dataExibicao": "2003-03-23"
-  },
-  {
-    "id": 1083,
-    "numero": 149,
-    "titulo": "Os Sonhos Não Se Tornam Realidade?! Bellamy Contra a Aliança Saruyama!",
-    "sinopse": "Enquanto os Chapéus de Palha procuram o Pássaro do Sul, Bellamy invade a casa de Cricket e rouba seus tesouros. Luffy decide voltar para Mock Town.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep149.jpg",
-    "dataExibicao": "2003-04-13"
-  },
-  {
-    "id": 1084,
-    "numero": 150,
-    "titulo": "Homem de 100 Milhões! O Maior Poder do Mundo e o Pirata Barba Negra!",
-    "sinopse": "Luffy derrota Bellamy com apenas um golpe. Enquanto isso, o Governo Mundial se preocupa com novos poderes e Barba Negra é indicado para substituir Crocodile como Shichibukai.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep150.jpg",
-    "dataExibicao": "2003-04-20"
-  },
-  {
-    "id": 1085,
-    "numero": 151,
-    "titulo": "Subam aos Céus! Montem na Corrente de Jato Ascendente!",
-    "sinopse": "O Going Merry recebe melhorias de Masira e Shoujou e os Chapéus de Palha usam a Corrente de Jato Ascendente para chegar a Skypiea.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep151.jpg",
-    "dataExibicao": "2003-04-27"
-  },
-  {
-    "id": 1086,
-    "numero": 152,
-    "titulo": "Naveguem pelo Mar Branco! O Cavaleiro do Céu e o Portão das Nuvens!",
-    "sinopse": "Os Chapéus de Palha chegam ao oceano acima das nuvens e encontram o Cavaleiro do Céu, que os ajuda a atravessar o portão para Skypiea.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep152.jpg",
-    "dataExibicao": "2003-05-04"
-  },
-  {
-    "id": 1087,
-    "numero": 153,
-    "titulo": "Terra dos Deuses, Skypiea! Anjos na Praia das Nuvens!",
-    "sinopse": "A tripulação chega a Skypiea e conhece Conis e seu pai, que explicam como funciona a vida na ilha do céu e os misteriosos Dials.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep153.jpg",
-    "dataExibicao": "2003-05-11"
-  },
-  {
-    "id": 1088,
-    "numero": 154,
-    "titulo": "O Solo Sagrado Proibido! A Ilha Onde Deus Vive e o Julgamento Celestial!",
-    "sinopse": "Nami descobre os perigos de entrar na floresta proibida. Enquanto isso, os Chapéus de Palha enfrentam a força policial de Skypiea.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep154.jpg",
-    "dataExibicao": "2003-05-18"
-  },
-  {
-    "id": 1089,
-    "numero": 155,
-    "titulo": "Já Somos Criminosos?! O Guardião da Lei de Skypiea!",
-    "sinopse": "Os Chapéus de Palha entram em conflito com os Beretas Brancas, a força responsável pela justiça em Skypiea.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep155.jpg",
-    "dataExibicao": "2003-06-08"
-  },
-  {
-    "id": 1090,
-    "numero": 156,
-    "titulo": "É Possível Escapar?! O Desafio de Deus Começa!",
-    "sinopse": "Durante a tentativa de fuga da ilha do céu, Robin, Chopper, Nami e Zoro acabam presos pelo Deus Enel.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep156.jpg",
-    "dataExibicao": "2003-06-15"
-  },
-  {
-    "id": 1091,
-    "numero": 157,
-    "titulo": "Uma Armadilha na Rua Adorável! O Todo-Poderoso Eneru!",
-    "sinopse": "Conis guia Luffy, Usopp e Sanji até um barco para chegar ao Upper Yard, mas revela que tudo era uma armadilha e quase é atingida pelo Julgamento Celestial de Eneru.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep157.jpg",
-    "dataExibicao": "2003-06-22"
-  },
-  {
-    "id": 1092,
-    "numero": 158,
-    "titulo": "Avante, Pequeno Corvo! Para o Altar do Sacrifício!",
-    "sinopse": "Luffy, Usopp e Sanji chegam ao Upper Yard e descobrem que o caminho está cheio de armadilhas. Enquanto isso, Robin, Zoro e Nami exploram a ilha.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep158.jpg",
-    "dataExibicao": "2003-07-06"
-  },
-  {
-    "id": 1093,
-    "numero": 159,
-    "titulo": "10% de Chance de Sobrevivência! Satori, o Mestre do Mantra!",
-    "sinopse": "Luffy, Sanji e Usopp enfrentam Satori, um sacerdote que utiliza o poderoso Mantra para prever seus movimentos.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep159.jpg",
-    "dataExibicao": "2003-07-13"
-  },
-  {
-    "id": 1094,
-    "numero": 160,
-    "titulo": "O Desafio das Esferas! Luta Desesperada na Floresta Perdida!",
-    "sinopse": "Luffy, Sanji e Usopp continuam enfrentando Satori no desafio das esferas, mas o poder do Mantra torna a batalha extremamente difícil.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep160.jpg",
-    "dataExibicao": "2003-07-20"
-  },
-  {
-    "id": 1095,
-    "numero": 161,
-    "titulo": "Chopper em Perigo! O Antigo Deus Contra o Sacerdote Shura!",
-    "sinopse": "Chopper enfrenta o sacerdote Shura, que começa a destruir o Going Merry. Gan Fall tenta impedir o ataque.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep161.jpg",
-    "dataExibicao": "2003-08-03"
-  },
-  {
-    "id": 1096,
-    "numero": 162,
-    "titulo": "Mistério Profundo! O Desafio das Cordas e o Desafio do Amor?!",
-    "sinopse": "Gan Fall enfrenta Shura e perde a batalha. Enquanto isso, Luffy e Sanji finalmente conseguem derrotar Satori.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep162.jpg",
-    "dataExibicao": "2003-08-10"
-  },
-  {
-    "id": 1097,
-    "numero": 163,
-    "titulo": "Acenda o Fogo de Shandora! O Guerreiro Wyper!",
-    "sinopse": "Chopper é salvo pelos pássaros do sul. Robin, Zoro e Nami descobrem que o Upper Yard era originalmente parte de Jaya.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep163.jpg",
-    "dataExibicao": "2003-08-17"
-  },
-  {
-    "id": 1098,
-    "numero": 164,
-    "titulo": "Jaya, a Cidade de Ouro no Céu! Rumo ao Santuário de Deus!",
-    "sinopse": "Os guerreiros Shandia iniciam um ataque ao Upper Yard. A tripulação se reúne novamente e planeja encontrar o ouro da ilha.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep164.jpg",
-    "dataExibicao": "2003-08-24"
-  },
-  {
-    "id": 1099,
-    "numero": 165,
-    "titulo": "Festival na Noite Antes da Caçada ao Ouro! Sentimentos por Vearth!",
-    "sinopse": "Após fazer amizade com uma matilha de lobos, Gan Fall revela mais detalhes sobre a história do Upper Yard.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep165.jpg",
-    "dataExibicao": "2003-09-07"
-  },
-  {
-    "id": 1100,
-    "numero": 166,
-    "titulo": "A Entrada do Deus Eneru! Adeus aos Sobreviventes!",
-    "sinopse": "Eneru libera os sacerdotes e revela seus planos. Enquanto isso, Usopp percebe que alguém consertou o Going Merry.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep166.jpg",
-    "dataExibicao": "2003-09-21"
-  },
-  {
-    "id": 1101,
-    "numero": 167,
-    "titulo": "Uma Cobra Gigante Mostra Suas Presas! O Jogo de Sobrevivência Começa!",
-    "sinopse": "Uma enorme cobra separa Luffy, Robin, Chopper e Zoro enquanto eles tentam chegar às ruínas.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep167.jpg",
-    "dataExibicao": "2003-10-12"
-  },
-  {
-    "id": 1102,
-    "numero": 168,
-    "titulo": "O Rejeitado Mortal! A Determinação do Demônio da Guerra Wyper!",
-    "sinopse": "Wyper derrota Shura e revela seu objetivo aos Shandia. Eneru anuncia quantas pessoas sobreviverão ao seu plano.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep168.jpg",
-    "dataExibicao": "2003-10-19"
-  },
-  {
-    "id": 1103,
-    "numero": 169,
-    "titulo": "Batalha Feroz no Ar! Pirata Zoro Contra o Guerreiro Braham!",
-    "sinopse": "Zoro enfrenta Braham e vence utilizando sua técnica de uma espada, o Canhão de 36 Libras.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep169.jpg",
-    "dataExibicao": "2003-10-19"
-  },
-  {
-    "id": 1104,
-    "numero": 170,
-    "titulo": "O Rugido do Bazuca Ardente!! Luffy Contra o Demônio da Guerra Wyper!",
-    "sinopse": "Luffy enfrenta Wyper e acaba caindo nas ruínas subterrâneas. Eneru aparece no Going Merry e derrota Usopp e Sanji.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep170.jpg",
-    "dataExibicao": "2003-10-26"
-  },
-  {
-    "id": 1105,
-    "numero": 171,
-    "titulo": "O Desafio do Pântano! Chopper Contra o Sacerdote Gedatsu!",
-    "sinopse": "Chopper enfrenta Gedatsu e consegue derrotá-lo. Enquanto isso, Conis e Pagaya ajudam Aisa a chegar ao Upper Yard.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep171.jpg",
-    "dataExibicao": "2003-11-02"
-  },
-  {
-    "id": 1106,
-    "numero": 172,
-    "titulo": "Poderes Invencíveis! A Verdadeira Forma de Eneru é Revelada!",
-    "sinopse": "Eneru derrota vários membros dos Shandia e demonstra o verdadeiro poder de sua fruta do diabo.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep172.jpg",
-    "dataExibicao": "2003-11-09"
-  },
-  {
-    "id": 1107,
-    "numero": 173,
-    "titulo": "Uma Cidade Misteriosa! As Grandes Ruínas de Shandora!",
-    "sinopse": "Robin explora antigas ruínas e encontra Yama, o chefe dos guerreiros de Eneru.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep173.jpg",
-    "dataExibicao": "2003-11-16"
-  },
-  {
-    "id": 1108,
-    "numero": 174,
-    "titulo": "0% de Sobrevivência! Chopper Contra Ohm, o Sacerdote da Espada!",
-    "sinopse": "O sacerdote Ohm aparece e começa uma batalha contra os sobreviventes do Upper Yard.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep174.jpg",
-    "dataExibicao": "2003-12-21"
-  },
-  {
-    "id": 1109,
-    "numero": 175,
-    "titulo": "Suba o Grande Jack! Combate Mortal nas Ruínas Superiores!",
-    "sinopse": "A batalha contra Ohm continua. Zoro, Wyper e Gan Fall enfrentam o sacerdote enquanto Nami é engolida pela cobra gigante.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep175.jpg",
-    "dataExibicao": "2004-01-04"
-  },
-  {
-    "id": 1110,
-    "numero": 176,
-    "titulo": "O Desafio do Ferro! A Luta Mortal das Espirais Brancas!",
-    "sinopse": "Ohm cria uma prisão de arame farpado e aumenta o perigo nas ruínas. Nami, Aisa e Gan Fall descobrem o motivo da fúria da cobra gigante.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep176.jpg",
-    "dataExibicao": "2004-01-18"
-  },
-  {
-    "id": 1111,
-    "numero": 177,
-    "titulo": "Corte Explosivo! Zoro Contra Ohm!",
-    "sinopse": "Zoro finalmente derrota o sacerdote Ohm usando sua técnica Canhão de 108 Libras. Enquanto isso, Conis e Pagaya descobrem o verdadeiro plano de Eneru.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep177.jpg",
-    "dataExibicao": "2004-01-25"
-  },
-  {
-    "id": 1112,
-    "numero": 178,
-    "titulo": "As Ruínas Superiores Desmoronam! O Quinteto para o Final!",
-    "sinopse": "Eneru aparece e reduz o número de sobreviventes conforme sua previsão. A batalha final em Skypiea começa a se aproximar.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep178.jpg",
-    "dataExibicao": "2004-02-01"
-  },
-  {
-    "id": 1113,
-    "numero": 179,
-    "titulo": "Confronto nas Ruínas Antigas! O Objetivo do Deus do Céu Eneru!",
-    "sinopse": "Eneru enfrenta os guerreiros restantes. Robin tenta usar seus poderes contra ele, enquanto Zoro e Wyper também entram na batalha.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep179.jpg",
-    "dataExibicao": "2004-02-08"
-  },
-  {
-    "id": 1114,
-    "numero": 180,
-    "titulo": "Ambição Rumo ao Vearth Infinito! A Arca Maxim!",
-    "sinopse": "Eneru derrota Zoro e Wyper e revela sua verdadeira ambição: partir para a Terra Infinita usando sua arca Maxim.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep180.jpg",
-    "dataExibicao": "2004-02-15"
-  },
-  {
-    "id": 1115,
-    "numero": 181,
-    "titulo": "Finalmente o Confronto! Luffy Contra o Deus Eneru!",
-    "sinopse": "Luffy finalmente encontra Eneru e começa uma batalha contra o homem que se considera um deus.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep181.jpg",
-    "dataExibicao": "2004-02-22"
-  },
-  {
-    "id": 1116,
-    "numero": 182,
-    "titulo": "Maxim Surge! Deathpiea é Ativada!",
-    "sinopse": "A luta entre Luffy e Eneru continua enquanto a máquina Deathpiea começa seu funcionamento para destruir Skypiea.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep182.jpg",
-    "dataExibicao": "2004-02-29"
-  },
-  {
-    "id": 1117,
-    "numero": 183,
-    "titulo": "Luffy Cai! O Julgamento de Eneru e o Desejo de Nami!",
-    "sinopse": "Luffy cai da arca Maxim. Nami enfrenta Eneru enquanto Sanji e Usopp tentam resgatá-la.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep183.jpg",
-    "dataExibicao": "2004-03-07"
-  },
-  {
-    "id": 1118,
-    "numero": 184,
-    "titulo": "Os Dois Despertam! Na Linha de Frente do Resgate de Amor Ardente!",
-    "sinopse": "Usopp e Sanji se separam para salvar Nami. Usopp é o primeiro a conseguir chegar ao convés da arca.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep184.jpg",
-    "dataExibicao": "2004-03-14"
-  },
-  {
-    "id": 1119,
-    "numero": 185,
-    "titulo": "Capricho de Desespero! A Destruição da Ilha do Céu se Aproxima!",
-    "sinopse": "As nuvens de trovão de Eneru começam a cair sobre Skypiea enquanto a evacuação dos habitantes continua.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep185.jpg",
-    "dataExibicao": "2004-03-21"
-  },
-  {
-    "id": 1120,
-    "numero": 186,
-    "titulo": "Guiados pelo Som de um Sino! A História do Grande Guerreiro e do Explorador!",
-    "sinopse": "A história de amizade entre Mont Blanc Noland e Kalgara é revelada através das memórias de Wyper.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep186.jpg",
-    "dataExibicao": "2004-03-28"
-  },
-  {
-    "id": 1121,
-    "numero": 187,
-    "titulo": "Livre do Feitiço! O Grande Guerreiro Derrama Lágrimas!",
-    "sinopse": "Noland e Kalgara vivem momentos de amizade com seus povos, mas um acontecimento muda completamente essa relação.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep187.jpg",
-    "dataExibicao": "2004-03-28"
-  },
-  {
-    "id": 1122,
-    "numero": 188,
-    "titulo": "Amigos Eternos! O Sino da Promessa Ecoa pelos Mares!",
-    "sinopse": "A verdade sobre a separação entre Noland e Kalgara é revelada. Kalgara promete reencontrar seu amigo.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep188.jpg",
-    "dataExibicao": "2004-04-04"
-  },
-  {
-    "id": 1123,
-    "numero": 189,
-    "titulo": "Ilha dos Anjos Destruída! O Horror da Chegada do Raigo!",
-    "sinopse": "Eneru destrói Angel Island com seu ataque Raigo. Luffy decide tocar o sino dourado antes que seja tarde.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep189.jpg",
-    "dataExibicao": "2004-04-25"
-  },
-  {
-    "id": 1124,
-    "numero": 190,
-    "titulo": "Derrube o Grande Jack! A Última Esperança de Fuga!",
-    "sinopse": "Nami descobre que cortar o Grande Jack pode ser a única forma de chegar até Eneru. Wyper descobre a ligação de Luffy com Noland.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep190.jpg",
-    "dataExibicao": "2004-05-02"
-  },
-  {
-    "id": 1125,
-    "numero": 191,
-    "titulo": "Milagre em Skypiea! A Canção de Amor Ouvida nas Nuvens!",
-    "sinopse": "Luffy continua sua batalha contra Eneru enquanto a luta pelo destino de Skypiea chega ao seu momento decisivo.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep191.jpg",
-    "dataExibicao": "2004-05-09"
-  },
-  {
-    "id": 1126,
-    "numero": 192,
-    "titulo": "A Batalha Termina! A Fantasia Orgulhosa Ecoa ao Longe!",
-    "sinopse": "A guerra de 400 anos em Skypiea chega ao fim. O sino dourado finalmente ecoa e traz paz aos povos da ilha.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep192.jpg",
-    "dataExibicao": "2004-05-23"
-  },
-  {
-    "id": 1127,
-    "numero": 193,
-    "titulo": "Eu Cheguei Aqui! O Fio que os Poneglyphs Tecem!",
-    "sinopse": "Robin decifra o poneglyph do sino dourado e descobre informações importantes sobre o Rio Poneglyph e Gol D. Roger.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep193.jpg",
-    "dataExibicao": "2004-06-06"
-  },
-  {
-    "id": 1128,
-    "numero": 194,
-    "titulo": "Rumo ao Mar Azul!! Um Final Emocionante!!",
-    "sinopse": "Os Chapéus de Palha deixam Skypiea levando ouro da cidade perdida. Ao retornarem ao mar, encontram novos problemas.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep194.jpg",
-    "dataExibicao": "2004-06-13"
-  },
-  {
-    "id": 1129,
-    "numero": 195,
-    "titulo": "Fim da Temporada! O Sino Dourado Ecoa pelo Céu!",
-    "sinopse": "O sino dourado toca enquanto os Chapéus de Palha deixam Skypiea. A tripulação finalmente retorna ao mar, mas acaba chegando a uma base da Marinha.",
-    "temporadaId": 6,
-    "animeId": 57,
-    "imagemUrl": "../../images/episodios/one-piece/t6/ep195.jpg",
-    "dataExibicao": "2004-06-13"
-  }
+        "titulo": "Confronto Sob a Miragem! Ace Contra o Valente Escorpião!",
+        "sinopse": "Ace enfrenta um caçador de recompensas que afirma ter derrotado Barba Negra. Na verdade, tudo fazia parte de um plano para desafiá-lo e inspirar seus filhos.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep101.jpg",
+        "dataExibicao": "2002-02-17"
+    },
+    {
+        "id": 1036,
+        "numero": 102,
+        "titulo": "Ruínas e Caminhos Perdidos! Vivi, Seus Amigos e a História do Reino!",
+        "sinopse": "Zoro, Chopper e Luffy acabam se perdendo no deserto e encontram enormes ruínas subterrâneas, enquanto Vivi continua revelando detalhes sobre o Reino de Alabasta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep102.jpg",
+        "dataExibicao": "2002-02-24"
+    },
+    {
+        "id": 1037,
+        "numero": 103,
+        "titulo": "Café Spiders às Oito Horas! Os Líderes Inimigos se Reúnem!",
+        "sinopse": "O plano da Baroque Works começa a entrar em ação. Os Agentes Numéricos se reúnem com Mr. 0, enquanto os Chapéus de Palha descobrem que o Exército Rebelde está marchando para Katorea.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep103.jpg",
+        "dataExibicao": "2002-03-02"
+    },
+    {
+        "id": 1038,
+        "numero": 104,
+        "titulo": "Luffy Contra Vivi! A Promessa Entre Amigos Feita em Lágrimas!",
+        "sinopse": "Em Yuba, Luffy confronta Vivi sobre a realidade da guerra iminente, fazendo-a compreender que apenas palavras não serão suficientes para salvar Alabasta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep104.jpg",
+        "dataExibicao": "2002-03-10"
+    },
+    {
+        "id": 1039,
+        "numero": 105,
+        "titulo": "A Linha de Frente de Alabasta! Rainbase, a Cidade dos Sonhos!",
+        "sinopse": "Determinada a enfrentar Crocodile, Vivi segue para Rainbase com os Chapéus de Palha. No caminho, o grupo reencontra Smoker e Tashigi.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep105.jpg",
+        "dataExibicao": "2002-03-17"
+    },
+    {
+        "id": 1040,
+        "numero": 106,
+        "titulo": "A Armadilha da Derrota Certa! Invadindo o Rain Dinners!",
+        "sinopse": "Grande parte da tripulação acaba presa por Crocodile. Vivi reencontra Pell, mas é capturada por Miss All Sunday, enquanto Crocodile revela o poder da Suna Suna no Mi.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep106.jpg",
+        "dataExibicao": "2002-03-24"
+    },
+    {
+        "id": 1041,
+        "numero": 107,
+        "titulo": "A Operação Utopia Começa! A Revolta Entra em Ação!",
+        "sinopse": "O plano da Baroque Works para tomar o controle de Alabasta finalmente entra em sua fase decisiva, dando início ao levante que ameaça destruir o reino.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep107.jpg",
+        "dataExibicao": "2002-04-14"
+    },
+    {
+        "id": 1042,
+        "numero": 108,
+        "titulo": "Os Aterrorizantes Crocodilos-Banana e o Sr. Príncipe!",
+        "sinopse": "Enquanto Vivi tenta libertar seus amigos, Crocodile recebe uma ligação inesperada de alguém que se apresenta como 'Mr. Prince', frustrando seus planos.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep108.jpg",
+        "dataExibicao": "2002-04-21"
+    },
+    {
+        "id": 1043,
+        "numero": 109,
+        "titulo": "A Chave para a Grande Fuga! A Bola de Cera!",
+        "sinopse": "A identidade de Mr. Prince é revelada. Graças ao seu plano, os Chapéus de Palha encontram uma oportunidade para escapar da armadilha de Crocodile.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep109.jpg",
+        "dataExibicao": "2002-04-28"
+    },
+    {
+        "id": 1044,
+        "numero": 110,
+        "titulo": "Combate Mortal Sem Piedade! Luffy Contra Crocodile!",
+        "sinopse": "Após escaparem de Rain Dinners, os Chapéus de Palha seguem para Alubarna. Luffy enfrenta Crocodile pela primeira vez em uma batalha decisiva.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep110.jpg",
+        "dataExibicao": "2002-05-05"
+    },
+    {
+        "id": 1045,
+        "numero": 111,
+        "titulo": "Corrida por um Milagre! A Terra dos Animais de Alabasta!",
+        "sinopse": "Gravemente ferido após a luta contra Crocodile, Luffy é salvo por Nico Robin. Enquanto isso, os demais Chapéus de Palha chegam a Alubarna para impedir a guerra.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep111.jpg",
+        "dataExibicao": "2002-05-12"
+    },
+    {
+        "id": 1046,
+        "numero": 112,
+        "titulo": "Exército Rebelde contra Exército Real! O Confronto em Alubarna!",
+        "sinopse": "A guerra civil finalmente começa em Alubarna. Enquanto os dois exércitos entram em confronto, os Chapéus de Palha elaboram um plano para impedir o massacre.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep112.jpg",
+        "dataExibicao": "2002-05-19"
+    },
+    {
+        "id": 1047,
+        "numero": 113,
+        "titulo": "Alubarna em Luto! O Valente Capitão Karoo!",
+        "sinopse": "Vivi tenta desesperadamente deter a batalha entre os exércitos, mas um infiltrado da Baroque Works impede que sua voz seja ouvida.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep113.jpg",
+        "dataExibicao": "2002-06-02"
+    },
+    {
+        "id": 1048,
+        "numero": 114,
+        "titulo": "O Sonho de um Amigo! A Batalha no Monte das Toupeiras, Bloco 4!",
+        "sinopse": "Usopp e Chopper enfrentam Mr. 4 e Miss Merry Christmas em uma batalha difícil. Mesmo gravemente ferido, Usopp decide lutar até o fim para proteger o sonho de seu capitão.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep114.jpg",
+        "dataExibicao": "2002-06-09"
+    },
+    {
+        "id": 1049,
+        "numero": 115,
+        "titulo": "Grande Estreia de Hoje! A Montagem da Mane-Mane!",
+        "sinopse": "Após derrotarem a equipe de Mr. 4, Usopp e Chopper comemoram a vitória. Enquanto isso, Bon Clay descobre o ponto fraco de Sanji.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep115.jpg",
+        "dataExibicao": "2002-06-16"
+    },
+    {
+        "id": 1050,
+        "numero": 116,
+        "titulo": "Transformado em Nami! O Ballet Kenpo de Bon Clay!",
+        "sinopse": "Bon Clay utiliza seu poder para assumir a aparência de Nami e confundir Sanji, mas o cozinheiro supera suas dúvidas e continua a luta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep116.jpg",
+        "dataExibicao": "2002-06-23"
+    },
+    {
+        "id": 1051,
+        "numero": 117,
+        "titulo": "Alerta de Ciclone para Nami! A Explosão do Clima-Tact!",
+        "sinopse": "Nami enfrenta Miss Doublefinger e tenta dominar sua nova arma criada por Usopp, o Clima-Tact.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep117.jpg",
+        "dataExibicao": "2002-06-30"
+    },
+    {
+        "id": 1052,
+        "numero": 118,
+        "titulo": "O Segredo Herdado pela Família Real! A Arma Ancestral Pluton!",
+        "sinopse": "Enquanto Crocodile revela seu interesse pela arma ancestral Pluton, Nami coloca em prática seu ataque mais poderoso para derrotar Miss Doublefinger.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep118.jpg",
+        "dataExibicao": "2002-07-14"
+    },
+    {
+        "id": 1053,
+        "numero": 119,
+        "titulo": "O Segredo da Espadachim Poderosa! A Habilidade de Cortar o Aço!",
+        "sinopse": "Zoro trava uma batalha decisiva contra Mr. 1 e, diante da morte, desperta a capacidade de compreender o 'ritmo de todas as coisas', conseguindo cortar o aço.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep119.jpg",
+        "dataExibicao": "2002-07-21"
+    },
+    {
+        "id": 1054,
+        "numero": 120,
+        "titulo": "A Batalha Acabou! Koza Ergue a Bandeira Branca!",
+        "sinopse": "Vivi revela a verdade para Koza, que tenta interromper a guerra. Entretanto, Crocodile revela que preparou uma enorme bomba para destruir Alubarna.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep120.jpg",
+        "dataExibicao": "2002-08-04"
+    },
+    {
+        "id": 1055,
+        "numero": 121,
+        "titulo": "Onde a Voz de Vivi é Ouvida! O Herói Desce à Arena!",
+        "sinopse": "Mesmo tentando parar a guerra, Koza não consegue impedir o confronto. Luffy retorna para salvar Vivi e desafia Crocodile para uma segunda batalha.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep121.jpg",
+        "dataExibicao": "2002-08-11"
+    },
+    {
+        "id": 1056,
+        "numero": 122,
+        "titulo": "Crocodilo da Areia e Luffy de Água! O Segundo Round do Duelo!",
+        "sinopse": "Luffy enfrenta Crocodile novamente utilizando água para neutralizar seus poderes. Enquanto isso, os Chapéus de Palha procuram desesperadamente pela bomba escondida em Alubarna.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep122.jpg",
+        "dataExibicao": "2002-08-18"
+    },
+    {
+        "id": 1057,
+        "numero": 123,
+        "titulo": "Parece um Crocodilo! Luffy Corre para o Túmulo Real!",
+        "sinopse": "Crocodile obriga Nico Robin a traduzir o Poneglyph escondido no Túmulo Real. Após descobrir que ela mentiu, ele a ataca. Recuperado, Luffy corre até o túmulo para enfrentá-lo novamente.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep123.jpg",
+        "dataExibicao": "2002-08-25"
+    },
+    {
+        "id": 1058,
+        "numero": 124,
+        "titulo": "O Pesadelo se Aproxima! Esta é a Base Secreta do Clã da Areia!",
+        "sinopse": "Usando o próprio sangue para atingir Crocodile, Luffy continua a batalha. Enquanto isso, Vivi encontra a bomba e reúne seus companheiros para impedir a tragédia.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep124.jpg",
+        "dataExibicao": "2002-09-01"
+    },
+    {
+        "id": 1059,
+        "numero": 125,
+        "titulo": "As Magníficas Asas! Meu Nome é Pell, Guardião do Reino!",
+        "sinopse": "Vivi encontra a bomba escondida na torre do relógio, mas percebe que não há tempo para desarmá-la. Pell se sacrifica carregando o explosivo para o céu para salvar Alabasta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep125.jpg",
+        "dataExibicao": "2002-09-08"
+    },
+    {
+        "id": 1060,
+        "numero": 126,
+        "titulo": "Eu Vou Superar Você! A Chuva Cai Sobre Alabasta!",
+        "sinopse": "Luffy derrota Crocodile com um golpe devastador, atravessando a rocha sólida. Com a queda do vilão, a chuva finalmente retorna ao reino e a guerra chega ao fim.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep126.jpg",
+        "dataExibicao": "2002-09-15"
+    },
+    {
+        "id": 1061,
+        "numero": 127,
+        "titulo": "Adeus às Armas! Piratas e os Diferentes Ideais de Justiça!",
+        "sinopse": "Com a guerra encerrada, a inocência do rei Cobra é comprovada. Smoker e Tashigi recebem o crédito pela derrota de Crocodile, embora saibam que os verdadeiros heróis foram os Chapéus de Palha.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep127.jpg",
+        "dataExibicao": "2002-10-06"
+    },
+    {
+        "id": 1062,
+        "numero": 128,
+        "titulo": "O Banquete dos Piratas e a Operação de Fuga de Alabasta!",
+        "sinopse": "Após despertar de seus ferimentos, Luffy participa de um grande banquete oferecido pelo rei Cobra. Em seguida, a tripulação prepara uma fuga antes da chegada da Marinha.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep128.jpg",
+        "dataExibicao": "2002-10-06"
+    },
+    {
+        "id": 1063,
+        "numero": 129,
+        "titulo": "Tudo Começou Naquele Dia! Vivi Conta a História de Sua Aventura!",
+        "sinopse": "Chega o momento de Vivi decidir se continuará viajando com os Chapéus de Palha. Enquanto isso, Bon Clay sacrifica sua própria liberdade para ajudar seus amigos a escaparem da perseguição da Marinha.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep129.jpg",
+        "dataExibicao": "2002-10-20"
+    },
+    {
+        "id": 1064,
+        "numero": 130,
+        "titulo": "Cheiro de Perigo! O Sétimo Membro é Nico Robin!",
+        "sinopse": "Após escaparem da Marinha, os Chapéus de Palha recebem uma visita inesperada de Nico Robin. A antiga Miss All Sunday convence Luffy a aceitá-la como a mais nova integrante da tripulação.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep130.jpg",
+        "dataExibicao": "2002-10-27"
+    },
+    {
+        "id": 1065,
+        "numero": 131,
+        "titulo": "O Primeiro Paciente! A História Desconhecida da Rumble Ball!",
+        "sinopse": "Após os acontecimentos em Alabasta, os Chapéus de Palha chegam a uma ilha deserta. Enquanto guarda o Going Merry, Chopper relembra como criou a Rumble Ball e quem foi seu primeiro paciente, passando um tempo ao lado da recém-chegada Nico Robin.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep131.jpg",
+        "dataExibicao": "2002-11-03"
+    },
+    {
+        "id": 1066,
+        "numero": 132,
+        "titulo": "A Revolta da Navegadora! Pelo Sonho que Nunca Desiste!",
+        "sinopse": "Um vendedor excêntrico é resgatado do mar e convence Nami a comprar um misterioso papel de mil anos para desenhar seus mapas. Porém, a bagunça da tripulação dificulta seu trabalho.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep132.jpg",
+        "dataExibicao": "2002-11-10"
+    },
+    {
+        "id": 1067,
+        "numero": 133,
+        "titulo": "A Receita Herdada! Sanji, o Mestre do Curry de Ferro!",
+        "sinopse": "O Going Merry cruza com diversos navios da Marinha em meio à neblina. Sanji conhece Tajio, um jovem cozinheiro da Marinha, e o ajuda a preparar um curry especial.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep133.jpg",
+        "dataExibicao": "2002-11-17"
+    },
+    {
+        "id": 1068,
+        "numero": 134,
+        "titulo": "Eu Vou Fazer Florescer! Usopp, o Homem e a Concha de Oito Metros!",
+        "sinopse": "Durante um festival de fogos de artifício, Usopp conhece Kodama, uma jovem fabricante de fogos, e decide ajudá-la a realizar seu sonho.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep134.jpg",
+        "dataExibicao": "2002-11-24"
+    },
+    {
+        "id": 1069,
+        "numero": 135,
+        "titulo": "O Lendário Caçador de Piratas! Zoro, o Espadachim Errante!",
+        "sinopse": "Zoro relembra seu passado e o momento em que conheceu Johnny e Yosaku, além da batalha contra um perigoso grupo de bandidos.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep135.jpg",
+        "dataExibicao": "2002-12-01"
+    },
+    {
+        "id": 1070,
+        "numero": 136,
+        "titulo": "Zenny da Ilha das Cabras e o Navio Pirata na Montanha!",
+        "sinopse": "Após escaparem da Marinha, os Chapéus de Palha chegam a uma ilha desconhecida e conhecem Zenny, um velho cercado por cabras que sonha em se tornar pirata.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep136.jpg",
+        "dataExibicao": "2002-12-08"
+    },
+    {
+        "id": 1071,
+        "numero": 137,
+        "titulo": "Qual é o Plano? As Estratégias de Zenny, o Agiota!",
+        "sinopse": "Enquanto ajudam Zenny em seus últimos desejos, os Chapéus de Palha descobrem seu passado como agiota e seu antigo sonho de navegar pelos mares como pirata.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep137.jpg",
+        "dataExibicao": "2002-12-15"
+    },
+    {
+        "id": 1072,
+        "numero": 138,
+        "titulo": "O Paradeiro do Tesouro da Ilha! O Ataque dos Piratas de Zenny!",
+        "sinopse": "Zenny finalmente decide seguir seu sonho e tornar-se um pirata. Antes da despedida, ele ajuda os Chapéus de Palha a escaparem da perseguição da Marinha.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep138.jpg",
+        "dataExibicao": "2002-12-22"
+    },
+    {
+        "id": 1073,
+        "numero": 139,
+        "titulo": "A Lenda da Névoa Arco-Íris! O Velho Henzo da Ilha Ruluka!",
+        "sinopse": "Na Ilha Ruluka, parte da tripulação entra em conflito com o prefeito corrupto. Luffy, Robin e Usopp conhecem o Professor Henzo, que pesquisa o misterioso fenômeno conhecido como Névoa Arco-Íris.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep139.jpg",
+        "dataExibicao": "2003-01-05"
+    },
+    {
+        "id": 1074,
+        "numero": 140,
+        "titulo": "Os Habitantes da Terra da Eternidade! Os Piratas Abóbora!",
+        "sinopse": "Dentro da Névoa Arco-Íris, a tripulação encontra um cemitério de navios e cinco crianças que, na verdade, desapareceram há mais de cinquenta anos.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep140.jpg",
+        "dataExibicao": "2003-01-12"
+    },
+    {
+        "id": 1075,
+        "numero": 141,
+        "titulo": "Saudades de Casa! O Cemitério de Navios sem Saída!",
+        "sinopse": "Henzo e seus antigos amigos procuram uma maneira de escapar do cemitério de navios. Enquanto isso, o prefeito de Ruluka descobre o segredo da Névoa Arco-Íris e decide explorá-la para conseguir o tesouro escondido.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep141.jpg",
+        "dataExibicao": "2003-01-19"
+    },
+    {
+        "id": 1076,
+        "numero": 142,
+        "titulo": "Uma Batalha Inevitável! Os Planos de Wetton e a Torre do Arco-Íris!",
+        "sinopse": "Wetton invade a Névoa Arco-Íris em busca do lendário tesouro. Os Chapéus de Palha enfrentam seus soldados enquanto tentam encontrar uma forma de escapar antes que seja tarde demais.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep142.jpg",
+        "dataExibicao": "2003-01-26"
+    },
+    {
+        "id": 1077,
+        "numero": 143,
+        "titulo": "E Assim a Lenda Começa! Para o Outro Lado do Arco-Íris!",
+        "sinopse": "O Going Merry consegue escapar da Névoa Arco-Íris. Os antigos amigos de Henzo finalmente retornam após décadas desaparecidos, Wetton é preso e a aventura em Ruluka chega ao fim.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep143.jpg",
+        "dataExibicao": "2003-02-02"
+    },
+    {
+        "id": 1078,
+        "numero": 144,
+        "titulo": "Monstros Aparecem! Não Mexa com os Piratas do Barba Branca!",
+        "sinopse": "Os Chapéus de Palha decidem ir para a ilha Jaya em busca de informações sobre Skypiea. Enquanto isso, Ace aparece no navio de Buggy, que impede seus homens de atacá-lo por medo da vingança de Barba Branca.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep144.jpg",
+        "dataExibicao": "2003-02-16"
+    },
+    {
+        "id": 1079,
+        "numero": 145,
+        "titulo": "Pare de Sonhar! Mock Town, a Cidade da Ridicularização!",
+        "sinopse": "Jaya é uma cidade cheia de piratas famosos que vivem brigando. Luffy e Zoro encontram Bellamy, o Hiena, que zomba dos sonhos deles e acaba os derrotando.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep145.jpg",
+        "dataExibicao": "2003-02-23"
+    },
+    {
+        "id": 1080,
+        "numero": 146,
+        "titulo": "Piratas Distintos! Um Homem que Fala de Sonhos e o Rei da Busca Submarina!",
+        "sinopse": "Após se recusarem a lutar contra Bellamy, Luffy, Zoro e Nami encontram um homem que ama tortas de cereja e depois enfrentam Shoujou, irmão de Masira.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep146.jpg",
+        "dataExibicao": "2003-03-09"
+    },
+    {
+        "id": 1081,
+        "numero": 147,
+        "titulo": "Família Lendária! Noland, o Mentiroso!",
+        "sinopse": "Os Chapéus de Palha encontram Mont Blanc Cricket, descendente de Noland, o homem conhecido como mentiroso por falar sobre uma cidade de ouro em Jaya.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep147.jpg",
+        "dataExibicao": "2003-03-16"
+    },
+    {
+        "id": 1082,
+        "numero": 148,
+        "titulo": "Rumo às Nuvens! Capturem o Pássaro do Sul!",
+        "sinopse": "Cricket explica que o caminho para Skypiea depende da Corrente de Jato Ascendente. Para encontrá-la, eles precisam capturar um Pássaro do Sul.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep148.jpg",
+        "dataExibicao": "2003-03-23"
+    },
+    {
+        "id": 1083,
+        "numero": 149,
+        "titulo": "Os Sonhos Não Se Tornam Realidade?! Bellamy Contra a Aliança Saruyama!",
+        "sinopse": "Enquanto os Chapéus de Palha procuram o Pássaro do Sul, Bellamy invade a casa de Cricket e rouba seus tesouros. Luffy decide voltar para Mock Town.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep149.jpg",
+        "dataExibicao": "2003-04-13"
+    },
+    {
+        "id": 1084,
+        "numero": 150,
+        "titulo": "Homem de 100 Milhões! O Maior Poder do Mundo e o Pirata Barba Negra!",
+        "sinopse": "Luffy derrota Bellamy com apenas um golpe. Enquanto isso, o Governo Mundial se preocupa com novos poderes e Barba Negra é indicado para substituir Crocodile como Shichibukai.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep150.jpg",
+        "dataExibicao": "2003-04-20"
+    },
+    {
+        "id": 1085,
+        "numero": 151,
+        "titulo": "Subam aos Céus! Montem na Corrente de Jato Ascendente!",
+        "sinopse": "O Going Merry recebe melhorias de Masira e Shoujou e os Chapéus de Palha usam a Corrente de Jato Ascendente para chegar a Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep151.jpg",
+        "dataExibicao": "2003-04-27"
+    },
+    {
+        "id": 1086,
+        "numero": 152,
+        "titulo": "Naveguem pelo Mar Branco! O Cavaleiro do Céu e o Portão das Nuvens!",
+        "sinopse": "Os Chapéus de Palha chegam ao oceano acima das nuvens e encontram o Cavaleiro do Céu, que os ajuda a atravessar o portão para Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep152.jpg",
+        "dataExibicao": "2003-05-04"
+    },
+    {
+        "id": 1087,
+        "numero": 153,
+        "titulo": "Terra dos Deuses, Skypiea! Anjos na Praia das Nuvens!",
+        "sinopse": "A tripulação chega a Skypiea e conhece Conis e seu pai, que explicam como funciona a vida na ilha do céu e os misteriosos Dials.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep153.jpg",
+        "dataExibicao": "2003-05-11"
+    },
+    {
+        "id": 1088,
+        "numero": 154,
+        "titulo": "O Solo Sagrado Proibido! A Ilha Onde Deus Vive e o Julgamento Celestial!",
+        "sinopse": "Nami descobre os perigos de entrar na floresta proibida. Enquanto isso, os Chapéus de Palha enfrentam a força policial de Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep154.jpg",
+        "dataExibicao": "2003-05-18"
+    },
+    {
+        "id": 1089,
+        "numero": 155,
+        "titulo": "Já Somos Criminosos?! O Guardião da Lei de Skypiea!",
+        "sinopse": "Os Chapéus de Palha entram em conflito com os Beretas Brancas, a força responsável pela justiça em Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep155.jpg",
+        "dataExibicao": "2003-06-08"
+    },
+    {
+        "id": 1090,
+        "numero": 156,
+        "titulo": "É Possível Escapar?! O Desafio de Deus Começa!",
+        "sinopse": "Durante a tentativa de fuga da ilha do céu, Robin, Chopper, Nami e Zoro acabam presos pelo Deus Enel.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep156.jpg",
+        "dataExibicao": "2003-06-15"
+    },
+    {
+        "id": 1091,
+        "numero": 157,
+        "titulo": "Uma Armadilha na Rua Adorável! O Todo-Poderoso Eneru!",
+        "sinopse": "Conis guia Luffy, Usopp e Sanji até um barco para chegar ao Upper Yard, mas revela que tudo era uma armadilha e quase é atingida pelo Julgamento Celestial de Eneru.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep157.jpg",
+        "dataExibicao": "2003-06-22"
+    },
+    {
+        "id": 1092,
+        "numero": 158,
+        "titulo": "Avante, Pequeno Corvo! Para o Altar do Sacrifício!",
+        "sinopse": "Luffy, Usopp e Sanji chegam ao Upper Yard e descobrem que o caminho está cheio de armadilhas. Enquanto isso, Robin, Zoro e Nami exploram a ilha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep158.jpg",
+        "dataExibicao": "2003-07-06"
+    },
+    {
+        "id": 1093,
+        "numero": 159,
+        "titulo": "10% de Chance de Sobrevivência! Satori, o Mestre do Mantra!",
+        "sinopse": "Luffy, Sanji e Usopp enfrentam Satori, um sacerdote que utiliza o poderoso Mantra para prever seus movimentos.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep159.jpg",
+        "dataExibicao": "2003-07-13"
+    },
+    {
+        "id": 1094,
+        "numero": 160,
+        "titulo": "O Desafio das Esferas! Luta Desesperada na Floresta Perdida!",
+        "sinopse": "Luffy, Sanji e Usopp continuam enfrentando Satori no desafio das esferas, mas o poder do Mantra torna a batalha extremamente difícil.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep160.jpg",
+        "dataExibicao": "2003-07-20"
+    },
+    {
+        "id": 1095,
+        "numero": 161,
+        "titulo": "Chopper em Perigo! O Antigo Deus Contra o Sacerdote Shura!",
+        "sinopse": "Chopper enfrenta o sacerdote Shura, que começa a destruir o Going Merry. Gan Fall tenta impedir o ataque.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep161.jpg",
+        "dataExibicao": "2003-08-03"
+    },
+    {
+        "id": 1096,
+        "numero": 162,
+        "titulo": "Mistério Profundo! O Desafio das Cordas e o Desafio do Amor?!",
+        "sinopse": "Gan Fall enfrenta Shura e perde a batalha. Enquanto isso, Luffy e Sanji finalmente conseguem derrotar Satori.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep162.jpg",
+        "dataExibicao": "2003-08-10"
+    },
+    {
+        "id": 1097,
+        "numero": 163,
+        "titulo": "Acenda o Fogo de Shandora! O Guerreiro Wyper!",
+        "sinopse": "Chopper é salvo pelos pássaros do sul. Robin, Zoro e Nami descobrem que o Upper Yard era originalmente parte de Jaya.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep163.jpg",
+        "dataExibicao": "2003-08-17"
+    },
+    {
+        "id": 1098,
+        "numero": 164,
+        "titulo": "Jaya, a Cidade de Ouro no Céu! Rumo ao Santuário de Deus!",
+        "sinopse": "Os guerreiros Shandia iniciam um ataque ao Upper Yard. A tripulação se reúne novamente e planeja encontrar o ouro da ilha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep164.jpg",
+        "dataExibicao": "2003-08-24"
+    },
+    {
+        "id": 1099,
+        "numero": 165,
+        "titulo": "Festival na Noite Antes da Caçada ao Ouro! Sentimentos por Vearth!",
+        "sinopse": "Após fazer amizade com uma matilha de lobos, Gan Fall revela mais detalhes sobre a história do Upper Yard.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep165.jpg",
+        "dataExibicao": "2003-09-07"
+    },
+    {
+        "id": 1100,
+        "numero": 166,
+        "titulo": "A Entrada do Deus Eneru! Adeus aos Sobreviventes!",
+        "sinopse": "Eneru libera os sacerdotes e revela seus planos. Enquanto isso, Usopp percebe que alguém consertou o Going Merry.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep166.jpg",
+        "dataExibicao": "2003-09-21"
+    },
+    {
+        "id": 1101,
+        "numero": 167,
+        "titulo": "Uma Cobra Gigante Mostra Suas Presas! O Jogo de Sobrevivência Começa!",
+        "sinopse": "Uma enorme cobra separa Luffy, Robin, Chopper e Zoro enquanto eles tentam chegar às ruínas.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep167.jpg",
+        "dataExibicao": "2003-10-12"
+    },
+    {
+        "id": 1102,
+        "numero": 168,
+        "titulo": "O Rejeitado Mortal! A Determinação do Demônio da Guerra Wyper!",
+        "sinopse": "Wyper derrota Shura e revela seu objetivo aos Shandia. Eneru anuncia quantas pessoas sobreviverão ao seu plano.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep168.jpg",
+        "dataExibicao": "2003-10-19"
+    },
+    {
+        "id": 1103,
+        "numero": 169,
+        "titulo": "Batalha Feroz no Ar! Pirata Zoro Contra o Guerreiro Braham!",
+        "sinopse": "Zoro enfrenta Braham e vence utilizando sua técnica de uma espada, o Canhão de 36 Libras.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep169.jpg",
+        "dataExibicao": "2003-10-19"
+    },
+    {
+        "id": 1104,
+        "numero": 170,
+        "titulo": "O Rugido do Bazuca Ardente!! Luffy Contra o Demônio da Guerra Wyper!",
+        "sinopse": "Luffy enfrenta Wyper e acaba caindo nas ruínas subterrâneas. Eneru aparece no Going Merry e derrota Usopp e Sanji.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep170.jpg",
+        "dataExibicao": "2003-10-26"
+    },
+    {
+        "id": 1105,
+        "numero": 171,
+        "titulo": "O Desafio do Pântano! Chopper Contra o Sacerdote Gedatsu!",
+        "sinopse": "Chopper enfrenta Gedatsu e consegue derrotá-lo. Enquanto isso, Conis e Pagaya ajudam Aisa a chegar ao Upper Yard.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep171.jpg",
+        "dataExibicao": "2003-11-02"
+    },
+    {
+        "id": 1106,
+        "numero": 172,
+        "titulo": "Poderes Invencíveis! A Verdadeira Forma de Eneru é Revelada!",
+        "sinopse": "Eneru derrota vários membros dos Shandia e demonstra o verdadeiro poder de sua fruta do diabo.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep172.jpg",
+        "dataExibicao": "2003-11-09"
+    },
+    {
+        "id": 1107,
+        "numero": 173,
+        "titulo": "Uma Cidade Misteriosa! As Grandes Ruínas de Shandora!",
+        "sinopse": "Robin explora antigas ruínas e encontra Yama, o chefe dos guerreiros de Eneru.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep173.jpg",
+        "dataExibicao": "2003-11-16"
+    },
+    {
+        "id": 1108,
+        "numero": 174,
+        "titulo": "0% de Sobrevivência! Chopper Contra Ohm, o Sacerdote da Espada!",
+        "sinopse": "O sacerdote Ohm aparece e começa uma batalha contra os sobreviventes do Upper Yard.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep174.jpg",
+        "dataExibicao": "2003-12-21"
+    },
+    {
+        "id": 1109,
+        "numero": 175,
+        "titulo": "Suba o Grande Jack! Combate Mortal nas Ruínas Superiores!",
+        "sinopse": "A batalha contra Ohm continua. Zoro, Wyper e Gan Fall enfrentam o sacerdote enquanto Nami é engolida pela cobra gigante.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep175.jpg",
+        "dataExibicao": "2004-01-04"
+    },
+    {
+        "id": 1110,
+        "numero": 176,
+        "titulo": "O Desafio do Ferro! A Luta Mortal das Espirais Brancas!",
+        "sinopse": "Ohm cria uma prisão de arame farpado e aumenta o perigo nas ruínas. Nami, Aisa e Gan Fall descobrem o motivo da fúria da cobra gigante.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep176.jpg",
+        "dataExibicao": "2004-01-18"
+    },
+    {
+        "id": 1111,
+        "numero": 177,
+        "titulo": "Corte Explosivo! Zoro Contra Ohm!",
+        "sinopse": "Zoro finalmente derrota o sacerdote Ohm usando sua técnica Canhão de 108 Libras. Enquanto isso, Conis e Pagaya descobrem o verdadeiro plano de Eneru.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep177.jpg",
+        "dataExibicao": "2004-01-25"
+    },
+    {
+        "id": 1112,
+        "numero": 178,
+        "titulo": "As Ruínas Superiores Desmoronam! O Quinteto para o Final!",
+        "sinopse": "Eneru aparece e reduz o número de sobreviventes conforme sua previsão. A batalha final em Skypiea começa a se aproximar.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep178.jpg",
+        "dataExibicao": "2004-02-01"
+    },
+    {
+        "id": 1113,
+        "numero": 179,
+        "titulo": "Confronto nas Ruínas Antigas! O Objetivo do Deus do Céu Eneru!",
+        "sinopse": "Eneru enfrenta os guerreiros restantes. Robin tenta usar seus poderes contra ele, enquanto Zoro e Wyper também entram na batalha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep179.jpg",
+        "dataExibicao": "2004-02-08"
+    },
+    {
+        "id": 1114,
+        "numero": 180,
+        "titulo": "Ambição Rumo ao Vearth Infinito! A Arca Maxim!",
+        "sinopse": "Eneru derrota Zoro e Wyper e revela sua verdadeira ambição: partir para a Terra Infinita usando sua arca Maxim.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep180.jpg",
+        "dataExibicao": "2004-02-15"
+    },
+    {
+        "id": 1115,
+        "numero": 181,
+        "titulo": "Finalmente o Confronto! Luffy Contra o Deus Eneru!",
+        "sinopse": "Luffy finalmente encontra Eneru e começa uma batalha contra o homem que se considera um deus.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep181.jpg",
+        "dataExibicao": "2004-02-22"
+    },
+    {
+        "id": 1116,
+        "numero": 182,
+        "titulo": "Maxim Surge! Deathpiea é Ativada!",
+        "sinopse": "A luta entre Luffy e Eneru continua enquanto a máquina Deathpiea começa seu funcionamento para destruir Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep182.jpg",
+        "dataExibicao": "2004-02-29"
+    },
+    {
+        "id": 1117,
+        "numero": 183,
+        "titulo": "Luffy Cai! O Julgamento de Eneru e o Desejo de Nami!",
+        "sinopse": "Luffy cai da arca Maxim. Nami enfrenta Eneru enquanto Sanji e Usopp tentam resgatá-la.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep183.jpg",
+        "dataExibicao": "2004-03-07"
+    },
+    {
+        "id": 1118,
+        "numero": 184,
+        "titulo": "Os Dois Despertam! Na Linha de Frente do Resgate de Amor Ardente!",
+        "sinopse": "Usopp e Sanji se separam para salvar Nami. Usopp é o primeiro a conseguir chegar ao convés da arca.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep184.jpg",
+        "dataExibicao": "2004-03-14"
+    },
+    {
+        "id": 1119,
+        "numero": 185,
+        "titulo": "Capricho de Desespero! A Destruição da Ilha do Céu se Aproxima!",
+        "sinopse": "As nuvens de trovão de Eneru começam a cair sobre Skypiea enquanto a evacuação dos habitantes continua.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep185.jpg",
+        "dataExibicao": "2004-03-21"
+    },
+    {
+        "id": 1120,
+        "numero": 186,
+        "titulo": "Guiados pelo Som de um Sino! A História do Grande Guerreiro e do Explorador!",
+        "sinopse": "A história de amizade entre Mont Blanc Noland e Kalgara é revelada através das memórias de Wyper.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep186.jpg",
+        "dataExibicao": "2004-03-28"
+    },
+    {
+        "id": 1121,
+        "numero": 187,
+        "titulo": "Livre do Feitiço! O Grande Guerreiro Derrama Lágrimas!",
+        "sinopse": "Noland e Kalgara vivem momentos de amizade com seus povos, mas um acontecimento muda completamente essa relação.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep187.jpg",
+        "dataExibicao": "2004-03-28"
+    },
+    {
+        "id": 1122,
+        "numero": 188,
+        "titulo": "Amigos Eternos! O Sino da Promessa Ecoa pelos Mares!",
+        "sinopse": "A verdade sobre a separação entre Noland e Kalgara é revelada. Kalgara promete reencontrar seu amigo.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep188.jpg",
+        "dataExibicao": "2004-04-04"
+    },
+    {
+        "id": 1123,
+        "numero": 189,
+        "titulo": "Ilha dos Anjos Destruída! O Horror da Chegada do Raigo!",
+        "sinopse": "Eneru destrói Angel Island com seu ataque Raigo. Luffy decide tocar o sino dourado antes que seja tarde.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep189.jpg",
+        "dataExibicao": "2004-04-25"
+    },
+    {
+        "id": 1124,
+        "numero": 190,
+        "titulo": "Derrube o Grande Jack! A Última Esperança de Fuga!",
+        "sinopse": "Nami descobre que cortar o Grande Jack pode ser a única forma de chegar até Eneru. Wyper descobre a ligação de Luffy com Noland.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep190.jpg",
+        "dataExibicao": "2004-05-02"
+    },
+    {
+        "id": 1125,
+        "numero": 191,
+        "titulo": "Milagre em Skypiea! A Canção de Amor Ouvida nas Nuvens!",
+        "sinopse": "Luffy continua sua batalha contra Eneru enquanto a luta pelo destino de Skypiea chega ao seu momento decisivo.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep191.jpg",
+        "dataExibicao": "2004-05-09"
+    },
+    {
+        "id": 1126,
+        "numero": 192,
+        "titulo": "A Batalha Termina! A Fantasia Orgulhosa Ecoa ao Longe!",
+        "sinopse": "A guerra de 400 anos em Skypiea chega ao fim. O sino dourado finalmente ecoa e traz paz aos povos da ilha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep192.jpg",
+        "dataExibicao": "2004-05-23"
+    },
+    {
+        "id": 1127,
+        "numero": 193,
+        "titulo": "Eu Cheguei Aqui! O Fio que os Poneglyphs Tecem!",
+        "sinopse": "Robin decifra o poneglyph do sino dourado e descobre informações importantes sobre o Rio Poneglyph e Gol D. Roger.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep193.jpg",
+        "dataExibicao": "2004-06-06"
+    },
+    {
+        "id": 1128,
+        "numero": 194,
+        "titulo": "Rumo ao Mar Azul!! Um Final Emocionante!!",
+        "sinopse": "Os Chapéus de Palha deixam Skypiea levando ouro da cidade perdida. Ao retornarem ao mar, encontram novos problemas.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep194.jpg",
+        "dataExibicao": "2004-06-13"
+    },
+    {
+        "id": 1129,
+        "numero": 195,
+        "titulo": "Fim da Temporada! O Sino Dourado Ecoa pelo Céu!",
+        "sinopse": "O sino dourado toca enquanto os Chapéus de Palha deixam Skypiea. A tripulação finalmente retorna ao mar, mas acaba chegando a uma base da Marinha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep195.jpg",
+        "dataExibicao": "2004-06-13"
+    },
+    {
+        "id": 1130,
+        "numero": 196,
+        "titulo": "Uma Emergência é Declarada! Um Navio Pirata Famoso Invadiu!",
+        "sinopse": "Os marinheiros acreditam que o Going Merry é um navio fantasma após ele cair dentro da fortaleza da Marinha. A tripulação acaba separada pelo local.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep196.jpg",
+        "dataExibicao": "2004-06-20"
+    },
+    {
+        "id": 1131,
+        "numero": 197,
+        "titulo": "Sanji, o Cozinheiro! Provando seu Valor no Refeitório da Marinha!",
+        "sinopse": "Disfarçado, Sanji mostra aos cozinheiros da Marinha a maneira correta de preparar uma refeição.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep197.jpg",
+        "dataExibicao": "2004-07-04"
+    },
+    {
+        "id": 1132,
+        "numero": 198,
+        "titulo": "Zoro Capturado! As Operações de Emergência de Chopper!",
+        "sinopse": "Zoro é capturado enquanto Chopper e Nami ajudam um médico nervoso a tratar os marinheiros feridos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep198.jpg",
+        "dataExibicao": "2004-07-11"
+    },
+    {
+        "id": 1133,
+        "numero": 199,
+        "titulo": "A Rede da Marinha se Fecha! O Segundo Membro é Capturado!",
+        "sinopse": "Robin e Usopp usam o mesmo disfarce de inspetor visitante. Usopp acaba preso junto com Zoro, enquanto Luffy e Sanji são descobertos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep199.jpg",
+        "dataExibicao": "2004-07-18"
+    },
+    {
+        "id": 1134,
+        "numero": 200,
+        "titulo": "A Missão de Resgate Arriscada de Luffy e Sanji!",
+        "sinopse": "O verdadeiro inspetor é preso junto com Zoro e Usopp. Luffy e Sanji tentam resgatá-los sem serem descobertos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep200.jpg",
+        "dataExibicao": "2004-08-08"
+    },
+    {
+        "id": 1135,
+        "numero": 201,
+        "titulo": "Entram as Forças Especiais de Sangue Quente! Batalha na Ponte!",
+        "sinopse": "Após libertarem Usopp e Zoro, Luffy e Sanji tentam escapar de Navarone enquanto as forças especiais da Marinha entram em ação.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep201.jpg",
+        "dataExibicao": "2004-09-05"
+    },
+    {
+        "id": 1136,
+        "numero": 202,
+        "titulo": "Rompa o Cerco! O Going Merry é Recuperado!",
+        "sinopse": "A tripulação se reúne no porto e consegue enganar os marinheiros para voltar ao Going Merry.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep202.jpg",
+        "dataExibicao": "2004-09-19"
+    },
+    {
+        "id": 1137,
+        "numero": 203,
+        "titulo": "O Navio Pirata Desaparece! Batalha na Fortaleza, Rodada 2!",
+        "sinopse": "Os Chapéus de Palha disfarçam o Going Merry como um navio da Marinha para recuperar seu tesouro.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep203.jpg",
+        "dataExibicao": "2004-09-19"
+    },
+    {
+        "id": 1138,
+        "numero": 204,
+        "titulo": "Operação de Recuperação do Ouro e do Waver!",
+        "sinopse": "Usopp divide a tripulação em dois grupos: um para recuperar o ouro e outro para recuperar o waver.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep204.jpg",
+        "dataExibicao": "2004-10-03"
+    },
+    {
+        "id": 1139,
+        "numero": 205,
+        "titulo": "O Plano de Uma Só Investida! A Tática Secreta de Jonathan!",
+        "sinopse": "Sanji, Zoro, Usopp e Robin continuam procurando o tesouro enquanto Luffy e Nami tentam recuperar o ouro.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep205.jpg",
+        "dataExibicao": "2004-10-03"
+    },
+    {
+        "id": 1140,
+        "numero": 206,
+        "titulo": "Adeus, Fortaleza da Marinha! A Última Batalha pela Fuga!",
+        "sinopse": "O Going Merry fica preso durante a maré baixa, mas a tripulação usa os Dials para conseguir escapar da fortaleza.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep206.jpg",
+        "dataExibicao": "2004-10-10"
+    },
+    {
+        "id": 1141,
+        "numero": 207,
+        "titulo": "Grande Aventura em Long Ring Long Land!",
+        "sinopse": "Após escapar de uma onda gigante, os Chapéus de Palha encontram uma ilha misteriosa habitada por animais estranhos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep207.jpg",
+        "dataExibicao": "2004-10-31"
+    },
+    {
+        "id": 1142,
+        "numero": 208,
+        "titulo": "Um Davy Back com os Piratas Foxy!",
+        "sinopse": "Foxy desafia Luffy para um Davy Back Fight, uma competição pirata onde membros da tripulação podem ser apostados.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep208.jpg",
+        "dataExibicao": "2004-11-07"
+    },
+    {
+        "id": 1143,
+        "numero": 209,
+        "titulo": "Primeira Rodada! Uma Volta na Corrida Donut!",
+        "sinopse": "A primeira etapa do Davy Back Fight começa com uma corrida ao redor da ilha usando pequenos barcos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep209.jpg",
+        "dataExibicao": "2004-11-14"
+    },
+    {
+        "id": 1144,
+        "numero": 210,
+        "titulo": "Raposa Prateada Foxy! A Interferência Impiedosa!",
+        "sinopse": "Foxy usa seus poderes da fruta do diabo para trapacear e consegue pegar Chopper da tripulação de Luffy.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep210.jpg",
+        "dataExibicao": "2004-11-21"
+    },
+    {
+        "id": 1145,
+        "numero": 211,
+        "titulo": "Segunda Rodada! Atire no Groggy Ring!",
+        "sinopse": "Sem Chopper, Sanji e Zoro enfrentam os Piratas Foxy em uma partida de Groggy Ring cheia de trapaças.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep211.jpg",
+        "dataExibicao": "2004-11-28"
+    },
+    {
+        "id": 1146,
+        "numero": 212,
+        "titulo": "Uma Chuva de Cartões Vermelhos no Groggy Ring!",
+        "sinopse": "Sanji e Zoro deixam suas diferenças de lado e trabalham juntos para vencer a equipe adversária.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep212.jpg",
+        "dataExibicao": "2004-12-05"
+    },
+    {
+        "id": 1147,
+        "numero": 213,
+        "titulo": "Terceira Rodada! A Corrida do Roller Round!",
+        "sinopse": "Os Chapéus de Palha enfrentam Foxy em uma corrida de patins ao redor de um enorme circuito.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep213.jpg",
+        "dataExibicao": "2004-12-12"
+    },
+    {
+        "id": 1148,
+        "numero": 214,
+        "titulo": "Uma Corrida Extremamente Quente! Rumo à Rodada Final!",
+        "sinopse": "Com um plano rápido, os Chapéus de Palha conseguem vencer a corrida final.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep214.jpg",
+        "dataExibicao": "2004-12-19"
+    },
+    {
+        "id": 1149,
+        "numero": 215,
+        "titulo": "Bombardeio Ardente! Dodgeball Pirata!",
+        "sinopse": "Depois de recuperar Chopper, Luffy aceita outro desafio de Foxy sem pensar nas consequências.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep215.jpg",
+        "dataExibicao": "2005-01-09"
+    },
+    {
+        "id": 1150,
+        "numero": 216,
+        "titulo": "Confronto no Penhasco! Luz Vermelha, Luz Verde!",
+        "sinopse": "Foxy decide apostar Robin na próxima rodada contra Luffy. A nova disputa é uma corrida até o topo da ilha.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep216.jpg",
+        "dataExibicao": "2005-01-09"
+    },
+    {
+        "id": 1151,
+        "numero": 217,
+        "titulo": "Os Capitães se Enfrentam! A Rodada Final de Combate!",
+        "sinopse": "Com Chopper novamente fora da tripulação, Luffy e Foxy decidem resolver tudo em uma batalha final a bordo do navio de Foxy.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep217.jpg",
+        "dataExibicao": "2005-01-16"
+    },
+    {
+        "id": 1152,
+        "numero": 218,
+        "titulo": "Ataque Devagar Devagar em Alta Velocidade Contra o Luffy Invencível!",
+        "sinopse": "Luffy continua sua batalha contra Foxy, enfrentando os efeitos da fruta do diabo do adversário durante o combate.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep218.jpg",
+        "dataExibicao": "2005-01-23"
+    },
+    {
+        "id": 1153,
+        "numero": 219,
+        "titulo": "Combate Épico e Ardente! A Conclusão Final do Destino!",
+        "sinopse": "Luffy finalmente derrota Foxy usando o próprio poder dele contra ele. Depois disso, os Chapéus de Palha continuam sua busca por um construtor naval.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep219.jpg",
+        "dataExibicao": "2005-01-30"
+    },
+    {
+        "id": 1154,
+        "numero": 220,
+        "titulo": "Foi Perdido? Foi Roubado? Quem é Você?",
+        "sinopse": "Uma figura misteriosa aparece durante a noite e rouba as memórias da tripulação. Apenas Robin se lembra das aventuras dos Chapéus de Palha.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep220.jpg",
+        "dataExibicao": "2005-02-06"
+    },
+    {
+        "id": 1155,
+        "numero": 221,
+        "titulo": "Um Garoto Misterioso com Chifres e a Dedução de Robin!",
+        "sinopse": "Robin descobre que apenas quem estava dormindo perdeu as memórias. A tripulação encontra o garoto misterioso responsável pelo ocorrido.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep221.jpg",
+        "dataExibicao": "2005-02-13"
+    },
+    {
+        "id": 1156,
+        "numero": 222,
+        "titulo": "Agora Vamos Recuperar Nossas Memórias! A Tripulação Pirata Chega à Ilha!",
+        "sinopse": "Usopp, Chopper e Sanji tentam descobrir o que aconteceu enquanto navegam até a ilha onde Nami está. O garoto misterioso continua atrás de Zoro.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep222.jpg",
+        "dataExibicao": "2005-02-20"
+    },
+    {
+        "id": 1157,
+        "numero": 223,
+        "titulo": "Zoro Mostra suas Presas! Um Animal Selvagem Está no Caminho!",
+        "sinopse": "Robin e os outros encontram Zoro sob influência do poder do garoto. Eles descobrem que o verdadeiro responsável pelas memórias roubadas é um cavalo-marinho.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep223.jpg",
+        "dataExibicao": "2005-02-27"
+    },
+    {
+        "id": 1158,
+        "numero": 224,
+        "titulo": "O Último Contra-Ataque do Ladrão de Memórias Revela sua Verdadeira Face!",
+        "sinopse": "Luffy retorna e recupera o senso de Zoro. O cavalo-marinho tenta roubar todas as memórias da tripulação, mas acaba derrotado.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep224.jpg",
+        "dataExibicao": "2005-03-06"
+    },
+    {
+        "id": 1159,
+        "numero": 225,
+        "titulo": "Homem Orgulhoso! Raposa Prateada Foxy!",
+        "sinopse": "Luffy salva Foxy, Hamburg e Porche de uma tempestade. Foxy aceita um novo Davy Back Fight para recuperar sua tripulação.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep225.jpg",
+        "dataExibicao": "2005-03-13"
+    },
+    {
+        "id": 1160,
+        "numero": 226,
+        "titulo": "O Homem Mais Próximo da Invencibilidade? O Homem Mais Perigoso!",
+        "sinopse": "Foxy recupera sua tripulação, mas acaba capturando os Chapéus de Palha. Depois da batalha, a tripulação encontra alguém conhecido por Robin.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep226.jpg",
+        "dataExibicao": "2005-03-20"
+    },
+    {
+        "id": 1161,
+        "numero": 227,
+        "titulo": "Almirante da Marinha Aokiji! O Poder Supremo de uma Força Implacável!",
+        "sinopse": "A tripulação conhece Aokiji, um Almirante da Marinha que demonstra o poder de sua fruta do diabo de gelo e revela interesse em Robin.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep227.jpg",
+        "dataExibicao": "2005-03-27"
+    },
+    {
+        "id": 1162,
+        "numero": 228,
+        "titulo": "Duelo Entre Borracha e Gelo! Luffy Contra Aokiji!",
+        "sinopse": "Aokiji congela Robin e enfrenta Luffy. Mesmo derrotado, Luffy e sua tripulação são poupados enquanto continuam sua viagem pelo mar.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep228.jpg",
+        "dataExibicao": "2005-03-27"
+    },
+    {
+        "id": 1163,
+        "numero": 229,
+        "titulo": "O Trem Marítimo em Alta Velocidade e a Cidade das Águas: Water Seven!",
+        "sinopse": "Após escapar por pouco de ser atingido por um trem marítimo, a tripulação conhece Kokoro e sua neta Chimney. Eles recebem um mapa para Water Seven e chegam à cidade usando pequenos barcos puxados por yagara.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep229.jpg",
+        "dataExibicao": "2005-04-17"
+    },
+    {
+        "id": 1164,
+        "numero": 230,
+        "titulo": "Aventura na Cidade das Águas! Rumo à Gigantesca Fábrica de Construção Naval!",
+        "sinopse": "Luffy, Nami e Usopp exploram Water Seven e descobrem a Galley-La Company, uma poderosa empresa de construtores navais. Enquanto isso, Robin desaparece e Zoro enfrenta problemas no navio.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep230.jpg",
+        "dataExibicao": "2005-04-24"
+    },
+    {
+        "id": 1165,
+        "numero": 231,
+        "titulo": "A Família Franky e Iceburg!",
+        "sinopse": "Aqueles que atacaram Zoro revelam ser a Família Franky. Luffy troca o ouro por dinheiro, mas Usopp acaba tendo seu dinheiro roubado.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep231.jpg",
+        "dataExibicao": "2005-05-01"
+    },
+    {
+        "id": 1166,
+        "numero": 232,
+        "titulo": "Companhia Galley-La! Uma Grande Visão: Doca 1!",
+        "sinopse": "Paulie aparece e recupera o dinheiro roubado de Usopp. A tripulação conhece a Doca 1 da Galley-La e descobre que o Going Merry não pode mais ser reparado.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep232.jpg",
+        "dataExibicao": "2005-05-15"
+    },
+    {
+        "id": 1167,
+        "numero": 233,
+        "titulo": "Incidente de Sequestro Pirata! Um Navio Pirata Esperando Apenas Seu Fim!",
+        "sinopse": "Luffy se recusa a acreditar que o Going Merry não pode ser consertado. Usopp desaparece e vai atrás da Família Franky após ter seu dinheiro roubado.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep233.jpg",
+        "dataExibicao": "2005-05-22"
+    },
+    {
+        "id": 1168,
+        "numero": 234,
+        "titulo": "Resgatando Nosso Amigo! Ataque à Casa Franky!",
+        "sinopse": "Luffy, Sanji, Zoro e Chopper seguem os rastros de Usopp até a Casa Franky e entram em confronto com a Família Franky.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep234.jpg",
+        "dataExibicao": "2005-06-05"
+    },
+    {
+        "id": 1169,
+        "numero": 235,
+        "titulo": "Grande Luta Sob a Lua! A Bandeira Pirata Balança com Tristeza!",
+        "sinopse": "Luffy conta a Usopp que o Going Merry não pode continuar navegando. Usopp acredita que o navio foi abandonado e decide deixar a tripulação.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep235.jpg",
+        "dataExibicao": "2005-06-12"
+    },
+    {
+        "id": 1170,
+        "numero": 236,
+        "titulo": "Luffy Contra Usopp! O Orgulho de Dois Homens Colide!",
+        "sinopse": "Usopp desafia Luffy em um duelo pelo Going Merry. Mesmo lutando com todas as suas forças, ele acaba derrotado pelo capitão.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep236.jpg",
+        "dataExibicao": "2005-06-19"
+    },
+    {
+        "id": 1171,
+        "numero": 237,
+        "titulo": "Um Forte Impacto Atinge a Cidade das Águas! Iceburg é o Alvo!",
+        "sinopse": "Iceburg é baleado e a Galley-La Company começa uma investigação. Luffy e Nami tentam descobrir o que aconteceu.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep237.jpg",
+        "dataExibicao": "2005-07-03"
+    },
+    {
+        "id": 1172,
+        "numero": 238,
+        "titulo": "Homem de Borracha Contra Ciborgue Cuspidor de Fogo!",
+        "sinopse": "Luffy enfrenta Franky enquanto Iceburg revela ter visto Nico Robin e outro homem antes do ataque.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep238.jpg",
+        "dataExibicao": "2005-07-10"
+    },
+    {
+        "id": 1173,
+        "numero": 239,
+        "titulo": "Os Piratas do Chapéu de Palha São Culpados? Os Protetores da Cidade das Águas!",
+        "sinopse": "A Galley-La suspeita dos Chapéus de Palha pelo ataque a Iceburg. Enquanto isso, Aqua Laguna se aproxima da cidade.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep239.jpg",
+        "dataExibicao": "2005-07-31"
+    },
+    {
+        "id": 1174,
+        "numero": 240,
+        "titulo": "Adeus Eterno? Nico Robin, a Mulher que Atrai a Escuridão!",
+        "sinopse": "Robin encontra membros da CP9 e revela a Sanji e Chopper que decidiu abandonar a tripulação.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep240.jpg",
+        "dataExibicao": "2005-08-07"
+    },
+    {
+        "id": 1175,
+        "numero": 241,
+        "titulo": "Capturem Robin! A Determinação dos Chapéus de Palha!",
+        "sinopse": "Luffy decide descobrir a verdade sobre Robin. A tripulação se prepara para ir atrás dela enquanto Usopp tenta proteger o Going Merry.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep241.jpg",
+        "dataExibicao": "2005-08-14"
+    },
+    {
+        "id": 1176,
+        "numero": 242,
+        "titulo": "O Tiro de Canhão é o Sinal! CP9 Entra em Ação!",
+        "sinopse": "Os Chapéus de Palha chegam à Galley-La enquanto Robin e a CP9 iniciam seu ataque contra Iceburg.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep242.jpg",
+        "dataExibicao": "2005-08-21"
+    },
+    {
+        "id": 1177,
+        "numero": 243,
+        "titulo": "CP9 Retira Suas Máscaras! Suas Verdadeiras Identidades Chocantes!",
+        "sinopse": "As verdadeiras identidades da CP9 são reveladas e o objetivo deles de obter as plantas da arma ancestral Pluton vem à tona.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep243.jpg",
+        "dataExibicao": "2005-09-04"
+    },
+    {
+        "id": 1178,
+        "numero": 244,
+        "titulo": "Laço Secreto! Iceburg e Franky!",
+        "sinopse": "É revelado que Franky é Cutty Flam, antigo amigo de Iceburg, e que possui as verdadeiras plantas de Pluton.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep244.jpg",
+        "dataExibicao": "2005-09-11"
+    },
+    {
+        "id": 1179,
+        "numero": 245,
+        "titulo": "Volte, Robin! Confronto com a CP9!",
+        "sinopse": "Luffy e os outros pedem para Robin voltar, mas ela decide seguir com a CP9 para proteger seus amigos.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep245.jpg",
+        "dataExibicao": "2005-09-18"
+    },
+    {
+        "id": 1180,
+        "numero": 246,
+        "titulo": "Os Chapéus de Palha Aniquilados? A Ameaça do Modelo Leopardo!",
+        "sinopse": "Lucci revela sua transformação da fruta Zoan do Leopardo e derrota rapidamente os Chapéus de Palha.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep246.jpg",
+        "dataExibicao": "2005-10-23"
+    },
+    {
+        "id": 1181,
+        "numero": 247,
+        "titulo": "O Homem Amado Até Pelo Seu Navio! As Lágrimas de Usopp!",
+        "sinopse": "Usopp descobre que o Going Merry possuía um espírito próprio e que foi ele quem consertou o navio em Skypiea.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep247.jpg",
+        "dataExibicao": "2005-10-30"
+    },
+    {
+        "id": 1182,
+        "numero": 248,
+        "titulo": "O Passado de Franky! O Dia em que o Trem Marítimo Começou a Rodar!",
+        "sinopse": "O passado de Franky é revelado, mostrando sua relação com Tom e Iceburg e a criação do Trem Marítimo.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep248.jpg",
+        "dataExibicao": "2005-11-06"
+    },
+    {
+        "id": 1183,
+        "numero": 264,
+        "titulo": "Operação de Invasão Começa! Avancem, Chapéus de Palha!",
+        "sinopse": "Os Chapéus de Palha elaboram um plano para resgatar Robin em Enies Lobby, mas Luffy acaba se precipitando e pode colocar toda a missão em risco.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep264.jpg",
+        "dataExibicao": "2006-05-21"
+    },
+    {
+        "id": 1184,
+        "numero": 265,
+        "titulo": "Luffy Avança! Grande Confronto na Ilha Judicial!",
+        "sinopse": "Luffy chega à ilha principal de Enies Lobby enquanto a Família Franky enfrenta dificuldades contra os gigantes que protegem o local.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep265.jpg",
+        "dataExibicao": "2006-06-04"
+    },
+    {
+        "id": 1185,
+        "numero": 266,
+        "titulo": "Batalha Contra Gigantes! Abram o Segundo Portão!",
+        "sinopse": "Luffy derrota centenas de marinheiros enquanto a Família Franky enfrenta um gigante. A CP9 informa Spandam sobre os acontecimentos.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep266.jpg",
+        "dataExibicao": "2006-06-11"
+    },
+    {
+        "id": 1186,
+        "numero": 267,
+        "titulo": "Encontre uma Saída! Rocketman Decola!",
+        "sinopse": "Com a ajuda de Yokozuna, o Rocketman parte em direção a Enies Lobby enfrentando soldados e obstáculos pelo caminho.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep267.jpg",
+        "dataExibicao": "2006-06-18"
+    },
+    {
+        "id": 1187,
+        "numero": 268,
+        "titulo": "Alcancem Luffy! A Batalha Total dos Chapéus de Palha!",
+        "sinopse": "Nami usa o Clima Tact para enfrentar os inimigos enquanto a Família Franky chega para ajudar usando monstros marinhos.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep268.jpg",
+        "dataExibicao": "2006-06-25"
+    },
+    {
+        "id": 1188,
+        "numero": 269,
+        "titulo": "Robin Traída! O Motivo do Governo Mundial!",
+        "sinopse": "Enquanto os Chapéus de Palha tentam chegar até Luffy, Robin revela parte do motivo pelo qual aceitou cooperar com o Governo Mundial.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep269.jpg",
+        "dataExibicao": "2006-06-25"
+    },
+    {
+        "id": 1189,
+        "numero": 270,
+        "titulo": "Devolvam Robin! Luffy Contra Blueno!",
+        "sinopse": "Luffy enfrenta Blueno e revela uma nova técnica de combate. Sogeking conquista a confiança de um gigante.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep270.jpg",
+        "dataExibicao": "2006-07-02"
+    },
+    {
+        "id": 1190,
+        "numero": 271,
+        "titulo": "Não Parem! Levantem o Sinal do Contra-Ataque!",
+        "sinopse": "Enquanto Luffy continua lutando contra Blueno, os agentes da CP9 começam a testar seus poderes de Frutas do Diabo.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep271.jpg",
+        "dataExibicao": "2006-07-09"
+    },
+    {
+        "id": 1191,
+        "numero": 272,
+        "titulo": "Quase Até Luffy! Reúnam-se na Praça do Tribunal!",
+        "sinopse": "Os Chapéus de Palha avançam pela ilha enquanto Luffy ativa sua nova forma para proteger seus amigos.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep272.jpg",
+        "dataExibicao": "2006-07-23"
+    },
+    {
+        "id": 1192,
+        "numero": 273,
+        "titulo": "Tudo Para Proteger Meus Amigos! Segunda Marcha Ativada!",
+        "sinopse": "Luffy derrota Blueno usando o Gear Second e deixa Spandam cada vez mais desesperado com a aproximação dos Chapéus de Palha.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep273.jpg",
+        "dataExibicao": "2006-07-30"
+    },
+    {
+        "id": 1193,
+        "numero": 274,
+        "titulo": "Diga que Quer Viver, Robin! O Grito dos Chapéus de Palha!",
+        "sinopse": "A tripulação finalmente encontra Robin, mas ela ainda acredita que precisa se sacrificar para proteger seus amigos.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep274.jpg",
+        "dataExibicao": "2006-08-06"
+    },
+    {
+        "id": 1194,
+        "numero": 275,
+        "titulo": "O Passado de Robin! A Garota Era Chamada de Demônio!",
+        "sinopse": "A infância de Robin em Ohara é revelada, mostrando sua busca pelo conhecimento proibido e seu encontro com um gigante amigável.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep275.jpg",
+        "dataExibicao": "2006-08-13"
+    },
+    {
+        "id": 1195,
+        "numero": 276,
+        "titulo": "Mãe e Filha Destinadas! O Nome da Mãe é Olvia!",
+        "sinopse": "Robin reencontra sua mãe Olvia durante a tragédia que se aproxima de Ohara.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep276.jpg",
+        "dataExibicao": "2006-09-10"
+    },
+    {
+        "id": 1196,
+        "numero": 277,
+        "titulo": "A Tragédia de Ohara! O Terror do Buster Call!",
+        "sinopse": "O passado de Ohara é revelado e o Governo Mundial inicia o terrível Buster Call contra a ilha dos estudiosos.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep277.jpg",
+        "dataExibicao": "2006-09-24"
+    },
+    {
+        "id": 1197,
+        "numero": 278,
+        "titulo": "Diga que Quer Viver! Nós Somos Seus Amigos!",
+        "sinopse": "A história de Robin chega ao fim e Luffy declara guerra ao Governo Mundial para salvá-la.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep278.jpg",
+        "dataExibicao": "2006-09-24"
+    },
+    {
+        "id": 1198,
+        "numero": 279,
+        "titulo": "Salte em Direção às Cataratas! Os Sentimentos de Luffy!",
+        "sinopse": "Antes da batalha continuar, Luffy relembra sua infância e o homem que inspirou seu sonho de se tornar pirata.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep279.jpg",
+        "dataExibicao": "2006-10-01"
+    },
+    {
+        "id": 1199,
+        "numero": 280,
+        "titulo": "O Caminho dos Homens! As Técnicas de Zoro e o Sonho de Usopp!",
+        "sinopse": "Zoro relembra seu primeiro encontro com Luffy e Usopp recorda os acontecimentos que o levaram a entrar para a tripulação.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep280.jpg",
+        "dataExibicao": "2006-10-08"
+    },
+    {
+        "id": 1200,
+        "numero": 281,
+        "titulo": "Um Laço de Amizade Construído pelas Lágrimas! O Mapa Mundial de Nami!",
+        "sinopse": "O passado de Nami e sua luta contra Arlong são relembrados durante a batalha por Robin.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep281.jpg",
+        "dataExibicao": "2006-10-15"
+    },
+    {
+        "id": 1201,
+        "numero": 282,
+        "titulo": "A Separação Torna um Homem Mais Forte! Sanji e Chopper!",
+        "sinopse": "As histórias de Sanji e Chopper são relembradas enquanto a tripulação luta para salvar Robin.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep282.jpg",
+        "dataExibicao": "2006-10-22"
+    },
+    {
+        "id": 1202,
+        "numero": 283,
+        "titulo": "Tudo é Por Seus Amigos! Robin na Escuridão!",
+        "sinopse": "A verdadeira razão pela qual Robin aceitou cooperar com a CP9 é revelada, mostrando seu desejo de proteger seus amigos.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep283.jpg",
+        "dataExibicao": "2006-10-29"
+    },
+    {
+        "id": 1203,
+        "numero": 284,
+        "titulo": "Eu Não Vou Entregar os Projetos! A Decisão de Franky!",
+        "sinopse": "Franky enfrenta Spandam e destrói aquilo que o Governo Mundial mais deseja, enquanto os Chapéus de Palha avançam para salvar Robin.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep284.jpg",
+        "dataExibicao": "2006-11-05"
+    },
+    {
+        "id": 1204,
+        "numero": 285,
+        "titulo": "Recuperem as 5 Chaves! O Bando do Chapéu de Palha Contra a CP9!",
+        "sinopse": "Luffy corre para salvar Robin enquanto os outros membros da tripulação procuram as cinco chaves necessárias para libertá-la.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep285.jpg",
+        "dataExibicao": "2006-11-12"
+    },
+    {
+        "id": 1205,
+        "numero": 286,
+        "titulo": "O Poder da Fruta do Diabo! Kaku e Jabura se Transformam!",
+        "sinopse": "Kaku e Jabura revelam seus poderes de Akuma no Mi enquanto os Chapéus de Palha enfrentam os assassinos da CP9.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep286.jpg",
+        "dataExibicao": "2006-11-19"
+    },
+    {
+        "id": 1206,
+        "numero": 287,
+        "titulo": "Eu Não Vou Chutar Nem Que Isso Custe Minha Vida! O Cavalheirismo de Sanji!",
+        "sinopse": "Sanji enfrenta Kalifa, mas sua incapacidade de lutar contra mulheres coloca sua vida em perigo.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep287.jpg",
+        "dataExibicao": "2006-11-26"
+    },
+    {
+        "id": 1207,
+        "numero": 288,
+        "titulo": "O Erro de Cálculo de Fukurou! Minha Cola é a Água da Vida!",
+        "sinopse": "Franky demonstra sua força usando cola como combustível, enquanto Luffy descobre um caminho secreto até Robin.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep288.jpg",
+        "dataExibicao": "2006-12-03"
+    },
+    {
+        "id": 1208,
+        "numero": 289,
+        "titulo": "Zoro Libera uma Nova Técnica! O Nome da Espada é Sniperking?",
+        "sinopse": "Zoro luta contra seus inimigos enquanto Usopp e Sanji tentam escapar de uma situação complicada.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep289.jpg",
+        "dataExibicao": "2006-12-10"
+    },
+    {
+        "id": 1209,
+        "numero": 290,
+        "titulo": "Fora de Controle! O Rumble Ball Proibido de Chopper!",
+        "sinopse": "Chopper usa uma terceira Rumble Ball para enfrentar um inimigo poderoso, colocando seu próprio corpo em risco.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep290.jpg",
+        "dataExibicao": "2006-12-17"
+    },
+    {
+        "id": 1210,
+        "numero": 291,
+        "titulo": "O Retorno do Chefe Luffy! É Sonho ou Realidade? Confusão na Loteria!",
+        "sinopse": "Uma aventura especial leva os Chapéus de Palha para uma história no Japão antigo cheia de confusões.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep291.jpg",
+        "dataExibicao": "2006-12-24"
+    },
+    {
+        "id": 1211,
+        "numero": 292,
+        "titulo": "Uma Grande Corrida de Bolos de Arroz no Castelo! O Plano de Nariz Vermelho!",
+        "sinopse": "Luffy e seus amigos participam de uma competição maluca envolvendo personagens conhecidos e um grande tesouro.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep292.jpg",
+        "dataExibicao": "2007-01-07"
+    },
+    {
+        "id": 1212,
+        "numero": 293,
+        "titulo": "Mestra das Bolhas Kalifa! A Armadilha de Sabão Fecha Sobre Nami!",
+        "sinopse": "Nami enfrenta Kalifa e suas bolhas perigosas enquanto Luffy continua sua busca por Robin.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep293.jpg",
+        "dataExibicao": "2007-01-14"
+    },
+    {
+        "id": 1213,
+        "numero": 294,
+        "titulo": "Notícia Ruim em Alto e Bom Som! O Buster Call é Invocado!",
+        "sinopse": "Spandam acidentalmente ativa o terrível Buster Call enquanto os Chapéus de Palha continuam sua luta em Enies Lobby.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep294.jpg",
+        "dataExibicao": "2007-01-21"
+    },
+    {
+        "id": 1214,
+        "numero": 295,
+        "titulo": "Cinco Namis?! Nami Contra-Ataca com Miragens!",
+        "sinopse": "Nami usa sua inteligência e novas habilidades para enfrentar Kalifa e seu poderoso ataque de bolhas.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep295.jpg",
+        "dataExibicao": "2007-01-28"
+    },
+    {
+        "id": 1215,
+        "numero": 296,
+        "titulo": "A Decisão de Nami! Atire no Chopper Fora de Controle!",
+        "sinopse": "Nami e Franky tentam encontrar uma maneira de parar Chopper após ele perder o controle de sua transformação.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep296.jpg",
+        "dataExibicao": "2007-02-04"
+    },
+    {
+        "id": 1216,
+        "numero": 297,
+        "titulo": "Sanji Caçador Entra em Cena? Uma Elegia para um Lobo Mentiroso!",
+        "sinopse": "Sanji retorna à batalha para ajudar seus companheiros enquanto Usopp tenta superar seus próprios limites.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep297.jpg",
+        "dataExibicao": "2007-02-11"
+    },
+    {
+        "id": 1217,
+        "numero": 298,
+        "titulo": "Chutes Flamejantes! O Estilo Completo de Chutes de Sanji!",
+        "sinopse": "Sanji revela sua nova técnica, Diable Jambe, e aumenta o poder de seus ataques contra Jabura.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep298.jpg",
+        "dataExibicao": "2007-02-25"
+    },
+    {
+        "id": 1218,
+        "numero": 299,
+        "titulo": "Ataques de Espada Ferozes! Zoro Contra Kaku, Um Duelo Poderoso!",
+        "sinopse": "Zoro enfrenta Kaku em uma batalha intensa de espadas enquanto Luffy continua sua luta contra Lucci.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep299.jpg",
+        "dataExibicao": "2007-03-04"
+    },
+    {
+        "id": 1219,
+        "numero": 300,
+        "titulo": "Zoro, o Deus Demônio! O Nascimento da Técnica Asura!",
+        "sinopse": "Zoro libera sua poderosa técnica Asura enquanto Luffy usa o Gear Second para continuar enfrentando Lucci.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep300.jpg",
+        "dataExibicao": "2007-03-11"
+    },
+    {
+        "id": 1220,
+        "numero": 301,
+        "titulo": "Spandam Apavorado! O Herói na Torre da Lei!",
+        "sinopse": "Spandam tenta levar Robin até os portões da justiça enquanto os Chapéus de Palha continuam avançando.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep301.jpg",
+        "dataExibicao": "2007-03-18"
+    },
+    {
+        "id": 1221,
+        "numero": 302,
+        "titulo": "Robin Libertada! Luffy Contra Lucci, O Confronto dos Líderes!",
+        "sinopse": "Luffy enfrenta Lucci em uma batalha decisiva enquanto o Buster Call começa a destruir Enies Lobby.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep302.jpg",
+        "dataExibicao": "2007-03-25"
+    },
+    {
+        "id": 1222,
+        "numero": 303,
+        "titulo": "Chefe Luffy é o Culpado? Procurem a Grande Árvore de Cerejeira Perdida!",
+        "sinopse": "Um episódio especial mostra Luffy e seus amigos em uma aventura diferente cheia de confusão.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep303.jpg",
+        "dataExibicao": "2007-04-01"
+    },
+    {
+        "id": 1223,
+        "numero": 304,
+        "titulo": "Eu Não Posso Proteger Ninguém Se Eu Não Vencer! Terceiro Gear Ativado!",
+        "sinopse": "Luffy usa o Gear Third em sua luta contra Lucci para proteger seus amigos.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep304.jpg",
+        "dataExibicao": "2007-04-08"
+    },
+    {
+        "id": 1224,
+        "numero": 305,
+        "titulo": "O Passado Assustador! Justiça Sombria e Rob Lucci!",
+        "sinopse": "O passado sombrio de Rob Lucci é revelado, mostrando como ele desenvolveu sua visão cruel de justiça. Enquanto isso, Luffy continua sua batalha contra Lucci.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep305.jpg",
+        "dataExibicao": "2007-04-15"
+    },
+    {
+        "id": 1225,
+        "numero": 306,
+        "titulo": "Uma Misteriosa Sereia Aparece? Conforme a Consciência Desaparece...",
+        "sinopse": "Luffy sofre as consequências de seu poderoso ataque contra Lucci, enquanto Robin retorna à luta e os Chapéus de Palha tentam sobreviver.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep306.jpg",
+        "dataExibicao": "2007-04-22"
+    },
+    {
+        "id": 1226,
+        "numero": 307,
+        "titulo": "O Canhão Afunda a Ilha! O Lamento de Franky!",
+        "sinopse": "Graças à ajuda inesperada de uma criatura misteriosa, os Chapéus de Palha conseguem se reunir, mas o destino de Luffy e Franky ainda é incerto.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep307.jpg",
+        "dataExibicao": "2007-04-29"
+    },
+    {
+        "id": 1227,
+        "numero": 308,
+        "titulo": "Espere por Luffy! Combate Mortal na Ponte da Hesitação!",
+        "sinopse": "Luffy leva seu corpo ao limite na batalha contra Lucci, enquanto seus companheiros enfrentam a Marinha esperando pelo retorno do capitão.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep308.jpg",
+        "dataExibicao": "2007-05-06"
+    },
+    {
+        "id": 1228,
+        "numero": 309,
+        "titulo": "Punhos Cheios de Emoção! Luffy Libera o Gatling com Toda Sua Força!",
+        "sinopse": "Após ser derrotado e quase sem forças, Luffy encontra inspiração nas palavras de Usopp e realiza seu último ataque contra Lucci.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep309.jpg",
+        "dataExibicao": "2007-05-13"
+    },
+    {
+        "id": 1229,
+        "numero": 310,
+        "titulo": "Do Mar Surge um Amigo! Os Chapéus de Palha Compartilham o Laço Mais Forte!",
+        "sinopse": "Com Luffy exausto e o navio de fuga destruído, os Chapéus de Palha encontram uma única alternativa para escapar.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep310.jpg",
+        "dataExibicao": "2007-05-20"
+    },
+    {
+        "id": 1230,
+        "numero": 311,
+        "titulo": "Todos Fazem uma Grande Fuga! O Caminho da Vitória é dos Piratas!",
+        "sinopse": "Os Chapéus de Palha são salvos por um velho amigo e precisam escapar do ataque da Marinha para sobreviver.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep311.jpg",
+        "dataExibicao": "2007-05-27"
+    },
+    {
+        "id": 1231,
+        "numero": 312,
+        "titulo": "Obrigado, Merry! A Neve Cai Sobre o Mar da Despedida!",
+        "sinopse": "Os Chapéus de Palha se despedem do Going Merry em um dos momentos mais emocionantes de sua jornada.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep312.jpg",
+        "dataExibicao": "2007-06-03"
+    },
+    {
+        "id": 1232,
+        "numero": 313,
+        "titulo": "A Paz é Interrompida! Um Vice-Almirante da Marinha com Punho de Amor!",
+        "sinopse": "Depois da batalha em Enies Lobby, os Chapéus de Palha descansam enquanto um poderoso vice-almirante chega atrás de Luffy.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep313.jpg",
+        "dataExibicao": "2007-06-10"
+    },
+    {
+        "id": 1233,
+        "numero": 314,
+        "titulo": "A Família Mais Forte? O Pai de Luffy é Revelado!",
+        "sinopse": "Os amigos de Luffy descobrem a identidade de seu avô e ficam ainda mais chocados ao conhecer a verdade sobre seu pai.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep314.jpg",
+        "dataExibicao": "2007-06-17"
+    },
+    {
+        "id": 1234,
+        "numero": 315,
+        "titulo": "Seu Nome é Novo Mundo! O Destino da Grand Line!",
+        "sinopse": "Luffy reencontra antigos amigos enquanto novas ameaças surgem e o passado de Robin volta a assombrá-la.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep315.jpg",
+        "dataExibicao": "2007-06-24"
+    },
+    {
+        "id": 1235,
+        "numero": 316,
+        "titulo": "Shanks Faz um Movimento! A Peça-Chave da Era dos Piratas!",
+        "sinopse": "Shanks visita Barba Branca com um importante pedido enquanto as notícias de Enies Lobby se espalham pelo mundo.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep316.jpg",
+        "dataExibicao": "2007-07-01"
+    },
+    {
+        "id": 1236,
+        "numero": 317,
+        "titulo": "Uma Garota em Busca de Seu Yagara! Grande Busca na Cidade da Água!",
+        "sinopse": "Luffy e Chopper ajudam uma garota que perdeu seu querido yagara e embarcam em uma nova aventura pela Cidade da Água.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep317.jpg",
+        "dataExibicao": "2007-07-08"
+    },
+    {
+        "id": 1237,
+        "numero": 318,
+        "titulo": "Mães São Fortes! As Tarefas Domésticas Agitadas de Zoro!",
+        "sinopse": "Zoro acaba envolvido em uma confusão enquanto procura uma nova espada e precisa lidar com crianças travessas.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep318.jpg",
+        "dataExibicao": "2007-07-15"
+    },
+    {
+        "id": 1238,
+        "numero": 319,
+        "titulo": "O Choque de Sanji! Um Velho Misterioso e Sua Cozinha Deliciosa!",
+        "sinopse": "Sanji conhece um velho cozinheiro que lhe ensina novos segredos para preparar pratos ainda mais saborosos.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep319.jpg",
+        "dataExibicao": "2007-07-22"
+    },
+    {
+        "id": 1239,
+        "numero": 320,
+        "titulo": "Finalmente Todos Têm Recompensa! Um Bando de Piratas Vale Mais de 600 Milhões!",
+        "sinopse": "As novas recompensas dos Chapéus de Palha são reveladas, mostrando o quanto o mundo passou a temê-los.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep320.jpg",
+        "dataExibicao": "2007-08-19"
+    },
+    {
+        "id": 1240,
+        "numero": 321,
+        "titulo": "O Rei dos Animais que Domina o Mar! O Magnífico Navio dos Sonhos Está Completo!",
+        "sinopse": "O novo navio dos Chapéus de Palha fica pronto e todos se preparam para uma nova jornada pelos mares.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep321.jpg",
+        "dataExibicao": "2007-08-26"
+    },
+    {
+        "id": 1241,
+        "numero": 322,
+        "titulo": "Adeus Meus Queridos Subordinados! Franky Parte!",
+        "sinopse": "Franky se despede da Família Franky e toma a difícil decisão de seguir viagem junto dos Chapéus de Palha.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep322.jpg",
+        "dataExibicao": "2007-09-02"
+    },
+    {
+        "id": 1242,
+        "numero": 323,
+        "titulo": "Partindo da Cidade da Água! Usopp Assume Sua Responsabilidade e Encerra a Disputa!",
+        "sinopse": "Usopp retorna ao bando após reconhecer seus erros e os Chapéus de Palha finalmente deixam Water Seven.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep323.jpg",
+        "dataExibicao": "2007-09-09"
+    },
+    {
+        "id": 1243,
+        "numero": 324,
+        "titulo": "Cartazes de Procurado Pelo Mundo! Celebrações Enquanto o Navio Avança!",
+        "sinopse": "As novas recompensas dos Chapéus de Palha se espalham pelo mundo enquanto o novo navio inicia sua jornada.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep324.jpg",
+        "dataExibicao": "2007-09-16"
+    },
+    {
+        "id": 1244,
+        "numero": 325,
+        "titulo": "O Poder Mais Terrível! A Escuridão do Barba Negra Ataca Ace!",
+        "sinopse": "Ace enfrenta Barba Negra em uma batalha decisiva entre o poder das chamas e a escuridão.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep325.jpg",
+        "dataExibicao": "2007-09-23"
+    },
+    {
+        "id": 1245,
+        "numero": 326,
+        "titulo": "O Misterioso Bando de Piratas! Sunny e a Armadilha Perigosa!",
+        "sinopse": "Os Chapéus de Palha encontram um navio à deriva e acabam descobrindo uma perigosa armadilha.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep326.jpg",
+        "dataExibicao": "2007-10-14"
+    },
+    {
+        "id": 1246,
+        "numero": 327,
+        "titulo": "Sunny em Perigo! Rugido, Mecha Secreto de Super Velocidade!",
+        "sinopse": "O Thousand Sunny enfrenta problemas enquanto Chopper tenta ajudar uma pessoa doente que precisa de cuidados.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep327.jpg",
+        "dataExibicao": "2007-10-21"
+    },
+    {
+        "id": 1247,
+        "numero": 328,
+        "titulo": "O Sonho Afundando no Novo Mundo! O Pirata Desiludido Puzzle!",
+        "sinopse": "Os Chapéus de Palha encontram um pirata que perdeu sua vontade de lutar e acabam presos em uma situação perigosa.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep328.jpg",
+        "dataExibicao": "2007-10-28"
+    },
+    {
+        "id": 1248,
+        "numero": 329,
+        "titulo": "Os Assassinos Atacam! A Grande Batalha no Gelo Começa!",
+        "sinopse": "Os Chapéus de Palha enfrentam caçadores de recompensa em uma batalha congelante.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep329.jpg",
+        "dataExibicao": "2007-11-04"
+    },
+    {
+        "id": 1249,
+        "numero": 330,
+        "titulo": "A Difícil Batalha dos Chapéus de Palha! Uma Alma Pirata Arriscando Tudo Pela Bandeira!",
+        "sinopse": "Os Chapéus de Palha enfrentam uma batalha para recuperar sua bandeira enquanto enfrentam novos inimigos no caminho.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep330.jpg",
+        "dataExibicao": "2007-11-11"
+    },
+    {
+        "id": 1250,
+        "numero": 331,
+        "titulo": "A Toda Velocidade! O Poder Magnético dos Gêmeos se Aproxima!",
+        "sinopse": "Luffy enfrenta dois irmãos com poderes magnéticos enquanto os outros Chapéus de Palha lidam com seus próprios desafios.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep331.jpg",
+        "dataExibicao": "2007-11-18"
+    },
+    {
+        "id": 1251,
+        "numero": 332,
+        "titulo": "Mansão de Grande Caos! O Furioso Don e o Bando Capturado!",
+        "sinopse": "Os Chapéus de Palha enfrentam uma situação caótica em uma mansão enquanto tentam libertar seus companheiros.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep332.jpg",
+        "dataExibicao": "2007-11-25"
+    },
+    {
+        "id": 1252,
+        "numero": 333,
+        "titulo": "O Retorno da Fênix! O Sonho da Bandeira Pirata Jurada a um Amigo!",
+        "sinopse": "Luffy continua sua luta enquanto seus companheiros tentam recuperar a bandeira dos Chapéus de Palha.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep333.jpg",
+        "dataExibicao": "2007-12-02"
+    },
+    {
+        "id": 1253,
+        "numero": 334,
+        "titulo": "A Batalha Decisiva em Chamas! Luffy Contra o Don Ardente!",
+        "sinopse": "Luffy enfrenta um poderoso adversário enquanto a batalha pelo destino da bandeira chega ao seu momento final.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep334.jpg",
+        "dataExibicao": "2007-12-09"
+    },
+    {
+        "id": 1254,
+        "numero": 335,
+        "titulo": "Esperando no Novo Mundo! Adeus aos Piratas Bravos!",
+        "sinopse": "A aventura contra os piratas rivais chega ao fim e os Chapéus de Palha seguem novamente em direção ao Novo Mundo.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep335.jpg",
+        "dataExibicao": "2007-12-16"
+    },
+    {
+        "id": 1255,
+        "numero": 336,
+        "titulo": "Chopperman ao Resgate! Proteja a Estação de TV na Costa!",
+        "sinopse": "Um episódio especial mostra Chopperman como herói em uma aventura cheia de humor para salvar uma estação de televisão.",
+        "temporadaId": 9,
+        "animeId": 60,
+        "imagemUrl": "../../images/episodios/one-piece/t9/ep336.jpg",
+        "dataExibicao": "2007-12-23"
+    }
 ]
