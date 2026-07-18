@@ -9198,5 +9198,145 @@
     "animeId": 48,
     "imagemUrl": "../../images/episodios/horimiya/t2/ep13.jpg",
     "dataExibicao": "2023-09-23"
+  },
+  {
+    "id": 921,
+    "numero": 1,
+    "titulo": "Bocchi Solitária",
+    "sinopse": "Hitori Gotou, uma garota extremamente tímida, começa a tocar guitarra na esperança de fazer amigos. Porém, sua ansiedade social torna esse objetivo muito mais difícil do que imaginava.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep1.jpg",
+    "dataExibicao": "2022-10-09"
+  },
+  {
+    "id": 922,
+    "numero": 2,
+    "titulo": "Até Amanhã",
+    "sinopse": "Nijika sugere que a Kessoku Band trabalhe meio período na casa de shows Starry para juntar dinheiro para suas futuras apresentações.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep2.jpg",
+    "dataExibicao": "2022-10-16"
+  },
+  {
+    "id": 923,
+    "numero": 3,
+    "titulo": "Já Estou Indo",
+    "sinopse": "Bocchi tenta convencer sua colega de classe Kita a voltar para a banda e assumir os vocais.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep3.jpg",
+    "dataExibicao": "2022-10-23"
+  },
+  {
+    "id": 924,
+    "numero": 4,
+    "titulo": "Garotas Saltitantes",
+    "sinopse": "Enquanto Bocchi enfrenta dificuldades para escrever a letra da primeira música da banda, Nijika organiza um passeio especial para aproximar as integrantes.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep4.jpg",
+    "dataExibicao": "2022-10-30"
+  },
+  {
+    "id": 925,
+    "numero": 5,
+    "titulo": "Peixe Sem Asas",
+    "sinopse": "Com sua primeira música pronta, a Kessoku Band se prepara para um novo show, mas Seika ainda não acredita que elas estejam prontas.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep5.jpg",
+    "dataExibicao": "2022-11-06"
+  },
+  {
+    "id": 926,
+    "numero": 6,
+    "titulo": "Oito Paisagens",
+    "sinopse": "Bocchi sofre para vender ingressos para o próximo show, até conhecer uma musicista bastante excêntrica que muda sua perspectiva.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep6.jpg",
+    "dataExibicao": "2022-11-13"
+  },
+  {
+    "id": 927,
+    "numero": 7,
+    "titulo": "Na Sua Casa",
+    "sinopse": "As integrantes da banda visitam a casa de Bocchi para criar estampas de camisetas, proporcionando sua primeira verdadeira reunião entre amigas.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep7.jpg",
+    "dataExibicao": "2022-11-20"
+  },
+  {
+    "id": 928,
+    "numero": 8,
+    "titulo": "Bocchi the Rock!",
+    "sinopse": "A chuva ameaça comprometer a mais recente apresentação da Kessoku Band, colocando o entusiasmo e a confiança do grupo à prova.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep8.jpg",
+    "dataExibicao": "2022-11-27"
+  },
+  {
+    "id": 929,
+    "numero": 9,
+    "titulo": "Escadaria de Enoshima",
+    "sinopse": "Antes do retorno às aulas, as garotas fazem um passeio para Enoshima em busca de diversão, descanso e novas lembranças.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep9.jpg",
+    "dataExibicao": "2022-12-04"
+  },
+  {
+    "id": 930,
+    "numero": 10,
+    "titulo": "Depois do Anoitecer",
+    "sinopse": "Bocchi hesita em participar da apresentação no festival cultural da escola, mas recebe um incentivo inesperado de Kikuri.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep10.jpg",
+    "dataExibicao": "2022-12-11"
+  },
+  {
+    "id": 931,
+    "numero": 11,
+    "titulo": "Pôr do Sol Duodecimal",
+    "sinopse": "O festival cultural começa, e as integrantes da Kessoku Band tentam encontrar Bocchi antes da tão aguardada apresentação.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep11.jpg",
+    "dataExibicao": "2022-12-18"
+  },
+  {
+    "id": 932,
+    "numero": 12,
+    "titulo": "A Luz da Manhã Cai Sobre Você",
+    "sinopse": "Chega o momento da apresentação da Kessoku Band no festival cultural. Apesar dos imprevistos, Bocchi e suas amigas dão tudo de si no palco.",
+    "temporadaId": 1,
+    "animeId": 49,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock/t1/ep12.jpg",
+    "dataExibicao": "2022-12-25"
+  },
+  {
+    "id": 933,
+    "numero": 1,
+    "titulo": "Bocchi the Rock! Re:",
+    "sinopse": "Primeiro filme compilatório de Bocchi the Rock!, recontando o início da jornada de Hitori Gotou, sua entrada na Kessoku Band e os primeiros desafios enfrentados pelo grupo, com cenas remasterizadas e novos trechos de animação.",
+    "temporadaId": 2,
+    "animeId": 50,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock-re/filme/ep1.jpg",
+    "dataExibicao": "2024-06-07"
+  },
+  {
+    "id": 934,
+    "numero": 1,
+    "titulo": "Bocchi the Rock! Re:Re:",
+    "sinopse": "Segundo filme compilatório que conclui a adaptação da primeira temporada, acompanhando a evolução da Kessoku Band até a inesquecível apresentação no festival cultural, trazendo cenas inéditas e uma nova sequência pós-créditos.",
+    "temporadaId": 3,
+    "animeId": 51,
+    "imagemUrl": "../../images/episodios/bocchi-the-rock-rere/filme/ep2.jpg",
+    "dataExibicao": "2024-08-09"
   }
 ]
