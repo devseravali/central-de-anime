@@ -8718,5 +8718,225 @@
     "animeId": 45,
     "imagemUrl": "../../images/episodios/sword-art-online/t4/ep23.jpg",
     "dataExibicao": "2020-09-20"
+  },
+  {
+    "id": 873,
+    "numero": 1,
+    "titulo": "Monótono / Colorido",
+    "sinopse": "A vida de Kousei perdeu o brilho após a morte de sua mãe. Tudo começa a mudar quando ele conhece a violinista Kaori Miyazono.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep1.jpg",
+    "dataExibicao": "2014-10-10"
+  },
+  {
+    "id": 874,
+    "numero": 2,
+    "titulo": "Amigo A",
+    "sinopse": "Kousei assiste à apresentação de Kaori e fica impressionado com seu jeito livre e apaixonado de tocar violino.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep2.jpg",
+    "dataExibicao": "2014-10-17"
+  },
+  {
+    "id": 875,
+    "numero": 3,
+    "titulo": "Dentro da Primavera",
+    "sinopse": "Enquanto passa mais tempo com Kaori, Kousei relembra seu passado e enfrenta seus traumas ligados ao piano.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep3.jpg",
+    "dataExibicao": "2014-10-24"
+  },
+  {
+    "id": 876,
+    "numero": 4,
+    "titulo": "Partida",
+    "sinopse": "Kousei sobe ao palco para acompanhar Kaori em uma apresentação decisiva, apesar de suas inseguranças.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep4.jpg",
+    "dataExibicao": "2014-10-31"
+  },
+  {
+    "id": 877,
+    "numero": 5,
+    "titulo": "Céus Cinzentos",
+    "sinopse": "Após um acidente, Kaori precisa se recuperar, enquanto novos sentimentos começam a surgir entre seus amigos.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep5.jpg",
+    "dataExibicao": "2014-11-07"
+  },
+  {
+    "id": 878,
+    "numero": 6,
+    "titulo": "No Caminho de Casa",
+    "sinopse": "Kaori incentiva Kousei a voltar a confiar em sua música, enquanto Tsubaki tenta entender seus próprios sentimentos.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep6.jpg",
+    "dataExibicao": "2014-11-14"
+  },
+  {
+    "id": 879,
+    "numero": 7,
+    "titulo": "As Sombras Sussurram",
+    "sinopse": "O Concurso de Música Maihou começa e antigos rivais de Kousei retornam para enfrentá-lo.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep7.jpg",
+    "dataExibicao": "2014-11-21"
+  },
+  {
+    "id": 880,
+    "numero": 8,
+    "titulo": "Deixe Ressoar",
+    "sinopse": "Takeshi e Emi revelam as razões que os motivam a competir contra Kousei no piano.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep8.jpg",
+    "dataExibicao": "2014-11-28"
+  },
+  {
+    "id": 881,
+    "numero": 9,
+    "titulo": "Ressonância",
+    "sinopse": "Chega a vez de Kousei subir ao palco e enfrentar seus traumas diante do público.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep9.jpg",
+    "dataExibicao": "2014-12-05"
+  },
+  {
+    "id": 882,
+    "numero": 10,
+    "titulo": "A Paisagem que Compartilhei com Você",
+    "sinopse": "Mesmo sem conseguir ouvir corretamente as notas, Kousei busca forças nas lembranças ao lado de Kaori.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep10.jpg",
+    "dataExibicao": "2014-12-12"
+  },
+  {
+    "id": 883,
+    "numero": 11,
+    "titulo": "Luz da Vida",
+    "sinopse": "Os resultados da competição são divulgados e o talento de Kousei volta a chamar a atenção de todos.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep11.jpg",
+    "dataExibicao": "2014-12-19"
+  },
+  {
+    "id": 884,
+    "numero": 12,
+    "titulo": "Brilha, Brilha, Estrelinha",
+    "sinopse": "Durante as férias de verão, Kousei e Kaori se preparam para um concerto especial enquanto o futuro preocupa seus amigos.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep12.jpg",
+    "dataExibicao": "2015-01-09"
+  },
+  {
+    "id": 885,
+    "numero": 13,
+    "titulo": "A Tristeza do Amor",
+    "sinopse": "Kousei sobe ao palco sozinho e encara as lembranças de sua mãe durante uma apresentação emocionante.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep13.jpg",
+    "dataExibicao": "2015-01-16"
+  },
+  {
+    "id": 886,
+    "numero": 14,
+    "titulo": "Passos",
+    "sinopse": "Enquanto Kaori permanece internada, Kousei decide seguir um novo caminho para seu futuro como músico.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep14.jpg",
+    "dataExibicao": "2015-01-23"
+  },
+  {
+    "id": 887,
+    "numero": 15,
+    "titulo": "Mentiroso",
+    "sinopse": "Tsubaki teme ficar para trás enquanto Kousei luta para enfrentar a realidade da condição de Kaori.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep15.jpg",
+    "dataExibicao": "2015-01-30"
+  },
+  {
+    "id": 888,
+    "numero": 16,
+    "titulo": "Dois Iguais",
+    "sinopse": "Kousei reencontra Kaori e começa a orientar a jovem pianista Nagi em sua preparação musical.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep16.jpg",
+    "dataExibicao": "2015-02-06"
+  },
+  {
+    "id": 889,
+    "numero": 17,
+    "titulo": "Crepúsculo",
+    "sinopse": "Nagi enfrenta a pressão antes de sua apresentação enquanto aprende importantes lições com Kousei.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep17.jpg",
+    "dataExibicao": "2015-02-13"
+  },
+  {
+    "id": 890,
+    "numero": 18,
+    "titulo": "Corações Unidos",
+    "sinopse": "Kousei acompanha Nagi no palco e a incentiva a tocar com toda a sua emoção.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep18.jpg",
+    "dataExibicao": "2015-02-20"
+  },
+  {
+    "id": 891,
+    "numero": 19,
+    "titulo": "Adeus, Herói",
+    "sinopse": "Após a apresentação de Kousei, Takeshi sobe ao palco decidido a transmitir seus verdadeiros sentimentos através da música.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep19.jpg",
+    "dataExibicao": "2015-02-27"
+  },
+  {
+    "id": 892,
+    "numero": 20,
+    "titulo": "De Mãos Dadas",
+    "sinopse": "Tsubaki confronta seus sentimentos por Kousei enquanto ele continua evitando visitar Kaori no hospital.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep20.jpg",
+    "dataExibicao": "2015-03-06"
+  },
+  {
+    "id": 893,
+    "numero": 21,
+    "titulo": "Neve",
+    "sinopse": "A piora no estado de saúde de Kaori abala profundamente Kousei, colocando novamente sua música em risco.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep21.jpg",
+    "dataExibicao": "2015-03-13"
+  },
+  {
+    "id": 894,
+    "numero": 22,
+    "titulo": "Vento da Primavera",
+    "sinopse": "Enquanto Kaori passa por uma delicada cirurgia, Kousei recebe uma carta que mudará sua vida para sempre.",
+    "temporadaId": 1,
+    "animeId": 46,
+    "imagemUrl": "../../images/episodios/your-lie-in-april/t1/ep22.jpg",
+    "dataExibicao": "2015-03-20"
   }
 ]
