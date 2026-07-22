@@ -21338,5 +21338,455 @@
         "animeId": 74,
         "imagemUrl": "../../images/episodios/one-piece/t23/ep1181.jpg",
         "dataExibicao": "2026-10-04"
+    },
+    {
+        "id": 2135,
+        "numero": 1,
+        "titulo": "A Nova Ameaça",
+        "sinopse": "A vida tranquila de Goku com sua família e amigos está prestes a ser interrompida. Uma nova ameaça poderosa e misteriosa se aproxima da Terra.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep1.jpg",
+        "dataExibicao": "1989-04-26"
+    },
+    {
+        "id": 2136,
+        "numero": 2,
+        "titulo": "Reencontros",
+        "sinopse": "Goku e Gohan participam de um reencontro na Ilha da Tartaruga, onde Goku apresenta seu filho aos antigos amigos. Porém, a chegada inesperada de Raditz muda tudo.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep2.jpg",
+        "dataExibicao": "1989-05-03"
+    },
+    {
+        "id": 2137,
+        "numero": 3,
+        "titulo": "Aliança Improvável",
+        "sinopse": "Após Raditz sequestrar Gohan, Goku precisa se unir ao seu antigo inimigo Piccolo para tentar derrotar o poderoso Saiyajin.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep3.jpg",
+        "dataExibicao": "1989-05-10"
+    },
+    {
+        "id": 2138,
+        "numero": 4,
+        "titulo": "O Plano de Piccolo",
+        "sinopse": "Piccolo revela uma técnica capaz de derrotar Raditz, mas precisa de tempo para preparar seu ataque enquanto Goku enfrenta o inimigo sozinho.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep4.jpg",
+        "dataExibicao": "1989-05-17"
+    },
+    {
+        "id": 2139,
+        "numero": 5,
+        "titulo": "A Fúria de Gohan",
+        "sinopse": "Gohan libera uma força surpreendente em um momento de raiva, mostrando um poder que nem Raditz esperava.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep5.jpg",
+        "dataExibicao": "1989-05-24"
+    },
+    {
+        "id": 2140,
+        "numero": 6,
+        "titulo": "Não Há Tempo Como o Presente",
+        "sinopse": "Piccolo leva Gohan para treinar na natureza selvagem. Enquanto isso, Goku inicia sua jornada pelo Caminho da Serpente para encontrar o lendário Senhor Kaio.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep6.jpg",
+        "dataExibicao": "1989-06-07"
+    },
+    {
+        "id": 2141,
+        "numero": 7,
+        "titulo": "Dia 1",
+        "sinopse": "Gohan começa seu primeiro dia de treinamento com Piccolo. Sozinho no deserto, ele precisa aprender a sobreviver enquanto enfrenta diversos perigos.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep7.jpg",
+        "dataExibicao": "1989-06-14"
+    },
+    {
+        "id": 2142,
+        "numero": 8,
+        "titulo": "Gohan Fica Furioso!",
+        "sinopse": "Enquanto Gohan continua seu treinamento, os guerreiros da Terra começam uma preparação especial para enfrentar a ameaça dos Saiyajins.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep8.jpg",
+        "dataExibicao": "1989-06-21"
+    },
+    {
+        "id": 2143,
+        "numero": 9,
+        "titulo": "O Robô Mais Estranho",
+        "sinopse": "Tentando escapar dos perigos da floresta, Gohan encontra um antigo robô da Corporação Cápsula escondido em uma caverna.",
+        "temporadaId": 1,
+        "animeId:": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep9.jpg",
+        "dataExibicao": "1989-06-28"
+    },
+    {
+        "id": 2144,
+        "numero": 10,
+        "titulo": "Um Novo Amigo",
+        "sinopse": "Durante sua aventura no deserto, Gohan encontra um novo companheiro e aprende que nem todas as criaturas são inimigas.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep10.jpg",
+        "dataExibicao": "1989-07-05"
+    },
+    {
+        "id": 2145,
+        "numero": 11,
+        "titulo": "Terror em Arlia",
+        "sinopse": "Vegeta e Nappa chegam ao planeta Arlia e acabam enfrentando o governante tirano daquele mundo.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep11.jpg",
+        "dataExibicao": "1989-07-12"
+    },
+    {
+        "id": 2146,
+        "numero": 12,
+        "titulo": "Treinamento Global",
+        "sinopse": "Enquanto Gohan continua seu treinamento, os outros guerreiros da Terra também se preparam para a chegada dos Saiyajins.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep12.jpg",
+        "dataExibicao": "1989-07-19"
+    },
+    {
+        "id": 2147,
+        "numero": 13,
+        "titulo": "Goz e Mez",
+        "sinopse": "Goku encontra dois grandes ogros no Caminho da Serpente e precisa superar seus desafios para continuar sua jornada.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep13.jpg",
+        "dataExibicao": "1989-07-26"
+    },
+    {
+        "id": 2148,
+        "numero": 14,
+        "titulo": "Princesa Serpente",
+        "sinopse": "Goku encontra uma misteriosa casa no Caminho da Serpente, mas descobre que ela pertence à Princesa Serpente.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep14.jpg",
+        "dataExibicao": "1989-08-02"
+    },
+    {
+        "id": 2149,
+        "numero": 15,
+        "titulo": "Piccolos em Conflito",
+        "sinopse": "Piccolo enfrenta seus próprios limites enquanto Gohan tenta sobreviver sozinho e voltar para casa.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep15.jpg",
+        "dataExibicao": "1989-08-09"
+    },
+    {
+        "id": 2150,
+        "numero": 16,
+        "titulo": "O Sofrimento das Crianças",
+        "sinopse": "Gohan encontra abrigo com um grupo de órfãos que vivem escondidos. Eles tentam encontrar um lugar seguro para sobreviver.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep16.jpg",
+        "dataExibicao": "1989-08-16"
+    },
+    {
+        "id": 2151,
+        "numero": 17,
+        "titulo": "Perigo na Sala do Pêndulo",
+        "sinopse": "Os guerreiros da Terra utilizam a Sala do Pêndulo de Kami para viajar ao passado e enfrentar seus maiores desafios.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep17.jpg",
+        "dataExibicao": "1989-08-30"
+    },
+    {
+        "id": 2152,
+        "numero": 18,
+        "titulo": "O Fim do Caminho da Serpente",
+        "sinopse": "Goku finalmente chega ao final do Caminho da Serpente e encontra o planeta do Senhor Kaio, onde começa um novo treinamento.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep18.jpg",
+        "dataExibicao": "1989-09-06"
+    },
+    {
+        "id": 2153,
+        "numero": 19,
+        "titulo": "Desafiando a Gravidade",
+        "sinopse": "Goku enfrenta a enorme gravidade do planeta do Senhor Kaio enquanto tenta dominar um treinamento muito mais difícil.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep19.jpg",
+        "dataExibicao": "1989-09-13"
+    },
+    {
+        "id": 2154,
+        "numero": 20,
+        "titulo": "Os Antepassados de Goku",
+        "sinopse": "O Senhor Kaio conta a Goku sobre a raça Saiyajin enquanto continua seu treinamento para a batalha que se aproxima.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep20.jpg",
+        "dataExibicao": "1989-09-20"
+    },
+    {
+        "id": 2155,
+        "numero": 21,
+        "titulo": "Contagem Regressiva",
+        "sinopse": "O treinamento de Goku termina e os Guerreiros Z reúnem as Esferas do Dragão para trazê-lo de volta antes da chegada dos Saiyajins.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep21.jpg",
+        "dataExibicao": "1989-09-27"
+    },
+    {
+        "id": 2156,
+        "numero": 22,
+        "titulo": "O Dia Mais Sombrio",
+        "sinopse": "Vegeta e Nappa chegam à Terra e demonstram seu poder destruindo uma cidade inteira antes do confronto com os Guerreiros Z.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep22.jpg",
+        "dataExibicao": "1989-10-11"
+    },
+    {
+        "id": 2157,
+        "numero": 23,
+        "titulo": "Ataque dos Saibaimans",
+        "sinopse": "Krillin, Piccolo e Gohan enfrentam os Saibaimans enquanto aguardam o retorno de Goku para a batalha.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep23.jpg",
+        "dataExibicao": "1989-10-18"
+    },
+    {
+        "id": 2158,
+        "numero": 24,
+        "titulo": "O Poder de Nappa",
+        "sinopse": "Após a derrota dos Saibaimans, os Guerreiros Z precisam enfrentar Nappa, um dos poderosos Saiyajins invasores.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep24.jpg",
+        "dataExibicao": "1989-10-25"
+    },
+    {
+        "id": 2159,
+        "numero": 25,
+        "titulo": "Sacrifício",
+        "sinopse": "Chiaotzu se sacrifica tentando derrotar Nappa, mas o Saiyajin continua sua destruição contra os Guerreiros Z.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep25.jpg",
+        "dataExibicao": "1989-11-01"
+    },
+    {
+        "id": 2160,
+        "numero": 26,
+        "titulo": "A Destruição de Nappa",
+        "sinopse": "Vegeta interrompe a batalha e permite que Nappa continue seu ataque. Enquanto isso, Goku finalmente retorna à Terra para enfrentar os Saiyajins.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep26.jpg",
+        "dataExibicao": "1989-11-08"
+    },
+    {
+        "id": 2161,
+        "numero": 27,
+        "titulo": "Velocidade da Nuvem Voadora",
+        "sinopse": "Piccolo, Gohan e Kuririn tentam impedir os Saiyajins enquanto Goku corre para chegar ao campo de batalha com seu novo poder.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep27.jpg",
+        "dataExibicao": "1989-11-22"
+    },
+    {
+        "id": 2162,
+        "numero": 28,
+        "titulo": "A Chegada de Goku",
+        "sinopse": "Quando tudo parece perdido, Goku finalmente chega à batalha e revela um incrível novo nível de poder contra os invasores.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep28.jpg",
+        "dataExibicao": "1989-11-29"
+    },
+    {
+        "id": 2163,
+        "numero": 29,
+        "titulo": "A Primeira Lição",
+        "sinopse": "Goku mostra a Nappa o resultado do treinamento com o Senhor Kaio e demonstra sua nova força.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep29.jpg",
+        "dataExibicao": "1989-12-06"
+    },
+    {
+        "id": 2164,
+        "numero": 30,
+        "titulo": "Goku Contra Vegeta",
+        "sinopse": "Goku decide enfrentar Vegeta sozinho. Os dois guerreiros começam uma batalha épica entre poderes semelhantes.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep30.jpg",
+        "dataExibicao": "1989-12-13"
+    },
+    {
+        "id": 2165,
+        "numero": 31,
+        "titulo": "O Segredo dos Saiyajins",
+        "sinopse": "Vegeta revela o poder secreto dos Saiyajins e mostra sua capacidade de se transformar em um gigantesco macaco.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep31.jpg",
+        "dataExibicao": "1989-12-20"
+    },
+    {
+        "id": 2166,
+        "numero": 32,
+        "titulo": "A Bomba Espiritual",
+        "sinopse": "Sem outra alternativa, Goku tenta usar a poderosa Bomba Espiritual contra Vegeta para salvar a Terra.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep32.jpg",
+        "dataExibicao": "1990-01-17"
+    },
+    {
+        "id": 2167,
+        "numero": 33,
+        "titulo": "O Herói nas Sombras",
+        "sinopse": "Com Goku preso pela transformação de Vegeta, um guerreiro inesperado surge para ajudar na batalha.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep33.jpg",
+        "dataExibicao": "1990-01-24"
+    },
+    {
+        "id": 2168,
+        "numero": 34,
+        "titulo": "O Ataque de Kuririn",
+        "sinopse": "Kuririn recebe a energia da Bomba Espiritual de Goku e tenta derrotar Vegeta com o poderoso ataque.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep34.jpg",
+        "dataExibicao": "1990-01-31"
+    },
+    {
+        "id": 2169,
+        "numero": 35,
+        "titulo": "Misericórdia",
+        "sinopse": "Vegeta é derrotado após enfrentar Gohan transformado. Kuririn quer acabar com a ameaça, mas Goku decide poupá-lo.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep35.jpg",
+        "dataExibicao": "1990-02-07"
+    },
+    {
+        "id": 2160,
+        "numero": 26,
+        "titulo": "A Destruição de Nappa",
+        "sinopse": "Vegeta interrompe a batalha e permite que Nappa continue seu ataque. Enquanto isso, Goku finalmente retorna à Terra para enfrentar os Saiyajins.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep26.jpg",
+        "dataExibicao": "1989-11-08"
+    },
+    {
+        "id": 2161,
+        "numero": 27,
+        "titulo": "Velocidade da Nuvem Voadora",
+        "sinopse": "Piccolo, Gohan e Kuririn tentam impedir os Saiyajins enquanto Goku corre para chegar ao campo de batalha com seu novo poder.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep27.jpg",
+        "dataExibicao": "1989-11-22"
+    },
+    {
+        "id": 2162,
+        "numero": 28,
+        "titulo": "A Chegada de Goku",
+        "sinopse": "Quando tudo parece perdido, Goku finalmente chega à batalha e revela um incrível novo nível de poder contra os invasores.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep28.jpg",
+        "dataExibicao": "1989-11-29"
+    },
+    {
+        "id": 2163,
+        "numero": 29,
+        "titulo": "A Primeira Lição",
+        "sinopse": "Goku mostra a Nappa o resultado do treinamento com o Senhor Kaio e demonstra sua nova força.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep29.jpg",
+        "dataExibicao": "1989-12-06"
+    },
+    {
+        "id": 2164,
+        "numero": 30,
+        "titulo": "Goku Contra Vegeta",
+        "sinopse": "Goku decide enfrentar Vegeta sozinho. Os dois guerreiros começam uma batalha épica entre poderes semelhantes.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep30.jpg",
+        "dataExibicao": "1989-12-13"
+    },
+    {
+        "id": 2165,
+        "numero": 31,
+        "titulo": "O Segredo dos Saiyajins",
+        "sinopse": "Vegeta revela o poder secreto dos Saiyajins e mostra sua capacidade de se transformar em um gigantesco macaco.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep31.jpg",
+        "dataExibicao": "1989-12-20"
+    },
+    {
+        "id": 2166,
+        "numero": 32,
+        "titulo": "A Bomba Espiritual",
+        "sinopse": "Sem outra alternativa, Goku tenta usar a poderosa Bomba Espiritual contra Vegeta para salvar a Terra.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep32.jpg",
+        "dataExibicao": "1990-01-17"
+    },
+    {
+        "id": 2167,
+        "numero": 33,
+        "titulo": "O Herói nas Sombras",
+        "sinopse": "Com Goku preso pela transformação de Vegeta, um guerreiro inesperado surge para ajudar na batalha.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep33.jpg",
+        "dataExibicao": "1990-01-24"
+    },
+    {
+        "id": 2168,
+        "numero": 34,
+        "titulo": "O Ataque de Kuririn",
+        "sinopse": "Kuririn recebe a energia da Bomba Espiritual de Goku e tenta derrotar Vegeta com o poderoso ataque.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep34.jpg",
+        "dataExibicao": "1990-01-31"
+    },
+    {
+        "id": 2169,
+        "numero": 35,
+        "titulo": "Misericórdia",
+        "sinopse": "Vegeta é derrotado após enfrentar Gohan transformado. Kuririn quer acabar com a ameaça, mas Goku decide poupá-lo.",
+        "temporadaId": 1,
+        "animeId": 75,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep35.jpg",
+        "dataExibicao": "1990-02-07"
     }
 ]
