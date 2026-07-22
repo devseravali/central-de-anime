@@ -18298,5 +18298,145 @@
         "animeId": 70,
         "imagemUrl": "../../images/episodios/one-piece/t19/ep877.jpg",
         "dataExibicao": "2019-03-24"
+    },
+    {
+        "id": 1800,
+        "numero": 878,
+        "titulo": "O Mundo Está Chocado! O Quinto Imperador do Mar Surge!",
+        "sinopse": "As recentes façanhas de Luffy se espalham pelo mundo. A reputação do poderoso pirata cresce enquanto todos observam os próximos passos dos Chapéus de Palha. Enquanto isso, a Germa 66 deixa um artefato para trás que chama a atenção da tripulação.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep878.jpg",
+        "dataExibicao": "2019-03-31"
+    },
+    {
+        "id": 1801,
+        "numero": 879,
+        "titulo": "Rumo ao Reverie! Os Aliados dos Chapéus de Palha se Reúnem!",
+        "sinopse": "Os reis e líderes do mundo se dirigem ao Reverie enquanto a Marinha toma precauções contra possíveis ataques. Enquanto isso, Luffy descobre uma grande mudança em sua recompensa.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep879.jpg",
+        "dataExibicao": "2019-04-07"
+    },
+    {
+        "id": 1802,
+        "numero": 880,
+        "titulo": "Sabo Entra em Ação! Todos os Capitães do Exército Revolucionário Aparecem!",
+        "sinopse": "Um grupo de piratas ataca o Reino de Lulusia enquanto seus líderes estão no Reverie. Quatro membros do Exército Revolucionário aparecem para proteger o povo.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep880.jpg",
+        "dataExibicao": "2019-04-14"
+    },
+    {
+        "id": 1803,
+        "numero": 881,
+        "titulo": "Entrando em Ação! O Implacável Novo Almirante da Frota - Sakazuki!",
+        "sinopse": "Em Novo Marineford, Sakazuki recebe notícias sobre Luffy e relembra a Guerra dos Melhores, cujas consequências continuam afetando a Marinha.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep881.jpg",
+        "dataExibicao": "2019-04-21"
+    },
+    {
+        "id": 1804,
+        "numero": 882,
+        "titulo": "A Guerra dos Melhores! A Vontade Herdada do Rei dos Piratas!",
+        "sinopse": "Enquanto o Reverie reúne líderes de todo o mundo, os acontecimentos da Guerra de Marineford continuam influenciando o futuro. Novas alianças entre os almirantes são reveladas.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep882.jpg",
+        "dataExibicao": "2019-04-28"
+    },
+    {
+        "id": 1805,
+        "numero": 883,
+        "titulo": "Um Passo à Frente Para Seu Sonho! Shirahoshi Sai ao Sol!",
+        "sinopse": "Shirahoshi conhece o mundo da superfície pela primeira vez. Enquanto isso, Garp encontra o rei Stelly durante a chegada dos líderes ao Reverie.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep883.jpg",
+        "dataExibicao": "2019-05-05"
+    },
+    {
+        "id": 1806,
+        "numero": 884,
+        "titulo": "Eu Sinto Saudades Dele! Os Sentimentos de Vivi e Rebecca!",
+        "sinopse": "Shirahoshi e sua família chegam a Mariejois. Vivi reencontra antigos amigos e compartilha histórias sobre sua jornada com os Chapéus de Palha.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep884.jpg",
+        "dataExibicao": "2019-05-12"
+    },
+    {
+        "id": 1807,
+        "numero": 885,
+        "titulo": "Nos Recantos Escuros da Terra Sagrada! Um Misterioso Chapéu de Palha Gigante!",
+        "sinopse": "Os antigos aliados dos Chapéus de Palha relembram suas aventuras. Enquanto isso, uma figura misteriosa revela um segredo escondido em Mariejois.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep885.jpg",
+        "dataExibicao": "2019-05-19"
+    },
+    {
+        "id": 1808,
+        "numero": 886,
+        "titulo": "A Terra Sagrada em Tumulto! A Princesa Shirahoshi é o Alvo!",
+        "sinopse": "Shirahoshi chama a atenção de um Dragão Celestial e acaba em perigo. Neptune tenta protegê-la enquanto antigos aliados aparecem para ajudar.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep886.jpg",
+        "dataExibicao": "2019-05-26"
+    },
+    {
+        "id": 1809,
+        "numero": 887,
+        "titulo": "Uma Situação Explosiva! Dois Imperadores do Mar Indo Atrás de Luffy!",
+        "sinopse": "Big Mom e Kaido decidem unir forças contra Luffy. Enquanto isso, Garp descobre as novas façanhas de seu neto.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep887.jpg",
+        "dataExibicao": "2019-06-02"
+    },
+    {
+        "id": 1810,
+        "numero": 888,
+        "titulo": "Sabo Enfurecido! A Tragédia do Oficial do Exército Revolucionário Kuma!",
+        "sinopse": "Sabo invade a Terra dos Deuses e encontra Kuma sendo usado pelo Governo Mundial como exemplo de punição contra aqueles que desafiam os Dragões Celestiais.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep888.jpg",
+        "dataExibicao": "2019-06-09"
+    },
+    {
+        "id": 1811,
+        "numero": 889,
+        "titulo": "Finalmente Começa! O Reverie Cheio de Conspirações!",
+        "sinopse": "O Reverie começa oficialmente e os líderes mundiais discutem sobre Luffy e os Chapéus de Palha. O Exército Revolucionário reafirma seu plano para salvar Kuma.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep889.jpg",
+        "dataExibicao": "2019-06-16"
+    },
+    {
+        "id": 1812,
+        "numero": 890,
+        "titulo": "Marco! O Guardião do Último Legado de Barba Branca!",
+        "sinopse": "Carrot e sua equipe procuram Marco, o antigo comandante da primeira divisão dos Piratas do Barba Branca, buscando ajuda contra Kaido.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep890.jpg",
+        "dataExibicao": "2019-06-23"
+    },
+    {
+        "id": 1813,
+        "numero": 891,
+        "titulo": "Subindo a Cachoeira! Uma Grande Jornada Pela Zona Marítima de Wano!",
+        "sinopse": "Após descobrirem notícias sobre o Reverie, Luffy e seu grupo chegam ao perigoso mar ao redor de Wano. Eles enfrentam uma enorme cachoeira e tentam alcançar o país.",
+        "temporadaId": 20,
+        "animeId": 71,
+        "imagemUrl": "../../images/episodios/one-piece/t20/ep891.jpg",
+        "dataExibicao": "2019-06-30"
     }
 ]
