@@ -14648,5 +14648,1305 @@
         "animeId": 64,
         "imagemUrl": "../../images/episodios/one-piece/t13/ep522.jpg",
         "dataExibicao": "2011-11-06"
+    },
+    {
+        "id": 1445,
+        "numero": 523,
+        "titulo": "Um Fato Surpreendente! O Homem que Protegeu o Sunny",
+        "sinopse": "Enquanto viajam pelas profundezas do mar rumo à Ilha dos Homens-Peixe, Franky revela quem foi o homem que protegeu o Thousand Sunny durante os dois anos em que a tripulação esteve separada.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep523.jpg",
+        "dataExibicao": "2011-11-13"
+    },
+    {
+        "id": 1446,
+        "numero": 524,
+        "titulo": "Combate Mortal nas Profundezas! O Demônio do Oceano Aparece",
+        "sinopse": "Durante a descida ao fundo do mar, os Piratas de Caribou atacam o Thousand Sunny. Ao mesmo tempo, um gigantesco Kraken surge e coloca toda a tripulação em perigo.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep524.jpg",
+        "dataExibicao": "2011-11-20"
+    },
+    {
+        "id": 1447,
+        "numero": 525,
+        "titulo": "Perdidos nas Profundezas! Os Chapéus de Palha se Separam",
+        "sinopse": "Após o ataque do Kraken, Luffy, Zoro e Sanji acabam separados do restante da tripulação, enquanto todos tentam sobreviver nas profundezas do oceano.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep525.jpg",
+        "dataExibicao": "2011-11-27"
+    },
+    {
+        "id": 1448,
+        "numero": 526,
+        "titulo": "Erupção Vulcânica Submarina! Chegada à Ilha dos Homens-Peixe",
+        "sinopse": "Uma enorme erupção vulcânica submarina obriga o Thousand Sunny a mudar sua rota. Depois de muitos perigos, a lendária Ilha dos Homens-Peixe finalmente aparece diante da tripulação.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep526.jpg",
+        "dataExibicao": "2011-12-04"
+    },
+    {
+        "id": 1449,
+        "numero": 527,
+        "titulo": "Chegada à Ilha dos Homens-Peixe! As Belas Sereias",
+        "sinopse": "Os Chapéus de Palha chegam à Ilha dos Homens-Peixe e conhecem diversas sereias. Enquanto exploram a ilha, novos inimigos começam a observá-los.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep527.jpg",
+        "dataExibicao": "2011-12-11"
+    },
+    {
+        "id": 1450,
+        "numero": 528,
+        "titulo": "Explosão de Emoções! A Vida de Sanji em Perigo",
+        "sinopse": "Após ver tantas sereias, Sanji sofre um grave sangramento nasal e precisa urgentemente de uma transfusão de sangue para sobreviver.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep528.jpg",
+        "dataExibicao": "2011-12-18"
+    },
+    {
+        "id": 1451,
+        "numero": 529,
+        "titulo": "A Ilha dos Homens-Peixe Será Destruída? A Profecia de Madame Shirley",
+        "sinopse": "Madame Shirley faz uma terrível previsão afirmando que Luffy será o responsável por destruir a Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep529.jpg",
+        "dataExibicao": "2011-12-25"
+    },
+    {
+        "id": 1452,
+        "numero": 530,
+        "titulo": "O Rei da Ilha dos Homens-Peixe! O Rei Netuno",
+        "sinopse": "Os Chapéus de Palha são convidados ao Palácio Ryugu, enquanto Hody Jones continua colocando seus planos em prática para dominar a ilha.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep530.jpg",
+        "dataExibicao": "2012-01-08"
+    },
+    {
+        "id": 1453,
+        "numero": 531,
+        "titulo": "Palácio Ryugu! Levados Pelo Tubarão que Salvaram",
+        "sinopse": "Após salvarem um tubarão, parte da tripulação é levada ao Palácio Ryugu, onde Luffy conhece a Princesa Shirahoshi.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep531.jpg",
+        "dataExibicao": "2012-01-15"
+    },
+    {
+        "id": 1454,
+        "numero": 532,
+        "titulo": "Uma Chorona e Covarde! A Princesa da Torre de Conchas",
+        "sinopse": "Luffy conhece melhor a Princesa Shirahoshi, que vive isolada há anos devido às constantes tentativas de assassinato feitas por Vander Decken.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep532.jpg",
+        "dataExibicao": "2012-01-22"
+    },
+    {
+        "id": 1455,
+        "numero": 533,
+        "titulo": "Estado de Emergência! O Palácio Ryugu é Ocupado",
+        "sinopse": "Hody Jones e os Novos Piratas Homens-Peixe iniciam seu golpe de estado contra o Reino Ryugu, colocando o rei Netuno e seus soldados em uma situação desesperadora.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep533.jpg",
+        "dataExibicao": "2012-01-29"
+    },
+    {
+        "id": 1456,
+        "numero": 534,
+        "titulo": "O Palácio em Pânico! Shirahoshi é Sequestrada",
+        "sinopse": "Enquanto o golpe continua, Vander Decken coloca seu plano em ação para sequestrar a princesa Shirahoshi e finalmente torná-la sua esposa.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep534.jpg",
+        "dataExibicao": "2012-02-05"
+    },
+    {
+        "id": 1457,
+        "numero": 535,
+        "titulo": "A Invasão de Hody! O Plano de Vingança Começa",
+        "sinopse": "Hody Jones revela suas verdadeiras intenções e assume o controle do Palácio Ryugu, enquanto seus homens espalham o caos por toda a Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep535.jpg",
+        "dataExibicao": "2012-02-12"
+    },
+    {
+        "id": 1458,
+        "numero": 536,
+        "titulo": "A Batalha Decisiva! Hody Declara Guerra",
+        "sinopse": "Hody anuncia sua guerra contra os humanos e condena o rei Netuno. Enquanto isso, Luffy e seus companheiros se preparam para agir.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep536.jpg",
+        "dataExibicao": "2012-02-19"
+    },
+    {
+        "id": 1459,
+        "numero": 537,
+        "titulo": "Protegendo Shirahoshi! A Fuga da Princesa",
+        "sinopse": "Luffy leva Shirahoshi para fora da Torre de Conchas e promete protegê-la enquanto tenta descobrir a verdade sobre sua mãe, a Rainha Otohime.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep537.jpg",
+        "dataExibicao": "2012-02-26"
+    },
+    {
+        "id": 1460,
+        "numero": 538,
+        "titulo": "A Tripulação se Reúne! Rumo à Praça Gyoncorde",
+        "sinopse": "Os Chapéus de Palha finalmente voltam a se reunir e seguem para a Praça Gyoncorde, onde enfrentarão Hody Jones e seus subordinados.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep538.jpg",
+        "dataExibicao": "2012-03-04"
+    },
+    {
+        "id": 1461,
+        "numero": 539,
+        "titulo": "As Memórias de Otohime! O Caminho para a Paz",
+        "sinopse": "É revelado o passado da Rainha Otohime, sua luta pela convivência pacífica entre humanos e homens-peixe e o sonho que deixou para seu povo.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep539.jpg",
+        "dataExibicao": "2012-03-18"
+    },
+    {
+        "id": 1462,
+        "numero": 540,
+        "titulo": "O Herói Libertador! Tiger, o Aventureiro",
+        "sinopse": "A história de Fisher Tiger é contada, mostrando sua fuga de Mary Geoise, a formação dos Piratas do Sol e sua luta contra a escravidão.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep540.jpg",
+        "dataExibicao": "2012-03-25"
+    },
+    {
+        "id": 1463,
+        "numero": 541,
+        "titulo": "Kizaru Entra em Cena! A Armadilha Contra Tiger",
+        "sinopse": "Após libertar inúmeros escravos, Fisher Tiger torna-se alvo da Marinha. Um plano é armado para capturá-lo, levando aos acontecimentos que mudariam seu destino.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep541.jpg",
+        "dataExibicao": "2012-04-01"
+    },
+    {
+        "id": 1464,
+        "numero": 542,
+        "titulo": "A Formação da Equipe! O Resgate de Chopper",
+        "sinopse": "Enquanto o passado de Fisher Tiger chega ao fim, os Chapéus de Palha colocam seus planos em prática para enfrentar Hody Jones e salvar a Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep542.jpg",
+        "dataExibicao": "2012-04-08"
+    },
+    {
+        "id": 1455,
+        "numero": 533,
+        "titulo": "Estado de Emergência! O Palácio Ryugu é Ocupado",
+        "sinopse": "Hody Jones e os Novos Piratas Homens-Peixe iniciam seu golpe de estado contra o Reino Ryugu, colocando o rei Netuno e seus soldados em uma situação desesperadora.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep533.jpg",
+        "dataExibicao": "2012-01-29"
+    },
+    {
+        "id": 1456,
+        "numero": 534,
+        "titulo": "O Palácio em Pânico! Shirahoshi é Sequestrada",
+        "sinopse": "Enquanto o golpe continua, Vander Decken coloca seu plano em ação para sequestrar a princesa Shirahoshi e finalmente torná-la sua esposa.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep534.jpg",
+        "dataExibicao": "2012-02-05"
+    },
+    {
+        "id": 1457,
+        "numero": 535,
+        "titulo": "A Invasão de Hody! O Plano de Vingança Começa",
+        "sinopse": "Hody Jones revela suas verdadeiras intenções e assume o controle do Palácio Ryugu, enquanto seus homens espalham o caos por toda a Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep535.jpg",
+        "dataExibicao": "2012-02-12"
+    },
+    {
+        "id": 1458,
+        "numero": 536,
+        "titulo": "A Batalha Decisiva! Hody Declara Guerra",
+        "sinopse": "Hody anuncia sua guerra contra os humanos e condena o rei Netuno. Enquanto isso, Luffy e seus companheiros se preparam para agir.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep536.jpg",
+        "dataExibicao": "2012-02-19"
+    },
+    {
+        "id": 1459,
+        "numero": 537,
+        "titulo": "Protegendo Shirahoshi! A Fuga da Princesa",
+        "sinopse": "Luffy leva Shirahoshi para fora da Torre de Conchas e promete protegê-la enquanto tenta descobrir a verdade sobre sua mãe, a Rainha Otohime.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep537.jpg",
+        "dataExibicao": "2012-02-26"
+    },
+    {
+        "id": 1460,
+        "numero": 538,
+        "titulo": "A Tripulação se Reúne! Rumo à Praça Gyoncorde",
+        "sinopse": "Os Chapéus de Palha finalmente voltam a se reunir e seguem para a Praça Gyoncorde, onde enfrentarão Hody Jones e seus subordinados.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep538.jpg",
+        "dataExibicao": "2012-03-04"
+    },
+    {
+        "id": 1461,
+        "numero": 539,
+        "titulo": "As Memórias de Otohime! O Caminho para a Paz",
+        "sinopse": "É revelado o passado da Rainha Otohime, sua luta pela convivência pacífica entre humanos e homens-peixe e o sonho que deixou para seu povo.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep539.jpg",
+        "dataExibicao": "2012-03-18"
+    },
+    {
+        "id": 1462,
+        "numero": 540,
+        "titulo": "O Herói Libertador! Tiger, o Aventureiro",
+        "sinopse": "A história de Fisher Tiger é contada, mostrando sua fuga de Mary Geoise, a formação dos Piratas do Sol e sua luta contra a escravidão.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep540.jpg",
+        "dataExibicao": "2012-03-25"
+    },
+    {
+        "id": 1463,
+        "numero": 541,
+        "titulo": "Kizaru Entra em Cena! A Armadilha Contra Tiger",
+        "sinopse": "Após libertar inúmeros escravos, Fisher Tiger torna-se alvo da Marinha. Um plano é armado para capturá-lo, levando aos acontecimentos que mudariam seu destino.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep541.jpg",
+        "dataExibicao": "2012-04-01"
+    },
+    {
+        "id": 1464,
+        "numero": 542,
+        "titulo": "A Formação da Equipe! O Resgate de Chopper",
+        "sinopse": "Enquanto o passado de Fisher Tiger chega ao fim, os Chapéus de Palha colocam seus planos em prática para enfrentar Hody Jones e salvar a Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep542.jpg",
+        "dataExibicao": "2012-04-08"
+    },
+    {
+        "id": 1465,
+        "numero": 543,
+        "titulo": "A Morte de um Herói! A Verdade Chocante sobre Tiger",
+        "sinopse": "O passado de Fisher Tiger chega ao fim. Sua recusa em receber sangue humano revela as profundas cicatrizes deixadas pela discriminação e influencia toda a Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep543.jpg",
+        "dataExibicao": "2012-04-15"
+    },
+    {
+        "id": 1466,
+        "numero": 544,
+        "titulo": "Os Piratas do Sol se Dividem! Jinbe contra Arlong",
+        "sinopse": "Após a morte de Fisher Tiger, os Piratas do Sol seguem caminhos diferentes. Jinbe aceita tornar-se um Shichibukai, enquanto Arlong inicia sua própria jornada de ódio contra os humanos.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep544.jpg",
+        "dataExibicao": "2012-04-22"
+    },
+    {
+        "id": 1467,
+        "numero": 545,
+        "titulo": "A Ilha dos Homens-Peixe Treme! O Naufrágio de um Dragão Celestial",
+        "sinopse": "Um Navio dos Nobres Mundiais chega à Ilha dos Homens-Peixe. O incidente desperta antigos ressentimentos e coloca em risco a paz conquistada por Otohime.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep545.jpg",
+        "dataExibicao": "2012-04-29"
+    },
+    {
+        "id": 1468,
+        "numero": 546,
+        "titulo": "Uma Tragédia Inesperada! O Tiro que Mudou o Reino",
+        "sinopse": "A Rainha Otohime é assassinada diante de seu povo. O crime provoca revolta na ilha e abre caminho para os planos de Hody Jones.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep546.jpg",
+        "dataExibicao": "2012-05-06"
+    },
+    {
+        "id": 1469,
+        "numero": 547,
+        "titulo": "De Volta ao Presente! Hody Começa seu Ataque",
+        "sinopse": "O passado chega ao fim. No presente, Hody Jones inicia a etapa final de seu plano para dominar a Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep547.jpg",
+        "dataExibicao": "2012-05-13"
+    },
+    {
+        "id": 1470,
+        "numero": 548,
+        "titulo": "O Reino em Perigo! A Praça Gyoncorde",
+        "sinopse": "O confronto decisivo começa na Praça Gyoncorde. Hody Jones reúne seus soldados enquanto os Chapéus de Palha chegam para enfrentar os Novos Piratas Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep548.jpg",
+        "dataExibicao": "2012-05-20"
+    },
+    {
+        "id": 1471,
+        "numero": 549,
+        "titulo": "Uma Brecha se Abre! Luffy contra Hody",
+        "sinopse": "Luffy enfrenta Hody Jones diretamente. O capitão dos Chapéus de Palha demonstra o resultado do treinamento realizado durante os dois anos de separação.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep549.jpg",
+        "dataExibicao": "2012-05-27"
+    },
+    {
+        "id": 1472,
+        "numero": 550,
+        "titulo": "O Incidente de Hody! O Verdadeiro Poder das Pílulas",
+        "sinopse": "Hody utiliza as Pílulas de Energia para aumentar sua força, mas começa a sofrer as consequências do uso excessivo da substância.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep550.jpg",
+        "dataExibicao": "2012-06-03"
+    },
+    {
+        "id": 1473,
+        "numero": 551,
+        "titulo": "A Batalha Começa! Os Chapéus de Palha Entram em Ação",
+        "sinopse": "Cada integrante da tripulação enfrenta um dos oficiais dos Novos Piratas Homens-Peixe, mostrando as habilidades adquiridas após o treinamento.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep551.jpg",
+        "dataExibicao": "2012-06-10"
+    },
+    {
+        "id": 1474,
+        "numero": 552,
+        "titulo": "Revelação Chocante! A Verdadeira Origem do Ódio de Hody",
+        "sinopse": "Durante a batalha, Hody revela que seu ódio pelos humanos não nasceu de uma experiência pessoal, mas da influência do preconceito transmitido por gerações.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep552.jpg",
+        "dataExibicao": "2012-06-17"
+    },
+    {
+        "id": 1475,
+        "numero": 553,
+        "titulo": "As Lágrimas de Shirahoshi! Luffy Finalmente Entra em Ação",
+        "sinopse": "Shirahoshi não consegue mais conter suas emoções ao ver seu povo sofrer. Luffy parte para derrotar Hody Jones e proteger a Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep553.jpg",
+        "dataExibicao": "2012-06-24"
+    },
+    {
+        "id": 1476,
+        "numero": 554,
+        "titulo": "O Grande Confronto! Os Chapéus de Palha contra Cem Mil Inimigos",
+        "sinopse": "Os Chapéus de Palha enfrentam o exército de cem mil homens de Hody Jones, demonstrando o enorme poder adquirido após os dois anos de treinamento.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep554.jpg",
+        "dataExibicao": "2012-07-01"
+    },
+    {
+        "id": 1477,
+        "numero": 555,
+        "titulo": "Técnicas Explosivas! Zoro e Sanji Mostram sua Verdadeira Força",
+        "sinopse": "Enquanto Luffy enfrenta Hody, Zoro, Sanji e os demais membros da tripulação derrotam facilmente os oficiais dos Novos Piratas Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep555.jpg",
+        "dataExibicao": "2012-07-08"
+    },
+    {
+        "id": 1478,
+        "numero": 556,
+        "titulo": "A Revelação! O Segredo das Pílulas de Energia",
+        "sinopse": "É revelado o terrível efeito colateral das Pílulas de Energia utilizadas por Hody Jones e seus subordinados para aumentar artificialmente sua força.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep556.jpg",
+        "dataExibicao": "2012-07-15"
+    },
+    {
+        "id": 1479,
+        "numero": 557,
+        "titulo": "O Dragão Celestial em Perigo! Shirahoshi Decide Agir",
+        "sinopse": "Shirahoshi toma uma importante decisão enquanto a batalha continua. Vander Decken coloca seu último plano em prática para destruir a ilha.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep557.jpg",
+        "dataExibicao": "2012-07-22"
+    },
+    {
+        "id": 1480,
+        "numero": 558,
+        "titulo": "Noah se Aproxima! O Navio Gigante em Movimento",
+        "sinopse": "O gigantesco navio Noah começa a cair sobre a Ilha dos Homens-Peixe, colocando milhões de vidas em risco enquanto Luffy continua enfrentando Hody.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep558.jpg",
+        "dataExibicao": "2012-07-29"
+    },
+    {
+        "id": 1481,
+        "numero": 559,
+        "titulo": "Depressa, Luffy! A Crise da Ilha dos Homens-Peixe",
+        "sinopse": "Com Noah prestes a atingir a ilha, Luffy luta contra o tempo para derrotar Hody Jones antes que a catástrofe aconteça.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep559.jpg",
+        "dataExibicao": "2012-08-05"
+    },
+    {
+        "id": 1482,
+        "numero": 560,
+        "titulo": "A Batalha Final! Luffy contra Hody Jones",
+        "sinopse": "O confronto entre Luffy e Hody chega ao seu momento decisivo. Ambos utilizam todo o seu poder para definir o destino da Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep560.jpg",
+        "dataExibicao": "2012-08-12"
+    },
+    {
+        "id": 1483,
+        "numero": 561,
+        "titulo": "Luffy Derrota Hody! Um Novo Amanhecer para a Ilha",
+        "sinopse": "Luffy finalmente derrota Hody Jones, mas a ameaça representada pelo gigantesco Noah ainda coloca toda a Ilha dos Homens-Peixe em perigo.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep561.jpg",
+        "dataExibicao": "2012-08-19"
+    },
+    {
+        "id": 1484,
+        "numero": 562,
+        "titulo": "Luffy Perde a Consciência! A Hora da Transfusão de Sangue",
+        "sinopse": "Após a batalha, Luffy desmaia devido à grande perda de sangue. Jinbe toma uma importante decisão para salvar a vida do capitão dos Chapéus de Palha.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep562.jpg",
+        "dataExibicao": "2012-08-26"
+    },
+    {
+        "id": 1485,
+        "numero": 563,
+        "titulo": "A Verdade Chocante! O Segredo da Arca Noah",
+        "sinopse": "Enquanto Luffy é salvo por Jinbe através de uma transfusão de sangue, o mistério envolvendo a gigantesca arca Noah começa a ser revelado.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep563.jpg",
+        "dataExibicao": "2012-09-02"
+    },
+    {
+        "id": 1486,
+        "numero": 564,
+        "titulo": "Tudo Volta ao Normal! A Declaração de Amizade de Luffy",
+        "sinopse": "Com a crise finalmente resolvida, Luffy e Jinbe fortalecem sua amizade enquanto a Ilha dos Homens-Peixe inicia sua reconstrução.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep564.jpg",
+        "dataExibicao": "2012-09-09"
+    },
+    {
+        "id": 1487,
+        "numero": 565,
+        "titulo": "O Caminho de Luffy! O Grande Homem-Peixe Jinbe",
+        "sinopse": "Jinbe agradece a Luffy por salvar a ilha. Enquanto isso, os habitantes começam a recuperar a esperança em um futuro de paz entre humanos e homens-peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep565.jpg",
+        "dataExibicao": "2012-09-16"
+    },
+    {
+        "id": 1488,
+        "numero": 566,
+        "titulo": "Chega a Hora! O Plano para o Novo Mundo",
+        "sinopse": "Após a batalha, os Chapéus de Palha se preparam para continuar sua jornada rumo ao Novo Mundo, enquanto recebem novas informações sobre o caminho à frente.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep566.jpg",
+        "dataExibicao": "2012-09-23"
+    },
+    {
+        "id": 1489,
+        "numero": 567,
+        "titulo": "Detenham Noah! A Determinação de Luffy",
+        "sinopse": "Mesmo ferido, Luffy insiste em proteger a Ilha dos Homens-Peixe até o fim. O destino da arca Noah finalmente é decidido.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep567.jpg",
+        "dataExibicao": "2012-09-30"
+    },
+    {
+        "id": 1490,
+        "numero": 568,
+        "titulo": "Rumo ao Futuro! Um Novo Começo",
+        "sinopse": "Os habitantes da Ilha dos Homens-Peixe celebram a paz restaurada enquanto os Chapéus de Palha se despedem dos amigos que fizeram durante a aventura.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep568.jpg",
+        "dataExibicao": "2012-10-07"
+    },
+    {
+        "id": 1491,
+        "numero": 569,
+        "titulo": "O Segredo Revelado! A Arma Ancestral Poseidon",
+        "sinopse": "É revelado que Shirahoshi possui um poder extraordinário ligado a uma das Armas Ancestrais, mudando completamente o destino da Ilha dos Homens-Peixe.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep569.jpg",
+        "dataExibicao": "2012-10-14"
+    },
+    {
+        "id": 1492,
+        "numero": 570,
+        "titulo": "A Profecia Cumprida? O Futuro da Ilha dos Homens-Peixe",
+        "sinopse": "A previsão de Madame Shirley sobre Luffy é discutida após os acontecimentos envolvendo Noah, deixando dúvidas sobre o verdadeiro significado da profecia.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep570.jpg",
+        "dataExibicao": "2012-10-21"
+    },
+    {
+        "id": 1493,
+        "numero": 571,
+        "titulo": "Os Doces Preferidos! O Convite de Big Mom",
+        "sinopse": "Luffy entra em conflito com os subordinados da Imperatriz Big Mom, iniciando uma rivalidade que terá grandes consequências no Novo Mundo.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep571.jpg",
+        "dataExibicao": "2012-10-28"
+    },
+    {
+        "id": 1494,
+        "numero": 572,
+        "titulo": "Perspectivas Sombras! A Armadilha que Espera no Novo Mundo",
+        "sinopse": "Enquanto deixam a Ilha dos Homens-Peixe, os Chapéus de Palha recebem notícias sobre os perigos do Novo Mundo e seguem rumo à próxima aventura.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep572.jpg",
+        "dataExibicao": "2012-11-04"
+    },
+    {
+        "id": 1495,
+        "numero": 573,
+        "titulo": "Finalmente Partimos! Adeus à Ilha dos Homens-Peixe",
+        "sinopse": "Os Chapéus de Palha se despedem de Shirahoshi, da Família Real Ryugu e de seus amigos antes de seguir viagem rumo ao Novo Mundo.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep573.jpg",
+        "dataExibicao": "2012-11-11"
+    },
+    {
+        "id": 1496,
+        "numero": 574,
+        "titulo": "Rumo ao Novo Mundo! O Caminho para a Próxima Aventura",
+        "sinopse": "A tripulação deixa a Ilha dos Homens-Peixe e inicia sua travessia em direção ao Novo Mundo, enfrentando as correntes e perigos do oceano.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep574.jpg",
+        "dataExibicao": "2012-11-18"
+    },
+    {
+        "id": 1497,
+        "numero": 575,
+        "titulo": "Z no Ambição! A Pequena Gigante Lily",
+        "sinopse": "Os Chapéus de Palha encontram uma misteriosa garota chamada Lily, dando início aos acontecimentos relacionados ao especial 'Episode of Z'.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep575.jpg",
+        "dataExibicao": "2012-11-25"
+    },
+    {
+        "id": 1498,
+        "numero": 576,
+        "titulo": "Z no Ambição! O Plano Sombrio e Misterioso",
+        "sinopse": "A tripulação continua investigando os acontecimentos envolvendo Lily, enquanto uma perigosa conspiração começa a se revelar.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep576.jpg",
+        "dataExibicao": "2012-12-02"
+    },
+    {
+        "id": 1499,
+        "numero": 577,
+        "titulo": "Z no Ambição! A Grande Operação de Fuga",
+        "sinopse": "Luffy e seus companheiros enfrentam novos inimigos enquanto ajudam Lily e tentam escapar da perseguição da Marinha.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep577.jpg",
+        "dataExibicao": "2012-12-09"
+    },
+    {
+        "id": 1500,
+        "numero": 578,
+        "titulo": "Z no Ambição! Luffy Contra Shuzo!",
+        "sinopse": "Luffy enfrenta Shuzo em uma intensa batalha para proteger seus amigos e impedir o plano inimigo.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep578.jpg",
+        "dataExibicao": "2012-12-16"
+    },
+    {
+        "id": 1501,
+        "numero": 579,
+        "titulo": "Desembarque! A Ilha em Chamas, Punk Hazard",
+        "sinopse": "Após deixar a Ilha dos Homens-Peixe, os Chapéus de Palha recebem um pedido de socorro e chegam a uma misteriosa ilha dividida entre fogo e gelo: Punk Hazard.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep579.jpg",
+        "dataExibicao": "2013-01-06"
+    },
+    {
+        "id": 1502,
+        "numero": 580,
+        "titulo": "Uma Batalha Escaldante! Luffy Contra o Dragão Gigante",
+        "sinopse": "Explorando Punk Hazard, Luffy e seus companheiros encontram um gigantesco dragão que domina a região em chamas, iniciando uma intensa batalha.",
+        "temporadaId": 14,
+        "animeId": 65,
+        "imagemUrl": "../../images/episodios/one-piece/t14/ep580.jpg",
+        "dataExibicao": "2013-01-13"
+    },
+    {
+        "id": 1503,
+        "numero": 581,
+        "titulo": "Os Chapéus de Palha Atônitos! Surge a Terrível Cabeça Decepada de um Samurai",
+        "sinopse": "Luffy encontra um samurai sem torso que pede ajuda, enquanto Nami, Sanji, Chopper e Franky acabam presos ao encontrar partes de um rosto humano na misteriosa ilha.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep581.jpg",
+        "dataExibicao": "2013-01-20"
+    },
+    {
+        "id": 1504,
+        "numero": 582,
+        "titulo": "Surpreendente! O Segredo da Ilha Finalmente é Revelado",
+        "sinopse": "Luffy faz amizade com um centauro, Franky consegue escapar da prisão usando seu raio movido a cola e Sanji encontra o corpo sem cabeça do samurai.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep582.jpg",
+        "dataExibicao": "2013-01-27"
+    },
+    {
+        "id": 1505,
+        "numero": 583,
+        "titulo": "Salvem as Crianças! Os Chapéus de Palha Entram em Combate",
+        "sinopse": "Ao descobrir o sofrimento das crianças mantidas no laboratório, Nami decide impedir a fuga e enfrentar os responsáveis. Enquanto isso, Luffy segue para o lado congelado da ilha.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep583.jpg",
+        "dataExibicao": "2013-02-03"
+    },
+    {
+        "id": 1506,
+        "numero": 584,
+        "titulo": "Duelo de Espadachins! Brook Contra o Misterioso Samurai Sem Tronco",
+        "sinopse": "O grupo de Luffy enfrenta uma tropa de centauros, Brook mede forças com o torso do samurai e Smoker reencontra um velho conhecido em Punk Hazard.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep584.jpg",
+        "dataExibicao": "2013-02-10"
+    },
+    {
+        "id": 1507,
+        "numero": 585,
+        "titulo": "O Shichibukai! Trafalgar Law",
+        "sinopse": "Nami e Chopper procuram uma rota segura para salvar as crianças, enquanto Smoker enfrenta Trafalgar Law em um confronto inesperado.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep585.jpg",
+        "dataExibicao": "2013-02-24"
+    },
+    {
+        "id": 1508,
+        "numero": 586,
+        "titulo": "Em Grande Perigo! Luffy Afunda no Lago Congelado",
+        "sinopse": "O grupo de Luffy cai nas águas congelantes de Punk Hazard, enquanto Law utiliza seus poderes para trocar os corpos dos Chapéus de Palha, causando grande confusão.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep586.jpg",
+        "dataExibicao": "2013-03-03"
+    },
+    {
+        "id": 1509,
+        "numero": 587,
+        "titulo": "Confronto! Law Contra o Vice-Almirante Smoker",
+        "sinopse": "Mesmo afetados pelos poderes de Law, os Chapéus de Palha tentam escapar da instalação, enquanto Smoker trava uma intensa batalha contra o Shichibukai.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep587.jpg",
+        "dataExibicao": "2013-03-17"
+    },
+    {
+        "id": 1510,
+        "numero": 588,
+        "titulo": "Reencontro Após Dois Anos! Luffy e Law",
+        "sinopse": "Luffy reencontra Trafalgar Law, mas a alegria do reencontro é interrompida pelos problemas causados pela troca de corpos da tripulação.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep588.jpg",
+        "dataExibicao": "2013-03-24"
+    },
+    {
+        "id": 1511,
+        "numero": 589,
+        "titulo": "O Homem Mais Perigoso do Mundo! O Cientista do Terror Caesar",
+        "sinopse": "Enquanto Smoker tenta descobrir a verdade sobre Punk Hazard, Luffy conhece a história por trás da transformação da ilha e do cientista Caesar Clown.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep589.jpg",
+        "dataExibicao": "2013-03-31"
+    },
+    {
+        "id": 1512,
+        "numero": 590,
+        "titulo": "A Maior Colaboração da História Contra o Glutão dos Mares II",
+        "sinopse": "Episódio especial crossover em que Luffy, Toriko e Goku unem forças para enfrentar um poderoso inimigo e proteger um grande banquete. :contentReference[oaicite:0]{index=0}",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep590.jpg",
+        "dataExibicao": "2013-04-07"
+    },
+    {
+        "id": 1513,
+        "numero": 591,
+        "titulo": "Chopper Furioso! O Experimento Cruel do Mestre",
+        "sinopse": "Chopper descobre a verdade por trás das drogas dadas às crianças e fica indignado com a crueldade de Caesar Clown. Enquanto isso, os Chapéus de Palha iniciam o resgate das crianças.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep591.jpg",
+        "dataExibicao": "2013-04-14"
+    },
+    {
+        "id": 1514,
+        "numero": 592,
+        "titulo": "Aniquilação da Aliança! Law Contra Vergo!",
+        "sinopse": "Smoker revela a verdadeira identidade de Vergo, enquanto Trafalgar Law prepara seu plano para recuperar seu coração e enfrentar o poderoso vice-almirante infiltrado.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep592.jpg",
+        "dataExibicao": "2013-04-21"
+    },
+    {
+        "id": 1515,
+        "numero": 593,
+        "titulo": "Salvem Nami! A Luta Mortal de Luffy na Montanha de Gelo",
+        "sinopse": "Enquanto as crianças fogem do laboratório, Luffy continua sua perseguição a Caesar Clown e o restante da tripulação enfrenta diversos obstáculos para escapar da instalação.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep593.jpg",
+        "dataExibicao": "2013-04-28"
+    },
+    {
+        "id": 1516,
+        "numero": 594,
+        "titulo": "Formado! A Aliança Entre Luffy e Law",
+        "sinopse": "Law revela seu verdadeiro objetivo: derrubar um dos Quatro Imperadores. Luffy aceita a proposta, formando oficialmente uma poderosa aliança pirata.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep594.jpg",
+        "dataExibicao": "2013-05-05"
+    },
+    {
+        "id": 1517,
+        "numero": 595,
+        "titulo": "Capture o Mestre! A Operação da Aliança Pirata",
+        "sinopse": "Com a aliança formada, os Chapéus de Palha e Law colocam em prática um plano para capturar Caesar Clown e enfraquecer o poder de Donquixote Doflamingo.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep595.jpg",
+        "dataExibicao": "2013-05-12"
+    },
+    {
+        "id": 1518,
+        "numero": 596,
+        "titulo": "Aniquilação! O Assassino que Invade a Ilha",
+        "sinopse": "Um misterioso assassino entra em ação em Punk Hazard, enquanto Caesar acelera seus planos para eliminar todos que estão na ilha.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep596.jpg",
+        "dataExibicao": "2013-05-19"
+    },
+    {
+        "id": 1519,
+        "numero": 597,
+        "titulo": "Grande Batalha! Caesar Ativa a Arma Mortal Shinokuni",
+        "sinopse": "Caesar libera o gás venenoso Shinokuni, colocando toda Punk Hazard em risco. Piratas, marinheiros e crianças precisam fugir antes que seja tarde demais.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep597.jpg",
+        "dataExibicao": "2013-05-26"
+    },
+    {
+        "id": 1520,
+        "numero": 598,
+        "titulo": "Cortando o Perigo! Kin'emon Contra o Dragão Flamejante",
+        "sinopse": "Kin'emon demonstra toda sua habilidade com a espada enquanto ajuda na fuga do grupo e enfrenta os perigos provocados pelas chamas e pelo caos em Punk Hazard.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep598.jpg",
+        "dataExibicao": "2013-06-02"
+    },
+    {
+        "id": 1521,
+        "numero": 599,
+        "titulo": "Choque! O Segredo de Vergo",
+        "sinopse": "A verdadeira ligação entre Vergo, Caesar Clown e Doflamingo vem à tona, revelando a extensão da conspiração que domina Punk Hazard.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep599.jpg",
+        "dataExibicao": "2013-06-09"
+    },
+    {
+        "id": 1522,
+        "numero": 600,
+        "titulo": "Protejam as Crianças! As Mãos do Mal se Aproximam",
+        "sinopse": "Enquanto Shinokuni avança pelo laboratório, Chopper e os demais fazem de tudo para salvar as crianças, enquanto Luffy continua seu confronto decisivo contra Caesar Clown.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep600.jpg",
+        "dataExibicao": "2013-06-16"
+    },
+    {
+        "id": 1523,
+        "numero": 601,
+        "titulo": "Abalando o Novo Mundo! Caesar Clown é Derrotado",
+        "sinopse": "Luffy finalmente derrota Caesar Clown, encerrando a batalha principal em Punk Hazard e garantindo o sucesso da aliança com Trafalgar Law.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep601.jpg",
+        "dataExibicao": "2013-06-23"
+    },
+    {
+        "id": 1524,
+        "numero": 602,
+        "titulo": "A Arma da Destruição em Massa! Shinokuni Escapa",
+        "sinopse": "Mesmo com Caesar derrotado, o gás venenoso Shinokuni continua ameaçando todos em Punk Hazard, obrigando piratas e marinheiros a unirem forças para sobreviver.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep602.jpg",
+        "dataExibicao": "2013-06-30"
+    },
+    {
+        "id": 1525,
+        "numero": 603,
+        "titulo": "O Contra-Ataque Começa! A Grande Fuga de Punk Hazard",
+        "sinopse": "Os Chapéus de Palha, Law e os fuzileiros liderados por Smoker organizam a fuga da ilha enquanto Shinokuni continua avançando.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep603.jpg",
+        "dataExibicao": "2013-07-07"
+    },
+    {
+        "id": 1526,
+        "numero": 604,
+        "titulo": "Rumo ao Prédio R! A Aliança Parte para o Contra-Ataque",
+        "sinopse": "Enquanto os grupos tentam escapar do gás mortal, a aliança executa seus últimos passos para concluir a missão em Punk Hazard.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep604.jpg",
+        "dataExibicao": "2013-07-14"
+    },
+    {
+        "id": 1527,
+        "numero": 605,
+        "titulo": "As Lágrimas de Tashigi! O Sacrifício dos G-5",
+        "sinopse": "Os marinheiros da G-5 lutam para proteger seus companheiros durante a evacuação, enquanto Tashigi demonstra sua determinação em salvar as crianças.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep605.jpg",
+        "dataExibicao": "2013-07-21"
+    },
+    {
+        "id": 1528,
+        "numero": 606,
+        "titulo": "O Traidor Vice-Almirante! O Demônio Bambu Vergo",
+        "sinopse": "Law enfrenta Vergo em um confronto decisivo enquanto Smoker coloca sua confiança na aliança para impedir os planos de Doflamingo.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep606.jpg",
+        "dataExibicao": "2013-08-11"
+    },
+    {
+        "id": 1529,
+        "numero": 607,
+        "titulo": "Confronto Violento! Law Contra Vergo",
+        "sinopse": "Law recupera seu coração e revela todo o poder da Ope Ope no Mi, enfrentando Vergo em uma batalha que decidirá o destino de Punk Hazard.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep607.jpg",
+        "dataExibicao": "2013-08-18"
+    },
+    {
+        "id": 1530,
+        "numero": 608,
+        "titulo": "Mestre das Trevas! O Plano de Caesar é Destruído",
+        "sinopse": "Com Vergo derrotado, Caesar tenta escapar desesperadamente enquanto a instalação entra em colapso devido às explosões provocadas pela batalha.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep608.jpg",
+        "dataExibicao": "2013-08-25"
+    },
+    {
+        "id": 1531,
+        "numero": 609,
+        "titulo": "Luffy Congelado! A Terrível Mulher da Neve Monet",
+        "sinopse": "Enquanto os grupos fogem, Monet tenta impedir a evacuação usando seus poderes da Yuki Yuki no Mi, enfrentando os Chapéus de Palha.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep609.jpg",
+        "dataExibicao": "2013-09-01"
+    },
+    {
+        "id": 1532,
+        "numero": 610,
+        "titulo": "Punhos se Enfrentam! A Batalha de Dois Vice-Almirantes",
+        "sinopse": "Enquanto a fuga continua, Smoker confronta Vergo mais uma vez e os acontecimentos em Punk Hazard aproximam a ilha de seu desfecho.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep610.jpg",
+        "dataExibicao": "2013-09-08"
+    },
+    {
+        "id": 1533,
+        "numero": 611,
+        "titulo": "O Pequeno Dragão! Momonosuke Aparece",
+        "sinopse": "Enquanto a fuga de Punk Hazard continua, um misterioso garoto transformado em dragão revela sua identidade como Momonosuke, filho de um importante samurai de Wano.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep611.jpg",
+        "dataExibicao": "2013-09-15"
+    },
+    {
+        "id": 1534,
+        "numero": 612,
+        "titulo": "Nevasca Mortal! A Mulher da Neve Monet",
+        "sinopse": "Zoro enfrenta Monet para proteger seus companheiros, enquanto Tashigi demonstra sua determinação em derrotar a subordinada de Doflamingo.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep612.jpg",
+        "dataExibicao": "2013-09-22"
+    },
+    {
+        "id": 1535,
+        "numero": 613,
+        "titulo": "A Técnica Secreta de Zoro! Um Golpe Capaz de Cortar o Aço",
+        "sinopse": "Zoro intimida Monet com sua incrível habilidade de espada, enquanto Tashigi aproveita a oportunidade para finalizar o confronto.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep613.jpg",
+        "dataExibicao": "2013-09-29"
+    },
+    {
+        "id": 1536,
+        "numero": 614,
+        "titulo": "Protegendo os Amigos! A Determinação de Mocha",
+        "sinopse": "Mocha arrisca a própria vida para impedir que as outras crianças consumam os doces altamente viciantes criados por Caesar Clown.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep614.jpg",
+        "dataExibicao": "2013-10-06"
+    },
+    {
+        "id": 1537,
+        "numero": 615,
+        "titulo": "A Dor de Mocha! O Sacrifício Pela Esperança",
+        "sinopse": "Mesmo gravemente afetada pelos efeitos da droga, Mocha continua lutando para proteger as demais crianças até que Chopper consiga ajudá-las.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep615.jpg",
+        "dataExibicao": "2013-10-13"
+    },
+    {
+        "id": 1538,
+        "numero": 616,
+        "titulo": "Conclusão Impressionante! Smoker Contra Vergo!",
+        "sinopse": "A batalha entre Smoker e Vergo chega ao fim, enquanto Trafalgar Law coloca em prática sua estratégia definitiva contra o vice-almirante infiltrado.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep616.jpg",
+        "dataExibicao": "2013-10-20"
+    },
+    {
+        "id": 1539,
+        "numero": 617,
+        "titulo": "Derrotando Caesar! O Poderoso Grizzly Magnum",
+        "sinopse": "Luffy desfere seu golpe decisivo, o Grizzly Magnum, derrotando Caesar Clown e encerrando definitivamente seus planos em Punk Hazard.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep617.jpg",
+        "dataExibicao": "2013-10-27"
+    },
+    {
+        "id": 1540,
+        "numero": 618,
+        "titulo": "A Invasão! Os Assassinos de Dressrosa",
+        "sinopse": "Enquanto os Chapéus de Palha deixam Punk Hazard, Doflamingo envia seus homens para eliminar qualquer ameaça aos seus planos.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep618.jpg",
+        "dataExibicao": "2013-11-03"
+    },
+    {
+        "id": 1541,
+        "numero": 619,
+        "titulo": "Em Fúria! O Ataque de Doflamingo",
+        "sinopse": "Donquixote Doflamingo chega pessoalmente a Punk Hazard para eliminar Smoker e recuperar Caesar Clown, iniciando um confronto devastador.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep619.jpg",
+        "dataExibicao": "2013-11-10"
+    },
+    {
+        "id": 1542,
+        "numero": 620,
+        "titulo": "Situação Crítica! A Chegada do Almirante Fujitora",
+        "sinopse": "Enquanto a tripulação segue rumo a Dressrosa, um novo almirante da Marinha começa a se mover, preparando o cenário para os próximos acontecimentos no Novo Mundo.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep620.jpg",
+        "dataExibicao": "2013-11-17"
+    },
+    {
+        "id": 1543,
+        "numero": 621,
+        "titulo": "Capturando Caesar! A Grande Operação do General Franky",
+        "sinopse": "Os Chapéus de Palha finalizam a fuga de Punk Hazard enquanto Franky e os demais garantem a captura de Caesar Clown. A aliança começa a colocar seus próximos planos em ação.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep621.jpg",
+        "dataExibicao": "2013-11-24"
+    },
+    {
+        "id": 1544,
+        "numero": 622,
+        "titulo": "Um Reencontro Emocionante! Momonosuke e Kin'emon",
+        "sinopse": "Kin'emon finalmente reencontra seu filho Momonosuke. Enquanto isso, a tripulação se prepara para seguir rumo a Dressrosa com seus novos aliados.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep622.jpg",
+        "dataExibicao": "2013-12-01"
+    },
+    {
+        "id": 1545,
+        "numero": 623,
+        "titulo": "Hora da Despedida! Punk Hazard Parte para um Novo Futuro",
+        "sinopse": "As crianças resgatadas são entregues aos cuidados da Marinha, enquanto Law conclui seus negócios em Punk Hazard antes da partida da aliança.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep623.jpg",
+        "dataExibicao": "2013-12-08"
+    },
+    {
+        "id": 1546,
+        "numero": 624,
+        "titulo": "A Destruição da G-5! O Ataque de Doflamingo",
+        "sinopse": "Doflamingo persegue Smoker e os marinheiros da G-5, mas um poderoso aliado surge para impedir a tragédia.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep624.jpg",
+        "dataExibicao": "2013-12-15"
+    },
+    {
+        "id": 1547,
+        "numero": 625,
+        "titulo": "Confronto Intenso! Aokiji Contra Doflamingo",
+        "sinopse": "O ex-almirante Aokiji aparece inesperadamente e enfrenta Doflamingo, salvando Smoker e alterando completamente os rumos da situação.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep625.jpg",
+        "dataExibicao": "2013-12-22"
+    },
+    {
+        "id": 1548,
+        "numero": 626,
+        "titulo": "Caesar Desaparece! A Infiltração Misteriosa",
+        "sinopse": "Durante a viagem para Dressrosa, Caesar Clown desaparece misteriosamente, obrigando a tripulação a investigar quem está por trás do sequestro.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep626.jpg",
+        "dataExibicao": "2014-01-05"
+    },
+    {
+        "id": 1549,
+        "numero": 627,
+        "titulo": "Luffy Morre no Mar?! O Pirata Contra-ataca",
+        "sinopse": "Um misterioso inimigo ataca o Thousand Sunny durante a travessia, colocando Luffy e toda a tripulação em perigo.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep627.jpg",
+        "dataExibicao": "2014-01-12"
+    },
+    {
+        "id": 1550,
+        "numero": 628,
+        "titulo": "Grande Reviravolta! O Contra-Ataque de Luffy",
+        "sinopse": "Após descobrir o verdadeiro plano dos invasores, Luffy lidera o contra-ataque para recuperar Caesar Clown e proteger seus companheiros.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep628.jpg",
+        "dataExibicao": "2014-01-19"
+    },
+    {
+        "id": 1551,
+        "numero": 629,
+        "titulo": "Um Choque Violento! O Segredo do Thousand Sunny",
+        "sinopse": "A batalha continua a bordo do Thousand Sunny, enquanto Franky utiliza todo o potencial das modificações da embarcação para proteger a tripulação.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep629.jpg",
+        "dataExibicao": "2014-01-26"
+    },
+    {
+        "id": 1552,
+        "numero": 630,
+        "titulo": "Explorem! A Ilha do Amor e da Paixão",
+        "sinopse": "Após superar a ameaça durante a viagem, os Chapéus de Palha finalmente avistam Dressrosa, a ilha governada por Donquixote Doflamingo.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep630.jpg",
+        "dataExibicao": "2014-02-02"
+    },
+    {
+        "id": 1553,
+        "numero": 631,
+        "titulo": "Uma Aventura Fascinante! O País dos Brinquedos",
+        "sinopse": "Os Chapéus de Palha chegam a Dressrosa, uma ilha vibrante habitada por humanos e brinquedos vivos. Enquanto exploram o local, começam a descobrir que há algo estranho por trás da aparente felicidade do reino.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep631.jpg",
+        "dataExibicao": "2014-02-09"
+    },
+    {
+        "id": 1554,
+        "numero": 632,
+        "titulo": "Amor Perigoso! A Dançarina Violet",
+        "sinopse": "Sanji conhece a misteriosa Violet, que pede sua ajuda para salvar alguém. Enquanto isso, o restante da tripulação inicia seus objetivos em Dressrosa.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep632.jpg",
+        "dataExibicao": "2014-02-16"
+    },
+    {
+        "id": 1555,
+        "numero": 633,
+        "titulo": "O Guerreiro Mais Forte! Surge o Gladiador Lucy",
+        "sinopse": "Luffy entra no Coliseu Corrida disfarçado como 'Lucy' para disputar a Mera Mera no Mi, enquanto novos e poderosos gladiadores aparecem.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep633.jpg",
+        "dataExibicao": "2014-02-23"
+    },
+    {
+        "id": 1556,
+        "numero": 634,
+        "titulo": "O Pirata Famoso! O Caçador de Campeões Bartolomeo",
+        "sinopse": "Os competidores do Coliseu entram em ação. Luffy conhece Bartolomeo, um pirata de comportamento excêntrico que desperta a curiosidade de todos.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep634.jpg",
+        "dataExibicao": "2014-03-02"
+    },
+    {
+        "id": 1557,
+        "numero": 635,
+        "titulo": "O Destino se Encontra! Rebecca e o Soldado de Um Só Brinquedo",
+        "sinopse": "Rebecca luta no Coliseu enquanto sua ligação com um misterioso soldado de um brinquedo começa a ser revelada.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep635.jpg",
+        "dataExibicao": "2014-03-16"
+    },
+    {
+        "id": 1558,
+        "numero": 636,
+        "titulo": "O Supernovato! Cavendish, o Cavalo Branco",
+        "sinopse": "Luffy conhece Cavendish, um belo espadachim que guarda profundo ressentimento pelos Supernovas, especialmente contra Luffy.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep636.jpg",
+        "dataExibicao": "2014-03-23"
+    },
+    {
+        "id": 1559,
+        "numero": 637,
+        "titulo": "Confronto de Guerreiros! A Batalha no Bloco B",
+        "sinopse": "Os competidores do Bloco B iniciam uma intensa batalha pela vaga na final do Coliseu Corrida.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep637.jpg",
+        "dataExibicao": "2014-04-06"
+    },
+    {
+        "id": 1560,
+        "numero": 638,
+        "titulo": "Um Golpe Mortal! O Punho do Rei Elizabello II",
+        "sinopse": "O lendário King Punch de Elizabello II impressiona todos os espectadores durante as eliminatórias do Coliseu.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep638.jpg",
+        "dataExibicao": "2014-04-13"
+    },
+    {
+        "id": 1561,
+        "numero": 639,
+        "titulo": "O Peixe Lutador! A Ponte da Morte",
+        "sinopse": "Luffy enfrenta os perigosos Peixes Lutadores para atravessar a ponte e prosseguir com o plano em Dressrosa.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep639.jpg",
+        "dataExibicao": "2014-04-20"
+    },
+    {
+        "id": 1562,
+        "numero": 640,
+        "titulo": "Aventura! A Ilha das Fadas Green Bit",
+        "sinopse": "Robin, Usopp e Law chegam a Green Bit, onde conhecem os misteriosos Tontattas e iniciam as negociações para derrotar Doflamingo.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep640.jpg",
+        "dataExibicao": "2014-04-27"
+    },
+    {
+        "id": 1563,
+        "numero": 641,
+        "titulo": "O Mundo Desconhecido! O Reino dos Tontattas",
+        "sinopse": "Usopp e Robin descobrem o reino subterrâneo dos Tontattas e conhecem a história do pequeno povo que deseja libertar Dressrosa.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep641.jpg",
+        "dataExibicao": "2014-05-04"
+    },
+    {
+        "id": 1564,
+        "numero": 642,
+        "titulo": "A Estratégia do Século! Doflamingo Entra em Ação",
+        "sinopse": "Enquanto a aliança avança em seu plano, Doflamingo revela sua estratégia para esmagar os Chapéus de Palha e manter o controle absoluto de Dressrosa.",
+        "temporadaId": 15,
+        "animeId": 66,
+        "imagemUrl": "../../images/episodios/one-piece/t15/ep642.jpg",
+        "dataExibicao": "2014-05-11"
     }
 ]
