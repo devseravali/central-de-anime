@@ -21078,5 +21078,265 @@
         "animeId": 73,
         "imagemUrl": "../../images/episodios/one-piece/t22/ep1155.jpg",
         "dataExibicao": "2025-12-28"
+    },
+    {
+        "id": 2109,
+        "numero": 1156,
+        "titulo": "O Tão Esperado Elbaf! O Grande Banquete da Reunião!",
+        "sinopse": "Após deixarem Egghead, os Chapéus de Palha e a Tripulação dos Piratas Gigantes celebram seu reencontro com um grande banquete.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1156.jpg",
+        "dataExibicao": "2026-04-05"
+    },
+    {
+        "id": 2110,
+        "numero": 1157,
+        "titulo": "Nami em Apuros! Uma Aventura no Reino dos Blocos!",
+        "sinopse": "Nami acorda em um lugar completamente desconhecido. Criaturas gigantes começam a atacá-la uma após outra, deixando-a encurralada. Nesse momento, ela ouve uma voz chamando seu nome.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1157.jpg",
+        "dataExibicao": "2026-04-12"
+    },
+    {
+        "id": 2111,
+        "numero": 1158,
+        "titulo": "Uma Missão na Terra Misteriosa! O Segredo do Deus Sol!",
+        "sinopse": "Luffy e seus companheiros encontram um guerreiro misterioso montado em um gafanhoto.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1158.jpg",
+        "dataExibicao": "2026-04-19"
+    },
+    {
+        "id": 2112,
+        "numero": 1159,
+        "titulo": "Destruam o Pequeno Jardim! A Fuga do Reino dos Blocos!",
+        "sinopse": "Perseguidos pelo Deus Sol, os Chapéus de Palha atravessam o Reino dos Blocos em alta velocidade. Enquanto fogem, o verdadeiro objetivo do Deus Sol começa a surgir.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1159.jpg",
+        "dataExibicao": "2026-04-26"
+    },
+    {
+        "id": 2113,
+        "numero": 1160,
+        "titulo": "Um Encontro no Campo de Neve! Loki, o Príncipe Amaldiçoado!",
+        "sinopse": "Após deixarem o Reino dos Blocos, Luffy e os outros encontram uma enorme paisagem coberta de neve e uma grande ponte suspensa. Porém, figuras misteriosas aparecem em seu caminho.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1160.jpg",
+        "dataExibicao": "2026-05-03"
+    },
+    {
+        "id": 2114,
+        "numero": 1161,
+        "titulo": "Um Acordo Perigoso! Loki do Submundo e Luffy!",
+        "sinopse": "Luffy encontra Loki, o Príncipe Amaldiçoado, que lhe oferece um acordo. Loki revela uma possível ligação com Shanks enquanto feras selvagens cercam o local.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1161.jpg",
+        "dataExibicao": "2026-05-10"
+    },
+    {
+        "id": 2115,
+        "numero": 1162,
+        "titulo": "Uma Onda Gigante de Emoção! A Paisagem dos Sonhos de Elbaf!",
+        "sinopse": "O Great Erik, carregando Robin e os outros, chega à ilha de Elbaf. Uma paisagem impressionante surge diante deles, mas uma surpresa ainda maior os aguarda.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1162.jpg",
+        "dataExibicao": "2026-05-17"
+    },
+    {
+        "id": 2116,
+        "numero": 1163,
+        "titulo": "Quero Que Você Me Elogie! O Reencontro de Robin e Saul!",
+        "sinopse": "Robin e seus companheiros finalmente chegam ao porto da Vila Ocidental em Elbaf e reencontram uma pessoa muito importante de seu passado.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1163.jpg",
+        "dataExibicao": "2026-05-24"
+    },
+    {
+        "id": 2117,
+        "numero": 1164,
+        "titulo": "A Determinação de Saul! A Vontade Herdada de Ohara!",
+        "sinopse": "Robin apresenta Luffy e os outros a Saul. Enquanto exploram a biblioteca de Elbaf, eles descobrem um incrível legado deixado pela história de Ohara.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1164.jpg",
+        "dataExibicao": "2026-05-31"
+    },
+    {
+        "id": 2118,
+        "numero": 1165,
+        "titulo": "Uma Recepção com Amigos e Intrusos à Procura de Loki!",
+        "sinopse": "Robin, Chopper, Bonney e Lilith exploram a Biblioteca Coruja enquanto os gigantes celebram a chegada dos Chapéus de Palha.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1165.jpg",
+        "dataExibicao": "2026-06-07"
+    },
+    {
+        "id": 2119,
+        "numero": 1166,
+        "titulo": "Encontrando Loki! Gunko dos Cavaleiros de Deus!",
+        "sinopse": "Durante o grande banquete com os gigantes, Luffy ouve a lenda do Deus Sol passada em Elbaf e descobre por que Loki está sendo mantido preso. No Submundo, dois convidados misteriosos aparecem diante de Loki querendo recrutá-lo para sua ordem de cavaleiros.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1166.jpg",
+        "dataExibicao": "2026-06-14"
+    },
+    {
+        "id": 2120,
+        "numero": 1167,
+        "titulo": "Shamrock Aparece! O Comandante dos Cavaleiros de Deus!",
+        "sinopse": "Luffy e alguns de seus companheiros deixam o banquete escondidos para explorar o castelo do antigo rei de Elbaf.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1167.jpg",
+        "dataExibicao": "2026-06-21"
+    },
+    {
+        "id": 2121,
+        "numero": 1168,
+        "titulo": "História Antiga! O Harley Transmitido por Elbaf!",
+        "sinopse": "Após deixar um presente cruel de despedida, Shamrock e Gunko dos Cavaleiros de Deus abandonam Loki e seguem para seu próximo plano. Enquanto Franky observa antigas pinturas nas paredes, Robin lê um importante texto religioso preservado por Elbaf.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1168.jpg",
+        "dataExibicao": "2026-06-28"
+    },
+    {
+        "id": 2122,
+        "numero": 1169,
+        "titulo": "A Lenda Escondida em Elbaf! A Identidade do Devorador de Montanhas!",
+        "sinopse": "Enquanto exploram o castelo abandonado, Luffy e os outros encontram uma marca estranha na sala do trono e ouvem uma voz misteriosa. No banquete, Oimo conta a Usopp uma história lendária ligada ao Rei dos Piratas.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1169.jpg",
+        "dataExibicao": "2026-07-12"
+    },
+    {
+        "id": 2123,
+        "numero": 1170,
+        "titulo": "Pegue a Chave! Luffy contra Scopper Gaban!",
+        "sinopse": "Gaban desafia Luffy a pegar a chave que está com ele. Luffy tenta, mas é dominado pela enorme força de Gaban. Enquanto isso, Shamrock e Gunko convocam reforços e elaboram um plano contra os gigantes.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1170.jpg",
+        "dataExibicao": "2026-07-19"
+    },
+    {
+        "id": 2124,
+        "numero": 1171,
+        "titulo": "O Pecador Cruel! Loki do Submundo Está Livre?!",
+        "sinopse": "Loki, conhecido como o Príncipe Amaldiçoado de Elbaf, enfrenta uma nova situação após acontecimentos envolvendo os Cavaleiros de Deus. O destino do gigante amaldiçoado começa a mudar.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1171.jpg",
+        "dataExibicao": "2026-07-26"
+    },
+    {
+        "id": 2125,
+        "numero": 1172,
+        "titulo": "Episódio 1172",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1172.jpg",
+        "dataExibicao": "2026-08-02"
+    },
+    {
+        "id": 2126,
+        "numero": 1173,
+        "titulo": "Episódio 1173",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1173.jpg",
+        "dataExibicao": "2026-08-09"
+    },
+    {
+        "id": 2127,
+        "numero": 1174,
+        "titulo": "Episódio 1174",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1174.jpg",
+        "dataExibicao": "2026-08-16"
+    },
+    {
+        "id": 2128,
+        "numero": 1175,
+        "titulo": "Episódio 1175",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1175.jpg",
+        "dataExibicao": "2026-08-23"
+    },
+    {
+        "id": 2129,
+        "numero": 1176,
+        "titulo": "Episódio 1176",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1176.jpg",
+        "dataExibicao": "2026-08-30"
+    },
+    {
+        "id": 2130,
+        "numero": 1177,
+        "titulo": "Episódio 1177",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1177.jpg",
+        "dataExibicao": "2026-09-06"
+    },
+    {
+        "id": 2131,
+        "numero": 1178,
+        "titulo": "Episódio 1178",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1178.jpg",
+        "dataExibicao": "2026-09-13"
+    },
+    {
+        "id": 2132,
+        "numero": 1179,
+        "titulo": "Episódio 1179",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1179.jpg",
+        "dataExibicao": "2026-09-20"
+    },
+    {
+        "id": 2133,
+        "numero": 1180,
+        "titulo": "Episódio 1180",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1180.jpg",
+        "dataExibicao": "2026-09-27"
+    },
+    {
+        "id": 2134,
+        "numero": 1181,
+        "titulo": "Episódio 1181",
+        "sinopse": "Sem sinopse oficial disponível.",
+        "temporadaId": 23,
+        "animeId": 74,
+        "imagemUrl": "../../images/episodios/one-piece/t23/ep1181.jpg",
+        "dataExibicao": "2026-10-04"
     }
 ]
