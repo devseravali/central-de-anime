@@ -20408,5 +20408,675 @@
         "animeId": 72,
         "imagemUrl": "../../images/episodios/one-piece/t21/ep1088.jpg",
         "dataExibicao": "2023-12-17"
+    },
+    {
+        "id": 2042,
+        "numero": 1089,
+        "titulo": "Entrando em um Novo Capítulo! Os Caminhos de Luffy e Sabo!",
+        "sinopse": "Sabo, o Chefe de Gabinete do Exército Revolucionário, entra em contato com Koala e os outros no Reino Kamabakka. Ele explica sobre as acusações contra ele, mas alguém que estava ouvindo a conversa toma uma atitude surpreendente.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1089.jpg",
+        "dataExibicao": "2024-01-07"
+    },
+    {
+        "id": 2043,
+        "numero": 1090,
+        "titulo": "Uma Nova Ilha! Egghead, a Ilha do Futuro",
+        "sinopse": "Luffy e Chopper caem no mar gelado e turbulento junto com uma garota misteriosa. Enquanto Jinbei tenta ajudá-los, uma criatura desconhecida ataca novamente. Enquanto isso, o Sunny é atingido por torpedos e os outros Chapéus de Palha também acabam no mar.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1090.jpg",
+        "dataExibicao": "2024-01-14"
+    },
+    {
+        "id": 2044,
+        "numero": 1091,
+        "titulo": "Cheio de Futuro! Uma Aventura na Ilha da Ciência!",
+        "sinopse": "Uma jovem que saiu de um grande robô se apresenta como Dr. Vegapunk, surpreendendo Franky e os outros Chapéus de Palha. Enquanto isso, Luffy e seu grupo chegam à superfície de Egghead, onde prédios futuristas e criaturas gigantes desconhecidas os aguardam.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1091.jpg",
+        "dataExibicao": "2024-01-21"
+    },
+    {
+        "id": 2045,
+        "numero": 1092,
+        "titulo": "O Lamento de Bonney! A Escuridão Oculta na Ilha do Futuro",
+        "sinopse": "Enquanto Luffy e os outros aproveitam as máquinas futuristas de Egghead, alguém parecido com Bartholomew Kuma aparece diante deles. Quando Luffy tenta reagir, Bonney impede e revela sua chocante ligação com Kuma.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1092.jpg",
+        "dataExibicao": "2024-01-28"
+    },
+    {
+        "id": 2046,
+        "numero": 1093,
+        "titulo": "O Vencedor Leva Tudo! Law vs. Barba Negra!",
+        "sinopse": "Os Piratas do Barba Negra atacam os Piratas Heart liderados por Law. Os principais oficiais de Barba Negra usam diversos poderes de Akuma no Mi e pressionam a tripulação de Law para obter as cópias dos Poneglyphs da Estrada.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1093.jpg",
+        "dataExibicao": "2024-02-11"
+    },
+    {
+        "id": 2047,
+        "numero": 1094,
+        "titulo": "O Mistério se Aprofunda! O Laboratório de Egghead",
+        "sinopse": "Os Chapéus de Palha que estão sem Luffy, Chopper e Jinbei são levados ao laboratório nas nuvens por Lilith. Eles ficam animados com as novas descobertas, mas uma ameaça os espera dentro do laboratório.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1094.jpg",
+        "dataExibicao": "2024-02-18"
+    },
+    {
+        "id": 2048,
+        "numero": 1095,
+        "titulo": "O Cérebro de um Gênio - Os Seis Vegapunks!",
+        "sinopse": "Nami e os outros são atacados por um Pacifista semelhante a Jinbei. Enquanto lutam, alguns Satélites de Vegapunk observam com interesse. Enquanto isso, Luffy e Chopper encontram algo extraordinário no depósito de sucata.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1095.jpg",
+        "dataExibicao": "2024-02-25"
+    },
+    {
+        "id": 2049,
+        "numero": 1096,
+        "titulo": "Uma Parte Proibida da História! Uma Teoria Sobre um Reino!",
+        "sinopse": "Vegapunk Shaka compartilha com Robin e os outros sua teoria sobre um antigo reino e o Século Perdido. Ele revela que visitou Ohara após sua destruição. Enquanto isso, Luffy e Chopper tentam ativar o enorme robô e algo surpreendente acontece.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1096.jpg",
+        "dataExibicao": "2024-03-03"
+    },
+    {
+        "id": 2050,
+        "numero": 1097,
+        "titulo": "A Vontade de Ohara! A Pesquisa Herdada!",
+        "sinopse": "Shaka revela o segredo por trás da fundação do Exército Revolucionário e como a relação entre Vegapunk e Dragon influenciou esse acontecimento. Enquanto isso, Vegapunk explica a Luffy e aos outros sobre seus poderes especiais e seus clones.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1097.jpg",
+        "dataExibicao": "2024-03-17"
+    },
+    {
+        "id": 2051,
+        "numero": 1098,
+        "titulo": "O Sonho Excêntrico de um Gênio!",
+        "sinopse": "Vegapunk revela a chocante história do antigo robô gigante e pede a Luffy para tirá-lo de Egghead. Enquanto isso, Rob Lucci e os agentes da Cipher Pol chegam à ilha e pedem permissão para entrar no porto.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1098.jpg",
+        "dataExibicao": "2024-03-24"
+    },
+    {
+        "id": 2052,
+        "numero": 1099,
+        "titulo": "Preparativos para a Interceptação! Rob Lucci Ataca!",
+        "sinopse": "O CP-0 liderado por Rob Lucci invade Egghead e causa confusão na Fabriophase. Enquanto Shaka e os outros se preparam para lutar na Labophase, Atlas se levanta para defender a paz da ilha.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1099.jpg",
+        "dataExibicao": "2024-03-31"
+    },
+    {
+        "id": 2053,
+        "numero": 1100,
+        "titulo": "Poderes em Outro Nível! Luffy vs. Lucci!",
+        "sinopse": "Luffy se transforma no Guerreiro da Libertação enquanto Rob Lucci mostra sua forma despertada da Akuma no Mi. Durante o confronto, Vegapunk revela a verdade sobre a fruta Gum-Gum e sua teoria sobre as Akuma no Mi.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1100.jpg",
+        "dataExibicao": "2024-04-07"
+    },
+    {
+        "id": 2054,
+        "numero": 1101,
+        "titulo": "A Forma Mais Forte da Humanidade! Os Poderes dos Serafins!",
+        "sinopse": "Vegapunk explica como conseguiu conceder poderes de Akuma no Mi aos Serafins, surpreendendo Franky e os outros. Enquanto isso, Luffy continua enfrentando Lucci em sua forma desperta.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1101.jpg",
+        "dataExibicao": "2024-04-21"
+    },
+    {
+        "id": 2055,
+        "numero": 1102,
+        "titulo": "Planos Sinistros! A Operação para Escapar de Egghead",
+        "sinopse": "Vegapunk pede aos Chapéus de Palha para levá-lo a bordo do navio. Enquanto isso, Lucci ordena que suas tropas bloqueiem todas as rotas de fuga e invade a Labophase protegida.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1102.jpg",
+        "dataExibicao": "2024-04-28"
+    },
+    {
+        "id": 2056,
+        "numero": 1103,
+        "titulo": "Volte a Ser Meu Pai! O Desejo Inútil de Bonney!",
+        "sinopse": "O CP-0 invade a Labophase e começa a atacar o Thousand Sunny. Luffy se reúne com Nami e os outros, mas descobre que Vegapunk desapareceu. Enquanto isso, Bonney pressiona Vegapunk para restaurar seu pai Kuma.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1103.jpg",
+        "dataExibicao": "2024-05-05"
+    },
+    {
+        "id": 2057,
+        "numero": 1104,
+        "titulo": "Uma Situação Desesperadora! O Ataque Total dos Serafins!",
+        "sinopse": "Os Serafins seguem o CP-0 até o Labofase, colocando Zoro e Brook contra eles. Sanji, Franky, Edison e Lilith deixam o laboratório para lutar, mas os Serafins iniciam um ataque em grande escala.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1104.jpg",
+        "dataExibicao": "2023-05-14"
+    },
+    {
+        "id": 2058,
+        "numero": 1105,
+        "titulo": "Um Belo Ato de Traição! A Espiã, Stussy",
+        "sinopse": "Stussy surpreende os Chapéus de Palha ao derrubar Lucci e revelar sua verdadeira identidade. Enquanto isso, um grande incidente acontece na Ilha Sphinx, onde Barba Branca nasceu.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1105.jpg",
+        "dataExibicao": "2023-05-21"
+    },
+    {
+        "id": 2059,
+        "numero": 1106,
+        "titulo": "Problemas Surgem! Encontrem o Dr. Vegapunk!",
+        "sinopse": "O CP-0 assume o controle da Fabriase, mas é atacado por uma força desconhecida. Enquanto isso, os Chapéus de Palha e os Satélites de Vegapunk procuram pelo cientista desaparecido.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1106.jpg",
+        "dataExibicao": "2023-05-28"
+    },
+    {
+        "id": 2060,
+        "numero": 1107,
+        "titulo": "Um Arrepio! A Mão Maligna se Aproxima do Laboratório",
+        "sinopse": "Bonney presencia as dolorosas memórias de seu pai, Kuma. Enquanto isso, Shaka percebe que alguém está cortando os sistemas de comunicação e vigilância do laboratório.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1107.jpg",
+        "dataExibicao": "2023-06-04"
+    },
+    {
+        "id": 2061,
+        "numero": 1108,
+        "titulo": "Incompreensível! A Rebelião dos Serafins!",
+        "sinopse": "Os Serafins começam a atacar os Chapéus de Palha e os Satélites de Vegapunk, ignorando suas ordens. Quando Luffy e Zoro ficam encurralados, Lucci e Kaku fazem uma proposta surpreendente.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1108.jpg",
+        "dataExibicao": "2023-06-11"
+    },
+    {
+        "id": 2062,
+        "numero": 1109,
+        "titulo": "Uma Decisão Difícil! Uma Aliança Inesperada!",
+        "sinopse": "Lucci e Kaku pedem para Luffy e Zoro libertá-los para que possam lutar juntos contra os Serafins. A dupla precisa decidir se aceita essa união temporária.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1109.jpg",
+        "dataExibicao": "2023-06-18"
+    },
+    {
+        "id": 2063,
+        "numero": 1110,
+        "titulo": "Sobrevivam! Combate Mortal Contra a Forma Mais Forte da Humanidade!",
+        "sinopse": "Os Chapéus de Palha e o CP-0 continuam enfrentando os Serafins, mas eles continuam se levantando após os ataques. Zoro percebe uma semelhança entre eles e um antigo inimigo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1110.jpg",
+        "dataExibicao": "2023-06-25"
+    },
+    {
+        "id": 2064,
+        "numero": 1111,
+        "titulo": "O Segundo Ohara! A Ambição do Mestre por Trás de Tudo!",
+        "sinopse": "Stussy e Sentomaru discutem a ameaça que se aproxima de Egghead. Enquanto isso, uma pessoa misteriosa se aproxima de Vegapunk, que está preso em um laboratório subterrâneo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1111.jpg",
+        "dataExibicao": "2023-07-02"
+    },
+    {
+        "id": 2065,
+        "numero": 1112,
+        "titulo": "Confronto! Shanks vs. Eustass Kid",
+        "sinopse": "Kid prepara sua tripulação para enfrentar Shanks. Enquanto isso, Shanks também se prepara para a batalha e descobre que seus aliados estão dispostos a protegê-lo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1112.jpg",
+        "dataExibicao": "2023-07-09"
+    },
+    {
+        "id": 2066,
+        "numero": 1113,
+        "titulo": "Corra, Koby! Uma Estratégia de Fuga Desesperada!",
+        "sinopse": "Perona invade a prisão dos Piratas do Barba Negra para resgatar Moria e acaba libertando Koby. O jovem capitão ajuda outros prisioneiros enquanto tenta escapar da Ilha Pirata com a ajuda da SWORD.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1113.jpg",
+        "dataExibicao": "2024-07-28"
+    },
+    {
+        "id": 2067,
+        "numero": 1114,
+        "titulo": "Pelo Discípulo Amado! O Punho do Vice-Almirante Garp!",
+        "sinopse": "Garp chega à Ilha Pirata para salvar Koby e demonstra seu enorme poder ao enfrentar os inimigos. O lendário vice-almirante parte para resgatar seu antigo discípulo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1114.jpg",
+        "dataExibicao": "2024-08-04"
+    },
+    {
+        "id": 2068,
+        "numero": 1115,
+        "titulo": "A Marinha Surpresa! O Ex-Almirante Kuzan do Quartel-General da Marinha",
+        "sinopse": "Kuzan, antigo almirante da Marinha e agora membro dos Piratas do Barba Negra, aparece para enfrentar Garp. O passado entre mestre e aluno começa a ser revelado.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1115.jpg",
+        "dataExibicao": "2024-08-11"
+    },
+    {
+        "id": 2069,
+        "numero": 1116,
+        "titulo": "Vamos Buscar! A Grande Declaração de Buggy!",
+        "sinopse": "Sengoku e Tsuru conversam sobre os acontecimentos envolvendo a Cross Guild. Enquanto isso, Buggy faz um discurso poderoso para Crocodile, Mihawk e sua tripulação.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1116.jpg",
+        "dataExibicao": "2024-08-18"
+    },
+    {
+        "id": 2070,
+        "numero": 1117,
+        "titulo": "Sabo Retorna! A Verdade Chocante é Revelada!",
+        "sinopse": "Sabo retorna ao Reino Kamabakka e conta o que aconteceu durante o Reverie. Ele revela acontecimentos envolvendo Kuma e os Dragões Celestiais.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1117.jpg",
+        "dataExibicao": "2024-09-01"
+    },
+    {
+        "id": 2071,
+        "numero": 1118,
+        "titulo": "A Terra Santa em Tumulto! O Golpe Poderoso de Sai e Leo!",
+        "sinopse": "Durante o Reverie, Sabo encontra Bonney na Terra Santa Mary Geoise. Enquanto isso, o Rei Cobra questiona os Cinco Anciões sobre os segredos do mundo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1118.jpg",
+        "dataExibicao": "2024-09-08"
+    },
+    {
+        "id": 2072,
+        "numero": 1119,
+        "titulo": "A Mensagem Confiada! A Determinação do Rei Cobra",
+        "sinopse": "Cobra descobre a verdade por trás do Trono Vazio e presencia algo chocante. Antes de sofrer um ataque mortal, ele confia uma mensagem importante a Sabo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1119.jpg",
+        "dataExibicao": "2024-09-15"
+    },
+    {
+        "id": 2073,
+        "numero": 1120,
+        "titulo": "O Mundo Estremece! O Julgamento do Governante e as Ações dos Cinco Anciões!",
+        "sinopse": "Vivi tenta escapar de Mary Geoise enquanto Sabo busca uma maneira de deixar a ilha e entregar a mensagem de Cobra. Imu ordena uma ação terrível aos Cinco Anciões.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1120.jpg",
+        "dataExibicao": "2024-09-22"
+    },
+    {
+        "id": 2074,
+        "numero": 1121,
+        "titulo": "Garp e Kuzan! O Conflito das Crenças Entre Mestre e Discípulo",
+        "sinopse": "Na Ilha Pirata, Garp enfrenta os Piratas do Barba Negra para salvar Koby. Porém, Kuzan surge em seu caminho e os antigos companheiros entram em conflito.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1121.jpg",
+        "dataExibicao": "2024-10-06"
+    },
+    {
+        "id": 2075,
+        "numero": 1122,
+        "titulo": "A Última Lição! O Impacto Herdado",
+        "sinopse": "Pizarro usa seu poder para ameaçar o navio da Marinha. Mesmo ferido, Garp orienta Koby, Helmeppo e Grus e realiza um poderoso ataque para salvar seus aliados.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1122.jpg",
+        "dataExibicao": "2024-10-13"
+    },
+    {
+        "id": 2076,
+        "numero": 1123,
+        "titulo": "O Mundo Estremece! A Situação dos Chapéus de Palha como Reféns",
+        "sinopse": "As notícias sobre o desaparecimento de Garp e a situação dos Chapéus de Palha se espalham pelo mundo. Enquanto isso, um terremoto misterioso abala a Terra e a Marinha cerca Egghead.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1123.jpg",
+        "dataExibicao": "2025-04-05"
+    },
+    {
+        "id": 2077,
+        "numero": 1124,
+        "titulo": "Completamente Cercados! A Operação para Escapar de Egghead",
+        "sinopse": "A ilha de Egghead é cercada pela Marinha. Luffy e seus companheiros planejam uma fuga, mas o sistema de defesa da ilha impede a saída sem o código secreto de York.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1124.jpg",
+        "dataExibicao": "2025-04-06"
+    },
+    {
+        "id": 2078,
+        "numero": 1125,
+        "titulo": "O Confronto da Determinação! Kizaru e Sentomaru",
+        "sinopse": "O Almirante Kizaru finalmente chega a Egghead e enfrenta Sentomaru, antigo aliado de Vegapunk. Enquanto isso, os Chapéus de Palha tentam mover o Sunny para escapar.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1125.jpg",
+        "dataExibicao": "2025-04-13"
+    },
+    {
+        "id": 2079,
+        "numero": 1126,
+        "titulo": "Desespero Crescente! A Missão Sombria do Almirante Kizaru",
+        "sinopse": "Kuma continua avançando até Mary Geoise mesmo sem sua vontade própria. Enquanto isso, Kizaru invade o Labofase e enfrenta Luffy.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1126.jpg",
+        "dataExibicao": "2025-04-20"
+    },
+    {
+        "id": 2080,
+        "numero": 1127,
+        "titulo": "Luffy vs. Kizaru! Uma Batalha de Poderes Incríveis",
+        "sinopse": "A batalha entre Luffy e Kizaru se intensifica. Enquanto isso, Bonney fica sozinha na Fabriase e Vegapunk decide arriscar sua vida para salvá-la.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1127.jpg",
+        "dataExibicao": "2025-04-27"
+    },
+    {
+        "id": 2081,
+        "numero": 1128,
+        "titulo": "O Pesadelo Chega! Saturno, Deus Guerreiro da Ciência e Defesa",
+        "sinopse": "Vegapunk recupera o controle dos Pacifistas, mas outra força assume o comando deles. Uma presença assustadora surge em Egghead quando Saturno aparece.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1128.jpg",
+        "dataExibicao": "2025-05-04"
+    },
+    {
+        "id": 2082,
+        "numero": 1129,
+        "titulo": "O Passado de Kuma! Melhor Morrer Neste Mundo",
+        "sinopse": "Bonney é capturada por Saturno e relembra as memórias de seu pai Kuma. A história revela o nascimento de Kuma e o sofrimento de sua raça.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1129.jpg",
+        "dataExibicao": "2025-05-18"
+    },
+    {
+        "id": 2083,
+        "numero": 1130,
+        "titulo": "Uma História Apagada! O Desespero de God Valley",
+        "sinopse": "O jogo de caça humana começa em God Valley. Kuma, Ivankov e Ginny tentam sobreviver enquanto piratas lendários chegam à ilha.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1130.jpg",
+        "dataExibicao": "2025-05-25"
+    },
+    {
+        "id": 2084,
+        "numero": 1131,
+        "titulo": "Um Breve Momento de Felicidade! Kumachi e Ginny",
+        "sinopse": "Anos após o incidente de God Valley, Kuma e Ginny vivem em paz no Reino Sorbet. Porém, uma nova ameaça surge quando o rei decide explorar os pobres.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1131.jpg",
+        "dataExibicao": "2025-06-01"
+    },
+    {
+        "id": 2085,
+        "numero": 1132,
+        "titulo": "Uma Promessa para Ginny! Kuma se Torna Pai",
+        "sinopse": "Dois anos após Ginny ser sequestrada, o Exército Revolucionário recebe uma ligação inesperada dela.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1132.jpg",
+        "dataExibicao": "2025-06-08"
+    },
+    {
+        "id": 2086,
+        "numero": 1133,
+        "titulo": "Para Salvar Sua Filha! Kuma, o Pacifista Gentil",
+        "sinopse": "Kuma derrota o Rei Bekori e se torna procurado pelo Governo Mundial. Ele viaja pelo mundo buscando uma cura para a doença de Bonney.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1133.jpg",
+        "dataExibicao": "2025-06-15"
+    },
+    {
+        "id": 2087,
+        "numero": 1134,
+        "titulo": "Destino Cruel! A Decisão de Kuma Como Pai",
+        "sinopse": "O Governo Mundial usa o amor de Kuma por Bonney para impor condições cruéis em troca do tratamento dela. Kuma aceita o acordo para salvar sua filha.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1134.jpg",
+        "dataExibicao": "2025-06-29"
+    },
+    {
+        "id": 2088,
+        "numero": 1135,
+        "titulo": "Para o Mar Onde Meu Pai Está! O Futuro Escolhido por Bonney",
+        "sinopse": "Bonney espera pelas cartas de seu pai Kuma. Após descobrir que sua doença foi curada, ela decide partir ao mar para encontrá-lo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1135.jpg",
+        "dataExibicao": "2025-07-06"
+    },
+    {
+        "id": 2089,
+        "numero": 1136,
+        "titulo": "A Vida de Kuma",
+        "sinopse": "Bonney parte em busca de seu pai e ganha fama pelo mundo. Enquanto isso, Luffy começa sua jornada derrotando os Piratas do Arlong, fazendo Kuma acreditar ainda mais no futuro.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1136.jpg",
+        "dataExibicao": "2025-07-13"
+    },
+    {
+        "id": 2090,
+        "numero": 1137,
+        "titulo": "Desculpe, Papai! As Lágrimas de Bonney e o Punho de Kuma",
+        "sinopse": "No presente em Egghead, Bonney é capturada por Saturno, que revela a verdade sobre a transformação de Kuma em ciborgue. A revelação deixa Bonney em desespero.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1137.jpg",
+        "dataExibicao": "2025-07-27"
+    },
+    {
+        "id": 2091,
+        "numero": 1138,
+        "titulo": "Obrigado, Papai! O Abraço Caloroso de Bonney e Kuma",
+        "sinopse": "Kuma, sem vontade própria e muito ferido, finalmente se aproxima de Bonney. Ela revela que viu todas as memórias dele e entende tudo que seu pai fez por ela.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1138.jpg",
+        "dataExibicao": "2025-08-03"
+    },
+    {
+        "id": 2092,
+        "numero": 1139,
+        "titulo": "Destrua Egghead! O Buster Call é Ativado",
+        "sinopse": "A Marinha recebe ordens para evacuar a ilha antes do bombardeio. Vegapunk tenta convencer Saturno a interromper o ataque, mas é ignorado.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1139.jpg",
+        "dataExibicao": "2025-08-10"
+    },
+    {
+        "id": 2093,
+        "numero": 1140,
+        "titulo": "Um Herói Admirado! O Guerreiro da Libertação que Salva Bonney",
+        "sinopse": "Vegapunk revela um segredo importante sobre os Pacifistas. Bonney, sem saída, escuta um ritmo familiar ligado ao herói que seu pai admirava.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1140.jpg",
+        "dataExibicao": "2025-08-17"
+    },
+    {
+        "id": 2094,
+        "numero": 1141,
+        "titulo": "Reforços Confiáveis! Dorry e Brogy Chegam!",
+        "sinopse": "A tripulação dos Gigantes liderada por Dorry e Brogy chega a Egghead, surpreendendo Usopp e os outros. Luffy continua enfrentando os inimigos da ilha.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1141.jpg",
+        "dataExibicao": "2025-08-24"
+    },
+    {
+        "id": 2095,
+        "numero": 1142,
+        "titulo": "Entrem, Mundo! A Mensagem de Vegapunk",
+        "sinopse": "Vegapunk prepara uma transmissão que surpreende o mundo inteiro. Enquanto isso, os Chapéus de Palha continuam tentando escapar de Egghead.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1142.jpg",
+        "dataExibicao": "2025-09-07"
+    },
+    {
+        "id": 2096,
+        "numero": 1143,
+        "titulo": "O Plano Secreto de Vegapunk! Uma Transmissão Mundial Tensa",
+        "sinopse": "A transmissão de Vegapunk começa e todo o mundo fica em choque. Os Cinco Anciões tentam encontrar uma forma de impedir a mensagem.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1143.jpg",
+        "dataExibicao": "2025-09-14"
+    },
+    {
+        "id": 2097,
+        "numero": 1144,
+        "titulo": "O Pior Pesadelo! Os Cinco Anciões se Reúnem",
+        "sinopse": "Novos poderes assustadores surgem em Egghead enquanto os Cinco Anciões entram em ação. Os Chapéus de Palha se preparam para deixar a ilha.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1144.jpg",
+        "dataExibicao": "2025-09-21"
+    },
+    {
+        "id": 2098,
+        "numero": 1145,
+        "titulo": "Amigos Lutam Juntos! Luffy e os Guerreiros de Elbaf",
+        "sinopse": "Dorry e Brogy reencontram Luffy e ajudam os Chapéus de Palha. Porém, eles ainda precisam enfrentar a ameaça dos Cinco Anciões.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1145.jpg",
+        "dataExibicao": "2025-09-28"
+    },
+    {
+        "id": 2099,
+        "numero": 1146,
+        "titulo": "Uma Ameaça Iminente! A Determinação de Stussy e Edison",
+        "sinopse": "Franky e Bonney enfrentam os vice-almirantes da Marinha enquanto Stussy revela a Kaku o motivo de sua decisão. Edison toma uma atitude desesperada.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1146.jpg",
+        "dataExibicao": "2025-10-19"
+    },
+    {
+        "id": 2100,
+        "numero": 1147,
+        "titulo": "Uma Conclusão Surpreendente! A Grande Previsão de Vegapunk",
+        "sinopse": "A mensagem de Vegapunk continua sendo transmitida para o mundo. Os Chapéus de Palha e seus aliados enfrentam os membros dos Cinco Anciões.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1147.jpg",
+        "dataExibicao": "2025-10-26"
+    },
+    {
+        "id": 2101,
+        "numero": 1148,
+        "titulo": "A História Perdida! Joy Boy, o Primeiro Pirata!",
+        "sinopse": "A revelação de Vegapunk causa uma grande comoção no mundo. Saturn abandona sua luta contra Nami e os outros para tentar impedir a transmissão. Vegapunk revela uma verdade chocante sobre Joy Boy, o primeiro pirata.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1148.jpg",
+        "dataExibicao": "2025-11-02"
+    },
+    {
+        "id": 2102,
+        "numero": 1149,
+        "titulo": "O Século Perdido! A Revelação Sobre um Mundo Afundando!",
+        "sinopse": "Vegapunk continua sua transmissão revelando segredos sobre um cataclismo do passado e as Armas Antigas. Essas informações mudam completamente a visão das pessoas sobre a história do mundo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1149.jpg",
+        "dataExibicao": "2025-11-09"
+    },
+    {
+        "id": 2103,
+        "numero": 1150,
+        "titulo": "Movam o Navio! O Gigante de Ferro Desperta!",
+        "sinopse": "A revelação de Vegapunk surpreende até Koby e os membros da SWORD, que começam a discutir quais decisões devem tomar diante das mudanças que estão acontecendo no mundo.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1150.jpg",
+        "dataExibicao": "2025-11-16"
+    },
+    {
+        "id": 2104,
+        "numero": 1151,
+        "titulo": "O Sonho Dela e de Seu Pai! O Futuro Livre de Bonney!",
+        "sinopse": "Luffy finalmente embarca no navio de Elbaf junto com Dorry e Brogy, mas os Cinco Anciões alcançam o grupo e iniciam um novo ataque. Bonney encontra uma nova força através das memórias de seu pai.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1151.jpg",
+        "dataExibicao": "2025-11-30"
+    },
+    {
+        "id": 2105,
+        "numero": 1152,
+        "titulo": "O Legado de Seu Pai e Sua Mãe! O Soco Nika de Bonney!",
+        "sinopse": "Zoro e os outros finalmente tentam escapar da Labofase, mas precisam lidar com um sacrifício inesperado. Enquanto isso, Bonney enfrenta Saturn novamente e encara o símbolo de seu maior ódio.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1152.jpg",
+        "dataExibicao": "2025-12-07"
+    },
+    {
+        "id": 2106,
+        "numero": 1153,
+        "titulo": "A Revolução de uma Era! O Haki do Rei Supremo que Guia Luffy!",
+        "sinopse": "O discurso de Vegapunk aumenta a esperança dos piratas pelo mundo e enfurece a Marinha. Porém, a transmissão é interrompida antes que Vegapunk termine sua mensagem.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1153.jpg",
+        "dataExibicao": "2025-12-14"
+    },
+    {
+        "id": 2107,
+        "numero": 1154,
+        "titulo": "A Verdade por Trás do Plano Secreto! Vegapunk Declara Vitória!",
+        "sinopse": "Duas semanas antes do conflito em Egghead, Vegapunk descobre que uma parte da Mother Flame foi roubada. Junto com Shaka e Pythagoras, ele investiga o responsável e toma uma decisão importante pelo futuro da humanidade.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1154.jpg",
+        "dataExibicao": "2025-12-21"
+    },
+    {
+        "id": 2108,
+        "numero": 1155,
+        "titulo": "O Horizonte Prometido! Rumo à Esperada Elbaf!",
+        "sinopse": "York acorda e percebe que as Nuvens da Ilha estão subindo. Enquanto isso, os Dragões Celestiais enfrentam problemas com seus suprimentos. Lilith desperta e recebe uma notícia surpreendente.",
+        "temporadaId": 22,
+        "animeId": 73,
+        "imagemUrl": "../../images/episodios/one-piece/t22/ep1155.jpg",
+        "dataExibicao": "2025-12-28"
     }
 ]
