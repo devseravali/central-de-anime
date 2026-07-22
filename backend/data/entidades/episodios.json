@@ -17008,5 +17008,555 @@
         "animeId": 68,
         "imagemUrl": "../../images/episodios/one-piece/t17/ep748.jpg",
         "dataExibicao": "2016-07-03"
+    },
+    {
+        "id": 1671,
+        "numero": 749,
+        "titulo": "A Técnica de Espada Esquenta! Law e Zoro Finalmente Aparecem!",
+        "sinopse": "Dentro das minas subterrâneas, Luffy e Bartolomeo enfrentam Avelon enquanto descobrem os membros da Aliança Pirata de Prata escravizados. Após libertarem os prisioneiros, Luffy e Bartolomeo unem forças para derrotar o inimigo.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep749.jpg",
+        "dataExibicao": "2016-07-09"
+    },
+    {
+        "id": 1672,
+        "numero": 750,
+        "titulo": "Uma Situação Desesperadora - Luffy Enfrenta uma Batalha em Calor Extremo",
+        "sinopse": "Luffy, Desire e Bartolomeo enfrentam Bill, o homem da Fruta Smelt-Smelt. Com seu verdadeiro poder revelado, Bill coloca todos em perigo enquanto Luffy tenta acabar com sua tirania.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep750.jpg",
+        "dataExibicao": "2016-07-17"
+    },
+    {
+        "id": 1673,
+        "numero": 751,
+        "titulo": "O Começo de uma Nova Aventura - Chegada à Misteriosa Ilha Zou!",
+        "sinopse": "Após deixarem Dressrosa, os Chapéus de Palha finalmente se aproximam da misteriosa ilha Zou. Luffy e seus companheiros encontram o Sunny, mas percebem que os outros membros da tripulação já partiram.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep751.jpg",
+        "dataExibicao": "2016-07-31"
+    },
+    {
+        "id": 1674,
+        "numero": 752,
+        "titulo": "O Novo Shichibukai - O Filho do Lendário Barba Branca Chega!",
+        "sinopse": "Luffy e os outros chegam à terra de Zou e começam a procurar seus companheiros. Enquanto isso, surge a notícia sobre o novo Shichibukai, filho de Barba Branca.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep752.jpg",
+        "dataExibicao": "2016-08-07"
+    },
+    {
+        "id": 1675,
+        "numero": 753,
+        "titulo": "Uma Escalada Mortal no Elefante - Uma Grande Aventura no Gigante Elefante!",
+        "sinopse": "Os Chapéus de Palha continuam subindo pelo enorme elefante em busca dos seus companheiros desaparecidos. Porém, a ilha nas costas do animal guarda perigos inesperados.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep753.jpg",
+        "dataExibicao": "2016-08-21"
+    },
+    {
+        "id": 1676,
+        "numero": 754,
+        "titulo": "A Batalha Começa! Luffy Contra a Tribo Mink!",
+        "sinopse": "Luffy explora a floresta de Zou e acaba entrando em território proibido para os habitantes locais. Enquanto isso, Usopp e os outros fazem uma descoberta surpreendente.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep754.jpg",
+        "dataExibicao": "2016-08-28"
+    },
+    {
+        "id": 1677,
+        "numero": 755,
+        "titulo": "Garchu! A Tripulação dos Chapéus de Palha se Reúne!",
+        "sinopse": "Depois de sobreviverem aos perigos de Zou, Luffy e seus companheiros finalmente encontram os outros Chapéus de Palha. Porém, eles descobrem que há muito mais acontecendo naquela ilha.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep755.jpg",
+        "dataExibicao": "2016-09-04"
+    },
+    {
+        "id": 1678,
+        "numero": 756,
+        "titulo": "O Contra-Ataque Começa! Os Piratas do Chapéu Encaracolado Partem!",
+        "sinopse": "Luffy e seus companheiros são recebidos pelos Minks e descobrem mais sobre o que aconteceu com a tripulação após deixarem Dressrosa. Nami começa a contar os acontecimentos envolvendo Sanji e os outros.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep756.jpg",
+        "dataExibicao": "2016-09-11"
+    },
+    {
+        "id": 1679,
+        "numero": 757,
+        "titulo": "Uma Ameaça Chegando - Jack dos Piratas das Feras!",
+        "sinopse": "Os Chapéus de Palha descobrem a verdade sobre os invasores que destruíram parte de Zou e conhecem a ameaça representada por Jack, dos Piratas das Feras.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep757.jpg",
+        "dataExibicao": "2016-09-25"
+    },
+    {
+        "id": 1680,
+        "numero": 758,
+        "titulo": "O Rei do Dia! O Duque Dogstorm Aparece!",
+        "sinopse": "Os Chapéus de Palha conhecem o governante de Zou, Duke Dogstorm, e descobrem mais detalhes sobre a batalha que deixou a ilha em ruínas.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep758.jpg",
+        "dataExibicao": "2016-10-02"
+    },
+    {
+        "id": 1681,
+        "numero": 759,
+        "titulo": "O Rei da Noite! Mestre Cat Viper Surge!",
+        "sinopse": "Com a chegada da noite, os Minks continuam lutando contra os Piratas das Feras. Enquanto isso, o poder de Jack ameaça destruir Zou completamente.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep759.jpg",
+        "dataExibicao": "2016-10-09"
+    },
+    {
+        "id": 1682,
+        "numero": 760,
+        "titulo": "Destruição da Capital - Os Piratas do Chapéu Encaracolado Chegam à Terra!",
+        "sinopse": "Dogstorm e Cat Viper enfrentam Jack, mas mesmo com seus esforços, os Minks não conseguem derrotá-lo. A situação de Zou fica cada vez mais perigosa.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep760.jpg",
+        "dataExibicao": "2016-10-16"
+    },
+    {
+        "id": 1683,
+        "numero": 761,
+        "titulo": "Corrida Contra o Tempo - O Laço Entre os Minks e a Tripulação!",
+        "sinopse": "Após o ataque de Jack, Chopper e Sanji precisam salvar os Minks feridos. Para isso, eles contam com a ajuda de Caesar para combater os efeitos do gás venenoso.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep761.jpg",
+        "dataExibicao": "2016-10-23"
+    },
+    {
+        "id": 1684,
+        "numero": 762,
+        "titulo": "O Malandro Retorna para Casa - O Assassino do Yonkou Big Mom!",
+        "sinopse": "Novos detalhes sobre os acontecimentos em Zou são revelados, incluindo a presença de outros visitantes e o misterioso destino de Sanji.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep762.jpg",
+        "dataExibicao": "2016-10-30"
+    },
+    {
+        "id": 1685,
+        "numero": 763,
+        "titulo": "A Verdade por Trás do Seu Desaparecimento - O Convite Surpreendente de Sanji!",
+        "sinopse": "Luffy descobre que Sanji foi levado pelos subordinados de Big Mom, que carregam um convite impossível de recusar.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep763.jpg",
+        "dataExibicao": "2016-11-06"
+    },
+    {
+        "id": 1686,
+        "numero": 764,
+        "titulo": "Aos Meus Amigos! A Carta de Despedida de Sanji!",
+        "sinopse": "Sanji decide acompanhar a tripulação de Big Mom para proteger seus companheiros, mas Luffy não aceita perder um membro da sua tripulação.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep764.jpg",
+        "dataExibicao": "2016-11-13"
+    },
+    {
+        "id": 1687,
+        "numero": 765,
+        "titulo": "Vamos Ver o Mestre Nekomamushi!",
+        "sinopse": "Luffy e seus aliados procuram informações sobre o desaparecimento de Sanji e seguem até encontrar o Mestre Nekomamushi.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep765.jpg",
+        "dataExibicao": "2016-11-20"
+    },
+    {
+        "id": 1688,
+        "numero": 766,
+        "titulo": "A Decisão de Luffy - Sanji à Beira de Desistir!",
+        "sinopse": "Luffy cria um plano para ajudar Sanji, mas terá que ir sozinho para evitar uma guerra total contra Big Mom. Enquanto isso, Kin'emon e Kanjuro finalmente chegam a Zou.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep766.jpg",
+        "dataExibicao": "2016-11-27"
+    },
+    {
+        "id": 1689,
+        "numero": 767,
+        "titulo": "Uma Situação Explosiva! O Cachorro, o Gato e o Samurai!",
+        "sinopse": "Os samurais chegam a Zou e revelam sua ligação com os Minks. A tensão aumenta quando Dogstorm e Cat Viper se reencontram após anos separados.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep767.jpg",
+        "dataExibicao": "2016-12-04"
+    },
+    {
+        "id": 1690,
+        "numero": 768,
+        "titulo": "O Terceiro! Raizo da Névoa, o Ninja, Aparece!",
+        "sinopse": "Grandes revelações sobre o clã Kozuki e os Minks vêm à tona. A verdadeira identidade de Raizo, o ninja, finalmente é revelada.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep768.jpg",
+        "dataExibicao": "2016-12-11"
+    },
+    {
+        "id": 1691,
+        "numero": 769,
+        "titulo": "Uma Pedra Vermelha! Um Guia Para o One Piece!",
+        "sinopse": "Os Chapéus de Palha descobrem o segredo dos Road Poneglyphs, que apontam o caminho para o fim da Grand Line.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep769.jpg",
+        "dataExibicao": "2016-12-18"
+    },
+    {
+        "id": 1692,
+        "numero": 770,
+        "titulo": "O Segredo do País de Wano - A Família Kozuki e os Poneglyphs",
+        "sinopse": "O verdadeiro significado dos Poneglyphs é revelado, assim como a história da família Kozuki e sua relação com o passado do mundo.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep770.jpg",
+        "dataExibicao": "2016-12-25"
+    },
+    {
+        "id": 1693,
+        "numero": 771,
+        "titulo": "Um Juramento Entre Dois Homens - Luffy e Kozuki Momonosuke",
+        "sinopse": "Os segredos do clã Kozuki continuam sendo revelados, e os samurais propõem uma aliança para derrotar Kaido.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep771.jpg",
+        "dataExibicao": "2017-01-08"
+    },
+    {
+        "id": 1694,
+        "numero": 772,
+        "titulo": "A Jornada Lendária - O Cachorro, o Gato e o Rei dos Piratas!",
+        "sinopse": "Dogstorm e Cat Viper contam suas histórias ao lado de Oden e Roger, revelando detalhes da grande jornada que viveram.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep772.jpg",
+        "dataExibicao": "2017-01-15"
+    },
+    {
+        "id": 1695,
+        "numero": 773,
+        "titulo": "O Pesadelo Retorna - O Ataque Feroz do Invencível Jack",
+        "sinopse": "Os planos são definidos: uma equipe irá resgatar Sanji enquanto outra seguirá para Wano. Porém, Zou enfrenta uma nova ameaça.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep773.jpg",
+        "dataExibicao": "2017-01-22"
+    },
+    {
+        "id": 1696,
+        "numero": 774,
+        "titulo": "Uma Batalha Para Defender Zou - Luffy e Zunisha!",
+        "sinopse": "A frota de Jack ataca Zunisha, colocando a ilha-elefante em perigo. Luffy e Momonosuke precisam responder ao chamado misterioso.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep774.jpg",
+        "dataExibicao": "2017-01-29"
+    },
+    {
+        "id": 1697,
+        "numero": 775,
+        "titulo": "Salve Zunisha - A Operação de Resgate dos Chapéus de Palha!",
+        "sinopse": "Após a batalha contra Jack, os Chapéus de Palha ajudam a tratar os ferimentos de Zunisha enquanto uma nova ameaça surge.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep775.jpg",
+        "dataExibicao": "2017-02-05"
+    },
+    {
+        "id": 1698,
+        "numero": 776,
+        "titulo": "Dizendo Adeus e Descendo do Elefante - Partindo para Recuperar Sanji!",
+        "sinopse": "Os Chapéus de Palha e seus aliados se dividem em quatro grupos com diferentes missões. Luffy parte para resgatar Sanji enquanto os outros seguem seus próprios objetivos.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep776.jpg",
+        "dataExibicao": "2017-02-12"
+    },
+    {
+        "id": 1699,
+        "numero": 777,
+        "titulo": "Rumo ao Reverie - A Princesa Vivi e a Princesa Shirahoshi",
+        "sinopse": "Enquanto Luffy segue viagem para recuperar Sanji, líderes e princesas de diversos reinos se preparam para o importante encontro mundial chamado Reverie.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep777.jpg",
+        "dataExibicao": "2017-02-19"
+    },
+    {
+        "id": 1700,
+        "numero": 778,
+        "titulo": "Rumo ao Reverie - Rebecca e o Reino Sakura",
+        "sinopse": "Carrot se junta secretamente à viagem dos Chapéus de Palha. Enquanto isso, antigos aliados se preparam para participar do Reverie.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep778.jpg",
+        "dataExibicao": "2017-02-26"
+    },
+    {
+        "id": 1701,
+        "numero": 779,
+        "titulo": "Kaido Retorna - Uma Ameaça Iminente Para a Pior Geração!",
+        "sinopse": "As consequências dos acontecimentos recentes chegam até Kaido, que fica furioso com a queda de Doflamingo e os movimentos da nova geração de piratas.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep779.jpg",
+        "dataExibicao": "2017-03-05"
+    },
+    {
+        "id": 1702,
+        "numero": 780,
+        "titulo": "Uma Frente Faminta - Luffy e os Novatos da Marinha!",
+        "sinopse": "Com poucos suprimentos, Luffy e seus companheiros invadem uma instalação da Marinha em busca de comida, mas acabam cercados por jovens marinheiros.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep780.jpg",
+        "dataExibicao": "2017-03-19"
+    },
+    {
+        "id": 1703,
+        "numero": 781,
+        "titulo": "Os Três Implacáveis - Uma Grande Perseguição aos Chapéus de Palha!",
+        "sinopse": "Luffy e seus companheiros precisam fugir da Marinha enquanto tentam escapar com os suprimentos roubados.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep781.jpg",
+        "dataExibicao": "2017-03-25"
+    },
+    {
+        "id": 1704,
+        "numero": 782,
+        "titulo": "O Punho do Demônio - Um Confronto! Luffy Contra Grount",
+        "sinopse": "Durante a fuga, Luffy enfrenta Grount, um jovem marinheiro com uma força impressionante em seu braço.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep782.jpg",
+        "dataExibicao": "2017-04-02"
+    },
+    {
+        "id": 1705,
+        "numero": 783,
+        "titulo": "O Retorno de Sanji! Entrando no Território da Big Mom!",
+        "sinopse": "Sanji chega ao território de Big Mom e enfrenta as consequências de seu casamento arranjado enquanto Luffy continua sua jornada.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep783.jpg",
+        "dataExibicao": "2017-04-09"
+    },
+    {
+        "id": 1706,
+        "numero": 784,
+        "titulo": "Zero e Quatro! Encontro com a Germa 66!",
+        "sinopse": "Luffy enfrenta uma crise após ser envenenado, enquanto os Chapéus de Palha encontram a misteriosa Germa 66.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep784.jpg",
+        "dataExibicao": "2017-04-16"
+    },
+    {
+        "id": 1707,
+        "numero": 785,
+        "titulo": "Uma Crise de Veneno Mortal! Luffy e Reiju!",
+        "sinopse": "A vida de Luffy está em risco devido ao veneno, e sua única esperança é Reiju, que possui uma habilidade inesperada.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep785.jpg",
+        "dataExibicao": "2017-04-23"
+    },
+    {
+        "id": 1708,
+        "numero": 786,
+        "titulo": "Totto Land! A Imperatriz Big Mom Aparece!",
+        "sinopse": "Luffy e Chopper chegam à Ilha Cacau e ficam maravilhados com um lugar onde tudo parece ser feito de comida. Porém, o território de Big Mom possui regras perigosas.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep786.jpg",
+        "dataExibicao": "2017-04-30"
+    },
+    {
+        "id": 1709,
+        "numero": 787,
+        "titulo": "A Filha da Imperatriz! A Noiva de Sanji - Pudding!",
+        "sinopse": "Os Chapéus de Palha encontram Pudding, a noiva de Sanji. Enquanto isso, uma mensagem misteriosa ameaça o futuro da tripulação.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep787.jpg",
+        "dataExibicao": "2017-05-06"
+    },
+    {
+        "id": 1710,
+        "numero": 788,
+        "titulo": "Um Ataque Massivo! Os Desejos de Fome da Mamãe!",
+        "sinopse": "As águas ao redor de Whole Cake Island escondem criaturas perigosas. Enquanto isso, Big Mom entra em uma crise de fome e causa destruição em seu próprio território.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep788.jpg",
+        "dataExibicao": "2017-05-13"
+    },
+    {
+        "id": 1711,
+        "numero": 789,
+        "titulo": "A Capital Cai?! Big Mom e Jinbe!",
+        "sinopse": "Big Mom continua sua busca por doces enquanto Jinbe aparece trazendo informações importantes para a tripulação.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep789.jpg",
+        "dataExibicao": "2017-05-20"
+    },
+    {
+        "id": 1712,
+        "numero": 790,
+        "titulo": "O Castelo da Imperatriz! Chegando à Ilha Whole Cake!",
+        "sinopse": "Os Chapéus de Palha se aproximam da Ilha Whole Cake. Pedro revela seu passado no território de Big Mom e prepara um plano para salvar Sanji.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep790.jpg",
+        "dataExibicao": "2017-05-27"
+    },
+    {
+        "id": 1713,
+        "numero": 791,
+        "titulo": "Uma Floresta Misteriosa Cheia de Doces! Luffy Contra Luffy?!",
+        "sinopse": "Brook e Pedro tentam invadir o território de Big Mom enquanto Luffy, Nami, Chopper e Carrot entram em uma floresta cheia de ilusões.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep791.jpg",
+        "dataExibicao": "2017-06-04"
+    },
+    {
+        "id": 1714,
+        "numero": 792,
+        "titulo": "O Assassino da Mamãe! Luffy e a Floresta Sedutora!",
+        "sinopse": "Perdidos na floresta misteriosa, Luffy e seus companheiros enfrentam perigos enquanto tentam encontrar Sanji.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep792.jpg",
+        "dataExibicao": "2017-06-11"
+    },
+    {
+        "id": 1715,
+        "numero": 793,
+        "titulo": "Um Reino Navegante! O Rei da Germa - Judge!",
+        "sinopse": "Sanji confronta seu pai, Judge, enquanto as feridas do passado da família Vinsmoke começam a ser reveladas.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep793.jpg",
+        "dataExibicao": "2017-06-18"
+    },
+    {
+        "id": 1716,
+        "numero": 794,
+        "titulo": "Uma Batalha Entre Pai e Filho! Judge Contra Sanji!",
+        "sinopse": "Sanji enfrenta seu pai em uma batalha enquanto tenta proteger seus valores e sua identidade longe da família Germa.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep794.jpg",
+        "dataExibicao": "2017-06-25"
+    },
+    {
+        "id": 1717,
+        "numero": 795,
+        "titulo": "Uma Grande Ambição! Big Mom e Caesar!",
+        "sinopse": "Big Mom continua seus planos ambiciosos usando Caesar Clown. Enquanto isso, os Chapéus de Palha enfrentam novos problemas em seu plano de resgate.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep795.jpg",
+        "dataExibicao": "2017-07-02"
+    },
+    {
+        "id": 1718,
+        "numero": 796,
+        "titulo": "A Terra das Almas! A Habilidade Fatal da Mamãe!",
+        "sinopse": "Nami encontra Luffy novamente e conta sua batalha contra Brûlée. Enquanto isso, a verdadeira identidade do homem misterioso enterrado na floresta é revelada.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep796.jpg",
+        "dataExibicao": "2017-07-09"
+    },
+    {
+        "id": 1719,
+        "numero": 797,
+        "titulo": "Um Oficial de Elite! O General Doce Cracker Aparece!",
+        "sinopse": "A identidade de Pound é revelada, enquanto Luffy e Nami enfrentam Cracker, um dos três Generais Doces de Big Mom.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep797.jpg",
+        "dataExibicao": "2017-07-16"
+    },
+    {
+        "id": 1720,
+        "numero": 798,
+        "titulo": "Um Inimigo Valendo 800 Milhões! Luffy Contra o Cracker dos Mil Braços!",
+        "sinopse": "Luffy enfrenta Cracker, um dos mais poderosos comandantes de Big Mom, enquanto Nami descobre informações sobre outros piratas que desafiaram a Imperatriz.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep798.jpg",
+        "dataExibicao": "2017-07-22"
+    },
+    {
+        "id": 1721,
+        "numero": 799,
+        "titulo": "Um Duelo Completo! Gear Four Contra a Habilidade Bis-Bis!",
+        "sinopse": "Luffy continua sua batalha contra Cracker usando o Gear Fourth. Enquanto isso, Brook e Pedro seguem com sua missão de infiltração na Ilha Whole Cake.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep799.jpg",
+        "dataExibicao": "2017-07-29"
+    },
+    {
+        "id": 1722,
+        "numero": 800,
+        "titulo": "O Primeiro e o Segundo se Juntam! A Família Vinsmoke!",
+        "sinopse": "Luffy começa a perder forças contra o exército de guerreiros de biscoito de Cracker. Enquanto isso, os irmãos Vinsmoke retornam para encontrar Sanji.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep800.jpg",
+        "dataExibicao": "2017-08-05"
+    },
+    {
+        "id": 1723,
+        "numero": 801,
+        "titulo": "A Vida do Benfeitor! Sanji e o Dono Zeff!",
+        "sinopse": "Luffy tenta resistir aos ataques de Cracker enquanto Sanji descobre que sua família possui uma forma de controlar suas decisões.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep801.jpg",
+        "dataExibicao": "2017-08-12"
+    },
+    {
+        "id": 1724,
+        "numero": 802,
+        "titulo": "Um Sanji Furioso! O Segredo da Germa 66!",
+        "sinopse": "Luffy precisa de tempo para recuperar suas forças contra Cracker. Enquanto isso, Sanji descobre a verdade sobre os poderes da Germa 66.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep802.jpg",
+        "dataExibicao": "2017-08-19"
+    },
+    {
+        "id": 1725,
+        "numero": 803,
+        "titulo": "O Passado Que Ele Abandonou! Vinsmoke Sanji!",
+        "sinopse": "O passado doloroso de Sanji é revelado, mostrando sua infância e os motivos que o fizeram abandonar a família Vinsmoke.",
+        "temporadaId": 18,
+        "animeId": 69,
+        "imagemUrl": "../../images/episodios/one-piece/t18/ep803.jpg",
+        "dataExibicao": "2017-08-26"
     }
 ]
