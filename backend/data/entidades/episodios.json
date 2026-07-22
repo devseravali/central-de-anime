@@ -17558,5 +17558,745 @@
         "animeId": 69,
         "imagemUrl": "../../images/episodios/one-piece/t18/ep803.jpg",
         "dataExibicao": "2017-08-26"
+    },
+    {
+        "id": 1726,
+        "numero": 804,
+        "titulo": "Para o East Blue! A Partida Determinada de Sanji!",
+        "sinopse": "O passado da família de Sanji continua sendo revelado. Após um momento de compaixão, Sanji consegue escapar, mas precisa enfrentar a crueldade de seu pai antes de seguir seu próprio caminho.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep804.jpg",
+        "dataExibicao": "2017-09-03"
+    },
+    {
+        "id": 1727,
+        "numero": 805,
+        "titulo": "Uma Batalha de Limites! Luffy e os Biscoitos Infinitos!",
+        "sinopse": "Luffy enfrenta uma batalha sem fim contra os Guerreiros de Biscoito de Cracker enquanto Sanji recebe ajuda de Reiju para lidar com seus sentimentos antes do casamento.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep805.jpg",
+        "dataExibicao": "2017-09-17"
+    },
+    {
+        "id": 1728,
+        "numero": 806,
+        "titulo": "O Poder da Saciedade! Uma Nova Forma do Gear Fourth - Tank Man!",
+        "sinopse": "Luffy encontra uma maneira de virar a batalha contra Cracker usando uma nova forma do Gear Fourth chamada Tank Man.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep806.jpg",
+        "dataExibicao": "2017-09-24"
+    },
+    {
+        "id": 1729,
+        "numero": 807,
+        "titulo": "Um Duelo Doloroso! Luffy vs Sanji! (Parte 1)",
+        "sinopse": "Luffy finalmente encontra Sanji, mas o confronto entre os dois coloca em risco o futuro de Sanji junto aos Chapéus de Palha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep807.jpg",
+        "dataExibicao": "2017-10-01"
+    },
+    {
+        "id": 1730,
+        "numero": 808,
+        "titulo": "Um Duelo Doloroso! Luffy vs Sanji! (Parte 2)",
+        "sinopse": "Luffy continua tentando fazer Sanji revelar seus verdadeiros sentimentos enquanto relembra os momentos importantes que viveram juntos.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep808.jpg",
+        "dataExibicao": "2017-10-01"
+    },
+    {
+        "id": 1731,
+        "numero": 809,
+        "titulo": "Uma Tempestade de Vingança! O Exército Furioso Ataca!",
+        "sinopse": "Após a derrota de Cracker, Big Mom envia um enorme exército para capturar Luffy enquanto Sanji enfrenta as consequências de sua decisão.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep809.jpg",
+        "dataExibicao": "2017-10-15"
+    },
+    {
+        "id": 1732,
+        "numero": 810,
+        "titulo": "O Fim da Aventura! A Proposta Determinada de Sanji!",
+        "sinopse": "Luffy permanece esperando por Sanji enquanto ele tenta resolver a situação com sua família e seu casamento com Pudding.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep810.jpg",
+        "dataExibicao": "2017-10-22"
+    },
+    {
+        "id": 1733,
+        "numero": 811,
+        "titulo": "Eu Vou Esperar Aqui! Luffy vs o Exército Furioso!",
+        "sinopse": "Luffy enfrenta o exército de Big Mom sozinho enquanto se recusa a abandonar o local onde prometeu esperar por Sanji.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep811.jpg",
+        "dataExibicao": "2017-10-29"
+    },
+    {
+        "id": 1734,
+        "numero": 812,
+        "titulo": "Invadindo o Castelo! Alcançando o Road Poneglyph!",
+        "sinopse": "Chopper e Carrot tentam escapar enquanto Brook e Pedro iniciam uma missão perigosa para conseguir informações importantes de Big Mom.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep812.jpg",
+        "dataExibicao": "2017-11-05"
+    },
+    {
+        "id": 1735,
+        "numero": 813,
+        "titulo": "Um Confronto do Destino! Luffy e Big Mom!",
+        "sinopse": "Luffy continua desafiando Big Mom enquanto Pudding começa a questionar seus próprios planos contra os Chapéus de Palha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep813.jpg",
+        "dataExibicao": "2017-11-12"
+    },
+    {
+        "id": 1736,
+        "numero": 814,
+        "titulo": "O Grito da Alma! A Operação Relâmpago de Brook e Pedro!",
+        "sinopse": "Brook e Pedro continuam sua missão dentro do território de Big Mom enquanto Luffy e Nami enfrentam novos perigos durante sua tentativa de fuga.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep814.jpg",
+        "dataExibicao": "2017-11-19"
+    },
+    {
+        "id": 1737,
+        "numero": 815,
+        "titulo": "Adeus! A Determinação Chorosa de Pudding!",
+        "sinopse": "Pudding revela seus verdadeiros sentimentos e começa a mudar seus planos enquanto Sanji tenta encontrar uma solução para proteger seus amigos.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep815.jpg",
+        "dataExibicao": "2017-11-26"
+    },
+    {
+        "id": 1738,
+        "numero": 816,
+        "titulo": "A História do Olho Esquerdo! Pedro vs Barão Tamago!",
+        "sinopse": "O passado de Pedro é revelado enquanto ele enfrenta Barão Tamago. Enquanto isso, Luffy continua tentando escapar das forças de Big Mom.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep816.jpg",
+        "dataExibicao": "2017-12-03"
+    },
+    {
+        "id": 1739,
+        "numero": 817,
+        "titulo": "Cigarro Molhado! A Noite Antes do Casamento de Sanji!",
+        "sinopse": "Na véspera do casamento, Sanji começa a perceber a verdadeira intenção de Big Mom enquanto os planos da cerimônia começam a se revelar.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep817.jpg",
+        "dataExibicao": "2017-12-10"
+    },
+    {
+        "id": 1740,
+        "numero": 818,
+        "titulo": "A Alma Inabalável! Brook vs Big Mom!",
+        "sinopse": "Brook enfrenta Big Mom em uma batalha perigosa enquanto tenta cumprir sua missão e recuperar informações valiosas.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep818.jpg",
+        "dataExibicao": "2017-12-17"
+    },
+    {
+        "id": 1741,
+        "numero": 819,
+        "titulo": "O Desejo de Sora! O Fracasso da Germa - Sanji!",
+        "sinopse": "Sanji descobre mais sobre sua família e sobre o passado da Germa 66 enquanto enfrenta decisões difíceis.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep819.jpg",
+        "dataExibicao": "2017-12-24"
+    },
+    {
+        "id": 1742,
+        "numero": 820,
+        "titulo": "Para Alcançar Sanji! A Corrida Furiosa de Luffy!",
+        "sinopse": "Luffy continua sua busca desesperada por Sanji enquanto os planos de fuga do território de Big Mom avançam.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep820.jpg",
+        "dataExibicao": "2018-01-07"
+    },
+    {
+        "id": 1743,
+        "numero": 821,
+        "titulo": "O Castelo em Caos! Luffy Vai ao Encontro!",
+        "sinopse": "O castelo de Big Mom entra em caos enquanto Luffy tenta chegar ao ponto combinado com Sanji e escapar dos inimigos.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep821.jpg",
+        "dataExibicao": "2018-01-14"
+    },
+    {
+        "id": 1744,
+        "numero": 822,
+        "titulo": "Decidindo Dizer Adeus! Sanji e seu Bentô dos Chapéus de Palha!",
+        "sinopse": "Sanji prepara uma refeição para Luffy enquanto enfrenta o conflito entre sua família e seus companheiros dos Chapéus de Palha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep822.jpg",
+        "dataExibicao": "2018-01-21"
+    },
+    {
+        "id": 1745,
+        "numero": 823,
+        "titulo": "O Imperador Cai! Missão de Resgate do Brook!",
+        "sinopse": "Os Chapéus de Palha iniciam uma missão para resgatar Brook enquanto o plano contra Big Mom continua se desenrolando.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep823.jpg",
+        "dataExibicao": "2018-01-28"
+    },
+    {
+        "id": 1746,
+        "numero": 824,
+        "titulo": "O Reencontro! Luffy, Um Contra Um no Seu Limite!",
+        "sinopse": "Luffy enfrenta Charlotte Counter enquanto tenta chegar ao local combinado com Sanji. Enquanto isso, Brook revela que conseguiu copiar os Poneglyphs de Big Mom.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep824.jpg",
+        "dataExibicao": "2018-02-04"
+    },
+    {
+        "id": 1747,
+        "numero": 825,
+        "titulo": "Um Mentiroso! Luffy e Sanji!",
+        "sinopse": "Luffy e Sanji finalmente se reencontram. Após um confronto emocional, Sanji revela seus verdadeiros sentimentos e decide voltar para os Chapéus de Palha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep825.jpg",
+        "dataExibicao": "2018-02-11"
+    },
+    {
+        "id": 1748,
+        "numero": 826,
+        "titulo": "Sanji Está de Volta! Ataque! A Festa do Chá do Inferno!",
+        "sinopse": "Luffy e Sanji se reconciliam e o grupo começa a preparar o plano para invadir a festa do chá de Big Mom e salvar seus companheiros.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep826.jpg",
+        "dataExibicao": "2018-02-18"
+    },
+    {
+        "id": 1749,
+        "numero": 827,
+        "titulo": "Uma Reunião Secreta! Luffy vs Piratas do Fire Tank!",
+        "sinopse": "Os Chapéus de Palha encontram Capone Bege para discutir o plano de assassinar Big Mom durante a festa do chá.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep827.jpg",
+        "dataExibicao": "2018-03-04"
+    },
+    {
+        "id": 1750,
+        "numero": 828,
+        "titulo": "O Pacto Mortal! As Forças Aliadas de Luffy e Bege!",
+        "sinopse": "Luffy e Bege unem forças para colocar em prática o plano contra Big Mom, formando uma aliança temporária contra a Imperatriz.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep828.jpg",
+        "dataExibicao": "2018-03-18"
+    },
+    {
+        "id": 1751,
+        "numero": 829,
+        "titulo": "Luffy Executa um Movimento Secreto! A Festa de Casamento Cheia de Conspirações Começa!",
+        "sinopse": "Os grupos revisam os detalhes do plano de ataque enquanto a cerimônia de casamento de Sanji e Pudding se aproxima.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep829.jpg",
+        "dataExibicao": "2018-03-25"
+    },
+    {
+        "id": 1752,
+        "numero": 830,
+        "titulo": "A Família se Reúne! A Festa do Chá Infernal Começa!",
+        "sinopse": "Os grandes nomes do submundo chegam à festa de Big Mom. Enquanto isso, o plano de ataque dos Chapéus de Palha começa.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep830.jpg",
+        "dataExibicao": "2018-04-01"
+    },
+    {
+        "id": 1753,
+        "numero": 831,
+        "titulo": "O Casal Quebrado! Sanji e Pudding Entram!",
+        "sinopse": "A cerimônia de casamento começa enquanto Sanji e Pudding entram no local. O plano de assassinato contra Big Mom está prestes a acontecer.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep831.jpg",
+        "dataExibicao": "2018-04-08"
+    },
+    {
+        "id": 1754,
+        "numero": 832,
+        "titulo": "Um Beijo Mortal! A Missão Para Assassinar a Imperatriz Começa!",
+        "sinopse": "O casamento começa e o plano para derrotar Big Mom é colocado em ação, mas acontecimentos inesperados mudam o rumo da cerimônia.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep832.jpg",
+        "dataExibicao": "2018-04-15"
+    },
+    {
+        "id": 1755,
+        "numero": 833,
+        "titulo": "Devolvendo o Copo de Saquê! O Homem Honrado Jimbei Paga Sua Dívida!",
+        "sinopse": "Jimbei declara sua saída dos Piratas da Big Mom e sua intenção de se juntar aos Chapéus de Palha enquanto Brook destrói o retrato de Mother Carmel.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep833.jpg",
+        "dataExibicao": "2018-04-22"
+    },
+    {
+        "id": 1756,
+        "numero": 834,
+        "titulo": "A Missão Falhou?! Os Piratas da Big Mom Contra-atacam!",
+        "sinopse": "O plano de ataque sofre uma reviravolta quando os Piratas da Big Mom reagem e começam a perseguir os invasores.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep834.jpg",
+        "dataExibicao": "2018-04-29"
+    },
+    {
+        "id": 1757,
+        "numero": 835,
+        "titulo": "Corra, Sanji! SOS! Germa 66!",
+        "sinopse": "Luffy tenta alcançar Big Mom enquanto Sanji decide salvar sua família. A Germa 66 entra em ação e Big Mom perde o controle da situação.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep835.jpg",
+        "dataExibicao": "2018-05-06"
+    },
+    {
+        "id": 1758,
+        "numero": 836,
+        "titulo": "O Segredo de Mamãe! A Ilha dos Gigantes Elbaf e um Pequeno Monstro!",
+        "sinopse": "A infância de Big Mom é revelada, mostrando sua relação com os gigantes de Elbaf e os acontecimentos que moldaram sua personalidade.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep836.jpg",
+        "dataExibicao": "2018-05-13"
+    },
+    {
+        "id": 1759,
+        "numero": 837,
+        "titulo": "O Nascimento de Mamãe! O Dia em Que Carmel Desapareceu!",
+        "sinopse": "A história de Linlin continua sendo revelada, mostrando os acontecimentos envolvendo Mother Carmel e o surgimento da futura Imperatriz do Mar.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep837.jpg",
+        "dataExibicao": "2018-05-20"
+    },
+    {
+        "id": 1760,
+        "numero": 838,
+        "titulo": "O Lançador Dispara! O Momento do Assassinato de Big Mom!",
+        "sinopse": "O plano para assassinar Big Mom começa, mas uma série de acontecimentos inesperados coloca todos em perigo.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep838.jpg",
+        "dataExibicao": "2018-05-27"
+    },
+    {
+        "id": 1761,
+        "numero": 839,
+        "titulo": "O Exército Maligno! Transformação! Germa 66!",
+        "sinopse": "A Germa 66 mostra todo seu poder enquanto os Chapéus de Palha e seus aliados tentam escapar do exército de Big Mom.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep839.jpg",
+        "dataExibicao": "2018-06-03"
+    },
+    {
+        "id": 1762,
+        "numero": 840,
+        "titulo": "Cortando os Laços Entre Pai e Filho! Sanji e Judge!",
+        "sinopse": "Sanji enfrenta novamente seu pai Judge e mostra que rejeita completamente os ideais cruéis da família Vinsmoke.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep840.jpg",
+        "dataExibicao": "2018-06-10"
+    },
+    {
+        "id": 1763,
+        "numero": 841,
+        "titulo": "Fuga da Festa do Chá! Luffy vs Big Mom!",
+        "sinopse": "Os Chapéus de Palha tentam escapar escondidos dentro de Bege, mas Luffy não consegue resistir a enfrentar Big Mom.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep841.jpg",
+        "dataExibicao": "2018-06-17"
+    },
+    {
+        "id": 1764,
+        "numero": 842,
+        "titulo": "A Execução Começa! As Forças Aliadas de Luffy São Aniquiladas?!",
+        "sinopse": "Os Piratas da Big Mom atacam com toda sua força enquanto Luffy e seus aliados enfrentam uma situação desesperadora.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep842.jpg",
+        "dataExibicao": "2018-06-24"
+    },
+    {
+        "id": 1765,
+        "numero": 843,
+        "titulo": "O Castelo Desmorona! A Grande Fuga dos Chapéus de Palha Começa!",
+        "sinopse": "O castelo de Big Mom começa a cair e os Chapéus de Palha iniciam sua fuga enquanto procuram uma forma de escapar da ilha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep843.jpg",
+        "dataExibicao": "2018-07-01"
+    },
+    {
+        "id": 1766,
+        "numero": 844,
+        "titulo": "A Lança de Elbaf! Ataque! A Big Mom Voadora!",
+        "sinopse": "Big Mom continua perseguindo os Chapéus de Palha enquanto eles tentam chegar ao Sunny e escapar do território inimigo.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep844.jpg",
+        "dataExibicao": "2018-07-08"
+    },
+    {
+        "id": 1767,
+        "numero": 845,
+        "titulo": "A Determinação de Pudding! Em Chamas! A Floresta Sedutora!",
+        "sinopse": "King Baum ajuda os Chapéus de Palha em sua fuga enquanto Big Mom continua sua perseguição. Pudding revela suas verdadeiras intenções ao reconstruir o bolo de casamento.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep845.jpg",
+        "dataExibicao": "2018-07-15"
+    },
+    {
+        "id": 1768,
+        "numero": 846,
+        "titulo": "Um Contra-ataque Relâmpago! Nami e Zeus, a Nuvem Trovejante!",
+        "sinopse": "Nami tenta impedir Zeus enquanto os Chapéus de Palha continuam sua fuga. Brook e Chopper encontram uma situação inesperada envolvendo o Sunny.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep846.jpg",
+        "dataExibicao": "2018-07-22"
+    },
+    {
+        "id": 1769,
+        "numero": 847,
+        "titulo": "Um Reencontro Acidental! Sanji e a Pudding Apaixonada!",
+        "sinopse": "Big Mom continua perseguindo os Chapéus de Palha enquanto Pudding enfrenta seus sentimentos conflitantes por Sanji.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep847.jpg",
+        "dataExibicao": "2018-07-29"
+    },
+    {
+        "id": 1770,
+        "numero": 848,
+        "titulo": "Salvem o Sunny! Lutando Corajosamente! Chopper e Brook!",
+        "sinopse": "Chopper e Brook enfrentam os perigos dos Piratas da Big Mom enquanto Pudding continua dividida entre seus sentimentos por Sanji e seus planos.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep848.jpg",
+        "dataExibicao": "2018-08-05"
+    },
+    {
+        "id": 1771,
+        "numero": 849,
+        "titulo": "Antes do Amanhecer! Pedro, o Capitão dos Guardiões!",
+        "sinopse": "Os Chapéus de Palha precisam escapar rapidamente enquanto Pedro enfrenta seu passado e toma uma decisão para proteger seus companheiros.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep849.jpg",
+        "dataExibicao": "2018-08-12"
+    },
+    {
+        "id": 1772,
+        "numero": 850,
+        "titulo": "Eu Voltarei! Luffy, Uma Partida Mortal!",
+        "sinopse": "Pedro faz um sacrifício para dar uma chance de fuga aos Chapéus de Palha. Luffy enfrenta um novo desafio para salvar sua tripulação.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep850.jpg",
+        "dataExibicao": "2018-08-19"
+    },
+    {
+        "id": 1773,
+        "numero": 851,
+        "titulo": "O Homem com uma Recompensa de Bilhões! O Mais Forte General Doce, Katakuri!",
+        "sinopse": "Após escaparem de Whole Cake Island, Luffy enfrenta Katakuri no Mundo dos Espelhos em uma batalha decisiva.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep851.jpg",
+        "dataExibicao": "2018-08-26"
+    },
+    {
+        "id": 1774,
+        "numero": 852,
+        "titulo": "Uma Batalha Difícil Começa! Luffy vs Katakuri!",
+        "sinopse": "Luffy inicia uma intensa batalha contra Katakuri enquanto Sanji e Pudding trabalham para preparar o bolo capaz de acalmar Big Mom.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep852.jpg",
+        "dataExibicao": "2018-09-02"
+    },
+    {
+        "id": 1775,
+        "numero": 853,
+        "titulo": "A Sala Verde! Um Timoneiro Invencível, Jimbei!",
+        "sinopse": "Jimbei assume o controle do Sunny enquanto a tripulação tenta se proteger dos inimigos. Luffy continua sua luta contra Katakuri.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep853.jpg",
+        "dataExibicao": "2018-09-16"
+    },
+    {
+        "id": 1776,
+        "numero": 854,
+        "titulo": "A Ameaça da Toupeira! A Luta Silenciosa de Luffy!",
+        "sinopse": "Luffy enfrenta uma batalha cada vez mais difícil contra Katakuri enquanto os Chapéus de Palha destroem os espelhos para impedir ataques.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep854.jpg",
+        "dataExibicao": "2018-09-23"
+    },
+    {
+        "id": 1777,
+        "numero": 855,
+        "titulo": "O Fim da Batalha Mortal?! O Despertar Furioso de Katakuri!",
+        "sinopse": "Luffy e Katakuri continuam sua batalha intensa usando Haki e suas habilidades especiais. Enquanto isso, os Piratas da Big Mom enfrentam a Germa 66, e Luffy parece estar em uma situação desesperadora.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep855.jpg",
+        "dataExibicao": "2018-09-30"
+    },
+    {
+        "id": 1778,
+        "numero": 856,
+        "titulo": "O Segredo Proibido! A Merienda de Katakuri!",
+        "sinopse": "Katakuri revela seu momento secreto de descanso enquanto recupera suas forças. Luffy encontra uma maneira inesperada de escapar do perigo e continuar sua luta.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep856.jpg",
+        "dataExibicao": "2018-10-07"
+    },
+    {
+        "id": 1779,
+        "numero": 857,
+        "titulo": "Luffy Contra-Ataca! O Ponto Fraco do Invencível Katakuri!",
+        "sinopse": "Luffy descobre o segredo por trás da habilidade de luta de Katakuri e encontra uma forma de enfrentar seu poderoso adversário.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep857.jpg",
+        "dataExibicao": "2018-10-14"
+    },
+    {
+        "id": 1780,
+        "numero": 858,
+        "titulo": "Outra Crise! Gear Fourth Contra os Donuts Imparáveis!",
+        "sinopse": "Luffy fica sem Haki e precisa encontrar uma maneira de recuperar suas forças enquanto a perseguição dos Piratas da Big Mom se intensifica.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep858.jpg",
+        "dataExibicao": "2018-10-21"
+    },
+    {
+        "id": 1781,
+        "numero": 859,
+        "titulo": "A Filha Rebelde, Chiffon! O Grande Plano de Sanji Para Transportar o Bolo!",
+        "sinopse": "Sanji precisa proteger Chiffon enquanto o plano para transportar o bolo de casamento continua. Enquanto isso, Luffy tenta escapar usando Brûlée.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep859.jpg",
+        "dataExibicao": "2018-10-28"
+    },
+    {
+        "id": 1782,
+        "numero": 860,
+        "titulo": "O Caminho de Vida de um Homem! A Determinação de Bege e Luffy Como Capitães!",
+        "sinopse": "Bege aparece com um novo plano para enfrentar os Piratas da Big Mom, enquanto Luffy continua sua busca para superar seus limites.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep860.jpg",
+        "dataExibicao": "2018-11-04"
+    },
+    {
+        "id": 1783,
+        "numero": 861,
+        "titulo": "O Bolo Afundou?! A Fuga de Sanji e Bege!",
+        "sinopse": "Sanji e Bege tentam escapar com o bolo enquanto enfrentam novos obstáculos. Um aliado inesperado surge para ajudar contra Oven.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep861.jpg",
+        "dataExibicao": "2018-11-11"
+    },
+    {
+        "id": 1784,
+        "numero": 862,
+        "titulo": "Sulong! A Grande Transformação Mística de Carrot!",
+        "sinopse": "Carrot desperta o poder do Sulong durante a batalha contra os inimigos, revelando uma transformação incrível.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep862.jpg",
+        "dataExibicao": "2018-11-18"
+    },
+    {
+        "id": 1785,
+        "numero": 863,
+        "titulo": "Avancem! A Poderosa Batalha Marítima dos Chapéus de Palha!",
+        "sinopse": "Os Chapéus de Palha enfrentam uma grande batalha no mar enquanto tentam escapar dos Piratas da Big Mom.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep863.jpg",
+        "dataExibicao": "2018-11-25"
+    },
+    {
+        "id": 1786,
+        "numero": 864,
+        "titulo": "Finalmente Eles Se Enfrentam! O Imperador do Mar Contra os Chapéus de Palha!",
+        "sinopse": "Luffy continua sua luta contra Katakuri enquanto a tripulação enfrenta Big Mom e seus aliados no Sunny.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep864.jpg",
+        "dataExibicao": "2018-12-09"
+    },
+    {
+        "id": 1787,
+        "numero": 865,
+        "titulo": "Os Ensinamentos Diretos do Rei das Trevas! A Batalha Contra Katakuri Muda!",
+        "sinopse": "Luffy usa os ensinamentos de Rayleigh para melhorar seu Haki da Observação e tentar superar Katakuri.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep865.jpg",
+        "dataExibicao": "2018-12-16"
+    },
+    {
+        "id": 1788,
+        "numero": 866,
+        "titulo": "Finalmente Ele Retorna! Sanji, o Homem Que Parará o Imperador do Mar!",
+        "sinopse": "O bolo finalmente fica pronto e é levado até Big Mom. Enquanto a tripulação busca uma oportunidade para escapar, Luffy se aproxima cada vez mais de dominar seu Haki.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep866.jpg",
+        "dataExibicao": "2018-12-23"
+    },
+    {
+        "id": 1789,
+        "numero": 867,
+        "titulo": "Escondido na Escuridão! Um Assassino Mirando em Luffy!",
+        "sinopse": "Flampe tenta ajudar Katakuri atacando Luffy pelas sombras. Enquanto isso, Oven cria uma armadilha para impedir a fuga dos Chapéus de Palha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep867.jpg",
+        "dataExibicao": "2019-01-06"
+    },
+    {
+        "id": 1790,
+        "numero": 868,
+        "titulo": "A Determinação de Um Homem! A Grande Batalha Mortal de Katakuri!",
+        "sinopse": "Katakuri percebe a interferência de sua irmã e toma uma atitude inesperada. Enquanto isso, a frota da Big Mom continua perseguindo os Chapéus de Palha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep868.jpg",
+        "dataExibicao": "2019-01-13"
+    },
+    {
+        "id": 1791,
+        "numero": 869,
+        "titulo": "Desperte! O Poder da Observação Capaz de Superar o Mais Forte!",
+        "sinopse": "Luffy usa todo seu treinamento para aprimorar seu Haki da Observação e enfrentar Katakuri em igualdade de condições.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep869.jpg",
+        "dataExibicao": "2019-01-20"
+    },
+    {
+        "id": 1792,
+        "numero": 870,
+        "titulo": "Um Soco em Velocidade Divina! Outra Aplicação do Gear Fourth!",
+        "sinopse": "Luffy e Katakuri chegam ao confronto final, onde cada golpe pode decidir o resultado da batalha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep870.jpg",
+        "dataExibicao": "2019-01-27"
+    },
+    {
+        "id": 1793,
+        "numero": 871,
+        "titulo": "Finalmente Acabou! O Clímax da Intensa Batalha Contra Katakuri!",
+        "sinopse": "A batalha entre Luffy e Katakuri chega ao fim. Após uma luta épica, Luffy precisa encontrar uma maneira de escapar do Mundo dos Espelhos.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep871.jpg",
+        "dataExibicao": "2019-02-03"
+    },
+    {
+        "id": 1794,
+        "numero": 872,
+        "titulo": "Uma Situação Desesperadora! A Prisão Perfeita de Luffy!",
+        "sinopse": "Luffy consegue sair do Mundo dos Espelhos, mas os Chapéus de Palha precisam enfrentar toda a força dos Piratas da Big Mom.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep872.jpg",
+        "dataExibicao": "2019-02-10"
+    },
+    {
+        "id": 1795,
+        "numero": 873,
+        "titulo": "Retirando-se do Abismo! Os Reforços Formidáveis - Germa!",
+        "sinopse": "Sanji tenta salvar Luffy enquanto a chegada da Germa 66 muda completamente o rumo da batalha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep873.jpg",
+        "dataExibicao": "2019-02-17"
+    },
+    {
+        "id": 1796,
+        "numero": 874,
+        "titulo": "A Última Esperança! Os Piratas do Sol Aparecem!",
+        "sinopse": "Luffy e Sanji estão seguros, mas a fuga de Totto Land ainda está em perigo. Os Piratas do Sol surgem para ajudar os Chapéus de Palha.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep874.jpg",
+        "dataExibicao": "2019-02-24"
+    },
+    {
+        "id": 1797,
+        "numero": 875,
+        "titulo": "Um Sabor Cativante! O Bolo da Felicidade de Sanji!",
+        "sinopse": "Com a ajuda dos aliados, os Chapéus de Palha conseguem uma chance de escapar. Big Mom finalmente prova o bolo preparado por Sanji.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep875.jpg",
+        "dataExibicao": "2019-03-03"
+    },
+    {
+        "id": 1798,
+        "numero": 876,
+        "titulo": "O Homem da Humanidade e Justiça! Jimbei, a Correnteza Gigante do Desespero!",
+        "sinopse": "Os Chapéus de Palha conseguem escapar graças aos seus aliados, mas Jimbei toma uma decisão importante para garantir a fuga do Sunny.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep876.jpg",
+        "dataExibicao": "2019-03-17"
+    },
+    {
+        "id": 1799,
+        "numero": 877,
+        "titulo": "A Hora da Despedida! O Último Desejo de Pudding!",
+        "sinopse": "Após escaparem de Totto Land, os Chapéus de Palha deixam para trás amigos e aliados. Enquanto o mar se abre diante deles, todos lidam com o preço da fuga.",
+        "temporadaId": 19,
+        "animeId": 70,
+        "imagemUrl": "../../images/episodios/one-piece/t19/ep877.jpg",
+        "dataExibicao": "2019-03-24"
     }
 ]
