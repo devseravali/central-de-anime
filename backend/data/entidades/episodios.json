@@ -23006,5 +23006,455 @@
         "animeId": 78,
         "imagemUrl": "../../images/episodios/dragon-ball-z/t5/ep26.jpg",
         "dataExibicao": "1992-11-18"
+    },
+    {
+        "id": 2306,
+        "numero": 1,
+        "titulo": "O Que é o Torneio?",
+        "sinopse": "Enquanto Trunks conta aos outros sobre os planos de Cell para realizar um torneio, o androide começa a construir sua arena de batalha. Os Guerreiros Z terão alguma chance contra Cell?",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep1.jpg",
+        "dataExibicao": "1992-11-25"
+    },
+    {
+        "id": 2307,
+        "numero": 2,
+        "titulo": "A Transmissão do Apocalipse",
+        "sinopse": "Cell invade uma emissora de televisão para anunciar ao mundo os Jogos de Cell. Agora todos sabem da ameaça e procuram alguém capaz de enfrentar o poderoso androide.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep2.jpg",
+        "dataExibicao": "1992-12-02"
+    },
+    {
+        "id": 2308,
+        "numero": 3,
+        "titulo": "Encontre-me no Ringue",
+        "sinopse": "Enquanto o mundo entra em pânico com a ameaça de Cell, Goku e Gohan finalmente saem da Sala do Tempo. Após avaliar seu adversário, Goku decide enfrentar Cell.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep3.jpg",
+        "dataExibicao": "1992-12-09"
+    },
+    {
+        "id": 2309,
+        "numero": 4,
+        "titulo": "Sem Preocupações",
+        "sinopse": "Faltando nove dias para o torneio de Cell, Vegeta, Piccolo e Trunks planejam voltar para a Sala do Tempo. Porém, Goku decide que ele e Gohan já treinaram o suficiente.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep4.jpg",
+        "dataExibicao": "1992-12-16"
+    },
+    {
+        "id": 2310,
+        "numero": 5,
+        "titulo": "Uma Garota Chamada Lime",
+        "sinopse": "Gohan encontra uma vila que se esconde de Cell. Ao descobrir que o medo dos moradores está sendo explorado, ele decide resolver o problema usando seus poderes de Super Saiyajin.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep5.jpg",
+        "dataExibicao": "1993-01-13"
+    },
+    {
+        "id": 2311,
+        "numero": 6,
+        "titulo": "Memórias de Gohan",
+        "sinopse": "Com os Jogos de Cell se aproximando, Goku aproveita seus últimos momentos antes da batalha ao lado de seus amigos e familiares.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep6.jpg",
+        "dataExibicao": "1993-01-20"
+    },
+    {
+        "id": 2312,
+        "numero": 7,
+        "titulo": "Um Novo Guardião",
+        "sinopse": "Após um ataque fracassado dos militares contra Cell, Goku percebe que a Terra precisa de novas Esferas do Dragão e busca um novo guardião para restaurá-las.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep7.jpg",
+        "dataExibicao": "1993-01-27"
+    },
+    {
+        "id": 2313,
+        "numero": 8,
+        "titulo": "O Dragão de Dende",
+        "sinopse": "Goku viaja até Namekusei para encontrar um novo guardião da Terra. Dende aceita retornar e cria novamente as Esferas do Dragão.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep8.jpg",
+        "dataExibicao": "1993-02-03"
+    },
+    {
+        "id": 2314,
+        "numero": 9,
+        "titulo": "O Enigma do General Tao",
+        "sinopse": "Goku reencontra um antigo inimigo durante sua busca pelas Esferas do Dragão. Para conseguir o que precisa, ele terá que resolver um desafio inesperado.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep9.jpg",
+        "dataExibicao": "1993-02-10"
+    },
+    {
+        "id": 2315,
+        "numero": 10,
+        "titulo": "Os Jogos Começam",
+        "sinopse": "O momento chegou: os Jogos de Cell começam. Os Guerreiros Z chegam ao local da batalha e encontram um desafiante inesperado: Mr. Satan.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep10.jpg",
+        "dataExibicao": "1993-02-17"
+    },
+    {
+        "id": 2316,
+        "numero": 11,
+        "titulo": "Os Perdedores Lutam Primeiro",
+        "sinopse": "Caroni e Pirozhki, os melhores alunos de Mr. Satan, entram no ringue para enfrentar Cell. Mas eles logo descobrem que não estão preparados para esse desafio.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep11.jpg",
+        "dataExibicao": "1993-03-03"
+    },
+    {
+        "id": 2317,
+        "numero": 12,
+        "titulo": "Goku Contra Cell",
+        "sinopse": "A batalha principal dos Jogos de Cell começa. Goku entra no ringue para enfrentar Cell em um confronto entre dois dos guerreiros mais poderosos do universo.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep12.jpg",
+        "dataExibicao": "1993-03-10"
+    },
+    {
+        "id": 2318,
+        "numero": 13,
+        "titulo": "As Surpresas de Cell",
+        "sinopse": "Cell mostra seu enorme arsenal de técnicas durante a luta contra Goku, usando golpes como o Kienzan, Makankosappo e Kamehameha.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep13.jpg",
+        "dataExibicao": "1993-03-17"
+    },
+    {
+        "id": 2319,
+        "numero": 14,
+        "titulo": "Sem Mais Regras",
+        "sinopse": "Cell decide abandonar as regras do torneio e destrói a arena, transformando os Jogos de Cell em uma batalha mortal sem limites.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep14.jpg",
+        "dataExibicao": "1993-03-31"
+    },
+    {
+        "id": 2320,
+        "numero": 15,
+        "titulo": "A Luta Acabou",
+        "sinopse": "Goku usa um poderoso Kamehameha contra Cell, aparentemente derrotando o androide. Porém, Cell revela sua incrível capacidade de regeneração.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep15.jpg",
+        "dataExibicao": "1993-04-07"
+    },
+    {
+        "id": 2321,
+        "numero": 16,
+        "titulo": "A Confiança em um Garoto",
+        "sinopse": "Goku desiste da luta e escolhe Gohan como seu sucessor contra Cell. Agora o jovem Saiyajin precisa provar que possui o poder necessário.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep16.jpg",
+        "dataExibicao": "1993-04-14"
+    },
+    {
+        "id": 2322,
+        "numero": 17,
+        "titulo": "O Pedido de Gohan",
+        "sinopse": "A batalha entre Gohan e Cell continua. Apesar dos ataques do inimigo, o jovem guerreiro se recusa a liberar todo seu poder.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep17.jpg",
+        "dataExibicao": "1993-04-21"
+    },
+    {
+        "id": 2323,
+        "numero": 18,
+        "titulo": "Explosão dos Androides",
+        "sinopse": "Cell tenta despertar o verdadeiro potencial de Gohan e começa a torturar seus amigos, criando pequenos Cell Juniors para atacar os Guerreiros Z.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep18.jpg",
+        "dataExibicao": "1993-04-28"
+    },
+    {
+        "id": 2324,
+        "numero": 19,
+        "titulo": "O Ataque dos Cell Juniors",
+        "sinopse": "Os Cell Juniors atacam os Guerreiros Z. A raiva de Gohan aumenta cada vez mais enquanto ele tenta controlar seu poder.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep19.jpg",
+        "dataExibicao": "1993-05-05"
+    },
+    {
+        "id": 2325,
+        "numero": 20,
+        "titulo": "O Despertar",
+        "sinopse": "Após ouvir as últimas palavras do Androide 16, Gohan finalmente libera seu verdadeiro poder e alcança uma nova transformação.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep20.jpg",
+        "dataExibicao": "1993-05-12"
+    },
+    {
+        "id": 2326,
+        "numero": 21,
+        "titulo": "O Imparável Gohan",
+        "sinopse": "O desejo de Cell por uma grande batalha se transforma em um pesadelo quando Gohan libera todo o seu poder. Mesmo aumentando sua força ao máximo, Cell percebe que pode não ser capaz de vencer o Super Saiyajin.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep21.jpg",
+        "dataExibicao": "1993-05-19"
+    },
+    {
+        "id": 2327,
+        "numero": 22,
+        "titulo": "A Queda de Cell",
+        "sinopse": "O poder de Gohan parece não ter limites. Um golpe poderoso faz Cell perder o Androide 18, e o jovem Saiyajin se prepara para acabar com a ameaça de uma vez por todas.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep22.jpg",
+        "dataExibicao": "1993-05-26"
+    },
+    {
+        "id": 2328,
+        "numero": 23,
+        "titulo": "Adeus de um Herói",
+        "sinopse": "Sem conseguir derrotar Gohan, Cell ativa seu programa de autodestruição para explodir a Terra. Goku toma uma decisão desesperada para salvar o planeta.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep23.jpg",
+        "dataExibicao": "1993-06-02"
+    },
+    {
+        "id": 2329,
+        "numero": 24,
+        "titulo": "Cell Está de Volta!",
+        "sinopse": "Mesmo após a explosão, uma pequena parte de Cell sobrevive e permite que ele se regenere. O androide retorna ainda mais poderoso para um último confronto.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep24.jpg",
+        "dataExibicao": "1993-06-16"
+    },
+    {
+        "id": 2330,
+        "numero": 25,
+        "titulo": "O Terror Não Acabou",
+        "sinopse": "Cell derrota Trunks e Vegeta facilmente e revela seu novo plano: destruir a Terra e conquistar o universo. Os Guerreiros Z precisam encontrar uma maneira de impedir sua destruição.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep25.jpg",
+        "dataExibicao": "1993-06-23"
+    },
+    {
+        "id": 2331,
+        "numero": 26,
+        "titulo": "Salvem o Mundo",
+        "sinopse": "O confronto final começa. Enquanto Goku orienta Gohan do outro mundo, os Guerreiros Z tentam ajudar na batalha contra Cell. Gohan precisa liberar todo o seu potencial.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep26.jpg",
+        "dataExibicao": "1993-06-30"
+    },
+    {
+        "id": 2332,
+        "numero": 27,
+        "titulo": "A Decisão de Goku",
+        "sinopse": "Cell finalmente é derrotado, mas os Guerreiros Z ainda precisam lidar com as consequências da batalha. Gohan está gravemente ferido e o futuro de Goku precisa ser decidido.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep27.jpg",
+        "dataExibicao": "1993-07-07"
+    },
+    {
+        "id": 2333,
+        "numero": 28,
+        "titulo": "Mais um Desejo",
+        "sinopse": "Após a decisão de Goku de permanecer no outro mundo, Kuririn usa o último desejo das Esferas do Dragão para salvar Androide 18 e revelar seus sentimentos.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep28.jpg",
+        "dataExibicao": "1993-07-14"
+    },
+    {
+        "id": 2334,
+        "numero": 29,
+        "titulo": "Liberando o Futuro",
+        "sinopse": "A paz retorna à Terra, mas o futuro de Trunks ainda está mergulhado em caos. Ao voltar para sua época, Trunks decide mudar o destino de seu mundo.",
+        "temporadaId": 6,
+        "animeId": 79,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep29.jpg",
+        "dataExibicao": "1993-07-21"
+    },
+    {
+        "id": 2335,
+        "numero": 1250,
+        "titulo": "Guerreiros do Outro Mundo",
+        "sinopse": "Quando Goku ouve falar de um mestre de artes marciais conhecido como Grande Senhor Kaio, ele corre para conhecê-lo e receber seus ensinamentos. Enquanto isso, Cell, Freeza, Rei Cold e a Força Ginyu se unem para dominar o Outro Mundo!",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep1.jpg",
+        "dataExibicao": "1993-07-28"
+    },
+    {
+        "id": 2336,
+        "numero": 1251,
+        "titulo": "O Torneio Começa",
+        "sinopse": "Goku precisa treinar por 10.000 anos antes de poder aprender com o Grande Senhor Kaio. Porém, quando os Kaio do Norte, Sul, Leste e Oeste organizam um Torneio do Outro Mundo, Goku recebe uma oportunidade de enfrentar os maiores guerreiros de todos os tempos!",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep2.jpg",
+        "dataExibicao": "1993-08-11"
+    },
+    {
+        "id": 2337,
+        "numero": 1252,
+        "titulo": "Batalha na Água",
+        "sinopse": "O Torneio do Outro Mundo chega às quartas de final, e Goku enfrenta Arqua, um lutador que parece fraco, mas que revela uma habilidade capaz de transformar toda a arena em água.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep3.jpg",
+        "dataExibicao": "1993-08-18"
+    },
+    {
+        "id": 2338,
+        "numero": 1253,
+        "titulo": "A Rodada Final",
+        "sinopse": "Goku chega à final do torneio e enfrenta o guerreiro Pikkon. Durante a batalha, Pikkon revela um segredo de seu poder e Goku precisa aumentar sua força usando o Super Saiyajin.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep4.jpg",
+        "dataExibicao": "1993-08-25"
+    },
+    {
+        "id": 2339,
+        "numero": 1254,
+        "titulo": "Goku Contra Pikkon",
+        "sinopse": "Goku enfrenta Pikkon em uma batalha intensa no Outro Mundo. Enquanto isso, sete anos se passaram na Terra e Gohan agora é um adolescente.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep5.jpg",
+        "dataExibicao": "1993-09-01"
+    },
+    {
+        "id": 2340,
+        "numero": 1255,
+        "titulo": "Gohan Vai Para o Ensino Médio",
+        "sinopse": "No seu primeiro dia de ensino médio, Gohan impede um assalto usando a transformação de Super Saiyajin. Agora a cidade comenta sobre o misterioso Guerreiro Dourado, e Gohan precisa esconder sua identidade.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep6.jpg",
+        "dataExibicao": "1993-09-08"
+    },
+    {
+        "id": 2341,
+        "numero": 1256,
+        "titulo": "Eu Sou o Saiyaman!",
+        "sinopse": "Com medo de ser reconhecido pelos colegas, Gohan pede para Bulma criar uma roupa de super-herói. Assim nasce o Grande Saiyaman!",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep7.jpg",
+        "dataExibicao": "1993-09-15"
+    },
+    {
+        "id": 2342,
+        "numero": 1257,
+        "titulo": "O Primeiro Encontro de Gohan",
+        "sinopse": "Gohan descobre que ser um super-herói não é tão simples quando uma garota chamada Angela descobre seu segredo e usa isso para conseguir um encontro.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep8.jpg",
+        "dataExibicao": "1993-09-29"
+    },
+    {
+        "id": 2343,
+        "numero": 1258,
+        "titulo": "Resgate de Videl",
+        "sinopse": "Quando a Gangue Tubarão Vermelho sequestra o prefeito e desafia Mr. Satan, Videl decide enfrentar os criminosos. Gohan precisa ajudá-la sem revelar sua identidade.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep9.jpg",
+        "dataExibicao": "1993-10-20"
+    },
+    {
+        "id": 2344,
+        "numero": 1259,
+        "titulo": "Chantagem",
+        "sinopse": "Um empresário ganancioso sequestra um bebê dinossauro para ganhar dinheiro, sem saber que o animal é amigo do Grande Saiyaman.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep10.jpg",
+        "dataExibicao": "1993-10-27"
+    },
+    {
+        "id": 2345,
+        "numero": 1260,
+        "titulo": "Eu Também Vou Lutar!",
+        "sinopse": "O Grande Saiyaman acaba virando uma estrela de cinema, mas Gohan precisa voltar rapidamente para contar aos amigos uma grande novidade: Goku está voltando!",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep11.jpg",
+        "dataExibicao": "1993-11-03"
+    },
+    {
+        "id": 2346,
+        "numero": 1261,
+        "titulo": "O Mais Novo Super Saiyajin",
+        "sinopse": "Durante o treinamento para o torneio, Gohan descobre que Goten já conseguiu se transformar em Super Saiyajin. Os irmãos treinam juntos enquanto Videl conhece Chi-Chi.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep12.jpg",
+        "dataExibicao": "1993-11-10"
+    },
+    {
+        "id": 2347,
+        "numero": 1262,
+        "titulo": "Voe, Videl!",
+        "sinopse": "Com o torneio se aproximando, Videl e Goten precisam aprender a voar. Enquanto isso, Vegeta realiza seu próprio treinamento com Trunks.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep13.jpg",
+        "dataExibicao": "1993-11-17"
+    },
+    {
+        "id": 2357,
+        "numero": 1272,
+        "titulo": "Videl é Derrotada",
+        "sinopse": "Para o horror de todos, Spopovich continua atacando Videl mesmo com a luta já decidida. O lutador parece determinado a destruí-la completamente.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep23.jpg",
+        "dataExibicao": "1994-02-16"
+    },
+    {
+        "id": 2358,
+        "numero": 1273,
+        "titulo": "Identidades Reveladas",
+        "sinopse": "A identidade de Gohan como o Grande Saiyaman é finalmente descoberta. Agora ele precisa enfrentar Kibito, que deseja vê-lo se transformar em Super Saiyajin.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep24.jpg",
+        "dataExibicao": "1994-02-23"
+    },
+    {
+        "id": 2359,
+        "numero": 1274,
+        "titulo": "Drenagem de Energia",
+        "sinopse": "Quando Gohan se transforma em Super Saiyajin, Spopovich e Yamu entram em ação usando um dispositivo capaz de absorver energia.",
+        "temporadaId": 7,
+        "animeId": 80,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep25.jpg",
+        "dataExibicao": "1994-03-02"
     }
 ]
