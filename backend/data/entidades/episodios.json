@@ -23456,5 +23456,725 @@
         "animeId": 80,
         "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep25.jpg",
         "dataExibicao": "1994-03-02"
+    },
+    {
+        "id": 2360,
+        "numero": 1275,
+        "titulo": "A Maldição do Mago",
+        "sinopse": "Os Guerreiros Z correm contra o tempo para impedir que os seguidores de Babidi entreguem a energia necessária para ressuscitar o terrível Majin Buu. Será que eles encontrarão a nave secreta de Babidi a tempo?",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep1.jpg",
+        "dataExibicao": "1994-03-09"
+    },
+    {
+        "id": 2361,
+        "numero": 1276,
+        "titulo": "O Rei dos Demônios",
+        "sinopse": "Piccolo e Kuririn são transformados em pedra por Dabura. Goku, Gohan e Vegeta entram na nave de Babidi para salvar seus amigos e enfrentar novos desafios.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep2.jpg",
+        "dataExibicao": "1994-03-16"
+    },
+    {
+        "id": 2362,
+        "numero": 1277,
+        "titulo": "Vegeta Ataca",
+        "sinopse": "A cada estágio da nave de Babidi, Goku, Gohan e Vegeta enfrentam guerreiros cada vez mais poderosos. Qualquer erro pode fornecer energia para o renascimento de Majin Buu.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep3.jpg",
+        "dataExibicao": "1994-03-23"
+    },
+    {
+        "id": 2363,
+        "numero": 1278,
+        "titulo": "Agora é a Vez de Goku",
+        "sinopse": "Babidi libera Yakon para roubar a energia dos Guerreiros Z. Goku enfrenta uma das criaturas mais perigosas do universo em uma batalha decisiva.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep4.jpg",
+        "dataExibicao": "1994-04-13"
+    },
+    {
+        "id": 2364,
+        "numero": 1279,
+        "titulo": "Batalha Suprema",
+        "sinopse": "No Torneio Mundial de Artes Marciais, os cinco competidores restantes entram em uma batalha geral. Nº 18, Mighty Mask e Mr. Satan disputam o título de campeão.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep5.jpg",
+        "dataExibicao": "1994-04-20"
+    },
+    {
+        "id": 2365,
+        "numero": 1280,
+        "titulo": "Nº 18 Revela Sua Identidade",
+        "sinopse": "A batalha do torneio continua e Nº 18 enfrenta Mighty Mask. Ela precisa encontrar uma forma de superar seu misterioso adversário.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep6.jpg",
+        "dataExibicao": "1994-04-27"
+    },
+    {
+        "id": 2366,
+        "numero": 1281,
+        "titulo": "Pagando Para Vencer",
+        "sinopse": "Nº 18 oferece uma proposta para Mr. Satan durante a luta final do torneio. Enquanto isso, Babidi escolhe Dabura para enfrentar os Guerreiros Z.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep7.jpg",
+        "dataExibicao": "1994-05-04"
+    },
+    {
+        "id": 2367,
+        "numero": 1282,
+        "titulo": "O Coração de um Vilão",
+        "sinopse": "A batalha entre Gohan e Dabura continua intensa, mas o Rei dos Demônios interrompe a luta após descobrir algo surpreendente.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep8.jpg",
+        "dataExibicao": "1994-05-18"
+    },
+    {
+        "id": 2368,
+        "numero": 1283,
+        "titulo": "O Retorno do Príncipe das Trevas",
+        "sinopse": "Babidi desperta o lado maligno de Vegeta, removendo suas emoções positivas e transformando o príncipe Saiyajin novamente em um guerreiro cruel.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep9.jpg",
+        "dataExibicao": "1994-05-25"
+    },
+    {
+        "id": 2369,
+        "numero": 1284,
+        "titulo": "O Orgulho de Vegeta",
+        "sinopse": "Vegeta desafia Goku para uma luta e ameaça destruir vidas inocentes caso ele não aceite. O confronto entre os dois Saiyajins finalmente começa.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep10.jpg",
+        "dataExibicao": "1994-06-15"
+    },
+    {
+        "id": 2370,
+        "numero": 1285,
+        "titulo": "A Luta Tão Esperada",
+        "sinopse": "A batalha entre Goku e Vegeta começa. Com a magia de Babidi aumentando seu poder, Vegeta consegue acompanhar Goku, mas cada golpe aumenta a energia de Majin Buu.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep11.jpg",
+        "dataExibicao": "1994-06-22"
+    },
+    {
+        "id": 2371,
+        "numero": 1286,
+        "titulo": "A Esfera Mágica de Buu",
+        "sinopse": "A luta entre Goku e Vegeta fornece uma enorme quantidade de energia para o renascimento de Majin Buu. Gohan tenta impedir Babidi antes que seja tarde demais.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep12.jpg",
+        "dataExibicao": "1994-06-29"
+    },
+    {
+        "id": 2372,
+        "numero": 1287,
+        "titulo": "Buu Renasce",
+        "sinopse": "O selo que prende Buu finalmente é quebrado. Apesar dos ataques de Gohan, uma terrível ameaça surge quando o verdadeiro poder de Majin Buu é revelado.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep13.jpg",
+        "dataExibicao": "1994-07-06"
+    },
+    {
+        "id": 2373,
+        "numero": 1288,
+        "titulo": "As Perdas Começam",
+        "sinopse": "Majin Buu mostra seu poder absurdo e derrota Dabura facilmente. Gohan percebe que a força do novo inimigo pode ser ilimitada.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep14.jpg",
+        "dataExibicao": "1994-07-13"
+    },
+    {
+        "id": 2374,
+        "numero": 1289,
+        "titulo": "O Terror de Majin Buu",
+        "sinopse": "O Supremo Senhor Kaio tenta impedir Buu enquanto Goten e Trunks encontram Piccolo transformado em pedra. Dabura também retorna ao combate.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep15.jpg",
+        "dataExibicao": "1994-07-27"
+    },
+    {
+        "id": 2375,
+        "numero": 1290,
+        "titulo": "Hora da Refeição",
+        "sinopse": "Livre da influência de Babidi, Vegeta decide enfrentar Majin Buu. O príncipe Saiyajin acredita que pode derrotar o monstro sozinho.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep16.jpg",
+        "dataExibicao": "1994-08-03"
+    },
+    {
+        "id": 2376,
+        "numero": 1291,
+        "titulo": "A Decisão do Guerreiro",
+        "sinopse": "Com Goku e Gohan fora de combate, Vegeta tenta acabar com o reinado de terror de Majin Buu, mas descobre que o inimigo é mais poderoso do que imaginava.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep17.jpg",
+        "dataExibicao": "1994-08-17"
+    },
+    {
+        "id": 2377,
+        "numero": 1292,
+        "titulo": "A Redenção Final",
+        "sinopse": "Vegeta decide arriscar tudo para derrotar Majin Buu. O príncipe Saiyajin prepara seu ataque final para proteger sua família e a Terra.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep18.jpg",
+        "dataExibicao": "1994-08-24"
+    },
+    {
+        "id": 2378,
+        "numero": 1293,
+        "titulo": "O Mal Continua Vivo",
+        "sinopse": "Mesmo após ser destruído, o corpo de Majin Buu começa a se reconstruir. Babidi também sobrevive e continua seu plano de destruição.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep19.jpg",
+        "dataExibicao": "1994-08-31"
+    },
+    {
+        "id": 2379,
+        "numero": 1294,
+        "titulo": "Encontre as Esferas do Dragão",
+        "sinopse": "Bulma e os outros procuram as Esferas do Dragão para desfazer a destruição causada por Vegeta. Enquanto isso, Goku finalmente desperta.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep20.jpg",
+        "dataExibicao": "1994-09-07"
+    },
+    {
+        "id": 2380,
+        "numero": 1295,
+        "titulo": "Renascimento",
+        "sinopse": "Goku cria um plano para derrotar Majin Buu usando a técnica da Fusão. Agora a esperança da Terra está nas mãos de Goten e Trunks.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep21.jpg",
+        "dataExibicao": "1994-09-21"
+    },
+    {
+        "id": 2381,
+        "numero": 1296,
+        "titulo": "Anúncio Global",
+        "sinopse": "Babidi ameaça a humanidade para se vingar de Piccolo, Goten e Trunks. Enquanto isso, Gohan é levado para o mundo do Supremo Senhor Kaio.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep22.jpg",
+        "dataExibicao": "1994-09-28"
+    },
+    {
+        "id": 2382,
+        "numero": 1297,
+        "titulo": "Aprendendo a Fusão",
+        "sinopse": "Goku começa a ensinar Goten e Trunks a técnica da Fusão. No mundo do Supremo Senhor Kaio, Gohan tenta retirar a lendária Espada Z.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep23.jpg",
+        "dataExibicao": "1994-10-12"
+    },
+    {
+        "id": 2383,
+        "numero": 1298,
+        "titulo": "A Espada Z",
+        "sinopse": "Majin Buu transforma uma cidade inteira em chocolate. Enquanto isso, Gohan consegue retirar a Espada Z e Goku continua treinando Goten e Trunks.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep24.jpg",
+        "dataExibicao": "1994-10-19"
+    },
+    {
+        "id": 2384,
+        "numero": 1299,
+        "titulo": "Corrida Para a Corporação Cápsula",
+        "sinopse": "Babidi descobre onde Trunks mora e segue para a Corporação Cápsula. Os Guerreiros Z precisam impedir que o mago chegue até lá.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep25.jpg",
+        "dataExibicao": "1994-11-02"
+    },
+    {
+        "id": 2385,
+        "numero": 1300,
+        "titulo": "Super Saiyajin 3?!",
+        "sinopse": "Goku revela uma nova transformação: Super Saiyajin 3. Enquanto isso, Trunks procura desesperadamente pelo Radar do Dragão perdido.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep26.jpg",
+        "dataExibicao": "1994-11-09"
+    },
+    {
+        "id": 2386,
+        "numero": 1301,
+        "titulo": "A Rebelião de Buu",
+        "sinopse": "Goku usa o Super Saiyajin 3 contra Majin Buu para ganhar tempo enquanto Trunks procura o Radar do Dragão.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep27.jpg",
+        "dataExibicao": "1994-11-16"
+    },
+    {
+        "id": 2387,
+        "numero": 1302,
+        "titulo": "A Dança da Fusão",
+        "sinopse": "Livre do controle de Babidi, Majin Buu se torna ainda mais perigoso. A única esperança da Terra agora está em Goten e Trunks.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep28.jpg",
+        "dataExibicao": "1994-11-23"
+    },
+    {
+        "id": 2388,
+        "numero": 1303,
+        "titulo": "O Tempo de Goku Acabou",
+        "sinopse": "Enquanto Goten e Trunks se preparam para enfrentar Majin Buu, Goku se despede antes de retornar ao Outro Mundo.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep29.jpg",
+        "dataExibicao": "1994-11-30"
+    },
+    {
+        "id": 2389,
+        "numero": 1304,
+        "titulo": "Retorno ao Outro Mundo",
+        "sinopse": "Trunks e Goten continuam treinando a Fusão enquanto Gohan busca dominar a Espada Z. Majin Buu começa a mostrar um lado inesperado.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep30.jpg",
+        "dataExibicao": "1994-12-07"
+    },
+    {
+        "id": 2390,
+        "numero": 1305,
+        "titulo": "Saindo da Espada Quebrada",
+        "sinopse": "Durante o treinamento intenso, Gohan quebra a lendária Espada Z. Quando tudo parece perdido, o Antigo Supremo Senhor Kaio surge da arma e revela possuir um poder incrível.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep31.jpg",
+        "dataExibicao": "1994-12-14"
+    },
+    {
+        "id": 2391,
+        "numero": 1306,
+        "titulo": "O Nascimento de Gotenks",
+        "sinopse": "Depois de muitos erros, Trunks e Goten finalmente dominam a técnica da Fusão e criam Gotenks. O jovem guerreiro desafia Majin Buu sem ouvir os conselhos de Piccolo.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep32.jpg",
+        "dataExibicao": "1994-12-21"
+    },
+    {
+        "id": 2392,
+        "numero": 1307,
+        "titulo": "Uma Amizade Inesperada",
+        "sinopse": "Enquanto Majin Buu continua aterrorizando a humanidade, Mr. Satan aparece como o novo herói. Seu golpe Megaton pode não derrotar Buu, mas ele pode surpreender o vilão.",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep33.jpg",
+        "dataExibicao": "1995-01-11"
+    },
+    {
+        "id": 2393,
+        "numero": 1308,
+        "titulo": "Eu Não Mato Mais",
+        "sinopse": "Enquanto os Guerreiros Z continuam treinando para enfrentar Majin Buu, Mr. Satan cria novos planos para derrotar o inimigo. Mas será que Buu está começando a mudar?",
+        "temporadaId": 8,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t8/ep34.jpg",
+        "dataExibicao": "1995-01-25"
+    },
+    {
+        "id": 2394,
+        "numero": 1309,
+        "titulo": "O Mal dos Homens",
+        "sinopse": "Quando Mr. Satan convence Majin Buu a abandonar seus caminhos malignos, parece que o mundo finalmente está salvo. Mas quando um homem perturbado destrói a nova felicidade de Buu, o monstro rosa volta a espalhar o caos.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep1.jpg",
+        "dataExibicao": "1995-02-01"
+    },
+    {
+        "id": 2395,
+        "numero": 1310,
+        "titulo": "Buu Contra Buu",
+        "sinopse": "A batalha entre os dois Buus começa! O Buu bom acaba sendo transformado em chocolate pelo seu lado maligno e é absorvido, dando origem a uma nova e terrível transformação.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep2.jpg",
+        "dataExibicao": "1995-02-08"
+    },
+    {
+        "id": 2396,
+        "numero": 1311,
+        "titulo": "Planeta Vazio",
+        "sinopse": "O novo Majin Buu aparece no Templo de Kami para desafiar Gotenks. Enquanto o caos começa, Trunks e Goten estão completamente alheios ao perigo.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep3.jpg",
+        "dataExibicao": "1995-02-15"
+    },
+    {
+        "id": 2397,
+        "numero": 1312,
+        "titulo": "Luta Contra o Tempo",
+        "sinopse": "Antes de destruir os últimos Guerreiros Z, Majin Buu é levado para a Sala do Tempo. Goten e Trunks precisam terminar seu treinamento antes que o monstro chegue.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep4.jpg",
+        "dataExibicao": "1995-02-22"
+    },
+    {
+        "id": 2398,
+        "numero": 1313,
+        "titulo": "Os Movimentos Supremos de Gotenks",
+        "sinopse": "A tão esperada revanche entre Majin Buu e Gotenks começa. Sem conseguir vencer com seus ataques comuns, Gotenks cria golpes cada vez mais absurdos e poderosos.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep5.jpg",
+        "dataExibicao": "1995-03-01"
+    },
+    {
+        "id": 2399,
+        "numero": 1314,
+        "titulo": "Presos Para Sempre",
+        "sinopse": "A batalha entre Gotenks e Majin Buu continua dentro da Sala do Tempo. Enquanto todos esperam pelo resultado, resta saber se eles conseguirão escapar antes que seja tarde.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep6.jpg",
+        "dataExibicao": "1995-03-08"
+    },
+    {
+        "id": 2400,
+        "numero": 1315,
+        "titulo": "Fome Insaciável",
+        "sinopse": "Majin Buu escapa da Sala do Tempo e deixa Piccolo e Gotenks presos. Os Guerreiros Z restantes precisam enfrentar o monstro enquanto ele procura sua próxima refeição.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep7.jpg",
+        "dataExibicao": "1995-03-15"
+    },
+    {
+        "id": 2401,
+        "numero": 1316,
+        "titulo": "Gotenks é Incrível!",
+        "sinopse": "Super Saiyajin 3 Gotenks continua sua luta contra Majin Buu. A batalha destrói o Templo de Kami enquanto os dois guerreiros aumentam seus poderes ao máximo.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep8.jpg",
+        "dataExibicao": "1995-03-22"
+    },
+    {
+        "id": 2402,
+        "numero": 1317,
+        "titulo": "Azar Inesperado",
+        "sinopse": "Enquanto Gohan continua seu treinamento no Mundo dos Kaioshins, Gotenks começa a perder vantagem contra Majin Buu. Será que Gohan chegará a tempo?",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep9.jpg",
+        "dataExibicao": "1995-04-26"
+    },
+    {
+        "id": 2403,
+        "numero": 1318,
+        "titulo": "Um Novo Gohan",
+        "sinopse": "Quando a fusão de Goten e Trunks termina, tudo parece perdido. Mas Gohan retorna com um novo poder despertado e muda completamente a batalha contra Majin Buu.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep10.jpg",
+        "dataExibicao": "1995-05-03"
+    },
+    {
+        "id": 2404,
+        "numero": 1319,
+        "titulo": "Procurando Sobreviventes",
+        "sinopse": "Depois de ser dominado na batalha, Majin Buu se explode em uma tentativa desesperada de destruir Gohan. Mas será que isso é apenas uma estratégia para ganhar tempo?",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep11.jpg",
+        "dataExibicao": "1995-05-17"
+    },
+    {
+        "id": 2405,
+        "numero": 1320,
+        "titulo": "Majin Buu se Transforma",
+        "sinopse": "Majin Buu retorna para a batalha e usa uma estratégia inesperada: absorver Gotenks e Piccolo. Com seus poderes combinados, nasce o Super Buu.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep12.jpg",
+        "dataExibicao": "1995-05-24"
+    },
+    {
+        "id": 2406,
+        "numero": 1321,
+        "titulo": "A Arma do Antigo Kaioshin",
+        "sinopse": "Depois de absorver Piccolo e Gotenks, Majin Buu alcança um poder gigantesco. Gohan precisa encontrar uma forma de impedir a destruição da Terra.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep13.jpg",
+        "dataExibicao": "1995-05-31"
+    },
+    {
+        "id": 2407,
+        "numero": 1322,
+        "titulo": "Pronto Para a Fusão?",
+        "sinopse": "Goku descobre uma maneira de enfrentar Majin Buu usando uma técnica de fusão. Enquanto isso, o Antigo Kaioshin revela um novo poder para salvar Gohan.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep14.jpg",
+        "dataExibicao": "1995-06-07"
+    },
+    {
+        "id": 2408,
+        "numero": 1323,
+        "titulo": "União de Rivais",
+        "sinopse": "Com Gohan absorvido por Majin Buu, Goku precisa de outro parceiro. A única opção é Vegeta, que precisa deixar seu orgulho de lado.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep15.jpg",
+        "dataExibicao": "1995-06-28"
+    },
+    {
+        "id": 2409,
+        "numero": 1324,
+        "titulo": "Conheça Vegetto",
+        "sinopse": "Goku e Vegeta unem seus corpos através dos brincos Potara e criam um novo guerreiro Saiyajin. Vegetto enfrenta Majin Buu com um poder impressionante.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep16.jpg",
+        "dataExibicao": "1995-07-05"
+    },
+    {
+        "id": 2410,
+        "numero": 1325,
+        "titulo": "A Ruptura do Universo",
+        "sinopse": "Super Vegetto domina a luta contra Majin Buu, mas a raiva do monstro aumenta enquanto ele tenta encontrar uma maneira de vencer.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep17.jpg",
+        "dataExibicao": "1995-07-12"
+    },
+    {
+        "id": 2411,
+        "numero": 1326,
+        "titulo": "Vegetto Reduzido",
+        "sinopse": "A batalha continua entre Vegetto e Majin Buu. O guerreiro Saiyajin parece ter controle total, mas o inimigo ainda esconde alguns truques.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep18.jpg",
+        "dataExibicao": "1995-07-19"
+    },
+    {
+        "id": 2412,
+        "numero": 1327,
+        "titulo": "O Incrível Guerreiro de Chocolate",
+        "sinopse": "Transformado em um doce, Vegetto continua lutando contra Majin Buu e prova que ainda é capaz de superar o inimigo.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep19.jpg",
+        "dataExibicao": "1995-07-26"
+    },
+    {
+        "id": 2413,
+        "numero": 1328,
+        "titulo": "O Interior de Buu",
+        "sinopse": "Após ser absorvido por Majin Buu, Vegetto se separa novamente em Goku e Vegeta. Dentro do corpo do vilão, eles procuram salvar seus amigos.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep20.jpg",
+        "dataExibicao": "1995-08-02"
+    },
+    {
+        "id": 2414,
+        "numero": 1329,
+        "titulo": "Armadilha Mental",
+        "sinopse": "Goku e Vegeta continuam sua missão dentro do corpo de Majin Buu e enfrentam perigos enquanto procuram Gohan e os outros guerreiros absorvidos.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep21.jpg",
+        "dataExibicao": "1995-08-09"
+    },
+    {
+        "id": 2415,
+        "numero": 1330,
+        "titulo": "Visão Mortal",
+        "sinopse": "Goku e Vegeta conseguem libertar seus amigos, mas precisam enfrentar a fúria de Majin Buu dentro de sua própria mente.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep22.jpg",
+        "dataExibicao": "1995-08-16"
+    },
+    {
+        "id": 2416,
+        "numero": 1331,
+        "titulo": "O Pequeno Buu Maligno!",
+        "sinopse": "O corpo de Majin Buu sofre uma nova transformação. Goku e Vegeta precisam escapar rapidamente para descobrir qual será a próxima forma do inimigo.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep23.jpg",
+        "dataExibicao": "1995-08-23"
+    },
+    {
+        "id": 2417,
+        "numero": 1332,
+        "titulo": "O Fim da Terra",
+        "sinopse": "Majin Buu destrói a Terra e começa sua busca por Goku e Vegeta. O destino do universo está agora nas mãos dos Saiyajins.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep24.jpg",
+        "dataExibicao": "1995-09-06"
+    },
+    {
+        "id": 2418,
+        "numero": 1333,
+        "titulo": "Verdadeiros Saiyajins Lutam Sozinhos",
+        "sinopse": "Com a Terra destruída, Majin Buu continua sua busca por Goku e Vegeta, destruindo mundos pelo caminho. Quando Buu chega ao Mundo dos Kaioshins, os Saiyajins decidem enfrentá-lo.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep25.jpg",
+        "dataExibicao": "1995-09-13"
+    },
+    {
+        "id": 2419,
+        "numero": 1334,
+        "titulo": "A Batalha pelo Universo Começa",
+        "sinopse": "Majin Buu está pronto para lutar. Enquanto os Kaioshins ficam surpresos, Goku e Vegeta decidem enfrentar o inimigo separadamente em vez de usar a fusão.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep26.jpg",
+        "dataExibicao": "1995-09-20"
+    },
+    {
+        "id": 2420,
+        "numero": 1335,
+        "titulo": "O Respeito de Vegeta",
+        "sinopse": "Quando Goku Super Saiyajin 3 começa a perder energia, Vegeta assume a batalha contra Majin Buu. Mesmo em desvantagem, ele tenta ganhar tempo para seu rival.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep27.jpg",
+        "dataExibicao": "1995-10-18"
+    },
+    {
+        "id": 2421,
+        "numero": 1336,
+        "titulo": "Um Minuto de Desespero",
+        "sinopse": "Goku está ficando sem forças e precisa terminar a luta rapidamente. Vegeta enfrenta Majin Buu para proteger o amigo enquanto ele prepara seu último ataque.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep28.jpg",
+        "dataExibicao": "1995-11-01"
+    },
+    {
+        "id": 2422,
+        "numero": 1337,
+        "titulo": "O Antigo Buu Surge",
+        "sinopse": "Quando Vegeta cai, Mr. Satan tenta enfrentar Majin Buu. Porém, algo inesperado acontece quando o monstro encontra seu antigo lado bondoso.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep29.jpg",
+        "dataExibicao": "1995-11-08"
+    },
+    {
+        "id": 2423,
+        "numero": 1338,
+        "titulo": "A Terra Renascida",
+        "sinopse": "Enquanto o Buu bondoso enfrenta sua parte maligna, Vegeta pede para Dende reunir as Esferas do Dragão. O plano final contra Majin Buu começa.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep30.jpg",
+        "dataExibicao": "1995-11-15"
+    },
+    {
+        "id": 2424,
+        "numero": 1339,
+        "titulo": "Chamado Para a Ação",
+        "sinopse": "Goku espera que a energia dos habitantes da Terra chegue para completar a Genki Dama, mas ninguém parece responder ao pedido de Vegeta.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep31.jpg",
+        "dataExibicao": "1995-11-22"
+    },
+    {
+        "id": 2425,
+        "numero": 1340,
+        "titulo": "O Povo da Terra se Une",
+        "sinopse": "Os humanos ignoram o pedido de Goku até que Mr. Satan consegue convencê-los a ajudar. Agora resta saber se a energia chegará a tempo.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep32.jpg",
+        "dataExibicao": "1995-11-29"
+    },
+    {
+        "id": 2426,
+        "numero": 1341,
+        "titulo": "A Genki Dama Triunfa",
+        "sinopse": "Com a ajuda dos habitantes da Terra, Goku finalmente lança a Genki Dama contra Majin Buu. Mas o cansado Saiyajin ainda precisa reunir forças para vencer.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep33.jpg",
+        "dataExibicao": "1995-12-13"
+    },
+    {
+        "id": 2427,
+        "numero": 1342,
+        "titulo": "Comemorações com Majin Buu",
+        "sinopse": "Após a derrota de Majin Buu, Goku e seus amigos retornam à Terra. Porém, ninguém sabe se o Buu bondoso conseguirá viver em paz com todos.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep34.jpg",
+        "dataExibicao": "1995-12-20"
+    },
+    {
+        "id": 2428,
+        "numero": 1343,
+        "titulo": "Ele Está Sempre Atrasado",
+        "sinopse": "Goku precisa proteger quatro ovos de dragão dos perigos da natureza, mas um problema ainda maior o espera: a fúria de Chi-Chi.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep35.jpg",
+        "dataExibicao": "1996-01-10"
+    },
+    {
+        "id": 2429,
+        "numero": 1344,
+        "titulo": "A Neta Pan",
+        "sinopse": "Dez anos se passaram desde a derrota de Majin Buu. A Terra vive em paz, Gohan é estudioso, Vegeta tem uma nova filha e Goku agora é avô.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep36.jpg",
+        "dataExibicao": "1996-01-17"
+    },
+    {
+        "id": 2430,
+        "numero": 1345,
+        "titulo": "A Reencarnação de Buu",
+        "sinopse": "Um novo Torneio de Artes Marciais começa. Com a ajuda de Majin Buu, Goku consegue enfrentar um misterioso garoto chamado Uub.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep37.jpg",
+        "dataExibicao": "1996-01-24"
+    },
+    {
+        "id": 2431,
+        "numero": 1346,
+        "titulo": "A Próxima Jornada de Goku",
+        "sinopse": "Uub mostra seu verdadeiro poder durante a luta contra Goku. Antes do combate terminar, Goku revela seus planos e parte com o jovem guerreiro para um novo treinamento.",
+        "temporadaId": 9,
+        "animeId": 82,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep38.jpg",
+        "dataExibicao": "1996-01-31"
     }
 ]
