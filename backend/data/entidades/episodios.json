@@ -28184,5 +28184,255 @@
         "animeId": 96,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep196.jpg",
         "dataExibicao": "2011-01-27"
+    },
+    {
+        "id": 2830,
+        "numero": 197,
+        "titulo": "O Sexto Hokage Danzō",
+        "sinopse": "Naruto e Sakura descobrem que Danzō foi nomeado Hokage e que sua primeira ordem é eliminar Sasuke. Eles procuram Sai para saber mais sobre ele, mas descobrem que uma marca amaldiçoada impede os membros da Fundação de revelar informações.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep197.jpg",
+        "dataExibicao": "2011-02-10"
+    },
+    {
+        "id": 2831,
+        "numero": 198,
+        "titulo": "Véspera da Reunião dos Cinco Kage",
+        "sinopse": "Karui tenta conseguir informações sobre Sasuke de Naruto de qualquer maneira. Enquanto isso, Danzō se prepara para a Reunião dos Kage e decide manter Naruto preso na Vila da Folha.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep198.jpg",
+        "dataExibicao": "2011-02-10"
+    },
+    {
+        "id": 2832,
+        "numero": 199,
+        "titulo": "A Entrada dos Cinco Kage",
+        "sinopse": "Chega o momento de cada Kage partir para a Reunião dos Cinco Kage no País do Ferro. Enquanto isso, Naruto, acompanhado por Kakashi e Yamato, parte para encontrar o Raikage e tentar convencê-lo a poupar Sasuke.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep199.jpg",
+        "dataExibicao": "2011-02-17"
+    },
+    {
+        "id": 2833,
+        "numero": 200,
+        "titulo": "O Pedido de Naruto",
+        "sinopse": "Naruto fica diante do Raikage e implora para que ele perdoe Sasuke. Enquanto isso, a Reunião dos Cinco Kage começa e uma proposta de aliança entre as grandes nações é apresentada.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep200.jpg",
+        "dataExibicao": "2011-02-24"
+    },
+    {
+        "id": 2834,
+        "numero": 201,
+        "titulo": "Decisão Dolorosa",
+        "sinopse": "O caos toma conta da Reunião dos Cinco Kage após a proposta de tornar Danzō líder da aliança. Ao mesmo tempo, Shikamaru pede permissão a Sakura para tomar uma decisão contra Sasuke.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep201.jpg",
+        "dataExibicao": "2011-03-03"
+    },
+    {
+        "id": 2835,
+        "numero": 202,
+        "titulo": "Relâmpago em Corrida",
+        "sinopse": "Zetsu aparece durante a Reunião dos Cinco Kage e revela que Sasuke está próximo. Enquanto os Kage e samurais procuram por ele, Naruto recebe uma visita inesperada de Madara.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep202.jpg",
+        "dataExibicao": "2011-03-10"
+    },
+    {
+        "id": 2836,
+        "numero": 203,
+        "titulo": "O Caminho Ninja de Sasuke",
+        "sinopse": "Com o Time Hebi exposto, Sasuke começa a derrotar os samurais inimigos. O Raikage e seus aliados enfrentam Sasuke em uma batalha de enorme poder.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep203.jpg",
+        "dataExibicao": "2011-03-17"
+    },
+    {
+        "id": 2837,
+        "numero": 204,
+        "titulo": "O Poder dos Cinco Kage",
+        "sinopse": "Sasuke usa o Susanoo para passar por Gaara e pelo Raikage em sua busca por Danzō. Quando está próximo de alcançar seu objetivo, o Mizukage surge para impedi-lo.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep204.jpg",
+        "dataExibicao": "2011-03-24"
+    },
+    {
+        "id": 2838,
+        "numero": 205,
+        "titulo": "Declaração de Guerra",
+        "sinopse": "Os quatro Kage ficam surpresos com a aparição de Madara Uchiha. Após salvar Sasuke usando uma técnica de transporte, Madara revela seu plano chamado Projeto Tsuki no Me.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep205.jpg",
+        "dataExibicao": "2011-03-31"
+    },
+    {
+        "id": 2839,
+        "numero": 206,
+        "titulo": "Os Sentimentos de Sakura",
+        "sinopse": "Sakura tenta libertar Naruto da promessa de trazer Sasuke de volta e afirma que não sente mais nada por Sasuke. Enquanto isso, Kisame encontra Killer Bee e a batalha pelo Oito-Caudas começa.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep206.jpg",
+        "dataExibicao": "2011-04-07"
+    },
+    {
+        "id": 2840,
+        "numero": 207,
+        "titulo": "A Besta com Cauda Contra a Besta sem Cauda",
+        "sinopse": "A batalha entre Killer Bee e Kisame continua. Kisame revela uma habilidade secreta ligada à Samehada, enquanto Ao tenta capturar Danzō, Fū e Torune.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep207.jpg",
+        "dataExibicao": "2011-04-14"
+    },
+    {
+        "id": 2841,
+        "numero": 208,
+        "titulo": "Como um Amigo",
+        "sinopse": "Um clone de Sai revela a Naruto a verdade sobre Sasuke, algo que Sakura não conseguiu contar. Antes que Naruto consiga compreender tudo, Gaara aparece trazendo novas informações.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep208.jpg",
+        "dataExibicao": "2011-04-21"
+    },
+    {
+        "id": 2842,
+        "numero": 209,
+        "titulo": "O Braço Direito de Danzō",
+        "sinopse": "Madara leva Sasuke até Danzō para que eles possam se enfrentar. Quando Sasuke exige respostas sobre Itachi, Danzō revela seus segredos e mostra suas habilidades ocultas.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep209.jpg",
+        "dataExibicao": "2011-04-28"
+    },
+    {
+        "id": 2843,
+        "numero": 210,
+        "titulo": "A Técnica Visual Proibida",
+        "sinopse": "Danzō utiliza o Izanagi, um genjutsu proibido capaz de transformar ilusões em realidade. Sasuke precisa resistir enquanto seu poder começa a diminuir.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep210.jpg",
+        "dataExibicao": "2011-05-05"
+    },
+    {
+        "id": 2844,
+        "numero": 211,
+        "titulo": "Danzō Shimura",
+        "sinopse": "A batalha entre Sasuke e Danzō chega ao fim. Enquanto isso, Sakura e seu grupo se aproximam do local do confronto.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep211.jpg",
+        "dataExibicao": "2011-05-12"
+    },
+    {
+        "id": 2845,
+        "numero": 212,
+        "titulo": "A Determinação de Sakura",
+        "sinopse": "Sakura abandona seu grupo e vai sozinha até Sasuke. Madara aconselha Sasuke a eliminar Karin, mas Sakura interfere no momento decisivo.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep212.jpg",
+        "dataExibicao": "2011-05-19"
+    },
+    {
+        "id": 2846,
+        "numero": 213,
+        "titulo": "Laços Perdidos",
+        "sinopse": "Naruto relembra momentos importantes de sua amizade com Sasuke. Ao pensar no caminho que os dois seguiram, ele decide o que fará quando finalmente se encontrarem novamente.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep213.jpg",
+        "dataExibicao": "2011-05-26"
+    },
+    {
+        "id": 2847,
+        "numero": 214,
+        "titulo": "O Peso",
+        "sinopse": "Kakashi salva Sakura de Sasuke e assume a batalha. Naruto finalmente chega ao local e o Time 7 original se reúne novamente após muito tempo.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep214.jpg",
+        "dataExibicao": "2011-06-02"
+    },
+    {
+        "id": 2848,
+        "numero": 215,
+        "titulo": "Dois Destinos",
+        "sinopse": "Naruto confronta Sasuke por tentar matar Sakura. Sasuke revela que matou Danzō e declara sua intenção de destruir a Vila da Folha.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep215.jpg",
+        "dataExibicao": "2011-06-09"
+    },
+    {
+        "id": 2849,
+        "numero": 216,
+        "titulo": "Shinobi de Alto Nível",
+        "sinopse": "Naruto e Sasuke entram em confronto novamente. Após o choque entre Rasengan e Chidori, ambos são afastados e Sasuke decide recuar com a ajuda de Madara.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep216.jpg",
+        "dataExibicao": "2011-06-16"
+    },
+    {
+        "id": 2850,
+        "numero": 217,
+        "titulo": "O Infiltrado",
+        "sinopse": "Naruto retorna à Vila da Folha e explica que enfrentará Sasuke no momento certo. Enquanto isso, um antigo membro da Akatsuki invade a Vila da Nuvem.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep217.jpg",
+        "dataExibicao": "2011-06-23"
+    },
+    {
+        "id": 2851,
+        "numero": 218,
+        "titulo": "As Cinco Grandes Nações se Mobilizam",
+        "sinopse": "A formação da Aliança Shinobi é aprovada pelos líderes das cinco grandes nações. Cada Kage retorna para preparar sua vila para a guerra que se aproxima.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep218.jpg",
+        "dataExibicao": "2011-06-30"
+    },
+    {
+        "id": 2852,
+        "numero": 219,
+        "titulo": "Kakashi Hatake, o Hokage",
+        "sinopse": "Naruto reúne seus amigos e afirma que derrotará Sasuke sozinho. Enquanto isso, os anciões da Vila da Folha indicam Kakashi para se tornar o próximo Hokage.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep219.jpg",
+        "dataExibicao": "2011-07-07"
+    },
+    {
+        "id": 2853,
+        "numero": 220,
+        "titulo": "A Profecia do Grande Ancião Sábio",
+        "sinopse": "No Monte Myōboku, os sapos discutem se devem entregar a Naruto a chave do selo de quatro símbolos deixado por Jiraiya.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep220.jpg",
+        "dataExibicao": "2011-07-21"
+    },
+    {
+        "id": 2854,
+        "numero": 221,
+        "titulo": "Armazenamento",
+        "sinopse": "No Monte Myōboku, Naruto se prepara para guardar Gerotora dentro de si, mas hesita devido ao risco de libertar novamente a Kyūbi.",
+        "temporadaId": 10,
+        "animeId": 97,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep221.jpg",
+        "dataExibicao": "2011-07-28"
     }
 ]
