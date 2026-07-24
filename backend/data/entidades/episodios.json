@@ -27974,5 +27974,215 @@
         "animeId": 95,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep175.jpg",
         "dataExibicao": "2010-08-26"
+    },
+    {
+        "id": 2809,
+        "numero": 176,
+        "titulo": "O Instrutor Novato Iruka",
+        "sinopse": "Após a destruição da Vila da Folha, Iruka relembra a época em que o Terceiro Hokage lhe deu a missão de ser o professor de Naruto na Academia, já que ninguém mais queria assumir essa responsabilidade.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep176.jpg",
+        "dataExibicao": "2010-09-02"
+    },
+    {
+        "id": 2810,
+        "numero": 177,
+        "titulo": "O Desafio de Iruka",
+        "sinopse": "Iruka luta contra o ódio que sente pela Kyūbi dentro de Naruto enquanto tenta se aproximar do garoto que era rejeitado pelos colegas da Academia.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep177.jpg",
+        "dataExibicao": "2010-09-09"
+    },
+    {
+        "id": 2811,
+        "numero": 178,
+        "titulo": "A Decisão de Iruka",
+        "sinopse": "Após encontrar uma kunai com uma mensagem secreta, Naruto acaba sendo perseguido por três kunoichi da Vila Oculta da Cachoeira. Iruka tenta encontrá-lo, mas Kakashi aparece para ajudá-los.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep178.jpg",
+        "dataExibicao": "2010-09-16"
+    },
+    {
+        "id": 2812,
+        "numero": 179,
+        "titulo": "Kakashi Hatake, o Jōnin Responsável",
+        "sinopse": "Kakashi relembra quando foi escolhido para liderar o Time 7. Para conhecer melhor Naruto, Sasuke e Sakura, ele observa os três antes de se tornarem uma equipe de verdade.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep179.jpg",
+        "dataExibicao": "2010-09-30"
+    },
+    {
+        "id": 2813,
+        "numero": 180,
+        "titulo": "A Coragem de Inari é Colocada à Prova",
+        "sinopse": "Enquanto a Vila da Folha é reconstruída após o ataque de Pain, Naruto e Sakura encontram Inari e Tazuna entre os trabalhadores. Inari relembra os acontecimentos após a morte de Gato e como Naruto e Sasuke o salvaram.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep180.jpg",
+        "dataExibicao": "2010-10-07"
+    },
+    {
+        "id": 2814,
+        "numero": 181,
+        "titulo": "A Escola de Vingança de Naruto",
+        "sinopse": "Em uma lembrança de Naruto e Sakura, o Time 7 realiza uma missão para levar o avestruz Sr. Avestruz de volta para casa. Durante a missão, Naruto tenta ensinar lições de vingança a um espadachim chamado Tsukado.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep181.jpg",
+        "dataExibicao": "2010-10-14"
+    },
+    {
+        "id": 2815,
+        "numero": 182,
+        "titulo": "O Laço de Gaara",
+        "sinopse": "Ao saber do ataque da Akatsuki à Vila da Folha, Gaara se preocupa com Naruto. Ele relembra uma missão do Time 7 em que Naruto foi o primeiro a ajudá-lo quando sua vida estava em perigo.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep182.jpg",
+        "dataExibicao": "2010-10-21"
+    },
+    {
+        "id": 2816,
+        "numero": 183,
+        "titulo": "Naruto: Surto",
+        "sinopse": "Sakura relembra uma época em que foi infectada por uma doença estranha causada por Naruto. Para encontrar uma cura, Naruto precisa ser colocado em quarentena.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep183.jpg",
+        "dataExibicao": "2010-10-28"
+    },
+    {
+        "id": 2817,
+        "numero": 184,
+        "titulo": "Avance! Time Tenten",
+        "sinopse": "Enquanto se prepara para visitar um antigo fabricante de armas ninja, Tenten relembra uma missão em que ela, Naruto e Neji enfrentaram ninjas que roubaram armas poderosas.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep184.jpg",
+        "dataExibicao": "2010-11-04"
+    },
+    {
+        "id": 2818,
+        "numero": 185,
+        "titulo": "Distrito dos Animais",
+        "sinopse": "Um avestruz conta a história de quando Naruto, Rock Lee e Shino, liderados por Kotetsu, entraram no distrito de animais da Vila da Folha para capturá-lo.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep185.jpg",
+        "dataExibicao": "2010-11-11"
+    },
+    {
+        "id": 2819,
+        "numero": 186,
+        "titulo": "Ah, o Remédio da Juventude",
+        "sinopse": "Antes da cirurgia de Rock Lee, Naruto veste uma roupa dada por Guy e parte com Sakura e Ino em busca de uma flor especial necessária para criar o remédio de Lee.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep186.jpg",
+        "dataExibicao": "2010-11-18"
+    },
+    {
+        "id": 2820,
+        "numero": 187,
+        "titulo": "Mestre e Aluno Determinados: O Treinamento",
+        "sinopse": "Durante o período de dois anos e meio em que Naruto treinava com Jiraiya, o mestre decide ensinar ao garoto como se proteger de genjutsu. Durante o treinamento, eles chegam a uma vila onde descobrem que algo sombrio está acontecendo.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep187.jpg",
+        "dataExibicao": "2010-11-25"
+    },
+    {
+        "id": 2821,
+        "numero": 188,
+        "titulo": "Registro Ninja do Mestre e Aluno Determinados",
+        "sinopse": "Após descobrirem que a vila está sendo controlada por rebeldes da Vila Oculta da Chuva liderados por Hanzo, Naruto e Jiraiya decidem agir para salvar os moradores e libertar a vila.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep188.jpg",
+        "dataExibicao": "2010-11-25"
+    },
+    {
+        "id": 2822,
+        "numero": 189,
+        "titulo": "Enciclopédia das Patas de Sasuke",
+        "sinopse": "No passado, Naruto e Sakura acompanham Sasuke em uma missão para conseguir a marca da pata de Nekomata, um poderoso gato ninja de duas caudas que governa todos os gatos ninjas.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep189.jpg",
+        "dataExibicao": "2010-12-02"
+    },
+    {
+        "id": 2823,
+        "numero": 190,
+        "titulo": "Naruto e o Velho Soldado",
+        "sinopse": "Naruto, dois jōnin e um ancião conhecido como o 'Eterno Genin' partem em uma missão para patrulhar a fronteira do País do Fogo após o ataque de Orochimaru. O velho ninja demonstra sua coragem e relembra os ensinamentos dos antigos Hokage.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep190.jpg",
+        "dataExibicao": "2010-12-09"
+    },
+    {
+        "id": 2824,
+        "numero": 191,
+        "titulo": "Canção de Amor de Kakashi",
+        "sinopse": "Uma espiã chamada Hanare, da Vila Oculta da Fechadura, é capturada pela ANBU da Folha. Durante a investigação, o passado dela e sua ligação com Kakashi são revelados.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep191.jpg",
+        "dataExibicao": "2010-12-16"
+    },
+    {
+        "id": 2825,
+        "numero": 192,
+        "titulo": "Crônicas de Neji",
+        "sinopse": "O time de Konohamaru pede para Neji contar sobre o heroísmo de Naruto. Em vez disso, Neji relembra um acontecimento durante os Exames Chunin em que Hinata foi sequestrada e ele percebeu que Naruto estava certo sobre destino.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep192.jpg",
+        "dataExibicao": "2010-12-23"
+    },
+    {
+        "id": 2826,
+        "numero": 193,
+        "titulo": "O Homem que Morreu Duas Vezes",
+        "sinopse": "Naruto relembra quando encontrou a alma de um homem chamado Kisuke, que não se lembrava de seu passado. Uma investigação revela uma conexão inesperada com a Vila da Folha.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep193.jpg",
+        "dataExibicao": "2011-01-06"
+    },
+    {
+        "id": 2827,
+        "numero": 194,
+        "titulo": "A Pior Corrida de Três Pernas",
+        "sinopse": "Naruto relembra uma missão do Time 7 para recuperar uma estátua dourada roubada. Após Naruto e Sasuke ficarem presos um ao outro por uma técnica especial, eles precisam trabalhar juntos para salvar Sakura.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep194.jpg",
+        "dataExibicao": "2011-01-13"
+    },
+    {
+        "id": 2828,
+        "numero": 195,
+        "titulo": "O Trabalho em Equipe do Time 10",
+        "sinopse": "Shikamaru relembra uma missão em que os Times 7 e 10 se uniram para derrotar uma gangue de criminosos que havia sequestrado a neta do líder de uma vila.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep195.jpg",
+        "dataExibicao": "2011-01-20"
+    },
+    {
+        "id": 2829,
+        "numero": 196,
+        "titulo": "Avançando em Direção às Trevas",
+        "sinopse": "Sasuke relembra uma missão em que salvou uma garota chamada Naho sem saber que ela era parente de um Senhor Feudal. No presente, Naruto e Sakura recebem uma missão envolvendo a mesma garota enquanto Sasuke segue seu caminho com o Time Taka.",
+        "temporadaId": 9,
+        "animeId": 96,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t9/ep196.jpg",
+        "dataExibicao": "2011-01-27"
     }
 ]
