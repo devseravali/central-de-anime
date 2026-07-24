@@ -28974,5 +28974,205 @@
         "animeId": 99,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep275.jpg",
         "dataExibicao": "2012-08-16"
+    },
+    {
+        "id": 2909,
+        "numero": 276,
+        "titulo": "Ataque da Estátua Gedō",
+        "sinopse": "As Forças Aliadas Shinobi estão próximas da vitória na guerra quando Madara Uchiha aparece. Ele invoca a gigantesca Estátua Gedō e libera seu poder devastador contra o campo de batalha.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep276.jpg",
+        "dataExibicao": "2012-08-23"
+    },
+    {
+        "id": 2910,
+        "numero": 277,
+        "titulo": "Sinal de União",
+        "sinopse": "Naruto e Killer Bee correm para o campo de batalha quando a Nove-Caudas fala com Naruto em sua mente. Kurama questiona a determinação de Naruto em acabar com o ódio do mundo.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep277.jpg",
+        "dataExibicao": "2012-08-30"
+    },
+    {
+        "id": 2911,
+        "numero": 278,
+        "titulo": "Ninjas Médicos em Perigo",
+        "sinopse": "Na unidade médica, Sakura e os outros ninjas médicos trabalham sem parar para tratar os feridos. Neji se recupera após usar excessivamente seu Byakugan.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep278.jpg",
+        "dataExibicao": "2012-09-06"
+    },
+    {
+        "id": 2912,
+        "numero": 279,
+        "titulo": "A Armadilha do Zetsu Branco",
+        "sinopse": "Kiba, Shino e Hinata investigam uma área onde a Akatsuki estaria infiltrada. Ao chegarem ao local, são surpreendidos por um Zetsu Branco e acabam separados.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep279.jpg",
+        "dataExibicao": "2012-09-13"
+    },
+    {
+        "id": 2913,
+        "numero": 280,
+        "titulo": "A Estética de um Artista",
+        "sinopse": "Enquanto o quartel-general das Forças Aliadas Shinobi tenta lidar com a infiltração dos clones do Exército de Zetsu Branco, Mifune prepara sua divisão para o combate.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep280.jpg",
+        "dataExibicao": "2012-09-20"
+    },
+    {
+        "id": 2914,
+        "numero": 281,
+        "titulo": "As Forças Aliadas das Mães!",
+        "sinopse": "Konohamaru participa de uma reunião organizada por Ebisu para proteger a Vila da Folha enquanto os ninjas estão na guerra. Quando surgem rumores de ataques, ele decide investigar.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep281.jpg",
+        "dataExibicao": "2012-09-27"
+    },
+    {
+        "id": 2915,
+        "numero": 282,
+        "titulo": "A Origem Secreta da Dupla Definitiva!",
+        "sinopse": "Tsunade e o Raikage chegam para impedir Naruto e Killer Bee de entrarem na batalha. Porém, os dois jinchuurikis não aceitam voltar e o Raikage decide usar a força.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep282.jpg",
+        "dataExibicao": "2012-10-04"
+    },
+    {
+        "id": 2916,
+        "numero": 283,
+        "titulo": "Dois Sóis",
+        "sinopse": "O Quarto Raikage Ay enfrenta Naruto para impedir que ele caia nas mãos de Madara. Mesmo com os pedidos de Tsunade e Killer Bee, ele permanece decidido.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep283.jpg",
+        "dataExibicao": "2012-10-11"
+    },
+    {
+        "id": 2917,
+        "numero": 284,
+        "titulo": "O Destruidor de Capacetes: Jinin Akebino!",
+        "sinopse": "Kakashi envia Sai para auxiliar o Corpo de Selamento, mas ele duvida de sua capacidade. Logo depois, a Terceira Divisão é atacada por Jinin Akebino.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep284.jpg",
+        "dataExibicao": "2012-10-18"
+    },
+    {
+        "id": 2918,
+        "numero": 285,
+        "titulo": "Usuária do Estilo Escaldante: Pakura da Areia!",
+        "sinopse": "Um grupo das Forças Aliadas Shinobi enfrenta vários inimigos revividos. Maki reconhece entre eles Pakura, sua antiga mestra e uma heroína da Vila da Areia.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep285.jpg",
+        "dataExibicao": "2012-10-25"
+    },
+    {
+        "id": 2919,
+        "numero": 286,
+        "titulo": "Coisas Que Você Não Pode Recuperar",
+        "sinopse": "Tsunade ainda sofre com a perda de pessoas importantes e busca conforto em apostas e bebidas. Enquanto isso, o Raikage Ay participa de uma missão perigosa.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep286.jpg",
+        "dataExibicao": "2012-11-01"
+    },
+    {
+        "id": 2920,
+        "numero": 287,
+        "titulo": "Alguém Que Vale a Pena Apostar",
+        "sinopse": "O Raikage Ay e seus companheiros sofrem ferimentos graves durante uma missão. Sem querer perder mais aliados, Ay procura ajuda médica de Tsunade.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep287.jpg",
+        "dataExibicao": "2012-11-01"
+    },
+    {
+        "id": 2921,
+        "numero": 288,
+        "titulo": "Perigo: Jinpachi e Kushimaru!",
+        "sinopse": "Kakashi corre para o local onde os Espadachins da Névoa Kushimaru Kuriarare e Jinpachi Munashi foram vistos pela última vez. Revoltado com a destruição causada por eles, Kakashi se junta a Might Guy para enfrentá-los.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep288.jpg",
+        "dataExibicao": "2012-11-08"
+    },
+    {
+        "id": 2922,
+        "numero": 289,
+        "titulo": "A Lâmina Relâmpago: Ameyuri Ringo!",
+        "sinopse": "Enquanto Guy e Kakashi se preparam para reorganizar suas forças, recebem a notícia de que uma unidade está enfrentando Ameyuri Ringo. Os dois decidem ir até o local para ajudar.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep289.jpg",
+        "dataExibicao": "2012-11-15"
+    },
+    {
+        "id": 2923,
+        "numero": 290,
+        "titulo": "Poder - Episódio 1",
+        "sinopse": "Após a Cúpula dos Cinco Kages, a Equipe Kakashi recebe uma missão de Tsunade para investigar um incidente em um local conhecido como 'O Buraco', onde os moradores foram mortos.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep290.jpg",
+        "dataExibicao": "2012-11-22"
+    },
+    {
+        "id": 2924,
+        "numero": 291,
+        "titulo": "Poder - Episódio 2",
+        "sinopse": "A nova Equipe Kakashi continua investigando o ataque de Kabuto e dos ninjas revividos. Naruto acaba sendo engolido por uma cobra gigante, mas consegue escapar usando seus clones das sombras.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep291.jpg",
+        "dataExibicao": "2012-11-29"
+    },
+    {
+        "id": 2925,
+        "numero": 292,
+        "titulo": "Poder - Episódio 3",
+        "sinopse": "Miina acorda durante a noite após ter um pesadelo em que Naruto é consumido por várias cobras dentro de sua mente. Enquanto isso, a influência da Nove-Caudas continua crescendo.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep292.jpg",
+        "dataExibicao": "2012-12-06"
+    },
+    {
+        "id": 2926,
+        "numero": 293,
+        "titulo": "Poder - Episódio 4",
+        "sinopse": "O clone de Naruto com o poder da Nove-Caudas tenta atacar Dokku e os órfãos. Might Guy e Rock Lee chegam para impedir o avanço da criatura.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep293.jpg",
+        "dataExibicao": "2012-12-13"
+    },
+    {
+        "id": 2927,
+        "numero": 294,
+        "titulo": "Poder - Episódio 5",
+        "sinopse": "A verdade sobre Saezuri é revelada quando descobrem que Disonasu contratou Kabuto Yakushi para eliminar os moradores da Vila Tonika. Dokku tenta impedir seus planos.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep294.jpg",
+        "dataExibicao": "2012-12-20"
+    },
+    {
+        "id": 2928,
+        "numero": 295,
+        "titulo": "Poder - Episódio Final",
+        "sinopse": "A lendária arma Ama no Hoko concede ao clone da Nove-Caudas poder suficiente para destruir o mundo. Naruto é dominado pela enorme força e fica inconsciente.",
+        "temporadaId": 13,
+        "animeId": 100,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t13/ep295.jpg",
+        "dataExibicao": "2013-01-10"
     }
 ]
