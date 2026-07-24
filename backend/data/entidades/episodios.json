@@ -27344,5 +27344,315 @@
         "animeId": 92,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep112.jpg",
         "dataExibicao": "2009-04-09"
+    },
+    {
+        "id": 2746,
+        "numero": 113,
+        "titulo": "A Pupila da Serpente",
+        "sinopse": "O corpo de Orochimaru chegou ao limite e o momento do ritual finalmente chegou. Sasuke, porém, possui outros planos e decide atacar Orochimaru, que está debilitado.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep113.jpg",
+        "dataExibicao": "2009-06-11"
+    },
+    {
+        "id": 2747,
+        "numero": 114,
+        "titulo": "O Olho do Falcão",
+        "sinopse": "Orochimaru revela sua verdadeira e monstruosa forma, resultado de anos de experimentos em seu próprio corpo. Sasuke precisa enfrentar essa ameaça enquanto tenta derrotá-lo.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep114.jpg",
+        "dataExibicao": "2009-06-18"
+    },
+    {
+        "id": 2748,
+        "numero": 115,
+        "titulo": "A Lâmina de Zabuza",
+        "sinopse": "Após reverter a troca de corpos de Orochimaru usando seu Sharingan, Sasuke liberta Suigetsu, um dos experimentos de Orochimaru. Para formar seu próprio grupo, ele decide pedir a ajuda dele.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep115.jpg",
+        "dataExibicao": "2009-06-25"
+    },
+    {
+        "id": 2749,
+        "numero": 116,
+        "titulo": "O Guardião da Muralha de Ferro",
+        "sinopse": "O segundo membro do grupo de Sasuke é revelado: Karin. Após algumas discussões com Suigetsu e lembrar de seu primeiro encontro com Sasuke, ela decide se juntar ao time.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep116.jpg",
+        "dataExibicao": "2009-07-02"
+    },
+    {
+        "id": 2750,
+        "numero": 117,
+        "titulo": "Jugo do Esconderijo do Norte",
+        "sinopse": "Depois de recrutar Karin, Sasuke procura pelo último integrante de seu grupo: Jugo. Karin alerta sobre seus instintos assassinos e sua personalidade perigosa.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep117.jpg",
+        "dataExibicao": "2009-07-09"
+    },
+    {
+        "id": 2751,
+        "numero": 118,
+        "titulo": "Formação!",
+        "sinopse": "Após convencer Jugo a entrar para seu grupo, Sasuke finalmente reúne todos os integrantes de seu time. Ele nomeia o grupo como Time Hebi e revela seus verdadeiros objetivos.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep118.jpg",
+        "dataExibicao": "2009-07-23"
+    },
+    {
+        "id": 2752,
+        "numero": 119,
+        "titulo": "Crônicas de Kakashi ~ A Vida de um Garoto no Campo de Batalha ~ Parte 1",
+        "sinopse": "Durante a Terceira Grande Guerra Ninja, Minato Namikaze envia Kakashi, Obito e Rin para uma missão na Ponte Kannabi.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep119.jpg",
+        "dataExibicao": "2009-07-30"
+    },
+    {
+        "id": 2753,
+        "numero": 120,
+        "titulo": "Crônicas de Kakashi ~ A Vida de um Garoto no Campo de Batalha ~ Parte 2",
+        "sinopse": "Obito ignora a ordem de Kakashi e parte para salvar Rin, que foi capturada pelos ninjas da Vila da Pedra. Kakashi chega no momento decisivo para ajudá-lo.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep120.jpg",
+        "dataExibicao": "2009-07-30"
+    },
+    {
+        "id": 2754,
+        "numero": 121,
+        "titulo": "Reunidos",
+        "sinopse": "Enquanto a Akatsuki sela mais uma Besta com Cauda, Itachi e Kisame descobrem que Sasuke e seu grupo estão atrás deles. Tanto Konoha quanto o Time Hebi começam suas buscas.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep121.jpg",
+        "dataExibicao": "2009-08-06"
+    },
+    {
+        "id": 2755,
+        "numero": 122,
+        "titulo": "A Caçada",
+        "sinopse": "Kakashi divide os ninjas em grupos para encontrar pistas sobre Sasuke e Itachi. Enquanto isso, inimigos conhecidos começam a seguir os rastros de Naruto e Sasuke.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep122.jpg",
+        "dataExibicao": "2009-08-13"
+    },
+    {
+        "id": 2756,
+        "numero": 123,
+        "titulo": "Confronto!",
+        "sinopse": "Sasuke e Deidara finalmente entram em batalha. Após testar suas habilidades, Deidara utiliza suas criações de argila explosiva para atacar Sasuke.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep123.jpg",
+        "dataExibicao": "2009-08-20"
+    },
+    {
+        "id": 2757,
+        "numero": 124,
+        "titulo": "Arte",
+        "sinopse": "O Sharingan de Sasuke se mostra superior contra os explosivos de Deidara. Determinado a vencer, Deidara cria o poderoso C4 Karura.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep124.jpg",
+        "dataExibicao": "2009-08-27"
+    },
+    {
+        "id": 2758,
+        "numero": 125,
+        "titulo": "Desaparecimento",
+        "sinopse": "Deidara cria uma enorme explosão usando seu próprio corpo como arma. Enquanto isso, uma figura misteriosa se aproxima do líder da Akatsuki com novas ordens.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep125.jpg",
+        "dataExibicao": "2009-09-03"
+    },
+    {
+        "id": 2759,
+        "numero": 126,
+        "titulo": "Crepúsculo",
+        "sinopse": "Enquanto Sasuke se recupera da batalha contra Deidara, os ninjas da Folha seguem seu rastro. Naruto e Sasuke acabam tendo encontros separados com Itachi.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep126.jpg",
+        "dataExibicao": "2009-09-10"
+    },
+    {
+        "id": 2760,
+        "numero": 127,
+        "titulo": "A História do Ninja Determinado ~ Crônica Ninja de Jiraiya ~ Parte 1",
+        "sinopse": "Jiraiya relembra sua juventude ao lado de Tsunade e Orochimaru, seu treinamento com Hiruzen Sarutobi e o encontro com o Grande Sábio dos Sapos no Monte Myōboku.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep127.jpg",
+        "dataExibicao": "2009-09-17"
+    },
+    {
+        "id": 2761,
+        "numero": 128,
+        "titulo": "A História do Ninja Determinado ~ Crônica Ninja de Jiraiya ~ Parte 2",
+        "sinopse": "Jiraiya recorda o período em que treinou Yahiko, Konan e Nagato na Vila Oculta da Chuva, testemunhando o despertar do lendário Rinnegan de Nagato.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep128.jpg",
+        "dataExibicao": "2009-09-24"
+    },
+    {
+        "id": 2762,
+        "numero": 129,
+        "titulo": "Infiltração! A Vila Oculta da Chuva",
+        "sinopse": "Enquanto a Equipe Hebi continua sua busca por Itachi, Jiraiya invade a Vila Oculta da Chuva para descobrir a verdadeira identidade do líder da Akatsuki.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep129.jpg",
+        "dataExibicao": "2009-10-08"
+    },
+    {
+        "id": 2763,
+        "numero": 130,
+        "titulo": "O Homem que se Tornou Deus",
+        "sinopse": "Jiraiya reencontra Konan e descobre sua ligação com Pain, aproximando-se da verdade por trás do misterioso líder da Akatsuki.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep130.jpg",
+        "dataExibicao": "2009-10-15"
+    },
+    {
+        "id": 2764,
+        "numero": 131,
+        "titulo": "Modo Sábio!",
+        "sinopse": "Sem alternativas diante do enorme poder de Pain, Jiraiya ativa o Modo Sábio com a ajuda dos Grandes Sapos para enfrentar um adversário muito além do esperado.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep131.jpg",
+        "dataExibicao": "2009-10-22"
+    },
+    {
+        "id": 2765,
+        "numero": 132,
+        "titulo": "Os Seis Caminhos de Pain",
+        "sinopse": "Jiraiya descobre que Pain possui seis corpos diferentes, cada um com habilidades únicas, tornando a batalha ainda mais perigosa.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep132.jpg",
+        "dataExibicao": "2009-10-29"
+    },
+    {
+        "id": 2766,
+        "numero": 133,
+        "titulo": "A História de Jiraiya, o Galante",
+        "sinopse": "Após desvendar o segredo dos Seis Caminhos de Pain, Jiraiya faz seu último esforço para enviar informações cruciais à Vila da Folha.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep133.jpg",
+        "dataExibicao": "2009-11-05"
+    },
+    {
+        "id": 2767,
+        "numero": 134,
+        "titulo": "O Convite",
+        "sinopse": "O aguardado confronto entre Itachi e Sasuke finalmente começa, com ambos utilizando poderosos genjutsus e antigas rivalidades vindo à tona.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep134.jpg",
+        "dataExibicao": "2009-11-12"
+    },
+    {
+        "id": 2768,
+        "numero": 135,
+        "titulo": "O Momento Mais Longo",
+        "sinopse": "A batalha entre os irmãos Uchiha se intensifica enquanto Sasuke obriga Itachi a revelar cada vez mais segredos sobre o passado do clã.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep135.jpg",
+        "dataExibicao": "2009-11-19"
+    },
+    {
+        "id": 2769,
+        "numero": 136,
+        "titulo": "A Luz e as Trevas do Mangekyō Sharingan",
+        "sinopse": "Itachi revela a origem do Mangekyō Sharingan, a história de Madara Uchiha e o alto preço para despertar esse poder ocular.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep136.jpg",
+        "dataExibicao": "2009-11-26"
+    },
+    {
+        "id": 2770,
+        "numero": 137,
+        "titulo": "Amaterasu!",
+        "sinopse": "Depois de escapar do Tsukuyomi, Sasuke ganha vantagem, mas Itachi responde utilizando as devastadoras chamas negras do Amaterasu.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep137.jpg",
+        "dataExibicao": "2009-12-03"
+    },
+    {
+        "id": 2771,
+        "numero": 138,
+        "titulo": "O Fim",
+        "sinopse": "O confronto entre Itachi e Sasuke chega ao clímax com o surgimento do Susanoo e um desfecho que mudará para sempre o destino dos irmãos Uchiha.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep138.jpg",
+        "dataExibicao": "2009-12-10"
+    },
+    {
+        "id": 2772,
+        "numero": 139,
+        "titulo": "O Mistério de Tobi",
+        "sinopse": "Após a batalha, Tobi encontra Sasuke desacordado e começa a revelar informações surpreendentes sobre Itachi.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep139.jpg",
+        "dataExibicao": "2009-12-17"
+    },
+    {
+        "id": 2773,
+        "numero": 140,
+        "titulo": "Destino",
+        "sinopse": "Madara conta a Sasuke a história da fundação da Vila da Folha e os acontecimentos que culminaram no massacre do clã Uchiha.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep140.jpg",
+        "dataExibicao": "2009-12-24"
+    },
+    {
+        "id": 2774,
+        "numero": 141,
+        "titulo": "A Verdade",
+        "sinopse": "Toda a verdade sobre Itachi Uchiha é finalmente revelada, mudando completamente os sentimentos e o objetivo de Sasuke.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep141.jpg",
+        "dataExibicao": "2010-01-07"
+    },
+    {
+        "id": 2775,
+        "numero": 142,
+        "titulo": "A Batalha em Unraikyō",
+        "sinopse": "O Time Taka recebe a missão de capturar o Oito-Caudas e encontra Killer Bee, iniciando um confronto extremamente difícil.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep142.jpg",
+        "dataExibicao": "2010-01-14"
+    },
+    {
+        "id": 2776,
+        "numero": 143,
+        "titulo": "O Oito-Caudas Contra Sasuke",
+        "sinopse": "Sasuke e o Time Taka enfrentam Killer Bee em uma batalha intensa, descobrindo o enorme poder do jinchūriki do Oito-Caudas.",
+        "temporadaId": 6,
+        "animeId": 93,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep143.jpg",
+        "dataExibicao": "2010-01-21"
     }
 ]
