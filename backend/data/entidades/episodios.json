@@ -29834,5 +29834,115 @@
         "animeId": 103,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t16/ep361.jpg",
         "dataExibicao": "2014-05-08"
+    },
+    {
+        "id": 2983,
+        "numero": 362,
+        "titulo": "A Determinação de Kakashi",
+        "sinopse": "Kakashi tenta desesperadamente alcançar Obito, mas suas palavras não conseguem convencê-lo. Obito acusa Kakashi de ser inútil, deixando Naruto furioso e fazendo com que ele defenda seu mestre.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep362.jpg",
+        "dataExibicao": "2014-05-15"
+    },
+    {
+        "id": 2984,
+        "numero": 363,
+        "titulo": "O Jutsu das Forças Aliadas Shinobi!",
+        "sinopse": "A barreira é destruída e a Dez-Caudas surge! Com um poder inimaginável, ela libera ataques devastadores. Kurama assume a liderança, mas não consegue enfrentar a enorme força da criatura.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep363.jpg",
+        "dataExibicao": "2014-05-22"
+    },
+    {
+        "id": 2985,
+        "numero": 364,
+        "titulo": "Os Laços que Nos Unem",
+        "sinopse": "As Forças Aliadas Shinobi iniciam seu ataque contra Obito e Madara. Porém, a Dez-Caudas evolui e lança poderosas Bombas da Besta com Cauda contra vilas distantes.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep364.jpg",
+        "dataExibicao": "2014-06-05"
+    },
+    {
+        "id": 2986,
+        "numero": 365,
+        "titulo": "Aqueles que Dançam nas Sombras",
+        "sinopse": "Naruto fica abalado pela morte de Neji, mas as palavras de Hinata recuperam sua determinação para continuar lutando.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep365.jpg",
+        "dataExibicao": "2014-06-12"
+    },
+    {
+        "id": 2987,
+        "numero": 366,
+        "titulo": "O Onisciente",
+        "sinopse": "Sasuke retorna à Vila da Folha em busca de respostas e encontra os quatro antigos Hokages: Hashirama, Tobirama, Hiruzen e Minato, todos revividos.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep366.jpg",
+        "dataExibicao": "2014-06-19"
+    },
+    {
+        "id": 2988,
+        "numero": 367,
+        "titulo": "Hashirama e Madara",
+        "sinopse": "Antes da existência das vilas ninja, Hashirama era apenas uma criança vivendo em uma época de conflitos. Foi nesse período que ele conheceu Madara Uchiha.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep367.jpg",
+        "dataExibicao": "2014-07-03"
+    },
+    {
+        "id": 2989,
+        "numero": 368,
+        "titulo": "A Era dos Estados em Guerra",
+        "sinopse": "Hashirama e Madara se tornam líderes de seus respectivos clãs durante uma época marcada por guerras e conflitos constantes.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep368.jpg",
+        "dataExibicao": "2014-07-10"
+    },
+    {
+        "id": 2990,
+        "numero": 369,
+        "titulo": "Meu Verdadeiro Sonho",
+        "sinopse": "Os clãs Senju e Uchiha unem forças para construir uma vila ninja e realizar seus sonhos de paz.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep369.jpg",
+        "dataExibicao": "2014-07-24"
+    },
+    {
+        "id": 2991,
+        "numero": 370,
+        "titulo": "A Resposta de Sasuke",
+        "sinopse": "Após ouvir Hashirama e os antigos Hokages, Sasuke finalmente compreende como a Vila da Folha e o mundo ninja foram construídos.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep370.jpg",
+        "dataExibicao": "2014-07-31"
+    },
+    {
+        "id": 2992,
+        "numero": 371,
+        "titulo": "Buraco",
+        "sinopse": "A batalha continua entre Naruto, que lidera as Forças Aliadas Shinobi, e o grupo formado por Madara e Obito.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep371.jpg",
+        "dataExibicao": "2014-08-07"
+    },
+    {
+        "id": 2993,
+        "numero": 372,
+        "titulo": "Algo para Preencher o Buraco",
+        "sinopse": "A Dez-Caudas está prestes a completar sua transformação final e começa a preparar uma enorme Bomba da Besta com Cauda.",
+        "temporadaId": 17,
+        "animeId": 104,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep372.jpg",
+        "dataExibicao": "2014-08-14"
     }
 ]
