@@ -28644,5 +28644,335 @@
         "animeId": 98,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep242.jpg",
         "dataExibicao": "2011-12-28"
+    },
+    {
+        "id": 2876,
+        "numero": 243,
+        "titulo": "Terra à Vista! Esta é a Ilha Paraíso?",
+        "sinopse": "Após uma longa viagem pelo mar, o navio de Naruto finalmente chega à ilha de destino. Antes que todos possam comemorar, uma lula gigante ataca a embarcação. Felizmente, a tripulação é salva por Killer Bee, o jinchuuriki do Oito-Caudas.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep243.jpg",
+        "dataExibicao": "2012-01-05"
+    },
+    {
+        "id": 2877,
+        "numero": 244,
+        "titulo": "Killer Bee e Motoi",
+        "sinopse": "Motoi revela a Naruto e Yamato que tentou matar Bee durante a infância por causa da morte de seu pai causada pelo selamento do Oito-Caudas.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep244.jpg",
+        "dataExibicao": "2012-01-12"
+    },
+    {
+        "id": 2878,
+        "numero": 245,
+        "titulo": "O Próximo Desafio! Naruto vs. Nove-Caudas!",
+        "sinopse": "Com Killer Bee como seu novo mestre, Naruto começa seu treinamento para controlar o poder de uma Besta com Cauda. Para isso, ele precisa enfrentar a Kurama e transformar seu chakra em sua própria força.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep245.jpg",
+        "dataExibicao": "2012-01-19"
+    },
+    {
+        "id": 2879,
+        "numero": 246,
+        "titulo": "A Centelha Laranja",
+        "sinopse": "Dentro de sua mente, Naruto continua sua batalha contra a Nove-Caudas para conquistar o controle de seu imenso poder.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep246.jpg",
+        "dataExibicao": "2012-01-26"
+    },
+    {
+        "id": 2880,
+        "numero": 247,
+        "titulo": "Alvo: Nove-Caudas",
+        "sinopse": "Dezesseis anos atrás, Minato Namikaze e Kushina Uzumaki aguardavam ansiosos pelo nascimento de seu primeiro filho, Naruto.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep247.jpg",
+        "dataExibicao": "2012-02-02"
+    },
+    {
+        "id": 2881,
+        "numero": 248,
+        "titulo": "O Combate Mortal do Quarto Hokage!",
+        "sinopse": "Minato precisa usar o Hiraishin para salvar seu filho recém-nascido Naruto de um inimigo mascarado, deixando Kushina para trás.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep248.jpg",
+        "dataExibicao": "2012-02-09"
+    },
+    {
+        "id": 2882,
+        "numero": 249,
+        "titulo": "Obrigado",
+        "sinopse": "Minato e Kushina enfrentam a Nove-Caudas durante o ataque à Vila da Folha. Minato sela parte do chakra da Kurama em Naruto para proteger o futuro de seu filho.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep249.jpg",
+        "dataExibicao": "2012-02-09"
+    },
+    {
+        "id": 2883,
+        "numero": 250,
+        "titulo": "Batalha no Paraíso! A Fera Estranha vs. o Monstro!",
+        "sinopse": "Guy chega à Cachoeira da Verdade para ajudar Naruto em seu treinamento, mas encontra Kisame, que invadiu a ilha para localizar Naruto e Killer Bee.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep250.jpg",
+        "dataExibicao": "2012-02-16"
+    },
+    {
+        "id": 2884,
+        "numero": 251,
+        "titulo": "O Homem Chamado Kisame",
+        "sinopse": "Kisame é derrotado por Guy e tenta impedir que suas informações sejam capturadas. Demonstrando sua lealdade à Akatsuki, ele escolhe a morte para proteger seus segredos.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep251.jpg",
+        "dataExibicao": "2012-02-23"
+    },
+    {
+        "id": 2885,
+        "numero": 252,
+        "titulo": "O Mensageiro Angelical da Morte",
+        "sinopse": "Tobi vai até a Vila da Chuva para recuperar o Rinnegan de Nagato. Konan relembra seu passado antes de enfrentar o antigo membro da Akatsuki.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep252.jpg",
+        "dataExibicao": "2012-03-01"
+    },
+    {
+        "id": 2886,
+        "numero": 253,
+        "titulo": "A Ponte Para a Paz",
+        "sinopse": "Konan enfrenta Tobi em uma batalha decisiva. Após usar uma grande quantidade de explosivos, ela tenta derrotá-lo, mas Tobi sobrevive usando Izanagi e consegue descobrir a localização do Rinnegan de Nagato.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep253.jpg",
+        "dataExibicao": "2012-03-08"
+    },
+    {
+        "id": 2887,
+        "numero": 254,
+        "titulo": "A Missão Secreta de Classe S",
+        "sinopse": "Zetsu informa Tobi sobre a localização de Naruto. Enquanto isso, os líderes das nações ninja criam uma missão secreta para manter Naruto escondido e protegido da Akatsuki.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep254.jpg",
+        "dataExibicao": "2012-03-15"
+    },
+    {
+        "id": 2888,
+        "numero": 255,
+        "titulo": "O Artista Retorna",
+        "sinopse": "Kabuto e Deidara reanimado tentam capturar os jinchuurikis, mas são impedidos pelo Tsuchikage, que chega para proteger Naruto.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep255.jpg",
+        "dataExibicao": "2012-03-22"
+    },
+    {
+        "id": 2889,
+        "numero": 256,
+        "titulo": "Reúnam-se! As Forças Aliadas Shinobi!",
+        "sinopse": "A Quarta Grande Guerra Ninja está prestes a começar. As forças aliadas se preparam, organizam suas tropas e finalizam seus planos para enfrentar Madara e o exército inimigo.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep256.jpg",
+        "dataExibicao": "2012-03-29"
+    },
+    {
+        "id": 2890,
+        "numero": 257,
+        "titulo": "Encontro",
+        "sinopse": "Naruto e Sasuke relembram os primeiros momentos de sua amizade e o início da rivalidade que marcou suas vidas como ninjas.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep257.jpg",
+        "dataExibicao": "2012-04-05"
+    },
+    {
+        "id": 2891,
+        "numero": 258,
+        "titulo": "Rivais",
+        "sinopse": "Durante o Exame Chunin, Sasuke percebe o crescimento de Naruto e começa a reconhecer sua força como ninja.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep258.jpg",
+        "dataExibicao": "2012-04-12"
+    },
+    {
+        "id": 2892,
+        "numero": 259,
+        "titulo": "Ruptura",
+        "sinopse": "As derrotas de Sasuke contra Gaara e Itachi fazem com que ele perceba que ainda não possui poder suficiente para realizar sua vingança.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep259.jpg",
+        "dataExibicao": "2012-04-19"
+    },
+    {
+        "id": 2893,
+        "numero": 260,
+        "titulo": "Separação",
+        "sinopse": "Naruto decide salvar Sasuke depois que ele abandona a Vila da Folha, prometendo trazer seu amigo de volta.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep260.jpg",
+        "dataExibicao": "2012-04-26"
+    },
+    {
+        "id": 2894,
+        "numero": 261,
+        "titulo": "Por Meu Amigo",
+        "sinopse": "As Forças Aliadas Shinobi se preparam para enfrentar o exército de Madara, mas antigos conflitos ainda dificultam a união entre os ninjas.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep261.jpg",
+        "dataExibicao": "2012-05-03"
+    },
+    {
+        "id": 2895,
+        "numero": 262,
+        "titulo": "A Guerra Começa",
+        "sinopse": "A Quarta Grande Guerra Ninja começa oficialmente quando as tropas aliadas entram em combate contra as forças da Akatsuki.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep262.jpg",
+        "dataExibicao": "2012-05-10"
+    },
+    {
+        "id": 2896,
+        "numero": 263,
+        "titulo": "Sai e Shin",
+        "sinopse": "A unidade de combate das Forças Aliadas enfrenta a Akatsuki enquanto Sai reencontra Shin, seu antigo companheiro da Fundação.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep263.jpg",
+        "dataExibicao": "2012-05-17"
+    },
+    {
+        "id": 2897,
+        "numero": 264,
+        "titulo": "Os Segredos do Jutsu de Reanimação",
+        "sinopse": "Naruto continua seu treinamento com Killer Bee para dominar a Bomba Bijuu, a técnica mais poderosa de um jinchuuriki.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep264.jpg",
+        "dataExibicao": "2012-05-24"
+    },
+    {
+        "id": 2898,
+        "numero": 265,
+        "titulo": "Um Antigo Inimigo Retorna",
+        "sinopse": "A unidade de combate enfrenta ninjas revividos com habilidades especiais, incluindo Zabuza Momochi e Haku. Felizmente, Kakashi e sua equipe chegam para ajudar no confronto.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep265.jpg",
+        "dataExibicao": "2012-05-31"
+    },
+    {
+        "id": 2899,
+        "numero": 266,
+        "titulo": "O Primeiro e o Último Oponente",
+        "sinopse": "Kakashi e sua equipe elaboram uma estratégia para enfrentar os ninjas revividos, mas Kabuto surpreende todos ao invocar os poderosos Espadachins da Névoa.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep266.jpg",
+        "dataExibicao": "2012-06-07"
+    },
+    {
+        "id": 2900,
+        "numero": 267,
+        "titulo": "O Brilhante Estrategista da Vila da Folha",
+        "sinopse": "A Akatsuki envia um exército de ninjas revividos e Zetsus Brancos para espalhar o caos no campo de batalha das Forças Aliadas Shinobi.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep267.jpg",
+        "dataExibicao": "2012-06-21"
+    },
+    {
+        "id": 2901,
+        "numero": 268,
+        "titulo": "Campo de Batalha!",
+        "sinopse": "Darui e sua Primeira Divisão enfrentam um grande exército de Zetsus Brancos enquanto outras unidades combatem os ninjas revividos pela técnica de Kabuto.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep268.jpg",
+        "dataExibicao": "2012-06-28"
+    },
+    {
+        "id": 2902,
+        "numero": 269,
+        "titulo": "Palavras Proibidas",
+        "sinopse": "Atsui, Samui e Darui enfrentam Kinkaku e Ginkaku, os lendários irmãos da Vila da Nuvem conhecidos por sua enorme força.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep269.jpg",
+        "dataExibicao": "2012-07-05"
+    },
+    {
+        "id": 2903,
+        "numero": 270,
+        "titulo": "Laços Dourados",
+        "sinopse": "Darui consegue selar Ginkaku, mas Kinkaku, tomado pela raiva pela perda do irmão, transforma-se em uma criatura semelhante ao estado de uma Besta com Cauda.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep270.jpg",
+        "dataExibicao": "2012-07-19"
+    },
+    {
+        "id": 2904,
+        "numero": 271,
+        "titulo": "O Caminho Para Sakura",
+        "sinopse": "Ino encontra Sakura caída do céu. Apesar de conseguir salvá-la, o impacto faz Sakura perder temporariamente a memória.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep271.jpg",
+        "dataExibicao": "2012-07-26"
+    },
+    {
+        "id": 2905,
+        "numero": 272,
+        "titulo": "Mifune Contra Hanzou",
+        "sinopse": "A unidade de Kankuro fica cercada pelo ataque venenoso de Hanzou, mas Mifune e sua Quinta Divisão chegam para ajudar.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep272.jpg",
+        "dataExibicao": "2012-08-02"
+    },
+    {
+        "id": 2906,
+        "numero": 273,
+        "titulo": "Verdadeira Bondade",
+        "sinopse": "O trio Ino-Shika-Cho recebe a missão de derrotar o Asuma revivido. Lembrando as últimas palavras de seu mestre, eles tentam cumprir essa difícil tarefa.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep273.jpg",
+        "dataExibicao": "2012-08-09"
+    },
+    {
+        "id": 2907,
+        "numero": 274,
+        "titulo": "A Formação Completa do Ino-Shika-Cho!",
+        "sinopse": "Choji não consegue atacar Asuma e perde sua vontade de lutar. Ino e Shikamaru tentam despertar a determinação de seu companheiro.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep274.jpg",
+        "dataExibicao": "2012-08-09"
+    },
+    {
+        "id": 2908,
+        "numero": 275,
+        "titulo": "Uma Mensagem do Coração",
+        "sinopse": "Enquanto treina o Modo Chakra da Nove-Caudas, Naruto sente a presença do chakra da Kurama vindo de Kinkaku. Ao tentar sair da sala de treinamento, Iruka aparece para impedi-lo.",
+        "temporadaId": 12,
+        "animeId": 99,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t12/ep275.jpg",
+        "dataExibicao": "2012-08-16"
     }
 ]
