@@ -30154,5 +30154,205 @@
         "animeId": 105,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep393.jpg",
         "dataExibicao": "2014-12-25"
+    },
+    {
+        "id": 3015,
+        "numero": 394,
+        "titulo": "Os Novos Exames Chunin",
+        "sinopse": "A história retorna ao período após a saída de Sasuke da Vila da Folha e antes do retorno de Naruto de seu treinamento de dois anos com Jiraiya.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep394.jpg",
+        "dataExibicao": "2015-01-08"
+    },
+    {
+        "id": 3016,
+        "numero": 395,
+        "titulo": "Os Exames Chunin Começam!",
+        "sinopse": "A Vila da Folha começa os preparativos para os Exames Chunin. Ino e Choji convidam Sakura para completar seu trio, já que Shikamaru já se tornou chunin.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep395.jpg",
+        "dataExibicao": "2015-01-15"
+    },
+    {
+        "id": 3017,
+        "numero": 396,
+        "titulo": "As Três Perguntas",
+        "sinopse": "Os Exames Chunin finalmente começam e o responsável pela primeira fase é ninguém menos que Shikamaru.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep396.jpg",
+        "dataExibicao": "2015-01-22"
+    },
+    {
+        "id": 3018,
+        "numero": 397,
+        "titulo": "Aquele Digno de Ser Líder",
+        "sinopse": "Os genins não conseguem descobrir a resposta da prova e começam a entrar em pânico.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep397.jpg",
+        "dataExibicao": "2015-01-29"
+    },
+    {
+        "id": 3019,
+        "numero": 398,
+        "titulo": "A Noite Antes da Segunda Prova",
+        "sinopse": "Na noite anterior à segunda fase, os participantes se reúnem no refeitório e uma grande confusão começa.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep398.jpg",
+        "dataExibicao": "2015-02-05"
+    },
+    {
+        "id": 3020,
+        "numero": 399,
+        "titulo": "Sobrevivência no Deserto Demoníaco",
+        "sinopse": "A segunda fase começa. Cada equipe precisa obter os pergaminhos do Céu e da Terra e chegar ao ponto central do Deserto Demoníaco em até 72 horas.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep399.jpg",
+        "dataExibicao": "2015-02-12"
+    },
+    {
+        "id": 3021,
+        "numero": 400,
+        "titulo": "Como um Usuário de Taijutsu",
+        "sinopse": "Ao perceber as semelhanças entre suas histórias, Lee fica revoltado com aqueles que machucaram e desprezaram Shira e decide ajudá-lo.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep400.jpg",
+        "dataExibicao": "2015-02-19"
+    },
+    {
+        "id": 3022,
+        "numero": 401,
+        "titulo": "O Supremo",
+        "sinopse": "Lee desafia Shira para uma batalha entre usuários de taijutsu.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep401.jpg",
+        "dataExibicao": "2015-02-26"
+    },
+    {
+        "id": 3023,
+        "numero": 402,
+        "titulo": "Fuga vs. Perseguição",
+        "sinopse": "Kiba e sua equipe perseguem ninjas da Vila da Grama que roubaram seu pergaminho.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep402.jpg",
+        "dataExibicao": "2015-03-05"
+    },
+    {
+        "id": 3024,
+        "numero": 403,
+        "titulo": "Coragem Inabalável",
+        "sinopse": "Kiba e sua equipe continuam a perseguição aos ninjas da Vila da Grama que roubaram seu pergaminho.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep403.jpg",
+        "dataExibicao": "2015-03-12"
+    },
+    {
+        "id": 3025,
+        "numero": 404,
+        "titulo": "Os Problemas de Tenten",
+        "sinopse": "Enquanto a equipe prepara o jantar, Tenten revela um pergaminho que contém todos os ingredientes para okonomiyaki.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep404.jpg",
+        "dataExibicao": "2015-03-19"
+    },
+    {
+        "id": 3026,
+        "numero": 405,
+        "titulo": "A Dupla Aprisionada",
+        "sinopse": "Uma antiga ruína no Deserto Demoníaco desmorona durante a disputa pelos pergaminhos.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep405.jpg",
+        "dataExibicao": "2015-03-26"
+    },
+    {
+        "id": 3027,
+        "numero": 406,
+        "titulo": "O Lugar Onde Eu Pertenço",
+        "sinopse": "Ino, Sakura e Choji atravessam o deserto sob o sol intenso sem recursos. Durante o caminho, Sakura é ferida por um escorpião gigante.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep406.jpg",
+        "dataExibicao": "2015-04-02"
+    },
+    {
+        "id": 3028,
+        "numero": 407,
+        "titulo": "O Ninjutsu Secreto do Clã Yamanaka",
+        "sinopse": "Ino e sua equipe seguem até um oásis, mas são atacadas por ninjas da Areia.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep407.jpg",
+        "dataExibicao": "2015-04-09"
+    },
+    {
+        "id": 3029,
+        "numero": 408,
+        "titulo": "A Marionete Amaldiçoada",
+        "sinopse": "Sakura e sua equipe continuam atravessando o deserto e encontram uma marionete controlada por uma equipe rival da Areia.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep408.jpg",
+        "dataExibicao": "2015-04-16"
+    },
+    {
+        "id": 3030,
+        "numero": 409,
+        "titulo": "As Costas Deles",
+        "sinopse": "Ino e Choji lutam para proteger Sakura, que está impossibilitada de lutar após gastar grande parte de seu chakra.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep409.jpg",
+        "dataExibicao": "2015-04-23"
+    },
+    {
+        "id": 3031,
+        "numero": 410,
+        "titulo": "O Plano Oculto é Colocado em Movimento",
+        "sinopse": "O Jounin da Areia Fugi invade o Deserto Demoníaco e cria uma enorme tempestade de areia para assassinar Gaara.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep410.jpg",
+        "dataExibicao": "2015-04-30"
+    },
+    {
+        "id": 3032,
+        "numero": 411,
+        "titulo": "A Besta com Cauda Alvo",
+        "sinopse": "Gaara parte para salvar Matsuri e os outros, mas é atacado por um misterioso sacerdote que tenta capturar sua Besta com Cauda.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep411.jpg",
+        "dataExibicao": "2015-05-07"
+    },
+    {
+        "id": 3033,
+        "numero": 412,
+        "titulo": "O Julgamento de Neji",
+        "sinopse": "Neji e sua equipe encontram Matsuri caída no deserto e descobrem que Gaara está em perigo.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep412.jpg",
+        "dataExibicao": "2015-05-14"
+    },
+    {
+        "id": 3034,
+        "numero": 413,
+        "titulo": "Esperanças Confiadas ao Futuro",
+        "sinopse": "Gaara encontra Fugi, o responsável pelo plano de assassinato, e questiona se realmente merece liderar a Vila da Areia após todo o medo e sofrimento que causou.",
+        "temporadaId": 19,
+        "animeId": 106,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep413.jpg",
+        "dataExibicao": "2015-05-21"
     }
 ]
