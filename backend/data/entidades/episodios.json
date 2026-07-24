@@ -26934,5 +26934,175 @@
         "animeId": 90,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep71.jpg",
         "dataExibicao": "2008-08-14"
+    },
+    {
+        "id": 2705,
+        "numero": 72,
+        "titulo": "A Ameaça que se Aproxima Silenciosamente",
+        "sinopse": "Naruto se recupera após os acontecimentos anteriores enquanto Tsunade recebe informações de que a Akatsuki começou a agir. Hidan e Kakuzu capturam Yugito Nii, a Jinchūriki de Duas Caudas.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep72.jpg",
+        "dataExibicao": "2008-08-21"
+    },
+    {
+        "id": 2706,
+        "numero": 73,
+        "titulo": "A Invasão da Akatsuki",
+        "sinopse": "Naruto continua seu treinamento enquanto Hidan e Kakuzu chegam ao Templo do Fogo e enfrentam Chiriku para conseguir a recompensa por sua captura.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep73.jpg",
+        "dataExibicao": "2008-08-28"
+    },
+    {
+        "id": 2707,
+        "numero": 74,
+        "titulo": "Sob o Céu Estrelado",
+        "sinopse": "Naruto avança em seu treinamento e aprende a segunda etapa para desenvolver sua nova técnica. Konoha envia equipes para localizar os membros da Akatsuki.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep74.jpg",
+        "dataExibicao": "2008-09-04"
+    },
+    {
+        "id": 2708,
+        "numero": 75,
+        "titulo": "A Oração do Velho Monge",
+        "sinopse": "Asuma lamenta a morte de Chiriku e percebe que Hidan e Kakuzu estão se aproximando. Kakashi revela o verdadeiro objetivo do treinamento de Naruto.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep75.jpg",
+        "dataExibicao": "2008-09-11"
+    },
+    {
+        "id": 2709,
+        "numero": 76,
+        "titulo": "O Próximo Passo",
+        "sinopse": "Kakashi explica que Naruto pode combinar o Rasengan com sua natureza de chakra, criando uma técnica nunca concluída pelo Quarto Hokage.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep76.jpg",
+        "dataExibicao": "2008-09-25"
+    },
+    {
+        "id": 2710,
+        "numero": 77,
+        "titulo": "Prata Ascendente",
+        "sinopse": "A equipe de Asuma encontra Hidan e Kakuzu. A batalha começa e o grupo descobre a dificuldade de enfrentar os membros da Akatsuki.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep77.jpg",
+        "dataExibicao": "2008-09-25"
+    },
+    {
+        "id": 2711,
+        "numero": 78,
+        "titulo": "O Julgamento",
+        "sinopse": "Hidan revela sua técnica de maldição e Asuma sofre as consequências. Shikamaru tenta descobrir como impedir a habilidade do inimigo.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep78.jpg",
+        "dataExibicao": "2008-10-02"
+    },
+    {
+        "id": 2712,
+        "numero": 79,
+        "titulo": "Grito Não Realizado",
+        "sinopse": "A equipe de Asuma continua lutando contra Hidan e Kakuzu em uma batalha decisiva contra a Akatsuki.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep79.jpg",
+        "dataExibicao": "2008-10-02"
+    },
+    {
+        "id": 2713,
+        "numero": 80,
+        "titulo": "Últimas Palavras",
+        "sinopse": "Hidan e Kakuzu recebem uma ordem para recuar, mas a batalha deixa uma grande perda para Konoha.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep80.jpg",
+        "dataExibicao": "2008-10-16"
+    },
+    {
+        "id": 2714,
+        "numero": 81,
+        "titulo": "A Triste Notícia",
+        "sinopse": "Enquanto a Akatsuki discute seus verdadeiros objetivos, Naruto continua seu treinamento. Tsunade recebe a confirmação de uma perda dolorosa para Konoha.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep81.jpg",
+        "dataExibicao": "2008-10-23"
+    },
+    {
+        "id": 2715,
+        "numero": 82,
+        "titulo": "Equipe Dez",
+        "sinopse": "Konoha lamenta a morte de Asuma Sarutobi. Shikamaru, Ino e Choji se preparam para enfrentar Hidan e Kakuzu, enquanto Kakashi assume temporariamente a liderança da equipe.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep82.jpg",
+        "dataExibicao": "2008-10-30"
+    },
+    {
+        "id": 2716,
+        "numero": 83,
+        "titulo": "Alvo Localizado",
+        "sinopse": "Com um plano elaborado por Shikamaru, a equipe consegue localizar Hidan e Kakuzu e inicia uma nova batalha contra a dupla da Akatsuki.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep83.jpg",
+        "dataExibicao": "2008-11-06"
+    },
+    {
+        "id": 2717,
+        "numero": 84,
+        "titulo": "As Habilidades de Kakuzu",
+        "sinopse": "Kakashi ataca Kakuzu, mas o inimigo sobrevive ao golpe. A equipe percebe que derrotar o membro da Akatsuki será mais difícil do que imaginavam.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep84.jpg",
+        "dataExibicao": "2008-11-13"
+    },
+    {
+        "id": 2718,
+        "numero": 85,
+        "titulo": "O Segredo Terrível",
+        "sinopse": "Kakuzu revela possuir cinco corações, tornando-se quase impossível de derrotar. Enquanto isso, Shikamaru separa Hidan de seu parceiro.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep85.jpg",
+        "dataExibicao": "2008-11-20"
+    },
+    {
+        "id": 2719,
+        "numero": 86,
+        "titulo": "O Gênio de Shikamaru",
+        "sinopse": "Shikamaru continua sua luta contra Hidan e usa sua inteligência para descobrir uma maneira de superar a imortalidade do inimigo.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep86.jpg",
+        "dataExibicao": "2008-12-04"
+    },
+    {
+        "id": 2720,
+        "numero": 87,
+        "titulo": "Quando Você Amaldiçoa Alguém, Cave Sua Própria Cova",
+        "sinopse": "Shikamaru coloca Hidan em uma armadilha enquanto Kakashi, Ino e Choji continuam enfrentando Kakuzu com a ajuda de reforços.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep87.jpg",
+        "dataExibicao": "2008-12-04"
+    },
+    {
+        "id": 2721,
+        "numero": 88,
+        "titulo": "Estilo Vento: Rasen Shuriken!",
+        "sinopse": "Naruto finalmente usa sua nova técnica, o Rasen Shuriken, contra Kakuzu. Porém, o poder da técnica traz grandes riscos ao próprio corpo de Naruto.",
+        "temporadaId": 4,
+        "animeId": 91,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep88.jpg",
+        "dataExibicao": "2008-12-11"
     }
 ]
