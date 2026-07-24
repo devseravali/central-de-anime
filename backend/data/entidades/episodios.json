@@ -26754,5 +26754,185 @@
         "animeId": 89,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep53.jpg",
         "dataExibicao": "2008-04-03"
+    },
+    {
+        "id": 2687,
+        "numero": 54,
+        "titulo": "Pesadelo",
+        "sinopse": "Naruto começa a ter pesadelos sobre a liberação do poder da Raposa de Nove Caudas. Depois disso, Kakashi informa que possui um treinamento especial para torná-lo mais forte rapidamente.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep54.jpg",
+        "dataExibicao": "2008-04-03"
+    },
+    {
+        "id": 2688,
+        "numero": 55,
+        "titulo": "Vento",
+        "sinopse": "Kakashi inicia o treinamento de Naruto e ele descobre que sua natureza de chakra é do tipo vento. Com a ajuda de Yamato e seus clones das sombras, Naruto começa a aprender manipulação de chakra.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep55.jpg",
+        "dataExibicao": "2008-04-17"
+    },
+    {
+        "id": 2689,
+        "numero": 56,
+        "titulo": "Tormento",
+        "sinopse": "Naruto continua treinando sua manipulação de chakra do tipo vento. Após receber conselhos de Asuma, ele finalmente consegue cortar uma folha usando sua natureza de chakra.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep56.jpg",
+        "dataExibicao": "2008-04-24"
+    },
+    {
+        "id": 2690,
+        "numero": 57,
+        "titulo": "Privado do Sono Eterno",
+        "sinopse": "Naruto, Sakura, Sai e Yamato partem em uma missão próxima ao Templo do Fogo. Durante a investigação, Naruto encontra Sora, um monge em treinamento que também utiliza técnicas de vento.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep57.jpg",
+        "dataExibicao": "2008-05-08"
+    },
+    {
+        "id": 2691,
+        "numero": 58,
+        "titulo": "Solidão",
+        "sinopse": "Naruto descobre mais sobre Sora e percebe que ele é rejeitado pelos outros monges, assim como Naruto foi no passado. Os dois começam a criar uma conexão.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep58.jpg",
+        "dataExibicao": "2008-05-08"
+    },
+    {
+        "id": 2692,
+        "numero": 59,
+        "titulo": "Um Novo Inimigo",
+        "sinopse": "Tsunade suspeita das intenções de Danzou enquanto Naruto e sua equipe enfrentam novos inimigos que roubaram antigos túmulos do Templo do Fogo.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep59.jpg",
+        "dataExibicao": "2008-05-15"
+    },
+    {
+        "id": 2693,
+        "numero": 60,
+        "titulo": "Impermanência",
+        "sinopse": "A Equipe Kakashi enfrenta os ninjas inimigos. Naruto luta contra Fuka, uma adversária capaz de usar diferentes elementos de chakra.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep60.jpg",
+        "dataExibicao": "2008-05-22"
+    },
+    {
+        "id": 2694,
+        "numero": 61,
+        "titulo": "Contato",
+        "sinopse": "Naruto continua sua batalha contra Fuka enquanto Sora descobre os planos de Furido. A equipe se reúne para enfrentar a ameaça ao País do Fogo.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep61.jpg",
+        "dataExibicao": "2008-05-29"
+    },
+    {
+        "id": 2695,
+        "numero": 62,
+        "titulo": "Companheiro",
+        "sinopse": "Sora se junta temporariamente à Equipe Kakashi. Naruto tenta se aproximar dele, mas Sora ainda carrega ressentimento pelo passado.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep62.jpg",
+        "dataExibicao": "2008-06-05"
+    },
+    {
+        "id": 2696,
+        "numero": 63,
+        "titulo": "Os Dois Reis",
+        "sinopse": "Asuma ajuda Naruto e Sora no treinamento de chakra do vento. Enquanto isso, a verdade sobre o passado de Sora e seu pai começa a ser revelada.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep63.jpg",
+        "dataExibicao": "2008-06-19"
+    },
+    {
+        "id": 2697,
+        "numero": 64,
+        "titulo": "Sinal de Fumaça Negro",
+        "sinopse": "Sora confronta Asuma após descobrir a verdade sobre seu pai. Enquanto isso, um ataque misterioso coloca Konoha em perigo.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep64.jpg",
+        "dataExibicao": "2008-07-03"
+    },
+    {
+        "id": 2698,
+        "numero": 65,
+        "titulo": "Escuridão Total",
+        "sinopse": "Konoha entra em estado de emergência após ser cercada por uma barreira. Naruto tenta impedir Sora de seguir pelo caminho da vingança.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep65.jpg",
+        "dataExibicao": "2008-07-03"
+    },
+    {
+        "id": 2699,
+        "numero": 66,
+        "titulo": "Almas Revividas",
+        "sinopse": "Os ninjas de Konoha enfrentam guerreiros revividos enquanto descobrem que o inimigo pretende destruir a vila com uma poderosa técnica.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep66.jpg",
+        "dataExibicao": "2008-07-10"
+    },
+    {
+        "id": 2700,
+        "numero": 67,
+        "titulo": "A Luta de Todos Até a Morte",
+        "sinopse": "Os ninjas de Konoha continuam a batalha contra os inimigos revividos enquanto Shikamaru cria uma estratégia para derrotá-los.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep67.jpg",
+        "dataExibicao": "2008-07-24"
+    },
+    {
+        "id": 2701,
+        "numero": 68,
+        "titulo": "Momento do Despertar",
+        "sinopse": "Naruto descobre o segredo de Fuka e consegue derrotá-la. Enquanto isso, Furido revela seu plano final envolvendo Sora.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep68.jpg",
+        "dataExibicao": "2008-07-31"
+    },
+    {
+        "id": 2702,
+        "numero": 69,
+        "titulo": "Desespero",
+        "sinopse": "Furido revela a verdade sobre Sora: ele possui parte do chakra da Raposa de Nove Caudas. Sora perde o controle e libera esse poder.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep69.jpg",
+        "dataExibicao": "2008-07-31"
+    },
+    {
+        "id": 2703,
+        "numero": 70,
+        "titulo": "Ressonância",
+        "sinopse": "O chakra da Raposa de Nove Caudas toma conta de Sora e Naruto tenta impedir que ele perca completamente o controle.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep70.jpg",
+        "dataExibicao": "2008-08-07"
+    },
+    {
+        "id": 2704,
+        "numero": 71,
+        "titulo": "Meu Amigo",
+        "sinopse": "Naruto consegue alcançar Sora e ajudá-lo a controlar o chakra da Raposa. Após os acontecimentos, Sora decide deixar Konoha para viajar pelo mundo.",
+        "temporadaId": 3,
+        "animeId": 90,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t3/ep71.jpg",
+        "dataExibicao": "2008-08-14"
     }
 ]
