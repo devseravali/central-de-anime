@@ -27654,5 +27654,85 @@
         "animeId": 93,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t6/ep143.jpg",
         "dataExibicao": "2010-01-21"
+    },
+    {
+        "id": 2777,
+        "numero": 144,
+        "titulo": "O Andarilho",
+        "sinopse": "Após falharem em trazer Sasuke de volta, os ninjas da Folha começam o retorno para a Vila Oculta da Folha. Tsunade envia Katsuyu para informar que a barreira do Monte Katsuragi do Clã Tsuchigumo, que guarda um poderoso jutsu proibido, foi quebrada. Enquanto Kakashi e o Time 8 retornam à vila, o Time 7 liderado por Yamato investiga a situação.",
+        "temporadaId": 7,
+        "animeId": 94,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep144.jpg",
+        "dataExibicao": "2010-01-21"
+    },
+    {
+        "id": 2778,
+        "numero": 145,
+        "titulo": "O Sucessor do Jutsu Proibido",
+        "sinopse": "Naruto, Sai e Yamato escoltam Hotaru até a vila escondida do Clã Tsuchigumo. Ao chegar, os moradores não parecem felizes com o retorno dela. Enquanto isso, Utakata relembra o tempo que passou com Hotaru e encontra Akaboshi e seu grupo.",
+        "temporadaId": 7,
+        "animeId": 94,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep145.jpg",
+        "dataExibicao": "2010-01-28"
+    },
+    {
+        "id": 2779,
+        "numero": 146,
+        "titulo": "O Desejo do Sucessor",
+        "sinopse": "Naruto retorna para a vila do Clã Tsuchigumo enquanto Akaboshi e seu grupo encontram Hotaru com a ajuda de seu tio. Hotaru consegue escapar, mas é cercada pelos ninjas mercenários na floresta. Utakata aparece para salvá-la e fugir com ela.",
+        "temporadaId": 7,
+        "animeId": 94,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep146.jpg",
+        "dataExibicao": "2010-02-04"
+    },
+    {
+        "id": 2780,
+        "numero": 147,
+        "titulo": "O Passado do Ninja Renegado",
+        "sinopse": "Naruto, Sai e Yamato chegam para salvar Hotaru e Utakata dos atacantes, descobrindo que eles são Anbu da Vila Oculta da Névoa. Yamato tenta negociar com Tsurugi, líder da Anbu da Névoa, enquanto Utakata relembra o sofrimento causado por seu antigo mestre.",
+        "temporadaId": 7,
+        "animeId": 94,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep147.jpg",
+        "dataExibicao": "2010-02-11"
+    },
+    {
+        "id": 2781,
+        "numero": 148,
+        "titulo": "O Herdeiro das Trevas",
+        "sinopse": "Naruto e seu grupo retornam ao Monte Katsuragi junto com Hotaru e Utakata para planejar os próximos passos. Tonbei revela uma forma de remover o jutsu proibido do corpo de Hotaru, mas ela acredita que Shiranami pode restaurar o clã.",
+        "temporadaId": 7,
+        "animeId": 94,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep148.jpg",
+        "dataExibicao": "2010-02-18"
+    },
+    {
+        "id": 2782,
+        "numero": 149,
+        "titulo": "Separação",
+        "sinopse": "Naruto encontra Shiranami, mas descobre que era apenas uma armadilha dos ninjas mercenários. Hotaru encontra o verdadeiro Shiranami, que a convence a não remover o jutsu proibido e a leva de volta para a vila do Clã Tsuchigumo.",
+        "temporadaId": 7,
+        "animeId": 94,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep149.jpg",
+        "dataExibicao": "2010-02-25"
+    },
+    {
+        "id": 2783,
+        "numero": 150,
+        "titulo": "O Jutsu Proibido Liberado",
+        "sinopse": "Enquanto o restante do Time Kakashi enfrenta os moradores controlados e os ninjas mercenários, Naruto e Utakata tentam salvar Hotaru. Eles descobrem que Shiranami ativou o jutsu proibido e controla Hotaru.",
+        "temporadaId": 7,
+        "animeId": 94,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep150.jpg",
+        "dataExibicao": "2010-03-04"
+    },
+    {
+        "id": 2784,
+        "numero": 151,
+        "titulo": "Mestre e Aluno",
+        "sinopse": "Após a execução do jutsu proibido, Hotaru fica horrorizada com a destruição causada pela técnica. Shiranami percebe que o jutsu está acumulando chakra demais e pode destruir a si mesmo junto com Hotaru. Naruto persegue Shiranami enquanto Utakata tenta salvar Hotaru usando seu poder oculto.",
+        "temporadaId": 7,
+        "animeId": 94,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep151.jpg",
+        "dataExibicao": "2010-03-11"
     }
 ]
