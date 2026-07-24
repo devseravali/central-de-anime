@@ -29944,5 +29944,215 @@
         "animeId": 104,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t17/ep372.jpg",
         "dataExibicao": "2014-08-14"
+    },
+    {
+        "id": 2994,
+        "numero": 373,
+        "titulo": "O Time 7 se Reúne!",
+        "sinopse": "O Time 7 finalmente está reunido quando Naruto, Sakura e Sasuke unem forças novamente para lutar juntos.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep373.jpg",
+        "dataExibicao": "2014-08-21"
+    },
+    {
+        "id": 2995,
+        "numero": 374,
+        "titulo": "O Novo Impasse dos Três Caminhos",
+        "sinopse": "Semelhantes aos lendários Sannin, Naruto, Sakura e Sasuke chegam ao campo de batalha realizando suas invocações e mostrando seu novo poder.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep374.jpg",
+        "dataExibicao": "2014-08-28"
+    },
+    {
+        "id": 2996,
+        "numero": 375,
+        "titulo": "Kakashi vs. Obito",
+        "sinopse": "Kakashi ainda acredita que Obito pode voltar a ser o jovem que conhecia, mas Obito abandonou o presente e seus antigos laços, decidido a criar um novo mundo.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep375.jpg",
+        "dataExibicao": "2014-09-04"
+    },
+    {
+        "id": 2997,
+        "numero": 376,
+        "titulo": "A Ordem para Capturar a Nove-Caudas",
+        "sinopse": "Edição especial em duas partes. Enquanto os moradores da Vila da Folha seguem suas rotinas, uma ameaça inesperada surge causando destruição.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep376.jpg",
+        "dataExibicao": "2014-09-11"
+    },
+    {
+        "id": 2998,
+        "numero": 377,
+        "titulo": "Naruto vs. Naruto Mecânico",
+        "sinopse": "Continuação da edição especial. Naruto enfrenta uma versão mecânica criada para derrotá-lo.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep377.jpg",
+        "dataExibicao": "2014-09-11"
+    },
+    {
+        "id": 2999,
+        "numero": 378,
+        "titulo": "O Jinchuuriki da Dez-Caudas",
+        "sinopse": "Obito absorve completamente a Dez-Caudas, sofre uma transformação e se torna o novo jinchuuriki da Dez-Caudas.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep378.jpg",
+        "dataExibicao": "2014-09-18"
+    },
+    {
+        "id": 3000,
+        "numero": 379,
+        "titulo": "Uma Abertura",
+        "sinopse": "Obito domina completamente o poder da Dez-Caudas e seus ataques colocam Naruto e seus aliados em uma situação desesperadora.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep379.jpg",
+        "dataExibicao": "2014-09-25"
+    },
+    {
+        "id": 3001,
+        "numero": 380,
+        "titulo": "O Dia em que Naruto Nasceu",
+        "sinopse": "Minato relembra seus arrependimentos durante o confronto com Obito e pensa que poderia ter evitado a tragédia que matou Kushina.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep380.jpg",
+        "dataExibicao": "2014-10-02"
+    },
+    {
+        "id": 3002,
+        "numero": 381,
+        "titulo": "A Árvore Divina",
+        "sinopse": "Naruto e Minato combinam seus poderes para realizar um ataque usando o Jutsu Sábio contra Obito.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep381.jpg",
+        "dataExibicao": "2014-10-09"
+    },
+    {
+        "id": 3003,
+        "numero": 382,
+        "titulo": "O Sonho de um Shinobi",
+        "sinopse": "A Dez-Caudas assume sua forma final, a Árvore Divina, e começa a absorver o chakra dos shinobi.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep382.jpg",
+        "dataExibicao": "2014-10-16"
+    },
+    {
+        "id": 3004,
+        "numero": 383,
+        "titulo": "Perseguindo a Esperança",
+        "sinopse": "O passado e os sentimentos de Naruto são compartilhados com todos os shinobi, unindo seus corações na batalha.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep383.jpg",
+        "dataExibicao": "2014-10-23"
+    },
+    {
+        "id": 3005,
+        "numero": 384,
+        "titulo": "Um Coração Cheio de Companheiros",
+        "sinopse": "Naruto e Sasuke analisam Obito enquanto a batalha final se aproxima.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep384.jpg",
+        "dataExibicao": "2014-10-30"
+    },
+    {
+        "id": 3006,
+        "numero": 385,
+        "titulo": "Obito Uchiha",
+        "sinopse": "Naruto rejeita a ideia de Obito ser o segundo Sábio dos Seis Caminhos e afirma que ele continua sendo Obito Uchiha.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep385.jpg",
+        "dataExibicao": "2014-11-06"
+    },
+    {
+        "id": 3007,
+        "numero": 386,
+        "titulo": "Eu Sempre Estarei Observando",
+        "sinopse": "Pressionado por Naruto, Obito relembra sua infância com Kakashi e Rin durante o Exame Chunin e seu sonho de se tornar Hokage.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep386.jpg",
+        "dataExibicao": "2014-11-13"
+    },
+    {
+        "id": 3008,
+        "numero": 387,
+        "titulo": "A Promessa que Foi Mantida",
+        "sinopse": "As palavras de Naruto começam a tocar o coração de Obito, enquanto lembranças de Rin e do passado retornam à sua mente.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep387.jpg",
+        "dataExibicao": "2014-11-20"
+    },
+    {
+        "id": 3009,
+        "numero": 388,
+        "titulo": "Meu Primeiro Amigo",
+        "sinopse": "As Bestas com Cauda são libertadas e antigos companheiros se reencontram. As forças aliadas voltam sua atenção para Madara Uchiha.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep388.jpg",
+        "dataExibicao": "2014-11-27"
+    },
+    {
+        "id": 3010,
+        "numero": 389,
+        "titulo": "A Irmã Mais Admirada",
+        "sinopse": "Hanabi admira sua irmã Hinata, que luta para se tornar uma sucessora digna do clã Hyuga.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep389.jpg",
+        "dataExibicao": "2014-12-04"
+    },
+    {
+        "id": 3011,
+        "numero": 390,
+        "titulo": "A Decisão de Hanabi",
+        "sinopse": "Quando Hinata é considerada incapaz de liderar o clã, Hanabi passa a carregar o peso dessa decisão.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep390.jpg",
+        "dataExibicao": "2014-12-04"
+    },
+    {
+        "id": 3012,
+        "numero": 391,
+        "titulo": "Madara Uchiha Surge",
+        "sinopse": "Naruto e as Forças Aliadas conseguem retirar as Bestas com Cauda de Obito. Agora apenas Madara permanece como ameaça.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep391.jpg",
+        "dataExibicao": "2014-12-11"
+    },
+    {
+        "id": 3013,
+        "numero": 392,
+        "titulo": "O Coração Escondido",
+        "sinopse": "Com seu novo poder recuperado, Madara continua enfrentando as nove Bestas com Cauda.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep392.jpg",
+        "dataExibicao": "2014-12-18"
+    },
+    {
+        "id": 3014,
+        "numero": 393,
+        "titulo": "Um Verdadeiro Final",
+        "sinopse": "Apesar dos esforços de todos, Kurama é retirada de Naruto e todas as Bestas com Cauda são aprisionadas dentro da Estátua Gedo.",
+        "temporadaId": 18,
+        "animeId": 105,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t18/ep393.jpg",
+        "dataExibicao": "2014-12-25"
     }
 ]
