@@ -28434,5 +28434,215 @@
         "animeId": 97,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t10/ep221.jpg",
         "dataExibicao": "2011-07-28"
+    },
+    {
+        "id": 2855,
+        "numero": 222,
+        "titulo": "A Decisão dos Cinco Kage",
+        "sinopse": "Os moradores da Vila da Folha se preparam para a chegada da Quarta Grande Guerra Ninja enquanto as nações começam a organizar suas forças.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep222.jpg",
+        "dataExibicao": "2011-07-28"
+    },
+    {
+        "id": 2856,
+        "numero": 223,
+        "titulo": "O Jovem e o Mar",
+        "sinopse": "Tsunade envia Naruto em uma missão secreta para mantê-lo escondido da Akatsuki. Durante a viagem, Naruto, Yamato, Guy e Aoba ficam presos no porto devido a relatos de um monstro atacando navios.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep223.jpg",
+        "dataExibicao": "2011-08-04"
+    },
+    {
+        "id": 2857,
+        "numero": 224,
+        "titulo": "O Ninja de Benisu",
+        "sinopse": "Durante a viagem, Naruto e seus companheiros param em uma ilha para se recuperar do enjoo. Lá eles encontram Sakura, Ino e Chōji em uma missão para coletar ervas medicinais.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep224.jpg",
+        "dataExibicao": "2011-08-11"
+    },
+    {
+        "id": 2858,
+        "numero": 225,
+        "titulo": "O Navio Fantasma Amaldiçoado",
+        "sinopse": "Durante a viagem para o País do Relâmpago, Naruto, Aoba, Guy e Yamato atravessam uma densa neblina. Para passar o tempo, Yamato conta histórias assustadoras sobre navios fantasmas.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep225.jpg",
+        "dataExibicao": "2011-08-18"
+    },
+    {
+        "id": 2859,
+        "numero": 226,
+        "titulo": "A Ilha do Navio de Guerra",
+        "sinopse": "O navio de Naruto é atingido por uma tempestade e acaba encontrando piratas perigosos. Após sobreviverem ao ataque, Naruto decide proteger os habitantes da ilha e derrotar os invasores.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep226.jpg",
+        "dataExibicao": "2011-08-25"
+    },
+    {
+        "id": 2860,
+        "numero": 227,
+        "titulo": "A Ilha Esquecida",
+        "sinopse": "Ao procurar por Guy, que foi levado por um pássaro gigante, Naruto, Yamato e Aoba chegam a uma ilha onde encontram uma jovem misteriosa.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep227.jpg",
+        "dataExibicao": "2011-09-02"
+    },
+    {
+        "id": 2861,
+        "numero": 228,
+        "titulo": "Lute! Rock Lee!",
+        "sinopse": "Guy relembra um treinamento especial com Rock Lee envolvendo estilos de luta inspirados em animais. Lee tenta superar seus limites enquanto busca ficar mais forte.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep228.jpg",
+        "dataExibicao": "2011-09-09"
+    },
+    {
+        "id": 2862,
+        "numero": 229,
+        "titulo": "Coma ou Morra! Cogumelos do Inferno",
+        "sinopse": "Durante uma parada para conseguir suprimentos, Naruto compra um cogumelo raro. Depois, a tripulação descobre que o navio foi tomado por cogumelos venenosos.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep229.jpg",
+        "dataExibicao": "2011-09-22"
+    },
+    {
+        "id": 2863,
+        "numero": 230,
+        "titulo": "A Vingança dos Clones das Sombras",
+        "sinopse": "Após usar clones das sombras para proteger o navio durante uma tempestade, Naruto enfrenta uma revolta de seus próprios clones e aprende uma importante lição sobre eles.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep230.jpg",
+        "dataExibicao": "2011-09-29"
+    },
+    {
+        "id": 2864,
+        "numero": 231,
+        "titulo": "A Rota Fechada",
+        "sinopse": "Shikamaru começa a sentir o peso da responsabilidade pela vida de seus companheiros na guerra que se aproxima. Para ajudá-lo, Shikaku envia seu filho em uma missão com Tenten.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep231.jpg",
+        "dataExibicao": "2011-10-06"
+    },
+    {
+        "id": 2865,
+        "numero": 232,
+        "titulo": "O Encontro das Garotas",
+        "sinopse": "Hiashi reúne o clã Hyūga para discutir o papel que eles terão durante a Quarta Grande Guerra Ninja.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep232.jpg",
+        "dataExibicao": "2011-10-13"
+    },
+    {
+        "id": 2866,
+        "numero": 233,
+        "titulo": "O Impostor de Naruto",
+        "sinopse": "Naruto encontra um impostor que tenta construir sua reputação roubando outras pessoas. Enquanto isso, seu amigo tenta ganhar fama derrotando o falso Naruto.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep233.jpg",
+        "dataExibicao": "2011-10-20"
+    },
+    {
+        "id": 2867,
+        "numero": 234,
+        "titulo": "O Aluno Favorito de Naruto",
+        "sinopse": "Konohamaru deseja lutar ao lado dos ninjas da Vila da Folha na guerra que se aproxima, mas sua pouca idade impede que ele seja enviado ao campo de batalha.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep234.jpg",
+        "dataExibicao": "2011-10-27"
+    },
+    {
+        "id": 2868,
+        "numero": 235,
+        "titulo": "A Kunoichi da Vila Nadeshiko",
+        "sinopse": "Naruto encontra duas kunoichi da Vila Nadeshiko, Shizuka e Tokiwa, que estão procurando pelo aluno de Jiraiya.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep235.jpg",
+        "dataExibicao": "2011-11-03"
+    },
+    {
+        "id": 2869,
+        "numero": 236,
+        "titulo": "Amigos em Quem Confiar",
+        "sinopse": "Shino conta aos seus alunos como ele e seu time se tornaram amigos e companheiros mais próximos. Ele relembra uma missão do passado que fortaleceu seus laços.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep236.jpg",
+        "dataExibicao": "2011-11-10"
+    },
+    {
+        "id": 2870,
+        "numero": 237,
+        "titulo": "Ah, Minha Heroína Lady Tsunade!",
+        "sinopse": "Tenten relembra sua infância e seu desejo de se tornar como a lendária Tsunade. Após perceber suas limitações, ela encontra seu próprio estilo de luta usando ferramentas ninja.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep237.jpg",
+        "dataExibicao": "2011-11-24"
+    },
+    {
+        "id": 2871,
+        "numero": 238,
+        "titulo": "O Dia de Folga de Sai",
+        "sinopse": "Sai aproveita seu dia de folga caminhando pela vila e desenhando. Ao encontrar algumas crianças, ele relembra seus antigos companheiros e os laços que criou com Naruto e Sakura.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep238.jpg",
+        "dataExibicao": "2011-12-01"
+    },
+    {
+        "id": 2872,
+        "numero": 239,
+        "titulo": "O Lendário Ino-Shika-Chō",
+        "sinopse": "O Time 10 encontra Kosuke Maruboshi, que relembra quando os pais de Shikamaru, Ino e Chōji salvaram sua vida usando a Formação Ino-Shika-Chō.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep239.jpg",
+        "dataExibicao": "2011-12-08"
+    },
+    {
+        "id": 2873,
+        "numero": 240,
+        "titulo": "A Determinação de Kiba",
+        "sinopse": "Kiba treina intensamente para alcançar Naruto, que agora é considerado um herói da Vila da Folha. Sentindo que precisa melhorar, ele pede ajuda a Kakashi.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep240.jpg",
+        "dataExibicao": "2011-12-15"
+    },
+    {
+        "id": 2874,
+        "numero": 241,
+        "titulo": "Kakashi, Meu Rival Eterno!",
+        "sinopse": "Durante a viagem para o País do Relâmpago, Yamato alerta a equipe sobre inimigos capazes de copiar aparência e chakra de pessoas próximas.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep241.jpg",
+        "dataExibicao": "2011-12-22"
+    },
+    {
+        "id": 2875,
+        "numero": 242,
+        "titulo": "O Juramento de Naruto",
+        "sinopse": "Durante sua última parada antes de chegar ao País do Relâmpago, Naruto encontra Akatsuchi e Kurotsuchi da Vila da Pedra, que carregam uma mensagem do Tsuchikage para o Mizukage.",
+        "temporadaId": 11,
+        "animeId": 98,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t11/ep242.jpg",
+        "dataExibicao": "2011-12-28"
     }
 ]
