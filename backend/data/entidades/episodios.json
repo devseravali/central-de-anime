@@ -30354,5 +30354,805 @@
         "animeId": 106,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t19/ep413.jpg",
         "dataExibicao": "2015-05-21"
+    },
+    {
+        "id": 3035,
+        "numero": 414,
+        "titulo": "À Beira da Morte",
+        "sinopse": "Após a extração de sua Besta com Cauda, Naruto fica à beira da morte. Sakura tenta desesperadamente salvá-lo, mas o coração de Naruto para.",
+        "temporadaId": 107,
+        "animeId": 20,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep414.jpg",
+        "dataExibicao": "2015-05-28"
+    },
+    {
+        "id": 3036,
+        "numero": 415,
+        "titulo": "Os Dois Mangekyo",
+        "sinopse": "Madara se transforma no Jinchuriki do Dez-Caudas e aparece diante de Kakashi. Kakashi e os outros unem seus poderes para atacar, mas não são páreo para Madara.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep415.jpg",
+        "dataExibicao": "2015-06-04"
+    },
+    {
+        "id": 3037,
+        "numero": 416,
+        "titulo": "A Formação do Time Minato",
+        "sinopse": "Kakashi mudou para pior, e Obito não entende o motivo. Ele encontra Kakashi e tenta conversar, mas recebe apenas indiferença.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep416.jpg",
+        "dataExibicao": "2015-06-11"
+    },
+    {
+        "id": 3038,
+        "numero": 417,
+        "titulo": "Você Será Meu Apoio",
+        "sinopse": "Obito finalmente entende o motivo pelo qual Kakashi colocou a missão acima de tudo na Ponte Kannabi. No presente, os dois retornam juntos para enfrentar Madara.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep417.jpg",
+        "dataExibicao": "2015-06-25"
+    },
+    {
+        "id": 3039,
+        "numero": 418,
+        "titulo": "A Fera Verde Selvagem Contra Madara dos Seis Caminhos",
+        "sinopse": "Guy libera os Oito Portões Internos contra Madara, mas o Sétimo Portão do Choque não é suficiente para derrotá-lo.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep418.jpg",
+        "dataExibicao": "2015-07-02"
+    },
+    {
+        "id": 3040,
+        "numero": 419,
+        "titulo": "A Juventude do Pai",
+        "sinopse": "Dai aconselha seu filho Guy sobre o verdadeiro significado da vitória e sobre criar suas próprias regras. Essas lições se tornam os princípios que guiam Guy em sua batalha final.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep419.jpg",
+        "dataExibicao": "2015-07-09"
+    },
+    {
+        "id": 3041,
+        "numero": 420,
+        "titulo": "A Formação dos Oito Portões Internos",
+        "sinopse": "Guy ativa a Formação dos Oito Portões Internos e ataca Madara dos Seis Caminhos sem parar. Mesmo Madara precisa desviar dos ataques diretos.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep420.jpg",
+        "dataExibicao": "2015-07-23"
+    },
+    {
+        "id": 3042,
+        "numero": 421,
+        "titulo": "O Sábio dos Seis Caminhos",
+        "sinopse": "Naruto desperta e encontra o lendário Sábio dos Seis Caminhos, que revela que Naruto é a reencarnação de Ashura e Sasuke é a reencarnação de Indra.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep421.jpg",
+        "dataExibicao": "2015-07-30"
+    },
+    {
+        "id": 3043,
+        "numero": 422,
+        "titulo": "Aqueles Que Herdarão",
+        "sinopse": "Três anos após Naruto partir para treinar com Jiraiya, ele retorna à Vila da Folha. Konohamaru pede que Naruto lhe ensine um novo jutsu.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep422.jpg",
+        "dataExibicao": "2015-08-06"
+    },
+    {
+        "id": 3044,
+        "numero": 423,
+        "titulo": "O Rival de Naruto",
+        "sinopse": "Konohamaru tenta aprender um novo jutsu com Naruto, mas as explicações vagas fazem com que ele precise descobrir sozinho como dominar a técnica.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep423.jpg",
+        "dataExibicao": "2015-08-06"
+    },
+    {
+        "id": 3045,
+        "numero": 424,
+        "titulo": "Erguer-se",
+        "sinopse": "Madara sofre grandes danos após o ataque dos Oito Portões Internos de Guy, uma técnica que coloca a vida do ninja em risco.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep424.jpg",
+        "dataExibicao": "2015-08-13"
+    },
+    {
+        "id": 3046,
+        "numero": 425,
+        "titulo": "O Sonho Infinito",
+        "sinopse": "Madara agora possui o Rinnegan nos dois olhos e se torna o inimigo mais poderoso que o Time 7 já enfrentou. Kakashi relembra a primeira lição dos sinos para unir o time.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep425.jpg",
+        "dataExibicao": "2015-08-20"
+    },
+    {
+        "id": 3047,
+        "numero": 426,
+        "titulo": "O Tsukuyomi Infinito",
+        "sinopse": "Madara ativa o Tsukuyomi Infinito e todos que são atingidos pela luz da lua cheia ficam presos em um mundo de sonhos sem saída.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep426.jpg",
+        "dataExibicao": "2015-08-27"
+    },
+    {
+        "id": 3048,
+        "numero": 427,
+        "titulo": "O Caminho de Tenten ~O Mundo dos Sonhos~",
+        "sinopse": "Tenten cai no Tsukuyomi Infinito e acorda em uma Vila da Folha diferente. Ao encontrar Lee e Guy, percebe que algo estranho está acontecendo.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep427.jpg",
+        "dataExibicao": "2015-09-03"
+    },
+    {
+        "id": 3049,
+        "numero": 428,
+        "titulo": "O Caminho de Tenten ~Onde Tenten Pertence~",
+        "sinopse": "Tenten continua presa em seu mundo de sonhos, tentando entender a realidade alternativa criada pelo Tsukuyomi Infinito.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep428.jpg",
+        "dataExibicao": "2015-09-03"
+    },
+    {
+        "id": 3050,
+        "numero": 429,
+        "titulo": "Crônicas de Rap de Killer Bee: Pergaminho do Céu",
+        "sinopse": "Killer Bee é capturado pelo Tsukuyomi Infinito e começa a sonhar com uma aventura onde precisa proteger os Jinchurikis da Akatsuki.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep429.jpg",
+        "dataExibicao": "2015-09-10"
+    },
+    {
+        "id": 3051,
+        "numero": 430,
+        "titulo": "Crônicas de Rap de Killer Bee: Pergaminho da Terra",
+        "sinopse": "No sonho de Killer Bee, a Akatsuki tenta reviver o Dez-Caudas enquanto Bee busca reunir o poder dos nove Jinchurikis para impedir a ameaça.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep430.jpg",
+        "dataExibicao": "2015-09-17"
+    },
+    {
+        "id": 3052,
+        "numero": 431,
+        "titulo": "Para Ver Aquele Sorriso Mais Uma Vez",
+        "sinopse": "Karin fica presa no Tsukuyomi Infinito e relembra seu passado no Clã Uzumaki, sua infância difícil e o momento em que conheceu Sasuke.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep431.jpg",
+        "dataExibicao": "2015-09-24"
+    },
+    {
+        "id": 3053,
+        "numero": 432,
+        "titulo": "O Ninja Perdedor",
+        "sinopse": "Com exceção do Time 7, protegido pelo Susanoo de Sasuke, todos os shinobi são presos no mundo dos sonhos. Tsunade começa a ler o livro de Jiraiya.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep432.jpg",
+        "dataExibicao": "2015-10-01"
+    },
+    {
+        "id": 3054,
+        "numero": 433,
+        "titulo": "A Missão de Busca",
+        "sinopse": "Tsunade continua lendo o romance de Jiraiya enquanto uma missão de busca é iniciada na Vila da Folha. Naruto é visto como um fracassado mesmo sendo filho do Hokage.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep433.jpg",
+        "dataExibicao": "2015-10-08"
+    },
+    {
+        "id": 3055,
+        "numero": 434,
+        "titulo": "Time Jiraiya",
+        "sinopse": "Tsunade continua lendo o romance de Jiraiya. A missão de busca pelos ninjas desaparecidos continua, e o Time 7 de Kakashi participa da investigação enquanto Naruto é visto como um fracassado.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep434.jpg",
+        "dataExibicao": "2015-10-15"
+    },
+    {
+        "id": 3056,
+        "numero": 435,
+        "titulo": "Ordem de Prioridade",
+        "sinopse": "O Time Jiraiya, Shikamaru e seus companheiros são atraídos para uma vila misteriosa durante uma batalha. Enquanto isso, Naruto e Neji encontram uma nova ameaça.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep435.jpg",
+        "dataExibicao": "2015-10-22"
+    },
+    {
+        "id": 3057,
+        "numero": 436,
+        "titulo": "O Homem Mascarado",
+        "sinopse": "O Homem Mascarado mostra a Naruto e Neji imagens de acontecimentos passados da Vila da Folha. Enquanto isso, Shikamaru e seus aliados tentam salvar as crianças presas.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep436.jpg",
+        "dataExibicao": "2015-11-05"
+    },
+    {
+        "id": 3058,
+        "numero": 437,
+        "titulo": "O Poder Selado",
+        "sinopse": "O Homem Mascarado observa as escolhas dos jovens ninjas da Folha e acredita que existe esperança para o futuro. Naruto relembra o motivo pelo qual Minato selou a Nove-Caudas nele.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep437.jpg",
+        "dataExibicao": "2015-11-12"
+    },
+    {
+        "id": 3059,
+        "numero": 438,
+        "titulo": "As Regras ou um Companheiro?",
+        "sinopse": "Sasuke e Sakura se juntam aos demais, mas um usuário de marionetes bloqueia o caminho. O grupo precisa decidir entre seguir a missão ou salvar seus companheiros.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep438.jpg",
+        "dataExibicao": "2015-11-19"
+    },
+    {
+        "id": 3060,
+        "numero": 439,
+        "titulo": "A Criança da Profecia",
+        "sinopse": "Jiraiya enfraquece o selo da Nove-Caudas para ajudar Naruto a controlar seu poder. Ele relembra a profecia sobre o aluno que poderia salvar ou destruir o mundo ninja.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep439.jpg",
+        "dataExibicao": "2015-11-26"
+    },
+    {
+        "id": 3061,
+        "numero": 440,
+        "titulo": "O Pássaro Engaiolado",
+        "sinopse": "Naruto se junta novamente aos seus companheiros e juntos superam o ataque das marionetes. O Homem Mascarado decide revelar seus motivos.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep440.jpg",
+        "dataExibicao": "2015-12-03"
+    },
+    {
+        "id": 3062,
+        "numero": 441,
+        "titulo": "Voltando para Casa",
+        "sinopse": "Naruto conquista o reconhecimento dos outros genin, enquanto Sasuke sofre com a comparação constante de seu pai com Itachi.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep441.jpg",
+        "dataExibicao": "2015-12-10"
+    },
+    {
+        "id": 3063,
+        "numero": 442,
+        "titulo": "O Caminho em Comum",
+        "sinopse": "Sasuke desconta suas frustrações em Naruto e os dois começam uma batalha usando seus novos jutsus. Minato intervém antes que a situação saia do controle.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep442.jpg",
+        "dataExibicao": "2015-12-17"
+    },
+    {
+        "id": 3064,
+        "numero": 443,
+        "titulo": "A Diferença de Poder",
+        "sinopse": "Três anos se passam. Sasuke se torna tenente da Polícia da Folha, enquanto Naruto retorna após seu treinamento com Jiraiya e reencontra Sasuke.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep443.jpg",
+        "dataExibicao": "2015-12-24"
+    },
+    {
+        "id": 3065,
+        "numero": 444,
+        "titulo": "Deixando a Vila",
+        "sinopse": "Sasuke deixa a Vila da Folha para obter poder com Orochimaru. Naruto e seus amigos descobrem que Sasuke está em perigo e decidem ir atrás dele.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep444.jpg",
+        "dataExibicao": "2016-01-14"
+    },
+    {
+        "id": 3066,
+        "numero": 445,
+        "titulo": "O Perseguidor",
+        "sinopse": "Os ANBU que atacam Naruto e Shikamaru são agentes enviados por Danzo, que havia prometido entregar Sasuke em segurança para Orochimaru. Neji, Lee e Tenten chegam para ajudar.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep445.jpg",
+        "dataExibicao": "2016-01-21"
+    },
+    {
+        "id": 3067,
+        "numero": 446,
+        "titulo": "A Colisão",
+        "sinopse": "Naruto chega ao local onde Sasuke está indo graças à ajuda de Neji, Lee e Tenten. Porém, Sasuke já encontrou Orochimaru. Naruto tenta convencer seu amigo, mas seus poderes entram em conflito.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep446.jpg",
+        "dataExibicao": "2016-01-28"
+    },
+    {
+        "id": 3068,
+        "numero": 447,
+        "titulo": "Outra Lua",
+        "sinopse": "Sasuke parte com Orochimaru, mas Naruto não desiste de trazê-lo de volta. Enquanto isso, Yahiko aparece na vila dizendo ser Pain e buscando vingança contra a Folha.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep447.jpg",
+        "dataExibicao": "2016-02-04"
+    },
+    {
+        "id": 3069,
+        "numero": 448,
+        "titulo": "Companheiro",
+        "sinopse": "Ao ver Hinata quase morrer, Naruto libera o poder da Nove-Caudas. Consumido pelo ódio, ele perde o controle e a vila começa a ser destruída.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep448.jpg",
+        "dataExibicao": "2016-02-11"
+    },
+    {
+        "id": 3070,
+        "numero": 449,
+        "titulo": "Os Shinobi se Unem",
+        "sinopse": "Após o ataque de Pain, Jiraiya retorna com informações sobre a Akatsuki e revela que Sasuke está trabalhando com eles. Naruto decide trazer seu amigo de volta.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep449.jpg",
+        "dataExibicao": "2016-02-18"
+    },
+    {
+        "id": 3071,
+        "numero": 450,
+        "titulo": "Rivais",
+        "sinopse": "Naruto quer trazer Sasuke de volta para a vila, enquanto Sasuke deseja derrotar Naruto. A origem dos sentimentos entre os dois vem à tona.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep450.jpg",
+        "dataExibicao": "2016-02-25"
+    },
+    {
+        "id": 3072,
+        "numero": 451,
+        "titulo": "A História de Itachi - Luz e Escuridão: Nascimento e Morte",
+        "sinopse": "Enquanto todos permanecem presos no Tsukuyomi Infinito, Sasuke relembra a morte de Itachi e seu Sharingan começa a revelar a verdade que seu irmão nunca contou.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep451.jpg",
+        "dataExibicao": "2016-03-03"
+    },
+    {
+        "id": 3073,
+        "numero": 452,
+        "titulo": "A História de Itachi - Luz e Escuridão: O Gênio",
+        "sinopse": "Itachi, ainda criança, começa a questionar o significado da vida e da morte após vivenciar os horrores da Grande Guerra Ninja.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep452.jpg",
+        "dataExibicao": "2016-03-10"
+    },
+    {
+        "id": 3074,
+        "numero": 453,
+        "titulo": "A História de Itachi - Luz e Escuridão: A Dor de Viver",
+        "sinopse": "Após se tornar genin, Itachi entra em uma equipe ninja e começa a demonstrar seu talento extraordinário enquanto enfrenta missões difíceis.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep453.jpg",
+        "dataExibicao": "2016-03-17"
+    },
+    {
+        "id": 3075,
+        "numero": 454,
+        "titulo": "A História de Itachi - Luz e Escuridão: O Pedido de Shisui",
+        "sinopse": "Itachi acompanha seu amigo Shisui em um treinamento e os dois encontram um conflito entre a ANBU da Folha e a Fundação. Shisui decide impedir a luta entre os dois lados.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep454.jpg",
+        "dataExibicao": "2016-03-24"
+    },
+    {
+        "id": 3076,
+        "numero": 455,
+        "titulo": "A História de Itachi - Luz e Escuridão: Noite de Lua",
+        "sinopse": "Itachi entra para a ANBU e rapidamente se torna capitão. Ele recebe a missão de observar o Clã Uchiha, que planeja um golpe contra a Vila da Folha.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep455.jpg",
+        "dataExibicao": "2016-04-07"
+    },
+    {
+        "id": 3077,
+        "numero": 456,
+        "titulo": "A História de Itachi - Luz e Escuridão: A Escuridão da Akatsuki",
+        "sinopse": "Itachi abandona a Vila da Folha e entra para a Akatsuki. Ele é apresentado como o ninja que massacrou seu próprio clã e começa suas primeiras missões como membro da organização.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep456.jpg",
+        "dataExibicao": "2016-04-14"
+    },
+    {
+        "id": 3078,
+        "numero": 457,
+        "titulo": "A História de Itachi - Luz e Escuridão: Parceiro",
+        "sinopse": "Itachi forma dupla com Kisame e inicia suas missões na Akatsuki. A dupla participa de operações envolvendo outros membros da organização.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep457.jpg",
+        "dataExibicao": "2016-04-21"
+    },
+    {
+        "id": 3079,
+        "numero": 458,
+        "titulo": "A História de Itachi - Luz e Escuridão: Verdade",
+        "sinopse": "Itachi confronta Sasuke e finalmente a verdade sobre sua história vem à tona. Enquanto isso, no campo de batalha, Naruto e os outros enfrentam Madara.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep458.jpg",
+        "dataExibicao": "2016-04-28"
+    },
+    {
+        "id": 3080,
+        "numero": 459,
+        "titulo": "Ela do Início",
+        "sinopse": "Kaguya Otsutsuki surge do corpo de Madara. Naruto e Sasuke descobrem que precisam derrotá-la e selá-la para salvar o mundo ninja.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep459.jpg",
+        "dataExibicao": "2016-05-05"
+    },
+    {
+        "id": 3081,
+        "numero": 460,
+        "titulo": "Kaguya Otsutsuki",
+        "sinopse": "A história de Kaguya é revelada. Em uma era de guerras intermináveis, ela busca a paz, mas acaba se tornando a protetora do poder da Árvore Divina.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep460.jpg",
+        "dataExibicao": "2016-05-12"
+    },
+    {
+        "id": 3082,
+        "numero": 461,
+        "titulo": "Hagoromo e Hamura",
+        "sinopse": "Hagoromo e Hamura descobrem os segredos escondidos por Kaguya e começam a entender a verdadeira origem do poder da Árvore Divina.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep461.jpg",
+        "dataExibicao": "2016-05-19"
+    },
+    {
+        "id": 3083,
+        "numero": 462,
+        "titulo": "Um Passado Inventado",
+        "sinopse": "Hagoromo descobre os acontecimentos do passado de Kaguya e decide enfrentá-la. Mãe e filhos iniciam uma batalha que mudará a história do mundo ninja.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep462.jpg",
+        "dataExibicao": "2016-05-26"
+    },
+    {
+        "id": 3084,
+        "numero": 463,
+        "titulo": "O Ninja Mais Imprevisível Nº 1",
+        "sinopse": "Black Zetsu revela que manipulou os acontecimentos da história ninja para trazer Kaguya de volta. Naruto rejeita essa ideia e continua lutando ao lado de Sasuke.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep463.jpg",
+        "dataExibicao": "2016-06-02"
+    },
+    {
+        "id": 3085,
+        "numero": 464,
+        "titulo": "Ninshu: O Credo Ninja",
+        "sinopse": "Hagoromo, o Sábio dos Seis Caminhos, revela a história de Ninshu e como Hashirama e Madara são as reencarnações de seus filhos Ashura e Indra.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep464.jpg",
+        "dataExibicao": "2016-06-09"
+    },
+    {
+        "id": 3086,
+        "numero": 465,
+        "titulo": "Ashura e Indra",
+        "sinopse": "Hagoromo relembra a infância de seus filhos Ashura e Indra, mostrando como suas diferenças começaram a criar um conflito entre eles.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep465.jpg",
+        "dataExibicao": "2016-06-16"
+    },
+    {
+        "id": 3087,
+        "numero": 466,
+        "titulo": "A Jornada Turbulenta",
+        "sinopse": "Hagoromo envia seus filhos para missões diferentes e decide escolher seu sucessor baseado nos resultados dessas jornadas.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep466.jpg",
+        "dataExibicao": "2016-06-30"
+    },
+    {
+        "id": 3088,
+        "numero": 467,
+        "titulo": "A Decisão de Ashura",
+        "sinopse": "Ashura parte em uma jornada e encontra uma vila sofrendo com uma misteriosa doença, descobrindo seu verdadeiro propósito.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep467.jpg",
+        "dataExibicao": "2016-07-07"
+    },
+    {
+        "id": 3089,
+        "numero": 468,
+        "titulo": "O Sucessor",
+        "sinopse": "Após o retorno de Ashura, Hagoromo revela quem será seu sucessor, surpreendendo todos os seus seguidores.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep468.jpg",
+        "dataExibicao": "2016-07-21"
+    },
+    {
+        "id": 3090,
+        "numero": 469,
+        "titulo": "Uma Missão Especial",
+        "sinopse": "A verdade sobre a lenda de Ashura e Indra finalmente começa a ser revelada.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep469.jpg",
+        "dataExibicao": "2016-07-28"
+    },
+    {
+        "id": 3091,
+        "numero": 470,
+        "titulo": "Pensamentos Conectados",
+        "sinopse": "Antes de selar Kaguya, Sasuke é enviado para outra dimensão. Obito e Sakura trabalham juntos para encontrá-lo.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep470.jpg",
+        "dataExibicao": "2016-08-04"
+    },
+    {
+        "id": 3092,
+        "numero": 471,
+        "titulo": "Os Dois... Sempre",
+        "sinopse": "Obito usa suas últimas forças para salvar Sasuke e Sakura, lembrando de sua promessa de proteger Rin.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep471.jpg",
+        "dataExibicao": "2016-08-11"
+    },
+    {
+        "id": 3093,
+        "numero": 472,
+        "titulo": "Você Deve...",
+        "sinopse": "Obito relembra seu sonho de se tornar Hokage e compartilha seus sentimentos com Naruto antes de partir.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep472.jpg",
+        "dataExibicao": "2016-08-18"
+    },
+    {
+        "id": 3094,
+        "numero": 473,
+        "titulo": "O Sharingan Revivido",
+        "sinopse": "Obito entrega seu poder a Kakashi, concedendo-lhe novamente o Mangekyo Sharingan para proteger o Time 7.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep473.jpg",
+        "dataExibicao": "2016-08-25"
+    },
+    {
+        "id": 3095,
+        "numero": 474,
+        "titulo": "Parabéns",
+        "sinopse": "O Time 7 consegue selar Kaguya e libertar as Bestas com Cauda que estavam presas dentro dela.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep474.jpg",
+        "dataExibicao": "2016-09-01"
+    },
+    {
+        "id": 3096,
+        "numero": 475,
+        "titulo": "O Vale do Fim",
+        "sinopse": "Após a batalha contra Kaguya, Naruto e Sasuke precisam liberar o Tsukuyomi Infinito, mas Sasuke faz uma declaração inesperada.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep475.jpg",
+        "dataExibicao": "2016-09-08"
+    },
+    {
+        "id": 3097,
+        "numero": 476,
+        "titulo": "A Batalha Final",
+        "sinopse": "Naruto e Sasuke chegam ao confronto final no Vale do Fim. Mesmo conhecendo os pensamentos um do outro, Sasuke continua determinado a derrotar Naruto.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep476.jpg",
+        "dataExibicao": "2016-09-29"
+    },
+    {
+        "id": 3098,
+        "numero": 477,
+        "titulo": "Naruto e Sasuke",
+        "sinopse": "A batalha entre Naruto e Sasuke continua enquanto os dois colocam suas maiores habilidades em confronto.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep477.jpg",
+        "dataExibicao": "2016-09-29"
+    },
+    {
+        "id": 3099,
+        "numero": 478,
+        "titulo": "O Sinal de União",
+        "sinopse": "Após uma intensa troca de ataques, Naruto e Sasuke relembram momentos de sua infância e entendem o verdadeiro significado de sua ligação.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep478.jpg",
+        "dataExibicao": "2016-10-06"
+    },
+    {
+        "id": 3100,
+        "numero": 479,
+        "titulo": "Naruto Uzumaki!!",
+        "sinopse": "A história de Naruto chega a um momento decisivo, mostrando o caminho percorrido pelo garoto que queria ser reconhecido por todos e se tornou um grande herói.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep479.jpg",
+        "dataExibicao": "2016-10-13"
+    },
+    {
+        "id": 3101,
+        "numero": 480,
+        "titulo": "Naruto e Hinata",
+        "sinopse": "O passado de Naruto e Hinata é relembrado, mostrando como os dois enfrentaram a solidão e construíram sua ligação.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep480.jpg",
+        "dataExibicao": "2016-10-20"
+    },
+    {
+        "id": 3102,
+        "numero": 481,
+        "titulo": "Sasuke e Sakura",
+        "sinopse": "O episódio mostra a infância de Sasuke e Sakura, revelando momentos importantes da formação dos dois personagens.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep481.jpg",
+        "dataExibicao": "2016-10-27"
+    },
+    {
+        "id": 3103,
+        "numero": 482,
+        "titulo": "Gaara e Shikamaru",
+        "sinopse": "O passado de Gaara e Shikamaru é mostrado, destacando suas dificuldades, amizades e mudanças ao longo da vida.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep482.jpg",
+        "dataExibicao": "2016-11-03"
+    },
+    {
+        "id": 3104,
+        "numero": 483,
+        "titulo": "Jiraiya e Kakashi",
+        "sinopse": "O episódio apresenta histórias da juventude de Jiraiya e Kakashi, mostrando momentos importantes antes da Quarta Guerra Ninja.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep483.jpg",
+        "dataExibicao": "2016-11-10"
+    },
+    {
+        "id": 3105,
+        "numero": 484,
+        "titulo": "A História de Sasuke: Nascer do Sol - O Humano Explosivo",
+        "sinopse": "Após a Quarta Guerra Ninja, Sasuke inicia uma jornada de redenção enquanto investiga misteriosos desaparecimentos de ninjas.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep484.jpg",
+        "dataExibicao": "2016-12-01"
+    },
+    {
+        "id": 3106,
+        "numero": 485,
+        "titulo": "A História de Sasuke: Nascer do Sol - Coliseu",
+        "sinopse": "Sasuke continua sua investigação sobre os Humanos Explosivos e descobre novas pistas envolvendo o caso.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep485.jpg",
+        "dataExibicao": "2016-12-08"
+    },
+    {
+        "id": 3107,
+        "numero": 486,
+        "titulo": "A História de Sasuke: Nascer do Sol - Fūshin",
+        "sinopse": "Sasuke chega ao Coliseu de batalhas para encontrar respostas sobre o incidente dos Humanos Explosivos.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep486.jpg",
+        "dataExibicao": "2016-12-15"
+    },
+    {
+        "id": 3108,
+        "numero": 487,
+        "titulo": "A História de Sasuke: Nascer do Sol - O Ketsuryūgan",
+        "sinopse": "Sasuke descobre a verdadeira identidade de seu inimigo e enfrenta um poderoso genjutsu ligado ao Ketsuryūgan.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep487.jpg",
+        "dataExibicao": "2016-12-22"
+    },
+    {
+        "id": 3109,
+        "numero": 488,
+        "titulo": "A História de Sasuke: Nascer do Sol - O Último",
+        "sinopse": "Sasuke finalmente revela a conexão entre os Humanos Explosivos, o clã Chinoike e o clã Uchiha.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep488.jpg",
+        "dataExibicao": "2017-01-05"
+    },
+    {
+        "id": 3110,
+        "numero": 489,
+        "titulo": "A História de Shikamaru: Uma Nuvem Flutuando na Escuridão Silenciosa - A Situação Atual",
+        "sinopse": "Dois anos após a Quarta Guerra Ninja, Shikamaru assume novas responsabilidades e investiga o desaparecimento de vários ninjas.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep489.jpg",
+        "dataExibicao": "2017-01-12"
+    },
+    {
+        "id": 3111,
+        "numero": 490,
+        "titulo": "A História de Shikamaru: Uma Nuvem Flutuando na Escuridão Silenciosa - Nuvens Escuras",
+        "sinopse": "Shikamaru segue para a Terra do Silêncio para investigar ninjas desaparecidos e uma nova ameaça.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep490.jpg",
+        "dataExibicao": "2017-01-19"
+    },
+    {
+        "id": 3112,
+        "numero": 491,
+        "titulo": "A História de Shikamaru: Uma Nuvem Flutuando na Escuridão Silenciosa - Imprudência",
+        "sinopse": "Shikamaru e sua equipe se aproximam do Castelo Fushu e descobrem que Sai está sendo mantido como prisioneiro.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep491.jpg",
+        "dataExibicao": "2017-01-26"
+    },
+    {
+        "id": 3113,
+        "numero": 492,
+        "titulo": "A História de Shikamaru: Uma Nuvem Flutuando na Escuridão Silenciosa - Nuvem de Suspeita",
+        "sinopse": "Shikamaru é capturado enquanto tenta salvar Sai e impedir os planos de Gengo.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep492.jpg",
+        "dataExibicao": "2017-02-02"
+    },
+    {
+        "id": 3114,
+        "numero": 493,
+        "titulo": "A História de Shikamaru: Uma Nuvem Flutuando na Escuridão Silenciosa - Amanhecer",
+        "sinopse": "Ino, Choji e Temari chegam para ajudar Shikamaru na batalha final contra Gengo e seus planos malignos.",
+        "temporadaId": 20,
+        "animeId": 107,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep493.jpg",
+        "dataExibicao": "2017-02-09"
     }
 ]
