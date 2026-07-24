@@ -27104,5 +27104,245 @@
         "animeId": 91,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t4/ep88.jpg",
         "dataExibicao": "2008-12-11"
+    },
+    {
+        "id": 2722,
+        "numero": 89,
+        "titulo": "O Preço do Poder",
+        "sinopse": "Naruto continua enfrentando a dor causada pela perda do controle enquanto seus amigos tentam lidar com as consequências da batalha.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep89.jpg",
+        "dataExibicao": "2008-10-16"
+    },
+    {
+        "id": 2723,
+        "numero": 90,
+        "titulo": "A Determinação de um Shinobi",
+        "sinopse": "Naruto busca recuperar sua força de vontade enquanto Jiraiya relembra importantes momentos de sua jornada.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep90.jpg",
+        "dataExibicao": "2008-10-23"
+    },
+    {
+        "id": 2724,
+        "numero": 91,
+        "titulo": "A Descoberta do Esconderijo de Orochimaru",
+        "sinopse": "A equipe de Konoha recebe novas informações sobre o paradeiro de Orochimaru e inicia uma nova missão.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep91.jpg",
+        "dataExibicao": "2008-10-30"
+    },
+    {
+        "id": 2725,
+        "numero": 92,
+        "titulo": "Encontro",
+        "sinopse": "Naruto finalmente reencontra Sasuke após uma longa busca, mas o encontro não acontece como ele imaginava.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep92.jpg",
+        "dataExibicao": "2008-11-06"
+    },
+    {
+        "id": 2726,
+        "numero": 93,
+        "titulo": "Corações que se Conectam",
+        "sinopse": "Enquanto Naruto tenta convencer Sasuke a retornar, antigas lembranças e laços são colocados à prova.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep93.jpg",
+        "dataExibicao": "2008-11-13"
+    },
+    {
+        "id": 2727,
+        "numero": 94,
+        "titulo": "Uma Noite Chuvosa",
+        "sinopse": "Após o reencontro, cada integrante da equipe precisa lidar com as consequências emocionais da missão fracassada.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep94.jpg",
+        "dataExibicao": "2008-11-20"
+    },
+    {
+        "id": 2728,
+        "numero": 95,
+        "titulo": "Os Dois Amuletos",
+        "sinopse": "Naruto e seus companheiros refletem sobre o significado dos laços que unem as pessoas e a força necessária para protegê-los.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep95.jpg",
+        "dataExibicao": "2008-11-27"
+    },
+    {
+        "id": 2729,
+        "numero": 96,
+        "titulo": "O Inimigo Invisível",
+        "sinopse": "Uma nova ameaça surge nas sombras, colocando Konoha novamente em estado de alerta.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep96.jpg",
+        "dataExibicao": "2008-12-04"
+    },
+    {
+        "id": 2730,
+        "numero": 97,
+        "titulo": "Reflexão",
+        "sinopse": "Naruto reflete sobre seus recentes confrontos enquanto Konoha tenta compreender os movimentos da Akatsuki e as ameaças que ainda estão por vir.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep97.jpg",
+        "dataExibicao": "2008-12-11"
+    },
+    {
+        "id": 2731,
+        "numero": 98,
+        "titulo": "O Alvo Aparece",
+        "sinopse": "Novas informações colocam a equipe em movimento, enquanto antigos inimigos voltam a agir nas sombras.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep98.jpg",
+        "dataExibicao": "2008-12-18"
+    },
+    {
+        "id": 2732,
+        "numero": 99,
+        "titulo": "O Demônio de Três Caudas",
+        "sinopse": "A missão para localizar o Sanbi se intensifica quando Naruto e seus companheiros se aproximam da poderosa criatura.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep99.jpg",
+        "dataExibicao": "2008-12-25"
+    },
+    {
+        "id": 2733,
+        "numero": 100,
+        "titulo": "Dentro da Névoa",
+        "sinopse": "A equipe enfrenta dificuldades para localizar o Três-Caudas enquanto perigos ocultos surgem na espessa névoa.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep100.jpg",
+        "dataExibicao": "2009-01-08"
+    },
+    {
+        "id": 2734,
+        "numero": 101,
+        "titulo": "Os Sentimentos de Todos",
+        "sinopse": "Cada integrante da missão enfrenta seus próprios desafios enquanto tenta impedir que a Akatsuki capture o Sanbi.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep101.jpg",
+        "dataExibicao": "2009-01-15"
+    },
+    {
+        "id": 2735,
+        "numero": 102,
+        "titulo": "Reagrupamento",
+        "sinopse": "As equipes reorganizam sua estratégia após sucessivos confrontos contra os agentes de Orochimaru e da Akatsuki.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep102.jpg",
+        "dataExibicao": "2009-01-22"
+    },
+    {
+        "id": 2736,
+        "numero": 103,
+        "titulo": "A Barreira de Selamento",
+        "sinopse": "A captura do Três-Caudas entra em sua fase decisiva quando uma poderosa barreira é preparada para conter a criatura.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep103.jpg",
+        "dataExibicao": "2009-01-29"
+    },
+    {
+        "id": 2737,
+        "numero": 104,
+        "titulo": "A Batalha pelo Três-Caudas",
+        "sinopse": "A disputa pelo controle do Sanbi atinge seu auge, colocando Konoha, Orochimaru e a Akatsuki em rota de colisão.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep104.jpg",
+        "dataExibicao": "2009-02-05"
+    },
+    {
+        "id": 2738,
+        "numero": 105,
+        "titulo": "À Beira do Colapso",
+        "sinopse": "Enquanto a batalha continua, os ninjas de Konoha precisam resistir ao enorme poder liberado pelo Sanbi.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep105.jpg",
+        "dataExibicao": "2009-02-12"
+    },
+    {
+        "id": 2739,
+        "numero": 106,
+        "titulo": "O Destino de Yukimaru",
+        "sinopse": "Yukimaru precisa tomar uma importante decisão que poderá mudar o rumo da missão envolvendo o Três-Caudas.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep106.jpg",
+        "dataExibicao": "2009-02-19"
+    },
+    {
+        "id": 2740,
+        "numero": 107,
+        "titulo": "Memórias Compartilhadas",
+        "sinopse": "As lembranças do passado fortalecem os laços entre Naruto, Yukimaru e os demais envolvidos na missão.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep107.jpg",
+        "dataExibicao": "2009-02-26"
+    },
+    {
+        "id": 2741,
+        "numero": 108,
+        "titulo": "A Captura do Três-Caudas",
+        "sinopse": "A Akatsuki finalmente executa seu plano para capturar o Sanbi, alterando o equilíbrio de forças entre as vilas.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep108.jpg",
+        "dataExibicao": "2009-03-05"
+    },
+    {
+        "id": 2742,
+        "numero": 109,
+        "titulo": "Contra-Ataque",
+        "sinopse": "Os ninjas de Konoha tentam reagir à ofensiva inimiga, mas o tempo está se esgotando.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep109.jpg",
+        "dataExibicao": "2009-03-12"
+    },
+    {
+        "id": 2743,
+        "numero": 110,
+        "titulo": "Memórias do Pecado",
+        "sinopse": "Enquanto a missão chega ao fim, antigos acontecimentos voltam à tona e influenciam as decisões dos envolvidos.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep110.jpg",
+        "dataExibicao": "2009-03-19"
+    },
+    {
+        "id": 2744,
+        "numero": 111,
+        "titulo": "Promessa Quebrada",
+        "sinopse": "Os sobreviventes precisam lidar com as consequências da batalha e seguir em frente apesar das perdas sofridas.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep111.jpg",
+        "dataExibicao": "2009-03-26"
+    },
+    {
+        "id": 2745,
+        "numero": 112,
+        "titulo": "O Lugar Para Onde Retornar",
+        "sinopse": "Com a missão concluída, Naruto e seus companheiros retornam à Vila da Folha, preparando-se para os desafios que ainda os aguardam.",
+        "temporadaId": 5,
+        "animeId": 92,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t5/ep112.jpg",
+        "dataExibicao": "2009-04-09"
     }
 ]
