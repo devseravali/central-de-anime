@@ -27734,5 +27734,245 @@
         "animeId": 94,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t7/ep151.jpg",
         "dataExibicao": "2010-03-11"
+    },
+    {
+        "id": 2785,
+        "numero": 152,
+        "titulo": "Notícias Sombrias",
+        "sinopse": "O Time Kakashi retorna à Vila Oculta da Folha após concluir sua missão. Enquanto Naruto relembra a conversa que teve com Itachi, ele é chamado por Tsunade e descobre uma notícia chocante sobre Jiraiya.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep152.jpg",
+        "dataExibicao": "2010-03-25"
+    },
+    {
+        "id": 2786,
+        "numero": 153,
+        "titulo": "Seguindo os Passos do Mestre",
+        "sinopse": "Shikamaru tenta decifrar a mensagem deixada por Jiraiya antes de morrer, mas não consegue entender o código. Ele pede ajuda a Naruto, acreditando que ele possa descobrir o significado.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep153.jpg",
+        "dataExibicao": "2010-03-25"
+    },
+    {
+        "id": 2787,
+        "numero": 154,
+        "titulo": "Decifração",
+        "sinopse": "O código deixado por Jiraiya finalmente é decifrado, mas qual será o verdadeiro significado da mensagem? Enquanto isso, Naruto continua seu treinamento.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep154.jpg",
+        "dataExibicao": "2010-04-08"
+    },
+    {
+        "id": 2788,
+        "numero": 155,
+        "titulo": "O Primeiro Desafio",
+        "sinopse": "Depois de ler o primeiro livro de Jiraiya, Naruto fica mais determinado do que nunca a concluir seu treinamento. Enquanto isso, o Raikage planeja reunir todos os Kage.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep155.jpg",
+        "dataExibicao": "2010-04-08"
+    },
+    {
+        "id": 2789,
+        "numero": 156,
+        "titulo": "Superando o Mestre",
+        "sinopse": "Naruto consegue dominar o Modo Sábio, levando a técnica além do nível alcançado por Jiraiya. Enquanto isso, Pain começa seus preparativos para atacar Konoha.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep156.jpg",
+        "dataExibicao": "2010-04-15"
+    },
+    {
+        "id": 2790,
+        "numero": 157,
+        "titulo": "Ataque à Vila da Folha!",
+        "sinopse": "Pain, o líder da Akatsuki, inicia sua invasão à Vila Oculta da Folha. Os ninjas da Folha se reúnem para proteger Naruto, mas Kakashi precisa enfrentar Pain.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep157.jpg",
+        "dataExibicao": "2010-04-22"
+    },
+    {
+        "id": 2791,
+        "numero": 158,
+        "titulo": "O Poder da Crença",
+        "sinopse": "Tsunade ordena o retorno de Naruto à vila, mas os conselheiros não confiam em sua decisão. Enquanto isso, Kakashi luta contra Pain para descobrir suas habilidades.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep158.jpg",
+        "dataExibicao": "2010-04-29"
+    },
+    {
+        "id": 2792,
+        "numero": 159,
+        "titulo": "Pain vs. Kakashi",
+        "sinopse": "Kakashi continua sua batalha contra Pain. Com a chegada de Chouji e Chouza, a situação parece melhorar, mas Pain ainda possui outras estratégias.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep159.jpg",
+        "dataExibicao": "2010-05-06"
+    },
+    {
+        "id": 2793,
+        "numero": 160,
+        "titulo": "O Mistério de Pain",
+        "sinopse": "Quando Kakashi cai diante de Pain, a situação de Konoha piora. Shizune e Inoichi estão próximos de descobrir o segredo de Pain, mas precisam escapar com a verdade.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep160.jpg",
+        "dataExibicao": "2010-05-13"
+    },
+    {
+        "id": 2794,
+        "numero": 161,
+        "titulo": "O Sobrenome é Sarutobi. O Nome é Konohamaru!",
+        "sinopse": "Ebisu protege Konohamaru de Pain e se recusa a revelar qualquer informação sobre Naruto. Konohamaru decide lutar para proteger seu mestre.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep161.jpg",
+        "dataExibicao": "2010-05-20"
+    },
+    {
+        "id": 2795,
+        "numero": 162,
+        "titulo": "Pain ao Mundo",
+        "sinopse": "Pain confronta Tsunade e questiona sobre o paradeiro de Naruto. Após conseguir as informações que precisa, Pain libera um ataque devastador contra a vila.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep162.jpg",
+        "dataExibicao": "2010-05-27"
+    },
+    {
+        "id": 2796,
+        "numero": 163,
+        "titulo": "Exploda! Modo Sábio",
+        "sinopse": "Naruto retorna e encontra a vila destruída pelo ataque Shinra Tensei de Pain. Ele pede que todos fiquem afastados enquanto enfrenta os seis caminhos de Pain.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep163.jpg",
+        "dataExibicao": "2010-06-03"
+    },
+    {
+        "id": 2797,
+        "numero": 164,
+        "titulo": "Perigo! Limite do Modo Sábio Alcançado",
+        "sinopse": "Naruto começa a derrotar os corpos de Pain um por um, mas quando o Modo Sábio chega ao limite, Pain tenta assumir o controle da batalha. Será que Naruto possui um novo plano?",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep164.jpg",
+        "dataExibicao": "2010-06-10"
+    },
+    {
+        "id": 2798,
+        "numero": 165,
+        "titulo": "A Nove-Caudas Capturada!",
+        "sinopse": "O Reino Divino de Pain finalmente entra na batalha. Enquanto os aliados sapos de Naruto são derrotados um por um, a situação fica cada vez mais difícil. Naruto conseguirá derrotar Pain?",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep165.jpg",
+        "dataExibicao": "2010-06-17"
+    },
+    {
+        "id": 2799,
+        "numero": 166,
+        "titulo": "Confissões",
+        "sinopse": "Pain revela a Naruto os motivos de suas ações. Hinata aparece para proteger Naruto e confessa seus sentimentos por ele, mas sua intervenção muda completamente a batalha.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep166.jpg",
+        "dataExibicao": "2010-06-24"
+    },
+    {
+        "id": 2800,
+        "numero": 167,
+        "titulo": "Devastação Planetária",
+        "sinopse": "A raiva de Naruto faz com que ele libere seis caudas da Kyūbi contra Pain. Para enfrentar esse poder, Pain utiliza sua técnica mais poderosa.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep167.jpg",
+        "dataExibicao": "2010-07-01"
+    },
+    {
+        "id": 2801,
+        "numero": 168,
+        "titulo": "O Quarto Hokage",
+        "sinopse": "O Quarto Hokage, Minato Namikaze, aparece na mente de Naruto e impede que ele libere completamente a Kyūbi. O encontro entre pai e filho dá a Naruto a confiança necessária.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep168.jpg",
+        "dataExibicao": "2010-07-15"
+    },
+    {
+        "id": 2802,
+        "numero": 169,
+        "titulo": "Os Dois Discípulos",
+        "sinopse": "Naruto encontra Nagato e promete responder à pergunta que Pain fez anteriormente. Antes disso, ele deseja conhecer a história que levou Nagato a seguir esse caminho.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep169.jpg",
+        "dataExibicao": "2010-07-22"
+    },
+    {
+        "id": 2803,
+        "numero": 170,
+        "titulo": "Grande Aventura! A Busca pelo Legado do Quarto Hokage ~ Parte 1",
+        "sinopse": "Minato Namikaze deixou seu legado antes de morrer. Naruto, Sakura e Sasuke tentam encontrar esse legado antes dos outros times ninjas.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep170.jpg",
+        "dataExibicao": "2010-07-29"
+    },
+    {
+        "id": 2804,
+        "numero": 171,
+        "titulo": "Grande Aventura! A Busca pelo Legado do Quarto Hokage ~ Parte 2",
+        "sinopse": "Naruto, Sakura, Shikamaru, Ino e Chouji continuam procurando o legado do Quarto Hokage enquanto enfrentam visitantes inesperados.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep171.jpg",
+        "dataExibicao": "2010-07-29"
+    },
+    {
+        "id": 2805,
+        "numero": 172,
+        "titulo": "Encontro",
+        "sinopse": "Nagato conta a Naruto como conheceu Yahiko e Konan e como acabou se tornando discípulo de Jiraiya.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep172.jpg",
+        "dataExibicao": "2010-08-05"
+    },
+    {
+        "id": 2806,
+        "numero": 173,
+        "titulo": "A Origem de Pain",
+        "sinopse": "Nagato revela a verdade sobre o que aconteceu com Yahiko e o motivo que o fez abandonar os ideais de Jiraiya. Agora ele espera ouvir a resposta de Naruto.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep173.jpg",
+        "dataExibicao": "2010-08-12"
+    },
+    {
+        "id": 2807,
+        "numero": 174,
+        "titulo": "A História de Naruto Uzumaki",
+        "sinopse": "Naruto responde a Nagato dizendo que nunca abandonará o legado de seu mestre e continuará buscando a paz, independentemente da dor que enfrentar.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep174.jpg",
+        "dataExibicao": "2010-08-19"
+    },
+    {
+        "id": 2808,
+        "numero": 175,
+        "titulo": "O Herói da Vila Oculta da Folha",
+        "sinopse": "Nagato decide acreditar em Naruto e usa o Jutsu: Rinne Tensei para reviver todos que morreram no ataque à vila. Ao retornar para Konoha, Naruto é finalmente reconhecido como um verdadeiro herói.",
+        "temporadaId": 8,
+        "animeId": 95,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t8/ep175.jpg",
+        "dataExibicao": "2010-08-26"
     }
 ]
