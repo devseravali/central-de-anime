@@ -29424,5 +29424,285 @@
         "animeId": 101,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t14/ep320.jpg",
         "dataExibicao": "2013-07-04"
+    },
+    {
+        "id": 2954,
+        "numero": 321,
+        "titulo": "Os Reforços Chegam",
+        "sinopse": "A habilidade do Zetsu Branco de copiar aparências causa confusão e desconfiança entre as Forças Aliadas Shinobi. Naruto chega para ajudar e, usando suas habilidades sensoriais, identifica todos os clones disfarçados, mudando o rumo da batalha.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep321.jpg",
+        "dataExibicao": "2013-07-18"
+    },
+    {
+        "id": 2955,
+        "numero": 322,
+        "titulo": "Madara Uchiha",
+        "sinopse": "O shinobi revivido que aparece diante de Gaara e Ohnoki é revelado como ninguém menos que Madara Uchiha, levantando dúvidas sobre a identidade do homem mascarado que dizia ser Madara.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep322.jpg",
+        "dataExibicao": "2013-07-25"
+    },
+    {
+        "id": 2956,
+        "numero": 323,
+        "titulo": "Os Cinco Kages se Reúnem",
+        "sinopse": "O poder do Madara Uchiha revivido supera todas as expectativas das Forças Aliadas. Mesmo diante dessa diferença de poder, Ohnoki, Naruto e Gaara recusam-se a desistir.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep323.jpg",
+        "dataExibicao": "2013-08-01"
+    },
+    {
+        "id": 2957,
+        "numero": 324,
+        "titulo": "A Máscara Inquebrável e a Bolha Quebrada",
+        "sinopse": "Naruto e Killer Bee enfrentam o homem mascarado que acreditavam ser Madara Uchiha, além dos Jinchuurikis revividos. Naruto fica surpreso ao reconhecer um deles.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep324.jpg",
+        "dataExibicao": "2013-08-08"
+    },
+    {
+        "id": 2958,
+        "numero": 325,
+        "titulo": "Jinchuuriki Contra Jinchuuriki!!",
+        "sinopse": "Naruto e Killer Bee enfrentam os seis Jinchuurikis revividos equipados com o Rinnegan. Usando sua experiência contra os Seis Caminhos de Pain, Naruto cria uma estratégia para derrotá-los.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep325.jpg",
+        "dataExibicao": "2013-08-15"
+    },
+    {
+        "id": 2959,
+        "numero": 326,
+        "titulo": "Quatro Caudas, o Rei dos Macacos Sábios",
+        "sinopse": "Kakashi e Guy chegam para ajudar Naruto e Killer Bee. A batalha aumenta de intensidade quando três dos Jinchuurikis revividos entram no Estado Bijuu.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep326.jpg",
+        "dataExibicao": "2013-08-22"
+    },
+    {
+        "id": 2960,
+        "numero": 327,
+        "titulo": "Nove Caudas",
+        "sinopse": "Naruto entra no mundo interior do Quatro Caudas e promete libertá-lo do controle de Madara. A Nove Caudas relembra todo o tempo que passou selada dentro de Naruto.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep327.jpg",
+        "dataExibicao": "2013-08-29"
+    },
+    {
+        "id": 2961,
+        "numero": 328,
+        "titulo": "Kurama",
+        "sinopse": "Naruto continua sua conversa com a Nove Caudas e começa a compreender melhor os sentimentos da Bijuu que esteve selada dentro dele por tantos anos.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep328.jpg",
+        "dataExibicao": "2013-08-29"
+    },
+    {
+        "id": 2962,
+        "numero": 329,
+        "titulo": "Dupla de Dois Homens",
+        "sinopse": "Naruto usa o último de seu chakra tentando libertar as Bestas com Cauda do controle de Madara. Quando tudo parece perdido, Kurama finalmente reconhece Naruto como seu Jinchuuriki e oferece sua ajuda.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep329.jpg",
+        "dataExibicao": "2013-09-05"
+    },
+    {
+        "id": 2963,
+        "numero": 330,
+        "titulo": "A Promessa da Vitória",
+        "sinopse": "A batalha começa a mudar a favor das Forças Aliadas, mas muitos ainda duvidam que possam vencer Madara Uchiha. Para aumentar a esperança dos soldados, Shikaku envia uma mensagem para todos.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep330.jpg",
+        "dataExibicao": "2013-09-12"
+    },
+    {
+        "id": 2964,
+        "numero": 331,
+        "titulo": "Olhos Que Veem no Escuro",
+        "sinopse": "A busca de Suigetsu e Juugo por Sasuke os leva a um antigo esconderijo de Orochimaru, onde encontram informações que podem mudar o destino da Quarta Grande Guerra Ninja.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep331.jpg",
+        "dataExibicao": "2013-09-19"
+    },
+    {
+        "id": 2965,
+        "numero": 332,
+        "titulo": "A Vontade de Pedra",
+        "sinopse": "Os Cinco Kages são derrotados pelos ataques devastadores do verdadeiro Madara Uchiha. Quando Ohnoki pensa em desistir, ele se lembra das palavras de seu antigo mestre.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep332.jpg",
+        "dataExibicao": "2013-09-26"
+    },
+    {
+        "id": 2954,
+        "numero": 333,
+        "titulo": "Os Riscos da Reencarnação do Mundo Impuro",
+        "sinopse": "Tsunade deixa seu posto como ninja médica para se juntar aos outros Kages na batalha contra Madara. Enquanto isso, Sasuke segue atrás de Itachi e descobre que seu irmão pretende impedir o Jutsu de Reanimação.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep333.jpg",
+        "dataExibicao": "2013-10-03"
+    },
+    {
+        "id": 2955,
+        "numero": 334,
+        "titulo": "Dupla de Irmãos",
+        "sinopse": "Sasuke e Itachi se unem para impedir o Jutsu de Reanimação. Porém, a nova habilidade de Kabuto usando Energia Natural torna difícil para os irmãos acertarem seus ataques.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep334.jpg",
+        "dataExibicao": "2013-10-10"
+    },
+    {
+        "id": 2956,
+        "numero": 335,
+        "titulo": "Cada Um com Sua Própria Folha",
+        "sinopse": "Kabuto tenta convencer Sasuke de que eles possuem o mesmo objetivo: destruir a Vila da Folha. Porém, Sasuke rejeita essa ideia.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep335.jpg",
+        "dataExibicao": "2013-10-24"
+    },
+    {
+        "id": 2957,
+        "numero": 336,
+        "titulo": "Kabuto Yakushi",
+        "sinopse": "O passado de Kabuto é revelado. Quando criança, ele foi criado por Nonou em um orfanato da Vila da Folha, até ser envolvido nos planos de Danzo e Orochimaru.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep336.jpg",
+        "dataExibicao": "2013-10-31"
+    },
+    {
+        "id": 2958,
+        "numero": 337,
+        "titulo": "O Izanami Ativado",
+        "sinopse": "Kabuto revela que modificou seu próprio corpo usando o DNA de vários shinobi, incluindo membros do Quarteto do Som e Orochimaru.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep337.jpg",
+        "dataExibicao": "2013-11-07"
+    },
+    {
+        "id": 2959,
+        "numero": 338,
+        "titulo": "Izanagi e Izanami",
+        "sinopse": "Com o Izanami ativado, Kabuto fica preso em um ciclo infinito. Itachi explica a Sasuke a origem dessas técnicas proibidas do clã Uchiha.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep338.jpg",
+        "dataExibicao": "2013-11-14"
+    },
+    {
+        "id": 2960,
+        "numero": 339,
+        "titulo": "Eu Sempre Vou Amar Você",
+        "sinopse": "Enquanto os Cinco Kages enfrentam Madara, Itachi mostra a Sasuke toda a verdade sobre o massacre do clã Uchiha usando seu Sharingan.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep339.jpg",
+        "dataExibicao": "2013-11-21"
+    },
+    {
+        "id": 2961,
+        "numero": 340,
+        "titulo": "Liberação do Jutsu de Reanimação",
+        "sinopse": "Graças a Itachi, o Jutsu de Reanimação é cancelado e os shinobi revividos retornam ao descanso. Porém, Madara continua no campo de batalha.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep340.jpg",
+        "dataExibicao": "2013-11-28"
+    },
+    {
+        "id": 2962,
+        "numero": 341,
+        "titulo": "O Retorno de Orochimaru",
+        "sinopse": "Suigetsu e Jugo encontram Sasuke. Buscando respostas sobre o passado da Vila da Folha, Sasuke decide trazer Orochimaru de volta.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep341.jpg",
+        "dataExibicao": "2013-12-05"
+    },
+    {
+        "id": 2963,
+        "numero": 342,
+        "titulo": "O Segredo da Técnica de Transporte",
+        "sinopse": "O Dez-Caudas começa sua transformação após absorver o chakra das Bestas com Cauda. Naruto, Killer Bee, Kakashi e Guy tentam impedir o inimigo.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep342.jpg",
+        "dataExibicao": "2013-12-12"
+    },
+    {
+        "id": 2964,
+        "numero": 343,
+        "titulo": "Quem é Você?",
+        "sinopse": "Kakashi descobre uma ligação entre a técnica de transporte do homem mascarado e seu próprio Kamui. Naruto consegue quebrar a máscara do inimigo.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep343.jpg",
+        "dataExibicao": "2013-12-19"
+    },
+    {
+        "id": 2965,
+        "numero": 344,
+        "titulo": "Obito e Madara",
+        "sinopse": "A identidade do homem mascarado é revelada: ele é Obito Uchiha, antigo companheiro de Kakashi que todos acreditavam estar morto.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep344.jpg",
+        "dataExibicao": "2014-01-09"
+    },
+    {
+        "id": 2966,
+        "numero": 345,
+        "titulo": "Estou no Inferno",
+        "sinopse": "Após a batalha da Ponte Kannabi, Obito é salvo por Madara e começa sua recuperação enquanto tenta reencontrar Kakashi e Rin.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep345.jpg",
+        "dataExibicao": "2014-01-16"
+    },
+    {
+        "id": 2967,
+        "numero": 346,
+        "titulo": "Mundo dos Sonhos",
+        "sinopse": "Obito presencia a morte de Rin pelas mãos de Kakashi e decide seguir o plano de Madara para criar um mundo ideal onde ela ainda exista.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep346.jpg",
+        "dataExibicao": "2014-01-23"
+    },
+    {
+        "id": 2968,
+        "numero": 347,
+        "titulo": "Sombra Rastejante",
+        "sinopse": "Jiraiya relembra seus antigos alunos da Akatsuki e descobre que eles estão tentando mudar a Vila da Chuva através do diálogo.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep347.jpg",
+        "dataExibicao": "2014-01-23"
+    },
+    {
+        "id": 2969,
+        "numero": 348,
+        "titulo": "A Nova Akatsuki",
+        "sinopse": "Danzo engana Hanzo fazendo-o acreditar que a Akatsuki ameaça a paz da Vila da Chuva. Hanzo prepara uma armadilha contra o grupo.",
+        "temporadaId": 15,
+        "animeId": 102,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t15/ep348.jpg",
+        "dataExibicao": "2014-01-30"
     }
 ]
