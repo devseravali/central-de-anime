@@ -34884,5 +34884,505 @@
         "animeId": 109,
         "imagemUrl": "../../images/episodios/bleach/t1/ep366.jpg",
         "dataExibicao": "2012-03-27"
+    },
+    {
+        "id": 3476,
+        "numero": 1,
+        "titulo": "A Guerra Sangrenta dos Mil Anos",
+        "sinopse": "A Sociedade das Almas percebe um aumento repentino no número de Hollows destruídos. Enquanto isso, Ichigo Kurosaki e seus amigos enfrentam uma nova ameaça que começa a surgir no mundo espiritual.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep1.jpg",
+        "dataExibicao": "2022-10-11"
+    },
+    {
+        "id": 3477,
+        "numero": 2,
+        "titulo": "Pedras Fundamentais",
+        "sinopse": "Os Arrancars Nel Tu e Pesche Guatiche procuram Ichigo para pedir ajuda, revelando que Hueco Mundo está sendo atacado por um inimigo desconhecido. Ichigo decide ir até lá para investigar.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep2.jpg",
+        "dataExibicao": "2022-10-18"
+    },
+    {
+        "id": 3478,
+        "numero": 3,
+        "titulo": "A Marcha da Estrela Cruzada",
+        "sinopse": "Ichigo e seus amigos chegam a Hueco Mundo e enfrentam Quilge Opie, descobrindo que seus novos inimigos são Quincy.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep3.jpg",
+        "dataExibicao": "2022-10-25"
+    },
+    {
+        "id": 3479,
+        "numero": 4,
+        "titulo": "Mate a Sombra",
+        "sinopse": "O Wandenreich mobiliza sua força de elite, os Stern Ritter, para destruir a Sociedade das Almas. Os Quincy invadem a Seireitei e iniciam um massacre contra os Shinigami.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep4.jpg",
+        "dataExibicao": "2022-11-01"
+    },
+    {
+        "id": 3480,
+        "numero": 5,
+        "titulo": "Fúria como um Relâmpago",
+        "sinopse": "Quilge Opie usa seu poder para prender Ichigo dentro da Garganta. Enquanto tenta escapar, Ichigo ouve os gritos dos Shinigami que estão sendo derrotados pelo inimigo.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep5.jpg",
+        "dataExibicao": "2022-11-08"
+    },
+    {
+        "id": 3481,
+        "numero": 6,
+        "titulo": "O Fogo",
+        "sinopse": "Genryusai Yamamoto enfrenta Yhwach pela primeira vez em mil anos. O confronto entre os dois líderes começa enquanto a Sociedade das Almas enfrenta uma mudança assustadora.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep6.jpg",
+        "dataExibicao": "2022-11-15"
+    },
+    {
+        "id": 3482,
+        "numero": 7,
+        "titulo": "Nascido na Escuridão",
+        "sinopse": "Yamamoto descobre que o Yhwach que enfrentou era apenas um impostor. O verdadeiro Yhwach aparece e derrota o Capitão-Comandante, causando choque entre os Shinigami.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep7.jpg",
+        "dataExibicao": "2022-11-22"
+    },
+    {
+        "id": 3483,
+        "numero": 8,
+        "titulo": "O Projeto Estrela Cadente [Zero Mix]",
+        "sinopse": "Os sobreviventes do ataque dos Stern Ritter são procurados na Seireitei. Enquanto isso, Ichigo pede ajuda a Mayuri Kurotsuchi para reparar sua Tensa Zangetsu quebrada.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep8.jpg",
+        "dataExibicao": "2022-11-29"
+    },
+    {
+        "id": 3484,
+        "numero": 9,
+        "titulo": "A Queda",
+        "sinopse": "A Divisão Zero leva Ichigo ao Palácio Real para prepará-lo para a próxima batalha. Enquanto isso, Kyoraku é nomeado o novo Capitão-Comandante.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep9.jpg",
+        "dataExibicao": "2022-12-06"
+    },
+    {
+        "id": 3485,
+        "numero": 10,
+        "titulo": "A Batalha",
+        "sinopse": "Kenpachi Zaraki remove seu tapa-olho para enfrentar Retsu Unohana, a primeira Kenpachi. Enquanto isso, Ichigo e Renji encontram o criador das Zanpakutō.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep10.jpg",
+        "dataExibicao": "2022-12-13"
+    },
+    {
+        "id": 3486,
+        "numero": 11,
+        "titulo": "Tudo Menos a Chuva",
+        "sinopse": "Ichigo é expulso do Palácio Real por falhar no teste de Ōetsu Nimaiya. Ao retornar ao Mundo Humano, ele começa a descobrir a verdade sobre seu passado e sua origem.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep11.jpg",
+        "dataExibicao": "2022-12-20"
+    },
+    {
+        "id": 3487,
+        "numero": 12,
+        "titulo": "Tudo Menos a Chuva: A Verdade de Junho",
+        "sinopse": "Isshin Shiba, capitão da 10ª Divisão, decide não revelar ao Capitão-Comandante seu encontro com a Quincy Masaki Kurosaki no Mundo Humano.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep12.jpg",
+        "dataExibicao": "2022-12-27"
+    },
+    {
+        "id": 3488,
+        "numero": 13,
+        "titulo": "A Lâmina Sou Eu",
+        "sinopse": "Ichigo descobre que nasceu da união entre um Shinigami e uma Quincy. Compreendendo finalmente sua verdadeira origem, ele decide retornar ao Palácio Real.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep13.jpg",
+        "dataExibicao": "2022-12-27"
+    },
+    {
+        "id": 3489,
+        "numero": 14,
+        "titulo": "Os Últimos 9 Dias",
+        "sinopse": "Ichigo se prepara para deixar o Palácio Real e retornar à Seireitei, mas Hyosube afirma que ele ainda não está pronto para derrotar Yhwach.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep14.jpg",
+        "dataExibicao": "2023-07-08"
+    },
+    {
+        "id": 3490,
+        "numero": 15,
+        "titulo": "Paz das Sombras",
+        "sinopse": "Yhwach inicia seu plano para destruir o mundo em nove dias. Os Shinigami começam a se preparar para a batalha final contra os Quincy.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep15.jpg",
+        "dataExibicao": "2023-07-15"
+    },
+    {
+        "id": 3491,
+        "numero": 16,
+        "titulo": "A Violência Fundamental",
+        "sinopse": "Mayuri recebe uma ligação de Urahara, que permaneceu em Hueco Mundo investigando os acontecimentos envolvendo os inimigos.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep16.jpg",
+        "dataExibicao": "2023-07-22"
+    },
+    {
+        "id": 3492,
+        "numero": 17,
+        "titulo": "Coração de Lobo",
+        "sinopse": "Os Stern Ritter continuam pressionando os Shinigami, deixando a Sociedade das Almas em uma situação cada vez mais desesperadora.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep17.jpg",
+        "dataExibicao": "2023-07-29"
+    },
+    {
+        "id": 3493,
+        "numero": 18,
+        "titulo": "Fúria no Ringue",
+        "sinopse": "Kensei Muguruma entra na batalha contra Mask De Masculine enquanto os confrontos entre Shinigami e Quincy continuam.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep18.jpg",
+        "dataExibicao": "2023-08-05"
+    },
+    {
+        "id": 3494,
+        "numero": 19,
+        "titulo": "A Névoa Branca",
+        "sinopse": "Rukia Kuchiki enfrenta Äs Nödt em uma batalha intensa, mostrando sua nova força e determinação.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep19.jpg",
+        "dataExibicao": "2023-08-12"
+    },
+    {
+        "id": 3495,
+        "numero": 20,
+        "titulo": "Eu Sou o Limite",
+        "sinopse": "Isane Kotetsu e Yachiru Kusajishi são atacadas por Gwenael Lee enquanto os combates contra os Stern Ritter continuam.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep20.jpg",
+        "dataExibicao": "2023-08-19"
+    },
+    {
+        "id": 3496,
+        "numero": 21,
+        "titulo": "A Estrela Sem Cabeça",
+        "sinopse": "Candice, Meninas, Giselle e Liltotto tentam derrotar Kenpachi Zaraki durante a batalha entre os Shinigamis e os Quincy.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep21.jpg",
+        "dataExibicao": "2023-08-26"
+    },
+    {
+        "id": 3497,
+        "numero": 22,
+        "titulo": "Marchando Contra os Zumbis",
+        "sinopse": "Ichigo tenta impedir Yhwach ao descobrir que o verdadeiro objetivo dele está no Palácio Real.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep22.jpg",
+        "dataExibicao": "2023-09-09"
+    },
+    {
+        "id": 3498,
+        "numero": 23,
+        "titulo": "Marchando Contra os Zumbis 2",
+        "sinopse": "Ikkaku, Yumichika e os Arrancars unem forças para enfrentar os zumbis criados por Giselle.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep23.jpg",
+        "dataExibicao": "2023-09-16"
+    },
+    {
+        "id": 3499,
+        "numero": 24,
+        "titulo": "Cedo Demais Para Vencer, Tarde Demais Para Saber",
+        "sinopse": "Yhwach finalmente chega ao Palácio Real e inicia sua invasão ao domínio do Rei das Almas.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep24.jpg",
+        "dataExibicao": "2023-09-23"
+    },
+    {
+        "id": 3500,
+        "numero": 25,
+        "titulo": "O Mestre",
+        "sinopse": "Yhwach enfrenta Ichibē Hyōsube, que protege o verdadeiro Palácio Real.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep25.jpg",
+        "dataExibicao": "2023-09-30"
+    },
+    {
+        "id": 3501,
+        "numero": 26,
+        "titulo": "Preto",
+        "sinopse": "Yhwach utiliza o Auswählen para conceder poder novamente aos membros derrotados da Guarda Real Quincy.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep26.jpg",
+        "dataExibicao": "2023-09-30"
+    },
+    {
+        "id": 3502,
+        "numero": 27,
+        "titulo": "A",
+        "sinopse": "A batalha entre a Divisão Zero e a Guarda Real de Yhwach pelo destino do Rei das Almas continua.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep27.jpg",
+        "dataExibicao": "2024-10-05"
+    },
+    {
+        "id": 3503,
+        "numero": 28,
+        "titulo": "Mate o Rei",
+        "sinopse": "Ichigo e seus amigos correm até o Palácio do Rei das Almas para impedir Yhwach.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep28.jpg",
+        "dataExibicao": "2024-10-12"
+    },
+    {
+        "id": 3504,
+        "numero": 29,
+        "titulo": "O Braço Sombrio",
+        "sinopse": "Ichigo tenta remover a espada que atravessou o Rei das Almas e salvar sua vida.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep29.jpg",
+        "dataExibicao": "2024-10-19"
+    },
+    {
+        "id": 3505,
+        "numero": 30,
+        "titulo": "O Traidor",
+        "sinopse": "Ukitake assume o lugar do Rei das Almas derrotado ao liberar o poder de Mimihagi.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep30.jpg",
+        "dataExibicao": "2024-10-26"
+    },
+    {
+        "id": 3506,
+        "numero": 31,
+        "titulo": "Contra o Julgamento",
+        "sinopse": "Yhwach está transbordando de poder após absorver o Rei das Almas.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep31.jpg",
+        "dataExibicao": "2024-11-02"
+    },
+    {
+        "id": 3507,
+        "numero": 32,
+        "titulo": "O Santo Recém-Nascido",
+        "sinopse": "Os Shinigamis se reúnem novamente para preparar seu contra-ataque contra os Quincy.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep32.jpg",
+        "dataExibicao": "2024-11-09"
+    },
+    {
+        "id": 3508,
+        "numero": 33,
+        "titulo": "Portão do Sol",
+        "sinopse": "Yhwach constrói seu novo castelo, Wahr Welt, após conquistar o Palácio Real.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep33.jpg",
+        "dataExibicao": "2024-11-16"
+    },
+    {
+        "id": 3509,
+        "numero": 34,
+        "titulo": "Bebê, Segure Sua Mão",
+        "sinopse": "Kenpachi e o grupo de Mayuri avançam pelo Wahr Welt enquanto enfrentam novos inimigos.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep34.jpg",
+        "dataExibicao": "2024-11-23"
+    },
+    {
+        "id": 3510,
+        "numero": 35,
+        "titulo": "Não Persiga uma Sombra",
+        "sinopse": "A mudança na pressão espiritual de Mayuri também é sentida por Urahara e Kyoraku.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep35.jpg",
+        "dataExibicao": "2024-11-30"
+    },
+    {
+        "id": 3511,
+        "numero": 36,
+        "titulo": "Bebê, Segure Sua Mão 2 [Meu Sonho Sem Fim]",
+        "sinopse": "Nemu ignora as ordens de Mayuri e interfere em sua batalha contra Pernida.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep36.jpg",
+        "dataExibicao": "2024-12-07"
+    },
+    {
+        "id": 3512,
+        "numero": 37,
+        "titulo": "Sombras Desaparecidas",
+        "sinopse": "Lille Barro sofre uma nova transformação para perseguir e julgar Kyoraku.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep37.jpg",
+        "dataExibicao": "2024-12-14"
+    },
+    {
+        "id": 3513,
+        "numero": 38,
+        "titulo": "Amigo",
+        "sinopse": "Enquanto a batalha entre Shinigamis e Quincy continua, Haschwalth encontra Bazz-B dentro do Wahr Welt.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep38.jpg",
+        "dataExibicao": "2024-12-21"
+    },
+    {
+        "id": 3514,
+        "numero": 39,
+        "titulo": "A Resposta Visível",
+        "sinopse": "Kyoraku abre caminho para que os Shinigamis avancem dentro do Wahr Welt, mas Gerard Valkyrie impede sua passagem.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep39.jpg",
+        "dataExibicao": "2024-12-28"
+    },
+    {
+        "id": 3515,
+        "numero": 40,
+        "titulo": "Minhas Últimas Palavras",
+        "sinopse": "Haschwalth ataca Uryū para julgá-lo. A explosão leva Ichigo ao local, onde ele reencontra Uryū.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep40.jpg",
+        "dataExibicao": "2024-12-29"
+    },
+    {
+        "id": 3516,
+        "numero": 41,
+        "titulo": "Deus do Trovão",
+        "sinopse": "Ichigo, Orihime e Chad partem para derrotar Yhwach, enquanto Yoruichi enfrenta Nakk Le Vaar em uma intensa batalha.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep41.jpg",
+        "dataExibicao": "2026-07-25"
+    },
+    {
+        "id": 3517,
+        "numero": 42,
+        "titulo": "Filho das Trevas",
+        "sinopse": "A batalha final contra Yhwach continua enquanto Ichigo e seus aliados enfrentam novas ameaças dentro do Wahr Welt.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep42.jpg",
+        "dataExibicao": "2026-08-01"
+    },
+    {
+        "id": 3518,
+        "numero": 43,
+        "titulo": "Sangue pelos Meus Ossos",
+        "sinopse": "Os Shinigamis continuam sua luta desesperada contra os Quincy enquanto o destino dos mundos está em jogo.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep43.jpg",
+        "dataExibicao": "2026-08-08"
+    },
+    {
+        "id": 3519,
+        "numero": 44,
+        "titulo": "Episódio 44",
+        "sinopse": "Episódio da batalha final entre Shinigamis e Quincy.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep44.jpg",
+        "dataExibicao": "2026-08-15"
+    },
+    {
+        "id": 3520,
+        "numero": 45,
+        "titulo": "Episódio 45",
+        "sinopse": "A batalha contra Yhwach e seus aliados continua no confronto decisivo pelo equilíbrio dos mundos.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep45.jpg",
+        "dataExibicao": "2026-08-22"
+    },
+    {
+        "id": 3521,
+        "numero": 46,
+        "titulo": "Episódio 46",
+        "sinopse": "Os guerreiros restantes enfrentam seus maiores desafios enquanto a guerra chega ao seu clímax.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep46.jpg",
+        "dataExibicao": "2026-08-29"
+    },
+    {
+        "id": 3522,
+        "numero": 47,
+        "titulo": "Episódio 47",
+        "sinopse": "A batalha final se aproxima de seu momento decisivo com todos os lados dando seus últimos passos.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep47.jpg",
+        "dataExibicao": "2026-09-05"
+    },
+    {
+        "id": 3523,
+        "numero": 48,
+        "titulo": "Episódio 48",
+        "sinopse": "Os aliados de Ichigo continuam lutando para proteger o futuro dos três mundos.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep48.jpg",
+        "dataExibicao": "2026-09-12"
+    },
+    {
+        "id": 3524,
+        "numero": 49,
+        "titulo": "Episódio 49",
+        "sinopse": "O confronto final entre Ichigo e Yhwach se aproxima de sua conclusão.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep49.jpg",
+        "dataExibicao": "2026-09-19"
+    },
+    {
+        "id": 3525,
+        "numero": 50,
+        "titulo": "Episódio 50",
+        "sinopse": "A Guerra Sangrenta dos Mil Anos chega ao seu encerramento.",
+        "temporadaId": 2,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/bleach/t2/ep50.jpg",
+        "dataExibicao": "2026-09-26"
     }
 ]
