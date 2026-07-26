@@ -31224,5 +31224,3665 @@
         "animeId": 107,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep500.jpg",
         "dataExibicao": "2017-03-23"
+    },
+    {
+        "id": 3134,
+        "numero": 1,
+        "titulo": "O Dia em que me Tornei um Shinigami",
+        "sinopse": "Ichigo Kurosaki, um adolescente de quinze anos capaz de ver espíritos, conhece a shinigami Rukia Kuchiki e recebe seus poderes para proteger sua família e combater Hollows.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep1.jpg",
+        "dataExibicao": "2004-10-05"
+    },
+    {
+        "id": 3135,
+        "numero": 2,
+        "titulo": "O Trabalho de um Shinigami",
+        "sinopse": "Após se tornar um Shinigami Substituto, Ichigo reluta em assumir as responsabilidades de Rukia, mas acaba enfrentando novos Hollows para proteger Karakura.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep2.jpg",
+        "dataExibicao": "2004-10-12"
+    },
+    {
+        "id": 3136,
+        "numero": 3,
+        "titulo": "O Desejo do Irmão Mais Velho, o Desejo da Irmã Mais Nova",
+        "sinopse": "Ichigo e Rukia ajudam Orihime Inoue quando o espírito de seu irmão é transformado em Hollow e a ataca.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep3.jpg",
+        "dataExibicao": "2004-10-19"
+    },
+    {
+        "id": 3137,
+        "numero": 4,
+        "titulo": "O Periquito Amaldiçoado",
+        "sinopse": "Chad encontra um periquito possuído pelo espírito de um garoto, tornando-se alvo de um Hollow sedento por vingança.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep4.jpg",
+        "dataExibicao": "2004-10-26"
+    },
+    {
+        "id": 3138,
+        "numero": 5,
+        "titulo": "Derrote o Inimigo Invisível!",
+        "sinopse": "Rukia e Chad unem forças para derrotar o Hollow Shrieker e colocar fim à sua onda de destruição.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep5.jpg",
+        "dataExibicao": "2004-11-02"
+    },
+    {
+        "id": 3139,
+        "numero": 6,
+        "titulo": "Luta até a Morte! Ichigo contra Ichigo",
+        "sinopse": "Ichigo utiliza uma Alma Modificada para ocupar seu corpo enquanto atua como Shinigami, mas o experimento sai do controle.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep6.jpg",
+        "dataExibicao": "2004-11-09"
+    },
+    {
+        "id": 3140,
+        "numero": 7,
+        "titulo": "Saudações de um Leão de Pelúcia",
+        "sinopse": "A Alma Modificada Kon passa a viver dentro de um leão de pelúcia e se torna um novo companheiro de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep7.jpg",
+        "dataExibicao": "2004-11-16"
+    },
+    {
+        "id": 3141,
+        "numero": 8,
+        "titulo": "17 de Junho, Memórias na Chuva",
+        "sinopse": "No aniversário da morte de sua mãe, Ichigo revisita lembranças dolorosas enquanto enfrenta um poderoso Hollow.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep8.jpg",
+        "dataExibicao": "2004-11-23"
+    },
+    {
+        "id": 3142,
+        "numero": 9,
+        "titulo": "Um Inimigo Invencível",
+        "sinopse": "Ichigo enfrenta Grand Fisher, o Hollow responsável pela morte de sua mãe, em um confronto repleto de emoções.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep9.jpg",
+        "dataExibicao": "2004-11-30"
+    },
+    {
+        "id": 3143,
+        "numero": 10,
+        "titulo": "Ataque Durante a Peregrinação ao Lugar Sagrado!",
+        "sinopse": "Durante um programa de televisão comandado por Don Kanonji, Ichigo precisa derrotar um Hollow criado acidentalmente.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep10.jpg",
+        "dataExibicao": "2004-12-07"
+    },
+    {
+        "id": 3144,
+        "numero": 11,
+        "titulo": "O Lendário Quincy",
+        "sinopse": "Ichigo conhece Uryū Ishida, um Quincy que despreza os Shinigami e desafia Ichigo para uma competição que acaba atraindo inúmeros Hollows.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep11.jpg",
+        "dataExibicao": "2004-12-14"
+    },
+    {
+        "id": 3145,
+        "numero": 12,
+        "titulo": "Um Braço Direito Gentil",
+        "sinopse": "Ichigo e Uryū precisam deixar suas diferenças de lado e unir forças para enfrentar a invasão de Hollows provocada pelo desafio entre eles.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep12.jpg",
+        "dataExibicao": "2004-12-21"
+    },
+    {
+        "id": 3146,
+        "numero": 13,
+        "titulo": "A Flor e o Hollow",
+        "sinopse": "Orihime desperta seus poderes espirituais enquanto enfrenta um Hollow que ameaça seus amigos e descobre sua verdadeira força.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep13.jpg",
+        "dataExibicao": "2005-01-11"
+    },
+    {
+        "id": 3147,
+        "numero": 14,
+        "titulo": "Costas com Costas, uma Luta até a Morte!",
+        "sinopse": "Chad desperta um enorme poder oculto para proteger uma criança e enfrentar um poderoso Hollow ao lado de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep14.jpg",
+        "dataExibicao": "2005-01-18"
+    },
+    {
+        "id": 3148,
+        "numero": 15,
+        "titulo": "O Grande Plano de Kon",
+        "sinopse": "Kon tenta aproveitar a ausência de Ichigo para viver em seu corpo, causando diversas confusões antes de um novo ataque Hollow.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep15.jpg",
+        "dataExibicao": "2005-01-25"
+    },
+    {
+        "id": 3149,
+        "numero": 16,
+        "titulo": "O Encontro de Abarai Renji e Kuchiki Byakuya",
+        "sinopse": "Os capitães Byakuya Kuchiki e Renji Abarai chegam ao mundo humano para prender Rukia por transferir seus poderes a Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep16.jpg",
+        "dataExibicao": "2005-02-01"
+    },
+    {
+        "id": 3150,
+        "numero": 17,
+        "titulo": "Ichigo Morre!",
+        "sinopse": "Ichigo enfrenta Byakuya, mas é derrotado facilmente, enquanto Rukia aceita retornar à Soul Society para proteger seus amigos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep17.jpg",
+        "dataExibicao": "2005-02-08"
+    },
+    {
+        "id": 3151,
+        "numero": 18,
+        "titulo": "Recupere! O Poder de Shinigami",
+        "sinopse": "Determinando a salvar Rukia, Ichigo inicia um treinamento intenso com Kisuke Urahara para recuperar seus poderes de Shinigami.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep18.jpg",
+        "dataExibicao": "2005-02-15"
+    },
+    {
+        "id": 3152,
+        "numero": 19,
+        "titulo": "Ichigo Torna-se um Hollow!",
+        "sinopse": "Durante o treinamento de Urahara, Ichigo corre o risco de se transformar completamente em Hollow antes de despertar novamente como Shinigami.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep19.jpg",
+        "dataExibicao": "2005-02-22"
+    },
+    {
+        "id": 3153,
+        "numero": 20,
+        "titulo": "Gin Ichimaru, a Sombra Prateada",
+        "sinopse": "Ichigo e seus amigos entram na Soul Society, onde começam a conhecer os poderosos capitães e os perigos que os aguardam.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep20.jpg",
+        "dataExibicao": "2005-03-01"
+    },
+    {
+        "id": 3154,
+        "numero": 21,
+        "titulo": "Entre! O Mundo dos Shinigamis",
+        "sinopse": "Ichigo, Chad, Orihime, Uryū e Yoruichi conseguem atravessar o portal para a Soul Society e iniciam a missão de resgatar Rukia.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep21.jpg",
+        "dataExibicao": "2005-03-08"
+    },
+    {
+        "id": 3155,
+        "numero": 22,
+        "titulo": "O Homem que Odeia Shinigamis",
+        "sinopse": "O grupo invade o Seireitei e enfrenta Jidanbō, o gigantesco guardião de um dos portões da Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep22.jpg",
+        "dataExibicao": "2005-03-15"
+    },
+    {
+        "id": 3156,
+        "numero": 23,
+        "titulo": "A Sentença de Rukia, Antes do 14º Dia",
+        "sinopse": "Rukia descobre que sua execução foi antecipada, enquanto Ichigo e seus amigos procuram uma forma de entrar no Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep23.jpg",
+        "dataExibicao": "2005-03-22"
+    },
+    {
+        "id": 3157,
+        "numero": 24,
+        "titulo": "Reúnam-se! O Grupo dos Treze Esquadrões",
+        "sinopse": "Os capitães dos Treze Esquadrões se reúnem para discutir a invasão dos ryokas e organizar a perseguição aos intrusos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep24.jpg",
+        "dataExibicao": "2005-03-29"
+    },
+    {
+        "id": 3158,
+        "numero": 25,
+        "titulo": "Penetrem no Centro com uma Bomba Enorme?",
+        "sinopse": "Com a ajuda de Kūkaku Shiba, Ichigo e seus amigos utilizam um canhão espiritual para atravessar a barreira que protege o Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep25.jpg",
+        "dataExibicao": "2005-04-05"
+    },
+    {
+        "id": 3159,
+        "numero": 26,
+        "titulo": "Formação! A Pior Equipe",
+        "sinopse": "Após a entrada no Seireitei, o grupo se separa e cada integrante segue um caminho diferente para encontrar Rukia.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep26.jpg",
+        "dataExibicao": "2005-04-12"
+    },
+    {
+        "id": 3160,
+        "numero": 27,
+        "titulo": "Libere o Golpe Mortal!",
+        "sinopse": "Ichigo enfrenta Ikkaku Madarame em um intenso duelo, sendo obrigado a superar seus próprios limites para continuar avançando.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep27.jpg",
+        "dataExibicao": "2005-04-19"
+    },
+    {
+        "id": 3161,
+        "numero": 28,
+        "titulo": "Orihime é Alvo",
+        "sinopse": "Orihime acaba sendo perseguida por membros do Gotei 13 enquanto tenta reencontrar seus companheiros dentro do Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep28.jpg",
+        "dataExibicao": "2005-04-26"
+    },
+    {
+        "id": 3162,
+        "numero": 29,
+        "titulo": "Supere o Desespero!",
+        "sinopse": "Ichigo continua enfrentando desafios cada vez mais difíceis enquanto seus aliados também entram em confrontos contra os Shinigamis.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep29.jpg",
+        "dataExibicao": "2005-05-03"
+    },
+    {
+        "id": 3163,
+        "numero": 30,
+        "titulo": "Renji Abarai Confrontado",
+        "sinopse": "Renji entra em conflito com suas próprias convicções ao reencontrar Rukia, enquanto Ichigo segue determinado a salvá-la.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep30.jpg",
+        "dataExibicao": "2005-05-10"
+    },
+    {
+        "id": 3164,
+        "numero": 31,
+        "titulo": "A Resolução de Executar Rukia",
+        "sinopse": "A execução de Rukia é oficialmente confirmada, enquanto Ichigo continua avançando pelo Seireitei determinado a resgatá-la antes que seja tarde demais.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep31.jpg",
+        "dataExibicao": "2005-05-17"
+    },
+    {
+        "id": 3165,
+        "numero": 32,
+        "titulo": "Estrela e Vira-lata",
+        "sinopse": "Renji e Izuru relembram os dias de infância ao lado de Rukia, enquanto antigas amizades e conflitos vêm à tona.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep32.jpg",
+        "dataExibicao": "2005-05-24"
+    },
+    {
+        "id": 3166,
+        "numero": 33,
+        "titulo": "Milagre! O Novo Herói Misterioso",
+        "sinopse": "Ganju enfrenta Yumichika, enquanto Ichigo e seus aliados seguem separados em busca de Rukia dentro da Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep33.jpg",
+        "dataExibicao": "2005-05-31"
+    },
+    {
+        "id": 3167,
+        "numero": 34,
+        "titulo": "Tragédia ao Amanhecer",
+        "sinopse": "Um acontecimento inesperado abala toda a Soul Society e provoca desconfiança entre os capitães dos Treze Esquadrões.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep34.jpg",
+        "dataExibicao": "2005-06-07"
+    },
+    {
+        "id": 3168,
+        "numero": 35,
+        "titulo": "O Assassinato de Aizen! A Escuridão que se Aproxima",
+        "sinopse": "A morte de Sōsuke Aizen gera grande comoção na Soul Society e desencadeia uma investigação repleta de suspeitas.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep35.jpg",
+        "dataExibicao": "2005-06-14"
+    },
+    {
+        "id": 3169,
+        "numero": 36,
+        "titulo": "Zaraki Kenpachi se Aproxima!",
+        "sinopse": "O temido capitão Kenpachi Zaraki entra em ação e parte em busca de Ichigo para enfrentá-lo em combate.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep36.jpg",
+        "dataExibicao": "2005-06-21"
+    },
+    {
+        "id": 3170,
+        "numero": 37,
+        "titulo": "Motivo do Punho",
+        "sinopse": "Chad enfrenta o capitão Shunsui Kyōraku para abrir caminho até Rukia, colocando sua determinação à prova.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep37.jpg",
+        "dataExibicao": "2005-06-28"
+    },
+    {
+        "id": 3171,
+        "numero": 38,
+        "titulo": "Desespero! A Zanpakutō Quebrada",
+        "sinopse": "Ichigo enfrenta Kenpachi Zaraki e vê sua Zanpakutō ser danificada durante um dos confrontos mais difíceis de sua jornada.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep38.jpg",
+        "dataExibicao": "2005-07-05"
+    },
+    {
+        "id": 3172,
+        "numero": 39,
+        "titulo": "O Homem Imortal",
+        "sinopse": "A intensa batalha entre Ichigo e Kenpachi continua, revelando a impressionante resistência e o espírito guerreiro de ambos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep39.jpg",
+        "dataExibicao": "2005-07-12"
+    },
+    {
+        "id": 3173,
+        "numero": 40,
+        "titulo": "O Shinigami que Ganju Encontrou",
+        "sinopse": "Enquanto Ichigo se recupera da batalha contra Kenpachi, Ganju encontra um inesperado aliado dentro do Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep40.jpg",
+        "dataExibicao": "2005-07-19"
+    },
+    {
+        "id": 3174,
+        "numero": 41,
+        "titulo": "Reencontro, Ichigo e Rukia",
+        "sinopse": "Ichigo finalmente reencontra Rukia na torre de execução e renova sua promessa de salvá-la antes que a sentença seja cumprida.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep41.jpg",
+        "dataExibicao": "2005-07-26"
+    },
+    {
+        "id": 3175,
+        "numero": 42,
+        "titulo": "Yoruichi, a Deusa da Velocidade, Dança!",
+        "sinopse": "Yoruichi enfrenta Soi Fon em um duelo marcado pela velocidade, enquanto antigos laços entre mestre e discípula vêm à tona.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep42.jpg",
+        "dataExibicao": "2005-08-02"
+    },
+    {
+        "id": 3176,
+        "numero": 43,
+        "titulo": "O Desprezível Shinigami",
+        "sinopse": "Ishida enfrenta o capitão Mayuri Kurotsuchi e descobre a cruel obsessão do cientista pelos Quincies.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep43.jpg",
+        "dataExibicao": "2005-08-09"
+    },
+    {
+        "id": 3177,
+        "numero": 44,
+        "titulo": "Ishida, o Poder dos Limites",
+        "sinopse": "Para derrotar Mayuri, Ishida remove o artefato que limitava seu poder Quincy e libera uma força extraordinária.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep44.jpg",
+        "dataExibicao": "2005-08-16"
+    },
+    {
+        "id": 3178,
+        "numero": 45,
+        "titulo": "Supere Seus Limites!",
+        "sinopse": "Ichigo continua seu treinamento para alcançar a Bankai, enquanto o tempo para salvar Rukia se esgota rapidamente.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep45.jpg",
+        "dataExibicao": "2005-08-23"
+    },
+    {
+        "id": 3179,
+        "numero": 46,
+        "titulo": "Registros Autênticos da Escola de Shinigami",
+        "sinopse": "Um episódio especial relembra o passado de vários capitães e tenentes durante seus dias de treinamento na Academia Shinigami.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep46.jpg",
+        "dataExibicao": "2005-08-30"
+    },
+    {
+        "id": 3180,
+        "numero": 47,
+        "titulo": "Os Vingadores",
+        "sinopse": "Renji decide desafiar Byakuya para cumprir sua promessa de salvar Rukia, enfrentando seu antigo capitão.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep47.jpg",
+        "dataExibicao": "2005-09-06"
+    },
+    {
+        "id": 3181,
+        "numero": 48,
+        "titulo": "Hitsugaya Ruge",
+        "sinopse": "Hitsugaya confronta Gin Ichimaru enquanto cresce a suspeita de uma conspiração envolvendo a execução de Rukia.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep48.jpg",
+        "dataExibicao": "2005-09-13"
+    },
+    {
+        "id": 3182,
+        "numero": 49,
+        "titulo": "O Pesadelo de Rukia",
+        "sinopse": "Na prisão, Rukia relembra acontecimentos marcantes de sua vida enquanto aguarda o dia de sua execução.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep49.jpg",
+        "dataExibicao": "2005-09-20"
+    },
+    {
+        "id": 3183,
+        "numero": 50,
+        "titulo": "O Leão Desperto",
+        "sinopse": "Kon assume um papel inesperado para proteger uma criança de um Hollow, mostrando coragem mesmo longe de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep50.jpg",
+        "dataExibicao": "2005-09-27"
+    },
+    {
+        "id": 3184,
+        "numero": 51,
+        "titulo": "A Manhã da Execução",
+        "sinopse": "A execução de Rukia finalmente começa enquanto Ichigo e seus aliados fazem uma última tentativa para salvá-la.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep51.jpg",
+        "dataExibicao": "2005-09-20"
+    },
+    {
+        "id": 3185,
+        "numero": 52,
+        "titulo": "Renji, Juramento da Alma!",
+        "sinopse": "Renji enfrenta Byakuya para cumprir sua promessa de salvar Rukia.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep52.jpg",
+        "dataExibicao": "2005-09-27"
+    },
+    {
+        "id": 3186,
+        "numero": 53,
+        "titulo": "Gin Ichimaru e Aizen Sōsuke",
+        "sinopse": "A morte de Aizen provoca uma série de revelações e suspeitas entre os capitães.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep53.jpg",
+        "dataExibicao": "2005-10-04"
+    },
+    {
+        "id": 3187,
+        "numero": 54,
+        "titulo": "Um Juramento Cumprido! Recuperem Rukia!",
+        "sinopse": "Ichigo finalmente alcança Rukia antes que sua execução seja concluída.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep54.jpg",
+        "dataExibicao": "2005-10-11"
+    },
+    {
+        "id": 3188,
+        "numero": 55,
+        "titulo": "O Shinigami Mais Forte! Confronto Final",
+        "sinopse": "Ichigo enfrenta Byakuya Kuchiki em uma batalha decisiva.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep55.jpg",
+        "dataExibicao": "2005-10-18"
+    },
+    {
+        "id": 3189,
+        "numero": 56,
+        "titulo": "Supere! O Banco de Byakuya",
+        "sinopse": "Ichigo revela toda a força de seu Bankai contra Byakuya.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep56.jpg",
+        "dataExibicao": "2005-10-25"
+    },
+    {
+        "id": 3190,
+        "numero": 57,
+        "titulo": "Mil Pétalas de Cerejeira",
+        "sinopse": "A luta entre Ichigo e Byakuya chega ao seu momento mais intenso.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep57.jpg",
+        "dataExibicao": "2005-11-01"
+    },
+    {
+        "id": 3191,
+        "numero": 58,
+        "titulo": "Libere! A Espada Negra",
+        "sinopse": "O Hollow interior de Ichigo desperta durante o confronto.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep58.jpg",
+        "dataExibicao": "2005-11-08"
+    },
+    {
+        "id": 3192,
+        "numero": 59,
+        "titulo": "Conclusão da Batalha Mortal",
+        "sinopse": "Byakuya finalmente reconhece a força e a determinação de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep59.jpg",
+        "dataExibicao": "2005-11-15"
+    },
+    {
+        "id": 3193,
+        "numero": 60,
+        "titulo": "A Verdade de Aizen",
+        "sinopse": "A verdadeira identidade do responsável pelos acontecimentos na Soul Society é revelada.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep60.jpg",
+        "dataExibicao": "2005-11-22"
+    },
+    {
+        "id": 3194,
+        "numero": 61,
+        "titulo": "Aizen se Ergue!",
+        "sinopse": "Aizen revela seu plano e demonstra um poder muito acima do esperado.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep61.jpg",
+        "dataExibicao": "2005-11-29"
+    },
+    {
+        "id": 3195,
+        "numero": 62,
+        "titulo": "Reúnam-se! Os Shinigamis",
+        "sinopse": "Os capitães unem forças para tentar impedir a fuga de Aizen.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep62.jpg",
+        "dataExibicao": "2005-12-06"
+    },
+    {
+        "id": 3196,
+        "numero": 63,
+        "titulo": "A Decisão de Rukia",
+        "sinopse": "Após a batalha, Rukia precisa decidir qual caminho seguirá.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep63.jpg",
+        "dataExibicao": "2005-12-13"
+    },
+    {
+        "id": 3197,
+        "numero": 64,
+        "titulo": "Novo Semestre, Ichigo Volta!",
+        "sinopse": "Ichigo retorna à vida normal após os acontecimentos na Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep64.jpg",
+        "dataExibicao": "2006-01-10"
+    },
+    {
+        "id": 3198,
+        "numero": 65,
+        "titulo": "Aparece! O Misterioso Shinji",
+        "sinopse": "Um estranho estudante chamado Shinji Hirako surge diante de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep65.jpg",
+        "dataExibicao": "2006-01-17"
+    },
+    {
+        "id": 3199,
+        "numero": 66,
+        "titulo": "O Poder Oculto",
+        "sinopse": "Ichigo começa a perceber mudanças perigosas em seus poderes.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep66.jpg",
+        "dataExibicao": "2006-01-24"
+    },
+    {
+        "id": 3200,
+        "numero": 67,
+        "titulo": "O Convite dos Vizards",
+        "sinopse": "Shinji faz uma proposta inesperada para Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep67.jpg",
+        "dataExibicao": "2006-01-31"
+    },
+    {
+        "id": 3201,
+        "numero": 68,
+        "titulo": "O Verdadeiro Poder do Capitão! A Espada Negra Desperta",
+        "sinopse": "Ichigo presencia o verdadeiro poder dos capitães enquanto a batalha em Soul Society se intensifica.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep68.jpg",
+        "dataExibicao": "2005-08-23"
+    },
+    {
+        "id": 3202,
+        "numero": 69,
+        "titulo": "Byakuya Kuchiki se Move! O Vento Silencioso",
+        "sinopse": "Byakuya decide agir pessoalmente, enquanto Ichigo se prepara para enfrentar desafios ainda maiores.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep69.jpg",
+        "dataExibicao": "2005-08-30"
+    },
+    {
+        "id": 3203,
+        "numero": 70,
+        "titulo": "O Retorno de Rukia",
+        "sinopse": "Os acontecimentos se aceleram quando Rukia é finalmente libertada de seu destino.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep70.jpg",
+        "dataExibicao": "2005-09-06"
+    },
+    {
+        "id": 3204,
+        "numero": 71,
+        "titulo": "O Momento da Colisão! Aizen Contra os Shinigamis",
+        "sinopse": "O verdadeiro plano de Aizen começa a ser revelado diante dos capitães da Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep71.jpg",
+        "dataExibicao": "2005-09-13"
+    },
+    {
+        "id": 3205,
+        "numero": 72,
+        "titulo": "A Fuga de Aizen",
+        "sinopse": "Aizen demonstra um poder assustador e inicia sua fuga da Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep72.jpg",
+        "dataExibicao": "2005-09-20"
+    },
+    {
+        "id": 3206,
+        "numero": 73,
+        "titulo": "A Reunião dos Arrancar",
+        "sinopse": "Novos inimigos surgem enquanto Aizen dá início a uma nova etapa de seus planos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep73.jpg",
+        "dataExibicao": "2005-09-27"
+    },
+    {
+        "id": 3207,
+        "numero": 74,
+        "titulo": "Memórias de um Shinigami",
+        "sinopse": "Após a batalha, os personagens refletem sobre os acontecimentos e seus próximos passos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep74.jpg",
+        "dataExibicao": "2005-10-04"
+    },
+    {
+        "id": 3208,
+        "numero": 75,
+        "titulo": "11ª Divisão em Ação",
+        "sinopse": "Os membros da 11ª Divisão entram em combate mostrando toda sua força.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep75.jpg",
+        "dataExibicao": "2005-10-11"
+    },
+    {
+        "id": 3209,
+        "numero": 76,
+        "titulo": "Força Oculta",
+        "sinopse": "Um novo confronto revela habilidades inesperadas entre os Shinigamis.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep76.jpg",
+        "dataExibicao": "2005-10-18"
+    },
+    {
+        "id": 3210,
+        "numero": 77,
+        "titulo": "Decisão",
+        "sinopse": "Ichigo precisa tomar uma importante decisão sobre o futuro de seus companheiros.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep77.jpg",
+        "dataExibicao": "2005-10-25"
+    },
+    {
+        "id": 3211,
+        "numero": 78,
+        "titulo": "Pesadelos Revividos",
+        "sinopse": "O passado volta a assombrar alguns personagens enquanto novos perigos surgem.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep78.jpg",
+        "dataExibicao": "2005-11-01"
+    },
+    {
+        "id": 3212,
+        "numero": 79,
+        "titulo": "Assalto",
+        "sinopse": "Uma nova ameaça coloca Karakura em estado de alerta.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep79.jpg",
+        "dataExibicao": "2005-11-08"
+    },
+    {
+        "id": 3213,
+        "numero": 80,
+        "titulo": "Ataque Surpresa",
+        "sinopse": "Ichigo enfrenta um inimigo inesperado em uma batalha intensa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep80.jpg",
+        "dataExibicao": "2005-11-15"
+    },
+    {
+        "id": 3214,
+        "numero": 81,
+        "titulo": "Os Bount",
+        "sinopse": "Uma nova organização inimiga faz sua primeira aparição.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep81.jpg",
+        "dataExibicao": "2005-11-22"
+    },
+    {
+        "id": 3215,
+        "numero": 82,
+        "titulo": "A Caçada Começa",
+        "sinopse": "Os Bount colocam seus planos em prática enquanto Ichigo tenta detê-los.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep82.jpg",
+        "dataExibicao": "2005-11-29"
+    },
+    {
+        "id": 3216,
+        "numero": 83,
+        "titulo": "Conspiração",
+        "sinopse": "Os mistérios envolvendo os Bount começam a ser revelados.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep83.jpg",
+        "dataExibicao": "2005-12-06"
+    },
+    {
+        "id": 3217,
+        "numero": 84,
+        "titulo": "Batalha na Cidade",
+        "sinopse": "Ichigo e seus amigos enfrentam os Bount em diversos pontos da cidade.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep84.jpg",
+        "dataExibicao": "2005-12-13"
+    },
+    {
+        "id": 3218,
+        "numero": 85,
+        "titulo": "A Verdadeira Ameaça",
+        "sinopse": "Os Bount revelam parte de seu verdadeiro objetivo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep85.jpg",
+        "dataExibicao": "2005-12-20"
+    },
+    {
+        "id": 3219,
+        "numero": 86,
+        "titulo": "Confronto Mortal",
+        "sinopse": "As batalhas contra os Bount chegam a um novo nível de intensidade.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep86.jpg",
+        "dataExibicao": "2006-01-10"
+    },
+    {
+        "id": 3220,
+        "numero": 87,
+        "titulo": "Esperança",
+        "sinopse": "Mesmo diante das dificuldades, Ichigo continua lutando para proteger seus amigos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep87.jpg",
+        "dataExibicao": "2006-01-17"
+    },
+    {
+        "id": 3201,
+        "numero": 88,
+        "titulo": "Aniquilação dos Tenentes!? Armadilha na Caverna Subterrânea",
+        "sinopse": "Ichigo e seus aliados seguem para a caverna dos Bounts, onde acabam enfrentando Gesell, a Doll controlada por Ugaki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep88.jpg",
+        "dataExibicao": "2006-07-11"
+    },
+    {
+        "id": 3202,
+        "numero": 89,
+        "titulo": "Revanche?! Ishida contra Nemu",
+        "sinopse": "Enquanto Ichigo continua enfrentando Gesell, Nemu Kurotsuchi entrega a Uryū Ishida um equipamento especial para ajudá-lo na batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep89.jpg",
+        "dataExibicao": "2006-07-18"
+    },
+    {
+        "id": 3203,
+        "numero": 90,
+        "titulo": "Renji Abarai, o Bankai da Alma!",
+        "sinopse": "Gesell se volta contra seu próprio mestre, enquanto Ichigo enfrenta Jin Kariya, mas descobre que derrotá-lo será muito mais difícil do que imaginava.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep90.jpg",
+        "dataExibicao": "2006-07-25"
+    },
+    {
+        "id": 3204,
+        "numero": 91,
+        "titulo": "Shinigami e Quincy, o Poder que Renasce",
+        "sinopse": "Ichigo ativa seu Bankai enquanto Uryū conclui o portal dos Bounts, permitindo que todos entrem na Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep91.jpg",
+        "dataExibicao": "2006-08-01"
+    },
+    {
+        "id": 3205,
+        "numero": 92,
+        "titulo": "Nova Invasão ao Mundo dos Shinigamis",
+        "sinopse": "Os Bounts chegam à Soul Society e Rukia reencontra Yoshi, iniciando uma nova etapa da invasão.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep92.jpg",
+        "dataExibicao": "2006-08-08"
+    },
+    {
+        "id": 3206,
+        "numero": 93,
+        "titulo": "O Ataque dos Bounts! O Gotei 13 Sob um Terremoto Devastador",
+        "sinopse": "Rukia enfrenta Yoshi enquanto Yamamoto revela aos capitães a verdadeira origem dos Bounts.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep93.jpg",
+        "dataExibicao": "2006-08-15"
+    },
+    {
+        "id": 3207,
+        "numero": 94,
+        "titulo": "A Decisão de Hitsugaya! O Confronto se Aproxima",
+        "sinopse": "Kariya recruta moradores de Kusajishi, enquanto Ichigo e seus amigos finalmente chegam à casa de Kūkaku Shiba.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep94.jpg",
+        "dataExibicao": "2006-08-22"
+    },
+    {
+        "id": 3208,
+        "numero": 95,
+        "titulo": "Byakuya Entra em Campo! A Dança das Flores de Cerejeira",
+        "sinopse": "Byakuya Kuchiki enfrenta Jin Kariya, e Ichigo chega para ajudá-lo durante a intensa batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep95.jpg",
+        "dataExibicao": "2006-09-05"
+    },
+    {
+        "id": 3209,
+        "numero": 96,
+        "titulo": "Ichigo, Byakuya e Kariya! A Batalha Suprema",
+        "sinopse": "Ichigo e Byakuya unem forças contra Kariya, mas Ran'Tao aparece inesperadamente e muda o rumo do confronto.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep96.jpg",
+        "dataExibicao": "2006-09-12"
+    },
+    {
+        "id": 3210,
+        "numero": 97,
+        "titulo": "Hitsugaya Ataca! Corte o Inimigo na Floresta",
+        "sinopse": "Ran'Tao revela seu passado enquanto Hitsugaya enfrenta Maki Ichinose em uma batalha decisiva.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep97.jpg",
+        "dataExibicao": "2006-09-19"
+    },
+    {
+        "id": 3211,
+        "numero": 98,
+        "titulo": "Confronto! Kenpachi Zaraki contra Maki Ichinose",
+        "sinopse": "Kenpachi Zaraki chega ao campo de batalha para enfrentar Maki Ichinose e impedir seus planos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep98.jpg",
+        "dataExibicao": "2006-10-04"
+    },
+    {
+        "id": 3212,
+        "numero": 99,
+        "titulo": "Shinigami contra Shinigami! O Poder Fora de Controle",
+        "sinopse": "Os Bounts invadem o Seireitei e Soi Fon enfrenta Mabashi em um confronto mortal.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep99.jpg",
+        "dataExibicao": "2006-10-11"
+    },
+    {
+        "id": 3213,
+        "numero": 100,
+        "titulo": "A Morte de Soi Fon? O Último Esquadrão das Forças Especiais",
+        "sinopse": "Soi Fon usa seu próprio veneno para anular o de Mabashi e consegue derrotar o inimigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep100.jpg",
+        "dataExibicao": "2006-10-18"
+    },
+    {
+        "id": 3214,
+        "numero": 101,
+        "titulo": "O Bankai de Mayuri!! Sawatari, o Confronto Demoníaco",
+        "sinopse": "Mayuri Kurotsuchi libera seu Bankai para enfrentar o Bount Sawatari em uma luta brutal.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep101.jpg",
+        "dataExibicao": "2006-11-01"
+    },
+    {
+        "id": 3215,
+        "numero": 102,
+        "titulo": "O Último Quincy! O Poder Explosivo",
+        "sinopse": "Enquanto Kariya busca o Brasão Jōkaishō, Uryū enfrenta Yoshi em uma batalha decisiva.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep102.jpg",
+        "dataExibicao": "2006-11-08"
+    },
+    {
+        "id": 3216,
+        "numero": 103,
+        "titulo": "Ishida Ultrapassa seus Limites!",
+        "sinopse": "Após derrotar Yoshi, Uryū tenta impedir Kariya antes que ele destrua a Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep103.jpg",
+        "dataExibicao": "2006-11-15"
+    },
+    {
+        "id": 3217,
+        "numero": 104,
+        "titulo": "A Luta Mortal da 10ª Divisão! A Liberação de Hyōrinmaru",
+        "sinopse": "Hitsugaya enfrenta Gō Koga em uma batalha decisiva pela sobrevivência da Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep104.jpg",
+        "dataExibicao": "2006-11-22"
+    },
+    {
+        "id": 3218,
+        "numero": 105,
+        "titulo": "Kariya! Contagem Regressiva para a Explosão",
+        "sinopse": "Enquanto os Shinigamis investigam o Jōkaishō, Ran'Tao confronta Jin Kariya antes da batalha final.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep105.jpg",
+        "dataExibicao": "2006-11-29"
+    },
+    {
+        "id": 3219,
+        "numero": 106,
+        "titulo": "Vida e Vingança! A Escolha Final de Ishida",
+        "sinopse": "Uryū enfrenta Jin Kariya em uma batalha que colocará à prova suas convicções e seu futuro.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep106.jpg",
+        "dataExibicao": "2006-12-06"
+    },
+    {
+        "id": 3220,
+        "numero": 107,
+        "titulo": "A Lâmina Decisiva! O Momento da Ruína",
+        "sinopse": "Ichigo enfrenta Kariya enquanto os Shinigamis correm para selar novamente os Jōkaishō.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep107.jpg",
+        "dataExibicao": "2006-12-13"
+    },
+    {
+        "id": 3221,
+        "numero": 108,
+        "titulo": "O Último Clamor dos Bounts! O Confronto Final",
+        "sinopse": "A batalha entre Ichigo e Jin Kariya chega ao fim, encerrando definitivamente o arco dos Bounts.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep108.jpg",
+        "dataExibicao": "2006-12-20"
+    },
+    {
+        "id": 3222,
+        "numero": 109,
+        "titulo": "Ichigo e Rukia, Sentimentos que Giram pelos Céus",
+        "sinopse": "Com o fim da batalha contra os Bounts, a vida começa lentamente a voltar ao normal.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep109.jpg",
+        "dataExibicao": "2007-01-04"
+    },
+    {
+        "id": 3223,
+        "numero": 110,
+        "titulo": "Reabertura do Trabalho de Shinigami Substituto! A Aterrorizante Estudante Transferida",
+        "sinopse": "Ichigo retoma sua rotina como Shinigami Substituto, mas conhece o misterioso Shinji Hirako.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep110.jpg",
+        "dataExibicao": "2007-01-10"
+    },
+    {
+        "id": 3224,
+        "numero": 111,
+        "titulo": "Choque! A Verdadeira Identidade do Pai",
+        "sinopse": "Isshin Kurosaki revela sua verdadeira natureza como Shinigami ao enfrentar Grand Fisher.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep111.jpg",
+        "dataExibicao": "2007-01-17"
+    },
+    {
+        "id": 3225,
+        "numero": 112,
+        "titulo": "O Início da Guerra, os Vizards e os Arrancars",
+        "sinopse": "São reveladas informações sobre os Vizards e os Arrancars, marcando o início de uma nova ameaça.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep112.jpg",
+        "dataExibicao": "2007-01-24"
+    },
+    {
+        "id": 3226,
+        "numero": 113,
+        "titulo": "Prelúdio do Apocalipse, A Ofensiva dos Arrancars",
+        "sinopse": "Os Arrancars fazem sua primeira investida contra o Mundo Humano, iniciando um novo conflito.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep113.jpg",
+        "dataExibicao": "2007-01-31"
+    },
+    {
+        "id": 3227,
+        "numero": 114,
+        "titulo": "Reencontro, Ichigo, Rukia e os Shinigamis",
+        "sinopse": "Os Arrancars recuam, enquanto a Soul Society envia reforços para proteger o Mundo Humano.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep114.jpg",
+        "dataExibicao": "2007-02-07"
+    },
+    {
+        "id": 3228,
+        "numero": 115,
+        "titulo": "Missão! Os Shinigamis Chegaram",
+        "sinopse": "Ichigo recupera sua confiança para lutar, enquanto novas informações sobre os Arrancars vêm à tona.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep115.jpg",
+        "dataExibicao": "2007-02-14"
+    },
+    {
+        "id": 3229,
+        "numero": 116,
+        "titulo": "O Olhar Maligno, O Retorno de Aizen",
+        "sinopse": "Os Arrancars retornam ao Mundo Humano sob o comando de Sōsuke Aizen.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep116.jpg",
+        "dataExibicao": "2007-02-21"
+    },
+    {
+        "id": 3230,
+        "numero": 117,
+        "titulo": "Começa a Batalha de Rukia! A Lâmina Branca Congelante",
+        "sinopse": "Rukia enfrenta o Arrancar Di Roy Rinker usando todo o poder de sua Zanpakutō.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep117.jpg",
+        "dataExibicao": "2007-02-28"
+    },
+    {
+        "id": 3231,
+        "numero": 118,
+        "titulo": "O Bankai de Ikkaku! O Poder que Destrói Tudo",
+        "sinopse": "Ikkaku Madarame revela seu Bankai durante a luta contra o Arrancar Edrad Liones.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep118.jpg",
+        "dataExibicao": "2007-03-07"
+    },
+    {
+        "id": 3232,
+        "numero": 119,
+        "titulo": "A História Secreta da Divisão de Zaraki! Os Homens de Sorte",
+        "sinopse": "Ikkaku relembra como entrou para a 11ª Divisão e passou a seguir Kenpachi Zaraki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep119.jpg",
+        "dataExibicao": "2007-03-21"
+    },
+    {
+        "id": 3233,
+        "numero": 120,
+        "titulo": "Hitsugaya Desmorona! O Hyōrinmaru Quebrado",
+        "sinopse": "As batalhas contra os Arrancars continuam, colocando Hitsugaya em uma situação crítica.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep120.jpg",
+        "dataExibicao": "2007-03-28"
+    },
+    {
+        "id": 3234,
+        "numero": 121,
+        "titulo": "Confronto! O Protetor contra o Portador",
+        "sinopse": "Ichigo enfrenta Grimmjow Jaegerjaquez em um dos confrontos mais intensos do arco Arrancar.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep121.jpg",
+        "dataExibicao": "2007-04-11"
+    },
+    {
+        "id": 3235,
+        "numero": 122,
+        "titulo": "Vizard! O Poder Desperto",
+        "sinopse": "Ichigo procura os Vizards para aprender a controlar sua Hollowficação.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep122.jpg",
+        "dataExibicao": "2007-04-18"
+    },
+    {
+        "id": 3236,
+        "numero": 123,
+        "titulo": "Ichigo, Hollowficação Completa!?",
+        "sinopse": "O treinamento de Ichigo para dominar seu Hollow interior se torna cada vez mais perigoso.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep123.jpg",
+        "dataExibicao": "2007-04-25"
+    },
+    {
+        "id": 3237,
+        "numero": 124,
+        "titulo": "Colisão! O Bankai Negro e o Bankai Branco",
+        "sinopse": "Ichigo trava uma batalha contra seu Hollow interior para conquistar o controle definitivo de seus poderes.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep124.jpg",
+        "dataExibicao": "2007-05-02"
+    },
+    {
+        "id": 3238,
+        "numero": 125,
+        "titulo": "Relatório Urgente! O Plano Aterrorizante de Aizen",
+        "sinopse": "Após dominar sua Hollowficação, Ichigo descobre detalhes do plano de Aizen e da verdadeira ameaça dos Arrancars.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep125.jpg",
+        "dataExibicao": "2007-05-09"
+    },
+    {
+        "id": 3239,
+        "numero": 126,
+        "titulo": "Uryū vs. Ryūken! O Confronto dos Quincys Pai e Filho",
+        "sinopse": "Uryū Ishida conclui seu treinamento enquanto Ichigo Kurosaki descobre mais sobre os planos de Sōsuke Aizen.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep126.jpg",
+        "dataExibicao": "2007-05-16"
+    },
+    {
+        "id": 3240,
+        "numero": 127,
+        "titulo": "A Decisão de Urahara, os Pensamentos de Orihime",
+        "sinopse": "Orihime Inoue descobre que não poderá participar das próximas batalhas contra os Arrancar.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep127.jpg",
+        "dataExibicao": "2007-05-30"
+    },
+    {
+        "id": 3241,
+        "numero": 128,
+        "titulo": "O Arrancar Pesadelo! A Equipe Hitsugaya Parte",
+        "sinopse": "Os Shinigamis no Mundo Humano encontram um garoto chamado Shōta Toyokawa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep128.jpg",
+        "dataExibicao": "2007-06-06"
+    },
+    {
+        "id": 3242,
+        "numero": 129,
+        "titulo": "A Descida do Emissário Sombrio! A Propagação da Malícia",
+        "sinopse": "Os Shinigamis ajudam Shōta Toyokawa e Yui Toyokawa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep129.jpg",
+        "dataExibicao": "2007-06-13"
+    },
+    {
+        "id": 3243,
+        "numero": 130,
+        "titulo": "O Inimigo Invisível! A Decisão Impiedosa de Hitsugaya",
+        "sinopse": "Os Shinigamis procuram pelo Arrancar de clonagem.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep130.jpg",
+        "dataExibicao": "2007-06-20"
+    },
+    {
+        "id": 3244,
+        "numero": 131,
+        "titulo": "As Lágrimas de Rangiku, a Triste Separação entre Irmãos",
+        "sinopse": "Os Shinigamis enfrentam o Arrancar de clonagem.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep131.jpg",
+        "dataExibicao": "2007-06-27"
+    },
+    {
+        "id": 3245,
+        "numero": 132,
+        "titulo": "Hitsugaya, Karin e a Bola de Futebol",
+        "sinopse": "Karin Kurosaki tenta convencer Tōshirō Hitsugaya a ajudá-la a vencer uma partida de futebol.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep132.jpg",
+        "dataExibicao": "2007-07-04"
+    },
+    {
+        "id": 3246,
+        "numero": 133,
+        "titulo": "Ikkaku: A História de Kendo do Sangue Quente",
+        "sinopse": "Ikkaku Madarame ajuda um estudante chamado Shinji Iijima a vencer um torneio de Kendō.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep133.jpg",
+        "dataExibicao": "2007-07-11"
+    },
+    {
+        "id": 3247,
+        "numero": 134,
+        "titulo": "O Belo Confeiteiro, Yumichika!",
+        "sinopse": "Yumichika Ayasegawa ajuda um Plus chamado Heita Momoyama a fazer um bolo para sua mãe.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep134.jpg",
+        "dataExibicao": "2007-07-18"
+    },
+    {
+        "id": 3248,
+        "numero": 135,
+        "titulo": "Kon é Enganado! Rangiku na Vigilância...",
+        "sinopse": "Kon é obrigado a morar com uma garota chamada Miyuki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep135.jpg",
+        "dataExibicao": "2007-07-25"
+    },
+    {
+        "id": 3249,
+        "numero": 136,
+        "titulo": "Guerra Civil em Hueco Mundo! A Morte de Ulquiorra",
+        "sinopse": "Vários Arrancar traem Sōsuke Aizen e roubam o Hōgyoku.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep136.jpg",
+        "dataExibicao": "2007-08-08"
+    },
+    {
+        "id": 3250,
+        "numero": 137,
+        "titulo": "A Batalha Maliciosa, a Armadilha de Aizen",
+        "sinopse": "Os Arrancar rebeldes são derrotados pelos Shinigamis.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep137.jpg",
+        "dataExibicao": "2007-08-22"
+    },
+    {
+        "id": 3251,
+        "numero": 138,
+        "titulo": "Hueco Mundo se Move Novamente! Hitsugaya vs. Yammy",
+        "sinopse": "Vários Arrancar seguem para o Mundo Humano.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep138.jpg",
+        "dataExibicao": "2007-08-29"
+    },
+    {
+        "id": 3252,
+        "numero": 139,
+        "titulo": "Ichigo vs. Grimmjow, a Batalha de 11 Segundos!",
+        "sinopse": "Enquanto as batalhas contra os Arrancar continuam, Ichigo Kurosaki demonstra seu novo poder.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep139.jpg",
+        "dataExibicao": "2007-09-05"
+    },
+    {
+        "id": 3253,
+        "numero": 140,
+        "titulo": "O Plano de Ulquiorra, o Momento em que o Sol se Põe!",
+        "sinopse": "As batalhas terminam e os Arrancar retornam para Hueco Mundo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep140.jpg",
+        "dataExibicao": "2007-09-12"
+    },
+    {
+        "id": 3254,
+        "numero": 141,
+        "titulo": "Adeus..., Kurosaki!",
+        "sinopse": "Orihime Inoue se despede de Ichigo Kurosaki antes de partir para Hueco Mundo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep141.jpg",
+        "dataExibicao": "2007-09-19"
+    },
+    {
+        "id": 3255,
+        "numero": 142,
+        "titulo": "Ordem Rigorosa! O Resgate Proibido de Orihime Inoue",
+        "sinopse": "Ichigo Kurosaki descobre o desaparecimento de Orihime e decide resgatá-la.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep142.jpg",
+        "dataExibicao": "2007-09-26"
+    },
+    {
+        "id": 3256,
+        "numero": 143,
+        "titulo": "Grimmjow Revivido",
+        "sinopse": "Ichigo Kurosaki, Uryū Ishida e Yasutora Sado seguem para Hueco Mundo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep143.jpg",
+        "dataExibicao": "2007-10-03"
+    },
+    {
+        "id": 3257,
+        "numero": 144,
+        "titulo": "Ishida e Chad, o Despertar de um Novo Poder",
+        "sinopse": "Uryū Ishida e Yasutora Sado mostram sua nova força após chegarem em Hueco Mundo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep144.jpg",
+        "dataExibicao": "2007-10-17"
+    },
+    {
+        "id": 3258,
+        "numero": 145,
+        "titulo": "Os Espada se Reúnem! A Assembleia Real de Aizen",
+        "sinopse": "Enquanto Ichigo e seus amigos seguem para Las Noches, Sōsuke Aizen reúne os Espada.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep145.jpg",
+        "dataExibicao": "2007-10-24"
+    },
+    {
+        "id": 3259,
+        "numero": 146,
+        "titulo": "O Nome é Nel! A Aparição de uma Arrancar Estranha",
+        "sinopse": "Ichigo Kurosaki encontra a Arrancar Nel Tu e um Guardião causa problemas.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep146.jpg",
+        "dataExibicao": "2007-10-31"
+    },
+    {
+        "id": 3260,
+        "numero": 147,
+        "titulo": "Floresta dos Menos! A Busca pela Rukia Desaparecida",
+        "sinopse": "Ichigo Kurosaki e seus companheiros são forçados a entrar na Floresta dos Menos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep147.jpg",
+        "dataExibicao": "2007-11-07"
+    },
+    {
+        "id": 3261,
+        "numero": 148,
+        "titulo": "Ashido, o Ceifeiro de Almas que Veio do Passado",
+        "sinopse": "Ichigo Kurosaki e seus companheiros continuam explorando a Floresta dos Menos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep148.jpg",
+        "dataExibicao": "2007-11-14"
+    },
+    {
+        "id": 3262,
+        "numero": 149,
+        "titulo": "Através da Floresta em Ruínas, Um Milhão de Menos",
+        "sinopse": "Ichigo Kurosaki e os outros conseguem escapar da Floresta dos Menos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep149.jpg",
+        "dataExibicao": "2007-11-21"
+    },
+    {
+        "id": 3263,
+        "numero": 150,
+        "titulo": "Juramento! Voltar Aqui Vivo Novamente",
+        "sinopse": "Ichigo Kurosaki e seu grupo chegam a Las Noches.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep150.jpg",
+        "dataExibicao": "2007-11-28"
+    },
+    {
+        "id": 3264,
+        "numero": 151,
+        "titulo": "A Tempestade Furiosa! Encontro com o Arrancar Dançarino",
+        "sinopse": "Ichigo Kurosaki enfrenta o Arrancar Dordoni Alessandro Del Socaccio.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep151.jpg",
+        "dataExibicao": "2007-12-05"
+    },
+    {
+        "id": 3265,
+        "numero": 152,
+        "titulo": "Ichigo Contra-Ataca! Este é o Meu Bankai",
+        "sinopse": "Ichigo Kurosaki conclui sua batalha contra Dordoni Alessandro Del Socaccio.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep152.jpg",
+        "dataExibicao": "2007-12-12"
+    },
+    {
+        "id": 3266,
+        "numero": 153,
+        "titulo": "A Pesquisa Demoníaca! O Plano de Szayelaporro",
+        "sinopse": "Ichigo Kurosaki e seus companheiros continuam avançando por Las Noches.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep153.jpg",
+        "dataExibicao": "2007-12-19"
+    },
+    {
+        "id": 3267,
+        "numero": 154,
+        "titulo": "Rukia e Kaien, o Reencontro Doloroso",
+        "sinopse": "Rukia Kuchiki reencontra seu antigo mentor falecido, Kaien Shiba.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep154.jpg",
+        "dataExibicao": "2007-12-26"
+    },
+    {
+        "id": 3268,
+        "numero": 155,
+        "titulo": "Rukia Contra-Ataca! Liberte o Kidō Desesperado",
+        "sinopse": "Rukia Kuchiki enfrenta Kaien Shiba enquanto tenta descobrir se ele é realmente Kaien.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep155.jpg",
+        "dataExibicao": "2008-01-09"
+    },
+    {
+        "id": 3269,
+        "numero": 156,
+        "titulo": "Ishida & Pesche, o Ataque Unido da Amizade",
+        "sinopse": "Uryū Ishida e Pesche Guatiche enfrentam Cirucci Sanderwicci.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep156.jpg",
+        "dataExibicao": "2008-01-16"
+    },
+    {
+        "id": 3270,
+        "numero": 157,
+        "titulo": "A Carta na Manga de Ishida, Seele Schneider",
+        "sinopse": "Uryū Ishida enfrenta Cirucci Sanderwicci usando uma nova arma chamada Seele Schneider.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep157.jpg",
+        "dataExibicao": "2008-01-23"
+    },
+    {
+        "id": 3271,
+        "numero": 158,
+        "titulo": "Braço Direito do Gigante, Braço Esquerdo do Demônio",
+        "sinopse": "Yasutora Sado percebe seu verdadeiro poder e enfrenta Gantenbainne Mosqueda.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep158.jpg",
+        "dataExibicao": "2008-01-30"
+    },
+    {
+        "id": 3272,
+        "numero": 159,
+        "titulo": "Yasutora Sado Morre! As Lágrimas de Orihime",
+        "sinopse": "Yasutora Sado é derrotado por Nnoitra Gilga e Renji Abarai enfrenta o Espada Szayelaporro Granz.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep159.jpg",
+        "dataExibicao": "2008-02-06"
+    },
+    {
+        "id": 3273,
+        "numero": 160,
+        "titulo": "Testamento, Seu Coração Está Aqui...",
+        "sinopse": "Rukia Kuchiki relembra seu passado com Kaien Shiba antes de derrotar Aaroniero Arruruerie.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep160.jpg",
+        "dataExibicao": "2008-02-13"
+    },
+    {
+        "id": 3274,
+        "numero": 161,
+        "titulo": "O Cruel Arrancar, a Provocação de Ulquiorra",
+        "sinopse": "Após a morte de Aaroniero Arruruerie, Ichigo Kurosaki é confrontado por Ulquiorra Cifer.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep161.jpg",
+        "dataExibicao": "2008-02-20"
+    },
+    {
+        "id": 3275,
+        "numero": 162,
+        "titulo": "Szayelaporro Ri, a Armadilha para Renji Está Completa",
+        "sinopse": "Enquanto Ichigo Kurosaki luta contra Ulquiorra Cifer, Renji Abarai continua sua batalha contra Szayelaporro Granz.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep162.jpg",
+        "dataExibicao": "2008-02-27"
+    },
+    {
+        "id": 3276,
+        "numero": 163,
+        "titulo": "Shinigami e Quincy, a Batalha Contra a Loucura",
+        "sinopse": "Grimmjow Jaegerjaquez salva Orihime Inoue de Loly Aivirrne e Menoly Mallia, enquanto Uryū Ishida se junta à batalha de Renji contra Szayelaporro.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep163.jpg",
+        "dataExibicao": "2008-03-05"
+    },
+    {
+        "id": 3277,
+        "numero": 164,
+        "titulo": "A Estratégia de Ishida, Ofensiva e Defesa de 20 Segundos",
+        "sinopse": "Uryū Ishida e Renji Abarai continuam sua batalha contra Szayelaporro Granz enquanto Ichigo é curado por Orihime.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep164.jpg",
+        "dataExibicao": "2008-03-12"
+    },
+    {
+        "id": 3278,
+        "numero": 165,
+        "titulo": "A Intenção Assassina Aumenta! O Alegre Grimmjow",
+        "sinopse": "Ichigo Kurosaki inicia sua batalha final contra Grimmjow Jaegerjaquez.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep165.jpg",
+        "dataExibicao": "2008-03-19"
+    },
+    {
+        "id": 3279,
+        "numero": 166,
+        "titulo": "Esforço Desesperado Contra Esforço Desesperado! Ichigo Hollowficado",
+        "sinopse": "Enquanto Ichigo Kurosaki continua sua batalha contra Grimmjow Jaegerjaquez, Orihime Inoue luta para lidar com a forma Hollowficada de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep166.jpg",
+        "dataExibicao": "2008-04-09"
+    },
+    {
+        "id": 3280,
+        "numero": 167,
+        "titulo": "O Momento da Conclusão, o Fim de Grimmjow",
+        "sinopse": "Ichigo Kurosaki e Grimmjow Jaegerjaquez concluem sua batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep167.jpg",
+        "dataExibicao": "2008-04-16"
+    },
+    {
+        "id": 3281,
+        "numero": 168,
+        "titulo": "O Novo Capitão Surge! Seu Nome é Shūsuke Amagai",
+        "sinopse": "Shūsuke Amagai é nomeado o novo capitão da 3ª Divisão.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep168.jpg",
+        "dataExibicao": "2008-04-23"
+    },
+    {
+        "id": 3282,
+        "numero": 169,
+        "titulo": "Novo Desenvolvimento, a Perigosa Estudante Transferida Aparece!",
+        "sinopse": "Ichigo Kurosaki conhece Rurichiyo Kasumiōji e seus dois guardas Shinigami no Mundo Humano.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep169.jpg",
+        "dataExibicao": "2008-05-07"
+    },
+    {
+        "id": 3283,
+        "numero": 170,
+        "titulo": "Luta Desesperada sob a Noite de Luar, o Assassino Misterioso e a Zanpakutō",
+        "sinopse": "Enquanto Ichigo Kurosaki aprende mais sobre Rurichiyo Kasumiōji, ele precisa enfrentar um assassino que tenta matá-la.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep170.jpg",
+        "dataExibicao": "2008-05-14"
+    },
+    {
+        "id": 3284,
+        "numero": 171,
+        "titulo": "Kenryū, a Profusão de Flores Vermelhas Florescentes",
+        "sinopse": "Ichigo Kurosaki é obrigado a proteger Rurichiyo Kasumiōji enquanto outro assassino tenta eliminá-la.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep171.jpg",
+        "dataExibicao": "2008-05-21"
+    },
+    {
+        "id": 3285,
+        "numero": 172,
+        "titulo": "Kibune Vai à Guerra! O Vento Violento que Sopra",
+        "sinopse": "Izuru Kira começa a ficar deprimido ao perceber que os membros da 3ª Divisão gostam mais de Makoto Kibune do que dele.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep172.jpg",
+        "dataExibicao": "2008-05-28"
+    },
+    {
+        "id": 3286,
+        "numero": 173,
+        "titulo": "A Aparição do Grande Mal! A Escuridão na Casa Kasumiōji",
+        "sinopse": "Rurichiyo Kasumiōji é alvo de mais assassinos após retornar secretamente para a Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep173.jpg",
+        "dataExibicao": "2008-06-04"
+    },
+    {
+        "id": 3287,
+        "numero": 174,
+        "titulo": "Quebre a Fronteira do Espelho! O Cativeiro de Ichigo",
+        "sinopse": "Ichigo Kurosaki enfrenta o assassino Hanza Nukui.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep174.jpg",
+        "dataExibicao": "2008-06-11"
+    },
+    {
+        "id": 3288,
+        "numero": 175,
+        "titulo": "O Assassino em Busca de Vingança, Ichigo é o Alvo",
+        "sinopse": "Hanza Nukui e seus subordinados atacam o Mundo Humano para matar Ichigo Kurosaki e Rurichiyo Kasumiōji.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep175.jpg",
+        "dataExibicao": "2008-06-18"
+    },
+    {
+        "id": 3289,
+        "numero": 176,
+        "titulo": "Mistério! O Assassino que Consome Espadas",
+        "sinopse": "As batalhas contra os assassinos continuam.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep176.jpg",
+        "dataExibicao": "2008-06-25"
+    },
+    {
+        "id": 3290,
+        "numero": 177,
+        "titulo": "A Reversão de Rukia! A Lâmina Descontrolada",
+        "sinopse": "Rukia Kuchiki, Uryū Ishida e Yasutora Sado concluem suas batalhas contra os assassinos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep177.jpg",
+        "dataExibicao": "2008-06-25"
+    },
+    {
+        "id": 3291,
+        "numero": 178,
+        "titulo": "O Pesadelo Revelado, Ichigo Dentro do Espelho",
+        "sinopse": "Ichigo Kurosaki conclui sua batalha contra Hanza Nukui.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep178.jpg",
+        "dataExibicao": "2008-07-02"
+    },
+    {
+        "id": 3292,
+        "numero": 179,
+        "titulo": "Confronto!? Amagai vs. Gotei 13",
+        "sinopse": "O Capitão-Comandante Genryūsai Shigekuni Yamamoto organiza um ataque de Menos Grande na Soul Society para decidir sobre a proposta do Capitão Shūsuke Amagai.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep179.jpg",
+        "dataExibicao": "2008-07-09"
+    },
+    {
+        "id": 3293,
+        "numero": 180,
+        "titulo": "A Decisão da Princesa, a Noiva Triste",
+        "sinopse": "Ichigo Kurosaki vai até a Soul Society para impedir o casamento de Rurichiyo Kasumiōji.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep180.jpg",
+        "dataExibicao": "2008-07-16"
+    },
+    {
+        "id": 3294,
+        "numero": 181,
+        "titulo": "A 2ª Divisão Entra em Ação! Ichigo Cercado",
+        "sinopse": "Ichigo Kurosaki e Rukia Kuchiki tentam impedir o casamento de Rurichiyo Kasumiōji, mas acabam sendo atacados pelo Gotei 13.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep181.jpg",
+        "dataExibicao": "2008-07-23"
+    },
+    {
+        "id": 3295,
+        "numero": 182,
+        "titulo": "A Verdadeira Força de Amagai, a Zanpakutō Liberada!",
+        "sinopse": "Enquanto Ichigo Kurosaki procura por Rurichiyo Kasumiōji, ele é confrontado pelo Capitão Shūsuke Amagai.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep182.jpg",
+        "dataExibicao": "2008-07-30"
+    },
+    {
+        "id": 3296,
+        "numero": 183,
+        "titulo": "A Escuridão em Movimento! As Verdadeiras Cores de Kibune",
+        "sinopse": "O Tenente Izuru Kira e Makoto Kibune entram em confronto.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep183.jpg",
+        "dataExibicao": "2008-08-06"
+    },
+    {
+        "id": 3297,
+        "numero": 184,
+        "titulo": "Kira e Kibune, Ofensiva e Defesa da 3ª Divisão",
+        "sinopse": "O Tenente Izuru Kira e Makoto Kibune continuam sua batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep184.jpg",
+        "dataExibicao": "2008-08-20"
+    },
+    {
+        "id": 3298,
+        "numero": 185,
+        "titulo": "Gelo e Chamas! A Luta Feroz de Amagai vs. Hitsugaya",
+        "sinopse": "Enquanto Izuru Kira conclui sua batalha contra Makoto Kibune, o Capitão Shūsuke Amagai enfrenta o Capitão Tōshirō Hitsugaya.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep185.jpg",
+        "dataExibicao": "2008-08-27"
+    },
+    {
+        "id": 3299,
+        "numero": 186,
+        "titulo": "Ordens de Partida! Suprimir a Casa Kasumiōji",
+        "sinopse": "Ichigo Kurosaki consegue salvar Rurichiyo Kasumiōji, mas novos problemas surgem quando é revelado que o Capitão Shūsuke Amagai estava trabalhando com Gyōkaku Kumoi.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep186.jpg",
+        "dataExibicao": "2008-09-03"
+    },
+    {
+        "id": 3300,
+        "numero": 187,
+        "titulo": "Ichigo Enfurece! O Segredo do Assassino",
+        "sinopse": "O Capitão Shūsuke Amagai revela suas verdadeiras intenções ao Capitão-Comandante Genryūsai Shigekuni Yamamoto.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep187.jpg",
+        "dataExibicao": "2008-09-10"
+    },
+    {
+        "id": 3301,
+        "numero": 188,
+        "titulo": "Duelo! Amagai vs. Ichigo",
+        "sinopse": "Ichigo Kurosaki e o Capitão Shūsuke Amagai entram em batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep188.jpg",
+        "dataExibicao": "2008-09-17"
+    },
+    {
+        "id": 3302,
+        "numero": 189,
+        "titulo": "O Orgulho do Shinigami Caído",
+        "sinopse": "Ichigo Kurosaki e o Capitão Shūsuke Amagai concluem sua batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep189.jpg",
+        "dataExibicao": "2008-10-07"
+    },
+    {
+        "id": 3303,
+        "numero": 190,
+        "titulo": "Capítulo Hueco Mundo, Reinício!",
+        "sinopse": "Após uma longa recapitulação dos acontecimentos desde a traição de Sōsuke Aizen à Soul Society, Ichigo Kurosaki termina seu duelo com Grimmjow Jaegerjaquez antes de ser confrontado por Nnoitra Gilga.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep190.jpg",
+        "dataExibicao": "2008-10-14"
+    },
+    {
+        "id": 3304,
+        "numero": 191,
+        "titulo": "O Banquete Assustador, o Teatro de Szayelaporro",
+        "sinopse": "Szayelaporro Granz libera sua Zanpakutō, enquanto Nnoitra Gilga revela a verdadeira identidade de Nel Tu.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep191.jpg",
+        "dataExibicao": "2008-10-21"
+    },
+    {
+        "id": 3305,
+        "numero": 192,
+        "titulo": "O Segredo de Nel, Uma Bela Espada Entra na Batalha!?",
+        "sinopse": "Nel Tu retorna à sua forma original como uma Espada.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep192.jpg",
+        "dataExibicao": "2008-10-28"
+    },
+    {
+        "id": 3306,
+        "numero": 193,
+        "titulo": "Irresistível, o Espetáculo de Terror dos Bonecos",
+        "sinopse": "Szayelaporro Granz demonstra uma nova técnica, enquanto Nnoitra Gilga fica surpreso com o ataque de Nelliel Tu Odelschwanck.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep193.jpg",
+        "dataExibicao": "2008-11-04"
+    },
+    {
+        "id": 3307,
+        "numero": 194,
+        "titulo": "O Passado de Neliel",
+        "sinopse": "Nnoitra Gilga relembra seu passado com Nelliel Tu Odelschwanck.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep194.jpg",
+        "dataExibicao": "2008-11-11"
+    },
+    {
+        "id": 3308,
+        "numero": 195,
+        "titulo": "A União Suprema! A Seriedade de Pesche",
+        "sinopse": "Nelliel Tu Odelschwanck retorna à sua forma infantil, deixando Ichigo Kurosaki nas mãos de Tesra Lindocruz. Szayelaporro Granz parece imune aos ataques, enquanto Rukia Kuchiki e Yasutora Sado enfrentam grandes perigos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep195.jpg",
+        "dataExibicao": "2008-11-18"
+    },
+    {
+        "id": 3305,
+        "numero": 196,
+        "titulo": "Entrando na Batalha! O Exército Shinigami Mais Forte Aparece",
+        "sinopse": "O Gotei 13 chega para ajudar Ichigo Kurosaki e seus companheiros.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep196.jpg",
+        "dataExibicao": "2008-11-25"
+    },
+    {
+        "id": 3306,
+        "numero": 197,
+        "titulo": "Bankai de Byakuya, a Raiva Silenciosa",
+        "sinopse": "Zommari Rureaux libera sua Zanpakutō, forçando o Capitão Byakuya Kuchiki a tomar medidas extremas para evitar a derrota.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep197.jpg",
+        "dataExibicao": "2008-12-02"
+    },
+    {
+        "id": 3307,
+        "numero": 198,
+        "titulo": "Os Dois Cientistas, a Armadilha de Mayuri",
+        "sinopse": "O Capitão Byakuya Kuchiki derrota Zommari Rureaux, enquanto o Capitão Mayuri Kurotsuchi ganha vantagem contra Szayelaporro Granz.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep198.jpg",
+        "dataExibicao": "2008-12-09"
+    },
+    {
+        "id": 3308,
+        "numero": 199,
+        "titulo": "Nascimento Sagrado, o Szayel Aporro Ressuscitado",
+        "sinopse": "O Capitão Mayuri Kurotsuchi decide finalizar sua batalha contra Szayelaporro Granz, que retorna com uma nova forma.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep199.jpg",
+        "dataExibicao": "2008-12-16"
+    },
+    {
+        "id": 3309,
+        "numero": 200,
+        "titulo": "O Corpo Mais Duro!? Derrube Nnoitra",
+        "sinopse": "O Capitão Kenpachi Zaraki e Nnoitra Gilga continuam sua batalha intensa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep200.jpg",
+        "dataExibicao": "2008-12-23"
+    },
+    {
+        "id": 3310,
+        "numero": 201,
+        "titulo": "Nnoitra Liberado! Braços Multiplicados",
+        "sinopse": "A batalha entre o Capitão Kenpachi Zaraki e Nnoitra Gilga fica ainda mais feroz quando Nnoitra libera sua Zanpakutō.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep201.jpg",
+        "dataExibicao": "2009-01-06"
+    },
+    {
+        "id": 3311,
+        "numero": 202,
+        "titulo": "Conclusão da Luta Feroz! Quem é o Mais Forte?",
+        "sinopse": "O Capitão Kenpachi Zaraki e Nnoitra Gilga concluem sua batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep202.jpg",
+        "dataExibicao": "2009-01-13"
+    },
+    {
+        "id": 3312,
+        "numero": 203,
+        "titulo": "Karakura Town se Reúne! Aizen Contra os Shinigami",
+        "sinopse": "Sōsuke Aizen revela seus planos e segue para Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep203.jpg",
+        "dataExibicao": "2009-01-20"
+    },
+    {
+        "id": 3313,
+        "numero": 204,
+        "titulo": "A Estratégia de Persuasão Seppuku de Ichigo ☆",
+        "sinopse": "Ichigo Kurosaki tenta ajudar Rurichiyo Kasumiōji e Kenryū em uma disputa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep204.jpg",
+        "dataExibicao": "2009-01-27"
+    },
+    {
+        "id": 3314,
+        "numero": 205,
+        "titulo": "Tum! Um Torneio de Kemari Cheio de Hollows",
+        "sinopse": "Rurichiyo Kasumiōji e Kenryū participam de uma partida de kemari.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep205.jpg",
+        "dataExibicao": "2009-02-03"
+    },
+    {
+        "id": 3315,
+        "numero": 206,
+        "titulo": "O Capítulo do Passado Começa! A Verdade de 110 Anos Atrás",
+        "sinopse": "O passado de vários Shinigami de 110 anos atrás é revelado.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep206.jpg",
+        "dataExibicao": "2009-02-10"
+    },
+    {
+        "id": 3316,
+        "numero": 207,
+        "titulo": "O Novo Capitão da 12ª Divisão, Urahara Kisuke",
+        "sinopse": "A 12ª Divisão enfrenta as mudanças com Kisuke Urahara assumindo como novo capitão.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep207.jpg",
+        "dataExibicao": "2009-02-17"
+    },
+    {
+        "id": 3317,
+        "numero": 208,
+        "titulo": "Aizen e o Garoto Gênio",
+        "sinopse": "O Capitão Kisuke Urahara leva a Tenente Hiyori Sarugaki ao Ninho dos Vermes.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep208.jpg",
+        "dataExibicao": "2009-02-24"
+    },
+    {
+        "id": 3318,
+        "numero": 209,
+        "titulo": "A 9ª Divisão de Muguruma Entra em Ação",
+        "sinopse": "O Gotei 13 tenta descobrir o que está por trás dos desaparecimentos dos cidadãos de Rukongai.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep209.jpg",
+        "dataExibicao": "2009-03-03"
+    },
+    {
+        "id": 3319,
+        "numero": 210,
+        "titulo": "Hiyori Morre? O Início da Tragédia",
+        "sinopse": "Vários capitães e tenentes do Gotei 13 enfrentam o Capitão Kensei Muguruma e a Tenente Mashiro Kuna após eles se tornarem Hollows.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep210.jpg",
+        "dataExibicao": "2009-03-10"
+    },
+    {
+        "id": 3320,
+        "numero": 211,
+        "titulo": "Traição! Os Movimentos Secretos de Aizen",
+        "sinopse": "O Tenente Sōsuke Aizen revela sua verdadeira identidade como traidor da Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep211.jpg",
+        "dataExibicao": "2009-03-17"
+    },
+    {
+        "id": 3321,
+        "numero": 212,
+        "titulo": "Resgate Hirako! Aizen Contra Urahara",
+        "sinopse": "Os Capitães Kisuke Urahara, Tessai Tsukabishi e Yoruichi Shihōin partem para o Mundo Humano com os capitães e tenentes Hollowficados.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep212.jpg",
+        "dataExibicao": "2009-03-24"
+    },
+    {
+        "id": 3322,
+        "numero": 213,
+        "titulo": "O Policial Konso Karakuraizer Nasce",
+        "sinopse": "Kisuke Urahara cria a equipe Karakura-Raizer para proteger Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep213.jpg",
+        "dataExibicao": "2009-03-31"
+    },
+    {
+        "id": 3323,
+        "numero": 214,
+        "titulo": "O Último Dia do Karakuraizer",
+        "sinopse": "A equipe Karakura-Raizer enfrenta uma Arrancar feminina.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep214.jpg",
+        "dataExibicao": "2009-04-07"
+    },
+    {
+        "id": 3324,
+        "numero": 215,
+        "titulo": "Protejam Karakura Town! Aparição Completa dos Shinigami",
+        "sinopse": "Enquanto o Gotei 13 se prepara para enfrentar as três principais Espadas, Ichigo Kurosaki confronta Ulquiorra Cifer.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep215.jpg",
+        "dataExibicao": "2009-04-14"
+    },
+    {
+        "id": 3325,
+        "numero": 216,
+        "titulo": "Elite! Os Quatro Shinigami",
+        "sinopse": "Enquanto Ichigo Kurosaki enfrenta Ulquiorra Cifer, a batalha pelos quatro pilares começa em Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep216.jpg",
+        "dataExibicao": "2009-04-21"
+    },
+    {
+        "id": 3326,
+        "numero": 217,
+        "titulo": "O Belo Pequeno Demônio Charlotte",
+        "sinopse": "O 5º Oficial Yumichika Ayasegawa e Charlotte Chuhlhourne entram em batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep217.jpg",
+        "dataExibicao": "2009-04-28"
+    },
+    {
+        "id": 3327,
+        "numero": 218,
+        "titulo": "Kira, a Batalha Dentro do Desespero",
+        "sinopse": "O Tenente Izuru Kira, o Tenente Shūhei Hisagi e o 3º Oficial Ikkaku Madarame continuam suas lutas contra as Fracción de Baraggan Louisenbairn.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep218.jpg",
+        "dataExibicao": "2009-05-05"
+    },
+    {
+        "id": 3328,
+        "numero": 219,
+        "titulo": "O Shikai de Hisagi! O Nome é...",
+        "sinopse": "O Tenente Shūhei Hisagi e Findorr Calius entram em combate.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep219.jpg",
+        "dataExibicao": "2009-05-12"
+    },
+    {
+        "id": 3329,
+        "numero": 220,
+        "titulo": "Ikkaku Cai! A Crise do Shinigami",
+        "sinopse": "O 3º Oficial Ikkaku Madarame perde sua luta contra Choe Neng Poww, forçando o Capitão Sajin Komamura a assumir o combate.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep220.jpg",
+        "dataExibicao": "2009-05-19"
+    },
+    {
+        "id": 3330,
+        "numero": 221,
+        "titulo": "O Confronto Completo! Shinigami Contra Espada",
+        "sinopse": "A Capitã Suì-Fēng inicia sua batalha contra Ggio Vega enquanto os outros Espadas e suas Fracción entram em combate.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep221.jpg",
+        "dataExibicao": "2009-05-26"
+    },
+    {
+        "id": 3331,
+        "numero": 222,
+        "titulo": "A Dupla Mais Maligna!? Suì-Fēng & Ōmaeda",
+        "sinopse": "Ggio Vega e Nirgge Parduoc liberam suas Zanpakutō, fazendo o Tenente Marechiyo Ōmaeda mostrar seu verdadeiro poder.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep222.jpg",
+        "dataExibicao": "2009-06-02"
+    },
+    {
+        "id": 3332,
+        "numero": 223,
+        "titulo": "Um Corpo Miraculoso! Ggio Liberado",
+        "sinopse": "O Tenente Marechiyo Ōmaeda e a Capitã Suì-Fēng enfrentam dificuldades contra seus adversários, mas conseguem vencer.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep223.jpg",
+        "dataExibicao": "2009-06-09"
+    },
+    {
+        "id": 3333,
+        "numero": 224,
+        "titulo": "Batalha 3 Contra 1! A Crise de Rangiku",
+        "sinopse": "A Tenente Momo Hinamori chega para ajudar a Tenente Rangiku Matsumoto, fazendo a Fracción de Harribel invocar Ayon.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep224.jpg",
+        "dataExibicao": "2009-06-16"
+    },
+    {
+        "id": 3334,
+        "numero": 225,
+        "titulo": "Vice-Capitães Aniquilados! A Terrível Besta Demoníaca",
+        "sinopse": "Ayon derrota os tenentes e causa grandes ferimentos, mas o Capitão-Comandante Genryūsai Yamamoto aparece para enfrentar a criatura.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep225.jpg",
+        "dataExibicao": "2009-06-23"
+    },
+    {
+        "id": 3335,
+        "numero": 226,
+        "titulo": "A Luta Feroz Termina? Rumo a uma Nova Batalha!",
+        "sinopse": "O Capitão-Comandante Genryūsai Yamamoto derrota Ayon e a Fracción de Harribel. Starrk revela ser a Primeira Espada.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep226.jpg",
+        "dataExibicao": "2009-06-30"
+    },
+    {
+        "id": 3336,
+        "numero": 227,
+        "titulo": "Erro Maravilhoso",
+        "sinopse": "Ichigo Kurosaki e Yasutora Sado tornam-se colegas de classe de Mizuiro Kojima e Keigo Asano. Rukia é enviada para Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep227.jpg",
+        "dataExibicao": "2009-07-07"
+    },
+    {
+        "id": 3337,
+        "numero": 228,
+        "titulo": "Verão! Mar! Festival de Maiôs!!",
+        "sinopse": "Os personagens aproveitam uma pausa na praia.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep228.jpg",
+        "dataExibicao": "2009-07-14"
+    },
+    {
+        "id": 3338,
+        "numero": 229,
+        "titulo": "Grito da Alma? Nasce o Shinigami Tapete!",
+        "sinopse": "Ikkaku e Yumichika são obrigados a ficar novamente com Mizuho durante uma missão no Mundo Humano.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep229.jpg",
+        "dataExibicao": "2009-07-21"
+    },
+    {
+        "id": 3339,
+        "numero": 230,
+        "titulo": "Um Novo Inimigo! A Materialização das Zanpakutō",
+        "sinopse": "Uma misteriosa alma de Zanpakutō chamada Muramasa libera os espíritos de várias Zanpakutō de suas espadas e ataca a Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep230.jpg",
+        "dataExibicao": "2009-07-28"
+    },
+    {
+        "id": 3340,
+        "numero": 231,
+        "titulo": "Byakuya, Desaparecendo com as Flores de Cerejeira",
+        "sinopse": "Ichigo Kurosaki enfrenta o espírito materializado de Sode no Shirayuki, que aparece no Mundo Humano procurando por Rukia Kuchiki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep231.jpg",
+        "dataExibicao": "2009-08-04"
+    },
+    {
+        "id": 3341,
+        "numero": 232,
+        "titulo": "Sode no Shirayuki vs. Rukia! Coração Confuso",
+        "sinopse": "Rukia Kuchiki e Ichigo Kurosaki enfrentam Sode no Shirayuki, enquanto Muramasa revela ser um espírito de Zanpakutō.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep232.jpg",
+        "dataExibicao": "2009-08-11"
+    },
+    {
+        "id": 3342,
+        "numero": 233,
+        "titulo": "Zangetsu se Torna um Inimigo",
+        "sinopse": "Muramasa liberta Zangetsu, e Ichigo Kurosaki luta contra ele enquanto seu Hollow interior começa a assumir o controle.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep233.jpg",
+        "dataExibicao": "2009-08-18"
+    },
+    {
+        "id": 3343,
+        "numero": 234,
+        "titulo": "Renji Surpreso?! Os Dois Zabimaru",
+        "sinopse": "O Tenente Renji Abarai é confrontado pelo espírito de sua Zanpakutō, enquanto Muramasa entra no mundo interior de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep234.jpg",
+        "dataExibicao": "2009-08-25"
+    },
+    {
+        "id": 3344,
+        "numero": 235,
+        "titulo": "Confronto! Hisagi vs. Kazeshini",
+        "sinopse": "O Tenente Shūhei Hisagi luta contra o espírito de sua Zanpakutō enquanto Hollow Ichigo enfrenta Muramasa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep235.jpg",
+        "dataExibicao": "2009-09-01"
+    },
+    {
+        "id": 3345,
+        "numero": 236,
+        "titulo": "Liberar! O Novo Getsuga Tenshō",
+        "sinopse": "Izuru Kira ajuda Shūhei Hisagi em sua luta contra Kazeshini, enquanto Renji e Ichigo concluem seus combates.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep236.jpg",
+        "dataExibicao": "2009-09-08"
+    },
+    {
+        "id": 3346,
+        "numero": 237,
+        "titulo": "Suì-Fēng, Cercando a Zanpakutō",
+        "sinopse": "Ikkaku Madarame e Marechiyo Ōmaeda encontram os espíritos de suas Zanpakutō, enquanto Ichigo avista Byakuya Kuchiki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep237.jpg",
+        "dataExibicao": "2009-09-15"
+    },
+    {
+        "id": 3347,
+        "numero": 238,
+        "titulo": "Amizade? Ódio? Haineko & Tobiume",
+        "sinopse": "Rangiku Matsumoto e Momo Hinamori enfrentam os espíritos de suas Zanpakutō, enquanto Hitsugaya tenta convencer Hyōrinmaru.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep238.jpg",
+        "dataExibicao": "2009-09-22"
+    },
+    {
+        "id": 3348,
+        "numero": 239,
+        "titulo": "O Despertar de Hyōrinmaru! A Luta Feroz de Hitsugaya",
+        "sinopse": "Hitsugaya tenta convencer Hyōrinmaru de que é seu mestre, enquanto a batalha contra as Zanpakutō continua.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep239.jpg",
+        "dataExibicao": "2009-09-29"
+    },
+    {
+        "id": 3349,
+        "numero": 240,
+        "titulo": "A Traição de Byakuya",
+        "sinopse": "Ichigo Kurosaki ataca Muramasa, mas Senbonzakura e depois o Capitão Byakuya Kuchiki aparecem para protegê-lo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep240.jpg",
+        "dataExibicao": "2009-10-06"
+    },
+    {
+        "id": 3350,
+        "numero": 241,
+        "titulo": "Pelo Orgulho! Byakuya vs. Renji",
+        "sinopse": "Muramasa coloca Byakuya Kuchiki à prova. Depois, Byakuya invade o quartel da 6ª Divisão e enfrenta seu tenente Renji Abarai.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep241.jpg",
+        "dataExibicao": "2009-10-13"
+    },
+    {
+        "id": 3351,
+        "numero": 242,
+        "titulo": "Shinigami e Zanpakutō, Uma Grande Investida",
+        "sinopse": "Ichigo Kurosaki, Suì-Fēng e Izuru Kira iniciam suas batalhas enquanto Ikkaku Madarame derrota sua Zanpakutō Hōzukimaru.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep242.jpg",
+        "dataExibicao": "2009-10-20"
+    },
+    {
+        "id": 3352,
+        "numero": 243,
+        "titulo": "Luta Individual! Ichigo vs. Senbonzakura",
+        "sinopse": "Enquanto os Shinigami lutam contra as Zanpakutō materializadas, Ichigo enfrenta Senbonzakura.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep243.jpg",
+        "dataExibicao": "2009-10-27"
+    },
+    {
+        "id": 3353,
+        "numero": 244,
+        "titulo": "Finalmente Esperado... Kenpachi Aparece!",
+        "sinopse": "O Capitão Kenpachi Zaraki chega ao campo de batalha e derrota Wabisuke antes de seguir para enfrentar Byakuya Kuchiki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep244.jpg",
+        "dataExibicao": "2009-11-03"
+    },
+    {
+        "id": 3354,
+        "numero": 245,
+        "titulo": "Persiga Byakuya! As Divisões do Gotei Confusas",
+        "sinopse": "Kenpachi Zaraki e Byakuya Kuchiki entram em confronto enquanto os capitães tentam entender a situação causada pelas Zanpakutō.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep245.jpg",
+        "dataExibicao": "2009-11-10"
+    },
+    {
+        "id": 3355,
+        "numero": 246,
+        "titulo": "Missão Especial! Resgatem o Capitão-Comandante Yamamoto",
+        "sinopse": "Um grupo de Shinigami tenta resgatar o Capitão-Comandante Genryūsai Yamamoto, mas é impedido por várias Zanpakutō materializadas.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep246.jpg",
+        "dataExibicao": "2009-11-17"
+    },
+    {
+        "id": 3356,
+        "numero": 247,
+        "titulo": "Shinigami Enganados! A Crise de Colapso do Mundo",
+        "sinopse": "Ichigo liberta Yamamoto, mas descobre que tudo fazia parte do plano de Muramasa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep247.jpg",
+        "dataExibicao": "2009-11-24"
+    },
+    {
+        "id": 3357,
+        "numero": 248,
+        "titulo": "Dragão de Gelo e Dragão de Fogo! O Confronto Mais Forte",
+        "sinopse": "Yamamoto e os outros são impedidos pelas chamas de Ryūjin Jakka enquanto Muramasa tenta libertar Kōga Kuchiki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep248.jpg",
+        "dataExibicao": "2009-12-01"
+    },
+    {
+        "id": 3358,
+        "numero": 249,
+        "titulo": "Bankai de Senbonzakura! Ataque e Defesa do Mundo Humano",
+        "sinopse": "Kenpachi Zaraki enfrenta o Bankai de Sajin Komamura enquanto Muramasa consegue libertar seu mestre Kōga.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep249.jpg",
+        "dataExibicao": "2009-12-08"
+    },
+    {
+        "id": 3359,
+        "numero": 250,
+        "titulo": "Aquele Homem, Pelo Bem dos Kuchiki",
+        "sinopse": "O passado de Kōga Kuchiki é revelado.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep250.jpg",
+        "dataExibicao": "2009-12-15"
+    },
+    {
+        "id": 3360,
+        "numero": 251,
+        "titulo": "História Sombria! O Nascimento do Pior Shinigami",
+        "sinopse": "Ginrei Kuchiki e Genryūsai Yamamoto são forçados a selar Kōga Kuchiki. No presente, Byakuya impede que Kōga mate Muramasa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep251.jpg",
+        "dataExibicao": "2009-12-22"
+    },
+    {
+        "id": 3361,
+        "numero": 252,
+        "titulo": "Byakuya, A Verdade Por Trás de Sua Traição",
+        "sinopse": "Senbonzakura revela a verdade sobre a traição de Byakuya Kuchiki, enquanto ele enfrenta Kōga Kuchiki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep252.jpg",
+        "dataExibicao": "2010-01-05"
+    },
+    {
+        "id": 3362,
+        "numero": 253,
+        "titulo": "A Verdadeira Identidade de Muramasa Revelada",
+        "sinopse": "Byakuya Kuchiki derrota Kōga Kuchiki enquanto Muramasa perde o controle e se transforma em uma versão Hollow de si mesmo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep253.jpg",
+        "dataExibicao": "2010-01-12"
+    },
+    {
+        "id": 3363,
+        "numero": 254,
+        "titulo": "Byakuya e Renji, o Retorno da 6ª Divisão",
+        "sinopse": "Os Shinigami e seus espíritos de Zanpakutō tentam lidar com os Gillians.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep254.jpg",
+        "dataExibicao": "2010-01-19"
+    },
+    {
+        "id": 3364,
+        "numero": 255,
+        "titulo": "Capítulo Final - História Alternativa das Zanpakutō",
+        "sinopse": "Ichigo Kurosaki derrota Muramasa, e os espíritos das Zanpakutō retornam às suas formas originais.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep255.jpg",
+        "dataExibicao": "2010-01-26"
+    },
+    {
+        "id": 3365,
+        "numero": 256,
+        "titulo": "O Byakuya Furioso! O Colapso da Casa Kuchiki",
+        "sinopse": "Durante uma festa na Mansão Kuchiki, duas Zanpakutō descontroladas chamadas Tōjū atacam o local.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep256.jpg",
+        "dataExibicao": "2010-02-02"
+    },
+    {
+        "id": 3366,
+        "numero": 257,
+        "titulo": "Um Novo Inimigo! A Verdadeira Natureza das Feras de Espada",
+        "sinopse": "Tōshirō Hitsugaya enfrenta uma Tōjū que foi absorvida por um Hollow.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep257.jpg",
+        "dataExibicao": "2010-02-09"
+    },
+    {
+        "id": 3367,
+        "numero": 258,
+        "titulo": "Serpente Perdida, Macaco Torturado",
+        "sinopse": "Renji Abarai e o espírito de sua Zanpakutō, Zabimaru, precisam derrotar uma Tōjū enquanto Hebi busca sua liberdade.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep258.jpg",
+        "dataExibicao": "2010-02-16"
+    },
+    {
+        "id": 3368,
+        "numero": 259,
+        "titulo": "Terror! O Monstro Que Se Esconde no Subsolo",
+        "sinopse": "Um grupo de Shinigami entra nos esgotos para enfrentar uma Tōjū, com ajuda de um espírito de Zanpakutō que vive no local.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep259.jpg",
+        "dataExibicao": "2010-02-23"
+    },
+    {
+        "id": 3369,
+        "numero": 260,
+        "titulo": "Conclusão!? Hisagi vs. Kazeshini",
+        "sinopse": "Kazeshini muda sua atitude quando é forçado a cuidar de um bebê.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep260.jpg",
+        "dataExibicao": "2010-03-02"
+    },
+    {
+        "id": 3370,
+        "numero": 261,
+        "titulo": "A Pessoa com a Habilidade Desconhecida! Orihime é o Alvo",
+        "sinopse": "Orihime Inoue precisa ajudar uma estudante transferida que está sendo controlada por uma Tōjū.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep261.jpg",
+        "dataExibicao": "2010-03-09"
+    },
+    {
+        "id": 3371,
+        "numero": 262,
+        "titulo": "Haineko Chora! A Trágica Fera de Espada",
+        "sinopse": "Haineko se apaixona por uma Tōjū consciente, mas decide derrotá-la quando ela perde o controle.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep262.jpg",
+        "dataExibicao": "2010-03-16"
+    },
+    {
+        "id": 3372,
+        "numero": 263,
+        "titulo": "Aprisionamento?! Senbonzakura & Zabimaru",
+        "sinopse": "Zabimaru e Senbonzakura ficam presos no Instituto de Pesquisa e Desenvolvimento dos Shinigami.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep263.jpg",
+        "dataExibicao": "2010-03-23"
+    },
+    {
+        "id": 3373,
+        "numero": 264,
+        "titulo": "Batalha das Mulheres? Katen Kyōkotsu vs. Nanao!",
+        "sinopse": "Nanao Ise tenta entender a garota de cabelo violeta enquanto enfrenta uma Tōjū.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep264.jpg",
+        "dataExibicao": "2010-03-30"
+    },
+    {
+        "id": 3374,
+        "numero": 265,
+        "titulo": "Evolução?! A Ameaça da Última Fera de Espada",
+        "sinopse": "Os espíritos das Zanpakutō enfrentam a última Tōjū até que seus usuários chegam para ajudar.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep265.jpg",
+        "dataExibicao": "2010-04-06"
+    },
+    {
+        "id": 3375,
+        "numero": 266,
+        "titulo": "Ichigo vs. Ulquiorra, Retorno",
+        "sinopse": "Os acontecimentos anteriores são relembrados antes da continuação da batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep266.jpg",
+        "dataExibicao": "2010-04-13"
+    },
+    {
+        "id": 3376,
+        "numero": 267,
+        "titulo": "Corações Conectados! O Punho Esquerdo da Morte Certa",
+        "sinopse": "Ichigo Kurosaki luta contra Ulquiorra Cifer enquanto Renji Abarai e Yasutora Sado enfrentam Battikaroa.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep267.jpg",
+        "dataExibicao": "2010-04-20"
+    },
+    {
+        "id": 3377,
+        "numero": 268,
+        "titulo": "Ódio e Ciúme, o Dilema de Orihime",
+        "sinopse": "Loly e Menoly levam Orihime até Ichigo, enquanto Yammy Llargo aparece e é atacado por Uryū Ishida.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep268.jpg",
+        "dataExibicao": "2010-04-27"
+    },
+    {
+        "id": 3378,
+        "numero": 269,
+        "titulo": "Ichigo e Uryū, Unidos Costas com Costas",
+        "sinopse": "Uryū Ishida enfrenta Yammy Llargo enquanto Ulquiorra Cifer revela sua Ressurrección para Ichigo Kurosaki.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep269.jpg",
+        "dataExibicao": "2010-05-04"
+    },
+    {
+        "id": 3379,
+        "numero": 270,
+        "titulo": "O Início do Desespero... Ichigo, a Lâmina Inalcançável",
+        "sinopse": "Ichigo Kurosaki enfrenta grandes dificuldades contra Ulquiorra Cifer em sua forma liberada, e Ulquiorra revela sua segunda transformação.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep270.jpg",
+        "dataExibicao": "2010-05-11"
+    },
+    {
+        "id": 3380,
+        "numero": 271,
+        "titulo": "Ichigo Morre! Orihime, o Grito de Tristeza!",
+        "sinopse": "A forma Hollow de Ichigo assume completamente o controle, e ele volta a lutar contra Ulquiorra Cifer.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep271.jpg",
+        "dataExibicao": "2010-05-18"
+    },
+    {
+        "id": 3381,
+        "numero": 272,
+        "titulo": "Ichigo vs. Ulquiorra, Conclusão!",
+        "sinopse": "Ichigo Kurosaki e Ulquiorra Cifer encerram sua batalha decisiva.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep272.jpg",
+        "dataExibicao": "2010-05-25"
+    },
+    {
+        "id": 3382,
+        "numero": 273,
+        "titulo": "Fúria do Tubarão! A Ressurrección de Harribel",
+        "sinopse": "Enquanto Rukia Kuchiki, Yasutora Sado e Renji Abarai enfrentam Yammy Llargo, os capitães continuam suas batalhas contra os Espada em Karakura.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep273.jpg",
+        "dataExibicao": "2010-06-01"
+    },
+    {
+        "id": 3383,
+        "numero": 274,
+        "titulo": "Hitsugaya, o Desesperado Hyōten Hyakkasō!",
+        "sinopse": "A batalha entre Tōshirō Hitsugaya e Tier Harribel continua.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep274.jpg",
+        "dataExibicao": "2010-06-08"
+    },
+    {
+        "id": 3384,
+        "numero": 275,
+        "titulo": "A Aproximação do Sopro da Morte, o Rei que Governa Sobre a Morte!",
+        "sinopse": "Suì-Fēng e Marechiyo Ōmaeda enfrentam dificuldades em sua luta contra Baraggan Louisenbairn.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep275.jpg",
+        "dataExibicao": "2010-06-15"
+    },
+    {
+        "id": 3385,
+        "numero": 276,
+        "titulo": "Morte com Um Golpe, Suì-Fēng, Bankai!",
+        "sinopse": "Ōmaeda distrai Baraggan para que Suì-Fēng use sua Bankai, enquanto Shunsui Kyōraku continua lutando contra Coyote Starrk.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep276.jpg",
+        "dataExibicao": "2010-06-22"
+    },
+    {
+        "id": 3386,
+        "numero": 277,
+        "titulo": "Clímax! Kyōraku vs. Starrk!",
+        "sinopse": "Shunsui Kyōraku e Coyote Starrk decidem lutar com toda a sua força.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep277.jpg",
+        "dataExibicao": "2010-06-29"
+    },
+    {
+        "id": 3387,
+        "numero": 278,
+        "titulo": "O Pesadelo Retorna... Ressurreição dos Espada",
+        "sinopse": "Os Espada sobreviventes são mostrados, Aizen, Gin e Tōsen são libertados, e os Visored chegam ao campo de batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep278.jpg",
+        "dataExibicao": "2010-07-06"
+    },
+    {
+        "id": 3388,
+        "numero": 279,
+        "titulo": "Hirako e Aizen... O Reencontro do Destino!",
+        "sinopse": "Os Visored entram na batalha contra Sōsuke Aizen.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep279.jpg",
+        "dataExibicao": "2010-07-13"
+    },
+    {
+        "id": 3389,
+        "numero": 280,
+        "titulo": "Hisagi e Tōsen, o Momento da Separação",
+        "sinopse": "Hachigen Ushōda ajuda a Capitã Suì-Fēng em sua batalha contra Baraggan Louisenbairn.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep280.jpg",
+        "dataExibicao": "2010-07-20"
+    },
+    {
+        "id": 3390,
+        "numero": 281,
+        "titulo": "Coroa de Mentiras, o Rancor de Baraggan",
+        "sinopse": "Baraggan Louisenbairn relembra seu passado como Rei de Hueco Mundo antes de morrer.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep281.jpg",
+        "dataExibicao": "2010-07-27"
+    },
+    {
+        "id": 3391,
+        "numero": 282,
+        "titulo": "Poder da Alma! Los Lobos, Ataque!",
+        "sinopse": "Love Aikawa e Rōjūrō Ōtoribashi enfrentam Coyote Starrk.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep282.jpg",
+        "dataExibicao": "2010-08-03"
+    },
+    {
+        "id": 3392,
+        "numero": 283,
+        "titulo": "Starrk, a Batalha Solitária",
+        "sinopse": "Coyote Starrk e o Capitão Shunsui Kyōraku concluem sua batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep283.jpg",
+        "dataExibicao": "2010-08-10"
+    },
+    {
+        "id": 3393,
+        "numero": 284,
+        "titulo": "Corrente de Sacrifício, o Passado de Harribel",
+        "sinopse": "Enquanto Tier Harribel fica inconsciente devido aos ferimentos, ela relembra seu passado.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep284.jpg",
+        "dataExibicao": "2010-08-17"
+    },
+    {
+        "id": 3394,
+        "numero": 285,
+        "titulo": "O Rancor de Cem Anos! A Vingança de Hiyori",
+        "sinopse": "A situação em Karakura falsa começa a ficar desesperadora enquanto a batalha contra Yammy continua em Hueco Mundo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep285.jpg",
+        "dataExibicao": "2010-08-24"
+    },
+    {
+        "id": 3395,
+        "numero": 286,
+        "titulo": "O Retorno de Ichigo! Protejam Karakura",
+        "sinopse": "Os capitães em Hueco Mundo decidem enviar Ichigo Kurosaki de volta para Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep286.jpg",
+        "dataExibicao": "2010-08-31"
+    },
+    {
+        "id": 3396,
+        "numero": 287,
+        "titulo": "História Paralela! Ichigo e a Lâmpada Mágica",
+        "sinopse": "Ichigo Kurosaki tem um sonho e tenta escapar dele.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep287.jpg",
+        "dataExibicao": "2010-09-07"
+    },
+    {
+        "id": 3397,
+        "numero": 288,
+        "titulo": "O Trunfo Final! Ichigo Rumo à Batalha Decisiva",
+        "sinopse": "Enquanto a batalha contra Yammy Llargo continua, Ichigo Kurosaki começa seu retorno para Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep288.jpg",
+        "dataExibicao": "2010-09-14"
+    },
+    {
+        "id": 3398,
+        "numero": 289,
+        "titulo": "Byakuya vs. Kenpachi?! O Combate Começa",
+        "sinopse": "Byakuya Kuchiki e Kenpachi Zaraki se preparam para lutar enquanto Yammy Llargo fica ainda mais poderoso. Tōsen revela sua Hollowficação para Hisagi e Komamura.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep289.jpg",
+        "dataExibicao": "2010-09-21"
+    },
+    {
+        "id": 3399,
+        "numero": 290,
+        "titulo": "Pelo Bem da Justiça?! O Homem Que Abandonou os Shinigami",
+        "sinopse": "Kaname Tōsen revela os verdadeiros motivos de sua traição à Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep290.jpg",
+        "dataExibicao": "2010-09-28"
+    },
+    {
+        "id": 3400,
+        "numero": 291,
+        "titulo": "Luta Desesperada Contra Aizen! Hirako, Shikai!",
+        "sinopse": "Enquanto Sajin Komamura continua sua batalha contra Kaname Tōsen, Shinji Hirako libera sua Zanpakutō contra Sōsuke Aizen.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep291.jpg",
+        "dataExibicao": "2010-10-05"
+    },
+    {
+        "id": 3401,
+        "numero": 292,
+        "titulo": "Guerra Total! Aizen vs. Shinigami",
+        "sinopse": "Os Shinigami e os Visored juram proteger Ichigo Kurosaki e derrotar Sōsuke Aizen.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep292.jpg",
+        "dataExibicao": "2010-10-12"
+    },
+    {
+        "id": 3402,
+        "numero": 293,
+        "titulo": "Hitsugaya, Furioso! A Lâmina do Ódio",
+        "sinopse": "Os Shinigami e Visored atacam Sōsuke Aizen, mas não conseguem derrotar o antigo capitão traidor.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep293.jpg",
+        "dataExibicao": "2010-10-19"
+    },
+    {
+        "id": 3403,
+        "numero": 294,
+        "titulo": "Impossível Atacar? O Genryūsai Selado",
+        "sinopse": "O Capitão-Comandante Genryūsai Yamamoto entra na batalha contra Aizen, mas tem sua Zanpakutō selada por Wonderweiss Margela.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep294.jpg",
+        "dataExibicao": "2010-10-26"
+    },
+    {
+        "id": 3404,
+        "numero": 295,
+        "titulo": "É Tudo uma Armadilha... Laços Criados",
+        "sinopse": "Sōsuke Aizen revela a Ichigo Kurosaki que todas as suas batalhas aconteceram exatamente como ele planejou.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep295.jpg",
+        "dataExibicao": "2010-11-02"
+    },
+    {
+        "id": 3405,
+        "numero": 296,
+        "titulo": "A Verdade Chocante... O Poder Misterioso Dentro de Ichigo!",
+        "sinopse": "Aizen revela mais informações a Ichigo Kurosaki, enquanto Isshin Kurosaki entra na batalha.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep296.jpg",
+        "dataExibicao": "2010-11-09"
+    },
+    {
+        "id": 3406,
+        "numero": 297,
+        "titulo": "A Lâmina Alongada?! Ichigo vs. Gin!",
+        "sinopse": "Ichigo Kurosaki e Gin Ichimaru lutam enquanto Aizen explica a Isshin Kurosaki o verdadeiro poder do Hōgyoku.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep297.jpg",
+        "dataExibicao": "2010-11-16"
+    },
+    {
+        "id": 3407,
+        "numero": 298,
+        "titulo": "Filme! Festival! Festival de Filmes dos Shinigami!",
+        "sinopse": "Os Shinigami do Gotei 13 fazem um filme para o Festival Internacional de Filmes da Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep298.jpg",
+        "dataExibicao": "2010-11-23"
+    },
+    {
+        "id": 3408,
+        "numero": 299,
+        "titulo": "Comemoração da Abertura do Cinema! The Hell Verse: Prólogo",
+        "sinopse": "Durante uma visita ao Mundo Humano, Rukia Kuchiki encontra Kurumadani Zennosuke, o atual Shinigami responsável por Karakura Town, sendo atacado por um homem mascarado.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep299.jpg",
+        "dataExibicao": "2010-11-30"
+    },
+    {
+        "id": 3409,
+        "numero": 300,
+        "titulo": "Urahara Aparece! Pare Aizen!",
+        "sinopse": "A batalha contra Sōsuke Aizen continua enquanto Aizen sofre uma transformação causada pelo poder do Hōgyoku.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep300.jpg",
+        "dataExibicao": "2010-12-07"
+    },
+    {
+        "id": 3410,
+        "numero": 301,
+        "titulo": "Ichigo Perde Seu Espírito de Luta!? A Expectativa de Gin!",
+        "sinopse": "Enquanto sua transformação avança, Sōsuke Aizen demonstra uma resistência cada vez maior. Ichigo Kurosaki não consegue derrotar Gin Ichimaru.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep301.jpg",
+        "dataExibicao": "2010-12-14"
+    },
+    {
+        "id": 3411,
+        "numero": 302,
+        "titulo": "O Getsuga Tenshō Final!? O Treinamento de Ichigo!",
+        "sinopse": "Ichigo Kurosaki começa seu treinamento para aprender o Getsuga Tenshō Final. Enquanto isso, Aizen e Gin chegam a Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep302.jpg",
+        "dataExibicao": "2010-12-21"
+    },
+    {
+        "id": 3412,
+        "numero": 303,
+        "titulo": "Mundo Real e Shinigamis! O Especial de Ano Novo!",
+        "sinopse": "A Associação dos Shinigamis organiza uma festa de Ano Novo na Soul Society.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep303.jpg",
+        "dataExibicao": "2011-01-04"
+    },
+    {
+        "id": 3413,
+        "numero": 304,
+        "titulo": "Outra História Paralela! Desta Vez o Inimigo é um Monstro!?",
+        "sinopse": "Ichigo Kurosaki tem outro sonho estranho e tenta escapar dele novamente.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep304.jpg",
+        "dataExibicao": "2011-01-11"
+    },
+    {
+        "id": 3414,
+        "numero": 305,
+        "titulo": "A Ilusão Uiva! Hisagi Rumo à Pousada de Águas Termais!",
+        "sinopse": "Shūhei Hisagi e Rangiku Matsumoto realizam uma missão enquanto Hisagi acredita que Rangiku gosta dele.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep305.jpg",
+        "dataExibicao": "2011-01-18"
+    },
+    {
+        "id": 3415,
+        "numero": 306,
+        "titulo": "Pelo Bem de Proteger! Ichigo Contra Tensa Zangetsu!",
+        "sinopse": "Ichigo Kurosaki enfrenta Tensa Zangetsu, que se funde com seu Hollow interior.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep306.jpg",
+        "dataExibicao": "2011-01-25"
+    },
+    {
+        "id": 3416,
+        "numero": 307,
+        "titulo": "Situação de Emergência! A Nova Evolução de Aizen!",
+        "sinopse": "Enquanto os humanos fogem, Gin Ichimaru trai Sōsuke Aizen.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep307.jpg",
+        "dataExibicao": "2011-02-01"
+    },
+    {
+        "id": 3417,
+        "numero": 308,
+        "titulo": "Adeus... Rangiku",
+        "sinopse": "Ichigo Kurosaki termina seu treinamento e força Sōsuke Aizen a lutar longe de Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep308.jpg",
+        "dataExibicao": "2011-02-08"
+    },
+    {
+        "id": 3418,
+        "numero": 309,
+        "titulo": "Conclusão da Batalha Intensa! Libere o Getsuga Tenshō Final!",
+        "sinopse": "Ichigo Kurosaki utiliza o Getsuga Tenshō Final contra Sōsuke Aizen.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep309.jpg",
+        "dataExibicao": "2011-02-15"
+    },
+    {
+        "id": 3419,
+        "numero": 310,
+        "titulo": "A Determinação de Ichigo! O Preço da Batalha Intensa",
+        "sinopse": "O resultado da batalha contra Sōsuke Aizen é revelado e Ichigo Kurosaki enfrenta as consequências de usar seu poder máximo.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep310.jpg",
+        "dataExibicao": "2011-02-22"
+    },
+    {
+        "id": 3420,
+        "numero": 311,
+        "titulo": "O Detetive Espiritual: Karakuraizer Decola Novamente!",
+        "sinopse": "As aventuras da equipe Karakura-Raizer continuam enquanto eles protegem Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep311.jpg",
+        "dataExibicao": "2011-03-01"
+    },
+    {
+        "id": 3421,
+        "numero": 312,
+        "titulo": "Posse! O Novo Capitão da 2ª Divisão!",
+        "sinopse": "O tenente Marechiyo Ōmaeda finge ser o capitão da Segunda Divisão.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep312.jpg",
+        "dataExibicao": "2011-03-08"
+    },
+    {
+        "id": 3422,
+        "numero": 313,
+        "titulo": "O Homem que Arrisca Sua Vida na 11ª Divisão!",
+        "sinopse": "Ichigo Kurosaki conhece Seizo Harugasaki, um membro da 11ª Divisão.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep313.jpg",
+        "dataExibicao": "2011-03-15"
+    },
+    {
+        "id": 3423,
+        "numero": 314,
+        "titulo": "Kon Viu! O Segredo de uma Bela Funcionária de Escritório",
+        "sinopse": "Kon segue uma bela garota enquanto um Hollow ameaça Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep314.jpg",
+        "dataExibicao": "2011-03-22"
+    },
+    {
+        "id": 3424,
+        "numero": 315,
+        "titulo": "Amiga de Yachiru! A Shinigami da Justiça Aparece!",
+        "sinopse": "Yachiru Kusajishi encontra uma antiga amiga Shinigami e relembra o passado.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep315.jpg",
+        "dataExibicao": "2011-03-29"
+    },
+    {
+        "id": 3425,
+        "numero": 316,
+        "titulo": "O Feriado de Tōshirō Hitsugaya!",
+        "sinopse": "O capitão Tōshirō Hitsugaya visita o Mundo Humano e reencontra uma senhora que conheceu em uma antiga missão.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep316.jpg",
+        "dataExibicao": "2011-04-05"
+    },
+    {
+        "id": 3426,
+        "numero": 317,
+        "titulo": "Um Incidente Incomum na Seireitei!? O Arco do Exército Invasor da Gotei 13!",
+        "sinopse": "Um mês após a derrota de Aizen, pessoas começam a desaparecer no Dangai enquanto a Soul Society tenta voltar ao normal.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep317.jpg",
+        "dataExibicao": "2011-04-12"
+    },
+    {
+        "id": 3427,
+        "numero": 318,
+        "titulo": "Renji Contra Rukia!? Batalha Entre Companheiros!",
+        "sinopse": "Enquanto Ichigo tenta escapar da prisão, Kagerōza Inaba aparece para capturar Nozomi Kujō.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep318.jpg",
+        "dataExibicao": "2011-04-19"
+    },
+    {
+        "id": 3428,
+        "numero": 319,
+        "titulo": "A Armadilha de Captura de Ichigo! Fuga da Soul Society!",
+        "sinopse": "Ichigo e Rukia tentam escapar da Seireitei enquanto Uryū Ishida enfrenta Kagerōza Inaba.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep319.jpg",
+        "dataExibicao": "2011-04-26"
+    },
+    {
+        "id": 3429,
+        "numero": 320,
+        "titulo": "A Gotei 13 Reunida no Mundo Real!",
+        "sinopse": "Enquanto a verdadeira Gotei 13 realiza uma reunião sobre os Reigai, Kon fica responsável por cuidar de Nozomi Kujō.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep320.jpg",
+        "dataExibicao": "2011-05-03"
+    },
+    {
+        "id": 3430,
+        "numero": 321,
+        "titulo": "Confronto Entre Eus Iguais! Ikkaku Contra Ikkaku!",
+        "sinopse": "Os capitães Jūshirō Ukitake e Shunsui Kyōraku investigam os registros do Departamento de Desenvolvimento e os membros da Gotei 13 enfrentam seus próprios Reigai.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep321.jpg",
+        "dataExibicao": "2011-05-10"
+    },
+    {
+        "id": 3431,
+        "numero": 322,
+        "titulo": "Confronto! Rukia Contra Rukia!",
+        "sinopse": "Os Reigai continuam seu ataque enquanto Nozomi Kujō percorre Karakura procurando respostas.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep322.jpg",
+        "dataExibicao": "2011-05-17"
+    },
+    {
+        "id": 3432,
+        "numero": 323,
+        "titulo": "Proteja Ichigo! A Determinação de Nozomi",
+        "sinopse": "Ichigo Kurosaki derrota vários Reigai enquanto protege Nozomi Kujō.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep323.jpg",
+        "dataExibicao": "2011-05-24"
+    },
+    {
+        "id": 3433,
+        "numero": 324,
+        "titulo": "Recapture a Seireitei! Os Capitães Avançam!",
+        "sinopse": "Os capitães retornam à Soul Society para enfrentar Kagerōza Inaba.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep324.jpg",
+        "dataExibicao": "2011-05-31"
+    },
+    {
+        "id": 3434,
+        "numero": 325,
+        "titulo": "Pelo Bem dos Fiéis! Byakuya Contra Hitsugaya!",
+        "sinopse": "O Comandante Yamamoto enfrenta os Reigai enquanto Byakuya Kuchiki encontra o Reigai do capitão Tōshirō Hitsugaya.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep325.jpg",
+        "dataExibicao": "2011-06-07"
+    },
+    {
+        "id": 3435,
+        "numero": 326,
+        "titulo": "As Duas Hinamori! A Determinação de Hitsugaya",
+        "sinopse": "Enquanto os capitães avançam pela Seireitei, Hitsugaya enfrenta o Reigai da tenente Momo Hinamori.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep326.jpg",
+        "dataExibicao": "2011-06-14"
+    },
+    {
+        "id": 3436,
+        "numero": 327,
+        "titulo": "Orgulho da Família Kuchiki! Byakuya Contra Byakuya!",
+        "sinopse": "Os capitães Sajin Komamura, Byakuya Kuchiki e Yamamoto continuam suas batalhas contra os Reigai.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep327.jpg",
+        "dataExibicao": "2011-06-21"
+    },
+    {
+        "id": 3437,
+        "numero": 328,
+        "titulo": "Derrote Kagerōza! Shinigamis em Guerra Total!",
+        "sinopse": "Os membros originais da Gotei 13 chegam ao esconderijo de Kagerōza Inaba para enfrentá-lo.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep328.jpg",
+        "dataExibicao": "2011-06-28"
+    },
+    {
+        "id": 3438,
+        "numero": 329,
+        "titulo": "A Pesquisa Proibida... O Segredo Oculto de Nozomi!",
+        "sinopse": "Kagerōza Inaba tenta se recuperar do ataque de Mayuri Kurotsuchi enquanto seus objetivos e a verdadeira identidade de Nozomi são revelados.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep329.jpg",
+        "dataExibicao": "2011-07-05"
+    },
+    {
+        "id": 3439,
+        "numero": 330,
+        "titulo": "Eu Quero Viver...! A Zanpakutō de Nozomi",
+        "sinopse": "Enquanto os membros restantes da Gotei 13 tentam se recuperar, Nozomi Kujō decide ajudar os outros.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep330.jpg",
+        "dataExibicao": "2011-07-12"
+    },
+    {
+        "id": 3440,
+        "numero": 331,
+        "titulo": "Pelo Bem da Luta! O Despertar de Nozomi!",
+        "sinopse": "Nozomi Kujō treina com Ichigo Kurosaki e seus amigos enquanto os Reigai atacam novamente o Mundo Humano.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep331.jpg",
+        "dataExibicao": "2011-07-19"
+    },
+    {
+        "id": 3441,
+        "numero": 332,
+        "titulo": "O Reigai Mais Maligno Aparece no Mundo Real!",
+        "sinopse": "Nozomi Kujō tenta se juntar a Ichigo e aos outros para enfrentar os capitães Reigai, mas os Shinigamis pedem que ela não interfira.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep332.jpg",
+        "dataExibicao": "2011-07-26"
+    },
+    {
+        "id": 3442,
+        "numero": 333,
+        "titulo": "Destrua Nozomi!? A Decisão de Genryūsai!",
+        "sinopse": "O Comandante Genryūsai Yamamoto entra na batalha contra os Reigai. Ichigo Kurosaki e Nozomi Kujō também participam do confronto.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep333.jpg",
+        "dataExibicao": "2011-08-02"
+    },
+    {
+        "id": 3443,
+        "numero": 334,
+        "titulo": "O Reiatsu em Declínio! Ichigo, a Luta Mortal da Alma!",
+        "sinopse": "A Zanpakutō de Nozomi Kujō se quebra enquanto tenta proteger Yamamoto Genryūsai Shigekuni do ataque de Kagerōza Inaba.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep334.jpg",
+        "dataExibicao": "2011-08-09"
+    },
+    {
+        "id": 3444,
+        "numero": 335,
+        "titulo": "Escondido no Dangai? Outro Ichigo?!",
+        "sinopse": "Após ser levado de volta à loja de Urahara, Ichigo Kurosaki entra no Dangai para recuperar seu Reishi.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep335.jpg",
+        "dataExibicao": "2011-08-16"
+    },
+    {
+        "id": 3445,
+        "numero": 336,
+        "titulo": "Persiga Kagerōza! Infiltração no Departamento de Desenvolvimento Tecnológico!",
+        "sinopse": "Ichigo Kurosaki, Kon e Kisuke Urahara invadem a Soul Society enquanto Kagerōza começa a se fundir com Nozomi Kujō.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep336.jpg",
+        "dataExibicao": "2011-08-23"
+    },
+    {
+        "id": 3446,
+        "numero": 337,
+        "titulo": "O Criador das Almas Modificadas",
+        "sinopse": "Enquanto Yoruichi Shihōin e os capitães enfrentam os Reigai, Ichigo, Kon e Urahara procuram o laboratório de Kagerōza Inaba.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep337.jpg",
+        "dataExibicao": "2011-08-30"
+    },
+    {
+        "id": 3447,
+        "numero": 338,
+        "titulo": "Os Pensamentos de Kon, Os Pensamentos de Nozomi",
+        "sinopse": "Urahara Kisuke e Kon encontram Ōko Yushima, o homem por trás da invasão de Kagerōza, e seguem seus rastros.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep338.jpg",
+        "dataExibicao": "2011-09-06"
+    },
+    {
+        "id": 3448,
+        "numero": 339,
+        "titulo": "Proteja Ichigo! Os Laços dos Amigos!",
+        "sinopse": "A Gotei 13 enfrenta os Reigai enquanto a forma combinada de Inaba e Nozomi luta contra Ichigo Hollowficado e seus amigos.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep339.jpg",
+        "dataExibicao": "2011-09-13"
+    },
+    {
+        "id": 3449,
+        "numero": 340,
+        "titulo": "Reigai Contra Originais! A Batalha Intensa pelo Orgulho Apostado!",
+        "sinopse": "Enquanto os Shinigamis enfrentam seus próprios Reigai, Ichigo e seus amigos lutam contra a forma combinada de Kagerōza Inaba e Nozomi Kujō.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep340.jpg",
+        "dataExibicao": "2011-09-20"
+    },
+    {
+        "id": 3450,
+        "numero": 341,
+        "titulo": "Conclusão do Arco do Exército Invasor! A Batalha Final!",
+        "sinopse": "Enquanto capitães e tenentes enfrentam os Reigai, Ichigo usa seus poderes restaurados para lutar contra a forma fundida de Kagerōza Inaba e Nozomi Kujō.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep341.jpg",
+        "dataExibicao": "2011-09-27"
+    },
+    {
+        "id": 3451,
+        "numero": 342,
+        "titulo": "Obrigado",
+        "sinopse": "Ichigo Kurosaki começa a perder seus poderes restantes e se despede de Rukia Kuchiki.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep342.jpg",
+        "dataExibicao": "2011-10-04"
+    },
+    {
+        "id": 3452,
+        "numero": 343,
+        "titulo": "Estudante do Terceiro Ano do Ensino Médio! Novo Visual e um Novo Capítulo Começa!",
+        "sinopse": "Dezessete meses depois, Ichigo Kurosaki continua vivendo uma vida normal como estudante do terceiro ano em Karakura Town.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep343.jpg",
+        "dataExibicao": "2011-10-11"
+    },
+    {
+        "id": 3453,
+        "numero": 344,
+        "titulo": "Um Conflito na Escola!? Ichigo e Uryū Lutam Juntos!",
+        "sinopse": "Ichigo encontra seu chefe Ikumi Unagiya, que o leva até seu escritório, onde ele conhece um homem chamado Kūgo Ginjō.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep344.jpg",
+        "dataExibicao": "2011-10-18"
+    },
+    {
+        "id": 3454,
+        "numero": 345,
+        "titulo": "Uryū é Atacado! Uma Ameaça se Aproxima dos Amigos!",
+        "sinopse": "Depois que Ichigo e Orihime visitam Uryū no hospital, Keigo Asano é atacado por uma ameaça misteriosa.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep345.jpg",
+        "dataExibicao": "2011-10-25"
+    },
+    {
+        "id": 3455,
+        "numero": 346,
+        "titulo": "O Homem com a Habilidade Fullbring: Kūgo Ginjō",
+        "sinopse": "Ginjō revela a Ichigo seu objetivo de restaurar seus poderes de Shinigami e demonstra sua própria habilidade especial.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep346.jpg",
+        "dataExibicao": "2011-11-01"
+    },
+    {
+        "id": 3456,
+        "numero": 347,
+        "titulo": "Uma Crise se Aproxima da Família Kurosaki!? A Confusão de Ichigo!",
+        "sinopse": "Ichigo tem um dia para decidir se deseja recuperar seus poderes de Shinigami ou continuar sem eles.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep347.jpg",
+        "dataExibicao": "2011-11-08"
+    },
+    {
+        "id": 3457,
+        "numero": 348,
+        "titulo": "O Poder do Distintivo de Shinigami Substituto! O Orgulho de Ichigo!",
+        "sinopse": "Ichigo começa seu treinamento para recuperar seus poderes e enfrenta seu primeiro desafio contra Mr. Pork.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep348.jpg",
+        "dataExibicao": "2011-11-15"
+    },
+    {
+        "id": 3458,
+        "numero": 349,
+        "titulo": "Próximo Alvo! A Mão do Demônio Mira Orihime!",
+        "sinopse": "Orihime é abordada por um homem chamado Shishigawara Moe, que inesperadamente pede para ela morrer.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep349.jpg",
+        "dataExibicao": "2011-11-22"
+    },
+    {
+        "id": 3459,
+        "numero": 350,
+        "titulo": "O Homem que Matou o Shinigami Substituto!? Tsukishima Faz Seu Movimento",
+        "sinopse": "Tsukishima finge perfurar o peito de Orihime e vai embora. Embora ela não tenha sofrido nenhum ferimento, começa a ter a vaga sensação de que Tsukishima era seu amigo. Sem querer preocupar Ichigo, ela conta apenas para Chad. Percebendo que Orihime está escondendo algo, Ichigo retorna à base da Xcution para continuar seu treinamento e ajudar seus amigos.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep350.jpg",
+        "dataExibicao": "2011-11-29"
+    },
+    {
+        "id": 3460,
+        "numero": 351,
+        "titulo": "Fullbring, O Poder Rejeitado",
+        "sinopse": "Ichigo Kurosaki continua seu treinamento com a Xcution enquanto eles tentam convencer Jackie Tristan a ajudá-los.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep351.jpg",
+        "dataExibicao": "2011-12-06"
+    },
+    {
+        "id": 3461,
+        "numero": 352,
+        "titulo": "Tsukishima Ataca! O Treinamento é Interrompido",
+        "sinopse": "Enquanto Jackie Tristan e Ichigo Kurosaki treinam no tanque de peixes, Shūkurō Tsukishima aparece no esconderijo da Xcution.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep352.jpg",
+        "dataExibicao": "2011-12-13"
+    },
+    {
+        "id": 3462,
+        "numero": 353,
+        "titulo": "Ichigo Domina o Fullbring!",
+        "sinopse": "Quando Shūkurō Tsukishima chega à Xcution, uma batalha começa.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep353.jpg",
+        "dataExibicao": "2011-12-20"
+    },
+    {
+        "id": 3463,
+        "numero": 354,
+        "titulo": "Ichigo vs. Ginjō! No Espaço do Jogo",
+        "sinopse": "Ichigo Kurosaki enfrenta Kūgo Ginjō no espaço de jogo durante seu treinamento.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep354.jpg",
+        "dataExibicao": "2011-12-27"
+    },
+    {
+        "id": 3464,
+        "numero": 355,
+        "titulo": "Shinigamis em Guerra! Especial de Ano Novo na Seireitei",
+        "sinopse": "As comemorações de Ano Novo na Sociedade das Almas incluem uma competição de pipas e uma apresentação de dança realizada por Rukia.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep355.jpg",
+        "dataExibicao": "2012-01-10"
+    },
+    {
+        "id": 3465,
+        "numero": 356,
+        "titulo": "Amigo ou Inimigo!? As Verdadeiras Intenções de Ginjō!",
+        "sinopse": "Ichigo continua seu treinamento com Kūgo Ginjō e consegue completar seu Fullbring.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep356.jpg",
+        "dataExibicao": "2012-01-17"
+    },
+    {
+        "id": 3466,
+        "numero": 357,
+        "titulo": "A Habilidade de Tsukishima! O Perigo se Aproxima!",
+        "sinopse": "Ichigo treina com seu Fullbring enquanto Chad e Orihime investigam Tsukishima e entram em combate.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep357.jpg",
+        "dataExibicao": "2012-01-24"
+    },
+    {
+        "id": 3467,
+        "numero": 358,
+        "titulo": "Confronto!? Xcution Ataca Ginjō",
+        "sinopse": "Uryū deixa o hospital para investigar uma reiatsu que aparece em vários lugares. Os amigos e familiares de Ichigo, além dos membros da Xcution, são afetados pelo poder de Tsukishima.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep358.jpg",
+        "dataExibicao": "2012-01-31"
+    },
+    {
+        "id": 3468,
+        "numero": 359,
+        "titulo": "A Batalha Dolorosa! Ichigo vs. Sado e Orihime",
+        "sinopse": "Ichigo e Kūgo planejam sua estratégia em um esconderijo secreto e seguem até a mansão de Tsukishima para enfrentá-lo.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep359.jpg",
+        "dataExibicao": "2012-02-07"
+    },
+    {
+        "id": 3469,
+        "numero": 360,
+        "titulo": "Ichigo vs. Uryū!? Quem é o Traidor!?",
+        "sinopse": "Enquanto Ichigo Kurosaki inicia sua batalha contra Shūkurō Tsukishima, Uryū Ishida aparece e Kūgo Ginjō acaba sendo atingido pelo poder de Tsukishima.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep360.jpg",
+        "dataExibicao": "2012-02-14"
+    },
+    {
+        "id": 3470,
+        "numero": 361,
+        "titulo": "Uma Nova Aparência! O Gotei 13 Chega!",
+        "sinopse": "Após perder seu Fullbring e ficar sem poderes, Ichigo Kurosaki é perfurado por Rukia Kuchiki e recebe novamente seus poderes de Shinigami.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep361.jpg",
+        "dataExibicao": "2012-02-21"
+    },
+    {
+        "id": 3471,
+        "numero": 362,
+        "titulo": "Renascimento! Shinigami Substituto: Ichigo Kurosaki!",
+        "sinopse": "Os membros do Gotei 13 compartilham sua energia espiritual para restaurar os poderes perdidos de Ichigo Kurosaki.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep362.jpg",
+        "dataExibicao": "2012-02-28"
+    },
+    {
+        "id": 3472,
+        "numero": 363,
+        "titulo": "Batalha Intensa! Shinigamis Contra a Xcution!",
+        "sinopse": "Os Shinigamis enfrentam os membros da Xcution em batalhas individuais.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep363.jpg",
+        "dataExibicao": "2012-03-06"
+    },
+    {
+        "id": 3473,
+        "numero": 364,
+        "titulo": "Luta Desesperada!? As Memórias Perturbadoras de Byakuya",
+        "sinopse": "A batalha entre Kuchiki Byakuya e Shūkurō Tsukishima se intensifica enquanto ambos levam seus poderes ao limite.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep364.jpg",
+        "dataExibicao": "2012-03-13"
+    },
+    {
+        "id": 3474,
+        "numero": 365,
+        "titulo": "Ichigo vs. Ginjō! O Segredo do Distintivo de Shinigami Substituto",
+        "sinopse": "Enquanto a batalha entre Ichigo Kurosaki, Uryū Ishida e Kūgo Ginjō se intensifica, a verdade por trás do distintivo de Shinigami Substituto é revelada.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep365.jpg",
+        "dataExibicao": "2012-03-20"
+    },
+    {
+        "id": 3475,
+        "numero": 366,
+        "titulo": "História Alterada, Coração Inalterado",
+        "sinopse": "Ichigo Kurosaki e Kūgo Ginjō liberam seus Bankais para decidir o resultado da batalha final.",
+        "temporadaId": 1,
+        "animeId": 109,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep366.jpg",
+        "dataExibicao": "2012-03-27"
     }
 ]
