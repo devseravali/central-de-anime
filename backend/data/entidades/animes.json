@@ -1464,37 +1464,12 @@
         "temporada": 4,
         "statusId": 1,
         "ano": 2020,
-        "quantidadeEpisodios": 13,
+        "quantidadeEpisodios": 25,
         "sinopse": "O Clube de Vôlei da Escola Karasuno finalmente conquistou uma vaga no torneio nacional após uma intensa batalha nas eliminatórias do Torneio de Primavera da Prefeitura de Miyagi. Enquanto se preparavam para o nacional, Kageyama é convidado para o Acampamento de Treinamento Juvenil de Todo o Japão. Ao mesmo tempo, Tsukishima é convidado para um acampamento especial de treinamento para calouros na Prefeitura de Miyagi. Hinata entra em pânico por estar sendo deixado para trás por ser um dos calouros e decide comparecer ao acampamento de treinamento de calouros da Prefeitura de Miyagi mesmo assim...",
-        "capaUrl": "images/capas/haikyuu-t4-1.jpg"
+        "capaUrl": "images/capas/haikyuu-t4.jpg"
     },
     {
         "id": 114,
-        "titulo": "Haikyuu!! TO THE TOP 2",
-        "estudioId": 9,
-        "estacaoId": 2,
-        "tipo": "temporada",
-        "temporada": 4,
-        "statusId": 1,
-        "ano": 2020,
-        "quantidadeEpisodios": 12,
-        "sinopse": "A segunda metade da 4ª temporada de Haikyuu!! começa exatamente onde a primeira terminou. O Colégio Karasuno venceu sua primeira partida do Torneio Nacional da Primavera contra a Academia Tsubakihara. O Colégio Karasuno está animado para retornar ao Torneio Nacional da Primavera depois de muitos anos de ausência, mas será que eles conseguirão lidar com a pressão de jogar contra as melhores equipes do Japão? Será que eles chegarão ao topo?",
-        "capaUrl": "images/capas/haikyuu-t4-2.jpg"
-    },
-    {
-        "id": 115,
-        "estudioId": 9,
-        "estacaoId": 3,
-        "tipo": "filme",
-        "temporada": 0,
-        "statusId": 6,
-        "ano": 2024,
-        "quantidadeEpisodios": 1,
-        "sinopse": "O torneio nacional da primavera continua, com o Colégio Karasuno enfrentando o rival Colégio Nekoma, a batalha fatídica entre gatos e corvos, também conhecida como a tão aguardada \"Batalha da Lixeira\". Esta partida é o tão esperado confronto final entre duas equipes azarões.",
-        "capaUrl": "images/capas/haikyuu-filme-1.jpg"
-    },
-    {
-        "id": 116,
         "titulo": "Psycho Pass",
         "estudioId": 9,
         "estacaoId": 2,
@@ -1507,7 +1482,7 @@
         "capaUrl": "images/capas/psycho-pass-t1.jpg"
     },
     {
-        "id": 117,
+        "id": 115,
         "titulo": "Psycho Pass 2",
         "estudioId": 9,
         "estacaoId": 2,
@@ -1520,7 +1495,7 @@
         "capaUrl": "images/capas/psycho-pass-t2.jpg"
     },
     {
-        "id": 118,
+        "id": 116,
         "titulo": "Psycho Pass: O Movie",
         "estudioId": 9,
         "estacaoId": 3,
@@ -1533,7 +1508,7 @@
         "capaUrl": "images/capas/psycho-pass-filme-1.jpg"
     },
     {
-        "id": 119,
+        "id": 117,
         "titulo": "Psycho-Pass: Sinners of the System Case.1 Tsumi to Batsu",
         "estudioId": 9,
         "estacaoId": 3,
@@ -1546,7 +1521,7 @@
         "capaUrl": "images/capas/psycho-pass-filme-2.jpg"
     },
     {
-        "id": 120,
+        "id": 118,
         "titulo": "Psycho-Pass: Sinners of the System Case.2 First Guardian",
         "estudioId": 9,
         "estacaoId": 3,
@@ -1559,7 +1534,7 @@
         "capaUrl": "images/capas/psycho-pass-filme-3.jpg"
     },
     {
-        "id": 121,
+        "id": 119,
         "titulo": "Fate/Zero",
         "estudioId": 10,
         "estacaoId": 2,
@@ -1572,7 +1547,7 @@
         "capaUrl": "images/capas/fate-zero-t1.jpg"
     },
     {
-        "id": 122,
+        "id": 120,
         "titulo": "Fate/Zero 2ª Temporada",
         "estudioId": 10,
         "estacaoId": 4,
@@ -1585,7 +1560,7 @@
         "capaUrl": "images/capas/fate-zero-t2.jpg"
     },
     {
-        "id": 123,
+        "id": 121,
         "titulo": "Violet Evergarden",
         "estudioId": 12,
         "estacaoId": 3,
@@ -1598,7 +1573,7 @@
         "capaUrl": "images/capas/violet-evergarden.jpg"
     },
     {
-        "id": 124,
+        "id": 122,
         "titulo": "Violet Evergarden: O Filme",
         "estudioId": 12,
         "estacaoId": 1,
@@ -1611,7 +1586,7 @@
         "capaUrl": "images/capas/violet-evergarden-filme-1.jpg"
     },
     {
-        "id": 125,
+        "id": 123,
         "titulo": "Great Pretender",
         "estudioId": 1,
         "estacaoId": 1,
@@ -1624,7 +1599,7 @@
         "capaUrl": "images/capas/great-pretender.jpg"
     },
     {
-        "id": 126,
+        "id": 124,
         "titulo": "No Game No Life",
         "estudioId": 2,
         "estacaoId": 3,
@@ -1637,7 +1612,7 @@
         "capaUrl": "images/capas/no-game-no-life-t1.jpg"
     },
     {
-        "id": 127,
+        "id": 125,
         "titulo": "Dororo",
         "estudioId": 3,
         "estacaoId": 3,
@@ -1650,7 +1625,7 @@
         "capaUrl": "images/capas/dororo-t1.jpg"
     },
     {
-        "id": 128,
+        "id": 126,
         "titulo": "Noragami",
         "estudioId": 4,
         "estacaoId": 4,
@@ -1663,7 +1638,7 @@
         "capaUrl": "images/capas/noragami-t1.jpg"
     },
     {
-        "id": 129,
+        "id": 127,
         "titulo": "Noragami Aragoto",
         "estudioId": 4,
         "estacaoId": 2,
@@ -1676,7 +1651,7 @@
         "capaUrl": "images/capas/noragami-t2.jpg"
     },
     {
-        "id": 130,
+        "id": 128,
         "titulo": "Spy x Family",
         "estudioId": 6,
         "estacaoId": 4,
@@ -1689,7 +1664,7 @@
         "capaUrl": "images/capas/spy-x-family-t1.jpg"
     },
     {
-        "id": 131,
+        "id": 129,
         "titulo": "Spy x Family 2ª Temporada - Parte 1",
         "estudioId": 6,
         "estacaoId": 1,
@@ -1702,7 +1677,7 @@
         "capaUrl": "images/capas/spy-x-family-t2-pt-1.jpg"
     },
     {
-        "id": 132,
+        "id": 130,
         "titulo": "Spy x Family 2ª Temporada - Parte 2",
         "estudioId": 6,
         "estacaoId": 2,
@@ -1715,7 +1690,7 @@
         "capaUrl": "images/capas/spy-x-family-t2-pt-2.jpg"
     },
     {
-        "id": 133,
+        "id": 131,
         "titulo": "Spy x Family 3ª Temporada",
         "estudioId": 6,
         "estacaoId": 2,
@@ -1728,7 +1703,7 @@
         "capaUrl": "images/capas/spy-x-family-t3.jpg"
     },
     {
-        "id": 134,
+        "id": 132,
         "titulo": "Spy x Family Code: White",
         "estudioId": 6,
         "estacaoId": 3,
@@ -1741,7 +1716,7 @@
         "capaUrl": "images/capas/spy-x-family-code-white.jpg"
     },
     {
-        "id": 135,
+        "id": 133,
         "titulo": "Steins;Gate",
         "estudioId": 9,
         "estacaoId": 2,
@@ -1754,7 +1729,7 @@
         "capaUrl": "images/capas/steins-gate.jpg"
     },
     {
-        "id": 136,
+        "id": 134,
         "titulo": "Steins;Gate 0",
         "estudioId": 9,
         "estacaoId": 2,
@@ -1767,7 +1742,7 @@
         "capaUrl": "images/capas/steins-gate-zero.jpg"
     },
     {
-        "id": 137,
+        "id": 135,
         "titulo": "Steins;Gate: The Movie - Load Region of Déjà Vu",
         "estudioId": 9,
         "estacaoId": 3,
@@ -1780,7 +1755,7 @@
         "capaUrl": "images/capas/steins-gate-movie.jpg"
     },
     {
-        "id": 138,
+        "id": 136,
         "titulo": "Made in Abyss",
         "estudioId": 2,
         "estacaoId": 2,
@@ -1793,7 +1768,7 @@
         "capaUrl": "images/capas/made-in-abyss.jpg"
     },
     {
-        "id": 139,
+        "id": 137,
         "titulo": "Made in Abyss: Dawn of the Deep Soul",
         "estudioId": 2,
         "estacaoId": 3,
@@ -1806,7 +1781,7 @@
         "capaUrl": "images/capas/made-in-abyss-dawn-of-the-deep-soul.jpg"
     },
     {
-        "id": 140,
+        "id": 138,
         "titulo": "Made in Abyss: Retsujitsu no Ougonkyou",
         "estudioId": 2,
         "estacaoId": 4,
@@ -1819,7 +1794,7 @@
         "capaUrl": "images/capas/made-in-abyss-the-retsujitsu-no-ougonkyou.jpg"
     },
     {
-        "id": 141,
+        "id": 139,
         "titulo": "Black Clover",
         "estudioId": 8,
         "estacaoId": 1,
@@ -1832,7 +1807,7 @@
         "capaUrl": "images/capas/black-clover.jpg"
     },
     {
-        "id": 142,
+        "id": 140,
         "titulo": "Black Clover: Sword of the Wizard King",
         "estudioId": 8,
         "estacaoId": 3,
@@ -1845,7 +1820,7 @@
         "capaUrl": "images/capas/black-clover-sword-of-the-wizard-king.jpg"
     },
     {
-        "id": 143,
+        "id": 141,
         "titulo": "My Hero Academia",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1858,7 +1833,7 @@
         "capaUrl": "images/capas/my-hero-academia-t1.jpg"
     },
     {
-        "id": 144,
+        "id": 142,
         "titulo": "My Hero Academia: 2ª temporada",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1871,7 +1846,7 @@
         "capaUrl": "images/capas/my-hero-academia-t2.jpg"
     },
     {
-        "id": 145,
+        "id": 143,
         "titulo": "My Hero Academia: 3ª temporada",
         "estudioId": 4,
         "estacaoId": 2,
@@ -1884,7 +1859,7 @@
         "capaUrl": "images/capas/my-hero-academia-t3.jpg"
     },
     {
-        "id": 146,
+        "id": 144,
         "titulo": "My Hero Academia: 4ª temporada",
         "estudioId": 4,
         "estacaoId": 4,
@@ -1897,7 +1872,7 @@
         "capaUrl": "images/capas/my-hero-academia-t4.jpg"
     },
     {
-        "id": 147,
+        "id": 145,
         "titulo": "My Hero Academia: 5ª temporada",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1910,7 +1885,7 @@
         "capaUrl": "images/capas/my-hero-academia-t5.jpg"
     },
     {
-        "id": 148,
+        "id": 146,
         "titulo": "My Hero Academia: 6ª temporada",
         "estudioId": 4,
         "estacaoId": 2,
@@ -1923,7 +1898,7 @@
         "capaUrl": "images/capas/my-hero-academia-t6.jpg"
     },
     {
-        "id": 149,
+        "id": 147,
         "titulo": "My Hero Academia: 7ª temporada",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1936,7 +1911,7 @@
         "capaUrl": "images/capas/my-hero-academia-t7.jpg"
     },
     {
-        "id": 150,
+        "id": 148,
         "titulo": "My Hero Academia: Heroes Rising",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1949,7 +1924,7 @@
         "capaUrl": "images/capas/my-hero-academia-heroes-rising.jpg"
     },
     {
-        "id": 151,
+        "id": 149,
         "titulo": "My Hero Academia: World Heroes' Mission",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1962,7 +1937,7 @@
         "capaUrl": "images/capas/my-hero-academia-world-heroes-mission.jpg"
     },
     {
-        "id": 152,
+        "id": 150,
         "titulo": "My Hero Academia: Two Heroes",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1975,7 +1950,7 @@
         "capaUrl": "images/capas/my-hero-academia-two-heroes.jpg"
     },
     {
-        "id": 153,
+        "id": 151,
         "titulo": "My Hero Academia: Youre Next",
         "estudioId": 4,
         "estacaoId": 3,
