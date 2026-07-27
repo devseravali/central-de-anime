@@ -37404,5 +37404,245 @@
         "animeId": 124,
         "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep12.jpg",
         "dataExibicao": "2014-06-25"
+    },
+    {
+        "id": 3728,
+        "numero": 1,
+        "titulo": "A História de Daigo",
+        "sinopse": "Durante o período Sengoku do Japão, Lorde Daigo Kagemitsu faz um pacto com 12 demônios, oferecendo seu filho ainda não nascido em troca da prosperidade de suas terras. Anos depois, o jovem ladrão Dororo é atacado por um carniçal, mas é salvo por um misterioso garoto cujo corpo é quase totalmente composto por próteses.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep1.jpg",
+        "dataExibicao": "2019-01-07"
+    },
+    {
+        "id": 3729,
+        "numero": 2,
+        "titulo": "A História de Bandai",
+        "sinopse": "Dororo e Hyakkimaru chegam a uma vila e são levados até Lady Bandai, a líder local. Porém, Hyakkimaru inesperadamente saca sua espada ao vê-la, fazendo com que os dois sejam presos pelos moradores. Eles descobrem que não são os únicos mantidos em cativeiro.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep2.jpg",
+        "dataExibicao": "2019-01-14"
+    },
+    {
+        "id": 3730,
+        "numero": 3,
+        "titulo": "A História de Jukai",
+        "sinopse": "Jukai é um médico que viaja pelas terras oferecendo braços e pernas artificiais para aqueles que perderam seus membros na guerra. Um dia, ele encontra um bebê que perdeu quase todas as partes do corpo e decide criá-lo, dando-lhe o nome de Hyakkimaru.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep3.jpg",
+        "dataExibicao": "2019-01-21"
+    },
+    {
+        "id": 3731,
+        "numero": 4,
+        "titulo": "A História da Espada Amaldiçoada",
+        "sinopse": "Dororo e Hyakkimaru encontram Tanosuke, um homem ligado a uma espada amaldiçoada onde um demônio reside. A arma começa a manipular aqueles que a empunham, levando todos ao redor a uma batalha perigosa.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep4.jpg",
+        "dataExibicao": "2019-01-28"
+    },
+    {
+        "id": 3732,
+        "numero": 5,
+        "titulo": "A História da Canção de Moriko - Parte 1",
+        "sinopse": "Tendo dificuldades para se adaptar ao mundo dos sons, Hyakkimaru é ferido em uma batalha contra um carniçal. Ele é acolhido por Mio, uma jovem que cuida de crianças órfãs pela guerra, mas ao perceber a presença de um demônio próximo, parte para enfrentá-lo antes de se recuperar completamente.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep5.jpg",
+        "dataExibicao": "2019-02-04"
+    },
+    {
+        "id": 3733,
+        "numero": 6,
+        "titulo": "A História da Canção de Moriko - Parte 2",
+        "sinopse": "Hyakkimaru recupera sua voz após derrotar um deus demônio, mas uma de suas pernas é tomada por ele. Após retornar ao templo abandonado para tratar seus ferimentos, ele parte novamente para enfrentar o demônio enquanto Mio e as crianças aguardam.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep6.jpg",
+        "dataExibicao": "2019-02-11"
+    },
+    {
+        "id": 3734,
+        "numero": 7,
+        "titulo": "A História da Aranha Jorogumo",
+        "sinopse": "A criatura semelhante a uma aranha, Jorogumo, é ferida por Hyakkimaru. Para se recuperar, ela assume a forma de uma mulher e se aproveita da hospitalidade de um jovem chamado Yajiro. Depois que ela escapa, Dororo e Hyakkimaru chegam a uma vila onde descobrem rumores sobre um sequestrador.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep7.jpg",
+        "dataExibicao": "2019-02-18"
+    },
+    {
+        "id": 3735,
+        "numero": 8,
+        "titulo": "A História de Saru",
+        "sinopse": "Em uma vila, jovens garotas são oferecidas como sacrifício para acalmar um demônio centopeia gigante envolto em nuvens negras. Hyakkimaru e Dororo se unem a Saru, um garoto cuja irmã foi escolhida como sacrifício, para enfrentar a criatura.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep8.jpg",
+        "dataExibicao": "2019-02-25"
+    },
+    {
+        "id": 3736,
+        "numero": 9,
+        "titulo": "A História da Crueldade",
+        "sinopse": "Dororo fica com uma febre intensa. Enquanto está debilitado, ele vê lírios vermelhos que despertam lembranças do passado ao lado de seus pais, Hibukuro e Ojiya.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep9.jpg",
+        "dataExibicao": "2019-03-04"
+    },
+    {
+        "id": 3737,
+        "numero": 10,
+        "titulo": "A História de Tahomaru",
+        "sinopse": "Uma vila dentro do território de Daigo é aterrorizada por um demônio que vive em um lago próximo. Tahomaru, acompanhado por Hyogo e Mutsu, decide eliminar a ameaça.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep10.jpg",
+        "dataExibicao": "2019-03-10"
+    },
+    {
+        "id": 3738,
+        "numero": 11,
+        "titulo": "A História de Banmon - Parte 1",
+        "sinopse": "Após entrarem no território de Lorde Daigo, Dororo e Hyakkimaru ouvem histórias sobre Banmon, uma enorme muralha que é o último vestígio de uma antiga fortaleza na fronteira. Hyakkimaru enfrenta o demônio raposa que assombra o local.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep11.jpg",
+        "dataExibicao": "2019-03-17"
+    },
+    {
+        "id": 3739,
+        "numero": 12,
+        "titulo": "A História de Banmon - Parte 2",
+        "sinopse": "Kagemitsu, o homem que entregou o próprio filho aos demônios, e Hyakkimaru, que tenta recuperar as partes do corpo roubadas, finalmente se encontram. Unidos pelo destino, eles entram em confronto.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep12.jpg",
+        "dataExibicao": "2019-03-17"
+    },
+    {
+        "id": 3740,
+        "numero": 13,
+        "titulo": "A História do Buda Sem Rosto",
+        "sinopse": "Após deixar o território de Daigo, Dororo encontra uma estátua de Fudo, um dos deuses da sabedoria. Porém, a estátua é na verdade um demônio que rouba rostos humanos para encontrar um rosto próprio.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep13.jpg",
+        "dataExibicao": "2019-04-08"
+    },
+    {
+        "id": 3741,
+        "numero": 14,
+        "titulo": "A História de Sabame",
+        "sinopse": "Dororo e Hyakkimaru encontram um templo abandonado e destruído pelo fogo, onde conhecem Sabame, o homem que governa a região. Ele os convida para sua residência e conta a história do templo e do demônio que o assombra, mas os dois suspeitam que ele esteja escondendo a verdade.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep14.jpg",
+        "dataExibicao": "2019-04-15"
+    },
+    {
+        "id": 3742,
+        "numero": 15,
+        "titulo": "A História da Cena do Inferno",
+        "sinopse": "Sabame tem alimentado demônios com pessoas para proteger a vila que governa. Enquanto Hyakkimaru enfrenta novamente os demônios mariposa, Dororo acaba preso em um depósito.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep15.jpg",
+        "dataExibicao": "2019-04-22"
+    },
+    {
+        "id": 3743,
+        "numero": 16,
+        "titulo": "A História de Shiranui",
+        "sinopse": "Dororo é capturado por Itachi e levado até o cabo onde Hibukuro teria escondido um tesouro. Enquanto Itachi e seus homens procuram barcos para chegar ao local, eles encontram um garoto de um braço chamado Shiranui.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep16.jpg",
+        "dataExibicao": "2019-04-29"
+    },
+    {
+        "id": 3744,
+        "numero": 17,
+        "titulo": "A História das Perguntas e Respostas",
+        "sinopse": "Jukai reencontra Hyakkimaru coberto de sangue após uma batalha recente e descobre a verdade sobre a ligação entre ele e os demônios. Hyakkimaru pede a Jukai uma nova perna protética, mas algo inesperado acontece.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep17.jpg",
+        "dataExibicao": "2019-05-06"
+    },
+    {
+        "id": 3745,
+        "numero": 18,
+        "titulo": "A História do Cabo da Impermanência",
+        "sinopse": "O demônio tubarão solta um rugido e ataca Dororo, que está preso e incapaz de se mover. Enquanto isso, uma tropa de soldados liderada por Tahomaru também se aproxima do cabo.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep18.jpg",
+        "dataExibicao": "2019-05-13"
+    },
+    {
+        "id": 3746,
+        "numero": 19,
+        "titulo": "A História de Amanojaku",
+        "sinopse": "Para consertar sua espada quebrada, Hyakkimaru e Dororo viajam até uma vila onde vive o mestre ferreiro Munetsuna. Ao chegarem à casa dele, são recebidos por sua filha Okowa.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep19.jpg",
+        "dataExibicao": "2019-05-20"
+    },
+    {
+        "id": 3747,
+        "numero": 20,
+        "titulo": "A História de Nue",
+        "sinopse": "Durante uma viagem pelas montanhas em busca de um demônio, Dororo e Hyakkimaru encontram um jovem chamado Saburota, conhecido por sua habilidade com dados. Ele afirma estar caçando o mesmo demônio e decide se juntar a eles.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep20.jpg",
+        "dataExibicao": "2019-05-27"
+    },
+    {
+        "id": 3748,
+        "numero": 21,
+        "titulo": "A História de Romper o Ciclo do Sofrimento",
+        "sinopse": "Daigo Kagemitsu continua seus preparativos para uma guerra contra a terra vizinha de Asakura. Ao saber que Hyakkimaru está se aproximando de seu território, ele envia Tahomaru para eliminá-lo.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep21.jpg",
+        "dataExibicao": "2019-06-03"
+    },
+    {
+        "id": 3749,
+        "numero": 22,
+        "titulo": "A História de Nui",
+        "sinopse": "Dentro do castelo de Daigo, Lady Nui aparece diante da cela onde Dororo está preso. Enquanto isso, Hyakkimaru se aproxima do castelo para recuperar seu corpo e salvar Dororo. Atrás dele está Midoro, transformado em um demônio.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep22.jpg",
+        "dataExibicao": "2019-06-10"
+    },
+    {
+        "id": 3750,
+        "numero": 23,
+        "titulo": "A História dos Demônios",
+        "sinopse": "Hyakkimaru fica frente a frente com Tahomaru, Mutsu e Hyogo, que foram tomados pelo poder dos demônios. Dororo, Lady Nui e Biwamaru chegam ao local e testemunham uma batalha que decidirá o futuro das terras de Daigo.",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep23.jpg",
+        "dataExibicao": "2019-06-17"
+    },
+    {
+        "id": 3751,
+        "numero": 24,
+        "titulo": "Dororo e Hyakkimaru",
+        "sinopse": "O castelo de Daigo é consumido pelas chamas. Dentro dele, dois irmãos de sangue enfrentam o destino. Dororo, Jukai e Lady Nui também seguem para o castelo carregando seus próprios pensamentos e sentimentos. Para uma vida que começou com um choro silenciado, qual será o caminho escolhido pelo destino?",
+        "temporadaId": 1,
+        "animeId": 125,
+        "imagemUrl": "../../images/episodios/dororo/t1/ep24.jpg",
+        "dataExibicao": "2019-06-24"
     }
 ]
