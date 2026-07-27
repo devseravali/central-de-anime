@@ -36564,5 +36564,85 @@
         "animeId": 115,
         "imagemUrl": "../../images/episodios/psycho-pass/t2/ep11.jpg",
         "dataExibicao": "2014-12-19"
+    },
+    {
+        "id": 3644,
+        "numero": 1,
+        "titulo": "O Chamado de Laelaps",
+        "sinopse": "Após a queda de um enorme drone de transporte em Tóquio, os inspetores Arata Shindo e Kei Ignatov investigam o caso e descobrem que o acidente foi cuidadosamente planejado.",
+        "temporadaId": 3,
+        "animeId": 116,
+        "imagemUrl": "../../images/episodios/psycho-pass/t3/ep1.jpg",
+        "dataExibicao": "2019-10-25"
+    },
+    {
+        "id": 3645,
+        "numero": 2,
+        "titulo": "Os Sacrifícios de Teumesso",
+        "sinopse": "Enquanto perseguem um suspeito ligado ao acidente, Arata e Kei encontram um novo assassinato e acabam cruzando o caminho de antigos investigadores agora ligados ao Ministério das Relações Exteriores.",
+        "temporadaId": 3,
+        "animeId": 116,
+        "imagemUrl": "../../images/episodios/psycho-pass/t3/ep2.jpg",
+        "dataExibicao": "2019-11-01"
+    },
+    {
+        "id": 3646,
+        "numero": 3,
+        "titulo": "Heracles e as Sereias",
+        "sinopse": "Durante uma disputa eleitoral, um assassinato coloca a equipe diante de novas conspirações políticas enquanto Arata tenta compreender o comportamento da candidata Karina Komiya.",
+        "temporadaId": 3,
+        "animeId": 116,
+        "imagemUrl": "../../images/episodios/psycho-pass/t3/ep3.jpg",
+        "dataExibicao": "2019-11-08"
+    },
+    {
+        "id": 3647,
+        "numero": 4,
+        "titulo": "Conflito Político no Coliseu",
+        "sinopse": "Com a ajuda da jornalista Yayoi Kunizuka, a investigação avança e revela segredos envolvendo Karina, levando a equipe a protegê-la durante um importante debate eleitoral.",
+        "temporadaId": 3,
+        "animeId": 116,
+        "imagemUrl": "../../images/episodios/psycho-pass/t3/ep4.jpg",
+        "dataExibicao": "2019-11-15"
+    },
+    {
+        "id": 3648,
+        "numero": 5,
+        "titulo": "A Oferenda de Agamêmnon",
+        "sinopse": "Um atentado terrorista durante a inauguração de uma Zona Religiosa Especial coloca a Unidade 1 em uma corrida para identificar os responsáveis pelos ataques suicidas.",
+        "temporadaId": 3,
+        "animeId": 116,
+        "imagemUrl": "../../images/episodios/psycho-pass/t3/ep5.jpg",
+        "dataExibicao": "2019-11-22"
+    },
+    {
+        "id": 3649,
+        "numero": 6,
+        "titulo": "As Moedas de Ouro de César",
+        "sinopse": "Novos atentados revelam a existência de outros homens-bomba, enquanto Kei e Kisaragi se infiltram em uma organização religiosa em busca de pistas.",
+        "temporadaId": 3,
+        "animeId": 116,
+        "imagemUrl": "../../images/episodios/psycho-pass/t3/ep6.jpg",
+        "dataExibicao": "2019-11-29"
+    },
+    {
+        "id": 3650,
+        "numero": 7,
+        "titulo": "Não Tomarás o Nome de Deus em Vão",
+        "sinopse": "Arata utiliza sua habilidade de Mental Trace para descobrir a verdade por trás dos atentados, enquanto uma operação policial é iniciada contra a organização Heaven's Leap.",
+        "temporadaId": 3,
+        "animeId": 116,
+        "imagemUrl": "../../images/episodios/psycho-pass/t3/ep7.jpg",
+        "dataExibicao": "2019-12-06"
+    },
+    {
+        "id": 3651,
+        "numero": 8,
+        "titulo": "Cubismo",
+        "sinopse": "Com a verdade sobre a série de incidentes começando a emergir, Arata e Kei enfrentam o confronto decisivo enquanto novas conspirações envolvendo Shizuka Homura vêm à tona.",
+        "temporadaId": 3,
+        "animeId": 116,
+        "imagemUrl": "../../images/episodios/psycho-pass/t3/ep8.jpg",
+        "dataExibicao": "2019-12-13"
     }
 ]
