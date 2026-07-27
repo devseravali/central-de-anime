@@ -36454,5 +36454,115 @@
         "animeId": 114,
         "imagemUrl": "../../images/episodios/psycho-pass/t1/ep22.jpg",
         "dataExibicao": "2013-03-22"
+    },
+    {
+        "id": 3633,
+        "numero": 1,
+        "titulo": "A Balança da Justiça <299/300>",
+        "sinopse": "Uma série de atentados a bomba atinge Tóquio. Enquanto os investigadores identificam o principal suspeito, Akane defende uma abordagem cautelosa antes da operação.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep1.jpg",
+        "dataExibicao": "2014-10-10"
+    },
+    {
+        "id": 3634,
+        "numero": 2,
+        "titulo": "O Desconhecido que se Aproxima",
+        "sinopse": "Um Executor é morto por um Dominator e uma Inspetora desaparece. A única pista deixada para trás é a misteriosa mensagem 'WC?'.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep2.jpg",
+        "dataExibicao": "2014-10-17"
+    },
+    {
+        "id": 3635,
+        "numero": 3,
+        "titulo": "A Prova do Diabo",
+        "sinopse": "Akane investiga o nome mencionado por Kitazawa antes de sua morte e busca ajuda para descobrir quem realmente está por trás dos acontecimentos.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep3.jpg",
+        "dataExibicao": "2014-10-24"
+    },
+    {
+        "id": 3636,
+        "numero": 4,
+        "titulo": "A Salvação de Jó",
+        "sinopse": "Um homem toma uma instituição psiquiátrica, mas seu Dominator não o considera uma ameaça, obrigando a polícia a recorrer a novos recursos.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep4.jpg",
+        "dataExibicao": "2014-10-31"
+    },
+    {
+        "id": 3637,
+        "numero": 5,
+        "titulo": "Jogos Proibidos",
+        "sinopse": "As Divisões 1 e 3 investigam um possível esconderijo de Kamui enquanto Akane busca novas informações por meio de um interrogatório especializado.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep5.jpg",
+        "dataExibicao": "2014-11-07"
+    },
+    {
+        "id": 3638,
+        "numero": 6,
+        "titulo": "Aqueles que Atiram Pedras",
+        "sinopse": "Drones militares atacam os investigadores, e Akane finalmente percebe qual é o verdadeiro objetivo de Kamui.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep6.jpg",
+        "dataExibicao": "2014-11-14"
+    },
+    {
+        "id": 3639,
+        "numero": 7,
+        "titulo": "Crianças Inrastreáveis",
+        "sinopse": "Após o roubo de vários Dominators, Akane questiona por que o Sistema Sibyl não tomou providências para impedir que as armas sejam utilizadas.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep7.jpg",
+        "dataExibicao": "2014-11-21"
+    },
+    {
+        "id": 3640,
+        "numero": 8,
+        "titulo": "A Concepção de Sibyl",
+        "sinopse": "Akane descobre como Kamui consegue permanecer escondido, enquanto Mika se aproxima de revelações importantes sobre o Sistema Sibyl.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep8.jpg",
+        "dataExibicao": "2014-11-28"
+    },
+    {
+        "id": 3641,
+        "numero": 9,
+        "titulo": "Paradoxo da Onipotência",
+        "sinopse": "Mika descobre a verdadeira identidade de Sakuya Togane e toma conhecimento dos segredos ocultos do Sistema Sibyl.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep9.jpg",
+        "dataExibicao": "2014-12-05"
+    },
+    {
+        "id": 3642,
+        "numero": 10,
+        "titulo": "Medindo a Alma",
+        "sinopse": "Kamui faz centenas de passageiros reféns no metrô utilizando Dominators roubados, obrigando a polícia a enfrentar uma situação extrema.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep10.jpg",
+        "dataExibicao": "2014-12-12"
+    },
+    {
+        "id": 3643,
+        "numero": 11,
+        "titulo": "Qual é a Cor?",
+        "sinopse": "Akane e Kamui chegam ao núcleo do Sistema Sibyl para o confronto decisivo, onde o verdadeiro significado da justiça será colocado à prova.",
+        "temporadaId": 2,
+        "animeId": 115,
+        "imagemUrl": "../../images/episodios/psycho-pass/t2/ep11.jpg",
+        "dataExibicao": "2014-12-19"
     }
 ]
