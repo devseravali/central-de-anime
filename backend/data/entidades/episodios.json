@@ -37284,5 +37284,125 @@
         "animeId": 123,
         "imagemUrl": "../../images/episodios/great-pretender/t1/ep23.jpg",
         "dataExibicao": "2020-12-17"
+    },
+    {
+        "id": 3716,
+        "numero": 1,
+        "titulo": "Iniciante",
+        "sinopse": "Sora e Shiro são irmãos desempregados que raramente saem de casa, mas na internet são conhecidos como 'Blank', uma dupla invencível de jogadores. Um dia, eles recebem a visita de Tet, um garoto que se declara Deus e os leva para um mundo onde todas as guerras foram proibidas e tudo é decidido por jogos.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep1.jpg",
+        "dataExibicao": "2014-04-09"
+    },
+    {
+        "id": 3717,
+        "numero": 2,
+        "titulo": "Desafiante",
+        "sinopse": "Sora e Shiro são deixados por Tet em outro mundo, onde guerras são proibidas e todas as disputas são resolvidas através de jogos seguindo as 'Dez Promessas'. Eles descobrem que estão no reino da humanidade, a mais fraca entre as 16 raças existentes.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep2.jpg",
+        "dataExibicao": "2014-04-16"
+    },
+    {
+        "id": 3718,
+        "numero": 3,
+        "titulo": "Especialista",
+        "sinopse": "Uma garota chamada Clamy vence o direito de se tornar a próxima rainha de Elukia graças à sua sorte extraordinária. Steph perde a disputa pelo trono, mas Sora e Shiro aparecem antes que ela finalize seu último desafio.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep3.jpg",
+        "dataExibicao": "2014-04-23"
+    },
+    {
+        "id": 3719,
+        "numero": 4,
+        "titulo": "Grande Mestre",
+        "sinopse": "O jogo proposto por Clamy não era um simples xadrez. Mesmo sendo uma mestre no jogo, Shiro encontra dificuldades contra os ataques de sua adversária. Ao compreender as verdadeiras regras, ela começa a virar a batalha pelo destino de Elukia e da humanidade.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep4.jpg",
+        "dataExibicao": "2014-04-30"
+    },
+    {
+        "id": 3720,
+        "numero": 5,
+        "titulo": "Quadrado Fraco",
+        "sinopse": "Sora e Shiro deixam a administração do país nas mãos de Steph e passam seus dias jogando videogames. A esperança de Steph de que eles seriam os salvadores de Elukia e da humanidade começa a desaparecer.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep5.jpg",
+        "dataExibicao": "2014-05-07"
+    },
+    {
+        "id": 3721,
+        "numero": 6,
+        "titulo": "Interessante",
+        "sinopse": "Os irmãos enfrentam Jibril, uma integrante da raça Flügel, em uma disputa de Shiritori para recuperar a biblioteca real.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep6.jpg",
+        "dataExibicao": "2014-05-14"
+    },
+    {
+        "id": 3722,
+        "numero": 7,
+        "titulo": "Sacrifício",
+        "sinopse": "Ao planejarem desafiar os Homens-Fera, Sora e Shiro descobrem que é difícil encontrar uma estratégia contra eles, pois todas as memórias dos jogos são apagadas dos desafiantes. Steph entrega a Sora uma chave deixada pelo antigo rei, revelando uma pesquisa secreta.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep7.jpg",
+        "dataExibicao": "2014-05-21"
+    },
+    {
+        "id": 3723,
+        "numero": 8,
+        "titulo": "Fim Falso",
+        "sinopse": "Sora, Shiro, Steph e Jibril elaboram um plano arriscado com grandes consequências e seguem até a embaixada dos Homens-Fera para desafiá-los.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep8.jpg",
+        "dataExibicao": "2014-05-28"
+    },
+    {
+        "id": 3724,
+        "numero": 9,
+        "titulo": "Caminhada no Céu",
+        "sinopse": "Após Shiro acordar e perceber que Sora desapareceu, suspeitas de trapaça surgem e ela começa uma busca para encontrá-lo.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep9.jpg",
+        "dataExibicao": "2014-06-04"
+    },
+    {
+        "id": 3725,
+        "numero": 10,
+        "titulo": "Rosa Azul",
+        "sinopse": "Sora, Shiro e seus aliados se preparam para enfrentar os Homens-Fera usando exercícios de confiança e estratégias inteligentes. As apostas são altas, mas Sora possui um plano.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep10.jpg",
+        "dataExibicao": "2014-06-11"
+    },
+    {
+        "id": 3726,
+        "numero": 11,
+        "titulo": "Gigante Assassino",
+        "sinopse": "Izuna, apesar de sua força, encontra dificuldades contra a habilidade dos irmãos nos jogos. A disputa em primeira pessoa testa seus limites em um mundo virtual, enquanto a tensão aumenta.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep11.jpg",
+        "dataExibicao": "2014-06-18"
+    },
+    {
+        "id": 3727,
+        "numero": 12,
+        "titulo": "Regra Número 10",
+        "sinopse": "Enquanto as habilidades de Izuna parecem desafiar as leis da física, Sora e Shiro fazem tentativas desesperadas para melhorar sua estratégia no jogo final.",
+        "temporadaId": 1,
+        "animeId": 124,
+        "imagemUrl": "../../images/episodios/no-game-no-life/t1/ep12.jpg",
+        "dataExibicao": "2014-06-25"
     }
 ]
