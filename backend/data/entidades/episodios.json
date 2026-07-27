@@ -36914,5 +36914,145 @@
         "animeId": 120,
         "imagemUrl": "../../images/episodios/fate-zero/t2/ep12.jpg",
         "dataExibicao": "2012-06-24"
+    },
+    {
+        "id": 3679,
+        "numero": 1,
+        "titulo": "O Recomeço",
+        "sinopse": "Após o fim da guerra, Violet Evergarden recebe uma nova oportunidade de vida quando é acolhida por Claudia Hodgins e apresentada ao trabalho de Auto Memory Doll.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep1.jpg",
+        "dataExibicao": "2018-01-11"
+    },
+    {
+        "id": 3680,
+        "numero": 2,
+        "titulo": "Nunca Mais Volta",
+        "sinopse": "Enquanto tenta se adaptar ao novo emprego, Violet aprende datilografia e descobre que escrever cartas exige muito mais do que apenas habilidade técnica.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep2.jpg",
+        "dataExibicao": "2018-01-18"
+    },
+    {
+        "id": 3681,
+        "numero": 3,
+        "titulo": "Você Pode Ser uma Auto Memory Doll",
+        "sinopse": "Violet ingressa em um curso para Auto Memory Dolls, onde conhece Luculia e começa a compreender melhor os sentimentos das pessoas.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep3.jpg",
+        "dataExibicao": "2018-01-25"
+    },
+    {
+        "id": 3682,
+        "numero": 4,
+        "titulo": "Você Não Será Uma Ferramenta, Mas Uma Pessoa Digna do Nome",
+        "sinopse": "Violet acompanha Iris até sua cidade natal e presencia conflitos familiares que a ajudam a entender melhor as emoções humanas.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep4.jpg",
+        "dataExibicao": "2018-02-01"
+    },
+    {
+        "id": 3683,
+        "numero": 5,
+        "titulo": "Você Escreve Cartas que Aproximam Pessoas?",
+        "sinopse": "Violet é encarregada de escrever cartas em nome da princesa Charlotte, ajudando a fortalecer um casamento político por meio das palavras.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep5.jpg",
+        "dataExibicao": "2018-02-08"
+    },
+    {
+        "id": 3684,
+        "numero": 6,
+        "titulo": "Em Algum Lugar Sob um Céu Repleto de Estrelas",
+        "sinopse": "Durante um trabalho na Biblioteca de Astrea, Violet conhece Leon e compartilha com ele experiências sobre solidão e esperança.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep6.jpg",
+        "dataExibicao": "2018-02-15"
+    },
+    {
+        "id": 3685,
+        "numero": 7,
+        "titulo": "Sem Saber Como Dizer",
+        "sinopse": "Um dramaturgo atormentado por seu passado contrata Violet para ajudá-lo a concluir uma peça, levando ambos a enfrentarem a dor da perda.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep7.jpg",
+        "dataExibicao": "2018-02-22"
+    },
+    {
+        "id": 3686,
+        "numero": 8,
+        "titulo": "Aquele a Quem Eu Amo",
+        "sinopse": "Ao descobrir que o Major Gilbert é considerado desaparecido, Violet revive memórias dolorosas da guerra e questiona seu próprio propósito.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep8.jpg",
+        "dataExibicao": "2018-03-01"
+    },
+    {
+        "id": 3687,
+        "numero": 9,
+        "titulo": "Violet Evergarden",
+        "sinopse": "Consumida pela culpa, Violet abandona temporariamente seu trabalho até receber uma carta que muda sua forma de enxergar a própria existência.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep9.jpg",
+        "dataExibicao": "2018-03-08"
+    },
+    {
+        "id": 3688,
+        "numero": 10,
+        "titulo": "A Pessoa que Sempre Amará Você",
+        "sinopse": "Violet escreve cartas para uma mãe gravemente doente, sem imaginar o profundo impacto que elas terão na vida de sua filha no futuro.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep10.jpg",
+        "dataExibicao": "2018-03-15"
+    },
+    {
+        "id": 3689,
+        "numero": 11,
+        "titulo": "Não Quero Que Mais Ninguém Morra",
+        "sinopse": "Mesmo contrariando as recomendações de Hodgins, Violet aceita uma missão em uma região devastada pela guerra para ajudar um soldado.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep11.jpg",
+        "dataExibicao": "2018-03-22"
+    },
+    {
+        "id": 3690,
+        "numero": 12,
+        "titulo": "A Guerra Está Chegando ao Fim",
+        "sinopse": "Enquanto antigos soldados tentam impedir a assinatura do tratado de paz, Violet embarca em uma missão decisiva para proteger o futuro.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep12.jpg",
+        "dataExibicao": "2018-03-29"
+    },
+    {
+        "id": 3691,
+        "numero": 13,
+        "titulo": "Boneca de Memórias Automáticas e 'Eu Te Amo'",
+        "sinopse": "Com a paz finalmente restaurada, Violet escreve uma carta destinada ao Major Gilbert, dando mais um passo para compreender o verdadeiro significado do amor.",
+        "temporadaId": 1,
+        "animeId": 121,
+        "imagemUrl": "../../images/episodios/violet-evergarden/t1/ep13.jpg",
+        "dataExibicao": "2018-04-05"
+    },
+    {
+        "id": 3692,
+        "numero": 1,
+        "titulo": "Violet Evergarden Gaiden: Eternidade e a Boneca de Automemórias",
+        "sinopse": "Violet aceita um pedido incomum de uma cantora de ópera muito exigente. Ilma deseja que Violet escreva uma carta de amor que possa usar como letra para uma ária, levando a Boneca de Memórias Automáticas a compreender ainda mais os sentimentos humanos.",
+        "temporadaId": 0,
+        "animeId": 122,
+        "imagemUrl": "../../images/episodios/violet-evergarden-gaiden/ep1.jpg",
+        "dataExibicao": "2018-07-04"
     }
 ]
