@@ -35384,5 +35384,505 @@
         "animeId": 109,
         "imagemUrl": "../../images/episodios/bleach/t2/ep50.jpg",
         "dataExibicao": "2026-09-26"
+    },
+    {
+        "id": 3526,
+        "numero": 1,
+        "titulo": "O Fim e o Começo",
+        "sinopse": "Shoyo Hinata, apaixonado por vôlei, reúne um time improvisado para disputar seu primeiro e último torneio do ensino fundamental, onde enfrenta um adversário que mudará sua vida.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep1.jpg",
+        "dataExibicao": "2014-04-06"
+    },
+    {
+        "id": 3527,
+        "numero": 2,
+        "titulo": "Clube de Vôlei do Colégio Karasuno",
+        "sinopse": "Hinata ingressa no Colégio Karasuno esperando reencontrar seu rival Kageyama, mas descobre que agora ambos fazem parte da mesma equipe.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep2.jpg",
+        "dataExibicao": "2014-04-13"
+    },
+    {
+        "id": 3528,
+        "numero": 3,
+        "titulo": "Um Aliado Formidável",
+        "sinopse": "Hinata e Kageyama precisam provar que conseguem trabalhar em equipe durante uma partida de três contra três para entrar no clube de vôlei.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep3.jpg",
+        "dataExibicao": "2014-04-20"
+    },
+    {
+        "id": 3529,
+        "numero": 4,
+        "titulo": "A Vista do Topo",
+        "sinopse": "O confronto decisivo continua enquanto Hinata e Kageyama enfrentam a defesa de Tsukishima e buscam conquistar seu lugar na equipe.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep4.jpg",
+        "dataExibicao": "2014-04-27"
+    },
+    {
+        "id": 3530,
+        "numero": 5,
+        "titulo": "A Ansiedade de um Covarde",
+        "sinopse": "Após vencerem o desafio, Hinata e Kageyama finalmente se tornam membros oficiais do Clube de Vôlei do Karasuno.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep5.jpg",
+        "dataExibicao": "2014-05-04"
+    },
+    {
+        "id": 3531,
+        "numero": 6,
+        "titulo": "Um Time Interessante",
+        "sinopse": "Karasuno enfrenta Aoba Johsai em um amistoso, enquanto Kageyama reencontra antigos companheiros de equipe.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep6.jpg",
+        "dataExibicao": "2014-05-11"
+    },
+    {
+        "id": 3532,
+        "numero": 7,
+        "titulo": "Contra o Grande Rei",
+        "sinopse": "A entrada de Oikawa muda completamente o rumo da partida amistosa, colocando Karasuno diante de um dos melhores levantadores da região.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep7.jpg",
+        "dataExibicao": "2014-05-18"
+    },
+    {
+        "id": 3533,
+        "numero": 8,
+        "titulo": "Aquele Chamado de Ás",
+        "sinopse": "Nishinoya retorna ao clube, enquanto Takeda tenta convencer Ukai a assumir o cargo de treinador da equipe.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep8.jpg",
+        "dataExibicao": "2014-05-25"
+    },
+    {
+        "id": 3534,
+        "numero": 9,
+        "titulo": "Um Levantamento para o Ás",
+        "sinopse": "Karasuno tenta convencer Asahi a voltar ao time antes do amistoso contra Nekoma.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep9.jpg",
+        "dataExibicao": "2014-06-01"
+    },
+    {
+        "id": 3535,
+        "numero": 10,
+        "titulo": "Admiração",
+        "sinopse": "Hinata observa a força de Asahi durante um amistoso e passa a desejar evoluir ainda mais como atacante.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep10.jpg",
+        "dataExibicao": "2014-06-08"
+    },
+    {
+        "id": 3536,
+        "numero": 11,
+        "titulo": "Decisão",
+        "sinopse": "Durante o treinamento, Ukai precisa decidir quem será o levantador titular para o confronto contra Nekoma.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep11.jpg",
+        "dataExibicao": "2014-06-15"
+    },
+    {
+        "id": 3537,
+        "numero": 12,
+        "titulo": "O Reencontro do Gato e do Corvo",
+        "sinopse": "Karasuno enfrenta Nekoma em um aguardado amistoso entre duas escolas historicamente rivais.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep12.jpg",
+        "dataExibicao": "2014-06-22"
+    },
+    {
+        "id": 3538,
+        "numero": 13,
+        "titulo": "Rival",
+        "sinopse": "Hinata busca aperfeiçoar seu ataque rápido enquanto enfrenta a sólida defesa de Nekoma.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep13.jpg",
+        "dataExibicao": "2014-06-29"
+    },
+    {
+        "id": 3539,
+        "numero": 14,
+        "titulo": "Adversários Formidáveis",
+        "sinopse": "Com as eliminatórias se aproximando, Karasuno intensifica os treinamentos e conhece seus futuros adversários.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep14.jpg",
+        "dataExibicao": "2014-07-06"
+    },
+    {
+        "id": 3540,
+        "numero": 15,
+        "titulo": "Ressurgimento",
+        "sinopse": "Começam as eliminatórias para o Intercolegial, marcando o retorno oficial de Karasuno às competições.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep15.jpg",
+        "dataExibicao": "2014-07-13"
+    },
+    {
+        "id": 3541,
+        "numero": 16,
+        "titulo": "Vencedores e Perdedoras",
+        "sinopse": "Enquanto Karasuno avança no torneio, outras equipes enfrentam derrotas que mostram o peso da competição.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep16.jpg",
+        "dataExibicao": "2014-07-20"
+    },
+    {
+        "id": 3542,
+        "numero": 17,
+        "titulo": "A Muralha de Ferro",
+        "sinopse": "Karasuno enfrenta Date Tech e sua lendária defesa baseada em bloqueios quase impenetráveis.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep17.jpg",
+        "dataExibicao": "2014-07-27"
+    },
+    {
+        "id": 3543,
+        "numero": 18,
+        "titulo": "Protegendo Suas Costas",
+        "sinopse": "Asahi assume a responsabilidade de romper a poderosa defesa de Date Tech em um momento decisivo.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep18.jpg",
+        "dataExibicao": "2014-08-03"
+    },
+    {
+        "id": 3544,
+        "numero": 19,
+        "titulo": "Maestros",
+        "sinopse": "Karasuno se prepara para enfrentar Aoba Johsai novamente, desta vez em uma partida oficial das eliminatórias.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep19.jpg",
+        "dataExibicao": "2014-08-10"
+    },
+    {
+        "id": 3545,
+        "numero": 20,
+        "titulo": "Oikawa Tōru Não é um Gênio",
+        "sinopse": "A disputa entre Kageyama e Oikawa domina a partida enquanto Karasuno tenta superar a experiência de Seijoh.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep20.jpg",
+        "dataExibicao": "2014-08-17"
+    },
+    {
+        "id": 3546,
+        "numero": 21,
+        "titulo": "As Verdadeiras Habilidades de um Veterano",
+        "sinopse": "Sugawara entra em quadra e muda o ritmo do jogo, permitindo que Karasuno reaja contra Aoba Johsai.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep21.jpg",
+        "dataExibicao": "2014-08-24"
+    },
+    {
+        "id": 3547,
+        "numero": 22,
+        "titulo": "Evolução",
+        "sinopse": "Kageyama começa a compreender melhor seus companheiros, tornando o ataque de Karasuno ainda mais versátil.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep22.jpg",
+        "dataExibicao": "2014-08-31"
+    },
+    {
+        "id": 3548,
+        "numero": 23,
+        "titulo": "O Ponto que Muda o Ritmo",
+        "sinopse": "Em um momento decisivo, Karasuno busca recuperar a confiança para evitar a eliminação.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep23.jpg",
+        "dataExibicao": "2014-09-07"
+    },
+    {
+        "id": 3549,
+        "numero": 24,
+        "titulo": "Derrubando o Rei Solitário",
+        "sinopse": "Kageyama supera seu antigo estilo individualista enquanto a partida chega aos pontos finais.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep24.jpg",
+        "dataExibicao": "2014-09-14"
+    },
+    {
+        "id": 3550,
+        "numero": 25,
+        "titulo": "O Terceiro Dia",
+        "sinopse": "Após a derrota para Aoba Johsai, Karasuno decide seguir em frente e inicia a preparação para o Torneio de Primavera.",
+        "temporadaId": 1,
+        "animeId": 110,
+        "imagemUrl": "../../images/episodios/haikyuu/t1/ep25.jpg",
+        "dataExibicao": "2014-09-21"
+    },
+    {
+        "id": 3551,
+        "numero": 1,
+        "titulo": "Vamos para Tóquio!!",
+        "sinopse": "Após a derrota para Aoba Johsai no Intercolegial, Karasuno continua treinando intensamente rumo ao Torneio de Primavera e recebe um convite para um grande acampamento de treinamento em Tóquio.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep1.jpg",
+        "dataExibicao": "2015-10-04"
+    },
+    {
+        "id": 3552,
+        "numero": 2,
+        "titulo": "Luz Solar Direta",
+        "sinopse": "Hinata, Kageyama, Tanaka e Nishinoya precisam melhorar suas notas para poder viajar ao acampamento de treinamento em Tóquio.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep2.jpg",
+        "dataExibicao": "2015-10-11"
+    },
+    {
+        "id": 3553,
+        "numero": 3,
+        "titulo": "Figurante B",
+        "sinopse": "Yachi começa a se envolver com o clube de vôlei de Karasuno e precisa decidir se aceitará o cargo de gerente da equipe.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep3.jpg",
+        "dataExibicao": "2015-10-18"
+    },
+    {
+        "id": 3554,
+        "numero": 4,
+        "titulo": "Ás Central",
+        "sinopse": "Karasuno inicia os amistosos em Tóquio enfrentando escolas de alto nível e conhece um novo jogador da Nekoma.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep4.jpg",
+        "dataExibicao": "2015-10-25"
+    },
+    {
+        "id": 3555,
+        "numero": 5,
+        "titulo": "Ganância",
+        "sinopse": "Hinata percebe que o ataque rápido já não surpreende tanto os adversários e decide evoluir seu próprio estilo de jogo.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep5.jpg",
+        "dataExibicao": "2015-11-01"
+    },
+    {
+        "id": 3556,
+        "numero": 6,
+        "titulo": "Tempo",
+        "sinopse": "Hinata e Kageyama entram em conflito durante os treinamentos, levando Ukai a buscar uma nova perspectiva para a dupla.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep6.jpg",
+        "dataExibicao": "2015-11-08"
+    },
+    {
+        "id": 3557,
+        "numero": 7,
+        "titulo": "Nascer da Lua",
+        "sinopse": "Enquanto os jogadores evoluem individualmente, Tsukishima demonstra pouco interesse em melhorar e recebe um incentivo inesperado.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep7.jpg",
+        "dataExibicao": "2015-11-15"
+    },
+    {
+        "id": 3558,
+        "numero": 8,
+        "titulo": "Herói Ilusório",
+        "sinopse": "Yamaguchi tenta compreender a postura de Tsukishima e reúne coragem para ajudá-lo a encontrar motivação.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep8.jpg",
+        "dataExibicao": "2015-11-22"
+    },
+    {
+        "id": 3559,
+        "numero": 9,
+        "titulo": "Contra o 'Guarda-Chuva'",
+        "sinopse": "Karasuno continua aperfeiçoando suas novas técnicas enquanto Hinata e Kageyama trabalham para criar uma versão ainda melhor do ataque rápido.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep9.jpg",
+        "dataExibicao": "2015-11-29"
+    },
+    {
+        "id": 3560,
+        "numero": 10,
+        "titulo": "Engrenagens",
+        "sinopse": "No último dia do acampamento, Karasuno enfrenta Fukurodani determinado a finalmente conquistar um set.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep10.jpg",
+        "dataExibicao": "2015-12-06"
+    },
+    {
+        "id": 3561,
+        "numero": 11,
+        "titulo": "Acima",
+        "sinopse": "O acampamento chega ao fim e Bokuto compartilha sua visão sobre os grandes rivais que aguardam Karasuno no futuro.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep11.jpg",
+        "dataExibicao": "2015-12-13"
+    },
+    {
+        "id": 3562,
+        "numero": 12,
+        "titulo": "Que os Jogos Comecem!",
+        "sinopse": "Tem início o Torneio Classificatório de Primavera, e Karasuno faz sua estreia em busca de uma vaga no campeonato nacional.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep12.jpg",
+        "dataExibicao": "2015-12-20"
+    },
+    {
+        "id": 3563,
+        "numero": 13,
+        "titulo": "Uma Força Simples e Pura",
+        "sinopse": "Karasuno enfrenta Kakugawa High, cuja principal arma é o gigantesco estreante Hyakuzawa.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep13.jpg",
+        "dataExibicao": "2015-12-27"
+    },
+    {
+        "id": 3564,
+        "numero": 14,
+        "titulo": "Ainda Crescendo",
+        "sinopse": "Cada integrante da equipe busca evoluir individualmente antes da fase decisiva do torneio.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep14.jpg",
+        "dataExibicao": "2016-01-10"
+    },
+    {
+        "id": 3565,
+        "numero": 15,
+        "titulo": "Lugar para Jogar",
+        "sinopse": "Karasuno enfrenta Johzenji, uma equipe conhecida por seu estilo imprevisível e criativo.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep15.jpg",
+        "dataExibicao": "2016-01-17"
+    },
+    {
+        "id": 3566,
+        "numero": 16,
+        "titulo": "O Próximo",
+        "sinopse": "Mesmo pressionado pelo ritmo descontraído de Johzenji, Karasuno recupera o controle da partida.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep16.jpg",
+        "dataExibicao": "2016-01-24"
+    },
+    {
+        "id": 3567,
+        "numero": 17,
+        "titulo": "A Batalha Sem Força de Vontade",
+        "sinopse": "Um acidente envolvendo Sawamura obriga Karasuno a reorganizar sua equipe durante uma partida decisiva.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep17.jpg",
+        "dataExibicao": "2016-01-31"
+    },
+    {
+        "id": 3568,
+        "numero": 18,
+        "titulo": "Os Derrotados",
+        "sinopse": "Hinata enfrenta um adversário que lembra o Pequeno Gigante enquanto Karasuno luta para superar suas dificuldades.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep18.jpg",
+        "dataExibicao": "2016-02-07"
+    },
+    {
+        "id": 3569,
+        "numero": 19,
+        "titulo": "A Muralha de Ferro Pode Ser Reconstruída Inúmeras Vezes",
+        "sinopse": "Date Tech demonstra a evolução de sua lendária defesa antes do confronto decisivo contra Aoba Johsai.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep19.jpg",
+        "dataExibicao": "2016-02-14"
+    },
+    {
+        "id": 3570,
+        "numero": 20,
+        "titulo": "Aniquilação",
+        "sinopse": "Karasuno reencontra seu grande rival, Aoba Johsai, na semifinal do torneio classificatório.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep20.jpg",
+        "dataExibicao": "2016-02-21"
+    },
+    {
+        "id": 3571,
+        "numero": 21,
+        "titulo": "O Destruidor",
+        "sinopse": "A entrada de Kyotani muda completamente o ritmo da partida e coloca Karasuno sob enorme pressão.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep21.jpg",
+        "dataExibicao": "2016-02-28"
+    },
+    {
+        "id": 3572,
+        "numero": 22,
+        "titulo": "A Luta do Antigo Covarde",
+        "sinopse": "Yamaguchi retorna como sacador especialista e tenta superar seus medos para ajudar Karasuno.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep22.jpg",
+        "dataExibicao": "2016-03-06"
+    },
+    {
+        "id": 3573,
+        "numero": 23,
+        "titulo": "Equipe",
+        "sinopse": "A semifinal chega ao set decisivo, com Karasuno e Aoba Johsai dando tudo de si em quadra.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep23.jpg",
+        "dataExibicao": "2016-03-13"
+    },
+    {
+        "id": 3574,
+        "numero": 24,
+        "titulo": "O Interruptor do Limite Absoluto",
+        "sinopse": "Os dois times atingem seus limites físicos e mentais enquanto disputam cada ponto da partida.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep24.jpg",
+        "dataExibicao": "2016-03-20"
+    },
+    {
+        "id": 3575,
+        "numero": 25,
+        "titulo": "Declaração de Guerra",
+        "sinopse": "Após vencer Aoba Johsai, Karasuno garante vaga na final das classificatórias e desafia a poderosa Academia Shiratorizawa pela única vaga no Nacional.",
+        "temporadaId": 2,
+        "animeId": 111,
+        "imagemUrl": "../../images/episodios/haikyuu/t2/ep25.jpg",
+        "dataExibicao": "2016-03-27"
     }
 ]
