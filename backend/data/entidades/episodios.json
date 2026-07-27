@@ -36794,5 +36794,125 @@
         "animeId": 119,
         "imagemUrl": "../../images/episodios/fate-zero/t1/ep13.jpg",
         "dataExibicao": "2011-12-25"
+    },
+    {
+        "id": 3667,
+        "numero": 1,
+        "titulo": "A Batalha Sangrenta no Rio Mion",
+        "sinopse": "Os Servos unem forças para enfrentar Caster enquanto Kiritsugu elabora um plano para eliminar a fonte do poder de seu inimigo.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep1.jpg",
+        "dataExibicao": "2012-04-08"
+    },
+    {
+        "id": 3668,
+        "numero": 2,
+        "titulo": "Luz Dourada",
+        "sinopse": "Rider ganha tempo ao enfrentar Caster, enquanto Kiritsugu propõe uma estratégia decisiva que exige um grande sacrifício de Lancer.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep2.jpg",
+        "dataExibicao": "2012-04-15"
+    },
+    {
+        "id": 3669,
+        "numero": 3,
+        "titulo": "O Fim da Honra",
+        "sinopse": "Saber e Lancer travam um duelo honroso, mas Kiritsugu demonstra que está disposto a sacrificar qualquer ideal para alcançar a vitória.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep3.jpg",
+        "dataExibicao": "2012-04-22"
+    },
+    {
+        "id": 3670,
+        "numero": 4,
+        "titulo": "O Oitavo Contrato",
+        "sinopse": "Novas alianças e traições mudam completamente a Guerra do Santo Graal, levando os participantes a enfrentarem desafios inesperados.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep4.jpg",
+        "dataExibicao": "2012-04-29"
+    },
+    {
+        "id": 3671,
+        "numero": 5,
+        "titulo": "Lembranças Distantes",
+        "sinopse": "O passado de Kiritsugu é revelado, mostrando sua infância, seu pai e os acontecimentos que moldaram seu senso de justiça.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep5.jpg",
+        "dataExibicao": "2012-05-06"
+    },
+    {
+        "id": 3672,
+        "numero": 6,
+        "titulo": "Onde Habita a Justiça",
+        "sinopse": "Criado por Natalia como um assassino de magos, Kiritsugu enfrenta uma decisão dolorosa que marcará sua vida para sempre.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep6.jpg",
+        "dataExibicao": "2012-05-13"
+    },
+    {
+        "id": 3673,
+        "numero": 7,
+        "titulo": "O Retorno do Assassino",
+        "sinopse": "Enquanto Irisviel enfraquece, Kiritsugu continua sua missão eliminando novos adversários, mas um ataque inesperado traz consequências devastadoras.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep7.jpg",
+        "dataExibicao": "2012-05-20"
+    },
+    {
+        "id": 3674,
+        "numero": 8,
+        "titulo": "O Cavaleiro da Montaria de Duas Rodas",
+        "sinopse": "Saber persegue Rider enquanto Kiritsugu segue outra pista. Paralelamente, Kariya Matou prepara silenciosamente sua próxima jogada.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep8.jpg",
+        "dataExibicao": "2012-05-27"
+    },
+    {
+        "id": 3675,
+        "numero": 9,
+        "titulo": "Todo o Mal do Mundo",
+        "sinopse": "Com a guerra se aproximando do fim, alianças são desfeitas e um dos participantes mais importantes está prestes a encontrar seu destino.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep9.jpg",
+        "dataExibicao": "2012-06-03"
+    },
+    {
+        "id": 3676,
+        "numero": 10,
+        "titulo": "O Oceano no Fim do Mundo",
+        "sinopse": "Os confrontos decisivos entre Saber, Berserker, Rider e Archer definem o rumo da Guerra do Santo Graal enquanto antigos segredos vêm à tona.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep10.jpg",
+        "dataExibicao": "2012-06-10"
+    },
+    {
+        "id": 3677,
+        "numero": 11,
+        "titulo": "O Último Selo de Comando",
+        "sinopse": "Restando apenas dois Mestres e dois Servos, a batalha final pelo Santo Graal chega ao seu momento decisivo.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep11.jpg",
+        "dataExibicao": "2012-06-17"
+    },
+    {
+        "id": 3678,
+        "numero": 12,
+        "titulo": "Fate/Zero",
+        "sinopse": "Kiritsugu ordena que Saber destrua o Santo Graal, desencadeando um desfecho inesperado que mudará para sempre o destino da Guerra do Santo Graal.",
+        "temporadaId": 2,
+        "animeId": 120,
+        "imagemUrl": "../../images/episodios/fate-zero/t2/ep12.jpg",
+        "dataExibicao": "2012-06-24"
     }
 ]
