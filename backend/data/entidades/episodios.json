@@ -36234,5 +36234,225 @@
         "animeId": 113,
         "imagemUrl": "../../images/episodios/haikyuu/t4/ep25.jpg",
         "dataExibicao": "2020-12-19"
+    },
+    {
+        "id": 3611,
+        "numero": 1,
+        "titulo": "Coeficiente Criminal",
+        "sinopse": "A inspetora Akane Tsunemori inicia seu primeiro dia na Divisão de Investigação Criminal e enfrenta um perigoso caso de sequestro, descobrindo a dura realidade do Sistema Sibyl.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep1.jpg",
+        "dataExibicao": "2012-10-12"
+    },
+    {
+        "id": 3612,
+        "numero": 2,
+        "titulo": "Aqueles que São Capazes",
+        "sinopse": "Akane começa a compreender o papel dos Executores enquanto a equipe investiga um novo caso e ela passa a questionar o verdadeiro significado da justiça.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep2.jpg",
+        "dataExibicao": "2012-10-19"
+    },
+    {
+        "id": 3613,
+        "numero": 3,
+        "titulo": "Convenções da Criação",
+        "sinopse": "Uma investigação envolvendo uma fábrica automatizada leva a Divisão 1 a descobrir um assassinato oculto por trás de um aparente acidente.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep3.jpg",
+        "dataExibicao": "2012-10-26"
+    },
+    {
+        "id": 3614,
+        "numero": 4,
+        "titulo": "Ninguém Conhece Sua Máscara",
+        "sinopse": "A equipe investiga uma série de assassinatos ligados a avatares virtuais, revelando os perigos da identidade digital.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep4.jpg",
+        "dataExibicao": "2012-11-02"
+    },
+    {
+        "id": 3615,
+        "numero": 5,
+        "titulo": "Ninguém Conhece Seu Rosto",
+        "sinopse": "Akane e seus companheiros continuam a investigação sobre os crimes envolvendo avatares e chegam mais perto do verdadeiro culpado.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep5.jpg",
+        "dataExibicao": "2012-11-09"
+    },
+    {
+        "id": 3616,
+        "numero": 6,
+        "titulo": "O Retorno do Príncipe Psicótico",
+        "sinopse": "Kogami revisita um antigo caso enquanto novas pistas aproximam a equipe de um perigoso criminoso em série.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep6.jpg",
+        "dataExibicao": "2012-11-16"
+    },
+    {
+        "id": 3617,
+        "numero": 7,
+        "titulo": "O Simbolismo da Bletilla Striata",
+        "sinopse": "Makishima começa a agir nas sombras enquanto a polícia tenta impedir uma nova sequência de assassinatos.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep7.jpg",
+        "dataExibicao": "2012-11-23"
+    },
+    {
+        "id": 3618,
+        "numero": 8,
+        "titulo": "E Então, o Silêncio",
+        "sinopse": "A perseguição ao assassino chega ao fim, mas Makishima demonstra que seus planos vão muito além dos crimes já cometidos.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep8.jpg",
+        "dataExibicao": "2012-11-30"
+    },
+    {
+        "id": 3619,
+        "numero": 9,
+        "titulo": "O Fruto do Paraíso",
+        "sinopse": "Akane aprofunda seus conhecimentos em perfis criminais enquanto Makishima prepara um novo desafio para Kogami.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep9.jpg",
+        "dataExibicao": "2012-12-07"
+    },
+    {
+        "id": 3620,
+        "numero": 10,
+        "titulo": "O Jogo de Matusalém",
+        "sinopse": "Makishima coloca Kogami diante de uma armadilha mortal, iniciando uma perigosa caçada entre investigador e criminoso.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep10.jpg",
+        "dataExibicao": "2012-12-14"
+    },
+    {
+        "id": 3621,
+        "numero": 11,
+        "titulo": "A Ceia dos Santos",
+        "sinopse": "Akane presencia um acontecimento traumático ao confrontar Makishima, abalando profundamente sua confiança no Sistema Sibyl.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep11.jpg",
+        "dataExibicao": "2012-12-21"
+    },
+    {
+        "id": 3622,
+        "numero": 12,
+        "titulo": "A Encruzilhada do Diabo",
+        "sinopse": "O passado da Executora Yayoi Kunizuka é revelado, mostrando como ela acabou trabalhando para o Departamento de Segurança Pública.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep12.jpg",
+        "dataExibicao": "2013-01-11"
+    },
+    {
+        "id": 3623,
+        "numero": 13,
+        "titulo": "Convite ao Abismo",
+        "sinopse": "A investigação sobre Makishima avança graças a uma nova tecnologia capaz de reconstruir memórias e identificar suspeitos.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep13.jpg",
+        "dataExibicao": "2013-01-18"
+    },
+    {
+        "id": 3624,
+        "numero": 14,
+        "titulo": "Doce Veneno",
+        "sinopse": "Uma onda de crimes praticados por pessoas usando capacetes especiais desafia a capacidade de julgamento do Sistema Sibyl.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep14.jpg",
+        "dataExibicao": "2013-01-25"
+    },
+    {
+        "id": 3625,
+        "numero": 15,
+        "titulo": "A Cidade Onde Cai Enxofre",
+        "sinopse": "Makishima intensifica seus ataques contra a sociedade enquanto o Sistema Sibyl demonstra suas limitações diante do caos.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep15.jpg",
+        "dataExibicao": "2013-02-01"
+    },
+    {
+        "id": 3626,
+        "numero": 16,
+        "titulo": "O Portão do Julgamento",
+        "sinopse": "A Divisão 1 intensifica a perseguição a Makishima enquanto Akane começa a descobrir informações ocultas sobre o funcionamento do Sistema Sibyl.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep16.jpg",
+        "dataExibicao": "2013-02-08"
+    },
+    {
+        "id": 3627,
+        "numero": 17,
+        "titulo": "Coração de Ferro",
+        "sinopse": "Kogami segue sua própria investigação em busca de Makishima, aproximando-se perigosamente de ultrapassar os limites impostos pelo Sistema Sibyl.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep17.jpg",
+        "dataExibicao": "2013-02-15"
+    },
+    {
+        "id": 3628,
+        "numero": 18,
+        "titulo": "Uma Promessa Escrita na Água",
+        "sinopse": "Makishima coloca em prática um plano capaz de ameaçar toda a sociedade, obrigando Akane e seus companheiros a agir antes que seja tarde.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep18.jpg",
+        "dataExibicao": "2013-02-22"
+    },
+    {
+        "id": 3629,
+        "numero": 19,
+        "titulo": "Sombra Transparente",
+        "sinopse": "Akane confronta a verdadeira natureza do Sistema Sibyl e precisa decidir em quem confiar diante das revelações sobre a estrutura do governo.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep19.jpg",
+        "dataExibicao": "2013-03-01"
+    },
+    {
+        "id": 3630,
+        "numero": 20,
+        "titulo": "Onde Está a Justiça",
+        "sinopse": "A caçada contra Makishima entra em sua fase decisiva enquanto Kogami se aproxima de um confronto que poderá mudar seu destino para sempre.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep20.jpg",
+        "dataExibicao": "2013-03-08"
+    },
+    {
+        "id": 3631,
+        "numero": 21,
+        "titulo": "A Recompensa Manchada de Sangue",
+        "sinopse": "O confronto final entre Kogami e Makishima acontece, levando ambos a enfrentar as consequências de suas convicções sobre justiça e liberdade.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep21.jpg",
+        "dataExibicao": "2013-03-15"
+    },
+    {
+        "id": 3632,
+        "numero": 22,
+        "titulo": "Mundo Perfeito",
+        "sinopse": "Após os acontecimentos finais, Akane assume uma nova postura diante do Sistema Sibyl, enquanto a sociedade segue em frente sob uma nova perspectiva.",
+        "temporadaId": 1,
+        "animeId": 114,
+        "imagemUrl": "../../images/episodios/psycho-pass/t1/ep22.jpg",
+        "dataExibicao": "2013-03-22"
     }
 ]
