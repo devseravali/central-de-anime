@@ -36650,8 +36650,8 @@
         "numero": 1,
         "titulo": "Psycho-Pass: O Filme",
         "sinopse": "Após uma crise envolvendo o Sistema Sibyl, Akane Tsunemori viaja para o Sudeste Asiático para investigar uma nação que adotou a tecnologia japonesa. Lá, ela reencontra Shinya Kogami e descobre uma conspiração que pode ameaçar a estabilidade do sistema.",
-        "temporadaId": 4,
-        "animeId": 116,
+        "temporadaId": 0,
+        "animeId": 117,
         "imagemUrl": "../../images/episodios/psycho-pass/movie/ep1.jpg",
         "dataExibicao": "2015-01-09"
     },
@@ -36660,9 +36660,139 @@
         "numero": 1,
         "titulo": "Psycho-Pass: Sinners of the System Case.1 – Crime e Castigo",
         "sinopse": "Após um incidente envolvendo uma antiga instituição de reabilitação, Nobuchika Ginoza e Mika Shimotsuki investigam um caso que revela segredos sobre experimentos humanos, justiça e redenção dentro do Sistema Sibyl.",
-        "temporadaId": 1,
-        "animeId": 117,
+        "temporadaId": 0,
+        "animeId": 118,
         "imagemUrl": "../../images/episodios/psycho-pass-sinners-of-the-system-case1/t1/ep1.jpg",
         "dataExibicao": "2019-01-25"
+    },
+    {
+        "id": 3654,
+        "numero": 1,
+        "titulo": "A Invocação dos Heróis",
+        "sinopse": "Sete magos invocam lendários Espíritos Heroicos para disputar a Quarta Guerra do Santo Graal, uma batalha mortal cujo vencedor poderá realizar qualquer desejo.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep1.jpg",
+        "dataExibicao": "2011-10-02"
+    },
+    {
+        "id": 3655,
+        "numero": 2,
+        "titulo": "O Primeiro Disparo Falso",
+        "sinopse": "Enquanto Saber questiona o comportamento distante de Kiritsugu, o último Servo é invocado e todos os participantes da Guerra do Santo Graal finalmente estão reunidos.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep2.jpg",
+        "dataExibicao": "2011-10-09"
+    },
+    {
+        "id": 3656,
+        "numero": 3,
+        "titulo": "Cidade de Fuyuki",
+        "sinopse": "Com todos os Servos convocados, mestres e espíritos iniciam uma perigosa disputa de estratégias e espionagem antes do primeiro grande confronto.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep3.jpg",
+        "dataExibicao": "2011-10-16"
+    },
+    {
+        "id": 3657,
+        "numero": 4,
+        "titulo": "Ponta de Lança",
+        "sinopse": "A intensa batalha entre Saber e Lancer continua enquanto Kiritsugu e Maiya investigam a identidade do Mestre de Lancer.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep4.jpg",
+        "dataExibicao": "2011-10-23"
+    },
+    {
+        "id": 3658,
+        "numero": 5,
+        "titulo": "O Rugido de uma Fera Maligna",
+        "sinopse": "Rider interrompe o duelo entre Saber e Lancer e reúne diversos Servos em um encontro inesperado que altera o rumo da guerra.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep5.jpg",
+        "dataExibicao": "2011-10-30"
+    },
+    {
+        "id": 3659,
+        "numero": 6,
+        "titulo": "Uma Noite de Intrigas",
+        "sinopse": "Irisviel e Saber enfrentam um misterioso inimigo durante um passeio noturno, enquanto novos segredos sobre a Guerra do Santo Graal começam a surgir.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep6.jpg",
+        "dataExibicao": "2011-11-06"
+    },
+    {
+        "id": 3660,
+        "numero": 7,
+        "titulo": "Floresta Sombria",
+        "sinopse": "Os Mestres recebem uma oportunidade de obter um novo Selo de Comando caso consigam eliminar Caster, mudando temporariamente as prioridades da guerra.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep7.jpg",
+        "dataExibicao": "2011-11-13"
+    },
+    {
+        "id": 3661,
+        "numero": 8,
+        "titulo": "O Assassino de Magos",
+        "sinopse": "Kiritsugu enfrenta Kayneth em um confronto estratégico enquanto Saber e Lancer unem forças contra a ameaça representada por Caster.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep8.jpg",
+        "dataExibicao": "2011-11-20"
+    },
+    {
+        "id": 3662,
+        "numero": 9,
+        "titulo": "Mestre e Servo",
+        "sinopse": "Após o ataque ao castelo dos Einzbern, Kiritsugu segue seu próprio plano enquanto Kayneth recebe uma proposta inesperada que pode mudar seu destino.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep9.jpg",
+        "dataExibicao": "2011-11-27"
+    },
+    {
+        "id": 3663,
+        "numero": 10,
+        "titulo": "A Grande Aventura de Rin",
+        "sinopse": "Rin Tohsaka decide investigar sozinha uma série de desaparecimentos de crianças e acaba encontrando um perigoso aliado de Caster.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep10.jpg",
+        "dataExibicao": "2011-12-04"
+    },
+    {
+        "id": 3664,
+        "numero": 11,
+        "titulo": "Discutindo o Graal",
+        "sinopse": "Rider, Saber e Archer debatem seus ideais sobre o verdadeiro significado de ser um rei até que um intruso transforma a conversa em batalha.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep11.jpg",
+        "dataExibicao": "2011-12-11"
+    },
+    {
+        "id": 3665,
+        "numero": 12,
+        "titulo": "O Chamado do Graal",
+        "sinopse": "Kiritsugu tenta compreender as intenções de Kirei, enquanto Saber e Irisviel percebem que seu novo esconderijo pode esconder perigos inesperados.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep12.jpg",
+        "dataExibicao": "2011-12-18"
+    },
+    {
+        "id": 3666,
+        "numero": 13,
+        "titulo": "O Banquete Proibido da Loucura",
+        "sinopse": "Caster e Ryūnosuke iniciam um ritual insano que ameaça toda a cidade, enquanto Rider relembra seu passado e fortalece sua determinação na Guerra do Santo Graal.",
+        "temporadaId": 1,
+        "animeId": 119,
+        "imagemUrl": "../../images/episodios/fate-zero/t1/ep13.jpg",
+        "dataExibicao": "2011-12-25"
     }
 ]
