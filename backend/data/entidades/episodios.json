@@ -35884,5 +35884,105 @@
         "animeId": 111,
         "imagemUrl": "../../images/episodios/haikyuu/t2/ep25.jpg",
         "dataExibicao": "2016-03-27"
+    },
+    {
+        "id": 3576,
+        "numero": 1,
+        "titulo": "Saudações",
+        "sinopse": "A final das eliminatórias da Província de Miyagi para o Torneio Nacional da Primavera começa. O Karasuno enfrenta o invicto Colégio Shiratorizawa, liderado pelo poderoso Ushijima, na batalha por uma vaga no Nacional.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep1.jpg",
+        "dataExibicao": "2016-10-08"
+    },
+    {
+        "id": 3577,
+        "numero": 2,
+        "titulo": "A Ameaça da Esquerda",
+        "sinopse": "Ushijima domina o início da partida com seus ataques de canhoto. Nishinoya encontra dificuldades para defender seus golpes, obrigando o Karasuno a buscar uma nova estratégia.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep2.jpg",
+        "dataExibicao": "2016-10-15"
+    },
+    {
+        "id": 3578,
+        "numero": 3,
+        "titulo": "Monstro dos Palpites",
+        "sinopse": "O bloqueador central do Shiratorizawa prevê os ataques do Karasuno com impressionante precisão, enquanto Tsukishima analisa calmamente uma forma de superá-lo.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep3.jpg",
+        "dataExibicao": "2016-10-22"
+    },
+    {
+        "id": 3579,
+        "numero": 4,
+        "titulo": "O Halo ao Redor da Lua",
+        "sinopse": "Graças aos bloqueios de Tsukishima e Nishinoya, o Karasuno reage no segundo set. A disputa segue equilibrada até uma sequência intensa de vantagens.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep4.jpg",
+        "dataExibicao": "2016-10-29"
+    },
+    {
+        "id": 3580,
+        "numero": 5,
+        "titulo": "Indivíduo contra Números",
+        "sinopse": "Com o placar empatado, o terceiro set começa. Shirabu mantém a calma e conduz o Shiratorizawa de volta ao controle da partida.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep5.jpg",
+        "dataExibicao": "2016-11-05"
+    },
+    {
+        "id": 3581,
+        "numero": 6,
+        "titulo": "A Mudança Química dos Encontros",
+        "sinopse": "Precisando reagir, Hinata melhora seu desempenho defensivo enquanto Karasuno e Shiratorizawa travam um confronto cada vez mais equilibrado.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep6.jpg",
+        "dataExibicao": "2016-11-12"
+    },
+    {
+        "id": 3582,
+        "numero": 7,
+        "titulo": "Obstinação",
+        "sinopse": "Após vencer o quarto set, o Karasuno entra no decisivo tie-break. Com Kageyama exausto, Sugawara assume a posição de levantador e demonstra toda sua evolução.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep7.jpg",
+        "dataExibicao": "2016-11-19"
+    },
+    {
+        "id": 3583,
+        "numero": 8,
+        "titulo": "Um Cara Irritante",
+        "sinopse": "Tsukishima machuca a mão e precisa deixar a quadra temporariamente. Sem um de seus principais bloqueadores, o Karasuno intensifica os ataques para permanecer vivo na partida.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep8.jpg",
+        "dataExibicao": "2016-11-26"
+    },
+    {
+        "id": 3584,
+        "numero": 9,
+        "titulo": "Os Idiotas do Vôlei",
+        "sinopse": "Com o Shiratorizawa alcançando o match point, Tsukishima retorna à quadra. Exaustos, os jogadores continuam lutando até o limite por cada ponto.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep9.jpg",
+        "dataExibicao": "2016-12-03"
+    },
+    {
+        "id": 3585,
+        "numero": 10,
+        "titulo": "A Batalha dos Conceitos",
+        "sinopse": "O quinto set ultrapassa os 20 pontos e coloca frente a frente duas filosofias de jogo: a força individual do Shiratorizawa contra o trabalho em equipe do Karasuno. Apenas um seguirá para o Campeonato Nacional.",
+        "temporadaId": 3,
+        "animeId": 112,
+        "imagemUrl": "../../images/episodios/haikyuu/t3/ep10.jpg",
+        "dataExibicao": "2016-12-10"
     }
 ]
