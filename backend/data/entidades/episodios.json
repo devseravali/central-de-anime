@@ -38874,5 +38874,15 @@
         "animeId": 133,
         "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep23.jpg",
         "dataExibicao": "2018-09-26"
+    },
+    {
+        "id": 3899,
+        "numero": 1,
+        "titulo": "Steins;Gate: O Filme – Região de Carga do Déjà Vu",
+        "sinopse": "Um ano após alcançar a linha do mundo Steins Gate, Rintaro Okabe começa a desaparecer da realidade devido aos efeitos acumulados de suas inúmeras viagens no tempo. Apenas Kurisu Makise percebe que algo está errado e decide desafiar as leis do tempo para salvá-lo, enfrentando memórias, paradoxos e os sentimentos que ambos esconderam por tanto tempo.",
+        "temporadaId": 0,
+        "animeId": 134,
+        "imagemUrl": "../../images/episodios/steins-gate-load-region-of-deja-vu/filme.jpg",
+        "dataExibicao": "2013-04-20"
     }
 ]
