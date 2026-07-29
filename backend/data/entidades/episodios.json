@@ -39144,5 +39144,1705 @@
         "animeId": 137,
         "imagemUrl": "../../images/episodios/made-in-abyss/t2/ep12.jpg",
         "dataExibicao": "2022-09-28"
+    },
+    {
+        "id": 3926,
+        "numero": 1,
+        "titulo": "Asta e Yuno",
+        "sinopse": "No Reino de Clover, onde a magia é parte da vida de todos, os órfãos Asta e Yuno sonham em se tornar o próximo Rei Mago. Enquanto Yuno demonstra um talento extraordinário, Asta precisa enfrentar o fato de não possuir qualquer poder mágico.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep1.jpg",
+        "dataExibicao": "2017-10-03"
+    },
+    {
+        "id": 3927,
+        "numero": 2,
+        "titulo": "O Juramento de um Jovem",
+        "sinopse": "Após Yuno receber um lendário grimório de quatro folhas, ele é atacado por um ladrão. Mesmo sem magia, Asta arrisca a própria vida para proteger seu irmão e desperta um poder capaz de desafiar qualquer feitiço.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep2.jpg",
+        "dataExibicao": "2017-10-10"
+    },
+    {
+        "id": 3928,
+        "numero": 3,
+        "titulo": "Rumo à Capital Real!",
+        "sinopse": "Seis meses depois, Asta e Yuno seguem para a Capital Real para participar do exame de admissão dos Cavaleiros Mágicos, dando o primeiro passo em direção ao sonho de se tornarem Rei Mago.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep3.jpg",
+        "dataExibicao": "2017-10-17"
+    },
+    {
+        "id": 3929,
+        "numero": 4,
+        "titulo": "O Exame dos Cavaleiros Mágicos",
+        "sinopse": "Os candidatos enfrentam diversas provas para demonstrar suas habilidades mágicas. Enquanto Yuno impressiona facilmente, Asta precisa compensar sua falta de magia com determinação e força física.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep4.jpg",
+        "dataExibicao": "2017-10-24"
+    },
+    {
+        "id": 3930,
+        "numero": 5,
+        "titulo": "O Caminho para o Rei Mago",
+        "sinopse": "Os capitães dos esquadrões escolhem seus novos integrantes. Apesar das dificuldades, Asta finalmente encontra um lugar entre os Cavaleiros Mágicos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep5.jpg",
+        "dataExibicao": "2017-10-31"
+    },
+    {
+        "id": 3931,
+        "numero": 6,
+        "titulo": "Os Touros Negros",
+        "sinopse": "Asta é recebido pelos Touros Negros, o esquadrão mais caótico do reino. Seus novos companheiros possuem personalidades excêntricas, mas também grande potencial.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep6.jpg",
+        "dataExibicao": "2017-11-07"
+    },
+    {
+        "id": 3932,
+        "numero": 7,
+        "titulo": "Outro Novo Integrante",
+        "sinopse": "Enquanto conhece melhor a base dos Touros Negros, Asta começa a se adaptar à nova rotina e descobre mais sobre seus companheiros de equipe.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep7.jpg",
+        "dataExibicao": "2017-11-14"
+    },
+    {
+        "id": 3933,
+        "numero": 8,
+        "titulo": "Vamos! Minha Primeira Missão",
+        "sinopse": "Asta finalmente recebe sua primeira missão oficial como Cavaleiro Mágico e parte ao lado de Magna e Noelle para provar seu valor em campo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep8.jpg",
+        "dataExibicao": "2017-11-21"
+    },
+    {
+        "id": 3934,
+        "numero": 9,
+        "titulo": "Feras",
+        "sinopse": "Durante a missão em uma vila distante, Asta, Magna e Noelle descobrem que uma ameaça muito maior do que simples javalis coloca os moradores em perigo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep9.jpg",
+        "dataExibicao": "2017-11-28"
+    },
+    {
+        "id": 3935,
+        "numero": 10,
+        "titulo": "Guardiões",
+        "sinopse": "Os Touros Negros enfrentam o poderoso mago Heath e seus subordinados para proteger os habitantes da vila, colocando à prova a coragem e a determinação de Asta.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep10.jpg",
+        "dataExibicao": "2017-12-05"
+    },
+    {
+        "id": 3936,
+        "numero": 11,
+        "titulo": "O que Aconteceu Certo Dia na Cidade do Castelo",
+        "sinopse": "Durante um dia de folga, Vanessa leva Asta e Noelle para fazer compras na capital, onde diversos encontros inesperados transformam um passeio comum em uma aventura.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep11.jpg",
+        "dataExibicao": "2017-12-12"
+    },
+    {
+        "id": 3937,
+        "numero": 12,
+        "titulo": "O Rei Mago Viu",
+        "sinopse": "Enquanto Asta participa de uma perseguição a um ladrão, o Rei Mago observa atentamente seu potencial. Ao mesmo tempo, Yuno enfrenta uma missão repleta de mistérios.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep12.jpg",
+        "dataExibicao": "2017-12-19"
+    },
+    {
+        "id": 3938,
+        "numero": 13,
+        "titulo": "O Rei Mago Viu, Continuação",
+        "sinopse": "A investigação conduzida por Yuno revela acontecimentos trágicos, obrigando os membros da Alvorada Dourada a desvendar a verdadeira natureza da missão.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep13.jpg",
+        "dataExibicao": "2017-12-26"
+    },
+    {
+        "id": 3939,
+        "numero": 14,
+        "titulo": "Masmorra",
+        "sinopse": "Asta, Noelle e Luck exploram uma antiga masmorra repleta de armadilhas mágicas, sem imaginar que outros grupos também disputam seus valiosos tesouros.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep14.jpg",
+        "dataExibicao": "2018-01-09"
+    },
+    {
+        "id": 3940,
+        "numero": 15,
+        "titulo": "O Mago do Reino de Diamante",
+        "sinopse": "A competição pelo tesouro da masmorra se intensifica quando um poderoso mago do Reino de Diamante surge disposto a eliminar qualquer obstáculo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep15.jpg",
+        "dataExibicao": "2018-01-16"
+    },
+    {
+        "id": 3941,
+        "numero": 16,
+        "titulo": "Amigos",
+        "sinopse": "Asta, Yuno e seus companheiros unem forças para enfrentar inimigos formidáveis no interior da masmorra, enquanto Luck insiste em lutar sozinho.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep16.jpg",
+        "dataExibicao": "2018-01-23"
+    },
+    {
+        "id": 3942,
+        "numero": 17,
+        "titulo": "Destruidor",
+        "sinopse": "A arma secreta do Reino de Diamante demonstra um poder devastador, colocando os Cavaleiros Mágicos em uma batalha desesperada pela sobrevivência.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep17.jpg",
+        "dataExibicao": "2018-01-30"
+    },
+    {
+        "id": 3943,
+        "numero": 18,
+        "titulo": "Suas Memórias",
+        "sinopse": "Após alcançarem a câmara do tesouro, uma nova batalha começa. Enquanto isso, fragmentos do passado de Mars ajudam a explicar sua força extraordinária.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep18.jpg",
+        "dataExibicao": "2018-02-06"
+    },
+    {
+        "id": 3944,
+        "numero": 19,
+        "titulo": "Destruição e Salvação",
+        "sinopse": "Com a masmorra entrando em colapso, Asta e seus aliados lutam para escapar vivos enquanto Mars confronta as lembranças de seu passado doloroso.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep19.jpg",
+        "dataExibicao": "2018-02-13"
+    },
+    {
+        "id": 3945,
+        "numero": 20,
+        "titulo": "Assembleia na Capital Real",
+        "sinopse": "Após retornarem da missão, Asta e Noelle seguem para a Capital Real, onde acabam envolvidos em uma nova crise ao lado de outros Cavaleiros Mágicos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep20.jpg",
+        "dataExibicao": "2018-02-20"
+    },
+    {
+        "id": 3946,
+        "numero": 21,
+        "titulo": "Tumulto na Capital",
+        "sinopse": "A Capital Real é atacada por invasores poderosos, obrigando todos os esquadrões dos Cavaleiros Mágicos a deixarem suas diferenças de lado para defender o reino.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep21.jpg",
+        "dataExibicao": "2018-02-27"
+    },
+    {
+        "id": 3947,
+        "numero": 22,
+        "titulo": "A Dança da Magia Selvagem",
+        "sinopse": "Enquanto a batalha pela Capital continua, Noelle precisa superar suas inseguranças para proteger aqueles que dependem de sua magia.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep22.jpg",
+        "dataExibicao": "2018-03-06"
+    },
+    {
+        "id": 3948,
+        "numero": 23,
+        "titulo": "O Rei dos Leões Carmesins",
+        "sinopse": "Asta enfrenta o líder da invasão enquanto o capitão Fuegoleon demonstra por que é considerado um dos maiores Cavaleiros Mágicos do reino.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep23.jpg",
+        "dataExibicao": "2018-03-13"
+    },
+    {
+        "id": 3949,
+        "numero": 24,
+        "titulo": "Apagão",
+        "sinopse": "Novos inimigos revelam seu verdadeiro objetivo e utilizam magia espacial para colocar os Cavaleiros Mágicos em uma situação desesperadora.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep24.jpg",
+        "dataExibicao": "2018-03-20"
+    },
+    {
+        "id": 3950,
+        "numero": 25,
+        "titulo": "Adversidade",
+        "sinopse": "As consequências da invasão começam a aparecer. Enquanto Yuno se recupera de sua batalha, Asta precisa lidar com uma maldição que ameaça sua vida.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep25.jpg",
+        "dataExibicao": "2018-03-27"
+    },
+    {
+        "id": 3951,
+        "numero": 26,
+        "titulo": "Feras Feridas",
+        "sinopse": "Os verdadeiros responsáveis pelo ataque finalmente se revelam. Enquanto isso, Asta passa um tempo ao lado de uma de suas maiores inspirações.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep26.jpg",
+        "dataExibicao": "2018-04-03"
+    },
+    {
+        "id": 3952,
+        "numero": 27,
+        "titulo": "Luz",
+        "sinopse": "Com a paz temporariamente restaurada, o Rei Mago começa a investigar as verdadeiras intenções por trás dos recentes acontecimentos no Reino de Clover.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep27.jpg",
+        "dataExibicao": "2018-04-10"
+    },
+    {
+        "id": 3953,
+        "numero": 28,
+        "titulo": "A Pessoa por Quem Me Apaixonei",
+        "sinopse": "Finral organiza um encontro entre Cavaleiros Mágicos, proporcionando momentos divertidos e aproximando Asta de uma jovem que demonstra interesse por ele.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep28.jpg",
+        "dataExibicao": "2018-04-17"
+    },
+    {
+        "id": 3954,
+        "numero": 29,
+        "titulo": "Caminho",
+        "sinopse": "Companheiros e amigos relembram a trajetória de Asta, destacando os desafios que enfrentou e a determinação que continua guiando seus passos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep29.jpg",
+        "dataExibicao": "2018-04-24"
+    },
+    {
+        "id": 3955,
+        "numero": 30,
+        "titulo": "O Mago dos Espelhos",
+        "sinopse": "Durante uma visita de Gauche à irmã Marie, uma misteriosa ameaça surge na vila, levando os Touros Negros a enfrentarem um perigoso usuário de magia dos espelhos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep30.jpg",
+        "dataExibicao": "2018-05-01"
+    },
+    {
+        "id": 3956,
+        "numero": 31,
+        "titulo": "Perseguição Sobre a Neve",
+        "sinopse": "Asta e Gauche percorrem montanhas cobertas de neve em busca das crianças sequestradas de Nean. Enquanto enfrentam um poderoso inimigo que rouba magia, os dois precisam unir forças para salvá-las antes que seja tarde demais.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep31.jpg",
+        "dataExibicao": "2018-05-08"
+    },
+    {
+        "id": 3957,
+        "numero": 32,
+        "titulo": "Brotos de Três Folhas",
+        "sinopse": "Asta, Gauche e Irmã Theresa enfrentam os verdadeiros responsáveis pelo sequestro das crianças. Com trabalho em equipe e determinação, eles lutam para derrotar os membros do Olho do Sol da Meia-Noite.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep32.jpg",
+        "dataExibicao": "2018-05-15"
+    },
+    {
+        "id": 3958,
+        "numero": 33,
+        "titulo": "Para Ajudar Alguém, Algum Dia",
+        "sinopse": "Enquanto protege Marie, Gauche relembra seu passado e encontra forças para lutar ao lado de Asta contra um perigoso monstro criado pela magia de Sally.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep33.jpg",
+        "dataExibicao": "2018-05-22"
+    },
+    {
+        "id": 3959,
+        "numero": 34,
+        "titulo": "Magia da Luz vs. Magia das Trevas",
+        "sinopse": "Yami chega para enfrentar Licht, líder do Olho do Sol da Meia-Noite. Ao lado de Asta, ele trava uma batalha intensa que coloca frente a frente duas das magias mais poderosas do reino.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep34.jpg",
+        "dataExibicao": "2018-05-29"
+    },
+    {
+        "id": 3960,
+        "numero": 35,
+        "titulo": "A Luz do Julgamento",
+        "sinopse": "Mesmo diante do enorme poder de Licht, os Touros Negros se recusam a desistir. Gauche cria uma estratégia para virar o jogo enquanto Yami continua pressionando o inimigo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep35.jpg",
+        "dataExibicao": "2018-06-05"
+    },
+    {
+        "id": 3961,
+        "numero": 36,
+        "titulo": "Três Olhos",
+        "sinopse": "Os membros da Terceira Visão chegam ao campo de batalha para resgatar Licht e eliminar os Cavaleiros Mágicos. A luta toma proporções ainda maiores.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep36.jpg",
+        "dataExibicao": "2018-06-12"
+    },
+    {
+        "id": 3962,
+        "numero": 37,
+        "titulo": "Aquele Sem Magia",
+        "sinopse": "Capitães dos Cavaleiros Mágicos entram em combate contra a Terceira Visão. Durante a batalha, Licht revela informações intrigantes sobre a espada antimagia de Asta.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep37.jpg",
+        "dataExibicao": "2018-06-19"
+    },
+    {
+        "id": 3963,
+        "numero": 38,
+        "titulo": "A Conferência dos Capitães dos Cavaleiros Mágicos",
+        "sinopse": "Após a batalha, Julius reúne todos os capitães para discutir os recentes ataques do Olho do Sol da Meia-Noite e investigar a existência de um possível traidor.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep38.jpg",
+        "dataExibicao": "2018-06-26"
+    },
+    {
+        "id": 3964,
+        "numero": 39,
+        "titulo": "Saudação das Três Folhas",
+        "sinopse": "A magia de Marx revela a identidade do capitão que colaborava secretamente com o Olho do Sol da Meia-Noite, abalando a confiança entre os Cavaleiros Mágicos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep39.jpg",
+        "dataExibicao": "2018-07-03"
+    },
+    {
+        "id": 3965,
+        "numero": 40,
+        "titulo": "Uma História na Praia dos Touros Negros",
+        "sinopse": "Antes de sua próxima missão, os Touros Negros aproveitam um dia de descanso na praia. Noelle tenta chamar a atenção de Asta enquanto todos relaxam.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep40.jpg",
+        "dataExibicao": "2018-07-10"
+    },
+    {
+        "id": 3966,
+        "numero": 41,
+        "titulo": "A Garota da Água Cresce",
+        "sinopse": "Noelle inicia um intenso treinamento para aperfeiçoar o controle de sua magia da água, preparando-se para enfrentar desafios ainda maiores.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep41.jpg",
+        "dataExibicao": "2018-07-17"
+    },
+    {
+        "id": 3967,
+        "numero": 42,
+        "titulo": "O Templo Submarino",
+        "sinopse": "Os Touros Negros chegam ao misterioso Templo Submarino em busca de uma Pedra Mágica, mas precisam vencer um torneio organizado pelo sumo sacerdote para conquistá-la.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep42.jpg",
+        "dataExibicao": "2018-07-24"
+    },
+    {
+        "id": 3968,
+        "numero": 43,
+        "titulo": "Batalha Real do Templo",
+        "sinopse": "Os integrantes dos Touros Negros enfrentam os guerreiros do templo em uma série de combates intensos. Noelle descobre um adversário inesperado.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep43.jpg",
+        "dataExibicao": "2018-07-31"
+    },
+    {
+        "id": 3969,
+        "numero": 44,
+        "titulo": "A Bola de Fogo Direta e o Relâmpago Selvagem",
+        "sinopse": "Vetto invade o Templo Submarino e demonstra um poder avassalador. Os Touros Negros precisam enfrentar um dos mais fortes membros da Terceira Visão.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep44.jpg",
+        "dataExibicao": "2018-08-07"
+    },
+    {
+        "id": 3970,
+        "numero": 45,
+        "titulo": "O Cara Que Não Sabe Desistir",
+        "sinopse": "Enquanto Asta enfrenta Vetto, Gauche e seus companheiros lutam contra os subordinados do inimigo. A resistência dos Touros Negros é colocada à prova.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep45.jpg",
+        "dataExibicao": "2018-08-14"
+    },
+    {
+        "id": 3971,
+        "numero": 46,
+        "titulo": "Despertar",
+        "sinopse": "No auge da batalha, os Touros Negros despertam novos poderes e trabalham em conjunto para enfrentar Vetto, cuja força parece não ter limites.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep46.jpg",
+        "dataExibicao": "2018-08-21"
+    },
+    {
+        "id": 3972,
+        "numero": 47,
+        "titulo": "A Única Arma",
+        "sinopse": "Vanessa e Finral unem suas habilidades para criar uma oportunidade perfeita para Asta atingir Vetto com sua espada antimagia.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep47.jpg",
+        "dataExibicao": "2018-08-28"
+    },
+    {
+        "id": 3973,
+        "numero": 48,
+        "titulo": "Desespero vs. Esperança",
+        "sinopse": "A batalha contra Vetto continua. Mesmo exaustos, os Touros Negros se recusam a desistir, apostando toda sua esperança em um ataque decisivo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep48.jpg",
+        "dataExibicao": "2018-09-04"
+    },
+    {
+        "id": 3974,
+        "numero": 49,
+        "titulo": "Além dos Limites",
+        "sinopse": "Inspirados pela determinação de Asta, seus companheiros ultrapassam seus próprios limites para derrotar Vetto em uma batalha memorável.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep49.jpg",
+        "dataExibicao": "2018-09-11"
+    },
+    {
+        "id": 3975,
+        "numero": 50,
+        "titulo": "Fim da Batalha, Fim do Desespero",
+        "sinopse": "Após a vitória no Templo Submarino, os Touros Negros lidam com as consequências do combate enquanto Asta inicia sua recuperação.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep50.jpg",
+        "dataExibicao": "2018-09-18"
+    },
+    {
+        "id": 3976,
+        "numero": 51,
+        "titulo": "Prova de Justiça",
+        "sinopse": "A Vila de Kiten é atacada pelo Reino de Diamond. Enquanto os Cavaleiros Mágicos respondem rapidamente, um novo conflito entre reinos começa a se formar.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep51.jpg",
+        "dataExibicao": "2018-09-25"
+    },
+    {
+        "id": 3977,
+        "numero": 52,
+        "titulo": "Quem é Mais Forte Vence",
+        "sinopse": "Yuno lidera a ofensiva contra os generais do Reino de Diamond enquanto Yami e William discutem questões importantes sobre o futuro do Reino Clover.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep52.jpg",
+        "dataExibicao": "2018-10-02"
+    },
+    {
+        "id": 3978,
+        "numero": 53,
+        "titulo": "Por Trás da Máscara",
+        "sinopse": "William revela detalhes de seu passado para Yami, enquanto Finral enfrenta o irmão Langris e Julius investiga os verdadeiros objetivos do Reino de Diamond.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep53.jpg",
+        "dataExibicao": "2018-10-09"
+    },
+    {
+        "id": 3979,
+        "numero": 54,
+        "titulo": "Nunca Mais",
+        "sinopse": "Os ferimentos sofridos por Asta revelam consequências inesperadas. Seus companheiros embarcam em uma missão para encontrar uma forma de salvá-lo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep54.jpg",
+        "dataExibicao": "2018-10-16"
+    },
+    {
+        "id": 3980,
+        "numero": 55,
+        "titulo": "O Homem Chamado Fanzell",
+        "sinopse": "Um flashback mostra o período em que Asta treinou com Fanzell, um habilidoso espadachim que teve um passado conturbado no Reino de Diamond.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep55.jpg",
+        "dataExibicao": "2018-10-23"
+    },
+    {
+        "id": 3981,
+        "numero": 56,
+        "titulo": "O Homem Chamado Fanzell, Continuação",
+        "sinopse": "Fanzell reencontra Asta e seus aliados. Enquanto isso, Vanessa continua procurando uma maneira de remover a maldição que afeta o jovem espadachim.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep56.jpg",
+        "dataExibicao": "2018-10-30"
+    },
+    {
+        "id": 3982,
+        "numero": 57,
+        "titulo": "Infiltração",
+        "sinopse": "Os Touros Negros entram na Floresta das Bruxas em busca de ajuda para Asta, enfrentando as rígidas defesas da Rainha das Bruxas.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep57.jpg",
+        "dataExibicao": "2018-11-06"
+    },
+    {
+        "id": 3983,
+        "numero": 58,
+        "titulo": "A Decisão no Campo de Batalha",
+        "sinopse": "Com a Floresta das Bruxas sob ataque, a Rainha decide cooperar com Asta para enfrentar as forças invasoras e proteger seu reino.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep58.jpg",
+        "dataExibicao": "2018-11-13"
+    },
+    {
+        "id": 3984,
+        "numero": 59,
+        "titulo": "Chamas do Ódio",
+        "sinopse": "Asta e seus aliados enfrentam Fana e o espírito Salamandra, tentando libertá-la da influência do ódio e impedir uma enorme destruição.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep59.jpg",
+        "dataExibicao": "2018-11-20"
+    },
+    {
+        "id": 3985,
+        "numero": 60,
+        "titulo": "Expiação dos Desertores",
+        "sinopse": "Fanzell enfrenta antigos discípulos do Reino de Diamond enquanto os acontecimentos na Floresta das Bruxas chegam ao fim, preparando o caminho para novos desafios.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep60.jpg",
+        "dataExibicao": "2018-11-27"
+    },
+    {
+        "id": 3986,
+        "numero": 61,
+        "titulo": "O Mundo Prometido",
+        "sinopse": "Mars parte em uma missão para salvar sua amiga de infância, enquanto fica cada vez mais claro que apenas a anti-magia de Asta pode ser capaz de derrotá-la.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep61.jpg",
+        "dataExibicao": "2018-12-04"
+    },
+    {
+        "id": 3987,
+        "numero": 62,
+        "titulo": "Tornando-se Melhores Juntos",
+        "sinopse": "Fana compartilha suas lembranças do passado, mas seu reencontro emocionante é interrompido por um inimigo implacável com uma fome insaciável por magia.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep62.jpg",
+        "dataExibicao": "2018-12-11"
+    },
+    {
+        "id": 3988,
+        "numero": 63,
+        "titulo": "Nem Um Pouco",
+        "sinopse": "Asta sofre uma transformação surpreendente e começa a lutar como se estivesse possuído. Ao descobrir quem está por trás dessa mudança, ele também descobre o preço assustador que terá que pagar.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep63.jpg",
+        "dataExibicao": "2018-12-18"
+    },
+    {
+        "id": 3989,
+        "numero": 64,
+        "titulo": "O Fio Vermelho do Destino",
+        "sinopse": "Vanessa relembra seu passado doloroso enquanto enfrenta a Rainha das Bruxas, que controla Asta e o força a atacar seus próprios companheiros de esquadrão.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep64.jpg",
+        "dataExibicao": "2018-12-25"
+    },
+    {
+        "id": 3990,
+        "numero": 65,
+        "titulo": "Estou em Casa",
+        "sinopse": "Asta e seus companheiros descobrem a origem do Olho do Sol da Meia-Noite, Vanessa encontra seu lugar e os Touros Negros retornam para casa.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep65.jpg",
+        "dataExibicao": "2019-01-08"
+    },
+    {
+        "id": 3991,
+        "numero": 66,
+        "titulo": "O Segredo do Olho do Sol da Meia-Noite",
+        "sinopse": "Klaus ajuda Yuno e Mimosa a entenderem os encontros dos Cavaleiros Mágicos com o Olho do Sol da Meia-Noite. Yami se reúne com o Rei Mago.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep66.jpg",
+        "dataExibicao": "2019-01-15"
+    },
+    {
+        "id": 3992,
+        "numero": 67,
+        "titulo": "Um Encontro Duplo no Festival",
+        "sinopse": "Os Touros Negros participam do Festival das Estrelas, onde Asta e Noelle acabam envolvidos em um encontro duplo. O clima parece perfeito para revelarem seus sentimentos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep67.jpg",
+        "dataExibicao": "2019-01-22"
+    },
+    {
+        "id": 3993,
+        "numero": 68,
+        "titulo": "Batalha Até a Morte?! Yami vs. Jack",
+        "sinopse": "Os capitães Yami e Jack, o Estripador, estão prontos para resolver sua antiga rivalidade, enquanto seus novos membros tentam impedir o confronto.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep68.jpg",
+        "dataExibicao": "2019-01-29"
+    },
+    {
+        "id": 3994,
+        "numero": 69,
+        "titulo": "A Melancolia da Donzela Espinhosa",
+        "sinopse": "A capitã Charlotte dos Cavaleiros da Rosa Azul relembra seu passado, enquanto ela e Vanessa acabam disputando desafios inesperados.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep69.jpg",
+        "dataExibicao": "2019-02-05"
+    },
+    {
+        "id": 3995,
+        "numero": 70,
+        "titulo": "Duas Novas Estrelas",
+        "sinopse": "O Rei Mago anuncia o novo ranking dos esquadrões dos Cavaleiros Mágicos e revela os dois maiores conquistadores de estrelas, enquanto o Rei Clover apresenta um novo plano.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep70.jpg",
+        "dataExibicao": "2019-02-12"
+    },
+    {
+        "id": 3996,
+        "numero": 71,
+        "titulo": "A Leoa Invicta e Sem Coroa",
+        "sinopse": "Mereoleona Vermillion, a nova capitã dos Leões Carmesins, leva seu esquadrão e alguns Touros Negros para um treinamento em uma região de magia extremamente poderosa.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep71.jpg",
+        "dataExibicao": "2019-02-19"
+    },
+    {
+        "id": 3997,
+        "numero": 72,
+        "titulo": "O Fogo de Santelmo",
+        "sinopse": "Asta tenta dominar seus misteriosos poderes sombrios para alcançar o campo de treinamento de águas termais de Mereoleona, enquanto Noelle aprende mais sobre sua falecida mãe.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep72.jpg",
+        "dataExibicao": "2019-02-26"
+    },
+    {
+        "id": 3998,
+        "numero": 73,
+        "titulo": "O Teste de Seleção dos Cavaleiros Reais",
+        "sinopse": "Cavaleiros Mágicos de todos os esquadrões se reúnem para disputar uma vaga entre os Cavaleiros Reais. O vice-capitão das Orcas Púrpuras chama a atenção de todos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep73.jpg",
+        "dataExibicao": "2019-03-05"
+    },
+    {
+        "id": 3999,
+        "numero": 74,
+        "titulo": "Flor da Determinação",
+        "sinopse": "Na primeira rodada do torneio, Asta e Mimosa enfrentam três experientes Cavaleiros Mágicos. Enquanto isso, um misterioso incidente envolvendo Xerx desperta suspeitas.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep74.jpg",
+        "dataExibicao": "2019-03-12"
+    },
+    {
+        "id": 4000,
+        "numero": 75,
+        "titulo": "Batalha Feroz",
+        "sinopse": "O torneio continua com Magna e Sol lutando ao lado do orgulhoso Kirsch Vermillion, enquanto Finral arrisca tudo em combate com Leopold e Hamon.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep75.jpg",
+        "dataExibicao": "2019-03-19"
+    },
+    {
+        "id": 4001,
+        "numero": 76,
+        "titulo": "Mago X",
+        "sinopse": "Um misterioso mago com um passado conturbado entra na competição utilizando uma magia incomum e poderosa, surpreendendo aliados e adversários.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep76.jpg",
+        "dataExibicao": "2019-03-26"
+    },
+    {
+        "id": 4002,
+        "numero": 77,
+        "titulo": "Mágoas do Passado",
+        "sinopse": "Noelle finalmente enfrenta seu irmão Solid para provar seu verdadeiro valor, enquanto Alecdora desconta sua inveja em Yuno.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep77.jpg",
+        "dataExibicao": "2019-04-02"
+    },
+    {
+        "id": 4003,
+        "numero": 78,
+        "titulo": "Armadilha do Plebeu",
+        "sinopse": "Kirsch menospreza Asta por sua origem humilde, mas acaba sendo surpreendido pelas novas habilidades do garoto e pelos planos de Zora.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep78.jpg",
+        "dataExibicao": "2019-04-09"
+    },
+    {
+        "id": 4004,
+        "numero": 79,
+        "titulo": "Delinquente vs. Musculosos",
+        "sinopse": "A equipe de Asta enfrenta enormes dificuldades para proteger seu cristal, especialmente diante da poderosa magia de chamas de Magna.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep79.jpg",
+        "dataExibicao": "2019-04-16"
+    },
+    {
+        "id": 4005,
+        "numero": 80,
+        "titulo": "Irmão Mais Novo Especial vs. Irmão Mais Velho Fracassado",
+        "sinopse": "Chega o aguardado confronto entre Finral e Langris, onde Finral precisa superar seus medos e provar seu verdadeiro valor.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep80.jpg",
+        "dataExibicao": "2019-04-23"
+    },
+    {
+        "id": 4006,
+        "numero": 81,
+        "titulo": "A Vida de um Certo Homem",
+        "sinopse": "Os Cavaleiros Mágicos passam a questionar a sanidade de Langris após ele desafiar Asta durante o torneio. Zora relembra a história de seu pai.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep81.jpg",
+        "dataExibicao": "2019-04-30"
+    },
+    {
+        "id": 4007,
+        "numero": 82,
+        "titulo": "Petit Clover! O Pesadelo da Charmy SP!",
+        "sinopse": "Em um episódio especial, Charmy encontra um cogumelo misterioso que provoca estranhas alucinações e relembra momentos divertidos da série.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep82.jpg",
+        "dataExibicao": "2019-05-07"
+    },
+    {
+        "id": 4008,
+        "numero": 83,
+        "titulo": "Grave Isso em Seu Coração",
+        "sinopse": "A semifinal entre Asta e Langris chega ao fim, enquanto Luck elabora uma estratégia para enfrentar o capitão Rill.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep83.jpg",
+        "dataExibicao": "2019-05-14"
+    },
+    {
+        "id": 4009,
+        "numero": 84,
+        "titulo": "Os Vencedores",
+        "sinopse": "A grande final do Teste de Seleção dos Cavaleiros Reais começa, com Rill buscando inspiração para sua obra-prima enquanto Yuno revela um novo poder.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep84.jpg",
+        "dataExibicao": "2019-05-21"
+    },
+    {
+        "id": 4010,
+        "numero": 85,
+        "titulo": "Juntos no Banho",
+        "sinopse": "Yami leva Asta para relaxar em um banho, onde relembra sua primeira missão ao lado de William Vangeance.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep85.jpg",
+        "dataExibicao": "2019-05-28"
+    },
+    {
+        "id": 4011,
+        "numero": 86,
+        "titulo": "Yami e Vangeance",
+        "sinopse": "Yami relembra outra missão de seus primeiros dias como Cavaleiro Mágico, quando ele e William Vangeance receberam uma missão secreta diretamente do Rei Mago.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep86.jpg",
+        "dataExibicao": "2019-06-04"
+    },
+    {
+        "id": 4012,
+        "numero": 87,
+        "titulo": "Formação dos Cavaleiros Reais",
+        "sinopse": "Os aprovados no Teste de Seleção dos Cavaleiros Reais se reúnem pela primeira vez para receber a missão de derrotar o Olho do Sol da Meia-Noite.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep87.jpg",
+        "dataExibicao": "2019-06-11"
+    },
+    {
+        "id": 4013,
+        "numero": 88,
+        "titulo": "Invasão ao Esconderijo do Olho do Sol da Meia-Noite!!!",
+        "sinopse": "Os Cavaleiros Reais se preparam para atacar o esconderijo flutuante do Olho do Sol da Meia-Noite, enquanto Klaus alerta sobre a possível presença de espiões.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep88.jpg",
+        "dataExibicao": "2019-06-18"
+    },
+    {
+        "id": 4014,
+        "numero": 89,
+        "titulo": "O Esconderijo dos Touros Negros",
+        "sinopse": "Enquanto Asta está em missão, Gauche, Gordon e Grey defendem o esconderijo dos Touros Negros de um ataque inesperado de antigos inimigos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep89.jpg",
+        "dataExibicao": "2019-06-25"
+    },
+    {
+        "id": 4015,
+        "numero": 90,
+        "titulo": "Batalha Mágica Insana",
+        "sinopse": "Os Touros Negros descobrem o segredo por trás do esconderijo móvel e utilizam esse poder para enfrentar membros do Olho do Sol da Meia-Noite.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep90.jpg",
+        "dataExibicao": "2019-07-02"
+    },
+    {
+        "id": 4016,
+        "numero": 91,
+        "titulo": "Mereoleona vs. Raia, o Desleal",
+        "sinopse": "Mereoleona enfrenta Raia em uma batalha intensa contra sua poderosa Magia de Cópia, enquanto Zora tenta descobrir a fraqueza do adversário.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep91.jpg",
+        "dataExibicao": "2019-07-09"
+    },
+    {
+        "id": 4017,
+        "numero": 92,
+        "titulo": "O Rei Mago vs. O Líder do Olho do Sol da Meia-Noite",
+        "sinopse": "Julius Novachrono enfrenta Licht em uma batalha decisiva que colocará o destino do Reino de Clover em risco.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep92.jpg",
+        "dataExibicao": "2019-07-16"
+    },
+    {
+        "id": 4018,
+        "numero": 93,
+        "titulo": "Julius Novachrono",
+        "sinopse": "Enquanto protege todo o reino, Julius relembra o sonho que o motivou a se tornar Rei Mago, enfrentando Licht em um combate inesquecível.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep93.jpg",
+        "dataExibicao": "2019-07-23"
+    },
+    {
+        "id": 4019,
+        "numero": 94,
+        "titulo": "Um Novo Futuro",
+        "sinopse": "Yami corre para ajudar Julius após a batalha contra Licht, enquanto Yuno e sua equipe avançam rumo ao centro do esconderijo inimigo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep94.jpg",
+        "dataExibicao": "2019-07-30"
+    },
+    {
+        "id": 4020,
+        "numero": 95,
+        "titulo": "Reencarnação",
+        "sinopse": "A verdadeira história de Licht e dos elfos é revelada, mostrando a origem de seu ódio pelos humanos e os acontecimentos que levaram à atual tragédia.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep95.jpg",
+        "dataExibicao": "2019-08-06"
+    },
+    {
+        "id": 4021,
+        "numero": 96,
+        "titulo": "O Capitão dos Touros Negros vs. a Rosa Carmesim",
+        "sinopse": "Yami enfrenta diversos Cavaleiros Mágicos possuídos por elfos, incluindo Charlotte, enquanto tenta proteger a capital do Reino de Clover.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep96.jpg",
+        "dataExibicao": "2019-08-13"
+    },
+    {
+        "id": 4022,
+        "numero": 97,
+        "titulo": "Desvantagem Avassaladora",
+        "sinopse": "Cavaleiros Reais e antigos criminosos enfrentam companheiros possuídos pelos elfos, enquanto Asta tenta libertá-los usando sua anti-magia.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep97.jpg",
+        "dataExibicao": "2019-08-20"
+    },
+    {
+        "id": 4023,
+        "numero": 98,
+        "titulo": "O Leão Adormecido",
+        "sinopse": "O vice-capitão dos Leões Carmesins, possuído por um elfo, enfrenta seus antigos companheiros até que uma poderosa força desperta para detê-lo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep98.jpg",
+        "dataExibicao": "2019-08-27"
+    },
+    {
+        "id": 4024,
+        "numero": 99,
+        "titulo": "O Caminho Desesperado para Sobreviver",
+        "sinopse": "Mereoleona enfrenta sozinha cinco poderosos elfos, enquanto Mimosa e seus aliados lutam para permanecer vivos diante do ataque inimigo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep99.jpg",
+        "dataExibicao": "2019-09-03"
+    },
+    {
+        "id": 4025,
+        "numero": 100,
+        "titulo": "Não Vamos Perder para Vocês",
+        "sinopse": "Asta enfrenta Yuno, agora possuído por um elfo, enquanto Licht finalmente entra em ação e novas batalhas se iniciam por todo o reino.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep100.jpg",
+        "dataExibicao": "2019-09-10"
+    },
+    {
+        "id": 4026,
+        "numero": 101,
+        "titulo": "As Vidas da Vila do Fim do Mundo",
+        "sinopse": "Nem mesmo a remota Vila de Hage escapa do caos causado pela reencarnação dos elfos. Asta e Yuno lutam para proteger o lugar onde cresceram.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep101.jpg",
+        "dataExibicao": "2019-09-17"
+    },
+    {
+        "id": 4027,
+        "numero": 102,
+        "titulo": "Dois Milagres",
+        "sinopse": "Enquanto enfrentam um poderoso mago de Magia de Plantas Venenosas, Asta e Yuno relembram as cartas enviadas para a Vila de Hage. A nova espada de Asta pode ser a chave para salvar o Padre Orsi.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep102.jpg",
+        "dataExibicao": "2019-09-24"
+    },
+    {
+        "id": 4028,
+        "numero": 103,
+        "titulo": "Libertação da Desgraça",
+        "sinopse": "À medida que os elfos avançam sobre a capital do Reino de Clover, Asta descobre que sua nova espada possui o poder de libertar as pessoas da magia da reencarnação.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep103.jpg",
+        "dataExibicao": "2019-10-01"
+    },
+    {
+        "id": 4029,
+        "numero": 104,
+        "titulo": "Relâmpago da Fúria vs. Amigos",
+        "sinopse": "Após encontrar Luck possuído por um elfo, Magna e Vanessa fazem de tudo para trazer o amigo de volta à razão.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep104.jpg",
+        "dataExibicao": "2019-10-08"
+    },
+    {
+        "id": 4030,
+        "numero": 105,
+        "titulo": "Sorrisos e Lágrimas",
+        "sinopse": "Depois de visitar o esconderijo destruído dos Touros Negros e reencontrar seus companheiros, Asta segue rumo à capital para enfrentar os elfos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep105.jpg",
+        "dataExibicao": "2019-10-15"
+    },
+    {
+        "id": 4031,
+        "numero": 106,
+        "titulo": "O Caminho da Vingança, o Caminho da Expiação",
+        "sinopse": "Fortalecidos pela comida mágica de Charmy, Asta e seus aliados defendem Hecairo durante a viagem até a capital e conquistam aliados improváveis.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep106.jpg",
+        "dataExibicao": "2019-10-22"
+    },
+    {
+        "id": 4032,
+        "numero": 107,
+        "titulo": "A Batalha pelo Castelo de Clover",
+        "sinopse": "Enquanto Yami e Finral enfrentam membros da Alvorada Dourada possuídos por elfos, Noelle e Nozel defendem a Casa Silva do ataque inimigo.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep107.jpg",
+        "dataExibicao": "2019-10-29"
+    },
+    {
+        "id": 4033,
+        "numero": 108,
+        "titulo": "A Dançarina do Campo de Batalha",
+        "sinopse": "Noelle supera seus próprios limites durante a batalha na Casa Silva, inspirada pelas lembranças de sua mãe.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep108.jpg",
+        "dataExibicao": "2019-11-05"
+    },
+    {
+        "id": 4034,
+        "numero": 109,
+        "titulo": "Os Irmãos Magos Espaciais",
+        "sinopse": "Finral enfrenta mais uma vez seu irmão Langris, agora possuído por um elfo, apoiando Yami e Jack em uma batalha decisiva para proteger o Reino de Clover.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep109.jpg",
+        "dataExibicao": "2019-11-12"
+    },
+    {
+        "id": 4035,
+        "numero": 110,
+        "titulo": "O Touro Furioso Entra na Batalha!!",
+        "sinopse": "Com o surgimento do Palácio das Sombras, Asta, os Touros Negros e seus aliados unem forças para enfrentar os elfos e tentar impedir que a situação saia definitivamente do controle.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep110.jpg",
+        "dataExibicao": "2019-11-19"
+    },
+    {
+        "id": 4036,
+        "numero": 111,
+        "titulo": "Os Olhos no Espelho",
+        "sinopse": "Presos na magia de Dorothy, Vanessa, Charmy e Sally procuram uma forma de escapar do Mundo dos Sonhos, enquanto Asta e os demais Touros Negros lutam para sobreviver contra Gauche e Marie possuídos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep111.jpg",
+        "dataExibicao": "2019-11-26"
+    },
+    {
+        "id": 4037,
+        "numero": 112,
+        "titulo": "Humanos em Quem se Pode Confiar",
+        "sinopse": "Com a ajuda de Sally e Luck, Vanessa encontra uma maneira de escapar do Mundo dos Sonhos, enquanto Henry decide fazer um grande sacrifício para ajudar Asta a libertar Gauche e Marie da reencarnação.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep112.jpg",
+        "dataExibicao": "2019-12-03"
+    },
+    {
+        "id": 4038,
+        "numero": 113,
+        "titulo": "Invasão ao Palácio das Sombras",
+        "sinopse": "Asta e seus aliados correm para alcançar Yami e os capitães no Palácio das Sombras, enquanto Fuegoleon e Mereoleona demonstram todo o poder que despertaram recentemente.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep113.jpg",
+        "dataExibicao": "2019-12-10"
+    },
+    {
+        "id": 4039,
+        "numero": 114,
+        "titulo": "Os Invasores Finais",
+        "sinopse": "Enquanto os Touros Negros seguram os elfos do lado de fora, Yuno chega com reforços e encontra uma maneira inesperada de entrar no Palácio das Sombras.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep114.jpg",
+        "dataExibicao": "2019-12-17"
+    },
+    {
+        "id": 4040,
+        "numero": 115,
+        "titulo": "O Mentor das Sombras",
+        "sinopse": "No interior do Palácio das Sombras, a verdade finalmente vem à tona quando um demônio revela ter manipulado humanos e elfos durante séculos para concretizar seu plano.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep115.jpg",
+        "dataExibicao": "2019-12-24"
+    },
+    {
+        "id": 4041,
+        "numero": 116,
+        "titulo": "O Inimigo Natural Supremo",
+        "sinopse": "Consumido pelo desespero, Patry transforma-se em um Elfo Negro e enfrenta Asta e Yuno, até que Nozel entra na batalha utilizando sua magia de mercúrio.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep116.jpg",
+        "dataExibicao": "2020-01-07"
+    },
+    {
+        "id": 4042,
+        "numero": 117,
+        "titulo": "Quebrando o Selo",
+        "sinopse": "Nero revela sua verdadeira identidade e leva Finral até os restos do antigo demônio em Hage, onde acontecimentos de 500 anos atrás começam a ser revelados.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep117.jpg",
+        "dataExibicao": "2020-01-14"
+    },
+    {
+        "id": 4043,
+        "numero": 118,
+        "titulo": "Um Reencontro Além do Tempo e do Espaço",
+        "sinopse": "Lumiere Silvamillion Clover e Secré unem forças com Licht, Asta e Yuno para impedir que o demônio escape do Palácio das Sombras.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep118.jpg",
+        "dataExibicao": "2020-01-21"
+    },
+    {
+        "id": 4044,
+        "numero": 119,
+        "titulo": "O Ataque Final",
+        "sinopse": "Licht e Lumiere enfrentam o demônio em uma batalha decisiva, enquanto Asta e Yuno despertam novos poderes para realizar o golpe final.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep119.jpg",
+        "dataExibicao": "2020-01-28"
+    },
+    {
+        "id": 4045,
+        "numero": 120,
+        "titulo": "Alvorada",
+        "sinopse": "Com a destruição do Palácio das Sombras, Asta utiliza sua anti-magia para desfazer a reencarnação dos elfos e finalmente encerrar a longa batalha.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep120.jpg",
+        "dataExibicao": "2020-02-04"
+    },
+    {
+        "id": 4046,
+        "numero": 121,
+        "titulo": "Três Problemas",
+        "sinopse": "Após a guerra, o Reino de Clover inicia sua reconstrução, mas novas ameaças surgem quando Asta passa a ser julgado por possuir o poder de um demônio.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep121.jpg",
+        "dataExibicao": "2020-02-11"
+    },
+    {
+        "id": 4047,
+        "numero": 122,
+        "titulo": "Mais Negro do que a Escuridão",
+        "sinopse": "Asta e Secré são levados ao Parlamento Mágico para serem julgados, mas Yami e os Touros Negros aparecem para impedir que uma injustiça aconteça.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep122.jpg",
+        "dataExibicao": "2020-02-18"
+    },
+    {
+        "id": 4048,
+        "numero": 123,
+        "titulo": "As Recordações de Nero (Parte 1)",
+        "sinopse": "Secré relembra sua amizade com Lumiere e Licht, além dos acontecimentos que culminaram na tragédia dos elfos há quinhentos anos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep123.jpg",
+        "dataExibicao": "2020-02-25"
+    },
+    {
+        "id": 4049,
+        "numero": 124,
+        "titulo": "As Recordações de Nero (Parte 2)",
+        "sinopse": "A história de Secré continua, mostrando como ela viveu por séculos como Nero e ajudou Asta a derrotar o demônio antes de ingressar nos Touros Negros.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep124.jpg",
+        "dataExibicao": "2020-03-03"
+    },
+    {
+        "id": 4050,
+        "numero": 125,
+        "titulo": "Retorno",
+        "sinopse": "Os Touros Negros retornam ao esconderijo original e recebem a missão de capturar as bestas mágicas que escaparam durante o ataque à base.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep125.jpg",
+        "dataExibicao": "2020-03-10"
+    },
+    {
+        "id": 4051,
+        "numero": 126,
+        "titulo": "A Confissão da Rosa Azul",
+        "sinopse": "Enquanto investigam maldições e demônios, Yami leva Asta e Nero para conversar com Charlotte. Porém, as lembranças da época em que Charla controlou seu corpo fazem Charlotte entrar em pânico diante de seus verdadeiros sentimentos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep126.jpg",
+        "dataExibicao": "2020-03-17"
+    },
+    {
+        "id": 4052,
+        "numero": 127,
+        "titulo": "Pistas",
+        "sinopse": "Asta, Gordon, Grey e Gauche visitam a família de Gordon em busca de informações sobre maldições. Ao mesmo tempo, Dorothy revela a Noelle o nome do demônio responsável pela morte de sua mãe.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep127.jpg",
+        "dataExibicao": "2020-03-24"
+    },
+    {
+        "id": 4053,
+        "numero": 128,
+        "titulo": "Rumo ao Reino de Heart!",
+        "sinopse": "Após descobrirem que o Reino de Heart pode guardar respostas sobre os demônios, Asta, Noelle, Finral, Mimosa e Nero viajam para lá e enfrentam um inesperado teste de entrada.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep128.jpg",
+        "dataExibicao": "2020-03-31"
+    },
+    {
+        "id": 4054,
+        "numero": 129,
+        "titulo": "O Demônio Megicula",
+        "sinopse": "Lolopechka revela que está amaldiçoada pelo demônio Megicula, do Reino de Spade. Para derrotá-lo, ela pede a ajuda de Asta e seus companheiros.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep129.jpg",
+        "dataExibicao": "2020-04-07"
+    },
+    {
+        "id": 4055,
+        "numero": 130,
+        "titulo": "A Nova Reunião dos Capitães dos Cavaleiros Mágicos",
+        "sinopse": "Os capitães dos Cavaleiros Mágicos se reúnem para discutir a ameaça dos demônios e elaborar uma estratégia para enfrentar Megicula e o Reino de Spade.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep130.jpg",
+        "dataExibicao": "2020-04-14"
+    },
+    {
+        "id": 4056,
+        "numero": 131,
+        "titulo": "Uma Nova Determinação",
+        "sinopse": "Asta e Yuno retornam temporariamente à Vila de Hage, onde recebem o apoio das pessoas que acompanharam seu crescimento e renovam sua determinação para o futuro.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep131.jpg",
+        "dataExibicao": "2020-04-21"
+    },
+    {
+        "id": 4057,
+        "numero": 132,
+        "titulo": "O Leão Desperta",
+        "sinopse": "Mereoleona leva os Touros Negros ao Vulcão Yultim para um treinamento intenso, onde novos desafios aguardam os Cavaleiros Mágicos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep132.jpg",
+        "dataExibicao": "2020-04-28"
+    },
+    {
+        "id": 4058,
+        "numero": 133,
+        "titulo": "O Leão Desperta, Continuação",
+        "sinopse": "Durante a exploração de uma masmorra sob o Vulcão Yultim, Leopold enfrenta uma poderosa criatura e desperta uma nova determinação para superar seus limites.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep133.jpg",
+        "dataExibicao": "2020-07-07"
+    },
+    {
+        "id": 4059,
+        "numero": 134,
+        "titulo": "Aqueles que Foram Reunidos",
+        "sinopse": "Asta e Noelle são levados à residência dos Vermillion, onde descobrem os planos para um treinamento especial visando a futura batalha contra o Reino de Spade.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep134.jpg",
+        "dataExibicao": "2020-07-14"
+    },
+    {
+        "id": 4060,
+        "numero": 135,
+        "titulo": "A Pessoa que Possui Meu Coração, Minha Mente e Minha Alma",
+        "sinopse": "Finral tenta se tornar um homem melhor por Finnes, enquanto Charlotte recebe a ajuda de suas companheiras para finalmente enfrentar seus sentimentos por Yami.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep135.jpg",
+        "dataExibicao": "2020-07-21"
+    },
+    {
+        "id": 4061,
+        "numero": 136,
+        "titulo": "Uma História do Mar Profundo dos Touros Negros",
+        "sinopse": "Noelle e os Touros Negros reencontram Kahono e Kiato e descem novamente ao Templo Submarino para proteger seus habitantes de uma criatura fora de controle.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep136.jpg",
+        "dataExibicao": "2020-07-28"
+    },
+    {
+        "id": 4062,
+        "numero": 137,
+        "titulo": "Os Cem Anos de Fome de Charmy e os Mil Anos de Solidão de Gordon",
+        "sinopse": "Enquanto Charmy busca aprimorar sua magia culinária para fortalecer seus aliados, Gordon parte sozinho para encontrar uma maneira de ajudar seus amigos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep137.jpg",
+        "dataExibicao": "2020-08-04"
+    },
+    {
+        "id": 4063,
+        "numero": 138,
+        "titulo": "Seguindo os Passos de Zara",
+        "sinopse": "Zora retorna à sua vila natal e relembra o legado de seu pai, Zara, inspirando um jovem garoto a acreditar que até um plebeu pode se tornar um grande Cavaleiro Mágico.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep138.jpg",
+        "dataExibicao": "2020-08-11"
+    },
+    {
+        "id": 4064,
+        "numero": 139,
+        "titulo": "O Retorno de uma Bruxa",
+        "sinopse": "Vanessa retorna à Floresta das Bruxas para aprender magia ancestral e, em troca, ajuda a treinar jovens bruxas e reforçar as defesas da floresta.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep139.jpg",
+        "dataExibicao": "2020-08-18"
+    },
+    {
+        "id": 4065,
+        "numero": 140,
+        "titulo": "Um Favor para Julius",
+        "sinopse": "Julius pede a Marx que o ajude em pesquisas sobre itens mágicos e na investigação de um grupo de bandidos, contando com a colaboração de Sally e dos capitães Fuegoleon e Nozel.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep140.jpg",
+        "dataExibicao": "2020-08-25"
+    },
+    {
+        "id": 4066,
+        "numero": 141,
+        "titulo": "A Família Dourada",
+        "sinopse": "Enquanto a Alvorada Dourada ajuda na reconstrução do Reino de Clover, Alecdora recebe uma missão de William Vangeance e tenta superar Yuno em méritos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep141.jpg",
+        "dataExibicao": "2020-09-01"
+    },
+    {
+        "id": 4067,
+        "numero": 142,
+        "titulo": "Aqueles que Restaram",
+        "sinopse": "O medo dos demônios se espalha pelo Reino de Clover e um grupo chamado Banidores de Demônios passa a perseguir Asta e Nero por conta própria.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep142.jpg",
+        "dataExibicao": "2020-09-08"
+    },
+    {
+        "id": 4068,
+        "numero": 143,
+        "titulo": "A Balança Desequilibrada",
+        "sinopse": "Após um ataque dos Banidores de Demônios, Nero e Marie são sequestradas, enquanto Asta entra em coma e os Cavaleiros Mágicos iniciam uma investigação.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep143.jpg",
+        "dataExibicao": "2020-09-15"
+    },
+    {
+        "id": 4069,
+        "numero": 144,
+        "titulo": "Aqueles que Desejam a Morte dos Demônios",
+        "sinopse": "Yami, Noelle, Finral, Gordon, Gauche e Nozel investigam uma cidade hostil aos Cavaleiros Mágicos em busca de pistas sobre o paradeiro de Nero e Marie.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep144.jpg",
+        "dataExibicao": "2020-09-22"
+    },
+    {
+        "id": 4070,
+        "numero": 145,
+        "titulo": "Resgate",
+        "sinopse": "Os Banidores de Demônios anunciam a execução pública de Nero e Marie, obrigando os Cavaleiros Mágicos a agir rapidamente para salvá-las.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep145.jpg",
+        "dataExibicao": "2020-09-29"
+    },
+    {
+        "id": 4071,
+        "numero": 146,
+        "titulo": "Aqueles que Adoram os Demônios",
+        "sinopse": "Mesmo após o resgate de Marie, Nero volta a ser capturada e o grimório de cinco folhas de Asta é roubado, levando os Touros Negros a uma nova missão.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep146.jpg",
+        "dataExibicao": "2020-10-06"
+    },
+    {
+        "id": 4072,
+        "numero": 147,
+        "titulo": "Preparados para Morrer",
+        "sinopse": "Asta e Noelle alcançam os seguidores dos demônios que levaram Nero, mas descobrem que eles estão dispostos a sacrificar suas próprias vidas por seus objetivos.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep147.jpg",
+        "dataExibicao": "2020-10-13"
+    },
+    {
+        "id": 4073,
+        "numero": 148,
+        "titulo": "Tornando-se a Luz que Brilha na Escuridão",
+        "sinopse": "Yami, Fuegoleon e Nozel tentam impedir o desespero dos seguidores dos demônios enquanto Asta, Noelle e Nero permanecem presos no conflito.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep148.jpg",
+        "dataExibicao": "2020-10-20"
+    },
+    {
+        "id": 4074,
+        "numero": 149,
+        "titulo": "Duas Coisas para Procurar",
+        "sinopse": "Após o incidente dos seguidores dos demônios, Nero relembra seu passado com Lumiere, enquanto Asta recebe um convite para treinar no Reino de Heart.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep149.jpg",
+        "dataExibicao": "2020-10-27"
+    },
+    {
+        "id": 4075,
+        "numero": 150,
+        "titulo": "O Desafio das Donzelas",
+        "sinopse": "Grey decide superar sua timidez antes da batalha contra os demônios e inicia um treinamento especial com a ajuda de Noelle e Gauche.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep150.jpg",
+        "dataExibicao": "2020-11-03"
+    },
+    {
+        "id": 4076,
+        "numero": 151,
+        "titulo": "Confronto! A Batalha dos Capitães dos Cavaleiros Mágicos",
+        "sinopse": "Os capitães dos esquadrões participam de um grande combate em equipes para demonstrar sua força e restaurar a confiança da população.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep151.jpg",
+        "dataExibicao": "2020-11-10"
+    },
+    {
+        "id": 4077,
+        "numero": 152,
+        "titulo": "Rumo ao Amanhã!",
+        "sinopse": "Asta e Noelle acompanham Yami aos novos Exames de Admissão dos Cavaleiros Mágicos e relembram o início de sua própria jornada.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep152.jpg",
+        "dataExibicao": "2020-11-17"
+    },
+    {
+        "id": 4078,
+        "numero": 153,
+        "titulo": "Os Escolhidos",
+        "sinopse": "Os capitães definem quem viajará ao Reino de Heart para treinar com os Guardiões Espirituais, enquanto Yuno recebe uma importante promoção.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep153.jpg",
+        "dataExibicao": "2020-11-24"
+    },
+    {
+        "id": 4079,
+        "numero": 154,
+        "titulo": "Vice-Capitão Langris Vaude",
+        "sinopse": "Langris desafia Yuno para um duelo a fim de testar sua força e seu valor como novo vice-capitão da Alvorada Dourada.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep154.jpg",
+        "dataExibicao": "2020-12-01"
+    },
+    {
+        "id": 4080,
+        "numero": 155,
+        "titulo": "Os Cinco Guardiões Espirituais",
+        "sinopse": "Enquanto treinam no Reino de Heart, Asta e seus companheiros conhecem os cinco Guardiões Espirituais responsáveis por prepará-los para a guerra contra os demônios.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep155.jpg",
+        "dataExibicao": "2020-12-08"
+    },
+    {
+        "id": 4081,
+        "numero": 156,
+        "titulo": "Despertando Poderes",
+        "sinopse": "Enquanto Asta e seus companheiros treinam no Reino de Heart, Yami busca o treinamento de Mereoleona para dominar ainda mais a Mana Zone, enquanto as forças do Reino de Spade continuam sua invasão.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep156.jpg",
+        "dataExibicao": "2020-12-15"
+    },
+    {
+        "id": 4082,
+        "numero": 157,
+        "titulo": "Trevo de Cinco Folhas",
+        "sinopse": "Após meses de treinamento no Reino de Heart, Asta desperta ainda mais o potencial de sua anti-magia e revela a origem de seu grimório de cinco folhas.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep157.jpg",
+        "dataExibicao": "2020-12-22"
+    },
+    {
+        "id": 4083,
+        "numero": 158,
+        "titulo": "O Início da Esperança e do Desespero",
+        "sinopse": "O Reino de Spade conquista o Reino de Diamond e inicia sua ofensiva contra os Reinos de Clover e Heart. Após concluir seu treinamento, Asta entra em ação.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep158.jpg",
+        "dataExibicao": "2021-01-05"
+    },
+    {
+        "id": 4084,
+        "numero": 159,
+        "titulo": "Lagos Tranquilos e Sombras da Floresta",
+        "sinopse": "Enquanto Charmy demonstra os resultados de seu treinamento no Reino de Heart, Yuno recebe uma mensagem de Sister Lily e retorna à Vila de Hage.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep159.jpg",
+        "dataExibicao": "2021-01-12"
+    },
+    {
+        "id": 4085,
+        "numero": 160,
+        "titulo": "O Mensageiro do Reino de Spade",
+        "sinopse": "A verdade sobre a origem de Yuno finalmente é revelada, enquanto a Alvorada Dourada sofre um devastador ataque das forças do Reino de Spade.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep160.jpg",
+        "dataExibicao": "2021-01-19"
+    },
+    {
+        "id": 4086,
+        "numero": 161,
+        "titulo": "O Poder de Zenon",
+        "sinopse": "Yuno retorna à base da Alvorada Dourada e encontra seu esquadrão devastado. Consumido pela raiva, ele enfrenta Zenon e os membros da Tríade Negra.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep161.jpg",
+        "dataExibicao": "2021-01-26"
+    },
+    {
+        "id": 4087,
+        "numero": 162,
+        "titulo": "A Grande Guerra Começa",
+        "sinopse": "A guerra contra o Reino de Spade se intensifica quando Dante e Vanica lançam ataques simultâneos contra os Reinos de Clover e Heart.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep162.jpg",
+        "dataExibicao": "2021-02-02"
+    },
+    {
+        "id": 4088,
+        "numero": 163,
+        "titulo": "Dante vs. o Capitão dos Touros Negros",
+        "sinopse": "Enquanto Grey relembra seu passado, Asta e Yami unem forças para enfrentar Dante em uma batalha extremamente difícil.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep163.jpg",
+        "dataExibicao": "2021-02-09"
+    },
+    {
+        "id": 4089,
+        "numero": 164,
+        "titulo": "Campo de Batalha: Reino de Heart",
+        "sinopse": "Yami desfere um poderoso golpe em Dante, mas o poder demoníaco do inimigo o mantém na luta. Enquanto isso, novas batalhas se desenrolam no Reino de Heart.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep164.jpg",
+        "dataExibicao": "2021-02-16"
+    },
+    {
+        "id": 4090,
+        "numero": 165,
+        "titulo": "Cruzada da Água",
+        "sinopse": "Noelle, Mimosa e Nero enfrentam Vanica e os Discípulos das Trevas para proteger Lolopechka, colocando em prática os resultados de seu intenso treinamento.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep165.jpg",
+        "dataExibicao": "2021-02-23"
+    },
+    {
+        "id": 4091,
+        "numero": 166,
+        "titulo": "Capitão: Yami Sukehiro",
+        "sinopse": "Com a situação se tornando desesperadora, Yami ultrapassa seus próprios limites para enfrentar Dante e proteger seus companheiros.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep166.jpg",
+        "dataExibicao": "2021-03-02"
+    },
+    {
+        "id": 4092,
+        "numero": 167,
+        "titulo": "Juramento Negro",
+        "sinopse": "Asta e Yami unem suas forças em um ataque decisivo contra Dante Zogratis, colocando tudo em jogo para derrotar um dos membros da Tríade Negra.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep167.jpg",
+        "dataExibicao": "2021-03-09"
+    },
+    {
+        "id": 4093,
+        "numero": 168,
+        "titulo": "O Despertar dos Mais Fortes",
+        "sinopse": "Após o sequestro de Yami e William, Nacht Faust aparece diante de Asta e se oferece para treiná-lo no uso do poder de seu demônio, enquanto os capitães planejam o contra-ataque.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep168.jpg",
+        "dataExibicao": "2021-03-16"
+    },
+    {
+        "id": 4094,
+        "numero": 169,
+        "titulo": "O Ritual de Vinculação com o Demônio",
+        "sinopse": "Enquanto Noelle desperta em um novo lar dos elfos após os acontecimentos no Reino de Heart, Asta inicia o perigoso ritual para dominar o poder de seu demônio.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep169.jpg",
+        "dataExibicao": "2021-03-23"
+    },
+    {
+        "id": 4095,
+        "numero": 170,
+        "titulo": "O Futuro Distante",
+        "sinopse": "No confronto final da temporada, Asta enfrenta seu próprio demônio para dominar completamente seus poderes, enquanto Yuno, Noelle e seus aliados continuam treinando para a batalha contra a Tríade Negra.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/t1/ep170.jpg",
+        "dataExibicao": "2021-03-30"
     }
 ]
