@@ -38644,5 +38644,235 @@
         "animeId": 132,
         "imagemUrl": "../../images/episodios/steins-gate/t1/ep24.jpg",
         "dataExibicao": "2011-09-14"
+    },
+    {
+        "id": 3876,
+        "numero": 1,
+        "titulo": "Elo Perdido do Aniquilador - Zero Absoluto -",
+        "sinopse": "Mesmo com a Terceira Guerra Mundial se aproximando, Okabe tenta levar uma vida universitária comum. No entanto, uma nova inteligência artificial chamada Amadeus promete mudar completamente seu destino.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep1.jpg",
+        "dataExibicao": "2018-04-12"
+    },
+    {
+        "id": 3877,
+        "numero": 2,
+        "titulo": "Epígrafe da Curva Fechada - Epígrafe Fechada -",
+        "sinopse": "Após conhecer Maho Hiyajo, Okabe descobre que ambos têm uma ligação com Kurisu Makise e conhece pessoalmente a inteligência artificial Amadeus.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep2.jpg",
+        "dataExibicao": "2018-04-19"
+    },
+    {
+        "id": 3878,
+        "numero": 3,
+        "titulo": "Protocolo do Evangelho de Duas Faces - Protocolo X-Day -",
+        "sinopse": "Mayuri organiza uma festa de Natal para reunir todos os membros do laboratório, mas um acontecimento inesperado abala profundamente Okabe.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep3.jpg",
+        "dataExibicao": "2018-04-25"
+    },
+    {
+        "id": 3879,
+        "numero": 4,
+        "titulo": "Solidão do Fluxo Lamentável - Ovelha Perdida -",
+        "sinopse": "Enquanto Okabe acumula novas dúvidas, Suzuha inicia a busca por uma pessoa desaparecida cuja identidade pode mudar os rumos da missão.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep4.jpg",
+        "dataExibicao": "2018-05-03"
+    },
+    {
+        "id": 3880,
+        "numero": 5,
+        "titulo": "Solidão do Astigmatismo - Ovelha Entrelaçada -",
+        "sinopse": "A procura continua enquanto o Ano-Novo se aproxima. Paralelamente, Luka enfrenta um dilema envolvendo uma visitante inesperada.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep5.jpg",
+        "dataExibicao": "2018-05-10"
+    },
+    {
+        "id": 3881,
+        "numero": 6,
+        "titulo": "Eclipse da Ordem Orbital - Eclipse Orbital -",
+        "sinopse": "Com a identidade da misteriosa garota finalmente revelada, o grupo celebra o Ano-Novo enquanto tenta compreender os novos acontecimentos.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep6.jpg",
+        "dataExibicao": "2018-05-17"
+    },
+    {
+        "id": 3882,
+        "numero": 7,
+        "titulo": "Eclipse da Transição Vibrônica - Transição Vibrônica -",
+        "sinopse": "Enquanto investiga o recente ataque, Okabe enfrenta problemas envolvendo Amadeus que acabam revelando uma surpreendente verdade.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep7.jpg",
+        "dataExibicao": "2018-05-23"
+    },
+    {
+        "id": 3883,
+        "numero": 8,
+        "titulo": "Dualidade da Antinomia - Dual Antinômico -",
+        "sinopse": "Okabe relembra que toda mudança de linha do mundo exige um sacrifício, tornando cada decisão ainda mais dolorosa.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep8.jpg",
+        "dataExibicao": "2018-05-30"
+    },
+    {
+        "id": 3884,
+        "numero": 9,
+        "titulo": "Pandora do Retorno Eterno - Caixa de Pandora -",
+        "sinopse": "Com a Terceira Guerra Mundial cada vez mais próxima, Suzuha recorre a medidas desesperadas enquanto Okabe tenta descobrir quem está por trás dos ataques.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep9.jpg",
+        "dataExibicao": "2018-06-06"
+    },
+    {
+        "id": 3885,
+        "numero": 10,
+        "titulo": "Pandora da Existência Comprovável - Cubículo Proibido -",
+        "sinopse": "Após ajudar a organizar o apartamento de Maho, Okabe passa um tempo com ela em Akihabara, onde recebe uma inesperada confissão.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep10.jpg",
+        "dataExibicao": "2018-06-14"
+    },
+    {
+        "id": 3886,
+        "numero": 11,
+        "titulo": "Pandora da Existência Esquecida - Relicário Selado -",
+        "sinopse": "Okabe tenta convencer Maho a abrir mão de algo muito importante, mas ambos acabam envolvidos em uma perigosa negociação pela própria sobrevivência.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep11.jpg",
+        "dataExibicao": "2018-06-21"
+    },
+    {
+        "id": 3887,
+        "numero": 12,
+        "titulo": "Mamãe Gansa da Recursão Mútua - Mamãe Gansa Recursiva -",
+        "sinopse": "Kagari procura descobrir a origem de uma antiga canção na esperança de recuperar as memórias perdidas de seu passado.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep12.jpg",
+        "dataExibicao": "2018-06-28"
+    },
+    {
+        "id": 3888,
+        "numero": 13,
+        "titulo": "Mamãe Gansa do Recitativo Difrativo - Difração Mamãe Gansa -",
+        "sinopse": "As pistas sobre o passado de Kagari levam Okabe a descobrir segredos muito maiores do que imaginava.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep13.jpg",
+        "dataExibicao": "2018-07-04"
+    },
+    {
+        "id": 3889,
+        "numero": 14,
+        "titulo": "Reconhecimento do Limite Elástico - Presságio ou Reconhecimento -",
+        "sinopse": "Após um ataque inesperado, Suzuha e Daru voltam suas atenções para os Estados Unidos em busca da última esperança para impedir o futuro devastador.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep14.jpg",
+        "dataExibicao": "2018-07-18"
+    },
+    {
+        "id": 3890,
+        "numero": 15,
+        "titulo": "Reconhecimento da Assíntota - Reconhecendo a Assíntota -",
+        "sinopse": "Cansada da passividade de Daru, Suzuha tenta fazê-lo assumir suas responsabilidades antes que seja tarde demais.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep15.jpg",
+        "dataExibicao": "2018-07-25"
+    },
+    {
+        "id": 3891,
+        "numero": 16,
+        "titulo": "Altair do Ponto no Infinito - Vega e Altair -",
+        "sinopse": "A insistência de Okabe provoca conflitos emocionais enquanto o prazo para utilizar a máquina do tempo se aproxima rapidamente.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep16.jpg",
+        "dataExibicao": "2018-08-01"
+    },
+    {
+        "id": 3892,
+        "numero": 17,
+        "titulo": "Altair do Plano Hiperbólico - Pseudoesfera de Beltrami -",
+        "sinopse": "Suzuha parte para cumprir sua missão definitiva, enquanto Mayuri encontra a coragem necessária para tomar sua própria decisão. Então, uma nova tragédia acontece.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep17.jpg",
+        "dataExibicao": "2018-08-08"
+    },
+    {
+        "id": 3893,
+        "numero": 18,
+        "titulo": "Altair da Simetria Translacional - Simetria Translacional -",
+        "sinopse": "A disputa pela máquina do tempo atinge seu auge quando um inimigo vindo do futuro revela seus verdadeiros planos.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep18.jpg",
+        "dataExibicao": "2018-08-15"
+    },
+    {
+        "id": 3894,
+        "numero": 19,
+        "titulo": "Altair da Coordenada Cíclica - Máquina de Time Leap -",
+        "sinopse": "Com o mundo mergulhado no caos, Okabe deposita todas as suas esperanças em seus amigos para impedir o desastre iminente.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep19.jpg",
+        "dataExibicao": "2018-08-23"
+    },
+    {
+        "id": 3895,
+        "numero": 20,
+        "titulo": "Rinascimento da Promessa Inabalável - Rinascimento Prometido -",
+        "sinopse": "Okabe desperta em um futuro devastado pela guerra e encontra seus amigos lutando para sobreviver em um mundo destruído.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep20.jpg",
+        "dataExibicao": "2018-09-06"
+    },
+    {
+        "id": 3896,
+        "numero": 21,
+        "titulo": "Rinascimento da Formação da Imagem - Retorno da Fênix -",
+        "sinopse": "Após uma longa jornada de sofrimento, Okabe decide recuperar sua determinação e reacender a esperança de alcançar a verdadeira linha Steins Gate.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep21.jpg",
+        "dataExibicao": "2018-09-12"
+    },
+    {
+        "id": 3897,
+        "numero": 22,
+        "titulo": "Rinascimento da Projeção - Projeto Amadeus -",
+        "sinopse": "Os membros do laboratório elaboram um plano para salvar a máquina do tempo, percebendo que será impossível evitar novos sacrifícios.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep22.jpg",
+        "dataExibicao": "2018-09-19"
+    },
+    {
+        "id": 3898,
+        "numero": 23,
+        "titulo": "Arco de Luz do Ponto no Infinito - Luz do Céu -",
+        "sinopse": "Okabe e seus amigos enfrentam o destino através do passado, presente e futuro para finalmente abrir o caminho até Steins Gate e reunir o laboratório mais uma vez.",
+        "temporadaId": 2,
+        "animeId": 133,
+        "imagemUrl": "../../images/episodios/steins-gate-0/t2/ep23.jpg",
+        "dataExibicao": "2018-09-26"
     }
 ]
