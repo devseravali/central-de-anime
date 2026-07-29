@@ -38394,5 +38394,15 @@
         "animeId": 130,
         "imagemUrl": "../../images/episodios/spy-x-family/t3/ep13.jpg",
         "dataExibicao": "2025-12-27"
+    },
+    {
+        "id": 3851,
+        "numero": 1,
+        "titulo": "SPY x FAMILY CODE: White",
+        "sinopse": "Durante uma viagem em família para ajudar Anya em um concurso culinário da Academia Eden, Loid aproveita a oportunidade para avançar discretamente a Operação Strix. No entanto, após encontrar acidentalmente um misterioso chocolate contendo um segredo militar, Anya acaba se tornando o centro de uma conspiração internacional que pode colocar em risco a paz entre Ostania e Westalis. Enquanto Loid, Yor, Anya e Bond enfrentam uma nova missão repleta de ação, humor e espionagem, os laços da família Forger são colocados à prova mais uma vez.",
+        "temporadaId": 0,
+        "animeId": 131,
+        "imagemUrl": "../../images/episodios/spy-x-family-code-white/filme.jpg",
+        "dataExibicao": "2023-12-22"
     }
 ]
