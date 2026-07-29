@@ -38884,5 +38884,135 @@
         "animeId": 134,
         "imagemUrl": "../../images/episodios/steins-gate-load-region-of-deja-vu/filme.jpg",
         "dataExibicao": "2013-04-20"
+    },
+    {
+        "id": 3890,
+        "numero": 1,
+        "titulo": "A Cidade do Grande Poço",
+        "sinopse": "Na cidade de Orth, a jovem exploradora Riko sonha em seguir os passos da mãe e desvendar os mistérios do Abismo. Durante uma expedição, ela encontra um misterioso garoto robô chamado Reg, cuja origem parece estar ligada às profundezas.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep1.jpg",
+        "dataExibicao": "2017-07-07"
+    },
+    {
+        "id": 3891,
+        "numero": 2,
+        "titulo": "Festival da Ressurreição",
+        "sinopse": "Enquanto Reg tenta compreender sua própria identidade, Riko descobre mais detalhes sobre o passado do garoto robô. As perguntas sobre sua verdadeira origem apenas aumentam.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep2.jpg",
+        "dataExibicao": "2017-07-14"
+    },
+    {
+        "id": 3892,
+        "numero": 3,
+        "titulo": "Partida",
+        "sinopse": "Determinada a encontrar sua mãe nas profundezas do Abismo, Riko faz os preparativos para uma jornada sem volta. Ao seu lado, Reg inicia sua primeira grande expedição.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep3.jpg",
+        "dataExibicao": "2017-07-21"
+    },
+    {
+        "id": 3893,
+        "numero": 4,
+        "titulo": "A Borda do Abismo",
+        "sinopse": "Riko e Reg finalmente iniciam sua descida pelo Abismo. Logo nos primeiros níveis, encontram uma figura conhecida que os alerta sobre os perigos da jornada.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep4.jpg",
+        "dataExibicao": "2017-07-28"
+    },
+    {
+        "id": 3894,
+        "numero": 5,
+        "titulo": "Incinerador",
+        "sinopse": "Ao entrarem na Floresta da Tentação, Riko e Reg enfrentam criaturas cada vez mais perigosas. Os poderes de Reg tornam-se essenciais para sobreviver.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep5.jpg",
+        "dataExibicao": "2017-08-04"
+    },
+    {
+        "id": 3895,
+        "numero": 6,
+        "titulo": "Acampamento dos Buscadores",
+        "sinopse": "A dupla chega ao Acampamento dos Buscadores e conhece Ozen, a lendária Apito Branco que salvou Riko quando era bebê. Porém, sua personalidade esconde intenções difíceis de interpretar.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep6.jpg",
+        "dataExibicao": "2017-08-11"
+    },
+    {
+        "id": 3896,
+        "numero": 7,
+        "titulo": "A Soberana Imóvel",
+        "sinopse": "Ozen revela detalhes importantes sobre o Abismo e sobre o nascimento de Riko. Em seguida, coloca Reg e a garota diante de um duro teste para avaliar sua determinação.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep7.jpg",
+        "dataExibicao": "2017-08-18"
+    },
+    {
+        "id": 3897,
+        "numero": 8,
+        "titulo": "Treinamento de Sobrevivência",
+        "sinopse": "Sob a orientação de Ozen, Riko e Reg precisam sobreviver sozinhos nas proximidades do acampamento, aprendendo que o Abismo pune qualquer erro cometido.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep8.jpg",
+        "dataExibicao": "2017-08-25"
+    },
+    {
+        "id": 3898,
+        "numero": 9,
+        "titulo": "A Grande Falha",
+        "sinopse": "Após deixarem o acampamento, os dois aventureiros continuam descendo pelo Abismo. Quando Reg perde os sentidos, Riko precisa enfrentar os perigos sozinha.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep9.jpg",
+        "dataExibicao": "2017-09-01"
+    },
+    {
+        "id": 3899,
+        "numero": 10,
+        "titulo": "Veneno e a Maldição",
+        "sinopse": "No quarto nível do Abismo, um terrível incidente deixa Riko gravemente ferida. Uma misteriosa criatura surge e pode representar a única esperança de sobrevivência da dupla.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep10.jpg",
+        "dataExibicao": "2017-09-08"
+    },
+    {
+        "id": 3900,
+        "numero": 11,
+        "titulo": "Nanachi",
+        "sinopse": "Nanachi pede que Reg reúna ingredientes raros para salvar Riko. Enquanto isso, revela fragmentos de seu passado e da vida nas profundezas do Abismo.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep11.jpg",
+        "dataExibicao": "2017-09-15"
+    },
+    {
+        "id": 3901,
+        "numero": 12,
+        "titulo": "A Verdadeira Natureza da Maldição",
+        "sinopse": "Nanachi explica a Reg como funciona a terrível Maldição do Abismo e revela a verdade por trás das transformações causadas por ela. Riko continua se recuperando de seus ferimentos.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep12.jpg",
+        "dataExibicao": "2017-09-22"
+    },
+    {
+        "id": 3902,
+        "numero": 13,
+        "titulo": "Os Desafiantes",
+        "sinopse": "O passado de Nanachi e Mitty finalmente vem à tona, revelando os experimentos cruéis responsáveis por seu destino. Recuperada, Riko decide seguir viagem rumo às profundezas do Abismo.",
+        "temporadaId": 1,
+        "animeId": 135,
+        "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep13.jpg",
+        "dataExibicao": "2017-09-29"
     }
 ]
