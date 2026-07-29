@@ -38264,5 +38264,135 @@
         "animeId": 129,
         "imagemUrl": "../../images/episodios/spy-x-family/t2/ep12.jpg",
         "dataExibicao": "2023-12-23"
+    },
+    {
+        "id": 3838,
+        "numero": 1,
+        "titulo": "Pânico em Berlint / O Informante e Nightfall",
+        "sinopse": "Os Forger aproveitam um raro dia de folga em família, enquanto Nightfall recruta Franky para ajudá-la em uma missão secreta que exige discrição e habilidade.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep1.jpg",
+        "dataExibicao": "2025-10-04"
+    },
+    {
+        "id": 3839,
+        "numero": 2,
+        "titulo": "Evitando os Tonitrus Bolts / Memórias de ■■■■ - Parte 1",
+        "sinopse": "Os alunos da Academia Eden fazem de tudo para evitar receber novos Tonitrus Bolts. Paralelamente, um misterioso personagem relembra acontecimentos marcantes de seu passado.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep2.jpg",
+        "dataExibicao": "2025-10-11"
+    },
+    {
+        "id": 3840,
+        "numero": 3,
+        "titulo": "Memórias de ■■■■ - Parte 2",
+        "sinopse": "Loid revisita momentos decisivos de sua infância e juventude, revelando os acontecimentos que o transformaram no lendário agente conhecido como Twilight.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep3.jpg",
+        "dataExibicao": "2025-10-18"
+    },
+    {
+        "id": 3841,
+        "numero": 4,
+        "titulo": "Por Trás do Escândalo / O Caminho para um Estudioso Imperial",
+        "sinopse": "Agentes da WISE recebem a missão de proteger uma famosa cantora de ópera, enquanto Henderson orienta Anya sobre como conquistar o título de Estudiosa Imperial.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep4.jpg",
+        "dataExibicao": "2025-10-25"
+    },
+    {
+        "id": 3842,
+        "numero": 5,
+        "titulo": "O Plano das Mamães Amigas",
+        "sinopse": "Durante um passeio para fazer compras, Yor acaba salvando uma pessoa inesperada. O encontro dá início a uma situação que poderá aproximá-la de outras mães da Academia Eden.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep5.jpg",
+        "dataExibicao": "2025-11-01"
+    },
+    {
+        "id": 3843,
+        "numero": 6,
+        "titulo": "Ciúmes Brancos / O Sequestro do Ônibus da Academia Eden",
+        "sinopse": "O ciúme de um médico coloca Loid em uma situação delicada no hospital. Enquanto isso, a excursão escolar de Anya toma um rumo inesperado quando o ônibus é sequestrado.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep6.jpg",
+        "dataExibicao": "2025-11-08"
+    },
+    {
+        "id": 3844,
+        "numero": 7,
+        "titulo": "O Circo Vermelho",
+        "sinopse": "O grupo terrorista Circo Vermelho assume o controle do ônibus que transporta Anya e seus colegas, iniciando uma grave crise que mobiliza as autoridades.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep7.jpg",
+        "dataExibicao": "2025-11-15"
+    },
+    {
+        "id": 3845,
+        "numero": 8,
+        "titulo": "Derrotem o Sequestrador",
+        "sinopse": "Henderson consegue entrar no ônibus para levar comida e água às crianças. Enquanto isso, Billy relembra os motivos que o levaram a participar do atentado.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep8.jpg",
+        "dataExibicao": "2025-11-22"
+    },
+    {
+        "id": 3846,
+        "numero": 9,
+        "titulo": "A Era de Anya Chegou",
+        "sinopse": "Graças à coragem demonstrada durante o sequestro do ônibus, Anya, Becky, Damian e Bill recebem Estrelas Stella como reconhecimento por suas ações.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep9.jpg",
+        "dataExibicao": "2025-11-29"
+    },
+    {
+        "id": 3847,
+        "numero": 10,
+        "titulo": "Os Problemas de Austin / Um Encontro Comum / Pouso na Lua",
+        "sinopse": "Austin continua traumatizado pelos acontecimentos do sequestro. Paralelamente, Yor sai com seus colegas de trabalho, enquanto outras histórias do cotidiano dos personagens se desenrolam.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep10.jpg",
+        "dataExibicao": "2025-12-07"
+    },
+    {
+        "id": 3848,
+        "numero": 11,
+        "titulo": "Situação Extrema de Nível 3",
+        "sinopse": "Twilight e Yuri recebem convocações de emergência de suas respectivas organizações, iniciando uma operação de alto risco que pode colocá-los frente a frente.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep11.jpg",
+        "dataExibicao": "2025-12-13"
+    },
+    {
+        "id": 3849,
+        "numero": 12,
+        "titulo": "Batalha até a Morte nos Esgotos",
+        "sinopse": "Os agentes da WISE entram em confronto direto com a Polícia de Segurança do Estado nos esgotos da cidade, dando início a uma intensa batalha clandestina.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep12.jpg",
+        "dataExibicao": "2025-12-20"
+    },
+    {
+        "id": 3850,
+        "numero": 13,
+        "titulo": "Um Mundo Onde Não Podemos Sobreviver",
+        "sinopse": "A batalha nos esgotos chega ao fim. Após a missão, Loid tenta fortalecer seu relacionamento com Yor, enquanto ambos refletem sobre o futuro da família Forger em meio aos segredos que ainda os cercam.",
+        "temporadaId": 3,
+        "animeId": 130,
+        "imagemUrl": "../../images/episodios/spy-x-family/t3/ep13.jpg",
+        "dataExibicao": "2025-12-27"
     }
 ]
