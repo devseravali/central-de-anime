@@ -38404,5 +38404,245 @@
         "animeId": 131,
         "imagemUrl": "../../images/episodios/spy-x-family-code-white/filme.jpg",
         "dataExibicao": "2023-12-22"
+    },
+    {
+        "id": 3852,
+        "numero": 1,
+        "titulo": "Ponto de Virada",
+        "sinopse": "O autoproclamado cientista louco Rintaro Okabe participa de uma palestra sobre viagens no tempo, encontra o corpo de uma jovem e logo descobre que suas mensagens de texto podem atravessar o tempo.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep1.jpg",
+        "dataExibicao": "2011-04-06"
+    },
+    {
+        "id": 3853,
+        "numero": 2,
+        "titulo": "Paranoia da Viagem no Tempo",
+        "sinopse": "Okabe fica chocado ao descobrir que Kurisu Makise está viva, apesar de tê-la visto morta pouco tempo antes. Os estranhos acontecimentos passam a desafiar sua compreensão da realidade.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep2.jpg",
+        "dataExibicao": "2011-04-13"
+    },
+    {
+        "id": 3854,
+        "numero": 3,
+        "titulo": "Paranoia do Mundo Paralelo",
+        "sinopse": "Ao investigar os recentes eventos inexplicáveis, Okabe começa a suspeitar que o micro-ondas modificado do laboratório seja responsável pelas alterações na linha do tempo.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep3.jpg",
+        "dataExibicao": "2011-04-20"
+    },
+    {
+        "id": 3855,
+        "numero": 4,
+        "titulo": "Encontro com a Intérprete",
+        "sinopse": "Para invadir o sistema da SERN, Okabe precisa encontrar um antigo computador IBN 5100, iniciando uma busca que revelará segredos inesperados.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep4.jpg",
+        "dataExibicao": "2011-04-27"
+    },
+    {
+        "id": 3856,
+        "numero": 5,
+        "titulo": "Encontro nas Estrelas",
+        "sinopse": "Após conseguir acessar os arquivos da SERN, o grupo descobre informações alarmantes sobre experimentos secretos envolvendo viagens no tempo.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep5.jpg",
+        "dataExibicao": "2011-05-04"
+    },
+    {
+        "id": 3857,
+        "numero": 6,
+        "titulo": "Divergência do Efeito Borboleta",
+        "sinopse": "Os experimentos com mensagens enviadas ao passado começam a produzir resultados concretos, alterando pequenos acontecimentos e suas consequências.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep6.jpg",
+        "dataExibicao": "2011-05-11"
+    },
+    {
+        "id": 3858,
+        "numero": 7,
+        "titulo": "Singularidade da Divergência",
+        "sinopse": "Empolgado com os resultados, Okabe envia ao passado os números vencedores da loteria, sem imaginar o impacto que suas ações terão sobre o presente e o futuro.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep7.jpg",
+        "dataExibicao": "2011-05-18"
+    },
+    {
+        "id": 3859,
+        "numero": 8,
+        "titulo": "Homeostase da Teoria do Caos I",
+        "sinopse": "Após um novo experimento, um dos membros do laboratório desaparece da realidade. O grupo continua explorando o potencial das D-Mails para mudar o passado.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep8.jpg",
+        "dataExibicao": "2011-05-25"
+    },
+    {
+        "id": 3860,
+        "numero": 9,
+        "titulo": "Homeostase da Teoria do Caos II",
+        "sinopse": "As alterações provocadas pelas experiências fazem o IBN 5100 desaparecer. A única esperança de recuperá-lo depende da ajuda de Feyris NyanNyan.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep9.jpg",
+        "dataExibicao": "2011-06-01"
+    },
+    {
+        "id": 3861,
+        "numero": 10,
+        "titulo": "Homeostase da Teoria do Caos III",
+        "sinopse": "Suzuha revela detalhes sobre a busca por seu pai desaparecido, enquanto Okabe recebe uma misteriosa mensagem que aumenta suas suspeitas sobre o futuro.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep10.jpg",
+        "dataExibicao": "2011-06-08"
+    },
+    {
+        "id": 3862,
+        "numero": 11,
+        "titulo": "Dogma no Horizonte de Eventos",
+        "sinopse": "Enquanto desenvolvem o Time Leap Machine, Okabe recebe informações preocupantes sugerindo que Kurisu pode estar trabalhando secretamente para a SERN.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep11.jpg",
+        "dataExibicao": "2011-06-15"
+    },
+    {
+        "id": 3863,
+        "numero": 12,
+        "titulo": "Dogma na Ergosfera",
+        "sinopse": "Uma festa no laboratório termina de forma trágica quando homens armados invadem o local em busca da máquina do tempo, mudando completamente o destino dos integrantes.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep12.jpg",
+        "dataExibicao": "2011-06-22"
+    },
+    {
+        "id": 3864,
+        "numero": 13,
+        "titulo": "Necrose Metafísica",
+        "sinopse": "Desesperado para impedir uma tragédia inevitável, Okabe utiliza pela primeira vez a tecnologia Time Leap para voltar algumas horas no tempo e tentar mudar o destino.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep13.jpg",
+        "dataExibicao": "2011-06-29"
+    },
+    {
+        "id": 3865,
+        "numero": 14,
+        "titulo": "Necrose Física",
+        "sinopse": "Mesmo repetindo inúmeras viagens temporais, Okabe não consegue impedir a morte de Mayuri. Kurisu passa a ajudá-lo a desvendar os limites das viagens no tempo.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep14.jpg",
+        "dataExibicao": "2011-07-06"
+    },
+    {
+        "id": 3866,
+        "numero": 15,
+        "titulo": "Necrose do Elo Perdido",
+        "sinopse": "Suzuha revela a verdadeira origem do regime totalitário da SERN e continua sua missão para impedir esse futuro sombrio.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep15.jpg",
+        "dataExibicao": "2011-07-13"
+    },
+    {
+        "id": 3867,
+        "numero": 16,
+        "titulo": "Necrose do Sacrifício",
+        "sinopse": "A identidade do pai de Suzuha finalmente é revelada, e Okabe compreende as dolorosas consequências das mudanças que provocou na linha do tempo.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep16.jpg",
+        "dataExibicao": "2011-07-20"
+    },
+    {
+        "id": 3868,
+        "numero": 17,
+        "titulo": "Feito na Complexidade",
+        "sinopse": "Com a divergência ainda insuficiente para salvar Mayuri, Okabe e Kurisu procuram novas formas de recuperar o IBN 5100 manipulando novamente o passado.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep17.jpg",
+        "dataExibicao": "2011-07-27"
+    },
+    {
+        "id": 3869,
+        "numero": 18,
+        "titulo": "Andrógino Fractal",
+        "sinopse": "Na tentativa de alterar outra linha do tempo, Okabe revela a Luka um importante segredo de seu passado, forçando-a a tomar uma decisão difícil.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep18.jpg",
+        "dataExibicao": "2011-08-03"
+    },
+    {
+        "id": 3870,
+        "numero": 19,
+        "titulo": "Apoptose Infinita",
+        "sinopse": "Ao investigar Moeka, Okabe descobre que ela também é vítima das circunstâncias e se aproxima da verdade sobre o misterioso FB.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep19.jpg",
+        "dataExibicao": "2011-08-10"
+    },
+    {
+        "id": 3871,
+        "numero": 20,
+        "titulo": "Apoptose Final",
+        "sinopse": "Com a ajuda de Kurisu e Moeka, Okabe finalmente chega perto do IBN 5100 e descobre quem realmente é FB, mas percebe que ainda será necessário fazer sacrifícios.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep20.jpg",
+        "dataExibicao": "2011-08-17"
+    },
+    {
+        "id": 3872,
+        "numero": 21,
+        "titulo": "Colapso do Paradoxo",
+        "sinopse": "Depois de descobrir uma nova possibilidade, Okabe tenta salvar Mayuri enquanto enfrenta o inevitável destino reservado a Kurisu.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep21.jpg",
+        "dataExibicao": "2011-08-24"
+    },
+    {
+        "id": 3873,
+        "numero": 22,
+        "titulo": "Colapso da Existência",
+        "sinopse": "Para impedir os planos da SERN, Okabe precisa tomar a decisão mais difícil de sua vida: escolher entre salvar Mayuri ou Kurisu.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep22.jpg",
+        "dataExibicao": "2011-08-31"
+    },
+    {
+        "id": 3874,
+        "numero": 23,
+        "titulo": "Abra o Steins Gate",
+        "sinopse": "Guiado por uma Suzuha de outra linha do tempo, Okabe recebe a missão de impedir a Terceira Guerra Mundial e alterar definitivamente o destino de Kurisu.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep23.jpg",
+        "dataExibicao": "2011-09-07"
+    },
+    {
+        "id": 3875,
+        "numero": 24,
+        "titulo": "Ponto de Conquista",
+        "sinopse": "Em sua última viagem no tempo, Okabe coloca em prática o plano que pode salvar Kurisu, proteger Mayuri e finalmente alcançar a linha do mundo conhecida como Steins Gate.",
+        "temporadaId": 1,
+        "animeId": 132,
+        "imagemUrl": "../../images/episodios/steins-gate/t1/ep24.jpg",
+        "dataExibicao": "2011-09-14"
     }
 ]
