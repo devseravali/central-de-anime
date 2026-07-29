@@ -39014,5 +39014,15 @@
         "animeId": 135,
         "imagemUrl": "../../images/episodios/made-in-abyss/t1/ep13.jpg",
         "dataExibicao": "2017-09-29"
+    },
+    {
+        "id": 3913,
+        "numero": 1,
+        "titulo": "Made in Abyss: Dawn of the Deep Soul",
+        "sinopse": "Após atravessarem os perigos da quarta camada do Abismo, Riko, Reg e Nanachi chegam ao Jardim das Flores da Persistência, onde encontram Bondrewd, o lendário Apito Branco conhecido como o Soberano do Amanhecer. Apesar de sua aparência cordial, Bondrewd conduz experimentos cruéis em busca dos segredos do Abismo e demonstra um interesse especial em Reg e Nanachi. Conforme a jornada avança, o trio descobre a verdadeira extensão de suas atrocidades e precisa enfrentar um inimigo cuja inteligência e poder desafiam todos os limites. Entre sacrifícios, revelações e decisões dolorosas, o grupo luta para seguir em frente rumo às profundezas do Abismo.",
+        "temporadaId": 0,
+        "animeId": 136,
+        "imagemUrl": "../../images/episodios/made-in-abyss-dawn-of-the-deep-soul/filme.jpg",
+        "dataExibicao": "2020-01-17"
     }
 ]
