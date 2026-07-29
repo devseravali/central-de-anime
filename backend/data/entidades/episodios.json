@@ -37644,5 +37644,125 @@
         "animeId": 125,
         "imagemUrl": "../../images/episodios/dororo/t1/ep24.jpg",
         "dataExibicao": "2019-06-24"
+    },
+    {
+        "id": 3776,
+        "numero": 1,
+        "titulo": "Um Gato Doméstico, um Deus Errante e uma Cauda",
+        "sinopse": "Yato é um deus errante desempregado que combate Fantasmas e resolve os problemas das pessoas por apenas cinco ienes. Durante a busca por um gato desaparecido, ele acaba vivendo um encontro que mudará seu destino.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep1.jpg",
+        "dataExibicao": "2014-01-05"
+    },
+    {
+        "id": 3777,
+        "numero": 2,
+        "titulo": "Como a Neve",
+        "sinopse": "Irritada porque Yato ainda não encontrou uma forma de curá-la, Hiyori decide agir por conta própria. Em busca de um novo Regalia para Yato, ela acaba se envolvendo em uma situação perigosa.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep2.jpg",
+        "dataExibicao": "2014-01-12"
+    },
+    {
+        "id": 3778,
+        "numero": 3,
+        "titulo": "Calamidade Convidada",
+        "sinopse": "Yukine descobre que viver ao lado de um deus não é tão simples quanto imaginava. As coisas começam a mudar quando um cliente inesperado contrata Yato para uma missão.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep3.jpg",
+        "dataExibicao": "2014-01-19"
+    },
+    {
+        "id": 3779,
+        "numero": 4,
+        "titulo": "Onde Mora a Felicidade",
+        "sinopse": "Yato apresenta Yukine e Hiyori a um dos Sete Deuses da Fortuna, mas eles logo descobrem que esse deus está muito longe de ser aquilo que esperavam.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep4.jpg",
+        "dataExibicao": "2014-01-26"
+    },
+    {
+        "id": 3780,
+        "numero": 5,
+        "titulo": "Na Fronteira",
+        "sinopse": "Yato ensina a Yukine uma nova técnica para afastar Fantasmas, mas o garoto também precisa lidar com seus próprios sentimentos e tentações envolvendo Hiyori.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep5.jpg",
+        "dataExibicao": "2014-02-02"
+    },
+    {
+        "id": 3781,
+        "numero": 6,
+        "titulo": "Pessoa Assustadora",
+        "sinopse": "Yato e Yukine são atacados inesperadamente por Bishamon, a poderosa deusa da guerra. Ferido, Yato tenta sobreviver enquanto Hiyori procura ajuda de outro deus.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep6.jpg",
+        "dataExibicao": "2014-02-09"
+    },
+    {
+        "id": 3782,
+        "numero": 7,
+        "titulo": "Incerteza e Destino",
+        "sinopse": "Enquanto Bishamon e outros deuses enfrentam os Fantasmas que escaparam de uma Fenda recém-aberta, a relação conturbada entre Yato e Yukine é explorada pela misteriosa Nora.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep7.jpg",
+        "dataExibicao": "2014-02-16"
+    },
+    {
+        "id": 3783,
+        "numero": 8,
+        "titulo": "Ultrapassando os Limites",
+        "sinopse": "Mesmo debilitado, Yato aceita ajudar um estudante vítima de bullying. A missão faz com que tanto o jovem quanto Yukine encarem duras verdades sobre suas próprias vidas.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep8.jpg",
+        "dataExibicao": "2014-02-23"
+    },
+    {
+        "id": 3784,
+        "numero": 9,
+        "titulo": "Nome",
+        "sinopse": "Com Yato à beira da morte, Hiyori e seus amigos organizam um perigoso ritual de purificação que exigirá a ajuda de outros deuses dispostos a arriscar a própria vida.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep9.jpg",
+        "dataExibicao": "2014-03-02"
+    },
+    {
+        "id": 3785,
+        "numero": 10,
+        "titulo": "Alvo de Ódio",
+        "sinopse": "Durante as comemorações de Ano-Novo, Hiyori visita um santuário. No entanto, Nora e o sinistro deus da calamidade Rabo têm outros planos para ela.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep10.jpg",
+        "dataExibicao": "2014-03-09"
+    },
+    {
+        "id": 3786,
+        "numero": 11,
+        "titulo": "Deus Abandonado",
+        "sinopse": "Hiyori perde misteriosamente todas as lembranças relacionadas a Yato. Enquanto ele tenta fazê-la recuperar a memória, Nora e Rabo continuam colocando seus planos em prática.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep11.jpg",
+        "dataExibicao": "2014-03-16"
+    },
+    {
+        "id": 3787,
+        "numero": 12,
+        "titulo": "Um Fragmento de Memória",
+        "sinopse": "Yato e Yukine enfrentam Rabo e Nora na batalha decisiva. Enquanto o destino de todos é colocado à prova, os laços construídos entre deus, Regalia e humana mostram sua verdadeira força.",
+        "temporadaId": 1,
+        "animeId": 126,
+        "imagemUrl": "../../images/episodios/noragami/t1/ep12.jpg",
+        "dataExibicao": "2014-03-23"
     }
 ]
