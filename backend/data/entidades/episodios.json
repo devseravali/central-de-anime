@@ -37764,5 +37764,135 @@
         "animeId": 126,
         "imagemUrl": "../../images/episodios/noragami/t1/ep12.jpg",
         "dataExibicao": "2014-03-23"
+    },
+    {
+        "id": 3788,
+        "numero": 1,
+        "titulo": "Carregando um Nome Póstumo",
+        "sinopse": "Yato continua sua rotina como um deus de entregas, ajudando pessoas e eliminando Fantasmas quando necessário. Enquanto isso, Bishamon é atormentada por pesadelos relacionados ao seu passado.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep1.jpg",
+        "dataExibicao": "2015-10-03"
+    },
+    {
+        "id": 3789,
+        "numero": 2,
+        "titulo": "Uma de Suas Memórias",
+        "sinopse": "Yukine faz um novo amigo, mas logo descobre o verdadeiro significado de ser um Regalia. Ao mesmo tempo, Kazuma percebe que a saúde de Bishamon está piorando e faz uma descoberta surpreendente.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep2.jpg",
+        "dataExibicao": "2015-10-10"
+    },
+    {
+        "id": 3790,
+        "numero": 3,
+        "titulo": "Laço Falso",
+        "sinopse": "Kugaha finalmente coloca seu plano em ação e faz com que Kazuma seja banido. O caos resultante agrava o sofrimento de Bishamon e acaba envolvendo Yato e Yukine no conflito.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep3.jpg",
+        "dataExibicao": "2015-10-17"
+    },
+    {
+        "id": 3791,
+        "numero": 4,
+        "titulo": "Desejo",
+        "sinopse": "Kazuma e Hiyori são capturados e assistem, sem poder agir, enquanto Kugaha manipula Yato e Bishamon para que lutem até a morte.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep4.jpg",
+        "dataExibicao": "2015-10-24"
+    },
+    {
+        "id": 3792,
+        "numero": 5,
+        "titulo": "Aclamação Divina, Maldição",
+        "sinopse": "Durante a batalha entre Yato e Bishamon, Yukine acaba sendo gravemente afetado. Enquanto isso, Kugaha coloca em prática a segunda etapa de seu plano, exterminando os Regalias de Bishamon.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep5.jpg",
+        "dataExibicao": "2015-10-31"
+    },
+    {
+        "id": 3793,
+        "numero": 6,
+        "titulo": "O Que Deve Ser Feito",
+        "sinopse": "Yato e Bishamon descobrem a traição de Kugaha, mas grande parte dos estragos já foi causada. Enquanto isso, um enorme Fantasma mascarado continua caçando os Regalias sobreviventes.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep6.jpg",
+        "dataExibicao": "2015-11-07"
+    },
+    {
+        "id": 3794,
+        "numero": 7,
+        "titulo": "Como Adorar um Deus",
+        "sinopse": "Bishamon é obrigada a prestar contas aos demais deuses por seus erros recentes. Ao mesmo tempo, Ebisu oferece uma grande quantia para comprar Yukine de Yato, dinheiro suficiente para que ele finalmente construa seu próprio santuário.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep7.jpg",
+        "dataExibicao": "2015-11-14"
+    },
+    {
+        "id": 3795,
+        "numero": 8,
+        "titulo": "Deus da Calamidade",
+        "sinopse": "Após a derrota de Kugaha, Ebisu inicia experimentos secretos. Enquanto isso, Yato vive momentos de alegria e frustração depois que Hiyori lhe presenteia com seu próprio santuário.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep8.jpg",
+        "dataExibicao": "2015-11-21"
+    },
+    {
+        "id": 3796,
+        "numero": 9,
+        "titulo": "O Som de um Fio se Rompendo",
+        "sinopse": "Yato e Nora entram no Mundo Inferior para cumprir uma última missão: encontrar e resgatar um poderoso feiticeiro. Enquanto isso, Hiyori começa a esquecer lentamente a existência de Yato.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep9.jpg",
+        "dataExibicao": "2015-11-28"
+    },
+    {
+        "id": 3797,
+        "numero": 10,
+        "titulo": "Um Certo Desejo",
+        "sinopse": "Os Céus entram em caos quando descobrem que Ebisu realizava experimentos com Fantasmas. Ao mesmo tempo, Yato e Ebisu tentam escapar de Izanami e deixar o Mundo Inferior.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep10.jpg",
+        "dataExibicao": "2015-12-05"
+    },
+    {
+        "id": 3798,
+        "numero": 11,
+        "titulo": "Renascimento",
+        "sinopse": "Bishamon e Hiyori finalmente encontram Yato, mas não possuem uma forma de entrar no Mundo Inferior. Enquanto isso, Izanami continua perseguindo Yato, que poderá ficar preso para sempre caso seja capturado.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep11.jpg",
+        "dataExibicao": "2015-12-12"
+    },
+    {
+        "id": 3799,
+        "numero": 12,
+        "titulo": "Sua Voz Me Chama",
+        "sinopse": "Bishamon enfrenta Izanami para salvar Yato. A única esperança de fuga de Yato é revelar seu verdadeiro nome, algo que jamais contou a ninguém. Enquanto isso, os executores celestiais alcançam Ebisu para cumprir sua sentença.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep12.jpg",
+        "dataExibicao": "2015-12-19"
+    },
+    {
+        "id": 3800,
+        "numero": 13,
+        "titulo": "A Mensagem do Deus da Fortuna",
+        "sinopse": "Os Céus executam seu julgamento divino e Ebisu é obrigado a recomeçar sua existência. Inspirado por sua determinação, Yato encontra um novo propósito e decide cumprir a promessa que fez ao Deus da Fortuna.",
+        "temporadaId": 2,
+        "animeId": 127,
+        "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep13.jpg",
+        "dataExibicao": "2015-12-25"
     }
 ]
