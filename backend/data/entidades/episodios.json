@@ -38144,5 +38144,125 @@
         "animeId": 128,
         "imagemUrl": "../../images/episodios/spy-x-family/t1/ep25.jpg",
         "dataExibicao": "2022-12-24"
+    },
+    {
+        "id": 3826,
+        "numero": 1,
+        "titulo": "Siga a Mamãe e o Papai",
+        "sinopse": "Após ser baleada durante uma missão, Yor retorna para casa claramente abatida. Loid interpreta seu comportamento como um sinal de insatisfação com o casamento de fachada e decide convidá-la para um encontro.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep1.jpg",
+        "dataExibicao": "2023-10-07"
+    },
+    {
+        "id": 3827,
+        "numero": 2,
+        "titulo": "A Estratégia de Bond para Sobreviver / A Viagem de Estudos de Damian",
+        "sinopse": "Bond prevê um futuro desastroso causado pela comida de Yor e sai em busca de Loid para impedir a tragédia. Enquanto isso, Damian participa de uma excursão escolar organizada por Henderson.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep2.jpg",
+        "dataExibicao": "2023-10-14"
+    },
+    {
+        "id": 3828,
+        "numero": 3,
+        "titulo": "Missão e Família / O Elegante Bondman / O Coração de uma Criança / Despertar",
+        "sinopse": "Yuri investiga um ex-jornalista suspeito de espionagem para Westalis. Enquanto isso, Anya acompanha novas aventuras de seu herói favorito, Bondman, e outros acontecimentos divertidos marcam o dia da família Forger.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep3.jpg",
+        "dataExibicao": "2023-10-21"
+    },
+    {
+        "id": 3829,
+        "numero": 4,
+        "titulo": "O Doce do Conhecimento / O Grande Plano Romântico do Informante II",
+        "sinopse": "Os lendários macarons da Academia Eden finalmente aparecem, levando Anya e seus colegas a uma disputa para consegui-los. Paralelamente, Franky tenta colocar em prática mais um plano romântico.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep4.jpg",
+        "dataExibicao": "2023-10-28"
+    },
+    {
+        "id": 3830,
+        "numero": 5,
+        "titulo": "Plano para Cruzar a Fronteira",
+        "sinopse": "Disfarçando sua verdadeira identidade, Yor recebe a missão de proteger Olka Gretcher e seu filho durante uma viagem de navio, garantindo que consigam escapar do país em segurança.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep5.jpg",
+        "dataExibicao": "2023-11-04"
+    },
+    {
+        "id": 3831,
+        "numero": 6,
+        "titulo": "O Temível Navio de Luxo",
+        "sinopse": "Já a bordo do cruzeiro, Yor inicia oficialmente sua missão como guarda-costas de Olka. Ao mesmo tempo, assassinos contratados começam a se aproximar de seus alvos.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep6.jpg",
+        "dataExibicao": "2023-11-11"
+    },
+    {
+        "id": 3832,
+        "numero": 7,
+        "titulo": "Para Quem é Esta Missão?",
+        "sinopse": "Enquanto Loid procura lembranças para divertir Anya durante a viagem, Yor enfrenta Barnaby, um perigoso assassino conhecido como Foice e Corrente.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep7.jpg",
+        "dataExibicao": "2023-11-18"
+    },
+    {
+        "id": 3833,
+        "numero": 8,
+        "titulo": "A Sinfonia no Navio",
+        "sinopse": "Durante o espetáculo de fogos de artifício no convés, Yor trava a batalha decisiva para proteger Olka e sua família, cercada por diversos assassinos determinados a concluir a missão.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep8.jpg",
+        "dataExibicao": "2023-11-25"
+    },
+    {
+        "id": 3834,
+        "numero": 9,
+        "titulo": "A Mão que Conduz ao Futuro",
+        "sinopse": "Ao descobrir que existe uma bomba escondida no navio, Loid assume um disfarce para desarmá-la antes que a embarcação seja destruída, enquanto Anya faz o possível para ajudá-lo sem revelar seus poderes.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep9.jpg",
+        "dataExibicao": "2023-12-02"
+    },
+    {
+        "id": 3835,
+        "numero": 10,
+        "titulo": "Aproveitando o Resort ao Máximo / Contando Vantagem das Férias",
+        "sinopse": "Depois dos acontecimentos no cruzeiro, a família Forger aproveita alguns dias de descanso em uma ilha turística, vivendo momentos raros de tranquilidade juntos.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep10.jpg",
+        "dataExibicao": "2023-12-09"
+    },
+    {
+        "id": 3836,
+        "numero": 11,
+        "titulo": "Berlint Apaixonada / O Dia a Dia de Nightfall",
+        "sinopse": "Encantada por Loid, Becky visita a casa dos Forger determinada a conquistar seu coração. Enquanto isso, Fiona Frost continua sua rotina como agente da WISE, sonhando em substituir Yor.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep11.jpg",
+        "dataExibicao": "2023-12-16"
+    },
+    {
+        "id": 3837,
+        "numero": 12,
+        "titulo": "Parte da Família",
+        "sinopse": "Durante um passeio com Loid, Bond prevê um incêndio e tenta impedir a tragédia. Sua visão mostra uma menina chorando diante de um prédio em chamas, levando o fiel cão a agir para proteger aqueles que considera sua família.",
+        "temporadaId": 2,
+        "animeId": 129,
+        "imagemUrl": "../../images/episodios/spy-x-family/t2/ep12.jpg",
+        "dataExibicao": "2023-12-23"
     }
 ]
