@@ -37894,5 +37894,255 @@
         "animeId": 127,
         "imagemUrl": "../../images/episodios/noragami-aragoto/t2/ep13.jpg",
         "dataExibicao": "2015-12-25"
+    },
+    {
+        "id": 3801,
+        "numero": 1,
+        "titulo": "Operação Strix",
+        "sinopse": "Twilight, um agente da WISE, recebe a missão de investigar Donovan Desmond para impedir um conflito entre Westalis e Ostania. Disfarçado como o psiquiatra Loid Forger, ele adota a pequena Anya para matriculá-la na prestigiosa Academia Eden, sem saber que ela possui poderes telepáticos. :contentReference[oaicite:0]{index=0}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep1.jpg",
+        "dataExibicao": "2022-04-09"
+    },
+    {
+        "id": 3802,
+        "numero": 2,
+        "titulo": "Conseguir uma Esposa",
+        "sinopse": "Yor Briar leva uma vida dupla como funcionária pública e assassina conhecida como Princesa dos Espinhos. Enquanto Loid procura alguém para interpretar a mãe de Anya, os dois acabam se conhecendo por acaso. :contentReference[oaicite:1]{index=1}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep2.jpg",
+        "dataExibicao": "2022-04-16"
+    },
+    {
+        "id": 3803,
+        "numero": 3,
+        "titulo": "Prepare-se para a Entrevista",
+        "sinopse": "Agora vivendo como uma família, Loid, Yor e Anya precisam se preparar para a entrevista da Academia Eden. Para aprender a agir como uma família de elite, eles passam um dia juntos visitando diversos lugares. :contentReference[oaicite:2]{index=2}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep3.jpg",
+        "dataExibicao": "2022-04-23"
+    },
+    {
+        "id": 3804,
+        "numero": 4,
+        "titulo": "A Entrevista da Prestigiada Escola",
+        "sinopse": "Chega o grande dia da entrevista na Academia Eden. Enquanto a família Forger tenta causar uma boa impressão, os avaliadores observam atentamente cada um de seus passos. :contentReference[oaicite:3]{index=3}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep4.jpg",
+        "dataExibicao": "2022-04-30"
+    },
+    {
+        "id": 3805,
+        "numero": 5,
+        "titulo": "Eles Passaram ou Não?",
+        "sinopse": "O resultado da seleção da Academia Eden finalmente é divulgado. Apesar da decepção inicial, uma notícia inesperada muda completamente o destino da família Forger. :contentReference[oaicite:4]{index=4}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep5.jpg",
+        "dataExibicao": "2022-05-07"
+    },
+    {
+        "id": 3806,
+        "numero": 6,
+        "titulo": "O Plano da Amizade",
+        "sinopse": "Anya começa sua vida escolar na Academia Eden. Enquanto Loid descobre o verdadeiro objetivo da Operação Strix, Anya acaba se tornando alvo de criminosos. :contentReference[oaicite:5]{index=5}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep6.jpg",
+        "dataExibicao": "2022-05-14"
+    },
+    {
+        "id": 3807,
+        "numero": 7,
+        "titulo": "O Segundo Filho do Alvo",
+        "sinopse": "Após acertar Damian Desmond, Anya recebe um Tonitrus Bolt e tenta se reconciliar com ele para ajudar a Operação Strix, enquanto Loid trabalha nos bastidores. :contentReference[oaicite:6]{index=6}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep7.jpg",
+        "dataExibicao": "2022-05-21"
+    },
+    {
+        "id": 3808,
+        "numero": 8,
+        "titulo": "Operação de Cobertura Contra a Polícia Secreta",
+        "sinopse": "Yuri Briar, irmão de Yor e integrante da Polícia Secreta, visita inesperadamente a família Forger, colocando em risco todos os segredos escondidos naquela casa. :contentReference[oaicite:7]{index=7}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep8.jpg",
+        "dataExibicao": "2022-05-28"
+    },
+    {
+        "id": 3809,
+        "numero": 9,
+        "titulo": "Mostrem o Quanto se Amam",
+        "sinopse": "Para convencer Yuri de que seu casamento é verdadeiro, Loid e Yor precisam demonstrar afeto diante dele, mas o nervosismo e o álcool tornam a situação ainda mais caótica. :contentReference[oaicite:8]{index=8}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep9.jpg",
+        "dataExibicao": "2022-06-04"
+    },
+    {
+        "id": 3810,
+        "numero": 10,
+        "titulo": "O Grande Plano do Queimada",
+        "sinopse": "Uma aula de educação física desperta a esperança de conquistar uma Stella Star. Anya treina intensamente com Yor para enfrentar uma partida decisiva de queimada. :contentReference[oaicite:9]{index=9}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep10.jpg",
+        "dataExibicao": "2022-06-11"
+    },
+    {
+        "id": 3811,
+        "numero": 11,
+        "titulo": "Stella",
+        "sinopse": "Como Anya tem dificuldades nos estudos, Loid cria um plano para que ela conquiste uma Stella Star através do serviço comunitário. Durante o voluntariado, sua telepatia acaba salvando uma criança. :contentReference[oaicite:10]{index=10}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep11.jpg",
+        "dataExibicao": "2022-06-18"
+    },
+    {
+        "id": 3812,
+        "numero": 12,
+        "titulo": "Parque dos Pinguins",
+        "sinopse": "Para fortalecer a imagem da família Forger, Loid leva Yor e Anya ao aquário. Porém, uma nova missão da WISE transforma o passeio em mais uma operação secreta. :contentReference[oaicite:11]{index=11}",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep12.jpg",
+        "dataExibicao": "2022-06-25"
+    },
+    {
+        "id": 3813,
+        "numero": 13,
+        "titulo": "Projeto Apple",
+        "sinopse": "A WISE inicia uma nova missão envolvendo um cachorro treinado para prever o futuro. Enquanto isso, Anya participa de uma adoção de animais e acaba encontrando um cão muito especial.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep13.jpg",
+        "dataExibicao": "2022-10-01"
+    },
+    {
+        "id": 3814,
+        "numero": 14,
+        "titulo": "Desarmando a Bomba-Relógio",
+        "sinopse": "Anya usa sua telepatia e a habilidade de prever o futuro de seu novo companheiro para impedir um atentado contra um importante ministro, enquanto Loid corre contra o tempo para descobrir a conspiração.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep14.jpg",
+        "dataExibicao": "2022-10-08"
+    },
+    {
+        "id": 3815,
+        "numero": 15,
+        "titulo": "Uma Nova Família",
+        "sinopse": "Após o fim da missão, Bond passa a fazer parte oficialmente da família Forger. Anya aproveita a companhia do novo amigo, enquanto Loid retorna aos preparativos da Operação Strix.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep15.jpg",
+        "dataExibicao": "2022-10-15"
+    },
+    {
+        "id": 3816,
+        "numero": 16,
+        "titulo": "A Cozinha de Yor",
+        "sinopse": "Preocupada com suas habilidades culinárias, Yor pede ajuda a Camilla para aprender novas receitas. Enquanto isso, Franky tenta conquistar uma garota com a ajuda de Loid.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep16.jpg",
+        "dataExibicao": "2022-10-22"
+    },
+    {
+        "id": 3817,
+        "numero": 17,
+        "titulo": "Plano Griffin",
+        "sinopse": "Anya tenta melhorar suas notas para evitar novos Tonitrus Bolts, enquanto Loid procura maneiras de aproximá-la de Damian e avançar a Operação Strix.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep17.jpg",
+        "dataExibicao": "2022-10-29"
+    },
+    {
+        "id": 3818,
+        "numero": 18,
+        "titulo": "O Exame do Tio Particular",
+        "sinopse": "Yuri visita Anya para ajudá-la a estudar antes das provas. Apesar de seu entusiasmo, ensinar acaba sendo muito mais difícil do que ele imaginava.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep18.jpg",
+        "dataExibicao": "2022-11-05"
+    },
+    {
+        "id": 3819,
+        "numero": 19,
+        "titulo": "Plano de Vingança contra Desmond",
+        "sinopse": "Depois dos resultados dos exames, Damian enfrenta dificuldades para lidar com as expectativas da família. Anya tenta aproveitar a situação para se aproximar dele.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep19.jpg",
+        "dataExibicao": "2022-11-12"
+    },
+    {
+        "id": 3820,
+        "numero": 20,
+        "titulo": "Investigando o Hospital Geral",
+        "sinopse": "Os colegas de trabalho de Loid suspeitam que ele esteja escondendo algo e resolvem investigá-lo. Para proteger sua identidade, Twilight precisa improvisar mais uma missão.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep20.jpg",
+        "dataExibicao": "2022-11-19"
+    },
+    {
+        "id": 3821,
+        "numero": 21,
+        "titulo": "Primeiro Contato",
+        "sinopse": "Finalmente chega o momento mais importante da Operação Strix: Loid consegue seu primeiro encontro com Donovan Desmond durante um evento da Academia Eden.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep21.jpg",
+        "dataExibicao": "2022-11-26"
+    },
+    {
+        "id": 3822,
+        "numero": 22,
+        "titulo": "O Torneio de Tênis Subterrâneo",
+        "sinopse": "Loid e Fiona Frost participam de um perigoso torneio clandestino de tênis para recuperar um documento secreto que pode ameaçar a paz entre as nações.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep22.jpg",
+        "dataExibicao": "2022-12-03"
+    },
+    {
+        "id": 3823,
+        "numero": 23,
+        "titulo": "A Partida Decisiva",
+        "sinopse": "Loid e Fiona enfrentam os adversários mais fortes do torneio em uma partida cheia de armadilhas, colocando à prova suas habilidades como agentes secretos.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep23.jpg",
+        "dataExibicao": "2022-12-10"
+    },
+    {
+        "id": 3824,
+        "numero": 24,
+        "titulo": "O Papel de uma Mãe",
+        "sinopse": "Enquanto Fiona sonha em substituir Yor na família Forger, Yor começa a questionar seu papel como esposa e mãe. Ao mesmo tempo, Anya continua determinada a ajudar seu pai na missão.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep24.jpg",
+        "dataExibicao": "2022-12-17"
+    },
+    {
+        "id": 3825,
+        "numero": 25,
+        "titulo": "Primeiro Contato",
+        "sinopse": "Após o encontro entre Loid e Donovan Desmond, a família Forger segue sua rotina enquanto cada um continua escondendo seus segredos. Apesar dos desafios, a Operação Strix avança mais um passo rumo ao seu objetivo.",
+        "temporadaId": 1,
+        "animeId": 128,
+        "imagemUrl": "../../images/episodios/spy-x-family/t1/ep25.jpg",
+        "dataExibicao": "2022-12-24"
     }
 ]
