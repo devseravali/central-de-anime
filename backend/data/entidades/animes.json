@@ -1659,13 +1659,13 @@
         "temporada": 1,
         "statusId": 1,
         "ano": 2022,
-        "quantidadeEpisodios": 12,
+        "quantidadeEpisodios": 25,
         "sinopse": "Todos têm uma parte de si mesmos que não podem mostrar a ninguém. Numa época em que todas as nações do mundo estavam envolvidas numa feroz guerra de informações a portas fechadas, Ostania e Westalis viviam em guerra fria há décadas. A Divisão de Foco no Leste dos Serviços de Inteligência de Westalis (WISE) envia seu espião mais talentoso, 'Twilight', numa missão ultrassecreta para investigar os movimentos de Donovan Desmond.",
         "capaUrl": "images/capas/spy-x-family-t1.jpg"
     },
     {
         "id": 129,
-        "titulo": "Spy x Family 2ª Temporada - Parte 1",
+        "titulo": "Spy x Family 2ª Temporada",
         "estudioId": 6,
         "estacaoId": 1,
         "tipo": "temporada",
@@ -1674,23 +1674,10 @@
         "ano": 2023,
         "quantidadeEpisodios": 12,
         "sinopse": "A família Forger enfrentará uma nova missão familiar enquanto Yor embarca em uma expedição em um navio de cruzeiro! Enquanto isso, Anya Forger se matricula com sucesso na Academia Eden, mas a Operação Strix avança para sua segunda fase. O que acontecerá com a família Forger? Descubra na segunda temporada de Spy x Family!",
-        "capaUrl": "images/capas/spy-x-family-t2-pt-1.jpg"
+        "capaUrl": "images/capas/spy-x-family-t2.jpg"
     },
     {
         "id": 130,
-        "titulo": "Spy x Family 2ª Temporada - Parte 2",
-        "estudioId": 6,
-        "estacaoId": 2,
-        "tipo": "temporada",
-        "temporada": 2,
-        "statusId": 1,
-        "ano": 2023,
-        "quantidadeEpisodios": 13,
-        "sinopse": "Com Anya Forger matriculada com sucesso na Academia Eden, a Operação Strix avança para sua segunda fase. Enquanto isso, a família Forger enfrenta uma nova missão familiar enquanto Yor embarca em uma expedição em um navio de cruzeiro!",
-        "capaUrl": "images/capas/spy-x-family-t2-pt-2.jpg"
-    },
-    {
-        "id": 131,
         "titulo": "Spy x Family 3ª Temporada",
         "estudioId": 6,
         "estacaoId": 2,
@@ -1703,7 +1690,7 @@
         "capaUrl": "images/capas/spy-x-family-t3.jpg"
     },
     {
-        "id": 132,
+        "id": 131,
         "titulo": "Spy x Family Code: White",
         "estudioId": 6,
         "estacaoId": 3,
@@ -1716,7 +1703,7 @@
         "capaUrl": "images/capas/spy-x-family-code-white.jpg"
     },
     {
-        "id": 133,
+        "id": 132,
         "titulo": "Steins;Gate",
         "estudioId": 9,
         "estacaoId": 2,
@@ -1729,7 +1716,7 @@
         "capaUrl": "images/capas/steins-gate.jpg"
     },
     {
-        "id": 134,
+        "id": 133,
         "titulo": "Steins;Gate 0",
         "estudioId": 9,
         "estacaoId": 2,
@@ -1742,7 +1729,7 @@
         "capaUrl": "images/capas/steins-gate-zero.jpg"
     },
     {
-        "id": 135,
+        "id": 134,
         "titulo": "Steins;Gate: The Movie - Load Region of Déjà Vu",
         "estudioId": 9,
         "estacaoId": 3,
@@ -1755,7 +1742,7 @@
         "capaUrl": "images/capas/steins-gate-movie.jpg"
     },
     {
-        "id": 136,
+        "id": 135,
         "titulo": "Made in Abyss",
         "estudioId": 2,
         "estacaoId": 2,
@@ -1768,7 +1755,7 @@
         "capaUrl": "images/capas/made-in-abyss.jpg"
     },
     {
-        "id": 137,
+        "id": 136,
         "titulo": "Made in Abyss: Dawn of the Deep Soul",
         "estudioId": 2,
         "estacaoId": 3,
@@ -1781,7 +1768,7 @@
         "capaUrl": "images/capas/made-in-abyss-dawn-of-the-deep-soul.jpg"
     },
     {
-        "id": 138,
+        "id": 137,
         "titulo": "Made in Abyss: Retsujitsu no Ougonkyou",
         "estudioId": 2,
         "estacaoId": 4,
@@ -1794,7 +1781,7 @@
         "capaUrl": "images/capas/made-in-abyss-the-retsujitsu-no-ougonkyou.jpg"
     },
     {
-        "id": 139,
+        "id": 138,
         "titulo": "Black Clover",
         "estudioId": 8,
         "estacaoId": 1,
@@ -1807,7 +1794,7 @@
         "capaUrl": "images/capas/black-clover.jpg"
     },
     {
-        "id": 140,
+        "id": 139,
         "titulo": "Black Clover: Sword of the Wizard King",
         "estudioId": 8,
         "estacaoId": 3,
@@ -1820,7 +1807,7 @@
         "capaUrl": "images/capas/black-clover-sword-of-the-wizard-king.jpg"
     },
     {
-        "id": 141,
+        "id": 140,
         "titulo": "My Hero Academia",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1833,7 +1820,7 @@
         "capaUrl": "images/capas/my-hero-academia-t1.jpg"
     },
     {
-        "id": 142,
+        "id": 141,
         "titulo": "My Hero Academia: 2ª temporada",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1846,7 +1833,7 @@
         "capaUrl": "images/capas/my-hero-academia-t2.jpg"
     },
     {
-        "id": 143,
+        "id": 142,
         "titulo": "My Hero Academia: 3ª temporada",
         "estudioId": 4,
         "estacaoId": 2,
@@ -1859,7 +1846,7 @@
         "capaUrl": "images/capas/my-hero-academia-t3.jpg"
     },
     {
-        "id": 144,
+        "id": 143,
         "titulo": "My Hero Academia: 4ª temporada",
         "estudioId": 4,
         "estacaoId": 4,
@@ -1872,7 +1859,7 @@
         "capaUrl": "images/capas/my-hero-academia-t4.jpg"
     },
     {
-        "id": 145,
+        "id": 144,
         "titulo": "My Hero Academia: 5ª temporada",
         "estudioId": 4,
         "estacaoId": 1,
@@ -1885,7 +1872,7 @@
         "capaUrl": "images/capas/my-hero-academia-t5.jpg"
     },
     {
-        "id": 146,
+        "id": 145,
         "titulo": "My Hero Academia: 6ª temporada",
         "estudioId": 4,
         "estacaoId": 2,
@@ -1898,7 +1885,7 @@
         "capaUrl": "images/capas/my-hero-academia-t6.jpg"
     },
     {
-        "id": 147,
+        "id": 146,
         "titulo": "My Hero Academia: 7ª temporada",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1911,7 +1898,7 @@
         "capaUrl": "images/capas/my-hero-academia-t7.jpg"
     },
     {
-        "id": 148,
+        "id": 147,
         "titulo": "My Hero Academia: Heroes Rising",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1924,7 +1911,7 @@
         "capaUrl": "images/capas/my-hero-academia-heroes-rising.jpg"
     },
     {
-        "id": 149,
+        "id": 148,
         "titulo": "My Hero Academia: World Heroes' Mission",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1937,7 +1924,7 @@
         "capaUrl": "images/capas/my-hero-academia-world-heroes-mission.jpg"
     },
     {
-        "id": 150,
+        "id": 149,
         "titulo": "My Hero Academia: Two Heroes",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1950,7 +1937,7 @@
         "capaUrl": "images/capas/my-hero-academia-two-heroes.jpg"
     },
     {
-        "id": 151,
+        "id": 150,
         "titulo": "My Hero Academia: Youre Next",
         "estudioId": 4,
         "estacaoId": 3,
