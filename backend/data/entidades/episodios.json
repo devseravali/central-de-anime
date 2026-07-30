@@ -42444,5 +42444,115 @@
         "animeId": 146,
         "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep21.jpg",
         "dataExibicao": "2024-10-12"
+    },
+    {
+        "id": 4256,
+        "numero": 1,
+        "titulo": "Toshinori Yagi: Ascensão/Origem",
+        "sinopse": "A intensa batalha entre All Might Blindado e All For One continua. Mesmo diante de um inimigo avassalador, All Might se recusa a desistir.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep1.jpg",
+        "dataExibicao": "2025-10-04"
+    },
+    {
+        "id": 4257,
+        "numero": 2,
+        "titulo": "O Fim de uma Era e um Novo Começo",
+        "sinopse": "All Might recebe ajuda de um aliado inesperado quando Stain entra na batalha contra All For One, mudando os rumos do confronto.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep2.jpg",
+        "dataExibicao": "2025-10-11"
+    },
+    {
+        "id": 4258,
+        "numero": 3,
+        "titulo": "O Chefão Final!!",
+        "sinopse": "Bakugo retorna ao campo de batalha e faz de tudo para salvar All Might enquanto enfrenta All For One em um confronto decisivo.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep3.jpg",
+        "dataExibicao": "2025-10-18"
+    },
+    {
+        "id": 4259,
+        "numero": 4,
+        "titulo": "Individualidade: Explosão!!",
+        "sinopse": "Durante a luta contra Bakugo, All For One relembra seu passado ao lado de seu irmão Yoichi e as origens de seu poder.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep4.jpg",
+        "dataExibicao": "2025-10-25"
+    },
+    {
+        "id": 4260,
+        "numero": 5,
+        "titulo": "O Maior Vilão da História",
+        "sinopse": "O equilíbrio da batalha muda quando Shigaraki consegue roubar uma Individualidade ligada ao One For All, colocando Izuku em uma situação crítica.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep5.jpg",
+        "dataExibicao": "2025-11-01"
+    },
+    {
+        "id": 4261,
+        "numero": 6,
+        "titulo": "Abra o Caminho, Izuku Midoriya!!",
+        "sinopse": "Izuku tenta transferir o One For All para Shigaraki à força, acreditando que essa pode ser a única forma de vencer a batalha.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep6.jpg",
+        "dataExibicao": "2025-11-08"
+    },
+    {
+        "id": 4262,
+        "numero": 7,
+        "titulo": "De Aizawa",
+        "sinopse": "Izuku mergulha na mente de Shigaraki em busca da verdadeira origem do vilão e descobre a trágica história de Tenko Shimura.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep7.jpg",
+        "dataExibicao": "2025-11-15"
+    },
+    {
+        "id": 4263,
+        "numero": 8,
+        "titulo": "Izuku Midoriya: Ascensão",
+        "sinopse": "Com All For One assumindo completamente o controle do corpo de Shigaraki, todos os heróis unem forças para a batalha final.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep8.jpg",
+        "dataExibicao": "2025-11-22"
+    },
+    {
+        "id": 4264,
+        "numero": 9,
+        "titulo": "Epílogo: A Família Todoroki Infernal – Final",
+        "sinopse": "Com a guerra finalmente encerrada, heróis e cidadãos iniciam a reconstrução do mundo e enfrentam as consequências deixadas pelo conflito.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep9.jpg",
+        "dataExibicao": "2025-11-29"
+    },
+    {
+        "id": 4265,
+        "numero": 10,
+        "titulo": "A Garota Que Ama Sorrisos",
+        "sinopse": "Mesmo após o fim da guerra, Izuku e Ochaco ainda precisam enfrentar seus conflitos internos e encontrar um novo propósito.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep10.jpg",
+        "dataExibicao": "2025-12-06"
+    },
+    {
+        "id": 4266,
+        "numero": 11,
+        "titulo": "My Hero Academia",
+        "sinopse": "Oito anos após a derrota de All For One e Shigaraki, o mundo mudou. O episódio final mostra o legado deixado por Izuku Midoriya e pelos heróis.",
+        "temporadaId": 8,
+        "animeId": 147,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep11.jpg",
+        "dataExibicao": "2025-12-13"
     }
 ]
