@@ -1899,6 +1899,19 @@
     },
     {
         "id": 147,
+        "titulo": "My Hero Academia: 8ª temporada",
+        "estudioId": 4,
+        "estacaoId": 1,
+        "tipo": "temporada",
+        "temporada": 8,
+        "statusId": 1,
+        "ano": 2024,
+        "quantidadeEpisodios": 25,
+        "sinopse": "A U.A. é atacada por vilões, e os alunos enfrentam desafios que testam suas habilidades e determinação para se tornarem heróis. Izuku e seus amigos enfrentam a ameaça crescente da Liga dos Vilões, enquanto também lidam com os desafios de seu treinamento e crescimento como heróis. A oitava temporada de My Hero Academia é uma jornada emocionante de ação, amizade e superação.",
+        "capaUrl": "images/capas/my-hero-academia-t8.jpg"
+    },
+    {
+        "id": 148,
         "titulo": "My Hero Academia: Heroes Rising",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1911,7 +1924,7 @@
         "capaUrl": "images/capas/my-hero-academia-heroes-rising.jpg"
     },
     {
-        "id": 148,
+        "id": 149,
         "titulo": "My Hero Academia: World Heroes' Mission",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1924,7 +1937,7 @@
         "capaUrl": "images/capas/my-hero-academia-world-heroes-mission.jpg"
     },
     {
-        "id": 149,
+        "id": 150,
         "titulo": "My Hero Academia: Two Heroes",
         "estudioId": 4,
         "estacaoId": 3,
@@ -1937,8 +1950,8 @@
         "capaUrl": "images/capas/my-hero-academia-two-heroes.jpg"
     },
     {
-        "id": 150,
-        "titulo": "My Hero Academia: Youre Next",
+        "id": 151,
+        "titulo": "My Hero Academia: You're Next",
         "estudioId": 4,
         "estacaoId": 3,
         "tipo": "filme",
