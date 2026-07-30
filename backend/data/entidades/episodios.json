@@ -41234,5 +41234,255 @@
         "animeId": 141,
         "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep25.jpg",
         "dataExibicao": "2017-09-30"
+    },
+    {
+        "id": 4135,
+        "numero": 1,
+        "titulo": "Começo do Jogo",
+        "sinopse": "Antes do acampamento de treinamento, a Classe 1-A aproveita um dia na piscina para treinar enquanto a Liga dos Vilões coloca seus próximos planos em ação.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep1.jpg",
+        "dataExibicao": "2018-04-07"
+    },
+    {
+        "id": 4136,
+        "numero": 2,
+        "titulo": "As Selvagens Pussycats",
+        "sinopse": "A Classe 1-A enfrenta o primeiro desafio do acampamento de verão ao atravessar a perigosa Floresta das Feras antes mesmo do almoço.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep2.jpg",
+        "dataExibicao": "2018-04-14"
+    },
+    {
+        "id": 4137,
+        "numero": 3,
+        "titulo": "Kota",
+        "sinopse": "Izuku tenta se aproximar de Kota enquanto os treinamentos começam de verdade, sem imaginar o perigo que se aproxima da floresta.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep3.jpg",
+        "dataExibicao": "2018-04-21"
+    },
+    {
+        "id": 4138,
+        "numero": 4,
+        "titulo": "Meu Herói",
+        "sinopse": "Os vilões iniciam seu ataque ao acampamento, e apenas Izuku sabe onde Kota está. Agora ele precisa salvá-lo antes que seja tarde.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep4.jpg",
+        "dataExibicao": "2018-04-28"
+    },
+    {
+        "id": 4139,
+        "numero": 5,
+        "titulo": "Mostre Sua Força, Punho de Ferro!",
+        "sinopse": "Após resgatar Kota, Izuku retorna ao acampamento apenas para partir novamente levando uma mensagem urgente para Mandalay transmitir.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep5.jpg",
+        "dataExibicao": "2018-05-05"
+    },
+    {
+        "id": 4140,
+        "numero": 6,
+        "titulo": "Grande Reviravolta",
+        "sinopse": "Enquanto alunos e professores continuam lutando na floresta, surge a dúvida se a missão da Vanguard Action Squad já foi concluída.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep6.jpg",
+        "dataExibicao": "2018-05-12"
+    },
+    {
+        "id": 4141,
+        "numero": 7,
+        "titulo": "Que Reviravolta!",
+        "sinopse": "A batalha no acampamento termina, mas as consequências do ataque da Liga dos Vilões deixam marcas profundas nos estudantes e professores.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep7.jpg",
+        "dataExibicao": "2018-05-19"
+    },
+    {
+        "id": 4142,
+        "numero": 8,
+        "titulo": "De Iida para Midoriya",
+        "sinopse": "Midoriya, Todoroki e Kirishima querem resgatar Bakugo, mas Iida tenta impedir a missão. Enquanto isso, Shigaraki faz uma proposta inesperada.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep8.jpg",
+        "dataExibicao": "2018-05-26"
+    },
+    {
+        "id": 4143,
+        "numero": 9,
+        "titulo": "All For One",
+        "sinopse": "Heróis e estudantes cercam os esconderijos da Liga dos Vilões, mas o inimigo revela sua arma mais poderosa para mudar o rumo da batalha.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep9.jpg",
+        "dataExibicao": "2018-06-02"
+    },
+    {
+        "id": 4144,
+        "numero": 10,
+        "titulo": "Símbolo da Paz",
+        "sinopse": "Enquanto os alunos tentam resgatar Bakugo, All Might retorna para enfrentar uma batalha decisiva contra um inimigo lendário.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep10.jpg",
+        "dataExibicao": "2018-06-09"
+    },
+    {
+        "id": 4145,
+        "numero": 11,
+        "titulo": "One For All",
+        "sinopse": "All Might enfrenta All For One em seu confronto definitivo, colocando tudo em jogo para proteger o futuro dos heróis.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep11.jpg",
+        "dataExibicao": "2018-06-16"
+    },
+    {
+        "id": 4146,
+        "numero": 12,
+        "titulo": "Fim do Começo, Começo do Fim",
+        "sinopse": "Após a batalha histórica, alunos e professores precisam lidar com as consequências enquanto um novo capítulo se inicia.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep12.jpg",
+        "dataExibicao": "2018-06-23"
+    },
+    {
+        "id": 4147,
+        "numero": 13,
+        "titulo": "Mudando para os Dormitórios",
+        "sinopse": "A Classe 1-A passa a viver nos dormitórios da U.A. e transforma a mudança em uma divertida competição entre os colegas.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep13.jpg",
+        "dataExibicao": "2018-06-30"
+    },
+    {
+        "id": 4148,
+        "numero": 14,
+        "titulo": "Criem Seus Golpes Supremos",
+        "sinopse": "Os estudantes treinam seus Quirks para desenvolver técnicas especiais antes do exame de licença provisória de herói.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep14.jpg",
+        "dataExibicao": "2018-07-14"
+    },
+    {
+        "id": 4149,
+        "numero": 15,
+        "titulo": "O Exame",
+        "sinopse": "Após os últimos ajustes em seus novos golpes, a Classe 1-A parte para enfrentar o exame de licença provisória.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep15.jpg",
+        "dataExibicao": "2018-07-21"
+    },
+    {
+        "id": 4150,
+        "numero": 16,
+        "titulo": "A Academia Shiketsu à Espreita",
+        "sinopse": "O exame começa e todos parecem mirar na Classe 1-A. Os alunos precisarão sobreviver à primeira etapa para seguir em frente.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep16.jpg",
+        "dataExibicao": "2018-07-28"
+    },
+    {
+        "id": 4151,
+        "numero": 17,
+        "titulo": "Classe 1-A",
+        "sinopse": "Enquanto Todoroki enfrenta adversários sozinho, Yaoyorozu e os demais lutam para garantir a aprovação na primeira fase do exame.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep17.jpg",
+        "dataExibicao": "2018-08-04"
+    },
+    {
+        "id": 4152,
+        "numero": 18,
+        "titulo": "Corrida Contra o Tempo!",
+        "sinopse": "Os minutos finais da primeira etapa colocam metade da Classe 1-A sob enorme pressão para conquistar a aprovação.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep18.jpg",
+        "dataExibicao": "2018-08-11"
+    },
+    {
+        "id": 4153,
+        "numero": 19,
+        "titulo": "Exercícios de Resgate",
+        "sinopse": "A segunda fase do exame coloca os candidatos em uma complexa operação de resgate, exigindo habilidade e trabalho em equipe.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep19.jpg",
+        "dataExibicao": "2018-08-18"
+    },
+    {
+        "id": 4154,
+        "numero": 20,
+        "titulo": "Especial: Salvem o Mundo com Amor!",
+        "sinopse": "Um episódio especial retorna ao período anterior ao acampamento para mostrar uma aula diferente e divertida da Classe 1-A.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep20.jpg",
+        "dataExibicao": "2018-08-25"
+    },
+    {
+        "id": 4155,
+        "numero": 21,
+        "titulo": "Qual é a Grande Ideia?",
+        "sinopse": "Na reta final do exame, Izuku e os demais candidatos precisam enfrentar Gang Orca para concluir a missão de resgate.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep21.jpg",
+        "dataExibicao": "2018-09-01"
+    },
+    {
+        "id": 4156,
+        "numero": 22,
+        "titulo": "Conversando Sobre Seu Quirk",
+        "sinopse": "Com o exame encerrado, os alunos recebem os resultados enquanto All Might tem uma conversa decisiva com All For One.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep22.jpg",
+        "dataExibicao": "2018-09-08"
+    },
+    {
+        "id": 4157,
+        "numero": 23,
+        "titulo": "Deku vs. Kacchan – Parte 2",
+        "sinopse": "Após o exame, Izuku enfrenta Bakugo em um duelo intenso que revela sentimentos e verdades guardadas entre os dois rivais.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep23.jpg",
+        "dataExibicao": "2018-09-15"
+    },
+    {
+        "id": 4158,
+        "numero": 24,
+        "titulo": "Uma Temporada de Encontros",
+        "sinopse": "O mundo dos heróis muda após a queda de All Might, enquanto os alunos iniciam o segundo semestre e novos desafios surgem.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep24.jpg",
+        "dataExibicao": "2018-09-22"
+    },
+    {
+        "id": 4159,
+        "numero": 25,
+        "titulo": "Inigualável",
+        "sinopse": "A Classe 1-A conhece os Três Grandes e descobre o programa de estágios profissionais, enquanto os vilões também avançam com seus planos.",
+        "temporadaId": 3,
+        "animeId": 142,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep25.jpg",
+        "dataExibicao": "2018-09-29"
     }
 ]
