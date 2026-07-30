@@ -41984,5 +41984,255 @@
         "animeId": 144,
         "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep25.jpg",
         "dataExibicao": "2021-09-25"
+    },
+    {
+        "id": 4210,
+        "numero": 1,
+        "titulo": "Um Começo Silencioso",
+        "sinopse": "Com base nas informações obtidas por Hawks, os heróis e seus estagiários se preparam para atacar a Frente de Libertação Paranormal liderada por Shigaraki.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep1.jpg",
+        "dataExibicao": "2022-10-01"
+    },
+    {
+        "id": 4211,
+        "numero": 2,
+        "titulo": "Mirko, a Heroína Nº 5",
+        "sinopse": "Enquanto Endeavor enfrenta os Nomus no hospital, Mirko encara os High-End e Kaminari segue para a linha de frente decidido a proteger seus amigos.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep2.jpg",
+        "dataExibicao": "2022-10-08"
+    },
+    {
+        "id": 4212,
+        "numero": 3,
+        "titulo": "A Justiça de Cada Um",
+        "sinopse": "Na Vila Gunga, a Frente de Libertação Paranormal percebe que está sob ataque, enquanto Twice confronta Hawks por sua traição.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep3.jpg",
+        "dataExibicao": "2022-10-15"
+    },
+    {
+        "id": 4213,
+        "numero": 4,
+        "titulo": "Herança",
+        "sinopse": "Dabi enfrenta Hawks após a morte de Twice, enquanto Mirko arrisca a vida para impedir o despertar de Shigaraki.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep4.jpg",
+        "dataExibicao": "2022-10-22"
+    },
+    {
+        "id": 4214,
+        "numero": 5,
+        "titulo": "A Emoção da Destruição",
+        "sinopse": "Os heróis continuam enfrentando os High-End sem perceber que Shigaraki despertou, enquanto Tokoyami tenta salvar Hawks de Dabi.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep5.jpg",
+        "dataExibicao": "2022-10-29"
+    },
+    {
+        "id": 4215,
+        "numero": 6,
+        "titulo": "Encontro, Parte 2",
+        "sinopse": "Gigantomachia avança ao lado da Frente de Libertação Paranormal enquanto Shigaraki desperto define seu novo objetivo: roubar o One For All.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep6.jpg",
+        "dataExibicao": "2022-11-05"
+    },
+    {
+        "id": 4216,
+        "numero": 7,
+        "titulo": "Andarilho da Destruição",
+        "sinopse": "A batalha contra Shigaraki continua enquanto outros heróis enfrentam os novos Nomus e tentam impedir o avanço de Gigantomachia.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep7.jpg",
+        "dataExibicao": "2022-11-12"
+    },
+    {
+        "id": 4217,
+        "numero": 8,
+        "titulo": "Liga dos Vilões vs. Estudantes da U.A.",
+        "sinopse": "As Classes A e B unem forças para deter Gigantomachia após a linha de defesa dos heróis ser rompida.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep8.jpg",
+        "dataExibicao": "2022-11-19"
+    },
+    {
+        "id": 4218,
+        "numero": 9,
+        "titulo": "Katsuki Bakugo: Ascensão",
+        "sinopse": "Com Aizawa fora de combate, Bakugo cria um plano para ajudar Midoriya a enfrentar Shigaraki.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep9.jpg",
+        "dataExibicao": "2022-11-26"
+    },
+    {
+        "id": 4219,
+        "numero": 10,
+        "titulo": "Aqueles Que Vivem em Nós",
+        "sinopse": "Após Bakugo ser gravemente ferido, Deku enfrenta Shigaraki enquanto o mundo do One For All entra em cena.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep10.jpg",
+        "dataExibicao": "2022-12-03"
+    },
+    {
+        "id": 4220,
+        "numero": 11,
+        "titulo": "A Dança de Dabi",
+        "sinopse": "Enquanto Ochaco enfrenta Toga, Dabi revela ao mundo a verdade sobre seu passado.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep11.jpg",
+        "dataExibicao": "2022-12-10"
+    },
+    {
+        "id": 4221,
+        "numero": 12,
+        "titulo": "Fios de Esperança",
+        "sinopse": "Best Jeanist retorna ao campo de batalha e reúne as últimas esperanças dos heróis na reta final da guerra.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep12.jpg",
+        "dataExibicao": "2022-12-17"
+    },
+    {
+        "id": 4222,
+        "numero": 13,
+        "titulo": "A Última Apresentação",
+        "sinopse": "Pensando em seu ancestral, Mr. Compress realiza seu maior truque para salvar a Liga dos Vilões.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep13.jpg",
+        "dataExibicao": "2022-12-24"
+    },
+    {
+        "id": 4223,
+        "numero": 14,
+        "titulo": "Inferno Infernal",
+        "sinopse": "Após a guerra, os heróis enfrentam críticas da população enquanto lamentam suas perdas.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep14.jpg",
+        "dataExibicao": "2023-01-07"
+    },
+    {
+        "id": 4224,
+        "numero": 15,
+        "titulo": "Tártaro",
+        "sinopse": "Controlado por All For One, Shigaraki invade Tartarus para libertar seu verdadeiro corpo e inúmeros criminosos.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep15.jpg",
+        "dataExibicao": "2023-01-14"
+    },
+    {
+        "id": 4225,
+        "numero": 16,
+        "titulo": "A Família Todoroki Infernal, Parte 2",
+        "sinopse": "Enquanto Endeavor se recupera no hospital, sua família e Hawks encaram as consequências da revelação de Dabi.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep16.jpg",
+        "dataExibicao": "2023-01-21"
+    },
+    {
+        "id": 4226,
+        "numero": 17,
+        "titulo": "A Maneira Errada de Apagar um Incêndio",
+        "sinopse": "Endeavor e sua família relembram a história de Toya enquanto Hawks e Best Jeanist apresentam uma nova proposta.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep17.jpg",
+        "dataExibicao": "2023-01-28"
+    },
+    {
+        "id": 4227,
+        "numero": 18,
+        "titulo": "Izuku Midoriya e Tomura Shigaraki",
+        "sinopse": "Dentro do One For All, Izuku conversa com os antigos portadores enquanto os heróis lidam com a crise de confiança da sociedade.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep18.jpg",
+        "dataExibicao": "2023-02-04"
+    },
+    {
+        "id": 4228,
+        "numero": 19,
+        "titulo": "Poder Máximo!!",
+        "sinopse": "Ao enfrentar novamente Muscular, Deku utiliza as individualidades herdadas dos antigos usuários do One For All.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep19.jpg",
+        "dataExibicao": "2023-02-11"
+    },
+    {
+        "id": 4229,
+        "numero": 20,
+        "titulo": "Atiradora de Aluguel",
+        "sinopse": "Enquanto procura pistas sobre All For One, Deku encontra uma perigosa fugitiva de Tartarus: Lady Nagant.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep20.jpg",
+        "dataExibicao": "2023-02-18"
+    },
+    {
+        "id": 4230,
+        "numero": 21,
+        "titulo": "A Encantadora Lady Nagant",
+        "sinopse": "Durante sua luta contra Lady Nagant, Deku descobre segredos obscuros da sociedade dos heróis.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep21.jpg",
+        "dataExibicao": "2023-02-25"
+    },
+    {
+        "id": 4231,
+        "numero": 22,
+        "titulo": "Amigo",
+        "sinopse": "Os colegas de Deku percebem que ele está se isolando e decidem encontrá-lo para ajudá-lo.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep22.jpg",
+        "dataExibicao": "2023-03-04"
+    },
+    {
+        "id": 4232,
+        "numero": 23,
+        "titulo": "Deku vs. Classe A",
+        "sinopse": "A Classe A confronta Deku e tenta convencê-lo a voltar, lembrando-o dos laços que construíram juntos.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep23.jpg",
+        "dataExibicao": "2023-03-11"
+    },
+    {
+        "id": 4233,
+        "numero": 24,
+        "titulo": "A Declaração de uma Jovem",
+        "sinopse": "Ochaco faz um discurso emocionante para convencer os refugiados da U.A. a aceitarem o retorno de Deku.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep24.jpg",
+        "dataExibicao": "2023-03-18"
+    },
+    {
+        "id": 4234,
+        "numero": 25,
+        "titulo": "Ninguém é uma Ilha",
+        "sinopse": "Enquanto Deku descansa na U.A., All Might encontra Stain e obtém novas informações sobre Shigaraki e All For One.",
+        "temporadaId": 6,
+        "animeId": 145,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep25.jpg",
+        "dataExibicao": "2023-03-25"
     }
 ]
