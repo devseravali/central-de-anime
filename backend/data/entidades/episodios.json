@@ -40844,5 +40844,15 @@
         "animeId": 138,
         "imagemUrl": "../../images/episodios/black-clover/t1/ep170.jpg",
         "dataExibicao": "2021-03-30"
+    },
+    {
+        "id": 4096,
+        "numero": 171,
+        "titulo": "Black Clover: A Espada do Rei Mago",
+        "sinopse": "Durante um período de paz após a guerra contra o Reino de Spade, Asta e os Cavaleiros Mágicos enfrentam Conrad Leto, um antigo Rei Mago ressuscitado que pretende reconstruir o Reino de Clover à força usando a lendária Espada Imperial.",
+        "temporadaId": 1,
+        "animeId": 138,
+        "imagemUrl": "../../images/episodios/black-clover/filme/black-filme.jpg",
+        "dataExibicao": "2023-06-16"
     }
 ]
