@@ -40984,5 +40984,255 @@
         "animeId": 140,
         "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep13.jpg",
         "dataExibicao": "2016-06-26"
+    },
+    {
+        "id": 4110,
+        "numero": 1,
+        "titulo": "É Assim Mesmo, Ochaco",
+        "sinopse": "Enquanto alunos e professores da U.A. se recuperam do ataque à USJ, Izuku descobre o verdadeiro motivo que levou Ochaco a querer se tornar uma heroína.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep1.jpg",
+        "dataExibicao": "2017-04-01"
+    },
+    {
+        "id": 4111,
+        "numero": 2,
+        "titulo": "O Rugido do Festival Esportivo",
+        "sinopse": "O Festival Esportivo da U.A. começa com a emocionante corrida de obstáculos, dando aos alunos do primeiro ano a chance de mostrar seu potencial.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep2.jpg",
+        "dataExibicao": "2017-04-08"
+    },
+    {
+        "id": 4112,
+        "numero": 3,
+        "titulo": "Cada Um à Sua Maneira",
+        "sinopse": "Os estudantes do primeiro ano enfrentam a corrida de obstáculos usando suas Individualidades de formas criativas para conquistar uma vaga na próxima fase.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep3.jpg",
+        "dataExibicao": "2017-04-15"
+    },
+    {
+        "id": 4113,
+        "numero": 4,
+        "titulo": "Estratégia, Estratégia, Estratégia",
+        "sinopse": "Sem conseguir formar uma equipe para a batalha de cavalaria, Izuku cria um plano para reunir aliados e continuar na competição.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep4.jpg",
+        "dataExibicao": "2017-04-22"
+    },
+    {
+        "id": 4114,
+        "numero": 5,
+        "titulo": "Final da Batalha de Cavalaria",
+        "sinopse": "A equipe de Midoriya luta para permanecer entre os quatro primeiros colocados e garantir uma vaga no torneio individual.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep5.jpg",
+        "dataExibicao": "2017-04-29"
+    },
+    {
+        "id": 4115,
+        "numero": 6,
+        "titulo": "O Garoto que Nasceu com Tudo",
+        "sinopse": "Antes do torneio final do Festival Esportivo, Izuku conhece melhor o passado de Shoto Todoroki e os conflitos de sua família.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep6.jpg",
+        "dataExibicao": "2017-05-06"
+    },
+    {
+        "id": 4116,
+        "numero": 7,
+        "titulo": "Vitória ou Derrota",
+        "sinopse": "Izuku enfrenta Shinso na primeira luta do torneio e precisa encontrar uma forma de superar a poderosa Individualidade de controle mental do adversário.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep7.jpg",
+        "dataExibicao": "2017-05-13"
+    },
+    {
+        "id": 4117,
+        "numero": 8,
+        "titulo": "Avancem, Desafiantes!",
+        "sinopse": "As lutas da primeira rodada continuam, com os estudantes dando tudo de si por uma vaga nas semifinais do torneio.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep8.jpg",
+        "dataExibicao": "2017-05-20"
+    },
+    {
+        "id": 4118,
+        "numero": 9,
+        "titulo": "Bakugo vs. Uraraka",
+        "sinopse": "Mesmo diante da enorme diferença de poder, Uraraka coloca em prática uma estratégia ousada para enfrentar Bakugo.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep9.jpg",
+        "dataExibicao": "2017-05-27"
+    },
+    {
+        "id": 4119,
+        "numero": 10,
+        "titulo": "Shoto Todoroki: A Origem",
+        "sinopse": "Midoriya enfrenta Todoroki em uma batalha intensa e o desafia a aceitar quem realmente é e usar todo o seu poder.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep10.jpg",
+        "dataExibicao": "2017-06-03"
+    },
+    {
+        "id": 4120,
+        "numero": 11,
+        "titulo": "Lute, Iida",
+        "sinopse": "Iida enfrenta Todoroki nas semifinais do Festival Esportivo, colocando sua velocidade à prova contra o domínio do gelo e do fogo.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep11.jpg",
+        "dataExibicao": "2017-06-10"
+    },
+    {
+        "id": 4121,
+        "numero": 12,
+        "titulo": "Todoroki vs. Bakugo",
+        "sinopse": "A grande final do Festival Esportivo coloca Todoroki e Bakugo frente a frente na disputa pelo título de campeão do primeiro ano.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep12.jpg",
+        "dataExibicao": "2017-06-17"
+    },
+    {
+        "id": 4122,
+        "numero": 13,
+        "titulo": "Hora de Escolher os Nomes",
+        "sinopse": "Após o Festival Esportivo, os alunos da Classe 1-A escolhem seus nomes de herói antes de iniciarem seus estágios profissionais.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep13.jpg",
+        "dataExibicao": "2017-06-24"
+    },
+    {
+        "id": 4123,
+        "numero": 14,
+        "titulo": "Estranho! Surge Gran Torino",
+        "sinopse": "Os estágios começam, e Izuku inicia um treinamento especial com Gran Torino, antigo mentor de All Might.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep14.jpg",
+        "dataExibicao": "2017-07-08"
+    },
+    {
+        "id": 4124,
+        "numero": 15,
+        "titulo": "Midoriya e Shigaraki",
+        "sinopse": "Enquanto os alunos se adaptam aos estágios, Izuku faz avanços no domínio do One For All e acaba encontrando Shigaraki inesperadamente.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep15.jpg",
+        "dataExibicao": "2017-07-15"
+    },
+    {
+        "id": 4125,
+        "numero": 16,
+        "titulo": "Assassino de Heróis: Stain vs. Estudantes da U.A.",
+        "sinopse": "Stain volta a agir em Hosu, e alguns alunos da U.A. acabam envolvidos em um confronto direto contra o temido Assassino de Heróis.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep16.jpg",
+        "dataExibicao": "2017-07-22"
+    },
+    {
+        "id": 4126,
+        "numero": 17,
+        "titulo": "Clímax",
+        "sinopse": "Midoriya, Iida e Todoroki unem forças para enfrentar Stain enquanto os heróis profissionais combatem os Nomus em Hosu.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep17.jpg",
+        "dataExibicao": "2017-07-29"
+    },
+    {
+        "id": 4127,
+        "numero": 18,
+        "titulo": "As Consequências do Assassino de Heróis: Stain",
+        "sinopse": "Após a captura de Stain, seus ideais começam a influenciar criminosos por todo o país, dando início a uma nova ameaça.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep18.jpg",
+        "dataExibicao": "2017-08-05"
+    },
+    {
+        "id": 4128,
+        "numero": 19,
+        "titulo": "Os Estágios de Todos",
+        "sinopse": "Enquanto Izuku, Iida e Todoroki se recuperam, os demais alunos da Classe 1-A continuam evoluindo em seus estágios com heróis profissionais.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep19.jpg",
+        "dataExibicao": "2017-08-12"
+    },
+    {
+        "id": 4129,
+        "numero": 20,
+        "titulo": "Escute Bem! Uma História do Passado",
+        "sinopse": "All Might revela a Izuku detalhes importantes sobre a origem e a história do One For All.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep20.jpg",
+        "dataExibicao": "2017-08-19"
+    },
+    {
+        "id": 4130,
+        "numero": 21,
+        "titulo": "Preparem-se para as Provas Finais",
+        "sinopse": "As provas finais se aproximam, e os alunos descobrem que terão desafios práticos muito mais difíceis do que esperavam.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep21.jpg",
+        "dataExibicao": "2017-09-02"
+    },
+    {
+        "id": 4131,
+        "numero": 22,
+        "titulo": "Yaoyorozu: Ascensão",
+        "sinopse": "Yaoyorozu precisa superar suas inseguranças durante o exame prático ao enfrentar um dos professores mais poderosos da U.A.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep22.jpg",
+        "dataExibicao": "2017-09-09"
+    },
+    {
+        "id": 4132,
+        "numero": 23,
+        "titulo": "Removendo as Aparências",
+        "sinopse": "Os exames práticos continuam, obrigando os estudantes da Classe 1-A a superar seus medos e limitações para alcançar a aprovação.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep23.jpg",
+        "dataExibicao": "2017-09-16"
+    },
+    {
+        "id": 4133,
+        "numero": 24,
+        "titulo": "Katsuki Bakugo: A Origem",
+        "sinopse": "Chega a vez de Izuku e Bakugo enfrentarem All Might no exame prático, obrigando os rivais a cooperarem para sobreviver.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep24.jpg",
+        "dataExibicao": "2017-09-23"
+    },
+    {
+        "id": 4134,
+        "numero": 25,
+        "titulo": "Encontro",
+        "sinopse": "Após concluírem as provas finais, os alunos compram equipamentos para o acampamento de treinamento, mas Izuku acaba tendo um encontro inesperado com um vilão.",
+        "temporadaId": 2,
+        "animeId": 141,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t2/ep25.jpg",
+        "dataExibicao": "2017-09-30"
     }
 ]
