@@ -42234,5 +42234,215 @@
         "animeId": 145,
         "imagemUrl": "../../images/episodios/my-hero-academia/t6/ep25.jpg",
         "dataExibicao": "2023-03-25"
+    },
+    {
+        "id": 4235,
+        "numero": 1,
+        "titulo": "Bem na Hora! Uma Grande Heroína do Oeste",
+        "sinopse": "Enquanto criminosos fugitivos causam caos no Japão, Star and Stripe viaja dos Estados Unidos para ajudar, mas encontra Shigaraki em seu caminho.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep1.jpg",
+        "dataExibicao": "2024-05-04"
+    },
+    {
+        "id": 4236,
+        "numero": 2,
+        "titulo": "Espectro",
+        "sinopse": "A batalha entre Star and Stripe e Shigaraki chega ao fim, mas a heroína revela seu último trunfo usando o poder de New Order.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep2.jpg",
+        "dataExibicao": "2024-05-11"
+    },
+    {
+        "id": 4237,
+        "numero": 3,
+        "titulo": "Vilão",
+        "sinopse": "Após perder diversos Quirks, Shigaraki e All For One preparam seu próximo passo, enquanto a identidade do traidor da U.A. vem à tona.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep3.jpg",
+        "dataExibicao": "2024-05-18"
+    },
+    {
+        "id": 4238,
+        "numero": 4,
+        "titulo": "A História de Como Todos Nós nos Tornamos Heróis",
+        "sinopse": "Mesmo acreditando ser um vilão por causa de All For One, Aoyama recebe de Deku a chance de seguir o caminho de um verdadeiro herói.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep4.jpg",
+        "dataExibicao": "2024-05-25"
+    },
+    {
+        "id": 4239,
+        "numero": 5,
+        "titulo": "Decepcionar Você",
+        "sinopse": "Às vésperas da batalha decisiva, Deku é surpreendido por um encontro com Aoyama, que aparentemente deveria estar preso.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep5.jpg",
+        "dataExibicao": "2024-06-01"
+    },
+    {
+        "id": 4240,
+        "numero": 6,
+        "titulo": "Divisão",
+        "sinopse": "O confronto final entre heróis e vilões começa, com All Might e seus aliados colocando em prática um plano que divide os combates por todo o Japão.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep6.jpg",
+        "dataExibicao": "2024-06-08"
+    },
+    {
+        "id": 4241,
+        "numero": 7,
+        "titulo": "Inflação",
+        "sinopse": "Mesmo sem seus Quirks, Shigaraki revela uma força monstruosa. Enquanto isso, Deku é separado de seus aliados e Todoroki enfrenta Dabi.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep7.jpg",
+        "dataExibicao": "2024-06-15"
+    },
+    {
+        "id": 4242,
+        "numero": 8,
+        "titulo": "Duas Chamas Ardentes",
+        "sinopse": "O passado de Toya Todoroki é revelado enquanto Shoto utiliza uma nova técnica para deter as devastadoras chamas azuis de Dabi.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep8.jpg",
+        "dataExibicao": "2024-06-22"
+    },
+    {
+        "id": 4243,
+        "numero": 9,
+        "titulo": "Figurantes",
+        "sinopse": "Após a derrota de Dabi, Endeavor e Hawks enfrentam All For One enquanto a esperança dos heróis é renovada.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep9.jpg",
+        "dataExibicao": "2024-06-29"
+    },
+    {
+        "id": 4244,
+        "numero": 10,
+        "titulo": "Herói Ferido, Mas Ainda Ardendo!",
+        "sinopse": "Mesmo gravemente feridos, Endeavor, Hawks, Jiro e Tokoyami continuam lutando contra All For One sem desistir.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep10.jpg",
+        "dataExibicao": "2024-07-13"
+    },
+    {
+        "id": 4245,
+        "numero": 11,
+        "titulo": "A Luz se Transforma em Chuva",
+        "sinopse": "Bakugo é levado ao limite contra Shigaraki enquanto os Três Grandes da U.A. entram em ação para protegê-lo.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep11.jpg",
+        "dataExibicao": "2024-07-20"
+    },
+    {
+        "id": 4246,
+        "numero": 12,
+        "titulo": "Os Que Defendem, Os Que Violam",
+        "sinopse": "Mesmo após Bakugo ser gravemente ferido, os heróis continuam resistindo aos ataques dos vilões em todas as frentes.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep12.jpg",
+        "dataExibicao": "2024-08-03"
+    },
+    {
+        "id": 4247,
+        "numero": 13,
+        "titulo": "Uma Corrente de Eventos Através das Eras",
+        "sinopse": "Deku finalmente alcança Shigaraki e inicia o confronto decisivo ao encontrar seus aliados derrotados.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep13.jpg",
+        "dataExibicao": "2024-08-17"
+    },
+    {
+        "id": 4248,
+        "numero": 14,
+        "titulo": "Ao Lado de Shoji",
+        "sinopse": "Shoji enfrenta Spinner e tenta impedir que o ressentimento dos heteromorfos destrua o Hospital Central.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep14.jpg",
+        "dataExibicao": "2024-08-24"
+    },
+    {
+        "id": 4249,
+        "numero": 15,
+        "titulo": "Efeito Borboleta",
+        "sinopse": "Enquanto Spinner tenta despertar Kurogiri, Toga revela sua arma secreta durante a batalha contra Ochaco.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep15.jpg",
+        "dataExibicao": "2024-08-31"
+    },
+    {
+        "id": 4250,
+        "numero": 16,
+        "titulo": "A Corrente Até Aqui",
+        "sinopse": "Com o exército infinito de Twice e o poder de Shigaraki, os heróis entram em desespero até receberem ajuda inesperada.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep16.jpg",
+        "dataExibicao": "2024-09-07"
+    },
+    {
+        "id": 4251,
+        "numero": 17,
+        "titulo": "Esperanças",
+        "sinopse": "Gentle, La Brava e Lady Nagant unem forças aos heróis enquanto Deku enfrenta Shigaraki e All For One continua devastando Gunga.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep17.jpg",
+        "dataExibicao": "2024-09-14"
+    },
+    {
+        "id": 4252,
+        "numero": 18,
+        "titulo": "O Mundo é Pequeno",
+        "sinopse": "Os estudantes da Shiketsu chegam ao campo de batalha e reforçam a luta contra All For One, que continua rejuvenescendo e ficando mais poderoso.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep18.jpg",
+        "dataExibicao": "2024-09-21"
+    },
+    {
+        "id": 4253,
+        "numero": 19,
+        "titulo": "Eu Estou Aqui",
+        "sinopse": "All For One avança rumo a Shigaraki enquanto All Might entra em combate para mudar o rumo da batalha.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep19.jpg",
+        "dataExibicao": "2024-09-28"
+    },
+    {
+        "id": 4254,
+        "numero": 20,
+        "titulo": "O Ego de uma Garota",
+        "sinopse": "Ochaco tenta alcançar Toga com suas palavras enquanto enfrenta a ameaça do exército infinito de Twice.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep20.jpg",
+        "dataExibicao": "2024-10-05"
+    },
+    {
+        "id": 4255,
+        "numero": 21,
+        "titulo": "Uma Batalha Sem Individualidade",
+        "sinopse": "Após o confronto com Ochaco, Toga toma uma decisão inesperada, enquanto All Might enfrenta All For One usando uma armadura especial.",
+        "temporadaId": 7,
+        "animeId": 146,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t7/ep21.jpg",
+        "dataExibicao": "2024-10-12"
     }
 ]
