@@ -41734,5 +41734,255 @@
         "animeId": 143,
         "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep25.jpg",
         "dataExibicao": "2020-04-04"
+    },
+    {
+        "id": 4185,
+        "numero": 1,
+        "titulo": "Todos a Postos! Classe 1-A",
+        "sinopse": "Há um treinamento de emergência na U.A., e a Classe 1-A é convocada para entrar em ação.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep1.jpg",
+        "dataExibicao": "2021-03-27"
+    },
+    {
+        "id": 4186,
+        "numero": 2,
+        "titulo": "Vestígios",
+        "sinopse": "Após a batalha contra um Nomu, Hawks e Endeavor retornam à rotina enquanto Izuku tem um sonho envolvendo o One For All.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep2.jpg",
+        "dataExibicao": "2021-04-03"
+    },
+    {
+        "id": 4187,
+        "numero": 3,
+        "titulo": "Confronto! Classe A vs. Classe B!",
+        "sinopse": "As Classes A e B iniciam um treinamento conjunto de combate com a participação de um convidado especial.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep3.jpg",
+        "dataExibicao": "2021-04-10"
+    },
+    {
+        "id": 4188,
+        "numero": 4,
+        "titulo": "Faça Acontecer, Shinso!",
+        "sinopse": "A Classe A tenta aproveitar ao máximo as habilidades de Shinso e seu novo equipamento durante o primeiro confronto.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep4.jpg",
+        "dataExibicao": "2021-04-17"
+    },
+    {
+        "id": 4189,
+        "numero": 5,
+        "titulo": "Operação Novos Movimentos Improvisados",
+        "sinopse": "Tokoyami enfrenta Kuroiro em um duelo onde a escuridão é a principal arma de ambos.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep5.jpg",
+        "dataExibicao": "2021-04-24"
+    },
+    {
+        "id": 4190,
+        "numero": 6,
+        "titulo": "Previsão",
+        "sinopse": "Separada de sua equipe, Yaoyorozu precisa demonstrar liderança durante o segundo confronto entre as turmas.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep6.jpg",
+        "dataExibicao": "2021-05-01"
+    },
+    {
+        "id": 4191,
+        "numero": 7,
+        "titulo": "Partida 3",
+        "sinopse": "A terceira batalha coloca a equipe da Classe B, liderada por Honenuki, contra um grupo equilibrado da Classe A.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep7.jpg",
+        "dataExibicao": "2021-05-08"
+    },
+    {
+        "id": 4192,
+        "numero": 8,
+        "titulo": "Conclusão da Partida 3",
+        "sinopse": "O terceiro confronto chega ao fim em uma intensa disputa de resistência entre Todoroki e Tetsutetsu.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep8.jpg",
+        "dataExibicao": "2021-05-15"
+    },
+    {
+        "id": 4193,
+        "numero": 9,
+        "titulo": "Quem Madruga!",
+        "sinopse": "Bakugo surpreende a todos ao mostrar sua evolução durante a quarta batalha entre as equipes.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep9.jpg",
+        "dataExibicao": "2021-05-22"
+    },
+    {
+        "id": 4194,
+        "numero": 10,
+        "titulo": "Aquilo Que Foi Herdado",
+        "sinopse": "Midoriya enfrenta Shinso novamente e desperta um novo poder ligado ao One For All.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep10.jpg",
+        "dataExibicao": "2021-05-29"
+    },
+    {
+        "id": 4195,
+        "numero": 11,
+        "titulo": "Nossa Batalha",
+        "sinopse": "O confronto final entre as Classes A e B se transforma em uma batalha intensa até o último instante.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep11.jpg",
+        "dataExibicao": "2021-06-05"
+    },
+    {
+        "id": 4196,
+        "numero": 12,
+        "titulo": "O Novo Poder e All For One",
+        "sinopse": "Após o treinamento conjunto, Midoriya, All Might e Bakugo investigam o novo poder despertado pelo One For All.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep12.jpg",
+        "dataExibicao": "2021-06-12"
+    },
+    {
+        "id": 4197,
+        "numero": 13,
+        "titulo": "Feliz Natal!",
+        "sinopse": "A Classe 1-A celebra o Natal na U.A. com uma festa após um período de intensos treinamentos.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep13.jpg",
+        "dataExibicao": "2021-06-19"
+    },
+    {
+        "id": 4198,
+        "numero": 14,
+        "titulo": "Rumo à Agência de Endeavor!",
+        "sinopse": "Midoriya, Bakugo e Todoroki iniciam seus estágios na agência de Endeavor enquanto Hawks age de maneira suspeita.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep14.jpg",
+        "dataExibicao": "2021-06-26"
+    },
+    {
+        "id": 4199,
+        "numero": 15,
+        "titulo": "Uma Coisa de Cada Vez",
+        "sinopse": "Endeavor orienta seus estagiários sobre como evoluir suas habilidades enquanto os vilões continuam seus planos.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep15.jpg",
+        "dataExibicao": "2021-07-10"
+    },
+    {
+        "id": 4200,
+        "numero": 16,
+        "titulo": "Há Quanto Tempo, Selkie",
+        "sinopse": "Ryukyu e seus estagiários unem forças com Selkie em uma missão marítima.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep16.jpg",
+        "dataExibicao": "2021-07-17"
+    },
+    {
+        "id": 4201,
+        "numero": 17,
+        "titulo": "A Família Todoroki Infernal",
+        "sinopse": "A família Todoroki se reúne para um jantar que traz à tona conflitos e sentimentos do passado.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep17.jpg",
+        "dataExibicao": "2021-07-24"
+    },
+    {
+        "id": 4202,
+        "numero": 18,
+        "titulo": "O Imperdoado",
+        "sinopse": "Um antigo admirador de Endeavor aparece para resolver assuntos inacabados com o herói número um.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep18.jpg",
+        "dataExibicao": "2021-07-31"
+    },
+    {
+        "id": 4203,
+        "numero": 19,
+        "titulo": "Mais Herói do que Qualquer Um",
+        "sinopse": "Aizawa e Present Mic interrogam Kurogiri após uma descoberta surpreendente sobre sua verdadeira identidade.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep19.jpg",
+        "dataExibicao": "2021-08-14"
+    },
+    {
+        "id": 4204,
+        "numero": 20,
+        "titulo": "Minha Academia de Vilões",
+        "sinopse": "A Liga dos Vilões ganha destaque enquanto Shigaraki começa a encontrar um novo propósito.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep20.jpg",
+        "dataExibicao": "2021-08-21"
+    },
+    {
+        "id": 4205,
+        "numero": 21,
+        "titulo": "Festa do Renascimento",
+        "sinopse": "A Liga dos Vilões enfrenta o Exército de Libertação Meta enquanto aguarda o despertar de Gigantomachia.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep21.jpg",
+        "dataExibicao": "2021-08-28"
+    },
+    {
+        "id": 4206,
+        "numero": 22,
+        "titulo": "O Desfile do Homem Triste",
+        "sinopse": "Twice supera seus traumas do passado durante a batalha para proteger Toga.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep22.jpg",
+        "dataExibicao": "2021-09-04"
+    },
+    {
+        "id": 4207,
+        "numero": 23,
+        "titulo": "Tenko Shimura: Origem",
+        "sinopse": "O passado de Tenko Shimura é revelado enquanto Shigaraki enfrenta Re-Destro.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep23.jpg",
+        "dataExibicao": "2021-09-11"
+    },
+    {
+        "id": 4208,
+        "numero": 24,
+        "titulo": "Tomura Shigaraki: Origem",
+        "sinopse": "Shigaraki relembra seu primeiro encontro com All For One durante a batalha decisiva contra Re-Destro.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep24.jpg",
+        "dataExibicao": "2021-09-18"
+    },
+    {
+        "id": 4209,
+        "numero": 25,
+        "titulo": "O Alto e Profundo Céu Azul",
+        "sinopse": "Heróis e vilões se preparam para a guerra iminente enquanto a Classe 1-A encerra seu primeiro ano na U.A.",
+        "temporadaId": 5,
+        "animeId": 144,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t5/ep25.jpg",
+        "dataExibicao": "2021-09-25"
     }
 ]
