@@ -255,7 +255,7 @@
         "temporada": 0,
         "statusId": 6,
         "ano": 2025,
-        "quantidadeEpisodios": 1,
+        "quantidadeEpisodios": 2,
         "sinopse": "Filme compilatório que reúne o arco Inventário Oculto / Morte Prematura, mostrando a juventude de Satoru Gojo e Suguru Geto e os acontecimentos que mudaram para sempre o mundo Jujutsu.",
         "capaUrl": "images/capas/jujutsu-kaisen-inventario-oculto.jpg"
     },
@@ -307,7 +307,7 @@
         "temporada": 1,
         "statusId": 1,
         "ano": 2019,
-        "quantidadeEpisodios": 24,
+        "quantidadeEpisodios": 23,
         "sinopse": "Thorfinn cresce em meio à guerra entre vikings após testemunhar a morte de seu pai. Consumido pelo desejo de vingança contra Askeladd, ele se junta ao grupo de mercenários enquanto o conflito político pela Inglaterra se intensifica.",
         "capaUrl": "images/capas/vinland-saga-t1.jpg"
     },
@@ -320,7 +320,7 @@
         "temporada": 2,
         "statusId": 1,
         "ano": 2023,
-        "quantidadeEpisodios": 24,
+        "quantidadeEpisodios": 25,
         "sinopse": "Agora escravizado e vivendo em uma fazenda, Thorfinn enfrenta as consequências de sua vida anterior marcada pela violência. Ao lado de Einar, ele busca redenção e um novo propósito em um mundo brutal.",
         "capaUrl": "images/capas/vinland-saga-t2.jpg"
     },
@@ -359,7 +359,7 @@
         "temporada": 1,
         "statusId": 1,
         "ano": 1999,
-        "quantidadeEpisodios": 62,
+        "quantidadeEpisodios": 72,
         "sinopse": "Gon Freecss descobre que seu pai é um lendário Hunter e decide seguir seus passos. Durante o Exame Hunter, ele conhece aliados e enfrenta desafios perigosos em um mundo cheio de mistérios.",
         "capaUrl": "images/capas/hunter-x-hunter-1999.jpg"
     },
@@ -515,7 +515,7 @@
         "temporada": 2,
         "statusId": 1,
         "ano": 2019,
-        "quantidadeEpisodios": 13,
+        "quantidadeEpisodios": 10,
         "sinopse": "Mob continua seu desenvolvimento emocional enquanto enfrenta novos desafios espirituais e inimigos poderosos, aprendendo mais sobre si mesmo e suas habilidades.",
         "capaUrl": "images/capas/mob-psycho-100-t2.jpg"
     },
@@ -580,7 +580,7 @@
         "temporada": 4,
         "statusId": 1,
         "ano": 2020,
-        "quantidadeEpisodios": 12,
+        "quantidadeEpisodios": 23,
         "sinopse": "A guerra no Underworld se intensifica enquanto forças humanas e sombrias entram em confronto, decidindo o destino do mundo virtual. Kirito e seus aliados enfrentam desafios épicos para proteger aqueles que amam e salvar o Underworld da destruição iminente.",
         "capaUrl": "images/capas/sword-art-online-t4.jpg"
     },
@@ -762,7 +762,7 @@
         "temporada": 8,
         "statusId": 1,
         "ano": 2005,
-        "quantidadeEpisodios": 35,
+        "quantidadeEpisodios": 20,
         "sinopse": "Os Chapéus de Palha chegam à cidade aquática Water Seven procurando alguém para reparar o Going Merry. O grupo enfrenta a Franky Family, conflitos internos e uma grande conspiração envolvendo o Governo Mundial.",
         "capaUrl": "images/capas/one-piece-t8.jpg"
     },
@@ -788,7 +788,7 @@
         "temporada": 10,
         "statusId": 1,
         "ano": 2007,
-        "quantidadeEpisodios": 45,
+        "quantidadeEpisodios": 69,
         "sinopse": "Durante a passagem pelo Florian Triangle, os Chapéus de Palha encontram a ilha fantasma Thriller Bark e enfrentam Gecko Moria, um dos Sete Corsários, que rouba suas sombras usando os poderes de sua Akuma no Mi.",
         "capaUrl": "images/capas/one-piece-t10.jpg"
     },
@@ -814,7 +814,7 @@
         "temporada": 12,
         "statusId": 1,
         "ano": 2009,
-        "quantidadeEpisodios": 14,
+        "quantidadeEpisodios": 24,
         "sinopse": "Após ser separado de sua tripulação por Kuma, Luffy chega à ilha Amazon Lily, um território habitado apenas por mulheres. Lá ele conhece Boa Hancock e descobre que seu irmão Ace está em perigo.",
         "capaUrl": "images/capas/one-piece-t12.jpg"
     },
@@ -827,7 +827,7 @@
         "temporada": 13,
         "statusId": 1,
         "ano": 2009,
-        "quantidadeEpisodios": 101,
+        "quantidadeEpisodios": 91,
         "sinopse": "Luffy invade a prisão submarina Impel Down para salvar seu irmão Ace. Após falhar em impedir sua transferência, ele segue para Marineford, onde acontece uma das maiores guerras envolvendo piratas, marinheiros e o Governo Mundial.",
         "capaUrl": "images/capas/one-piece-t13.jpg"
     },
@@ -840,7 +840,7 @@
         "temporada": 14,
         "statusId": 1,
         "ano": 2011,
-        "quantidadeEpisodios": 58,
+        "quantidadeEpisodios": 68,
         "sinopse": "Após o reencontro da tripulação, os Chapéus de Palha finalmente chegam à Ilha dos Homens-Peixe. Eles descobrem a história de Fisher Tiger e enfrentam conflitos entre humanos e homens-peixe.",
         "capaUrl": "images/capas/one-piece-t14.jpg"
     },
@@ -957,7 +957,7 @@
         "temporada": 23,
         "statusId": 1,
         "ano": 2026,
-        "quantidadeEpisodios": 15,
+        "quantidadeEpisodios": 26,
         "sinopse": "Após escaparem de Egghead, os Chapéus de Palha seguem para Elbaph, a lendária terra dos gigantes. Novas alianças, mistérios antigos e uma grande aventura começam enquanto a tripulação continua sua busca pelo One Piece.",
         "capaUrl": "images/capas/one-piece-t23.jpg"
     },
@@ -1022,7 +1022,7 @@
         "temporada": 5,
         "statusId": 1,
         "ano": 1992,
-        "quantidadeEpisodios": 26,
+        "quantidadeEpisodios": 27,
         "sinopse": "Enquanto a batalha contra os Androides continua, uma nova ameaça surge das sombras. Cell, a criação definitiva do Dr. Gero, busca absorver os androides para alcançar sua forma perfeita.",
         "capaUrl": "images/capas/dragon-ball-z-t5.jpg"
     },
@@ -1035,7 +1035,7 @@
         "temporada": 6,
         "statusId": 1,
         "ano": 1992,
-        "quantidadeEpisodios": 29,
+        "quantidadeEpisodios": 28,
         "sinopse": "Cell alcança sua forma perfeita e cria um torneio para provar seu poder. O destino da humanidade está em jogo enquanto Goku, Gohan e os Guerreiros Z enfrentam o inimigo mais perigoso até então.",
         "capaUrl": "images/capas/dragon-ball-z-t6.jpg"
     },
@@ -1100,7 +1100,7 @@
         "temporada": 2,
         "statusId": 1,
         "ano": 2003,
-        "quantidadeEpisodios": 52,
+        "quantidadeEpisodios": 51,
         "sinopse": "Antes da fase final do Exame Chunin, Naruto recebe um treinamento especial do lendário Sannin Jiraiya. Quando as batalhas retornam, Naruto está preparado, mas Sasuke enfrenta um desafio que pode mudar seu destino. Enquanto isso, um plano sombrio começa a ser colocado em prática e a Vila Oculta da Folha sofre um ataque inesperado.",
         "capaUrl": "images/capas/naruto-t2.jpg"
     },
@@ -1113,7 +1113,7 @@
         "temporada": 3,
         "statusId": 1,
         "ano": 2004,
-        "quantidadeEpisodios": 54,
+        "quantidadeEpisodios": 43,
         "sinopse": "Naruto retorna de seu treinamento ansioso para reencontrar Sasuke, mas seu antigo amigo está focado apenas em sua busca por vingança contra seu irmão mais velho. Consumido pelo desejo de poder, Sasuke acaba sendo atraído pelos seguidores de Orochimaru e abandona a Vila da Folha. Determinado a trazê-lo de volta, Naruto e uma equipe de jovens ninjas partem em uma missão perigosa.",
         "capaUrl": "images/capas/naruto-t3.jpg"
     },
@@ -1386,7 +1386,7 @@
         "temporada": 20,
         "statusId": 1,
         "ano": 2015,
-        "quantidadeEpisodios": 87,
+        "quantidadeEpisodios": 86,
         "sinopse": "Com Naruto e Sasuke à beira da morte, Kakashi e Obito enfrentam Madara, que alcançou o poder dos Seis Caminhos. Guy libera o Oitavo Portão para tentar derrotá-lo, mas Madara ativa o Tsukuyomi Infinito e prende todo o mundo em uma realidade de sonhos. Agora resta descobrir se esse poder pode ser quebrado.",
         "capaUrl": "images/capas/naruto-shippuden-t20.jpg"
     },
@@ -1503,7 +1503,7 @@
         "temporada": 0,
         "statusId": 1,
         "ano": 2015,
-        "quantidadeEpisodios": 1,
+        "quantidadeEpisodios": 8,
         "sinopse": "Ano 2116 – Confiante no sucesso do Sistema Sybil, o governo japonês começa a exportar a tecnologia para outros países. No entanto, quando terroristas estrangeiros começam a burlar a segurança do Sistema e a atacar por dentro, a Inspetora Akane Tsunemori é enviada ao exterior para investigar. Quando sua busca por justiça a coloca em confronto com um antigo aliado, será que ela conseguirá puxar o gatilho?",
         "capaUrl": "images/capas/psycho-pass-filme-1.jpg"
     },
@@ -1789,7 +1789,7 @@
         "temporada": 1,
         "statusId": 2,
         "ano": 2017,
-        "quantidadeEpisodios": 51,
+        "quantidadeEpisodios": 170,
         "sinopse": "Asta e Yuno crescem em um mundo onde magia é tudo, e competem para se tornar o Rei Mago, apesar de Asta não possuir magia. Enquanto enfrentam desafios e inimigos poderosos, eles formam laços de amizade e descobrem segredos sobre seu passado e o mundo mágico. A jornada de Asta e Yuno é uma história de determinação, superação e a busca por seus sonhos em um universo repleto de magia e aventura.",
         "capaUrl": "images/capas/black-clover.jpg"
     },
@@ -1893,7 +1893,7 @@
         "temporada": 7,
         "statusId": 1,
         "ano": 2023,
-        "quantidadeEpisodios": 25,
+        "quantidadeEpisodios": 21,
         "sinopse": "A U.A. é atacada por vilões, e os alunos enfrentam desafios que testam suas habilidades e determinação para se tornarem heróis. Izuku e seus amigos enfrentam a ameaça crescente da Liga dos Vilões, enquanto também lidam com os desafios de seu treinamento e crescimento como heróis. A sétima temporada de My Hero Academia é uma jornada emocionante de ação, amizade e superação.",
         "capaUrl": "images/capas/my-hero-academia-t7.jpg"
     },
@@ -1906,7 +1906,7 @@
         "temporada": 8,
         "statusId": 1,
         "ano": 2024,
-        "quantidadeEpisodios": 25,
+        "quantidadeEpisodios": 11,
         "sinopse": "A U.A. é atacada por vilões, e os alunos enfrentam desafios que testam suas habilidades e determinação para se tornarem heróis. Izuku e seus amigos enfrentam a ameaça crescente da Liga dos Vilões, enquanto também lidam com os desafios de seu treinamento e crescimento como heróis. A oitava temporada de My Hero Academia é uma jornada emocionante de ação, amizade e superação.",
         "capaUrl": "images/capas/my-hero-academia-t8.jpg"
     },
