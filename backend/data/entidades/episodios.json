@@ -40850,9 +40850,139 @@
         "numero": 171,
         "titulo": "Black Clover: A Espada do Rei Mago",
         "sinopse": "Durante um período de paz após a guerra contra o Reino de Spade, Asta e os Cavaleiros Mágicos enfrentam Conrad Leto, um antigo Rei Mago ressuscitado que pretende reconstruir o Reino de Clover à força usando a lendária Espada Imperial.",
-        "temporadaId": 1,
-        "animeId": 138,
+        "temporadaId": 0,
+        "animeId": 139,
         "imagemUrl": "../../images/episodios/black-clover/filme/black-filme.jpg",
         "dataExibicao": "2023-06-16"
+    },
+    {
+        "id": 4097,
+        "numero": 1,
+        "titulo": "Izuku Midoriya: A Origem",
+        "sinopse": "Izuku Midoriya sonha em se tornar um herói, apesar de ter nascido sem Individualidade. Um encontro com All Might pode mudar seu destino para sempre.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep1.jpg",
+        "dataExibicao": "2016-04-03"
+    },
+    {
+        "id": 4098,
+        "numero": 2,
+        "titulo": "O Que É Preciso para Ser um Herói",
+        "sinopse": "Izuku descobre o grande segredo de All Might, mas um novo ataque coloca novamente o herói número um à prova antes que ele possa processar tudo.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep2.jpg",
+        "dataExibicao": "2016-04-10"
+    },
+    {
+        "id": 4099,
+        "numero": 3,
+        "titulo": "Músculos Rugindo",
+        "sinopse": "All Might diz a Izuku que ele pode se tornar um herói, mas antes disso o garoto precisa provar que possui a determinação necessária.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep3.jpg",
+        "dataExibicao": "2016-04-17"
+    },
+    {
+        "id": 4100,
+        "numero": 4,
+        "titulo": "Linha de Partida",
+        "sinopse": "Durante o exame de admissão da U.A., Izuku enfrenta grandes dificuldades para conseguir pontos e garantir sua vaga na academia de heróis.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep4.jpg",
+        "dataExibicao": "2016-04-24"
+    },
+    {
+        "id": 4101,
+        "numero": 5,
+        "titulo": "O Que Posso Fazer Agora",
+        "sinopse": "No primeiro dia na U.A., Izuku ainda não consegue controlar sua nova Individualidade e precisa enfrentar o rigoroso teste de seu professor.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep5.jpg",
+        "dataExibicao": "2016-05-01"
+    },
+    {
+        "id": 4102,
+        "numero": 6,
+        "titulo": "Exploda de Raiva, Seu Nerd!",
+        "sinopse": "Após sobreviver ao primeiro dia de aula, Izuku participa do treinamento de combate conduzido por All Might ao lado de seus novos colegas.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep6.jpg",
+        "dataExibicao": "2016-05-08"
+    },
+    {
+        "id": 4103,
+        "numero": 7,
+        "titulo": "Deku vs. Kacchan",
+        "sinopse": "Izuku e Uraraka enfrentam Bakugo e Iida em um exercício de combate que colocará à prova suas estratégias e trabalho em equipe.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep7.jpg",
+        "dataExibicao": "2016-05-15"
+    },
+    {
+        "id": 4104,
+        "numero": 8,
+        "titulo": "A Linha de Partida de Bakugo",
+        "sinopse": "Após o treinamento, alunos e professores refletem sobre os resultados das batalhas e definem os próximos passos na formação dos futuros heróis.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep8.jpg",
+        "dataExibicao": "2016-05-22"
+    },
+    {
+        "id": 4105,
+        "numero": 9,
+        "titulo": "Simplesmente Faça o Seu Melhor, Iida!",
+        "sinopse": "A Classe 1-A precisa eleger um representante, mas a disputa entre os alunos logo dá lugar a uma nova surpresa durante as atividades escolares.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep9.jpg",
+        "dataExibicao": "2016-05-29"
+    },
+    {
+        "id": 4106,
+        "numero": 10,
+        "titulo": "Encontro com o Desconhecido",
+        "sinopse": "A Liga dos Vilões invade o Centro de Simulação de Resgate da U.A., obrigando os alunos da Classe 1-A a enfrentarem uma ameaça real.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep10.jpg",
+        "dataExibicao": "2016-06-05"
+    },
+    {
+        "id": 4107,
+        "numero": 11,
+        "titulo": "Fim de Jogo",
+        "sinopse": "Separados pelos vilões, os estudantes da Classe 1-A fazem de tudo para sobreviver enquanto aguardam a chegada de reforços.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep11.jpg",
+        "dataExibicao": "2016-06-12"
+    },
+    {
+        "id": 4108,
+        "numero": 12,
+        "titulo": "All Might",
+        "sinopse": "All Might enfrenta Nomu em uma batalha decisiva para proteger seus alunos e impedir os planos da Liga dos Vilões.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep12.jpg",
+        "dataExibicao": "2016-06-19"
+    },
+    {
+        "id": 4109,
+        "numero": 13,
+        "titulo": "Em Cada Um de Nossos Corações",
+        "sinopse": "Após o incidente na U.A., Izuku e All Might refletem sobre os acontecimentos, enquanto a Liga dos Vilões começa a preparar seu próximo movimento.",
+        "temporadaId": 1,
+        "animeId": 140,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t1/ep13.jpg",
+        "dataExibicao": "2016-06-26"
     }
 ]
