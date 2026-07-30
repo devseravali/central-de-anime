@@ -42554,5 +42554,45 @@
         "animeId": 147,
         "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep11.jpg",
         "dataExibicao": "2025-12-13"
+    },
+    {
+        "id": 4267,
+        "numero": 1,
+        "titulo": "My Hero Academia: Heroes Rising",
+        "sinopse": "A Classe 1-A assume a proteção da pacífica Ilha Nabu, mas precisa enfrentar Nine, um vilão extremamente poderoso que ameaça destruir tudo e coloca Deku e seus amigos diante de sua maior batalha até então.",
+        "temporadaId": 0,
+        "animeId": 148,
+        "imagemUrl": "../../images/filmes/my-hero-academia-heroes-rising.jpg",
+        "dataExibicao": "2019-12-20"
+    },
+    {
+        "id": 4268,
+        "numero": 1,
+        "titulo": "My Hero Academia: World Heroes' Mission",
+        "sinopse": "Deku, Bakugo e Todoroki participam de uma missão internacional para impedir a organização Humarise de exterminar pessoas com individualidades e salvar o mundo de uma ameaça global.",
+        "temporadaId": 0,
+        "animeId": 149,
+        "imagemUrl": "../../images/filmes/my-hero-academia-world-heroes-mission.jpg",
+        "dataExibicao": "2021-08-06"
+    },
+    {
+        "id": 4269,
+        "numero": 1,
+        "titulo": "My Hero Academia: Two Heroes",
+        "sinopse": "All Might convida Deku para a Ilha I, onde um ataque terrorista coloca heróis e cientistas em perigo. Juntos, eles precisam impedir um plano que ameaça a segurança mundial.",
+        "temporadaId": 0,
+        "animeId": 150,
+        "imagemUrl": "../../images/filmes/my-hero-academia-two-heroes.jpg",
+        "dataExibicao": "2018-08-03"
+    },
+    {
+        "id": 4270,
+        "numero": 1,
+        "titulo": "My Hero Academia: You're Next",
+        "sinopse": "Após a guerra contra os vilões, Deku e seus aliados enfrentam Dark Might, um impostor que tenta substituir o verdadeiro Símbolo da Paz e mergulhar o mundo no caos.",
+        "temporadaId": 0,
+        "animeId": 151,
+        "imagemUrl": "../../images/filmes/my-hero-academia-youre-next.jpg",
+        "dataExibicao": "2024-08-02"
     }
 ]
