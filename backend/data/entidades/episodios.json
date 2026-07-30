@@ -41484,5 +41484,255 @@
         "animeId": 142,
         "imagemUrl": "../../images/episodios/my-hero-academia/t3/ep25.jpg",
         "dataExibicao": "2018-09-29"
+    },
+    {
+        "id": 4160,
+        "numero": 1,
+        "titulo": "A Verdade Sobre a Classe 1-A da U.A.",
+        "sinopse": "Após a aposentadoria de All Might, o repórter independente Taneo Tokuda visita os dormitórios para conhecer de perto a famosa Classe 1-A.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep1.jpg",
+        "dataExibicao": "2019-10-12"
+    },
+    {
+        "id": 4161,
+        "numero": 2,
+        "titulo": "Overhaul",
+        "sinopse": "Overhaul procura a Liga dos Vilões, enquanto Midoriya busca uma agência onde possa realizar seu estágio profissional.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep2.jpg",
+        "dataExibicao": "2019-10-19"
+    },
+    {
+        "id": 4162,
+        "numero": 3,
+        "titulo": "Garoto Encontra...",
+        "sinopse": "Izuku enfrenta Sir Nighteye para conquistar uma vaga em sua agência, mas descobre que ele tinha outro sucessor em mente para All Might.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep3.jpg",
+        "dataExibicao": "2019-10-26"
+    },
+    {
+        "id": 4163,
+        "numero": 4,
+        "titulo": "Desafiando o Destino",
+        "sinopse": "Confuso com tudo o que descobriu durante o estágio, Izuku conversa com All Might e aprende mais sobre o destino de seu mentor.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep4.jpg",
+        "dataExibicao": "2019-11-09"
+    },
+    {
+        "id": 4164,
+        "numero": 5,
+        "titulo": "Vamos Lá, Red Riot!",
+        "sinopse": "Os alunos da U.A. acompanham seus heróis profissionais em missões reais e acabam envolvidos em perigosos confrontos.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep5.jpg",
+        "dataExibicao": "2019-11-16"
+    },
+    {
+        "id": 4165,
+        "numero": 6,
+        "titulo": "Uma Conversa Desagradável",
+        "sinopse": "Os estagiários participam de uma reunião liderada por Sir Nighteye e deixam o encontro ainda mais determinados a salvar Eri.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep6.jpg",
+        "dataExibicao": "2019-11-23"
+    },
+    {
+        "id": 4166,
+        "numero": 7,
+        "titulo": "Vão!!",
+        "sinopse": "Quando os heróis finalmente localizam Eri, a operação de resgate entra em ação e todos avançam para a ofensiva.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep7.jpg",
+        "dataExibicao": "2019-11-30"
+    },
+    {
+        "id": 4167,
+        "numero": 8,
+        "titulo": "Suneater dos Três Grandes",
+        "sinopse": "Tamaki Amajiki enfrenta sozinho membros dos Oito Balas da Shie Hassaikai para abrir caminho para os demais heróis.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep8.jpg",
+        "dataExibicao": "2019-12-07"
+    },
+    {
+        "id": 4168,
+        "numero": 9,
+        "titulo": "Red Riot",
+        "sinopse": "Separado do grupo, Kirishima enfrenta seus medos do passado enquanto luta ao lado de Fat Gum contra inimigos poderosos.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep9.jpg",
+        "dataExibicao": "2019-12-14"
+    },
+    {
+        "id": 4169,
+        "numero": 10,
+        "titulo": "Esquadrão Temporário",
+        "sinopse": "A Liga dos Vilões interfere na operação contra a Shie Hassaikai enquanto os heróis seguem avançando para resgatar Eri.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep10.jpg",
+        "dataExibicao": "2019-12-21"
+    },
+    {
+        "id": 4170,
+        "numero": 11,
+        "titulo": "Lemillion",
+        "sinopse": "Mirio Togata alcança Overhaul antes dos demais e trava uma batalha desesperada para proteger Eri.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep11.jpg",
+        "dataExibicao": "2019-12-28"
+    },
+    {
+        "id": 4171,
+        "numero": 12,
+        "titulo": "Esperança Inesperada",
+        "sinopse": "Midoriya, Eraser Head e Sir Nighteye chegam ao confronto decisivo e encontram Mirio completamente exausto após sua luta.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep12.jpg",
+        "dataExibicao": "2020-01-04"
+    },
+    {
+        "id": 4172,
+        "numero": 13,
+        "titulo": "100% Infinito",
+        "sinopse": "A batalha contra Overhaul atinge seu ápice quando Midoriya libera todo o poder do One For All para salvar Eri.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep13.jpg",
+        "dataExibicao": "2020-01-11"
+    },
+    {
+        "id": 4173,
+        "numero": 14,
+        "titulo": "Um Futuro Brilhante",
+        "sinopse": "Após a derrota da Shie Hassaikai, a Liga dos Vilões intercepta o transporte de Overhaul e muda completamente seu destino.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep14.jpg",
+        "dataExibicao": "2020-01-18"
+    },
+    {
+        "id": 4174,
+        "numero": 15,
+        "titulo": "Chamas Ardentes",
+        "sinopse": "Com a missão encerrada, um novo vilão surge enquanto os estudantes refletem sobre o significado de serem futuros heróis.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep15.jpg",
+        "dataExibicao": "2020-01-25"
+    },
+    {
+        "id": 4175,
+        "numero": 16,
+        "titulo": "Conquistem o Coração das Crianças",
+        "sinopse": "Os candidatos à licença provisória enfrentam um desafio inusitado ao tentar conquistar a confiança de um grupo de crianças.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep16.jpg",
+        "dataExibicao": "2020-02-01"
+    },
+    {
+        "id": 4176,
+        "numero": 17,
+        "titulo": "Alívio para os Candidatos à Licença",
+        "sinopse": "Após concluírem o treinamento, a rotina retorna à U.A., mas o comportamento estranho de Aoyama chama a atenção de todos.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep17.jpg",
+        "dataExibicao": "2020-02-08"
+    },
+    {
+        "id": 4177,
+        "numero": 18,
+        "titulo": "Festival Escolar",
+        "sinopse": "Enquanto a U.A. prepara seu festival cultural, Gentle Criminal inicia seus próprios planos e Deku visita Eri no hospital.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep18.jpg",
+        "dataExibicao": "2020-02-15"
+    },
+    {
+        "id": 4178,
+        "numero": 19,
+        "titulo": "Preparar o Festival é a Melhor Parte",
+        "sinopse": "A Classe 1-A organiza sua apresentação para o festival enquanto Gentle Criminal coloca seu plano em prática.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep19.jpg",
+        "dataExibicao": "2020-02-22"
+    },
+    {
+        "id": 4179,
+        "numero": 20,
+        "titulo": "Gold Tips Imperial",
+        "sinopse": "Eri visita a U.A. durante os preparativos para o festival, enquanto Gentle conclui os detalhes de sua grande invasão.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep20.jpg",
+        "dataExibicao": "2020-02-29"
+    },
+    {
+        "id": 4180,
+        "numero": 21,
+        "titulo": "Deku vs. Gentle Criminal",
+        "sinopse": "Ao sair para comprar materiais de última hora, Deku encontra Gentle Criminal e precisa impedir seu plano.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep21.jpg",
+        "dataExibicao": "2020-03-07"
+    },
+    {
+        "id": 4181,
+        "numero": 22,
+        "titulo": "Começa o Festival Escolar!!",
+        "sinopse": "Deku enfrenta Gentle Criminal e La Brava em uma batalha decisiva para garantir que o festival aconteça.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep22.jpg",
+        "dataExibicao": "2020-03-14"
+    },
+    {
+        "id": 4182,
+        "numero": 23,
+        "titulo": "Deixe Fluir! Festival Escolar!",
+        "sinopse": "Após sua luta, Deku corre para alcançar a apresentação da Classe 1-A e proporcionar um momento inesquecível para Eri.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep23.jpg",
+        "dataExibicao": "2020-03-21"
+    },
+    {
+        "id": 4183,
+        "numero": 24,
+        "titulo": "Ranking dos Heróis do Japão",
+        "sinopse": "Os novos rankings oficiais dos heróis japoneses são anunciados, revelando mudanças importantes entre os dez melhores.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep24.jpg",
+        "dataExibicao": "2020-03-28"
+    },
+    {
+        "id": 4184,
+        "numero": 25,
+        "titulo": "Seu Início",
+        "sinopse": "Endeavor enfrenta o poderoso High-End ao lado de Hawks e tem a oportunidade de provar que é digno do título de herói número um.",
+        "temporadaId": 4,
+        "animeId": 143,
+        "imagemUrl": "../../images/episodios/my-hero-academia/t4/ep25.jpg",
+        "dataExibicao": "2020-04-04"
     }
 ]
