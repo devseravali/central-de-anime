@@ -1,0 +1,914 @@
+[
+    {
+        "animeId": 1,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 1,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 2,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 2,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 3,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 3,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 4,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 4,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 5,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 6,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 6,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 7,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 7,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 8,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 9,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 9,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 10,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 11,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 12,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 13,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 13,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 14,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 15,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 16,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 17,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 17,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 18,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 19,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 20,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 21,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 22,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 23,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 24,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 24,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 25,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 26,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 27,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 28,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 29,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 29,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 30,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 31,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 32,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 32,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 33,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 34,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 34,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 35,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 36,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 37,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 38,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 38,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 39,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 40,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 41,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 42,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 42,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 43,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 43,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 44,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 44,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 45,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 45,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 46,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 46,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 47,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 47,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 48,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 49,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 49,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 50,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 51,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 52,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 52,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 53,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 54,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 55,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 56,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 57,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 58,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 59,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 60,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 61,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 62,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 63,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 64,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 65,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 66,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 67,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 68,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 69,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 70,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 71,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 72,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 73,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 74,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 75,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 75,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 76,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 76,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 77,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 77,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 78,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 78,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 79,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 79,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 80,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 80,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 81,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 81,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 82,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 82,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 83,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 83,
+        "plataformaId": 3
+    },
+    {
+        "animeId": 84,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 84,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 85,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 85,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 86,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 86,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 87,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 87,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 88,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 88,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 89,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 89,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 90,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 90,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 91,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 91,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 92,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 92,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 93,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 93,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 94,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 94,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 95,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 95,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 96,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 96,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 97,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 97,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 98,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 98,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 99,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 99,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 100,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 100,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 101,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 101,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 102,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 102,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 103,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 103,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 104,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 104,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 105,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 105,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 106,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 106,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 107,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 107,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 108,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 108,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 109,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 110,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 110,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 111,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 112,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 113,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 114,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 114,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 115,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 116,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 117,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 118,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 119,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 119,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 120,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 121,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 121,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 122,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 123,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 124,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 124,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 125,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 125,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 126,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 127,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 128,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 128,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 129,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 129,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 130,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 130,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 131,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 132,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 132,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 133,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 133,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 134,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 135,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 135,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 136,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 137,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 138,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 138,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 139,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 140,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 140,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 141,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 141,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 142,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 142,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 143,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 143,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 144,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 144,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 145,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 145,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 146,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 146,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 147,
+        "plataformaId": 1
+    },
+    {
+        "animeId": 147,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 148,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 149,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 150,
+        "plataformaId": 2
+    },
+    {
+        "animeId": 151,
+        "plataformaId": 2
+    }
+]
