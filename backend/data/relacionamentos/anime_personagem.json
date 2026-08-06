@@ -842,5 +842,405 @@
     {
         "animeId": 25,
         "personagemId": 63
+    },
+    {
+        "animeId": 26,
+        "personagemId": 64
+    },
+    {
+        "animeId": 26,
+        "personagemId": 65
+    },
+    {
+        "animeId": 26,
+        "personagemId": 66
+    },
+    {
+        "animeId": 26,
+        "personagemId": 67
+    },
+    {
+        "animeId": 26,
+        "personagemId": 68
+    },
+    {
+        "animeId": 27,
+        "personagemId": 64
+    },
+    {
+        "animeId": 27,
+        "personagemId": 65
+    },
+    {
+        "animeId": 27,
+        "personagemId": 66
+    },
+    {
+        "animeId": 27,
+        "personagemId": 67
+    },
+    {
+        "animeId": 27,
+        "personagemId": 68
+    },
+    {
+        "animeId": 28,
+        "personagemId": 69
+    },
+    {
+        "animeId": 28,
+        "personagemId": 70
+    },
+    {
+        "animeId": 28,
+        "personagemId": 71
+    },
+    {
+        "animeId": 28,
+        "personagemId": 72
+    },
+    {
+        "animeId": 28,
+        "personagemId": 73
+    },
+    {
+        "animeId": 28,
+        "personagemId": 74
+    },
+    {
+        "animeId": 28,
+        "personagemId": 75
+    },
+    {
+        "animeId": 28,
+        "personagemId": 76
+    },
+    {
+        "animeId": 28,
+        "personagemId": 77
+    },
+    {
+        "animeId": 28,
+        "personagemId": 78
+    },
+    {
+        "animeId": 28,
+        "personagemId": 79
+    },
+    {
+        "animeId": 28,
+        "personagemId": 80
+    },
+    {
+        "animeId": 28,
+        "personagemId": 81
+    },
+    {
+        "animeId": 28,
+        "personagemId": 82
+    },
+    {
+        "animeId": 29,
+        "personagemId": 69
+    },
+    {
+        "animeId": 29,
+        "personagemId": 70
+    },
+    {
+        "animeId": 29,
+        "personagemId": 71
+    },
+    {
+        "animeId": 29,
+        "personagemId": 72
+    },
+    {
+        "animeId": 29,
+        "personagemId": 73
+    },
+    {
+        "animeId": 29,
+        "personagemId": 74
+    },
+    {
+        "animeId": 29,
+        "personagemId": 75
+    },
+    {
+        "animeId": 29,
+        "personagemId": 76
+    },
+    {
+        "animeId": 29,
+        "personagemId": 77
+    },
+    {
+        "animeId": 29,
+        "personagemId": 78
+    },
+    {
+        "animeId": 29,
+        "personagemId": 79
+    },
+    {
+        "animeId": 29,
+        "personagemId": 80
+    },
+    {
+        "animeId": 29,
+        "personagemId": 81
+    },
+    {
+        "animeId": 29,
+        "personagemId": 82
+    },
+    {
+        "animeId": 30,
+        "personagemId": 69
+    },
+    {
+        "animeId": 30,
+        "personagemId": 70
+    },
+    {
+        "animeId": 30,
+        "personagemId": 71
+    },
+    {
+        "animeId": 30,
+        "personagemId": 72
+    },
+    {
+        "animeId": 30,
+        "personagemId": 73
+    },
+    {
+        "animeId": 30,
+        "personagemId": 74
+    },
+    {
+        "animeId": 30,
+        "personagemId": 75
+    },
+    {
+        "animeId": 30,
+        "personagemId": 76
+    },
+    {
+        "animeId": 30,
+        "personagemId": 77
+    },
+    {
+        "animeId": 30,
+        "personagemId": 78
+    },
+    {
+        "animeId": 30,
+        "personagemId": 79
+    },
+    {
+        "animeId": 30,
+        "personagemId": 80
+    },
+    {
+        "animeId": 30,
+        "personagemId": 81
+    },
+    {
+        "animeId": 30,
+        "personagemId": 82
+    },
+    {
+        "animeId": 31,
+        "personagemId": 69
+    },
+    {
+        "animeId": 31,
+        "personagemId": 70
+    },
+    {
+        "animeId": 31,
+        "personagemId": 71
+    },
+    {
+        "animeId": 31,
+        "personagemId": 72
+    },
+    {
+        "animeId": 31,
+        "personagemId": 73
+    },
+    {
+        "animeId": 31,
+        "personagemId": 74
+    },
+    {
+        "animeId": 31,
+        "personagemId": 75
+    },
+    {
+        "animeId": 31,
+        "personagemId": 76
+    },
+    {
+        "animeId": 31,
+        "personagemId": 77
+    },
+    {
+        "animeId": 31,
+        "personagemId": 78
+    },
+    {
+        "animeId": 31,
+        "personagemId": 79
+    },
+    {
+        "animeId": 31,
+        "personagemId": 80
+    },
+    {
+        "animeId": 31,
+        "personagemId": 81
+    },
+    {
+        "animeId": 31,
+        "personagemId": 82
+    },
+    {
+        "animeId": 32,
+        "personagemId": 83
+    },
+    {
+        "animeId": 32,
+        "personagemId": 84
+    },
+    {
+        "animeId": 32,
+        "personagemId": 85
+    },
+    {
+        "animeId": 32,
+        "personagemId": 86
+    },
+    {
+        "animeId": 32,
+        "personagemId": 87
+    },
+    {
+        "animeId": 32,
+        "personagemId": 88
+    },
+    {
+        "animeId": 33,
+        "personagemId": 83
+    },
+    {
+        "animeId": 33,
+        "personagemId": 84
+    },
+    {
+        "animeId": 33,
+        "personagemId": 85
+    },
+    {
+        "animeId": 33,
+        "personagemId": 86
+    },
+    {
+        "animeId": 33,
+        "personagemId": 87
+    },
+    {
+        "animeId": 33,
+        "personagemId": 88
+    },
+    {
+        "animeId": 34,
+        "personagemId": 89
+    },
+    {
+        "animeId": 34,
+        "personagemId": 90
+    },
+    {
+        "animeId": 34,
+        "personagemId": 91
+    },
+    {
+        "animeId": 34,
+        "personagemId": 92
+    },
+    {
+        "animeId": 34,
+        "personagemId": 93
+    },
+    {
+        "animeId": 34,
+        "personagemId": 94
+    },
+    {
+        "animeId": 34,
+        "personagemId": 95
+    },
+    {
+        "animeId": 35,
+        "personagemId": 89
+    },
+    {
+        "animeId": 35,
+        "personagemId": 90
+    },
+    {
+        "animeId": 35,
+        "personagemId": 91
+    },
+    {
+        "animeId": 35,
+        "personagemId": 92
+    },
+    {
+        "animeId": 35,
+        "personagemId": 93
+    },
+    {
+        "animeId": 35,
+        "personagemId": 94
+    },
+    {
+        "animeId": 35,
+        "personagemId": 95
+    },
+    {
+        "animeId": 36,
+        "personagemId": 96
+    },
+    {
+        "animeId": 36,
+        "personagemId": 97
+    },
+    {
+        "animeId": 36,
+        "personagemId": 98
+    },
+    {
+        "animeId": 36,
+        "personagemId": 99
+    },
+    {
+        "animeId": 37,
+        "personagemId": 96
+    },
+    {
+        "animeId": 37,
+        "personagemId": 97
+    },
+    {
+        "animeId": 37,
+        "personagemId": 98
+    },
+    {
+        "animeId": 37,
+        "personagemId": 99
     }
 ]
