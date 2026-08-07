@@ -39,6 +39,12 @@ export type PersonagemMinAggregateOutputType = {
   nome: string | null
   imagem: string | null
   sobre: string | null
+  idade_inicial: string | null
+  sexo: string | null
+  papel: string | null
+  aniversario: string | null
+  altura_inicial: string | null
+  afiliacao: string | null
 }
 
 export type PersonagemMaxAggregateOutputType = {
@@ -46,6 +52,12 @@ export type PersonagemMaxAggregateOutputType = {
   nome: string | null
   imagem: string | null
   sobre: string | null
+  idade_inicial: string | null
+  sexo: string | null
+  papel: string | null
+  aniversario: string | null
+  altura_inicial: string | null
+  afiliacao: string | null
 }
 
 export type PersonagemCountAggregateOutputType = {
@@ -53,6 +65,12 @@ export type PersonagemCountAggregateOutputType = {
   nome: number
   imagem: number
   sobre: number
+  idade_inicial: number
+  sexo: number
+  papel: number
+  aniversario: number
+  altura_inicial: number
+  afiliacao: number
   _all: number
 }
 
@@ -70,6 +88,12 @@ export type PersonagemMinAggregateInputType = {
   nome?: true
   imagem?: true
   sobre?: true
+  idade_inicial?: true
+  sexo?: true
+  papel?: true
+  aniversario?: true
+  altura_inicial?: true
+  afiliacao?: true
 }
 
 export type PersonagemMaxAggregateInputType = {
@@ -77,6 +101,12 @@ export type PersonagemMaxAggregateInputType = {
   nome?: true
   imagem?: true
   sobre?: true
+  idade_inicial?: true
+  sexo?: true
+  papel?: true
+  aniversario?: true
+  altura_inicial?: true
+  afiliacao?: true
 }
 
 export type PersonagemCountAggregateInputType = {
@@ -84,6 +114,12 @@ export type PersonagemCountAggregateInputType = {
   nome?: true
   imagem?: true
   sobre?: true
+  idade_inicial?: true
+  sexo?: true
+  papel?: true
+  aniversario?: true
+  altura_inicial?: true
+  afiliacao?: true
   _all?: true
 }
 
@@ -178,6 +214,12 @@ export type PersonagemGroupByOutputType = {
   nome: string
   imagem: string
   sobre: string
+  idade_inicial: string | null
+  sexo: string | null
+  papel: string | null
+  aniversario: string | null
+  altura_inicial: string | null
+  afiliacao: string | null
   _count: PersonagemCountAggregateOutputType | null
   _avg: PersonagemAvgAggregateOutputType | null
   _sum: PersonagemSumAggregateOutputType | null
@@ -208,6 +250,12 @@ export type PersonagemWhereInput = {
   nome?: Prisma.StringFilter<"Personagem"> | string
   imagem?: Prisma.StringFilter<"Personagem"> | string
   sobre?: Prisma.StringFilter<"Personagem"> | string
+  idade_inicial?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  sexo?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  papel?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  aniversario?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  altura_inicial?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  afiliacao?: Prisma.StringNullableFilter<"Personagem"> | string | null
   animes?: Prisma.AnimePersonagemListRelationFilter
   favoritos?: Prisma.PersonagemFavoritoListRelationFilter
 }
@@ -217,6 +265,12 @@ export type PersonagemOrderByWithRelationInput = {
   nome?: Prisma.SortOrder
   imagem?: Prisma.SortOrder
   sobre?: Prisma.SortOrder
+  idade_inicial?: Prisma.SortOrderInput | Prisma.SortOrder
+  sexo?: Prisma.SortOrderInput | Prisma.SortOrder
+  papel?: Prisma.SortOrderInput | Prisma.SortOrder
+  aniversario?: Prisma.SortOrderInput | Prisma.SortOrder
+  altura_inicial?: Prisma.SortOrderInput | Prisma.SortOrder
+  afiliacao?: Prisma.SortOrderInput | Prisma.SortOrder
   animes?: Prisma.AnimePersonagemOrderByRelationAggregateInput
   favoritos?: Prisma.PersonagemFavoritoOrderByRelationAggregateInput
 }
@@ -229,6 +283,12 @@ export type PersonagemWhereUniqueInput = Prisma.AtLeast<{
   nome?: Prisma.StringFilter<"Personagem"> | string
   imagem?: Prisma.StringFilter<"Personagem"> | string
   sobre?: Prisma.StringFilter<"Personagem"> | string
+  idade_inicial?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  sexo?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  papel?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  aniversario?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  altura_inicial?: Prisma.StringNullableFilter<"Personagem"> | string | null
+  afiliacao?: Prisma.StringNullableFilter<"Personagem"> | string | null
   animes?: Prisma.AnimePersonagemListRelationFilter
   favoritos?: Prisma.PersonagemFavoritoListRelationFilter
 }, "id">
@@ -238,6 +298,12 @@ export type PersonagemOrderByWithAggregationInput = {
   nome?: Prisma.SortOrder
   imagem?: Prisma.SortOrder
   sobre?: Prisma.SortOrder
+  idade_inicial?: Prisma.SortOrderInput | Prisma.SortOrder
+  sexo?: Prisma.SortOrderInput | Prisma.SortOrder
+  papel?: Prisma.SortOrderInput | Prisma.SortOrder
+  aniversario?: Prisma.SortOrderInput | Prisma.SortOrder
+  altura_inicial?: Prisma.SortOrderInput | Prisma.SortOrder
+  afiliacao?: Prisma.SortOrderInput | Prisma.SortOrder
   _count?: Prisma.PersonagemCountOrderByAggregateInput
   _avg?: Prisma.PersonagemAvgOrderByAggregateInput
   _max?: Prisma.PersonagemMaxOrderByAggregateInput
@@ -253,12 +319,24 @@ export type PersonagemScalarWhereWithAggregatesInput = {
   nome?: Prisma.StringWithAggregatesFilter<"Personagem"> | string
   imagem?: Prisma.StringWithAggregatesFilter<"Personagem"> | string
   sobre?: Prisma.StringWithAggregatesFilter<"Personagem"> | string
+  idade_inicial?: Prisma.StringNullableWithAggregatesFilter<"Personagem"> | string | null
+  sexo?: Prisma.StringNullableWithAggregatesFilter<"Personagem"> | string | null
+  papel?: Prisma.StringNullableWithAggregatesFilter<"Personagem"> | string | null
+  aniversario?: Prisma.StringNullableWithAggregatesFilter<"Personagem"> | string | null
+  altura_inicial?: Prisma.StringNullableWithAggregatesFilter<"Personagem"> | string | null
+  afiliacao?: Prisma.StringNullableWithAggregatesFilter<"Personagem"> | string | null
 }
 
 export type PersonagemCreateInput = {
   nome: string
   imagem: string
   sobre: string
+  idade_inicial?: string | null
+  sexo?: string | null
+  papel?: string | null
+  aniversario?: string | null
+  altura_inicial?: string | null
+  afiliacao?: string | null
   animes?: Prisma.AnimePersonagemCreateNestedManyWithoutPersonagemInput
   favoritos?: Prisma.PersonagemFavoritoCreateNestedManyWithoutPersonagemInput
 }
@@ -268,6 +346,12 @@ export type PersonagemUncheckedCreateInput = {
   nome: string
   imagem: string
   sobre: string
+  idade_inicial?: string | null
+  sexo?: string | null
+  papel?: string | null
+  aniversario?: string | null
+  altura_inicial?: string | null
+  afiliacao?: string | null
   animes?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutPersonagemInput
   favoritos?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutPersonagemInput
 }
@@ -276,6 +360,12 @@ export type PersonagemUpdateInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
   imagem?: Prisma.StringFieldUpdateOperationsInput | string
   sobre?: Prisma.StringFieldUpdateOperationsInput | string
+  idade_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  sexo?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  papel?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  aniversario?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  altura_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  afiliacao?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   animes?: Prisma.AnimePersonagemUpdateManyWithoutPersonagemNestedInput
   favoritos?: Prisma.PersonagemFavoritoUpdateManyWithoutPersonagemNestedInput
 }
@@ -285,6 +375,12 @@ export type PersonagemUncheckedUpdateInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
   imagem?: Prisma.StringFieldUpdateOperationsInput | string
   sobre?: Prisma.StringFieldUpdateOperationsInput | string
+  idade_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  sexo?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  papel?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  aniversario?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  altura_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  afiliacao?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   animes?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutPersonagemNestedInput
   favoritos?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutPersonagemNestedInput
 }
@@ -294,12 +390,24 @@ export type PersonagemCreateManyInput = {
   nome: string
   imagem: string
   sobre: string
+  idade_inicial?: string | null
+  sexo?: string | null
+  papel?: string | null
+  aniversario?: string | null
+  altura_inicial?: string | null
+  afiliacao?: string | null
 }
 
 export type PersonagemUpdateManyMutationInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
   imagem?: Prisma.StringFieldUpdateOperationsInput | string
   sobre?: Prisma.StringFieldUpdateOperationsInput | string
+  idade_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  sexo?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  papel?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  aniversario?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  altura_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  afiliacao?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
 }
 
 export type PersonagemUncheckedUpdateManyInput = {
@@ -307,6 +415,12 @@ export type PersonagemUncheckedUpdateManyInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
   imagem?: Prisma.StringFieldUpdateOperationsInput | string
   sobre?: Prisma.StringFieldUpdateOperationsInput | string
+  idade_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  sexo?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  papel?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  aniversario?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  altura_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  afiliacao?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
 }
 
 export type PersonagemCountOrderByAggregateInput = {
@@ -314,6 +428,12 @@ export type PersonagemCountOrderByAggregateInput = {
   nome?: Prisma.SortOrder
   imagem?: Prisma.SortOrder
   sobre?: Prisma.SortOrder
+  idade_inicial?: Prisma.SortOrder
+  sexo?: Prisma.SortOrder
+  papel?: Prisma.SortOrder
+  aniversario?: Prisma.SortOrder
+  altura_inicial?: Prisma.SortOrder
+  afiliacao?: Prisma.SortOrder
 }
 
 export type PersonagemAvgOrderByAggregateInput = {
@@ -325,6 +445,12 @@ export type PersonagemMaxOrderByAggregateInput = {
   nome?: Prisma.SortOrder
   imagem?: Prisma.SortOrder
   sobre?: Prisma.SortOrder
+  idade_inicial?: Prisma.SortOrder
+  sexo?: Prisma.SortOrder
+  papel?: Prisma.SortOrder
+  aniversario?: Prisma.SortOrder
+  altura_inicial?: Prisma.SortOrder
+  afiliacao?: Prisma.SortOrder
 }
 
 export type PersonagemMinOrderByAggregateInput = {
@@ -332,6 +458,12 @@ export type PersonagemMinOrderByAggregateInput = {
   nome?: Prisma.SortOrder
   imagem?: Prisma.SortOrder
   sobre?: Prisma.SortOrder
+  idade_inicial?: Prisma.SortOrder
+  sexo?: Prisma.SortOrder
+  papel?: Prisma.SortOrder
+  aniversario?: Prisma.SortOrder
+  altura_inicial?: Prisma.SortOrder
+  afiliacao?: Prisma.SortOrder
 }
 
 export type PersonagemSumOrderByAggregateInput = {
@@ -375,6 +507,12 @@ export type PersonagemCreateWithoutAnimesInput = {
   nome: string
   imagem: string
   sobre: string
+  idade_inicial?: string | null
+  sexo?: string | null
+  papel?: string | null
+  aniversario?: string | null
+  altura_inicial?: string | null
+  afiliacao?: string | null
   favoritos?: Prisma.PersonagemFavoritoCreateNestedManyWithoutPersonagemInput
 }
 
@@ -383,6 +521,12 @@ export type PersonagemUncheckedCreateWithoutAnimesInput = {
   nome: string
   imagem: string
   sobre: string
+  idade_inicial?: string | null
+  sexo?: string | null
+  papel?: string | null
+  aniversario?: string | null
+  altura_inicial?: string | null
+  afiliacao?: string | null
   favoritos?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutPersonagemInput
 }
 
@@ -406,6 +550,12 @@ export type PersonagemUpdateWithoutAnimesInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
   imagem?: Prisma.StringFieldUpdateOperationsInput | string
   sobre?: Prisma.StringFieldUpdateOperationsInput | string
+  idade_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  sexo?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  papel?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  aniversario?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  altura_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  afiliacao?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   favoritos?: Prisma.PersonagemFavoritoUpdateManyWithoutPersonagemNestedInput
 }
 
@@ -414,6 +564,12 @@ export type PersonagemUncheckedUpdateWithoutAnimesInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
   imagem?: Prisma.StringFieldUpdateOperationsInput | string
   sobre?: Prisma.StringFieldUpdateOperationsInput | string
+  idade_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  sexo?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  papel?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  aniversario?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  altura_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  afiliacao?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   favoritos?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutPersonagemNestedInput
 }
 
@@ -421,6 +577,12 @@ export type PersonagemCreateWithoutFavoritosInput = {
   nome: string
   imagem: string
   sobre: string
+  idade_inicial?: string | null
+  sexo?: string | null
+  papel?: string | null
+  aniversario?: string | null
+  altura_inicial?: string | null
+  afiliacao?: string | null
   animes?: Prisma.AnimePersonagemCreateNestedManyWithoutPersonagemInput
 }
 
@@ -429,6 +591,12 @@ export type PersonagemUncheckedCreateWithoutFavoritosInput = {
   nome: string
   imagem: string
   sobre: string
+  idade_inicial?: string | null
+  sexo?: string | null
+  papel?: string | null
+  aniversario?: string | null
+  altura_inicial?: string | null
+  afiliacao?: string | null
   animes?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutPersonagemInput
 }
 
@@ -452,6 +620,12 @@ export type PersonagemUpdateWithoutFavoritosInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
   imagem?: Prisma.StringFieldUpdateOperationsInput | string
   sobre?: Prisma.StringFieldUpdateOperationsInput | string
+  idade_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  sexo?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  papel?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  aniversario?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  altura_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  afiliacao?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   animes?: Prisma.AnimePersonagemUpdateManyWithoutPersonagemNestedInput
 }
 
@@ -460,6 +634,12 @@ export type PersonagemUncheckedUpdateWithoutFavoritosInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
   imagem?: Prisma.StringFieldUpdateOperationsInput | string
   sobre?: Prisma.StringFieldUpdateOperationsInput | string
+  idade_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  sexo?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  papel?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  aniversario?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  altura_inicial?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  afiliacao?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   animes?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutPersonagemNestedInput
 }
 
@@ -508,6 +688,12 @@ export type PersonagemSelect<ExtArgs extends runtime.Types.Extensions.InternalAr
   nome?: boolean
   imagem?: boolean
   sobre?: boolean
+  idade_inicial?: boolean
+  sexo?: boolean
+  papel?: boolean
+  aniversario?: boolean
+  altura_inicial?: boolean
+  afiliacao?: boolean
   animes?: boolean | Prisma.Personagem$animesArgs<ExtArgs>
   favoritos?: boolean | Prisma.Personagem$favoritosArgs<ExtArgs>
   _count?: boolean | Prisma.PersonagemCountOutputTypeDefaultArgs<ExtArgs>
@@ -518,6 +704,12 @@ export type PersonagemSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Ex
   nome?: boolean
   imagem?: boolean
   sobre?: boolean
+  idade_inicial?: boolean
+  sexo?: boolean
+  papel?: boolean
+  aniversario?: boolean
+  altura_inicial?: boolean
+  afiliacao?: boolean
 }, ExtArgs["result"]["personagem"]>
 
 export type PersonagemSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -525,6 +717,12 @@ export type PersonagemSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Ex
   nome?: boolean
   imagem?: boolean
   sobre?: boolean
+  idade_inicial?: boolean
+  sexo?: boolean
+  papel?: boolean
+  aniversario?: boolean
+  altura_inicial?: boolean
+  afiliacao?: boolean
 }, ExtArgs["result"]["personagem"]>
 
 export type PersonagemSelectScalar = {
@@ -532,9 +730,15 @@ export type PersonagemSelectScalar = {
   nome?: boolean
   imagem?: boolean
   sobre?: boolean
+  idade_inicial?: boolean
+  sexo?: boolean
+  papel?: boolean
+  aniversario?: boolean
+  altura_inicial?: boolean
+  afiliacao?: boolean
 }
 
-export type PersonagemOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "nome" | "imagem" | "sobre", ExtArgs["result"]["personagem"]>
+export type PersonagemOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "nome" | "imagem" | "sobre" | "idade_inicial" | "sexo" | "papel" | "aniversario" | "altura_inicial" | "afiliacao", ExtArgs["result"]["personagem"]>
 export type PersonagemInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   animes?: boolean | Prisma.Personagem$animesArgs<ExtArgs>
   favoritos?: boolean | Prisma.Personagem$favoritosArgs<ExtArgs>
@@ -554,6 +758,12 @@ export type $PersonagemPayload<ExtArgs extends runtime.Types.Extensions.Internal
     nome: string
     imagem: string
     sobre: string
+    idade_inicial: string | null
+    sexo: string | null
+    papel: string | null
+    aniversario: string | null
+    altura_inicial: string | null
+    afiliacao: string | null
   }, ExtArgs["result"]["personagem"]>
   composites: {}
 }
@@ -983,6 +1193,12 @@ export interface PersonagemFieldRefs {
   readonly nome: Prisma.FieldRef<"Personagem", 'String'>
   readonly imagem: Prisma.FieldRef<"Personagem", 'String'>
   readonly sobre: Prisma.FieldRef<"Personagem", 'String'>
+  readonly idade_inicial: Prisma.FieldRef<"Personagem", 'String'>
+  readonly sexo: Prisma.FieldRef<"Personagem", 'String'>
+  readonly papel: Prisma.FieldRef<"Personagem", 'String'>
+  readonly aniversario: Prisma.FieldRef<"Personagem", 'String'>
+  readonly altura_inicial: Prisma.FieldRef<"Personagem", 'String'>
+  readonly afiliacao: Prisma.FieldRef<"Personagem", 'String'>
 }
     
 
