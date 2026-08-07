@@ -216,10 +216,10 @@ export type TemporadaWhereInput = {
   AND?: Prisma.TemporadaWhereInput | Prisma.TemporadaWhereInput[]
   OR?: Prisma.TemporadaWhereInput[]
   NOT?: Prisma.TemporadaWhereInput | Prisma.TemporadaWhereInput[]
-  id?: Prisma.IntFilter<"temporada"> | number
-  numero?: Prisma.IntFilter<"temporada"> | number
-  ano?: Prisma.IntNullableFilter<"temporada"> | number | null
-  animeId?: Prisma.IntFilter<"temporada"> | number
+  id?: Prisma.IntFilter<"Temporada"> | number
+  numero?: Prisma.IntFilter<"Temporada"> | number
+  ano?: Prisma.IntNullableFilter<"Temporada"> | number | null
+  animeId?: Prisma.IntFilter<"Temporada"> | number
   anime?: Prisma.XOR<Prisma.AnimeScalarRelationFilter, Prisma.AnimeWhereInput>
   episodios?: Prisma.EpisodioListRelationFilter
 }
@@ -239,9 +239,9 @@ export type TemporadaWhereUniqueInput = Prisma.AtLeast<{
   AND?: Prisma.TemporadaWhereInput | Prisma.TemporadaWhereInput[]
   OR?: Prisma.TemporadaWhereInput[]
   NOT?: Prisma.TemporadaWhereInput | Prisma.TemporadaWhereInput[]
-  numero?: Prisma.IntFilter<"temporada"> | number
-  ano?: Prisma.IntNullableFilter<"temporada"> | number | null
-  animeId?: Prisma.IntFilter<"temporada"> | number
+  numero?: Prisma.IntFilter<"Temporada"> | number
+  ano?: Prisma.IntNullableFilter<"Temporada"> | number | null
+  animeId?: Prisma.IntFilter<"Temporada"> | number
   anime?: Prisma.XOR<Prisma.AnimeScalarRelationFilter, Prisma.AnimeWhereInput>
   episodios?: Prisma.EpisodioListRelationFilter
 }, "id" | "animeId_numero">
@@ -262,10 +262,10 @@ export type TemporadaScalarWhereWithAggregatesInput = {
   AND?: Prisma.TemporadaScalarWhereWithAggregatesInput | Prisma.TemporadaScalarWhereWithAggregatesInput[]
   OR?: Prisma.TemporadaScalarWhereWithAggregatesInput[]
   NOT?: Prisma.TemporadaScalarWhereWithAggregatesInput | Prisma.TemporadaScalarWhereWithAggregatesInput[]
-  id?: Prisma.IntWithAggregatesFilter<"temporada"> | number
-  numero?: Prisma.IntWithAggregatesFilter<"temporada"> | number
-  ano?: Prisma.IntNullableWithAggregatesFilter<"temporada"> | number | null
-  animeId?: Prisma.IntWithAggregatesFilter<"temporada"> | number
+  id?: Prisma.IntWithAggregatesFilter<"Temporada"> | number
+  numero?: Prisma.IntWithAggregatesFilter<"Temporada"> | number
+  ano?: Prisma.IntNullableWithAggregatesFilter<"Temporada"> | number | null
+  animeId?: Prisma.IntWithAggregatesFilter<"Temporada"> | number
 }
 
 export type TemporadaCreateInput = {
@@ -471,10 +471,10 @@ export type TemporadaScalarWhereInput = {
   AND?: Prisma.TemporadaScalarWhereInput | Prisma.TemporadaScalarWhereInput[]
   OR?: Prisma.TemporadaScalarWhereInput[]
   NOT?: Prisma.TemporadaScalarWhereInput | Prisma.TemporadaScalarWhereInput[]
-  id?: Prisma.IntFilter<"temporada"> | number
-  numero?: Prisma.IntFilter<"temporada"> | number
-  ano?: Prisma.IntNullableFilter<"temporada"> | number | null
-  animeId?: Prisma.IntFilter<"temporada"> | number
+  id?: Prisma.IntFilter<"Temporada"> | number
+  numero?: Prisma.IntFilter<"Temporada"> | number
+  ano?: Prisma.IntNullableFilter<"Temporada"> | number | null
+  animeId?: Prisma.IntFilter<"Temporada"> | number
 }
 
 export type TemporadaCreateWithoutEpisodiosInput = {
@@ -622,7 +622,7 @@ export type TemporadaIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Ex
 }
 
 export type $TemporadaPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  name: "temporada"
+  name: "Temporada"
   objects: {
     anime: Prisma.$AnimePayload<ExtArgs>
     episodios: Prisma.$EpisodioPayload<ExtArgs>[]
@@ -1057,10 +1057,10 @@ export interface Prisma__TemporadaClient<T, Null = never, ExtArgs extends runtim
  * Fields of the Temporada model
  */
 export interface TemporadaFieldRefs {
-  readonly id: Prisma.FieldRef<"temporada", 'Int'>
-  readonly numero: Prisma.FieldRef<"temporada", 'Int'>
-  readonly ano: Prisma.FieldRef<"temporada", 'Int'>
-  readonly animeId: Prisma.FieldRef<"temporada", 'Int'>
+  readonly id: Prisma.FieldRef<"Temporada", 'Int'>
+  readonly numero: Prisma.FieldRef<"Temporada", 'Int'>
+  readonly ano: Prisma.FieldRef<"Temporada", 'Int'>
+  readonly animeId: Prisma.FieldRef<"Temporada", 'Int'>
 }
     
 
