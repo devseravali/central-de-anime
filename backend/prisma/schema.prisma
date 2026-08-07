@@ -223,6 +223,13 @@ model Personagem {
   imagem String
   sobre  String @db.VarChar(5000)
 
+  idade_inicial  String?
+  sexo           String?
+  papel          String?
+  aniversario    String?
+  altura_inicial String?
+  afiliacao      String?
+
   animes    AnimePersonagem[]
   favoritos PersonagemFavorito[]
 }

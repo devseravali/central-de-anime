@@ -2408,7 +2408,13 @@ export const PersonagemScalarFieldEnum = {
   id: 'id',
   nome: 'nome',
   imagem: 'imagem',
-  sobre: 'sobre'
+  sobre: 'sobre',
+  idade_inicial: 'idade_inicial',
+  sexo: 'sexo',
+  papel: 'papel',
+  aniversario: 'aniversario',
+  altura_inicial: 'altura_inicial',
+  afiliacao: 'afiliacao'
 } as const
 
 export type PersonagemScalarFieldEnum = (typeof PersonagemScalarFieldEnum)[keyof typeof PersonagemScalarFieldEnum]
