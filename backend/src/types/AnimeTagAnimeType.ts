@@ -1,5 +1,5 @@
-export const AnimeTagAnimeType = {
-    id: 'number',
-    animeId: 'number',
-    tagId: 'number',
-} as const;
+export type AnimeTagAnimeType = {
+    id: number;
+    animeId: number;
+    tagId: number;
+};

@@ -1,4 +1,4 @@
-export const AnimeTagType = {
-    id: 'number',
-    nome: 'string',
-} as const;
+export type AnimeTagType = {
+    id: number;
+    nome: string;
+};
