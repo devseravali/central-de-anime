@@ -22,7 +22,7 @@ async function importEpisodiosFromJson(filePath: string): Promise<void> {
                     dataExibicao: episodio.dataExibicao ? new Date(episodio.dataExibicao) : null,
                 };
 
-                const updateData: Prisma.EpisodioUpdateInput = {
+                const updateData: Prisma.EpisodioUncheckedUpdateInput = {
                     numero: episodio.numero,
                     titulo: episodio.titulo,
                     temporadaId: episodio.temporadaId,

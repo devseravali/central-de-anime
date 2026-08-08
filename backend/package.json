@@ -24,6 +24,12 @@
         "db:test:seed": "dotenv -e .env.test -- tsx src/import/index.ts",
         "seed:test": "npm run db:test:seed",
         "seed:dev": "tsx src/import/index.ts",
+        "seed:all": "tsx src/seed/index.ts",
+        "seed:aux": "tsx src/seed/Auxiliaries.ts",
+        "seed:animes": "tsx src/seed/Animes.ts",
+        "seed:temporadas": "tsx src/seed/Temporada.ts",
+        "seed:personagens": "tsx src/seed/Personagens.ts",
+        "seed:episodios": "tsx src/seed/Episodios.ts",
         "swagger-autogen": "tsx scripts/swagger-autogen.js",
         "swagger-autogen:v1": "tsx scripts/swagger-autogen.js v1"
     },

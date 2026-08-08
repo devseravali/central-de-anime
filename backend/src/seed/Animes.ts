@@ -27,7 +27,7 @@ async function importAnimeFromJson(filePath: string): Promise<void> {
           estacaoId: anime.estacaoId ?? null,
         };
 
-        const updateData: Prisma.AnimeUpdateInput = {
+        const updateData: Prisma.AnimeUncheckedUpdateInput = {
           titulo: anime.titulo,
           tipo: anime.tipo,
           temporada: anime.temporada,
