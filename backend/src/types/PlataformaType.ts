@@ -1,4 +1,4 @@
-export const PlataformaType = {
-    id: 'number',
-    nome: 'string'
-} as const;
+export type PlataformaType = {
+    id: number;
+    nome: string;
+};

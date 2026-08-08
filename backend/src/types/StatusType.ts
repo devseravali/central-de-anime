@@ -1,4 +1,4 @@
-export const StatusType = {
-    id: 'number',
-    nome: 'string',
-} as const;
+export type StatusType = {
+    id: number;
+    nome: string;
+};
