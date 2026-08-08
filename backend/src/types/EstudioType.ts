@@ -1,5 +1,5 @@
-export const EstudioType = {
-    id: 'number',
-    nome: 'string',
-    principaisObras: 'AnimeType[]'
-} as const;
+export type EstudioType = {
+    id: number;
+    nome: string;
+    animes: string[];
+};

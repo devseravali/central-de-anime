@@ -1,4 +1,4 @@
-export const GeneroType = {
-    id: 'number',
-    nome: 'string',
-} as const;
+export type GeneroType = {
+    id: number;
+    nome: string;
+};

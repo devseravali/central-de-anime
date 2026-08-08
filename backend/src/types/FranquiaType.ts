@@ -1,6 +1,8 @@
-export const FranquiaType = {
-    id: 'number',
-    nome: 'string',
-    descricao: 'string',
-    animes: 'AnimeType[]'
-} as const;
+import { AnimeType } from "./AnimeType";
+
+export type FranquiaType = {
+    id: number;
+    nome: string;
+    descricao: string;
+    animes: AnimeType[];
+};
