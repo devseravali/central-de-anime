@@ -1,11 +1,11 @@
-export const EpisodioType = {
-    id: 'number',
-    numero: 'number',
-    titulo: 'string',
-    sinopse: 'string',
-    imagemUrl: 'string',
-    dataExibicao: 'Date',
-    temporadaId: 'number',
-    animeId: 'number',
-    watchProgress: 'number[]',
-} as const;
+export type EpisodioType = {
+    id: number;
+    numero: number;
+    titulo: string;
+    sinopse?: string | null;
+    imagemUrl?: string | null;
+    dataExibicao?: string | null;
+    temporadaId: number;
+    animeId: number;
+    watchProgress?: number[];
+};
