@@ -11,6 +11,8 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
         const personagensData = JSON.parse(fileContent) as PersonagemType[];
         for (const personagem of personagensData) {
             try {
+                const normalizedImage = personagem.imagem ? personagem.imagem.replace(/^(\.\.\/)+/, '') : '';
+
                 const createData: Prisma.PersonagemUncheckedCreateInput = {
                     id: personagem.id,
                     nome: personagem.nome,
@@ -21,7 +23,7 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
                     altura_inicial: personagem.altura_inicial ?? null,
                     afiliacao: personagem.afiliacao ?? null,
                     sobre: personagem.sobre,
-                    imagem: personagem.imagem,
+                    imagem: normalizedImage,
                 };
 
                 const updateData: Prisma.PersonagemUpdateInput = {
@@ -33,7 +35,7 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
                     altura_inicial: personagem.altura_inicial ?? null,
                     afiliacao: personagem.afiliacao ?? null,
                     sobre: personagem.sobre,
-                    imagem: personagem.imagem,
+                    imagem: normalizedImage,
                 };
 
                 await prisma.personagem.upsert({

@@ -65,7 +65,11 @@ async function main(): Promise<void> {
   }
 }
 
-if (require.main === module) {
+const invokedDirectly = Boolean(
+  process.argv[1] && (process.argv[1].includes('src/seed/index.ts') || process.argv[1].includes('src\\seed\\index.ts'))
+);
+
+if (invokedDirectly) {
   main().catch((e) => {
     console.error('Seed: falha ao executar o seed:', e);
     process.exit(1);

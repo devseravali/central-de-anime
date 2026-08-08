@@ -8,6 +8,7 @@ import type { FranquiaType } from '../types/FranquiaType';
 import type { PlataformaType } from '../types/PlataformaType';
 import type { GeneroType } from '../types/GeneroType';
 import type { TagType } from '../types/TagType';
+import type { CapasType } from '../types/CapasType';
 
 const DATA_DIR = path.resolve(__dirname, '../../data/entidades');
 const BATCH_SIZE = 50;
@@ -127,10 +128,29 @@ async function importTagsFromJson(): Promise<void> {
     console.log(`Tags processadas.`);
 }
 
+async function importCapasFromJson(): Promise<void> {
+    const items = await readJson<CapasType>('capa.json');
+    for (let i = 0; i < items.length; i += BATCH_SIZE) {
+        const batch = items.slice(i, i + BATCH_SIZE);
+        const ops = batch.map((c) => {
+            const data: Prisma.CapasUncheckedCreateInput = {
+                id: c.id,
+                nome_original: c.nome_original,
+                nome_salvo: c.nome_salvo,
+                caminho: c.caminho,
+                mime_type: c.mime_type,
+            };
+            return prisma.capas.upsert({ where: { id: c.id }, update: data, create: data });
+        });
+        await prisma.$transaction(ops);
+    }
+    console.log(`Capas processadas.`);
+}
+
 async function importAuxiliariesFromJson(): Promise<void> {
     try {
-        // Ordem: estudos -> status -> estacoes -> franquias -> plataformas -> generos -> tags
         await importEstudiosFromJson();
+        await importCapasFromJson();
         await importStatusFromJson();
         await importEstacoesFromJson();
         await importFranquiasFromJson();
