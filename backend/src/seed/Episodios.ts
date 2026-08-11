@@ -12,6 +12,16 @@ async function importEpisodiosFromJson(filePath: string): Promise<void> {
 
         for (const episodio of episodiosData) {
             try {
+                const temporadaExiste = await prisma.temporada.findUnique({ where: { id: episodio.temporadaId } });
+                if (!temporadaExiste) {
+                    await prisma.temporada.create({
+                        data: {
+                            id: episodio.temporadaId,
+                            nome: `Temporada ${episodio.temporadaId}`,
+                        },
+                    });
+                }
+
                 const createData: Prisma.EpisodioUncheckedCreateInput = {
                     id: episodio.id,
                     numero: episodio.numero,
