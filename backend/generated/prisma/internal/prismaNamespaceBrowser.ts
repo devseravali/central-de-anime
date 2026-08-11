@@ -52,11 +52,10 @@ export const AnyNull = runtime.AnyNull
 
 export const ModelName = {
   Anime: 'Anime',
-  Estacao: 'Estacao',
+  Temporada: 'Temporada',
   Franquia: 'Franquia',
   Estudio: 'Estudio',
   Status: 'Status',
-  Temporada: 'Temporada',
   Episodio: 'Episodio',
   Usuario: 'Usuario',
   WatchProgress: 'WatchProgress',
@@ -68,6 +67,8 @@ export const ModelName = {
   NotaAnimeUsuario: 'NotaAnimeUsuario',
   Personagem: 'Personagem',
   AnimePersonagem: 'AnimePersonagem',
+  AnimeGenero: 'AnimeGenero',
+  AnimePlataforma: 'AnimePlataforma',
   PersonagemFavorito: 'PersonagemFavorito',
   Admin: 'Admin',
   Sessao: 'Sessao',
@@ -104,19 +105,18 @@ export const AnimeScalarFieldEnum = {
   quantidadeEpisodios: 'quantidadeEpisodios',
   franquiaId: 'franquiaId',
   estudioId: 'estudioId',
-  statusId: 'statusId',
-  estacaoId: 'estacaoId'
+  statusId: 'statusId'
 } as const
 
 export type AnimeScalarFieldEnum = (typeof AnimeScalarFieldEnum)[keyof typeof AnimeScalarFieldEnum]
 
 
-export const EstacaoScalarFieldEnum = {
+export const TemporadaScalarFieldEnum = {
   id: 'id',
   nome: 'nome'
 } as const
 
-export type EstacaoScalarFieldEnum = (typeof EstacaoScalarFieldEnum)[keyof typeof EstacaoScalarFieldEnum]
+export type TemporadaScalarFieldEnum = (typeof TemporadaScalarFieldEnum)[keyof typeof TemporadaScalarFieldEnum]
 
 
 export const FranquiaScalarFieldEnum = {
@@ -144,16 +144,6 @@ export const StatusScalarFieldEnum = {
 } as const
 
 export type StatusScalarFieldEnum = (typeof StatusScalarFieldEnum)[keyof typeof StatusScalarFieldEnum]
-
-
-export const TemporadaScalarFieldEnum = {
-  id: 'id',
-  numero: 'numero',
-  ano: 'ano',
-  animeId: 'animeId'
-} as const
-
-export type TemporadaScalarFieldEnum = (typeof TemporadaScalarFieldEnum)[keyof typeof TemporadaScalarFieldEnum]
 
 
 export const EpisodioScalarFieldEnum = {
@@ -277,6 +267,22 @@ export const AnimePersonagemScalarFieldEnum = {
 } as const
 
 export type AnimePersonagemScalarFieldEnum = (typeof AnimePersonagemScalarFieldEnum)[keyof typeof AnimePersonagemScalarFieldEnum]
+
+
+export const AnimeGeneroScalarFieldEnum = {
+  animeId: 'animeId',
+  generoId: 'generoId'
+} as const
+
+export type AnimeGeneroScalarFieldEnum = (typeof AnimeGeneroScalarFieldEnum)[keyof typeof AnimeGeneroScalarFieldEnum]
+
+
+export const AnimePlataformaScalarFieldEnum = {
+  animeId: 'animeId',
+  plataformaId: 'plataformaId'
+} as const
+
+export type AnimePlataformaScalarFieldEnum = (typeof AnimePlataformaScalarFieldEnum)[keyof typeof AnimePlataformaScalarFieldEnum]
 
 
 export const PersonagemFavoritoScalarFieldEnum = {
