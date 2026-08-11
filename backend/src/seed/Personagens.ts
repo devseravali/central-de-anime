@@ -13,14 +13,19 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
             try {
                 const normalizedImage = personagem.imagem ? personagem.imagem.replace(/^(\.\.\/)+/, '') : '';
 
+                const normalizeToStringOrNull = (v: unknown): string | null => {
+                    if (v === undefined || v === null) return null;
+                    return String(v);
+                };
+
                 const createData: Prisma.PersonagemUncheckedCreateInput = {
                     id: personagem.id,
                     nome: personagem.nome,
-                    idade_inicial: personagem.idade_inicial ?? null,
+                    idade_inicial: normalizeToStringOrNull(personagem.idade_inicial),
                     sexo: personagem.sexo ?? null,
                     papel: personagem.papel ?? null,
                     aniversario: personagem.aniversario ?? null,
-                    altura_inicial: personagem.altura_inicial ?? null,
+                    altura_inicial: normalizeToStringOrNull(personagem.altura_inicial),
                     afiliacao: personagem.afiliacao ?? null,
                     sobre: personagem.sobre,
                     imagem: normalizedImage,
@@ -28,11 +33,11 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
 
                 const updateData: Prisma.PersonagemUpdateInput = {
                     nome: personagem.nome,
-                    idade_inicial: personagem.idade_inicial ?? null,
+                    idade_inicial: normalizeToStringOrNull(personagem.idade_inicial),
                     sexo: personagem.sexo ?? null,
                     papel: personagem.papel ?? null,
                     aniversario: personagem.aniversario ?? null,
-                    altura_inicial: personagem.altura_inicial ?? null,
+                    altura_inicial: normalizeToStringOrNull(personagem.altura_inicial),
                     afiliacao: personagem.afiliacao ?? null,
                     sobre: personagem.sobre,
                     imagem: normalizedImage,

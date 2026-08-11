@@ -4,9 +4,9 @@ import { constants as fsConstants } from 'node:fs';
 import { prisma } from '../config/prisma';
 import { importAuxiliariesFromJson } from './Auxiliaries';
 import { importAnimeFromJson } from './Animes';
-import { importTemporadaFromJson } from './Temporada';
 import { importPersonagensFromJson } from './Personagens';
 import { importEpisodiosFromJson } from './Episodios';
+import { importRelacionamentosFromJson } from './Relacionamentos';
 
 async function fileExists(filePath: string): Promise<boolean> {
   try {
@@ -32,14 +32,6 @@ async function main(): Promise<void> {
       console.warn('Seed: animes.json não encontrado — pulando importação de animes.');
     }
 
-    const temporadasPath = path.join(dataDir, 'temporadas.json');
-    if (await fileExists(temporadasPath)) {
-      console.log('Seed: importando temporadas...');
-      await importTemporadaFromJson(temporadasPath);
-    } else {
-      console.warn('Seed: temporadas.json não encontrado — pulando.');
-    }
-
     const personagensPath = path.join(dataDir, 'personagens.json');
     if (await fileExists(personagensPath)) {
       console.log('Seed: importando personagens...');
@@ -47,7 +39,14 @@ async function main(): Promise<void> {
     } else {
       console.warn('Seed: personagens.json não encontrado — pulando.');
     }
-
+    const relacionamentosDir = path.join(path.resolve(__dirname, '../../data'), 'relacionamentos');
+    const animeTagPath = path.join(relacionamentosDir, 'anime_tag.json');
+    if (await fileExists(animeTagPath)) {
+      console.log('Seed: importando relacionamentos...');
+      await importRelacionamentosFromJson();
+    } else {
+      console.warn('Seed: relacionamentos não encontrado — pulando.');
+    }
     const episodiosPath = path.join(dataDir, 'episodios.json');
     if (await fileExists(episodiosPath)) {
       console.log('Seed: importando episódios...');
