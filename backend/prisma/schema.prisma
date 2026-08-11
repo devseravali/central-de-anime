@@ -26,14 +26,12 @@ model Anime {
   statusId Int
   status   Status @relation(fields: [statusId], references: [id])
 
-  estacaoId Int?
-  estacao   Estacao? @relation(fields: [estacaoId], references: [id])
-
-  temporadas Temporada[]
-  episodios  Episodio[]
+  episodios Episodio[]
 
   tags        AnimeTagAnime[]
   personagens AnimePersonagem[]
+  generos     AnimeGenero[]
+  plataformas AnimePlataforma[]
 
   favoritosUsuarios UsuarioFavoritoAnime[]
   notasUsuarios     NotaAnimeUsuario[]
@@ -41,11 +39,11 @@ model Anime {
   cache CacheAnime?
 }
 
-model Estacao {
+model Temporada {
   id   Int    @id @default(autoincrement())
   nome String @unique
 
-  animes Anime[]
+  episodios Episodio[]
 }
 
 model Franquia {
@@ -72,19 +70,6 @@ model Status {
   animes Anime[]
 }
 
-model Temporada {
-  id     Int  @id @default(autoincrement())
-  numero Int
-  ano    Int?
-
-  animeId Int
-  anime   Anime @relation(fields: [animeId], references: [id])
-
-  episodios Episodio[]
-
-  @@unique([animeId, numero])
-}
-
 model Episodio {
   id      Int    @id @default(autoincrement())
   numero  Int
@@ -96,9 +81,8 @@ model Episodio {
 
   temporadaId Int
   temporada   Temporada @relation(fields: [temporadaId], references: [id])
-
-  animeId Int
-  anime   Anime @relation(fields: [animeId], references: [id])
+  animeId     Int
+  anime       Anime @relation(fields: [animeId], references: [id])
 
   watchProgress WatchProgress[]
 
@@ -244,6 +228,26 @@ model AnimePersonagem {
   @@id([animeId, personagemId])
 }
 
+model AnimeGenero {
+  animeId   Int
+  generoId  Int
+
+  anime  Anime   @relation(fields: [animeId], references: [id], onDelete: Cascade)
+  genero Genero  @relation(fields: [generoId], references: [id], onDelete: Cascade)
+
+  @@id([animeId, generoId])
+}
+
+model AnimePlataforma {
+  animeId      Int
+  plataformaId Int
+
+  anime      Anime      @relation(fields: [animeId], references: [id], onDelete: Cascade)
+  plataforma Plataforma @relation(fields: [plataformaId], references: [id], onDelete: Cascade)
+
+  @@id([animeId, plataformaId])
+}
+
 model PersonagemFavorito {
   id Int @id @default(autoincrement())
 
@@ -295,11 +299,13 @@ model Capas {
 model Genero {
   id   Int    @id @default(autoincrement())
   nome String @unique
+  animes AnimeGenero[]
 }
 
 model Plataforma {
   id   Int    @id @default(autoincrement())
   nome String @unique
+  animes AnimePlataforma[]
 }
 
 model Filtro {
