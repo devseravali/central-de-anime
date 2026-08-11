@@ -34,7 +34,6 @@ export type AnimeAvgAggregateOutputType = {
   franquiaId: number | null
   estudioId: number | null
   statusId: number | null
-  estacaoId: number | null
 }
 
 export type AnimeSumAggregateOutputType = {
@@ -45,7 +44,6 @@ export type AnimeSumAggregateOutputType = {
   franquiaId: number | null
   estudioId: number | null
   statusId: number | null
-  estacaoId: number | null
 }
 
 export type AnimeMinAggregateOutputType = {
@@ -60,7 +58,6 @@ export type AnimeMinAggregateOutputType = {
   franquiaId: number | null
   estudioId: number | null
   statusId: number | null
-  estacaoId: number | null
 }
 
 export type AnimeMaxAggregateOutputType = {
@@ -75,7 +72,6 @@ export type AnimeMaxAggregateOutputType = {
   franquiaId: number | null
   estudioId: number | null
   statusId: number | null
-  estacaoId: number | null
 }
 
 export type AnimeCountAggregateOutputType = {
@@ -90,7 +86,6 @@ export type AnimeCountAggregateOutputType = {
   franquiaId: number
   estudioId: number
   statusId: number
-  estacaoId: number
   _all: number
 }
 
@@ -103,7 +98,6 @@ export type AnimeAvgAggregateInputType = {
   franquiaId?: true
   estudioId?: true
   statusId?: true
-  estacaoId?: true
 }
 
 export type AnimeSumAggregateInputType = {
@@ -114,7 +108,6 @@ export type AnimeSumAggregateInputType = {
   franquiaId?: true
   estudioId?: true
   statusId?: true
-  estacaoId?: true
 }
 
 export type AnimeMinAggregateInputType = {
@@ -129,7 +122,6 @@ export type AnimeMinAggregateInputType = {
   franquiaId?: true
   estudioId?: true
   statusId?: true
-  estacaoId?: true
 }
 
 export type AnimeMaxAggregateInputType = {
@@ -144,7 +136,6 @@ export type AnimeMaxAggregateInputType = {
   franquiaId?: true
   estudioId?: true
   statusId?: true
-  estacaoId?: true
 }
 
 export type AnimeCountAggregateInputType = {
@@ -159,7 +150,6 @@ export type AnimeCountAggregateInputType = {
   franquiaId?: true
   estudioId?: true
   statusId?: true
-  estacaoId?: true
   _all?: true
 }
 
@@ -261,7 +251,6 @@ export type AnimeGroupByOutputType = {
   franquiaId: number | null
   estudioId: number
   statusId: number
-  estacaoId: number | null
   _count: AnimeCountAggregateOutputType | null
   _avg: AnimeAvgAggregateOutputType | null
   _sum: AnimeSumAggregateOutputType | null
@@ -299,15 +288,14 @@ export type AnimeWhereInput = {
   franquiaId?: Prisma.IntNullableFilter<"Anime"> | number | null
   estudioId?: Prisma.IntFilter<"Anime"> | number
   statusId?: Prisma.IntFilter<"Anime"> | number
-  estacaoId?: Prisma.IntNullableFilter<"Anime"> | number | null
   franquia?: Prisma.XOR<Prisma.FranquiaNullableScalarRelationFilter, Prisma.FranquiaWhereInput> | null
   estudio?: Prisma.XOR<Prisma.EstudioScalarRelationFilter, Prisma.EstudioWhereInput>
   status?: Prisma.XOR<Prisma.StatusScalarRelationFilter, Prisma.StatusWhereInput>
-  estacao?: Prisma.XOR<Prisma.EstacaoNullableScalarRelationFilter, Prisma.EstacaoWhereInput> | null
-  temporadas?: Prisma.TemporadaListRelationFilter
   episodios?: Prisma.EpisodioListRelationFilter
   tags?: Prisma.AnimeTagAnimeListRelationFilter
   personagens?: Prisma.AnimePersonagemListRelationFilter
+  generos?: Prisma.AnimeGeneroListRelationFilter
+  plataformas?: Prisma.AnimePlataformaListRelationFilter
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeListRelationFilter
   notasUsuarios?: Prisma.NotaAnimeUsuarioListRelationFilter
   cache?: Prisma.XOR<Prisma.CacheAnimeNullableScalarRelationFilter, Prisma.CacheAnimeWhereInput> | null
@@ -325,15 +313,14 @@ export type AnimeOrderByWithRelationInput = {
   franquiaId?: Prisma.SortOrderInput | Prisma.SortOrder
   estudioId?: Prisma.SortOrder
   statusId?: Prisma.SortOrder
-  estacaoId?: Prisma.SortOrderInput | Prisma.SortOrder
   franquia?: Prisma.FranquiaOrderByWithRelationInput
   estudio?: Prisma.EstudioOrderByWithRelationInput
   status?: Prisma.StatusOrderByWithRelationInput
-  estacao?: Prisma.EstacaoOrderByWithRelationInput
-  temporadas?: Prisma.TemporadaOrderByRelationAggregateInput
   episodios?: Prisma.EpisodioOrderByRelationAggregateInput
   tags?: Prisma.AnimeTagAnimeOrderByRelationAggregateInput
   personagens?: Prisma.AnimePersonagemOrderByRelationAggregateInput
+  generos?: Prisma.AnimeGeneroOrderByRelationAggregateInput
+  plataformas?: Prisma.AnimePlataformaOrderByRelationAggregateInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeOrderByRelationAggregateInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioOrderByRelationAggregateInput
   cache?: Prisma.CacheAnimeOrderByWithRelationInput
@@ -354,15 +341,14 @@ export type AnimeWhereUniqueInput = Prisma.AtLeast<{
   franquiaId?: Prisma.IntNullableFilter<"Anime"> | number | null
   estudioId?: Prisma.IntFilter<"Anime"> | number
   statusId?: Prisma.IntFilter<"Anime"> | number
-  estacaoId?: Prisma.IntNullableFilter<"Anime"> | number | null
   franquia?: Prisma.XOR<Prisma.FranquiaNullableScalarRelationFilter, Prisma.FranquiaWhereInput> | null
   estudio?: Prisma.XOR<Prisma.EstudioScalarRelationFilter, Prisma.EstudioWhereInput>
   status?: Prisma.XOR<Prisma.StatusScalarRelationFilter, Prisma.StatusWhereInput>
-  estacao?: Prisma.XOR<Prisma.EstacaoNullableScalarRelationFilter, Prisma.EstacaoWhereInput> | null
-  temporadas?: Prisma.TemporadaListRelationFilter
   episodios?: Prisma.EpisodioListRelationFilter
   tags?: Prisma.AnimeTagAnimeListRelationFilter
   personagens?: Prisma.AnimePersonagemListRelationFilter
+  generos?: Prisma.AnimeGeneroListRelationFilter
+  plataformas?: Prisma.AnimePlataformaListRelationFilter
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeListRelationFilter
   notasUsuarios?: Prisma.NotaAnimeUsuarioListRelationFilter
   cache?: Prisma.XOR<Prisma.CacheAnimeNullableScalarRelationFilter, Prisma.CacheAnimeWhereInput> | null
@@ -380,7 +366,6 @@ export type AnimeOrderByWithAggregationInput = {
   franquiaId?: Prisma.SortOrderInput | Prisma.SortOrder
   estudioId?: Prisma.SortOrder
   statusId?: Prisma.SortOrder
-  estacaoId?: Prisma.SortOrderInput | Prisma.SortOrder
   _count?: Prisma.AnimeCountOrderByAggregateInput
   _avg?: Prisma.AnimeAvgOrderByAggregateInput
   _max?: Prisma.AnimeMaxOrderByAggregateInput
@@ -403,7 +388,6 @@ export type AnimeScalarWhereWithAggregatesInput = {
   franquiaId?: Prisma.IntNullableWithAggregatesFilter<"Anime"> | number | null
   estudioId?: Prisma.IntWithAggregatesFilter<"Anime"> | number
   statusId?: Prisma.IntWithAggregatesFilter<"Anime"> | number
-  estacaoId?: Prisma.IntNullableWithAggregatesFilter<"Anime"> | number | null
 }
 
 export type AnimeCreateInput = {
@@ -417,11 +401,11 @@ export type AnimeCreateInput = {
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
@@ -439,11 +423,11 @@ export type AnimeUncheckedCreateInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
@@ -460,11 +444,11 @@ export type AnimeUpdateInput = {
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
@@ -482,11 +466,11 @@ export type AnimeUncheckedUpdateInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
@@ -504,7 +488,6 @@ export type AnimeCreateManyInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
-  estacaoId?: number | null
 }
 
 export type AnimeUpdateManyMutationInput = {
@@ -529,7 +512,6 @@ export type AnimeUncheckedUpdateManyInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
 }
 
 export type AnimeCountOrderByAggregateInput = {
@@ -544,7 +526,6 @@ export type AnimeCountOrderByAggregateInput = {
   franquiaId?: Prisma.SortOrder
   estudioId?: Prisma.SortOrder
   statusId?: Prisma.SortOrder
-  estacaoId?: Prisma.SortOrder
 }
 
 export type AnimeAvgOrderByAggregateInput = {
@@ -555,7 +536,6 @@ export type AnimeAvgOrderByAggregateInput = {
   franquiaId?: Prisma.SortOrder
   estudioId?: Prisma.SortOrder
   statusId?: Prisma.SortOrder
-  estacaoId?: Prisma.SortOrder
 }
 
 export type AnimeMaxOrderByAggregateInput = {
@@ -570,7 +550,6 @@ export type AnimeMaxOrderByAggregateInput = {
   franquiaId?: Prisma.SortOrder
   estudioId?: Prisma.SortOrder
   statusId?: Prisma.SortOrder
-  estacaoId?: Prisma.SortOrder
 }
 
 export type AnimeMinOrderByAggregateInput = {
@@ -585,7 +564,6 @@ export type AnimeMinOrderByAggregateInput = {
   franquiaId?: Prisma.SortOrder
   estudioId?: Prisma.SortOrder
   statusId?: Prisma.SortOrder
-  estacaoId?: Prisma.SortOrder
 }
 
 export type AnimeSumOrderByAggregateInput = {
@@ -596,7 +574,6 @@ export type AnimeSumOrderByAggregateInput = {
   franquiaId?: Prisma.SortOrder
   estudioId?: Prisma.SortOrder
   statusId?: Prisma.SortOrder
-  estacaoId?: Prisma.SortOrder
 }
 
 export type AnimeListRelationFilter = {
@@ -636,48 +613,6 @@ export type NullableIntFieldUpdateOperationsInput = {
   decrement?: number
   multiply?: number
   divide?: number
-}
-
-export type AnimeCreateNestedManyWithoutEstacaoInput = {
-  create?: Prisma.XOR<Prisma.AnimeCreateWithoutEstacaoInput, Prisma.AnimeUncheckedCreateWithoutEstacaoInput> | Prisma.AnimeCreateWithoutEstacaoInput[] | Prisma.AnimeUncheckedCreateWithoutEstacaoInput[]
-  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutEstacaoInput | Prisma.AnimeCreateOrConnectWithoutEstacaoInput[]
-  createMany?: Prisma.AnimeCreateManyEstacaoInputEnvelope
-  connect?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-}
-
-export type AnimeUncheckedCreateNestedManyWithoutEstacaoInput = {
-  create?: Prisma.XOR<Prisma.AnimeCreateWithoutEstacaoInput, Prisma.AnimeUncheckedCreateWithoutEstacaoInput> | Prisma.AnimeCreateWithoutEstacaoInput[] | Prisma.AnimeUncheckedCreateWithoutEstacaoInput[]
-  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutEstacaoInput | Prisma.AnimeCreateOrConnectWithoutEstacaoInput[]
-  createMany?: Prisma.AnimeCreateManyEstacaoInputEnvelope
-  connect?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-}
-
-export type AnimeUpdateManyWithoutEstacaoNestedInput = {
-  create?: Prisma.XOR<Prisma.AnimeCreateWithoutEstacaoInput, Prisma.AnimeUncheckedCreateWithoutEstacaoInput> | Prisma.AnimeCreateWithoutEstacaoInput[] | Prisma.AnimeUncheckedCreateWithoutEstacaoInput[]
-  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutEstacaoInput | Prisma.AnimeCreateOrConnectWithoutEstacaoInput[]
-  upsert?: Prisma.AnimeUpsertWithWhereUniqueWithoutEstacaoInput | Prisma.AnimeUpsertWithWhereUniqueWithoutEstacaoInput[]
-  createMany?: Prisma.AnimeCreateManyEstacaoInputEnvelope
-  set?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-  disconnect?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-  delete?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-  connect?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-  update?: Prisma.AnimeUpdateWithWhereUniqueWithoutEstacaoInput | Prisma.AnimeUpdateWithWhereUniqueWithoutEstacaoInput[]
-  updateMany?: Prisma.AnimeUpdateManyWithWhereWithoutEstacaoInput | Prisma.AnimeUpdateManyWithWhereWithoutEstacaoInput[]
-  deleteMany?: Prisma.AnimeScalarWhereInput | Prisma.AnimeScalarWhereInput[]
-}
-
-export type AnimeUncheckedUpdateManyWithoutEstacaoNestedInput = {
-  create?: Prisma.XOR<Prisma.AnimeCreateWithoutEstacaoInput, Prisma.AnimeUncheckedCreateWithoutEstacaoInput> | Prisma.AnimeCreateWithoutEstacaoInput[] | Prisma.AnimeUncheckedCreateWithoutEstacaoInput[]
-  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutEstacaoInput | Prisma.AnimeCreateOrConnectWithoutEstacaoInput[]
-  upsert?: Prisma.AnimeUpsertWithWhereUniqueWithoutEstacaoInput | Prisma.AnimeUpsertWithWhereUniqueWithoutEstacaoInput[]
-  createMany?: Prisma.AnimeCreateManyEstacaoInputEnvelope
-  set?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-  disconnect?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-  delete?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-  connect?: Prisma.AnimeWhereUniqueInput | Prisma.AnimeWhereUniqueInput[]
-  update?: Prisma.AnimeUpdateWithWhereUniqueWithoutEstacaoInput | Prisma.AnimeUpdateWithWhereUniqueWithoutEstacaoInput[]
-  updateMany?: Prisma.AnimeUpdateManyWithWhereWithoutEstacaoInput | Prisma.AnimeUpdateManyWithWhereWithoutEstacaoInput[]
-  deleteMany?: Prisma.AnimeScalarWhereInput | Prisma.AnimeScalarWhereInput[]
 }
 
 export type AnimeCreateNestedManyWithoutFranquiaInput = {
@@ -806,20 +741,6 @@ export type AnimeUncheckedUpdateManyWithoutStatusNestedInput = {
   deleteMany?: Prisma.AnimeScalarWhereInput | Prisma.AnimeScalarWhereInput[]
 }
 
-export type AnimeCreateNestedOneWithoutTemporadasInput = {
-  create?: Prisma.XOR<Prisma.AnimeCreateWithoutTemporadasInput, Prisma.AnimeUncheckedCreateWithoutTemporadasInput>
-  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutTemporadasInput
-  connect?: Prisma.AnimeWhereUniqueInput
-}
-
-export type AnimeUpdateOneRequiredWithoutTemporadasNestedInput = {
-  create?: Prisma.XOR<Prisma.AnimeCreateWithoutTemporadasInput, Prisma.AnimeUncheckedCreateWithoutTemporadasInput>
-  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutTemporadasInput
-  upsert?: Prisma.AnimeUpsertWithoutTemporadasInput
-  connect?: Prisma.AnimeWhereUniqueInput
-  update?: Prisma.XOR<Prisma.XOR<Prisma.AnimeUpdateToOneWithWhereWithoutTemporadasInput, Prisma.AnimeUpdateWithoutTemporadasInput>, Prisma.AnimeUncheckedUpdateWithoutTemporadasInput>
-}
-
 export type AnimeCreateNestedOneWithoutEpisodiosInput = {
   create?: Prisma.XOR<Prisma.AnimeCreateWithoutEpisodiosInput, Prisma.AnimeUncheckedCreateWithoutEpisodiosInput>
   connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutEpisodiosInput
@@ -904,89 +825,32 @@ export type AnimeUpdateOneRequiredWithoutPersonagensNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.AnimeUpdateToOneWithWhereWithoutPersonagensInput, Prisma.AnimeUpdateWithoutPersonagensInput>, Prisma.AnimeUncheckedUpdateWithoutPersonagensInput>
 }
 
-export type AnimeCreateWithoutEstacaoInput = {
-  titulo: string
-  tipo: string
-  temporada: number
-  ano: number
-  sinopse: string
-  capaUrl?: string | null
-  quantidadeEpisodios?: number
-  franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
-  estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
-  status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
-  episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
-  tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
-  personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
-  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
-  notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
-  cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
+export type AnimeCreateNestedOneWithoutGenerosInput = {
+  create?: Prisma.XOR<Prisma.AnimeCreateWithoutGenerosInput, Prisma.AnimeUncheckedCreateWithoutGenerosInput>
+  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutGenerosInput
+  connect?: Prisma.AnimeWhereUniqueInput
 }
 
-export type AnimeUncheckedCreateWithoutEstacaoInput = {
-  id?: number
-  titulo: string
-  tipo: string
-  temporada: number
-  ano: number
-  sinopse: string
-  capaUrl?: string | null
-  quantidadeEpisodios?: number
-  franquiaId?: number | null
-  estudioId: number
-  statusId: number
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
-  episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
-  tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
-  personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
-  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
-  notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
-  cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
+export type AnimeUpdateOneRequiredWithoutGenerosNestedInput = {
+  create?: Prisma.XOR<Prisma.AnimeCreateWithoutGenerosInput, Prisma.AnimeUncheckedCreateWithoutGenerosInput>
+  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutGenerosInput
+  upsert?: Prisma.AnimeUpsertWithoutGenerosInput
+  connect?: Prisma.AnimeWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.AnimeUpdateToOneWithWhereWithoutGenerosInput, Prisma.AnimeUpdateWithoutGenerosInput>, Prisma.AnimeUncheckedUpdateWithoutGenerosInput>
 }
 
-export type AnimeCreateOrConnectWithoutEstacaoInput = {
-  where: Prisma.AnimeWhereUniqueInput
-  create: Prisma.XOR<Prisma.AnimeCreateWithoutEstacaoInput, Prisma.AnimeUncheckedCreateWithoutEstacaoInput>
+export type AnimeCreateNestedOneWithoutPlataformasInput = {
+  create?: Prisma.XOR<Prisma.AnimeCreateWithoutPlataformasInput, Prisma.AnimeUncheckedCreateWithoutPlataformasInput>
+  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutPlataformasInput
+  connect?: Prisma.AnimeWhereUniqueInput
 }
 
-export type AnimeCreateManyEstacaoInputEnvelope = {
-  data: Prisma.AnimeCreateManyEstacaoInput | Prisma.AnimeCreateManyEstacaoInput[]
-  skipDuplicates?: boolean
-}
-
-export type AnimeUpsertWithWhereUniqueWithoutEstacaoInput = {
-  where: Prisma.AnimeWhereUniqueInput
-  update: Prisma.XOR<Prisma.AnimeUpdateWithoutEstacaoInput, Prisma.AnimeUncheckedUpdateWithoutEstacaoInput>
-  create: Prisma.XOR<Prisma.AnimeCreateWithoutEstacaoInput, Prisma.AnimeUncheckedCreateWithoutEstacaoInput>
-}
-
-export type AnimeUpdateWithWhereUniqueWithoutEstacaoInput = {
-  where: Prisma.AnimeWhereUniqueInput
-  data: Prisma.XOR<Prisma.AnimeUpdateWithoutEstacaoInput, Prisma.AnimeUncheckedUpdateWithoutEstacaoInput>
-}
-
-export type AnimeUpdateManyWithWhereWithoutEstacaoInput = {
-  where: Prisma.AnimeScalarWhereInput
-  data: Prisma.XOR<Prisma.AnimeUpdateManyMutationInput, Prisma.AnimeUncheckedUpdateManyWithoutEstacaoInput>
-}
-
-export type AnimeScalarWhereInput = {
-  AND?: Prisma.AnimeScalarWhereInput | Prisma.AnimeScalarWhereInput[]
-  OR?: Prisma.AnimeScalarWhereInput[]
-  NOT?: Prisma.AnimeScalarWhereInput | Prisma.AnimeScalarWhereInput[]
-  id?: Prisma.IntFilter<"Anime"> | number
-  titulo?: Prisma.StringFilter<"Anime"> | string
-  tipo?: Prisma.StringFilter<"Anime"> | string
-  temporada?: Prisma.IntFilter<"Anime"> | number
-  ano?: Prisma.IntFilter<"Anime"> | number
-  sinopse?: Prisma.StringFilter<"Anime"> | string
-  capaUrl?: Prisma.StringNullableFilter<"Anime"> | string | null
-  quantidadeEpisodios?: Prisma.IntFilter<"Anime"> | number
-  franquiaId?: Prisma.IntNullableFilter<"Anime"> | number | null
-  estudioId?: Prisma.IntFilter<"Anime"> | number
-  statusId?: Prisma.IntFilter<"Anime"> | number
-  estacaoId?: Prisma.IntNullableFilter<"Anime"> | number | null
+export type AnimeUpdateOneRequiredWithoutPlataformasNestedInput = {
+  create?: Prisma.XOR<Prisma.AnimeCreateWithoutPlataformasInput, Prisma.AnimeUncheckedCreateWithoutPlataformasInput>
+  connectOrCreate?: Prisma.AnimeCreateOrConnectWithoutPlataformasInput
+  upsert?: Prisma.AnimeUpsertWithoutPlataformasInput
+  connect?: Prisma.AnimeWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.AnimeUpdateToOneWithWhereWithoutPlataformasInput, Prisma.AnimeUpdateWithoutPlataformasInput>, Prisma.AnimeUncheckedUpdateWithoutPlataformasInput>
 }
 
 export type AnimeCreateWithoutFranquiaInput = {
@@ -999,11 +863,11 @@ export type AnimeCreateWithoutFranquiaInput = {
   quantidadeEpisodios?: number
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
@@ -1020,11 +884,11 @@ export type AnimeUncheckedCreateWithoutFranquiaInput = {
   quantidadeEpisodios?: number
   estudioId: number
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
@@ -1056,6 +920,23 @@ export type AnimeUpdateManyWithWhereWithoutFranquiaInput = {
   data: Prisma.XOR<Prisma.AnimeUpdateManyMutationInput, Prisma.AnimeUncheckedUpdateManyWithoutFranquiaInput>
 }
 
+export type AnimeScalarWhereInput = {
+  AND?: Prisma.AnimeScalarWhereInput | Prisma.AnimeScalarWhereInput[]
+  OR?: Prisma.AnimeScalarWhereInput[]
+  NOT?: Prisma.AnimeScalarWhereInput | Prisma.AnimeScalarWhereInput[]
+  id?: Prisma.IntFilter<"Anime"> | number
+  titulo?: Prisma.StringFilter<"Anime"> | string
+  tipo?: Prisma.StringFilter<"Anime"> | string
+  temporada?: Prisma.IntFilter<"Anime"> | number
+  ano?: Prisma.IntFilter<"Anime"> | number
+  sinopse?: Prisma.StringFilter<"Anime"> | string
+  capaUrl?: Prisma.StringNullableFilter<"Anime"> | string | null
+  quantidadeEpisodios?: Prisma.IntFilter<"Anime"> | number
+  franquiaId?: Prisma.IntNullableFilter<"Anime"> | number | null
+  estudioId?: Prisma.IntFilter<"Anime"> | number
+  statusId?: Prisma.IntFilter<"Anime"> | number
+}
+
 export type AnimeCreateWithoutEstudioInput = {
   titulo: string
   tipo: string
@@ -1066,11 +947,11 @@ export type AnimeCreateWithoutEstudioInput = {
   quantidadeEpisodios?: number
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
@@ -1087,11 +968,11 @@ export type AnimeUncheckedCreateWithoutEstudioInput = {
   quantidadeEpisodios?: number
   franquiaId?: number | null
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
@@ -1133,11 +1014,11 @@ export type AnimeCreateWithoutStatusInput = {
   quantidadeEpisodios?: number
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
@@ -1154,11 +1035,11 @@ export type AnimeUncheckedCreateWithoutStatusInput = {
   quantidadeEpisodios?: number
   franquiaId?: number | null
   estudioId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
@@ -1190,104 +1071,6 @@ export type AnimeUpdateManyWithWhereWithoutStatusInput = {
   data: Prisma.XOR<Prisma.AnimeUpdateManyMutationInput, Prisma.AnimeUncheckedUpdateManyWithoutStatusInput>
 }
 
-export type AnimeCreateWithoutTemporadasInput = {
-  titulo: string
-  tipo: string
-  temporada: number
-  ano: number
-  sinopse: string
-  capaUrl?: string | null
-  quantidadeEpisodios?: number
-  franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
-  estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
-  status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
-  tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
-  personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
-  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
-  notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
-  cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
-}
-
-export type AnimeUncheckedCreateWithoutTemporadasInput = {
-  id?: number
-  titulo: string
-  tipo: string
-  temporada: number
-  ano: number
-  sinopse: string
-  capaUrl?: string | null
-  quantidadeEpisodios?: number
-  franquiaId?: number | null
-  estudioId: number
-  statusId: number
-  estacaoId?: number | null
-  episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
-  tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
-  personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
-  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
-  notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
-  cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
-}
-
-export type AnimeCreateOrConnectWithoutTemporadasInput = {
-  where: Prisma.AnimeWhereUniqueInput
-  create: Prisma.XOR<Prisma.AnimeCreateWithoutTemporadasInput, Prisma.AnimeUncheckedCreateWithoutTemporadasInput>
-}
-
-export type AnimeUpsertWithoutTemporadasInput = {
-  update: Prisma.XOR<Prisma.AnimeUpdateWithoutTemporadasInput, Prisma.AnimeUncheckedUpdateWithoutTemporadasInput>
-  create: Prisma.XOR<Prisma.AnimeCreateWithoutTemporadasInput, Prisma.AnimeUncheckedCreateWithoutTemporadasInput>
-  where?: Prisma.AnimeWhereInput
-}
-
-export type AnimeUpdateToOneWithWhereWithoutTemporadasInput = {
-  where?: Prisma.AnimeWhereInput
-  data: Prisma.XOR<Prisma.AnimeUpdateWithoutTemporadasInput, Prisma.AnimeUncheckedUpdateWithoutTemporadasInput>
-}
-
-export type AnimeUpdateWithoutTemporadasInput = {
-  titulo?: Prisma.StringFieldUpdateOperationsInput | string
-  tipo?: Prisma.StringFieldUpdateOperationsInput | string
-  temporada?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.IntFieldUpdateOperationsInput | number
-  sinopse?: Prisma.StringFieldUpdateOperationsInput | string
-  capaUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
-  franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
-  estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
-  status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
-  tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
-  personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
-  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
-  notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
-  cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
-}
-
-export type AnimeUncheckedUpdateWithoutTemporadasInput = {
-  id?: Prisma.IntFieldUpdateOperationsInput | number
-  titulo?: Prisma.StringFieldUpdateOperationsInput | string
-  tipo?: Prisma.StringFieldUpdateOperationsInput | string
-  temporada?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.IntFieldUpdateOperationsInput | number
-  sinopse?: Prisma.StringFieldUpdateOperationsInput | string
-  capaUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
-  franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  estudioId?: Prisma.IntFieldUpdateOperationsInput | number
-  statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
-  tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
-  personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
-  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
-  notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
-  cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
-}
-
 export type AnimeCreateWithoutEpisodiosInput = {
   titulo: string
   tipo: string
@@ -1299,10 +1082,10 @@ export type AnimeCreateWithoutEpisodiosInput = {
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
@@ -1320,10 +1103,10 @@ export type AnimeUncheckedCreateWithoutEpisodiosInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
@@ -1356,10 +1139,10 @@ export type AnimeUpdateWithoutEpisodiosInput = {
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
@@ -1377,10 +1160,10 @@ export type AnimeUncheckedUpdateWithoutEpisodiosInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
@@ -1397,11 +1180,11 @@ export type AnimeCreateWithoutCacheInput = {
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
 }
@@ -1418,11 +1201,11 @@ export type AnimeUncheckedCreateWithoutCacheInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
 }
@@ -1454,11 +1237,11 @@ export type AnimeUpdateWithoutCacheInput = {
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
 }
@@ -1475,11 +1258,11 @@ export type AnimeUncheckedUpdateWithoutCacheInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
 }
@@ -1495,10 +1278,10 @@ export type AnimeCreateWithoutTagsInput = {
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
@@ -1516,10 +1299,10 @@ export type AnimeUncheckedCreateWithoutTagsInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
@@ -1552,10 +1335,10 @@ export type AnimeUpdateWithoutTagsInput = {
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
@@ -1573,10 +1356,10 @@ export type AnimeUncheckedUpdateWithoutTagsInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
@@ -1593,11 +1376,11 @@ export type AnimeCreateWithoutFavoritosUsuariosInput = {
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
 }
@@ -1614,11 +1397,11 @@ export type AnimeUncheckedCreateWithoutFavoritosUsuariosInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
 }
@@ -1650,11 +1433,11 @@ export type AnimeUpdateWithoutFavoritosUsuariosInput = {
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
 }
@@ -1671,11 +1454,11 @@ export type AnimeUncheckedUpdateWithoutFavoritosUsuariosInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
 }
@@ -1691,11 +1474,11 @@ export type AnimeCreateWithoutNotasUsuariosInput = {
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
 }
@@ -1712,11 +1495,11 @@ export type AnimeUncheckedCreateWithoutNotasUsuariosInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
   personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
 }
@@ -1748,11 +1531,11 @@ export type AnimeUpdateWithoutNotasUsuariosInput = {
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
 }
@@ -1769,11 +1552,11 @@ export type AnimeUncheckedUpdateWithoutNotasUsuariosInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
 }
@@ -1789,10 +1572,10 @@ export type AnimeCreateWithoutPersonagensInput = {
   franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
   estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
   status: Prisma.StatusCreateNestedOneWithoutAnimesInput
-  estacao?: Prisma.EstacaoCreateNestedOneWithoutAnimesInput
-  temporadas?: Prisma.TemporadaCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
@@ -1810,10 +1593,10 @@ export type AnimeUncheckedCreateWithoutPersonagensInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
-  estacaoId?: number | null
-  temporadas?: Prisma.TemporadaUncheckedCreateNestedManyWithoutAnimeInput
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
   tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
   cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
@@ -1846,10 +1629,10 @@ export type AnimeUpdateWithoutPersonagensInput = {
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
@@ -1867,16 +1650,36 @@ export type AnimeUncheckedUpdateWithoutPersonagensInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
 }
 
-export type AnimeCreateManyEstacaoInput = {
+export type AnimeCreateWithoutGenerosInput = {
+  titulo: string
+  tipo: string
+  temporada: number
+  ano: number
+  sinopse: string
+  capaUrl?: string | null
+  quantidadeEpisodios?: number
+  franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
+  estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
+  status: Prisma.StatusCreateNestedOneWithoutAnimesInput
+  episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
+  tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
+  personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaCreateNestedManyWithoutAnimeInput
+  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
+  notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
+  cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
+}
+
+export type AnimeUncheckedCreateWithoutGenerosInput = {
   id?: number
   titulo: string
   tipo: string
@@ -1888,9 +1691,32 @@ export type AnimeCreateManyEstacaoInput = {
   franquiaId?: number | null
   estudioId: number
   statusId: number
+  episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
+  tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
+  personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  plataformas?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutAnimeInput
+  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
+  notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
+  cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
 }
 
-export type AnimeUpdateWithoutEstacaoInput = {
+export type AnimeCreateOrConnectWithoutGenerosInput = {
+  where: Prisma.AnimeWhereUniqueInput
+  create: Prisma.XOR<Prisma.AnimeCreateWithoutGenerosInput, Prisma.AnimeUncheckedCreateWithoutGenerosInput>
+}
+
+export type AnimeUpsertWithoutGenerosInput = {
+  update: Prisma.XOR<Prisma.AnimeUpdateWithoutGenerosInput, Prisma.AnimeUncheckedUpdateWithoutGenerosInput>
+  create: Prisma.XOR<Prisma.AnimeCreateWithoutGenerosInput, Prisma.AnimeUncheckedCreateWithoutGenerosInput>
+  where?: Prisma.AnimeWhereInput
+}
+
+export type AnimeUpdateToOneWithWhereWithoutGenerosInput = {
+  where?: Prisma.AnimeWhereInput
+  data: Prisma.XOR<Prisma.AnimeUpdateWithoutGenerosInput, Prisma.AnimeUncheckedUpdateWithoutGenerosInput>
+}
+
+export type AnimeUpdateWithoutGenerosInput = {
   titulo?: Prisma.StringFieldUpdateOperationsInput | string
   tipo?: Prisma.StringFieldUpdateOperationsInput | string
   temporada?: Prisma.IntFieldUpdateOperationsInput | number
@@ -1901,16 +1727,16 @@ export type AnimeUpdateWithoutEstacaoInput = {
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
 }
 
-export type AnimeUncheckedUpdateWithoutEstacaoInput = {
+export type AnimeUncheckedUpdateWithoutGenerosInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   titulo?: Prisma.StringFieldUpdateOperationsInput | string
   tipo?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1922,16 +1748,93 @@ export type AnimeUncheckedUpdateWithoutEstacaoInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
 }
 
-export type AnimeUncheckedUpdateManyWithoutEstacaoInput = {
+export type AnimeCreateWithoutPlataformasInput = {
+  titulo: string
+  tipo: string
+  temporada: number
+  ano: number
+  sinopse: string
+  capaUrl?: string | null
+  quantidadeEpisodios?: number
+  franquia?: Prisma.FranquiaCreateNestedOneWithoutAnimesInput
+  estudio: Prisma.EstudioCreateNestedOneWithoutAnimesInput
+  status: Prisma.StatusCreateNestedOneWithoutAnimesInput
+  episodios?: Prisma.EpisodioCreateNestedManyWithoutAnimeInput
+  tags?: Prisma.AnimeTagAnimeCreateNestedManyWithoutAnimeInput
+  personagens?: Prisma.AnimePersonagemCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroCreateNestedManyWithoutAnimeInput
+  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutAnimeInput
+  notasUsuarios?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutAnimeInput
+  cache?: Prisma.CacheAnimeCreateNestedOneWithoutAnimeInput
+}
+
+export type AnimeUncheckedCreateWithoutPlataformasInput = {
+  id?: number
+  titulo: string
+  tipo: string
+  temporada: number
+  ano: number
+  sinopse: string
+  capaUrl?: string | null
+  quantidadeEpisodios?: number
+  franquiaId?: number | null
+  estudioId: number
+  statusId: number
+  episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutAnimeInput
+  tags?: Prisma.AnimeTagAnimeUncheckedCreateNestedManyWithoutAnimeInput
+  personagens?: Prisma.AnimePersonagemUncheckedCreateNestedManyWithoutAnimeInput
+  generos?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutAnimeInput
+  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutAnimeInput
+  notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutAnimeInput
+  cache?: Prisma.CacheAnimeUncheckedCreateNestedOneWithoutAnimeInput
+}
+
+export type AnimeCreateOrConnectWithoutPlataformasInput = {
+  where: Prisma.AnimeWhereUniqueInput
+  create: Prisma.XOR<Prisma.AnimeCreateWithoutPlataformasInput, Prisma.AnimeUncheckedCreateWithoutPlataformasInput>
+}
+
+export type AnimeUpsertWithoutPlataformasInput = {
+  update: Prisma.XOR<Prisma.AnimeUpdateWithoutPlataformasInput, Prisma.AnimeUncheckedUpdateWithoutPlataformasInput>
+  create: Prisma.XOR<Prisma.AnimeCreateWithoutPlataformasInput, Prisma.AnimeUncheckedCreateWithoutPlataformasInput>
+  where?: Prisma.AnimeWhereInput
+}
+
+export type AnimeUpdateToOneWithWhereWithoutPlataformasInput = {
+  where?: Prisma.AnimeWhereInput
+  data: Prisma.XOR<Prisma.AnimeUpdateWithoutPlataformasInput, Prisma.AnimeUncheckedUpdateWithoutPlataformasInput>
+}
+
+export type AnimeUpdateWithoutPlataformasInput = {
+  titulo?: Prisma.StringFieldUpdateOperationsInput | string
+  tipo?: Prisma.StringFieldUpdateOperationsInput | string
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
+  ano?: Prisma.IntFieldUpdateOperationsInput | number
+  sinopse?: Prisma.StringFieldUpdateOperationsInput | string
+  capaUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
+  franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
+  estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
+  status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
+  episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
+  tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
+  personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
+  notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
+  cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
+}
+
+export type AnimeUncheckedUpdateWithoutPlataformasInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   titulo?: Prisma.StringFieldUpdateOperationsInput | string
   tipo?: Prisma.StringFieldUpdateOperationsInput | string
@@ -1943,6 +1846,13 @@ export type AnimeUncheckedUpdateManyWithoutEstacaoInput = {
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
+  episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
+  tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
+  personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
+  notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
+  cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
 }
 
 export type AnimeCreateManyFranquiaInput = {
@@ -1956,7 +1866,6 @@ export type AnimeCreateManyFranquiaInput = {
   quantidadeEpisodios?: number
   estudioId: number
   statusId: number
-  estacaoId?: number | null
 }
 
 export type AnimeUpdateWithoutFranquiaInput = {
@@ -1969,11 +1878,11 @@ export type AnimeUpdateWithoutFranquiaInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
@@ -1990,11 +1899,11 @@ export type AnimeUncheckedUpdateWithoutFranquiaInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
@@ -2011,7 +1920,6 @@ export type AnimeUncheckedUpdateManyWithoutFranquiaInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
 }
 
 export type AnimeCreateManyEstudioInput = {
@@ -2025,7 +1933,6 @@ export type AnimeCreateManyEstudioInput = {
   quantidadeEpisodios?: number
   franquiaId?: number | null
   statusId: number
-  estacaoId?: number | null
 }
 
 export type AnimeUpdateWithoutEstudioInput = {
@@ -2038,11 +1945,11 @@ export type AnimeUpdateWithoutEstudioInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   status?: Prisma.StatusUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
@@ -2059,11 +1966,11 @@ export type AnimeUncheckedUpdateWithoutEstudioInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
@@ -2080,7 +1987,6 @@ export type AnimeUncheckedUpdateManyWithoutEstudioInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   statusId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
 }
 
 export type AnimeCreateManyStatusInput = {
@@ -2094,7 +2000,6 @@ export type AnimeCreateManyStatusInput = {
   quantidadeEpisodios?: number
   franquiaId?: number | null
   estudioId: number
-  estacaoId?: number | null
 }
 
 export type AnimeUpdateWithoutStatusInput = {
@@ -2107,11 +2012,11 @@ export type AnimeUpdateWithoutStatusInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   franquia?: Prisma.FranquiaUpdateOneWithoutAnimesNestedInput
   estudio?: Prisma.EstudioUpdateOneRequiredWithoutAnimesNestedInput
-  estacao?: Prisma.EstacaoUpdateOneWithoutAnimesNestedInput
-  temporadas?: Prisma.TemporadaUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUpdateOneWithoutAnimeNestedInput
@@ -2128,11 +2033,11 @@ export type AnimeUncheckedUpdateWithoutStatusInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  temporadas?: Prisma.TemporadaUncheckedUpdateManyWithoutAnimeNestedInput
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutAnimeNestedInput
   tags?: Prisma.AnimeTagAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   personagens?: Prisma.AnimePersonagemUncheckedUpdateManyWithoutAnimeNestedInput
+  generos?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutAnimeNestedInput
+  plataformas?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutAnimeNestedInput
   favoritosUsuarios?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutAnimeNestedInput
   notasUsuarios?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutAnimeNestedInput
   cache?: Prisma.CacheAnimeUncheckedUpdateOneWithoutAnimeNestedInput
@@ -2149,7 +2054,6 @@ export type AnimeUncheckedUpdateManyWithoutStatusInput = {
   quantidadeEpisodios?: Prisma.IntFieldUpdateOperationsInput | number
   franquiaId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
   estudioId?: Prisma.IntFieldUpdateOperationsInput | number
-  estacaoId?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
 }
 
 
@@ -2158,19 +2062,21 @@ export type AnimeUncheckedUpdateManyWithoutStatusInput = {
  */
 
 export type AnimeCountOutputType = {
-  temporadas: number
   episodios: number
   tags: number
   personagens: number
+  generos: number
+  plataformas: number
   favoritosUsuarios: number
   notasUsuarios: number
 }
 
 export type AnimeCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  temporadas?: boolean | AnimeCountOutputTypeCountTemporadasArgs
   episodios?: boolean | AnimeCountOutputTypeCountEpisodiosArgs
   tags?: boolean | AnimeCountOutputTypeCountTagsArgs
   personagens?: boolean | AnimeCountOutputTypeCountPersonagensArgs
+  generos?: boolean | AnimeCountOutputTypeCountGenerosArgs
+  plataformas?: boolean | AnimeCountOutputTypeCountPlataformasArgs
   favoritosUsuarios?: boolean | AnimeCountOutputTypeCountFavoritosUsuariosArgs
   notasUsuarios?: boolean | AnimeCountOutputTypeCountNotasUsuariosArgs
 }
@@ -2183,13 +2089,6 @@ export type AnimeCountOutputTypeDefaultArgs<ExtArgs extends runtime.Types.Extens
    * Select specific fields to fetch from the AnimeCountOutputType
    */
   select?: Prisma.AnimeCountOutputTypeSelect<ExtArgs> | null
-}
-
-/**
- * AnimeCountOutputType without action
- */
-export type AnimeCountOutputTypeCountTemporadasArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  where?: Prisma.TemporadaWhereInput
 }
 
 /**
@@ -2211,6 +2110,20 @@ export type AnimeCountOutputTypeCountTagsArgs<ExtArgs extends runtime.Types.Exte
  */
 export type AnimeCountOutputTypeCountPersonagensArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   where?: Prisma.AnimePersonagemWhereInput
+}
+
+/**
+ * AnimeCountOutputType without action
+ */
+export type AnimeCountOutputTypeCountGenerosArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.AnimeGeneroWhereInput
+}
+
+/**
+ * AnimeCountOutputType without action
+ */
+export type AnimeCountOutputTypeCountPlataformasArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.AnimePlataformaWhereInput
 }
 
 /**
@@ -2240,15 +2153,14 @@ export type AnimeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = 
   franquiaId?: boolean
   estudioId?: boolean
   statusId?: boolean
-  estacaoId?: boolean
   franquia?: boolean | Prisma.Anime$franquiaArgs<ExtArgs>
   estudio?: boolean | Prisma.EstudioDefaultArgs<ExtArgs>
   status?: boolean | Prisma.StatusDefaultArgs<ExtArgs>
-  estacao?: boolean | Prisma.Anime$estacaoArgs<ExtArgs>
-  temporadas?: boolean | Prisma.Anime$temporadasArgs<ExtArgs>
   episodios?: boolean | Prisma.Anime$episodiosArgs<ExtArgs>
   tags?: boolean | Prisma.Anime$tagsArgs<ExtArgs>
   personagens?: boolean | Prisma.Anime$personagensArgs<ExtArgs>
+  generos?: boolean | Prisma.Anime$generosArgs<ExtArgs>
+  plataformas?: boolean | Prisma.Anime$plataformasArgs<ExtArgs>
   favoritosUsuarios?: boolean | Prisma.Anime$favoritosUsuariosArgs<ExtArgs>
   notasUsuarios?: boolean | Prisma.Anime$notasUsuariosArgs<ExtArgs>
   cache?: boolean | Prisma.Anime$cacheArgs<ExtArgs>
@@ -2267,11 +2179,9 @@ export type AnimeSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensi
   franquiaId?: boolean
   estudioId?: boolean
   statusId?: boolean
-  estacaoId?: boolean
   franquia?: boolean | Prisma.Anime$franquiaArgs<ExtArgs>
   estudio?: boolean | Prisma.EstudioDefaultArgs<ExtArgs>
   status?: boolean | Prisma.StatusDefaultArgs<ExtArgs>
-  estacao?: boolean | Prisma.Anime$estacaoArgs<ExtArgs>
 }, ExtArgs["result"]["anime"]>
 
 export type AnimeSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -2286,11 +2196,9 @@ export type AnimeSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensi
   franquiaId?: boolean
   estudioId?: boolean
   statusId?: boolean
-  estacaoId?: boolean
   franquia?: boolean | Prisma.Anime$franquiaArgs<ExtArgs>
   estudio?: boolean | Prisma.EstudioDefaultArgs<ExtArgs>
   status?: boolean | Prisma.StatusDefaultArgs<ExtArgs>
-  estacao?: boolean | Prisma.Anime$estacaoArgs<ExtArgs>
 }, ExtArgs["result"]["anime"]>
 
 export type AnimeSelectScalar = {
@@ -2305,19 +2213,18 @@ export type AnimeSelectScalar = {
   franquiaId?: boolean
   estudioId?: boolean
   statusId?: boolean
-  estacaoId?: boolean
 }
 
-export type AnimeOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "titulo" | "tipo" | "temporada" | "ano" | "sinopse" | "capaUrl" | "quantidadeEpisodios" | "franquiaId" | "estudioId" | "statusId" | "estacaoId", ExtArgs["result"]["anime"]>
+export type AnimeOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "titulo" | "tipo" | "temporada" | "ano" | "sinopse" | "capaUrl" | "quantidadeEpisodios" | "franquiaId" | "estudioId" | "statusId", ExtArgs["result"]["anime"]>
 export type AnimeInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   franquia?: boolean | Prisma.Anime$franquiaArgs<ExtArgs>
   estudio?: boolean | Prisma.EstudioDefaultArgs<ExtArgs>
   status?: boolean | Prisma.StatusDefaultArgs<ExtArgs>
-  estacao?: boolean | Prisma.Anime$estacaoArgs<ExtArgs>
-  temporadas?: boolean | Prisma.Anime$temporadasArgs<ExtArgs>
   episodios?: boolean | Prisma.Anime$episodiosArgs<ExtArgs>
   tags?: boolean | Prisma.Anime$tagsArgs<ExtArgs>
   personagens?: boolean | Prisma.Anime$personagensArgs<ExtArgs>
+  generos?: boolean | Prisma.Anime$generosArgs<ExtArgs>
+  plataformas?: boolean | Prisma.Anime$plataformasArgs<ExtArgs>
   favoritosUsuarios?: boolean | Prisma.Anime$favoritosUsuariosArgs<ExtArgs>
   notasUsuarios?: boolean | Prisma.Anime$notasUsuariosArgs<ExtArgs>
   cache?: boolean | Prisma.Anime$cacheArgs<ExtArgs>
@@ -2327,13 +2234,11 @@ export type AnimeIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extens
   franquia?: boolean | Prisma.Anime$franquiaArgs<ExtArgs>
   estudio?: boolean | Prisma.EstudioDefaultArgs<ExtArgs>
   status?: boolean | Prisma.StatusDefaultArgs<ExtArgs>
-  estacao?: boolean | Prisma.Anime$estacaoArgs<ExtArgs>
 }
 export type AnimeIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   franquia?: boolean | Prisma.Anime$franquiaArgs<ExtArgs>
   estudio?: boolean | Prisma.EstudioDefaultArgs<ExtArgs>
   status?: boolean | Prisma.StatusDefaultArgs<ExtArgs>
-  estacao?: boolean | Prisma.Anime$estacaoArgs<ExtArgs>
 }
 
 export type $AnimePayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -2342,11 +2247,11 @@ export type $AnimePayload<ExtArgs extends runtime.Types.Extensions.InternalArgs 
     franquia: Prisma.$FranquiaPayload<ExtArgs> | null
     estudio: Prisma.$EstudioPayload<ExtArgs>
     status: Prisma.$StatusPayload<ExtArgs>
-    estacao: Prisma.$EstacaoPayload<ExtArgs> | null
-    temporadas: Prisma.$TemporadaPayload<ExtArgs>[]
     episodios: Prisma.$EpisodioPayload<ExtArgs>[]
     tags: Prisma.$AnimeTagAnimePayload<ExtArgs>[]
     personagens: Prisma.$AnimePersonagemPayload<ExtArgs>[]
+    generos: Prisma.$AnimeGeneroPayload<ExtArgs>[]
+    plataformas: Prisma.$AnimePlataformaPayload<ExtArgs>[]
     favoritosUsuarios: Prisma.$UsuarioFavoritoAnimePayload<ExtArgs>[]
     notasUsuarios: Prisma.$NotaAnimeUsuarioPayload<ExtArgs>[]
     cache: Prisma.$CacheAnimePayload<ExtArgs> | null
@@ -2363,7 +2268,6 @@ export type $AnimePayload<ExtArgs extends runtime.Types.Extensions.InternalArgs 
     franquiaId: number | null
     estudioId: number
     statusId: number
-    estacaoId: number | null
   }, ExtArgs["result"]["anime"]>
   composites: {}
 }
@@ -2761,11 +2665,11 @@ export interface Prisma__AnimeClient<T, Null = never, ExtArgs extends runtime.Ty
   franquia<T extends Prisma.Anime$franquiaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$franquiaArgs<ExtArgs>>): Prisma.Prisma__FranquiaClient<runtime.Types.Result.GetResult<Prisma.$FranquiaPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
   estudio<T extends Prisma.EstudioDefaultArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.EstudioDefaultArgs<ExtArgs>>): Prisma.Prisma__EstudioClient<runtime.Types.Result.GetResult<Prisma.$EstudioPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
   status<T extends Prisma.StatusDefaultArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.StatusDefaultArgs<ExtArgs>>): Prisma.Prisma__StatusClient<runtime.Types.Result.GetResult<Prisma.$StatusPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-  estacao<T extends Prisma.Anime$estacaoArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$estacaoArgs<ExtArgs>>): Prisma.Prisma__EstacaoClient<runtime.Types.Result.GetResult<Prisma.$EstacaoPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
-  temporadas<T extends Prisma.Anime$temporadasArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$temporadasArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$TemporadaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   episodios<T extends Prisma.Anime$episodiosArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$episodiosArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$EpisodioPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   tags<T extends Prisma.Anime$tagsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$tagsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$AnimeTagAnimePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   personagens<T extends Prisma.Anime$personagensArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$personagensArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$AnimePersonagemPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  generos<T extends Prisma.Anime$generosArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$generosArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$AnimeGeneroPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  plataformas<T extends Prisma.Anime$plataformasArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$plataformasArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$AnimePlataformaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   favoritosUsuarios<T extends Prisma.Anime$favoritosUsuariosArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$favoritosUsuariosArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$UsuarioFavoritoAnimePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   notasUsuarios<T extends Prisma.Anime$notasUsuariosArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$notasUsuariosArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$NotaAnimeUsuarioPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   cache<T extends Prisma.Anime$cacheArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Anime$cacheArgs<ExtArgs>>): Prisma.Prisma__CacheAnimeClient<runtime.Types.Result.GetResult<Prisma.$CacheAnimePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
@@ -2809,7 +2713,6 @@ export interface AnimeFieldRefs {
   readonly franquiaId: Prisma.FieldRef<"Anime", 'Int'>
   readonly estudioId: Prisma.FieldRef<"Anime", 'Int'>
   readonly statusId: Prisma.FieldRef<"Anime", 'Int'>
-  readonly estacaoId: Prisma.FieldRef<"Anime", 'Int'>
 }
     
 
@@ -3230,49 +3133,6 @@ export type Anime$franquiaArgs<ExtArgs extends runtime.Types.Extensions.Internal
 }
 
 /**
- * Anime.estacao
- */
-export type Anime$estacaoArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  /**
-   * Select specific fields to fetch from the Estacao
-   */
-  select?: Prisma.EstacaoSelect<ExtArgs> | null
-  /**
-   * Omit specific fields from the Estacao
-   */
-  omit?: Prisma.EstacaoOmit<ExtArgs> | null
-  /**
-   * Choose, which related nodes to fetch as well
-   */
-  include?: Prisma.EstacaoInclude<ExtArgs> | null
-  where?: Prisma.EstacaoWhereInput
-}
-
-/**
- * Anime.temporadas
- */
-export type Anime$temporadasArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  /**
-   * Select specific fields to fetch from the Temporada
-   */
-  select?: Prisma.TemporadaSelect<ExtArgs> | null
-  /**
-   * Omit specific fields from the Temporada
-   */
-  omit?: Prisma.TemporadaOmit<ExtArgs> | null
-  /**
-   * Choose, which related nodes to fetch as well
-   */
-  include?: Prisma.TemporadaInclude<ExtArgs> | null
-  where?: Prisma.TemporadaWhereInput
-  orderBy?: Prisma.TemporadaOrderByWithRelationInput | Prisma.TemporadaOrderByWithRelationInput[]
-  cursor?: Prisma.TemporadaWhereUniqueInput
-  take?: number
-  skip?: number
-  distinct?: Prisma.TemporadaScalarFieldEnum | Prisma.TemporadaScalarFieldEnum[]
-}
-
-/**
  * Anime.episodios
  */
 export type Anime$episodiosArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -3342,6 +3202,54 @@ export type Anime$personagensArgs<ExtArgs extends runtime.Types.Extensions.Inter
   take?: number
   skip?: number
   distinct?: Prisma.AnimePersonagemScalarFieldEnum | Prisma.AnimePersonagemScalarFieldEnum[]
+}
+
+/**
+ * Anime.generos
+ */
+export type Anime$generosArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the AnimeGenero
+   */
+  select?: Prisma.AnimeGeneroSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the AnimeGenero
+   */
+  omit?: Prisma.AnimeGeneroOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.AnimeGeneroInclude<ExtArgs> | null
+  where?: Prisma.AnimeGeneroWhereInput
+  orderBy?: Prisma.AnimeGeneroOrderByWithRelationInput | Prisma.AnimeGeneroOrderByWithRelationInput[]
+  cursor?: Prisma.AnimeGeneroWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.AnimeGeneroScalarFieldEnum | Prisma.AnimeGeneroScalarFieldEnum[]
+}
+
+/**
+ * Anime.plataformas
+ */
+export type Anime$plataformasArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the AnimePlataforma
+   */
+  select?: Prisma.AnimePlataformaSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the AnimePlataforma
+   */
+  omit?: Prisma.AnimePlataformaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.AnimePlataformaInclude<ExtArgs> | null
+  where?: Prisma.AnimePlataformaWhereInput
+  orderBy?: Prisma.AnimePlataformaOrderByWithRelationInput | Prisma.AnimePlataformaOrderByWithRelationInput[]
+  cursor?: Prisma.AnimePlataformaWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.AnimePlataformaScalarFieldEnum | Prisma.AnimePlataformaScalarFieldEnum[]
 }
 
 /**
