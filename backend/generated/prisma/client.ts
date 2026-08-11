@@ -47,10 +47,10 @@ export { Prisma }
  */
 export type Anime = Prisma.AnimeModel
 /**
- * Model Estacao
+ * Model Temporada
  * 
  */
-export type Estacao = Prisma.EstacaoModel
+export type Temporada = Prisma.TemporadaModel
 /**
  * Model Franquia
  * 
@@ -66,11 +66,6 @@ export type Estudio = Prisma.EstudioModel
  * 
  */
 export type Status = Prisma.StatusModel
-/**
- * Model Temporada
- * 
- */
-export type Temporada = Prisma.TemporadaModel
 /**
  * Model Episodio
  * 
@@ -126,6 +121,16 @@ export type Personagem = Prisma.PersonagemModel
  * 
  */
 export type AnimePersonagem = Prisma.AnimePersonagemModel
+/**
+ * Model AnimeGenero
+ * 
+ */
+export type AnimeGenero = Prisma.AnimeGeneroModel
+/**
+ * Model AnimePlataforma
+ * 
+ */
+export type AnimePlataforma = Prisma.AnimePlataformaModel
 /**
  * Model PersonagemFavorito
  * 
