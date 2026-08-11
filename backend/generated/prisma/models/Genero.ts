@@ -192,11 +192,13 @@ export type GeneroWhereInput = {
   NOT?: Prisma.GeneroWhereInput | Prisma.GeneroWhereInput[]
   id?: Prisma.IntFilter<"Genero"> | number
   nome?: Prisma.StringFilter<"Genero"> | string
+  animes?: Prisma.AnimeGeneroListRelationFilter
 }
 
 export type GeneroOrderByWithRelationInput = {
   id?: Prisma.SortOrder
   nome?: Prisma.SortOrder
+  animes?: Prisma.AnimeGeneroOrderByRelationAggregateInput
 }
 
 export type GeneroWhereUniqueInput = Prisma.AtLeast<{
@@ -205,6 +207,7 @@ export type GeneroWhereUniqueInput = Prisma.AtLeast<{
   AND?: Prisma.GeneroWhereInput | Prisma.GeneroWhereInput[]
   OR?: Prisma.GeneroWhereInput[]
   NOT?: Prisma.GeneroWhereInput | Prisma.GeneroWhereInput[]
+  animes?: Prisma.AnimeGeneroListRelationFilter
 }, "id" | "nome">
 
 export type GeneroOrderByWithAggregationInput = {
@@ -227,20 +230,24 @@ export type GeneroScalarWhereWithAggregatesInput = {
 
 export type GeneroCreateInput = {
   nome: string
+  animes?: Prisma.AnimeGeneroCreateNestedManyWithoutGeneroInput
 }
 
 export type GeneroUncheckedCreateInput = {
   id?: number
   nome: string
+  animes?: Prisma.AnimeGeneroUncheckedCreateNestedManyWithoutGeneroInput
 }
 
 export type GeneroUpdateInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
+  animes?: Prisma.AnimeGeneroUpdateManyWithoutGeneroNestedInput
 }
 
 export type GeneroUncheckedUpdateInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   nome?: Prisma.StringFieldUpdateOperationsInput | string
+  animes?: Prisma.AnimeGeneroUncheckedUpdateManyWithoutGeneroNestedInput
 }
 
 export type GeneroCreateManyInput = {
@@ -255,6 +262,11 @@ export type GeneroUpdateManyMutationInput = {
 export type GeneroUncheckedUpdateManyInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   nome?: Prisma.StringFieldUpdateOperationsInput | string
+}
+
+export type GeneroScalarRelationFilter = {
+  is?: Prisma.GeneroWhereInput
+  isNot?: Prisma.GeneroWhereInput
 }
 
 export type GeneroCountOrderByAggregateInput = {
@@ -280,11 +292,90 @@ export type GeneroSumOrderByAggregateInput = {
   id?: Prisma.SortOrder
 }
 
+export type GeneroCreateNestedOneWithoutAnimesInput = {
+  create?: Prisma.XOR<Prisma.GeneroCreateWithoutAnimesInput, Prisma.GeneroUncheckedCreateWithoutAnimesInput>
+  connectOrCreate?: Prisma.GeneroCreateOrConnectWithoutAnimesInput
+  connect?: Prisma.GeneroWhereUniqueInput
+}
+
+export type GeneroUpdateOneRequiredWithoutAnimesNestedInput = {
+  create?: Prisma.XOR<Prisma.GeneroCreateWithoutAnimesInput, Prisma.GeneroUncheckedCreateWithoutAnimesInput>
+  connectOrCreate?: Prisma.GeneroCreateOrConnectWithoutAnimesInput
+  upsert?: Prisma.GeneroUpsertWithoutAnimesInput
+  connect?: Prisma.GeneroWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.GeneroUpdateToOneWithWhereWithoutAnimesInput, Prisma.GeneroUpdateWithoutAnimesInput>, Prisma.GeneroUncheckedUpdateWithoutAnimesInput>
+}
+
+export type GeneroCreateWithoutAnimesInput = {
+  nome: string
+}
+
+export type GeneroUncheckedCreateWithoutAnimesInput = {
+  id?: number
+  nome: string
+}
+
+export type GeneroCreateOrConnectWithoutAnimesInput = {
+  where: Prisma.GeneroWhereUniqueInput
+  create: Prisma.XOR<Prisma.GeneroCreateWithoutAnimesInput, Prisma.GeneroUncheckedCreateWithoutAnimesInput>
+}
+
+export type GeneroUpsertWithoutAnimesInput = {
+  update: Prisma.XOR<Prisma.GeneroUpdateWithoutAnimesInput, Prisma.GeneroUncheckedUpdateWithoutAnimesInput>
+  create: Prisma.XOR<Prisma.GeneroCreateWithoutAnimesInput, Prisma.GeneroUncheckedCreateWithoutAnimesInput>
+  where?: Prisma.GeneroWhereInput
+}
+
+export type GeneroUpdateToOneWithWhereWithoutAnimesInput = {
+  where?: Prisma.GeneroWhereInput
+  data: Prisma.XOR<Prisma.GeneroUpdateWithoutAnimesInput, Prisma.GeneroUncheckedUpdateWithoutAnimesInput>
+}
+
+export type GeneroUpdateWithoutAnimesInput = {
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
+}
+
+export type GeneroUncheckedUpdateWithoutAnimesInput = {
+  id?: Prisma.IntFieldUpdateOperationsInput | number
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
+}
+
+
+/**
+ * Count Type GeneroCountOutputType
+ */
+
+export type GeneroCountOutputType = {
+  animes: number
+}
+
+export type GeneroCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  animes?: boolean | GeneroCountOutputTypeCountAnimesArgs
+}
+
+/**
+ * GeneroCountOutputType without action
+ */
+export type GeneroCountOutputTypeDefaultArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the GeneroCountOutputType
+   */
+  select?: Prisma.GeneroCountOutputTypeSelect<ExtArgs> | null
+}
+
+/**
+ * GeneroCountOutputType without action
+ */
+export type GeneroCountOutputTypeCountAnimesArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.AnimeGeneroWhereInput
+}
 
 
 export type GeneroSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
   nome?: boolean
+  animes?: boolean | Prisma.Genero$animesArgs<ExtArgs>
+  _count?: boolean | Prisma.GeneroCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["genero"]>
 
 export type GeneroSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -303,10 +394,18 @@ export type GeneroSelectScalar = {
 }
 
 export type GeneroOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "nome", ExtArgs["result"]["genero"]>
+export type GeneroInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  animes?: boolean | Prisma.Genero$animesArgs<ExtArgs>
+  _count?: boolean | Prisma.GeneroCountOutputTypeDefaultArgs<ExtArgs>
+}
+export type GeneroIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
+export type GeneroIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
 
 export type $GeneroPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Genero"
-  objects: {}
+  objects: {
+    animes: Prisma.$AnimeGeneroPayload<ExtArgs>[]
+  }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: number
     nome: string
@@ -704,6 +803,7 @@ readonly fields: GeneroFieldRefs;
  */
 export interface Prisma__GeneroClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
+  animes<T extends Prisma.Genero$animesArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Genero$animesArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$AnimeGeneroPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -752,6 +852,10 @@ export type GeneroFindUniqueArgs<ExtArgs extends runtime.Types.Extensions.Intern
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
+  /**
    * Filter, which Genero to fetch.
    */
   where: Prisma.GeneroWhereUniqueInput
@@ -770,6 +874,10 @@ export type GeneroFindUniqueOrThrowArgs<ExtArgs extends runtime.Types.Extensions
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
+  /**
    * Filter, which Genero to fetch.
    */
   where: Prisma.GeneroWhereUniqueInput
@@ -787,6 +895,10 @@ export type GeneroFindFirstArgs<ExtArgs extends runtime.Types.Extensions.Interna
    * Omit specific fields from the Genero
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
   /**
    * Filter, which Genero to fetch.
    */
@@ -836,6 +948,10 @@ export type GeneroFindFirstOrThrowArgs<ExtArgs extends runtime.Types.Extensions.
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
+  /**
    * Filter, which Genero to fetch.
    */
   where?: Prisma.GeneroWhereInput
@@ -883,6 +999,10 @@ export type GeneroFindManyArgs<ExtArgs extends runtime.Types.Extensions.Internal
    * Omit specific fields from the Genero
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
   /**
    * Filter, which Generos to fetch.
    */
@@ -932,6 +1052,10 @@ export type GeneroCreateArgs<ExtArgs extends runtime.Types.Extensions.InternalAr
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
+  /**
    * The data needed to create a Genero.
    */
   data: Prisma.XOR<Prisma.GeneroCreateInput, Prisma.GeneroUncheckedCreateInput>
@@ -979,6 +1103,10 @@ export type GeneroUpdateArgs<ExtArgs extends runtime.Types.Extensions.InternalAr
    * Omit specific fields from the Genero
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
   /**
    * The data needed to update a Genero.
    */
@@ -1046,6 +1174,10 @@ export type GeneroUpsertArgs<ExtArgs extends runtime.Types.Extensions.InternalAr
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
+  /**
    * The filter to search for the Genero to update in case it exists.
    */
   where: Prisma.GeneroWhereUniqueInput
@@ -1072,6 +1204,10 @@ export type GeneroDeleteArgs<ExtArgs extends runtime.Types.Extensions.InternalAr
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
+  /**
    * Filter which Genero to delete.
    */
   where: Prisma.GeneroWhereUniqueInput
@@ -1092,6 +1228,30 @@ export type GeneroDeleteManyArgs<ExtArgs extends runtime.Types.Extensions.Intern
 }
 
 /**
+ * Genero.animes
+ */
+export type Genero$animesArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the AnimeGenero
+   */
+  select?: Prisma.AnimeGeneroSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the AnimeGenero
+   */
+  omit?: Prisma.AnimeGeneroOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.AnimeGeneroInclude<ExtArgs> | null
+  where?: Prisma.AnimeGeneroWhereInput
+  orderBy?: Prisma.AnimeGeneroOrderByWithRelationInput | Prisma.AnimeGeneroOrderByWithRelationInput[]
+  cursor?: Prisma.AnimeGeneroWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.AnimeGeneroScalarFieldEnum | Prisma.AnimeGeneroScalarFieldEnum[]
+}
+
+/**
  * Genero without action
  */
 export type GeneroDefaultArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -1103,4 +1263,8 @@ export type GeneroDefaultArgs<ExtArgs extends runtime.Types.Extensions.InternalA
    * Omit specific fields from the Genero
    */
   omit?: Prisma.GeneroOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GeneroInclude<ExtArgs> | null
 }

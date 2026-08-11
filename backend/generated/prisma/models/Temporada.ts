@@ -28,74 +28,50 @@ export type AggregateTemporada = {
 
 export type TemporadaAvgAggregateOutputType = {
   id: number | null
-  numero: number | null
-  ano: number | null
-  animeId: number | null
 }
 
 export type TemporadaSumAggregateOutputType = {
   id: number | null
-  numero: number | null
-  ano: number | null
-  animeId: number | null
 }
 
 export type TemporadaMinAggregateOutputType = {
   id: number | null
-  numero: number | null
-  ano: number | null
-  animeId: number | null
+  nome: string | null
 }
 
 export type TemporadaMaxAggregateOutputType = {
   id: number | null
-  numero: number | null
-  ano: number | null
-  animeId: number | null
+  nome: string | null
 }
 
 export type TemporadaCountAggregateOutputType = {
   id: number
-  numero: number
-  ano: number
-  animeId: number
+  nome: number
   _all: number
 }
 
 
 export type TemporadaAvgAggregateInputType = {
   id?: true
-  numero?: true
-  ano?: true
-  animeId?: true
 }
 
 export type TemporadaSumAggregateInputType = {
   id?: true
-  numero?: true
-  ano?: true
-  animeId?: true
 }
 
 export type TemporadaMinAggregateInputType = {
   id?: true
-  numero?: true
-  ano?: true
-  animeId?: true
+  nome?: true
 }
 
 export type TemporadaMaxAggregateInputType = {
   id?: true
-  numero?: true
-  ano?: true
-  animeId?: true
+  nome?: true
 }
 
 export type TemporadaCountAggregateInputType = {
   id?: true
-  numero?: true
-  ano?: true
-  animeId?: true
+  nome?: true
   _all?: true
 }
 
@@ -187,9 +163,7 @@ export type TemporadaGroupByArgs<ExtArgs extends runtime.Types.Extensions.Intern
 
 export type TemporadaGroupByOutputType = {
   id: number
-  numero: number
-  ano: number | null
-  animeId: number
+  nome: string
   _count: TemporadaCountAggregateOutputType | null
   _avg: TemporadaAvgAggregateOutputType | null
   _sum: TemporadaSumAggregateOutputType | null
@@ -217,40 +191,28 @@ export type TemporadaWhereInput = {
   OR?: Prisma.TemporadaWhereInput[]
   NOT?: Prisma.TemporadaWhereInput | Prisma.TemporadaWhereInput[]
   id?: Prisma.IntFilter<"Temporada"> | number
-  numero?: Prisma.IntFilter<"Temporada"> | number
-  ano?: Prisma.IntNullableFilter<"Temporada"> | number | null
-  animeId?: Prisma.IntFilter<"Temporada"> | number
-  anime?: Prisma.XOR<Prisma.AnimeScalarRelationFilter, Prisma.AnimeWhereInput>
+  nome?: Prisma.StringFilter<"Temporada"> | string
   episodios?: Prisma.EpisodioListRelationFilter
 }
 
 export type TemporadaOrderByWithRelationInput = {
   id?: Prisma.SortOrder
-  numero?: Prisma.SortOrder
-  ano?: Prisma.SortOrderInput | Prisma.SortOrder
-  animeId?: Prisma.SortOrder
-  anime?: Prisma.AnimeOrderByWithRelationInput
+  nome?: Prisma.SortOrder
   episodios?: Prisma.EpisodioOrderByRelationAggregateInput
 }
 
 export type TemporadaWhereUniqueInput = Prisma.AtLeast<{
   id?: number
-  animeId_numero?: Prisma.TemporadaAnimeIdNumeroCompoundUniqueInput
+  nome?: string
   AND?: Prisma.TemporadaWhereInput | Prisma.TemporadaWhereInput[]
   OR?: Prisma.TemporadaWhereInput[]
   NOT?: Prisma.TemporadaWhereInput | Prisma.TemporadaWhereInput[]
-  numero?: Prisma.IntFilter<"Temporada"> | number
-  ano?: Prisma.IntNullableFilter<"Temporada"> | number | null
-  animeId?: Prisma.IntFilter<"Temporada"> | number
-  anime?: Prisma.XOR<Prisma.AnimeScalarRelationFilter, Prisma.AnimeWhereInput>
   episodios?: Prisma.EpisodioListRelationFilter
-}, "id" | "animeId_numero">
+}, "id" | "nome">
 
 export type TemporadaOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
-  numero?: Prisma.SortOrder
-  ano?: Prisma.SortOrderInput | Prisma.SortOrder
-  animeId?: Prisma.SortOrder
+  nome?: Prisma.SortOrder
   _count?: Prisma.TemporadaCountOrderByAggregateInput
   _avg?: Prisma.TemporadaAvgOrderByAggregateInput
   _max?: Prisma.TemporadaMaxOrderByAggregateInput
@@ -263,155 +225,71 @@ export type TemporadaScalarWhereWithAggregatesInput = {
   OR?: Prisma.TemporadaScalarWhereWithAggregatesInput[]
   NOT?: Prisma.TemporadaScalarWhereWithAggregatesInput | Prisma.TemporadaScalarWhereWithAggregatesInput[]
   id?: Prisma.IntWithAggregatesFilter<"Temporada"> | number
-  numero?: Prisma.IntWithAggregatesFilter<"Temporada"> | number
-  ano?: Prisma.IntNullableWithAggregatesFilter<"Temporada"> | number | null
-  animeId?: Prisma.IntWithAggregatesFilter<"Temporada"> | number
+  nome?: Prisma.StringWithAggregatesFilter<"Temporada"> | string
 }
 
 export type TemporadaCreateInput = {
-  numero: number
-  ano?: number | null
-  anime: Prisma.AnimeCreateNestedOneWithoutTemporadasInput
+  nome: string
   episodios?: Prisma.EpisodioCreateNestedManyWithoutTemporadaInput
 }
 
 export type TemporadaUncheckedCreateInput = {
   id?: number
-  numero: number
-  ano?: number | null
-  animeId: number
+  nome: string
   episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutTemporadaInput
 }
 
 export type TemporadaUpdateInput = {
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  anime?: Prisma.AnimeUpdateOneRequiredWithoutTemporadasNestedInput
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
   episodios?: Prisma.EpisodioUpdateManyWithoutTemporadaNestedInput
 }
 
 export type TemporadaUncheckedUpdateInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  animeId?: Prisma.IntFieldUpdateOperationsInput | number
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
   episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutTemporadaNestedInput
 }
 
 export type TemporadaCreateManyInput = {
   id?: number
-  numero: number
-  ano?: number | null
-  animeId: number
+  nome: string
 }
 
 export type TemporadaUpdateManyMutationInput = {
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
 }
 
 export type TemporadaUncheckedUpdateManyInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  animeId?: Prisma.IntFieldUpdateOperationsInput | number
-}
-
-export type TemporadaListRelationFilter = {
-  every?: Prisma.TemporadaWhereInput
-  some?: Prisma.TemporadaWhereInput
-  none?: Prisma.TemporadaWhereInput
-}
-
-export type TemporadaOrderByRelationAggregateInput = {
-  _count?: Prisma.SortOrder
-}
-
-export type TemporadaAnimeIdNumeroCompoundUniqueInput = {
-  animeId: number
-  numero: number
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
 }
 
 export type TemporadaCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  numero?: Prisma.SortOrder
-  ano?: Prisma.SortOrder
-  animeId?: Prisma.SortOrder
+  nome?: Prisma.SortOrder
 }
 
 export type TemporadaAvgOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  numero?: Prisma.SortOrder
-  ano?: Prisma.SortOrder
-  animeId?: Prisma.SortOrder
 }
 
 export type TemporadaMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  numero?: Prisma.SortOrder
-  ano?: Prisma.SortOrder
-  animeId?: Prisma.SortOrder
+  nome?: Prisma.SortOrder
 }
 
 export type TemporadaMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  numero?: Prisma.SortOrder
-  ano?: Prisma.SortOrder
-  animeId?: Prisma.SortOrder
+  nome?: Prisma.SortOrder
 }
 
 export type TemporadaSumOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  numero?: Prisma.SortOrder
-  ano?: Prisma.SortOrder
-  animeId?: Prisma.SortOrder
 }
 
 export type TemporadaScalarRelationFilter = {
   is?: Prisma.TemporadaWhereInput
   isNot?: Prisma.TemporadaWhereInput
-}
-
-export type TemporadaCreateNestedManyWithoutAnimeInput = {
-  create?: Prisma.XOR<Prisma.TemporadaCreateWithoutAnimeInput, Prisma.TemporadaUncheckedCreateWithoutAnimeInput> | Prisma.TemporadaCreateWithoutAnimeInput[] | Prisma.TemporadaUncheckedCreateWithoutAnimeInput[]
-  connectOrCreate?: Prisma.TemporadaCreateOrConnectWithoutAnimeInput | Prisma.TemporadaCreateOrConnectWithoutAnimeInput[]
-  createMany?: Prisma.TemporadaCreateManyAnimeInputEnvelope
-  connect?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-}
-
-export type TemporadaUncheckedCreateNestedManyWithoutAnimeInput = {
-  create?: Prisma.XOR<Prisma.TemporadaCreateWithoutAnimeInput, Prisma.TemporadaUncheckedCreateWithoutAnimeInput> | Prisma.TemporadaCreateWithoutAnimeInput[] | Prisma.TemporadaUncheckedCreateWithoutAnimeInput[]
-  connectOrCreate?: Prisma.TemporadaCreateOrConnectWithoutAnimeInput | Prisma.TemporadaCreateOrConnectWithoutAnimeInput[]
-  createMany?: Prisma.TemporadaCreateManyAnimeInputEnvelope
-  connect?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-}
-
-export type TemporadaUpdateManyWithoutAnimeNestedInput = {
-  create?: Prisma.XOR<Prisma.TemporadaCreateWithoutAnimeInput, Prisma.TemporadaUncheckedCreateWithoutAnimeInput> | Prisma.TemporadaCreateWithoutAnimeInput[] | Prisma.TemporadaUncheckedCreateWithoutAnimeInput[]
-  connectOrCreate?: Prisma.TemporadaCreateOrConnectWithoutAnimeInput | Prisma.TemporadaCreateOrConnectWithoutAnimeInput[]
-  upsert?: Prisma.TemporadaUpsertWithWhereUniqueWithoutAnimeInput | Prisma.TemporadaUpsertWithWhereUniqueWithoutAnimeInput[]
-  createMany?: Prisma.TemporadaCreateManyAnimeInputEnvelope
-  set?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-  disconnect?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-  delete?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-  connect?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-  update?: Prisma.TemporadaUpdateWithWhereUniqueWithoutAnimeInput | Prisma.TemporadaUpdateWithWhereUniqueWithoutAnimeInput[]
-  updateMany?: Prisma.TemporadaUpdateManyWithWhereWithoutAnimeInput | Prisma.TemporadaUpdateManyWithWhereWithoutAnimeInput[]
-  deleteMany?: Prisma.TemporadaScalarWhereInput | Prisma.TemporadaScalarWhereInput[]
-}
-
-export type TemporadaUncheckedUpdateManyWithoutAnimeNestedInput = {
-  create?: Prisma.XOR<Prisma.TemporadaCreateWithoutAnimeInput, Prisma.TemporadaUncheckedCreateWithoutAnimeInput> | Prisma.TemporadaCreateWithoutAnimeInput[] | Prisma.TemporadaUncheckedCreateWithoutAnimeInput[]
-  connectOrCreate?: Prisma.TemporadaCreateOrConnectWithoutAnimeInput | Prisma.TemporadaCreateOrConnectWithoutAnimeInput[]
-  upsert?: Prisma.TemporadaUpsertWithWhereUniqueWithoutAnimeInput | Prisma.TemporadaUpsertWithWhereUniqueWithoutAnimeInput[]
-  createMany?: Prisma.TemporadaCreateManyAnimeInputEnvelope
-  set?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-  disconnect?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-  delete?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-  connect?: Prisma.TemporadaWhereUniqueInput | Prisma.TemporadaWhereUniqueInput[]
-  update?: Prisma.TemporadaUpdateWithWhereUniqueWithoutAnimeInput | Prisma.TemporadaUpdateWithWhereUniqueWithoutAnimeInput[]
-  updateMany?: Prisma.TemporadaUpdateManyWithWhereWithoutAnimeInput | Prisma.TemporadaUpdateManyWithWhereWithoutAnimeInput[]
-  deleteMany?: Prisma.TemporadaScalarWhereInput | Prisma.TemporadaScalarWhereInput[]
 }
 
 export type TemporadaCreateNestedOneWithoutEpisodiosInput = {
@@ -428,66 +306,13 @@ export type TemporadaUpdateOneRequiredWithoutEpisodiosNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.TemporadaUpdateToOneWithWhereWithoutEpisodiosInput, Prisma.TemporadaUpdateWithoutEpisodiosInput>, Prisma.TemporadaUncheckedUpdateWithoutEpisodiosInput>
 }
 
-export type TemporadaCreateWithoutAnimeInput = {
-  numero: number
-  ano?: number | null
-  episodios?: Prisma.EpisodioCreateNestedManyWithoutTemporadaInput
-}
-
-export type TemporadaUncheckedCreateWithoutAnimeInput = {
-  id?: number
-  numero: number
-  ano?: number | null
-  episodios?: Prisma.EpisodioUncheckedCreateNestedManyWithoutTemporadaInput
-}
-
-export type TemporadaCreateOrConnectWithoutAnimeInput = {
-  where: Prisma.TemporadaWhereUniqueInput
-  create: Prisma.XOR<Prisma.TemporadaCreateWithoutAnimeInput, Prisma.TemporadaUncheckedCreateWithoutAnimeInput>
-}
-
-export type TemporadaCreateManyAnimeInputEnvelope = {
-  data: Prisma.TemporadaCreateManyAnimeInput | Prisma.TemporadaCreateManyAnimeInput[]
-  skipDuplicates?: boolean
-}
-
-export type TemporadaUpsertWithWhereUniqueWithoutAnimeInput = {
-  where: Prisma.TemporadaWhereUniqueInput
-  update: Prisma.XOR<Prisma.TemporadaUpdateWithoutAnimeInput, Prisma.TemporadaUncheckedUpdateWithoutAnimeInput>
-  create: Prisma.XOR<Prisma.TemporadaCreateWithoutAnimeInput, Prisma.TemporadaUncheckedCreateWithoutAnimeInput>
-}
-
-export type TemporadaUpdateWithWhereUniqueWithoutAnimeInput = {
-  where: Prisma.TemporadaWhereUniqueInput
-  data: Prisma.XOR<Prisma.TemporadaUpdateWithoutAnimeInput, Prisma.TemporadaUncheckedUpdateWithoutAnimeInput>
-}
-
-export type TemporadaUpdateManyWithWhereWithoutAnimeInput = {
-  where: Prisma.TemporadaScalarWhereInput
-  data: Prisma.XOR<Prisma.TemporadaUpdateManyMutationInput, Prisma.TemporadaUncheckedUpdateManyWithoutAnimeInput>
-}
-
-export type TemporadaScalarWhereInput = {
-  AND?: Prisma.TemporadaScalarWhereInput | Prisma.TemporadaScalarWhereInput[]
-  OR?: Prisma.TemporadaScalarWhereInput[]
-  NOT?: Prisma.TemporadaScalarWhereInput | Prisma.TemporadaScalarWhereInput[]
-  id?: Prisma.IntFilter<"Temporada"> | number
-  numero?: Prisma.IntFilter<"Temporada"> | number
-  ano?: Prisma.IntNullableFilter<"Temporada"> | number | null
-  animeId?: Prisma.IntFilter<"Temporada"> | number
-}
-
 export type TemporadaCreateWithoutEpisodiosInput = {
-  numero: number
-  ano?: number | null
-  anime: Prisma.AnimeCreateNestedOneWithoutTemporadasInput
+  nome: string
 }
 
 export type TemporadaUncheckedCreateWithoutEpisodiosInput = {
   id?: number
-  numero: number
-  ano?: number | null
-  animeId: number
+  nome: string
 }
 
 export type TemporadaCreateOrConnectWithoutEpisodiosInput = {
@@ -507,41 +332,12 @@ export type TemporadaUpdateToOneWithWhereWithoutEpisodiosInput = {
 }
 
 export type TemporadaUpdateWithoutEpisodiosInput = {
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  anime?: Prisma.AnimeUpdateOneRequiredWithoutTemporadasNestedInput
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
 }
 
 export type TemporadaUncheckedUpdateWithoutEpisodiosInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  animeId?: Prisma.IntFieldUpdateOperationsInput | number
-}
-
-export type TemporadaCreateManyAnimeInput = {
-  id?: number
-  numero: number
-  ano?: number | null
-}
-
-export type TemporadaUpdateWithoutAnimeInput = {
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  episodios?: Prisma.EpisodioUpdateManyWithoutTemporadaNestedInput
-}
-
-export type TemporadaUncheckedUpdateWithoutAnimeInput = {
-  id?: Prisma.IntFieldUpdateOperationsInput | number
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
-  episodios?: Prisma.EpisodioUncheckedUpdateManyWithoutTemporadaNestedInput
-}
-
-export type TemporadaUncheckedUpdateManyWithoutAnimeInput = {
-  id?: Prisma.IntFieldUpdateOperationsInput | number
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  ano?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
 }
 
 
@@ -577,61 +373,42 @@ export type TemporadaCountOutputTypeCountEpisodiosArgs<ExtArgs extends runtime.T
 
 export type TemporadaSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  numero?: boolean
-  ano?: boolean
-  animeId?: boolean
-  anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
+  nome?: boolean
   episodios?: boolean | Prisma.Temporada$episodiosArgs<ExtArgs>
   _count?: boolean | Prisma.TemporadaCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["temporada"]>
 
 export type TemporadaSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  numero?: boolean
-  ano?: boolean
-  animeId?: boolean
-  anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
+  nome?: boolean
 }, ExtArgs["result"]["temporada"]>
 
 export type TemporadaSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  numero?: boolean
-  ano?: boolean
-  animeId?: boolean
-  anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
+  nome?: boolean
 }, ExtArgs["result"]["temporada"]>
 
 export type TemporadaSelectScalar = {
   id?: boolean
-  numero?: boolean
-  ano?: boolean
-  animeId?: boolean
+  nome?: boolean
 }
 
-export type TemporadaOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "numero" | "ano" | "animeId", ExtArgs["result"]["temporada"]>
+export type TemporadaOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "nome", ExtArgs["result"]["temporada"]>
 export type TemporadaInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
   episodios?: boolean | Prisma.Temporada$episodiosArgs<ExtArgs>
   _count?: boolean | Prisma.TemporadaCountOutputTypeDefaultArgs<ExtArgs>
 }
-export type TemporadaIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
-}
-export type TemporadaIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
-}
+export type TemporadaIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
+export type TemporadaIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
 
 export type $TemporadaPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Temporada"
   objects: {
-    anime: Prisma.$AnimePayload<ExtArgs>
     episodios: Prisma.$EpisodioPayload<ExtArgs>[]
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: number
-    numero: number
-    ano: number | null
-    animeId: number
+    nome: string
   }, ExtArgs["result"]["temporada"]>
   composites: {}
 }
@@ -1026,7 +803,6 @@ readonly fields: TemporadaFieldRefs;
  */
 export interface Prisma__TemporadaClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
-  anime<T extends Prisma.AnimeDefaultArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.AnimeDefaultArgs<ExtArgs>>): Prisma.Prisma__AnimeClient<runtime.Types.Result.GetResult<Prisma.$AnimePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
   episodios<T extends Prisma.Temporada$episodiosArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Temporada$episodiosArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$EpisodioPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -1058,9 +834,7 @@ export interface Prisma__TemporadaClient<T, Null = never, ExtArgs extends runtim
  */
 export interface TemporadaFieldRefs {
   readonly id: Prisma.FieldRef<"Temporada", 'Int'>
-  readonly numero: Prisma.FieldRef<"Temporada", 'Int'>
-  readonly ano: Prisma.FieldRef<"Temporada", 'Int'>
-  readonly animeId: Prisma.FieldRef<"Temporada", 'Int'>
+  readonly nome: Prisma.FieldRef<"Temporada", 'String'>
 }
     
 
@@ -1315,10 +1089,6 @@ export type TemporadaCreateManyAndReturnArgs<ExtArgs extends runtime.Types.Exten
    */
   data: Prisma.TemporadaCreateManyInput | Prisma.TemporadaCreateManyInput[]
   skipDuplicates?: boolean
-  /**
-   * Choose, which related nodes to fetch as well
-   */
-  include?: Prisma.TemporadaIncludeCreateManyAndReturn<ExtArgs> | null
 }
 
 /**
@@ -1389,10 +1159,6 @@ export type TemporadaUpdateManyAndReturnArgs<ExtArgs extends runtime.Types.Exten
    * Limit how many Temporadas to update.
    */
   limit?: number
-  /**
-   * Choose, which related nodes to fetch as well
-   */
-  include?: Prisma.TemporadaIncludeUpdateManyAndReturn<ExtArgs> | null
 }
 
 /**

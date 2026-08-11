@@ -192,11 +192,13 @@ export type PlataformaWhereInput = {
   NOT?: Prisma.PlataformaWhereInput | Prisma.PlataformaWhereInput[]
   id?: Prisma.IntFilter<"Plataforma"> | number
   nome?: Prisma.StringFilter<"Plataforma"> | string
+  animes?: Prisma.AnimePlataformaListRelationFilter
 }
 
 export type PlataformaOrderByWithRelationInput = {
   id?: Prisma.SortOrder
   nome?: Prisma.SortOrder
+  animes?: Prisma.AnimePlataformaOrderByRelationAggregateInput
 }
 
 export type PlataformaWhereUniqueInput = Prisma.AtLeast<{
@@ -205,6 +207,7 @@ export type PlataformaWhereUniqueInput = Prisma.AtLeast<{
   AND?: Prisma.PlataformaWhereInput | Prisma.PlataformaWhereInput[]
   OR?: Prisma.PlataformaWhereInput[]
   NOT?: Prisma.PlataformaWhereInput | Prisma.PlataformaWhereInput[]
+  animes?: Prisma.AnimePlataformaListRelationFilter
 }, "id" | "nome">
 
 export type PlataformaOrderByWithAggregationInput = {
@@ -227,20 +230,24 @@ export type PlataformaScalarWhereWithAggregatesInput = {
 
 export type PlataformaCreateInput = {
   nome: string
+  animes?: Prisma.AnimePlataformaCreateNestedManyWithoutPlataformaInput
 }
 
 export type PlataformaUncheckedCreateInput = {
   id?: number
   nome: string
+  animes?: Prisma.AnimePlataformaUncheckedCreateNestedManyWithoutPlataformaInput
 }
 
 export type PlataformaUpdateInput = {
   nome?: Prisma.StringFieldUpdateOperationsInput | string
+  animes?: Prisma.AnimePlataformaUpdateManyWithoutPlataformaNestedInput
 }
 
 export type PlataformaUncheckedUpdateInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   nome?: Prisma.StringFieldUpdateOperationsInput | string
+  animes?: Prisma.AnimePlataformaUncheckedUpdateManyWithoutPlataformaNestedInput
 }
 
 export type PlataformaCreateManyInput = {
@@ -255,6 +262,11 @@ export type PlataformaUpdateManyMutationInput = {
 export type PlataformaUncheckedUpdateManyInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   nome?: Prisma.StringFieldUpdateOperationsInput | string
+}
+
+export type PlataformaScalarRelationFilter = {
+  is?: Prisma.PlataformaWhereInput
+  isNot?: Prisma.PlataformaWhereInput
 }
 
 export type PlataformaCountOrderByAggregateInput = {
@@ -280,11 +292,90 @@ export type PlataformaSumOrderByAggregateInput = {
   id?: Prisma.SortOrder
 }
 
+export type PlataformaCreateNestedOneWithoutAnimesInput = {
+  create?: Prisma.XOR<Prisma.PlataformaCreateWithoutAnimesInput, Prisma.PlataformaUncheckedCreateWithoutAnimesInput>
+  connectOrCreate?: Prisma.PlataformaCreateOrConnectWithoutAnimesInput
+  connect?: Prisma.PlataformaWhereUniqueInput
+}
+
+export type PlataformaUpdateOneRequiredWithoutAnimesNestedInput = {
+  create?: Prisma.XOR<Prisma.PlataformaCreateWithoutAnimesInput, Prisma.PlataformaUncheckedCreateWithoutAnimesInput>
+  connectOrCreate?: Prisma.PlataformaCreateOrConnectWithoutAnimesInput
+  upsert?: Prisma.PlataformaUpsertWithoutAnimesInput
+  connect?: Prisma.PlataformaWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.PlataformaUpdateToOneWithWhereWithoutAnimesInput, Prisma.PlataformaUpdateWithoutAnimesInput>, Prisma.PlataformaUncheckedUpdateWithoutAnimesInput>
+}
+
+export type PlataformaCreateWithoutAnimesInput = {
+  nome: string
+}
+
+export type PlataformaUncheckedCreateWithoutAnimesInput = {
+  id?: number
+  nome: string
+}
+
+export type PlataformaCreateOrConnectWithoutAnimesInput = {
+  where: Prisma.PlataformaWhereUniqueInput
+  create: Prisma.XOR<Prisma.PlataformaCreateWithoutAnimesInput, Prisma.PlataformaUncheckedCreateWithoutAnimesInput>
+}
+
+export type PlataformaUpsertWithoutAnimesInput = {
+  update: Prisma.XOR<Prisma.PlataformaUpdateWithoutAnimesInput, Prisma.PlataformaUncheckedUpdateWithoutAnimesInput>
+  create: Prisma.XOR<Prisma.PlataformaCreateWithoutAnimesInput, Prisma.PlataformaUncheckedCreateWithoutAnimesInput>
+  where?: Prisma.PlataformaWhereInput
+}
+
+export type PlataformaUpdateToOneWithWhereWithoutAnimesInput = {
+  where?: Prisma.PlataformaWhereInput
+  data: Prisma.XOR<Prisma.PlataformaUpdateWithoutAnimesInput, Prisma.PlataformaUncheckedUpdateWithoutAnimesInput>
+}
+
+export type PlataformaUpdateWithoutAnimesInput = {
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
+}
+
+export type PlataformaUncheckedUpdateWithoutAnimesInput = {
+  id?: Prisma.IntFieldUpdateOperationsInput | number
+  nome?: Prisma.StringFieldUpdateOperationsInput | string
+}
+
+
+/**
+ * Count Type PlataformaCountOutputType
+ */
+
+export type PlataformaCountOutputType = {
+  animes: number
+}
+
+export type PlataformaCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  animes?: boolean | PlataformaCountOutputTypeCountAnimesArgs
+}
+
+/**
+ * PlataformaCountOutputType without action
+ */
+export type PlataformaCountOutputTypeDefaultArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the PlataformaCountOutputType
+   */
+  select?: Prisma.PlataformaCountOutputTypeSelect<ExtArgs> | null
+}
+
+/**
+ * PlataformaCountOutputType without action
+ */
+export type PlataformaCountOutputTypeCountAnimesArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.AnimePlataformaWhereInput
+}
 
 
 export type PlataformaSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
   nome?: boolean
+  animes?: boolean | Prisma.Plataforma$animesArgs<ExtArgs>
+  _count?: boolean | Prisma.PlataformaCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["plataforma"]>
 
 export type PlataformaSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
@@ -303,10 +394,18 @@ export type PlataformaSelectScalar = {
 }
 
 export type PlataformaOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "nome", ExtArgs["result"]["plataforma"]>
+export type PlataformaInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  animes?: boolean | Prisma.Plataforma$animesArgs<ExtArgs>
+  _count?: boolean | Prisma.PlataformaCountOutputTypeDefaultArgs<ExtArgs>
+}
+export type PlataformaIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
+export type PlataformaIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
 
 export type $PlataformaPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Plataforma"
-  objects: {}
+  objects: {
+    animes: Prisma.$AnimePlataformaPayload<ExtArgs>[]
+  }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: number
     nome: string
@@ -704,6 +803,7 @@ readonly fields: PlataformaFieldRefs;
  */
 export interface Prisma__PlataformaClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
+  animes<T extends Prisma.Plataforma$animesArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Plataforma$animesArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$AnimePlataformaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -752,6 +852,10 @@ export type PlataformaFindUniqueArgs<ExtArgs extends runtime.Types.Extensions.In
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
+  /**
    * Filter, which Plataforma to fetch.
    */
   where: Prisma.PlataformaWhereUniqueInput
@@ -770,6 +874,10 @@ export type PlataformaFindUniqueOrThrowArgs<ExtArgs extends runtime.Types.Extens
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
+  /**
    * Filter, which Plataforma to fetch.
    */
   where: Prisma.PlataformaWhereUniqueInput
@@ -787,6 +895,10 @@ export type PlataformaFindFirstArgs<ExtArgs extends runtime.Types.Extensions.Int
    * Omit specific fields from the Plataforma
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
   /**
    * Filter, which Plataforma to fetch.
    */
@@ -836,6 +948,10 @@ export type PlataformaFindFirstOrThrowArgs<ExtArgs extends runtime.Types.Extensi
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
+  /**
    * Filter, which Plataforma to fetch.
    */
   where?: Prisma.PlataformaWhereInput
@@ -883,6 +999,10 @@ export type PlataformaFindManyArgs<ExtArgs extends runtime.Types.Extensions.Inte
    * Omit specific fields from the Plataforma
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
   /**
    * Filter, which Plataformas to fetch.
    */
@@ -932,6 +1052,10 @@ export type PlataformaCreateArgs<ExtArgs extends runtime.Types.Extensions.Intern
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
+  /**
    * The data needed to create a Plataforma.
    */
   data: Prisma.XOR<Prisma.PlataformaCreateInput, Prisma.PlataformaUncheckedCreateInput>
@@ -979,6 +1103,10 @@ export type PlataformaUpdateArgs<ExtArgs extends runtime.Types.Extensions.Intern
    * Omit specific fields from the Plataforma
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
   /**
    * The data needed to update a Plataforma.
    */
@@ -1046,6 +1174,10 @@ export type PlataformaUpsertArgs<ExtArgs extends runtime.Types.Extensions.Intern
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
+  /**
    * The filter to search for the Plataforma to update in case it exists.
    */
   where: Prisma.PlataformaWhereUniqueInput
@@ -1072,6 +1204,10 @@ export type PlataformaDeleteArgs<ExtArgs extends runtime.Types.Extensions.Intern
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
   /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
+  /**
    * Filter which Plataforma to delete.
    */
   where: Prisma.PlataformaWhereUniqueInput
@@ -1092,6 +1228,30 @@ export type PlataformaDeleteManyArgs<ExtArgs extends runtime.Types.Extensions.In
 }
 
 /**
+ * Plataforma.animes
+ */
+export type Plataforma$animesArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the AnimePlataforma
+   */
+  select?: Prisma.AnimePlataformaSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the AnimePlataforma
+   */
+  omit?: Prisma.AnimePlataformaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.AnimePlataformaInclude<ExtArgs> | null
+  where?: Prisma.AnimePlataformaWhereInput
+  orderBy?: Prisma.AnimePlataformaOrderByWithRelationInput | Prisma.AnimePlataformaOrderByWithRelationInput[]
+  cursor?: Prisma.AnimePlataformaWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.AnimePlataformaScalarFieldEnum | Prisma.AnimePlataformaScalarFieldEnum[]
+}
+
+/**
  * Plataforma without action
  */
 export type PlataformaDefaultArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -1103,4 +1263,8 @@ export type PlataformaDefaultArgs<ExtArgs extends runtime.Types.Extensions.Inter
    * Omit specific fields from the Plataforma
    */
   omit?: Prisma.PlataformaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.PlataformaInclude<ExtArgs> | null
 }
