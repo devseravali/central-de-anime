@@ -9,6 +9,7 @@ async function importEpisodiosFromJson(filePath: string): Promise<void> {
     try {
         const fileContent = await readFile(absolutePath, 'utf-8');
         const episodiosData = JSON.parse(fileContent) as EpisodioType[];
+
         for (const episodio of episodiosData) {
             try {
                 const createData: Prisma.EpisodioUncheckedCreateInput = {
@@ -39,7 +40,6 @@ async function importEpisodiosFromJson(filePath: string): Promise<void> {
                 });
             } catch (itemErr) {
                 console.error(`Erro ao inserir/atualizar episódio id=${episodio.id} titulo=${episodio.titulo}:`, itemErr);
-                console.error(`Erro ao processar episódio id=${episodio.id} titulo=${episodio.titulo}:`, itemErr);
             }
         }
         console.log(`Importação concluída: ${episodiosData.length} itens processados.`);

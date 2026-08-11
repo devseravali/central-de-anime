@@ -58,19 +58,6 @@ async function importStatusFromJson(): Promise<void> {
     console.log(`Status processados.`);
 }
 
-async function importEstacoesFromJson(): Promise<void> {
-    const items = await readJson<{ id: number; nome: string }>('estacoes.json');
-    for (let i = 0; i < items.length; i += BATCH_SIZE) {
-        const batch = items.slice(i, i + BATCH_SIZE);
-        const ops = batch.map((s) => {
-            const data: Prisma.EstacaoUncheckedCreateInput = { id: s.id, nome: s.nome };
-            return prisma.estacao.upsert({ where: { nome: s.nome }, update: data, create: data });
-        });
-        await prisma.$transaction(ops);
-    }
-    console.log(`Estações processadas.`);
-}
-
 async function importFranquiasFromJson(): Promise<void> {
     const items = await readJson<FranquiaType>('franquia.json');
     for (let i = 0; i < items.length; i += BATCH_SIZE) {
@@ -152,7 +139,6 @@ async function importAuxiliariesFromJson(): Promise<void> {
         await importEstudiosFromJson();
         await importCapasFromJson();
         await importStatusFromJson();
-        await importEstacoesFromJson();
         await importFranquiasFromJson();
         await importPlataformasFromJson();
         await importGenerosFromJson();

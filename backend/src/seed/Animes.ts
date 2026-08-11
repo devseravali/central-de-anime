@@ -24,7 +24,6 @@ async function importAnimeFromJson(filePath: string): Promise<void> {
           franquiaId: anime.franquiaId ?? null,
           estudioId: anime.estudioId,
           statusId: anime.statusId,
-          estacaoId: anime.estacaoId ?? null,
         };
 
         const updateData: Prisma.AnimeUncheckedUpdateInput = {
@@ -38,7 +37,6 @@ async function importAnimeFromJson(filePath: string): Promise<void> {
           franquiaId: anime.franquiaId ?? null,
           estudioId: anime.estudioId,
           statusId: anime.statusId,
-          estacaoId: anime.estacaoId ?? null,
         };
 
         await prisma.anime.upsert({
