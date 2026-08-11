@@ -10,8 +10,6 @@ export type AnimeType = {
     franquiaId?: number;
     estudioId: number;
     statusId: number;
-    estacaoId?: number;
-    temporadas: number[];
     episodios: number[];
     tags: number[];
     personagens: number[];
