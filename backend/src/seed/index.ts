@@ -7,7 +7,7 @@ import { importAnimeFromJson } from './Animes';
 import { importPersonagensFromJson } from './Personagens';
 import { importEpisodiosFromJson } from './Episodios';
 import { importRelacionamentosFromJson } from './Relacionamentos';
-import { importTemporadasFromJson } from './TemporadaSeed';
+import { importTemporadasFromJson } from './Temporada';
 
 async function fileExists(filePath: string): Promise<boolean> {
   try {

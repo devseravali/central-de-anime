@@ -20,7 +20,7 @@ async function importAnimeTags(): Promise<void> {
 async function importAnimePersonagens(): Promise<void> {
   const items = await readJson<{ animeId: number; personagemId: number }>('anime_personagem.json');
   if (items.length === 0) return;
-  // filtrar itens cujas chaves estrangeiras existam para evitar violação de FK
+
   const personagemIds = Array.from(new Set(items.map((i) => i.personagemId)));
   const animeIds = Array.from(new Set(items.map((i) => i.animeId)));
   const existingPersonagens = await prisma.personagem.findMany({ where: { id: { in: personagemIds } }, select: { id: true } });
@@ -39,7 +39,7 @@ async function importAnimePersonagens(): Promise<void> {
 async function importAnimeGeneros(): Promise<void> {
   const items = await readJson<{ animeId: number; generoId: number }>('anime_genero.json');
   if (items.length === 0) return;
-  // map generoId -> generoId field name in model
+
   const data = items.map((r) => ({ animeId: r.animeId, generoId: r.generoId }));
   await prisma.animeGenero.createMany({ data, skipDuplicates: true });
   console.log(`anime_genero: ${items.length} relacionamentos importados.`);
@@ -56,7 +56,7 @@ async function importAnimePlataformas(): Promise<void> {
 async function importAnimeStatus(): Promise<void> {
   const items = await readJson<{ animeId: number; statusId: number }>('anime_status.json');
   if (items.length === 0) return;
-  // Atualiza cada anime definindo statusId
+
   const ops = items.map((r) =>
     prisma.anime.update({ where: { id: r.animeId }, data: { statusId: r.statusId } }).catch((e) => {
       console.error(`Falha ao atualizar status para animeId=${r.animeId}:`, e.message ?? e);

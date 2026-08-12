@@ -10,22 +10,32 @@ async function importTemporadasFromJson(filePath: string): Promise<void> {
     const fileContent = await readFile(absolutePath, 'utf-8');
     const temporadasData = JSON.parse(fileContent) as TemporadaType[];
 
+    const legacyGeneric = await prisma.temporada.findUnique({
+      where: { id: 0 },
+    });
+    if (legacyGeneric && legacyGeneric.nome !== 'Filme') {
+      await prisma.temporada.update({
+        where: { id: 0 },
+        data: { nome: 'Filme' },
+      });
+    }
+
     for (const temporada of temporadasData) {
+      const existsByName = await prisma.temporada.findFirst({ where: { nome: temporada.nome } });
       const validId = typeof temporada.id === 'number' && temporada.id > 0;
 
       if (validId) {
-        const where = { id: temporada.id };
+        const where: Prisma.TemporadaWhereUniqueInput = { id: temporada.id };
         const createData: Prisma.TemporadaUncheckedCreateInput = { id: temporada.id, nome: temporada.nome };
-        const updateData: Prisma.TemporadaUpdateInput = { nome: temporada.nome } as any;
+        const updateData: Prisma.TemporadaUpdateInput = { nome: temporada.nome };
 
         await prisma.temporada.upsert({ where, update: updateData, create: createData });
-      } else {
-        const existing = await prisma.temporada.findFirst({ where: { nome: temporada.nome } });
-        if (existing) {
-          await prisma.temporada.update({ where: { id: existing.id }, data: { nome: temporada.nome } });
-        } else {
-          await prisma.temporada.create({ data: { nome: temporada.nome } });
-        }
+      } else if (temporada.nome === 'Filme' && legacyGeneric) {
+        continue;
+      } else if (!existsByName) {
+        await prisma.$executeRaw`
+          INSERT INTO "Temporada" ("nome") VALUES (${temporada.nome}) ON CONFLICT ("nome") DO NOTHING
+        `;
       }
     }
 
