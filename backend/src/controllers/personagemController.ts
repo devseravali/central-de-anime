@@ -31,6 +31,34 @@ async function list(req: Request, res: Response): Promise<void> {
     }
 }
 
+async function listByAnimeId(req: Request, res: Response): Promise<void> {
+    try {
+        const animeIdParam = req.params.animeId;
+
+        const animeId =
+            typeof animeIdParam === 'string' && animeIdParam.trim() !== ''
+                ? Number.parseInt(animeIdParam, 10)
+                : NaN;
+
+        if (Number.isNaN(animeId)) {
+            res.status(400).json({ message: 'animeId inválido' });
+
+            return;
+        }
+
+        const personagens = await personagemService.listPersonagensByAnimeId(
+            animeId
+        );
+
+        res.status(200).json(personagens);
+    } catch (error) {
+        console.error('Erro ao listar personagens por anime:', error);
+
+        res.status(500).json({ message: 'Erro ao listar personagens' });
+    }
+}
+
 export const personagemController = {
     list,
+    listByAnimeId,
 };

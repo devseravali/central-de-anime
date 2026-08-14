@@ -13,7 +13,22 @@ export const authController = {
                 return;
             }
 
-            const result = await authService.login(email, senha);
+            const dispositivo =
+                typeof req.body?.dispositivo === 'string'
+                    ? req.body.dispositivo
+                    : null;
+
+            const ip = req.ip ?? null;
+
+            const userAgent = req.get('user-agent') ?? null;
+
+            const result = await authService.login(
+                email,
+                senha,
+                dispositivo,
+                ip,
+                userAgent
+            );
 
             res.status(200).json(result);
         } catch (error) {
@@ -21,13 +36,8 @@ export const authController = {
                 error instanceof Error
                     ? error.message
                     : 'Erro ao realizar login';
-
-            if (message === 'Usuário não encontrado') {
-                res.status(404).json({ message });
-                return;
-            }
-
-            if (message === 'Senha incorreta') {
+                    
+            if (message === 'Email ou senha inválidos') {
                 res.status(401).json({ message });
                 return;
             }
@@ -112,6 +122,18 @@ export const authController = {
                 message: 'Logout realizado com sucesso',
             });
         } catch (error) {
+            const message =
+                error instanceof Error
+                    ? error.message
+                    : 'Erro ao realizar logout';
+            if (
+                message === 'Refresh token inválido' ||
+                message === 'Sessão não encontrada'
+            ) {
+                res.status(400).json({ message });
+                return;
+            }
+
             console.error('Erro no logout:', error);
 
             res.status(500).json({
