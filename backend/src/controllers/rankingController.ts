@@ -1,6 +1,7 @@
 import type { Request, Response } from 'express';
 
 import { rankingService } from '../services/rankingService';
+import { prisma } from '../config/prisma';
 
 interface AuthenticatedRequest extends Request {
     user?: {
@@ -150,9 +151,28 @@ async function recalcular(
     }
 }
 
+async function getTop(
+    _req: AuthenticatedRequest,
+    res: Response
+): Promise<void> {
+    try {
+        const top = await prisma.rankingUsuario.findMany({
+            orderBy: { pontos: 'desc' },
+            take: 20,
+            include: { usuario: { select: { id: true, nome: true, avatar: true } } },
+        });
+
+        res.status(200).json(top);
+    } catch (error) {
+        console.error('Erro ao buscar top ranking:', error);
+        res.status(500).json({ message: 'Erro ao buscar top ranking' });
+    }
+}
+
 export const rankingController = {
     getByUsuarioId,
     getPontos,
     atualizar,
     recalcular,
+    getTop,
 };

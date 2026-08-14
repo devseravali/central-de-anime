@@ -60,7 +60,35 @@ async function getById(req: Request, res: Response): Promise<void> {
     }
 }
 
+async function listByAnimeId(req: Request, res: Response): Promise<void> {
+    try {
+        const animeIdParam = req.params.animeId;
+
+        const animeId =
+            typeof animeIdParam === 'string' && animeIdParam.trim() !== ''
+                ? Number.parseInt(animeIdParam, 10)
+                : NaN;
+
+        if (Number.isNaN(animeId)) {
+            res.status(400).json({ message: 'animeId inválido' });
+
+            return;
+        }
+
+        const temporadas = await temporadaService.listTemporadasByAnimeId(
+            animeId
+        );
+
+        res.status(200).json(temporadas);
+    } catch (error) {
+        console.error('Erro ao listar temporadas por anime:', error);
+
+        res.status(500).json({ message: 'Erro ao listar temporadas' });
+    }
+}
+
 export const temporadaController = {
     list,
     getById,
+    listByAnimeId,
 };
