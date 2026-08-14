@@ -1,0 +1,122 @@
+import { Request, Response } from 'express';
+import { authService } from '../services/authService';
+
+export const authController = {
+    login: async (req: Request, res: Response): Promise<void> => {
+        try {
+            const { email, senha } = req.body;
+
+            if (!email || !senha) {
+                res.status(400).json({
+                    message: 'Email e senha são obrigatórios',
+                });
+                return;
+            }
+
+            const result = await authService.login(email, senha);
+
+            res.status(200).json(result);
+        } catch (error) {
+            const message =
+                error instanceof Error
+                    ? error.message
+                    : 'Erro ao realizar login';
+
+            if (message === 'Usuário não encontrado') {
+                res.status(404).json({ message });
+                return;
+            }
+
+            if (message === 'Senha incorreta') {
+                res.status(401).json({ message });
+                return;
+            }
+
+            console.error('Erro no login:', error);
+
+            res.status(500).json({
+                message: 'Erro interno do servidor',
+            });
+        }
+    },
+
+    register: async (req: Request, res: Response): Promise<void> => {
+        try {
+            const { nome, email, senha } = req.body;
+
+            if (!nome || !email || !senha) {
+                res.status(400).json({
+                    message: 'Nome, email e senha são obrigatórios',
+                });
+                return;
+            }
+
+            const user = await authService.register(nome, email, senha);
+
+            res.status(201).json(user);
+        } catch (error) {
+            const message =
+                error instanceof Error ? error.message : 'Erro ao registrar usuário';
+
+            if (message === 'Email já cadastrado') {
+                res.status(409).json({ message });
+                return;
+            }
+
+            console.error('Erro no register:', error);
+
+            res.status(500).json({ message: 'Erro interno do servidor' });
+        }
+    },
+
+    refresh: async (req: Request, res: Response): Promise<void> => {
+        try {
+            const { refreshToken } = req.body;
+
+            if (!refreshToken) {
+                res.status(400).json({
+                    message: 'Refresh token é obrigatório',
+                });
+                return;
+            }
+
+            const result = await authService.refresh(refreshToken);
+
+            res.status(200).json(result);
+        } catch (error) {
+            const message =
+                error instanceof Error
+                    ? error.message
+                    : 'Refresh token inválido';
+
+            res.status(401).json({
+                message,
+            });
+        }
+    },
+
+    logout: async (req: Request, res: Response): Promise<void> => {
+        try {
+            const { refreshToken } = req.body;
+
+            if (!refreshToken) {
+                res.status(400).json({
+                    message: 'Refresh token é obrigatório',
+                });
+                return;
+            }
+
+            await authService.logout(refreshToken);
+
+            res.status(200).json({
+                message: 'Logout realizado com sucesso',
+            });
+        } catch (error) {
+            console.error('Erro no logout:', error);
+
+            res.status(500).json({
+                message: 'Erro interno do servidor',
+            });
+        }
+    },
+};
