@@ -40,6 +40,7 @@ export interface AuthService {
     ): Promise<LoginResult>;
     refresh(refreshToken: string): Promise<RefreshResult>;
     revoke(refreshToken: string): Promise<void>;
+    logout(refreshToken: string): Promise<void>;
 }
 
 const JWT_SECRET = process.env.JWT_SECRET;
@@ -403,50 +404,39 @@ export const authService: AuthService = {
         };
     },
 
-    revoke: async (
-        refreshToken: string
-    ): Promise<void> => {
-        const {
-            sessionId,
-            tokenPlain,
-        } = parseRefreshToken(refreshToken);
-
-        const sessao =
-            await prisma.sessao.findUnique({
-                where: {
-                    id: sessionId,
-                },
-            });
-
-        if (!sessao) {
-            throw new Error(
-                'Sessão não encontrada'
-            );
-        }
-
-        if (sessao.revogadoEm) {
-            return;
-        }
-
-        const tokenMatch =
-            await bcrypt.compare(
-                tokenPlain,
-                sessao.refreshTokenHash
-            );
-
-        if (!tokenMatch) {
-            throw new Error(
-                'Refresh token inválido'
-            );
-        }
-
-        await prisma.sessao.update({
-            where: {
-                id: sessionId,
-            },
-            data: {
-                revogadoEm: new Date(),
-            },
-        });
-    },
+    revoke: revokeRefreshToken,
+    logout: revokeRefreshToken,
 };
+
+async function revokeRefreshToken(
+    refreshToken: string
+): Promise<void> {
+    const { sessionId, tokenPlain } =
+        parseRefreshToken(refreshToken);
+
+    const sessao = await prisma.sessao.findUnique({
+        where: { id: sessionId },
+    });
+
+    if (!sessao) {
+        throw new Error('Sessão não encontrada');
+    }
+
+    if (sessao.revogadoEm) {
+        return;
+    }
+
+    const tokenMatch = await bcrypt.compare(
+        tokenPlain,
+        sessao.refreshTokenHash
+    );
+
+    if (!tokenMatch) {
+        throw new Error('Refresh token inválido');
+    }
+
+    await prisma.sessao.update({
+        where: { id: sessionId },
+        data: { revogadoEm: new Date() },
+    });
+}
