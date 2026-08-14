@@ -10,6 +10,23 @@ export class TemporadaService {
         });
     }
 
+    async listTemporadasByAnimeId(
+        animeId: number
+    ): Promise<TemporadaModel[]> {
+        return prisma.temporada.findMany({
+            where: {
+                episodios: {
+                    some: {
+                        animeId,
+                    },
+                },
+            },
+            orderBy: {
+                id: 'asc',
+            },
+        });
+    }
+
     async getTemporadaById(
         id: number
     ): Promise<TemporadaModel | null> {
