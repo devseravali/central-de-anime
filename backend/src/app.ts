@@ -27,6 +27,7 @@ app.use(helmet());
 app.use(cors());
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/health', (_request, response) => {
     response.json({
