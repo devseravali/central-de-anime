@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../config/prisma';
+import { authMiddleware } from '../middlewares/authMiddleware';
 
 const FavoritosRouter = Router();
 
@@ -9,18 +10,19 @@ function parseId(value: unknown): number | undefined {
   return Number.isNaN(n) ? undefined : n;
 }
 
-FavoritosRouter.get('/usuarios/:id/favoritos/animes', async (req: Request, res: Response) => {
+FavoritosRouter.get('/usuarios/:id/favoritos/animes', authMiddleware, async (req: Request, res: Response) => {
   try {
     const id = parseId(req.params.id);
     if (id === undefined) {
       res.status(400).json({ message: 'ID inválido' });
       return;
     }
+    if (req.user?.id !== id && req.user?.role !== 'ADMIN') {
+      res.status(403).json({ message: 'Acesso negado' });
+      return;
+    }
 
-    const favs = await prisma.usuarioFavoritoAnime.findMany({
-      where: { usuarioId: id },
-      include: { anime: { select: { id: true, nome: true, slug: true, capaUrl: true } } },
-    });
+    const favs = await prisma.usuarioFavoritoAnime.findMany({ where: { usuarioId: id }, include: { anime: { select: { id: true, nome: true, slug: true, capaUrl: true } } } });
 
     res.status(200).json(favs.map(f => f.anime));
   } catch (error) {
@@ -29,18 +31,19 @@ FavoritosRouter.get('/usuarios/:id/favoritos/animes', async (req: Request, res: 
   }
 });
 
-FavoritosRouter.get('/usuarios/:id/favoritos/personagens', async (req: Request, res: Response) => {
+FavoritosRouter.get('/usuarios/:id/favoritos/personagens', authMiddleware, async (req: Request, res: Response) => {
   try {
     const id = parseId(req.params.id);
     if (id === undefined) {
       res.status(400).json({ message: 'ID inválido' });
       return;
     }
+    if (req.user?.id !== id && req.user?.role !== 'ADMIN') {
+      res.status(403).json({ message: 'Acesso negado' });
+      return;
+    }
 
-    const favs = await prisma.personagemFavorito.findMany({
-      where: { usuarioId: id },
-      include: { personagem: true },
-    });
+    const favs = await prisma.personagemFavorito.findMany({ where: { usuarioId: id }, include: { personagem: true } });
 
     res.status(200).json(favs.map(f => f.personagem));
   } catch (error) {

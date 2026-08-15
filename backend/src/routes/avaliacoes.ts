@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../config/prisma';
+import { authMiddleware } from '../middlewares/authMiddleware';
 
 const AvaliacoesRouter = Router();
 
@@ -29,7 +30,7 @@ AvaliacoesRouter.get('/animes/:id/avaliacoes', async (req: Request, res: Respons
   }
 });
 
-AvaliacoesRouter.get('/usuarios/:id/avaliacoes', async (req: Request, res: Response) => {
+AvaliacoesRouter.get('/usuarios/:id/avaliacoes', authMiddleware, async (req: Request, res: Response) => {
   try {
     const id = parseId(req.params.id);
     if (id === undefined) {
@@ -37,10 +38,12 @@ AvaliacoesRouter.get('/usuarios/:id/avaliacoes', async (req: Request, res: Respo
       return;
     }
 
-    const notas = await prisma.notaAnimeUsuario.findMany({
-      where: { usuarioId: id },
-      include: { anime: { select: { id: true, nome: true, slug: true, capaUrl: true } } },
-    });
+    if (req.user?.id !== id && req.user?.role !== 'ADMIN') {
+      res.status(403).json({ message: 'Acesso negado' });
+      return;
+    }
+
+    const notas = await prisma.notaAnimeUsuario.findMany({ where: { usuarioId: id }, include: { anime: { select: { id: true, nome: true, slug: true, capaUrl: true } } } });
 
     res.status(200).json(notas.map(n => ({ anime: n.anime, nota: n.nota })));
   } catch (error) {

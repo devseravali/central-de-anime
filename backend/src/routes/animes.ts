@@ -3,6 +3,8 @@ import { animeController } from '../controllers/animeController';
 import { temporadaController } from '../controllers/temporadaController';
 import { personagemController } from '../controllers/personagemController';
 import { episodioController } from '../controllers/episodioController';
+import { authMiddleware } from '../middlewares/authMiddleware';
+import { adminMiddleware } from '../middlewares/adminMiddleware';
 
 const AnimesRouter = Router();
 
@@ -34,8 +36,8 @@ AnimesRouter.get(
     }
 );
 
-AnimesRouter.put('/:id', animeController.update);
-AnimesRouter.delete('/:id', animeController.remove);
+AnimesRouter.put('/:id', authMiddleware, adminMiddleware, animeController.update);
+AnimesRouter.delete('/:id', authMiddleware, adminMiddleware, animeController.remove);
 
 AnimesRouter.get('/:id/capas', async (req: Request, res: Response) => {
     try {
