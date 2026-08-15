@@ -1,6 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
+
 import authRoutes from './routes/auth';
 import usuarioRoutes from './routes/usuario';
 import animesRoutes from './routes/animes';
@@ -13,7 +14,6 @@ import sessionsRoutes from './routes/sessions';
 import adminRoutes from './routes/admin';
 import favoritosRoutes from './routes/favoritos';
 import avaliacoesRoutes from './routes/avaliacoes';
-
 import progressosRoutes from './routes/progressos';
 import batchRoutes from './routes/batch';
 import exportRoutes from './routes/export';
@@ -23,11 +23,15 @@ import webhooksRoutes from './routes/webhooks';
 const app = express();
 
 app.use(helmet());
+
 app.use(cors());
+
 app.use(express.json());
 
 app.get('/health', (_request, response) => {
-  response.json({ status: 'ok' });
+    response.json({
+        status: 'ok'
+    });
 });
 
 app.use('/auth', authRoutes);
