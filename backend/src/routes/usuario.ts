@@ -1,6 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { usuarioController } from '../controllers/usuarioController';
 import { prisma } from '../config/prisma';
+import { authMiddleware } from '../middlewares/authMiddleware';
+import { adminMiddleware } from '../middlewares/adminMiddleware';
 
 const UsuarioRouter = Router();
 
@@ -106,9 +108,9 @@ UsuarioRouter.delete('/:id', async (req: Request, res: Response) => {
 	}
 });
 
-UsuarioRouter.get('/me', usuarioController.getProfile);
-UsuarioRouter.put('/me', usuarioController.updateProfile);
-UsuarioRouter.get('/ranking', usuarioController.ranking);
-UsuarioRouter.post('/promote', usuarioController.promoteToAdmin);
+UsuarioRouter.get('/me', authMiddleware, usuarioController.getProfile);
+UsuarioRouter.put('/me', authMiddleware, usuarioController.updateProfile);
+UsuarioRouter.get('/ranking', authMiddleware, usuarioController.ranking);
+UsuarioRouter.post('/promote', authMiddleware, adminMiddleware, usuarioController.promoteToAdmin);
 
 export default UsuarioRouter;
