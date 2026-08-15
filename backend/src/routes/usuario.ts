@@ -26,12 +26,17 @@ UsuarioRouter.get('/', async (_req: Request, res: Response) => {
 			take: 200,
 		});
 
-		res.status(200).json(users);
+		res.status(200).json({ message: 'Bem sucedidos', users });
 	} catch (error) {
 		console.error('Erro ao listar usuários', error);
 		res.status(500).json({ message: 'Erro ao listar usuários' });
 	}
 });
+
+UsuarioRouter.get('/me', authMiddleware, usuarioController.getProfile);
+UsuarioRouter.put('/me', authMiddleware, usuarioController.updateProfile);
+UsuarioRouter.get('/ranking', authMiddleware, usuarioController.ranking);
+UsuarioRouter.post('/promote', authMiddleware, adminMiddleware, usuarioController.promoteToAdmin);
 
 UsuarioRouter.get('/:id', async (req: Request, res: Response) => {
 	try {
@@ -52,7 +57,7 @@ UsuarioRouter.get('/:id', async (req: Request, res: Response) => {
 			return;
 		}
 
-		res.status(200).json(user);
+		res.status(200).json({ message: 'OK', user });
 	} catch (error) {
 		console.error('Erro ao buscar usuário', error);
 		res.status(500).json({ message: 'Erro ao buscar usuário' });
@@ -74,7 +79,7 @@ UsuarioRouter.put('/:id', async (req: Request, res: Response) => {
 
 		const updated = await usuarioService.updateProfile(id, { nome, email, senha, avatar, status });
 
-		res.status(200).json(updated);
+		res.status(200).json({ message: 'OK', user: updated });
 	} catch (error) {
 		console.error('Erro ao atualizar usuário', error);
 		const message = error instanceof Error ? error.message : 'Erro ao atualizar usuário';
@@ -107,10 +112,5 @@ UsuarioRouter.delete('/:id', async (req: Request, res: Response) => {
 		res.status(500).json({ message: 'Erro ao deletar usuário' });
 	}
 });
-
-UsuarioRouter.get('/me', authMiddleware, usuarioController.getProfile);
-UsuarioRouter.put('/me', authMiddleware, usuarioController.updateProfile);
-UsuarioRouter.get('/ranking', authMiddleware, usuarioController.ranking);
-UsuarioRouter.post('/promote', authMiddleware, adminMiddleware, usuarioController.promoteToAdmin);
 
 export default UsuarioRouter;

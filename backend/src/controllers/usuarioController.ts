@@ -56,7 +56,7 @@ async function getProfile(
             return;
         }
 
-        res.status(200).json(usuario);
+        res.status(200).json({ message: 'OK', usuario });
     } catch (error) {
         console.error('Erro ao buscar perfil:', error);
 
@@ -91,7 +91,7 @@ async function updateProfile(
             status,
         });
 
-        res.status(200).json(usuario);
+        res.status(200).json({ message: 'OK', usuario });
     } catch (error) {
         console.error('Erro ao atualizar perfil:', error);
 
@@ -167,7 +167,7 @@ async function ranking(
             return;
         }
 
-        res.status(200).json(rankingData);
+        res.status(200).json({ message: 'OK', ranking: rankingData });
     } catch (error) {
         console.error('Erro ao buscar ranking do usuário:', error);
         res.status(500).json({ message: 'Erro ao buscar ranking' });
