@@ -1,14 +1,15 @@
 import { Router } from 'express';
 import { interacaoController } from '../controllers/interacaoController';
+import { authMiddleware } from '../middlewares/authMiddleware';
 
 const InteracoesRouter = Router();
 
-InteracoesRouter.post('/animes/:animeId/favoritar', interacaoController.favoritarAnime);
-InteracoesRouter.post('/animes/:animeId/desfavoritar', interacaoController.desfavoritarAnime);
-InteracoesRouter.post('/animes/:animeId/nota', interacaoController.darNota);
-InteracoesRouter.delete('/animes/:animeId/nota', interacaoController.removerNota);
+InteracoesRouter.post('/animes/:animeId/favoritar', authMiddleware, interacaoController.favoritarAnime);
+InteracoesRouter.post('/animes/:animeId/desfavoritar', authMiddleware, interacaoController.desfavoritarAnime);
+InteracoesRouter.post('/animes/:animeId/nota', authMiddleware, interacaoController.darNota);
+InteracoesRouter.delete('/animes/:animeId/nota', authMiddleware, interacaoController.removerNota);
 
-InteracoesRouter.post('/personagens/:personagemId/favoritar', interacaoController.favoritarPersonagem);
-InteracoesRouter.post('/personagens/:personagemId/desfavoritar', interacaoController.desfavoritarPersonagem);
+InteracoesRouter.post('/personagens/:personagemId/favoritar', authMiddleware, interacaoController.favoritarPersonagem);
+InteracoesRouter.post('/personagens/:personagemId/desfavoritar', authMiddleware, interacaoController.desfavoritarPersonagem);
 
 export default InteracoesRouter;
