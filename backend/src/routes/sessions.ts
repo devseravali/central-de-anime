@@ -20,7 +20,6 @@ SessionsRouter.get('/auth/sessions', authMiddleware, async (req: Request, res: R
       return;
     }
 
-    // allow only owner or admin
     if (req.user?.id !== usuarioId && req.user?.role !== 'ADMIN') {
       res.status(403).json({ message: 'Acesso negado' });
       return;
