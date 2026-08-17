@@ -37,6 +37,17 @@ export const authMiddleware = (
         return;
     }
 
+    // validação rápida do formato: access tokens JWT têm 3 partes separadas por '.'
+    const tokenParts = token.split('.');
+    if (tokenParts.length !== 3) {
+        console.error('Token com formato inválido (não parece um JWT):', token);
+
+        res.status(401).json({
+            message: 'Formato do token inválido: espere um access token JWT (não use o refreshToken)',
+        });
+        return;
+    }
+
     try {
         const decoded = jwt.verify(token, JWT_SECRET) as jwt.JwtPayload;
 
