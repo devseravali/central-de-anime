@@ -28,7 +28,7 @@ SessionsRouter.get('/auth/sessions', authMiddleware, async (req: Request, res: R
 
     const sessoes = await prisma.sessao.findMany({ where: { usuarioId }, orderBy: { id: 'desc' } });
 
-    res.status(200).json(sessoes);
+    res.status(200).json({ message: 'OK', sessions: sessoes });
   } catch (error) {
     console.error('Erro ao listar sessões', error);
     res.status(500).json({ message: 'Erro ao listar sessões' });
