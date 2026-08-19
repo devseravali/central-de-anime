@@ -40,6 +40,8 @@ export type UsuarioMinAggregateOutputType = {
   email: string | null
   senha: string | null
   avatar: string | null
+  resetSenhaTokenHash: string | null
+  resetSenhaExpiraEm: Date | null
   status: string | null
   criadoEm: Date | null
   atualizadoEm: Date | null
@@ -51,6 +53,8 @@ export type UsuarioMaxAggregateOutputType = {
   email: string | null
   senha: string | null
   avatar: string | null
+  resetSenhaTokenHash: string | null
+  resetSenhaExpiraEm: Date | null
   status: string | null
   criadoEm: Date | null
   atualizadoEm: Date | null
@@ -62,6 +66,8 @@ export type UsuarioCountAggregateOutputType = {
   email: number
   senha: number
   avatar: number
+  resetSenhaTokenHash: number
+  resetSenhaExpiraEm: number
   status: number
   criadoEm: number
   atualizadoEm: number
@@ -83,6 +89,8 @@ export type UsuarioMinAggregateInputType = {
   email?: true
   senha?: true
   avatar?: true
+  resetSenhaTokenHash?: true
+  resetSenhaExpiraEm?: true
   status?: true
   criadoEm?: true
   atualizadoEm?: true
@@ -94,6 +102,8 @@ export type UsuarioMaxAggregateInputType = {
   email?: true
   senha?: true
   avatar?: true
+  resetSenhaTokenHash?: true
+  resetSenhaExpiraEm?: true
   status?: true
   criadoEm?: true
   atualizadoEm?: true
@@ -105,6 +115,8 @@ export type UsuarioCountAggregateInputType = {
   email?: true
   senha?: true
   avatar?: true
+  resetSenhaTokenHash?: true
+  resetSenhaExpiraEm?: true
   status?: true
   criadoEm?: true
   atualizadoEm?: true
@@ -203,6 +215,8 @@ export type UsuarioGroupByOutputType = {
   email: string
   senha: string
   avatar: string | null
+  resetSenhaTokenHash: string | null
+  resetSenhaExpiraEm: Date | null
   status: string
   criadoEm: Date
   atualizadoEm: Date
@@ -237,6 +251,8 @@ export type UsuarioWhereInput = {
   email?: Prisma.StringFilter<"Usuario"> | string
   senha?: Prisma.StringFilter<"Usuario"> | string
   avatar?: Prisma.StringNullableFilter<"Usuario"> | string | null
+  resetSenhaTokenHash?: Prisma.StringNullableFilter<"Usuario"> | string | null
+  resetSenhaExpiraEm?: Prisma.DateTimeNullableFilter<"Usuario"> | Date | string | null
   status?: Prisma.StringFilter<"Usuario"> | string
   criadoEm?: Prisma.DateTimeFilter<"Usuario"> | Date | string
   atualizadoEm?: Prisma.DateTimeFilter<"Usuario"> | Date | string
@@ -255,6 +271,8 @@ export type UsuarioOrderByWithRelationInput = {
   email?: Prisma.SortOrder
   senha?: Prisma.SortOrder
   avatar?: Prisma.SortOrderInput | Prisma.SortOrder
+  resetSenhaTokenHash?: Prisma.SortOrderInput | Prisma.SortOrder
+  resetSenhaExpiraEm?: Prisma.SortOrderInput | Prisma.SortOrder
   status?: Prisma.SortOrder
   criadoEm?: Prisma.SortOrder
   atualizadoEm?: Prisma.SortOrder
@@ -276,6 +294,8 @@ export type UsuarioWhereUniqueInput = Prisma.AtLeast<{
   nome?: Prisma.StringFilter<"Usuario"> | string
   senha?: Prisma.StringFilter<"Usuario"> | string
   avatar?: Prisma.StringNullableFilter<"Usuario"> | string | null
+  resetSenhaTokenHash?: Prisma.StringNullableFilter<"Usuario"> | string | null
+  resetSenhaExpiraEm?: Prisma.DateTimeNullableFilter<"Usuario"> | Date | string | null
   status?: Prisma.StringFilter<"Usuario"> | string
   criadoEm?: Prisma.DateTimeFilter<"Usuario"> | Date | string
   atualizadoEm?: Prisma.DateTimeFilter<"Usuario"> | Date | string
@@ -294,6 +314,8 @@ export type UsuarioOrderByWithAggregationInput = {
   email?: Prisma.SortOrder
   senha?: Prisma.SortOrder
   avatar?: Prisma.SortOrderInput | Prisma.SortOrder
+  resetSenhaTokenHash?: Prisma.SortOrderInput | Prisma.SortOrder
+  resetSenhaExpiraEm?: Prisma.SortOrderInput | Prisma.SortOrder
   status?: Prisma.SortOrder
   criadoEm?: Prisma.SortOrder
   atualizadoEm?: Prisma.SortOrder
@@ -313,6 +335,8 @@ export type UsuarioScalarWhereWithAggregatesInput = {
   email?: Prisma.StringWithAggregatesFilter<"Usuario"> | string
   senha?: Prisma.StringWithAggregatesFilter<"Usuario"> | string
   avatar?: Prisma.StringNullableWithAggregatesFilter<"Usuario"> | string | null
+  resetSenhaTokenHash?: Prisma.StringNullableWithAggregatesFilter<"Usuario"> | string | null
+  resetSenhaExpiraEm?: Prisma.DateTimeNullableWithAggregatesFilter<"Usuario"> | Date | string | null
   status?: Prisma.StringWithAggregatesFilter<"Usuario"> | string
   criadoEm?: Prisma.DateTimeWithAggregatesFilter<"Usuario"> | Date | string
   atualizadoEm?: Prisma.DateTimeWithAggregatesFilter<"Usuario"> | Date | string
@@ -323,6 +347,8 @@ export type UsuarioCreateInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -341,6 +367,8 @@ export type UsuarioUncheckedCreateInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -358,6 +386,8 @@ export type UsuarioUpdateInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -376,6 +406,8 @@ export type UsuarioUncheckedUpdateInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -394,6 +426,8 @@ export type UsuarioCreateManyInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -404,6 +438,8 @@ export type UsuarioUpdateManyMutationInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -415,6 +451,8 @@ export type UsuarioUncheckedUpdateManyInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -426,6 +464,8 @@ export type UsuarioCountOrderByAggregateInput = {
   email?: Prisma.SortOrder
   senha?: Prisma.SortOrder
   avatar?: Prisma.SortOrder
+  resetSenhaTokenHash?: Prisma.SortOrder
+  resetSenhaExpiraEm?: Prisma.SortOrder
   status?: Prisma.SortOrder
   criadoEm?: Prisma.SortOrder
   atualizadoEm?: Prisma.SortOrder
@@ -441,6 +481,8 @@ export type UsuarioMaxOrderByAggregateInput = {
   email?: Prisma.SortOrder
   senha?: Prisma.SortOrder
   avatar?: Prisma.SortOrder
+  resetSenhaTokenHash?: Prisma.SortOrder
+  resetSenhaExpiraEm?: Prisma.SortOrder
   status?: Prisma.SortOrder
   criadoEm?: Prisma.SortOrder
   atualizadoEm?: Prisma.SortOrder
@@ -452,6 +494,8 @@ export type UsuarioMinOrderByAggregateInput = {
   email?: Prisma.SortOrder
   senha?: Prisma.SortOrder
   avatar?: Prisma.SortOrder
+  resetSenhaTokenHash?: Prisma.SortOrder
+  resetSenhaExpiraEm?: Prisma.SortOrder
   status?: Prisma.SortOrder
   criadoEm?: Prisma.SortOrder
   atualizadoEm?: Prisma.SortOrder
@@ -573,6 +617,8 @@ export type UsuarioCreateWithoutWatchProgressInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -590,6 +636,8 @@ export type UsuarioUncheckedCreateWithoutWatchProgressInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -622,6 +670,8 @@ export type UsuarioUpdateWithoutWatchProgressInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -639,6 +689,8 @@ export type UsuarioUncheckedUpdateWithoutWatchProgressInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -655,6 +707,8 @@ export type UsuarioCreateWithoutRankingInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -672,6 +726,8 @@ export type UsuarioUncheckedCreateWithoutRankingInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -704,6 +760,8 @@ export type UsuarioUpdateWithoutRankingInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -721,6 +779,8 @@ export type UsuarioUncheckedUpdateWithoutRankingInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -737,6 +797,8 @@ export type UsuarioCreateWithoutFavoritosInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -754,6 +816,8 @@ export type UsuarioUncheckedCreateWithoutFavoritosInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -786,6 +850,8 @@ export type UsuarioUpdateWithoutFavoritosInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -803,6 +869,8 @@ export type UsuarioUncheckedUpdateWithoutFavoritosInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -819,6 +887,8 @@ export type UsuarioCreateWithoutNotasInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -836,6 +906,8 @@ export type UsuarioUncheckedCreateWithoutNotasInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -868,6 +940,8 @@ export type UsuarioUpdateWithoutNotasInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -885,6 +959,8 @@ export type UsuarioUncheckedUpdateWithoutNotasInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -901,6 +977,8 @@ export type UsuarioCreateWithoutPersonagensFavInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -918,6 +996,8 @@ export type UsuarioUncheckedCreateWithoutPersonagensFavInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -950,6 +1030,8 @@ export type UsuarioUpdateWithoutPersonagensFavInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -967,6 +1049,8 @@ export type UsuarioUncheckedUpdateWithoutPersonagensFavInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -983,6 +1067,8 @@ export type UsuarioCreateWithoutAdminInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -1000,6 +1086,8 @@ export type UsuarioUncheckedCreateWithoutAdminInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -1032,6 +1120,8 @@ export type UsuarioUpdateWithoutAdminInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -1049,6 +1139,8 @@ export type UsuarioUncheckedUpdateWithoutAdminInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -1065,6 +1157,8 @@ export type UsuarioCreateWithoutSessoesInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -1082,6 +1176,8 @@ export type UsuarioUncheckedCreateWithoutSessoesInput = {
   email: string
   senha: string
   avatar?: string | null
+  resetSenhaTokenHash?: string | null
+  resetSenhaExpiraEm?: Date | string | null
   status?: string
   criadoEm?: Date | string
   atualizadoEm?: Date | string
@@ -1114,6 +1210,8 @@ export type UsuarioUpdateWithoutSessoesInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -1131,6 +1229,8 @@ export type UsuarioUncheckedUpdateWithoutSessoesInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   senha?: Prisma.StringFieldUpdateOperationsInput | string
   avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -1215,6 +1315,8 @@ export type UsuarioSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs 
   email?: boolean
   senha?: boolean
   avatar?: boolean
+  resetSenhaTokenHash?: boolean
+  resetSenhaExpiraEm?: boolean
   status?: boolean
   criadoEm?: boolean
   atualizadoEm?: boolean
@@ -1234,6 +1336,8 @@ export type UsuarioSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Exten
   email?: boolean
   senha?: boolean
   avatar?: boolean
+  resetSenhaTokenHash?: boolean
+  resetSenhaExpiraEm?: boolean
   status?: boolean
   criadoEm?: boolean
   atualizadoEm?: boolean
@@ -1245,6 +1349,8 @@ export type UsuarioSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Exten
   email?: boolean
   senha?: boolean
   avatar?: boolean
+  resetSenhaTokenHash?: boolean
+  resetSenhaExpiraEm?: boolean
   status?: boolean
   criadoEm?: boolean
   atualizadoEm?: boolean
@@ -1256,12 +1362,14 @@ export type UsuarioSelectScalar = {
   email?: boolean
   senha?: boolean
   avatar?: boolean
+  resetSenhaTokenHash?: boolean
+  resetSenhaExpiraEm?: boolean
   status?: boolean
   criadoEm?: boolean
   atualizadoEm?: boolean
 }
 
-export type UsuarioOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "nome" | "email" | "senha" | "avatar" | "status" | "criadoEm" | "atualizadoEm", ExtArgs["result"]["usuario"]>
+export type UsuarioOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "nome" | "email" | "senha" | "avatar" | "resetSenhaTokenHash" | "resetSenhaExpiraEm" | "status" | "criadoEm" | "atualizadoEm", ExtArgs["result"]["usuario"]>
 export type UsuarioInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   admin?: boolean | Prisma.Usuario$adminArgs<ExtArgs>
   sessoes?: boolean | Prisma.Usuario$sessoesArgs<ExtArgs>
@@ -1292,6 +1400,8 @@ export type $UsuarioPayload<ExtArgs extends runtime.Types.Extensions.InternalArg
     email: string
     senha: string
     avatar: string | null
+    resetSenhaTokenHash: string | null
+    resetSenhaExpiraEm: Date | null
     status: string
     criadoEm: Date
     atualizadoEm: Date
@@ -1730,6 +1840,8 @@ export interface UsuarioFieldRefs {
   readonly email: Prisma.FieldRef<"Usuario", 'String'>
   readonly senha: Prisma.FieldRef<"Usuario", 'String'>
   readonly avatar: Prisma.FieldRef<"Usuario", 'String'>
+  readonly resetSenhaTokenHash: Prisma.FieldRef<"Usuario", 'String'>
+  readonly resetSenhaExpiraEm: Prisma.FieldRef<"Usuario", 'DateTime'>
   readonly status: Prisma.FieldRef<"Usuario", 'String'>
   readonly criadoEm: Prisma.FieldRef<"Usuario", 'DateTime'>
   readonly atualizadoEm: Prisma.FieldRef<"Usuario", 'DateTime'>
