@@ -105,6 +105,65 @@ export const authController = {
         }
     },
 
+    forgotPassword: async (req: Request, res: Response): Promise<void> => {
+        const { email } = req.body ?? {};
+
+        if (typeof email !== 'string' || !email.trim()) {
+            res.status(400).json({ message: 'Email é obrigatório' });
+            return;
+        }
+
+        try {
+            const resetToken = await authService.requestPasswordReset(email);
+            const response: { message: string; resetToken?: string } = {
+                message: 'Se o email existir, instruções de recuperação serão enviadas',
+            };
+
+            if (resetToken && process.env.NODE_ENV !== 'production') {
+                response.resetToken = resetToken;
+            }
+
+            res.status(200).json(response);
+        } catch (error) {
+            console.error('Erro ao solicitar recuperação de senha:', error);
+            res.status(500).json({ message: 'Erro ao solicitar recuperação de senha' });
+        }
+    },
+
+    resetPassword: async (req: Request, res: Response): Promise<void> => {
+        const { token, novaSenha } = req.body ?? {};
+
+        if (
+            typeof token !== 'string' ||
+            !token ||
+            typeof novaSenha !== 'string' ||
+            novaSenha.length < 6
+        ) {
+            res.status(400).json({
+                message: 'Token e nova senha com no mínimo 6 caracteres são obrigatórios',
+            });
+            return;
+        }
+
+        try {
+            await authService.resetPassword(token, novaSenha);
+            res.status(200).json({ message: 'Senha redefinida com sucesso' });
+        } catch (error) {
+            const message =
+                error instanceof Error
+                    ? error.message
+                    : 'Token de recuperação expirado ou inválido';
+
+            if (message === 'Token de recuperação expirado ou inválido') {
+                res.status(400).json({ message });
+                return;
+            }
+
+            console.error('Erro ao redefinir senha:', error);
+            res.status(500).json({ message: 'Erro ao redefinir senha' });
+        }
+    },
+
     logout: async (req: Request, res: Response): Promise<void> => {
         try {
             const { refreshToken } = req.body;

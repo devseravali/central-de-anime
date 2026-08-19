@@ -39,6 +39,8 @@ export interface AuthService {
         userAgent?: string | null
     ): Promise<LoginResult>;
     refresh(refreshToken: string): Promise<RefreshResult>;
+    requestPasswordReset(email: string): Promise<string | null>;
+    resetPassword(token: string, newPassword: string): Promise<void>;
     revoke(refreshToken: string): Promise<void>;
     logout(refreshToken: string): Promise<void>;
 }
@@ -58,6 +60,10 @@ const REFRESH_TOKEN_EXPIRES_DAYS = Number(
 
 const BCRYPT_SALT_ROUNDS = Number(
     process.env.BCRYPT_SALT_ROUNDS ?? 10
+);
+
+const PASSWORD_RESET_EXPIRES_MINUTES = Number(
+    process.env.PASSWORD_RESET_EXPIRES_MINUTES ?? 30
 );
 
 const hashPassword = async (
@@ -167,6 +173,29 @@ const parseRefreshToken = (
         sessionId,
         tokenPlain,
     };
+};
+
+const parsePasswordResetToken = (
+    token: string
+): { usuarioId: number; tokenPlain: string } => {
+    if (!token || typeof token !== 'string') {
+        throw new Error('Token de recuperação inválido');
+    }
+
+    const separatorIndex = token.indexOf('.');
+    const usuarioId = Number(token.slice(0, separatorIndex));
+    const tokenPlain = token.slice(separatorIndex + 1);
+
+    if (
+        separatorIndex <= 0 ||
+        !Number.isSafeInteger(usuarioId) ||
+        usuarioId <= 0 ||
+        !tokenPlain
+    ) {
+        throw new Error('Token de recuperação inválido');
+    }
+
+    return { usuarioId, tokenPlain };
 };
 
 export const authService: AuthService = {
@@ -402,6 +431,73 @@ export const authService: AuthService = {
                 newRefreshSession.sessao
                     .expiraEm,
         };
+    },
+
+    requestPasswordReset: async (
+        email: string
+    ): Promise<string | null> => {
+        const normalizedEmail = email.trim().toLowerCase();
+        const usuario = await prisma.usuario.findUnique({
+            where: { email: normalizedEmail },
+        });
+
+        if (!usuario) {
+            return null;
+        }
+
+        const tokenPlain = crypto.randomBytes(32).toString('hex');
+        const resetSenhaTokenHash = await bcrypt.hash(
+            tokenPlain,
+            BCRYPT_SALT_ROUNDS
+        );
+        const resetSenhaExpiraEm = new Date(
+            Date.now() + PASSWORD_RESET_EXPIRES_MINUTES * 60 * 1000
+        );
+
+        await prisma.usuario.update({
+            where: { id: usuario.id },
+            data: { resetSenhaTokenHash, resetSenhaExpiraEm },
+        });
+
+        return `${usuario.id}.${tokenPlain}`;
+    },
+
+    resetPassword: async (
+        token: string,
+        newPassword: string
+    ): Promise<void> => {
+        const { usuarioId, tokenPlain } = parsePasswordResetToken(token);
+        const usuario = await prisma.usuario.findUnique({
+            where: { id: usuarioId },
+        });
+
+        if (
+            !usuario?.resetSenhaTokenHash ||
+            !usuario.resetSenhaExpiraEm ||
+            usuario.resetSenhaExpiraEm.getTime() <= Date.now()
+        ) {
+            throw new Error('Token de recuperação expirado ou inválido');
+        }
+
+        const tokenMatch = await bcrypt.compare(
+            tokenPlain,
+            usuario.resetSenhaTokenHash
+        );
+
+        if (!tokenMatch) {
+            throw new Error('Token de recuperação expirado ou inválido');
+        }
+
+        const senha = await hashPassword(newPassword);
+
+        await prisma.usuario.update({
+            where: { id: usuario.id },
+            data: {
+                senha,
+                resetSenhaTokenHash: null,
+                resetSenhaExpiraEm: null,
+            },
+        });
     },
 
     revoke: revokeRefreshToken,
