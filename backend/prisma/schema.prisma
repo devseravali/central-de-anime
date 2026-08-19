@@ -96,6 +96,9 @@ model Usuario {
   senha  String
   avatar String?
 
+  resetSenhaTokenHash String?
+  resetSenhaExpiraEm  DateTime?
+
   status String @default("ativo")
 
   criadoEm     DateTime @default(now())
