@@ -8,13 +8,11 @@ async function main() {
     const episodio = await prisma.episodio.findUnique({ where: { id: 10 } });
     const anime = await prisma.anime.findUnique({ where: { id: 5 } });
 
-    // Garantir que exista um episódio para usar nos WatchProgress
     let targetEpisodio = episodio;
     if (!targetEpisodio) {
       if (!anime) {
         console.warn('Nenhum anime encontrado para criar episódio de teste — pulando criação de WatchProgress.');
       } else {
-        // garantir temporada
         let season = await prisma.temporada.findFirst();
         if (!season) {
           season = await prisma.temporada.create({ data: { nome: 'Seed Temporada' } });
@@ -35,7 +33,6 @@ async function main() {
     if (!targetEpisodio) {
       console.warn('Nenhum episódio disponível para criar WatchProgress — pulando esta etapa.');
     } else {
-      // Criar um WatchProgress para cada usuário, se ainda não existir
       const users = await prisma.usuario.findMany();
       for (const u of users) {
         try {
@@ -52,7 +49,6 @@ async function main() {
       }
     }
 
-    // Criar PersonagemFavorito para cada usuário (se houver personagens)
     const personagens = await prisma.personagem.findMany({ take: 1 });
     if (personagens.length > 0) {
       const firstPersonagem = personagens[0];
@@ -72,7 +68,6 @@ async function main() {
       console.warn('Nenhum personagem encontrado — pulando PersonagemFavorito.');
     }
 
-    // Criar RankingUsuario para usuários que não possuem
     const usersForRank = await prisma.usuario.findMany();
     for (const u of usersForRank) {
       try {
@@ -86,7 +81,6 @@ async function main() {
       }
     }
 
-    // Criar CacheAnime para um anime de exemplo (se existir)
     const exampleAnime = await prisma.anime.findFirst();
     if (exampleAnime) {
       try {
@@ -102,7 +96,6 @@ async function main() {
       console.warn('Nenhum anime encontrado — pulando CacheAnime.');
     }
 
-    // Criar filtros básicos se não existirem
     const filtros = ['populares', 'novos', 'mais_avaliados'];
     for (const nome of filtros) {
       try {
