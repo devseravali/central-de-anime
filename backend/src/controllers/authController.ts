@@ -116,7 +116,7 @@ export const authController = {
         try {
             const resetToken = await authService.requestPasswordReset(email);
             const response: { message: string; resetToken?: string } = {
-                message: 'Se o email existir, instruções de recuperação serão enviadas',
+                message: 'Email enviado, você receberá instruções para redefinir sua senha',
             };
 
             if (resetToken && process.env.NODE_ENV !== 'production') {

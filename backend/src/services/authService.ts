@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
 import { prisma } from '../config/prisma';
+import { sendPasswordResetEmail } from './emailService';
 import type {
     UsuarioModel,
     SessaoModel,
@@ -182,20 +183,18 @@ const parsePasswordResetToken = (
         throw new Error('Token de recuperação inválido');
     }
 
-    const separatorIndex = token.indexOf('.');
-    const usuarioId = Number(token.slice(0, separatorIndex));
-    const tokenPlain = token.slice(separatorIndex + 1);
+    try {
+        const payload = jwt.verify(token, JWT_SECRET) as any;
+        const usuarioId = Number(payload.usuarioId ?? payload.sub ?? payload.id);
 
-    if (
-        separatorIndex <= 0 ||
-        !Number.isSafeInteger(usuarioId) ||
-        usuarioId <= 0 ||
-        !tokenPlain
-    ) {
+        if (!Number.isSafeInteger(usuarioId) || usuarioId <= 0) {
+            throw new Error('Token de recuperação inválido');
+        }
+
+        return { usuarioId, tokenPlain: token };
+    } catch (err) {
         throw new Error('Token de recuperação inválido');
     }
-
-    return { usuarioId, tokenPlain };
 };
 
 export const authService: AuthService = {
@@ -445,11 +444,16 @@ export const authService: AuthService = {
             return null;
         }
 
-        const tokenPlain = crypto.randomBytes(32).toString('hex');
+        // Gerar token JWT com expiração curta
+        const jwtToken = jwt.sign({ usuarioId: usuario.id }, JWT_SECRET, {
+            expiresIn: `${PASSWORD_RESET_EXPIRES_MINUTES}m`,
+        });
+
         const resetSenhaTokenHash = await bcrypt.hash(
-            tokenPlain,
+            jwtToken,
             BCRYPT_SALT_ROUNDS
         );
+
         const resetSenhaExpiraEm = new Date(
             Date.now() + PASSWORD_RESET_EXPIRES_MINUTES * 60 * 1000
         );
@@ -459,7 +463,9 @@ export const authService: AuthService = {
             data: { resetSenhaTokenHash, resetSenhaExpiraEm },
         });
 
-        return `${usuario.id}.${tokenPlain}`;
+        await sendPasswordResetEmail(normalizedEmail, jwtToken);
+
+        return jwtToken;
     },
 
     resetPassword: async (
@@ -479,10 +485,8 @@ export const authService: AuthService = {
             throw new Error('Token de recuperação expirado ou inválido');
         }
 
-        const tokenMatch = await bcrypt.compare(
-            tokenPlain,
-            usuario.resetSenhaTokenHash
-        );
+        // tokenPlain é o JWT completo; verificamos assinatura acima no parse
+        const tokenMatch = await bcrypt.compare(tokenPlain, usuario.resetSenhaTokenHash);
 
         if (!tokenMatch) {
             throw new Error('Token de recuperação expirado ou inválido');
