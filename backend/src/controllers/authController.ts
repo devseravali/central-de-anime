@@ -126,7 +126,8 @@ export const authController = {
             res.status(200).json(response);
         } catch (error) {
             console.error('Erro ao solicitar recuperação de senha:', error);
-            res.status(500).json({ message: 'Erro ao solicitar recuperação de senha' });
+            // Retornar mensagem genérica de sucesso para não vazar detalhes ao cliente
+            res.status(200).json({ message: 'Email enviado, você receberá instruções para redefinir sua senha' });
         }
     },
 
@@ -146,8 +147,8 @@ export const authController = {
         }
 
         try {
-            await authService.resetPassword(token, novaSenha);
-            res.status(200).json({ message: 'Senha redefinida com sucesso' });
+            const result = await authService.resetPassword(token, novaSenha);
+            res.status(200).json({ message: 'Senha redefinida com sucesso', ...result });
         } catch (error) {
             const message =
                 error instanceof Error
