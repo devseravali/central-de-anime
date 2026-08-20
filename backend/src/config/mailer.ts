@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 
 const SMTP_HOST = process.env.SMTP_HOST;
-const SMTP_PORT = Number(process.env.SMTP_PORT ?? 3000);
+const SMTP_PORT = Number(process.env.SMTP_PORT ?? 587);
 const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
 
@@ -13,7 +13,11 @@ export function getTransporter() {
     return nodemailer.createTransport({
         host: SMTP_HOST,
         port: SMTP_PORT,
-        secure: SMTP_PORT === 3000,
+        secure: SMTP_PORT === 465,
+        authMethod: 'LOGIN',
+        tls: {
+            rejectUnauthorized: false,
+        },
         auth: {
             user: SMTP_USER,
             pass: SMTP_PASS,
