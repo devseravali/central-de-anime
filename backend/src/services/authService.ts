@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
 import { prisma } from '../config/prisma';
-import { sendPasswordResetEmail } from './emailService';
+import { sendPasswordResetEmail, sendPasswordResetConfirmationEmail } from './emailService';
 import type {
     UsuarioModel,
     SessaoModel,
@@ -41,7 +41,7 @@ export interface AuthService {
     ): Promise<LoginResult>;
     refresh(refreshToken: string): Promise<RefreshResult>;
     requestPasswordReset(email: string): Promise<string | null>;
-    resetPassword(token: string, newPassword: string): Promise<void>;
+    resetPassword(token: string, newPassword: string): Promise<LoginResult>;
     revoke(refreshToken: string): Promise<void>;
     logout(refreshToken: string): Promise<void>;
 }
@@ -471,7 +471,7 @@ export const authService: AuthService = {
     resetPassword: async (
         token: string,
         newPassword: string
-    ): Promise<void> => {
+    ): Promise<LoginResult> => {
         const { usuarioId, tokenPlain } = parsePasswordResetToken(token);
         const usuario = await prisma.usuario.findUnique({
             where: { id: usuarioId },
@@ -494,7 +494,7 @@ export const authService: AuthService = {
 
         const senha = await hashPassword(newPassword);
 
-        await prisma.usuario.update({
+        const updatedUser = await prisma.usuario.update({
             where: { id: usuario.id },
             data: {
                 senha,
@@ -502,6 +502,28 @@ export const authService: AuthService = {
                 resetSenhaExpiraEm: null,
             },
         });
+
+        const { senha: _senha, ...safeUser } = updatedUser;
+
+        const accessToken = generateAccessToken(safeUser as any);
+
+        const { token: refreshToken, sessao } = await generateRefreshTokenForUser(updatedUser.id);
+
+        // Envia email de confirmação de alteração de senha (não bloquear o fluxo em caso de falha)
+        (async () => {
+            try {
+                await sendPasswordResetConfirmationEmail(updatedUser.email);
+            } catch (err) {
+                console.error('Falha ao enviar email de confirmação de senha:', err);
+            }
+        })();
+
+        return {
+            user: safeUser as SafeUsuario,
+            accessToken,
+            refreshToken,
+            refreshExpiraEm: sessao.expiraEm,
+        };
     },
 
     revoke: revokeRefreshToken,
