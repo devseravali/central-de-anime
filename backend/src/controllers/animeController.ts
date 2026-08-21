@@ -75,10 +75,12 @@ async function search(req: Request, res: Response): Promise<void> {
         const { q, limit, page } = req.query;
 
         if (typeof q !== 'string' || q.trim() === '') {
-            res.status(400).json({
-                message: "Parâmetro de busca 'q' é obrigatório",
+            const listResult = await animeService.listAnimes({
+                page: parseIntParam(page),
+                perPage: parseIntParam(limit),
             });
 
+            res.status(200).json(listResult);
             return;
         }
 
@@ -88,7 +90,14 @@ async function search(req: Request, res: Response): Promise<void> {
             parseIntParam(page)
         );
 
-        res.status(200).json(result);
+        const safeResult = {
+            items: Array.isArray(result?.items) ? result.items : [],
+            total: typeof result?.total === 'number' ? result.total : 0,
+            page: typeof result?.page === 'number' ? result.page : parseIntParam(page) ?? 1,
+            perPage: typeof result?.perPage === 'number' ? result.perPage : parseIntParam(limit) ?? 20,
+        };
+
+        res.status(200).json(safeResult);
     } catch (error) {
         console.error('Erro ao buscar animes:', error);
 
