@@ -56,7 +56,7 @@ async function getProfile(
             return;
         }
 
-        res.status(200).json({ message: 'OK', usuario });
+        res.status(200).json({ message: 'Perfil carregado', usuario });
     } catch (error) {
         console.error('Erro ao buscar perfil:', error);
 
@@ -91,7 +91,7 @@ async function updateProfile(
             status,
         });
 
-        res.status(200).json({ message: 'OK', usuario });
+        res.status(200).json({ message: 'Perfil atualizado', usuario });
     } catch (error) {
         console.error('Erro ao atualizar perfil:', error);
 
@@ -131,7 +131,7 @@ async function promoteToAdmin(
 
         await usuarioService.promoteToAdmin(usuarioId, nivel);
 
-        res.status(204).send();
+        res.status(200).json({ message: 'Usuário promovido a admin', usuarioId, nivel });
     } catch (error) {
         console.error('Erro ao promover usuário:', error);
 
@@ -163,11 +163,13 @@ async function ranking(
         const rankingData = await rankingService.getRankingByUsuarioId(usuarioId);
 
         if (!rankingData) {
-            res.status(404).json({ message: 'Ranking não encontrado' });
+            // se não existir ranking, recalcula/atualiza (upsert) e retorna o novo registro
+            const created = await rankingService.atualizarRanking(usuarioId);
+            res.status(200).json({ message: 'Ranking criado', ranking: created });
             return;
         }
 
-        res.status(200).json({ message: 'OK', ranking: rankingData });
+        res.status(200).json({ message: 'Ranking carregado', ranking: rankingData });
     } catch (error) {
         console.error('Erro ao buscar ranking do usuário:', error);
         res.status(500).json({ message: 'Erro ao buscar ranking' });
