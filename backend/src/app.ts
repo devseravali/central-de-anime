@@ -29,6 +29,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use((req, _res, next) => {
+    console.log('REQUEST PATH:', req.method, req.url);
+    next();
+});
+
 app.get('/health', (_request, response) => {
     response.json({
         status: 'ok'
