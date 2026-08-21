@@ -91,7 +91,7 @@ async function promoteUser(req: Request, res: Response): Promise<void> {
 
         await usuarioService.promoteToAdmin(usuarioId, nivel);
 
-        res.status(204).send();
+        res.status(200).json({ message: 'Usuário promovido a admin', usuarioId, nivel });
     } catch (error) {
         console.error('Erro ao promover usuário:', error);
 
