@@ -1,5 +1,6 @@
 import type { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
+import { prisma } from '../config/prisma';
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
@@ -7,11 +8,11 @@ if (!JWT_SECRET) {
     throw new Error('JWT_SECRET não configurado');
 }
 
-export const authMiddleware = (
+export const authMiddleware = async (
     req: Request,
     res: Response,
     next: NextFunction
-): void => {
+): Promise<void> => {
     const authorization = req.headers.authorization;
 
     if (!authorization) {
@@ -51,14 +52,34 @@ export const authMiddleware = (
     try {
         const decoded = jwt.verify(token, JWT_SECRET) as jwt.JwtPayload;
 
+        console.log('AUTH DECODED:', decoded);
+
         const userId = decoded.sub ? Number(decoded.sub) : NaN;
 
+        if (Number.isNaN(userId)) {
+            res.status(401).json({ message: 'Token inválido: sub inválido' });
+            return;
+        }
+
+        // buscar usuário no banco para anexar dados atuais (incluindo admin)
+        const usuario = await prisma.usuario.findUnique({
+            where: { id: userId },
+            include: { admin: true },
+        });
+
+        if (!usuario) {
+            res.status(401).json({ message: 'Usuário não encontrado' });
+            return;
+        }
+
         req.user = {
-            id: Number.isNaN(userId) ? 0 : userId,
-            email: typeof decoded.email === 'string' ? decoded.email : undefined,
-            nome: typeof decoded.nome === 'string' ? decoded.nome : undefined,
-            role: typeof decoded.role === 'string' ? decoded.role : undefined,
+            id: usuario.id,
+            email: usuario.email,
+            nome: usuario.nome,
+            role: usuario.admin ? 'ADMIN' : 'USER',
         };
+
+        console.log('AUTH USER:', req.user);
 
         next();
     } catch (error) {
