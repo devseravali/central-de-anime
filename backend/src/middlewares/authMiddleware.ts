@@ -1,6 +1,7 @@
 import type { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { prisma } from '../config/prisma';
+import { authService } from '../services/authService';
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
@@ -85,8 +86,48 @@ export const authMiddleware = async (
     } catch (error) {
         console.error('Erro ao validar JWT:', error);
 
-        res.status(401).json({
-            message: 'Token inválido ou expirado',
-        });
+        // If token expired, try automatic refresh using refresh token from header or cookie
+        if (error && typeof error === 'object' && (error as any).name === 'TokenExpiredError') {
+            const headerRefresh = req.headers['x-refresh-token'] as string | undefined;
+            const cookieRefresh = (req as any).cookies && (req as any).cookies.refreshToken;
+            const refreshToken = headerRefresh ?? cookieRefresh;
+
+            if (refreshToken && typeof refreshToken === 'string') {
+                try {
+                    const result = await authService.refresh(refreshToken);
+
+                    // Send new tokens to client via headers
+                    res.setHeader('x-access-token', result.accessToken);
+                    res.setHeader('x-refresh-token', result.refreshToken);
+
+                    // Attach user to request; include admin flag from DB
+                    const usuario = await prisma.usuario.findUnique({ where: { id: result.user.id }, include: { admin: true } });
+
+                    if (!usuario) {
+                        res.status(401).json({ message: 'Usuário não encontrado após refresh' });
+                        return;
+                    }
+
+                    req.user = {
+                        id: usuario.id,
+                        email: usuario.email,
+                        nome: usuario.nome,
+                        role: usuario.admin ? 'ADMIN' : 'USER',
+                    };
+
+                    next();
+                    return;
+                } catch (refreshErr) {
+                    console.error('Falha ao renovar token via refresh:', refreshErr);
+                    res.status(401).json({ message: 'Token expirado e refresh falhou' });
+                    return;
+                }
+            }
+
+            res.status(401).json({ message: 'Token expirado' });
+            return;
+        }
+
+        res.status(401).json({ message: 'Token inválido ou expirado' });
     }
 };
