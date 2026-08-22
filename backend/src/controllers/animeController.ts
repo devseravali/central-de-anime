@@ -1,60 +1,168 @@
 import type { Request, Response } from 'express';
 
 import { animeService } from '../services/animeService';
+import { prisma } from '../config/prisma';
 
-function parseIntParam(value: unknown): number | undefined {
-    if (typeof value !== 'string' || value.trim() === '') {
+function parseIntParam(
+    value: unknown
+): number | undefined {
+    if (
+        typeof value !== 'string' ||
+        value.trim() === ''
+    ) {
         return undefined;
     }
 
-    const parsed = Number.parseInt(value, 10);
+    const parsed = Number.parseInt(
+        value,
+        10
+    );
 
-    return Number.isNaN(parsed) ? undefined : parsed;
+    return Number.isNaN(parsed)
+        ? undefined
+        : parsed;
 }
 
-async function list(req: Request, res: Response): Promise<void> {
+async function list(
+    req: Request,
+    res: Response
+): Promise<void> {
     try {
-        const { page, perPage, titulo, generoId, statusId } = req.query;
+        const {
+            page,
+            perPage,
+            titulo,
+            generoId,
+            statusId,
+        } = req.query;
 
-        const result = await animeService.listAnimes({
-            page: parseIntParam(page),
-            perPage: parseIntParam(perPage),
-            titulo: typeof titulo === 'string' ? titulo : undefined,
-            generoId: parseIntParam(generoId),
-            statusId: parseIntParam(statusId),
-        });
+        const result =
+            await animeService.listAnimes({
+                page:
+                    parseIntParam(page),
+                perPage:
+                    parseIntParam(
+                        perPage
+                    ),
+                titulo:
+                    typeof titulo ===
+                    'string'
+                        ? titulo
+                        : undefined,
+                generoId:
+                    parseIntParam(
+                        generoId
+                    ),
+                statusId:
+                    parseIntParam(
+                        statusId
+                    ),
+            });
 
         res.status(200).json(result);
     } catch (error) {
-        console.error('Erro ao listar animes:', error);
+        console.error(
+            'Erro ao listar animes:',
+            error
+        );
 
         res.status(500).json({
-            message: 'Erro ao listar animes',
+            message:
+                'Erro ao listar animes',
         });
     }
 }
 
-async function getById(req: Request, res: Response): Promise<void> {
+async function search(
+    req: Request,
+    res: Response
+): Promise<void> {
     try {
-        const animeId = parseIntParam(req.params.id);
+        const query =
+            typeof req.query.q ===
+            'string'
+                ? req.query.q
+                : typeof req.query.query ===
+                  'string'
+                ? req.query.query
+                : '';
 
-        if (animeId === undefined) {
+        const limit =
+            parseIntParam(
+                req.query.limit
+            ) ?? 20;
+
+        const page =
+            parseIntParam(
+                req.query.page
+            ) ?? 1;
+
+        if (!query.trim()) {
             res.status(400).json({
-                message: 'ID de anime inválido',
+                message:
+                    'Parâmetro de busca é obrigatório',
             });
 
             return;
         }
 
-        const includeRelations = req.query.relations === 'true';
+        const result =
+            await animeService.searchAnimes(
+                query,
+                limit,
+                page
+            );
 
-        const anime = includeRelations
-            ? await animeService.getAnimeWithCache(animeId)
-            : await animeService.getAnimeById(animeId);
+        res.status(200).json(result);
+    } catch (error) {
+        console.error(
+            'Erro ao buscar animes:',
+            error
+        );
+
+        res.status(500).json({
+            message:
+                'Erro ao buscar animes',
+        });
+    }
+}
+
+async function getById(
+    req: Request,
+    res: Response
+): Promise<void> {
+    try {
+        const animeId =
+            parseIntParam(
+                req.params.id
+            );
+
+        if (animeId === undefined) {
+            res.status(400).json({
+                message:
+                    'ID de anime inválido',
+            });
+
+            return;
+        }
+
+        const includeRelations =
+            req.query.relations ===
+            'true';
+
+        const anime =
+            includeRelations
+                ? await animeService.getAnimeWithCache(
+                      animeId
+                  )
+                : await animeService.getAnimeById(
+                      animeId
+                  );
 
         if (!anime) {
             res.status(404).json({
-                message: 'Anime não encontrado',
+                message:
+                    'Anime não encontrado',
             });
 
             return;
@@ -62,105 +170,188 @@ async function getById(req: Request, res: Response): Promise<void> {
 
         res.status(200).json(anime);
     } catch (error) {
-        console.error('Erro ao buscar anime por ID:', error);
-
-        res.status(500).json({
-            message: 'Erro ao buscar anime',
-        });
-    }
-}
-
-async function search(req: Request, res: Response): Promise<void> {
-    try {
-        const { q, limit, page } = req.query;
-
-        if (typeof q !== 'string' || q.trim() === '') {
-            const listResult = await animeService.listAnimes({
-                page: parseIntParam(page),
-                perPage: parseIntParam(limit),
-            });
-
-            res.status(200).json(listResult);
-            return;
-        }
-
-        const result = await animeService.searchAnimes(
-            q,
-            parseIntParam(limit),
-            parseIntParam(page)
+        console.error(
+            'Erro ao buscar anime por ID:',
+            error
         );
 
-        const safeResult = {
-            items: Array.isArray(result?.items) ? result.items : [],
-            total: typeof result?.total === 'number' ? result.total : 0,
-            page: typeof result?.page === 'number' ? result.page : parseIntParam(page) ?? 1,
-            perPage: typeof result?.perPage === 'number' ? result.perPage : parseIntParam(limit) ?? 20,
-        };
+        const message =
+            error instanceof Error
+                ? error.message
+                : 'Erro ao buscar anime';
 
-        res.status(200).json(safeResult);
-    } catch (error) {
-        console.error('Erro ao buscar animes:', error);
-
-        res.status(500).json({
-            message: 'Erro ao buscar animes',
+        res.status(400).json({
+            message,
         });
     }
 }
 
-async function update(req: Request, res: Response): Promise<void> {
+async function update(
+    req: Request,
+    res: Response
+): Promise<void> {
     try {
-        const animeId = parseIntParam(req.params.id);
+        const animeId =
+            parseIntParam(
+                req.params.id
+            );
 
         if (animeId === undefined) {
             res.status(400).json({
-                message: 'ID de anime inválido',
+                message:
+                    'ID de anime inválido',
             });
 
             return;
         }
 
-        const updated = await animeService.updateAnime(animeId, req.body);
+        const updated =
+            await animeService.updateAnime(
+                animeId,
+                req.body
+            );
 
         res.status(200).json(updated);
     } catch (error) {
-        console.error('Erro ao atualizar anime:', error);
+        console.error(
+            'Erro ao atualizar anime:',
+            error
+        );
 
         const message =
-            error instanceof Error ? error.message : 'Erro ao atualizar anime';
+            error instanceof Error
+                ? error.message
+                : 'Erro ao atualizar anime';
 
-        res.status(400).json({ message });
+        res.status(400).json({
+            message,
+        });
     }
 }
 
-async function remove(req: Request, res: Response): Promise<void> {
+async function remove(
+    req: Request,
+    res: Response
+): Promise<void> {
     try {
-        const animeId = parseIntParam(req.params.id);
+        const animeId =
+            parseIntParam(
+                req.params.id
+            );
 
         if (animeId === undefined) {
             res.status(400).json({
-                message: 'ID de anime inválido',
+                message:
+                    'ID de anime inválido',
             });
 
             return;
         }
 
-        await animeService.deleteAnime(animeId);
+        await animeService.deleteAnime(
+            animeId
+        );
 
         res.status(204).send();
     } catch (error) {
-        console.error('Erro ao deletar anime:', error);
+        console.error(
+            'Erro ao deletar anime:',
+            error
+        );
 
         const message =
-            error instanceof Error ? error.message : 'Erro ao deletar anime';
+            error instanceof Error
+                ? error.message
+                : 'Erro ao deletar anime';
 
-        res.status(400).json({ message });
+        res.status(400).json({
+            message,
+        });
+    }
+}
+
+async function create(
+    req: Request,
+    res: Response
+): Promise<void> {
+    try {
+        const created =
+            await animeService.createAnime(
+                req.body
+            );
+
+        res.status(201).json(created);
+    } catch (error) {
+        console.error(
+            'Erro ao criar anime:',
+            error
+        );
+
+        const message =
+            error instanceof Error
+                ? error.message
+                : 'Erro ao criar anime';
+
+        if (
+            message ===
+            'Anime já existe'
+        ) {
+            try {
+                const tituloRaw =
+                    typeof req.body?.titulo ===
+                    'string'
+                        ? req.body.titulo
+                        : '';
+
+                const tituloTrim =
+                    tituloRaw.trim();
+
+                const existing =
+                    await prisma.$queryRaw<
+                        any[]
+                    >`
+                        SELECT *
+                        FROM "Anime"
+                        WHERE lower(trim(titulo)) =
+                              lower(trim(${tituloTrim}))
+                        LIMIT 1
+                    `;
+
+                res.status(409).json({
+                    message:
+                        'Anime já existe',
+                    existing:
+                        existing?.[0] ??
+                        null,
+                });
+
+                return;
+            } catch (error) {
+                console.error(
+                    'Erro ao buscar anime existente:',
+                    error
+                );
+
+                res.status(409).json({
+                    message:
+                        'Anime já existe',
+                });
+
+                return;
+            }
+        }
+
+        res.status(400).json({
+            message,
+        });
     }
 }
 
 export const animeController = {
     list,
-    getById,
     search,
+    getById,
     update,
     remove,
+    create,
 };
