@@ -5,28 +5,19 @@ import type { AnimeModel } from '../../generated/prisma/models';
 import { Prisma } from '../../generated/prisma/client';
 
 export type AnimeData = {
-    id?: number;
-
+    id?: number | string;
     titulo?: string;
-    descricao?: string;
     sinopse?: string;
-
     tipo?: string;
     temporada?: number;
-
     ano?: number;
     anoLancamento?: number;
-
-    quantidadeEpisodios?: number;
-
+    quantidadeEpisodios?: number | string;
     capaUrl?: string;
-
-    franquiaId?: number;
-    estudioId?: number;
-    statusId?: number;
-
+    franquiaId?: number | string;
+    estudioId?: number | string;
+    statusId?: number | string;
     status?: string | number;
-
     genero?: string | number;
     generos?: Array<string | number>;
 };
@@ -80,7 +71,9 @@ export interface IAnimeService {
         includeRelations: true
     ): Promise<AnimeWithRelations | null>;
 
-    getAnimeWithCache(animeId: number): Promise<AnimeWithRelations | null>;
+    getAnimeWithCache(
+        animeId: number
+    ): Promise<AnimeWithRelations | null>;
 
     listAnimes(
         opts?: ListOptions
@@ -102,6 +95,8 @@ export interface IAnimeService {
         perPage: number;
     }>;
 
+    createAnime(data: AnimeData): Promise<AnimeModel>;
+
     updateAnime(
         animeId: number,
         data: AnimeData
@@ -115,8 +110,20 @@ const animeCache = new NodeCache({
     checkperiod: 120,
 });
 
-function getAnimeById(animeId: number, includeRelations?: false): Promise<AnimeModel | null>;
-function getAnimeById(animeId: number, includeRelations: true): Promise<AnimeWithRelations | null>;
+function cacheKey(animeId: number): string {
+    return `anime:${animeId}`;
+}
+
+function getAnimeById(
+    animeId: number,
+    includeRelations?: false
+): Promise<AnimeModel | null>;
+
+function getAnimeById(
+    animeId: number,
+    includeRelations: true
+): Promise<AnimeWithRelations | null>;
+
 async function getAnimeById(
     animeId: number,
     includeRelations = false
@@ -138,31 +145,26 @@ async function getAnimeById(
             franquia: true,
             status: true,
             episodios: true,
-
             generos: {
                 include: {
                     genero: true,
                 },
             },
-
             personagens: {
                 include: {
                     personagem: true,
                 },
             },
-
             plataformas: {
                 include: {
                     plataforma: true,
                 },
             },
-
             tags: {
                 include: {
                     tag: true,
                 },
             },
-
             cache: true,
         },
     });
@@ -216,7 +218,6 @@ async function listAnimes(
                 id: 'asc',
             },
         }),
-
         prisma.anime.count({
             where,
         }),
@@ -268,13 +269,14 @@ async function searchAnimes(
     const [items, total] = await Promise.all([
         prisma.anime.findMany({
             where,
-            skip: (normalizedPage - 1) * normalizedLimit,
+            skip:
+                (normalizedPage - 1) *
+                normalizedLimit,
             take: normalizedLimit,
             orderBy: {
                 id: 'asc',
             },
         }),
-
         prisma.anime.count({
             where,
         }),
@@ -291,15 +293,19 @@ async function searchAnimes(
 async function getAnimeWithCache(
     animeId: number
 ): Promise<AnimeWithRelations | null> {
-    const cacheKey = `anime:${animeId}`;
+    const key = cacheKey(animeId);
 
-    const cached = animeCache.get<AnimeWithRelations>(cacheKey);
+    const cached =
+        animeCache.get<AnimeWithRelations>(key);
 
     if (cached) {
         return cached;
     }
 
-    const anime = await getAnimeById(animeId, true);
+    const anime = await getAnimeById(
+        animeId,
+        true
+    );
 
     if (!anime) {
         return null;
@@ -310,13 +316,11 @@ async function getAnimeWithCache(
             where: {
                 animeId,
             },
-
             update: {
                 viewsCount: {
                     increment: 1,
                 },
             },
-
             create: {
                 anime: {
                     connect: {
@@ -333,82 +337,254 @@ async function getAnimeWithCache(
         );
     }
 
-    animeCache.set(cacheKey, anime);
+    animeCache.set(key, anime);
 
     return anime;
+}
+
+async function createAnime(
+    data: AnimeData
+): Promise<AnimeModel> {
+    if (
+        !data.titulo ||
+        typeof data.titulo !== 'string'
+    ) {
+        throw new Error(
+            'Campo "titulo" é obrigatório'
+        );
+    }
+
+    const titulo = data.titulo.trim();
+
+    if (!titulo) {
+        throw new Error(
+            'Campo "titulo" é obrigatório'
+        );
+    }
+
+    const existing = await prisma.$queryRaw<
+        Array<AnimeModel>
+    >`
+        SELECT *
+        FROM "Anime"
+        WHERE lower(trim(titulo)) = lower(trim(${titulo}))
+        LIMIT 1
+    `;
+
+    if (
+        Array.isArray(existing) &&
+        existing.length > 0
+    ) {
+        const error = new Error(
+            'Anime já existe'
+        ) as Error & {
+            existing?: AnimeModel;
+        };
+
+        error.existing = existing[0];
+
+        throw error;
+    }
+
+    const quantidadeEpisodios =
+        typeof data.quantidadeEpisodios === 'number'
+            ? data.quantidadeEpisodios
+            : typeof data.quantidadeEpisodios ===
+                'string' &&
+              data.quantidadeEpisodios.trim() !== ''
+            ? Number(data.quantidadeEpisodios)
+            : 0;
+
+    const payload: Prisma.AnimeUncheckedCreateInput = {
+        titulo,
+        tipo: data.tipo ?? 'serie',
+        temporada:
+            typeof data.temporada === 'number'
+                ? data.temporada
+                : 1,
+        ano:
+            typeof data.ano === 'number'
+                ? data.ano
+                : typeof data.anoLancamento ===
+                    'number'
+                ? data.anoLancamento
+                : 0,
+        sinopse: data.sinopse ?? '',
+        capaUrl: data.capaUrl ?? undefined,
+        quantidadeEpisodios,
+        estudioId:
+            typeof data.estudioId === 'number'
+                ? data.estudioId
+                : 1,
+        franquiaId:
+            typeof data.franquiaId === 'number'
+                ? data.franquiaId
+                : undefined,
+        statusId:
+            typeof data.statusId === 'number'
+                ? data.statusId
+                : 1,
+    };
+
+    try {
+        const created =
+            await prisma.anime.create({
+                data: payload,
+            });
+
+        animeCache.del(
+            cacheKey(created.id)
+        );
+
+        return created;
+    } catch (error) {
+        console.error(
+            'Erro ao criar anime:',
+            error
+        );
+
+        if (
+            error &&
+            typeof error === 'object' &&
+            'code' in error
+        ) {
+            const prismaError =
+                error as {
+                    code?: string;
+                };
+
+            if (
+                prismaError.code === 'P2002'
+            ) {
+                const found =
+                    await prisma.$queryRaw<
+                        Array<AnimeModel>
+                    >`
+                        SELECT *
+                        FROM "Anime"
+                        WHERE lower(trim(titulo)) =
+                              lower(trim(${titulo}))
+                        LIMIT 1
+                    `;
+
+                if (Array.isArray(found) && found.length > 0) {
+                    const conflict = new Error('Anime já existe') as Error & { existing?: AnimeModel };
+                    conflict.existing = found[0];
+                    throw conflict;
+                }
+
+                // If we couldn't locate the conflicting record, rethrow original Prisma error
+                throw error;
+            }
+        }
+
+        throw error;
+    }
 }
 
 async function updateAnime(
     animeId: number,
     data: AnimeData
 ): Promise<AnimeModel | AnimeWithRelations> {
-    const current = await getAnimeById(animeId);
+    const current =
+        await getAnimeById(animeId);
 
     if (!current) {
-        throw new Error('Anime não encontrado');
+        throw new Error(
+            'Anime não encontrado'
+        );
     }
 
-    const payload: Prisma.AnimeUncheckedUpdateInput = {};
+    const payload: Prisma.AnimeUncheckedUpdateInput =
+        {};
 
     if (data.titulo !== undefined) {
-        payload.titulo = data.titulo;
-    }
-
-    if (data.descricao !== undefined) {
-        payload.sinopse = data.descricao;
+        payload.titulo =
+            data.titulo.trim();
     }
 
     if (data.sinopse !== undefined) {
-        payload.sinopse = data.sinopse;
+        payload.sinopse =
+            data.sinopse;
     }
 
-    if (typeof data.anoLancamento === 'number') {
-        payload.ano = data.anoLancamento;
+    if (
+        typeof data.anoLancamento ===
+        'number'
+    ) {
+        payload.ano =
+            data.anoLancamento;
     }
 
     if (typeof data.ano === 'number') {
-        payload.ano = data.ano;
+        payload.ano =
+            data.ano;
     }
 
     if (data.capaUrl !== undefined) {
-        payload.capaUrl = data.capaUrl;
+        payload.capaUrl =
+            data.capaUrl;
     }
 
     if (data.tipo !== undefined) {
-        payload.tipo = data.tipo;
+        payload.tipo =
+            data.tipo;
     }
 
-    if (typeof data.temporada === 'number') {
-        payload.temporada = data.temporada;
+    if (
+        typeof data.temporada ===
+        'number'
+    ) {
+        payload.temporada =
+            data.temporada;
     }
 
-    if (typeof data.quantidadeEpisodios === 'number') {
+    if (
+        typeof data.quantidadeEpisodios ===
+        'number'
+    ) {
         payload.quantidadeEpisodios =
             data.quantidadeEpisodios;
     }
 
-    if (typeof data.estudioId === 'number') {
-        payload.estudioId = data.estudioId;
+    if (
+        typeof data.estudioId ===
+        'number'
+    ) {
+        payload.estudioId =
+            data.estudioId;
     }
 
-    if (typeof data.franquiaId === 'number') {
-        payload.franquiaId = data.franquiaId;
+    if (
+        typeof data.franquiaId ===
+        'number'
+    ) {
+        payload.franquiaId =
+            data.franquiaId;
     }
 
-    
-
-
-    if (typeof data.statusId === 'number') {
-        payload.statusId = data.statusId;
-    } else if (data.status !== undefined) {
-        if (typeof data.status === 'number') {
-            payload.statusId = data.status;
+    if (
+        typeof data.statusId ===
+        'number'
+    ) {
+        payload.statusId =
+            data.statusId;
+    } else if (
+        data.status !== undefined
+    ) {
+        if (
+            typeof data.status ===
+            'number'
+        ) {
+            payload.statusId =
+                data.status;
         } else {
-            const status = await prisma.status.findFirst({
-                where: {
-                    nome: data.status,
-                },
-            });
+            const status =
+                await prisma.status.findFirst({
+                    where: {
+                        nome: data.status,
+                    },
+                });
 
             if (!status) {
                 throw new Error(
@@ -416,7 +592,8 @@ async function updateAnime(
                 );
             }
 
-            payload.statusId = status.id;
+            payload.statusId =
+                status.id;
         }
     }
 
@@ -426,38 +603,63 @@ async function updateAnime(
             ? [data.genero]
             : undefined);
 
-    if (providedGeneros !== undefined) {
+    if (
+        providedGeneros !== undefined
+    ) {
         const generoIds: number[] = [];
-
         const generoNames: string[] = [];
 
-        for (const genero of providedGeneros) {
-            if (typeof genero === 'number') {
+        for (
+            const genero of providedGeneros
+        ) {
+            if (
+                typeof genero ===
+                'number'
+            ) {
                 generoIds.push(genero);
-            } else if (typeof genero === 'string') {
-                generoNames.push(genero.trim());
+            } else if (
+                typeof genero ===
+                'string'
+            ) {
+                const nome =
+                    genero.trim();
+
+                if (nome) {
+                    generoNames.push(
+                        nome
+                    );
+                }
             }
         }
 
-        if (generoNames.length > 0) {
+        if (
+            generoNames.length > 0
+        ) {
             const generosEncontrados =
                 await prisma.genero.findMany({
                     where: {
                         nome: {
-                            in: generoNames,
+                            in:
+                                generoNames,
                         },
                     },
                 });
 
-            const generoMap = new Map(
-                generosEncontrados.map((genero) => [
-                    genero.nome,
-                    genero.id,
-                ])
-            );
+            const generoMap =
+                new Map(
+                    generosEncontrados.map(
+                        (genero) => [
+                            genero.nome,
+                            genero.id,
+                        ]
+                    )
+                );
 
-            for (const nome of generoNames) {
-                const generoId = generoMap.get(nome);
+            for (
+                const nome of generoNames
+            ) {
+                const generoId =
+                    generoMap.get(nome);
 
                 if (!generoId) {
                     throw new Error(
@@ -465,68 +667,111 @@ async function updateAnime(
                     );
                 }
 
-                generoIds.push(generoId);
+                generoIds.push(
+                    generoId
+                );
             }
         }
 
-    
         const uniqueGeneroIds = [
             ...new Set(generoIds),
         ];
 
-        const updated = await prisma.$transaction(
-            async (tx) => {
-                await tx.animeGenero.deleteMany({
-                    where: {
-                        animeId,
-                    },
-                });
-
-                if (uniqueGeneroIds.length > 0) {
-                    await tx.animeGenero.createMany({
-                        data: uniqueGeneroIds.map(
-                            (generoId) => ({
+        const updated =
+            await prisma.$transaction(
+                async (tx) => {
+                    await tx.animeGenero.deleteMany(
+                        {
+                            where: {
                                 animeId,
-                                generoId,
-                            })
-                        ),
-                        skipDuplicates: true,
-                    });
+                            },
+                        }
+                    );
+
+                    if (
+                        uniqueGeneroIds.length >
+                        0
+                    ) {
+                        await tx.animeGenero.createMany(
+                            {
+                                data:
+                                    uniqueGeneroIds.map(
+                                        (
+                                            generoId
+                                        ) => ({
+                                            animeId,
+                                            generoId,
+                                        })
+                                    ),
+                                skipDuplicates:
+                                    true,
+                            }
+                        );
+                    }
+
+                    return tx.anime.update(
+                        {
+                            where: {
+                                id: animeId,
+                            },
+                            data: payload,
+                            include: {
+                                estudio:
+                                    true,
+                                franquia:
+                                    true,
+                                status:
+                                    true,
+                                episodios:
+                                    true,
+                                generos: {
+                                    include: {
+                                        genero:
+                                            true,
+                                    },
+                                },
+                                personagens: {
+                                    include: {
+                                        personagem:
+                                            true,
+                                    },
+                                },
+                                plataformas: {
+                                    include: {
+                                        plataforma:
+                                            true,
+                                    },
+                                },
+                                tags: {
+                                    include: {
+                                        tag: true,
+                                    },
+                                },
+                                cache: true,
+                            },
+                        }
+                    );
                 }
+            );
 
-                return tx.anime.update({
-                    where: {
-                        id: animeId,
-                    },
-                    data: payload,
-                    include: {
-                        estudio: true,
-                        franquia: true,
-                        status: true,
-                        episodios: true,
-                        generos: { include: { genero: true } },
-                        personagens: { include: { personagem: true } },
-                        plataformas: { include: { plataforma: true } },
-                        tags: { include: { tag: true } },
-                        cache: true,
-                    },
-                });
-            }
+        animeCache.del(
+            cacheKey(animeId)
         );
-
-        animeCache.del(cacheKey(animeId));
 
         return updated;
     }
 
-    const updated = await prisma.anime.update({
-        where: {
-            id: animeId,
-        },
-        data: payload,
-    });
+    const updated =
+        await prisma.anime.update({
+            where: {
+                id: animeId,
+            },
+            data: payload,
+        });
 
-    animeCache.del(cacheKey(animeId));
+    animeCache.del(
+        cacheKey(animeId)
+    );
 
     return updated;
 }
@@ -534,10 +779,13 @@ async function updateAnime(
 async function deleteAnime(
     animeId: number
 ): Promise<void> {
-    const current = await getAnimeById(animeId);
+    const current =
+        await getAnimeById(animeId);
 
     if (!current) {
-        throw new Error('Anime não encontrado');
+        throw new Error(
+            'Anime não encontrado'
+        );
     }
 
     await prisma.anime.delete({
@@ -546,11 +794,9 @@ async function deleteAnime(
         },
     });
 
-    animeCache.del(cacheKey(animeId));
-}
-
-function cacheKey(animeId: number): string {
-    return `anime:${animeId}`;
+    animeCache.del(
+        cacheKey(animeId)
+    );
 }
 
 export const animeService: IAnimeService = {
@@ -558,6 +804,7 @@ export const animeService: IAnimeService = {
     getAnimeWithCache,
     listAnimes,
     searchAnimes,
+    createAnime,
     updateAnime,
     deleteAnime,
 };
