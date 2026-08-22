@@ -184,7 +184,14 @@ const parsePasswordResetToken = (
     }
 
     try {
-        const payload = jwt.verify(token, JWT_SECRET) as any;
+        const payloadRaw = jwt.verify(token, JWT_SECRET) as unknown;
+
+        if (typeof payloadRaw === 'string') {
+            throw new Error('Token de recuperação inválido');
+        }
+
+        const payload = payloadRaw as { usuarioId?: number; sub?: number; id?: number };
+
         const usuarioId = Number(payload.usuarioId ?? payload.sub ?? payload.id);
 
         if (!Number.isSafeInteger(usuarioId) || usuarioId <= 0) {
@@ -505,7 +512,7 @@ export const authService: AuthService = {
 
         const { senha: _senha, ...safeUser } = updatedUser;
 
-        const accessToken = generateAccessToken(safeUser as any);
+        const accessToken = generateAccessToken(safeUser as SafeUsuario);
 
         const { token: refreshToken, sessao } = await generateRefreshTokenForUser(updatedUser.id);
 
