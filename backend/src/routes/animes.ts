@@ -1,81 +1,178 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+
 import { animeController } from '../controllers/animeController';
 import { temporadaController } from '../controllers/temporadaController';
 import { personagemController } from '../controllers/personagemController';
 import { episodioController } from '../controllers/episodioController';
 import { authMiddleware } from '../middlewares/authMiddleware';
 import { adminMiddleware } from '../middlewares/adminMiddleware';
+import { prisma } from '../config/prisma';
 
 const AnimesRouter = Router();
 
-AnimesRouter.get('/', animeController.list);
-AnimesRouter.get('/search', animeController.search);
-AnimesRouter.get('/:id', animeController.getById);
+AnimesRouter.get(
+    '/',
+    animeController.list
+);
 
-AnimesRouter.get('/:id/temporadas', (req, res) => {
-    const animeId = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
-    req.query.animeId = animeId;
+AnimesRouter.get(
+    '/search',
+    animeController.search
+);
 
-    return temporadaController.list(req, res);
-});
+AnimesRouter.get(
+    '/:id',
+    animeController.getById
+);
 
-AnimesRouter.get('/:id/personagens', (req, res) => {
-    const animeId = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
-    req.query.animeId = animeId;
+AnimesRouter.post(
+    '/',
+    authMiddleware,
+    adminMiddleware,
+    animeController.create
+);
 
-    return personagemController.list(req, res);
-});
+AnimesRouter.get(
+    '/:id/temporadas',
+    (req, res) => {
+        req.query.animeId =
+            req.params.id;
+
+        return temporadaController.list(
+            req,
+            res
+        );
+    }
+);
+
+AnimesRouter.get(
+    '/:id/personagens',
+    (req, res) => {
+        req.query.animeId =
+            req.params.id;
+
+        return personagemController.list(
+            req,
+            res
+        );
+    }
+);
 
 AnimesRouter.get(
     '/:id/temporadas/:temporadaId/episodios',
     (req, res) => {
-        const temporadaId = Array.isArray(req.params.temporadaId) ? req.params.temporadaId[0] : req.params.temporadaId;
-        req.query.temporadaId = temporadaId;
+        req.query.temporadaId =
+            req.params.temporadaId;
 
-        return episodioController.list(req, res);
+        return episodioController.list(
+            req,
+            res
+        );
     }
 );
 
-AnimesRouter.put('/:id', authMiddleware, adminMiddleware, animeController.update);
-AnimesRouter.delete('/:id', authMiddleware, adminMiddleware, animeController.remove);
+AnimesRouter.put(
+    '/:id',
+    authMiddleware,
+    adminMiddleware,
+    animeController.update
+);
 
-AnimesRouter.get('/:id/capas', async (req: Request, res: Response) => {
-    try {
-        const { prisma } = await import('../config/prisma');
-        const capas = await prisma.capas.findMany();
+AnimesRouter.delete(
+    '/:id',
+    authMiddleware,
+    adminMiddleware,
+    animeController.remove
+);
 
-        res.status(200).json(capas);
-    } catch (error) {
-        console.error('Erro ao buscar capas:', error);
-        res.status(500).json({ message: 'Erro ao buscar capas' });
-    }
-});
+AnimesRouter.get(
+    '/:id/capas',
+    async (req, res) => {
+        try {
+            const capas =
+                await prisma.capas.findMany();
 
-AnimesRouter.post('/:id/capa', async (req: Request, res: Response) => {
-    try {
-        const idParam = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
-        const animeId = Number.parseInt(idParam, 10);
+            res.status(200).json(capas);
+        } catch (error) {
+            console.error(
+                'Erro ao buscar capas:',
+                error
+            );
 
-        if (Number.isNaN(animeId)) {
-            res.status(400).json({ message: 'ID de anime inválido' });
-            return;
+            res.status(500).json({
+                message:
+                    'Erro ao buscar capas',
+            });
         }
-        const { nome_original, nome_salvo, caminho, mime_type } = req.body ?? {};
-
-        if (!nome_original || !nome_salvo || !caminho || !mime_type) {
-            res.status(400).json({ message: 'nome_original, nome_salvo, caminho e mime_type são obrigatórios' });
-            return;
-        }
-
-        const { prisma } = await import('../config/prisma');
-
-        const capa = await prisma.capas.create({ data: { nome_original, nome_salvo, caminho, mime_type } });
-
-        res.status(201).json({ capa, animeId });
-    } catch (error) {
-        console.error('Erro ao criar capa:', error);
-        res.status(500).json({ message: 'Erro ao criar capa' });
     }
-});
+);
+
+AnimesRouter.post(
+    '/:id/capa',
+    async (req, res) => {
+        try {
+            const animeId =
+                Number.parseInt(
+                    req.params.id,
+                    10
+                );
+
+            if (Number.isNaN(animeId)) {
+                res.status(400).json({
+                    message:
+                        'ID de anime inválido',
+                });
+
+                return;
+            }
+
+            const {
+                nome_original,
+                nome_salvo,
+                caminho,
+                mime_type,
+            } = req.body ?? {};
+
+            if (
+                !nome_original ||
+                !nome_salvo ||
+                !caminho ||
+                !mime_type
+            ) {
+                res.status(400).json({
+                    message:
+                        'nome_original, nome_salvo, caminho e mime_type são obrigatórios',
+                });
+
+                return;
+            }
+
+            const capa =
+                await prisma.capas.create({
+                    data: {
+                        nome_original,
+                        nome_salvo,
+                        caminho,
+                        mime_type,
+                    },
+                });
+
+            res.status(201).json({
+                capa,
+                animeId,
+            });
+        } catch (error) {
+            console.error(
+                'Erro ao criar capa:',
+                error
+            );
+
+            res.status(500).json({
+                message:
+                    'Erro ao criar capa',
+            });
+        }
+    }
+);
 
 export default AnimesRouter;
