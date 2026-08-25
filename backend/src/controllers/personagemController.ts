@@ -33,7 +33,9 @@ async function list(req: Request, res: Response): Promise<void> {
 
 async function listByAnimeId(req: Request, res: Response): Promise<void> {
     try {
-        const animeIdParam = req.params.animeId;
+        const animeIdParam = (req.params.animeId ?? req.params.id) as
+            | string
+            | undefined;
 
         const animeId =
             typeof animeIdParam === 'string' && animeIdParam.trim() !== ''
