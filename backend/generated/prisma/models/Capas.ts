@@ -228,14 +228,14 @@ export type CapasOrderByWithRelationInput = {
 
 export type CapasWhereUniqueInput = Prisma.AtLeast<{
   id?: number
+  caminho?: string
   AND?: Prisma.CapasWhereInput | Prisma.CapasWhereInput[]
   OR?: Prisma.CapasWhereInput[]
   NOT?: Prisma.CapasWhereInput | Prisma.CapasWhereInput[]
   nome_original?: Prisma.StringFilter<"Capas"> | string
   nome_salvo?: Prisma.StringFilter<"Capas"> | string
-  caminho?: Prisma.StringFilter<"Capas"> | string
   mime_type?: Prisma.StringFilter<"Capas"> | string
-}, "id">
+}, "id" | "caminho">
 
 export type CapasOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
