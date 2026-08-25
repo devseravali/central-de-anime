@@ -36,6 +36,47 @@ export class TemporadaService {
             },
         });
     }
+
+    async existsTemporadaForAnime(
+        temporadaId: number,
+        animeId: number
+    ): Promise<boolean> {
+        const temporada = await prisma.temporada.findFirst({
+            where: {
+                id: temporadaId,
+                episodios: {
+                    some: {
+                        animeId,
+                    },
+                },
+            },
+            select: {
+                id: true,
+            },
+        });
+
+        return temporada !== null;
+    }
+
+    async findTemporadaByAnimeAndSeasonNumber(
+        animeId: number,
+        seasonNumber: number
+    ): Promise<TemporadaModel | null> {
+        const pattern = `${seasonNumber}ª`;
+
+        return prisma.temporada.findFirst({
+            where: {
+                nome: {
+                    contains: pattern,
+                },
+                episodios: {
+                    some: {
+                        animeId,
+                    },
+                },
+            },
+        });
+    }
 }
 
 export const temporadaService =

@@ -11,12 +11,17 @@ export class EpisodioService {
     }
 
     async listEpisodiosByTemporadaId(
-        temporadaId: number
+        temporadaId: number,
+        animeId?: number
     ): Promise<EpisodioModel[]> {
+        const whereClause: any = { temporadaId };
+
+        if (typeof animeId === 'number') {
+            whereClause.animeId = animeId;
+        }
+
         return prisma.episodio.findMany({
-            where: {
-                temporadaId,
-            },
+            where: whereClause,
             orderBy: {
                 numero: 'asc',
             },
