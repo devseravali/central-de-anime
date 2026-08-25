@@ -295,7 +295,7 @@ model Capas {
 
   nome_original String
   nome_salvo    String
-  caminho       String
+  caminho       String @unique
   mime_type     String
 }
 
