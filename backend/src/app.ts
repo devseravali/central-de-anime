@@ -30,6 +30,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use((req, _res, next) => {
+    try {
+        let normalized = req.url;
+        normalized = normalized.replace(/\s+$/g, '');
+        normalized = normalized.replace(/(?:%20)+$/gi, '');
+        if (normalized !== req.url) {
+            req.url = normalized;
+        }
+    } catch (err) {
+    }
+    next();
+});
+
+app.use((req, _res, next) => {
     console.log('REQUEST PATH:', req.method, req.url);
     next();
 });
