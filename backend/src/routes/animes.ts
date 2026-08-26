@@ -85,22 +85,42 @@ AnimesRouter.post(
                 return;
             }
 
-            const capa = await prisma.capas.upsert({
+            let capa;
+
+            const existingCapa = await prisma.capas.findUnique({
                 where: {
                     caminho,
                 },
-                update: {
-                    nome_original,
-                    nome_salvo,
-                    mime_type,
-                },
-                create: {
-                    nome_original,
-                    nome_salvo,
-                    caminho,
-                    mime_type,
-                },
             });
+
+            if (existingCapa) {
+                capa = await prisma.capas.update({
+                    where: { id: existingCapa.id },
+                    data: {
+                        nome_original,
+                        nome_salvo,
+                        mime_type,
+                    },
+                });
+            } else {
+                try {
+                    // Upsert atômico usando PostgreSQL ON CONFLICT to avoid race conditions
+                    const rows: any = await prisma.$queryRaw`
+                        INSERT INTO "Capas" ("nome_original", "nome_salvo", "caminho", "mime_type")
+                        VALUES (${nome_original}, ${nome_salvo}, ${caminho}, ${mime_type})
+                        ON CONFLICT (caminho) DO UPDATE
+                        SET nome_original = EXCLUDED.nome_original,
+                            nome_salvo = EXCLUDED.nome_salvo,
+                            mime_type = EXCLUDED.mime_type
+                        RETURNING id, nome_original, nome_salvo, caminho, mime_type
+                    `;
+
+                    capa = Array.isArray(rows) ? rows[0] : rows;
+                } catch (err: any) {
+                    console.error('Erro no upsert raw de capa:', err);
+                    throw err;
+                }
+            }
 
             await prisma.anime.update({
                 where: {
