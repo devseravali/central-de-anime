@@ -60,7 +60,42 @@ async function listByAnimeId(req: Request, res: Response): Promise<void> {
     }
 }
 
+async function getById(req: Request, res: Response): Promise<void> {
+    try {
+        const idParam = req.params.id as string | undefined;
+
+        if (!idParam || idParam.trim() === '') {
+            res.status(400).json({ message: 'id inválido' });
+
+            return;
+        }
+
+        const id = Number.parseInt(idParam, 10);
+
+        if (Number.isNaN(id)) {
+            res.status(400).json({ message: 'id inválido' });
+
+            return;
+        }
+
+        const personagem = await personagemService.getPersonagemById(id);
+
+        if (!personagem) {
+            res.status(404).json({ message: 'Personagem não encontrado' });
+
+            return;
+        }
+
+        res.status(200).json(personagem);
+    } catch (error) {
+        console.error('Erro ao buscar personagem por id:', error);
+
+        res.status(500).json({ message: 'Erro ao buscar personagem' });
+    }
+}
+
 export const personagemController = {
     list,
     listByAnimeId,
+    getById,
 };
