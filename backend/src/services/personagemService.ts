@@ -25,6 +25,12 @@ export class PersonagemService {
             },
         });
     }
+
+    async getPersonagemById(id: number) {
+        return prisma.personagem.findUnique({
+            where: { id },
+        });
+    }
 }
 
 export const personagemService =
