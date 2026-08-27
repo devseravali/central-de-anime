@@ -54,8 +54,12 @@ async function getProgress(
         );
 
         if (!progress) {
-            res.status(404).json({
-                message: 'Progresso não encontrado',
+            res.status(200).json({
+                usuarioId,
+                episodioId,
+                segundosAssistidos: 0,
+                porcentagem: 0,
+                assistido: false,
             });
 
             return;
