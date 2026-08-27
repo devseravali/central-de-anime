@@ -22,7 +22,25 @@ FavoritosRouter.get('/usuarios/:id/favoritos/animes', authMiddleware, async (req
       return;
     }
 
-    const favs = await prisma.usuarioFavoritoAnime.findMany({ where: { usuarioId: id }, include: { anime: { select: { id: true, nome: true, slug: true, capaUrl: true } } } });
+    const favs = await prisma.usuarioFavoritoAnime.findMany({
+      where: { usuarioId: id },
+      include: {
+        anime: {
+          select: {
+            id: true,
+            titulo: true,
+            tipo: true,
+            temporada: true,
+            ano: true,
+            sinopse: true,
+            capaUrl: true,
+            quantidadeEpisodios: true,
+            estudio: { select: { id: true, nome: true } },
+            status: { select: { id: true, nome: true } },
+          },
+        },
+      },
+    });
 
     res.status(200).json(favs.map(f => f.anime));
   } catch (error) {
