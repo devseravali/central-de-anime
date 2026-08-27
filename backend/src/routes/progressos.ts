@@ -22,7 +22,7 @@ ProgressosRouter.get('/usuarios/:id/progressos', authMiddleware, async (req: Req
       return;
     }
 
-    const progresses = await prisma.watchProgress.findMany({ where: { usuarioId: id }, include: { episodio: { include: { anime: { select: { id: true, nome: true, slug: true } } } } } });
+    const progresses = await prisma.watchProgress.findMany({ where: { usuarioId: id }, include: { episodio: { include: { anime: { select: { id: true, titulo: true } } } } } });
 
     res.status(200).json(progresses);
   } catch (error) {
