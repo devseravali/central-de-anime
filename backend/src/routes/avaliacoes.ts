@@ -43,7 +43,7 @@ AvaliacoesRouter.get('/usuarios/:id/avaliacoes', authMiddleware, async (req: Req
       return;
     }
 
-    const notas = await prisma.notaAnimeUsuario.findMany({ where: { usuarioId: id }, include: { anime: { select: { id: true, nome: true, slug: true, capaUrl: true } } } });
+    const notas = await prisma.notaAnimeUsuario.findMany({ where: { usuarioId: id }, include: { anime: { select: { id: true, titulo: true, capaUrl: true } } } });
 
     res.status(200).json(notas.map(n => ({ anime: n.anime, nota: n.nota })));
   } catch (error) {
