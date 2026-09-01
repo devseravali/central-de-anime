@@ -93,11 +93,9 @@ export const authMiddleware = async (
                 try {
                     const result = await authService.refresh(refreshToken);
 
-                    // Send new tokens to client via headers
                     res.setHeader('x-access-token', result.accessToken);
                     res.setHeader('x-refresh-token', result.refreshToken);
 
-                    // Attach user to request; include admin flag from DB
                     const usuario = await prisma.usuario.findUnique({ where: { id: result.user.id }, include: { admin: true } });
 
                     if (!usuario) {

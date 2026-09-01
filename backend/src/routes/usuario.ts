@@ -125,7 +125,7 @@ UsuarioRouter.put('/:id', authMiddleware, async (req: Request, res: Response) =>
 	}
 });
 
-UsuarioRouter.delete('/:id', async (req: Request, res: Response) => {
+UsuarioRouter.delete('/:id', authMiddleware, async (req: Request, res: Response) => {
 	try {
 		const id = parseId(req.params.id);
 
@@ -134,9 +134,37 @@ UsuarioRouter.delete('/:id', async (req: Request, res: Response) => {
 			return;
 		}
 
-		await prisma.usuario.delete({ where: { id } });
+		const requesterId = req.user?.id;
+		const requesterRole = req.user?.role;
 
-		res.status(204).send();
+		if (typeof requesterId !== 'number') {
+			res.status(401).json({ message: 'Usuário não autenticado' });
+			return;
+		}
+
+		if (requesterId !== id && requesterRole !== 'ADMIN') {
+			res.status(403).json({ message: 'Acesso negado' });
+			return;
+		}
+
+		try {
+			await prisma.usuario.delete({ where: { id } });
+
+			res.status(204).send();
+			return;
+		} catch (err: any) {
+			console.error('Erro Prisma ao deletar usuário', err);
+			if (err && err.code === 'P2025') {
+				res.status(404).json({ message: 'Usuário não encontrado' });
+				return;
+			}
+			if (err && err.code === 'P2003') {
+				res.status(409).json({ message: 'Não é possível deletar usuário devido a dependências externas' });
+				return;
+			}
+			res.status(500).json({ message: 'Erro ao deletar usuário' });
+			return;
+		}
 	} catch (error) {
 		console.error('Erro ao deletar usuário', error);
 		res.status(500).json({ message: 'Erro ao deletar usuário' });
