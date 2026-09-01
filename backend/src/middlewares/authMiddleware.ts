@@ -39,7 +39,6 @@ export const authMiddleware = async (
         return;
     }
 
-    // validação rápida do formato: access tokens JWT têm 3 partes separadas por '.'
     const tokenParts = token.split('.');
     if (tokenParts.length !== 3) {
         console.error('Token com formato inválido (não parece um JWT):', token);
@@ -62,7 +61,6 @@ export const authMiddleware = async (
             return;
         }
 
-        // buscar usuário no banco para anexar dados atuais (incluindo admin)
         const usuario = await prisma.usuario.findUnique({
             where: { id: userId },
             include: { admin: true },
@@ -86,7 +84,6 @@ export const authMiddleware = async (
     } catch (error) {
         console.error('Erro ao validar JWT:', error);
 
-        // If token expired, try automatic refresh using refresh token from header or cookie
         if (error && typeof error === 'object' && (error as any).name === 'TokenExpiredError') {
             const headerRefresh = req.headers['x-refresh-token'] as string | undefined;
             const cookieRefresh = (req as any).cookies && (req as any).cookies.refreshToken;
