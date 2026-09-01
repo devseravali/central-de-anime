@@ -64,7 +64,7 @@ UsuarioRouter.get('/:id', async (req: Request, res: Response) => {
 	}
 });
 
-UsuarioRouter.put('/:id', async (req: Request, res: Response) => {
+UsuarioRouter.put('/:id', authMiddleware, async (req: Request, res: Response) => {
 	try {
 		const id = parseId(req.params.id);
 
@@ -73,11 +73,41 @@ UsuarioRouter.put('/:id', async (req: Request, res: Response) => {
 			return;
 		}
 
+		const requesterId = req.user?.id;
+		const requesterRole = req.user?.role;
+
+		if (typeof requesterId !== 'number') {
+			res.status(401).json({ message: 'Usuário não autenticado' });
+			return;
+		}
+
+		if (requesterId !== id && requesterRole !== 'ADMIN') {
+			res.status(403).json({ message: 'Acesso negado' });
+			return;
+		}
+
 		const { nome, email, senha, avatar, status } = req.body ?? {};
+
+		if (status !== undefined && requesterRole !== 'ADMIN') {
+			res.status(403).json({ message: 'Alteração de status não permitida neste endpoint' });
+			return;
+		}
+
+		const updateData: {
+			nome?: string;
+			email?: string;
+			senha?: string;
+			avatar?: string | null;
+		} = {};
+
+		if (typeof nome === 'string') updateData.nome = nome;
+		if (typeof email === 'string') updateData.email = email;
+		if (typeof senha === 'string') updateData.senha = senha;
+		if (avatar !== undefined) updateData.avatar = avatar;
 
 		const { usuarioService } = await import('../services/usuarioService');
 
-		const updated = await usuarioService.updateProfile(id, { nome, email, senha, avatar, status });
+		const updated = await usuarioService.updateProfile(id, updateData);
 
 		res.status(200).json({ message: 'OK', user: updated });
 	} catch (error) {
