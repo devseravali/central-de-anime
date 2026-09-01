@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "cross-env PORT=3000 tsx src/server.ts",
         "start": "cross-env PORT=3000 tsx src/server.ts",
-        "test": "cross-env NODE_ENV=test vitest run",
+        "test": "cross-env NODE_ENV=test JWT_SECRET=testsecret vitest run",
         "test:watch": "cross-env NODE_ENV=test vitest",
         "test:dev": "cross-env NODE_ENV=development vitest run",
         "test:testdb": "cross-env NODE_ENV=test vitest run",
