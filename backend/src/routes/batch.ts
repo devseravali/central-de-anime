@@ -1,46 +1,171 @@
 import { Router, Request, Response } from 'express';
+import { z } from 'zod';
+
 import { prisma } from '../config/prisma';
 import { animeService } from '../services/animeService';
+import type { AnimeData } from '../services/animeService';
+import { authMiddleware } from '../middlewares/authMiddleware';
+import { adminMiddleware } from '../middlewares/adminMiddleware';
+import { validationMiddleware } from '../middlewares/validationMiddleware';
 
 const BatchRouter = Router();
 
-BatchRouter.post('/animes/batch', async (req: Request, res: Response) => {
-  try {
-    // If the client posted a single anime object, normalize to array
-    let payload: any[];
+const animeSchema = z.object({
+    id: z.union([
+        z.number(),
+        z.string(),
+    ]).optional(),
 
-    if (Array.isArray(req.body)) {
-      payload = req.body;
-    } else if (req.body && typeof req.body === 'object' && Object.keys(req.body).length > 0) {
-      payload = [req.body];
-    } else {
-      // Backwards-compatible: accept { ids: [...] }
-      const ids: number[] = Array.isArray(req.body?.ids) ? req.body.ids.map((v: any) => Number(v)).filter((n: number) => !Number.isNaN(n)) : [];
+    titulo: z
+        .string()
+        .trim()
+        .min(1, 'Título é obrigatório'),
 
-      if (ids.length === 0) {
-        res.status(400).json({ message: 'Envie um array de animes ou { ids: [...] }' });
-        return;
-      }
+    sinopse: z.string().optional(),
 
-      const animes = await prisma.anime.findMany({ where: { id: { in: ids } }, select: { id: true, nome: true, slug: true } });
+    tipo: z.string().optional(),
 
-      res.status(200).json({ animesFound: animes.length, animes });
-      return;
-    }
+    temporada: z.number().optional(),
 
-    // call service batch upsert
-    if (typeof animeService.batchUpsertAnimes !== 'function') {
-      res.status(500).json({ message: 'Serviço de batch não disponível' });
-      return;
-    }
+    ano: z.number().optional(),
 
-    const result = await animeService.batchUpsertAnimes(payload);
+    anoLancamento: z.number().optional(),
 
-    res.status(200).json(result);
-  } catch (error) {
-    console.error('Erro no batch de animes', error);
-    res.status(500).json({ message: 'Erro no batch' });
-  }
+    quantidadeEpisodios: z.union([
+        z.number(),
+        z.string(),
+    ]).optional(),
+
+    capaUrl: z.string().url().optional(),
+
+    franquiaId: z.union([
+        z.number(),
+        z.string(),
+    ]).optional(),
+
+    estudioId: z.union([
+        z.number(),
+        z.string(),
+    ]).optional(),
+
+    statusId: z.union([
+        z.number(),
+        z.string(),
+    ]).optional(),
+
+    status: z.union([
+        z.string(),
+        z.number(),
+    ]).optional(),
+
+    genero: z.union([
+        z.string(),
+        z.number(),
+    ]).optional(),
+
+    generos: z
+        .array(
+            z.union([
+                z.string(),
+                z.number(),
+            ])
+        )
+        .optional(),
 });
+
+const idsSchema = z.object({
+    ids: z
+        .array(z.number().int().positive())
+        .min(1, 'Informe pelo menos um ID'),
+});
+
+const batchSchema = z.object({
+    body: z.union([
+        z.array(animeSchema).min(
+            1,
+            'Informe pelo menos um anime'
+        ),
+        animeSchema,
+        idsSchema,
+    ]),
+    params: z.object({}),
+    query: z.object({}),
+});
+
+BatchRouter.post(
+    '/animes/batch',
+    authMiddleware,
+    adminMiddleware,
+    validationMiddleware(batchSchema),
+    async (req: Request, res: Response) => {
+        try {
+            const body = req.body as
+                | AnimeData[]
+                | AnimeData
+                | { ids: number[] };
+
+            if (
+                body &&
+                typeof body === 'object' &&
+                !Array.isArray(body) &&
+                'ids' in body
+            ) {
+                const animes =
+                    await prisma.anime.findMany({
+                        where: {
+                            id: {
+                                in: body.ids,
+                            },
+                        },
+                        select: {
+                            id: true,
+                            nome: true,
+                            slug: true,
+                        },
+                    });
+
+                res.status(200).json({
+                    animesFound: animes.length,
+                    animes,
+                });
+
+                return;
+            }
+
+            const payload: AnimeData[] =
+                Array.isArray(body)
+                    ? body
+                    : [body];
+
+            if (
+                typeof animeService.batchUpsertAnimes !==
+                'function'
+            ) {
+                res.status(500).json({
+                    message:
+                        'Serviço de batch não disponível',
+                });
+
+                return;
+            }
+
+            const result =
+                await animeService.batchUpsertAnimes(
+                    payload
+                );
+
+            res.status(200).json(result);
+        } catch (error) {
+            console.error(
+                'Erro no batch de animes',
+                error
+            );
+
+            res.status(500).json({
+                message: 'Erro no batch',
+            });
+        }
+    }
+);
 
 export default BatchRouter;
