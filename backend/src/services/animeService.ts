@@ -103,6 +103,10 @@ export interface IAnimeService {
     ): Promise<AnimeModel | AnimeWithRelations>;
 
     deleteAnime(animeId: number): Promise<void>;
+
+    batchUpsertAnimes(
+        data: AnimeData[]
+    ): Promise<AnimeModel[]>;
 }
 
 const animeCache = new NodeCache({
@@ -286,7 +290,7 @@ async function searchAnimes(
         items,
         total,
         page: normalizedPage,
-        perPage: normalizedLimit,
+        perPage: normalizedPage,
     };
 }
 
@@ -367,7 +371,8 @@ async function createAnime(
     >`
         SELECT *
         FROM "Anime"
-        WHERE lower(trim(titulo)) = lower(trim(${titulo}))
+        WHERE lower(trim(titulo)) =
+              lower(trim(${titulo}))
         LIMIT 1
     `;
 
@@ -467,13 +472,23 @@ async function createAnime(
                         LIMIT 1
                     `;
 
-                if (Array.isArray(found) && found.length > 0) {
-                    const conflict = new Error('Anime já existe') as Error & { existing?: AnimeModel };
-                    conflict.existing = found[0];
+                if (
+                    Array.isArray(found) &&
+                    found.length > 0
+                ) {
+                    const conflict =
+                        new Error(
+                            'Anime já existe'
+                        ) as Error & {
+                            existing?: AnimeModel;
+                        };
+
+                    conflict.existing =
+                        found[0];
+
                     throw conflict;
                 }
 
-                // If we couldn't locate the conflicting record, rethrow original Prisma error
                 throw error;
             }
         }
@@ -799,6 +814,59 @@ async function deleteAnime(
     );
 }
 
+async function batchUpsertAnimes(
+    data: AnimeData[]
+): Promise<AnimeModel[]> {
+    if (data.length === 0) {
+        throw new Error(
+            'Informe pelo menos um anime'
+        );
+    }
+
+    const results: AnimeModel[] = [];
+
+    for (const anime of data) {
+        if (
+            anime.id !== undefined
+        ) {
+            const animeId =
+                Number(anime.id);
+
+            if (
+                !Number.isInteger(animeId) ||
+                animeId <= 0
+            ) {
+                throw new Error(
+                    'ID do anime inválido'
+                );
+            }
+
+            const updated =
+                await updateAnime(
+                    animeId,
+                    anime
+                );
+
+            if (
+                'id' in updated
+            ) {
+                results.push(
+                    updated as AnimeModel
+                );
+            }
+
+            continue;
+        }
+
+        const created =
+            await createAnime(anime);
+
+        results.push(created);
+    }
+
+    return results;
+}
+
 export const animeService: IAnimeService = {
     getAnimeById,
     getAnimeWithCache,
@@ -807,4 +875,5 @@ export const animeService: IAnimeService = {
     createAnime,
     updateAnime,
     deleteAnime,
+    batchUpsertAnimes,
 };
