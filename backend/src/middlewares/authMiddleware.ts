@@ -52,8 +52,6 @@ export const authMiddleware = async (
     try {
         const decoded = jwt.verify(token, JWT_SECRET) as jwt.JwtPayload;
 
-        console.log('AUTH DECODED:', decoded);
-
         const userId = decoded.sub ? Number(decoded.sub) : NaN;
 
         if (Number.isNaN(userId)) {
@@ -78,7 +76,7 @@ export const authMiddleware = async (
             role: usuario.admin ? 'ADMIN' : 'USER',
         };
 
-        console.log('AUTH USER:', req.user);
+        // auth user set on req.user
 
         next();
     } catch (error) {
