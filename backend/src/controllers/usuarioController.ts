@@ -81,15 +81,29 @@ async function updateProfile(
             return;
         }
 
-        const { nome, email, senha, avatar, status } = req.body ?? {};
+        const body = req.body as unknown as {
+            nome?: string;
+            email?: string;
+            senha?: string;
+            avatar?: string | null;
+            status?: string;
+        };
 
-        const usuario = await usuarioService.updateProfile(usuarioId, {
-            nome,
-            email,
-            senha,
-            avatar,
-            status,
-        });
+        const { nome, email, senha, avatar, status } = body ?? {};
+
+        const updateData: {
+            nome?: string;
+            email?: string;
+            senha?: string;
+            avatar?: string | null;
+        } = {};
+
+        if (nome !== undefined) updateData.nome = nome;
+        if (email !== undefined) updateData.email = email;
+        if (senha !== undefined) updateData.senha = senha;
+        if (avatar !== undefined) updateData.avatar = avatar;
+
+        const usuario = await usuarioService.updateProfile(usuarioId, updateData);
 
         res.status(200).json({ message: 'Perfil atualizado', usuario });
     } catch (error) {
@@ -119,7 +133,8 @@ async function promoteToAdmin(
     res: Response
 ): Promise<void> {
     try {
-        const bodyId = typeof req.body?.usuarioId === 'number' ? req.body.usuarioId : undefined;
+        const body = req.body as unknown as { usuarioId?: number; nivel?: string };
+        const bodyId = body.usuarioId;
         const usuarioId = bodyId ?? getUsuarioId(req);
 
         if (usuarioId === undefined) {
@@ -127,7 +142,7 @@ async function promoteToAdmin(
             return;
         }
 
-        const nivel = typeof req.body?.nivel === 'string' ? req.body.nivel : undefined;
+        const nivel = body.nivel;
 
         await usuarioService.promoteToAdmin(usuarioId, nivel);
 

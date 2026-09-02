@@ -3,6 +3,10 @@ import type { Request, Response } from 'express';
 import { usuarioService } from '../services/usuarioService';
 
 function parseIntParam(value: unknown): number | undefined {
+    if (typeof value === 'number') {
+        return Number.isInteger(value) ? value : undefined;
+    }
+
     if (typeof value !== 'string' || value.trim() === '') {
         return undefined;
     }

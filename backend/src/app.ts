@@ -46,10 +46,8 @@ app.use((req, _res, next) => {
     next();
 });
 
-app.use((req, _res, next) => {
-    console.log('REQUEST PATH:', req.method, req.url);
-    next();
-});
+// request path logging removed (dev-only)
+app.use((req, _res, next) => next());
 
 app.get('/health', (_request, response) => {
     response.json({
