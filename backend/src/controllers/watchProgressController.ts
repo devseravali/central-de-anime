@@ -5,6 +5,7 @@ import { watchProgressService } from '../services/watchProgressService';
 interface AuthenticatedRequest extends Request {
     user?: {
         id: number;
+        role: 'USER' | 'ADMIN';
     };
 }
 
@@ -19,10 +20,8 @@ function parseIntParam(value: unknown): number | undefined {
 }
 
 function getUsuarioId(req: AuthenticatedRequest): number | undefined {
-    const fromParams = parseIntParam(req.params.usuarioId);
-
-    if (fromParams !== undefined) {
-        return fromParams;
+    if (Object.prototype.hasOwnProperty.call(req.params, 'usuarioId')) {
+        return parseIntParam(req.params.usuarioId);
     }
 
     if (typeof req.user?.id === 'number') {
@@ -43,6 +42,22 @@ async function getProgress(
         if (usuarioId === undefined || episodioId === undefined) {
             res.status(400).json({
                 message: 'usuarioId e episodioId são obrigatórios',
+            });
+
+            return;
+        }
+
+        if (!req.user) {
+            res.status(401).json({
+                message: 'Usuário não autenticado',
+            });
+
+            return;
+        }
+
+        if (req.user.id !== usuarioId && req.user.role !== 'ADMIN') {
+            res.status(403).json({
+                message: 'Acesso não autorizado',
             });
 
             return;
