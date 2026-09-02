@@ -4,7 +4,7 @@ const WebhooksRouter = Router();
 
 WebhooksRouter.post('/webhooks/engagement', (req: Request, res: Response) => {
   try {
-    console.log('Webhook engagement received:', req.body);
+    // webhook payload handled
     res.status(204).send();
   } catch (error) {
     console.error('Erro ao processar webhook:', error);
