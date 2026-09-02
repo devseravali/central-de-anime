@@ -4,99 +4,20 @@ import { z } from 'zod';
 import { prisma } from '../config/prisma';
 import { animeService } from '../services/animeService';
 import type { AnimeData } from '../services/animeService';
+import { batchBodySchema } from '../schemas/batch/batch.schemas';
 import { authMiddleware } from '../middlewares/authMiddleware';
 import { adminMiddleware } from '../middlewares/adminMiddleware';
 import { validationMiddleware } from '../middlewares/validationMiddleware';
 
 const BatchRouter = Router();
 
-const animeSchema = z.object({
-    id: z.union([
-        z.number(),
-        z.string(),
-    ]).optional(),
-
-    titulo: z
-        .string()
-        .trim()
-        .min(1, 'Título é obrigatório'),
-
-    sinopse: z.string().optional(),
-
-    tipo: z.string().optional(),
-
-    temporada: z.number().optional(),
-
-    ano: z.number().optional(),
-
-    anoLancamento: z.number().optional(),
-
-    quantidadeEpisodios: z.union([
-        z.number(),
-        z.string(),
-    ]).optional(),
-
-    capaUrl: z.string().url().optional(),
-
-    franquiaId: z.union([
-        z.number(),
-        z.string(),
-    ]).optional(),
-
-    estudioId: z.union([
-        z.number(),
-        z.string(),
-    ]).optional(),
-
-    statusId: z.union([
-        z.number(),
-        z.string(),
-    ]).optional(),
-
-    status: z.union([
-        z.string(),
-        z.number(),
-    ]).optional(),
-
-    genero: z.union([
-        z.string(),
-        z.number(),
-    ]).optional(),
-
-    generos: z
-        .array(
-            z.union([
-                z.string(),
-                z.number(),
-            ])
-        )
-        .optional(),
-});
-
-const idsSchema = z.object({
-    ids: z
-        .array(z.number().int().positive())
-        .min(1, 'Informe pelo menos um ID'),
-});
-
-const batchSchema = z.object({
-    body: z.union([
-        z.array(animeSchema).min(
-            1,
-            'Informe pelo menos um anime'
-        ),
-        animeSchema,
-        idsSchema,
-    ]),
-    params: z.object({}),
-    query: z.object({}),
-});
+// schemas moved to backend/src/schemas/batch/batch.schemas.ts
 
 BatchRouter.post(
     '/animes/batch',
     authMiddleware,
     adminMiddleware,
-    validationMiddleware(batchSchema),
+    validationMiddleware({ body: batchBodySchema }),
     async (req: Request, res: Response) => {
         try {
             const body = req.body as

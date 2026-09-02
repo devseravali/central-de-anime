@@ -1,6 +1,8 @@
 import { authMiddleware } from '../middlewares/authMiddleware';
 import { Router, Request, Response } from 'express';
 import { prisma } from '../config/prisma';
+import { validationMiddleware } from '../middlewares/validationMiddleware';
+import { idParamSchema } from '../schemas/common/idParm.schema';
 
 const ExportRouter = Router();
 
@@ -12,11 +14,12 @@ function parseId(value: unknown): number | undefined {
 
 ExportRouter.get('/export/usuarios/:id',
   authMiddleware,
+  validationMiddleware({ params: idParamSchema }),
   async (req: Request, res: Response) => {
     try {
-      const id = parseId(req.params.id);
+      const id = (req.params as unknown as { id?: number }).id;
 
-      if (id === undefined) {
+      if (typeof id !== 'number') {
         res.status(400).json({ message: 'ID inválido' });
         return;
       }
@@ -48,7 +51,7 @@ ExportRouter.get('/export/usuarios/:id',
       }
 
       // garantia adicional: remover campos sensíveis caso existam
-      const safeUsuario = { ...usuario } as any;
+      const safeUsuario = { ...usuario } as { [key: string]: unknown };
       delete safeUsuario.senha;
       delete safeUsuario.resetSenhaTokenHash;
       delete safeUsuario.resetSenhaExpiraEm;
