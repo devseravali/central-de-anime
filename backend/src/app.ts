@@ -2,6 +2,8 @@ import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
 
+import { errorMiddleware } from './middlewares/errorMiddleware';
+
 import authRoutes from './routes/auth';
 import usuarioRoutes from './routes/usuario';
 import animesRoutes from './routes/animes';
@@ -34,11 +36,13 @@ app.use((req, _res, next) => {
         let normalized = req.url;
         normalized = normalized.replace(/\s+$/g, '');
         normalized = normalized.replace(/(?:%20)+$/gi, '');
+
         if (normalized !== req.url) {
             req.url = normalized;
         }
-    } catch (err) {
+    } catch (_err) {
     }
+
     next();
 });
 
@@ -49,7 +53,7 @@ app.use((req, _res, next) => {
 
 app.get('/health', (_request, response) => {
     response.json({
-        status: 'ok'
+        status: 'ok',
     });
 });
 
@@ -70,5 +74,13 @@ app.use('/', batchRoutes);
 app.use('/', exportRoutes);
 app.use('/', infraRoutes);
 app.use('/', webhooksRoutes);
+
+app.use((_req, res) => {
+    res.status(404).json({
+        message: 'Rota não encontrada',
+    });
+});
+
+app.use(errorMiddleware);
 
 export default app;

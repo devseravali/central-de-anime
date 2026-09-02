@@ -6,13 +6,32 @@ export const errorMiddleware: ErrorRequestHandler = (
     res,
     _next
 ) => {
-    if (err instanceof Error) {
-        console.error('Erro no middleware de erro:', err.message);
-    } else {
-        console.error('Erro desconhecido:', err);
+    console.error('Erro no servidor:', err);
+
+    const status =
+        typeof err?.status === 'number'
+            ? err.status
+            : typeof err?.statusCode === 'number'
+                ? err.statusCode
+                : 500;
+
+    const message =
+        status >= 500
+            ? 'Erro interno do servidor'
+            : err instanceof Error
+                ? err.message
+                : 'Erro na requisição';
+
+    const response: {
+        message: string;
+        stack?: string;
+    } = {
+        message,
+    };
+
+    if (process.env.NODE_ENV !== 'production' && err instanceof Error) {
+        response.stack = err.stack;
     }
 
-    res.status(500).json({
-        message: 'Erro interno do servidor',
-    });
+    res.status(status).json(response);
 };
