@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { Request, Response, CookieOptions } from 'express';
 import { authService } from '../services/authService';
 
 export const authController = {
@@ -30,7 +30,23 @@ export const authController = {
                 userAgent
             );
 
-            res.status(200).json(result);
+            const refreshCookieOptions: CookieOptions = {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: process.env.NODE_ENV === 'production' ? 'lax' : 'lax',
+                path: '/auth',
+            };
+
+            const maxAgeDays = Number(process.env.REFRESH_TOKEN_EXPIRES_DAYS ?? 30);
+            refreshCookieOptions.maxAge = maxAgeDays * 24 * 60 * 60 * 1000;
+
+            res.cookie('refreshToken', result.refreshToken, refreshCookieOptions);
+
+            res.status(200).json({
+                user: result.user,
+                accessToken: result.accessToken,
+                refreshExpiraEm: result.refreshExpiraEm,
+            });
         } catch (error) {
             const message =
                 error instanceof Error
@@ -42,7 +58,7 @@ export const authController = {
                 return;
             }
 
-            console.error('Erro no login:', error);
+            console.error('Erro no login:', error instanceof Error ? error.message : String(error));
 
             res.status(500).json({
                 message: 'Erro interno do servidor',
@@ -73,7 +89,7 @@ export const authController = {
                 return;
             }
 
-            console.error('Erro no register:', error);
+            console.error('Erro no register:', error instanceof Error ? error.message : String(error));
 
             res.status(500).json({ message: 'Erro interno do servidor' });
         }
@@ -81,18 +97,32 @@ export const authController = {
 
     refresh: async (req: Request, res: Response): Promise<void> => {
         try {
-            const { refreshToken } = req.body;
+            const refreshTokenFromBody = req.body?.refreshToken as string | undefined;
+            const cookieHeader = req.headers.cookie as string | undefined;
+            const refreshTokenFromCookie = req.cookies?.refreshToken ?? (cookieHeader ? cookieHeader.split(';').map(s => s.trim()).find(s => s.startsWith('refreshToken='))?.split('=')[1] : undefined);
+
+            const refreshToken = refreshTokenFromBody ?? refreshTokenFromCookie;
 
             if (!refreshToken) {
-                res.status(400).json({
-                    message: 'Refresh token é obrigatório',
-                });
+                res.status(400).json({ message: 'Refresh token é obrigatório' });
                 return;
             }
 
             const result = await authService.refresh(refreshToken);
 
-            res.status(200).json(result);
+            const refreshCookieOptions: CookieOptions = {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: process.env.NODE_ENV === 'production' ? 'lax' : 'lax',
+                path: '/auth',
+            };
+
+            const maxAgeDays = Number(process.env.REFRESH_TOKEN_EXPIRES_DAYS ?? 30);
+            refreshCookieOptions.maxAge = maxAgeDays * 24 * 60 * 60 * 1000;
+
+            res.cookie('refreshToken', result.refreshToken, refreshCookieOptions);
+
+            res.status(200).json({ accessToken: result.accessToken, user: result.user, refreshExpiraEm: result.refreshExpiraEm });
         } catch (error) {
             const message =
                 error instanceof Error
@@ -125,8 +155,7 @@ export const authController = {
 
             res.status(200).json(response);
         } catch (error) {
-            console.error('Erro ao solicitar recuperação de senha:', error);
-            // Retornar mensagem genérica de sucesso para não vazar detalhes ao cliente
+            console.error('Erro ao solicitar recuperação de senha:', error instanceof Error ? error.message : String(error));
             res.status(200).json({ message: 'Email enviado, você receberá instruções para redefinir sua senha' });
         }
     },
@@ -160,27 +189,36 @@ export const authController = {
                 return;
             }
 
-            console.error('Erro ao redefinir senha:', error);
+            console.error('Erro ao redefinir senha:', error instanceof Error ? error.message : String(error));
             res.status(500).json({ message: 'Erro ao redefinir senha' });
         }
     },
 
     logout: async (req: Request, res: Response): Promise<void> => {
         try {
-            const { refreshToken } = req.body;
+            const refreshTokenFromBody = req.body?.refreshToken as string | undefined;
+            const cookieHeader = req.headers.cookie as string | undefined;
+            const refreshTokenFromCookie = req.cookies?.refreshToken ?? (cookieHeader ? cookieHeader.split(';').map(s => s.trim()).find(s => s.startsWith('refreshToken='))?.split('=')[1] : undefined);
+
+            const refreshToken = refreshTokenFromBody ?? refreshTokenFromCookie;
 
             if (!refreshToken) {
-                res.status(400).json({
-                    message: 'Refresh token é obrigatório',
-                });
+                res.status(400).json({ message: 'Refresh token é obrigatório' });
                 return;
             }
 
             await authService.logout(refreshToken);
 
-            res.status(200).json({
-                message: 'Logout realizado com sucesso',
-            });
+            const cookieOptions: CookieOptions = {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: process.env.NODE_ENV === 'production' ? 'lax' : 'lax',
+                path: '/auth',
+            };
+
+            res.clearCookie('refreshToken', cookieOptions);
+
+            res.status(200).json({ message: 'Logout realizado com sucesso' });
         } catch (error) {
             const message =
                 error instanceof Error
@@ -194,7 +232,7 @@ export const authController = {
                 return;
             }
 
-            console.error('Erro no logout:', error);
+            console.error('Erro no logout:', error instanceof Error ? error.message : String(error));
 
             res.status(500).json({
                 message: 'Erro interno do servidor',

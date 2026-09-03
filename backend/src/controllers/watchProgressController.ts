@@ -10,6 +10,10 @@ interface AuthenticatedRequest extends Request {
 }
 
 function parseIntParam(value: unknown): number | undefined {
+    if (typeof value === 'number' && Number.isInteger(value)) {
+        return value;
+    }
+
     if (typeof value !== 'string' || value.trim() === '') {
         return undefined;
     }
