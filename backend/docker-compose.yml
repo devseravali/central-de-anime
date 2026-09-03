@@ -3,9 +3,9 @@ services:
   db:
     image: postgres:15
     environment:
-      POSTGRES_DB: centraldeanime
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 0711
+      POSTGRES_DB: ${DB_NAME:-centraldeanime}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
       - "5432:5432"
 
@@ -20,7 +20,7 @@ services:
       dockerfile: docker/Dockerfile
     environment:
       NODE_ENV: production
-      DATABASE_URL: postgres://postgres:0711@db:5432/centraldeanime
+      DATABASE_URL: postgres://${DB_USER:-postgres}:${DB_PASSWORD}@db:5432/${DB_NAME:-centraldeanime}
       REDIS_URL: redis://redis:6379
       SESSION_STORE: redis
     ports:

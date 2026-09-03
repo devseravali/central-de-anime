@@ -1,3 +1,33 @@
+# Ignore environment files containing secrets
+.env
+.env.*
+
+# Node modules (install inside image)
+node_modules
+
+# TypeScript build outputs and generated clients
+dist
+build
+generated
+
+# Local data and images (not needed in image)
+data
+images
+
+# Git
+.git
+
+# Logs and temp
+*.log
+tmp
+temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dockerfile context helpers
+.dockerignore
 node_modules
 dist
 .git
