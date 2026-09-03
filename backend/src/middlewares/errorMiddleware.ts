@@ -6,7 +6,7 @@ export const errorMiddleware: ErrorRequestHandler = (
     res,
     _next
 ) => {
-    console.error('Erro no servidor:', err);
+    console.error('Erro no servidor:', err && typeof err === 'object' ? (err as Error).message : String(err));
 
     const status =
         typeof err?.status === 'number'
@@ -20,7 +20,9 @@ export const errorMiddleware: ErrorRequestHandler = (
             ? 'Erro interno do servidor'
             : err instanceof Error
                 ? err.message
-                : 'Erro na requisição';
+                : err && typeof err === 'object' && 'message' in err && typeof err.message === 'string'
+                    ? err.message
+                    : 'Erro na requisição';
 
     const response: {
         message: string;

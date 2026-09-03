@@ -41,7 +41,7 @@ export const authMiddleware = async (
 
     const tokenParts = token.split('.');
     if (tokenParts.length !== 3) {
-        console.error('Token com formato inválido (não parece um JWT):', token);
+        console.error('Token com formato inválido (não parece um JWT)');
 
         res.status(401).json({
             message: 'Formato do token inválido: espere um access token JWT (não use o refreshToken)',
@@ -76,11 +76,10 @@ export const authMiddleware = async (
             role: usuario.admin ? 'ADMIN' : 'USER',
         };
 
-        // auth user set on req.user
 
         next();
     } catch (error) {
-        console.error('Erro ao validar JWT:', error);
+        console.error('Erro ao validar JWT:', error instanceof Error ? error.message : String(error));
 
         if (error && typeof error === 'object' && (error as any).name === 'TokenExpiredError') {
             const headerRefresh = req.headers['x-refresh-token'] as string | undefined;
@@ -110,8 +109,8 @@ export const authMiddleware = async (
 
                     next();
                     return;
-                } catch (refreshErr) {
-                    console.error('Falha ao renovar token via refresh:', refreshErr);
+                    } catch (refreshErr) {
+                    console.error('Falha ao renovar token via refresh:', refreshErr instanceof Error ? refreshErr.message : String(refreshErr));
                     res.status(401).json({ message: 'Token expirado e refresh falhou' });
                     return;
                 }
