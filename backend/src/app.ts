@@ -3,6 +3,7 @@ import express from 'express';
 import helmet from 'helmet';
 
 import { errorMiddleware } from './middlewares/errorMiddleware';
+import checkCriticalEnv from './config/envCheck';
 
 import authRoutes from './routes/auth';
 import usuarioRoutes from './routes/usuario';
@@ -21,6 +22,9 @@ import batchRoutes from './routes/batch';
 import exportRoutes from './routes/export';
 import infraRoutes from './routes/infra';
 import webhooksRoutes from './routes/webhooks';
+
+// checar variáveis críticas antes de inicializar o app
+checkCriticalEnv();
 
 const app = express();
 
