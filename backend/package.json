@@ -9,12 +9,13 @@
         "test:watch": "cross-env NODE_ENV=test vitest",
         "test:dev": "cross-env NODE_ENV=development vitest run",
         "test:testdb": "cross-env NODE_ENV=test vitest run",
-        "test:coverage": "cross-env NODE_ENV=test vitest run --coverage",
-        "test:coverage:html": "cross-env NODE_ENV=test vitest run --coverage",
-        "test:coverage:testdb": "cross-env NODE_ENV=test vitest run --coverage --reporter=junit --outputFile=.github/reports/report.xml",
+        "test:coverage": "cross-env NODE_ENV=test JWT_SECRET=testsecret vitest run --coverage",
+        "test:coverage:html": "cross-env NODE_ENV=test JWT_SECRET=testsecret vitest run --coverage",
+        "test:coverage:testdb": "cross-env NODE_ENV=test JWT_SECRET=testsecret vitest run --coverage --reporter=junit --outputFile=.github/reports/report.xml",
         "test:ci": "cross-env NODE_ENV=test vitest run --reporter=junit --outputFile=report.xml",
         "test:all": "npm run test && npm run test:coverage",
         "test:full": "npm run db:migrate:test && npm run seed:test && npm run test",
+        "typecheck": "tsc --noEmit",
         "db:generate": "prisma generate",
         "db:generate:test": "dotenv -e .env.test -- prisma generate",
         "db:migrate": "prisma migrate dev",
@@ -38,6 +39,9 @@
     "author": "",
     "license": "ISC",
     "type": "module",
+    "vitest": {
+        "testTimeout": 20000
+    },
     "dependencies": {
         "@prisma/adapter-pg": "^7.9.1",
         "@sendgrid/mail": "^8.1.6",
