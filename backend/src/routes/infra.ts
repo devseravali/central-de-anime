@@ -43,7 +43,7 @@ InfraRouter.post('/test-email', async (req: Request, res: Response) => {
 		return res.status(200).json({ ok: true, info });
 	} catch (err) {
 		console.error('Erro no endpoint /infra/test-email:', err);
-		return res.status(500).json({ error: 'Falha ao enviar email', details: String(err) });
+		return res.status(500).json({ error: 'Falha ao enviar email' });
 	}
 });
 
@@ -70,7 +70,7 @@ InfraRouter.get('/test-email', async (req: Request, res: Response) => {
 		return res.status(200).json({ ok: true, info });
 	} catch (err) {
 		console.error('Erro no endpoint GET /test-email:', err);
-		return res.status(500).send('Falha ao enviar email: ' + String(err));
+		return res.status(500).send('Falha ao enviar email');
 	}
 });
 

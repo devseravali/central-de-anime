@@ -154,9 +154,23 @@ AnimesRouter.get(
 AnimesRouter.get(
     '/:id/temporadas',
     (req, res) => {
-        req.query.animeId = req.params.id;
+        const requestWithAnimeId = Object.create(req);
 
-        return temporadaController.list(req, res);
+        Object.defineProperty(
+            requestWithAnimeId,
+            'query',
+            {
+                value: {
+                    ...req.query,
+                    animeId: req.params.id,
+                },
+                configurable: true,
+                enumerable: true,
+                writable: true,
+            }
+        );
+
+        return temporadaController.list(requestWithAnimeId, res);
     }
 );
 
@@ -173,9 +187,26 @@ AnimesRouter.get(
 AnimesRouter.get(
     '/:id/temporadas/:temporadaId/episodios',
     (req, res) => {
-        req.query.temporadaId = req.params.temporadaId;
+        const requestWithTemporadaId = Object.create(req);
 
-        return episodioController.list(req, res);
+        Object.defineProperty(
+            requestWithTemporadaId,
+            'query',
+            {
+                value: {
+                    ...req.query,
+                    temporadaId: req.params.temporadaId,
+                },
+                configurable: true,
+                enumerable: true,
+                writable: true,
+            }
+        );
+
+        return episodioController.list(
+            requestWithTemporadaId,
+            res
+        );
     }
 );
 
