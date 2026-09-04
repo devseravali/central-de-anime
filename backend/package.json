@@ -39,6 +39,9 @@
     "author": "",
     "license": "ISC",
     "type": "module",
+    "engines": {
+        "node": ">=22"
+    },
     "vitest": {
         "testTimeout": 20000
     },
