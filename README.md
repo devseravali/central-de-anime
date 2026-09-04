@@ -61,4 +61,5 @@ A Central de Anime está sendo construída como uma aplicação Full Stack.
 
 A evolução do projeto segue a seguinte proposta:
 **Projeto inicial de exploração de animes → API REST → Banco de dados → Regras de negócio → Front-End → Integração Full Stack → Deploy**
+
 O objetivo é construir uma aplicação completa, permitindo colocar em prática conhecimentos de desenvolvimento Front-End e Back-End dentro de um mesmo projeto.
