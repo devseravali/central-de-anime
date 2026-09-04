@@ -30,8 +30,9 @@ backend/.dockerignore
 # Código gerado
 backend/generated/
 
-# GitHub
-.github/
+# Agentes do GitHub/Copilot
+.github/agents/
+.github/copilot-instructions.md
 
 # Editor / IDE
 .vscode/
