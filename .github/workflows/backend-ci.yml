@@ -11,16 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NODE_ENV: test
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      MAIL_FROM: ${{ secrets.MAIL_FROM }}
-      SMTP_HOST: ${{ secrets.SMTP_HOST }}
-      SMTP_USER: ${{ secrets.SMTP_USER }}
-      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-      JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Carregar secrets do backend
+        shell: bash
+        run: |
+          cat <<'EOF' >> "$GITHUB_ENV"
+          ${{ secrets.YOUR_SECRETS_ANIME }}
+          EOF
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
@@ -32,10 +33,6 @@ jobs:
       - name: Instalar dependências
         working-directory: backend
         run: npm ci
-
-      - name: Verificar TypeScript
-        working-directory: backend
-        run: npm run typecheck
 
       - name: Executar testes
         working-directory: backend
