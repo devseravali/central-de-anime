@@ -40,8 +40,7 @@ BatchRouter.post(
                         },
                         select: {
                             id: true,
-                            nome: true,
-                            slug: true,
+                            titulo: true,
                         },
                     });
 
