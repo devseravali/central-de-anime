@@ -290,7 +290,7 @@ async function searchAnimes(
         items,
         total,
         page: normalizedPage,
-        perPage: normalizedPage,
+        perPage: normalizedLimit,
     };
 }
 

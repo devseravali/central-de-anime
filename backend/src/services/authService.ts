@@ -451,7 +451,6 @@ export const authService: AuthService = {
             return null;
         }
 
-        // Gerar token JWT com expiração curta
         const jwtToken = jwt.sign({ usuarioId: usuario.id }, JWT_SECRET, {
             expiresIn: `${PASSWORD_RESET_EXPIRES_MINUTES}m`,
         });
@@ -492,7 +491,6 @@ export const authService: AuthService = {
             throw new Error('Token de recuperação expirado ou inválido');
         }
 
-        // tokenPlain é o JWT completo; verificamos assinatura acima no parse
         const tokenMatch = await bcrypt.compare(tokenPlain, usuario.resetSenhaTokenHash);
 
         if (!tokenMatch) {
@@ -516,12 +514,11 @@ export const authService: AuthService = {
 
         const { token: refreshToken, sessao } = await generateRefreshTokenForUser(updatedUser.id);
 
-        // Envia email de confirmação de alteração de senha (não bloquear o fluxo em caso de falha)
         (async () => {
             try {
                 await sendPasswordResetConfirmationEmail(updatedUser.email);
             } catch (err) {
-                console.error('Falha ao enviar email de confirmação de senha:', err);
+                console.error('Falha ao enviar email de confirmação de senha:', err instanceof Error ? err.message : String(err));
             }
         })();
 

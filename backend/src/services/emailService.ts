@@ -36,7 +36,7 @@ export const sendPasswordResetEmail = async (
 
         return;
     } catch (err) {
-        console.error('Erro ao enviar email via SMTP:', err);
+        console.error('Erro ao enviar email via SMTP:', err instanceof Error ? err.message : String(err));
         throw err;
     }
 };
@@ -67,7 +67,7 @@ export const sendPasswordResetConfirmationEmail = async (
 
         return;
     } catch (err) {
-        console.error('Erro ao enviar email de confirmação via SMTP:', err);
+        console.error('Erro ao enviar email de confirmação via SMTP:', err instanceof Error ? err.message : String(err));
         throw err;
     }
 };
