@@ -1,0 +1,8 @@
+{
+  "name": "central-de-anime",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}
