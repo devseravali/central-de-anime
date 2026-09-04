@@ -9,18 +9,42 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: centraldeanime
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d centraldeanime"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
     env:
       NODE_ENV: test
+      DB_NAME: centraldeanime
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/centraldeanime
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Carregar secrets do backend
+      - name: Criar arquivo .env do backend
         shell: bash
         run: |
-          cat <<'EOF' >> "$GITHUB_ENV"
-          ${{ secrets.YOUR_SECRETS_ANIME }}
+          printf '%s\n' '${{ secrets.YOUR_SECRETS_ANIME }}' |
+            grep -Ev '^(DB_NAME|DB_USER|DB_PASSWORD|DATABASE_URL|NODE_ENV)=' > backend/.env
+          cat <<'EOF' >> backend/.env
+          DB_NAME=centraldeanime
+          DB_USER=postgres
+          DB_PASSWORD=postgres
+          DATABASE_URL=postgresql://postgres:postgres@localhost:5432/centraldeanime
+          NODE_ENV=test
           EOF
 
       - name: Configurar Node.js
@@ -33,6 +57,10 @@ jobs:
       - name: Instalar dependências
         working-directory: backend
         run: npm ci
+
+      - name: Aplicar migrations no banco do CI
+        working-directory: backend
+        run: npx prisma migrate deploy
 
       - name: Executar testes
         working-directory: backend
