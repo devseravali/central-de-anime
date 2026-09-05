@@ -24,7 +24,7 @@ vi.mock('../../config/prisma', () => ({
   },
 }));
 
-vi.mock('bcrypt', () => ({
+vi.mock('bcryptjs', () => ({
   default: {
     hash: bcryptMocks.hash,
   },
