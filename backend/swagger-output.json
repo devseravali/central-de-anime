@@ -1,0 +1,2850 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Central de Anime API",
+    "version": "1.0.0",
+    "description": "API da Central de Anime"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000/api/v1",
+      "description": "Servidor local - API v1"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "paths": {
+    "/api/v1/webhooks/engagement": {
+      "post": {
+        "summary": "Recebe webhook de engagement",
+        "description": "Endpoint destinado ao recebimento de eventos de engagement por webhook.",
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "204": {
+            "description": "Webhook processado com sucesso"
+          },
+          "500": {
+            "description": "Erro interno ao processar o webhook"
+          }
+        }
+      }
+    },
+    "/api/v1/usuarios/{usuarioId}/episodios/{episodioId}/progresso": {
+      "get": {
+        "summary": "Consulta o progresso de um episódio",
+        "description": "Retorna o progresso do usuário autenticado em um episódio específico.",
+        "tags": [
+          "Progresso"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "usuarioId",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          },
+          {
+            "in": "path",
+            "name": "episodioId",
+            "required": true,
+            "description": "ID do episódio",
+            "schema": {
+              "type": "integer",
+              "example": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Progresso retornado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Dados do progresso do episódio"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parâmetros inválidos"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "404": {
+            "description": "Progresso ou episódio não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/episodios/{episodioId}/progresso": {
+      "put": {
+        "summary": "Atualiza o progresso de um episódio",
+        "description": "Atualiza o progresso do episódio para o usuário autenticado.",
+        "tags": [
+          "Progresso"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "episodioId",
+            "required": true,
+            "description": "ID do episódio",
+            "schema": {
+              "type": "integer",
+              "example": 10
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "description": "Dados utilizados para atualizar o progresso do episódio."
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Progresso atualizado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Progresso atualizado"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Dados de progresso inválidos"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "404": {
+            "description": "Episódio não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/episodios/{episodioId}/concluir": {
+      "post": {
+        "summary": "Marca um episódio como concluído",
+        "description": "Marca o episódio informado como concluído para o usuário autenticado.",
+        "tags": [
+          "Progresso"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "episodioId",
+            "required": true,
+            "description": "ID do episódio",
+            "schema": {
+              "type": "integer",
+              "example": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Episódio marcado como concluído com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Progresso atualizado"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID do episódio inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "404": {
+            "description": "Episódio não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/sessions": {
+      "get": {
+        "summary": "Lista as sessões de um usuário",
+        "description": "Retorna as sessões autenticadas de um usuário. O próprio usuário pode consultar suas sessões e administradores podem consultar as sessões de qualquer usuário.\n",
+        "tags": [
+          "Sessões"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "usuarioId",
+            "required": true,
+            "description": "ID do usuário cujas sessões serão consultadas",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sessões listadas com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "OK"
+                    },
+                    "sessions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "description": "Dados da sessão"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "usuarioId não informado ou inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "usuarioId é obrigatório como query param"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/sessions/{sessionId}": {
+      "delete": {
+        "summary": "Revoga uma sessão",
+        "description": "Revoga uma sessão específica de um usuário. O próprio usuário pode revogar suas sessões e administradores podem revogar sessões de qualquer usuário.\n",
+        "tags": [
+          "Sessões"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "sessionId",
+            "required": true,
+            "description": "ID da sessão que será revogada",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Sessão revogada com sucesso"
+          },
+          "400": {
+            "description": "sessionId inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "sessionId inválido"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "404": {
+            "description": "Sessão não encontrada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Sessão não encontrada"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/ranking/{usuarioId}": {
+      "get": {
+        "summary": "Busca o ranking de um usuário",
+        "description": "Retorna as informações de ranking do usuário autenticado ou do usuário informado.",
+        "tags": [
+          "Ranking"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "usuarioId",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ranking do usuário retornado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Dados do ranking do usuário"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID do usuário inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "404": {
+            "description": "Ranking ou usuário não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/ranking/{usuarioId}/pontos": {
+      "get": {
+        "summary": "Consulta os pontos de um usuário",
+        "description": "Retorna a pontuação acumulada do usuário no ranking.",
+        "tags": [
+          "Ranking"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "usuarioId",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Pontos do usuário retornados com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Informações de pontuação do usuário"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID do usuário inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "404": {
+            "description": "Usuário ou pontuação não encontrada"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/ranking/{usuarioId}/atualizar": {
+      "post": {
+        "summary": "Atualiza o ranking de um usuário",
+        "description": "Atualiza os dados de ranking do usuário informado.",
+        "tags": [
+          "Ranking"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "usuarioId",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ranking atualizado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Ranking atualizado"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID do usuário inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/ranking/{usuarioId}/recalcular": {
+      "post": {
+        "summary": "Recalcula o ranking de um usuário",
+        "description": "Recalcula a pontuação e os dados de ranking do usuário informado.",
+        "tags": [
+          "Ranking"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "usuarioId",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ranking recalculado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Ranking recalculado"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID do usuário inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/ranking/top": {
+      "get": {
+        "summary": "Lista os usuários com maior pontuação",
+        "description": "Retorna o ranking geral dos usuários com maior pontuação.",
+        "tags": [
+          "Ranking"
+        ],
+        "responses": {
+          "200": {
+            "description": "Ranking geral retornado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "description": "Usuário e informações de ranking"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/usuarios/{id}/progressos": {
+      "get": {
+        "summary": "Lista o progresso de episódios de um usuário",
+        "description": "Retorna todos os registros de progresso de episódios do usuário. O próprio usuário pode consultar seus progressos e administradores podem consultar os progressos de qualquer usuário.\n",
+        "tags": [
+          "Progressos"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Progressos retornados com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "description": "Registro de progresso de um episódio",
+                    "properties": {
+                      "episodio": {
+                        "type": "object",
+                        "description": "Episódio relacionado ao progresso",
+                        "properties": {
+                          "anime": {
+                            "type": "object",
+                            "description": "Anime relacionado ao episódio",
+                            "properties": {
+                              "id": {
+                                "type": "integer",
+                                "example": 1
+                              },
+                              "titulo": {
+                                "type": "string",
+                                "example": "Naruto"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove todos os progressos de um usuário",
+        "description": "Remove todos os registros de progresso de episódios associados ao usuário. O próprio usuário pode remover seus progressos e administradores podem remover os progressos de qualquer usuário.\n",
+        "tags": [
+          "Progressos"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Progressos removidos com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/personagens": {
+      "get": {
+        "summary": "Lista todos os personagens",
+        "description": "Retorna a lista de personagens cadastrados na Central de Anime.",
+        "tags": [
+          "Personagens"
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de personagens retornada com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "description": "Dados de um personagem"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parâmetros inválidos"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/personagens/{id}": {
+      "get": {
+        "summary": "Busca um personagem pelo ID",
+        "description": "Retorna os dados de um personagem específico.",
+        "tags": [
+          "Personagens"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do personagem",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Personagem encontrado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Dados do personagem"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "404": {
+            "description": "Personagem não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{animeId}/favoritar": {
+      "post": {
+        "summary": "Adiciona um anime aos favoritos",
+        "description": "Adiciona o anime informado à lista de favoritos do usuário autenticado.",
+        "tags": [
+          "Interações"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "animeId",
+            "required": true,
+            "description": "ID do anime que será favoritado",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Anime adicionado aos favoritos com sucesso"
+          },
+          "400": {
+            "description": "ID do anime inválido ou dados inválidos"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "404": {
+            "description": "Anime não encontrado"
+          },
+          "409": {
+            "description": "Anime já está nos favoritos"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{animeId}/desfavoritar": {
+      "post": {
+        "summary": "Remove um anime dos favoritos",
+        "description": "Remove o anime informado da lista de favoritos do usuário autenticado.",
+        "tags": [
+          "Interações"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "animeId",
+            "required": true,
+            "description": "ID do anime que será removido dos favoritos",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Anime removido dos favoritos com sucesso"
+          },
+          "400": {
+            "description": "ID do anime inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "404": {
+            "description": "Anime não encontrado ou não está nos favoritos"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{animeId}/nota": {
+      "post": {
+        "summary": "Avalia um anime",
+        "description": "Registra ou atualiza a nota atribuída pelo usuário autenticado ao anime informado.",
+        "tags": [
+          "Interações"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "animeId",
+            "required": true,
+            "description": "ID do anime que será avaliado",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "description": "Dados necessários para registrar a nota do anime."
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Nota registrada ou atualizada com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos ou nota fora dos valores permitidos"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "404": {
+            "description": "Anime não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove a nota de um anime",
+        "description": "Remove a avaliação feita pelo usuário autenticado para o anime informado.",
+        "tags": [
+          "Interações"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "animeId",
+            "required": true,
+            "description": "ID do anime cuja nota será removida",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Nota removida com sucesso"
+          },
+          "400": {
+            "description": "ID do anime inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "404": {
+            "description": "Nota não encontrada"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/personagens/{personagemId}/favoritar": {
+      "post": {
+        "summary": "Adiciona um personagem aos favoritos",
+        "description": "Adiciona o personagem informado à lista de favoritos do usuário autenticado.",
+        "tags": [
+          "Interações"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "personagemId",
+            "required": true,
+            "description": "ID do personagem que será favoritado",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Personagem adicionado aos favoritos com sucesso"
+          },
+          "400": {
+            "description": "ID do personagem inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "404": {
+            "description": "Personagem não encontrado"
+          },
+          "409": {
+            "description": "Personagem já está nos favoritos"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/personagens/{personagemId}/desfavoritar": {
+      "post": {
+        "summary": "Remove um personagem dos favoritos",
+        "description": "Remove o personagem informado da lista de favoritos do usuário autenticado.",
+        "tags": [
+          "Interações"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "personagemId",
+            "required": true,
+            "description": "ID do personagem que será removido dos favoritos",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Personagem removido dos favoritos com sucesso"
+          },
+          "400": {
+            "description": "ID do personagem inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "404": {
+            "description": "Personagem não encontrado ou não está nos favoritos"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/metrics": {
+      "get": {
+        "summary": "Retorna métricas da aplicação",
+        "description": "Retorna informações de uptime, uso de memória e ambiente de execução da API.",
+        "tags": [
+          "Infraestrutura"
+        ],
+        "responses": {
+          "200": {
+            "description": "Métricas retornadas com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "uptime": {
+                      "type": "number",
+                      "description": "Tempo de execução da aplicação em segundos",
+                      "example": 3600.52
+                    },
+                    "memory": {
+                      "type": "object",
+                      "description": "Informações de uso de memória do processo Node.js",
+                      "properties": {
+                        "rss": {
+                          "type": "integer",
+                          "description": "Resident Set Size em bytes",
+                          "example": 52428800
+                        },
+                        "heapTotal": {
+                          "type": "integer",
+                          "description": "Memória total do heap em bytes",
+                          "example": 10485760
+                        },
+                        "heapUsed": {
+                          "type": "integer",
+                          "description": "Memória utilizada do heap em bytes",
+                          "example": 7340032
+                        },
+                        "external": {
+                          "type": "integer",
+                          "description": "Memória utilizada por recursos externos em bytes",
+                          "example": 1048576
+                        },
+                        "arrayBuffers": {
+                          "type": "integer",
+                          "description": "Memória utilizada por ArrayBuffers em bytes",
+                          "example": 524288
+                        }
+                      }
+                    },
+                    "env": {
+                      "type": "string",
+                      "description": "Ambiente de execução da aplicação",
+                      "example": "development"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/docs/openapi.json": {
+      "get": {
+        "summary": "Retorna a especificação OpenAPI",
+        "description": "Retorna a especificação OpenAPI atualmente disponibilizada pelo endpoint de documentação.",
+        "tags": [
+          "Infraestrutura"
+        ],
+        "responses": {
+          "200": {
+            "description": "Especificação OpenAPI retornada com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "info": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string",
+                          "example": "API"
+                        },
+                        "version": {
+                          "type": "string",
+                          "example": "0.0.1"
+                        }
+                      }
+                    },
+                    "paths": {
+                      "type": "object",
+                      "example": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/docs": {
+      "get": {
+        "summary": "Exibe a página de documentação da API",
+        "description": "Retorna uma página HTML simples com informações sobre a documentação OpenAPI.",
+        "tags": [
+          "Infraestrutura"
+        ],
+        "responses": {
+          "200": {
+            "description": "Página de documentação retornada com sucesso",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string",
+                  "example": "<html><body><h1>API Docs</h1><p>OpenAPI JSON available at /docs/openapi.json</p></body></html>"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/test-email": {
+      "post": {
+        "summary": "Envia um email de teste",
+        "description": "Envia um email de teste utilizando o serviço de email configurado na aplicação. O endereço de destino pode ser informado no body da requisição ou como parâmetro de query.\n",
+        "tags": [
+          "Infraestrutura"
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "to": {
+                    "type": "string",
+                    "format": "email",
+                    "description": "Endereço de email que receberá a mensagem de teste",
+                    "example": "teste@example.com"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "to",
+            "required": false,
+            "description": "Endereço de email que receberá a mensagem de teste",
+            "schema": {
+              "type": "string",
+              "format": "email",
+              "example": "teste@example.com"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Email enviado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "info": {
+                      "type": "object",
+                      "description": "Informações retornadas pelo serviço de email"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Endereço de destino não informado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "example": "Campo \"to\" é obrigatório (body ou query)"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Falha na configuração ou no envio do email",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "example": "Falha ao enviar email"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Envia um email de teste via GET",
+        "description": "Envia um email de teste utilizando o endereço informado no parâmetro de query.",
+        "tags": [
+          "Infraestrutura"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "to",
+            "required": true,
+            "description": "Endereço de email que receberá a mensagem de teste",
+            "schema": {
+              "type": "string",
+              "format": "email",
+              "example": "teste@example.com"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Email enviado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "info": {
+                      "type": "object",
+                      "description": "Informações retornadas pelo serviço de email"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parâmetro de email não informado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "Parâmetro \"to\" é obrigatório na query, ex: /test-email?to=seu@email.com"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Falha na configuração ou no envio do email",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "Falha ao enviar email"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/usuarios/{id}/favoritos/animes": {
+      "get": {
+        "summary": "Lista os animes favoritos de um usuário",
+        "description": "Retorna todos os animes favoritados pelo usuário. O próprio usuário pode consultar seus favoritos e administradores podem consultar os favoritos de qualquer usuário.\n",
+        "tags": [
+          "Favoritos"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes favoritos retornada com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "example": 1
+                      },
+                      "titulo": {
+                        "type": "string",
+                        "example": "Naruto"
+                      },
+                      "tipo": {
+                        "type": "string",
+                        "example": "TV"
+                      },
+                      "temporada": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": 1
+                      },
+                      "ano": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": 2002
+                      },
+                      "sinopse": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": "Naruto Uzumaki é um jovem ninja..."
+                      },
+                      "capaUrl": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": "https://example.com/naruto.jpg"
+                      },
+                      "quantidadeEpisodios": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": 220
+                      },
+                      "estudio": {
+                        "type": "object",
+                        "nullable": true,
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "example": 1
+                          },
+                          "nome": {
+                            "type": "string",
+                            "example": "Studio Pierrot"
+                          }
+                        }
+                      },
+                      "status": {
+                        "type": "object",
+                        "nullable": true,
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "example": 1
+                          },
+                          "nome": {
+                            "type": "string",
+                            "example": "Em andamento"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/usuarios/{id}/favoritos/personagens": {
+      "get": {
+        "summary": "Lista os personagens favoritos de um usuário",
+        "description": "Retorna todos os personagens favoritados pelo usuário. O próprio usuário pode consultar seus favoritos e administradores podem consultar os favoritos de qualquer usuário.\n",
+        "tags": [
+          "Favoritos"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de personagens favoritos retornada com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "description": "Dados do personagem favorito",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "example": 1
+                      },
+                      "nome": {
+                        "type": "string",
+                        "example": "Naruto Uzumaki"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/export/usuarios/{id}": {
+      "get": {
+        "summary": "Exporta os dados de um usuário",
+        "description": "Retorna os dados públicos e de conta do usuário em formato JSON. O próprio usuário pode acessar seus dados, enquanto administradores podem exportar os dados de qualquer usuário. Dados sensíveis, como senha e tokens de recuperação, não são retornados.\n",
+        "tags": [
+          "Exportação"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário que será exportado",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Dados do usuário exportados com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "usuario": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer",
+                          "example": 1
+                        },
+                        "nome": {
+                          "type": "string",
+                          "example": "Aline Seravali"
+                        },
+                        "email": {
+                          "type": "string",
+                          "format": "email",
+                          "example": "aline@example.com"
+                        },
+                        "avatar": {
+                          "type": "string",
+                          "nullable": true,
+                          "example": "https://example.com/avatar.jpg"
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "ATIVO"
+                        },
+                        "criadoEm": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "atualizadoEm": {
+                          "type": "string",
+                          "format": "date-time"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Token de autenticação ausente ou inválido"
+          },
+          "403": {
+            "description": "Acesso negado. O usuário só pode exportar seus próprios dados, exceto administradores."
+          },
+          "404": {
+            "description": "Usuário não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/episodios": {
+      "get": {
+        "summary": "Lista todos os episódios",
+        "description": "Retorna uma lista de episódios.",
+        "tags": [
+          "Episódios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de episódios retornada com sucesso"
+          },
+          "400": {
+            "description": "Parâmetros inválidos"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/episodios/{id}": {
+      "get": {
+        "summary": "Busca um episódio pelo ID",
+        "description": "Retorna os dados de um episódio específico.",
+        "tags": [
+          "Episódios"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do episódio",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Episódio encontrado com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "404": {
+            "description": "Episódio não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/batch": {
+      "post": {
+        "summary": "Processa animes em lote",
+        "description": "Permite consultar animes por uma lista de IDs ou realizar\ninserção/atualização de animes em lote.\nRequer autenticação e privilégios de administrador.\n",
+        "tags": [
+          "Animes"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "required": [
+                      "ids"
+                    ],
+                    "properties": {
+                      "ids": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        },
+                        "example": [
+                          1,
+                          2,
+                          3
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "description": "Dados de um anime para criação ou atualização"
+                  },
+                  {
+                    "type": "array",
+                    "description": "Lista de animes para criação ou atualização em lote",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Operação em lote realizada com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "animesFound": {
+                          "type": "integer",
+                          "example": 3
+                        },
+                        "animes": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "integer",
+                                "example": 1
+                              },
+                              "titulo": {
+                                "type": "string",
+                                "example": "Naruto"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "description": "Resultado da operação de batch upsert"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Dados enviados são inválidos"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "500": {
+            "description": "Erro ao processar o batch"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{id}/avaliacoes": {
+      "get": {
+        "summary": "Lista as avaliações de um anime",
+        "description": "Retorna todas as avaliações realizadas pelos usuários para um anime específico.",
+        "tags": [
+          "Avaliações"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Avaliações retornadas com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "usuario": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "example": 1
+                          },
+                          "nome": {
+                            "type": "string",
+                            "example": "Aline"
+                          },
+                          "avatar": {
+                            "type": "string",
+                            "nullable": true,
+                            "example": "https://example.com/avatar.jpg"
+                          }
+                        }
+                      },
+                      "nota": {
+                        "type": "number",
+                        "example": 5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "500": {
+            "description": "Erro ao buscar avaliações"
+          }
+        }
+      }
+    },
+    "/api/v1/usuarios/{id}/avaliacoes": {
+      "get": {
+        "summary": "Lista as avaliações realizadas por um usuário",
+        "description": "Retorna as avaliações realizadas por um usuário. O próprio usuário ou um administrador pode acessar os dados.",
+        "tags": [
+          "Avaliações"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Avaliações do usuário retornadas com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "anime": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "example": 1
+                          },
+                          "titulo": {
+                            "type": "string",
+                            "example": "Naruto"
+                          },
+                          "capaUrl": {
+                            "type": "string",
+                            "nullable": true,
+                            "example": "/uploads/capas/naruto.jpg"
+                          }
+                        }
+                      },
+                      "nota": {
+                        "type": "number",
+                        "example": 5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Acesso negado"
+          },
+          "500": {
+            "description": "Erro ao buscar avaliações"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/register": {
+      "post": {
+        "summary": "Registra um novo usuário",
+        "description": "Cria uma nova conta de usuário.",
+        "tags": [
+          "Autenticação"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string",
+                    "example": "Aline Seravali"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "example": "aline@example.com"
+                  },
+                  "senha": {
+                    "type": "string",
+                    "format": "password",
+                    "example": "Senha@123"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Usuário registrado com sucesso"
+          },
+          "400": {
+            "description": "Dados de cadastro inválidos"
+          },
+          "409": {
+            "description": "Usuário já cadastrado"
+          },
+          "429": {
+            "description": "Muitas tentativas de cadastro"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/login": {
+      "post": {
+        "summary": "Realiza login",
+        "description": "Autentica um usuário utilizando email e senha.",
+        "tags": [
+          "Autenticação"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "example": "aline@example.com"
+                  },
+                  "senha": {
+                    "type": "string",
+                    "format": "password",
+                    "example": "Senha@123"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Login realizado com sucesso"
+          },
+          "400": {
+            "description": "Dados de login inválidos"
+          },
+          "401": {
+            "description": "Credenciais inválidas"
+          },
+          "429": {
+            "description": "Muitas tentativas de login"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/refresh": {
+      "post": {
+        "summary": "Atualiza os tokens de autenticação",
+        "description": "Gera um novo token de acesso utilizando um refresh token válido.",
+        "tags": [
+          "Autenticação"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "refreshToken": {
+                    "type": "string",
+                    "example": "eyJhbGciOiJIUzI1NiIs..."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token atualizado com sucesso"
+          },
+          "400": {
+            "description": "Refresh token inválido"
+          },
+          "401": {
+            "description": "Refresh token não autorizado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/forgot-password": {
+      "post": {
+        "summary": "Solicita recuperação de senha",
+        "description": "Envia uma solicitação para recuperação da senha do usuário.",
+        "tags": [
+          "Autenticação"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "example": "aline@example.com"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Solicitação de recuperação processada"
+          },
+          "400": {
+            "description": "Email inválido"
+          },
+          "429": {
+            "description": "Muitas solicitações de recuperação"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/reset-password": {
+      "post": {
+        "summary": "Redefine a senha",
+        "description": "Define uma nova senha utilizando o token de recuperação.",
+        "tags": [
+          "Autenticação"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "example": "token-de-recuperacao"
+                  },
+                  "novaSenha": {
+                    "type": "string",
+                    "format": "password",
+                    "example": "NovaSenha@123"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Senha redefinida com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos ou token inválido"
+          },
+          "401": {
+            "description": "Token não autorizado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/logout": {
+      "post": {
+        "summary": "Realiza logout",
+        "description": "Encerra a sessão ou invalida o refresh token do usuário.",
+        "tags": [
+          "Autenticação"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Logout realizado com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          },
+          "401": {
+            "description": "Não autorizado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes": {
+      "get": {
+        "summary": "Lista todos os animes",
+        "tags": [
+          "Animes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de animes retornada com sucesso"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      },
+      "post": {
+        "summary": "Cria um anime",
+        "description": "Cria um novo anime. Requer autenticação e privilégios de administrador.",
+        "tags": [
+          "Animes"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Anime criado com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/search": {
+      "get": {
+        "summary": "Pesquisa animes",
+        "tags": [
+          "Animes"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "search",
+            "required": true,
+            "description": "Termo utilizado para pesquisar animes",
+            "schema": {
+              "type": "string",
+              "example": "Naruto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado da pesquisa"
+          },
+          "400": {
+            "description": "Parâmetros de pesquisa inválidos"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/capa": {
+      "post": {
+        "summary": "Cadastra ou atualiza a capa de um anime",
+        "description": "Cadastra uma capa e associa o caminho da capa ao anime. Requer autenticação e privilégios de administrador.",
+        "tags": [
+          "Animes"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "animeId",
+                  "nome_original",
+                  "nome_salvo",
+                  "caminho",
+                  "mime_type"
+                ],
+                "properties": {
+                  "animeId": {
+                    "type": "integer",
+                    "example": 1
+                  },
+                  "nome_original": {
+                    "type": "string",
+                    "example": "naruto.jpg"
+                  },
+                  "nome_salvo": {
+                    "type": "string",
+                    "example": "anime-1-capa.jpg"
+                  },
+                  "caminho": {
+                    "type": "string",
+                    "example": "/uploads/capas/anime-1-capa.jpg"
+                  },
+                  "mime_type": {
+                    "type": "string",
+                    "example": "image/jpeg"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Capa cadastrada com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos ou ID de anime inválido"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "404": {
+            "description": "Anime não encontrado"
+          },
+          "500": {
+            "description": "Erro ao criar capa"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{id}": {
+      "get": {
+        "summary": "Busca um anime pelo ID",
+        "tags": [
+          "Animes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Anime encontrado com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "404": {
+            "description": "Anime não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      },
+      "put": {
+        "summary": "Atualiza um anime",
+        "description": "Atualiza os dados de um anime. Requer autenticação e privilégios de administrador.",
+        "tags": [
+          "Animes"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Anime atualizado com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "404": {
+            "description": "Anime não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove um anime",
+        "description": "Remove um anime. Requer autenticação e privilégios de administrador.",
+        "tags": [
+          "Animes"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Anime removido com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "404": {
+            "description": "Anime não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{id}/temporadas": {
+      "get": {
+        "summary": "Lista as temporadas de um anime",
+        "tags": [
+          "Temporadas"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de temporadas retornada com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "404": {
+            "description": "Anime não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{id}/temporadas/numero/{seasonNumber}/episodios": {
+      "get": {
+        "summary": "Lista os episódios de uma temporada pelo número",
+        "tags": [
+          "Episódios"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          },
+          {
+            "in": "path",
+            "name": "seasonNumber",
+            "required": true,
+            "description": "Número da temporada",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de episódios retornada com sucesso"
+          },
+          "400": {
+            "description": "Parâmetros inválidos"
+          },
+          "404": {
+            "description": "Anime ou temporada não encontrada"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{id}/personagens": {
+      "get": {
+        "summary": "Lista os personagens de um anime",
+        "tags": [
+          "Personagens"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de personagens retornada com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "404": {
+            "description": "Anime não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{id}/temporadas/{temporadaId}/episodios": {
+      "get": {
+        "summary": "Lista os episódios de uma temporada",
+        "tags": [
+          "Episódios"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          },
+          {
+            "in": "path",
+            "name": "temporadaId",
+            "required": true,
+            "description": "ID da temporada",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de episódios retornada com sucesso"
+          },
+          "400": {
+            "description": "Parâmetros inválidos"
+          },
+          "404": {
+            "description": "Anime ou temporada não encontrada"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/animes/{id}/capas": {
+      "get": {
+        "summary": "Lista as capas de um anime",
+        "tags": [
+          "Animes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do anime",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de capas do anime"
+          },
+          "400": {
+            "description": "ID de anime inválido"
+          },
+          "500": {
+            "description": "Erro ao buscar capas"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/users": {
+      "get": {
+        "summary": "Lista todos os usuários",
+        "description": "Retorna a lista de usuários. Requer autenticação e privilégios de administrador.",
+        "tags": [
+          "Administração"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de usuários retornada com sucesso"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/users/{id}/ban": {
+      "post": {
+        "summary": "Bane um usuário",
+        "description": "Bloqueia um usuário da plataforma. Requer autenticação e privilégios de administrador.",
+        "tags": [
+          "Administração"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário que será banido",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuário banido com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/users/{id}/unban": {
+      "post": {
+        "summary": "Remove o banimento de um usuário",
+        "description": "Desbloqueia um usuário da plataforma. Requer autenticação e privilégios de administrador.",
+        "tags": [
+          "Administração"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário que será desbloqueado",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Banimento removido com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/users/{id}/promote": {
+      "post": {
+        "summary": "Promove um usuário para administrador",
+        "description": "Concede privilégios administrativos a um usuário. Requer autenticação e privilégios de administrador.",
+        "tags": [
+          "Administração"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "ID do usuário que será promovido",
+            "schema": {
+              "type": "integer",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuário promovido com sucesso"
+          },
+          "400": {
+            "description": "ID inválido"
+          },
+          "401": {
+            "description": "Usuário não autenticado"
+          },
+          "403": {
+            "description": "Usuário sem permissão de administrador"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
+          },
+          "500": {
+            "description": "Erro interno do servidor"
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}
