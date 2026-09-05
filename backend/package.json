@@ -79,11 +79,11 @@
         "swagger-jsdoc": "^6.2.8",
         "swagger-ui-express": "^5.0.1",
         "winston": "^3.19.0",
-        "winston-daily-rotate-file": "^5.0.0"
+        "winston-daily-rotate-file": "^5.0.0",
+        "zod": "^4.5.4"
     },
     "devDependencies": {
         "@prisma/client": "^7.4.1",
-        "@types/bcrypt": "^6.0.3",
         "@types/cors": "^2.8.19",
         "@types/express": "^5.0.6",
         "@types/express-session": "^1.18.2",
