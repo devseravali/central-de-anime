@@ -1,18 +1,88 @@
 import { Router, Request, Response } from 'express';
-import { z } from 'zod';
 
 import { prisma } from '../config/prisma';
 import { animeService } from '../services/animeService';
 import type { AnimeData } from '../services/animeService';
+
 import { batchBodySchema } from '../schemas/batch/batch.schemas';
+
 import { authMiddleware } from '../middlewares/authMiddleware';
 import { adminMiddleware } from '../middlewares/adminMiddleware';
 import { validationMiddleware } from '../middlewares/validationMiddleware';
 
 const BatchRouter = Router();
 
-// schemas moved to backend/src/schemas/batch/batch.schemas.ts
-
+/**
+ * @swagger
+ * /animes/batch:
+ *   post:
+ *     summary: Processa animes em lote
+ *     description: |
+ *       Permite consultar animes por uma lista de IDs ou realizar
+ *       inserção/atualização de animes em lote.
+ *       Requer autenticação e privilégios de administrador.
+ *     tags:
+ *       - Animes
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             oneOf:
+ *               - type: object
+ *                 required:
+ *                   - ids
+ *                 properties:
+ *                   ids:
+ *                     type: array
+ *                     items:
+ *                       type: integer
+ *                     example:
+ *                       - 1
+ *                       - 2
+ *                       - 3
+ *               - type: object
+ *                 description: Dados de um anime para criação ou atualização
+ *               - type: array
+ *                 description: Lista de animes para criação ou atualização em lote
+ *                 items:
+ *                   type: object
+ *     responses:
+ *       200:
+ *         description: Operação em lote realizada com sucesso
+ *         content:
+ *           application/json:
+ *             schema:
+ *               oneOf:
+ *                 - type: object
+ *                   properties:
+ *                     animesFound:
+ *                       type: integer
+ *                       example: 3
+ *                     animes:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: integer
+ *                             example: 1
+ *                           titulo:
+ *                             type: string
+ *                             example: Naruto
+ *                 - type: object
+ *                   description: Resultado da operação de batch upsert
+ *       400:
+ *         description: Dados enviados são inválidos
+ *       401:
+ *         description: Usuário não autenticado
+ *       403:
+ *         description: Usuário sem permissão de administrador
+ *       500:
+ *         description: Erro ao processar o batch
+ */
 BatchRouter.post(
     '/animes/batch',
     authMiddleware,

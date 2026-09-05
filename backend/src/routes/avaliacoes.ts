@@ -8,48 +8,196 @@ function parseId(value: unknown): number | undefined {
   if (typeof value !== 'string') return undefined;
   const n = Number.parseInt(value, 10);
   return Number.isNaN(n) ? undefined : n;
-}
+};
 
-AvaliacoesRouter.get('/animes/:id/avaliacoes', async (req: Request, res: Response) => {
-  try {
-    const id = parseId(req.params.id);
-    if (id === undefined) {
-      res.status(400).json({ message: 'ID inválido' });
-      return;
+/**
+ * @swagger
+ * /animes/{id}/avaliacoes:
+ *   get:
+ *     summary: Lista as avaliações de um anime
+ *     description: Retorna todas as avaliações realizadas pelos usuários para um anime específico.
+ *     tags:
+ *       - Avaliações
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: ID do anime
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Avaliações retornadas com sucesso
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   usuario:
+ *                     type: object
+ *                     properties:
+ *                       id:
+ *                         type: integer
+ *                         example: 1
+ *                       nome:
+ *                         type: string
+ *                         example: Aline
+ *                       avatar:
+ *                         type: string
+ *                         nullable: true
+ *                         example: https://example.com/avatar.jpg
+ *                   nota:
+ *                     type: number
+ *                     example: 5
+ *       400:
+ *         description: ID inválido
+ *       500:
+ *         description: Erro ao buscar avaliações
+ */
+AvaliacoesRouter.get(
+  '/animes/:id/avaliacoes',
+  async (req: Request, res: Response) => {
+    try {
+      const id = parseId(req.params.id);
+
+      if (id === undefined) {
+        res.status(400).json({ message: 'ID inválido' });
+        return;
+      }
+
+      const notas = await prisma.notaAnimeUsuario.findMany({
+        where: { animeId: id },
+        include: {
+          usuario: {
+            select: {
+              id: true,
+              nome: true,
+              avatar: true,
+            },
+          },
+        },
+      });
+
+      res.status(200).json(
+        notas.map((n) => ({
+          usuario: n.usuario,
+          nota: n.nota,
+        }))
+      );
+    } catch (error) {
+      console.error('Erro ao buscar avaliações (anime)', error);
+
+      res.status(500).json({
+        message: 'Erro ao buscar avaliações',
+      });
     }
-
-    const notas = await prisma.notaAnimeUsuario.findMany({
-      where: { animeId: id },
-      include: { usuario: { select: { id: true, nome: true, avatar: true } } },
-    });
-
-    res.status(200).json(notas.map(n => ({ usuario: n.usuario, nota: n.nota })));
-  } catch (error) {
-    console.error('Erro ao buscar avaliações (anime)', error);
-    res.status(500).json({ message: 'Erro ao buscar avaliações' });
   }
-});
+);
 
-AvaliacoesRouter.get('/usuarios/:id/avaliacoes', authMiddleware, async (req: Request, res: Response) => {
-  try {
-    const id = parseId(req.params.id);
-    if (id === undefined) {
-      res.status(400).json({ message: 'ID inválido' });
-      return;
+/**
+ * @swagger
+ * /usuarios/{id}/avaliacoes:
+ *   get:
+ *     summary: Lista as avaliações realizadas por um usuário
+ *     description: Retorna as avaliações realizadas por um usuário. O próprio usuário ou um administrador pode acessar os dados.
+ *     tags:
+ *       - Avaliações
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: ID do usuário
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Avaliações do usuário retornadas com sucesso
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   anime:
+ *                     type: object
+ *                     properties:
+ *                       id:
+ *                         type: integer
+ *                         example: 1
+ *                       titulo:
+ *                         type: string
+ *                         example: Naruto
+ *                       capaUrl:
+ *                         type: string
+ *                         nullable: true
+ *                         example: /uploads/capas/naruto.jpg
+ *                   nota:
+ *                     type: number
+ *                     example: 5
+ *       400:
+ *         description: ID inválido
+ *       401:
+ *         description: Usuário não autenticado
+ *       403:
+ *         description: Acesso negado
+ *       500:
+ *         description: Erro ao buscar avaliações
+ */
+AvaliacoesRouter.get(
+  '/usuarios/:id/avaliacoes',
+  authMiddleware,
+  async (req: Request, res: Response) => {
+    try {
+      const id = parseId(req.params.id);
+
+      if (id === undefined) {
+        res.status(400).json({ message: 'ID inválido' });
+        return;
+      }
+
+      if (req.user?.id !== id && req.user?.role !== 'ADMIN') {
+        res.status(403).json({
+          message: 'Acesso negado',
+        });
+        return;
+      }
+
+      const notas = await prisma.notaAnimeUsuario.findMany({
+        where: {
+          usuarioId: id,
+        },
+        include: {
+          anime: {
+            select: {
+              id: true,
+              titulo: true,
+              capaUrl: true,
+            },
+          },
+        },
+      });
+
+      res.status(200).json(
+        notas.map((n) => ({
+          anime: n.anime,
+          nota: n.nota,
+        }))
+      );
+    } catch (error) {
+      console.error('Erro ao buscar avaliações (usuario)', error);
+
+      res.status(500).json({
+        message: 'Erro ao buscar avaliações',
+      });
     }
-
-    if (req.user?.id !== id && req.user?.role !== 'ADMIN') {
-      res.status(403).json({ message: 'Acesso negado' });
-      return;
-    }
-
-    const notas = await prisma.notaAnimeUsuario.findMany({ where: { usuarioId: id }, include: { anime: { select: { id: true, titulo: true, capaUrl: true } } } });
-
-    res.status(200).json(notas.map(n => ({ anime: n.anime, nota: n.nota })));
-  } catch (error) {
-    console.error('Erro ao buscar avaliações (usuario)', error);
-    res.status(500).json({ message: 'Erro ao buscar avaliações' });
   }
-});
+);
 
 export default AvaliacoesRouter;
