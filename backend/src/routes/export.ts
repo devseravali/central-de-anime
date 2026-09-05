@@ -12,7 +12,75 @@ function parseId(value: unknown): number | undefined {
   return Number.isNaN(n) ? undefined : n;
 }
 
-ExportRouter.get('/export/usuarios/:id',
+/**
+ * @swagger
+ * /export/usuarios/{id}:
+ *   get:
+ *     summary: Exporta os dados de um usuário
+ *     description: >
+ *       Retorna os dados públicos e de conta do usuário em formato JSON.
+ *       O próprio usuário pode acessar seus dados, enquanto administradores
+ *       podem exportar os dados de qualquer usuário.
+ *       Dados sensíveis, como senha e tokens de recuperação, não são retornados.
+ *     tags:
+ *       - Exportação
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: ID do usuário que será exportado
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Dados do usuário exportados com sucesso
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 usuario:
+ *                   type: object
+ *                   properties:
+ *                     id:
+ *                       type: integer
+ *                       example: 1
+ *                     nome:
+ *                       type: string
+ *                       example: Aline Seravali
+ *                     email:
+ *                       type: string
+ *                       format: email
+ *                       example: aline@example.com
+ *                     avatar:
+ *                       type: string
+ *                       nullable: true
+ *                       example: https://example.com/avatar.jpg
+ *                     status:
+ *                       type: string
+ *                       example: ATIVO
+ *                     criadoEm:
+ *                       type: string
+ *                       format: date-time
+ *                     atualizadoEm:
+ *                       type: string
+ *                       format: date-time
+ *       400:
+ *         description: ID inválido
+ *       401:
+ *         description: Token de autenticação ausente ou inválido
+ *       403:
+ *         description: Acesso negado. O usuário só pode exportar seus próprios dados, exceto administradores.
+ *       404:
+ *         description: Usuário não encontrado
+ *       500:
+ *         description: Erro interno do servidor
+ */
+ExportRouter.get(
+  '/export/usuarios/:id',
   authMiddleware,
   validationMiddleware({ params: idParamSchema }),
   async (req: Request, res: Response) => {
@@ -42,7 +110,7 @@ ExportRouter.get('/export/usuarios/:id',
           status: true,
           criadoEm: true,
           atualizadoEm: true,
-        }
+        },
       });
 
       if (!usuario) {
