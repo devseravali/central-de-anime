@@ -1,6 +1,8 @@
 import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
+import swaggerUi from 'swagger-ui-express';
+import { swaggerSpec } from './config/swagger.js';
 
 import { errorMiddleware } from './middlewares/errorMiddleware';
 import checkCriticalEnv from './config/envCheck';
@@ -23,12 +25,11 @@ import exportRoutes from './routes/export';
 import infraRoutes from './routes/infra';
 import webhooksRoutes from './routes/webhooks';
 
-// checar variáveis críticas antes de inicializar o app
 checkCriticalEnv();
 
 const app = express();
 
-app.use(helmet());
+app.use(helmet({ contentSecurityPolicy: false }));
 
 app.use(cors());
 
@@ -38,6 +39,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use((req, _res, next) => {
     try {
         let normalized = req.url;
+
         normalized = normalized.replace(/\s+$/g, '');
         normalized = normalized.replace(/(?:%20)+$/gi, '');
 
@@ -50,7 +52,6 @@ app.use((req, _res, next) => {
     next();
 });
 
-// request path logging removed (dev-only)
 app.use((req, _res, next) => next());
 
 app.get('/health', (_request, response) => {
@@ -58,6 +59,8 @@ app.get('/health', (_request, response) => {
         status: 'ok',
     });
 });
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use('/auth', authRoutes);
 app.use('/usuario', usuarioRoutes);
