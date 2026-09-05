@@ -1,0 +1,43 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente
+**/.env
+**/.env.*
+!**/.env.example
+
+# Arquivos locais de ambiente
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs e relatórios
+*.log
+**/report.xml
+
+# Testes e cobertura
+coverage/
+
+# Build
+dist/
+*.tsbuildinfo
+
+# Docker
+**/.dockerignore
+backend/.dockerignore
+
+# Código gerado
+backend/generated/
+
+# Agentes do GitHub/Copilot
+.github/agents/
+.github/copilot-instructions.md
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
