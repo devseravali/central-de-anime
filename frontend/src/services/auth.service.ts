@@ -27,19 +27,16 @@ export interface LogoutData {
 export const authService = {
   register: async (data: RegisterData) => {
     const response = await api.post('/auth/register', data);
-
     return response.data;
   },
 
   login: async (data: LoginData) => {
     const response = await api.post('/auth/login', data);
-
     return response.data;
   },
 
   refresh: async (data?: RefreshData) => {
     const response = await api.post('/auth/refresh', data);
-
     return response.data;
   },
 
@@ -47,7 +44,6 @@ export const authService = {
     const response = await api.post('/auth/forgot-password', {
       email,
     });
-
     return response.data;
   },
 
@@ -59,7 +55,6 @@ export const authService = {
 
   logout: async (data?: LogoutData) => {
     const response = await api.post('/auth/logout', data);
-
     return response.data;
   },
 };
