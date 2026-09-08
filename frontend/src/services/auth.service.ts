@@ -1,31 +1,65 @@
 import { api } from './api';
 
-export const register = async (email: string, password: string) => {
-    const response = await api.post('/auth/register', { email, password });
-    return response.data;
-};
+export interface RegisterData {
+  nome: string;
+  email: string;
+  senha: string;
+}
 
-export const login = async (email: string, password: string) => {
-    const response = await api.post('/auth/login', { email, password });
-    return response.data;
-};
+export interface LoginData {
+  email: string;
+  senha: string;
+}
 
-export const refresh = async () => {
-    const response = await api.post('/auth/refresh');
-    return response.data;
-};
+export interface RefreshData {
+  refreshToken?: string;
+}
 
-export const forgotPassword = async (email: string) => {
-    const response = await api.post('/auth/forgot-password', { email });
-    return response.data;
-};
+export interface ResetPasswordData {
+  token: string;
+  novaSenha: string;
+}
 
-export const resetPassword = async (token: string, newPassword: string) => {
-    const response = await api.post('/auth/reset-password', { token, newPassword });
-    return response.data;
-};
+export interface LogoutData {
+  refreshToken?: string;
+}
 
-export const logout = async () => {
-    const response = await api.post('/auth/logout');
+export const authService = {
+  register: async (data: RegisterData) => {
+    const response = await api.post('/auth/register', data);
+
     return response.data;
+  },
+
+  login: async (data: LoginData) => {
+    const response = await api.post('/auth/login', data);
+
+    return response.data;
+  },
+
+  refresh: async (data?: RefreshData) => {
+    const response = await api.post('/auth/refresh', data);
+
+    return response.data;
+  },
+
+  forgotPassword: async (email: string) => {
+    const response = await api.post('/auth/forgot-password', {
+      email,
+    });
+
+    return response.data;
+  },
+
+  resetPassword: async (data: ResetPasswordData) => {
+    const response = await api.post('/auth/reset-password', data);
+
+    return response.data;
+  },
+
+  logout: async (data?: LogoutData) => {
+    const response = await api.post('/auth/logout', data);
+
+    return response.data;
+  },
 };
