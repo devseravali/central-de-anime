@@ -1,7 +1,15 @@
-import type { HTMLAttributes } from 'react';
+import type { HTMLAttributes, ReactNode } from 'react';
 
 import { StyledCard } from './StyledCard';
 
-export const Card = (props: HTMLAttributes<HTMLDivElement>) => {
-    return <StyledCard {...props} />;
+interface CardProps extends HTMLAttributes<HTMLDivElement> {
+    children: ReactNode;
+}
+
+export const Card = ({ children, ...props }: CardProps) => {
+    return (
+        <StyledCard {...props}>
+            {children}
+        </StyledCard>
+    );
 };
