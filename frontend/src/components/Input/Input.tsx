@@ -1,7 +1,32 @@
-import type { InputHTMLAttributes } from 'react';
+import type { InputHTMLAttributes, ReactNode } from 'react';
 
-import { StyledInput } from './InputStyle';
+import { StyledInput, InputContainer, InputLabel, InputError } from './InputStyle';
 
-export const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {
-    return <StyledInput {...props} />;
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+    label?: string;
+    error?: string;
+    icon?: ReactNode;
+}
+
+export const Input = ({
+    label,
+    error,
+    icon,
+    ...props
+}: InputProps) => {
+    return (
+        <InputContainer>
+            {label && <InputLabel>{label}</InputLabel>}
+
+            <div>
+                {icon}
+                <StyledInput
+                    {...props}
+                    aria-invalid={Boolean(error)}
+                />
+            </div>
+
+            {error && <InputError>{error}</InputError>}
+        </InputContainer>
+    );
 };
