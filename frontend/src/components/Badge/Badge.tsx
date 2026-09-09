@@ -1,6 +1,7 @@
-import { StyledBadge } from './StyledBadge';
-import React from 'react';
+import type { HTMLAttributes } from 'react';
 
-export const Badge = (props: React.HTMLAttributes<HTMLDivElement>) => {
+import { StyledBadge } from './StyledBadge';
+
+export const Badge = (props: HTMLAttributes<HTMLDivElement>) => {
     return <StyledBadge {...props} />;
 };
