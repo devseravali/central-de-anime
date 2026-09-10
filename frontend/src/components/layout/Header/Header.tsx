@@ -1,4 +1,4 @@
-import { Input } from "../Input/Input";
+import { Input } from "../common/Input/Input";
 import {
   HeaderContainer,
   HeaderNav,
