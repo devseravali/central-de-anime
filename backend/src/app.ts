@@ -1,6 +1,8 @@
 import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './config/swagger.js';
 
@@ -28,13 +30,28 @@ import webhooksRoutes from './routes/webhooks';
 checkCriticalEnv();
 
 const app = express();
+const currentFilePath = fileURLToPath(import.meta.url);
+const currentDir = path.dirname(currentFilePath);
+const imagesDir = path.resolve(currentDir, '..', 'images');
 
-app.use(helmet({ contentSecurityPolicy: false }));
+app.use(
+    helmet({
+        contentSecurityPolicy: false,
+        crossOriginResourcePolicy: {
+            policy: 'cross-origin',
+        },
+    })
+);
 
 app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(
+    '/images',
+    express.static(imagesDir)
+);
 
 app.use((req, _res, next) => {
     try {
