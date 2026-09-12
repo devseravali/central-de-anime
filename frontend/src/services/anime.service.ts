@@ -1,23 +1,59 @@
 import { api } from './api';
+import type { AnimeData } from '../types/AnimeData';
 
-export interface AnimeData {
-    titulo: string;
-    tipo: string;
-    temporada: number;
-    ano: number;
-    quantidadeEpisodios: number;
-    franquiaId: number;
-    estudioId: number;
-    statusId: number;
-    estacaoId: number;
-    sinopse: string;
-    capaUrl: string | null;
+interface ListarAnimesParams {
+    page?: number;
+    perPage?: number;
+}
+
+export interface ListarAnimesResponse {
+    items: AnimeData[];
+    total: number;
+    page: number;
+    perPage: number;
 }
 
 export const animeService = {
-    listarAnimes: async () => {
-        const response = await api.get('/animes');
-        return response.data;
+    listarAnimes: async (
+        params: ListarAnimesParams = {}
+    ): Promise<ListarAnimesResponse> => {
+        const response = await api.get('/animes', {
+            params,
+        });
+        const payload = response.data;
+
+        if (Array.isArray(payload)) {
+            const page = params.page ?? 1;
+            const perPage = params.perPage ?? payload.length;
+
+            return {
+                items: payload,
+                total: payload.length,
+                page,
+                perPage,
+            };
+        }
+
+        return {
+            items: Array.isArray(payload?.items)
+                ? payload.items
+                : [],
+            total:
+                typeof payload?.total ===
+                'number'
+                    ? payload.total
+                    : 0,
+            page:
+                typeof payload?.page ===
+                'number'
+                    ? payload.page
+                    : params.page ?? 1,
+            perPage:
+                typeof payload?.perPage ===
+                'number'
+                    ? payload.perPage
+                    : params.perPage ?? 20,
+        };
     },
 
     buscarAnimes: async (query: string) => {
