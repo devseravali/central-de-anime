@@ -372,342 +372,475 @@
   },
   {
     "id": 54,
-    "nome_original": "Naruto Shippuden",
-    "nome_salvo": "Naruto Shippuden",
-    "caminho": "images/capas/naruto-shippuden-t2.jpg",
+    "nome_original": "Naruto Shippuden - Temporada 1",
+    "nome_salvo": "Naruto Shippuden - Season 1",
+    "caminho": "images/capas/naruto-shippuden-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
     "id": 55,
+    "nome_original": "Naruto Shippuden - Temporada 2",
+    "nome_salvo": "Naruto Shippuden - Season 2",
+    "caminho": "images/capas/naruto-shippuden-t2.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 56,
+    "nome_original": "Naruto Shippuden - Temporada 3",
+    "nome_salvo": "Naruto Shippuden - Season 3",
+    "caminho": "images/capas/naruto-shippuden-t3.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 57,
+    "nome_original": "Naruto Shippuden - Temporada 4",
+    "nome_salvo": "Naruto Shippuden - Season 4",
+    "caminho": "images/capas/naruto-shippuden-t4.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 58,
+    "nome_original": "Naruto Shippuden - Temporada 5",
+    "nome_salvo": "Naruto Shippuden - Season 5",
+    "caminho": "images/capas/naruto-shippuden-t5.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 59,
+    "nome_original": "Naruto Shippuden - Temporada 6",
+    "nome_salvo": "Naruto Shippuden - Season 6",
+    "caminho": "images/capas/naruto-shippuden-t6.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 60,
+    "nome_original": "Naruto Shippuden - Temporada 7",
+    "nome_salvo": "Naruto Shippuden - Season 7",
+    "caminho": "images/capas/naruto-shippuden-t7.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 61,
+    "nome_original": "Naruto Shippuden - Temporada 8",
+    "nome_salvo": "Naruto Shippuden - Season 8",
+    "caminho": "images/capas/naruto-shippuden-t8.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 62,
+    "nome_original": "Naruto Shippuden - Temporada 9",
+    "nome_salvo": "Naruto Shippuden - Season 9",
+    "caminho": "images/capas/naruto-shippuden-t9.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 63,
+    "nome_original": "Naruto Shippuden - Temporada 10",
+    "nome_salvo": "Naruto Shippuden - Season 10",
+    "caminho": "images/capas/naruto-shippuden-t10.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 64,
+    "nome_original": "Naruto Shippuden - Temporada 11",
+    "nome_salvo": "Naruto Shippuden - Season 11",
+    "caminho": "images/capas/naruto-shippuden-t11.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 65,
+    "nome_original": "Naruto Shippuden - Temporada 12",
+    "nome_salvo": "Naruto Shippuden - Season 12",
+    "caminho": "images/capas/naruto-shippuden-t12.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 66,
+    "nome_original": "Naruto Shippuden - Temporada 13",
+    "nome_salvo": "Naruto Shippuden - Season 13",
+    "caminho": "images/capas/naruto-shippuden-t13.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 67,
+    "nome_original": "Naruto Shippuden - Temporada 14",
+    "nome_salvo": "Naruto Shippuden - Season 14",
+    "caminho": "images/capas/naruto-shippuden-t14.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 68,
+    "nome_original": "Naruto Shippuden - Temporada 15",
+    "nome_salvo": "Naruto Shippuden - Season 15",
+    "caminho": "images/capas/naruto-shippuden-t15.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 69,
+    "nome_original": "Naruto Shippuden - Temporada 16",
+    "nome_salvo": "Naruto Shippuden - Season 16",
+    "caminho": "images/capas/naruto-shippuden-t16.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 70,
+    "nome_original": "Naruto Shippuden - Temporada 17",
+    "nome_salvo": "Naruto Shippuden - Season 17",
+    "caminho": "images/capas/naruto-shippuden-t17.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 71,
+    "nome_original": "Naruto Shippuden - Temporada 18",
+    "nome_salvo": "Naruto Shippuden - Season 18",
+    "caminho": "images/capas/naruto-shippuden-t18.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 72,
+    "nome_original": "Naruto Shippuden - Temporada 19",
+    "nome_salvo": "Naruto Shippuden - Season 19",
+    "caminho": "images/capas/naruto-shippuden-t19.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 73,
+    "nome_original": "Naruto Shippuden - Temporada 20",
+    "nome_salvo": "Naruto Shippuden - Season 20",
+    "caminho": "images/capas/naruto-shippuden-t20.jpg",
+    "mime_type": "image/jpeg"
+  },
+  {
+    "id": 74,
     "nome_original": "Bleach",
     "nome_salvo": "Bleach",
     "caminho": "images/capas/bleach-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 56,
+    "id": 75,
     "nome_original": "Bleach: Thousand-Year Blood War",
     "nome_salvo": "Bleach: Thousand-Year Blood War",
     "caminho": "images/capas/bleach-t2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 57,
+    "id": 76,
     "nome_original": "Bleach: Sennen Kessen-hen – Soukoku-tan",
     "nome_salvo": "Bleach: Sennen Kessen-hen – Soukoku-tan",
     "caminho": "images/capas/bleach-t3.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 58,
+    "id": 77,
     "nome_original": "Bleach: Sennen Kessen-hen - Kashin-tan",
     "nome_salvo": "Bleach: Sennen Kessen-hen - Kashin-tan",
     "caminho": "images/capas/bleach-t4.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 59,
+    "id": 78,
     "nome_original": "Haikyuu!!",
     "nome_salvo": "Haikyuu!!",
     "caminho": "images/capas/haikyuu-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 60,
+    "id": 79,
     "nome_original": "Haikyuu!! 2ª Temporada",
     "nome_salvo": "Haikyuu!! 2ª Temporada",
     "caminho": "images/capas/haikyuu-t2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 61,
+    "id": 80,
     "nome_original": "Haikyuu!!: Karasuno VS Shiratorizawa",
     "nome_salvo": "Haikyuu!!: Karasuno VS Shiratorizawa",
     "caminho": "images/capas/haikyuu-t3.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 62,
+    "id": 81,
     "nome_original": "Haikyuu!! TO THE TOP",
     "nome_salvo": "Haikyuu!! TO THE TOP",
     "caminho": "images/capas/haikyuu-t4-1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 63,
+    "id": 82,
     "nome_original": "Haikyuu!! TO THE TOP 2",
     "nome_salvo": "Haikyuu!! TO THE TOP 2",
     "caminho": "images/capas/haikyuu-t4-2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 64,
+    "id": 83,
     "nome_original": "Haikyuu!!: Gomi Suteba no Kessen",
     "nome_salvo": "Haikyuu!!: Gomi Suteba no Kessen",
     "caminho": "images/capas/haikyuu-filme-1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 65,
+    "id": 84,
     "nome_original": "Psycho Pass",
     "nome_salvo": "Psycho Pass",
     "caminho": "images/capas/psycho-pass-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 66,
+    "id": 85,
     "nome_original": "Psycho Pass 2",
     "nome_salvo": "Psycho Pass 2",
     "caminho": "images/capas/psycho-pass-t2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 67,
+    "id": 86,
     "nome_original": "Psycho Pass: O Movie",
     "nome_salvo": "Psycho Pass: O Movie",
     "caminho": "images/capas/psycho-pass-filme-1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 68,
+    "id": 87,
     "nome_original": "Psycho-Pass: Sinners of the System Case.1 Tsumi to Batsu",
     "nome_salvo": "Psycho-Pass: Sinners of the System Case.1 Tsumi to Batsu",
     "caminho": "images/capas/psycho-pass-filme-2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 69,
+    "id": 88,
     "nome_original": "Psycho-Pass: Sinners of the System Case.2 First Guardian",
     "nome_salvo": "Psycho-Pass: Sinners of the System Case.2 First Guardian",
     "caminho": "images/capas/psycho-pass-filme-3.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 70,
+    "id": 89,
     "nome_original": "Fate/Zero",
     "nome_salvo": "Fate/Zero",
     "caminho": "images/capas/fate-zero-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 71,
+    "id": 90,
     "nome_original": "Fate/Zero - Temporada 2",
     "nome_salvo": "Fate/Zero - Temporada 2",
     "caminho": "images/capas/fate-zero-t2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 72,
+    "id": 91,
     "nome_original": "Violet Evergarden",
     "nome_salvo": "Violet Evergarden",
     "caminho": "images/capas/violet-evergarden.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 73,
+    "id": 92,
     "nome_original": "Violet Evergarden: O Filme",
     "nome_salvo": "Violet Evergarden: O Filme",
     "caminho": "images/capas/violet-evergarden-filme-1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 74,
+    "id": 93,
     "nome_original": "Great Pretender",
     "nome_salvo": "Great Pretender",
     "caminho": "images/capas/great-pretender.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 75,
+    "id": 94,
     "nome_original": "No Game No Life",
     "nome_salvo": "No Game No Life",
     "caminho": "images/capas/no-game-no-life-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 76,
+    "id": 95,
     "nome_original": "Dororo",
     "nome_salvo": "Dororo",
     "caminho": "images/capas/dororo-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 77,
+    "id": 96,
     "nome_original": "Noragami",
     "nome_salvo": "Noragami",
     "caminho": "images/capas/noragami-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 78,
+    "id": 97,
     "nome_original": "Noragami Aragoto",
     "nome_salvo": "Noragami Aragoto",
     "caminho": "images/capas/noragami-t2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 79,
+    "id": 98,
     "nome_original": "Spy x Family",
     "nome_salvo": "Spy x Family",
     "caminho": "images/capas/spy-x-family-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 80,
+    "id": 99,
     "nome_original": "Spy x Family 2ª Temporada - Parte 1",
     "nome_salvo": "Spy x Family 2ª Temporada - Parte 1",
     "caminho": "images/capas/spy-x-family-t2-pt-1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 81,
+    "id": 100,
     "nome_original": "Spy x Family 2ª Temporada - Parte 2",
     "nome_salvo": "Spy x Family 2ª Temporada - Parte 2",
     "caminho": "images/capas/spy-x-family-t2-pt-2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 82,
+    "id": 101,
     "nome_original": "Spy x Family 3ª Temporada",
     "nome_salvo": "Spy x Family 3ª Temporada",
     "caminho": "images/capas/spy-x-family-t3.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 83,
+    "id": 102,
     "nome_original": "Spy x Family Code: White",
     "nome_salvo": "Spy x Family Code: White",
     "caminho": "images/capas/spy-x-family-code-white.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 84,
+    "id": 103,
     "nome_original": "Steins;Gate",
     "nome_salvo": "Steins;Gate",
     "caminho": "images/capas/steins-gate.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 85,
+    "id": 104,
     "nome_original": "Steins;Gate 0",
     "nome_salvo": "Steins;Gate 0",
     "caminho": "images/capas/steins-gate-zero.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 86,
+    "id": 105,
     "nome_original": "Steins;Gate: The Movie",
     "nome_salvo": "Steins;Gate: The Movie",
     "caminho": "images/capas/steins-gate-movie.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 87,
+    "id": 106,
     "nome_original": "Made in Abyss",
     "nome_salvo": "Made in Abyss",
     "caminho": "images/capas/made-in-abyss.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 88,
+    "id": 107,
     "nome_original": "Made in Abyss: Dawn of the Deep Soul",
     "nome_salvo": "Made in Abyss: Dawn of the Deep Soul",
     "caminho": "images/capas/made-in-abyss-dawn-of-the-deep-soul.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 89,
+    "id": 108,
     "nome_original": "Made in Abyss: Retsujitsu no Ougonkyou",
     "nome_salvo": "Made in Abyss: Retsujitsu no Ougonkyou",
     "caminho": "images/capas/made-in-abyss-the-retsujitsu-no-ougonkyou.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 90,
+    "id": 109,
     "nome_original": "Black Clover",
     "nome_salvo": "Black Clover",
     "caminho": "images/capas/black-clover.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 91,
+    "id": 110,
     "nome_original": "Black Clover: Sword of the Wizard King",
     "nome_salvo": "Black Clover: Sword of the Wizard King",
     "caminho": "images/capas/black-clover-sword-of-the-wizard-king.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 92,
+    "id": 111,
     "nome_original": "My Hero Academia",
     "nome_salvo": "My Hero Academia",
     "caminho": "images/capas/my-hero-academia-t1.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 93,
+    "id": 112,
     "nome_original": "My Hero Academia: 2ª temporada",
     "nome_salvo": "My Hero Academia: 2ª temporada",
     "caminho": "images/capas/my-hero-academia-t2.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 94,
+    "id": 113,
     "nome_original": "My Hero Academia: 3ª temporada",
     "nome_salvo": "My Hero Academia: 3ª temporada",
     "caminho": "images/capas/my-hero-academia-t3.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 95,
+    "id": 114,
     "nome_original": "My Hero Academia: 4ª temporada",
     "nome_salvo": "My Hero Academia: 4ª temporada",
     "caminho": "images/capas/my-hero-academia-t4.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 96,
+    "id": 115,
     "nome_original": "My Hero Academia: 5ª temporada",
     "nome_salvo": "My Hero Academia: 5ª temporada",
     "caminho": "images/capas/my-hero-academia-t5.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 97,
+    "id": 116,
     "nome_original": "My Hero Academia: 6ª temporada",
     "nome_salvo": "My Hero Academia: 6ª temporada",
     "caminho": "images/capas/my-hero-academia-t6.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 98,
+    "id": 117,
     "nome_original": "My Hero Academia: 7ª temporada",
     "nome_salvo": "My Hero Academia: 7ª temporada",
     "caminho": "images/capas/my-hero-academia-t7.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 99,
+    "id": 118,
     "nome_original": "My Hero Academia: Heroes Rising",
     "nome_salvo": "My Hero Academia: Heroes Rising",
     "caminho": "images/capas/my-hero-academia-heroes-rising.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 100,
+    "id": 119,
     "nome_original": "My Hero Academia: World Heroes' Mission",
     "nome_salvo": "My Hero Academia: World Heroes' Mission",
     "caminho": "images/capas/my-hero-academia-world-heroes-mission.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 101,
+    "id": 120,
     "nome_original": "My Hero Academia: Two Heroes",
     "nome_salvo": "My Hero Academia: Two Heroes",
     "caminho": "images/capas/my-hero-academia-two-heroes.jpg",
     "mime_type": "image/jpeg"
   },
   {
-    "id": 102,
+    "id": 121,
     "nome_original": "My Hero Academia: Youre Next",
     "nome_salvo": "My Hero Academia: Youre Next",
     "caminho": "images/capas/my-hero-academia-youre-next.jpg",
