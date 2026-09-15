@@ -128,6 +128,7 @@ export const LinkHerf = styled.a`
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.03);
+    font-weight: ${({ theme }) => theme.typography.headlineSmall.fontWeight};
     color: ${({ theme }) => theme.colors.primary};
   }
 `;
