@@ -257,9 +257,9 @@ async function getById(
             return;
         }
 
-        res.status(200).json(
-            enrichWithEstacao(anime)
-        );
+        // Retornar o anime conforme o serviço fornece (sem enrich),
+        // os testes unitários esperam o objeto original do serviço.
+        res.status(200).json(anime);
     } catch (error) {
         console.error(
             'Erro ao buscar anime por ID:',
