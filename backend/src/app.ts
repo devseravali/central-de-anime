@@ -26,6 +26,7 @@ import batchRoutes from './routes/batch';
 import exportRoutes from './routes/export';
 import infraRoutes from './routes/infra';
 import webhooksRoutes from './routes/webhooks';
+import estudiosRoutes from './routes/estudios';
 
 checkCriticalEnv();
 
@@ -96,6 +97,7 @@ app.use('/', batchRoutes);
 app.use('/', exportRoutes);
 app.use('/', infraRoutes);
 app.use('/', webhooksRoutes);
+app.use('/', estudiosRoutes);
 
 app.use((_req, res) => {
     res.status(404).json({
