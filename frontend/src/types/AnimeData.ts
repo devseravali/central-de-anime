@@ -5,10 +5,15 @@ export interface AnimeData {
   temporada: number;
   ano: number;
   quantidadeEpisodios: number;
-  franquiaId: number;
-  estudioId: number;
+  franquiaId?: number;
+  franquia?: string;
+  estudioId?: number;
+  estudio?: string;
   statusId: number;
-  estacaoId: number;
+  status?: string;
+  estacaoId?: number;
+  estacao?: string;
   sinopse: string;
   capaUrl: string;
+  generos?: string[];
 }
