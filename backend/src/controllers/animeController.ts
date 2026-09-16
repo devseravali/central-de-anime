@@ -1,7 +1,82 @@
 import type { Request, Response } from 'express';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import { animeService } from '../services/animeService';
 import { prisma } from '../config/prisma';
+
+type AnimeSeedItem = {
+    id?: number;
+    estacaoId?: number;
+};
+
+const estacaoNomePorId = new Map<number, string>([
+    [1, 'Primavera'],
+    [2, 'Verão'],
+    [3, 'Outono'],
+    [4, 'Inverno'],
+]);
+
+let seedByAnimeIdCache: Map<number, number> | null = null;
+
+const currentFilePath = fileURLToPath(import.meta.url);
+const currentDir = path.dirname(currentFilePath);
+const animeSeedPath = path.resolve(
+    currentDir,
+    '..',
+    '..',
+    'data',
+    'entidades',
+    'animes.json'
+);
+
+function loadSeedByAnimeId(): Map<number, number> {
+    if (seedByAnimeIdCache) {
+        return seedByAnimeIdCache;
+    }
+
+    try {
+        const raw = fs.readFileSync(animeSeedPath, 'utf-8');
+        const parsed = JSON.parse(raw) as AnimeSeedItem[];
+        const map = new Map<number, number>();
+
+        parsed.forEach((item) => {
+            if (
+                typeof item.id === 'number' &&
+                typeof item.estacaoId === 'number'
+            ) {
+                map.set(item.id, item.estacaoId);
+            }
+        });
+
+        seedByAnimeIdCache = map;
+        return map;
+    } catch {
+        seedByAnimeIdCache = new Map<number, number>();
+        return seedByAnimeIdCache;
+    }
+}
+
+function enrichWithEstacao<T extends { id?: number; estacaoId?: number }>(
+    anime: T
+): T & { estacaoId?: number; estacao?: string } {
+    let estacaoId = anime.estacaoId;
+
+    if (typeof estacaoId !== 'number' && typeof anime.id === 'number') {
+        const seedMap = loadSeedByAnimeId();
+        estacaoId = seedMap.get(anime.id);
+    }
+
+    return {
+        ...anime,
+        estacaoId,
+        estacao:
+            typeof estacaoId === 'number'
+                ? estacaoNomePorId.get(estacaoId)
+                : undefined,
+    };
+}
 
 function parseIntParam(
     value: unknown
@@ -59,7 +134,14 @@ async function list(
                     ),
             });
 
-        res.status(200).json(result);
+        const itemsComEstacao = result.items.map((item) =>
+            enrichWithEstacao(item)
+        );
+
+        res.status(200).json({
+            ...result,
+            items: itemsComEstacao,
+        });
     } catch (error) {
         console.error(
             'Erro ao listar animes:',
@@ -113,7 +195,14 @@ async function search(
                 page
             );
 
-        res.status(200).json(result);
+        const itemsComEstacao = result.items.map((item) =>
+            enrichWithEstacao(item)
+        );
+
+        res.status(200).json({
+            ...result,
+            items: itemsComEstacao,
+        });
     } catch (error) {
         console.error(
             'Erro ao buscar animes:',
@@ -168,7 +257,9 @@ async function getById(
             return;
         }
 
-        res.status(200).json(anime);
+        res.status(200).json(
+            enrichWithEstacao(anime)
+        );
     } catch (error) {
         console.error(
             'Erro ao buscar anime por ID:',
