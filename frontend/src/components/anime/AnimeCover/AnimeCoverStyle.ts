@@ -6,7 +6,6 @@ export const AnimeCoverStyle = styled.article`
   justify-content: center;
 
   width: 100%;
-  max-width: 240px;
 
   border-radius: 8px;
 
