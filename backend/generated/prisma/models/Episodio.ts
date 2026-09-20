@@ -273,7 +273,6 @@ export type EpisodioOrderByWithRelationInput = {
 
 export type EpisodioWhereUniqueInput = Prisma.AtLeast<{
   id?: number
-  temporadaId_numero?: Prisma.EpisodioTemporadaIdNumeroCompoundUniqueInput
   AND?: Prisma.EpisodioWhereInput | Prisma.EpisodioWhereInput[]
   OR?: Prisma.EpisodioWhereInput[]
   NOT?: Prisma.EpisodioWhereInput | Prisma.EpisodioWhereInput[]
@@ -287,7 +286,7 @@ export type EpisodioWhereUniqueInput = Prisma.AtLeast<{
   temporada?: Prisma.XOR<Prisma.TemporadaScalarRelationFilter, Prisma.TemporadaWhereInput>
   anime?: Prisma.XOR<Prisma.AnimeScalarRelationFilter, Prisma.AnimeWhereInput>
   watchProgress?: Prisma.WatchProgressListRelationFilter
-}, "id" | "temporadaId_numero">
+}, "id">
 
 export type EpisodioOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
@@ -403,11 +402,6 @@ export type EpisodioListRelationFilter = {
 
 export type EpisodioOrderByRelationAggregateInput = {
   _count?: Prisma.SortOrder
-}
-
-export type EpisodioTemporadaIdNumeroCompoundUniqueInput = {
-  temporadaId: number
-  numero: number
 }
 
 export type EpisodioCountOrderByAggregateInput = {
