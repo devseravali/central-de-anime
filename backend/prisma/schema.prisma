@@ -85,8 +85,6 @@ model Episodio {
   anime       Anime @relation(fields: [animeId], references: [id])
 
   watchProgress WatchProgress[]
-
-  @@unique([temporadaId, numero])
 }
 
 model Usuario {
