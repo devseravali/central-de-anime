@@ -376,6 +376,29 @@ AnimesRouter.get(
     episodioController.listByAnimeAndSeasonNumber
 );
 
+AnimesRouter.get(
+    '/:id/episodios',
+    (req, res) => {
+        const requestWithAnimeId = Object.create(req);
+
+        Object.defineProperty(
+            requestWithAnimeId,
+            'query',
+            {
+                value: {
+                    ...req.query,
+                    animeId: req.params.id,
+                },
+                configurable: true,
+                enumerable: true,
+                writable: true,
+            }
+        );
+
+        return episodioController.list(requestWithAnimeId, res);
+    }
+);
+
 /**
  * @swagger
  * /animes/{id}/personagens:
