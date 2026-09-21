@@ -4,6 +4,16 @@ import { episodioController } from '../controllers/episodioController';
 
 const EpisodiosRouter = Router();
 
+EpisodiosRouter.get(
+    '/animes/:id/episodios',
+    episodioController.list
+);
+
+EpisodiosRouter.get(
+    '/animes/:id/temporadas/:seasonNumber/episodios',
+    episodioController.listByAnimeAndSeasonNumber
+);
+
 /**
  * @swagger
  * /episodios:
