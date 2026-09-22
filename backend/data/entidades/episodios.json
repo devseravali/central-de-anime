@@ -7658,5 +7658,255 @@
         "animeId": 41,
         "imagemUrl": "../../images/episodios/mob-psycho-100/t3/ep12.jpg",
         "dataExibicao": "2022-12-22"
+    },
+    {
+        "id": 770,
+        "numero": 1,
+        "titulo": "O Mundo das Espadas",
+        "sinopse": "É o dia de lançamento de um dos jogos mais aguardados de todos os tempos. O jogador Kirito inicia sua jornada no mundo virtual de Sword Art Online.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep1.jpg",
+        "dataExibicao": "2012-07-08"
+    },
+    {
+        "id": 771,
+        "numero": 2,
+        "titulo": "O Beater",
+        "sinopse": "Um mês se passou desde que os jogadores ficaram presos no jogo. Cerca de 2000 pessoas morreram e o primeiro andar ainda não foi concluído.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep2.jpg",
+        "dataExibicao": "2012-07-15"
+    },
+    {
+        "id": 772,
+        "numero": 3,
+        "titulo": "A Rena do Nariz Vermelho",
+        "sinopse": "Kirito finalmente entra para uma guilda formada por amigos próximos. Tudo parecia perfeito até que um acidente trágico muda completamente sua vida.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep3.jpg",
+        "dataExibicao": "2012-07-22"
+    },
+    {
+        "id": 773,
+        "numero": 4,
+        "titulo": "O Espadachim Negro",
+        "sinopse": "Silica, conhecida como a Domadora de Dragões, perde seu grupo e seu companheiro Pina fica gravemente ferido. Antes que seja tarde, Kirito aparece para ajudá-la.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep4.jpg",
+        "dataExibicao": "2012-07-29"
+    },
+    {
+        "id": 774,
+        "numero": 5,
+        "titulo": "Assassinato na Área Segura",
+        "sinopse": "Um jogador é morto dentro de uma área segura, algo considerado impossível. Kirito e Asuna investigam como e por que isso aconteceu.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep5.jpg",
+        "dataExibicao": "2012-08-05"
+    },
+    {
+        "id": 775,
+        "numero": 6,
+        "titulo": "Vingador Ilusório",
+        "sinopse": "Kirito descobre como o assassinato aconteceu e agora precisa descobrir a verdadeira motivação por trás do crime.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep6.jpg",
+        "dataExibicao": "2012-08-12"
+    },
+    {
+        "id": 776,
+        "numero": 7,
+        "titulo": "A Temperatura do Coração",
+        "sinopse": "Uma viagem em busca de uma nova espada coloca Kirito diante de um dragão e dos próprios medos.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep7.jpg",
+        "dataExibicao": "2012-08-19"
+    },
+    {
+        "id": 777,
+        "numero": 8,
+        "titulo": "A Dança das Espadas em Preto e Branco",
+        "sinopse": "Após dois anos vivendo em SAO, muitos jogadores se acostumaram ao mundo virtual. Agora Kirito e Asuna podem ser a esperança da linha de frente.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep8.jpg",
+        "dataExibicao": "2012-08-26"
+    },
+    {
+        "id": 778,
+        "numero": 9,
+        "titulo": "O Demônio de Olhos Azuis",
+        "sinopse": "Para salvar jogadores e Asuna de um chefe poderoso, Kirito precisa revelar sua carta secreta.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep9.jpg",
+        "dataExibicao": "2012-09-02"
+    },
+    {
+        "id": 779,
+        "numero": 10,
+        "titulo": "Intenção Assassina Carmesim",
+        "sinopse": "Kirito aceita um duelo contra o líder da Brigada dos Cavaleiros de Sangue. Se vencer, Asuna poderá deixar a guilda.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep10.jpg",
+        "dataExibicao": "2012-09-09"
+    },
+    {
+        "id": 780,
+        "numero": 11,
+        "titulo": "A Garota do Orvalho da Manhã",
+        "sinopse": "O casal recém-casado aproveita um tempo longe da linha de frente, até que uma nova visitante os leva novamente ao início de tudo.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep11.jpg",
+        "dataExibicao": "2012-09-16"
+    },
+    {
+        "id": 781,
+        "numero": 12,
+        "titulo": "O Coração de Yui",
+        "sinopse": "Kirito e Asuna recebem um pedido de ajuda para salvar uma jogadora e sua guilda.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep12.jpg",
+        "dataExibicao": "2012-09-23"
+    },
+    {
+        "id": 782,
+        "numero": 13,
+        "titulo": "O Limite do Abismo do Inferno",
+        "sinopse": "Enquanto participa de um torneio de pesca, Kirito recebe um e-mail urgente do líder de sua guilda pedindo seu retorno.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep13.jpg",
+        "dataExibicao": "2012-09-30"
+    },
+    {
+        "id": 783,
+        "numero": 14,
+        "titulo": "O Fim do Mundo",
+        "sinopse": "A batalha final em Sword Art Online chega ao seu momento decisivo.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep14.jpg",
+        "dataExibicao": "2012-10-07"
+    },
+    {
+        "id": 784,
+        "numero": 15,
+        "titulo": "Retorno",
+        "sinopse": "Kazuto começa a se adaptar à vida fora do jogo, mas ainda não esqueceu Asuna. Durante uma visita ao hospital, ele conhece Sugou Nobuyuki.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep15.jpg",
+        "dataExibicao": "2012-10-14"
+    },
+    {
+        "id": 785,
+        "numero": 16,
+        "titulo": "Terra das Fadas",
+        "sinopse": "Um novo MMORPG permite que os jogadores voem. Kirito entra nesse mundo em busca de Asuna e encontra uma grande surpresa.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep16.jpg",
+        "dataExibicao": "2012-10-21"
+    },
+    {
+        "id": 786,
+        "numero": 17,
+        "titulo": "Rainha Cativa",
+        "sinopse": "Kirito aprende mais sobre o jogo através de Leafa e sobre o conflito entre as raças. Enquanto isso, Asuna descobre a verdade sobre seu papel no mundo das fadas.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep17.jpg",
+        "dataExibicao": "2012-10-28"
+    },
+    {
+        "id": 787,
+        "numero": 18,
+        "titulo": "Para a Árvore do Mundo",
+        "sinopse": "Leafa abandona seu grupo para se unir a Kirito. Durante a jornada, eles aprendem mais sobre as regras e regiões de Alfheim Online.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep18.jpg",
+        "dataExibicao": "2012-11-04"
+    },
+    {
+        "id": 788,
+        "numero": 19,
+        "titulo": "O Corredor de Lugru",
+        "sinopse": "Uma mensagem misteriosa enviada para Leafa alerta sobre um perigo. Kirito e seus aliados precisam descobrir o que está acontecendo.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep19.jpg",
+        "dataExibicao": "2012-11-11"
+    },
+    {
+        "id": 789,
+        "numero": 20,
+        "titulo": "General da Chama Ardente",
+        "sinopse": "Kirito e Leafa chegam ao encontro entre as raças. Para impedir uma guerra, Kirito precisa enfrentar o poderoso General Eugene.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep20.jpg",
+        "dataExibicao": "2012-11-18"
+    },
+    {
+        "id": 790,
+        "numero": 21,
+        "titulo": "A Verdade Sobre Alfheim",
+        "sinopse": "Enquanto Asuna continua tentando escapar, outra pessoa importante na vida de Kirito começa a entender seus próprios sentimentos.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep21.jpg",
+        "dataExibicao": "2012-11-25"
+    },
+    {
+        "id": 791,
+        "numero": 22,
+        "titulo": "Grande Missão",
+        "sinopse": "A determinação de Kirito para salvar Asuna o leva a enfrentar desafios quase impossíveis.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep22.jpg",
+        "dataExibicao": "2012-12-02"
+    },
+    {
+        "id": 792,
+        "numero": 23,
+        "titulo": "Laços",
+        "sinopse": "Mesmo com uma barreira entre Kirito e Suguha, ele continua determinado a salvar Asuna. Desta vez, ele não enfrentará o desafio sozinho.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep23.jpg",
+        "dataExibicao": "2012-12-09"
+    },
+    {
+        "id": 793,
+        "numero": 24,
+        "titulo": "Herói Dourado",
+        "sinopse": "Kirito, Asuna e Yui finalmente estão juntos novamente, mas os bloqueios que prendem Asuna parecem impossíveis de quebrar.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep24.jpg",
+        "dataExibicao": "2012-12-16"
+    },
+    {
+        "id": 794,
+        "numero": 25,
+        "titulo": "A Semente do Mundo",
+        "sinopse": "Kazuto Kirigaya já venceu a morte duas vezes, mas ainda existe uma última coisa que ele precisa fazer.",
+        "temporadaId": 1,
+        "animeId": 42,
+        "imagemUrl": "../../images/episodios/sword-art-online/t1/ep25.jpg",
+        "dataExibicao": "2012-12-23"
     }
 ]
