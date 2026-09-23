@@ -8388,5 +8388,235 @@
         "animeId": 44,
         "imagemUrl": "../../images/episodios/sword-art-online/t3/ep24.jpg",
         "dataExibicao": "2020-09-27"
+    },
+    {
+        "id": 843,
+        "numero": 1,
+        "titulo": "No Extremo Norte",
+        "sinopse": "Seis meses após a batalha contra Administrator, Alice vive em Rulid Village cuidando de Kirito, que permanece inconsciente. Ela relembra tudo que aconteceu e o mundo que ajudou a salvar.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep1.jpg",
+        "dataExibicao": "2019-10-13"
+    },
+    {
+        "id": 844,
+        "numero": 2,
+        "titulo": "Ataques",
+        "sinopse": "Rulid Village é atacada pelas forças do Dark Territory. Alice volta a empunhar sua espada para proteger sua família e aqueles que Kirito e Eugeo queriam proteger.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep2.jpg",
+        "dataExibicao": "2019-10-20"
+    },
+    {
+        "id": 845,
+        "numero": 3,
+        "titulo": "O Teste Final de Carga",
+        "sinopse": "O ataque à Ocean Turtle revela uma unidade secreta ligada ao governo americano. Gabriel Miller, antigo inimigo de Kirito e Sinon, entra em cena.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep3.jpg",
+        "dataExibicao": "2019-10-27"
+    },
+    {
+        "id": 846,
+        "numero": 4,
+        "titulo": "Território Sombrio",
+        "sinopse": "O comandante dos Cavaleiros Negros do Dark Territory busca uma possibilidade de paz, mas o retorno do Imperador Vecta muda tudo.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep4.jpg",
+        "dataExibicao": "2019-11-03"
+    },
+    {
+        "id": 847,
+        "numero": 5,
+        "titulo": "A Noite Antes da Batalha",
+        "sinopse": "Alice se junta ao exército do Império Humano. Com poucos Cavaleiros da Integridade disponíveis, a batalha contra um exército gigantesco se aproxima.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep5.jpg",
+        "dataExibicao": "2019-11-10"
+    },
+    {
+        "id": 848,
+        "numero": 6,
+        "titulo": "Batalha dos Cavaleiros",
+        "sinopse": "O Teste Final de Carga começa e o exército do Dark Territory avança após a queda do Portão Oriental.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep6.jpg",
+        "dataExibicao": "2019-11-17"
+    },
+    {
+        "id": 849,
+        "numero": 7,
+        "titulo": "O Estigma do Desqualificado",
+        "sinopse": "Renly Synthesis Twenty-Seven enfrenta sua primeira batalha, mas seu medo coloca a defesa humana em risco.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep7.jpg",
+        "dataExibicao": "2019-11-24"
+    },
+    {
+        "id": 850,
+        "numero": 8,
+        "titulo": "Sangue e Vida",
+        "sinopse": "Alice usa seu poder contra o exército inimigo e descobre que o objetivo de Vecta é capturar a Sacerdotisa da Luz.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep8.jpg",
+        "dataExibicao": "2019-12-01"
+    },
+    {
+        "id": 851,
+        "numero": 9,
+        "titulo": "Espada e Punho",
+        "sinopse": "Gabriel ordena a captura de Alice. Os pugilistas avançam e Sheyta Synthesis Twelve entra na batalha.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep9.jpg",
+        "dataExibicao": "2019-12-08"
+    },
+    {
+        "id": 852,
+        "numero": 10,
+        "titulo": "Stacia, a Deusa da Criação",
+        "sinopse": "Asuna entra no Mundo Inferior usando a conta de Stacia e reencontra Kirito, enquanto Alice chega ao local.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep10.jpg",
+        "dataExibicao": "2019-12-15"
+    },
+    {
+        "id": 853,
+        "numero": 11,
+        "titulo": "Escolha Sem Coração",
+        "sinopse": "Asuna cria um enorme abismo para impedir o avanço inimigo, enquanto uma nova ameaça surge no Mundo Inferior.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep11.jpg",
+        "dataExibicao": "2019-12-22"
+    },
+    {
+        "id": 854,
+        "numero": 12,
+        "titulo": "Raio de Luz",
+        "sinopse": "Jogadores americanos começam a entrar no Mundo Inferior e atacam todos os lados. A guerra chega ao seu ponto mais cruel.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep12.jpg",
+        "dataExibicao": "2019-12-29"
+    },
+    {
+        "id": 855,
+        "numero": 13,
+        "titulo": "A Guerra do Mundo Inferior",
+        "sinopse": "Sinon entra no Mundo Inferior usando a conta da superusuária Solus, a Deusa do Sol, e salva Asuna e os outros no último momento. Enquanto isso, Leafa também entra usando a conta de Terraria, a Deusa da Terra.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep13.jpg",
+        "dataExibicao": "2020-07-12"
+    },
+    {
+        "id": 856,
+        "numero": 14,
+        "titulo": "Fim da Eternidade",
+        "sinopse": "Mesmo com um exército pequeno, as forças do Império Humano e Asuna lutam bravamente contra a enorme quantidade de jogadores inimigos, mas começam a sofrer grandes perdas.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep14.jpg",
+        "dataExibicao": "2020-07-19"
+    },
+    {
+        "id": 857,
+        "numero": 15,
+        "titulo": "Instigação",
+        "sinopse": "Bercouli persegue Vecta, que sequestrou Alice. Após uma batalha intensa, ele usa sua técnica secreta e consegue derrotar o inimigo, mesmo sofrendo ferimentos graves.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep15.jpg",
+        "dataExibicao": "2020-07-26"
+    },
+    {
+        "id": 858,
+        "numero": 16,
+        "titulo": "Código 871",
+        "sinopse": "O traidor dentro da Rath é revelado como Yanai. Enquanto Higa tenta restaurar Kirito, Yanai tenta impedir a operação. No Mundo Inferior, Sinon enfrenta Gabriel novamente.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep16.jpg",
+        "dataExibicao": "2020-08-02"
+    },
+    {
+        "id": 859,
+        "numero": 17,
+        "titulo": "Príncipe do Inferno",
+        "sinopse": "Asuna e os outros são derrotados por Vassago e pelos jogadores inimigos. Ao encontrar Kirito em estado catatônico, Vassago tenta destruí-lo, mas uma presença inesperada aparece.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep17.jpg",
+        "dataExibicao": "2020-08-09"
+    },
+    {
+        "id": 860,
+        "numero": 18,
+        "titulo": "Memórias",
+        "sinopse": "Sinon consegue causar grandes danos em Gabriel, mas perde suas forças. Leafa também chega ao limite após enfrentar os inimigos. Enquanto isso, Asuna observa Kirito esperando por sua recuperação.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep18.jpg",
+        "dataExibicao": "2020-08-16"
+    },
+    {
+        "id": 861,
+        "numero": 19,
+        "titulo": "Despertar",
+        "sinopse": "Kirito finalmente desperta de seus pesadelos e retorna à batalha usando a Espada do Céu Noturno e a Espada Azul Quebrada contra Vassago.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep19.jpg",
+        "dataExibicao": "2020-08-23"
+    },
+    {
+        "id": 862,
+        "numero": 20,
+        "titulo": "A Espada do Céu Noturno",
+        "sinopse": "Alice e Asuna seguem para o Altar do Fim do Mundo enquanto Kirito enfrenta Gabriel. Ele precisa vencer antes que a fase de aceleração máxima comece.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep20.jpg",
+        "dataExibicao": "2020-08-30"
+    },
+    {
+        "id": 863,
+        "numero": 21,
+        "titulo": "Além do Tempo",
+        "sinopse": "A fase de aceleração máxima começa. Alice consegue sair do Mundo Inferior, mas Kirito não consegue retornar a tempo e fica preso no sistema.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep21.jpg",
+        "dataExibicao": "2020-09-06"
+    },
+    {
+        "id": 864,
+        "numero": 22,
+        "titulo": "Alice",
+        "sinopse": "O incidente do ataque à Rath chega ao fim. Rinko apresenta Alice ao mundo como uma verdadeira inteligência artificial geral.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep22.jpg",
+        "dataExibicao": "2020-09-13"
+    },
+    {
+        "id": 865,
+        "numero": 23,
+        "titulo": "Novo Mundo",
+        "sinopse": "Rinko informa Kazuto que Alice desapareceu. Ao correr para a filial da Rath, ele encontra uma grande surpresa esperando por ele na porta de sua casa.",
+        "temporadaId": 4,
+        "animeId": 45,
+        "imagemUrl": "../../images/episodios/sword-art-online/t4/ep23.jpg",
+        "dataExibicao": "2020-09-20"
     }
 ]
