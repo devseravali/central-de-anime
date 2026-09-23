@@ -8968,5 +8968,135 @@
         "animeId": 47,
         "imagemUrl": "../../images/episodios/horimiya/t1/ep13.jpg",
         "dataExibicao": "2021-04-04"
+    },
+    {
+        "id": 901,
+        "numero": 1,
+        "titulo": "Viagem Escolar",
+        "sinopse": "A turma embarca para uma viagem escolar a Kyoto. Enquanto todos aproveitam o passeio, Miyamura tenta esconder seus segredos com a ajuda de Hori.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep1.jpg",
+        "dataExibicao": "2023-07-01"
+    },
+    {
+        "id": 902,
+        "numero": 2,
+        "titulo": "Aula de Culinária",
+        "sinopse": "O festival esportivo se aproxima e alguns alunos enfrentam dificuldades. Enquanto isso, Sakura encara uma desastrosa aula de culinária com o conselho estudantil.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep2.jpg",
+        "dataExibicao": "2023-07-08"
+    },
+    {
+        "id": 903,
+        "numero": 3,
+        "titulo": "Festival Esportivo",
+        "sinopse": "Chega o grande dia do festival esportivo. Miyamura encontra uma nova motivação para aproveitar o último evento escolar ao lado de seus amigos.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep3.jpg",
+        "dataExibicao": "2023-07-15"
+    },
+    {
+        "id": 904,
+        "numero": 4,
+        "titulo": "O Kotatsu da Família Hori",
+        "sinopse": "Reunidos ao redor do kotatsu, amigos e familiares compartilham momentos divertidos, constrangedores e emocionantes.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep4.jpg",
+        "dataExibicao": "2023-07-22"
+    },
+    {
+        "id": 905,
+        "numero": 5,
+        "titulo": "Iura",
+        "sinopse": "Os irmãos Iura vivem situações inesperadas quando um garoto acaba interferindo em sua dinâmica familiar de maneiras curiosas.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep5.jpg",
+        "dataExibicao": "2023-07-29"
+    },
+    {
+        "id": 906,
+        "numero": 6,
+        "titulo": "Festa do Pijama",
+        "sinopse": "Miyamura, Iura e Ishikawa passam a noite na casa de Sengoku, onde conversas inesperadas revelam um pouco mais sobre Miyamura.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep6.jpg",
+        "dataExibicao": "2023-08-05"
+    },
+    {
+        "id": 907,
+        "numero": 7,
+        "titulo": "Amigos",
+        "sinopse": "Sakura encontra alguém com interesses parecidos, enquanto Sawada fortalece seus laços com as pessoas ao seu redor.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep7.jpg",
+        "dataExibicao": "2023-08-12"
+    },
+    {
+        "id": 908,
+        "numero": 8,
+        "titulo": "Yanagi-kun",
+        "sinopse": "Yanagi enfrenta suas dificuldades do dia a dia, mas conta com o apoio de seus amigos para superar cada desafio.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep8.jpg",
+        "dataExibicao": "2023-08-19"
+    },
+    {
+        "id": 909,
+        "numero": 9,
+        "titulo": "Professor",
+        "sinopse": "Os professores da Escola Katagiri mostram lados inusitados de suas personalidades em meio às situações do cotidiano escolar.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep9.jpg",
+        "dataExibicao": "2023-08-26"
+    },
+    {
+        "id": 910,
+        "numero": 10,
+        "titulo": "Ciúmes",
+        "sinopse": "Uma pequena discussão entre Hori e Miyamura faz com que Hori perceba a dificuldade de expressar seus verdadeiros sentimentos.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep10.jpg",
+        "dataExibicao": "2023-09-02"
+    },
+    {
+        "id": 911,
+        "numero": 11,
+        "titulo": "Chocolate",
+        "sinopse": "O Dia dos Namorados movimenta a escola, trazendo expectativas, declarações e o medo de corações partidos.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep11.jpg",
+        "dataExibicao": "2023-09-09"
+    },
+    {
+        "id": 912,
+        "numero": 12,
+        "titulo": "A Casa dos Hori",
+        "sinopse": "Entre momentos engraçados, discussões e reconciliações, a família Hori continua proporcionando cenas calorosas e divertidas.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep12.jpg",
+        "dataExibicao": "2023-09-16"
+    },
+    {
+        "id": 913,
+        "numero": 13,
+        "titulo": "Peça de Teatro",
+        "sinopse": "A turma se prepara para a peça escolar enquanto os últimos momentos da vida estudantil de Hori, Miyamura e seus amigos se aproximam.",
+        "temporadaId": 2,
+        "animeId": 48,
+        "imagemUrl": "../../images/episodios/horimiya/t2/ep13.jpg",
+        "dataExibicao": "2023-09-23"
     }
 ]
