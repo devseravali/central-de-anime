@@ -8148,5 +8148,245 @@
         "animeId": 43,
         "imagemUrl": "../../images/episodios/sword-art-online/t2/ep24.jpg",
         "dataExibicao": "2014-12-20"
+    },
+    {
+        "id": 819,
+        "numero": 1,
+        "titulo": "No Extremo Norte",
+        "sinopse": "Após a batalha contra Administrator, Kirito permanece inconsciente enquanto o Mundo Inferior entra em uma nova fase. Alice retorna para Rulid e decide proteger a vila, enquanto os inimigos do Dark Territory começam seus movimentos.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep1.jpg",
+        "dataExibicao": "2019-10-13"
+    },
+    {
+        "id": 820,
+        "numero": 2,
+        "titulo": "Batalha dos Cavaleiros",
+        "sinopse": "A guerra entre o Império Humano e o Dark Territory se aproxima. Alice e os Cavaleiros da Integridade se preparam para defender a fronteira enquanto as forças inimigas avançam.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep2.jpg",
+        "dataExibicao": "2019-10-20"
+    },
+    {
+        "id": 821,
+        "numero": 3,
+        "titulo": "A Batalha Contra o Exército Negro",
+        "sinopse": "As forças do Dark Territory iniciam seu ataque contra o Mundo Inferior. Os Cavaleiros da Integridade enfrentam uma batalha difícil enquanto tentam impedir a invasão.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep3.jpg",
+        "dataExibicao": "2019-10-27"
+    },
+    {
+        "id": 822,
+        "numero": 4,
+        "titulo": "O Poder da Criação",
+        "sinopse": "Alice percebe que a guerra está apenas começando e busca uma forma de proteger todos aqueles que dependem dela. Enquanto isso, novos jogadores entram no conflito.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep4.jpg",
+        "dataExibicao": "2019-11-03"
+    },
+    {
+        "id": 823,
+        "numero": 5,
+        "titulo": "Ascensão",
+        "sinopse": "Os guerreiros do Mundo Inferior enfrentam grandes perdas enquanto a batalha continua. As forças inimigas revelam novas estratégias para dominar o território humano.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep5.jpg",
+        "dataExibicao": "2019-11-10"
+    },
+    {
+        "id": 824,
+        "numero": 6,
+        "titulo": "Batalha dos Cavaleiros Negros",
+        "sinopse": "A guerra no Mundo Inferior se intensifica. Alice e os Cavaleiros da Integridade enfrentam o exército do Dark Territory enquanto novas ameaças surgem no campo de batalha.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep6.jpg",
+        "dataExibicao": "2019-11-17"
+    },
+    {
+        "id": 825,
+        "numero": 7,
+        "titulo": "A Batalha do Submundo",
+        "sinopse": "Os guerreiros humanos continuam resistindo ao ataque inimigo. Enquanto isso, Alice precisa lidar com o peso de ser a esperança do Império Humano.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep7.jpg",
+        "dataExibicao": "2019-11-24"
+    },
+    {
+        "id": 826,
+        "numero": 8,
+        "titulo": "Sangue e Vida",
+        "sinopse": "A batalha chega ao seu ponto crítico quando os dois lados sofrem grandes perdas. Os Cavaleiros da Integridade lutam para manter a linha de defesa.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep8.jpg",
+        "dataExibicao": "2019-12-01"
+    },
+    {
+        "id": 827,
+        "numero": 9,
+        "titulo": "Senhor Supremo",
+        "sinopse": "Os verdadeiros objetivos por trás da invasão começam a aparecer. Alice e seus aliados descobrem que a guerra envolve muito mais do que uma simples disputa territorial.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep9.jpg",
+        "dataExibicao": "2019-12-08"
+    },
+    {
+        "id": 828,
+        "numero": 10,
+        "titulo": "Código 871",
+        "sinopse": "No mundo real, novas informações sobre o Projeto Alicization são reveladas. Enquanto isso, no Mundo Inferior, a batalha continua sem descanso.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep10.jpg",
+        "dataExibicao": "2019-12-15"
+    },
+    {
+        "id": 829,
+        "numero": 11,
+        "titulo": "O Herói Perdido",
+        "sinopse": "Com Kirito ainda incapaz de lutar, seus amigos precisam seguir em frente sem o maior espadachim do Mundo Inferior.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep11.jpg",
+        "dataExibicao": "2019-12-22"
+    },
+    {
+        "id": 830,
+        "numero": 12,
+        "titulo": "Raio de Esperança",
+        "sinopse": "A batalha chega ao fim de uma etapa enquanto os sobreviventes enfrentam as consequências da guerra. Alice continua lutando para proteger o futuro do Mundo Inferior.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep12.jpg",
+        "dataExibicao": "2019-12-29"
+    },
+    {
+        "id": 831,
+        "numero": 13,
+        "titulo": "Raios de Luz",
+        "sinopse": "Após a pausa na guerra, Alice continua protegendo o Mundo Inferior enquanto Kirito permanece adormecido. No mundo real, Asuna e seus aliados descobrem que algo grave está acontecendo com o projeto Alicization.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep13.jpg",
+        "dataExibicao": "2020-07-12"
+    },
+    {
+        "id": 832,
+        "numero": 14,
+        "titulo": "O Cavaleiro Dourado",
+        "sinopse": "Alice se torna o principal alvo das forças inimigas por causa de sua importância estratégica. Enquanto isso, novos jogadores entram no Mundo Inferior para mudar o rumo da guerra.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep14.jpg",
+        "dataExibicao": "2020-07-19"
+    },
+    {
+        "id": 833,
+        "numero": 15,
+        "titulo": "Movimentos Misteriosos",
+        "sinopse": "As forças do Dark Territory avançam novamente. Os defensores do Mundo Inferior precisam encontrar uma maneira de sobreviver enquanto aguardam o retorno de Kirito.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep15.jpg",
+        "dataExibicao": "2020-07-26"
+    },
+    {
+        "id": 834,
+        "numero": 16,
+        "titulo": "Código do Mundo",
+        "sinopse": "O conflito atinge um novo nível quando segredos sobre o Mundo Inferior e o Projeto Alicization são revelados.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep16.jpg",
+        "dataExibicao": "2020-08-02"
+    },
+    {
+        "id": 835,
+        "numero": 17,
+        "titulo": "A Espada do Céu",
+        "sinopse": "Os guerreiros enfrentam batalhas decisivas enquanto Alice e seus companheiros lutam para impedir a destruição do Mundo Inferior.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep17.jpg",
+        "dataExibicao": "2020-08-09"
+    },
+    {
+        "id": 836,
+        "numero": 18,
+        "titulo": "Memórias",
+        "sinopse": "As lembranças de Kirito e seus amigos começam a despertar. O passado e o presente se encontram em meio à batalha final.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep18.jpg",
+        "dataExibicao": "2020-08-16"
+    },
+    {
+        "id": 837,
+        "numero": 19,
+        "titulo": "Código de Ataque",
+        "sinopse": "A batalha final no Mundo Inferior se aproxima. Os aliados de Kirito enfrentam seus maiores desafios enquanto as forças inimigas revelam todo o seu poder.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep19.jpg",
+        "dataExibicao": "2020-08-23"
+    },
+    {
+        "id": 838,
+        "numero": 20,
+        "titulo": "O Último Ataque",
+        "sinopse": "Com o destino do Mundo Inferior em jogo, os guerreiros restantes unem forças para enfrentar a ameaça definitiva e proteger tudo que construíram.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep20.jpg",
+        "dataExibicao": "2020-08-30"
+    },
+    {
+        "id": 839,
+        "numero": 21,
+        "titulo": "Além do Tempo",
+        "sinopse": "Novas revelações sobre o Mundo Inferior surgem enquanto Kirito começa a retornar ao campo de batalha. Seus amigos depositam nele a esperança de vencer.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep21.jpg",
+        "dataExibicao": "2020-09-06"
+    },
+    {
+        "id": 840,
+        "numero": 22,
+        "titulo": "Alice",
+        "sinopse": "Alice encara seu destino enquanto a batalha chega ao seu momento decisivo. As escolhas feitas no Mundo Inferior terão consequências para todos.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep22.jpg",
+        "dataExibicao": "2020-09-13"
+    },
+    {
+        "id": 841,
+        "numero": 23,
+        "titulo": "Novo Mundo",
+        "sinopse": "Kirito e seus companheiros enfrentam a última ameaça. O futuro do Mundo Inferior e de seus habitantes será decidido nesta batalha final.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep23.jpg",
+        "dataExibicao": "2020-09-20"
+    },
+    {
+        "id": 842,
+        "numero": 24,
+        "titulo": "Meu Herói",
+        "sinopse": "A guerra termina e os sobreviventes começam uma nova era. Kirito, Asuna e Alice descobrem o verdadeiro significado do Mundo Inferior e de suas jornadas.",
+        "temporadaId": 3,
+        "animeId": 44,
+        "imagemUrl": "../../images/episodios/sword-art-online/t3/ep24.jpg",
+        "dataExibicao": "2020-09-27"
     }
 ]
