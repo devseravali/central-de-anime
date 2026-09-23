@@ -9848,5 +9848,165 @@
         "animeId": 52,
         "imagemUrl": "../../images/episodios/one-piece/t1/ep61.jpg",
         "dataExibicao": "2001-03-07"
+    },
+    {
+        "id": 989,
+        "numero": 62,
+        "titulo": "A Primeira Linha de Defesa? A Baleia Gigante Laboon Aparece!",
+        "sinopse": "Ao entrar na Grand Line, o navio dos Chapéus de Palha é engolido por uma enorme baleia. Dentro dela, eles descobrem um lugar misterioso e percebem que não são os únicos que estão ali.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep62.jpg",
+        "dataExibicao": "2001-03-21"
+    },
+    {
+        "id": 990,
+        "numero": 63,
+        "titulo": "Uma Promessa Entre Homens! Luffy e a Baleia Juram se Encontrar Novamente!",
+        "sinopse": "Depois de conhecer a história de Laboon, a baleia gigante, Luffy encontra uma solução para seus problemas. Crocus, o guardião de Laboon, revela mais informações sobre a Grand Line e explica que bússolas comuns não funcionam naquele mar.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep63.jpg",
+        "dataExibicao": "2001-03-21"
+    },
+    {
+        "id": 991,
+        "numero": 64,
+        "titulo": "Uma Cidade que Recebe Piratas? Chegando em Whisky Peak!",
+        "sinopse": "Luffy e seus amigos chegam a Whisky Peak, uma cidade que adora piratas e prepara uma grande festa para receber os novos visitantes.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep64.jpg",
+        "dataExibicao": "2001-04-15"
+    },
+    {
+        "id": 992,
+        "numero": 65,
+        "titulo": "Explosão! O Estilo das Três Espadas! Zoro Contra a Baroque Works!",
+        "sinopse": "Zoro enfrenta centenas de membros da Baroque Works e descobre que existe muito mais por trás dessa organização misteriosa.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep65.jpg",
+        "dataExibicao": "2001-04-15"
+    },
+    {
+        "id": 993,
+        "numero": 66,
+        "titulo": "Batalha Total! Luffy Contra Zoro, Um Duelo Misterioso!",
+        "sinopse": "Sem perceber que Whisky Peak está cheia de caçadores de recompensa, Luffy entra em confronto com Zoro após acreditar que ele atacou os moradores da cidade.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep66.jpg",
+        "dataExibicao": "2001-04-22"
+    },
+    {
+        "id": 994,
+        "numero": 67,
+        "titulo": "Protejam a Princesa Vivi! Os Piratas do Luffy Partem!",
+        "sinopse": "O bando de Luffy se torna alvo de Crocodile, um dos Shichibukai, e decide ajudar a princesa Vivi. Eles também conhecem Miss All Sunday, a segunda pessoa mais importante da Baroque Works e parceira de Crocodile.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep67.jpg",
+        "dataExibicao": "2001-04-29"
+    },
+    {
+        "id": 995,
+        "numero": 68,
+        "titulo": "Esforce-se, Coby! As Lutas de Coby e Helmeppo na Marinha!",
+        "sinopse": "Enquanto Luffy e sua tripulação navegam pela Grand Line, Coby e Helmeppo continuam treinando na Marinha e acabam encontrando o Vice-Almirante Garp.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep68.jpg",
+        "dataExibicao": "2001-05-13"
+    },
+    {
+        "id": 996,
+        "numero": 69,
+        "titulo": "A Determinação de Coby e Helmeppo! O Amor Paternal do Vice-Almirante Garp!",
+        "sinopse": "O Vice-Almirante Garp decide treinar Coby e Helmeppo para que eles possam se tornar verdadeiros marinheiros.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep69.jpg",
+        "dataExibicao": "2001-05-20"
+    },
+    {
+        "id": 997,
+        "numero": 70,
+        "titulo": "Uma Ilha Antiga! A Sombra Escondida em Little Garden!",
+        "sinopse": "Luffy e seus amigos chegam a Little Garden, uma ilha pré-histórica cheia de dinossauros e gigantes.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep70.jpg",
+        "dataExibicao": "2001-05-27"
+    },
+    {
+        "id": 998,
+        "numero": 71,
+        "titulo": "Um Duelo Gigante! Os Gigantes Dorry e Broggy!",
+        "sinopse": "Nami e Usopp encontram o gigante Broggy, enquanto Luffy e Vivi conhecem Dorry, seu rival. Os Chapéus de Palha não imaginam que agentes da Baroque Works estão seguindo seus passos.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep71.jpg",
+        "dataExibicao": "2001-06-03"
+    },
+    {
+        "id": 999,
+        "numero": 72,
+        "titulo": "Luffy Fica Furioso! Um Truque Sujo Viola o Duelo Sagrado!",
+        "sinopse": "Dorry fica gravemente ferido após uma explosão causada por uma armadilha e culpa os Chapéus de Palha. Luffy fica revoltado com a covardia usada para destruir o duelo honrado dos gigantes.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep72.jpg",
+        "dataExibicao": "2001-06-17"
+    },
+    {
+        "id": 1000,
+        "numero": 73,
+        "titulo": "As Lágrimas Amargas de Broggy pela Vitória! A Conclusão de Elbaf!",
+        "sinopse": "Luffy tenta impedir que Dorry continue lutando mesmo ferido. Enquanto isso, os agentes da Baroque Works continuam interferindo no duelo dos gigantes.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep73.jpg",
+        "dataExibicao": "2001-06-24"
+    },
+    {
+        "id": 1001,
+        "numero": 74,
+        "titulo": "A Vela Demoníaca! Lágrimas de Arrependimento e de Raiva!",
+        "sinopse": "Depois de derrotar os gigantes, a Baroque Works inicia seu plano. Mr. 3 apresenta a Zoro, Nami, Vivi e Broggy uma terrível tortura, transformando-os em estátuas de cera.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep74.jpg",
+        "dataExibicao": "2001-07-15"
+    },
+    {
+        "id": 1002,
+        "numero": 75,
+        "titulo": "Uma Maldição Sobre Luffy! A Armadilha das Cores!",
+        "sinopse": "Luffy tenta salvar seus amigos, mas acaba acelerando o processo de transformação em cera. Para piorar, Miss Goldenweek revela seu poder assustador.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep75.jpg",
+        "dataExibicao": "2001-08-12"
+    },
+    {
+        "id": 1003,
+        "numero": 76,
+        "titulo": "Hora de Contra-Atacar! O Pensamento Rápido de Usopp e o Fire Star!",
+        "sinopse": "Usopp consegue libertar Luffy do controle de Miss Goldenweek. Com a ajuda de Karoo, eles salvam seus amigos e enfrentam Mr. 5 e Miss Valentine.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep76.jpg",
+        "dataExibicao": "2001-08-19"
+    },
+    {
+        "id": 1004,
+        "numero": 77,
+        "titulo": "Adeus Ilha dos Gigantes! Rumo a Alabasta!",
+        "sinopse": "Após conversar com Mr. 0 e encontrar os 'Unluckies', Sanji consegue um Eternal Pose para Alabasta. O bando deixa Little Garden e segue viagem rumo ao próximo destino.",
+        "temporadaId": 2,
+        "animeId": 53,
+        "imagemUrl": "../../images/episodios/one-piece/t2/ep77.jpg",
+        "dataExibicao": "2001-08-19"
     }
 ]
