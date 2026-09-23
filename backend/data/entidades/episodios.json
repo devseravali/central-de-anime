@@ -9238,5 +9238,615 @@
         "animeId": 51,
         "imagemUrl": "../../images/episodios/bocchi-the-rock/filme/ep2.jpg",
         "dataExibicao": "2024-08-09"
+    },
+    {
+        "id": 928,
+        "numero": 1,
+        "titulo": "Eu Sou Luffy! O Homem que Vai se Tornar o Rei dos Piratas!",
+        "sinopse": "Luffy parte em busca do lendário tesouro One Piece, derrota a pirata Alvida e faz amizade com Coby, que sonha em se tornar um fuzileiro naval.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep1.jpg",
+        "dataExibicao": "1999-10-20"
+    },
+    {
+        "id": 929,
+        "numero": 2,
+        "titulo": "Surge o Grande Espadachim! O Caçador de Piratas Roronoa Zoro",
+        "sinopse": "Luffy e Coby chegam à Base da Marinha e conhecem Roronoa Zoro, um espadachim preso pelo Capitão Morgan.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep2.jpg",
+        "dataExibicao": "1999-11-17"
+    },
+    {
+        "id": 930,
+        "numero": 3,
+        "titulo": "Morgan Contra Luffy! Quem é Essa Linda Garota?",
+        "sinopse": "Luffy enfrenta o Capitão Morgan, liberta Zoro e inicia oficialmente sua tripulação.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep3.jpg",
+        "dataExibicao": "1999-11-24"
+    },
+    {
+        "id": 931,
+        "numero": 4,
+        "titulo": "O Passado de Luffy! Surge o Ruivo Shanks",
+        "sinopse": "Luffy relembra sua infância com Shanks e o momento em que recebeu seu famoso chapéu de palha.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep4.jpg",
+        "dataExibicao": "1999-12-08"
+    },
+    {
+        "id": 932,
+        "numero": 5,
+        "titulo": "Medo, Poder Misterioso! O Pirata Palhaço Buggy!",
+        "sinopse": "Nami entrega Luffy ao pirata Buggy enquanto tenta roubar um mapa para a Grand Line.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep5.jpg",
+        "dataExibicao": "1999-12-15"
+    },
+    {
+        "id": 933,
+        "numero": 6,
+        "titulo": "Situação Desesperadora! Mohji, o Domador de Feras, Contra Luffy!",
+        "sinopse": "Luffy protege o cachorro Chouchou e enfrenta Mohji e seu leão Richie.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep6.jpg",
+        "dataExibicao": "1999-12-29"
+    },
+    {
+        "id": 934,
+        "numero": 7,
+        "titulo": "Grande Duelo! Zoro, o Espadachim, Contra Cabaji, o Acrobata!",
+        "sinopse": "Mesmo gravemente ferido, Zoro enfrenta Cabaji enquanto Luffy continua a luta contra Buggy.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep7.jpg",
+        "dataExibicao": "1999-12-29"
+    },
+    {
+        "id": 935,
+        "numero": 8,
+        "titulo": "Quem Vai Vencer? O Confronto dos Verdadeiros Poderes da Fruta do Diabo!",
+        "sinopse": "Luffy derrota Buggy em uma batalha decisiva e protege o chapéu deixado por Shanks.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep8.jpg",
+        "dataExibicao": "1999-12-29"
+    },
+    {
+        "id": 936,
+        "numero": 9,
+        "titulo": "O Mentiroso Honrado? Capitão Usopp!",
+        "sinopse": "Os Chapéus de Palha chegam à Vila Syrup e conhecem Usopp, um jovem conhecido por suas histórias exageradas.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep9.jpg",
+        "dataExibicao": "2000-01-12"
+    },
+    {
+        "id": 937,
+        "numero": 10,
+        "titulo": "O Homem Mais Estranho do Mundo! Jango, o Hipnotizador!",
+        "sinopse": "Usopp descobre um plano secreto para assassinar Kaya envolvendo o hipnotizador Jango.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep10.jpg",
+        "dataExibicao": "2000-01-19"
+    },
+    {
+        "id": 938,
+        "numero": 11,
+        "titulo": "Revelando a Conspiração! O Mordomo Pirata Capitão Kuro!",
+        "sinopse": "Usopp tenta avisar a vila sobre o plano de Capitão Kuro, mas ninguém acredita em suas palavras.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep11.jpg",
+        "dataExibicao": "2000-01-26"
+    },
+    {
+        "id": 939,
+        "numero": 12,
+        "titulo": "Confronto com os Piratas Gato Preto! A Grande Batalha na Colina!",
+        "sinopse": "Luffy, Zoro, Nami e Usopp enfrentam os Piratas Gato Preto para impedir o ataque à vila.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep12.jpg",
+        "dataExibicao": "2000-02-02"
+    },
+    {
+        "id": 940,
+        "numero": 13,
+        "titulo": "A Dupla Assustadora! Os Irmãos Nyaban Contra Zoro!",
+        "sinopse": "Os Irmãos Nyaban entram na batalha enquanto Luffy fica preso sob o mastro do navio inimigo.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep13.jpg",
+        "dataExibicao": "2000-02-09"
+    },
+    {
+        "id": 941,
+        "numero": 14,
+        "titulo": "Luffy Volta à Ação! A Resistência Desesperada da Senhorita Kaya!",
+        "sinopse": "Kaya tenta impedir Kuro enquanto Luffy finalmente retorna ao combate.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep14.jpg",
+        "dataExibicao": "2000-02-16"
+    },
+    {
+        "id": 942,
+        "numero": 15,
+        "titulo": "Derrotem Kuro! A Determinação de Usopp Entre Lágrimas!",
+        "sinopse": "O passado de Kuro é revelado enquanto Luffy inicia a batalha final contra o pirata.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep15.jpg",
+        "dataExibicao": "2000-02-23"
+    },
+    {
+        "id": 943,
+        "numero": 16,
+        "titulo": "Protejam Kaya! Os Grandes Esforços dos Piratas de Usopp!",
+        "sinopse": "Os jovens Piratas de Usopp fazem tudo para proteger Kaya das investidas de Jango.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep16.jpg",
+        "dataExibicao": "2000-03-01"
+    },
+    {
+        "id": 944,
+        "numero": 17,
+        "titulo": "Explosão de Raiva! Kuro Contra Luffy! O Desfecho da Batalha!",
+        "sinopse": "Luffy derrota Capitão Kuro e salva a Vila Syrup do ataque dos Piratas Gato Preto.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep17.jpg",
+        "dataExibicao": "2000-03-08"
+    },
+    {
+        "id": 945,
+        "numero": 18,
+        "titulo": "Você é uma Criatura Estranha! Gaimon e Seus Amigos Inusitados!",
+        "sinopse": "A tripulação encontra Gaimon, um homem preso dentro de um baú que protege um misterioso tesouro.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep18.jpg",
+        "dataExibicao": "2000-03-15"
+    },
+    {
+        "id": 946,
+        "numero": 19,
+        "titulo": "O Passado do Estilo de Três Espadas! A Promessa Entre Zoro e Kuina!",
+        "sinopse": "Um flashback revela a promessa feita por Zoro e Kuina de se tornarem os maiores espadachins do mundo.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep19.jpg",
+        "dataExibicao": "2000-03-22"
+    },
+    {
+        "id": 947,
+        "numero": 20,
+        "titulo": "O Famoso Cozinheiro! Sanji do Restaurante Flutuante Baratie!",
+        "sinopse": "Os Chapéus de Palha chegam ao restaurante Baratie e conhecem Sanji, um talentoso cozinheiro com grandes sonhos.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep20.jpg",
+        "dataExibicao": "2000-04-12"
+    },
+    {
+        "id": 948,
+        "numero": 21,
+        "titulo": "Cliente Indesejado! A Comida de Sanji e a Dívida de Gin",
+        "sinopse": "Sanji alimenta o pirata faminto Gin. Enquanto Luffy trabalha no Baratie para pagar os danos causados ao restaurante, tenta convencer Sanji a se juntar à sua tripulação.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep21.jpg",
+        "dataExibicao": "2000-04-12"
+    },
+    {
+        "id": 949,
+        "numero": 22,
+        "titulo": "A Frota Pirata Mais Forte! Comodoro Don Krieg",
+        "sinopse": "Gin retorna ao Baratie acompanhado de seu capitão, Don Krieg. Após recuperar as forças graças à comida de Sanji, Krieg trai os cozinheiros e inicia seu ataque.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep22.jpg",
+        "dataExibicao": "2000-04-26"
+    },
+    {
+        "id": 950,
+        "numero": 23,
+        "titulo": "Protejam o Baratie! O Grande Pirata Zeff Pé Vermelho",
+        "sinopse": "O passado de Zeff como um lendário pirata é revelado. Enquanto isso, Gin conta o que aconteceu com a frota de Krieg na Grand Line e Krieg tenta dominar o Baratie.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep23.jpg",
+        "dataExibicao": "2000-05-03"
+    },
+    {
+        "id": 951,
+        "numero": 24,
+        "titulo": "Olhos de Falcão Mihawk! O Grande Espadachim Zoro Cai no Mar",
+        "sinopse": "Enquanto Nami foge com o Going Merry, Zoro desafia Mihawk para um duelo decisivo em busca de realizar seu sonho de se tornar o maior espadachim do mundo.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep24.jpg",
+        "dataExibicao": "2000-05-10"
+    },
+    {
+        "id": 952,
+        "numero": 25,
+        "titulo": "A Técnica Mortal das Pernas! Sanji vs. Pearl Invencível",
+        "sinopse": "Após a derrota de Zoro, Krieg continua seu ataque. Sanji revela toda a sua habilidade em combate ao enfrentar Pearl, um dos guerreiros mais fortes da frota.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep25.jpg",
+        "dataExibicao": "2000-05-17"
+    },
+    {
+        "id": 953,
+        "numero": 26,
+        "titulo": "O Sonho de Zeff e Sanji! O Lendário All Blue",
+        "sinopse": "Com Zeff como refém, Sanji relembra o passado ao lado de seu mentor e revela o sonho que ambos compartilham: encontrar o lendário mar All Blue.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep26.jpg",
+        "dataExibicao": "2000-05-24"
+    },
+    {
+        "id": 954,
+        "numero": 27,
+        "titulo": "O Frio e Cruel Demônio! Gin, Comandante da Frota Pirata",
+        "sinopse": "Gin derrota Pearl e decide enfrentar Sanji pessoalmente. Enquanto isso, Luffy trava uma intensa batalha contra Don Krieg.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep27.jpg",
+        "dataExibicao": "2000-05-31"
+    },
+    {
+        "id": 955,
+        "numero": 28,
+        "titulo": "Eu Não Vou Morrer! Luffy vs. Don Krieg",
+        "sinopse": "Krieg utiliza armas ainda mais perigosas durante o combate. Mesmo diante de explosões e armadilhas, Luffy continua determinado a vencer.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep28.jpg",
+        "dataExibicao": "2000-06-07"
+    },
+    {
+        "id": 956,
+        "numero": 29,
+        "titulo": "O Fim da Batalha Mortal! A Lança da Determinação",
+        "sinopse": "Mesmo gravemente ferido pelos ataques de Don Krieg, Luffy se recusa a desistir e leva a luta ao seu emocionante desfecho.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep29.jpg",
+        "dataExibicao": "2000-06-21"
+    },
+    {
+        "id": 957,
+        "numero": 30,
+        "titulo": "Partindo! O Cozinheiro dos Mares Navega com Luffy",
+        "sinopse": "Após o fim da batalha, Sanji toma uma decisão que mudará sua vida e aceita seguir viagem ao lado de Luffy e sua tripulação.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep30.jpg",
+        "dataExibicao": "2000-06-28"
+    },
+    {
+        "id": 958,
+        "numero": 31,
+        "titulo": "O Pior Homem do East Blue! O Homem-Peixe Arlong",
+        "sinopse": "A tripulação parte em busca de Nami. Durante a viagem, Yosaku revela a terrível história de Arlong e dos Homens-Peixe.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep31.jpg",
+        "dataExibicao": "2000-07-12"
+    },
+    {
+        "id": 959,
+        "numero": 32,
+        "titulo": "A Bruxa da Vila Cocoyasi! A Mulher de Arlong",
+        "sinopse": "Zoro é capturado pelos Homens-Peixe e descobre-se que Nami faz parte da tripulação de Arlong. Usopp tenta proteger a vila de Cocoyasi.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep32.jpg",
+        "dataExibicao": "2000-07-19"
+    },
+    {
+        "id": 960,
+        "numero": 33,
+        "titulo": "Usopp Morreu?! Quando Luffy Vai Chegar?",
+        "sinopse": "Para provar sua lealdade, Nami aparenta matar Usopp. Enquanto isso, Luffy finalmente chega à ilha onde ela está.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep33.jpg",
+        "dataExibicao": "2000-07-19"
+    },
+    {
+        "id": 961,
+        "numero": 34,
+        "titulo": "Todos Reunidos! A Verdade Sobre Nami",
+        "sinopse": "Após descobrir que Usopp sobreviveu, Nojiko começa a contar a verdadeira história de Nami e explica o motivo de suas atitudes.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep34.jpg",
+        "dataExibicao": "2000-07-26"
+    },
+    {
+        "id": 962,
+        "numero": 35,
+        "titulo": "O Passado Escondido! A Guerreira Bellemere",
+        "sinopse": "Nojiko relembra a infância ao lado de Nami e da mãe adotiva Bellemere, mostrando como viviam felizes antes da chegada de Arlong.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep35.jpg",
+        "dataExibicao": "2000-08-02"
+    },
+    {
+        "id": 963,
+        "numero": 36,
+        "titulo": "Sobreviva! Bellemere e o Laço com Nami",
+        "sinopse": "O passado continua sendo revelado enquanto Bellemere enfrenta Arlong para proteger Nami e Nojiko.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep36.jpg",
+        "dataExibicao": "2000-08-09"
+    },
+    {
+        "id": 964,
+        "numero": 37,
+        "titulo": "Luffy Entra em Ação! A Promessa Quebrada",
+        "sinopse": "Após Arlong trair Nami e destruir seus sonhos, Luffy decide enfrentar os Homens-Peixe para libertar Cocoyasi.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep37.jpg",
+        "dataExibicao": "2000-08-16"
+    },
+    {
+        "id": 965,
+        "numero": 38,
+        "titulo": "Luffy em Grande Perigo! Homens-Peixe vs. Piratas do Chapéu de Palha",
+        "sinopse": "A batalha contra os Homens-Peixe começa enquanto os habitantes da vila acompanham o confronto decisivo.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep38.jpg",
+        "dataExibicao": "2000-08-23"
+    },
+    {
+        "id": 966,
+        "numero": 39,
+        "titulo": "Luffy Afundado! Zoro vs. Hatchan",
+        "sinopse": "Arlong prende Luffy debaixo d'água enquanto Zoro enfrenta Hatchan em uma batalha intensa de espadachins.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep39.jpg",
+        "dataExibicao": "2000-08-30"
+    },
+    {
+        "id": 967,
+        "numero": 40,
+        "titulo": "Guerreiros Orgulhosos! As Batalhas de Sanji e Usopp",
+        "sinopse": "Enquanto Sanji enfrenta Kuroobi embaixo d'água, Usopp precisa provar sua coragem contra um poderoso Homem-Peixe.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep40.jpg",
+        "dataExibicao": "2000-09-06"
+    },
+    {
+        "id": 968,
+        "numero": 41,
+        "titulo": "Luffy com Força Total! A Determinação de Nami e o Chapéu de Palha",
+        "sinopse": "Com Sanji e Zoro incapazes de continuar lutando, Luffy finalmente retorna ao combate para enfrentar Arlong. Enquanto isso, Nami reúne coragem para confrontar o homem que destruiu sua vida.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep41.jpg",
+        "dataExibicao": "2000-09-13"
+    },
+    {
+        "id": 969,
+        "numero": 42,
+        "titulo": "Explosão! O Violento Ataque de Arlong, o Homem-Peixe",
+        "sinopse": "Luffy inicia a batalha decisiva contra Arlong, enfrentando o terrível capitão dos Homens-Peixe em um confronto que definirá o futuro da Vila Cocoyashi.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep42.jpg",
+        "dataExibicao": "2000-09-27"
+    },
+    {
+        "id": 970,
+        "numero": 43,
+        "titulo": "O Fim do Império dos Homens-Peixe! Nami é Minha Amiga!",
+        "sinopse": "A batalha invade o Arlong Park e Luffy enfrenta toda a força de Arlong para libertar Nami e acabar com o domínio dos Homens-Peixe.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep43.jpg",
+        "dataExibicao": "2000-09-27"
+    },
+    {
+        "id": 971,
+        "numero": 44,
+        "titulo": "Partindo com um Sorriso! Adeus, Vila Cocoyashi",
+        "sinopse": "Com Arlong derrotado, a Vila Cocoyashi finalmente recupera sua liberdade. Nami se despede de seu passado e passa a integrar oficialmente os Piratas do Chapéu de Palha.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep44.jpg",
+        "dataExibicao": "2000-10-11"
+    },
+    {
+        "id": 972,
+        "numero": 45,
+        "titulo": "Recompensa! Luffy do Chapéu de Palha Fica Conhecido pelo Mundo",
+        "sinopse": "Após derrotar Buggy, Don Krieg e Arlong, Luffy recebe sua primeira grande recompensa e seu nome começa a se espalhar por todo o East Blue.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep45.jpg",
+        "dataExibicao": "2000-10-25"
+    },
+    {
+        "id": 973,
+        "numero": 46,
+        "titulo": "Persigam o Chapéu de Palha! A Grande Aventura do Pequeno Buggy",
+        "sinopse": "Separado de seu corpo após a derrota para Luffy, Buggy embarca em uma aventura inusitada para recuperar suas partes perdidas e reencontrar sua tripulação.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep46.jpg",
+        "dataExibicao": "2000-11-01"
+    },
+    {
+        "id": 974,
+        "numero": 47,
+        "titulo": "A Espera Acabou! O Retorno do Capitão Buggy",
+        "sinopse": "Enquanto os Piratas do Buggy disputam quem será o novo capitão, acontecimentos inesperados levam todos a uma situação extremamente perigosa.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep47.jpg",
+        "dataExibicao": "2000-11-08"
+    },
+    {
+        "id": 975,
+        "numero": 48,
+        "titulo": "A Cidade do Começo e do Fim! Chegada a Loguetown",
+        "sinopse": "Os Chapéus de Palha chegam a Loguetown, a cidade onde Gol D. Roger nasceu e foi executado, antes de seguirem rumo à Grand Line.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep48.jpg",
+        "dataExibicao": "2000-11-22"
+    },
+    {
+        "id": 976,
+        "numero": 49,
+        "titulo": "As Novas Espadas de Zoro e a Sargento Tashigi",
+        "sinopse": "Enquanto procura novas espadas, Zoro conhece Tashigi, uma oficial da Marinha cuja aparência lembra muito sua amiga de infância, Kuina.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep49.jpg",
+        "dataExibicao": "2000-11-22"
+    },
+    {
+        "id": 977,
+        "numero": 50,
+        "titulo": "Usopp contra Daddy, o Pai! Duelo ao Meio-Dia",
+        "sinopse": "Usopp aceita um duelo contra o famoso caçador de recompensas Daddy, colocando à prova sua coragem e sua habilidade como atirador.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep50.jpg",
+        "dataExibicao": "2000-11-29"
+    },
+    {
+        "id": 978,
+        "numero": 51,
+        "titulo": "A Grande Batalha Culinária! Sanji contra a Bela Chef",
+        "sinopse": "Sanji participa de uma competição culinária em Loguetown e enfrenta uma talentosa chef em busca de um raro ingrediente.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep51.jpg",
+        "dataExibicao": "2000-12-06"
+    },
+    {
+        "id": 979,
+        "numero": 52,
+        "titulo": "A Vingança de Buggy! O Homem que Sorriu na Plataforma de Execução",
+        "sinopse": "Buggy e Alvida capturam Luffy e tentam executá-lo exatamente no local onde Gol D. Roger perdeu a vida.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep52.jpg",
+        "dataExibicao": "2000-12-13"
+    },
+    {
+        "id": 980,
+        "numero": 53,
+        "titulo": "A Lenda Começa! Rumo à Grand Line",
+        "sinopse": "Após escapar milagrosamente da execução, os Chapéus de Palha deixam Loguetown e finalmente seguem viagem em direção à Grand Line.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep53.jpg",
+        "dataExibicao": "2001-01-10"
+    },
+    {
+        "id": 981,
+        "numero": 54,
+        "titulo": "O Presságio de uma Nova Aventura! Apis, a Garota Misteriosa",
+        "sinopse": "Durante uma tempestade, os Chapéus de Palha conhecem Apis, uma misteriosa garota perseguida pela Marinha.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep54.jpg",
+        "dataExibicao": "2001-01-17"
+    },
+    {
+        "id": 982,
+        "numero": 55,
+        "titulo": "A Criatura Milagrosa! O Segredo de Apis e a Ilha Lendária",
+        "sinopse": "Presos na Calm Belt, os Chapéus de Palha descobrem o segredo de Apis e de um lendário dragão milenar.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep55.jpg",
+        "dataExibicao": "2001-01-24"
+    },
+    {
+        "id": 983,
+        "numero": 56,
+        "titulo": "O Ataque de Eric! A Grande Fuga da Ilha dos Navios de Guerra",
+        "sinopse": "Enquanto tentam proteger o dragão e ajudar Apis, os Chapéus de Palha precisam escapar do ataque de Eric e da Marinha.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep56.jpg",
+        "dataExibicao": "2001-01-31"
+    },
+    {
+        "id": 984,
+        "numero": 57,
+        "titulo": "A Ilha Solitária em Alto-Mar! A Lendária Ilha Perdida",
+        "sinopse": "A busca pela lendária Ilha Perdida continua enquanto a tripulação enfrenta os perigos do Calm Belt.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep57.jpg",
+        "dataExibicao": "2001-02-07"
+    },
+    {
+        "id": 985,
+        "numero": 58,
+        "titulo": "Confronto nas Ruínas! Zoro contra Eric",
+        "sinopse": "Zoro enfrenta Eric em uma intensa batalha nas ruínas enquanto os demais tentam chegar à Ilha Perdida.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep58.jpg",
+        "dataExibicao": "2001-02-21"
+    },
+    {
+        "id": 986,
+        "numero": 59,
+        "titulo": "Luffy Cercado! A Estratégia Secreta do Comodoro Nelson",
+        "sinopse": "Nelson revela seu verdadeiro plano para capturar o lendário dragão, colocando toda a tripulação em perigo.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep59.jpg",
+        "dataExibicao": "2001-02-21"
+    },
+    {
+        "id": 987,
+        "numero": 60,
+        "titulo": "Voando pelos Céus! A Lenda dos Mil Anos Revive",
+        "sinopse": "Os dragões finalmente retornam ao seu lar enquanto Luffy derrota Nelson e encerra a aventura na Ilha Perdida.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep60.jpg",
+        "dataExibicao": "2001-02-28"
+    },
+    {
+        "id": 988,
+        "numero": 61,
+        "titulo": "Uma Batalha Furiosa! Atravessando a Red Line",
+        "sinopse": "Após deixar a Ilha dos Navios de Guerra, os Piratas do Chapéu de Palha finalmente seguem rumo à Grand Line, iniciando uma nova etapa de sua grande aventura.",
+        "temporadaId": 1,
+        "animeId": 52,
+        "imagemUrl": "../../images/episodios/one-piece/t1/ep61.jpg",
+        "dataExibicao": "2001-03-07"
     }
 ]
