@@ -10008,5 +10008,145 @@
         "animeId": 53,
         "imagemUrl": "../../images/episodios/one-piece/t2/ep77.jpg",
         "dataExibicao": "2001-08-19"
+    },
+    {
+        "id": 1005,
+        "numero": 78,
+        "titulo": "Nami Está Doente? Além da Neve que Cai Sobre o Mar!",
+        "sinopse": "Nami fica doente durante a viagem pela Grand Line, mas a tripulação não possui um médico para ajudá-la.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep78.jpg",
+        "dataExibicao": "2001-08-26"
+    },
+    {
+        "id": 1006,
+        "numero": 79,
+        "titulo": "Um Ataque! O Tirano de Lata e o Wapol de Metal!",
+        "sinopse": "Enquanto procuram um médico, os Chapéus de Palha encontram o pirata Wapol, que tenta atacá-los, mas acaba sendo derrotado por Luffy. Enquanto isso, Smoker descobre a conversa entre Mr. 0 e Sanji e decide seguir para Alabasta.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep79.jpg",
+        "dataExibicao": "2001-09-02"
+    },
+    {
+        "id": 1007,
+        "numero": 80,
+        "titulo": "Uma Ilha sem Médicos? Aventura em uma Terra sem Nome!",
+        "sinopse": "Os Chapéus de Palha conseguem conquistar a confiança dos moradores da ilha e são levados até uma vila. Luffy e Sanji precisam levar Nami até a única médica do local, que vive no topo de uma montanha.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep80.jpg",
+        "dataExibicao": "2001-09-09"
+    },
+    {
+        "id": 1008,
+        "numero": 81,
+        "titulo": "Você Está Feliz? A Médica Chamada Bruxa!",
+        "sinopse": "Enquanto Luffy e Sanji enfrentam os perigos da natureza, Wapol retorna à ilha. A verdadeira localização da médica é descoberta, e Usopp, Vivi e Dalton partem em busca dela.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep81.jpg",
+        "dataExibicao": "2001-09-16"
+    },
+    {
+        "id": 1009,
+        "numero": 82,
+        "titulo": "A Determinação de Dalton! O Exército de Wapol Chega à Ilha!",
+        "sinopse": "Dalton enfrenta Wapol, mas acaba sendo atacado por seus antigos companheiros. Uma avalanche interrompe a batalha e deixa Sanji ferido. Luffy precisa carregar Nami e Sanji enquanto sobe a montanha em busca do médico.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep82.jpg",
+        "dataExibicao": "2001-10-07"
+    },
+    {
+        "id": 1010,
+        "numero": 83,
+        "titulo": "A Ilha Onde a Neve Vive! Subindo as Montanhas Drum!",
+        "sinopse": "Os Lapahn ajudam Luffy a escapar de Wapol, permitindo que ele alcance o castelo onde vive a médica Kureha. Enquanto isso, Vivi, Usopp e Zoro enfrentam o exército do rei para salvar Dalton.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep83.jpg",
+        "dataExibicao": "2001-10-14"
+    },
+    {
+        "id": 1011,
+        "numero": 84,
+        "titulo": "A Rena de Nariz Azul! O Segredo de Chopper!",
+        "sinopse": "Nami pede para Chopper se juntar à tripulação, mas ele recusa. Kureha revela parte do passado de Chopper e Luffy fica ainda mais interessado em tê-lo como companheiro.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep84.jpg",
+        "dataExibicao": "2001-10-21"
+    },
+    {
+        "id": 1012,
+        "numero": 85,
+        "titulo": "O Sonho de um Excluído! O Médico Trapaceiro Hiriluk!",
+        "sinopse": "Doutora Kureha continua contando a história de Chopper e revela como o médico Hiriluk cuidou dele quando ele era rejeitado por todos.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep85.jpg",
+        "dataExibicao": "2001-10-28"
+    },
+    {
+        "id": 1013,
+        "numero": 86,
+        "titulo": "As Cerejeiras de Hiriluk e a Vontade que Continua Viva!",
+        "sinopse": "O passado de Chopper é revelado ainda mais, incluindo o destino do doutor Hiriluk e as crueldades cometidas por Wapol enquanto governava Drum.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep86.jpg",
+        "dataExibicao": "2001-11-04"
+    },
+    {
+        "id": 1014,
+        "numero": 87,
+        "titulo": "Derrotem a Tripulação de Wapol! O Poder da Fruta Baku Baku!",
+        "sinopse": "Wapol decide destruir a bandeira de Hiriluk e entra em batalha contra Sanji, Luffy e Chopper para alcançar seu objetivo.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep87.jpg",
+        "dataExibicao": "2001-11-11"
+    },
+    {
+        "id": 1015,
+        "numero": 88,
+        "titulo": "Fruta do Diabo do Tipo Zoan! A Transformação em Sete Formas de Chopper!",
+        "sinopse": "Chopper demonstra as habilidades das Rumble Balls durante a luta contra Chessmarimo. Dalton também é encontrado após sobreviver à avalanche.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep88.jpg",
+        "dataExibicao": "2001-11-18"
+    },
+    {
+        "id": 1016,
+        "numero": 89,
+        "titulo": "Quando o Governo do Reino Acaba! A Bandeira da Fé Continua Tremulando!",
+        "sinopse": "Depois de usar todas as suas estratégias no castelo, Wapol finalmente é derrotado por Luffy. Os moradores e os Chapéus de Palha começam a subir até o castelo.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep89.jpg",
+        "dataExibicao": "2001-11-25"
+    },
+    {
+        "id": 1017,
+        "numero": 90,
+        "titulo": "As Cerejeiras de Hiriluk! Um Milagre nas Montanhas Drum!",
+        "sinopse": "Depois de aceitar se juntar à tripulação, Chopper revela sua decisão para Kureha. Mesmo triste, ela entrega um presente de despedida aos Chapéus de Palha.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep90.jpg",
+        "dataExibicao": "2001-12-02"
+    },
+    {
+        "id": 1018,
+        "numero": 91,
+        "titulo": "Adeus Ilha Drum! Eu Vou Para o Mar!",
+        "sinopse": "Chopper finalmente se junta aos Piratas do Chapéu de Palha enquanto a tripulação continua sua viagem rumo à terra natal de Vivi, Alabasta.",
+        "temporadaId": 3,
+        "animeId": 54,
+        "imagemUrl": "../../images/episodios/one-piece/t3/ep91.jpg",
+        "dataExibicao": "2001-12-09"
     }
 ]
