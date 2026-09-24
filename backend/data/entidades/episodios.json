@@ -10668,5 +10668,525 @@
         "animeId": 56,
         "imagemUrl": "../../images/episodios/one-piece/t5/ep143.jpg",
         "dataExibicao": "2003-02-02"
+    },
+    {
+        "id": 1071,
+        "numero": 144,
+        "titulo": "Monstros Aparecem! Não Mexa com os Piratas do Barba Branca!",
+        "sinopse": "Os Chapéus de Palha decidem ir para a ilha Jaya em busca de informações sobre Skypiea. Enquanto isso, Ace aparece no navio de Buggy, que impede seus homens de atacá-lo por medo da vingança de Barba Branca.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep144.jpg",
+        "dataExibicao": "2003-02-16"
+    },
+    {
+        "id": 1072,
+        "numero": 145,
+        "titulo": "Pare de Sonhar! Mock Town, a Cidade da Ridicularização!",
+        "sinopse": "Jaya é uma cidade cheia de piratas famosos que vivem brigando. Luffy e Zoro encontram Bellamy, o Hiena, que zomba dos sonhos deles e acaba os derrotando.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep145.jpg",
+        "dataExibicao": "2003-02-23"
+    },
+    {
+        "id": 1073,
+        "numero": 146,
+        "titulo": "Piratas Distintos! Um Homem que Fala de Sonhos e o Rei da Busca Submarina!",
+        "sinopse": "Após se recusarem a lutar contra Bellamy, Luffy, Zoro e Nami encontram um homem que ama tortas de cereja e depois enfrentam Shoujou, irmão de Masira.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep146.jpg",
+        "dataExibicao": "2003-03-09"
+    },
+    {
+        "id": 1074,
+        "numero": 147,
+        "titulo": "Família Lendária! Noland, o Mentiroso!",
+        "sinopse": "Os Chapéus de Palha encontram Mont Blanc Cricket, descendente de Noland, o homem conhecido como mentiroso por falar sobre uma cidade de ouro em Jaya.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep147.jpg",
+        "dataExibicao": "2003-03-16"
+    },
+    {
+        "id": 1075,
+        "numero": 148,
+        "titulo": "Rumo às Nuvens! Capturem o Pássaro do Sul!",
+        "sinopse": "Cricket explica que o caminho para Skypiea depende da Corrente de Jato Ascendente. Para encontrá-la, eles precisam capturar um Pássaro do Sul.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep148.jpg",
+        "dataExibicao": "2003-03-23"
+    },
+    {
+        "id": 1076,
+        "numero": 149,
+        "titulo": "Os Sonhos Não Se Tornam Realidade?! Bellamy Contra a Aliança Saruyama!",
+        "sinopse": "Enquanto os Chapéus de Palha procuram o Pássaro do Sul, Bellamy invade a casa de Cricket e rouba seus tesouros. Luffy decide voltar para Mock Town.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep149.jpg",
+        "dataExibicao": "2003-04-13"
+    },
+    {
+        "id": 1077,
+        "numero": 150,
+        "titulo": "Homem de 100 Milhões! O Maior Poder do Mundo e o Pirata Barba Negra!",
+        "sinopse": "Luffy derrota Bellamy com apenas um golpe. Enquanto isso, o Governo Mundial se preocupa com novos poderes e Barba Negra é indicado para substituir Crocodile como Shichibukai.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep150.jpg",
+        "dataExibicao": "2003-04-20"
+    },
+    {
+        "id": 1078,
+        "numero": 151,
+        "titulo": "Subam aos Céus! Montem na Corrente de Jato Ascendente!",
+        "sinopse": "O Going Merry recebe melhorias de Masira e Shoujou e os Chapéus de Palha usam a Corrente de Jato Ascendente para chegar a Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep151.jpg",
+        "dataExibicao": "2003-04-27"
+    },
+    {
+        "id": 1079,
+        "numero": 152,
+        "titulo": "Naveguem pelo Mar Branco! O Cavaleiro do Céu e o Portão das Nuvens!",
+        "sinopse": "Os Chapéus de Palha chegam ao oceano acima das nuvens e encontram o Cavaleiro do Céu, que os ajuda a atravessar o portão para Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep152.jpg",
+        "dataExibicao": "2003-05-04"
+    },
+    {
+        "id": 1080,
+        "numero": 153,
+        "titulo": "Terra dos Deuses, Skypiea! Anjos na Praia das Nuvens!",
+        "sinopse": "A tripulação chega a Skypiea e conhece Conis e seu pai, que explicam como funciona a vida na ilha do céu e os misteriosos Dials.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep153.jpg",
+        "dataExibicao": "2003-05-11"
+    },
+    {
+        "id": 1081,
+        "numero": 154,
+        "titulo": "O Solo Sagrado Proibido! A Ilha Onde Deus Vive e o Julgamento Celestial!",
+        "sinopse": "Nami descobre os perigos de entrar na floresta proibida. Enquanto isso, os Chapéus de Palha enfrentam a força policial de Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep154.jpg",
+        "dataExibicao": "2003-05-18"
+    },
+    {
+        "id": 1082,
+        "numero": 155,
+        "titulo": "Já Somos Criminosos?! O Guardião da Lei de Skypiea!",
+        "sinopse": "Os Chapéus de Palha entram em conflito com os Beretas Brancas, a força responsável pela justiça em Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep155.jpg",
+        "dataExibicao": "2003-06-08"
+    },
+    {
+        "id": 1083,
+        "numero": 156,
+        "titulo": "É Possível Escapar?! O Desafio de Deus Começa!",
+        "sinopse": "Durante a tentativa de fuga da ilha do céu, Robin, Chopper, Nami e Zoro acabam presos pelo Deus Enel.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep156.jpg",
+        "dataExibicao": "2003-06-15"
+    },
+    {
+        "id": 1084,
+        "numero": 157,
+        "titulo": "Uma Armadilha na Rua Adorável! O Todo-Poderoso Eneru!",
+        "sinopse": "Conis guia Luffy, Usopp e Sanji até um barco para chegar ao Upper Yard, mas revela que tudo era uma armadilha e quase é atingida pelo Julgamento Celestial de Eneru.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep157.jpg",
+        "dataExibicao": "2003-06-22"
+    },
+    {
+        "id": 1085,
+        "numero": 158,
+        "titulo": "Avante, Pequeno Corvo! Para o Altar do Sacrifício!",
+        "sinopse": "Luffy, Usopp e Sanji chegam ao Upper Yard e descobrem que o caminho está cheio de armadilhas. Enquanto isso, Robin, Zoro e Nami exploram a ilha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep158.jpg",
+        "dataExibicao": "2003-07-06"
+    },
+    {
+        "id": 1086,
+        "numero": 159,
+        "titulo": "10% de Chance de Sobrevivência! Satori, o Mestre do Mantra!",
+        "sinopse": "Luffy, Sanji e Usopp enfrentam Satori, um sacerdote que utiliza o poderoso Mantra para prever seus movimentos.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep159.jpg",
+        "dataExibicao": "2003-07-13"
+    },
+    {
+        "id": 1087,
+        "numero": 160,
+        "titulo": "O Desafio das Esferas! Luta Desesperada na Floresta Perdida!",
+        "sinopse": "Luffy, Sanji e Usopp continuam enfrentando Satori no desafio das esferas, mas o poder do Mantra torna a batalha extremamente difícil.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep160.jpg",
+        "dataExibicao": "2003-07-20"
+    },
+    {
+        "id": 1088,
+        "numero": 161,
+        "titulo": "Chopper em Perigo! O Antigo Deus Contra o Sacerdote Shura!",
+        "sinopse": "Chopper enfrenta o sacerdote Shura, que começa a destruir o Going Merry. Gan Fall tenta impedir o ataque.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep161.jpg",
+        "dataExibicao": "2003-08-03"
+    },
+    {
+        "id": 1089,
+        "numero": 162,
+        "titulo": "Mistério Profundo! O Desafio das Cordas e o Desafio do Amor?!",
+        "sinopse": "Gan Fall enfrenta Shura e perde a batalha. Enquanto isso, Luffy e Sanji finalmente conseguem derrotar Satori.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep162.jpg",
+        "dataExibicao": "2003-08-10"
+    },
+    {
+        "id": 1090,
+        "numero": 163,
+        "titulo": "Acenda o Fogo de Shandora! O Guerreiro Wyper!",
+        "sinopse": "Chopper é salvo pelos pássaros do sul. Robin, Zoro e Nami descobrem que o Upper Yard era originalmente parte de Jaya.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep163.jpg",
+        "dataExibicao": "2003-08-17"
+    },
+    {
+        "id": 1091,
+        "numero": 164,
+        "titulo": "Jaya, a Cidade de Ouro no Céu! Rumo ao Santuário de Deus!",
+        "sinopse": "Os guerreiros Shandia iniciam um ataque ao Upper Yard. A tripulação se reúne novamente e planeja encontrar o ouro da ilha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep164.jpg",
+        "dataExibicao": "2003-08-24"
+    },
+    {
+        "id": 1092,
+        "numero": 165,
+        "titulo": "Festival na Noite Antes da Caçada ao Ouro! Sentimentos por Vearth!",
+        "sinopse": "Após fazer amizade com uma matilha de lobos, Gan Fall revela mais detalhes sobre a história do Upper Yard.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep165.jpg",
+        "dataExibicao": "2003-09-07"
+    },
+    {
+        "id": 1093,
+        "numero": 166,
+        "titulo": "A Entrada do Deus Eneru! Adeus aos Sobreviventes!",
+        "sinopse": "Eneru libera os sacerdotes e revela seus planos. Enquanto isso, Usopp percebe que alguém consertou o Going Merry.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep166.jpg",
+        "dataExibicao": "2003-09-21"
+    },
+    {
+        "id": 1094,
+        "numero": 167,
+        "titulo": "Uma Cobra Gigante Mostra Suas Presas! O Jogo de Sobrevivência Começa!",
+        "sinopse": "Uma enorme cobra separa Luffy, Robin, Chopper e Zoro enquanto eles tentam chegar às ruínas.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep167.jpg",
+        "dataExibicao": "2003-10-12"
+    },
+    {
+        "id": 1095,
+        "numero": 168,
+        "titulo": "O Rejeitado Mortal! A Determinação do Demônio da Guerra Wyper!",
+        "sinopse": "Wyper derrota Shura e revela seu objetivo aos Shandia. Eneru anuncia quantas pessoas sobreviverão ao seu plano.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep168.jpg",
+        "dataExibicao": "2003-10-19"
+    },
+    {
+        "id": 1096,
+        "numero": 169,
+        "titulo": "Batalha Feroz no Ar! Pirata Zoro Contra o Guerreiro Braham!",
+        "sinopse": "Zoro enfrenta Braham e vence utilizando sua técnica de uma espada, o Canhão de 36 Libras.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep169.jpg",
+        "dataExibicao": "2003-10-19"
+    },
+    {
+        "id": 1097,
+        "numero": 170,
+        "titulo": "O Rugido do Bazuca Ardente!! Luffy Contra o Demônio da Guerra Wyper!",
+        "sinopse": "Luffy enfrenta Wyper e acaba caindo nas ruínas subterrâneas. Eneru aparece no Going Merry e derrota Usopp e Sanji.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep170.jpg",
+        "dataExibicao": "2003-10-26"
+    },
+    {
+        "id": 1098,
+        "numero": 171,
+        "titulo": "O Desafio do Pântano! Chopper Contra o Sacerdote Gedatsu!",
+        "sinopse": "Chopper enfrenta Gedatsu e consegue derrotá-lo. Enquanto isso, Conis e Pagaya ajudam Aisa a chegar ao Upper Yard.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep171.jpg",
+        "dataExibicao": "2003-11-02"
+    },
+    {
+        "id": 1099,
+        "numero": 172,
+        "titulo": "Poderes Invencíveis! A Verdadeira Forma de Eneru é Revelada!",
+        "sinopse": "Eneru derrota vários membros dos Shandia e demonstra o verdadeiro poder de sua fruta do diabo.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep172.jpg",
+        "dataExibicao": "2003-11-09"
+    },
+    {
+        "id": 1100,
+        "numero": 173,
+        "titulo": "Uma Cidade Misteriosa! As Grandes Ruínas de Shandora!",
+        "sinopse": "Robin explora antigas ruínas e encontra Yama, o chefe dos guerreiros de Eneru.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep173.jpg",
+        "dataExibicao": "2003-11-16"
+    },
+    {
+        "id": 1101,
+        "numero": 174,
+        "titulo": "0% de Sobrevivência! Chopper Contra Ohm, o Sacerdote da Espada!",
+        "sinopse": "O sacerdote Ohm aparece e começa uma batalha contra os sobreviventes do Upper Yard.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep174.jpg",
+        "dataExibicao": "2003-12-21"
+    },
+    {
+        "id": 1102,
+        "numero": 175,
+        "titulo": "Suba o Grande Jack! Combate Mortal nas Ruínas Superiores!",
+        "sinopse": "A batalha contra Ohm continua. Zoro, Wyper e Gan Fall enfrentam o sacerdote enquanto Nami é engolida pela cobra gigante.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep175.jpg",
+        "dataExibicao": "2004-01-04"
+    },
+    {
+        "id": 1103,
+        "numero": 176,
+        "titulo": "O Desafio do Ferro! A Luta Mortal das Espirais Brancas!",
+        "sinopse": "Ohm cria uma prisão de arame farpado e aumenta o perigo nas ruínas. Nami, Aisa e Gan Fall descobrem o motivo da fúria da cobra gigante.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep176.jpg",
+        "dataExibicao": "2004-01-18"
+    },
+    {
+        "id": 1104,
+        "numero": 177,
+        "titulo": "Corte Explosivo! Zoro Contra Ohm!",
+        "sinopse": "Zoro finalmente derrota o sacerdote Ohm usando sua técnica Canhão de 108 Libras. Enquanto isso, Conis e Pagaya descobrem o verdadeiro plano de Eneru.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep177.jpg",
+        "dataExibicao": "2004-01-25"
+    },
+    {
+        "id": 1105,
+        "numero": 178,
+        "titulo": "As Ruínas Superiores Desmoronam! O Quinteto para o Final!",
+        "sinopse": "Eneru aparece e reduz o número de sobreviventes conforme sua previsão. A batalha final em Skypiea começa a se aproximar.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep178.jpg",
+        "dataExibicao": "2004-02-01"
+    },
+    {
+        "id": 1106,
+        "numero": 179,
+        "titulo": "Confronto nas Ruínas Antigas! O Objetivo do Deus do Céu Eneru!",
+        "sinopse": "Eneru enfrenta os guerreiros restantes. Robin tenta usar seus poderes contra ele, enquanto Zoro e Wyper também entram na batalha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep179.jpg",
+        "dataExibicao": "2004-02-08"
+    },
+    {
+        "id": 1107,
+        "numero": 180,
+        "titulo": "Ambição Rumo ao Vearth Infinito! A Arca Maxim!",
+        "sinopse": "Eneru derrota Zoro e Wyper e revela sua verdadeira ambição: partir para a Terra Infinita usando sua arca Maxim.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep180.jpg",
+        "dataExibicao": "2004-02-15"
+    },
+    {
+        "id": 1108,
+        "numero": 181,
+        "titulo": "Finalmente o Confronto! Luffy Contra o Deus Eneru!",
+        "sinopse": "Luffy finalmente encontra Eneru e começa uma batalha contra o homem que se considera um deus.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep181.jpg",
+        "dataExibicao": "2004-02-22"
+    },
+    {
+        "id": 1109,
+        "numero": 182,
+        "titulo": "Maxim Surge! Deathpiea é Ativada!",
+        "sinopse": "A luta entre Luffy e Eneru continua enquanto a máquina Deathpiea começa seu funcionamento para destruir Skypiea.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep182.jpg",
+        "dataExibicao": "2004-02-29"
+    },
+    {
+        "id": 1110,
+        "numero": 183,
+        "titulo": "Luffy Cai! O Julgamento de Eneru e o Desejo de Nami!",
+        "sinopse": "Luffy cai da arca Maxim. Nami enfrenta Eneru enquanto Sanji e Usopp tentam resgatá-la.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep183.jpg",
+        "dataExibicao": "2004-03-07"
+    },
+    {
+        "id": 1111,
+        "numero": 184,
+        "titulo": "Os Dois Despertam! Na Linha de Frente do Resgate de Amor Ardente!",
+        "sinopse": "Usopp e Sanji se separam para salvar Nami. Usopp é o primeiro a conseguir chegar ao convés da arca.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep184.jpg",
+        "dataExibicao": "2004-03-14"
+    },
+    {
+        "id": 1112,
+        "numero": 185,
+        "titulo": "Capricho de Desespero! A Destruição da Ilha do Céu se Aproxima!",
+        "sinopse": "As nuvens de trovão de Eneru começam a cair sobre Skypiea enquanto a evacuação dos habitantes continua.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep185.jpg",
+        "dataExibicao": "2004-03-21"
+    },
+    {
+        "id": 1113,
+        "numero": 186,
+        "titulo": "Guiados pelo Som de um Sino! A História do Grande Guerreiro e do Explorador!",
+        "sinopse": "A história de amizade entre Mont Blanc Noland e Kalgara é revelada através das memórias de Wyper.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep186.jpg",
+        "dataExibicao": "2004-03-28"
+    },
+    {
+        "id": 1114,
+        "numero": 187,
+        "titulo": "Livre do Feitiço! O Grande Guerreiro Derrama Lágrimas!",
+        "sinopse": "Noland e Kalgara vivem momentos de amizade com seus povos, mas um acontecimento muda completamente essa relação.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep187.jpg",
+        "dataExibicao": "2004-03-28"
+    },
+    {
+        "id": 1115,
+        "numero": 188,
+        "titulo": "Amigos Eternos! O Sino da Promessa Ecoa pelos Mares!",
+        "sinopse": "A verdade sobre a separação entre Noland e Kalgara é revelada. Kalgara promete reencontrar seu amigo.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep188.jpg",
+        "dataExibicao": "2004-04-04"
+    },
+    {
+        "id": 1116,
+        "numero": 189,
+        "titulo": "Ilha dos Anjos Destruída! O Horror da Chegada do Raigo!",
+        "sinopse": "Eneru destrói Angel Island com seu ataque Raigo. Luffy decide tocar o sino dourado antes que seja tarde.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep189.jpg",
+        "dataExibicao": "2004-04-25"
+    },
+    {
+        "id": 1117,
+        "numero": 190,
+        "titulo": "Derrube o Grande Jack! A Última Esperança de Fuga!",
+        "sinopse": "Nami descobre que cortar o Grande Jack pode ser a única forma de chegar até Eneru. Wyper descobre a ligação de Luffy com Noland.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep190.jpg",
+        "dataExibicao": "2004-05-02"
+    },
+    {
+        "id": 1118,
+        "numero": 191,
+        "titulo": "Milagre em Skypiea! A Canção de Amor Ouvida nas Nuvens!",
+        "sinopse": "Luffy continua sua batalha contra Eneru enquanto a luta pelo destino de Skypiea chega ao seu momento decisivo.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep191.jpg",
+        "dataExibicao": "2004-05-09"
+    },
+    {
+        "id": 1119,
+        "numero": 192,
+        "titulo": "A Batalha Termina! A Fantasia Orgulhosa Ecoa ao Longe!",
+        "sinopse": "A guerra de 400 anos em Skypiea chega ao fim. O sino dourado finalmente ecoa e traz paz aos povos da ilha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep192.jpg",
+        "dataExibicao": "2004-05-23"
+    },
+    {
+        "id": 1120,
+        "numero": 193,
+        "titulo": "Eu Cheguei Aqui! O Fio que os Poneglyphs Tecem!",
+        "sinopse": "Robin decifra o poneglyph do sino dourado e descobre informações importantes sobre o Rio Poneglyph e Gol D. Roger.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep193.jpg",
+        "dataExibicao": "2004-06-06"
+    },
+    {
+        "id": 1121,
+        "numero": 194,
+        "titulo": "Rumo ao Mar Azul!! Um Final Emocionante!!",
+        "sinopse": "Os Chapéus de Palha deixam Skypiea levando ouro da cidade perdida. Ao retornarem ao mar, encontram novos problemas.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep194.jpg",
+        "dataExibicao": "2004-06-13"
+    },
+    {
+        "id": 1122,
+        "numero": 195,
+        "titulo": "Fim da Temporada! O Sino Dourado Ecoa pelo Céu!",
+        "sinopse": "O sino dourado toca enquanto os Chapéus de Palha deixam Skypiea. A tripulação finalmente retorna ao mar, mas acaba chegando a uma base da Marinha.",
+        "temporadaId": 6,
+        "animeId": 57,
+        "imagemUrl": "../../images/episodios/one-piece/t6/ep195.jpg",
+        "dataExibicao": "2004-06-13"
     }
 ]
