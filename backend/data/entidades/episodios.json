@@ -12448,5 +12448,455 @@
         "animeId": 60,
         "imagemUrl": "../../images/episodios/one-piece/t9/ep336.jpg",
         "dataExibicao": "2007-12-23"
+    },
+    {
+        "id": 1264,
+        "numero": 337,
+        "titulo": "Mergulhando no Mar do Diabo! O Misterioso Esqueleto Flutuando na Névoa!",
+        "sinopse": "Os Chapéus de Palha encontram um barril misterioso no mar que os leva ao Triângulo Florian, onde conhecem Brook, um esqueleto músico que deseja se juntar à tripulação.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep337.jpg",
+        "dataExibicao": "2008-01-06"
+    },
+    {
+        "id": 1265,
+        "numero": 338,
+        "titulo": "A Alegria de Ver Pessoas! A Verdadeira Identidade do Cavalheiro Esqueleto!",
+        "sinopse": "Brook revela sua história e explica como voltou à vida graças à Akuma no Mi da Ressurreição, mas também conta que perdeu sua sombra em Thriller Bark.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep338.jpg",
+        "dataExibicao": "2008-01-13"
+    },
+    {
+        "id": 1266,
+        "numero": 339,
+        "titulo": "Um Fenômeno Estranho Após o Outro! Desembarcando em Thriller Bark!",
+        "sinopse": "Os Chapéus de Palha chegam a Thriller Bark e encontram criaturas bizarras, zumbis e mistérios envolvendo a ilha fantasma.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep339.jpg",
+        "dataExibicao": "2008-01-20"
+    },
+    {
+        "id": 1267,
+        "numero": 340,
+        "titulo": "O Homem Chamado de Gênio! Hogback Faz Sua Aparição!",
+        "sinopse": "Nami, Usopp e Chopper encontram o famoso médico Hogback, mas descobrem que há algo estranho acontecendo em sua mansão.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep340.jpg",
+        "dataExibicao": "2008-01-27"
+    },
+    {
+        "id": 1268,
+        "numero": 341,
+        "titulo": "Nami em Grande Perigo! A Mansão dos Zumbis e o Homem Invisível!",
+        "sinopse": "Nami enfrenta uma ameaça invisível enquanto os Chapéus de Palha descobrem mais sobre os perigos de Thriller Bark.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep341.jpg",
+        "dataExibicao": "2008-02-03"
+    },
+    {
+        "id": 1269,
+        "numero": 342,
+        "titulo": "O Segredo dos Zumbis! O Laboratório Pesadelo de Hogback!",
+        "sinopse": "Usopp, Nami e Chopper descobrem o segredo por trás dos zumbis e do laboratório de Hogback.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep342.jpg",
+        "dataExibicao": "2008-02-10"
+    },
+    {
+        "id": 1270,
+        "numero": 343,
+        "titulo": "Seu Nome é Moria! A Armadilha do Grande Pirata que Rouba Sombras!",
+        "sinopse": "Os Chapéus de Palha descobrem que Gecko Moria usa o poder da Kage Kage no Mi para roubar sombras e criar zumbis.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep343.jpg",
+        "dataExibicao": "2008-02-17"
+    },
+    {
+        "id": 1271,
+        "numero": 344,
+        "titulo": "Festival dos Zumbis! O Sino do Ataque Noturno é o Som da Escuridão!",
+        "sinopse": "A invasão dos zumbis começa em Thriller Bark enquanto os Chapéus de Palha enfrentam novos inimigos.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep344.jpg",
+        "dataExibicao": "2008-02-24"
+    },
+    {
+        "id": 1272,
+        "numero": 345,
+        "titulo": "Um Bando de Animais? O Jardim Maravilhoso de Perona!",
+        "sinopse": "Perona desperta seus zumbis animais enquanto Nami, Usopp e Chopper tentam escapar dos perigos de Thriller Bark.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep345.jpg",
+        "dataExibicao": "2008-03-02"
+    },
+    {
+        "id": 1273,
+        "numero": 346,
+        "titulo": "O Bando dos Chapéus de Palha Desaparece! Um Misterioso Espadachim Surge!",
+        "sinopse": "Os Chapéus de Palha enfrentam os Generais Zumbis e encontram um espadachim misterioso que possui a aparência de Zoro.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep346.jpg",
+        "dataExibicao": "2008-03-09"
+    },
+    {
+        "id": 1274,
+        "numero": 347,
+        "titulo": "A Cavalaria Permanece! O Zumbi Traidor Protege Nami!",
+        "sinopse": "Absalom tenta capturar Nami para se casar com ela, enquanto Franky e Robin enfrentam os zumbis e Brook aparece para ajudar.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep347.jpg",
+        "dataExibicao": "2008-03-16"
+    },
+    {
+        "id": 1275,
+        "numero": 348,
+        "titulo": "Aparecendo do Céu! Esse Homem é o Espadachim Zumbido!",
+        "sinopse": "Brook enfrenta Taralan e revela parte de sua história, enquanto os Chapéus de Palha descobrem os planos de Moria para usar a sombra de Luffy.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep348.jpg",
+        "dataExibicao": "2008-03-23"
+    },
+    {
+        "id": 1276,
+        "numero": 349,
+        "titulo": "A Situação de Emergência de Luffy! O Destino da Sombra Suprema!",
+        "sinopse": "Brook explica o segredo dos zumbis de Thriller Bark enquanto Moria rouba a sombra de Luffy para criar seu zumbi especial.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep349.jpg",
+        "dataExibicao": "2008-03-30"
+    },
+    {
+        "id": 1277,
+        "numero": 350,
+        "titulo": "O Guerreiro Conhecido Como 'Demônio'!! O Momento da Ressurreição de Oars!",
+        "sinopse": "Moria prepara seu zumbi definitivo, Oars, usando a sombra de Luffy para despertar o lendário gigante.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep350.jpg",
+        "dataExibicao": "2008-04-20"
+    },
+    {
+        "id": 1278,
+        "numero": 351,
+        "titulo": "Despertando Após 500 Anos!! Oars Abre Seus Olhos!!",
+        "sinopse": "Oars desperta com a personalidade de Luffy e começa a causar destruição em Thriller Bark.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep351.jpg",
+        "dataExibicao": "2008-04-27"
+    },
+    {
+        "id": 1279,
+        "numero": 352,
+        "titulo": "Uma Crença Pela Qual Vale a Pena Implorar Para Viver!! Brook Defende Seu Afro!",
+        "sinopse": "Brook enfrenta Ryuma para recuperar sua sombra enquanto Oars continua mostrando características de Luffy.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep352.jpg",
+        "dataExibicao": "2008-05-04"
+    },
+    {
+        "id": 1280,
+        "numero": 353,
+        "titulo": "A Promessa de um Homem Nunca Morre!! Ao Amigo Esperando Sob o Céu Distante!",
+        "sinopse": "Brook revela sua promessa com Laboon e explica o motivo que o mantém seguindo em frente.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep353.jpg",
+        "dataExibicao": "2008-05-11"
+    },
+    {
+        "id": 1281,
+        "numero": 354,
+        "titulo": "Eu Juro Que Vou Vê-lo! Brook e o Cabo da Promessa!",
+        "sinopse": "Os Chapéus de Palha descobrem a ligação de Brook com Laboon e se preparam para recuperar suas sombras.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep354.jpg",
+        "dataExibicao": "2008-05-18"
+    },
+    {
+        "id": 1282,
+        "numero": 355,
+        "titulo": "Comida, Nami e Sombras!! O Contra-Ataque Furioso de Luffy!",
+        "sinopse": "Luffy e sua tripulação partem para salvar Nami e recuperar suas sombras roubadas por Moria.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep355.jpg",
+        "dataExibicao": "2008-05-25"
+    },
+    {
+        "id": 1283,
+        "numero": 356,
+        "titulo": "Usopp é o Mais Forte? Deixe Tudo Negativo Para Ele!",
+        "sinopse": "Usopp enfrenta Perona, mostrando que sua personalidade negativa é uma vantagem contra os poderes dela.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep356.jpg",
+        "dataExibicao": "2008-06-01"
+    },
+    {
+        "id": 1284,
+        "numero": 357,
+        "titulo": "Os Zumbis Generais Caem em um Instante!! Oars Sente Como Uma Aventura!",
+        "sinopse": "Oars derrota os Generais Zumbis enquanto os Chapéus de Palha continuam planejando como derrotar o gigante.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep357.jpg",
+        "dataExibicao": "2008-06-08"
+    },
+    {
+        "id": 1285,
+        "numero": 358,
+        "titulo": "Cavaleiro Flamejante Sanji!! Derrubando o Casamento Falso!",
+        "sinopse": "Sanji enfrenta Absalom para impedir seu casamento com Nami e revela sua antiga motivação relacionada ao poder de invisibilidade.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep358.jpg",
+        "dataExibicao": "2008-06-15"
+    },
+    {
+        "id": 1286,
+        "numero": 359,
+        "titulo": "Uma História Transparente? O Sonho Roubado de Sanji!",
+        "sinopse": "Sanji derrota Absalom e revela seu desejo de possuir o poder da fruta da invisibilidade.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep359.jpg",
+        "dataExibicao": "2008-06-22"
+    },
+    {
+        "id": 1287,
+        "numero": 360,
+        "titulo": "Me Salve, Herói!! Minha Inimiga é a Princesa Imortal!",
+        "sinopse": "Usopp enfrenta Perona usando sua inteligência e consegue descobrir a fraqueza de seus poderes.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep360.jpg",
+        "dataExibicao": "2008-06-29"
+    },
+    {
+        "id": 1288,
+        "numero": 361,
+        "titulo": "Perona Está Apavorada!! Usopp e a Mentira Compartilham o Mesmo 'U'!",
+        "sinopse": "Usopp descobre o segredo do poder de Perona e consegue vencê-la usando sua criatividade e coragem.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep361.jpg",
+        "dataExibicao": "2008-07-06"
+    },
+    {
+        "id": 1289,
+        "numero": 362,
+        "titulo": "Golpes Cortantes Dançam no Telhado!! Zoro vs. Ryuma!",
+        "sinopse": "Zoro enfrenta Ryuma em um duelo de espadas intenso e consegue recuperar a sombra de Brook.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep362.jpg",
+        "dataExibicao": "2008-07-13"
+    },
+    {
+        "id": 1290,
+        "numero": 363,
+        "titulo": "Chopper Está Furioso!! As Práticas Médicas Malignas de Hogback!",
+        "sinopse": "Chopper descobre a verdade sobre os experimentos de Hogback e se revolta contra suas ações.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep363.jpg",
+        "dataExibicao": "2008-07-20"
+    },
+    {
+        "id": 1291,
+        "numero": 364,
+        "titulo": "Oars Rugirá! Venham, Chapéus de Palha!",
+        "sinopse": "Oars começa sua perseguição aos Chapéus de Palha enquanto Moria ordena que ele elimine a tripulação.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep364.jpg",
+        "dataExibicao": "2008-08-03"
+    },
+    {
+        "id": 1292,
+        "numero": 365,
+        "titulo": "Luffy é o Inimigo! O Zumbi Supremo Contra os Chapéus de Palha!",
+        "sinopse": "Oars usa os poderes e ataques de Luffy contra a própria tripulação, colocando os Chapéus de Palha em uma situação desesperadora.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep365.jpg",
+        "dataExibicao": "2008-08-10"
+    },
+    {
+        "id": 1293,
+        "numero": 366,
+        "titulo": "Você Vai Cair, Absalom!! O Ataque Elétrico de Amizade da Nami!",
+        "sinopse": "Nami desperta e enfrenta Absalom com a ajuda de Lola, usando sua inteligência para derrotar o inimigo e proteger sua nova amiga.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep366.jpg",
+        "dataExibicao": "2008-08-17"
+    },
+    {
+        "id": 1294,
+        "numero": 367,
+        "titulo": "Derrube-o!! Ataque Especial: Acoplamento Chapéu de Palha!",
+        "sinopse": "Os Chapéus de Palha tentam criar uma estratégia combinando suas forças para derrotar Oars, mas o plano acaba não saindo como esperado.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep367.jpg",
+        "dataExibicao": "2008-08-24"
+    },
+    {
+        "id": 1295,
+        "numero": 368,
+        "titulo": "O Ataque Silencioso!! O Misterioso Visitante, Tirano Kuma!",
+        "sinopse": "Bartholomew Kuma chega a Thriller Bark trazendo uma nova ameaça para os Chapéus de Palha.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep368.jpg",
+        "dataExibicao": "2008-08-31"
+    },
+    {
+        "id": 1296,
+        "numero": 369,
+        "titulo": "Oars + Moria! A Combinação Mais Cruel de Inteligência e Força Bruta!",
+        "sinopse": "Moria assume o controle de Oars, tornando o gigante ainda mais perigoso contra os Chapéus de Palha.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep369.jpg",
+        "dataExibicao": "2008-09-07"
+    },
+    {
+        "id": 1297,
+        "numero": 370,
+        "titulo": "O Plano Secreto Para Virar o Jogo! Nightmare Luffy Aparece!",
+        "sinopse": "Luffy recebe centenas de sombras e se transforma em Nightmare Luffy para enfrentar Oars e Moria.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep370.jpg",
+        "dataExibicao": "2008-09-14"
+    },
+    {
+        "id": 1298,
+        "numero": 371,
+        "titulo": "A Tripulação dos Chapéus de Palha é Derrotada! O Poder da Sombra-Sombra em Pleno Uso!",
+        "sinopse": "Moria usa todo o potencial da Fruta da Sombra enquanto os Chapéus de Palha lutam para derrotar Oars.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep371.jpg",
+        "dataExibicao": "2008-09-21"
+    },
+    {
+        "id": 1299,
+        "numero": 372,
+        "titulo": "A Incrível Batalha Começa! Luffy Contra Luffy!",
+        "sinopse": "Nightmare Luffy enfrenta Oars enquanto os Chapéus de Palha tentam aproveitar a oportunidade para vencer a batalha.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep372.jpg",
+        "dataExibicao": "2008-09-28"
+    },
+    {
+        "id": 1300,
+        "numero": 373,
+        "titulo": "O Fim da Batalha se Aproxima! Desferindo o Golpe Final!",
+        "sinopse": "Os Chapéus de Palha unem forças para derrotar Oars, mas Moria prepara sua técnica mais poderosa.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep373.jpg",
+        "dataExibicao": "2008-10-05"
+    },
+    {
+        "id": 1301,
+        "numero": 374,
+        "titulo": "Nossos Corpos Desaparecem! O Sol da Manhã Brilha Sobre a Ilha do Pesadelo!",
+        "sinopse": "Luffy enfrenta Moria em sua forma gigante enquanto os Chapéus de Palha lutam contra o tempo para escapar da luz do sol.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep374.jpg",
+        "dataExibicao": "2008-10-12"
+    },
+    {
+        "id": 1302,
+        "numero": 375,
+        "titulo": "O Perigo Ainda Não Acabou! Ordens Para Aniquilar os Chapéus de Palha!",
+        "sinopse": "Após a derrota de Moria, Kuma recebe ordens do Governo Mundial para eliminar os sobreviventes de Thriller Bark.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep375.jpg",
+        "dataExibicao": "2008-10-19"
+    },
+    {
+        "id": 1303,
+        "numero": 376,
+        "titulo": "Tudo é Repelido! O Poder da Fruta da Garra de Kuma!",
+        "sinopse": "Kuma revela o poder da Fruta da Garra e mostra sua habilidade de repelir ataques, enquanto os Chapéus de Palha tentam resistir ao novo inimigo.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep376.jpg",
+        "dataExibicao": "2008-11-09"
+    },
+    {
+        "id": 1304,
+        "numero": 377,
+        "titulo": "A Dor dos Meus Companheiros é Minha Dor! A Luta Desesperada de Zoro!",
+        "sinopse": "Zoro enfrenta Kuma para proteger Luffy e sua tripulação, tomando para si todo o sofrimento do capitão em um ato de sacrifício.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep377.jpg",
+        "dataExibicao": "2008-11-16"
+    },
+    {
+        "id": 1305,
+        "numero": 378,
+        "titulo": "A Promessa de Um Dia Distante! A Canção dos Piratas e Uma Pequena Baleia!",
+        "sinopse": "Os Chapéus de Palha comemoram a vitória em Thriller Bark enquanto Brook relembra sua promessa com Laboon.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep378.jpg",
+        "dataExibicao": "2008-11-23"
+    },
+    {
+        "id": 1306,
+        "numero": 379,
+        "titulo": "O Passado de Brook! Uma Triste Despedida com Seu Alegre Companheiro!",
+        "sinopse": "Brook relembra sua época com os Piratas Rumbar e como conheceu a baleia Laboon durante sua jornada.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep379.jpg",
+        "dataExibicao": "2008-11-30"
+    },
+    {
+        "id": 1307,
+        "numero": 380,
+        "titulo": "O Saquê de Binks! A Canção Que Liga o Passado ao Presente!",
+        "sinopse": "Brook conta a história final dos Piratas Rumbar e a última música que gravaram antes de sua morte.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep380.jpg",
+        "dataExibicao": "2008-12-07"
+    },
+    {
+        "id": 1308,
+        "numero": 381,
+        "titulo": "Um Novo Companheiro! O Músico, Brook!",
+        "sinopse": "Brook finalmente se junta oficialmente aos Chapéus de Palha e a tripulação segue viagem rumo a novas aventuras.",
+        "temporadaId": 10,
+        "animeId": 61,
+        "imagemUrl": "../../images/episodios/one-piece/t10/ep381.jpg",
+        "dataExibicao": "2008-12-14"
     }
 ]
