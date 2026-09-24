@@ -10538,5 +10538,135 @@
         "animeId": 55,
         "imagemUrl": "../../images/episodios/one-piece/t4/ep130.jpg",
         "dataExibicao": "2002-10-27"
+    },
+    {
+        "id": 1058,
+        "numero": 131,
+        "titulo": "O Primeiro Paciente! A História Desconhecida da Rumble Ball!",
+        "sinopse": "Após os acontecimentos em Alabasta, os Chapéus de Palha chegam a uma ilha deserta. Enquanto guarda o Going Merry, Chopper relembra como criou a Rumble Ball e quem foi seu primeiro paciente, passando um tempo ao lado da recém-chegada Nico Robin.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep131.jpg",
+        "dataExibicao": "2002-11-03"
+    },
+    {
+        "id": 1059,
+        "numero": 132,
+        "titulo": "A Revolta da Navegadora! Pelo Sonho que Nunca Desiste!",
+        "sinopse": "Um vendedor excêntrico é resgatado do mar e convence Nami a comprar um misterioso papel de mil anos para desenhar seus mapas. Porém, a bagunça da tripulação dificulta seu trabalho.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep132.jpg",
+        "dataExibicao": "2002-11-10"
+    },
+    {
+        "id": 1060,
+        "numero": 133,
+        "titulo": "A Receita Herdada! Sanji, o Mestre do Curry de Ferro!",
+        "sinopse": "O Going Merry cruza com diversos navios da Marinha em meio à neblina. Sanji conhece Tajio, um jovem cozinheiro da Marinha, e o ajuda a preparar um curry especial.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep133.jpg",
+        "dataExibicao": "2002-11-17"
+    },
+    {
+        "id": 1061,
+        "numero": 134,
+        "titulo": "Eu Vou Fazer Florescer! Usopp, o Homem e a Concha de Oito Metros!",
+        "sinopse": "Durante um festival de fogos de artifício, Usopp conhece Kodama, uma jovem fabricante de fogos, e decide ajudá-la a realizar seu sonho.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep134.jpg",
+        "dataExibicao": "2002-11-24"
+    },
+    {
+        "id": 1062,
+        "numero": 135,
+        "titulo": "O Lendário Caçador de Piratas! Zoro, o Espadachim Errante!",
+        "sinopse": "Zoro relembra seu passado e o momento em que conheceu Johnny e Yosaku, além da batalha contra um perigoso grupo de bandidos.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep135.jpg",
+        "dataExibicao": "2002-12-01"
+    },
+    {
+        "id": 1063,
+        "numero": 136,
+        "titulo": "Zenny da Ilha das Cabras e o Navio Pirata na Montanha!",
+        "sinopse": "Após escaparem da Marinha, os Chapéus de Palha chegam a uma ilha desconhecida e conhecem Zenny, um velho cercado por cabras que sonha em se tornar pirata.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep136.jpg",
+        "dataExibicao": "2002-12-08"
+    },
+    {
+        "id": 1064,
+        "numero": 137,
+        "titulo": "Qual é o Plano? As Estratégias de Zenny, o Agiota!",
+        "sinopse": "Enquanto ajudam Zenny em seus últimos desejos, os Chapéus de Palha descobrem seu passado como agiota e seu antigo sonho de navegar pelos mares como pirata.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep137.jpg",
+        "dataExibicao": "2002-12-15"
+    },
+    {
+        "id": 1065,
+        "numero": 138,
+        "titulo": "O Paradeiro do Tesouro da Ilha! O Ataque dos Piratas de Zenny!",
+        "sinopse": "Zenny finalmente decide seguir seu sonho e tornar-se um pirata. Antes da despedida, ele ajuda os Chapéus de Palha a escaparem da perseguição da Marinha.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep138.jpg",
+        "dataExibicao": "2002-12-22"
+    },
+    {
+        "id": 1066,
+        "numero": 139,
+        "titulo": "A Lenda da Névoa Arco-Íris! O Velho Henzo da Ilha Ruluka!",
+        "sinopse": "Na Ilha Ruluka, parte da tripulação entra em conflito com o prefeito corrupto. Luffy, Robin e Usopp conhecem o Professor Henzo, que pesquisa o misterioso fenômeno conhecido como Névoa Arco-Íris.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep139.jpg",
+        "dataExibicao": "2003-01-05"
+    },
+    {
+        "id": 1067,
+        "numero": 140,
+        "titulo": "Os Habitantes da Terra da Eternidade! Os Piratas Abóbora!",
+        "sinopse": "Dentro da Névoa Arco-Íris, a tripulação encontra um cemitério de navios e cinco crianças que, na verdade, desapareceram há mais de cinquenta anos.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep140.jpg",
+        "dataExibicao": "2003-01-12"
+    },
+    {
+        "id": 1068,
+        "numero": 141,
+        "titulo": "Saudades de Casa! O Cemitério de Navios sem Saída!",
+        "sinopse": "Henzo e seus antigos amigos procuram uma maneira de escapar do cemitério de navios. Enquanto isso, o prefeito de Ruluka descobre o segredo da Névoa Arco-Íris e decide explorá-la para conseguir o tesouro escondido.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep141.jpg",
+        "dataExibicao": "2003-01-19"
+    },
+    {
+        "id": 1069,
+        "numero": 142,
+        "titulo": "Uma Batalha Inevitável! Os Planos de Wetton e a Torre do Arco-Íris!",
+        "sinopse": "Wetton invade a Névoa Arco-Íris em busca do lendário tesouro. Os Chapéus de Palha enfrentam seus soldados enquanto tentam encontrar uma forma de escapar antes que seja tarde demais.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep142.jpg",
+        "dataExibicao": "2003-01-26"
+    },
+    {
+        "id": 1070,
+        "numero": 143,
+        "titulo": "E Assim a Lenda Começa! Para o Outro Lado do Arco-Íris!",
+        "sinopse": "O Going Merry consegue escapar da Névoa Arco-Íris. Os antigos amigos de Henzo finalmente retornam após décadas desaparecidos, Wetton é preso e a aventura em Ruluka chega ao fim.",
+        "temporadaId": 5,
+        "animeId": 56,
+        "imagemUrl": "../../images/episodios/one-piece/t5/ep143.jpg",
+        "dataExibicao": "2003-02-02"
     }
 ]
