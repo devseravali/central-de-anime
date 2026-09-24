@@ -12898,5 +12898,265 @@
         "animeId": 61,
         "imagemUrl": "../../images/episodios/one-piece/t10/ep381.jpg",
         "dataExibicao": "2008-12-14"
+    },
+    {
+        "id": 1309,
+        "numero": 382,
+        "titulo": "A Ameaça Lenta e Devagar! O Retorno da Raposa Prateada Foxy!",
+        "sinopse": "Os Chapéus de Palha encontram duas garotas procurando pelo pai e acabam tendo outro encontro com o astuto Capitão Foxy.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep382.jpg",
+        "dataExibicao": "2008-12-21"
+    },
+    {
+        "id": 1310,
+        "numero": 383,
+        "titulo": "A Grande Disputa pelo Tesouro! Colapso! Ilha Spa!",
+        "sinopse": "Luffy e os Chapéus de Palha tentam destruir um resort flutuante para ajudar duas irmãs que possuem um projeto para criar joias.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep383.jpg",
+        "dataExibicao": "2008-12-28"
+    },
+    {
+        "id": 1311,
+        "numero": 384,
+        "titulo": "A Grande Luta de Brook! O Caminho para se Tornar um Verdadeiro Companheiro é Rigoroso?",
+        "sinopse": "Brook tenta se adaptar à vida entre os vivos depois de passar tantos anos sozinho na escuridão.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep384.jpg",
+        "dataExibicao": "2009-01-11"
+    },
+    {
+        "id": 1312,
+        "numero": 385,
+        "titulo": "Chegando à Metade da Grand Line! A Linha Vermelha!",
+        "sinopse": "Depois de sobreviverem a uma terrível tempestade, os Chapéus de Palha chegam à entrada da Linha Vermelha e encontram novos mistérios.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep385.jpg",
+        "dataExibicao": "2009-01-18"
+    },
+    {
+        "id": 1313,
+        "numero": 386,
+        "titulo": "Ódio pelos Chapéus de Palha! O Homem da Máscara de Ferro Duval Aparece!",
+        "sinopse": "Luffy e sua tripulação ajudam uma sereia a resgatar sua amiga, mas acabam enfrentando uma perigosa gangue de peixes voadores.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep386.jpg",
+        "dataExibicao": "2009-01-25"
+    },
+    {
+        "id": 1314,
+        "numero": 387,
+        "titulo": "O Reencontro do Destino! Salve o Homem-Peixe Aprisionado!",
+        "sinopse": "Os Chapéus de Palha participam do resgate de Camie, mas descobrem que seu amigo capturado é alguém perigoso do passado.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep387.jpg",
+        "dataExibicao": "2009-02-01"
+    },
+    {
+        "id": 1315,
+        "numero": 388,
+        "titulo": "Tragédia! A Verdade Sobre Duval Sem Máscara!",
+        "sinopse": "Os Chapéus de Palha enfrentam uma batalha contra os Piratas Voadores e descobrem a verdadeira identidade de Duval.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep388.jpg",
+        "dataExibicao": "2009-02-08"
+    },
+    {
+        "id": 1316,
+        "numero": 389,
+        "titulo": "Explosão! A Arma Secreta do Sunny: Canhão Gaon!",
+        "sinopse": "Sanji enfrenta um inimigo parecido com ele, enquanto Camie mostra a velocidade de uma sereia e Luffy derrota um enorme touro.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep389.jpg",
+        "dataExibicao": "2009-02-15"
+    },
+    {
+        "id": 1317,
+        "numero": 390,
+        "titulo": "Desembarcando na Ilha dos Homens-Peixe! O Arquipélago Sabaody!",
+        "sinopse": "Após o confronto com Duval, Luffy e os Chapéus de Palha chegam ao Arquipélago Sabaody, uma ilha cheia de bolhas misteriosas.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep390.jpg",
+        "dataExibicao": "2009-02-22"
+    },
+    {
+        "id": 1318,
+        "numero": 391,
+        "titulo": "Tirania! Os Governantes de Sabaody, os Dragões Celestiais!",
+        "sinopse": "Luffy e sua tripulação chegam ao arquipélago cheio de bolhas para modificar o navio, mas acabam envolvidos em uma explosão e atraem problemas.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep391.jpg",
+        "dataExibicao": "2009-03-01"
+    },
+    {
+        "id": 1319,
+        "numero": 392,
+        "titulo": "Novos Rivais se Reúnem! Os Onze Supernovas!",
+        "sinopse": "Shakky explica que o Arquipélago Sabaody está cheio de piratas famosos, incluindo onze grandes novatos da Grand Line.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep392.jpg",
+        "dataExibicao": "2009-03-08"
+    },
+    {
+        "id": 1320,
+        "numero": 393,
+        "titulo": "O Alvo é Camie! As Garras de um Sequestrador Profissional!",
+        "sinopse": "Camie desaparece durante um passeio e os Chapéus de Palha descobrem que ela foi capturada por sequestradores.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep393.jpg",
+        "dataExibicao": "2009-03-15"
+    },
+    {
+        "id": 1321,
+        "numero": 394,
+        "titulo": "Resgate Camie! A História Sombria do Arquipélago!",
+        "sinopse": "Os Chapéus de Palha correm contra o tempo para salvar Camie antes que ela seja vendida no mercado de escravos.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep394.jpg",
+        "dataExibicao": "2009-03-29"
+    },
+    {
+        "id": 1322,
+        "numero": 395,
+        "titulo": "Limite de Tempo! O Leilão de Humanos Começa!",
+        "sinopse": "Com ajuda de seus aliados, os Chapéus de Palha chegam ao leilão para tentar salvar Camie.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep395.jpg",
+        "dataExibicao": "2009-04-05"
+    },
+    {
+        "id": 1323,
+        "numero": 396,
+        "titulo": "O Punho Explode! Destrua o Leilão!",
+        "sinopse": "O plano para resgatar Camie dá errado quando um Dragão Celestial compra a sereia, levando Luffy e Zoro a agir.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep396.jpg",
+        "dataExibicao": "2009-04-12"
+    },
+    {
+        "id": 1324,
+        "numero": 397,
+        "titulo": "Grande Pânico! Luta Desesperada no Leilão!",
+        "sinopse": "Luffy inicia uma grande batalha ao atacar um Dragão Celestial, colocando todos os Chapéus de Palha em perigo.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep397.jpg",
+        "dataExibicao": "2009-04-19"
+    },
+    {
+        "id": 1325,
+        "numero": 398,
+        "titulo": "O Almirante Kizaru se Move! O Arquipélago Sabaody Entra em Caos!",
+        "sinopse": "Após o incidente no leilão, a Marinha envia o Almirante Kizaru para eliminar os piratas.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep398.jpg",
+        "dataExibicao": "2009-04-26"
+    },
+    {
+        "id": 1326,
+        "numero": 399,
+        "titulo": "Rompa o Cerco! A Marinha Contra os Três Capitães!",
+        "sinopse": "Luffy, Kidd e Law unem forças para enfrentar a Marinha e escapar do cerco em Sabaody.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep399.jpg",
+        "dataExibicao": "2009-05-03"
+    },
+    {
+        "id": 1327,
+        "numero": 400,
+        "titulo": "Roger e Rayleigh! O Rei dos Piratas e seu Braço Direito!",
+        "sinopse": "Rayleigh revela detalhes sobre sua época ao lado de Gol D. Roger e conta histórias da tripulação do Rei dos Piratas.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep400.jpg",
+        "dataExibicao": "2009-05-10"
+    },
+    {
+        "id": 1328,
+        "numero": 401,
+        "titulo": "Sem Escapatória!? O Chute na Velocidade da Luz do Almirante Kizaru!",
+        "sinopse": "O Almirante Kizaru chega ao Arquipélago Sabaody para eliminar os piratas enquanto os Chapéus de Palha enfrentam inimigos poderosos.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep401.jpg",
+        "dataExibicao": "2009-05-17"
+    },
+    {
+        "id": 1329,
+        "numero": 402,
+        "titulo": "Avassalador! As Armas de Combate da Marinha, os Pacifistas!",
+        "sinopse": "Os Chapéus de Palha descobrem o poder dos Pacifistas enquanto tentam sobreviver ao ataque da Marinha.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep402.jpg",
+        "dataExibicao": "2009-05-24"
+    },
+    {
+        "id": 1330,
+        "numero": 403,
+        "titulo": "Um Inimigo Ainda Mais Forte Aparece! A Machado de Batalha Sentomaru!",
+        "sinopse": "Após enfrentarem um Pacifista, os Chapéus de Palha encontram Sentomaru, um novo e poderoso adversário.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep403.jpg",
+        "dataExibicao": "2009-05-31"
+    },
+    {
+        "id": 1331,
+        "numero": 404,
+        "titulo": "O Ataque Furioso do Almirante Kizaru! Os Chapéus de Palha Enfrentam a Morte Certa!",
+        "sinopse": "Kizaru continua seu ataque devastador enquanto Zoro está gravemente ferido e a tripulação tenta sobreviver.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep404.jpg",
+        "dataExibicao": "2009-06-07"
+    },
+    {
+        "id": 1332,
+        "numero": 405,
+        "titulo": "Amigos Eliminados! O Último Dia da Tripulação dos Chapéus de Palha!",
+        "sinopse": "Um por um, os membros da tripulação desaparecem pelo poder da Akuma no Mi de Bartholomew Kuma, deixando Luffy sozinho.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep405.jpg",
+        "dataExibicao": "2009-06-14"
+    },
+    {
+        "id": 1333,
+        "numero": 406,
+        "titulo": "História Paralela da Era Feudal – O Chefe Luffy Aparece Novamente!",
+        "sinopse": "Uma história especial mostra Luffy e seus amigos em uma aventura no Japão feudal.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep406.jpg",
+        "dataExibicao": "2009-06-21"
+    },
+    {
+        "id": 1334,
+        "numero": 407,
+        "titulo": "História Paralela da Era Feudal – Derrote a Armadilha da Companhia Thriller!",
+        "sinopse": "Luffy e seus amigos enfrentam uma nova ameaça enquanto participam de uma corrida por um tesouro antigo.",
+        "temporadaId": 11,
+        "animeId": 62,
+        "imagemUrl": "../../images/episodios/one-piece/t11/ep407.jpg",
+        "dataExibicao": "2009-06-28"
     }
 ]
