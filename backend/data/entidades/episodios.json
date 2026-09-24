@@ -13158,5 +13158,145 @@
         "animeId": 62,
         "imagemUrl": "../../images/episodios/one-piece/t11/ep407.jpg",
         "dataExibicao": "2009-06-28"
+    },
+    {
+        "id": 1335,
+        "numero": 408,
+        "titulo": "Desembarque! A Ilha das Mulheres, Amazon Lily!",
+        "sinopse": "Luffy acaba perdido e faminto em uma ilha misteriosa habitada apenas por mulheres guerreiras. Sua enorme fome acaba colocando sua própria segurança em risco.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep408.jpg",
+        "dataExibicao": "2009-07-05"
+    },
+    {
+        "id": 1336,
+        "numero": 409,
+        "titulo": "Volte Rápido para Seus Amigos! A Aventura na Ilha das Mulheres!",
+        "sinopse": "Luffy tenta reencontrar seus companheiros enquanto as guerreiras Kuja investigam o estranho homem que apareceu em sua ilha.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep409.jpg",
+        "dataExibicao": "2009-07-12"
+    },
+    {
+        "id": 1337,
+        "numero": 410,
+        "titulo": "Todos se Apaixonam! A Imperatriz Pirata Hancock!",
+        "sinopse": "Luffy descobre que as guerreiras da ilha seguem Boa Hancock, a poderosa Imperatriz Pirata e uma das Sete Senhoras da Guerra.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep410.jpg",
+        "dataExibicao": "2009-07-19"
+    },
+    {
+        "id": 1338,
+        "numero": 411,
+        "titulo": "O Segredo Escondido nas Costas! Luffy e a Princesa Serpente se Encontram!",
+        "sinopse": "Luffy acaba encontrando Boa Hancock durante um momento inesperado e descobre um segredo escondido sobre as guerreiras Kuja.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep411.jpg",
+        "dataExibicao": "2009-08-02"
+    },
+    {
+        "id": 1339,
+        "numero": 412,
+        "titulo": "Julgamento Sem Coração! Margaret é Transformada em Pedra!",
+        "sinopse": "Luffy se revolta quando Boa Hancock transforma Margaret em pedra e decide enfrentar a Imperatriz Pirata.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep412.jpg",
+        "dataExibicao": "2009-08-09"
+    },
+    {
+        "id": 1340,
+        "numero": 413,
+        "titulo": "Uma Luta Difícil para Luffy! O Poder do Haki das Irmãs Serpente!",
+        "sinopse": "Luffy enfrenta as irmãs serpente das Kuja e descobre o poder do Haki durante uma batalha intensa.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep413.jpg",
+        "dataExibicao": "2009-08-16"
+    },
+    {
+        "id": 1341,
+        "numero": 414,
+        "titulo": "Batalha de Poder Especial Total! Borracha-Borracha Contra Cobra-Cobra!",
+        "sinopse": "Luffy usa o Gear Second para enfrentar as irmãs serpente e proteger seus amigos transformados em pedra.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep414.jpg",
+        "dataExibicao": "2009-08-23"
+    },
+    {
+        "id": 1342,
+        "numero": 415,
+        "titulo": "A Confissão de Hancock! O Passado Terrível das Irmãs!",
+        "sinopse": "Boa Hancock revela seu passado doloroso para Luffy e conta os acontecimentos que marcaram sua vida.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep415.jpg",
+        "dataExibicao": "2009-08-30"
+    },
+    {
+        "id": 1343,
+        "numero": 416,
+        "titulo": "Salvem Ace! O Próximo Destino: A Grande Prisão!",
+        "sinopse": "Luffy descobre a situação de Ace e decide invadir Impel Down para tentar salvar seu irmão.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep416.jpg",
+        "dataExibicao": "2009-09-06"
+    },
+    {
+        "id": 1344,
+        "numero": 417,
+        "titulo": "O Amor é um Furacão! Hancock Apaixonada!",
+        "sinopse": "Boa Hancock se apaixona por Luffy e decide ajudá-lo em sua missão de resgatar Ace.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep417.jpg",
+        "dataExibicao": "2009-09-13"
+    },
+    {
+        "id": 1345,
+        "numero": 418,
+        "titulo": "O Paradeiro dos Amigos! A Ciência do Clima e a Ilha Mecânica!",
+        "sinopse": "Enquanto Luffy corre para salvar Ace, Nami tenta sobreviver em uma ilha do céu e Franky enfrenta uma aventura em uma ilha tecnológica.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep418.jpg",
+        "dataExibicao": "2009-09-20"
+    },
+    {
+        "id": 1346,
+        "numero": 419,
+        "titulo": "O Paradeiro dos Amigos! Uma Ilha de Pássaros Gigantes e um Paraíso Rosa!",
+        "sinopse": "Chopper tenta sobreviver em uma terra dominada por pássaros gigantes enquanto Sanji enfrenta uma situação inesperada em uma ilha peculiar.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep419.jpg",
+        "dataExibicao": "2009-09-27"
+    },
+    {
+        "id": 1347,
+        "numero": 420,
+        "titulo": "O Paradeiro dos Amigos! Conectando as Ilhas e Vegetação Perigosa!",
+        "sinopse": "Robin chega à ilha Tequila Wolf, onde pessoas são forçadas a trabalhar como escravas, enquanto Usopp enfrenta plantas perigosas.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep420.jpg",
+        "dataExibicao": "2009-10-04"
+    },
+    {
+        "id": 1348,
+        "numero": 421,
+        "titulo": "O Paradeiro dos Amigos! Uma Princesa Negativa e o Rei dos Demônios!",
+        "sinopse": "Zoro fica preso em uma ilha misteriosa, Brook é confundido com o rei da escuridão e Luffy continua sua jornada para salvar Ace.",
+        "temporadaId": 12,
+        "animeId": 63,
+        "imagemUrl": "../../images/episodios/one-piece/t12/ep421.jpg",
+        "dataExibicao": "2009-10-11"
     }
 ]
