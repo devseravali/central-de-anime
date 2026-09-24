@@ -11518,5 +11518,205 @@
         "animeId": 58,
         "imagemUrl": "../../images/episodios/one-piece/t7/ep228.jpg",
         "dataExibicao": "2005-03-27"
+    },
+    {
+        "id": 1156,
+        "numero": 229,
+        "titulo": "O Trem Marítimo em Alta Velocidade e a Cidade das Águas: Water Seven!",
+        "sinopse": "Após escapar por pouco de ser atingido por um trem marítimo, a tripulação conhece Kokoro e sua neta Chimney. Eles recebem um mapa para Water Seven e chegam à cidade usando pequenos barcos puxados por yagara.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep229.jpg",
+        "dataExibicao": "2005-04-17"
+    },
+    {
+        "id": 1157,
+        "numero": 230,
+        "titulo": "Aventura na Cidade das Águas! Rumo à Gigantesca Fábrica de Construção Naval!",
+        "sinopse": "Luffy, Nami e Usopp exploram Water Seven e descobrem a Galley-La Company, uma poderosa empresa de construtores navais. Enquanto isso, Robin desaparece e Zoro enfrenta problemas no navio.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep230.jpg",
+        "dataExibicao": "2005-04-24"
+    },
+    {
+        "id": 1158,
+        "numero": 231,
+        "titulo": "A Família Franky e Iceburg!",
+        "sinopse": "Aqueles que atacaram Zoro revelam ser a Família Franky. Luffy troca o ouro por dinheiro, mas Usopp acaba tendo seu dinheiro roubado.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep231.jpg",
+        "dataExibicao": "2005-05-01"
+    },
+    {
+        "id": 1159,
+        "numero": 232,
+        "titulo": "Companhia Galley-La! Uma Grande Visão: Doca 1!",
+        "sinopse": "Paulie aparece e recupera o dinheiro roubado de Usopp. A tripulação conhece a Doca 1 da Galley-La e descobre que o Going Merry não pode mais ser reparado.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep232.jpg",
+        "dataExibicao": "2005-05-15"
+    },
+    {
+        "id": 1160,
+        "numero": 233,
+        "titulo": "Incidente de Sequestro Pirata! Um Navio Pirata Esperando Apenas Seu Fim!",
+        "sinopse": "Luffy se recusa a acreditar que o Going Merry não pode ser consertado. Usopp desaparece e vai atrás da Família Franky após ter seu dinheiro roubado.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep233.jpg",
+        "dataExibicao": "2005-05-22"
+    },
+    {
+        "id": 1161,
+        "numero": 234,
+        "titulo": "Resgatando Nosso Amigo! Ataque à Casa Franky!",
+        "sinopse": "Luffy, Sanji, Zoro e Chopper seguem os rastros de Usopp até a Casa Franky e entram em confronto com a Família Franky.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep234.jpg",
+        "dataExibicao": "2005-06-05"
+    },
+    {
+        "id": 1162,
+        "numero": 235,
+        "titulo": "Grande Luta Sob a Lua! A Bandeira Pirata Balança com Tristeza!",
+        "sinopse": "Luffy conta a Usopp que o Going Merry não pode continuar navegando. Usopp acredita que o navio foi abandonado e decide deixar a tripulação.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep235.jpg",
+        "dataExibicao": "2005-06-12"
+    },
+    {
+        "id": 1163,
+        "numero": 236,
+        "titulo": "Luffy Contra Usopp! O Orgulho de Dois Homens Colide!",
+        "sinopse": "Usopp desafia Luffy em um duelo pelo Going Merry. Mesmo lutando com todas as suas forças, ele acaba derrotado pelo capitão.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep236.jpg",
+        "dataExibicao": "2005-06-19"
+    },
+    {
+        "id": 1164,
+        "numero": 237,
+        "titulo": "Um Forte Impacto Atinge a Cidade das Águas! Iceburg é o Alvo!",
+        "sinopse": "Iceburg é baleado e a Galley-La Company começa uma investigação. Luffy e Nami tentam descobrir o que aconteceu.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep237.jpg",
+        "dataExibicao": "2005-07-03"
+    },
+    {
+        "id": 1165,
+        "numero": 238,
+        "titulo": "Homem de Borracha Contra Ciborgue Cuspidor de Fogo!",
+        "sinopse": "Luffy enfrenta Franky enquanto Iceburg revela ter visto Nico Robin e outro homem antes do ataque.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep238.jpg",
+        "dataExibicao": "2005-07-10"
+    },
+    {
+        "id": 1166,
+        "numero": 239,
+        "titulo": "Os Piratas do Chapéu de Palha São Culpados? Os Protetores da Cidade das Águas!",
+        "sinopse": "A Galley-La suspeita dos Chapéus de Palha pelo ataque a Iceburg. Enquanto isso, Aqua Laguna se aproxima da cidade.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep239.jpg",
+        "dataExibicao": "2005-07-31"
+    },
+    {
+        "id": 1167,
+        "numero": 240,
+        "titulo": "Adeus Eterno? Nico Robin, a Mulher que Atrai a Escuridão!",
+        "sinopse": "Robin encontra membros da CP9 e revela a Sanji e Chopper que decidiu abandonar a tripulação.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep240.jpg",
+        "dataExibicao": "2005-08-07"
+    },
+    {
+        "id": 1168,
+        "numero": 241,
+        "titulo": "Capturem Robin! A Determinação dos Chapéus de Palha!",
+        "sinopse": "Luffy decide descobrir a verdade sobre Robin. A tripulação se prepara para ir atrás dela enquanto Usopp tenta proteger o Going Merry.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep241.jpg",
+        "dataExibicao": "2005-08-14"
+    },
+    {
+        "id": 1169,
+        "numero": 242,
+        "titulo": "O Tiro de Canhão é o Sinal! CP9 Entra em Ação!",
+        "sinopse": "Os Chapéus de Palha chegam à Galley-La enquanto Robin e a CP9 iniciam seu ataque contra Iceburg.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep242.jpg",
+        "dataExibicao": "2005-08-21"
+    },
+    {
+        "id": 1170,
+        "numero": 243,
+        "titulo": "CP9 Retira Suas Máscaras! Suas Verdadeiras Identidades Chocantes!",
+        "sinopse": "As verdadeiras identidades da CP9 são reveladas e o objetivo deles de obter as plantas da arma ancestral Pluton vem à tona.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep243.jpg",
+        "dataExibicao": "2005-09-04"
+    },
+    {
+        "id": 1171,
+        "numero": 244,
+        "titulo": "Laço Secreto! Iceburg e Franky!",
+        "sinopse": "É revelado que Franky é Cutty Flam, antigo amigo de Iceburg, e que possui as verdadeiras plantas de Pluton.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep244.jpg",
+        "dataExibicao": "2005-09-11"
+    },
+    {
+        "id": 1172,
+        "numero": 245,
+        "titulo": "Volte, Robin! Confronto com a CP9!",
+        "sinopse": "Luffy e os outros pedem para Robin voltar, mas ela decide seguir com a CP9 para proteger seus amigos.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep245.jpg",
+        "dataExibicao": "2005-09-18"
+    },
+    {
+        "id": 1173,
+        "numero": 246,
+        "titulo": "Os Chapéus de Palha Aniquilados? A Ameaça do Modelo Leopardo!",
+        "sinopse": "Lucci revela sua transformação da fruta Zoan do Leopardo e derrota rapidamente os Chapéus de Palha.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep246.jpg",
+        "dataExibicao": "2005-10-23"
+    },
+    {
+        "id": 1174,
+        "numero": 247,
+        "titulo": "O Homem Amado Até Pelo Seu Navio! As Lágrimas de Usopp!",
+        "sinopse": "Usopp descobre que o Going Merry possuía um espírito próprio e que foi ele quem consertou o navio em Skypiea.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep247.jpg",
+        "dataExibicao": "2005-10-30"
+    },
+    {
+        "id": 1175,
+        "numero": 248,
+        "titulo": "O Passado de Franky! O Dia em que o Trem Marítimo Começou a Rodar!",
+        "sinopse": "O passado de Franky é revelado, mostrando sua relação com Tom e Iceburg e a criação do Trem Marítimo.",
+        "temporadaId": 8,
+        "animeId": 59,
+        "imagemUrl": "../../images/episodios/one-piece/t8/ep248.jpg",
+        "dataExibicao": "2005-11-06"
     }
 ]
