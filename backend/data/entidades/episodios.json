@@ -11188,5 +11188,335 @@
         "animeId": 57,
         "imagemUrl": "../../images/episodios/one-piece/t6/ep195.jpg",
         "dataExibicao": "2004-06-13"
+    },
+    {
+        "id": 1123,
+        "numero": 196,
+        "titulo": "Uma Emergência é Declarada! Um Navio Pirata Famoso Invadiu!",
+        "sinopse": "Os marinheiros acreditam que o Going Merry é um navio fantasma após ele cair dentro da fortaleza da Marinha. A tripulação acaba separada pelo local.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep196.jpg",
+        "dataExibicao": "2004-06-20"
+    },
+    {
+        "id": 1124,
+        "numero": 197,
+        "titulo": "Sanji, o Cozinheiro! Provando seu Valor no Refeitório da Marinha!",
+        "sinopse": "Disfarçado, Sanji mostra aos cozinheiros da Marinha a maneira correta de preparar uma refeição.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep197.jpg",
+        "dataExibicao": "2004-07-04"
+    },
+    {
+        "id": 1125,
+        "numero": 198,
+        "titulo": "Zoro Capturado! As Operações de Emergência de Chopper!",
+        "sinopse": "Zoro é capturado enquanto Chopper e Nami ajudam um médico nervoso a tratar os marinheiros feridos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep198.jpg",
+        "dataExibicao": "2004-07-11"
+    },
+    {
+        "id": 1126,
+        "numero": 199,
+        "titulo": "A Rede da Marinha se Fecha! O Segundo Membro é Capturado!",
+        "sinopse": "Robin e Usopp usam o mesmo disfarce de inspetor visitante. Usopp acaba preso junto com Zoro, enquanto Luffy e Sanji são descobertos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep199.jpg",
+        "dataExibicao": "2004-07-18"
+    },
+    {
+        "id": 1127,
+        "numero": 200,
+        "titulo": "A Missão de Resgate Arriscada de Luffy e Sanji!",
+        "sinopse": "O verdadeiro inspetor é preso junto com Zoro e Usopp. Luffy e Sanji tentam resgatá-los sem serem descobertos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep200.jpg",
+        "dataExibicao": "2004-08-08"
+    },
+    {
+        "id": 1128,
+        "numero": 201,
+        "titulo": "Entram as Forças Especiais de Sangue Quente! Batalha na Ponte!",
+        "sinopse": "Após libertarem Usopp e Zoro, Luffy e Sanji tentam escapar de Navarone enquanto as forças especiais da Marinha entram em ação.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep201.jpg",
+        "dataExibicao": "2004-09-05"
+    },
+    {
+        "id": 1129,
+        "numero": 202,
+        "titulo": "Rompa o Cerco! O Going Merry é Recuperado!",
+        "sinopse": "A tripulação se reúne no porto e consegue enganar os marinheiros para voltar ao Going Merry.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep202.jpg",
+        "dataExibicao": "2004-09-19"
+    },
+    {
+        "id": 1130,
+        "numero": 203,
+        "titulo": "O Navio Pirata Desaparece! Batalha na Fortaleza, Rodada 2!",
+        "sinopse": "Os Chapéus de Palha disfarçam o Going Merry como um navio da Marinha para recuperar seu tesouro.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep203.jpg",
+        "dataExibicao": "2004-09-19"
+    },
+    {
+        "id": 1131,
+        "numero": 204,
+        "titulo": "Operação de Recuperação do Ouro e do Waver!",
+        "sinopse": "Usopp divide a tripulação em dois grupos: um para recuperar o ouro e outro para recuperar o waver.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep204.jpg",
+        "dataExibicao": "2004-10-03"
+    },
+    {
+        "id": 1132,
+        "numero": 205,
+        "titulo": "O Plano de Uma Só Investida! A Tática Secreta de Jonathan!",
+        "sinopse": "Sanji, Zoro, Usopp e Robin continuam procurando o tesouro enquanto Luffy e Nami tentam recuperar o ouro.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep205.jpg",
+        "dataExibicao": "2004-10-03"
+    },
+    {
+        "id": 1133,
+        "numero": 206,
+        "titulo": "Adeus, Fortaleza da Marinha! A Última Batalha pela Fuga!",
+        "sinopse": "O Going Merry fica preso durante a maré baixa, mas a tripulação usa os Dials para conseguir escapar da fortaleza.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep206.jpg",
+        "dataExibicao": "2004-10-10"
+    },
+    {
+        "id": 1134,
+        "numero": 207,
+        "titulo": "Grande Aventura em Long Ring Long Land!",
+        "sinopse": "Após escapar de uma onda gigante, os Chapéus de Palha encontram uma ilha misteriosa habitada por animais estranhos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep207.jpg",
+        "dataExibicao": "2004-10-31"
+    },
+    {
+        "id": 1135,
+        "numero": 208,
+        "titulo": "Um Davy Back com os Piratas Foxy!",
+        "sinopse": "Foxy desafia Luffy para um Davy Back Fight, uma competição pirata onde membros da tripulação podem ser apostados.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep208.jpg",
+        "dataExibicao": "2004-11-07"
+    },
+    {
+        "id": 1136,
+        "numero": 209,
+        "titulo": "Primeira Rodada! Uma Volta na Corrida Donut!",
+        "sinopse": "A primeira etapa do Davy Back Fight começa com uma corrida ao redor da ilha usando pequenos barcos.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep209.jpg",
+        "dataExibicao": "2004-11-14"
+    },
+    {
+        "id": 1137,
+        "numero": 210,
+        "titulo": "Raposa Prateada Foxy! A Interferência Impiedosa!",
+        "sinopse": "Foxy usa seus poderes da fruta do diabo para trapacear e consegue pegar Chopper da tripulação de Luffy.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep210.jpg",
+        "dataExibicao": "2004-11-21"
+    },
+    {
+        "id": 1138,
+        "numero": 211,
+        "titulo": "Segunda Rodada! Atire no Groggy Ring!",
+        "sinopse": "Sem Chopper, Sanji e Zoro enfrentam os Piratas Foxy em uma partida de Groggy Ring cheia de trapaças.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep211.jpg",
+        "dataExibicao": "2004-11-28"
+    },
+    {
+        "id": 1139,
+        "numero": 212,
+        "titulo": "Uma Chuva de Cartões Vermelhos no Groggy Ring!",
+        "sinopse": "Sanji e Zoro deixam suas diferenças de lado e trabalham juntos para vencer a equipe adversária.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep212.jpg",
+        "dataExibicao": "2004-12-05"
+    },
+    {
+        "id": 1140,
+        "numero": 213,
+        "titulo": "Terceira Rodada! A Corrida do Roller Round!",
+        "sinopse": "Os Chapéus de Palha enfrentam Foxy em uma corrida de patins ao redor de um enorme circuito.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep213.jpg",
+        "dataExibicao": "2004-12-12"
+    },
+    {
+        "id": 1141,
+        "numero": 214,
+        "titulo": "Uma Corrida Extremamente Quente! Rumo à Rodada Final!",
+        "sinopse": "Com um plano rápido, os Chapéus de Palha conseguem vencer a corrida final.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep214.jpg",
+        "dataExibicao": "2004-12-19"
+    },
+    {
+        "id": 1142,
+        "numero": 215,
+        "titulo": "Bombardeio Ardente! Dodgeball Pirata!",
+        "sinopse": "Depois de recuperar Chopper, Luffy aceita outro desafio de Foxy sem pensar nas consequências.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep215.jpg",
+        "dataExibicao": "2005-01-09"
+    },
+    {
+        "id": 1143,
+        "numero": 216,
+        "titulo": "Confronto no Penhasco! Luz Vermelha, Luz Verde!",
+        "sinopse": "Foxy decide apostar Robin na próxima rodada contra Luffy. A nova disputa é uma corrida até o topo da ilha.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep216.jpg",
+        "dataExibicao": "2005-01-09"
+    },
+    {
+        "id": 1144,
+        "numero": 217,
+        "titulo": "Os Capitães se Enfrentam! A Rodada Final de Combate!",
+        "sinopse": "Com Chopper novamente fora da tripulação, Luffy e Foxy decidem resolver tudo em uma batalha final a bordo do navio de Foxy.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep217.jpg",
+        "dataExibicao": "2005-01-16"
+    },
+    {
+        "id": 1145,
+        "numero": 218,
+        "titulo": "Ataque Devagar Devagar em Alta Velocidade Contra o Luffy Invencível!",
+        "sinopse": "Luffy continua sua batalha contra Foxy, enfrentando os efeitos da fruta do diabo do adversário durante o combate.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep218.jpg",
+        "dataExibicao": "2005-01-23"
+    },
+    {
+        "id": 1146,
+        "numero": 219,
+        "titulo": "Combate Épico e Ardente! A Conclusão Final do Destino!",
+        "sinopse": "Luffy finalmente derrota Foxy usando o próprio poder dele contra ele. Depois disso, os Chapéus de Palha continuam sua busca por um construtor naval.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep219.jpg",
+        "dataExibicao": "2005-01-30"
+    },
+    {
+        "id": 1147,
+        "numero": 220,
+        "titulo": "Foi Perdido? Foi Roubado? Quem é Você?",
+        "sinopse": "Uma figura misteriosa aparece durante a noite e rouba as memórias da tripulação. Apenas Robin se lembra das aventuras dos Chapéus de Palha.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep220.jpg",
+        "dataExibicao": "2005-02-06"
+    },
+    {
+        "id": 1148,
+        "numero": 221,
+        "titulo": "Um Garoto Misterioso com Chifres e a Dedução de Robin!",
+        "sinopse": "Robin descobre que apenas quem estava dormindo perdeu as memórias. A tripulação encontra o garoto misterioso responsável pelo ocorrido.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep221.jpg",
+        "dataExibicao": "2005-02-13"
+    },
+    {
+        "id": 1149,
+        "numero": 222,
+        "titulo": "Agora Vamos Recuperar Nossas Memórias! A Tripulação Pirata Chega à Ilha!",
+        "sinopse": "Usopp, Chopper e Sanji tentam descobrir o que aconteceu enquanto navegam até a ilha onde Nami está. O garoto misterioso continua atrás de Zoro.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep222.jpg",
+        "dataExibicao": "2005-02-20"
+    },
+    {
+        "id": 1150,
+        "numero": 223,
+        "titulo": "Zoro Mostra suas Presas! Um Animal Selvagem Está no Caminho!",
+        "sinopse": "Robin e os outros encontram Zoro sob influência do poder do garoto. Eles descobrem que o verdadeiro responsável pelas memórias roubadas é um cavalo-marinho.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep223.jpg",
+        "dataExibicao": "2005-02-27"
+    },
+    {
+        "id": 1151,
+        "numero": 224,
+        "titulo": "O Último Contra-Ataque do Ladrão de Memórias Revela sua Verdadeira Face!",
+        "sinopse": "Luffy retorna e recupera o senso de Zoro. O cavalo-marinho tenta roubar todas as memórias da tripulação, mas acaba derrotado.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep224.jpg",
+        "dataExibicao": "2005-03-06"
+    },
+    {
+        "id": 1152,
+        "numero": 225,
+        "titulo": "Homem Orgulhoso! Raposa Prateada Foxy!",
+        "sinopse": "Luffy salva Foxy, Hamburg e Porche de uma tempestade. Foxy aceita um novo Davy Back Fight para recuperar sua tripulação.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep225.jpg",
+        "dataExibicao": "2005-03-13"
+    },
+    {
+        "id": 1153,
+        "numero": 226,
+        "titulo": "O Homem Mais Próximo da Invencibilidade? O Homem Mais Perigoso!",
+        "sinopse": "Foxy recupera sua tripulação, mas acaba capturando os Chapéus de Palha. Depois da batalha, a tripulação encontra alguém conhecido por Robin.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep226.jpg",
+        "dataExibicao": "2005-03-20"
+    },
+    {
+        "id": 1154,
+        "numero": 227,
+        "titulo": "Almirante da Marinha Aokiji! O Poder Supremo de uma Força Implacável!",
+        "sinopse": "A tripulação conhece Aokiji, um Almirante da Marinha que demonstra o poder de sua fruta do diabo de gelo e revela interesse em Robin.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep227.jpg",
+        "dataExibicao": "2005-03-27"
+    },
+    {
+        "id": 1155,
+        "numero": 228,
+        "titulo": "Duelo Entre Borracha e Gelo! Luffy Contra Aokiji!",
+        "sinopse": "Aokiji congela Robin e enfrenta Luffy. Mesmo derrotado, Luffy e sua tripulação são poupados enquanto continuam sua viagem pelo mar.",
+        "temporadaId": 7,
+        "animeId": 58,
+        "imagemUrl": "../../images/episodios/one-piece/t7/ep228.jpg",
+        "dataExibicao": "2005-03-27"
     }
 ]
