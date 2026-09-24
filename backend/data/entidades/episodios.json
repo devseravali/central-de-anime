@@ -10148,5 +10148,395 @@
         "animeId": 54,
         "imagemUrl": "../../images/episodios/one-piece/t3/ep91.jpg",
         "dataExibicao": "2001-12-09"
+    },
+    {
+        "id": 1019,
+        "numero": 92,
+        "titulo": "O Herói de Alabasta e uma Bailarina no Navio!",
+        "sinopse": "Crocodile aparece para conter piratas que causam tumulto. Luffy e sua tripulação conhecem Mr. 2 Bon Clay, que demonstra o poder de sua Fruta do Diabo, enquanto Vivi presencia uma cena surpreendente.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep92.jpg",
+        "dataExibicao": "2001-12-09"
+    },
+    {
+        "id": 1020,
+        "numero": 93,
+        "titulo": "Rumo ao Reino do Deserto! O Pó da Chuva e o Exército Rebelde!",
+        "sinopse": "Após chegar ao porto de Nanohana, Luffy se separa do restante da tripulação. Enquanto seus companheiros seguem disfarçados, ele descobre a existência do Dance Powder.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep93.jpg",
+        "dataExibicao": "2001-12-16"
+    },
+    {
+        "id": 1021,
+        "numero": 94,
+        "titulo": "O Reencontro dos Heróis! Seu Nome é Ace dos Punhos de Fogo!",
+        "sinopse": "Enquanto estão em Nanohana, os Chapéus de Palha encontram Smoker e Tashigi. Nesse momento, surge Portgas D. Ace, um poderoso pirata e irmão mais velho de Luffy.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep94.jpg",
+        "dataExibicao": "2001-12-23"
+    },
+    {
+        "id": 1022,
+        "numero": 95,
+        "titulo": "Ace e Luffy! Emoções Ardentes e Laços de Irmãos!",
+        "sinopse": "Ace enfrenta Smoker enquanto os Chapéus de Palha escapam. Luffy reencontra seu irmão, agora integrante dos Piratas do Barba Branca, que está em busca de Barba Negra.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep95.jpg",
+        "dataExibicao": "2002-01-06"
+    },
+    {
+        "id": 1023,
+        "numero": 96,
+        "titulo": "Erumalu, a Cidade Verde e os Dugongues Kung Fu!",
+        "sinopse": "Ace decide viajar temporariamente com os Chapéus de Palha enquanto continua sua caçada por Barba Negra através do Reino de Alabasta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep96.jpg",
+        "dataExibicao": "2002-01-13"
+    },
+    {
+        "id": 1024,
+        "numero": 97,
+        "titulo": "Aventura no Reino da Areia! Os Monstros da Terra Escaldante!",
+        "sinopse": "Após deixarem Erumalu, Luffy, seus companheiros, Vivi e Ace atravessam o deserto de Alabasta enfrentando os inúmeros perigos da região.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep97.jpg",
+        "dataExibicao": "2002-01-20"
+    },
+    {
+        "id": 1025,
+        "numero": 98,
+        "titulo": "A Chegada dos Piratas do Deserto! Homens que Vivem Livremente!",
+        "sinopse": "Nami e Vivi encontram uma forma mais fácil de atravessar o deserto, deixando os demais integrantes da tripulação seguirem por conta própria.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep98.jpg",
+        "dataExibicao": "2002-01-27"
+    },
+    {
+        "id": 1026,
+        "numero": 99,
+        "titulo": "Uma Falsa Coragem! Camu, o Soldado Rebelde de Coração!",
+        "sinopse": "Após descobrir uma pequena vila protegida por falsos soldados do Exército Rebelde, Vivi pede aos companheiros que testem se eles realmente merecem defender aquele lugar.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep99.jpg",
+        "dataExibicao": "2002-02-03"
+    },
+    {
+        "id": 1027,
+        "numero": 100,
+        "titulo": "Koza, o Guerreiro Rebelde! O Sonho Prometido a Vivi!",
+        "sinopse": "Enquanto atravessam o deserto, a tripulação derrota um enorme escorpião para conseguir alimento. Vivi relembra sua amizade de infância com Koza.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep100.jpg",
+        "dataExibicao": "2002-02-10"
+    },
+    {
+        "id": 1028,
+        "numero": 101,
+        "titulo": "Confronto Sob a Miragem! Ace Contra o Valente Escorpião!",
+        "sinopse": "Ace enfrenta um caçador de recompensas que afirma ter derrotado Barba Negra. Na verdade, tudo fazia parte de um plano para desafiá-lo e inspirar seus filhos.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep101.jpg",
+        "dataExibicao": "2002-02-17"
+    },
+    {
+        "id": 1029,
+        "numero": 102,
+        "titulo": "Ruínas e Caminhos Perdidos! Vivi, Seus Amigos e a História do Reino!",
+        "sinopse": "Zoro, Chopper e Luffy acabam se perdendo no deserto e encontram enormes ruínas subterrâneas, enquanto Vivi continua revelando detalhes sobre o Reino de Alabasta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep102.jpg",
+        "dataExibicao": "2002-02-24"
+    },
+    {
+        "id": 1030,
+        "numero": 103,
+        "titulo": "Café Spiders às Oito Horas! Os Líderes Inimigos se Reúnem!",
+        "sinopse": "O plano da Baroque Works começa a entrar em ação. Os Agentes Numéricos se reúnem com Mr. 0, enquanto os Chapéus de Palha descobrem que o Exército Rebelde está marchando para Katorea.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep103.jpg",
+        "dataExibicao": "2002-03-02"
+    },
+    {
+        "id": 1031,
+        "numero": 104,
+        "titulo": "Luffy Contra Vivi! A Promessa Entre Amigos Feita em Lágrimas!",
+        "sinopse": "Em Yuba, Luffy confronta Vivi sobre a realidade da guerra iminente, fazendo-a compreender que apenas palavras não serão suficientes para salvar Alabasta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep104.jpg",
+        "dataExibicao": "2002-03-10"
+    },
+    {
+        "id": 1032,
+        "numero": 105,
+        "titulo": "A Linha de Frente de Alabasta! Rainbase, a Cidade dos Sonhos!",
+        "sinopse": "Determinada a enfrentar Crocodile, Vivi segue para Rainbase com os Chapéus de Palha. No caminho, o grupo reencontra Smoker e Tashigi.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep105.jpg",
+        "dataExibicao": "2002-03-17"
+    },
+    {
+        "id": 1033,
+        "numero": 106,
+        "titulo": "A Armadilha da Derrota Certa! Invadindo o Rain Dinners!",
+        "sinopse": "Grande parte da tripulação acaba presa por Crocodile. Vivi reencontra Pell, mas é capturada por Miss All Sunday, enquanto Crocodile revela o poder da Suna Suna no Mi.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep106.jpg",
+        "dataExibicao": "2002-03-24"
+    },
+    {
+        "id": 1034,
+        "numero": 107,
+        "titulo": "A Operação Utopia Começa! A Revolta Entra em Ação!",
+        "sinopse": "O plano da Baroque Works para tomar o controle de Alabasta finalmente entra em sua fase decisiva, dando início ao levante que ameaça destruir o reino.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep107.jpg",
+        "dataExibicao": "2002-04-14"
+    },
+    {
+        "id": 1035,
+        "numero": 108,
+        "titulo": "Os Aterrorizantes Crocodilos-Banana e o Sr. Príncipe!",
+        "sinopse": "Enquanto Vivi tenta libertar seus amigos, Crocodile recebe uma ligação inesperada de alguém que se apresenta como 'Mr. Prince', frustrando seus planos.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep108.jpg",
+        "dataExibicao": "2002-04-21"
+    },
+    {
+        "id": 1036,
+        "numero": 109,
+        "titulo": "A Chave para a Grande Fuga! A Bola de Cera!",
+        "sinopse": "A identidade de Mr. Prince é revelada. Graças ao seu plano, os Chapéus de Palha encontram uma oportunidade para escapar da armadilha de Crocodile.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep109.jpg",
+        "dataExibicao": "2002-04-28"
+    },
+    {
+        "id": 1037,
+        "numero": 110,
+        "titulo": "Combate Mortal Sem Piedade! Luffy Contra Crocodile!",
+        "sinopse": "Após escaparem de Rain Dinners, os Chapéus de Palha seguem para Alubarna. Luffy enfrenta Crocodile pela primeira vez em uma batalha decisiva.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep110.jpg",
+        "dataExibicao": "2002-05-05"
+    },
+    {
+        "id": 1038,
+        "numero": 111,
+        "titulo": "Corrida por um Milagre! A Terra dos Animais de Alabasta!",
+        "sinopse": "Gravemente ferido após a luta contra Crocodile, Luffy é salvo por Nico Robin. Enquanto isso, os demais Chapéus de Palha chegam a Alubarna para impedir a guerra.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep111.jpg",
+        "dataExibicao": "2002-05-12"
+    },
+    {
+        "id": 1039,
+        "numero": 112,
+        "titulo": "Exército Rebelde contra Exército Real! O Confronto em Alubarna!",
+        "sinopse": "A guerra civil finalmente começa em Alubarna. Enquanto os dois exércitos entram em confronto, os Chapéus de Palha elaboram um plano para impedir o massacre.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep112.jpg",
+        "dataExibicao": "2002-05-19"
+    },
+    {
+        "id": 1040,
+        "numero": 113,
+        "titulo": "Alubarna em Luto! O Valente Capitão Karoo!",
+        "sinopse": "Vivi tenta desesperadamente deter a batalha entre os exércitos, mas um infiltrado da Baroque Works impede que sua voz seja ouvida.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep113.jpg",
+        "dataExibicao": "2002-06-02"
+    },
+    {
+        "id": 1041,
+        "numero": 114,
+        "titulo": "O Sonho de um Amigo! A Batalha no Monte das Toupeiras, Bloco 4!",
+        "sinopse": "Usopp e Chopper enfrentam Mr. 4 e Miss Merry Christmas em uma batalha difícil. Mesmo gravemente ferido, Usopp decide lutar até o fim para proteger o sonho de seu capitão.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep114.jpg",
+        "dataExibicao": "2002-06-09"
+    },
+    {
+        "id": 1042,
+        "numero": 115,
+        "titulo": "Grande Estreia de Hoje! A Montagem da Mane-Mane!",
+        "sinopse": "Após derrotarem a equipe de Mr. 4, Usopp e Chopper comemoram a vitória. Enquanto isso, Bon Clay descobre o ponto fraco de Sanji.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep115.jpg",
+        "dataExibicao": "2002-06-16"
+    },
+    {
+        "id": 1043,
+        "numero": 116,
+        "titulo": "Transformado em Nami! O Ballet Kenpo de Bon Clay!",
+        "sinopse": "Bon Clay utiliza seu poder para assumir a aparência de Nami e confundir Sanji, mas o cozinheiro supera suas dúvidas e continua a luta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep116.jpg",
+        "dataExibicao": "2002-06-23"
+    },
+    {
+        "id": 1044,
+        "numero": 117,
+        "titulo": "Alerta de Ciclone para Nami! A Explosão do Clima-Tact!",
+        "sinopse": "Nami enfrenta Miss Doublefinger e tenta dominar sua nova arma criada por Usopp, o Clima-Tact.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep117.jpg",
+        "dataExibicao": "2002-06-30"
+    },
+    {
+        "id": 1045,
+        "numero": 118,
+        "titulo": "O Segredo Herdado pela Família Real! A Arma Ancestral Pluton!",
+        "sinopse": "Enquanto Crocodile revela seu interesse pela arma ancestral Pluton, Nami coloca em prática seu ataque mais poderoso para derrotar Miss Doublefinger.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep118.jpg",
+        "dataExibicao": "2002-07-14"
+    },
+    {
+        "id": 1046,
+        "numero": 119,
+        "titulo": "O Segredo da Espadachim Poderosa! A Habilidade de Cortar o Aço!",
+        "sinopse": "Zoro trava uma batalha decisiva contra Mr. 1 e, diante da morte, desperta a capacidade de compreender o 'ritmo de todas as coisas', conseguindo cortar o aço.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep119.jpg",
+        "dataExibicao": "2002-07-21"
+    },
+    {
+        "id": 1047,
+        "numero": 120,
+        "titulo": "A Batalha Acabou! Koza Ergue a Bandeira Branca!",
+        "sinopse": "Vivi revela a verdade para Koza, que tenta interromper a guerra. Entretanto, Crocodile revela que preparou uma enorme bomba para destruir Alubarna.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep120.jpg",
+        "dataExibicao": "2002-08-04"
+    },
+    {
+        "id": 1048,
+        "numero": 121,
+        "titulo": "Onde a Voz de Vivi é Ouvida! O Herói Desce à Arena!",
+        "sinopse": "Mesmo tentando parar a guerra, Koza não consegue impedir o confronto. Luffy retorna para salvar Vivi e desafia Crocodile para uma segunda batalha.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep121.jpg",
+        "dataExibicao": "2002-08-11"
+    },
+    {
+        "id": 1049,
+        "numero": 122,
+        "titulo": "Crocodilo da Areia e Luffy de Água! O Segundo Round do Duelo!",
+        "sinopse": "Luffy enfrenta Crocodile novamente utilizando água para neutralizar seus poderes. Enquanto isso, os Chapéus de Palha procuram desesperadamente pela bomba escondida em Alubarna.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep122.jpg",
+        "dataExibicao": "2002-08-18"
+    },
+    {
+        "id": 1050,
+        "numero": 123,
+        "titulo": "Parece um Crocodilo! Luffy Corre para o Túmulo Real!",
+        "sinopse": "Crocodile obriga Nico Robin a traduzir o Poneglyph escondido no Túmulo Real. Após descobrir que ela mentiu, ele a ataca. Recuperado, Luffy corre até o túmulo para enfrentá-lo novamente.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep123.jpg",
+        "dataExibicao": "2002-08-25"
+    },
+    {
+        "id": 1051,
+        "numero": 124,
+        "titulo": "O Pesadelo se Aproxima! Esta é a Base Secreta do Clã da Areia!",
+        "sinopse": "Usando o próprio sangue para atingir Crocodile, Luffy continua a batalha. Enquanto isso, Vivi encontra a bomba e reúne seus companheiros para impedir a tragédia.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep124.jpg",
+        "dataExibicao": "2002-09-01"
+    },
+    {
+        "id": 1052,
+        "numero": 125,
+        "titulo": "As Magníficas Asas! Meu Nome é Pell, Guardião do Reino!",
+        "sinopse": "Vivi encontra a bomba escondida na torre do relógio, mas percebe que não há tempo para desarmá-la. Pell se sacrifica carregando o explosivo para o céu para salvar Alabasta.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep125.jpg",
+        "dataExibicao": "2002-09-08"
+    },
+    {
+        "id": 1053,
+        "numero": 126,
+        "titulo": "Eu Vou Superar Você! A Chuva Cai Sobre Alabasta!",
+        "sinopse": "Luffy derrota Crocodile com um golpe devastador, atravessando a rocha sólida. Com a queda do vilão, a chuva finalmente retorna ao reino e a guerra chega ao fim.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep126.jpg",
+        "dataExibicao": "2002-09-15"
+    },
+    {
+        "id": 1054,
+        "numero": 127,
+        "titulo": "Adeus às Armas! Piratas e os Diferentes Ideais de Justiça!",
+        "sinopse": "Com a guerra encerrada, a inocência do rei Cobra é comprovada. Smoker e Tashigi recebem o crédito pela derrota de Crocodile, embora saibam que os verdadeiros heróis foram os Chapéus de Palha.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep127.jpg",
+        "dataExibicao": "2002-10-06"
+    },
+    {
+        "id": 1055,
+        "numero": 128,
+        "titulo": "O Banquete dos Piratas e a Operação de Fuga de Alabasta!",
+        "sinopse": "Após despertar de seus ferimentos, Luffy participa de um grande banquete oferecido pelo rei Cobra. Em seguida, a tripulação prepara uma fuga antes da chegada da Marinha.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep128.jpg",
+        "dataExibicao": "2002-10-06"
+    },
+    {
+        "id": 1056,
+        "numero": 129,
+        "titulo": "Tudo Começou Naquele Dia! Vivi Conta a História de Sua Aventura!",
+        "sinopse": "Chega o momento de Vivi decidir se continuará viajando com os Chapéus de Palha. Enquanto isso, Bon Clay sacrifica sua própria liberdade para ajudar seus amigos a escaparem da perseguição da Marinha.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep129.jpg",
+        "dataExibicao": "2002-10-20"
+    },
+    {
+        "id": 1057,
+        "numero": 130,
+        "titulo": "Cheiro de Perigo! O Sétimo Membro é Nico Robin!",
+        "sinopse": "Após escaparem da Marinha, os Chapéus de Palha recebem uma visita inesperada de Nico Robin. A antiga Miss All Sunday convence Luffy a aceitá-la como a mais nova integrante da tripulação.",
+        "temporadaId": 4,
+        "animeId": 55,
+        "imagemUrl": "../../images/episodios/one-piece/t4/ep130.jpg",
+        "dataExibicao": "2002-10-27"
     }
 ]
