@@ -21968,5 +21968,325 @@
         "animeId": 77,
         "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep33.jpg",
         "dataExibicao": "1992-05-13"
+    },
+    {
+        "id": 2216,
+        "numero": 1,
+        "titulo": "Os Céus Tremem",
+        "sinopse": "Gohan leva uma vida tranquila, Kuririn encontra uma namorada e parece que a paz voltou à Terra. Porém, Garlic Jr. escapou da Zona da Morte e prepara seu retorno.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep1.jpg",
+        "dataExibicao": "1991-09-18"
+    },
+    {
+        "id": 2217,
+        "numero": 2,
+        "titulo": "A Névoa Negra do Terror",
+        "sinopse": "Com a ajuda dos Spice Boys, Garlic Jr. libera a Névoa da Água Negra e começa a dominar a Terra com seu poder maligno.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep2.jpg",
+        "dataExibicao": "1991-09-25"
+    },
+    {
+        "id": 2218,
+        "numero": 3,
+        "titulo": "Batalha no Templo de Kami",
+        "sinopse": "Piccolo tenta impedir os Spice Boys e os Guerreiros Z infectados enquanto Gohan e Kuririn procuram a Água Sagrada para reverter o efeito da névoa.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep3.jpg",
+        "dataExibicao": "1991-10-02"
+    },
+    {
+        "id": 2219,
+        "numero": 4,
+        "titulo": "A Luta Contra Piccolo",
+        "sinopse": "Piccolo é afetado pela Névoa da Água Negra e Garlic Jr. coloca os heróis da Terra em uma situação perigosa.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep4.jpg",
+        "dataExibicao": "1991-10-09"
+    },
+    {
+        "id": 2220,
+        "numero": 5,
+        "titulo": "O Chamado pela Restauração",
+        "sinopse": "Kuririn tenta libertar Kami e Mr. Popo, enquanto Gohan se torna a última esperança para salvar a Terra.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep5.jpg",
+        "dataExibicao": "1991-10-16"
+    },
+    {
+        "id": 2221,
+        "numero": 6,
+        "titulo": "Curso Suicida",
+        "sinopse": "Piccolo e Kuririn revelam que fingiram estar infectados. Garlic Jr. usa o poder da Estrela Makyo para aumentar sua força.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep6.jpg",
+        "dataExibicao": "1991-10-23"
+    },
+    {
+        "id": 2222,
+        "numero": 7,
+        "titulo": "Medidas Extremas",
+        "sinopse": "Garlic Jr. e seus seguidores utilizam o poder maligno da Estrela Makyo, mas Gohan, Kuririn e Piccolo estão preparados para lutar.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep7.jpg",
+        "dataExibicao": "1991-10-30"
+    },
+    {
+        "id": 2223,
+        "numero": 8,
+        "titulo": "O Mundo Desperta",
+        "sinopse": "Gohan realiza um ataque final contra Garlic Jr. enquanto Kami e Mr. Popo enfrentam uma nova ameaça dentro do Templo.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep8.jpg",
+        "dataExibicao": "1991-11-06"
+    },
+    {
+        "id": 2224,
+        "numero": 9,
+        "titulo": "Uma Breve Chance de Vitória",
+        "sinopse": "Garlic Jr. abre novamente a Zona da Morte em uma tentativa desesperada de destruir seus inimigos.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep9.jpg",
+        "dataExibicao": "1991-11-13"
+    },
+    {
+        "id": 2225,
+        "numero": 10,
+        "titulo": "A Proposta de Kuririn",
+        "sinopse": "Com a paz restaurada, Kuririn enfrenta um novo desafio ao passar tempo com Maron.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep10.jpg",
+        "dataExibicao": "1991-11-20"
+    },
+    {
+        "id": 2226,
+        "numero": 11,
+        "titulo": "O Despertar dos Androides",
+        "sinopse": "Os três anos de treinamento chegam ao fim e o dia previsto por Trunks finalmente chega. Os Androides 19 e 20 aparecem e começam a causar destruição, colocando os Guerreiros Z em uma nova batalha pela sobrevivência.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep11.jpg",
+        "dataExibicao": "1991-11-27"
+    },
+    {
+        "id": 2227,
+        "numero": 12,
+        "titulo": "O Poder dos Androides",
+        "sinopse": "Yamcha é atacado pelo Android 20 enquanto Goku e os outros correm para ajudar. Os Androides mostram seu verdadeiro poder e revelam que vieram para eliminar Goku.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep12.jpg",
+        "dataExibicao": "1991-12-04"
+    },
+    {
+        "id": 2228,
+        "numero": 13,
+        "titulo": "A Fusão de Piccolo",
+        "sinopse": "Piccolo decide se unir novamente a Kami para aumentar seu poder e enfrentar a ameaça dos Androides. O novo guerreiro Namekuseijin surge com uma força impressionante.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep13.jpg",
+        "dataExibicao": "1991-12-11"
+    },
+    {
+        "id": 2229,
+        "numero": 14,
+        "titulo": "O Nascimento de Cell Perfeito",
+        "sinopse": "Cell continua sua busca pelos Androides 17 e 18 para alcançar sua forma perfeita. Enquanto isso, os Guerreiros Z tentam impedir que o monstro complete sua evolução.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep14.jpg",
+        "dataExibicao": "1991-12-18"
+    },
+    {
+        "id": 2230,
+        "numero": 15,
+        "titulo": "A Sala do Tempo",
+        "sinopse": "Goku cria um plano para treinar dentro da Sala do Tempo, onde um ano de treinamento pode ser realizado em apenas um dia. Vegeta e Trunks entram para aumentar seus poderes.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep15.jpg",
+        "dataExibicao": "1991-12-25"
+    },
+    {
+        "id": 2231,
+        "numero": 16,
+        "titulo": "O Treinamento dos Guerreiros Z",
+        "sinopse": "Os Guerreiros Z continuam seus treinamentos intensos para superar o poder dos Androides e de Cell. Cada lutador busca alcançar um novo nível de força.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep16.jpg",
+        "dataExibicao": "1992-01-01"
+    },
+    {
+        "id": 2232,
+        "numero": 17,
+        "titulo": "Vegeta Contra Cell",
+        "sinopse": "Após sair da Sala do Tempo, Vegeta enfrenta Cell em sua segunda forma e demonstra um novo nível de poder. Confiante em sua força, o príncipe dos Saiyajins permite que Cell continue sua evolução.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep17.jpg",
+        "dataExibicao": "1992-01-08"
+    },
+    {
+        "id": 2233,
+        "numero": 18,
+        "titulo": "A Transformação de Cell",
+        "sinopse": "Cell procura desesperadamente pelo Android 18 para alcançar sua forma perfeita. Enquanto isso, Vegeta acredita que ninguém pode superar sua nova força como Super Saiyajin.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep18.jpg",
+        "dataExibicao": "1992-01-15"
+    },
+    {
+        "id": 2234,
+        "numero": 19,
+        "titulo": "O Torneio de Cell",
+        "sinopse": "Depois de alcançar sua forma perfeita, Cell decide criar um torneio para testar seu poder contra os maiores guerreiros da Terra.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep19.jpg",
+        "dataExibicao": "1992-01-22"
+    },
+    {
+        "id": 2235,
+        "numero": 20,
+        "titulo": "Começa o Cell Game",
+        "sinopse": "Cell anuncia seu torneio para o mundo e desafia qualquer lutador capaz de derrotá-lo. Os Guerreiros Z começam os preparativos para o confronto final.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep20.jpg",
+        "dataExibicao": "1992-01-29"
+    },
+    {
+        "id": 2236,
+        "numero": 21,
+        "titulo": "O Desafio de Cell",
+        "sinopse": "Os Guerreiros Z chegam ao local do Cell Game enquanto o mundo acompanha o desafio. O primeiro a enfrentar Cell é o campeão mundial Mr. Satan.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep21.jpg",
+        "dataExibicao": "1992-02-05"
+    },
+    {
+        "id": 2237,
+        "numero": 22,
+        "titulo": "O Início do Cell Game",
+        "sinopse": "O verdadeiro combate começa quando Goku entra no ringue para enfrentar Cell. Os dois guerreiros mostram seus poderes em uma batalha que abala a Terra.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep22.jpg",
+        "dataExibicao": "1992-02-12"
+    },
+    {
+        "id": 2238,
+        "numero": 23,
+        "titulo": "Goku Contra Cell",
+        "sinopse": "Goku e Cell continuam sua luta usando todas as suas técnicas. O combate se torna cada vez mais intenso enquanto os dois guerreiros mostram todo seu potencial.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep23.jpg",
+        "dataExibicao": "1992-02-19"
+    },
+    {
+        "id": 2239,
+        "numero": 24,
+        "titulo": "O Poder Oculto de Gohan",
+        "sinopse": "Goku percebe que Gohan possui um poder escondido maior que o seu e decide colocá-lo como próximo adversário de Cell.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep24.jpg",
+        "dataExibicao": "1992-02-26"
+    },
+    {
+        "id": 2240,
+        "numero": 25,
+        "titulo": "A Verdadeira Força de Gohan",
+        "sinopse": "Gohan enfrenta Cell e demonstra uma força impressionante. Porém, o jovem Saiyajin ainda precisa superar seu medo de lutar.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep25.jpg",
+        "dataExibicao": "1992-03-04"
+    },
+    {
+        "id": 2241,
+        "numero": 26,
+        "titulo": "Gohan se Transforma",
+        "sinopse": "Após Cell atacar seus amigos e liberar os Cell Juniors, Gohan finalmente desperta sua verdadeira força e alcança o Super Saiyajin 2.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep26.jpg",
+        "dataExibicao": "1992-03-11"
+    },
+    {
+        "id": 2242,
+        "numero": 27,
+        "titulo": "O Super Saiyajin 2",
+        "sinopse": "Com seu novo poder despertado, Gohan derrota facilmente os Cell Juniors e começa a dominar completamente a batalha contra Cell. O androide percebe que está diante de um adversário muito superior.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep27.jpg",
+        "dataExibicao": "1992-03-18"
+    },
+    {
+        "id": 2243,
+        "numero": 28,
+        "titulo": "A Derrota de Cell",
+        "sinopse": "Gohan continua sua luta contra Cell e demonstra uma força que ultrapassa todos os limites conhecidos. O vilão tenta usar seus últimos recursos para vencer o jovem Saiyajin.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep28.jpg",
+        "dataExibicao": "1992-03-25"
+    },
+    {
+        "id": 2244,
+        "numero": 29,
+        "titulo": "O Último Ataque de Cell",
+        "sinopse": "Desesperado após ser derrotado, Cell decide destruir a Terra usando sua técnica de autodestruição. Goku toma uma decisão arriscada para salvar todos.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep29.jpg",
+        "dataExibicao": "1992-04-01"
+    },
+    {
+        "id": 2245,
+        "numero": 30,
+        "titulo": "O Fim da Batalha Contra Cell",
+        "sinopse": "Cell retorna ainda mais poderoso após sua regeneração e inicia o confronto final. Gohan precisa reunir todas as suas forças para derrotar o inimigo de uma vez por todas.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep30.jpg",
+        "dataExibicao": "1992-04-08"
+    },
+    {
+        "id": 2246,
+        "numero": 31,
+        "titulo": "O Adeus de Goku",
+        "sinopse": "Após a vitória contra Cell, Goku decide permanecer no outro mundo para proteger a Terra. Os Guerreiros Z se despedem do maior herói da humanidade.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep31.jpg",
+        "dataExibicao": "1992-04-15"
+    },
+    {
+        "id": 2247,
+        "numero": 32,
+        "titulo": "O Novo Campeão da Terra",
+        "sinopse": "Os Guerreiros Z descobrem uma nova ameaça vinda do futuro quando Bulma encontra uma segunda cápsula do tempo. O mistério sobre quem chegou nela começa a surgir.",
+        "temporadaId": 4,
+        "animeId": 78,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t4/ep32.jpg",
+        "dataExibicao": "1992-04-22"
     }
 ]
