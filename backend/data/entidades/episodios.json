@@ -21288,5 +21288,355 @@
         "animeId": 75,
         "imagemUrl": "../../images/episodios/dragon-ball-z/t1/ep39.jpg",
         "dataExibicao": "1990-03-07"
+    },
+    {
+        "id": 2148,
+        "numero": 1,
+        "titulo": "Mantido Refém",
+        "sinopse": "Bulma, Gohan e Kuririn são confundidos com aliados de Freeza e acabam presos por um grupo de crianças em Namekusei. Para recuperar a liberdade, eles precisam provar sua inocência.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep1.jpg",
+        "dataExibicao": "1990-03-14"
+    },
+    {
+        "id": 2149,
+        "numero": 2,
+        "titulo": "Cuidado Lá Embaixo",
+        "sinopse": "Após um pouso forçado quase fatal, Bulma, Gohan e Kuririn são resgatados por dois Namekuseijins amigáveis que prometem ajudá-los a encontrar as Esferas do Dragão.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep2.jpg",
+        "dataExibicao": "1990-03-21"
+    },
+    {
+        "id": 2150,
+        "numero": 3,
+        "titulo": "A Busca Continua",
+        "sinopse": "Gohan, Kuririn e Bulma continuam procurando as Esferas do Dragão com a ajuda de um novo aliado. Enquanto isso, Goku escapa do hospital e começa seu treinamento.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep3.jpg",
+        "dataExibicao": "1990-04-04"
+    },
+    {
+        "id": 2151,
+        "numero": 4,
+        "titulo": "Uma Surpresa Amigável",
+        "sinopse": "Enquanto se aproximam da última Esfera do Dragão, Bulma, Gohan e Kuririn descobrem um segredo inesperado sobre seus novos amigos.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep4.jpg",
+        "dataExibicao": "1990-04-11"
+    },
+    {
+        "id": 2152,
+        "numero": 5,
+        "titulo": "A Ninhada do Mal",
+        "sinopse": "A busca pelas Esferas do Dragão continua, mas os guerreiros descobrem que não são os únicos atrás do poder de Namekusei.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep5.jpg",
+        "dataExibicao": "1990-04-18"
+    },
+    {
+        "id": 2153,
+        "numero": 6,
+        "titulo": "Freeza Ataca!",
+        "sinopse": "Vegeta chega em Namekusei, mas ele é apenas uma das ameaças. O terrível Freeza também está atrás das Esferas do Dragão.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep6.jpg",
+        "dataExibicao": "1990-04-25"
+    },
+    {
+        "id": 2154,
+        "numero": 7,
+        "titulo": "Desafiando Ordens",
+        "sinopse": "Com as chances contra eles aumentando, Kuririn e Gohan precisam encontrar uma maneira de recuperar as Esferas do Dragão das mãos de Freeza.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep7.jpg",
+        "dataExibicao": "1990-05-02"
+    },
+    {
+        "id": 2155,
+        "numero": 8,
+        "titulo": "A Defesa de Namekusei",
+        "sinopse": "Kuririn e Gohan testemunham a crueldade de Freeza quando ele envia seus soldados para atacar uma vila Namekuseijin.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep8.jpg",
+        "dataExibicao": "1990-05-09"
+    },
+    {
+        "id": 2156,
+        "numero": 9,
+        "titulo": "Os Caçados",
+        "sinopse": "Gohan arrisca sua vida para salvar um jovem Namekuseijin e agora precisa escapar da perseguição de Dodoria.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep9.jpg",
+        "dataExibicao": "1990-05-16"
+    },
+    {
+        "id": 2157,
+        "numero": 10,
+        "titulo": "O Príncipe Contra-Ataca",
+        "sinopse": "Dodoria encontra Vegeta, que aproveita a oportunidade para acertar contas com o antigo aliado de Freeza.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep10.jpg",
+        "dataExibicao": "1990-05-23"
+    },
+    {
+        "id": 2158,
+        "numero": 11,
+        "titulo": "Problema Inesperado",
+        "sinopse": "A viagem de Goku até Namekusei sofre um desvio inesperado quando sua nave é atingida por um asteroide. Ele precisa agir rápido para evitar uma tragédia.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep11.jpg",
+        "dataExibicao": "1990-05-30"
+    },
+    {
+        "id": 2159,
+        "numero": 12,
+        "titulo": "Vegeta Tem uma Esfera",
+        "sinopse": "Com suas novas habilidades, Vegeta consegue localizar outra Esfera do Dragão. Agora resta apenas uma esfera para completar sua busca.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep12.jpg",
+        "dataExibicao": "1990-06-06"
+    },
+    {
+        "id": 2160,
+        "numero": 13,
+        "titulo": "O Passado e o Futuro",
+        "sinopse": "Rei Kai descobre que Goku está indo em direção a um confronto com Freeza. Enquanto isso, Vegeta enfrenta Zarbon em Namekusei.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep13.jpg",
+        "dataExibicao": "1990-06-20"
+    },
+    {
+        "id": 2161,
+        "numero": 14,
+        "titulo": "A Surpresa de Zarbon",
+        "sinopse": "Zarbon revela sua verdadeira forma durante a batalha contra Vegeta, aumentando sua força e se transformando em um poderoso monstro.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep14.jpg",
+        "dataExibicao": "1990-06-27"
+    },
+    {
+        "id": 2162,
+        "numero": 15,
+        "titulo": "O Presente do Grande Patriarca",
+        "sinopse": "Kuririn encontra o Grande Patriarca de Namekusei e recebe uma Esfera do Dragão, além de ter seu poder oculto despertado.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep15.jpg",
+        "dataExibicao": "1990-07-04"
+    },
+    {
+        "id": 2163,
+        "numero": 16,
+        "titulo": "Piccolo Contra Todos",
+        "sinopse": "Enquanto os guerreiros da Terra continuam treinando, Piccolo enfrenta Yamcha, Tenshinhan e Chaos em uma luta de treinamento.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep16.jpg",
+        "dataExibicao": "1990-07-18"
+    },
+    {
+        "id": 2164,
+        "numero": 17,
+        "titulo": "A Missão de Zarbon",
+        "sinopse": "Vegeta escapa de Freeza e rouba as Esferas do Dragão. Enquanto isso, a viagem de Goku pelo espaço fica cada vez mais perigosa.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep17.jpg",
+        "dataExibicao": "1990-08-01"
+    },
+    {
+        "id": 2165,
+        "numero": 18,
+        "titulo": "Gohan, o Caçado",
+        "sinopse": "Kuririn retorna após encontrar o Grande Patriarca, mas Vegeta e Zarbon aparecem. Enquanto isso, Gohan encontra a última Esfera do Dragão.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep18.jpg",
+        "dataExibicao": "1990-08-08"
+    },
+    {
+        "id": 2166,
+        "numero": 19,
+        "titulo": "Inimigos Desconhecidos",
+        "sinopse": "A Força Ginyu chega a Namekusei para ajudar Freeza na busca pelas Esferas do Dragão.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep19.jpg",
+        "dataExibicao": "1990-08-22"
+    },
+    {
+        "id": 2167,
+        "numero": 20,
+        "titulo": "Destino: Grande Patriarca",
+        "sinopse": "Kuririn e Gohan visitam o Grande Patriarca enquanto Bulma tenta recuperar uma Esfera do Dragão escondida.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep20.jpg",
+        "dataExibicao": "1990-08-29"
+    },
+    {
+        "id": 2168,
+        "numero": 21,
+        "titulo": "O Grande Dia de Bulma",
+        "sinopse": "Bulma é capturada pelos soldados de Freeza e precisa usar sua inteligência para sobreviver sem ajuda.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep21.jpg",
+        "dataExibicao": "1990-09-05"
+    },
+    {
+        "id": 2169,
+        "numero": 22,
+        "titulo": "Poder Oculto",
+        "sinopse": "O Grande Patriarca desperta o poder escondido de Gohan, aumentando suas chances contra os inimigos.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep22.jpg",
+        "dataExibicao": "1990-09-12"
+    },
+    {
+        "id": 2170,
+        "numero": 23,
+        "titulo": "Novo Aliado, Novo Problema",
+        "sinopse": "A Força Ginyu chega a Namekusei e Vegeta, Kuririn e Gohan precisam formar uma aliança inesperada.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep23.jpg",
+        "dataExibicao": "1990-09-19"
+    },
+    {
+        "id": 2171,
+        "numero": 24,
+        "titulo": "O Poder Mental de Guldo",
+        "sinopse": "A batalha contra a Força Ginyu começa. Guldo usa seus poderes especiais para prender Gohan e Kuririn.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep24.jpg",
+        "dataExibicao": "1990-09-26"
+    },
+    {
+        "id": 2172,
+        "numero": 25,
+        "titulo": "Recoome Liberado",
+        "sinopse": "Depois da derrota de Guldo, Recoome entra na batalha e mostra sua força esmagadora contra Vegeta.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep25.jpg",
+        "dataExibicao": "1990-10-24"
+    },
+    {
+        "id": 2173,
+        "numero": 26,
+        "titulo": "Que Comece a Batalha",
+        "sinopse": "Com Kuririn e Vegeta derrotados, Gohan precisa enfrentar Recoome sozinho e reunir toda sua coragem para lutar contra o poderoso guerreiro da Força Ginyu.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep26.jpg",
+        "dataExibicao": "1990-10-31"
+    },
+    {
+        "id": 2174,
+        "numero": 27,
+        "titulo": "O Novo Poder de Goku",
+        "sinopse": "Goku finalmente chega a Namekusei após seu intenso treinamento com gravidade aumentada e enfrenta a Força Ginyu para salvar seus amigos.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep27.jpg",
+        "dataExibicao": "1990-11-07"
+    },
+    {
+        "id": 2175,
+        "numero": 28,
+        "titulo": "Uma Lenda Revelada",
+        "sinopse": "Goku derrota facilmente Burter e Jeice, surpreendendo Vegeta. O poder do Saiyajin começa a lembrar a antiga lenda do Super Saiyajin.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep28.jpg",
+        "dataExibicao": "1990-11-14"
+    },
+    {
+        "id": 2176,
+        "numero": 29,
+        "titulo": "O Ataque de Ginyu",
+        "sinopse": "Após perceber que não consegue derrotar Goku sozinho, Jeice chama o Capitão Ginyu para enfrentar o novo poder do guerreiro Saiyajin.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep29.jpg",
+        "dataExibicao": "1990-11-21"
+    },
+    {
+        "id": 2177,
+        "numero": 30,
+        "titulo": "Força Incrível!",
+        "sinopse": "Enquanto Goku luta contra Capitão Ginyu, Gohan e Kuririn tentam recuperar as Esferas do Dragão antes que seja tarde demais.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep30.jpg",
+        "dataExibicao": "1990-11-28"
+    },
+    {
+        "id": 2178,
+        "numero": 31,
+        "titulo": "Freeza se Aproxima",
+        "sinopse": "Freeza chega à casa do Grande Patriarca e enfrenta Nail enquanto Goku continua sua batalha contra Capitão Ginyu.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep31.jpg",
+        "dataExibicao": "1990-12-05"
+    },
+    {
+        "id": 2179,
+        "numero": 32,
+        "titulo": "Goku é Ginyu e Ginyu é Goku",
+        "sinopse": "Capitão Ginyu usa sua técnica de troca de corpos e assume o corpo de Goku, deixando os heróis em uma situação desesperadora.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep32.jpg",
+        "dataExibicao": "1990-12-12"
+    },
+    {
+        "id": 2180,
+        "numero": 33,
+        "titulo": "Invocando o Dragão Eterno",
+        "sinopse": "Gohan e Kuririn recuperam as sete Esferas do Dragão e tentam invocar o Dragão Eterno para realizar seus desejos.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep33.jpg",
+        "dataExibicao": "1990-12-19"
+    },
+    {
+        "id": 2181,
+        "numero": 34,
+        "titulo": "Gohan, Derrote Seu Pai!",
+        "sinopse": "Com Ginyu controlando o corpo de Goku, Gohan e Kuririn precisam impedir o ataque do Capitão enquanto Vegeta entra na batalha.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep34.jpg",
+        "dataExibicao": "1991-01-16"
+    },
+    {
+        "id": 2182,
+        "numero": 35,
+        "titulo": "Capitão Ginyu... O Sapo",
+        "sinopse": "Goku recupera seu corpo após enganar Ginyu. Agora, Goku, Gohan, Kuririn e Vegeta precisam se preparar para enfrentar Freeza.",
+        "temporadaId": 2,
+        "animeId": 76,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep35.jpg",
+        "dataExibicao": "1991-01-23"
     }
 ]
