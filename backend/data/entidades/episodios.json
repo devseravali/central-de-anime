@@ -15508,5 +15508,505 @@
         "animeId": 66,
         "imagemUrl": "../../images/episodios/one-piece/t15/ep642.jpg",
         "dataExibicao": "2014-05-11"
+    },
+    {
+        "id": 1570,
+        "numero": 643,
+        "titulo": "Abalando Céus e Terra! O Poder do Almirante Fujitora!",
+        "sinopse": "Sanji e Franky tentam se reorganizar após a traição de Doflamingo, esperando que ainda seja possível destruir a fábrica. Enquanto isso, Luffy faz um novo amigo no Coliseu e Usopp acaba em uma situação complicada.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep643.jpg",
+        "dataExibicao": "2014-05-04"
+    },
+    {
+        "id": 1571,
+        "numero": 644,
+        "titulo": "Um Golpe de Raiva! Um Gigante Contra Lucy!",
+        "sinopse": "O Sunny é misteriosamente transformado pelos poderes de Giolla. Nami, Chopper e Brook tentam salvar o navio enquanto Luffy continua a batalha pelo Bloco C e enfrenta novos inimigos no Coliseu.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep644.jpg",
+        "dataExibicao": "2014-05-11"
+    },
+    {
+        "id": 1572,
+        "numero": 645,
+        "titulo": "Canhão da Destruição Disparado! Lucy em Perigo!",
+        "sinopse": "Depois de derrotar o gigante Hajrudin, Luffy enfrenta Ideo, cujo golpe possui uma força destrutiva semelhante a uma explosão. Enquanto isso, Don Chinjao volta sua atenção para Luffy.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep645.jpg",
+        "dataExibicao": "2014-05-18"
+    },
+    {
+        "id": 1573,
+        "numero": 646,
+        "titulo": "O Pirata Lendário! Don Chinjao!",
+        "sinopse": "Nami, Chopper e Brook continuam tentando recuperar o Sunny transformado em uma obra de arte por Giolla. No Coliseu, Luffy finalmente enfrenta o lendário pirata Don Chinjao.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep646.jpg",
+        "dataExibicao": "2014-05-25"
+    },
+    {
+        "id": 1574,
+        "numero": 647,
+        "titulo": "Luz e Sombra! A Escuridão Por Trás de Dressrosa!",
+        "sinopse": "Luffy continua sua batalha contra Don Chinjao e descobre o antigo rancor dele contra Garp. Enquanto isso, Usopp e Robin participam do ataque dos Tontatta contra a Família Donquixote.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep647.jpg",
+        "dataExibicao": "2014-06-01"
+    },
+    {
+        "id": 1575,
+        "numero": 648,
+        "titulo": "Partindo para o Ataque! O Herói Lendário Usoland!",
+        "sinopse": "O Reino Tontatta prepara seu ataque contra a Família Donquixote. Usopp e Robin entram na batalha enquanto Luffy continua lutando pela vitória no Coliseu.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep648.jpg",
+        "dataExibicao": "2014-06-08"
+    },
+    {
+        "id": 1576,
+        "numero": 649,
+        "titulo": "A Batalha Intensa Chega ao Fim! Lucy Contra Chinjao!",
+        "sinopse": "O motivo do ódio de Don Chinjao contra Garp e Luffy finalmente é revelado. A batalha entre os dois chega ao seu momento decisivo.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep649.jpg",
+        "dataExibicao": "2014-06-15"
+    },
+    {
+        "id": 1577,
+        "numero": 650,
+        "titulo": "Luffy e a Gladiadora do Destino - Rebecca!",
+        "sinopse": "Após derrotar Don Chinjao, Luffy avança para a final do Coliseu. Enquanto isso, a história de Rebecca e seu passado começam a ser revelados.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep650.jpg",
+        "dataExibicao": "2014-06-22"
+    },
+    {
+        "id": 1578,
+        "numero": 651,
+        "titulo": "Protegerei Você Até o Fim! Rebecca e o Soldado de Brinquedo!",
+        "sinopse": "O forte vínculo entre Rebecca e o Soldado de Brinquedo é revelado. A verdadeira ligação dela com a antiga família governante de Dressrosa vem à tona.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep651.jpg",
+        "dataExibicao": "2014-06-29"
+    },
+    {
+        "id": 1579,
+        "numero": 652,
+        "titulo": "O Último e Mais Sangrento Bloco! A Batalha do Bloco D Começa!",
+        "sinopse": "Rebecca entra na arena para a batalha do Bloco D enquanto os outros Chapéus de Palha continuam tentando se reunir e enfrentar os planos da Família Donquixote.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep652.jpg",
+        "dataExibicao": "2014-07-06"
+    },
+    {
+        "id": 1580,
+        "numero": 653,
+        "titulo": "Uma Batalha Decisiva! Giolla Contra os Chapéus de Palha!",
+        "sinopse": "Doflamingo revela para Law a surpreendente história da Família Donquixote. Enquanto isso, Nami, Chopper e os outros enfrentam a poderosa artista Giolla para recuperar o Sunny.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep653.jpg",
+        "dataExibicao": "2014-07-13"
+    },
+    {
+        "id": 1581,
+        "numero": 654,
+        "titulo": "Espada Magnífica! Cavendish do Cavalo Branco!",
+        "sinopse": "Law fica em desvantagem contra Fujitora e Doflamingo. Enquanto isso, a batalha do Bloco D continua no Coliseu e Cavendish mostra sua habilidade com a espada.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep654.jpg",
+        "dataExibicao": "2014-07-20"
+    },
+    {
+        "id": 1582,
+        "numero": 655,
+        "titulo": "O Grande Confronto! Sanji Contra Doflamingo!",
+        "sinopse": "Law tenta proteger o Sunny e os Chapéus de Palha do ataque de Doflamingo. Com pouco tempo para escapar, o grupo precisa mudar seus planos rapidamente.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep655.jpg",
+        "dataExibicao": "2014-08-03"
+    },
+    {
+        "id": 1583,
+        "numero": 656,
+        "titulo": "A Espada da Morte de Rebecca! A Dança da Espada Contra a Correnteza!",
+        "sinopse": "Law e Doflamingo travam um confronto intenso enquanto lembranças do passado de Momonosuke vêm à tona. No Coliseu, Rebecca enfrenta adversários perigosos.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep656.jpg",
+        "dataExibicao": "2014-08-10"
+    },
+    {
+        "id": 1584,
+        "numero": 657,
+        "titulo": "O Lutador Mais Violento! Logan Contra Rebecca!",
+        "sinopse": "Bartolomeo procura por Luffy no Coliseu e acaba encontrando o centro médico dos derrotados. Enquanto isso, Rebecca enfrenta o brutal Rolling Logan.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep657.jpg",
+        "dataExibicao": "2014-08-17"
+    },
+    {
+        "id": 1585,
+        "numero": 658,
+        "titulo": "Uma Grande Surpresa! A Verdadeira Identidade do Soldado de Brinquedo!",
+        "sinopse": "Os derrotados do Coliseu descobrem uma terrível verdade escondida. Enquanto isso, a história do Reino Tontatta e a identidade do Soldado de Brinquedo são reveladas.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep658.jpg",
+        "dataExibicao": "2014-08-24"
+    },
+    {
+        "id": 1586,
+        "numero": 659,
+        "titulo": "Um Passado Horrível! O Segredo de Dressrosa!",
+        "sinopse": "Bartolomeo finalmente encontra Luffy e começa a guiá-lo até Zoro. Enquanto isso, o Soldado de Brinquedo revela como Doflamingo tomou o controle de Dressrosa.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep659.jpg",
+        "dataExibicao": "2014-08-31"
+    },
+    {
+        "id": 1587,
+        "numero": 660,
+        "titulo": "Um Pesadelo! A Noite Trágica de Dressrosa!",
+        "sinopse": "A história da queda de Dressrosa continua sendo revelada, mostrando o destino do Rei Riku, sua família e como Doflamingo conquistou o país.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep660.jpg",
+        "dataExibicao": "2014-09-07"
+    },
+    {
+        "id": 1588,
+        "numero": 661,
+        "titulo": "Um Confronto Entre Corsários! Law Contra Doflamingo!",
+        "sinopse": "Zoro, Kin'emon e Luffy se reencontram enquanto Law continua sua batalha contra Doflamingo. O confronto entre os dois antigos membros dos Sete Corsários se intensifica.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep661.jpg",
+        "dataExibicao": "2014-09-14"
+    },
+    {
+        "id": 1589,
+        "numero": 662,
+        "titulo": "Dois Grandes Rivais se Encontram! O Chapéu de Palha e o Demônio Celestial!",
+        "sinopse": "Zoro e Kin'emon tentam salvar Law, mas encontram o Almirante Fujitora em seu caminho. Enquanto isso, novos inimigos aparecem e ameaçam o Sunny.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep662.jpg",
+        "dataExibicao": "2014-09-21"
+    },
+    {
+        "id": 1590,
+        "numero": 663,
+        "titulo": "Luffy Surpreso! O Homem Que Herdou a Vontade de Ace!",
+        "sinopse": "Após revelar a história de Dressrosa, o Soldado de Brinquedo apresenta o plano para libertar o Reino Tontatta e derrotar a Família Donquixote. Luffy encontra Bellamy, Bartolomeo e uma pessoa que desperta fortes emoções.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep663.jpg",
+        "dataExibicao": "2014-09-28"
+    },
+    {
+        "id": 1591,
+        "numero": 664,
+        "titulo": "A Operação SOP Começa! Usoland Avança!",
+        "sinopse": "Usopp e Robin seguem pelo túnel subterrâneo criado pelos Tontatta enquanto Franky tenta entrar na Casa dos Brinquedos para ajudar seus companheiros.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep664.jpg",
+        "dataExibicao": "2014-10-05"
+    },
+    {
+        "id": 1592,
+        "numero": 665,
+        "titulo": "Uma Paixão Ardente! Rebecca Contra Suleiman!",
+        "sinopse": "A batalha do Bloco D chega ao seu limite e Rebecca enfrenta Suleiman, o Decapitador. Ela precisa superar seus limites para continuar na competição.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep665.jpg",
+        "dataExibicao": "2014-10-12"
+    },
+    {
+        "id": 1593,
+        "numero": 666,
+        "titulo": "O Fim da Luta?! O Resultado Surpreendente do Bloco D!",
+        "sinopse": "A batalha do Bloco D chega a um resultado inesperado que surpreende todos no Coliseu. Enquanto isso, Luffy, Zoro e Kin'emon encontram uma misteriosa mulher no caminho para o palácio.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep666.jpg",
+        "dataExibicao": "2014-10-19"
+    },
+    {
+        "id": 1594,
+        "numero": 667,
+        "titulo": "A Decisão do Almirante! Fujitora Contra Doflamingo!",
+        "sinopse": "Viola revela uma passagem secreta para o palácio enquanto Fujitora apresenta seu plano para acabar com o sistema dos Sete Corsários, surpreendendo até mesmo Doflamingo.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep667.jpg",
+        "dataExibicao": "2014-10-26"
+    },
+    {
+        "id": 1595,
+        "numero": 668,
+        "titulo": "A Rodada Final Começa! Diamante, o Herói, Aparece!",
+        "sinopse": "A rodada final do Coliseu Corrida começa. Diamante entra na disputa pela Mera Mera no Mi enquanto Luffy e seus aliados avançam em direção ao palácio.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep668.jpg",
+        "dataExibicao": "2014-11-02"
+    },
+    {
+        "id": 1596,
+        "numero": 669,
+        "titulo": "Um Castelo em Movimento! O Executivo Pica se Levanta!",
+        "sinopse": "Luffy e seu grupo continuam avançando pelo palácio, mas encontram Pica, um dos principais executivos de Doflamingo, cujo poder torna a passagem quase impossível.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep669.jpg",
+        "dataExibicao": "2014-11-09"
+    },
+    {
+        "id": 1597,
+        "numero": 670,
+        "titulo": "A Garra do Dragão Ataca! O Ataque Intimidador de Lucy!",
+        "sinopse": "A Operação SOP finalmente começa. Leo tenta esconder a uva com o Tatabasco enquanto Luffy, Zoro e Violet continuam presos pela força de Pica.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep670.jpg",
+        "dataExibicao": "2014-11-16"
+    },
+    {
+        "id": 1598,
+        "numero": 671,
+        "titulo": "Derrote Sugar! O Exército dos Pequenos Ataca!",
+        "sinopse": "A Operação SOP chega ao seu estágio final, mas Trebol se mostra um obstáculo muito mais forte do que esperado. Enquanto isso, Zoro enfrenta Pica.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep671.jpg",
+        "dataExibicao": "2014-11-23"
+    },
+    {
+        "id": 1599,
+        "numero": 672,
+        "titulo": "A Última Luz da Esperança! O Segredo do Nosso Comandante!",
+        "sinopse": "Os Tontatta são derrotados pelo ataque de Trebol, mas Usopp descobre a verdadeira identidade do comandante Soldado de Brinquedo e a importância da missão.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep672.jpg",
+        "dataExibicao": "2014-11-30"
+    },
+    {
+        "id": 1600,
+        "numero": 673,
+        "titulo": "O Homem Explosivo! Gladius Entra em Ação!",
+        "sinopse": "Zoro continua sua batalha contra Pica enquanto o Soldado de Brinquedo enfrenta Gladius. Luffy segue em direção ao topo do palácio para finalmente enfrentar Doflamingo.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep673.jpg",
+        "dataExibicao": "2014-12-07"
+    },
+    {
+        "id": 1601,
+        "numero": 674,
+        "titulo": "Um Mentiroso! Usoland Está Fugindo!",
+        "sinopse": "Com os Tontatta derrotados e Robin transformada em brinquedo, Usopp se torna a última esperança da Operação SOP. Ele precisa decidir entre fugir ou enfrentar seus medos.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep674.jpg",
+        "dataExibicao": "2014-12-14"
+    },
+    {
+        "id": 1602,
+        "numero": 675,
+        "titulo": "Um Encontro Destinado! Kyros e o Rei Riku!",
+        "sinopse": "Usopp enfrenta dificuldades contra Trebol enquanto o passado de Kyros é revelado, mostrando como ele passou de um criminoso para um dos homens de maior confiança do Rei Riku.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep675.jpg",
+        "dataExibicao": "2014-12-21"
+    },
+    {
+        "id": 1603,
+        "numero": 676,
+        "titulo": "A Operação Falhou! O Herói Usoland Morreu?!",
+        "sinopse": "No palácio real, Luffy, Viola e o Soldado de Brinquedo ficam cercados por inimigos. Enquanto isso, todas as esperanças da missão ficam nas mãos de Usopp.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep676.jpg",
+        "dataExibicao": "2014-12-28"
+    },
+    {
+        "id": 1604,
+        "numero": 677,
+        "titulo": "A Lenda Está de Volta! O Ataque Total de Kyros!",
+        "sinopse": "Os brinquedos de Dressrosa recuperam suas formas humanas e suas memórias retornam. Kyros finalmente inicia seu ataque contra o tirano Doflamingo.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep677.jpg",
+        "dataExibicao": "2015-01-11"
+    },
+    {
+        "id": 1605,
+        "numero": 678,
+        "titulo": "O Punho de Fogo Ataca! O Poder da Mera Mera no Mi Retorna!",
+        "sinopse": "A batalha em Dressrosa muda de rumo enquanto Sabo entra em ação usando o poder da fruta de Ace. No Coliseu, a disputa pela Mera Mera no Mi chega ao fim.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep678.jpg",
+        "dataExibicao": "2015-01-18"
+    },
+    {
+        "id": 1606,
+        "numero": 679,
+        "titulo": "Entrando em Cena! O Chefe do Estado-Maior do Exército Revolucionário - Sabo!",
+        "sinopse": "Luffy corre para libertar Law enquanto a aliança enfrenta as consequências do retorno de Doflamingo. Sabo mostra sua força como membro do Exército Revolucionário.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep679.jpg",
+        "dataExibicao": "2015-01-25"
+    },
+    {
+        "id": 1607,
+        "numero": 680,
+        "titulo": "A Armadilha do Diabo! O Plano de Extermínio de Dressrosa!",
+        "sinopse": "O mistério sobre o retorno de Doflamingo é revelado. Enquanto isso, seu plano para destruir Dressrosa coloca todos em uma situação desesperadora.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep680.jpg",
+        "dataExibicao": "2015-02-01"
+    },
+    {
+        "id": 1608,
+        "numero": 681,
+        "titulo": "O Homem de 500 Milhões de Berries! Alvo: Usoland!",
+        "sinopse": "Doflamingo anuncia as regras de seu jogo mortal, colocando Luffy, Law, o Rei Riku e principalmente Usopp como alvos. As memórias do passado de Dressrosa retornam.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep681.jpg",
+        "dataExibicao": "2015-02-08"
+    },
+    {
+        "id": 1609,
+        "numero": 682,
+        "titulo": "Rompa as Linhas Inimigas! Luffy e Zoro Iniciam o Contra-Ataque!",
+        "sinopse": "Luffy começa sua caminhada até o palácio junto com Zoro e Law. Enquanto isso, Fujitora permanece no caminho dos Chapéus de Palha.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep682.jpg",
+        "dataExibicao": "2015-02-15"
+    },
+    {
+        "id": 1610,
+        "numero": 683,
+        "titulo": "Com o Tremor da Terra! O Deus da Destruição - O Gigante Pica Surge!",
+        "sinopse": "Robin, Usopp, os Tontatta e seus aliados tentam se reunir com Luffy enquanto o jogo mortal de Doflamingo continua. Pica aparece na cidade e muda completamente o rumo da batalha.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep683.jpg",
+        "dataExibicao": "2015-03-01"
+    },
+    {
+        "id": 1611,
+        "numero": 684,
+        "titulo": "Reunindo uma Poderosa Aliança! Luffy e um Grupo de Guerreiros Brutais!",
+        "sinopse": "Após o ataque de Pica, Luffy e seus aliados se recuperam e seguem em direção a Doflamingo. Vários guerreiros do Coliseu decidem unir forças para derrotar o inimigo.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep684.jpg",
+        "dataExibicao": "2015-03-15"
+    },
+    {
+        "id": 1612,
+        "numero": 685,
+        "titulo": "Progresso Constante! O Exército de Luffy Contra Pica!",
+        "sinopse": "Don Chinjao e Elizabello conseguem destruir parte do corpo gigante de Pica, mas ele continua atacando. Enquanto isso, Fujitora começa a agir com a Marinha.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep685.jpg",
+        "dataExibicao": "2015-03-22"
+    },
+    {
+        "id": 1613,
+        "numero": 686,
+        "titulo": "Uma Confissão Chocante! O Juramento de Law!",
+        "sinopse": "Luffy e seus aliados continuam avançando até Doflamingo. Enquanto isso, a razão do ódio de Law contra Doflamingo finalmente é revelada.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep686.jpg",
+        "dataExibicao": "2015-03-29"
+    },
+    {
+        "id": 1614,
+        "numero": 687,
+        "titulo": "Um Grande Confronto! Sabo, Chefe do Estado-Maior, Contra o Almirante Fujitora!",
+        "sinopse": "Enquanto Luffy avança pelo palácio, Sabo enfrenta Fujitora em uma batalha intensa. O poder da Mera Mera no Mi é colocado à prova contra a força do Almirante.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep687.jpg",
+        "dataExibicao": "2015-04-05"
+    },
+    {
+        "id": 1615,
+        "numero": 688,
+        "titulo": "Uma Situação Desesperadora! Luffy Cai em uma Armadilha!",
+        "sinopse": "Luffy encontra um caminho alternativo para chegar ao palácio, mas descobre que pode ser uma armadilha. Enquanto isso, os outros Chapéus de Palha continuam suas batalhas.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep688.jpg",
+        "dataExibicao": "2015-04-12"
+    },
+    {
+        "id": 1616,
+        "numero": 689,
+        "titulo": "Uma Grande Fuga! O Tiro Decisivo de Luffy - Elephant Gun!",
+        "sinopse": "Presos em uma armadilha, Luffy e Law recebem ajuda inesperada. Enquanto isso, os Tontatta ajudam Franky a invadir a fábrica SMILE.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep689.jpg",
+        "dataExibicao": "2015-04-19"
+    },
+    {
+        "id": 1617,
+        "numero": 690,
+        "titulo": "Uma Frente Unida! O Avanço de Luffy Rumo à Vitória!",
+        "sinopse": "Os aliados de Luffy deixam suas diferenças de lado e criam um plano para ajudá-lo a chegar ao confronto final contra Doflamingo.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep690.jpg",
+        "dataExibicao": "2015-04-26"
+    },
+    {
+        "id": 1618,
+        "numero": 691,
+        "titulo": "O Segundo Samurai! O Aparecimento de Kanjuro, a Chuva da Tarde!",
+        "sinopse": "Kin'emon encontra seu antigo companheiro Kanjuro e os dois conseguem escapar do subsolo. Enquanto isso, Cavendish percebe que o jogo da Gaiola de Pássaros possui um grande segredo.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep691.jpg",
+        "dataExibicao": "2015-05-03"
+    },
+    {
+        "id": 1619,
+        "numero": 692,
+        "titulo": "Uma Batalha Difícil Contra Pica! O Ataque Mortal de Zoro!",
+        "sinopse": "Os Tontatta continuam sua revolta contra Doflamingo. Enquanto isso, Zoro finalmente consegue vantagem contra Pica e Franky encontra uma maneira de enfrentar Señor Pink.",
+        "temporadaId": 16,
+        "animeId": 67,
+        "imagemUrl": "../../images/episodios/one-piece/t16/ep692.jpg",
+        "dataExibicao": "2015-05-10"
     }
 ]
