@@ -21638,5 +21638,335 @@
         "animeId": 76,
         "imagemUrl": "../../images/episodios/dragon-ball-z/t2/ep35.jpg",
         "dataExibicao": "1991-01-23"
+    },
+    {
+        "id": 2183,
+        "numero": 1,
+        "titulo": "A Senha é Porunga",
+        "sinopse": "Com as sete Esferas do Dragão de Namekusei reunidas, Kuririn e Gohan estão prontos para invocar o dragão e realizar seus desejos, mas existe um problema: eles não sabem a senha.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep1.jpg",
+        "dataExibicao": "1991-01-30"
+    },
+    {
+        "id": 2184,
+        "numero": 2,
+        "titulo": "O Retorno de Piccolo",
+        "sinopse": "Com a ajuda de Dende, Kuririn e Gohan descobrem que poderão fazer três pedidos. Enquanto isso, Vegeta corre para tentar conseguir a imortalidade.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep2.jpg",
+        "dataExibicao": "1991-02-06"
+    },
+    {
+        "id": 2185,
+        "numero": 3,
+        "titulo": "A Fusão",
+        "sinopse": "Piccolo retorna à vida e chega a Namekusei. Enquanto isso, Freeza libera sua fúria contra Vegeta, Gohan e Kuririn.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep3.jpg",
+        "dataExibicao": "1991-02-13"
+    },
+    {
+        "id": 2186,
+        "numero": 4,
+        "titulo": "Poder de Luta: Um Milhão??",
+        "sinopse": "Freeza revela um segredo sombrio sobre Vegeta e mostra uma transformação assustadora que aumenta seu poder para um nível inimaginável.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep4.jpg",
+        "dataExibicao": "1991-02-20"
+    },
+    {
+        "id": 2187,
+        "numero": 5,
+        "titulo": "Gohan Ataca",
+        "sinopse": "Depois que Freeza derrota Kuririn, Gohan libera sua raiva e tenta proteger seus amigos contra o poderoso inimigo.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep5.jpg",
+        "dataExibicao": "1991-02-27"
+    },
+    {
+        "id": 2188,
+        "numero": 6,
+        "titulo": "Piccolo, o Super Namekuseijin",
+        "sinopse": "Piccolo chega ao campo de batalha e enfrenta Freeza, tornando-se a nova esperança dos Guerreiros Z.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep6.jpg",
+        "dataExibicao": "1991-03-06"
+    },
+    {
+        "id": 2189,
+        "numero": 7,
+        "titulo": "Deja Vu",
+        "sinopse": "Piccolo domina a batalha contra Freeza, que fica surpreso ao descobrir o segredo por trás do novo poder do guerreiro Namekuseijin.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep7.jpg",
+        "dataExibicao": "1991-03-13"
+    },
+    {
+        "id": 2190,
+        "numero": 8,
+        "titulo": "A Segunda Transformação de Freeza",
+        "sinopse": "Quando parece que Piccolo conseguiu vantagem, Freeza revela uma nova transformação ainda mais poderosa.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep8.jpg",
+        "dataExibicao": "1991-03-20"
+    },
+    {
+        "id": 2191,
+        "numero": 9,
+        "titulo": "Outra Transformação?",
+        "sinopse": "Piccolo é dominado pelo poder de Freeza e Gohan entra na batalha. Enquanto isso, Vegeta tenta encontrar uma forma de se tornar um Super Saiyajin.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep9.jpg",
+        "dataExibicao": "1991-03-27"
+    },
+    {
+        "id": 2192,
+        "numero": 10,
+        "titulo": "A Morte de Dende",
+        "sinopse": "Freeza chega à sua forma final e começa a eliminar os Guerreiros Z. Vegeta acredita que finalmente se tornou um Super Saiyajin.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep10.jpg",
+        "dataExibicao": "1991-04-03"
+    },
+    {
+        "id": 2193,
+        "numero": 11,
+        "titulo": "O Retorno dos Guerreiros Z",
+        "sinopse": "Após a ameaça de Garlic Jr., os Guerreiros Z precisam se recuperar enquanto uma nova batalha se aproxima.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep11.jpg",
+        "dataExibicao": "1991-11-27"
+    },
+    {
+        "id": 2194,
+        "numero": 12,
+        "titulo": "Um Novo Inimigo Surge",
+        "sinopse": "Uma nova ameaça aparece e os Guerreiros Z percebem que a paz na Terra pode não durar muito.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep12.jpg",
+        "dataExibicao": "1991-12-04"
+    },
+    {
+        "id": 2195,
+        "numero": 13,
+        "titulo": "O Treinamento de Gohan",
+        "sinopse": "Gohan continua seu treinamento para aumentar seus poderes e se preparar para futuros inimigos.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep13.jpg",
+        "dataExibicao": "1991-12-11"
+    },
+    {
+        "id": 2196,
+        "numero": 14,
+        "titulo": "A Chegada dos Androides",
+        "sinopse": "Um aviso vindo do futuro revela que novos inimigos poderosos estão a caminho da Terra.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep14.jpg",
+        "dataExibicao": "1991-12-18"
+    },
+    {
+        "id": 2197,
+        "numero": 15,
+        "titulo": "O Guerreiro do Futuro",
+        "sinopse": "Um misterioso guerreiro aparece trazendo informações sobre uma grande ameaça que está por vir.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep15.jpg",
+        "dataExibicao": "1992-01-08"
+    },
+    {
+        "id": 2198,
+        "numero": 16,
+        "titulo": "O Aviso de Trunks",
+        "sinopse": "Trunks revela aos Guerreiros Z os perigos que virão do futuro e alerta sobre os androides que ameaçam destruir a Terra.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep16.jpg",
+        "dataExibicao": "1992-01-15"
+    },
+    {
+        "id": 2199,
+        "numero": 17,
+        "titulo": "Três Anos de Preparação",
+        "sinopse": "Goku e seus amigos começam um intenso treinamento para se preparar para a chegada dos androides.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep17.jpg",
+        "dataExibicao": "1992-01-22"
+    },
+    {
+        "id": 2200,
+        "numero": 18,
+        "titulo": "A Chegada dos Androides",
+        "sinopse": "O dia previsto por Trunks chega e os Guerreiros Z encontram os androides que ameaçam o futuro da humanidade.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep18.jpg",
+        "dataExibicao": "1992-01-29"
+    },
+    {
+        "id": 2201,
+        "numero": 19,
+        "titulo": "O Poder dos Androides",
+        "sinopse": "Goku enfrenta os androides e descobre que seus novos inimigos possuem uma força impressionante.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep19.jpg",
+        "dataExibicao": "1992-02-05"
+    },
+    {
+        "id": 2202,
+        "numero": 20,
+        "titulo": "A Doença de Goku",
+        "sinopse": "Durante a batalha, Goku começa a sentir os efeitos da doença do coração mencionada por Trunks.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep20.jpg",
+        "dataExibicao": "1992-02-12"
+    },
+    {
+        "id": 2203,
+        "numero": 21,
+        "titulo": "Vegeta Super Saiyajin",
+        "sinopse": "Vegeta finalmente alcança o nível Super Saiyajin e demonstra seu novo poder contra os androides.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep21.jpg",
+        "dataExibicao": "1992-02-19"
+    },
+    {
+        "id": 2204,
+        "numero": 22,
+        "titulo": "A Nova Força de Vegeta",
+        "sinopse": "Com sua transformação, Vegeta enfrenta os androides acreditando ser capaz de derrotá-los sozinho.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep22.jpg",
+        "dataExibicao": "1992-02-26"
+    },
+    {
+        "id": 2205,
+        "numero": 23,
+        "titulo": "O Despertar de Cell",
+        "sinopse": "Uma nova ameaça surge das sombras: Cell, um ser criado para superar todos os Guerreiros Z.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep23.jpg",
+        "dataExibicao": "1992-03-04"
+    },
+    {
+        "id": 2206,
+        "numero": 24,
+        "titulo": "A Busca por Cell",
+        "sinopse": "Os Guerreiros Z começam a procurar Cell enquanto tentam descobrir mais sobre sua origem e seus objetivos.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep24.jpg",
+        "dataExibicao": "1992-03-11"
+    },
+    {
+        "id": 2207,
+        "numero": 25,
+        "titulo": "O Verdadeiro Poder de Cell",
+        "sinopse": "Cell continua absorvendo humanos para aumentar seu poder e se aproximar de sua forma perfeita.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep25.jpg",
+        "dataExibicao": "1992-03-18"
+    },
+    {
+        "id": 2208,
+        "numero": 26,
+        "titulo": "O Treinamento na Sala do Tempo",
+        "sinopse": "Goku e Gohan entram na Sala do Tempo e do Espírito para alcançar novos níveis de poder.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep26.jpg",
+        "dataExibicao": "1992-03-25"
+    },
+    {
+        "id": 2209,
+        "numero": 27,
+        "titulo": "O Retorno de Cell",
+        "sinopse": "Cell continua sua evolução enquanto os Guerreiros Z se preparam para o confronto definitivo.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep27.jpg",
+        "dataExibicao": "1992-04-01"
+    },
+    {
+        "id": 2210,
+        "numero": 28,
+        "titulo": "A Forma Perfeita de Cell",
+        "sinopse": "Cell alcança sua forma perfeita após absorver o Android 17 e passa a desafiar todos os Guerreiros Z.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep28.jpg",
+        "dataExibicao": "1992-04-08"
+    },
+    {
+        "id": 2211,
+        "numero": 29,
+        "titulo": "O Torneio de Cell",
+        "sinopse": "Cell anuncia o Cell Games, um torneio onde desafiará os maiores guerreiros da Terra.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep29.jpg",
+        "dataExibicao": "1992-04-15"
+    },
+    {
+        "id": 2212,
+        "numero": 30,
+        "titulo": "Goku Contra Cell",
+        "sinopse": "Goku enfrenta Cell em uma batalha intensa para testar as habilidades do inimigo.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep30.jpg",
+        "dataExibicao": "1992-04-22"
+    },
+    {
+        "id": 2213,
+        "numero": 31,
+        "titulo": "O Poder Oculto de Gohan",
+        "sinopse": "Goku percebe que Gohan possui um poder escondido capaz de superar todos os limites conhecidos.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep31.jpg",
+        "dataExibicao": "1992-04-29"
+    },
+    {
+        "id": 2214,
+        "numero": 32,
+        "titulo": "O Começo dos Cell Games",
+        "sinopse": "O torneio de Cell começa oficialmente e os Guerreiros Z acompanham o confronto contra o poderoso inimigo.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep32.jpg",
+        "dataExibicao": "1992-05-06"
+    },
+    {
+        "id": 2215,
+        "numero": 33,
+        "titulo": "Mr. Satan Entra em Cena",
+        "sinopse": "O campeão mundial Mr. Satan aparece para enfrentar Cell, sem saber o verdadeiro perigo que está diante dele.",
+        "temporadaId": 3,
+        "animeId": 77,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t3/ep33.jpg",
+        "dataExibicao": "1992-05-13"
     }
 ]
