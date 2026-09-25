@@ -16008,5 +16008,565 @@
         "animeId": 67,
         "imagemUrl": "../../images/episodios/one-piece/t16/ep692.jpg",
         "dataExibicao": "2015-05-10"
+    },
+    {
+        "id": 1620,
+        "numero": 693,
+        "titulo": "A Princesa dos Pequenos! A Mansherry Capturada!",
+        "sinopse": "Franky finalmente chega à fábrica e os Tontatta reencontram seus amigos capturados. Porém, a Princesa Mansherry não está em lugar nenhum. Enquanto isso, o gerente da fábrica Kuween ataca Franky, e Señor Pink aparece pronto para um confronto de homem para homem.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep693.jpg",
+        "dataExibicao": "2015-05-17"
+    },
+    {
+        "id": 1621,
+        "numero": 694,
+        "titulo": "Invencível! Um Exército Assustador de Bonecos Quebradores de Cabeça!",
+        "sinopse": "Robin, Rebecca e Bartolomeo se aproximam do Campo das Flores, mas um ataque de Gladius faz Robin e Bartolomeo caírem diretamente na batalha de Luffy contra os bonecos de Doflamingo.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep694.jpg",
+        "dataExibicao": "2015-05-24"
+    },
+    {
+        "id": 1622,
+        "numero": 695,
+        "titulo": "Arriscando Suas Vidas! Luffy é a Carta Trunfo da Vitória!",
+        "sinopse": "Rebecca chega sozinha ao Campo das Flores e encontra um inimigo inesperado. Enquanto isso, Bartolomeo força seus limites para ajudar Luffy, enquanto Sabo enfrenta o verdadeiro poder de Fujitora.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep695.jpg",
+        "dataExibicao": "2015-05-31"
+    },
+    {
+        "id": 1623,
+        "numero": 696,
+        "titulo": "Um Reencontro Emocionante! Rebecca e Kyros!",
+        "sinopse": "Diamante domina Rebecca completamente, enquanto ela lembra do Soldado-san que sempre tentou protegê-la. Enquanto isso, Luffy e Law conseguem se aproximar de Doflamingo, mas Sugar está no caminho.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep696.jpg",
+        "dataExibicao": "2015-06-07"
+    },
+    {
+        "id": 1624,
+        "numero": 697,
+        "titulo": "Um Tiro, Uma Morte! O Homem Que Salvará Dressrosa!",
+        "sinopse": "Usopp usa a habilidade de Viola para preparar seu ataque contra Sugar. Porém, qualquer hesitação pode colocar Luffy e todos os Chapéus de Palha em perigo.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep697.jpg",
+        "dataExibicao": "2015-06-14"
+    },
+    {
+        "id": 1625,
+        "numero": 698,
+        "titulo": "A Ira Explode! A Estratégia Final de Luffy e Law!",
+        "sinopse": "A batalha final contra Doflamingo começa. O Shichibukai revela novos truques enquanto Franky e Señor Pink continuam seu confronto para decidir quem é o mais estiloso.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep698.jpg",
+        "dataExibicao": "2015-06-21"
+    },
+    {
+        "id": 1626,
+        "numero": 699,
+        "titulo": "Uma Família Nobre! A Verdadeira Identidade de Doflamingo!",
+        "sinopse": "Todas as esperanças estão em Luffy e Law derrotarem Doflamingo, mas o Shichibukai revela sua história chocante enquanto enfrenta os dois em uma batalha decisiva.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep699.jpg",
+        "dataExibicao": "2015-06-28"
+    },
+    {
+        "id": 1627,
+        "numero": 700,
+        "titulo": "O Poder Supremo! O Segredo da Fruta Ope Ope!",
+        "sinopse": "Enquanto Fujitora levanta suspeitas dentro da Marinha, Luffy e Law ficam à beira da morte pelas mãos de Doflamingo, que revela o segredo de sua influência sobre os Dragões Celestiais.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep700.jpg",
+        "dataExibicao": "2015-07-05"
+    },
+    {
+        "id": 1628,
+        "numero": 701,
+        "titulo": "Memórias Dolorosas! Law, o Garoto da Cidade Branca!",
+        "sinopse": "O terrível passado de Flevance, a Cidade Branca, é revelado. As mentiras do Governo Mundial criaram uma criança consumida pelo desejo de vingança.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep701.jpg",
+        "dataExibicao": "2015-07-12"
+    },
+    {
+        "id": 1629,
+        "numero": 702,
+        "titulo": "Um Dragão Celestial! O Passado Turbulento de Doffy!",
+        "sinopse": "O passado de Doflamingo começa a ser revelado. Law é aceito pela Família Donquixote enquanto Corazon esconde um segredo que pode salvar sua vida.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep702.jpg",
+        "dataExibicao": "2015-07-19"
+    },
+    {
+        "id": 1630,
+        "numero": 703,
+        "titulo": "Um Caminho Difícil! A Jornada de Vida de Law e Corazon!",
+        "sinopse": "Law descobre mais sobre Corazon e sua verdadeira personalidade. Os dois iniciam uma jornada em busca da cura para a doença do Chumbo Branco.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep703.jpg",
+        "dataExibicao": "2015-08-02"
+    },
+    {
+        "id": 1631,
+        "numero": 704,
+        "titulo": "O Tempo Está Acabando! Conquiste a Fruta Ope Ope!",
+        "sinopse": "Corazon enfrenta riscos ao tentar conseguir a Fruta Ope Ope para salvar Law. Porém, suas ações começam a levantar suspeitas dentro da Família Donquixote.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep704.jpg",
+        "dataExibicao": "2015-08-09"
+    },
+    {
+        "id": 1632,
+        "numero": 705,
+        "titulo": "O Momento da Decisão! O Sorriso de Despedida de Corazon!",
+        "sinopse": "Corazon consegue a Fruta Ope Ope, mas o preço de sua missão pode ser alto demais. Doflamingo e sua família chegam à Ilha Minion.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep705.jpg",
+        "dataExibicao": "2015-08-16"
+    },
+    {
+        "id": 1633,
+        "numero": 706,
+        "titulo": "Avance, Law! A Última Luta do Homem Bondoso!",
+        "sinopse": "Doflamingo e sua família encontram Corazon e Law. Corazon tenta proteger Law até o fim, sacrificando sua própria vida para garantir sua fuga.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep706.jpg",
+        "dataExibicao": "2015-08-23"
+    },
+    {
+        "id": 1634,
+        "numero": 707,
+        "titulo": "Para Ser Livre! O Golpe Injection Shot de Law!",
+        "sinopse": "As batalhas em Dressrosa continuam. Law revela seus sentimentos para Doflamingo enquanto os confrontos contra a Família Donquixote avançam.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep707.jpg",
+        "dataExibicao": "2015-08-30"
+    },
+    {
+        "id": 1635,
+        "numero": 708,
+        "titulo": "Uma Batalha Intensa! Law Contra Doflamingo!",
+        "sinopse": "Luffy continua enfrentando Doflamingo enquanto Law revive suas dores do passado. Zoro também recebe ajuda inesperada em sua luta contra Pica.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep708.jpg",
+        "dataExibicao": "2015-09-06"
+    },
+    {
+        "id": 1636,
+        "numero": 709,
+        "titulo": "Uma Batalha Decisiva Contra os Executivos! O Orgulhoso Hajrudin!",
+        "sinopse": "Bellamy escapa do controle de Doflamingo, mas seu passado com o Shichibukai ainda pesa. Enquanto isso, Hajrudin se levanta novamente para retribuir a ajuda que recebeu.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep709.jpg",
+        "dataExibicao": "2015-09-13"
+    },
+    {
+        "id": 1637,
+        "numero": 710,
+        "titulo": "A Batalha do Amor! O Novo Líder Sai Contra Baby 5!",
+        "sinopse": "Lao G e Don Chinjao travam uma batalha poderosa enquanto um mal-entendido envolvendo Baby 5 distrai Sai e seu avô.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep710.jpg",
+        "dataExibicao": "2015-09-20"
+    },
+    {
+        "id": 1638,
+        "numero": 711,
+        "titulo": "O Orgulho de um Homem! O Último Ataque de Bellamy!",
+        "sinopse": "Law está nas mãos de Doflamingo e Trebol, enquanto Luffy ainda precisa enfrentar Bellamy, que luta para manter sua honra.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep711.jpg",
+        "dataExibicao": "2015-09-27"
+    },
+    {
+        "id": 1639,
+        "numero": 712,
+        "titulo": "Um Vento Forte e uma Onda! Hakuba Contra Dellinger!",
+        "sinopse": "Uma força misteriosa semelhante a Cavendish aparece no campo de batalha. Enquanto isso, Ideo descobre a verdadeira natureza de Dellinger.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep712.jpg",
+        "dataExibicao": "2015-10-04"
+    },
+    {
+        "id": 1640,
+        "numero": 713,
+        "titulo": "Barreira-Barreira! O Golpe do Punho do Deus da Homenagem!",
+        "sinopse": "Bartolomeo enfrenta Gladius para salvar Robin. Enquanto isso, Robin fica cara a cara com Cavendish e sua personalidade sombria, Hakuba.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep713.jpg",
+        "dataExibicao": "2015-10-11"
+    },
+    {
+        "id": 1641,
+        "numero": 714,
+        "titulo": "A Princesa da Cura! Salve Mansherry!",
+        "sinopse": "O incrível poder de cura da Princesa Mansherry está nas mãos dos executivos de Doflamingo. Leo precisa resgatá-la antes que seja tarde demais.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep714.jpg",
+        "dataExibicao": "2015-10-18"
+    },
+    {
+        "id": 1642,
+        "numero": 715,
+        "titulo": "O Duelo Masculino! A Elegia de Amor de Señor!",
+        "sinopse": "Franky e Señor Pink continuam sua batalha intensa. Durante o confronto, o passado trágico de Señor Pink é revelado.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep715.jpg",
+        "dataExibicao": "2015-10-25"
+    },
+    {
+        "id": 1643,
+        "numero": 716,
+        "titulo": "Estrela Cadente da Morte! A Tempestade de Ataques de Diamante!",
+        "sinopse": "Franky e Señor Pink encerram sua batalha, enquanto Diamante e Kyros continuam lutando ferozmente no Campo das Flores.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep716.jpg",
+        "dataExibicao": "2015-11-01"
+    },
+    {
+        "id": 1644,
+        "numero": 717,
+        "titulo": "Trueno Bastardo! O Ataque Furioso de Kyros!",
+        "sinopse": "Kyros enfrenta Diamante com toda sua determinação para cumprir sua promessa de proteger Rebecca e derrotar os últimos executivos de Doflamingo.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep717.jpg",
+        "dataExibicao": "2015-11-08"
+    },
+    {
+        "id": 1645,
+        "numero": 718,
+        "titulo": "Movendo-se Pelo Chão! A Surpresa da Estátua Gigante de Pica!",
+        "sinopse": "Pica perde a paciência e direciona sua fúria contra o Rei Riku. Enquanto isso, Zoro precisa encontrar uma maneira de salvar o rei.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep718.jpg",
+        "dataExibicao": "2015-11-15"
+    },
+    {
+        "id": 1646,
+        "numero": 719,
+        "titulo": "Uma Batalha Decisiva no Ar! A Nova Técnica Secreta de Zoro!",
+        "sinopse": "Com as vidas do Rei Riku, Usopp e outros em perigo, Zoro precisa descobrir uma técnica poderosa para enfrentar o ataque quase imparável de Pica.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep719.jpg",
+        "dataExibicao": "2015-11-22"
+    },
+    {
+        "id": 1647,
+        "numero": 720,
+        "titulo": "Adeus! O Golpe Final de Bellamy!",
+        "sinopse": "Zoro derrota Pica e todos precisam escapar dos destroços. Enquanto isso, os Tontatta concluem a destruição da fábrica SMILE e Luffy enfrenta Bellamy em sua última batalha.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep720.jpg",
+        "dataExibicao": "2015-11-29"
+    },
+    {
+        "id": 1648,
+        "numero": 721,
+        "titulo": "A Morte de Law! O Ataque Furioso de Luffy!",
+        "sinopse": "A aparente morte de Law deixa Luffy furioso. Enquanto isso, Doflamingo inicia seu próximo plano para destruir todos em Dressrosa.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep721.jpg",
+        "dataExibicao": "2015-12-06"
+    },
+    {
+        "id": 1649,
+        "numero": 722,
+        "titulo": "Uma Lâmina de Determinação! O Contra-Ataque da Gamma Knife!",
+        "sinopse": "A Gaiola dos Pássaros continua se fechando sobre Dressrosa. Enquanto isso, Doflamingo e Luffy se preparam para o confronto final.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep722.jpg",
+        "dataExibicao": "2015-12-13"
+    },
+    {
+        "id": 1650,
+        "numero": 723,
+        "titulo": "O Confronto do Haki! Luffy Contra Doflamingo!",
+        "sinopse": "O ataque de Law causa grande impacto, mas Doflamingo revela ainda mais poder. Luffy encara o inimigo usando sua força e determinação.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep723.jpg",
+        "dataExibicao": "2015-12-20"
+    },
+    {
+        "id": 1651,
+        "numero": 724,
+        "titulo": "Imparável! O Segredo Surpreendente de Trebol!",
+        "sinopse": "Trebol libera sua verdadeira fúria enquanto Law revela a verdade sobre os executivos da Família Donquixote e seu papel no plano de Doflamingo.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep724.jpg",
+        "dataExibicao": "2015-12-27"
+    },
+    {
+        "id": 1652,
+        "numero": 725,
+        "titulo": "A Ira Explode! Eu Vou Acabar Com Tudo!",
+        "sinopse": "Mesmo sem conseguir derrotar Doflamingo usando suas formas anteriores, Luffy decide utilizar sua técnica definitiva.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep725.jpg",
+        "dataExibicao": "2016-01-10"
+    },
+    {
+        "id": 1653,
+        "numero": 726,
+        "titulo": "Quarta Marcha! O Incrível Bounce-Man!",
+        "sinopse": "Luffy ativa o Gear Fourth contra Doflamingo enquanto a Gaiola dos Pássaros continua apertando Dressrosa. Sua nova forma demonstra um poder extraordinário.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep726.jpg",
+        "dataExibicao": "2016-01-17"
+    },
+    {
+        "id": 1654,
+        "numero": 727,
+        "titulo": "Um Contra-Ataque Gigantesco! O Despertar de Doflamingo!",
+        "sinopse": "Doflamingo desperta o poder de sua fruta enquanto a Gaiola dos Pássaros continua destruindo Dressrosa. O povo luta para sobreviver até Luffy vencer.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep727.jpg",
+        "dataExibicao": "2016-01-24"
+    },
+    {
+        "id": 1655,
+        "numero": 728,
+        "titulo": "Luffy! Um Leo Bazooka Completo!",
+        "sinopse": "O Gear Fourth dá a Luffy força suficiente para enfrentar Doflamingo, mas o enorme gasto de energia começa a cobrar seu preço.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep728.jpg",
+        "dataExibicao": "2016-01-31"
+    },
+    {
+        "id": 1656,
+        "numero": 729,
+        "titulo": "O Rei Dragão Flamejante! Protejam a Vida de Luffy!",
+        "sinopse": "O poder do Gear Fourth deixa Luffy exausto e incapaz de usar seu Haki novamente por um tempo. Enquanto ele se recupera, os gladiadores do Coliseu entram na luta para protegê-lo contra Doflamingo.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep729.jpg",
+        "dataExibicao": "2016-02-14"
+    },
+    {
+        "id": 1657,
+        "numero": 730,
+        "titulo": "Lágrimas de Milagres! A Luta de Mansherry!",
+        "sinopse": "Com Luffy e seus aliados derrotados temporariamente, a vitória de Doflamingo parece garantida. Porém, o poder e a determinação da Princesa Mansherry podem mudar o destino de Dressrosa.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep730.jpg",
+        "dataExibicao": "2016-02-21"
+    },
+    {
+        "id": 1658,
+        "numero": 731,
+        "titulo": "Enquanto Respirarmos! Parem a Mortal Gaiola!",
+        "sinopse": "Todos em Dressrosa unem forças para impedir que a Gaiola dos Pássaros destrua o país. Viola procura Doflamingo para um confronto decisivo.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep731.jpg",
+        "dataExibicao": "2016-02-28"
+    },
+    {
+        "id": 1659,
+        "numero": 732,
+        "titulo": "Vivos ou Mortos! A Contagem Regressiva do Destino!",
+        "sinopse": "O tempo está acabando antes do retorno de Luffy. Enquanto isso, Rebecca fica sob o controle de Doflamingo e está prestes a enfrentar Viola.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep732.jpg",
+        "dataExibicao": "2016-03-06"
+    },
+    {
+        "id": 1660,
+        "numero": 733,
+        "titulo": "Ataque a um Dragão Celestial! O Canhão Rei Kong da Ira de Luffy!",
+        "sinopse": "Luffy recupera seu Haki e se prepara para o confronto final contra Doflamingo. Com a Gaiola dos Pássaros se fechando, ele usa seu golpe mais poderoso.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep733.jpg",
+        "dataExibicao": "2016-03-20"
+    },
+    {
+        "id": 1661,
+        "numero": 734,
+        "titulo": "Para Ser Livre! A Alegria de Dressrosa!",
+        "sinopse": "Com Doflamingo derrotado e a Gaiola dos Pássaros desaparecendo, o povo de Dressrosa comemora a liberdade conquistada após tantos sofrimentos.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep734.jpg",
+        "dataExibicao": "2016-03-27"
+    },
+    {
+        "id": 1662,
+        "numero": 735,
+        "titulo": "O Inacreditável! A Surpreendente Decisão do Almirante Fujitora!",
+        "sinopse": "Fujitora toma uma decisão inesperada após a derrota de Doflamingo. Enquanto isso, Sabo enfrenta Jesus Burgess para proteger a Mera Mera no Mi.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep735.jpg",
+        "dataExibicao": "2016-04-03"
+    },
+    {
+        "id": 1663,
+        "numero": 736,
+        "titulo": "Uma Onda de Choque! A Pior Geração Entra em Ação!",
+        "sinopse": "As consequências da queda de Doflamingo começam a afetar o equilíbrio do mundo. A Pior Geração começa a se movimentar enquanto novas ameaças surgem.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep736.jpg",
+        "dataExibicao": "2016-04-10"
+    },
+    {
+        "id": 1664,
+        "numero": 737,
+        "titulo": "O Nascimento de uma Lenda! As Aventuras do Guerreiro Revolucionário Sabo!",
+        "sinopse": "A história de Sabo é revelada, mostrando sua entrada no Exército Revolucionário e os acontecimentos que moldaram sua vida.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep737.jpg",
+        "dataExibicao": "2016-04-17"
+    },
+    {
+        "id": 1665,
+        "numero": 738,
+        "titulo": "O Laço dos Irmãos! A História Não Contada do Reencontro de Luffy e Sabo!",
+        "sinopse": "Sabo conta como reencontrou Luffy no Coliseu enquanto Fujitora decide seu próximo movimento após os acontecimentos de Dressrosa.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep738.jpg",
+        "dataExibicao": "2016-04-24"
+    },
+    {
+        "id": 1666,
+        "numero": 739,
+        "titulo": "A Criatura Mais Forte! Um dos Quatro Imperadores - Kaido, o Rei das Feras!",
+        "sinopse": "Enquanto os Chapéus de Palha seguem viagem, uma nova ameaça surge no Novo Mundo com a apresentação de Kaido, um dos Quatro Imperadores.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep739.jpg",
+        "dataExibicao": "2016-05-01"
+    },
+    {
+        "id": 1667,
+        "numero": 740,
+        "titulo": "Fujitora Age! O Cerco Completo aos Chapéus de Palha!",
+        "sinopse": "A Marinha procura os Chapéus de Palha em Dressrosa enquanto eles tentam escapar da ilha após a batalha contra Doflamingo.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep740.jpg",
+        "dataExibicao": "2016-05-08"
+    },
+    {
+        "id": 1668,
+        "numero": 741,
+        "titulo": "Estado de Emergência! Rebecca é Sequestrada!",
+        "sinopse": "A Marinha intensifica a busca pelos Chapéus de Palha em Dressrosa. Luffy e seus aliados correm para o porto enquanto Rebecca acaba envolvida em uma nova situação perigosa.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep741.jpg",
+        "dataExibicao": "2016-05-15"
+    },
+    {
+        "id": 1669,
+        "numero": 742,
+        "titulo": "O Laço Entre Pai e Filha! Kyros e Rebecca!",
+        "sinopse": "Rebecca tenta chegar até Kyros seguindo os passos de Luffy. Enquanto isso, Fujitora se aproxima dos guerreiros do Coliseu e Law encara as lembranças de seu passado.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep742.jpg",
+        "dataExibicao": "2016-05-22"
+    },
+    {
+        "id": 1670,
+        "numero": 743,
+        "titulo": "O Orgulho dos Homens! Luffy Contra Fujitora, Frente a Frente!",
+        "sinopse": "Law e Sengoku relembram Corazon e o verdadeiro significado do nome Trafalgar Law. Enquanto isso, Luffy enfrenta Fujitora em um duelo direto.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep743.jpg",
+        "dataExibicao": "2016-05-29"
+    },
+    {
+        "id": 1671,
+        "numero": 744,
+        "titulo": "Sem Saída! A Perseguição Implacável do Almirante Fujitora!",
+        "sinopse": "Os habitantes de Dressrosa ajudam os Chapéus de Palha contra a estratégia de Fujitora. Luffy e seus companheiros finalmente conseguem deixar a ilha.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep744.jpg",
+        "dataExibicao": "2016-06-05"
+    },
+    {
+        "id": 1672,
+        "numero": 745,
+        "titulo": "Taças dos Filhos! A Frota dos Chapéus de Palha é Formada!",
+        "sinopse": "Após a batalha em Dressrosa, novos aliados juram lealdade a Luffy e uma grande frota começa a se formar ao redor dos Chapéus de Palha.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep745.jpg",
+        "dataExibicao": "2016-06-12"
+    },
+    {
+        "id": 1673,
+        "numero": 746,
+        "titulo": "Os Inúmeros Rivais Lutam Entre Si! Os Monstros Furiosos do Novo Mundo!",
+        "sinopse": "As consequências dos acontecimentos de Dressrosa afetam o equilíbrio do mundo. Enquanto isso, Doflamingo prevê grandes mudanças na era dos piratas.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep746.jpg",
+        "dataExibicao": "2016-06-19"
+    },
+    {
+        "id": 1674,
+        "numero": 747,
+        "titulo": "A Fortaleza de Prata! As Grandes Aventuras de Luffy e Bart!",
+        "sinopse": "Durante a viagem para Zou, Luffy e Bartolomeo acabam envolvidos nos planos de um pirata capaz de manipular prata.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep747.jpg",
+        "dataExibicao": "2016-06-26"
+    },
+    {
+        "id": 1675,
+        "numero": 748,
+        "titulo": "O Labirinto Subterrâneo! Luffy Contra o Homem do Carrinho!",
+        "sinopse": "Luffy, Bartolomeo e Desire enfrentam novos perigos em um labirinto subterrâneo enquanto descobrem os segredos escondidos pelo grupo de Bill.",
+        "temporadaId": 17,
+        "animeId": 68,
+        "imagemUrl": "../../images/episodios/one-piece/t17/ep748.jpg",
+        "dataExibicao": "2016-07-03"
     }
 ]
