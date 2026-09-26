@@ -23808,5 +23808,525 @@
         "animeId": 83,
         "imagemUrl": "../../images/episodios/dragon-ball-z/t9/ep38.jpg",
         "dataExibicao": "1996-01-31"
+    },
+    {
+        "id": 2400,
+        "numero": 1,
+        "titulo": "Entra: Naruto Uzumaki!",
+        "sinopse": "Bem-vindo à Vila Oculta da Folha, onde ninjas perigosos vivem e Naruto Uzumaki causa confusão por onde passa. Ao roubar o pergaminho secreto de selamento, Naruto acaba despertando um poder raro em um garoto de 12 anos.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep1.jpg",
+        "dataExibicao": "2002-10-03"
+    },
+    {
+        "id": 2401,
+        "numero": 2,
+        "titulo": "Meu Nome é Konohamaru!",
+        "sinopse": "Após finalmente se formar na Academia Ninja, Naruto conhece Konohamaru, neto do Terceiro Hokage. Para ajudar o garoto a se destacar, Naruto ensina uma técnica proibida e engraçada.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep2.jpg",
+        "dataExibicao": "2002-10-10"
+    },
+    {
+        "id": 2402,
+        "numero": 3,
+        "titulo": "Sasuke e Sakura: Amigos ou Inimigos?",
+        "sinopse": "Naruto precisa formar uma equipe com seus colegas Sakura e Sasuke para seguir seu caminho como ninja.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep3.jpg",
+        "dataExibicao": "2002-10-17"
+    },
+    {
+        "id": 2403,
+        "numero": 4,
+        "titulo": "Passar ou Falhar: O Teste de Sobrevivência",
+        "sinopse": "Naruto, Sasuke e Sakura conhecem seu novo sensei, o misterioso Kakashi, que prepara um teste para avaliar suas habilidades como equipe.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep4.jpg",
+        "dataExibicao": "2002-10-24"
+    },
+    {
+        "id": 2404,
+        "numero": 5,
+        "titulo": "Vocês Falharam! A Decisão Final de Kakashi",
+        "sinopse": "Com a ameaça de reprovação, Naruto, Sasuke e Sakura tentam de todas as formas passar no difícil teste de sobrevivência de Kakashi.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep5.jpg",
+        "dataExibicao": "2002-10-31"
+    },
+    {
+        "id": 2405,
+        "numero": 6,
+        "titulo": "Uma Missão Perigosa! Viagem ao País das Ondas!",
+        "sinopse": "Cansado de missões simples, Naruto pede uma tarefa mais difícil ao Hokage. O Time 7 recebe uma missão de proteger um construtor de pontes, mas descobrem que existem ninjas inimigos envolvidos.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep6.jpg",
+        "dataExibicao": "2002-11-07"
+    },
+    {
+        "id": 2406,
+        "numero": 7,
+        "titulo": "O Assassino da Névoa!",
+        "sinopse": "Naruto e sua equipe chegam ao País das Ondas e descobrem que o empresário Gato domina a região com violência e medo.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep7.jpg",
+        "dataExibicao": "2002-11-14"
+    },
+    {
+        "id": 2407,
+        "numero": 8,
+        "titulo": "O Juramento da Dor",
+        "sinopse": "Com Kakashi capturado, Naruto, Sasuke e Sakura precisam enfrentar os ataques de Zabuza e trabalhar juntos para salvá-lo.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep8.jpg",
+        "dataExibicao": "2002-11-21"
+    },
+    {
+        "id": 2408,
+        "numero": 9,
+        "titulo": "Kakashi: O Guerreiro do Sharingan",
+        "sinopse": "Com Kakashi livre, a batalha contra Zabuza continua. Kakashi decide mostrar todo o poder do Sharingan.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep9.jpg",
+        "dataExibicao": "2002-11-28"
+    },
+    {
+        "id": 2409,
+        "numero": 10,
+        "titulo": "A Floresta do Chakra",
+        "sinopse": "Após a aparente derrota de Zabuza, Kakashi ensina Naruto, Sasuke e Sakura a controlar melhor seu chakra através de um novo treinamento.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep10.jpg",
+        "dataExibicao": "2002-12-05"
+    },
+    {
+        "id": 2410,
+        "numero": 11,
+        "titulo": "A Terra Onde um Herói Viveu",
+        "sinopse": "Enquanto Naruto e Sasuke treinam, Sakura cuida de Tazuna. Durante um jantar, ela descobre a história de Kaiza, um homem conhecido como herói do País das Ondas.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep11.jpg",
+        "dataExibicao": "2002-12-12"
+    },
+    {
+        "id": 2411,
+        "numero": 12,
+        "titulo": "Batalha na Ponte! Zabuza Retorna!",
+        "sinopse": "Naruto encontra Haku na floresta, enquanto Zabuza retorna para uma nova batalha. O Time 7 precisa enfrentar novamente o Demônio da Névoa.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep12.jpg",
+        "dataExibicao": "2002-12-19"
+    },
+    {
+        "id": 2412,
+        "numero": 13,
+        "titulo": "O Jutsu Secreto de Haku: Espelhos de Gelo Cristalinos",
+        "sinopse": "A batalha contra Zabuza recomeça e Haku entra em ação usando seu jutsu secreto dos Espelhos de Gelo. Sasuke precisa enfrentar essa poderosa técnica.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep13.jpg",
+        "dataExibicao": "2002-12-26"
+    },
+    {
+        "id": 2413,
+        "numero": 14,
+        "titulo": "O Ninja Número Um Hiperativo e Cabeça Oca Entra na Batalha!",
+        "sinopse": "Naruto finalmente chega ao campo de batalha e acaba preso junto com Sasuke no jutsu de Haku. Os dois precisam trabalhar juntos para escapar.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep14.jpg",
+        "dataExibicao": "2003-01-09"
+    },
+    {
+        "id": 2414,
+        "numero": 15,
+        "titulo": "Visibilidade Zero: O Sharingan Quebrado",
+        "sinopse": "Naruto e Sasuke continuam lutando contra Haku, enquanto Kakashi enfrenta Zabuza. A batalha fica cada vez mais intensa.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep15.jpg",
+        "dataExibicao": "2003-01-16"
+    },
+    {
+        "id": 2415,
+        "numero": 16,
+        "titulo": "O Selo Quebrado",
+        "sinopse": "Durante a batalha contra Haku, Sasuke arrisca sua vida para proteger Naruto. Ao ver seu amigo caído, Naruto desperta um poder escondido.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep16.jpg",
+        "dataExibicao": "2003-01-23"
+    },
+    {
+        "id": 2416,
+        "numero": 17,
+        "titulo": "Passado Branco: Ambição Oculta",
+        "sinopse": "Naruto descobre o passado de Haku e percebe que o garoto que enfrenta é a mesma pessoa que conheceu anteriormente na floresta.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep17.jpg",
+        "dataExibicao": "2003-01-30"
+    },
+    {
+        "id": 2417,
+        "numero": 18,
+        "titulo": "As Armas Conhecidas como Shinobi",
+        "sinopse": "Kakashi se prepara para derrotar Zabuza de uma vez por todas, mas Gato aparece para tomar o controle da situação.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep18.jpg",
+        "dataExibicao": "2003-02-06"
+    },
+    {
+        "id": 2418,
+        "numero": 19,
+        "titulo": "O Demônio na Neve",
+        "sinopse": "Pensando em Haku, Naruto confronta Zabuza e aprende uma dura lição sobre a realidade de ser um ninja.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep19.jpg",
+        "dataExibicao": "2003-02-13"
+    },
+    {
+        "id": 2419,
+        "numero": 20,
+        "titulo": "Um Novo Capítulo Começa: O Exame Chunin!",
+        "sinopse": "Naruto e sua equipe retornam para a Vila Oculta da Folha após a batalha no País das Ondas e recebem uma nova oportunidade.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep20.jpg",
+        "dataExibicao": "2003-02-20"
+    },
+    {
+        "id": 2420,
+        "numero": 21,
+        "titulo": "Identifique-se: Novos Rivais Poderosos",
+        "sinopse": "Após a missão no País das Ondas, Kakashi anuncia que recomendou Naruto, Sasuke e Sakura para o Exame Chunin. Enquanto isso, Sasuke percebe que existem ninjas muito poderosos além dele.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep21.jpg",
+        "dataExibicao": "2003-02-27"
+    },
+    {
+        "id": 2421,
+        "numero": 22,
+        "titulo": "Desafio Chunin: Rock Lee Contra Sasuke!",
+        "sinopse": "Rock Lee desafia Sasuke para uma luta e revela uma habilidade impressionante. Naruto tenta enfrentá-lo, mas descobre rapidamente a diferença de poder.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep22.jpg",
+        "dataExibicao": "2003-03-06"
+    },
+    {
+        "id": 2422,
+        "numero": 23,
+        "titulo": "Queda dos Genins! Os Nove Novatos se Enfrentam!",
+        "sinopse": "Os participantes do Exame Chunin se reúnem e Naruto conhece seus antigos colegas. Com tantos rivais, a equipe precisa se preparar para o desafio.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep23.jpg",
+        "dataExibicao": "2003-03-13"
+    },
+    {
+        "id": 2423,
+        "numero": 24,
+        "titulo": "Preparem-se: O Exame Chunin Começa!",
+        "sinopse": "A primeira fase do Exame Chunin começa com uma prova escrita. Naruto precisa descobrir o verdadeiro objetivo do teste antes que o tempo acabe.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep24.jpg",
+        "dataExibicao": "2003-03-20"
+    },
+    {
+        "id": 2424,
+        "numero": 25,
+        "titulo": "A Décima Pergunta: Tudo ou Nada!",
+        "sinopse": "Ibiki apresenta uma regra difícil para a última pergunta do exame. Os participantes precisam decidir se arriscam continuar ou desistem.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep25.jpg",
+        "dataExibicao": "2003-03-27"
+    },
+    {
+        "id": 2425,
+        "numero": 26,
+        "titulo": "Relatório Especial: Ao Vivo da Floresta da Morte!",
+        "sinopse": "Konohamaru aparece no local do Exame Chunin para cobrir os acontecimentos para o jornal da Academia Ninja, relembrando eventos anteriores.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep26.jpg",
+        "dataExibicao": "2003-04-02"
+    },
+    {
+        "id": 2426,
+        "numero": 27,
+        "titulo": "A Segunda Fase do Exame Chunin: A Floresta da Morte",
+        "sinopse": "A segunda fase do exame começa. As equipes precisam conseguir os pergaminhos do Céu e da Terra e chegar à torre dentro do prazo.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep27.jpg",
+        "dataExibicao": "2003-04-09"
+    },
+    {
+        "id": 2427,
+        "numero": 28,
+        "titulo": "Comer ou Ser Comido: Pânico na Floresta",
+        "sinopse": "Sasuke cria uma senha para proteger a equipe contra inimigos disfarçados, enquanto Naruto enfrenta uma enorme ameaça na floresta.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep28.jpg",
+        "dataExibicao": "2003-04-16"
+    },
+    {
+        "id": 2428,
+        "numero": 29,
+        "titulo": "O Contra-Ataque de Naruto: Nunca Desista!",
+        "sinopse": "Quando Sasuke perde a esperança, Naruto percebe que algo está errado e enfrenta o inimigo para proteger seus companheiros.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep29.jpg",
+        "dataExibicao": "2003-04-23"
+    },
+    {
+        "id": 2429,
+        "numero": 30,
+        "titulo": "O Sharingan Revivido: Jutsu da Chama do Dragão!",
+        "sinopse": "Sasuke continua lutando contra o inimigo misterioso enquanto Anko investiga a verdadeira identidade do ninja disfarçado.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep30.jpg",
+        "dataExibicao": "2003-04-30"
+    },
+    {
+        "id": 2430,
+        "numero": 31,
+        "titulo": "A Promessa da Sobrancelha Grossa: Amor e Proteção Eternos!",
+        "sinopse": "Após a batalha anterior, Sakura é a única que não se machucou e precisa proteger seus companheiros. Porém, inimigos observam a equipe e um amigo aparece para ajudar.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep31.jpg",
+        "dataExibicao": "2003-05-07"
+    },
+    {
+        "id": 2431,
+        "numero": 32,
+        "titulo": "Sakura Floresce!",
+        "sinopse": "Lee, ainda enfraquecido, enfrenta dificuldades contra Dosu. Sakura percebe que sempre foi protegida pelos outros e decide lutar para proteger seus amigos.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep32.jpg",
+        "dataExibicao": "2003-05-14"
+    },
+    {
+        "id": 2432,
+        "numero": 33,
+        "titulo": "Formação de Batalha: Ino-Shika-Cho!",
+        "sinopse": "Com Sakura derrotada, novos reforços entram na batalha. Enquanto isso, Sasuke desperta com uma aura sombria causada pelo selo amaldiçoado.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep33.jpg",
+        "dataExibicao": "2003-05-21"
+    },
+    {
+        "id": 2433,
+        "numero": 34,
+        "titulo": "Akamaru Treme: A Força Cruel de Gaara!",
+        "sinopse": "Kiba, Shino e Hinata observam uma batalha entre ninjas da Chuva e Gaara, Kankuro e Temari. Eles descobrem o verdadeiro perigo do trio da Areia.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep34.jpg",
+        "dataExibicao": "2003-05-28"
+    },
+    {
+        "id": 2434,
+        "numero": 35,
+        "titulo": "O Segredo do Pergaminho: Não Espie!",
+        "sinopse": "Naruto e sua equipe descansam após a batalha contra os ninjas do Som. Com apenas um dia restante, eles precisam chegar à torre rapidamente.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep35.jpg",
+        "dataExibicao": "2003-06-04"
+    },
+    {
+        "id": 2435,
+        "numero": 36,
+        "titulo": "Clone Contra Clone: Os Meus São Melhores Que os Seus!",
+        "sinopse": "A equipe de Naruto se junta a Kabuto no caminho até a torre, mas acaba presa em um genjutsu criado por ninjas da Vila da Chuva.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep36.jpg",
+        "dataExibicao": "2003-06-11"
+    },
+    {
+        "id": 2436,
+        "numero": 37,
+        "titulo": "Sobrevivendo ao Corte! Os Nove Novatos Juntos Novamente!",
+        "sinopse": "O exame termina, mas a dúvida permanece: eles realmente passaram? Enquanto isso, Anko revela informações sobre Orochimaru.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep37.jpg",
+        "dataExibicao": "2003-06-18"
+    },
+    {
+        "id": 2437,
+        "numero": 38,
+        "titulo": "Diminuindo o Campo: Eliminatória Súbita!",
+        "sinopse": "Com muitos participantes restantes, os candidatos precisam disputar lutas individuais. Sasuke enfrenta o desafio de controlar o selo amaldiçoado.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep38.jpg",
+        "dataExibicao": "2003-06-25"
+    },
+    {
+        "id": 2438,
+        "numero": 39,
+        "titulo": "O Ciúme da Sobrancelha Grossa: Leões em Fúria!",
+        "sinopse": "A fase preliminar do terceiro exame começa. Sasuke enfrenta Yoroi, um ninja enviado por Orochimaru.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep39.jpg",
+        "dataExibicao": "2003-07-02"
+    },
+    {
+        "id": 2439,
+        "numero": 40,
+        "titulo": "Kakashi e Orochimaru: Cara a Cara!",
+        "sinopse": "Enquanto os combates continuam, Kakashi tenta controlar o selo amaldiçoado de Sasuke, mas Orochimaru aparece para interferir.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep40.jpg",
+        "dataExibicao": "2003-07-09"
+    },
+    {
+        "id": 2440,
+        "numero": 41,
+        "titulo": "Confronto Kunoichi: As Rivais Ficam Sérias!",
+        "sinopse": "Kankuro enfrenta Misumi em uma batalha rápida, mas o grande confronto acontece entre Sakura e Ino.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep41.jpg",
+        "dataExibicao": "2003-07-16"
+    },
+    {
+        "id": 2441,
+        "numero": 42,
+        "titulo": "A Batalha Suprema: Cha!",
+        "sinopse": "Sakura e Ino finalmente resolvem suas diferenças em uma luta emocionante durante as preliminares do Exame Chunin.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep42.jpg",
+        "dataExibicao": "2003-07-23"
+    },
+    {
+        "id": 2442,
+        "numero": 43,
+        "titulo": "Kunoichi Mortal e um Shikamaru Inseguro",
+        "sinopse": "Temari enfrenta Tenten, enquanto Shikamaru precisa lutar contra um adversário que conhece suas estratégias.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep43.jpg",
+        "dataExibicao": "2003-07-30"
+    },
+    {
+        "id": 2443,
+        "numero": 44,
+        "titulo": "Akamaru Liberado! Quem é o Melhor Cão Agora?",
+        "sinopse": "A luta entre Kiba e Naruto começa. Mesmo sendo subestimado, Naruto mostra que possui habilidades inesperadas.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep44.jpg",
+        "dataExibicao": "2003-08-06"
+    },
+    {
+        "id": 2444,
+        "numero": 45,
+        "titulo": "Ataque Surpresa! A Arma Secreta de Naruto!",
+        "sinopse": "Naruto e Kiba continuam sua batalha usando todas as suas forças. Naruto prepara uma nova técnica para virar o combate.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep45.jpg",
+        "dataExibicao": "2003-08-13"
+    },
+    {
+        "id": 2445,
+        "numero": 46,
+        "titulo": "Batalha do Byakugan: Hinata Cresce!",
+        "sinopse": "Hinata enfrenta Neji em uma luta difícil para provar seu valor e mostrar sua determinação.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep46.jpg",
+        "dataExibicao": "2003-08-20"
+    },
+    {
+        "id": 2446,
+        "numero": 47,
+        "titulo": "Uma Derrotada se Levanta!",
+        "sinopse": "Hinata se recusa a desistir diante de Neji, mostrando sua força de vontade mesmo em uma situação extrema.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep47.jpg",
+        "dataExibicao": "2003-08-27"
+    },
+    {
+        "id": 2447,
+        "numero": 48,
+        "titulo": "Gaara Contra Rock Lee: O Poder da Juventude Explode!",
+        "sinopse": "Rock Lee enfrenta Gaara em uma das batalhas mais esperadas do Exame Chunin.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep48.jpg",
+        "dataExibicao": "2003-09-03"
+    },
+    {
+        "id": 2448,
+        "numero": 49,
+        "titulo": "A Força Oculta de Lee: Jutsu Secreto Proibido!",
+        "sinopse": "Lee revela seu treinamento especial e decide usar uma técnica proibida para tentar derrotar Gaara.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep49.jpg",
+        "dataExibicao": "2003-09-10"
+    },
+    {
+        "id": 2449,
+        "numero": 50,
+        "titulo": "O Quinto Portão: Um Ninja Extraordinário Nasce",
+        "sinopse": "Rock Lee libera seu poder máximo contra Gaara, mas a batalha traz consequências inesperadas.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep50.jpg",
+        "dataExibicao": "2003-09-17"
+    },
+    {
+        "id": 2450,
+        "numero": 51,
+        "titulo": "Uma Sombra na Escuridão: O Perigo se Aproxima de Sasuke",
+        "sinopse": "Enquanto Chouji luta contra Dosu, Orochimaru ordena que Kabuto capture Sasuke. Kakashi aparece para protegê-lo.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep51.jpg",
+        "dataExibicao": "2003-09-24"
+    },
+    {
+        "id": 2451,
+        "numero": 52,
+        "titulo": "Ebisu Retorna: O Treinamento Mais Difícil de Naruto!",
+        "sinopse": "Naruto quer que Kakashi o treine, mas Ebisu aparece com um desafio. Se Naruto conseguir vencê-lo, poderá receber o treinamento que deseja.",
+        "temporadaId": 1,
+        "animeId": 84,
+        "imagemUrl": "../../images/episodios/naruto/t1/ep52.jpg",
+        "dataExibicao": "2003-10-01"
     }
 ]
