@@ -24848,5 +24848,545 @@
         "animeId": 85,
         "imagemUrl": "../../images/episodios/naruto/t2/ep104.jpg",
         "dataExibicao": "2004-10-13"
+    },
+    {
+        "id": 2504,
+        "numero": 105,
+        "titulo": "Quase na Linha de Chegada: Um Grande Confronto Trovejante",
+        "sinopse": "A corrida chega ao momento decisivo quando Naruto e seus amigos enfrentam o último obstáculo para garantir a vitória de Idate e concluir a missão na Terra do Chá.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep105.jpg",
+        "dataExibicao": "2004-10-20"
+    },
+    {
+        "id": 2505,
+        "numero": 106,
+        "titulo": "A Missão Não Será Cumprida",
+        "sinopse": "Após retornar a Konoha, Naruto recebe uma nova missão. No entanto, acontecimentos inesperados fazem com que o Time 7 enfrente dificuldades antes mesmo de iniciá-la.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep106.jpg",
+        "dataExibicao": "2004-10-27"
+    },
+    {
+        "id": 2506,
+        "numero": 107,
+        "titulo": "A Batalha: O Espinho Contra o Bambu",
+        "sinopse": "Naruto, Sasuke e Sakura se envolvem em um conflito entre duas famílias rivais, tentando impedir que a disputa termine em tragédia.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep107.jpg",
+        "dataExibicao": "2004-11-03"
+    },
+    {
+        "id": 2507,
+        "numero": 108,
+        "titulo": "A Formação Invisível é Destruída",
+        "sinopse": "O Time 7 descobre os segredos por trás das armadilhas criadas pelos inimigos e precisa agir rapidamente para proteger aqueles que juraram defender.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep108.jpg",
+        "dataExibicao": "2004-11-10"
+    },
+    {
+        "id": 2508,
+        "numero": 109,
+        "titulo": "O Convite do Quarteto do Som",
+        "sinopse": "Sasuke é abordado pelos integrantes do Quarteto do Som, que lhe oferecem um poder ainda maior caso abandone Konoha e siga Orochimaru.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep109.jpg",
+        "dataExibicao": "2004-11-17"
+    },
+    {
+        "id": 2509,
+        "numero": 110,
+        "titulo": "A Formação dos Cinco da Folha",
+        "sinopse": "Ao descobrir a fuga de Sasuke, Tsunade organiza uma equipe liderada por Shikamaru para trazer o jovem Uchiha de volta à Vila da Folha.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep110.jpg",
+        "dataExibicao": "2004-11-24"
+    },
+    {
+        "id": 2510,
+        "numero": 111,
+        "titulo": "Contato: O Poder do Quarteto do Som",
+        "sinopse": "A equipe de resgate finalmente alcança o Quarteto do Som e percebe que enfrentará adversários muito mais fortes do que imaginava.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep111.jpg",
+        "dataExibicao": "2004-12-01"
+    },
+    {
+        "id": 2511,
+        "numero": 112,
+        "titulo": "Racha na Equipe! Shikamaru em Perigo",
+        "sinopse": "Shikamaru precisa tomar decisões difíceis para manter a equipe unida enquanto o Quarteto do Som tenta separá-los.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep112.jpg",
+        "dataExibicao": "2004-12-08"
+    },
+    {
+        "id": 2512,
+        "numero": 113,
+        "titulo": "Poder Máximo! Choji Queima Sua Vida",
+        "sinopse": "Choji enfrenta Jirobo sozinho e decide utilizar as Pílulas Coloridas do Clã Akimichi, colocando sua própria vida em risco para proteger os amigos.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep113.jpg",
+        "dataExibicao": "2004-12-15"
+    },
+    {
+        "id": 2513,
+        "numero": 114,
+        "titulo": "A Estratégia de Shikamaru",
+        "sinopse": "Shikamaru elabora um plano para derrotar o Quarteto do Som, utilizando sua inteligência e habilidades estratégicas.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep114.jpg",
+        "dataExibicao": "2004-12-22"
+    },
+    {
+        "id": 2514,
+        "numero": 115,
+        "titulo": "O Quarteto do Som Contra-Ataca",
+        "sinopse": "O Quarteto do Som lança um contra-ataque inesperado, forçando a equipe de resgate a se adaptar rapidamente para sobreviver.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep115.jpg",
+        "dataExibicao": "2004-12-29"
+    },
+    {
+        "id": 2515,
+        "numero": 116,
+        "titulo": "A Batalha Continua",
+        "sinopse": "A equipe de resgate enfrenta desafios crescentes enquanto tenta superar o Quarteto do Som, testando suas habilidades e determinação.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep116.jpg",
+        "dataExibicao": "2005-01-05"
+    },
+    {
+        "id": 2516,
+        "numero": 117,
+        "titulo": "O Plano de Shikamaru",
+        "sinopse": "Shikamaru coloca seu plano em ação para derrotar o Quarteto do Som, utilizando sua inteligência e habilidades estratégicas.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep117.jpg",
+        "dataExibicao": "2005-01-12"
+    },
+    {
+        "id": 2517,
+        "numero": 118,
+        "titulo": "A Estratégia de Ino",
+        "sinopse": "Ino desenvolve uma estratégia para ajudar a equipe de resgate a superar os desafios impostos pelo Quarteto do Som.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep118.jpg",
+        "dataExibicao": "2005-01-19"
+    },
+    {
+        "id": 2518,
+        "numero": 119,
+        "titulo": "O Retorno do Quarteto do Som",
+        "sinopse": "O Quarteto do Som retorna com um novo plano, e a equipe de resgate deve se preparar para enfrentar novamente seus adversários.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep119.jpg",
+        "dataExibicao": "2005-01-26"
+    },
+    {
+        "id": 2519,
+        "numero": 120,
+        "titulo": "O Confronto Decisivo",
+        "sinopse": "A equipe de resgate enfrenta o Quarteto do Som em uma batalha decisiva, colocando à prova todas as suas habilidades e estratégias.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep120.jpg",
+        "dataExibicao": "2005-02-02"
+    },
+    {
+        "id": 2520,
+        "numero": 121,
+        "titulo": "A Recuperação de Konoha",
+        "sinopse": "Após a batalha com o Quarteto do Som, a equipe de resgate ajuda a vila a se recuperar dos danos causados pelo conflito.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep121.jpg",
+        "dataExibicao": "2005-02-09"
+    },
+    {
+        "id": 2521,
+        "numero": 122,
+        "titulo": "O Treinamento de Naruto",
+        "sinopse": "Naruto inicia um novo treinamento para aprimorar suas habilidades, enfrentando desafios que testam sua determinação e coragem.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep122.jpg",
+        "dataExibicao": "2005-02-16"
+    },
+    {
+        "id": 2522,
+        "numero": 123,
+        "titulo": "A Nova Ameaça",
+        "sinopse": "Uma nova ameaça surge em Konoha, e a equipe de resgate deve se preparar para enfrentar desafios ainda maiores.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep123.jpg",
+        "dataExibicao": "2005-02-23"
+    },
+    {
+        "id": 2523,
+        "numero": 124,
+        "titulo": "O Retorno de Orochimaru",
+        "sinopse": "O vilão Orochimaru retorna com um novo plano maligno, e a equipe de resgate deve se preparar para enfrentá-lo mais uma vez.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep124.jpg",
+        "dataExibicao": "2005-03-02"
+    },
+    {
+        "id": 2524,
+        "numero": 125,
+        "titulo": "A Aliança dos Ninjas de Konoha",
+        "sinopse": "Naruto e seus companheiros unem forças para enfrentar os irmãos Fujin e Raijin, que escaparam da prisão de Konoha. A batalha exige estratégia e trabalho em equipe.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep125.jpg",
+        "dataExibicao": "2005-05-11"
+    },
+    {
+        "id": 2525,
+        "numero": 126,
+        "titulo": "Confronto! Naruto Contra Raijin",
+        "sinopse": "Naruto enfrenta Raijin em um intenso combate enquanto os demais tentam conter Fujin e impedir que a dupla destrua a vila.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep126.jpg",
+        "dataExibicao": "2005-05-18"
+    },
+    {
+        "id": 2526,
+        "numero": 127,
+        "titulo": "O Golpe Final",
+        "sinopse": "Com a ajuda de seus aliados, Naruto consegue superar seus adversários e colocar um fim na ameaça representada pelos irmãos fugitivos.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep127.jpg",
+        "dataExibicao": "2005-05-25"
+    },
+    {
+        "id": 2527,
+        "numero": 128,
+        "titulo": "Um Novo Objetivo",
+        "sinopse": "Após a missão, Naruto retorna a Konoha e recebe um novo desafio, mostrando que sua jornada como ninja está apenas começando.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep128.jpg",
+        "dataExibicao": "2005-06-01"
+    },
+    {
+        "id": 2528,
+        "numero": 129,
+        "titulo": "A Missão de Escolta",
+        "sinopse": "Naruto, Hinata e Kiba são enviados para proteger uma importante família, mas logo descobrem que a missão esconde perigos inesperados.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep129.jpg",
+        "dataExibicao": "2005-06-08"
+    },
+    {
+        "id": 2529,
+        "numero": 130,
+        "titulo": "Pai e Filho",
+        "sinopse": "Os conflitos familiares dos clientes da missão vêm à tona, enquanto Naruto tenta evitar que a situação termine em tragédia.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep130.jpg",
+        "dataExibicao": "2005-06-15"
+    },
+    {
+        "id": 2530,
+        "numero": 131,
+        "titulo": "O Modo de Vida de Kyūbi!!",
+        "sinopse": "Naruto continua sua missão ao lado de Kiba e Hinata enquanto enfrentam novos desafios. Durante a jornada, o espírito de equipe é colocado à prova em uma missão repleta de obstáculos.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep131.jpg",
+        "dataExibicao": "2005-05-11"
+    },
+    {
+        "id": 2531,
+        "numero": 132,
+        "titulo": "Para um Amigo!",
+        "sinopse": "Naruto faz de tudo para cumprir sua promessa e ajudar um amigo, mostrando que sua determinação é maior do que qualquer dificuldade.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep132.jpg",
+        "dataExibicao": "2005-05-18"
+    },
+    {
+        "id": 2532,
+        "numero": 133,
+        "titulo": "Um Pedido em Lágrimas!",
+        "sinopse": "Uma missão inesperada leva Naruto e seus companheiros a enfrentar decisões difíceis enquanto tentam proteger aqueles que precisam de ajuda.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep133.jpg",
+        "dataExibicao": "2005-05-25"
+    },
+    {
+        "id": 2533,
+        "numero": 134,
+        "titulo": "O Fim da Chuva de Lágrimas",
+        "sinopse": "Após uma série de acontecimentos emocionantes, Naruto luta para colocar um fim ao sofrimento das pessoas envolvidas na missão.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep134.jpg",
+        "dataExibicao": "2005-06-01"
+    },
+    {
+        "id": 2534,
+        "numero": 135,
+        "titulo": "A Promessa Que Nunca Será Esquecida",
+        "sinopse": "Naruto relembra promessas importantes enquanto segue determinado a nunca abandonar aqueles que confiam nele.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep135.jpg",
+        "dataExibicao": "2005-06-08"
+    },
+    {
+        "id": 2535,
+        "numero": 136,
+        "titulo": "Infiltração! Em Busca de Informações",
+        "sinopse": "A equipe recebe uma missão de infiltração que exige cautela, inteligência e trabalho em equipe para ser concluída com sucesso.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep136.jpg",
+        "dataExibicao": "2005-06-22"
+    },
+    {
+        "id": 2536,
+        "numero": 137,
+        "titulo": "A Cidade dos Fora da Lei",
+        "sinopse": "Naruto e seus companheiros chegam a uma cidade dominada por criminosos e precisam agir com cuidado para cumprir sua missão.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep137.jpg",
+        "dataExibicao": "2005-06-29"
+    },
+    {
+        "id": 2537,
+        "numero": 138,
+        "titulo": "A Traição Esperada",
+        "sinopse": "Uma traição muda completamente os rumos da missão, obrigando Naruto e seus aliados a reagirem rapidamente.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep138.jpg",
+        "dataExibicao": "2005-07-06"
+    },
+    {
+        "id": 2538,
+        "numero": 139,
+        "titulo": "O Terror do Castelo Ōrochimaru",
+        "sinopse": "Os ninjas enfrentam perigos inesperados ao investigar um castelo repleto de armadilhas e mistérios.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep139.jpg",
+        "dataExibicao": "2005-07-13"
+    },
+    {
+        "id": 2539,
+        "numero": 140,
+        "titulo": "Duas Batidas do Coração",
+        "sinopse": "Enquanto a missão se aproxima do fim, sentimentos e decisões importantes colocam à prova a coragem dos jovens ninjas.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep140.jpg",
+        "dataExibicao": "2005-07-20"
+    },
+    {
+        "id": 2540,
+        "numero": 141,
+        "titulo": "A Determinação de Sakura",
+        "sinopse": "A batalha entre Naruto e Arashi continua, mas o ferimento de Naruto dificulta sua vitória. Sasame entra na luta para tentar salvar Naruto, mas será que isso será suficiente?",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep141.jpg",
+        "dataExibicao": "2005-06-29"
+    },
+    {
+        "id": 2541,
+        "numero": 142,
+        "titulo": "Os Três Vilões da Prisão de Segurança Máxima",
+        "sinopse": "Após os acontecimentos no País dos Campos de Arroz, todos se preparam para seus treinamentos. Porém, uma nova ameaça surge quando Mizuki retorna planejando escapar da prisão de Konoha.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep142.jpg",
+        "dataExibicao": "2005-07-06"
+    },
+    {
+        "id": 2542,
+        "numero": 143,
+        "titulo": "Tonton! Conto com Você!",
+        "sinopse": "Shizune e sua equipe encontram Mizuki, mas as coisas não saem como planejado. Quando Tonton retorna para avisar Tsunade, Naruto decide procurar Shizune com a ajuda do pequeno porco.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep143.jpg",
+        "dataExibicao": "2005-07-13"
+    },
+    {
+        "id": 2543,
+        "numero": 144,
+        "titulo": "Um Novo Esquadrão! Duas Pessoas e um Cachorro?!",
+        "sinopse": "Naruto enfrenta dificuldades contra os dois irmãos enquanto Iruka tenta trazer Mizuki de volta ao seu antigo eu. Quando tudo parece perdido, três ninjas aliados aparecem para ajudar.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep144.jpg",
+        "dataExibicao": "2005-07-20"
+    },
+    {
+        "id": 2544,
+        "numero": 145,
+        "titulo": "Uma Nova Formação: Ino-Shika-Cho!",
+        "sinopse": "O reforço de Naruto chega: Shikamaru, Ino e Chouji. Eles enfrentam os irmãos enquanto Naruto corre para ajudar Iruka, que está lutando contra Mizuki.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep145.jpg",
+        "dataExibicao": "2005-07-27"
+    },
+    {
+        "id": 2545,
+        "numero": 146,
+        "titulo": "A Sombra de Orochimaru",
+        "sinopse": "Naruto, Iruka e Pakkun encontram Tsubaki, noiva de Mizuki, que oferece ajuda. Enquanto isso, Tsunade descobre um segredo surpreendente envolvendo Mizuki e Orochimaru.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep146.jpg",
+        "dataExibicao": "2005-08-10"
+    },
+    {
+        "id": 2546,
+        "numero": 147,
+        "titulo": "Um Confronto do Destino: Você Não Vai Me Derrubar!",
+        "sinopse": "Mizuki está determinado a fazer Naruto e Iruka sofrerem, usando sua força e velocidade aprimoradas. Enquanto isso, Shikamaru, Ino e Chouji enfrentam uma difícil batalha.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep147.jpg",
+        "dataExibicao": "2005-08-17"
+    },
+    {
+        "id": 2547,
+        "numero": 148,
+        "titulo": "A Busca pelo Raro Besouro Bikochu",
+        "sinopse": "Impedido de procurar Sasuke pelas ordens de Tsunade, Naruto se junta a Kiba, Hinata e Shino em uma missão para encontrar o raro Bikochu, um inseto capaz de rastrear qualquer pessoa.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep148.jpg",
+        "dataExibicao": "2005-08-17"
+    },
+    {
+        "id": 2548,
+        "numero": 149,
+        "titulo": "Qual é a Diferença? Todos os Insetos Não Parecem Iguais?",
+        "sinopse": "O grupo enfrenta dificuldades para encontrar o Bikochu. Com a chuva se aproximando e apenas uma chance restante, Hinata precisa usar seu Byakugan para localizar o inseto.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep149.jpg",
+        "dataExibicao": "2005-08-24"
+    },
+    {
+        "id": 2549,
+        "numero": 150,
+        "titulo": "Uma Batalha de Insetos: Enganadores e Enganados",
+        "sinopse": "Com a segurança de Hinata em perigo, o grupo precisa encontrar uma maneira de salvá-la e proteger o Bikochu enquanto enfrenta inimigos cheios de truques.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep150.jpg",
+        "dataExibicao": "2005-08-31"
+    },
+    {
+        "id": 2550,
+        "numero": 151,
+        "titulo": "Liberte-se, Byakugan! Este é o Meu Caminho Ninja!",
+        "sinopse": "Com o grupo preso, Shino faz um acordo para trocar o Bikochu pela segurança de Hinata. Porém, Hinata consegue escapar, deixando o acordo sem valor. Agora ela precisa aparecer para salvar seus companheiros.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep151.jpg",
+        "dataExibicao": "2005-09-14"
+    },
+    {
+        "id": 2551,
+        "numero": 152,
+        "titulo": "Marcha Fúnebre para os Vivos",
+        "sinopse": "Ao salvar três desconhecidos, Naruto acaba envolvido em uma nova missão. Quando descobre uma possível ligação com a Akatsuki, ele decide investigar com Neji, Lee e Tenten.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep152.jpg",
+        "dataExibicao": "2005-09-21"
+    },
+    {
+        "id": 2552,
+        "numero": 153,
+        "titulo": "Uma Lição Aprendida: O Punho de Ferro do Amor!",
+        "sinopse": "Naruto e seus companheiros tentam salvar Rourusuke e derrotar os membros da Família Kurosuke. Rock Lee encontra um antigo amigo e precisa convencê-lo a abandonar seu caminho atual.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep153.jpg",
+        "dataExibicao": "2005-09-28"
+    },
+    {
+        "id": 2553,
+        "numero": 154,
+        "titulo": "O Inimigo do Byakugan",
+        "sinopse": "Naruto, Tenten, Neji e Lee continuam sua missão para derrotar Raiga e salvar a Família Rourusuke. Mesmo com o Byakugan de Neji, a névoa dificulta a batalha.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep154.jpg",
+        "dataExibicao": "2005-10-05"
+    },
+    {
+        "id": 2554,
+        "numero": 155,
+        "titulo": "As Nuvens Escuras se Aproximam",
+        "sinopse": "Com Raiga aparentemente derrotado, o grupo tenta restaurar a paz na vila. Porém, Ranmaru revela seu passado trágico e muda a forma como todos enxergam a situação.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep155.jpg",
+        "dataExibicao": "2005-10-12"
+    },
+    {
+        "id": 2555,
+        "numero": 156,
+        "titulo": "O Contra-Ataque de Raiga",
+        "sinopse": "Ranmaru consegue trazer Raiga de volta e um furioso inimigo parte para o ataque. Tenten se torna seu primeiro alvo enquanto Karashi corre para pedir ajuda.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep156.jpg",
+        "dataExibicao": "2005-10-19"
+    },
+    {
+        "id": 2556,
+        "numero": 157,
+        "titulo": "Corra! O Curry da Vida",
+        "sinopse": "Lee fica sozinho enfrentando Raiga enquanto seus amigos procuram pelo Curry da Vida. Ranmaru se reencontra com Raiga e questiona se tudo continua igual entre eles.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep157.jpg",
+        "dataExibicao": "2005-10-26"
+    },
+    {
+        "id": 2557,
+        "numero": 158,
+        "titulo": "Siga Minha Liderança! O Grande Desafio de Sobrevivência",
+        "sinopse": "Cada Genin recebe um grupo de jovens ninjas para liderar em uma missão de sobrevivência. Naruto acaba responsável pelo grupo do Konohamaru e precisa provar suas habilidades como líder.",
+        "temporadaId": 3,
+        "animeId": 86,
+        "imagemUrl": "../../images/episodios/naruto/t3/ep158.jpg",
+        "dataExibicao": "2005-11-02"
     }
 ]
