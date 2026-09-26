@@ -25388,5 +25388,625 @@
         "animeId": 86,
         "imagemUrl": "../../images/episodios/naruto/t3/ep158.jpg",
         "dataExibicao": "2005-11-02"
+    },
+    {
+        "id": 2558,
+        "numero": 159,
+        "titulo": "O Caçador de Recompensas da Região Selvagem",
+        "sinopse": "Naruto, Hinata e Kiba recebem a missão de capturar um ladrão chamado Gosunkugi. Porém, durante a busca, eles encontram outro caçador de recompensas que também está atrás do mesmo alvo.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep159.jpg",
+        "dataExibicao": "2005-11-09"
+    },
+    {
+        "id": 2559,
+        "numero": 160,
+        "titulo": "Caçar ou Ser Caçado?! Confronto no Templo O.K.!",
+        "sinopse": "Sazanami revela sua verdadeira identidade: ele é Toukichi, um criminoso procurado acusado de matar uma família. Porém, ele afirma ser inocente e se junta ao grupo de Konoha para capturar o verdadeiro responsável.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep160.jpg",
+        "dataExibicao": "2005-11-16"
+    },
+    {
+        "id": 2560,
+        "numero": 161,
+        "titulo": "A Aparição de Visitantes Estranhos",
+        "sinopse": "Enquanto Gai e Lee deixam Konoha em uma missão, dois impostores assumem suas identidades para invadir a vila e descobrir seus segredos. Tsunade, Sakura e Tenten preparam uma surpresa para eles.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep161.jpg",
+        "dataExibicao": "2005-11-23"
+    },
+    {
+        "id": 2561,
+        "numero": 162,
+        "titulo": "O Guerreiro Amaldiçoado",
+        "sinopse": "Naruto, Tenten e Neji viajam para o País dos Pássaros para investigar e eliminar um misterioso fantasma conhecido como Noroimusha.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep162.jpg",
+        "dataExibicao": "2005-11-30"
+    },
+    {
+        "id": 2562,
+        "numero": 163,
+        "titulo": "A Intenção do Estrategista",
+        "sinopse": "Naruto e seus companheiros tentam provar que Kouhmei é o responsável pelo fantasma, mas as descobertas feitas pelo grupo revelam ainda mais mistérios.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep163.jpg",
+        "dataExibicao": "2005-12-07"
+    },
+    {
+        "id": 2563,
+        "numero": 164,
+        "titulo": "Tarde Demais Para Ajudar",
+        "sinopse": "Naruto decide investigar o caso do fantasma sozinho enquanto Neji e Tenten seguem outro caminho. Com a ajuda de dois sapos, Naruto descobre a verdade, mas coloca sua vida em risco.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep164.jpg",
+        "dataExibicao": "2005-12-14"
+    },
+    {
+        "id": 2564,
+        "numero": 165,
+        "titulo": "A Morte de Naruto",
+        "sinopse": "Kakashi ordena que Neji e Tenten retornem para a vila. Enquanto isso, Koumei está prestes a ser executado quando o Noroimusha aparece. Sagi finalmente revela a verdade por trás dos acontecimentos.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep165.jpg",
+        "dataExibicao": "2005-12-21"
+    },
+    {
+        "id": 2565,
+        "numero": 166,
+        "titulo": "Quando o Tempo Para",
+        "sinopse": "Sagi prepara seu plano de vingança e, disfarçado como Noroimusha, enfrenta Musou. Porém, uma revelação surpreendente acontece quando ambos mostram suas verdadeiras identidades.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep166.jpg",
+        "dataExibicao": "2006-01-04"
+    },
+    {
+        "id": 2566,
+        "numero": 167,
+        "titulo": "Quando as Garças Abrem Suas Asas",
+        "sinopse": "Shima salva Naruto de uma armadilha de genjutsu criada por Ooki e tenta protegê-lo. Quando tudo parece perdido, uma misteriosa figura branca surge com um último pedido.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep167.jpg",
+        "dataExibicao": "2006-01-04"
+    },
+    {
+        "id": 2567,
+        "numero": 168,
+        "titulo": "Misture, Estique, Ferva! Queime, Panela de Cobre, Queime!",
+        "sinopse": "O dono do Ichiraku Ramen está em problemas quando sua filha é sequestrada. Naruto, Chouji e Sakura precisam ajudá-lo a vencer um concurso para recuperar sua filha e proteger sua receita lendária.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep168.jpg",
+        "dataExibicao": "2006-01-18"
+    },
+    {
+        "id": 2568,
+        "numero": 169,
+        "titulo": "Lembrança: A Página Perdida",
+        "sinopse": "Naruto, Ino e Shino acompanham Anko em uma missão no País do Mar para destruir um monstro marinho e proteger um navio carregado de ouro. Durante a missão, Anko começa a relembrar seu passado e sua ligação com Orochimaru.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep169.jpg",
+        "dataExibicao": "2006-01-25"
+    },
+    {
+        "id": 2569,
+        "numero": 170,
+        "titulo": "A Porta Fechada",
+        "sinopse": "Naruto se recupera graças à misteriosa garota Isaribi. Enquanto isso, Anko, Shino e Ino continuam procurando por ele e acabam descobrindo o esconderijo do monstro marinho.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep170.jpg",
+        "dataExibicao": "2006-02-01"
+    },
+    {
+        "id": 2570,
+        "numero": 171,
+        "titulo": "Infiltração: A Armadilha!",
+        "sinopse": "Após Isaribi fugir, Naruto e sua equipe decidem invadir a ilha proibida. Lá eles descobrem que Orochimaru não está por trás dos experimentos, mas sim um homem chamado Amachi.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep171.jpg",
+        "dataExibicao": "2006-02-08"
+    },
+    {
+        "id": 2571,
+        "numero": 172,
+        "titulo": "Desespero: Um Coração Partido",
+        "sinopse": "Após escaparem do laboratório em destruição, Naruto e os outros precisam alcançar o comboio de dinheiro. Amachi prepara uma armadilha e revela sua verdadeira natureza.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep172.jpg",
+        "dataExibicao": "2006-02-15"
+    },
+    {
+        "id": 2572,
+        "numero": 173,
+        "titulo": "A Batalha no Mar: O Poder Liberado!",
+        "sinopse": "A batalha entre Naruto e Amachi chega ao fim, mas novos acontecimentos surgem. Anko também recupera lembranças importantes de seu passado.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep173.jpg",
+        "dataExibicao": "2006-02-22"
+    },
+    {
+        "id": 2573,
+        "numero": 174,
+        "titulo": "Impossível! Arte Ninja de Celebridade: Jutsu do Dinheiro!",
+        "sinopse": "Naruto recebe uma missão especial para proteger o filho de um homem importante. O garoto mimado acredita que dinheiro pode comprar tudo, mas Naruto precisa ensiná-lo o verdadeiro valor do esforço.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep174.jpg",
+        "dataExibicao": "2006-03-01"
+    },
+    {
+        "id": 2574,
+        "numero": 175,
+        "titulo": "A Caçada ao Tesouro Começa!",
+        "sinopse": "Naruto, Kiba e Hinata recebem uma missão para encontrar um tesouro escondido em uma caverna. Porém, o caminho até a recompensa guarda muitos perigos.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep175.jpg",
+        "dataExibicao": "2006-03-08"
+    },
+    {
+        "id": 2575,
+        "numero": 176,
+        "titulo": "Corra, Desvie, Faça Zigue-Zague! Perseguindo ou Sendo Perseguido!",
+        "sinopse": "Naruto, Kiba e Hinata são atacados por ninjas impostores que afirmam ser os verdadeiros membros da equipe. O trio precisa descobrir a verdade e impedir uma ameaça contra Konoha.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep176.jpg",
+        "dataExibicao": "2006-03-15"
+    },
+    {
+        "id": 2576,
+        "numero": 177,
+        "titulo": "Por Favor, Senhor Carteiro!!",
+        "sinopse": "Naruto encontra Jiraiya trabalhando em seu próximo livro e pede para ser treinado por ele. Enquanto ajuda Jiraiya com a obra, os dois acabam enfrentando ninjas mensageiros que tentam roubar o manuscrito.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep177.jpg",
+        "dataExibicao": "2006-03-22"
+    },
+    {
+        "id": 2577,
+        "numero": 178,
+        "titulo": "Encontro! O Garoto com o Nome de uma Estrela",
+        "sinopse": "Há cerca de 200 anos, uma estrela caiu na Vila da Estrela Oculta e dizem que ela possui poderes místicos. Naruto acompanha Lee, Neji e Tenten em uma missão para protegê-la.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep178.jpg",
+        "dataExibicao": "2006-03-29"
+    },
+    {
+        "id": 2578,
+        "numero": 179,
+        "titulo": "A Canção de Ninar Relembrada",
+        "sinopse": "Quando um misterioso ninja rouba a estrela usando apenas seu Chakra, o grupo de Konoha tenta recuperá-la. Durante a missão, Naruto descobre mais sobre o passado de Subaru e a canção Natsuhiboshi.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep179.jpg",
+        "dataExibicao": "2006-04-05"
+    },
+    {
+        "id": 2579,
+        "numero": 180,
+        "titulo": "Jutsu Secreto! O Preço da Arte Ninja: Kujaku",
+        "sinopse": "A equipe de Konoha continua investigando o roubo da estrela e percebe que nem tudo é o que parece. A verdade sobre o inimigo começa a surgir.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep180.jpg",
+        "dataExibicao": "2006-04-12"
+    },
+    {
+        "id": 2580,
+        "numero": 181,
+        "titulo": "Hoshikage: A Verdade Enterrada",
+        "sinopse": "Naruto é salvo por uma mulher misteriosa e descobre sua verdadeira identidade. Agora ele precisa continuar uma missão iniciada há muito tempo.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep181.jpg",
+        "dataExibicao": "2006-04-19"
+    },
+    {
+        "id": 2581,
+        "numero": 182,
+        "titulo": "Reencontro: O Tempo Restante",
+        "sinopse": "Subaru finalmente encontra sua mãe, mas talvez seja tarde demais. Naruto precisa derrotar Akahoshi e impedir que a estrela volte para suas mãos.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep182.jpg",
+        "dataExibicao": "2006-04-26"
+    },
+    {
+        "id": 2582,
+        "numero": 183,
+        "titulo": "O Brilho da Estrela",
+        "sinopse": "Após Akahoshi tentar executar Sumaru, as crianças da vila se unem para proteger seu lar. Naruto se torna a última esperança para derrotar essa ameaça.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep183.jpg",
+        "dataExibicao": "2006-05-03"
+    },
+    {
+        "id": 2583,
+        "numero": 184,
+        "titulo": "O Longo Dia de Kiba!",
+        "sinopse": "Quando Akamaru adoece e começa a sofrer uma transformação misteriosa, Kiba precisa fazer de tudo para salvar seu melhor amigo, mesmo contra a opinião de toda a vila.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep184.jpg",
+        "dataExibicao": "2006-05-10"
+    },
+    {
+        "id": 2584,
+        "numero": 185,
+        "titulo": "Uma Lenda da Folha Oculta: O Onbaa!",
+        "sinopse": "Enquanto Naruto treina na floresta, uma criatura misteriosa se prende às suas costas. Segundo a lenda, ela só pode ser removida quando crescer completamente, causando muitos problemas para Naruto.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep185.jpg",
+        "dataExibicao": "2006-05-17"
+    },
+    {
+        "id": 2585,
+        "numero": 186,
+        "titulo": "Shino Sorridente",
+        "sinopse": "Naruto e Shino partem em uma missão para Motoyoshi, onde um homem chamado Fuuta precisa evitar rir no funeral de seu pai para receber sua herança. Porém, seus parentes farão de tudo para fazê-lo perder o controle.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep186.jpg",
+        "dataExibicao": "2006-05-24"
+    },
+    {
+        "id": 2586,
+        "numero": 187,
+        "titulo": "Aberto para Negócios! O Serviço de Mudanças da Folha",
+        "sinopse": "Naruto, Hinata e Chouji recebem a missão de proteger comerciantes que fogem de uma guerra no País da Grama. Porém, Tsunade transforma a missão de escolta em um trabalho de mudança.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep187.jpg",
+        "dataExibicao": "2006-05-31"
+    },
+    {
+        "id": 2587,
+        "numero": 188,
+        "titulo": "O Mistério dos Comerciantes Alvejados",
+        "sinopse": "O grupo se divide para tentar despistar os misteriosos atacantes. Entretanto, Naruto e Chouji descobrem que existe algo escondido por trás da perseguição.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep188.jpg",
+        "dataExibicao": "2006-06-07"
+    },
+    {
+        "id": 2588,
+        "numero": 189,
+        "titulo": "Um Suprimento Infinito de Ferramentas Ninja",
+        "sinopse": "Naruto, Chouji e Yurinojou enfrentam Ruiga, um ninja capaz de usar a água da terra como arma. Eles precisam encontrar uma forma de derrotar um inimigo com recursos aparentemente ilimitados.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep189.jpg",
+        "dataExibicao": "2006-06-14"
+    },
+    {
+        "id": 2589,
+        "numero": 190,
+        "titulo": "O Byakugan Vê o Ponto Cego!",
+        "sinopse": "Após Naruto ser derrotado, Hinata decide entrar na batalha. Ela precisa enfrentar o segundo ninja inimigo e proteger a princesa.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep190.jpg",
+        "dataExibicao": "2006-06-21"
+    },
+    {
+        "id": 2590,
+        "numero": 191,
+        "titulo": "Previsão: Morte! Nublado com Chance de Sol!",
+        "sinopse": "A batalha contra o terceiro e último ninja inimigo começa. Com o objetivo de matar a Princesa Haruna, ele se torna uma ameaça que Naruto precisa impedir.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep191.jpg",
+        "dataExibicao": "2006-06-28"
+    },
+    {
+        "id": 2591,
+        "numero": 192,
+        "titulo": "Ino Grita! O Paraíso dos Gordinhos!",
+        "sinopse": "Ino é escolhida para substituir a filha de um Senhor Feudal em uma missão de casamento. Porém, a princesa mudou muito de aparência e Ino precisa lidar com a situação.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep192.jpg",
+        "dataExibicao": "2006-07-05"
+    },
+    {
+        "id": 2592,
+        "numero": 193,
+        "titulo": "Viva o Desafio do Dojo! Juventude é Tudo Sobre Paixão!",
+        "sinopse": "Ao retornar de uma missão, Naruto descobre que Lee abriu um dojo e procura desesperadamente por um desafiante. Quando Gai decide enfrentar seu próprio aluno, uma mudança inesperada causa uma grande confusão.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep193.jpg",
+        "dataExibicao": "2006-07-12"
+    },
+    {
+        "id": 2593,
+        "numero": 194,
+        "titulo": "A Misteriosa Maldição do Castelo Assombrado",
+        "sinopse": "Naruto, Hinata e Kiba são enviados ao País do Mel para procurar a esposa desaparecida do Daimyo. Durante a busca, eles encontram um castelo misterioso cheio de segredos.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep194.jpg",
+        "dataExibicao": "2006-07-19"
+    },
+    {
+        "id": 2594,
+        "numero": 195,
+        "titulo": "A Terceira Super Fera!",
+        "sinopse": "Quando Lee perde sua consulta com Tsunade, Naruto é enviado para encontrá-lo. Enquanto isso, Gai decide colocar Lee contra um novo aluno chamado Yagura em um treinamento especial.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep195.jpg",
+        "dataExibicao": "2006-07-26"
+    },
+    {
+        "id": 2595,
+        "numero": 196,
+        "titulo": "Confronto de Sangue Quente: Aluno Contra Mestre",
+        "sinopse": "Gai fica preso dentro de uma fortaleza feita de postes de treinamento. Naruto, Neji e Tenten aparecem para tentar resgatá-lo, mas a situação se torna mais complicada.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep196.jpg",
+        "dataExibicao": "2006-08-09"
+    },
+    {
+        "id": 2596,
+        "numero": 197,
+        "titulo": "Crise: Os 11 Ninjas da Folha se Reúnem!",
+        "sinopse": "Naruto conhece Gennou, um antigo trabalhador da construção. Quando ele rouba plantas de prédios de Konoha, Naruto acaba sendo investigado pela ANBU.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep197.jpg",
+        "dataExibicao": "2006-08-16"
+    },
+    {
+        "id": 2597,
+        "numero": 198,
+        "titulo": "A ANBU Desiste? As Lembranças de Naruto",
+        "sinopse": "Para descobrir informações sobre Gennou, a ANBU coloca Naruto em um estado de transe para acessar suas memórias. Porém, será que conseguirão encontrar as respostas?",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep198.jpg",
+        "dataExibicao": "2006-08-23"
+    },
+    {
+        "id": 2598,
+        "numero": 199,
+        "titulo": "O Alvo Perdido",
+        "sinopse": "Naruto e seus companheiros continuam procurando pistas sobre Gennou e seu plano. Durante a investigação na Academia Ninja, eles encontram uma descoberta assustadora.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep199.jpg",
+        "dataExibicao": "2006-08-30"
+    },
+    {
+        "id": 2599,
+        "numero": 200,
+        "titulo": "O Poderoso Ajudante",
+        "sinopse": "Com Konoha cercada por explosivos, uma decisão precisa ser tomada: remover as armadilhas ou evacuar a vila. Porém, algo estranho existe por trás dessas marcas.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep200.jpg",
+        "dataExibicao": "2006-09-13"
+    },
+    {
+        "id": 2600,
+        "numero": 201,
+        "titulo": "Múltiplas Armadilhas! Contagem Regressiva para a Destruição",
+        "sinopse": "Enquanto Shikamaru tenta descobrir o próximo passo de Gennou, Naruto enfrenta o Mestre das Armadilhas. A equipe precisa impedir o plano antes que Konoha seja destruída.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep201.jpg",
+        "dataExibicao": "2006-09-20"
+    },
+    {
+        "id": 2601,
+        "numero": 202,
+        "titulo": "As 5 Melhores Batalhas Ninja!",
+        "sinopse": "Naruto e Sakura apresentam um episódio especial relembrando as cinco maiores batalhas ninja já enfrentadas. O episódio também conta com entrevistas dos ninjas e até de alguns inimigos.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep202.jpg",
+        "dataExibicao": "2006-09-27"
+    },
+    {
+        "id": 2602,
+        "numero": 203,
+        "titulo": "A Decisão de Kurenai: O Time 8 é Deixado Para Trás",
+        "sinopse": "Naruto conhece Yakumo, uma garota com um incrível poder de destruição. Pouco depois, Kurenai, líder do Time 8, toma uma decisão surpreendente que deixa Naruto curioso.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep203.jpg",
+        "dataExibicao": "2006-10-05"
+    },
+    {
+        "id": 2603,
+        "numero": 204,
+        "titulo": "A Habilidade Selada de Yakumo",
+        "sinopse": "Naruto invade a mansão de Yakumo durante a noite e descobre que Kurenai selou suas habilidades no passado. Enquanto isso, membros do Clã Kurama atacam.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep204.jpg",
+        "dataExibicao": "2006-10-05"
+    },
+    {
+        "id": 2604,
+        "numero": 205,
+        "titulo": "A Missão Secreta de Kurenai: A Promessa com o Terceiro Hokage",
+        "sinopse": "Kurenai tenta fugir com Yakumo, mas Naruto, Sakura, o Time 8 e Gai aparecem para ajudar. A história do relacionamento entre Kurenai e Yakumo finalmente começa a ser revelada.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep205.jpg",
+        "dataExibicao": "2006-10-05"
+    },
+    {
+        "id": 2605,
+        "numero": 206,
+        "titulo": "Genjutsu ou Realidade?",
+        "sinopse": "Naruto, Kurenai, Yakumo e o Time 8 retornam para Konoha e encontram uma situação chocante. Mas será que tudo é realmente verdade ou apenas uma ilusão?",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep206.jpg",
+        "dataExibicao": "2006-10-19"
+    },
+    {
+        "id": 2606,
+        "numero": 207,
+        "titulo": "A Suposta Habilidade Selada",
+        "sinopse": "Naruto e os membros do Time 8 entram na casa de Yakumo para descobrir a verdade. Uma entidade misteriosa pode estar por trás de todos os acontecimentos.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep207.jpg",
+        "dataExibicao": "2006-10-26"
+    },
+    {
+        "id": 2607,
+        "numero": 208,
+        "titulo": "O Peso do Artefato Valioso!",
+        "sinopse": "Naruto e Kiba recebem a missão de escoltar Shinemon, responsável por transportar um raro e valioso artefato. Quando bandidos roubam o objeto, eles precisam recuperá-lo.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep208.jpg",
+        "dataExibicao": "2006-11-02"
+    },
+    {
+        "id": 2608,
+        "numero": 209,
+        "titulo": "O Inimigo: Ninjas Renegados",
+        "sinopse": "Naruto, Sakura e Lee recebem a missão de escoltar um prisioneiro chamado Gantetsu até a capital do País da Floresta. Eles deveriam apenas dar suporte, mas algo dá errado durante o caminho.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep209.jpg",
+        "dataExibicao": "2006-11-09"
+    },
+    {
+        "id": 2609,
+        "numero": 210,
+        "titulo": "A Floresta Confusa",
+        "sinopse": "Após o navio ser dividido ao meio, Naruto, Todoroki e Gantetsu ficam separados dos outros. Agora Naruto precisa guiá-los pela floresta enquanto enfrentam antigos companheiros de Gantetsu.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep210.jpg",
+        "dataExibicao": "2006-11-16"
+    },
+    {
+        "id": 2610,
+        "numero": 211,
+        "titulo": "Memória das Chamas",
+        "sinopse": "Todoroki quer se vingar de Gantetsu pela morte de sua família, mas Naruto acredita em outra solução. Enquanto isso, Lee e Sakura enfrentam crianças que exigem a entrega do prisioneiro.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep211.jpg",
+        "dataExibicao": "2006-11-30"
+    },
+    {
+        "id": 2611,
+        "numero": 212,
+        "titulo": "Cada Um em Seu Próprio Caminho",
+        "sinopse": "Naruto chega para salvar Gantetsu e as crianças, mas enfrenta dificuldades quando Akio é sequestrado. Todoroki descobre que seu irmão ainda está vivo.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep212.jpg",
+        "dataExibicao": "2006-12-07"
+    },
+    {
+        "id": 2612,
+        "numero": 213,
+        "titulo": "Memórias Desaparecidas",
+        "sinopse": "Naruto encontra um garoto ferido que não pertence a Konoha. Tsunade pede que Naruto cuide dele até que sua memória seja recuperada.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep213.jpg",
+        "dataExibicao": "2006-12-14"
+    },
+    {
+        "id": 2613,
+        "numero": 214,
+        "titulo": "Trazendo a Realidade de Volta",
+        "sinopse": "Naruto e Menma conseguem permissão para procurar pelas memórias perdidas do garoto. Acompanhados por Neji e Tenten, eles encontram uma vila destruída e moradores hostis.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep214.jpg",
+        "dataExibicao": "2006-12-21"
+    },
+    {
+        "id": 2614,
+        "numero": 215,
+        "titulo": "Um Passado a Ser Apagado",
+        "sinopse": "Ran quer matar Menma ao descobrir a marca em seu braço, mas Neji impede a execução. Enquanto isso, uma nova ameaça se aproxima da vila.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep215.jpg",
+        "dataExibicao": "2006-12-21"
+    },
+    {
+        "id": 2615,
+        "numero": 216,
+        "titulo": "O Shukaku Alvo",
+        "sinopse": "A ninja da Areia Matsuri é sequestrada por um misterioso inimigo. Para salvá-la, Gaara precisa aceitar um desafio que pode colocar todos em perigo.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep216.jpg",
+        "dataExibicao": "2007-01-11"
+    },
+    {
+        "id": 2616,
+        "numero": 217,
+        "titulo": "Aliança da Areia com os Ninjas da Folha",
+        "sinopse": "Os ninjas renegados continuam fugindo enquanto Gaara, Temari e Kankuro os perseguem. Ao mesmo tempo, Shino, Hinata e Neji usam suas habilidades para localizar os inimigos.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep217.jpg",
+        "dataExibicao": "2007-01-18"
+    },
+    {
+        "id": 2617,
+        "numero": 218,
+        "titulo": "O Contra-Ataque!",
+        "sinopse": "Shikamaru e Ino chegam para ajudar Temari contra Kyaku, enquanto Kiba e Chouji auxiliam Kankuro. Porém, Neji percebe algo estranho durante a batalha.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep218.jpg",
+        "dataExibicao": "2007-01-25"
+    },
+    {
+        "id": 2618,
+        "numero": 219,
+        "titulo": "A Arma Suprema Renascida",
+        "sinopse": "Mesmo com pouco Chakra, Gaara enfrenta o líder dos Shitenshounin. Quando o líder da Vila Takumi, Seimei, é revivido, Naruto precisa salvar Gaara antes que Shukaku assuma completamente o controle.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep219.jpg",
+        "dataExibicao": "2007-02-01"
+    },
+    {
+        "id": 2619,
+        "numero": 220,
+        "titulo": "A Partida",
+        "sinopse": "A conclusão emocionante de Naruto. O destino de Gaara é revelado e, com o retorno de Jiraiya, Naruto finalmente deixa Konoha para iniciar seu treinamento.",
+        "temporadaId": 4,
+        "animeId": 87,
+        "imagemUrl": "../../images/episodios/naruto/t4/ep220.jpg",
+        "dataExibicao": "2007-02-08"
     }
 ]
