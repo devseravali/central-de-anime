@@ -24328,5 +24328,525 @@
         "animeId": 84,
         "imagemUrl": "../../images/episodios/naruto/t1/ep52.jpg",
         "dataExibicao": "2003-10-01"
+    },
+    {
+        "id": 2452,
+        "numero": 53,
+        "titulo": "Muito Tempo Sem Ver: Jiraiya Está de Volta!",
+        "sinopse": "Enquanto Ebisu treina Naruto em uma fonte termal, ele encontra alguém tentando espiar as mulheres tomando banho. Naruto descobre que esse estranho é Jiraiya, um dos lendários Sannin, e decide que ele deve ser seu novo mestre.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep53.jpg",
+        "dataExibicao": "2003-10-08"
+    },
+    {
+        "id": 2453,
+        "numero": 54,
+        "titulo": "A Técnica de Invocação: A Sabedoria do Sábio dos Sapos!",
+        "sinopse": "Jiraiya começa a ensinar Naruto a técnica de invocação, mas o treinamento não será fácil. Enquanto isso, uma conspiração contra Konoha começa a se revelar.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep54.jpg",
+        "dataExibicao": "2003-10-15"
+    },
+    {
+        "id": 2454,
+        "numero": 55,
+        "titulo": "Um Sentimento de Saudade, Uma Flor Cheia de Esperança",
+        "sinopse": "Sakura visita Sasuke e Lee no hospital e encontra Ino no caminho. Enquanto isso, Lee tenta voltar aos treinamentos mesmo com suas limitações.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep55.jpg",
+        "dataExibicao": "2003-10-22"
+    },
+    {
+        "id": 2455,
+        "numero": 56,
+        "titulo": "Viver ou Morrer: Arrisque Tudo Para Vencer Tudo!",
+        "sinopse": "Naruto continua seu treinamento de invocação, mas Jiraiya percebe que ele precisa enfrentar uma situação extrema para liberar o poder da Raposa de Nove Caudas.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep56.jpg",
+        "dataExibicao": "2003-10-29"
+    },
+    {
+        "id": 2456,
+        "numero": 57,
+        "titulo": "Ele Voa! Ele Salta! Ele Espreita! O Grande Sapo Aparece!",
+        "sinopse": "Depois de conseguir invocar Gamabunta, Naruto precisa provar que é digno permanecendo nas costas do grande sapo até o anoitecer.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep57.jpg",
+        "dataExibicao": "2003-11-05"
+    },
+    {
+        "id": 2457,
+        "numero": 58,
+        "titulo": "Hospital Cercado: A Mão Maligna Revelada!",
+        "sinopse": "Naruto e Shikamaru protegem Rock Lee após Gaara aparecer no hospital. Eles descobrem um segredo assustador sobre o poder de Gaara.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep58.jpg",
+        "dataExibicao": "2003-11-12"
+    },
+    {
+        "id": 2458,
+        "numero": 59,
+        "titulo": "As Rodadas Finais: Corrida Para a Arena de Batalha!",
+        "sinopse": "Naruto se atrasa para o início das finais do Exame Chunin e corre para chegar à arena a tempo de sua luta.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep59.jpg",
+        "dataExibicao": "2003-11-19"
+    },
+    {
+        "id": 2459,
+        "numero": 60,
+        "titulo": "Byakugan Contra Jutsu Clone das Sombras!",
+        "sinopse": "Naruto enfrenta Neji na primeira luta das finais do Exame Chunin. Será que sua determinação será suficiente contra o Byakugan?",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep60.jpg",
+        "dataExibicao": "2003-11-26"
+    },
+    {
+        "id": 2460,
+        "numero": 61,
+        "titulo": "Defesa Absoluta: O Ponto Cego Zero!",
+        "sinopse": "Neji revela seu verdadeiro poder e mostra a marca em sua testa enquanto Naruto tenta encontrar uma maneira de superar a defesa do Byakugan.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep61.jpg",
+        "dataExibicao": "2003-12-03"
+    },
+    {
+        "id": 2461,
+        "numero": 62,
+        "titulo": "O Verdadeiro Poder de um Fracassado",
+        "sinopse": "Naruto relembra seu passado e usa sua força interior para enfrentar Neji, provando que o destino pode ser mudado.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep62.jpg",
+        "dataExibicao": "2003-12-10"
+    },
+    {
+        "id": 2462,
+        "numero": 63,
+        "titulo": "A Luta de Shikamaru: Estratégia e Inteligência",
+        "sinopse": "Shikamaru enfrenta Temari nas finais do Exame Chunin, utilizando sua astúcia e habilidades estratégicas para superar a adversária.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep63.jpg",
+        "dataExibicao": "2003-12-17"
+    },
+    {
+        "id": 2463,
+        "numero": 64,
+        "titulo": "Zero Motivação: O Ninja que Invejava as Nuvens",
+        "sinopse": "Shikamaru enfrenta Temari nas finais do Exame Chunin. Apesar de parecer desinteressado, ele usa sua inteligência para surpreender a adversária e mostrar que é um estrategista excepcional.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep64.jpg",
+        "dataExibicao": "2003-12-24"
+    },
+    {
+        "id": 2464,
+        "numero": 65,
+        "titulo": "Folha Dançante, Areia Contorcida",
+        "sinopse": "Chega a vez da luta entre Sasuke e Gaara, mas Sasuke ainda não apareceu. Enquanto todos aguardam ansiosamente, o tempo para sua chegada está se esgotando.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep65.jpg",
+        "dataExibicao": "2004-01-07"
+    },
+    {
+        "id": 2465,
+        "numero": 66,
+        "titulo": "A Técnica do Sobrancelhudo: Estilo Sasuke!",
+        "sinopse": "Sasuke finalmente chega para enfrentar Gaara e demonstra as técnicas de taijutsu que aprendeu com Kakashi, colocando a defesa absoluta de Gaara à prova.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep66.jpg",
+        "dataExibicao": "2004-01-14"
+    },
+    {
+        "id": 2466,
+        "numero": 67,
+        "titulo": "Atrasado, Mas Pronto! A Técnica Suprema é Revelada!",
+        "sinopse": "Sem conseguir superar a defesa de Gaara apenas com taijutsu, Sasuke revela o Chidori, a poderosa técnica ensinada por Kakashi.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep67.jpg",
+        "dataExibicao": "2004-01-21"
+    },
+    {
+        "id": 2467,
+        "numero": 68,
+        "titulo": "Hora Zero! Começa a Destruição da Vila da Folha",
+        "sinopse": "A luta entre Sasuke e Gaara é interrompida quando Orochimaru inicia sua invasão a Konoha. A guerra finalmente começa.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep68.jpg",
+        "dataExibicao": "2004-01-28"
+    },
+    {
+        "id": 2468,
+        "numero": 69,
+        "titulo": "A Vila em Perigo: Uma Nova Missão Rank A",
+        "sinopse": "Kakashi envia Naruto, Sakura e Shikamaru, acompanhados por Pakkun, para impedir que Sasuke enfrente Gaara sozinho durante a invasão.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep69.jpg",
+        "dataExibicao": "2004-02-04"
+    },
+    {
+        "id": 2469,
+        "numero": 70,
+        "titulo": "O Chamado de um Preguiçoso: Hora de Agir!",
+        "sinopse": "Perseguidos por ninjas do Som, Shikamaru decide ficar para trás e usar sua Técnica de Possessão das Sombras para dar tempo aos amigos.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep70.jpg",
+        "dataExibicao": "2004-02-11"
+    },
+    {
+        "id": 2470,
+        "numero": 71,
+        "titulo": "O Duelo Supremo: A Batalha dos Hokages",
+        "sinopse": "Orochimaru convoca reforços inesperados para enfrentar o Terceiro Hokage, enquanto Sasuke finalmente alcança Gaara, Kankuro e Temari.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep71.jpg",
+        "dataExibicao": "2004-02-18"
+    },
+    {
+        "id": 2471,
+        "numero": 72,
+        "titulo": "Um Erro do Passado: Um Rosto Revelado",
+        "sinopse": "Temari tenta atrasar Sasuke enquanto o Terceiro Hokage prepara uma técnica proibida para enfrentar Orochimaru.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep72.jpg",
+        "dataExibicao": "2004-02-25"
+    },
+    {
+        "id": 2472,
+        "numero": 73,
+        "titulo": "Técnica Proibida: O Selo do Ceifador da Morte",
+        "sinopse": "Um aliado inesperado ajuda Sasuke a continuar perseguindo Gaara, enquanto o Terceiro Hokage faz o sacrifício definitivo para deter Orochimaru.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep73.jpg",
+        "dataExibicao": "2004-03-03"
+    },
+    {
+        "id": 2473,
+        "numero": 74,
+        "titulo": "A Verdade Surpreendente! A Verdadeira Identidade de Gaara",
+        "sinopse": "Enquanto Shino enfrenta Kankuro, Sasuke finalmente alcança Gaara e descobre a terrível verdade sobre o monstro selado dentro dele.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep74.jpg",
+        "dataExibicao": "2004-03-10"
+    },
+    {
+        "id": 2474,
+        "numero": 75,
+        "titulo": "A Decisão de Sasuke: Levado ao Limite",
+        "sinopse": "Sasuke ultrapassa seus próprios limites ao usar o Chidori repetidas vezes na tentativa de derrotar Gaara, colocando sua vida em risco.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep75.jpg",
+        "dataExibicao": "2004-03-17"
+    },
+    {
+        "id": 2475,
+        "numero": 76,
+        "titulo": "O Assassino da Noite Iluminada pela Lua",
+        "sinopse": "Naruto e Sakura chegam para salvar Sasuke. Enquanto isso, Gaara relembra seu passado trágico e a origem de seu sofrimento.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep76.jpg",
+        "dataExibicao": "2004-03-24"
+    },
+    {
+        "id": 2476,
+        "numero": 77,
+        "titulo": "Luz Contra Escuridão: As Duas Faces de Gaara",
+        "sinopse": "Naruto compreende que Gaara trilhou um caminho semelhante ao seu. Determinado a proteger seus amigos, ele decide enfrentá-lo sem recuar.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep77.jpg",
+        "dataExibicao": "2004-03-31"
+    },
+    {
+        "id": 2477,
+        "numero": 78,
+        "titulo": "O Manual Ninja de Naruto",
+        "sinopse": "A batalha entre Naruto e Gaara atinge um novo nível quando Gaara libera o poder completo de Shukaku, obrigando Naruto a invocar Gamabunta.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep78.jpg",
+        "dataExibicao": "2004-04-07"
+    },
+    {
+        "id": 2478,
+        "numero": 79,
+        "titulo": "Além do Limite entre a Luz e a Escuridão",
+        "sinopse": "Naruto e Gamabunta unem forças para deter Shukaku, enquanto o Terceiro Hokage conclui sua batalha decisiva contra Orochimaru.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep79.jpg",
+        "dataExibicao": "2004-04-14"
+    },
+    {
+        "id": 2479,
+        "numero": 80,
+        "titulo": "O Terceiro Hokage... Para Sempre",
+        "sinopse": "Com o fim da invasão de Konoha, Gaara reconhece sua derrota e a vila presta homenagem ao Terceiro Hokage por seu sacrifício heroico.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep80.jpg",
+        "dataExibicao": "2004-04-21"
+    },
+    {
+        "id": 2480,
+        "numero": 81,
+        "titulo": "O Retorno da Névoa da Manhã",
+        "sinopse": "Dois misteriosos ninjas infiltram-se em Konoha. Um deles é Itachi Uchiha, que retorna à vila após anos de ausência.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep81.jpg",
+        "dataExibicao": "2004-04-28"
+    },
+    {
+        "id": 2481,
+        "numero": 82,
+        "titulo": "Olho no Olho: Sharingan Contra Sharingan!",
+        "sinopse": "Kakashi enfrenta Itachi em uma batalha intensa de Sharingans, mas logo percebe a enorme diferença de poder entre eles.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep82.jpg",
+        "dataExibicao": "2004-05-05"
+    },
+    {
+        "id": 2482,
+        "numero": 83,
+        "titulo": "Jiraiya: O Potencial Desastre de Naruto",
+        "sinopse": "Enquanto procuram Tsunade, Jiraiya começa a treinar Naruto. Ao mesmo tempo, Sasuke descobre que Itachi está atrás de Naruto.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep83.jpg",
+        "dataExibicao": "2004-05-12"
+    },
+    {
+        "id": 2483,
+        "numero": 84,
+        "titulo": "Rugido do Chidori! Irmão Contra Irmão",
+        "sinopse": "Sasuke reencontra Itachi e revive o trauma do massacre do clã Uchiha, iniciando um confronto emocional e desigual.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep84.jpg",
+        "dataExibicao": "2004-05-19"
+    },
+    {
+        "id": 2484,
+        "numero": 85,
+        "titulo": "O Ódio Entre os Uchiha: O Último do Clã",
+        "sinopse": "Jiraiya intervém para salvar Sasuke do poder de Itachi e Kisame, enquanto os membros da Akatsuki tentam escapar de sua armadilha.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep85.jpg",
+        "dataExibicao": "2004-05-26"
+    },
+    {
+        "id": 2485,
+        "numero": 86,
+        "titulo": "Um Novo Treinamento Começa: Eu Vou Ficar Mais Forte",
+        "sinopse": "Naruto e Jiraiya continuam a busca por Tsunade. Durante a viagem, Jiraiya decide ensinar ao jovem ninja uma poderosa técnica: o Rasengan.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep86.jpg",
+        "dataExibicao": "2004-06-02"
+    },
+    {
+        "id": 2486,
+        "numero": 87,
+        "titulo": "Continue Treinando! Estoure o Balão de Água!",
+        "sinopse": "Naruto inicia a primeira etapa do treinamento do Rasengan, tentando dominar a rotação de chakra para estourar um balão de água.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep87.jpg",
+        "dataExibicao": "2004-06-09"
+    },
+    {
+        "id": 2487,
+        "numero": 88,
+        "titulo": "O Ponto Focal: A Marca da Folha",
+        "sinopse": "Após dominar a primeira fase do Rasengan, Naruto enfrenta um novo desafio para controlar o poder de seu chakra enquanto Tsunade reencontra Orochimaru.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep88.jpg",
+        "dataExibicao": "2004-06-16"
+    },
+    {
+        "id": 2488,
+        "numero": 89,
+        "titulo": "Uma Escolha Impossível: A Dor no Coração de Tsunade",
+        "sinopse": "Orochimaru oferece a Tsunade a chance de rever pessoas importantes de seu passado em troca de curar seus braços, colocando-a diante de uma decisão difícil.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep89.jpg",
+        "dataExibicao": "2004-06-23"
+    },
+    {
+        "id": 2489,
+        "numero": 90,
+        "titulo": "Imperdoável! Uma Completa Falta de Respeito!",
+        "sinopse": "Naruto desafia Tsunade depois que ela recusa o cargo de Hokage, mas logo descobre o verdadeiro poder da lendária kunoichi.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep90.jpg",
+        "dataExibicao": "2004-07-07"
+    },
+    {
+        "id": 2490,
+        "numero": 91,
+        "titulo": "Herança! O Colar da Morte",
+        "sinopse": "Naruto aposta com Tsunade que dominará o Rasengan em uma semana para conquistar o lendário colar do Primeiro Hokage.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep91.jpg",
+        "dataExibicao": "2004-07-14"
+    },
+    {
+        "id": 2491,
+        "numero": 92,
+        "titulo": "Uma Proposta Suspeita! A Escolha de Tsunade",
+        "sinopse": "Enquanto Naruto continua treinando, Tsunade precisa decidir se aceitará a proposta de Orochimaru ou permanecerá fiel à Vila da Folha.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep92.jpg",
+        "dataExibicao": "2004-07-21"
+    },
+    {
+        "id": 2492,
+        "numero": 93,
+        "titulo": "Colapso! O Acordo Está Desfeito",
+        "sinopse": "Tsunade finalmente enfrenta Orochimaru e Kabuto após descobrir suas verdadeiras intenções, iniciando uma batalha decisiva.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep93.jpg",
+        "dataExibicao": "2004-07-28"
+    },
+    {
+        "id": 2493,
+        "numero": 94,
+        "titulo": "Ataque! A Fúria do Rasengan",
+        "sinopse": "Naruto coloca todo o seu treinamento à prova ao enfrentar Kabuto, tentando completar o Rasengan durante a batalha.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep94.jpg",
+        "dataExibicao": "2004-08-04"
+    },
+    {
+        "id": 2494,
+        "numero": 95,
+        "titulo": "A Quinta Hokage! Uma Vida por um Fio",
+        "sinopse": "Naruto finalmente domina o Rasengan e enfrenta Kabuto, enquanto Tsunade supera seus medos para proteger o jovem ninja.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep95.jpg",
+        "dataExibicao": "2004-08-11"
+    },
+    {
+        "id": 2495,
+        "numero": 96,
+        "titulo": "Impasse! O Confronto dos Três Sannin",
+        "sinopse": "Jiraiya, Tsunade e Orochimaru travam um confronto histórico, cada um invocando sua criatura lendária em uma batalha épica.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep96.jpg",
+        "dataExibicao": "2004-08-11"
+    },
+    {
+        "id": 2496,
+        "numero": 97,
+        "titulo": "Sequestrado! A Aventura de Naruto nas Águas Termais",
+        "sinopse": "Durante a viagem de volta para Konoha, Naruto precisa recuperar o colar do Primeiro Hokage após ele ser roubado por sequestradores.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep97.jpg",
+        "dataExibicao": "2004-08-18"
+    },
+    {
+        "id": 2497,
+        "numero": 98,
+        "titulo": "O Aviso de Tsunade: Nunca Mais Seja um Ninja",
+        "sinopse": "Tsunade assume oficialmente o cargo de Quinta Hokage e examina Rock Lee, revelando a gravidade de sua condição física.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep98.jpg",
+        "dataExibicao": "2004-08-25"
+    },
+    {
+        "id": 2498,
+        "numero": 99,
+        "titulo": "A Vontade do Fogo Continua Ardendo!",
+        "sinopse": "Konohamaru tenta impedir que o gabinete do Terceiro Hokage seja alterado, enquanto Tsunade busca uma forma de salvar Rock Lee.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep99.jpg",
+        "dataExibicao": "2004-09-01"
+    },
+    {
+        "id": 2499,
+        "numero": 100,
+        "titulo": "Mestre e Aluno: O Laço de um Shinobi",
+        "sinopse": "Rock Lee precisa decidir se aceitará uma cirurgia extremamente arriscada, enquanto Gai demonstra a força de sua confiança em seu aluno.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep100.jpg",
+        "dataExibicao": "2004-09-08"
+    },
+    {
+        "id": 2500,
+        "numero": 101,
+        "titulo": "Preciso Ver! Preciso Saber! O Verdadeiro Rosto do Kakashi!",
+        "sinopse": "Naruto, Sasuke e Sakura elaboram diversos planos para descobrir o que Kakashi esconde sob sua máscara, mas a missão acaba sendo mais difícil do que imaginavam.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep101.jpg",
+        "dataExibicao": "2004-09-15"
+    },
+    {
+        "id": 2501,
+        "numero": 102,
+        "titulo": "Missão: Ajudar um Velho Amigo na Terra do Chá",
+        "sinopse": "Sem Kakashi, Naruto, Sasuke e Sakura recebem a missão de proteger Idate Morino durante uma importante corrida na Terra do Chá.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep102.jpg",
+        "dataExibicao": "2004-09-22"
+    },
+    {
+        "id": 2502,
+        "numero": 103,
+        "titulo": "A Corrida Começou! Problemas em Alto-Mar",
+        "sinopse": "Enquanto acompanham Idate, o Time 7 enfrenta ninjas enviados para assassiná-lo e descobre a verdadeira importância da corrida para o futuro do Clã Wasabi.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep103.jpg",
+        "dataExibicao": "2004-09-29"
+    },
+    {
+        "id": 2503,
+        "numero": 104,
+        "titulo": "Corra, Idate! A Ilha Nagi Está Esperando!",
+        "sinopse": "Naruto e seus companheiros fazem de tudo para proteger Idate até a linha de chegada, enfrentando antigos inimigos na batalha decisiva da missão.",
+        "temporadaId": 2,
+        "animeId": 85,
+        "imagemUrl": "../../images/episodios/naruto/t2/ep104.jpg",
+        "dataExibicao": "2004-10-13"
     }
 ]
