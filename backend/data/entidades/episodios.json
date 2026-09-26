@@ -26628,5 +26628,325 @@
         "animeId": 87,
         "imagemUrl": "../../images/episodios/naruto/t4/ep220.jpg",
         "dataExibicao": "2007-02-08"
+    },
+    {
+        "id": 2620,
+        "numero": 1,
+        "titulo": "O Retorno",
+        "sinopse": "Uma figura atravessa os portões de Konoha. Após uma longa jornada de treinamento com Jiraiya, Naruto Uzumaki retorna mais velho e mais forte para sua vila.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep1.jpg",
+        "dataExibicao": "2007-02-15"
+    },
+    {
+        "id": 2621,
+        "numero": 2,
+        "titulo": "A Akatsuki se Move",
+        "sinopse": "Naruto e Sakura desafiam Kakashi em um teste de sobrevivência para mostrar o quanto evoluíram durante seus treinamentos.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep2.jpg",
+        "dataExibicao": "2007-02-15"
+    },
+    {
+        "id": 2622,
+        "numero": 3,
+        "titulo": "Os Resultados do Treinamento",
+        "sinopse": "As novas habilidades de Naruto e Sakura fazem Kakashi usar seu Sharingan desde o início. Naruto demonstra seu crescimento utilizando seus jutsus de novas maneiras.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep3.jpg",
+        "dataExibicao": "2007-02-22"
+    },
+    {
+        "id": 2623,
+        "numero": 4,
+        "titulo": "O Jinchuuriki da Areia",
+        "sinopse": "Gaara percebe rapidamente a presença de Deidara e uma batalha aérea começa entre os dois, com Deidara usando seu pássaro gigante e Gaara controlando sua areia.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep4.jpg",
+        "dataExibicao": "2007-03-01"
+    },
+    {
+        "id": 2624,
+        "numero": 5,
+        "titulo": "O Kazekage Permanece de Pé",
+        "sinopse": "Naruto e Sakura derrotam Kakashi no teste de sobrevivência. Tsunade então forma uma equipe de três integrantes liderada por Kakashi, que reconhece os dois como seus iguais.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep5.jpg",
+        "dataExibicao": "2007-03-15"
+    },
+    {
+        "id": 2625,
+        "numero": 6,
+        "titulo": "Missão Cumprida",
+        "sinopse": "Para proteger sua vila do ataque de argila explosiva de Deidara, Gaara usa seu chakra para criar uma enorme barreira de areia.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep6.jpg",
+        "dataExibicao": "2007-03-29"
+    },
+    {
+        "id": 2626,
+        "numero": 7,
+        "titulo": "Corra, Kankuro",
+        "sinopse": "Com suas forças esgotadas, Gaara é levado por Deidara. Kankuro ignora as ordens de Baki e parte imediatamente para resgatá-lo.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep7.jpg",
+        "dataExibicao": "2007-03-29"
+    },
+    {
+        "id": 2627,
+        "numero": 8,
+        "titulo": "Equipe Kakashi, Mobilizada",
+        "sinopse": "Uma mensagem urgente da Vila da Areia revela que a Akatsuki sequestrou o Kazekage. Tsunade rapidamente envia a Equipe Kakashi para ajudar Gaara.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep8.jpg",
+        "dataExibicao": "2007-04-12"
+    },
+    {
+        "id": 2628,
+        "numero": 9,
+        "titulo": "As Lágrimas do Jinchuuriki",
+        "sinopse": "No caminho para a Vila da Areia, Temari encontra Kakashi e sua equipe. Kakashi repreende Naruto por tentar avançar sozinho durante a missão.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep9.jpg",
+        "dataExibicao": "2007-04-12"
+    },
+    {
+        "id": 2629,
+        "numero": 10,
+        "titulo": "Jutsu de Selamento: Nove Dragões Fantasmas",
+        "sinopse": "Os ninjas da Areia correm contra o tempo para tratar Kankuro. Mesmo o especialista em venenos, Chiyo, não consegue encontrar uma solução. A esperança está nos reforços enviados por Tsunade.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep10.jpg",
+        "dataExibicao": "2007-04-19"
+    },
+    {
+        "id": 2630,
+        "numero": 11,
+        "titulo": "A Aluna da Ninja Médica",
+        "sinopse": "Sakura trata Kankuro, que está gravemente ferido. Após seu intenso treinamento, ela se tornou uma Ninja Médica completa e impressiona todos com suas habilidades.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep11.jpg",
+        "dataExibicao": "2007-04-26"
+    },
+    {
+        "id": 2631,
+        "numero": 12,
+        "titulo": "A Determinação da Vovó Aposentada",
+        "sinopse": "Pakkun encontra o esconderijo da Akatsuki. A Equipe Kakashi e Temari se preparam para recuperar Gaara, mas Temari recebe ordens para permanecer protegendo a vila.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep12.jpg",
+        "dataExibicao": "2007-05-03"
+    },
+    {
+        "id": 2632,
+        "numero": 13,
+        "titulo": "Um Encontro com o Destino",
+        "sinopse": "Gai se prepara para usar um jutsu secreto proibido. Enquanto isso, Naruto cai no genjutsu de Itachi e lembra do treinamento que recebeu de Jiraiya para enfrentar ilusões.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep13.jpg",
+        "dataExibicao": "2007-05-10"
+    },
+    {
+        "id": 2633,
+        "numero": 14,
+        "titulo": "O Crescimento de Naruto",
+        "sinopse": "Naruto continua mostrando sua evolução após o treinamento com Jiraiya, enquanto a equipe enfrenta os desafios deixados pela Akatsuki.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep14.jpg",
+        "dataExibicao": "2007-05-17"
+    },
+    {
+        "id": 2634,
+        "numero": 15,
+        "titulo": "A Arma Secreta é Chamada...",
+        "sinopse": "Chiyo e Sakura conseguem libertar Naruto do genjutsu de Itachi. Sem perder tempo, Kakashi inicia seu contra-ataque contra a Akatsuki.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep15.jpg",
+        "dataExibicao": "2007-05-24"
+    },
+    {
+        "id": 2635,
+        "numero": 16,
+        "titulo": "O Segredo do Jinchuuriki",
+        "sinopse": "Chiyo e Kakashi percebem que o ataque era apenas uma distração e descobrem que a Akatsuki já iniciou o processo de extração do Bijuu de Gaara.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep16.jpg",
+        "dataExibicao": "2007-05-31"
+    },
+    {
+        "id": 2636,
+        "numero": 17,
+        "titulo": "A Morte de Gaara!",
+        "sinopse": "As equipes Kakashi e Gai fazem uma breve pausa durante a perseguição. Chiyo observa Naruto dormindo e se lembra de Sasori quando era criança. A perseguição continua enquanto eles tentam recuperar Gaara.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep17.jpg",
+        "dataExibicao": "2007-06-07"
+    },
+    {
+        "id": 2637,
+        "numero": 18,
+        "titulo": "Tática de Investida! Entrada em Gancho!",
+        "sinopse": "As equipes Kakashi e Gai chegam ao esconderijo da Akatsuki. Eles tentam invadir o local, mas são impedidos por uma barreira de cinco selos que precisa ser quebrada ao mesmo tempo.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep18.jpg",
+        "dataExibicao": "2007-06-21"
+    },
+    {
+        "id": 2638,
+        "numero": 19,
+        "titulo": "As Armadilhas Ativam! O Inimigo da Equipe Gai",
+        "sinopse": "Ao removerem os cinco selos da barreira, a Equipe Gai ativa uma armadilha e precisa enfrentar cópias perfeitas de si mesmos. Enquanto isso, Deidara e Sasori continuam a captura de Naruto.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep19.jpg",
+        "dataExibicao": "2007-07-05"
+    },
+    {
+        "id": 2639,
+        "numero": 20,
+        "titulo": "Hiruko Contra Duas Kunoichis!",
+        "sinopse": "Finalmente começa o confronto entre Chiyo e seu neto. Sakura fica confusa com a aparência estranha de Sasori, e Chiyo revela que aquilo é Hiruko.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep20.jpg",
+        "dataExibicao": "2007-07-19"
+    },
+    {
+        "id": 2640,
+        "numero": 21,
+        "titulo": "O Verdadeiro Rosto de Sasori",
+        "sinopse": "Chiyo e Sakura conseguem expor Sasori, que surpreendentemente mantém a aparência de alguém que não envelheceu nos últimos vinte anos.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep21.jpg",
+        "dataExibicao": "2007-07-26"
+    },
+    {
+        "id": 2641,
+        "numero": 22,
+        "titulo": "As Habilidades Secretas de Chiyo",
+        "sinopse": "Sakura é pega pela estratégia de Sasori e fica cercada por uma nuvem de veneno mortal. Chiyo precisa agir rapidamente para salvá-la.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep22.jpg",
+        "dataExibicao": "2007-08-02"
+    },
+    {
+        "id": 2642,
+        "numero": 23,
+        "titulo": "Pai e Mãe",
+        "sinopse": "Chiyo e Sakura se protegem dos ataques de Sasori enquanto ele revela novas armas e inicia uma ofensiva brutal contra as duas.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep23.jpg",
+        "dataExibicao": "2007-08-02"
+    },
+    {
+        "id": 2643,
+        "numero": 24,
+        "titulo": "O Terceiro Kazekage",
+        "sinopse": "Sakura enfrenta a marionete do Terceiro Kazekage e consegue resistir ao ataque de Areia de Ferro usando sua força sobre-humana.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep24.jpg",
+        "dataExibicao": "2007-08-09"
+    },
+    {
+        "id": 2644,
+        "numero": 25,
+        "titulo": "Três Minutos Entre a Vida e a Morte",
+        "sinopse": "Sakura destrói a marionete do Terceiro Kazekage graças ao antídoto secreto que havia preparado para o veneno de Sasori.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep25.jpg",
+        "dataExibicao": "2007-08-16"
+    },
+    {
+        "id": 2645,
+        "numero": 26,
+        "titulo": "Luta de Marionetes: 10 Contra 100!",
+        "sinopse": "Sakura e Chiyo enfrentam Sasori em uma batalha intensa. O mestre das marionetes revela sua habilidade de controlar cem bonecos de uma só vez.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep26.jpg",
+        "dataExibicao": "2007-08-23"
+    },
+    {
+        "id": 2646,
+        "numero": 27,
+        "titulo": "Sonho Impossível",
+        "sinopse": "Mesmo envenenada, Chiyo usa o restante do antídoto em Sakura. Sasori tenta acabar com a vida de sua avó enquanto zomba da ligação criada entre as duas.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep27.jpg",
+        "dataExibicao": "2007-08-30"
+    },
+    {
+        "id": 2647,
+        "numero": 28,
+        "titulo": "O Renascimento das Feras",
+        "sinopse": "A Equipe Gai percebe o resultado da batalha de Sakura e Chiyo enquanto continua enfrentando suas próprias cópias criadas pela armadilha da Akatsuki.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep28.jpg",
+        "dataExibicao": "2007-09-13"
+    },
+    {
+        "id": 2648,
+        "numero": 29,
+        "titulo": "O Despertar de Kakashi!",
+        "sinopse": "Sakura corre para encontrar Naruto com Chiyo, que sofre com o veneno. Enquanto isso, Kakashi revela seu Mangekyou Sharingan após completar sua preparação.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep29.jpg",
+        "dataExibicao": "2007-09-27"
+    },
+    {
+        "id": 2649,
+        "numero": 30,
+        "titulo": "A Estética de um Instante",
+        "sinopse": "Naruto perde o controle pela raiva e começa a ser dominado pelo poder da Raposa de Nove Caudas. Kakashi consegue impedir que a transformação avance.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep30.jpg",
+        "dataExibicao": "2007-09-27"
+    },
+    {
+        "id": 2650,
+        "numero": 31,
+        "titulo": "O Legado",
+        "sinopse": "Usando o poder de Naruto, Chiyo realiza o Jutsu de Transmigração para trazer Gaara de volta à vida.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep31.jpg",
+        "dataExibicao": "2007-10-18"
+    },
+    {
+        "id": 2651,
+        "numero": 32,
+        "titulo": "O Retorno do Kazekage",
+        "sinopse": "Gaara e seus salvadores retornam triunfantes para a Vila Oculta da Areia, encerrando a missão de resgate contra a Akatsuki.",
+        "temporadaId": 1,
+        "animeId": 88,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep32.jpg",
+        "dataExibicao": "2007-10-25"
     }
 ]
