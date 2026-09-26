@@ -22838,5 +22838,255 @@
         "animeId": 80,
         "imagemUrl": "../../images/episodios/dragon-ball-z/t6/ep29.jpg",
         "dataExibicao": "1993-07-21"
+    },
+    {
+        "id": 2303,
+        "numero": 1,
+        "titulo": "Guerreiros do Outro Mundo",
+        "sinopse": "Quando Goku ouve falar de um mestre de artes marciais conhecido como Grande Senhor Kaio, ele corre para conhecê-lo e receber seus ensinamentos. Enquanto isso, Cell, Freeza, Rei Cold e a Força Ginyu se unem para dominar o Outro Mundo!",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep1.jpg",
+        "dataExibicao": "1993-07-28"
+    },
+    {
+        "id": 2304,
+        "numero": 2,
+        "titulo": "O Torneio Começa",
+        "sinopse": "Goku precisa treinar por 10.000 anos antes de poder aprender com o Grande Senhor Kaio. Porém, quando os Kaio do Norte, Sul, Leste e Oeste organizam um Torneio do Outro Mundo, Goku recebe uma oportunidade de enfrentar os maiores guerreiros de todos os tempos!",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep2.jpg",
+        "dataExibicao": "1993-08-11"
+    },
+    {
+        "id": 2305,
+        "numero": 3,
+        "titulo": "Batalha na Água",
+        "sinopse": "O Torneio do Outro Mundo chega às quartas de final, e Goku enfrenta Arqua, um lutador que parece fraco, mas que revela uma habilidade capaz de transformar toda a arena em água.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep3.jpg",
+        "dataExibicao": "1993-08-18"
+    },
+    {
+        "id": 2306,
+        "numero": 4,
+        "titulo": "A Rodada Final",
+        "sinopse": "Goku chega à final do torneio e enfrenta o guerreiro Pikkon. Durante a batalha, Pikkon revela um segredo de seu poder e Goku precisa aumentar sua força usando o Super Saiyajin.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep4.jpg",
+        "dataExibicao": "1993-08-25"
+    },
+    {
+        "id": 2307,
+        "numero": 5,
+        "titulo": "Goku Contra Pikkon",
+        "sinopse": "Goku enfrenta Pikkon em uma batalha intensa no Outro Mundo. Enquanto isso, sete anos se passaram na Terra e Gohan agora é um adolescente.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep5.jpg",
+        "dataExibicao": "1993-09-01"
+    },
+    {
+        "id": 2308,
+        "numero": 6,
+        "titulo": "Gohan Vai Para o Ensino Médio",
+        "sinopse": "No seu primeiro dia de ensino médio, Gohan impede um assalto usando a transformação de Super Saiyajin. Agora a cidade comenta sobre o misterioso Guerreiro Dourado, e Gohan precisa esconder sua identidade.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep6.jpg",
+        "dataExibicao": "1993-09-08"
+    },
+    {
+        "id": 2309,
+        "numero": 7,
+        "titulo": "Eu Sou o Saiyaman!",
+        "sinopse": "Com medo de ser reconhecido pelos colegas, Gohan pede para Bulma criar uma roupa de super-herói. Assim nasce o Grande Saiyaman!",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep7.jpg",
+        "dataExibicao": "1993-09-15"
+    },
+    {
+        "id": 2310,
+        "numero": 8,
+        "titulo": "O Primeiro Encontro de Gohan",
+        "sinopse": "Gohan descobre que ser um super-herói não é tão simples quando uma garota chamada Angela descobre seu segredo e usa isso para conseguir um encontro.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep8.jpg",
+        "dataExibicao": "1993-09-29"
+    },
+    {
+        "id": 2311,
+        "numero": 9,
+        "titulo": "Resgate de Videl",
+        "sinopse": "Quando a Gangue Tubarão Vermelho sequestra o prefeito e desafia Mr. Satan, Videl decide enfrentar os criminosos. Gohan precisa ajudá-la sem revelar sua identidade.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep9.jpg",
+        "dataExibicao": "1993-10-20"
+    },
+    {
+        "id": 2312,
+        "numero": 10,
+        "titulo": "Chantagem",
+        "sinopse": "Um empresário ganancioso sequestra um bebê dinossauro para ganhar dinheiro, sem saber que o animal é amigo do Grande Saiyaman.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep10.jpg",
+        "dataExibicao": "1993-10-27"
+    },
+    {
+        "id": 2313,
+        "numero": 11,
+        "titulo": "Eu Também Vou Lutar!",
+        "sinopse": "O Grande Saiyaman acaba virando uma estrela de cinema, mas Gohan precisa voltar rapidamente para contar aos amigos uma grande novidade: Goku está voltando!",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep11.jpg",
+        "dataExibicao": "1993-11-03"
+    },
+    {
+        "id": 2314,
+        "numero": 12,
+        "titulo": "O Mais Novo Super Saiyajin",
+        "sinopse": "Durante o treinamento para o torneio, Gohan descobre que Goten já conseguiu se transformar em Super Saiyajin. Os irmãos treinam juntos enquanto Videl conhece Chi-Chi.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep12.jpg",
+        "dataExibicao": "1993-11-10"
+    },
+    {
+        "id": 2315,
+        "numero": 13,
+        "titulo": "Voe, Videl!",
+        "sinopse": "Com o torneio se aproximando, Videl e Goten precisam aprender a voar. Enquanto isso, Vegeta realiza seu próprio treinamento com Trunks.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep13.jpg",
+        "dataExibicao": "1993-11-17"
+    },
+    {
+        "id": 2316,
+        "numero": 14,
+        "titulo": "Reunindo-se Para o Torneio",
+        "sinopse": "Videl aprende a voar, enquanto Gohan e Goten aperfeiçoam suas habilidades de Super Saiyajin antes do torneio. No local da competição, um convidado especial aparece: Goku está de volta por um dia!",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep14.jpg",
+        "dataExibicao": "1993-11-24"
+    },
+    {
+        "id": 2317,
+        "numero": 15,
+        "titulo": "Vergonha das Câmeras",
+        "sinopse": "Sharpner descobre que Videl está interessada no misterioso Grande Saiyaman. Decidido a revelar sua identidade, ele tenta capturar imagens do herói mascarado.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep15.jpg",
+        "dataExibicao": "1993-12-08"
+    },
+    {
+        "id": 2318,
+        "numero": 16,
+        "titulo": "O Torneio Mundial",
+        "sinopse": "O Torneio Mundial de Artes Marciais começa com a divisão infantil. Trinta e cinco jovens lutadores disputam o prêmio, mas a competição muda quando Trunks entra na arena.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep16.jpg",
+        "dataExibicao": "1993-12-15"
+    },
+    {
+        "id": 2319,
+        "numero": 17,
+        "titulo": "Trunks Contra Goten",
+        "sinopse": "Goten e Trunks avançam facilmente pela divisão infantil até se enfrentarem na final do torneio. Apenas um deles poderá conquistar o título de campeão.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep17.jpg",
+        "dataExibicao": "1993-12-22"
+    },
+    {
+        "id": 2320,
+        "numero": 18,
+        "titulo": "O Melhor dos Garotos",
+        "sinopse": "A final da divisão infantil continua com Goten e Trunks lutando pelo campeonato mundial. Quem será o novo campeão?",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep18.jpg",
+        "dataExibicao": "1994-01-12"
+    },
+    {
+        "id": 2321,
+        "numero": 19,
+        "titulo": "Pequeno Trunks em Grandes Problemas",
+        "sinopse": "Depois de vencer o campeonato, Trunks enfrenta Mr. Satan em uma luta de exibição. Enquanto isso, duas figuras misteriosas revelam suas identidades para Goku.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep19.jpg",
+        "dataExibicao": "1994-01-19"
+    },
+    {
+        "id": 2322,
+        "numero": 20,
+        "titulo": "Quem Vai Lutar Contra Quem?",
+        "sinopse": "Trunks e Gohan entram na categoria adulta disfarçados como Mighty Mask. Os confrontos são definidos e Krillin enfrenta Pintar, um lutador muito maior que ele.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep20.jpg",
+        "dataExibicao": "1994-01-26"
+    },
+    {
+        "id": 2323,
+        "numero": 21,
+        "titulo": "A Desistência de Piccolo",
+        "sinopse": "Piccolo surpreende todos ao desistir antes mesmo da luta começar contra seu misterioso adversário. Depois, Videl enfrenta o enorme Spopovich.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep21.jpg",
+        "dataExibicao": "1994-02-02"
+    },
+    {
+        "id": 2324,
+        "numero": 22,
+        "titulo": "Um Poder Sombrio e Secreto",
+        "sinopse": "Videl enfrenta Spopovich esperando uma vitória fácil, mas descobre que o lutador possui uma força sobrenatural que supera seus ataques.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep22.jpg",
+        "dataExibicao": "1994-02-09"
+    },
+    {
+        "id": 2325,
+        "numero": 23,
+        "titulo": "Videl é Derrotada",
+        "sinopse": "Para o horror de todos, Spopovich continua atacando Videl mesmo com a luta já decidida. O lutador parece determinado a destruí-la completamente.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep23.jpg",
+        "dataExibicao": "1994-02-16"
+    },
+    {
+        "id": 2326,
+        "numero": 24,
+        "titulo": "Identidades Reveladas",
+        "sinopse": "A identidade de Gohan como o Grande Saiyaman é finalmente descoberta. Agora ele precisa enfrentar Kibito, que deseja vê-lo se transformar em Super Saiyajin.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep24.jpg",
+        "dataExibicao": "1994-02-23"
+    },
+    {
+        "id": 2327,
+        "numero": 25,
+        "titulo": "Drenagem de Energia",
+        "sinopse": "Quando Gohan se transforma em Super Saiyajin, Spopovich e Yamu entram em ação usando um dispositivo capaz de absorver energia.",
+        "temporadaId": 7,
+        "animeId": 81,
+        "imagemUrl": "../../images/episodios/dragon-ball-z/t7/ep25.jpg",
+        "dataExibicao": "1994-03-02"
     }
 ]
