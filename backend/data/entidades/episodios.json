@@ -42988,5 +42988,15 @@
         "animeId": 147,
         "imagemUrl": "../../images/episodios/my-hero-academia/t8/ep11.jpg",
         "dataExibicao": "2025-12-13"
+    },
+    {
+        "id": 4152,
+        "numero": 1,
+        "titulo": "My Hero Academia: Heroes Rising",
+        "sinopse": "A Classe 1-A assume a proteção da pacífica Ilha Nabu, mas precisa enfrentar Nine, um vilão extremamente poderoso que ameaça destruir tudo e coloca Deku e seus amigos diante de sua maior batalha até então.",
+        "temporadaId": 0,
+        "animeId": 148,
+        "imagemUrl": "../../images/episodios/my-hero-academia/filmes/my-hero-academia-heroes-rising.jpg",
+        "dataExibicao": "2019-12-20"
     }
 ]
