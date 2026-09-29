@@ -42998,5 +42998,15 @@
         "animeId": 148,
         "imagemUrl": "../../images/episodios/my-hero-academia/filmes/my-hero-academia-heroes-rising.jpg",
         "dataExibicao": "2019-12-20"
+    },
+    {
+        "id": 4153,
+        "numero": 1,
+        "titulo": "My Hero Academia: World Heroes' Mission",
+        "sinopse": "Deku, Bakugo e Todoroki participam de uma missão internacional para impedir a organização Humarise de exterminar pessoas com individualidades e salvar o mundo de uma ameaça global.",
+        "temporadaId": 0,
+        "animeId": 149,
+        "imagemUrl": "../../images/episodios/my-hero-academia/filmes/my-hero-academia-world-heroes-mission.jpg",
+        "dataExibicao": "2021-08-06"
     }
 ]
