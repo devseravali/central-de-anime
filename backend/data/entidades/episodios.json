@@ -43018,5 +43018,15 @@
         "animeId": 150,
         "imagemUrl": "../../images/episodios/my-hero-academia/filmes/my-hero-academia-two-heroes.jpg",
         "dataExibicao": "2018-08-03"
+    },
+    {
+        "id": 4155,
+        "numero": 1,
+        "titulo": "My Hero Academia: You're Next",
+        "sinopse": "Após a guerra contra os vilões, Deku e seus aliados enfrentam Dark Might, um impostor que tenta substituir o verdadeiro Símbolo da Paz e mergulhar o mundo no caos.",
+        "temporadaId": 0,
+        "animeId": 151,
+        "imagemUrl": "../../images/episodios/my-hero-academia/filmes/my-hero-academia-youre-next.jpg",
+        "dataExibicao": "2024-08-02"
     }
 ]
