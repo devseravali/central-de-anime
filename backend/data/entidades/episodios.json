@@ -37088,5 +37088,25 @@
         "animeId": 46,
         "imagemUrl": "../../images/episodios/psycho-pass/t3/ep8.jpg",
         "dataExibicao": "2019-12-13"
+    },
+    {
+        "id": 3575,
+        "numero": 1,
+        "titulo": "Psycho-Pass: O Filme",
+        "sinopse": "Após uma crise envolvendo o Sistema Sibyl, Akane Tsunemori viaja para o Sudeste Asiático para investigar uma nação que adotou a tecnologia japonesa. Lá, ela reencontra Shinya Kogami e descobre uma conspiração que pode ameaçar a estabilidade do sistema.",
+        "temporadaId": 0,
+        "animeId": 46,
+        "imagemUrl": "../../images/episodios/psycho-pass/filme/ep1.jpg",
+        "dataExibicao": "2015-01-09"
+    },
+    {
+        "id": 3576,
+        "numero": 1,
+        "titulo": "Psycho-Pass: Sinners of the System Case.1 – Crime e Castigo",
+        "sinopse": "Após um incidente envolvendo uma antiga instituição de reabilitação, Nobuchika Ginoza e Mika Shimotsuki investigam um caso que revela segredos sobre experimentos humanos, justiça e redenção dentro do Sistema Sibyl.",
+        "temporadaId": 0,
+        "animeId": 46,
+        "imagemUrl": "../../images/episodios/psycho-pass/filme/ep2.jpg",
+        "dataExibicao": "2019-01-25"
     }
 ]
