@@ -26948,5 +26948,215 @@
         "animeId": 88,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t1/ep32.jpg",
         "dataExibicao": "2007-10-25"
+    },
+    {
+        "id": 2652,
+        "numero": 33,
+        "titulo": "O Novo Alvo",
+        "sinopse": "As equipes Kakashi e Gai retornam para Konoha. Sakura revela a Tsunade as informações que Sasori passou antes de morrer: ele teria um encontro com um espião de Orochimaru em dez dias. Naruto e Sakura precisam encontrar um novo integrante para a equipe.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep33.jpg",
+        "dataExibicao": "2007-11-08"
+    },
+    {
+        "id": 2653,
+        "numero": 34,
+        "titulo": "Formação! A Nova Equipe Kakashi",
+        "sinopse": "Naruto e Sakura conhecem Sai, o novo integrante da equipe. Tsunade decide colocar Yamato temporariamente como líder no lugar de Kakashi, enquanto Sai entra para a Equipe Kakashi por ordem de Danzou.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep34.jpg",
+        "dataExibicao": "2007-11-15"
+    },
+    {
+        "id": 2654,
+        "numero": 35,
+        "titulo": "Uma Adição Desnecessária",
+        "sinopse": "Yamato assume a liderança da Equipe Kakashi enquanto Sai provoca Naruto e Sakura. A equipe parte em uma missão para encontrar o espião da Akatsuki e obter informações sobre Sasuke.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep35.jpg",
+        "dataExibicao": "2007-11-22"
+    },
+    {
+        "id": 2655,
+        "numero": 36,
+        "titulo": "O Sorriso Falso",
+        "sinopse": "A nova Equipe Kakashi segue para a Ponte Céu e Terra. Os conflitos entre Naruto, Sakura e Sai começam a atrapalhar o trabalho em equipe, fazendo Yamato tentar aproximá-los.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep36.jpg",
+        "dataExibicao": "2007-11-29"
+    },
+    {
+        "id": 2656,
+        "numero": 37,
+        "titulo": "Sem Título",
+        "sinopse": "Sakura descobre o talento artístico de Sai e começa a entender melhor sua personalidade. A equipe continua sua jornada até o ponto de encontro com o espião.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep37.jpg",
+        "dataExibicao": "2007-11-29"
+    },
+    {
+        "id": 2657,
+        "numero": 38,
+        "titulo": "Simulação",
+        "sinopse": "Yamato realiza uma simulação da missão para testar Naruto e Sai. Naruto percebe que precisa trabalhar junto com Sai se quiser trazer Sasuke de volta.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep38.jpg",
+        "dataExibicao": "2007-12-06"
+    },
+    {
+        "id": 2658,
+        "numero": 39,
+        "titulo": "A Ponte Céu e Terra",
+        "sinopse": "Yamato se disfarça de Sasori para encontrar o espião. O encontro revela que Kabuto é o informante, mas Orochimaru aparece e descobre a presença da equipe de Naruto.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep39.jpg",
+        "dataExibicao": "2007-12-13"
+    },
+    {
+        "id": 2659,
+        "numero": 40,
+        "titulo": "A Raposa de Nove Caudas Liberada!!",
+        "sinopse": "Naruto perde o controle ao enfrentar Orochimaru e começa a liberar o chakra da Raposa de Nove Caudas. Yamato relembra os avisos de Jiraiya sobre o poder da transformação.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep40.jpg",
+        "dataExibicao": "2007-12-20"
+    },
+    {
+        "id": 2660,
+        "numero": 41,
+        "titulo": "A Missão Ultrassecreta Começa",
+        "sinopse": "Naruto continua dominado pelo chakra da Nove Caudas e aumenta sua fúria contra Orochimaru. A transformação em quatro caudas faz com que seu poder destrua tudo ao redor.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep41.jpg",
+        "dataExibicao": "2007-12-20"
+    },
+    {
+        "id": 2661,
+        "numero": 42,
+        "titulo": "Orochimaru Contra o Jinchuuriki",
+        "sinopse": "Naruto, em sua forma de quatro caudas, ataca Orochimaru com uma força devastadora. Enquanto isso, Kabuto se aproxima de Sakura e Yamato.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep42.jpg",
+        "dataExibicao": "2008-01-10"
+    },
+    {
+        "id": 2662,
+        "numero": 43,
+        "titulo": "As Lágrimas de Sakura",
+        "sinopse": "Sakura percebe que Naruto está fora de controle e tenta se aproximar dele, mas acaba ferida pelo poder da Nove Caudas. Yamato usa seu Mokuton para conter Naruto.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep43.jpg",
+        "dataExibicao": "2008-01-17"
+    },
+    {
+        "id": 2663,
+        "numero": 44,
+        "titulo": "O Segredo da Batalha!",
+        "sinopse": "Yamato usa o chakra do Primeiro Hokage para suprimir o poder da Nove Caudas e Naruto retorna ao normal. Enquanto isso, Sai entrega uma mensagem de Danzou para Orochimaru.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep44.jpg",
+        "dataExibicao": "2008-01-24"
+    },
+    {
+        "id": 2664,
+        "numero": 45,
+        "titulo": "As Consequências da Traição",
+        "sinopse": "Kabuto cria uma armadilha para atrasar Yamato. Naruto descobre que foi ele mesmo quem machucou Sakura durante sua transformação e fica abalado.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep45.jpg",
+        "dataExibicao": "2008-01-31"
+    },
+    {
+        "id": 2665,
+        "numero": 46,
+        "titulo": "A Página Inacabada",
+        "sinopse": "Naruto entende o que aconteceu durante sua transformação. A equipe analisa o livro de Sai e percebe que existe uma história incompleta entre dois irmãos.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep46.jpg",
+        "dataExibicao": "2008-02-07"
+    },
+    {
+        "id": 2666,
+        "numero": 47,
+        "titulo": "Infiltração: O Covil da Cobra!",
+        "sinopse": "Sai encontra Sasuke e sente o poder do Sharingan. Yamato usa uma semente de chakra para rastrear Sai enquanto Naruto, Sakura e ele entram no esconderijo de Orochimaru.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep47.jpg",
+        "dataExibicao": "2008-02-14"
+    },
+    {
+        "id": 2667,
+        "numero": 48,
+        "titulo": "Laços",
+        "sinopse": "A equipe confronta Sai e descobre sua ligação com a organização Raiz. Sai revela que foi treinado para eliminar emoções, mas começa a compreender o significado dos laços.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep48.jpg",
+        "dataExibicao": "2008-02-28"
+    },
+    {
+        "id": 2668,
+        "numero": 49,
+        "titulo": "Algo Importante...",
+        "sinopse": "Kabuto enfrenta a Equipe Kakashi e liberta Sai. Porém, Sai decide ajudar Naruto ao perceber a importância do vínculo entre ele e Sasuke. A equipe entra no esconderijo de Orochimaru para encontrar Sasuke.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep49.jpg",
+        "dataExibicao": "2008-03-06"
+    },
+    {
+        "id": 2669,
+        "numero": 50,
+        "titulo": "A História do Livro Ilustrado",
+        "sinopse": "Durante a busca por Sasuke, Naruto desmaia devido aos ferimentos da batalha contra Orochimaru. Sai começa a revelar mais sobre seu passado enquanto a equipe continua procurando pelo Uchiha.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep50.jpg",
+        "dataExibicao": "2008-03-13"
+    },
+    {
+        "id": 2670,
+        "numero": 51,
+        "titulo": "Reencontro",
+        "sinopse": "Sai encontra Sasuke e tenta capturá-lo, mas uma explosão revela sua localização para Naruto, Sakura e Yamato. A equipe finalmente reencontra seu antigo companheiro.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep51.jpg",
+        "dataExibicao": "2008-03-20"
+    },
+    {
+        "id": 2671,
+        "numero": 52,
+        "titulo": "O Poder do Uchiha",
+        "sinopse": "Sasuke enfrenta Naruto e os outros usando seu Chidori e o poder do Sharingan. A Raposa de Nove Caudas tenta oferecer seu poder a Naruto, mas ele recusa.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep52.jpg",
+        "dataExibicao": "2008-03-20"
+    },
+    {
+        "id": 2672,
+        "numero": 53,
+        "titulo": "As Folhas Brotam!",
+        "sinopse": "Orochimaru e Kabuto convencem Sasuke a partir. Naruto lamenta não conseguir trazê-lo de volta, mas Sakura promete que eles irão recuperá-lo juntos. Sai passa a considerar a Equipe Kakashi como sua nova família.",
+        "temporadaId": 2,
+        "animeId": 89,
+        "imagemUrl": "../../images/episodios/naruto-shippuden/t2/ep53.jpg",
+        "dataExibicao": "2008-04-03"
     }
 ]
