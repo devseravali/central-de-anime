@@ -43008,5 +43008,15 @@
         "animeId": 149,
         "imagemUrl": "../../images/episodios/my-hero-academia/filmes/my-hero-academia-world-heroes-mission.jpg",
         "dataExibicao": "2021-08-06"
+    },
+    {
+        "id": 4154,
+        "numero": 1,
+        "titulo": "My Hero Academia: Two Heroes",
+        "sinopse": "All Might convida Deku para a Ilha I, onde um ataque terrorista coloca heróis e cientistas em perigo. Juntos, eles precisam impedir um plano que ameaça a segurança mundial.",
+        "temporadaId": 0,
+        "animeId": 150,
+        "imagemUrl": "../../images/episodios/my-hero-academia/filmes/my-hero-academia-two-heroes.jpg",
+        "dataExibicao": "2018-08-03"
     }
 ]
