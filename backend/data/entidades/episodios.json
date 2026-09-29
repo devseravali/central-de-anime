@@ -31628,5 +31628,455 @@
         "animeId": 107,
         "imagemUrl": "../../images/episodios/naruto-shippuden/t20/ep500.jpg",
         "dataExibicao": "2017-03-23"
+    },
+    {
+        "id": 3033,
+        "numero": 1,
+        "titulo": "O Dia em que me Tornei um Shinigami",
+        "sinopse": "Ichigo Kurosaki, um adolescente de quinze anos capaz de ver espíritos, conhece a shinigami Rukia Kuchiki e recebe seus poderes para proteger sua família e combater Hollows.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep1.jpg",
+        "dataExibicao": "2004-10-05"
+    },
+    {
+        "id": 3034,
+        "numero": 2,
+        "titulo": "O Trabalho de um Shinigami",
+        "sinopse": "Após se tornar um Shinigami Substituto, Ichigo reluta em assumir as responsabilidades de Rukia, mas acaba enfrentando novos Hollows para proteger Karakura.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep2.jpg",
+        "dataExibicao": "2004-10-12"
+    },
+    {
+        "id": 3035,
+        "numero": 3,
+        "titulo": "O Desejo do Irmão Mais Velho, o Desejo da Irmã Mais Nova",
+        "sinopse": "Ichigo e Rukia ajudam Orihime Inoue quando o espírito de seu irmão é transformado em Hollow e a ataca.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep3.jpg",
+        "dataExibicao": "2004-10-19"
+    },
+    {
+        "id": 3036,
+        "numero": 4,
+        "titulo": "O Periquito Amaldiçoado",
+        "sinopse": "Chad encontra um periquito possuído pelo espírito de um garoto, tornando-se alvo de um Hollow sedento por vingança.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep4.jpg",
+        "dataExibicao": "2004-10-26"
+    },
+    {
+        "id": 3037,
+        "numero": 5,
+        "titulo": "Derrote o Inimigo Invisível!",
+        "sinopse": "Rukia e Chad unem forças para derrotar o Hollow Shrieker e colocar fim à sua onda de destruição.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep5.jpg",
+        "dataExibicao": "2004-11-02"
+    },
+    {
+        "id": 3038,
+        "numero": 6,
+        "titulo": "Luta até a Morte! Ichigo contra Ichigo",
+        "sinopse": "Ichigo utiliza uma Alma Modificada para ocupar seu corpo enquanto atua como Shinigami, mas o experimento sai do controle.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep6.jpg",
+        "dataExibicao": "2004-11-09"
+    },
+    {
+        "id": 3039,
+        "numero": 7,
+        "titulo": "Saudações de um Leão de Pelúcia",
+        "sinopse": "A Alma Modificada Kon passa a viver dentro de um leão de pelúcia e se torna um novo companheiro de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep7.jpg",
+        "dataExibicao": "2004-11-16"
+    },
+    {
+        "id": 3040,
+        "numero": 8,
+        "titulo": "17 de Junho, Memórias na Chuva",
+        "sinopse": "No aniversário da morte de sua mãe, Ichigo revisita lembranças dolorosas enquanto enfrenta um poderoso Hollow.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep8.jpg",
+        "dataExibicao": "2004-11-23"
+    },
+    {
+        "id": 3041,
+        "numero": 9,
+        "titulo": "Um Inimigo Invencível",
+        "sinopse": "Ichigo enfrenta Grand Fisher, o Hollow responsável pela morte de sua mãe, em um confronto repleto de emoções.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep9.jpg",
+        "dataExibicao": "2004-11-30"
+    },
+    {
+        "id": 3042,
+        "numero": 10,
+        "titulo": "Ataque Durante a Peregrinação ao Lugar Sagrado!",
+        "sinopse": "Durante um programa de televisão comandado por Don Kanonji, Ichigo precisa derrotar um Hollow criado acidentalmente.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep10.jpg",
+        "dataExibicao": "2004-12-07"
+    },
+    {
+        "id": 3043,
+        "numero": 11,
+        "titulo": "O Lendário Quincy",
+        "sinopse": "Ichigo conhece Uryū Ishida, um Quincy que despreza os Shinigami e desafia Ichigo para uma competição que acaba atraindo inúmeros Hollows.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep11.jpg",
+        "dataExibicao": "2004-12-14"
+    },
+    {
+        "id": 3044,
+        "numero": 12,
+        "titulo": "Um Braço Direito Gentil",
+        "sinopse": "Ichigo e Uryū precisam deixar suas diferenças de lado e unir forças para enfrentar a invasão de Hollows provocada pelo desafio entre eles.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep12.jpg",
+        "dataExibicao": "2004-12-21"
+    },
+    {
+        "id": 3045,
+        "numero": 13,
+        "titulo": "A Flor e o Hollow",
+        "sinopse": "Orihime desperta seus poderes espirituais enquanto enfrenta um Hollow que ameaça seus amigos e descobre sua verdadeira força.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep13.jpg",
+        "dataExibicao": "2005-01-11"
+    },
+    {
+        "id": 3046,
+        "numero": 14,
+        "titulo": "Costas com Costas, uma Luta até a Morte!",
+        "sinopse": "Chad desperta um enorme poder oculto para proteger uma criança e enfrentar um poderoso Hollow ao lado de Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep14.jpg",
+        "dataExibicao": "2005-01-18"
+    },
+    {
+        "id": 3047,
+        "numero": 15,
+        "titulo": "O Grande Plano de Kon",
+        "sinopse": "Kon tenta aproveitar a ausência de Ichigo para viver em seu corpo, causando diversas confusões antes de um novo ataque Hollow.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep15.jpg",
+        "dataExibicao": "2005-01-25"
+    },
+    {
+        "id": 3048,
+        "numero": 16,
+        "titulo": "O Encontro de Abarai Renji e Kuchiki Byakuya",
+        "sinopse": "Os capitães Byakuya Kuchiki e Renji Abarai chegam ao mundo humano para prender Rukia por transferir seus poderes a Ichigo.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep16.jpg",
+        "dataExibicao": "2005-02-01"
+    },
+    {
+        "id": 3049,
+        "numero": 17,
+        "titulo": "Ichigo Morre!",
+        "sinopse": "Ichigo enfrenta Byakuya, mas é derrotado facilmente, enquanto Rukia aceita retornar à Soul Society para proteger seus amigos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep17.jpg",
+        "dataExibicao": "2005-02-08"
+    },
+    {
+        "id": 3050,
+        "numero": 18,
+        "titulo": "Recupere! O Poder de Shinigami",
+        "sinopse": "Determinando a salvar Rukia, Ichigo inicia um treinamento intenso com Kisuke Urahara para recuperar seus poderes de Shinigami.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep18.jpg",
+        "dataExibicao": "2005-02-15"
+    },
+    {
+        "id": 3051,
+        "numero": 19,
+        "titulo": "Ichigo Torna-se um Hollow!",
+        "sinopse": "Durante o treinamento de Urahara, Ichigo corre o risco de se transformar completamente em Hollow antes de despertar novamente como Shinigami.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep19.jpg",
+        "dataExibicao": "2005-02-22"
+    },
+    {
+        "id": 3052,
+        "numero": 20,
+        "titulo": "Gin Ichimaru, a Sombra Prateada",
+        "sinopse": "Ichigo e seus amigos entram na Soul Society, onde começam a conhecer os poderosos capitães e os perigos que os aguardam.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep20.jpg",
+        "dataExibicao": "2005-03-01"
+    },
+    {
+        "id": 3053,
+        "numero": 21,
+        "titulo": "Entre! O Mundo dos Shinigamis",
+        "sinopse": "Ichigo, Chad, Orihime, Uryū e Yoruichi conseguem atravessar o portal para a Soul Society e iniciam a missão de resgatar Rukia.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep21.jpg",
+        "dataExibicao": "2005-03-08"
+    },
+    {
+        "id": 3054,
+        "numero": 22,
+        "titulo": "O Homem que Odeia Shinigamis",
+        "sinopse": "O grupo invade o Seireitei e enfrenta Jidanbō, o gigantesco guardião de um dos portões da Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep22.jpg",
+        "dataExibicao": "2005-03-15"
+    },
+    {
+        "id": 3055,
+        "numero": 23,
+        "titulo": "A Sentença de Rukia, Antes do 14º Dia",
+        "sinopse": "Rukia descobre que sua execução foi antecipada, enquanto Ichigo e seus amigos procuram uma forma de entrar no Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep23.jpg",
+        "dataExibicao": "2005-03-22"
+    },
+    {
+        "id": 3056,
+        "numero": 24,
+        "titulo": "Reúnam-se! O Grupo dos Treze Esquadrões",
+        "sinopse": "Os capitães dos Treze Esquadrões se reúnem para discutir a invasão dos ryokas e organizar a perseguição aos intrusos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep24.jpg",
+        "dataExibicao": "2005-03-29"
+    },
+    {
+        "id": 3057,
+        "numero": 25,
+        "titulo": "Penetrem no Centro com uma Bomba Enorme?",
+        "sinopse": "Com a ajuda de Kūkaku Shiba, Ichigo e seus amigos utilizam um canhão espiritual para atravessar a barreira que protege o Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep25.jpg",
+        "dataExibicao": "2005-04-05"
+    },
+    {
+        "id": 3058,
+        "numero": 26,
+        "titulo": "Formação! A Pior Equipe",
+        "sinopse": "Após a entrada no Seireitei, o grupo se separa e cada integrante segue um caminho diferente para encontrar Rukia.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep26.jpg",
+        "dataExibicao": "2005-04-12"
+    },
+    {
+        "id": 3059,
+        "numero": 27,
+        "titulo": "Libere o Golpe Mortal!",
+        "sinopse": "Ichigo enfrenta Ikkaku Madarame em um intenso duelo, sendo obrigado a superar seus próprios limites para continuar avançando.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep27.jpg",
+        "dataExibicao": "2005-04-19"
+    },
+    {
+        "id": 3060,
+        "numero": 28,
+        "titulo": "Orihime é Alvo",
+        "sinopse": "Orihime acaba sendo perseguida por membros do Gotei 13 enquanto tenta reencontrar seus companheiros dentro do Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep28.jpg",
+        "dataExibicao": "2005-04-26"
+    },
+    {
+        "id": 3061,
+        "numero": 29,
+        "titulo": "Supere o Desespero!",
+        "sinopse": "Ichigo continua enfrentando desafios cada vez mais difíceis enquanto seus aliados também entram em confrontos contra os Shinigamis.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep29.jpg",
+        "dataExibicao": "2005-05-03"
+    },
+    {
+        "id": 3062,
+        "numero": 30,
+        "titulo": "Renji Abarai Confrontado",
+        "sinopse": "Renji entra em conflito com suas próprias convicções ao reencontrar Rukia, enquanto Ichigo segue determinado a salvá-la.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep30.jpg",
+        "dataExibicao": "2005-05-10"
+    },
+    {
+        "id": 3063,
+        "numero": 31,
+        "titulo": "A Resolução de Executar Rukia",
+        "sinopse": "A execução de Rukia é oficialmente confirmada, enquanto Ichigo continua avançando pelo Seireitei determinado a resgatá-la antes que seja tarde demais.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep31.jpg",
+        "dataExibicao": "2005-05-17"
+    },
+    {
+        "id": 3064,
+        "numero": 32,
+        "titulo": "Estrela e Vira-lata",
+        "sinopse": "Renji e Izuru relembram os dias de infância ao lado de Rukia, enquanto antigas amizades e conflitos vêm à tona.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep32.jpg",
+        "dataExibicao": "2005-05-24"
+    },
+    {
+        "id": 3065,
+        "numero": 33,
+        "titulo": "Milagre! O Novo Herói Misterioso",
+        "sinopse": "Ganju enfrenta Yumichika, enquanto Ichigo e seus aliados seguem separados em busca de Rukia dentro da Soul Society.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep33.jpg",
+        "dataExibicao": "2005-05-31"
+    },
+    {
+        "id": 3066,
+        "numero": 34,
+        "titulo": "Tragédia ao Amanhecer",
+        "sinopse": "Um acontecimento inesperado abala toda a Soul Society e provoca desconfiança entre os capitães dos Treze Esquadrões.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep34.jpg",
+        "dataExibicao": "2005-06-07"
+    },
+    {
+        "id": 3067,
+        "numero": 35,
+        "titulo": "O Assassinato de Aizen! A Escuridão que se Aproxima",
+        "sinopse": "A morte de Sōsuke Aizen gera grande comoção na Soul Society e desencadeia uma investigação repleta de suspeitas.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep35.jpg",
+        "dataExibicao": "2005-06-14"
+    },
+    {
+        "id": 3068,
+        "numero": 36,
+        "titulo": "Zaraki Kenpachi se Aproxima!",
+        "sinopse": "O temido capitão Kenpachi Zaraki entra em ação e parte em busca de Ichigo para enfrentá-lo em combate.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep36.jpg",
+        "dataExibicao": "2005-06-21"
+    },
+    {
+        "id": 3069,
+        "numero": 37,
+        "titulo": "Motivo do Punho",
+        "sinopse": "Chad enfrenta o capitão Shunsui Kyōraku para abrir caminho até Rukia, colocando sua determinação à prova.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep37.jpg",
+        "dataExibicao": "2005-06-28"
+    },
+    {
+        "id": 3070,
+        "numero": 38,
+        "titulo": "Desespero! A Zanpakutō Quebrada",
+        "sinopse": "Ichigo enfrenta Kenpachi Zaraki e vê sua Zanpakutō ser danificada durante um dos confrontos mais difíceis de sua jornada.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep38.jpg",
+        "dataExibicao": "2005-07-05"
+    },
+    {
+        "id": 3071,
+        "numero": 39,
+        "titulo": "O Homem Imortal",
+        "sinopse": "A intensa batalha entre Ichigo e Kenpachi continua, revelando a impressionante resistência e o espírito guerreiro de ambos.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep39.jpg",
+        "dataExibicao": "2005-07-12"
+    },
+    {
+        "id": 3072,
+        "numero": 40,
+        "titulo": "O Shinigami que Ganju Encontrou",
+        "sinopse": "Enquanto Ichigo se recupera da batalha contra Kenpachi, Ganju encontra um inesperado aliado dentro do Seireitei.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep40.jpg",
+        "dataExibicao": "2005-07-19"
+    },
+    {
+        "id": 3073,
+        "numero": 41,
+        "titulo": "Reencontro, Ichigo e Rukia",
+        "sinopse": "Ichigo finalmente reencontra Rukia na torre de execução e renova sua promessa de salvá-la antes que a sentença seja cumprida.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep41.jpg",
+        "dataExibicao": "2005-07-26"
+    },
+    {
+        "id": 3074,
+        "numero": 42,
+        "titulo": "Yoruichi, a Deusa da Velocidade, Dança!",
+        "sinopse": "Yoruichi enfrenta Soi Fon em um duelo marcado pela velocidade, enquanto antigos laços entre mestre e discípula vêm à tona.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep42.jpg",
+        "dataExibicao": "2005-08-02"
+    },
+    {
+        "id": 3075,
+        "numero": 43,
+        "titulo": "O Desprezível Shinigami",
+        "sinopse": "Ishida enfrenta o capitão Mayuri Kurotsuchi e descobre a cruel obsessão do cientista pelos Quincies.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep43.jpg",
+        "dataExibicao": "2005-08-09"
+    },
+    {
+        "id": 3076,
+        "numero": 44,
+        "titulo": "Ishida, o Poder dos Limites",
+        "sinopse": "Para derrotar Mayuri, Ishida remove o artefato que limitava seu poder Quincy e libera uma força extraordinária.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep44.jpg",
+        "dataExibicao": "2005-08-16"
+    },
+    {
+        "id": 3077,
+        "numero": 45,
+        "titulo": "Supere Seus Limites!",
+        "sinopse": "Ichigo continua seu treinamento para alcançar a Bankai, enquanto o tempo para salvar Rukia se esgota rapidamente.",
+        "temporadaId": 1,
+        "animeId": 108,
+        "imagemUrl": "../../images/episodios/bleach/t1/ep45.jpg",
+        "dataExibicao": "2005-08-23"
     }
 ]
