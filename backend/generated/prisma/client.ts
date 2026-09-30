@@ -47,11 +47,6 @@ export { Prisma }
  */
 export type Anime = Prisma.AnimeModel
 /**
- * Model Temporada
- * 
- */
-export type Temporada = Prisma.TemporadaModel
-/**
  * Model Franquia
  * 
  */

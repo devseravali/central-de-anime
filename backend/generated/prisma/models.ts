@@ -9,7 +9,6 @@
  * 🟢 You can import this file directly.
  */
 export type * from './models/Anime'
-export type * from './models/Temporada'
 export type * from './models/Franquia'
 export type * from './models/Estudio'
 export type * from './models/Status'
