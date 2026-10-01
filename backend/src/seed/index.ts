@@ -7,7 +7,6 @@ import { importAnimeFromJson } from './Animes';
 import { importPersonagensFromJson } from './Personagens';
 import { importEpisodiosFromJson } from './Episodios';
 import { importRelacionamentosFromJson } from './Relacionamentos';
-import { importTemporadasFromJson } from './Temporada';
 
 async function fileExists(filePath: string): Promise<boolean> {
   try {
@@ -33,13 +32,6 @@ async function main(): Promise<void> {
       console.warn('Seed: animes.json não encontrado — pulando importação de animes.');
     }
 
-    const temporadasPath = path.join(dataDir, 'temporada.json');
-    if (await fileExists(temporadasPath)) {
-      console.log('Seed: importando temporadas...');
-      await importTemporadasFromJson(temporadasPath);
-    } else {
-      console.warn('Seed: temporada.json não encontrado — pulando.');
-    }
 
     const personagensPath = path.join(dataDir, 'personagens.json');
     if (await fileExists(personagensPath)) {

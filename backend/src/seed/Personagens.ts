@@ -60,3 +60,22 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
 }
 
 export { importPersonagensFromJson };
+
+if (process.argv[1] && (process.argv[1].endsWith('Personagens.ts') || process.argv[1].endsWith('Personagens.js'))) {
+    const file = process.argv[2]
+        ? path.resolve(process.argv[2])
+        : path.resolve(__dirname, '../../data/entidades/personagens.json');
+
+    importPersonagensFromJson(file)
+        .then(async () => {
+            console.log('Seed personagens finalizado.');
+            const count = await prisma.personagem.count();
+            console.log('Personagens na base:', count);
+            await prisma.$disconnect();
+        })
+        .catch(async (e) => {
+            console.error('Seed personagens falhou:', e);
+            await prisma.$disconnect();
+            process.exit(1);
+        });
+}
