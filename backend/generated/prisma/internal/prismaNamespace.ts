@@ -385,7 +385,6 @@ type FieldRefInputType<Model, FieldType> = Model extends never ? never : FieldRe
 
 export const ModelName = {
   Anime: 'Anime',
-  Temporada: 'Temporada',
   Franquia: 'Franquia',
   Estudio: 'Estudio',
   Status: 'Status',
@@ -424,7 +423,7 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "anime" | "temporada" | "franquia" | "estudio" | "status" | "episodio" | "usuario" | "watchProgress" | "rankingUsuario" | "cacheAnime" | "animeTag" | "animeTagAnime" | "usuarioFavoritoAnime" | "notaAnimeUsuario" | "personagem" | "animePersonagem" | "animeGenero" | "animePlataforma" | "personagemFavorito" | "admin" | "sessao" | "capas" | "genero" | "plataforma" | "filtro"
+    modelProps: "anime" | "franquia" | "estudio" | "status" | "episodio" | "usuario" | "watchProgress" | "rankingUsuario" | "cacheAnime" | "animeTag" | "animeTagAnime" | "usuarioFavoritoAnime" | "notaAnimeUsuario" | "personagem" | "animePersonagem" | "animeGenero" | "animePlataforma" | "personagemFavorito" | "admin" | "sessao" | "capas" | "genero" | "plataforma" | "filtro"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -499,80 +498,6 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         count: {
           args: Prisma.AnimeCountArgs<ExtArgs>
           result: runtime.Types.Utils.Optional<Prisma.AnimeCountAggregateOutputType> | number
-        }
-      }
-    }
-    Temporada: {
-      payload: Prisma.$TemporadaPayload<ExtArgs>
-      fields: Prisma.TemporadaFieldRefs
-      operations: {
-        findUnique: {
-          args: Prisma.TemporadaFindUniqueArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload> | null
-        }
-        findUniqueOrThrow: {
-          args: Prisma.TemporadaFindUniqueOrThrowArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>
-        }
-        findFirst: {
-          args: Prisma.TemporadaFindFirstArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload> | null
-        }
-        findFirstOrThrow: {
-          args: Prisma.TemporadaFindFirstOrThrowArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>
-        }
-        findMany: {
-          args: Prisma.TemporadaFindManyArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>[]
-        }
-        create: {
-          args: Prisma.TemporadaCreateArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>
-        }
-        createMany: {
-          args: Prisma.TemporadaCreateManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        createManyAndReturn: {
-          args: Prisma.TemporadaCreateManyAndReturnArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>[]
-        }
-        delete: {
-          args: Prisma.TemporadaDeleteArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>
-        }
-        update: {
-          args: Prisma.TemporadaUpdateArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>
-        }
-        deleteMany: {
-          args: Prisma.TemporadaDeleteManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        updateMany: {
-          args: Prisma.TemporadaUpdateManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        updateManyAndReturn: {
-          args: Prisma.TemporadaUpdateManyAndReturnArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>[]
-        }
-        upsert: {
-          args: Prisma.TemporadaUpsertArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$TemporadaPayload>
-        }
-        aggregate: {
-          args: Prisma.TemporadaAggregateArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.AggregateTemporada>
-        }
-        groupBy: {
-          args: Prisma.TemporadaGroupByArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.TemporadaGroupByOutputType>[]
-        }
-        count: {
-          args: Prisma.TemporadaCountArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.TemporadaCountAggregateOutputType> | number
         }
       }
     }
@@ -2334,14 +2259,6 @@ export const AnimeScalarFieldEnum = {
 export type AnimeScalarFieldEnum = (typeof AnimeScalarFieldEnum)[keyof typeof AnimeScalarFieldEnum]
 
 
-export const TemporadaScalarFieldEnum = {
-  id: 'id',
-  nome: 'nome'
-} as const
-
-export type TemporadaScalarFieldEnum = (typeof TemporadaScalarFieldEnum)[keyof typeof TemporadaScalarFieldEnum]
-
-
 export const FranquiaScalarFieldEnum = {
   id: 'id',
   nome: 'nome',
@@ -2376,7 +2293,7 @@ export const EpisodioScalarFieldEnum = {
   sinopse: 'sinopse',
   imagemUrl: 'imagemUrl',
   dataExibicao: 'dataExibicao',
-  temporadaId: 'temporadaId',
+  temporada: 'temporada',
   animeId: 'animeId'
 } as const
 
@@ -2782,7 +2699,6 @@ export type PrismaClientOptions = ({
 }
 export type GlobalOmitConfig = {
   anime?: Prisma.AnimeOmit
-  temporada?: Prisma.TemporadaOmit
   franquia?: Prisma.FranquiaOmit
   estudio?: Prisma.EstudioOmit
   status?: Prisma.StatusOmit

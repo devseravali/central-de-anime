@@ -52,7 +52,6 @@ export const AnyNull = runtime.AnyNull
 
 export const ModelName = {
   Anime: 'Anime',
-  Temporada: 'Temporada',
   Franquia: 'Franquia',
   Estudio: 'Estudio',
   Status: 'Status',
@@ -111,14 +110,6 @@ export const AnimeScalarFieldEnum = {
 export type AnimeScalarFieldEnum = (typeof AnimeScalarFieldEnum)[keyof typeof AnimeScalarFieldEnum]
 
 
-export const TemporadaScalarFieldEnum = {
-  id: 'id',
-  nome: 'nome'
-} as const
-
-export type TemporadaScalarFieldEnum = (typeof TemporadaScalarFieldEnum)[keyof typeof TemporadaScalarFieldEnum]
-
-
 export const FranquiaScalarFieldEnum = {
   id: 'id',
   nome: 'nome',
@@ -153,7 +144,7 @@ export const EpisodioScalarFieldEnum = {
   sinopse: 'sinopse',
   imagemUrl: 'imagemUrl',
   dataExibicao: 'dataExibicao',
-  temporadaId: 'temporadaId',
+  temporada: 'temporada',
   animeId: 'animeId'
 } as const
 
