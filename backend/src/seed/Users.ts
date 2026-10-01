@@ -37,3 +37,16 @@ async function seedUsers() {
 }
 
 export { seedUsers };
+
+if (process.argv[1] && (process.argv[1].endsWith('Users.ts') || process.argv[1].endsWith('Users.js'))) {
+    seedUsers()
+        .then(async () => {
+            await prisma.$disconnect();
+            console.log('Seed users finalizado.');
+        })
+        .catch(async (e) => {
+            console.error('Seed users falhou:', e);
+            await prisma.$disconnect();
+            process.exit(1);
+        });
+}
