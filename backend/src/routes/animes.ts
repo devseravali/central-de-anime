@@ -1,7 +1,6 @@
 import { Router } from 'express';
 
 import { animeController } from '../controllers/animeController';
-import { temporadaController } from '../controllers/temporadaController';
 import { personagemController } from '../controllers/personagemController';
 import { episodioController } from '../controllers/episodioController';
 import { authMiddleware } from '../middlewares/authMiddleware';
@@ -291,59 +290,13 @@ AnimesRouter.get(
     animeController.getById
 );
 
-/**
- * @swagger
- * /animes/{id}/temporadas:
- *   get:
- *     summary: Lista as temporadas de um anime
- *     tags:
- *       - Temporadas
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         description: ID do anime
- *         schema:
- *           type: integer
- *           example: 1
- *     responses:
- *       200:
- *         description: Lista de temporadas retornada com sucesso
- *       400:
- *         description: ID inválido
- *       404:
- *         description: Anime não encontrado
- *       500:
- *         description: Erro interno do servidor
- */
-AnimesRouter.get(
-    '/:id/temporadas',
-    (req, res) => {
-        const requestWithAnimeId = Object.create(req);
-
-        Object.defineProperty(
-            requestWithAnimeId,
-            'query',
-            {
-                value: {
-                    ...req.query,
-                    animeId: req.params.id,
-                },
-                configurable: true,
-                enumerable: true,
-                writable: true,
-            }
-        );
-
-        return temporadaController.list(requestWithAnimeId, res);
-    }
-);
+// Temporadas endpoints removed
 
 /**
  * @swagger
- * /animes/{id}/temporadas/numero/{seasonNumber}/episodios:
+ * /animes/{id}/episodios:
  *   get:
- *     summary: Lista os episódios de uma temporada pelo número
+ *     summary: Lista episódios de um anime
  *     tags:
  *       - Episódios
  *     parameters:
@@ -354,28 +307,16 @@ AnimesRouter.get(
  *         schema:
  *           type: integer
  *           example: 1
- *       - in: path
- *         name: seasonNumber
- *         required: true
- *         description: Número da temporada
- *         schema:
- *           type: integer
- *           example: 1
  *     responses:
  *       200:
- *         description: Lista de episódios retornada com sucesso
+ *         description: Episódios retornados com sucesso
  *       400:
- *         description: Parâmetros inválidos
+ *         description: ID inválido
  *       404:
- *         description: Anime ou temporada não encontrada
+ *         description: Anime não encontrado
  *       500:
  *         description: Erro interno do servidor
  */
-AnimesRouter.get(
-    '/:id/temporadas/numero/:seasonNumber/episodios',
-    episodioController.listByAnimeAndSeasonNumber
-);
-
 AnimesRouter.get(
     '/:id/episodios',
     (req, res) => {

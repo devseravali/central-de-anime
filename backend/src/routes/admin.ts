@@ -9,7 +9,7 @@ const AdminRouter = Router();
 
 /**
  * @swagger
- * /admin/users:
+ * /users:
  *   get:
  *     summary: Lista todos os usuários
  *     description: Retorna a lista de usuários. Requer autenticação e privilégios de administrador.
@@ -36,7 +36,7 @@ AdminRouter.get(
 
 /**
  * @swagger
- * /admin/users/{id}/ban:
+ * /users/{id}/ban:
  *   post:
  *     summary: Bane um usuário
  *     description: Bloqueia um usuário da plataforma. Requer autenticação e privilégios de administrador.
@@ -76,7 +76,7 @@ AdminRouter.post(
 
 /**
  * @swagger
- * /admin/users/{id}/unban:
+ * /users/{id}/unban:
  *   post:
  *     summary: Remove o banimento de um usuário
  *     description: Desbloqueia um usuário da plataforma. Requer autenticação e privilégios de administrador.
@@ -116,7 +116,7 @@ AdminRouter.post(
 
 /**
  * @swagger
- * /admin/users/{id}/promote:
+ * /users/{id}/promote:
  *   post:
  *     summary: Promove um usuário para administrador
  *     description: Concede privilégios administrativos a um usuário. Requer autenticação e privilégios de administrador.
