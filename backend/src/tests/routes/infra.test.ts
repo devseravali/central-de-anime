@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import request from 'supertest';
+import { swaggerSpec } from '../../config/swagger';
 
 const mailFromOriginal = process.env.MAIL_FROM;
 const nodeEnvOriginal = process.env.NODE_ENV;
@@ -46,18 +47,14 @@ describe('Rotas de infraestrutura', () => {
     const response = await request(app).get('/docs/openapi.json');
 
     expect(response.status).toBe(200);
-    expect(response.body).toEqual({
-      info: { title: 'API', version: '0.0.1' },
-      paths: {},
-    });
+    expect(response.body).toEqual(swaggerSpec);
   });
 
-  it('deve expor a página html de documentação', async () => {
+  it('deve redirecionar /docs para /api-docs', async () => {
     const response = await request(app).get('/docs');
 
-    expect(response.status).toBe(200);
-    expect(response.text).toContain('API Docs');
-    expect(response.text).toContain('/docs/openapi.json');
+    expect(response.status).toBe(302);
+    expect(response.headers.location).toBe('/api-docs');
   });
 
   it('deve rejeitar teste de email sem destinatário', async () => {
