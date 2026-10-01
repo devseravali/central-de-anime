@@ -39,13 +39,6 @@ model Anime {
   cache CacheAnime?
 }
 
-model Temporada {
-  id   Int    @id @default(autoincrement())
-  nome String @unique
-
-  episodios Episodio[]
-}
-
 model Franquia {
   id        Int     @id @default(autoincrement())
   nome      String  @unique
@@ -71,18 +64,17 @@ model Status {
 }
 
 model Episodio {
-  id      Int    @id @default(autoincrement())
-  numero  Int
-  titulo  String
-  sinopse String @db.VarChar(2000)
+  id           Int      @id @default(autoincrement())
+  numero       Int
+  titulo       String
+  sinopse      String   @db.VarChar(2000)
 
   imagemUrl    String?
   dataExibicao DateTime?
+  temporada    Int
 
-  temporadaId Int
-  temporada   Temporada @relation(fields: [temporadaId], references: [id])
-  animeId     Int
-  anime       Anime @relation(fields: [animeId], references: [id])
+  animeId      Int
+  anime        Anime    @relation(fields: [animeId], references: [id])
 
   watchProgress WatchProgress[]
 }
