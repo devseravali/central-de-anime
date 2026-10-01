@@ -73,6 +73,17 @@ app.use((req, _res, next) => {
 
 app.use((req, _res, next) => next());
 
+/**
+ * @swagger
+ * /health:
+ *   get:
+ *     summary: Health check da aplicação
+ *     tags:
+ *       - Infra
+ *     responses:
+ *       200:
+ *         description: Aplicação saudável
+ */
 app.get('/health', (_request, response) => {
     response.json({
         status: 'ok',
