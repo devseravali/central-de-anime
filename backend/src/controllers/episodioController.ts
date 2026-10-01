@@ -1,7 +1,6 @@
 import type { Request, Response } from 'express';
 
 import { episodioService } from '../services/episodioService';
-import { temporadaService } from '../services/temporadaService';
 
 function parseIntParam(value: unknown): number | undefined {
     if (typeof value !== 'string' || value.trim() === '') {
@@ -33,22 +32,10 @@ async function list(req: Request, res: Response): Promise<void> {
         let episodios;
 
         if (temporadaId !== undefined) {
-            const temporada =
-                await temporadaService.getTemporadaById(temporadaId);
-
-            if (!temporada) {
-                res.status(404).json({
-                    message: 'Temporada não encontrada',
-                });
-
-                return;
-            }
-
-            episodios =
-                await episodioService.listEpisodiosByTemporadaId(
-                    temporadaId,
-                    animeId
-                );
+            episodios = await episodioService.listEpisodiosByTemporadaId(
+                temporadaId,
+                animeId
+            );
         } else if (animeId !== undefined) {
             episodios =
                 await episodioService.listEpisodiosByAnimeId(
@@ -129,26 +116,10 @@ async function listByAnimeAndSeasonNumber(
             return;
         }
 
-        const temporada =
-            await temporadaService.findTemporadaByAnimeAndSeasonNumber(
-                animeId,
-                seasonNumber
-            );
-
-        if (!temporada) {
-            res.status(404).json({
-                message:
-                    'Temporada não encontrada para esse número',
-            });
-
-            return;
-        }
-
-        const episodios =
-            await episodioService.listEpisodiosByTemporadaId(
-                temporada.id,
-                animeId
-            );
+        const episodios = await episodioService.listEpisodiosByAnimeAndSeasonNumber(
+            animeId,
+            seasonNumber
+        );
 
         res.status(200).json(episodios);
     } catch (error: unknown) {
