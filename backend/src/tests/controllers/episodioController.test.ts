@@ -5,16 +5,11 @@ const episodioServiceMocks = vi.hoisted(() => ({
   listEpisodios: vi.fn(),
   listEpisodiosByTemporadaId: vi.fn(),
   listEpisodiosByAnimeId: vi.fn(),
+  listEpisodiosByAnimeAndSeasonNumber: vi.fn(),
   getEpisodioById: vi.fn(),
 }));
 
-const temporadaServiceMocks = vi.hoisted(() => ({
-  getTemporadaById: vi.fn(),
-  findTemporadaByAnimeAndSeasonNumber: vi.fn(),
-}));
-
 vi.mock('../../services/episodioService', () => ({ episodioService: episodioServiceMocks }));
-vi.mock('../../services/temporadaService', () => ({ temporadaService: temporadaServiceMocks }));
 
 import { episodioController } from '../../controllers/episodioController';
 
@@ -39,15 +34,16 @@ describe('episodioController', () => {
     expect(json).toHaveBeenCalledWith([]);
   });
 
-  it('deve retornar 404 quando temporada informada não existir', async () => {
-    const req = { params: { temporadaId: '5' }, query: {} } as unknown as Request;
+  it('deve listar episódios por temporada quando ela existir', async () => {
+    const req = { params: { temporadaId: '3' }, query: { animeId: '5' } } as unknown as Request;
     const { res, status, json } = criarResponse();
-    temporadaServiceMocks.getTemporadaById.mockResolvedValueOnce(null);
+    episodioServiceMocks.listEpisodiosByTemporadaId.mockResolvedValueOnce([{ id: 10 }]);
 
     await episodioController.list(req, res);
 
-    expect(status).toHaveBeenCalledWith(404);
-    expect(json).toHaveBeenCalledWith({ message: 'Temporada não encontrada' });
+    expect(episodioServiceMocks.listEpisodiosByTemporadaId).toHaveBeenCalledWith(3, 5);
+    expect(status).toHaveBeenCalledWith(200);
+    expect(json).toHaveBeenCalledWith([{ id: 10 }]);
   });
 
   it('deve retornar 400 para id inválido no getById', async () => {
@@ -63,12 +59,11 @@ describe('episodioController', () => {
   it('deve listar episódios por anime e número da temporada', async () => {
     const req = { params: { id: '2', seasonNumber: '3' } } as unknown as Request;
     const { res, status, json } = criarResponse();
-    temporadaServiceMocks.findTemporadaByAnimeAndSeasonNumber.mockResolvedValueOnce({ id: 8 });
-    episodioServiceMocks.listEpisodiosByTemporadaId.mockResolvedValueOnce([{ id: 1 }]);
+    episodioServiceMocks.listEpisodiosByAnimeAndSeasonNumber.mockResolvedValueOnce([{ id: 1 }]);
 
     await episodioController.listByAnimeAndSeasonNumber(req, res);
 
-    expect(episodioServiceMocks.listEpisodiosByTemporadaId).toHaveBeenCalledWith(8, 2);
+    expect(episodioServiceMocks.listEpisodiosByAnimeAndSeasonNumber).toHaveBeenCalledWith(2, 3);
     expect(status).toHaveBeenCalledWith(200);
     expect(json).toHaveBeenCalledWith([{ id: 1 }]);
   });
@@ -76,7 +71,6 @@ describe('episodioController', () => {
   it('deve listar episódios por temporada quando ela existir', async () => {
     const req = { params: { temporadaId: '3' }, query: { animeId: '5' } } as unknown as Request;
     const { res, status, json } = criarResponse();
-    temporadaServiceMocks.getTemporadaById.mockResolvedValueOnce({ id: 3 });
     episodioServiceMocks.listEpisodiosByTemporadaId.mockResolvedValueOnce([{ id: 10 }]);
 
     await episodioController.list(req, res);
@@ -153,21 +147,21 @@ describe('episodioController', () => {
     expect(json).toHaveBeenCalledWith({ message: 'animeId e seasonNumber são obrigatórios' });
   });
 
-  it('deve retornar 404 se temporada não for encontrada por número', async () => {
+  it('deve retornar 200 com array vazio se não houver episódios para esse número', async () => {
     const req = { params: { id: '1', seasonNumber: '99' } } as unknown as Request;
     const { res, status, json } = criarResponse();
-    temporadaServiceMocks.findTemporadaByAnimeAndSeasonNumber.mockResolvedValueOnce(null);
+    episodioServiceMocks.listEpisodiosByAnimeAndSeasonNumber.mockResolvedValueOnce([]);
 
     await episodioController.listByAnimeAndSeasonNumber(req, res);
 
-    expect(status).toHaveBeenCalledWith(404);
-    expect(json).toHaveBeenCalledWith({ message: 'Temporada não encontrada para esse número' });
+    expect(status).toHaveBeenCalledWith(200);
+    expect(json).toHaveBeenCalledWith([]);
   });
 
   it('deve retornar 500 caso listByAnimeAndSeasonNumber lance exceção', async () => {
     const req = { params: { id: '1', seasonNumber: '1' } } as unknown as Request;
     const { res, status, json } = criarResponse();
-    temporadaServiceMocks.findTemporadaByAnimeAndSeasonNumber.mockRejectedValueOnce(new Error('Erro interno'));
+    episodioServiceMocks.listEpisodiosByAnimeAndSeasonNumber.mockRejectedValueOnce(new Error('Erro interno'));
 
     await episodioController.listByAnimeAndSeasonNumber(req, res);
 
