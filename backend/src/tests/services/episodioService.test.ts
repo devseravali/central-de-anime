@@ -33,7 +33,7 @@ describe('episodioService', () => {
     await episodioService.listEpisodiosByTemporadaId(5, 8);
 
     expect(prismaMocks.episodioFindMany).toHaveBeenCalledWith({
-      where: { temporadaId: 5, animeId: 8 },
+      where: { temporada: 5, animeId: 8 },
       orderBy: { numero: 'asc' },
     });
   });
