@@ -29,14 +29,14 @@ export type AggregateEpisodio = {
 export type EpisodioAvgAggregateOutputType = {
   id: number | null
   numero: number | null
-  temporadaId: number | null
+  temporada: number | null
   animeId: number | null
 }
 
 export type EpisodioSumAggregateOutputType = {
   id: number | null
   numero: number | null
-  temporadaId: number | null
+  temporada: number | null
   animeId: number | null
 }
 
@@ -47,7 +47,7 @@ export type EpisodioMinAggregateOutputType = {
   sinopse: string | null
   imagemUrl: string | null
   dataExibicao: Date | null
-  temporadaId: number | null
+  temporada: number | null
   animeId: number | null
 }
 
@@ -58,7 +58,7 @@ export type EpisodioMaxAggregateOutputType = {
   sinopse: string | null
   imagemUrl: string | null
   dataExibicao: Date | null
-  temporadaId: number | null
+  temporada: number | null
   animeId: number | null
 }
 
@@ -69,7 +69,7 @@ export type EpisodioCountAggregateOutputType = {
   sinopse: number
   imagemUrl: number
   dataExibicao: number
-  temporadaId: number
+  temporada: number
   animeId: number
   _all: number
 }
@@ -78,14 +78,14 @@ export type EpisodioCountAggregateOutputType = {
 export type EpisodioAvgAggregateInputType = {
   id?: true
   numero?: true
-  temporadaId?: true
+  temporada?: true
   animeId?: true
 }
 
 export type EpisodioSumAggregateInputType = {
   id?: true
   numero?: true
-  temporadaId?: true
+  temporada?: true
   animeId?: true
 }
 
@@ -96,7 +96,7 @@ export type EpisodioMinAggregateInputType = {
   sinopse?: true
   imagemUrl?: true
   dataExibicao?: true
-  temporadaId?: true
+  temporada?: true
   animeId?: true
 }
 
@@ -107,7 +107,7 @@ export type EpisodioMaxAggregateInputType = {
   sinopse?: true
   imagemUrl?: true
   dataExibicao?: true
-  temporadaId?: true
+  temporada?: true
   animeId?: true
 }
 
@@ -118,7 +118,7 @@ export type EpisodioCountAggregateInputType = {
   sinopse?: true
   imagemUrl?: true
   dataExibicao?: true
-  temporadaId?: true
+  temporada?: true
   animeId?: true
   _all?: true
 }
@@ -216,7 +216,7 @@ export type EpisodioGroupByOutputType = {
   sinopse: string
   imagemUrl: string | null
   dataExibicao: Date | null
-  temporadaId: number
+  temporada: number
   animeId: number
   _count: EpisodioCountAggregateOutputType | null
   _avg: EpisodioAvgAggregateOutputType | null
@@ -250,9 +250,8 @@ export type EpisodioWhereInput = {
   sinopse?: Prisma.StringFilter<"Episodio"> | string
   imagemUrl?: Prisma.StringNullableFilter<"Episodio"> | string | null
   dataExibicao?: Prisma.DateTimeNullableFilter<"Episodio"> | Date | string | null
-  temporadaId?: Prisma.IntFilter<"Episodio"> | number
+  temporada?: Prisma.IntFilter<"Episodio"> | number
   animeId?: Prisma.IntFilter<"Episodio"> | number
-  temporada?: Prisma.XOR<Prisma.TemporadaScalarRelationFilter, Prisma.TemporadaWhereInput>
   anime?: Prisma.XOR<Prisma.AnimeScalarRelationFilter, Prisma.AnimeWhereInput>
   watchProgress?: Prisma.WatchProgressListRelationFilter
 }
@@ -264,9 +263,8 @@ export type EpisodioOrderByWithRelationInput = {
   sinopse?: Prisma.SortOrder
   imagemUrl?: Prisma.SortOrderInput | Prisma.SortOrder
   dataExibicao?: Prisma.SortOrderInput | Prisma.SortOrder
-  temporadaId?: Prisma.SortOrder
+  temporada?: Prisma.SortOrder
   animeId?: Prisma.SortOrder
-  temporada?: Prisma.TemporadaOrderByWithRelationInput
   anime?: Prisma.AnimeOrderByWithRelationInput
   watchProgress?: Prisma.WatchProgressOrderByRelationAggregateInput
 }
@@ -281,9 +279,8 @@ export type EpisodioWhereUniqueInput = Prisma.AtLeast<{
   sinopse?: Prisma.StringFilter<"Episodio"> | string
   imagemUrl?: Prisma.StringNullableFilter<"Episodio"> | string | null
   dataExibicao?: Prisma.DateTimeNullableFilter<"Episodio"> | Date | string | null
-  temporadaId?: Prisma.IntFilter<"Episodio"> | number
+  temporada?: Prisma.IntFilter<"Episodio"> | number
   animeId?: Prisma.IntFilter<"Episodio"> | number
-  temporada?: Prisma.XOR<Prisma.TemporadaScalarRelationFilter, Prisma.TemporadaWhereInput>
   anime?: Prisma.XOR<Prisma.AnimeScalarRelationFilter, Prisma.AnimeWhereInput>
   watchProgress?: Prisma.WatchProgressListRelationFilter
 }, "id">
@@ -295,7 +292,7 @@ export type EpisodioOrderByWithAggregationInput = {
   sinopse?: Prisma.SortOrder
   imagemUrl?: Prisma.SortOrderInput | Prisma.SortOrder
   dataExibicao?: Prisma.SortOrderInput | Prisma.SortOrder
-  temporadaId?: Prisma.SortOrder
+  temporada?: Prisma.SortOrder
   animeId?: Prisma.SortOrder
   _count?: Prisma.EpisodioCountOrderByAggregateInput
   _avg?: Prisma.EpisodioAvgOrderByAggregateInput
@@ -314,7 +311,7 @@ export type EpisodioScalarWhereWithAggregatesInput = {
   sinopse?: Prisma.StringWithAggregatesFilter<"Episodio"> | string
   imagemUrl?: Prisma.StringNullableWithAggregatesFilter<"Episodio"> | string | null
   dataExibicao?: Prisma.DateTimeNullableWithAggregatesFilter<"Episodio"> | Date | string | null
-  temporadaId?: Prisma.IntWithAggregatesFilter<"Episodio"> | number
+  temporada?: Prisma.IntWithAggregatesFilter<"Episodio"> | number
   animeId?: Prisma.IntWithAggregatesFilter<"Episodio"> | number
 }
 
@@ -324,7 +321,7 @@ export type EpisodioCreateInput = {
   sinopse: string
   imagemUrl?: string | null
   dataExibicao?: Date | string | null
-  temporada: Prisma.TemporadaCreateNestedOneWithoutEpisodiosInput
+  temporada: number
   anime: Prisma.AnimeCreateNestedOneWithoutEpisodiosInput
   watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutEpisodioInput
 }
@@ -336,7 +333,7 @@ export type EpisodioUncheckedCreateInput = {
   sinopse: string
   imagemUrl?: string | null
   dataExibicao?: Date | string | null
-  temporadaId: number
+  temporada: number
   animeId: number
   watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutEpisodioInput
 }
@@ -347,7 +344,7 @@ export type EpisodioUpdateInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  temporada?: Prisma.TemporadaUpdateOneRequiredWithoutEpisodiosNestedInput
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
   anime?: Prisma.AnimeUpdateOneRequiredWithoutEpisodiosNestedInput
   watchProgress?: Prisma.WatchProgressUpdateManyWithoutEpisodioNestedInput
 }
@@ -359,7 +356,7 @@ export type EpisodioUncheckedUpdateInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  temporadaId?: Prisma.IntFieldUpdateOperationsInput | number
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
   animeId?: Prisma.IntFieldUpdateOperationsInput | number
   watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutEpisodioNestedInput
 }
@@ -371,7 +368,7 @@ export type EpisodioCreateManyInput = {
   sinopse: string
   imagemUrl?: string | null
   dataExibicao?: Date | string | null
-  temporadaId: number
+  temporada: number
   animeId: number
 }
 
@@ -381,6 +378,7 @@ export type EpisodioUpdateManyMutationInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
 export type EpisodioUncheckedUpdateManyInput = {
@@ -390,7 +388,7 @@ export type EpisodioUncheckedUpdateManyInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  temporadaId?: Prisma.IntFieldUpdateOperationsInput | number
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
   animeId?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
@@ -411,14 +409,14 @@ export type EpisodioCountOrderByAggregateInput = {
   sinopse?: Prisma.SortOrder
   imagemUrl?: Prisma.SortOrder
   dataExibicao?: Prisma.SortOrder
-  temporadaId?: Prisma.SortOrder
+  temporada?: Prisma.SortOrder
   animeId?: Prisma.SortOrder
 }
 
 export type EpisodioAvgOrderByAggregateInput = {
   id?: Prisma.SortOrder
   numero?: Prisma.SortOrder
-  temporadaId?: Prisma.SortOrder
+  temporada?: Prisma.SortOrder
   animeId?: Prisma.SortOrder
 }
 
@@ -429,7 +427,7 @@ export type EpisodioMaxOrderByAggregateInput = {
   sinopse?: Prisma.SortOrder
   imagemUrl?: Prisma.SortOrder
   dataExibicao?: Prisma.SortOrder
-  temporadaId?: Prisma.SortOrder
+  temporada?: Prisma.SortOrder
   animeId?: Prisma.SortOrder
 }
 
@@ -440,14 +438,14 @@ export type EpisodioMinOrderByAggregateInput = {
   sinopse?: Prisma.SortOrder
   imagemUrl?: Prisma.SortOrder
   dataExibicao?: Prisma.SortOrder
-  temporadaId?: Prisma.SortOrder
+  temporada?: Prisma.SortOrder
   animeId?: Prisma.SortOrder
 }
 
 export type EpisodioSumOrderByAggregateInput = {
   id?: Prisma.SortOrder
   numero?: Prisma.SortOrder
-  temporadaId?: Prisma.SortOrder
+  temporada?: Prisma.SortOrder
   animeId?: Prisma.SortOrder
 }
 
@@ -498,48 +496,6 @@ export type EpisodioUncheckedUpdateManyWithoutAnimeNestedInput = {
   deleteMany?: Prisma.EpisodioScalarWhereInput | Prisma.EpisodioScalarWhereInput[]
 }
 
-export type EpisodioCreateNestedManyWithoutTemporadaInput = {
-  create?: Prisma.XOR<Prisma.EpisodioCreateWithoutTemporadaInput, Prisma.EpisodioUncheckedCreateWithoutTemporadaInput> | Prisma.EpisodioCreateWithoutTemporadaInput[] | Prisma.EpisodioUncheckedCreateWithoutTemporadaInput[]
-  connectOrCreate?: Prisma.EpisodioCreateOrConnectWithoutTemporadaInput | Prisma.EpisodioCreateOrConnectWithoutTemporadaInput[]
-  createMany?: Prisma.EpisodioCreateManyTemporadaInputEnvelope
-  connect?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-}
-
-export type EpisodioUncheckedCreateNestedManyWithoutTemporadaInput = {
-  create?: Prisma.XOR<Prisma.EpisodioCreateWithoutTemporadaInput, Prisma.EpisodioUncheckedCreateWithoutTemporadaInput> | Prisma.EpisodioCreateWithoutTemporadaInput[] | Prisma.EpisodioUncheckedCreateWithoutTemporadaInput[]
-  connectOrCreate?: Prisma.EpisodioCreateOrConnectWithoutTemporadaInput | Prisma.EpisodioCreateOrConnectWithoutTemporadaInput[]
-  createMany?: Prisma.EpisodioCreateManyTemporadaInputEnvelope
-  connect?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-}
-
-export type EpisodioUpdateManyWithoutTemporadaNestedInput = {
-  create?: Prisma.XOR<Prisma.EpisodioCreateWithoutTemporadaInput, Prisma.EpisodioUncheckedCreateWithoutTemporadaInput> | Prisma.EpisodioCreateWithoutTemporadaInput[] | Prisma.EpisodioUncheckedCreateWithoutTemporadaInput[]
-  connectOrCreate?: Prisma.EpisodioCreateOrConnectWithoutTemporadaInput | Prisma.EpisodioCreateOrConnectWithoutTemporadaInput[]
-  upsert?: Prisma.EpisodioUpsertWithWhereUniqueWithoutTemporadaInput | Prisma.EpisodioUpsertWithWhereUniqueWithoutTemporadaInput[]
-  createMany?: Prisma.EpisodioCreateManyTemporadaInputEnvelope
-  set?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-  disconnect?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-  delete?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-  connect?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-  update?: Prisma.EpisodioUpdateWithWhereUniqueWithoutTemporadaInput | Prisma.EpisodioUpdateWithWhereUniqueWithoutTemporadaInput[]
-  updateMany?: Prisma.EpisodioUpdateManyWithWhereWithoutTemporadaInput | Prisma.EpisodioUpdateManyWithWhereWithoutTemporadaInput[]
-  deleteMany?: Prisma.EpisodioScalarWhereInput | Prisma.EpisodioScalarWhereInput[]
-}
-
-export type EpisodioUncheckedUpdateManyWithoutTemporadaNestedInput = {
-  create?: Prisma.XOR<Prisma.EpisodioCreateWithoutTemporadaInput, Prisma.EpisodioUncheckedCreateWithoutTemporadaInput> | Prisma.EpisodioCreateWithoutTemporadaInput[] | Prisma.EpisodioUncheckedCreateWithoutTemporadaInput[]
-  connectOrCreate?: Prisma.EpisodioCreateOrConnectWithoutTemporadaInput | Prisma.EpisodioCreateOrConnectWithoutTemporadaInput[]
-  upsert?: Prisma.EpisodioUpsertWithWhereUniqueWithoutTemporadaInput | Prisma.EpisodioUpsertWithWhereUniqueWithoutTemporadaInput[]
-  createMany?: Prisma.EpisodioCreateManyTemporadaInputEnvelope
-  set?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-  disconnect?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-  delete?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-  connect?: Prisma.EpisodioWhereUniqueInput | Prisma.EpisodioWhereUniqueInput[]
-  update?: Prisma.EpisodioUpdateWithWhereUniqueWithoutTemporadaInput | Prisma.EpisodioUpdateWithWhereUniqueWithoutTemporadaInput[]
-  updateMany?: Prisma.EpisodioUpdateManyWithWhereWithoutTemporadaInput | Prisma.EpisodioUpdateManyWithWhereWithoutTemporadaInput[]
-  deleteMany?: Prisma.EpisodioScalarWhereInput | Prisma.EpisodioScalarWhereInput[]
-}
-
 export type NullableDateTimeFieldUpdateOperationsInput = {
   set?: Date | string | null
 }
@@ -564,7 +520,7 @@ export type EpisodioCreateWithoutAnimeInput = {
   sinopse: string
   imagemUrl?: string | null
   dataExibicao?: Date | string | null
-  temporada: Prisma.TemporadaCreateNestedOneWithoutEpisodiosInput
+  temporada: number
   watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutEpisodioInput
 }
 
@@ -575,7 +531,7 @@ export type EpisodioUncheckedCreateWithoutAnimeInput = {
   sinopse: string
   imagemUrl?: string | null
   dataExibicao?: Date | string | null
-  temporadaId: number
+  temporada: number
   watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutEpisodioInput
 }
 
@@ -615,55 +571,8 @@ export type EpisodioScalarWhereInput = {
   sinopse?: Prisma.StringFilter<"Episodio"> | string
   imagemUrl?: Prisma.StringNullableFilter<"Episodio"> | string | null
   dataExibicao?: Prisma.DateTimeNullableFilter<"Episodio"> | Date | string | null
-  temporadaId?: Prisma.IntFilter<"Episodio"> | number
+  temporada?: Prisma.IntFilter<"Episodio"> | number
   animeId?: Prisma.IntFilter<"Episodio"> | number
-}
-
-export type EpisodioCreateWithoutTemporadaInput = {
-  numero: number
-  titulo: string
-  sinopse: string
-  imagemUrl?: string | null
-  dataExibicao?: Date | string | null
-  anime: Prisma.AnimeCreateNestedOneWithoutEpisodiosInput
-  watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutEpisodioInput
-}
-
-export type EpisodioUncheckedCreateWithoutTemporadaInput = {
-  id?: number
-  numero: number
-  titulo: string
-  sinopse: string
-  imagemUrl?: string | null
-  dataExibicao?: Date | string | null
-  animeId: number
-  watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutEpisodioInput
-}
-
-export type EpisodioCreateOrConnectWithoutTemporadaInput = {
-  where: Prisma.EpisodioWhereUniqueInput
-  create: Prisma.XOR<Prisma.EpisodioCreateWithoutTemporadaInput, Prisma.EpisodioUncheckedCreateWithoutTemporadaInput>
-}
-
-export type EpisodioCreateManyTemporadaInputEnvelope = {
-  data: Prisma.EpisodioCreateManyTemporadaInput | Prisma.EpisodioCreateManyTemporadaInput[]
-  skipDuplicates?: boolean
-}
-
-export type EpisodioUpsertWithWhereUniqueWithoutTemporadaInput = {
-  where: Prisma.EpisodioWhereUniqueInput
-  update: Prisma.XOR<Prisma.EpisodioUpdateWithoutTemporadaInput, Prisma.EpisodioUncheckedUpdateWithoutTemporadaInput>
-  create: Prisma.XOR<Prisma.EpisodioCreateWithoutTemporadaInput, Prisma.EpisodioUncheckedCreateWithoutTemporadaInput>
-}
-
-export type EpisodioUpdateWithWhereUniqueWithoutTemporadaInput = {
-  where: Prisma.EpisodioWhereUniqueInput
-  data: Prisma.XOR<Prisma.EpisodioUpdateWithoutTemporadaInput, Prisma.EpisodioUncheckedUpdateWithoutTemporadaInput>
-}
-
-export type EpisodioUpdateManyWithWhereWithoutTemporadaInput = {
-  where: Prisma.EpisodioScalarWhereInput
-  data: Prisma.XOR<Prisma.EpisodioUpdateManyMutationInput, Prisma.EpisodioUncheckedUpdateManyWithoutTemporadaInput>
 }
 
 export type EpisodioCreateWithoutWatchProgressInput = {
@@ -672,7 +581,7 @@ export type EpisodioCreateWithoutWatchProgressInput = {
   sinopse: string
   imagemUrl?: string | null
   dataExibicao?: Date | string | null
-  temporada: Prisma.TemporadaCreateNestedOneWithoutEpisodiosInput
+  temporada: number
   anime: Prisma.AnimeCreateNestedOneWithoutEpisodiosInput
 }
 
@@ -683,7 +592,7 @@ export type EpisodioUncheckedCreateWithoutWatchProgressInput = {
   sinopse: string
   imagemUrl?: string | null
   dataExibicao?: Date | string | null
-  temporadaId: number
+  temporada: number
   animeId: number
 }
 
@@ -709,7 +618,7 @@ export type EpisodioUpdateWithoutWatchProgressInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  temporada?: Prisma.TemporadaUpdateOneRequiredWithoutEpisodiosNestedInput
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
   anime?: Prisma.AnimeUpdateOneRequiredWithoutEpisodiosNestedInput
 }
 
@@ -720,7 +629,7 @@ export type EpisodioUncheckedUpdateWithoutWatchProgressInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  temporadaId?: Prisma.IntFieldUpdateOperationsInput | number
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
   animeId?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
@@ -731,7 +640,7 @@ export type EpisodioCreateManyAnimeInput = {
   sinopse: string
   imagemUrl?: string | null
   dataExibicao?: Date | string | null
-  temporadaId: number
+  temporada: number
 }
 
 export type EpisodioUpdateWithoutAnimeInput = {
@@ -740,7 +649,7 @@ export type EpisodioUpdateWithoutAnimeInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  temporada?: Prisma.TemporadaUpdateOneRequiredWithoutEpisodiosNestedInput
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
   watchProgress?: Prisma.WatchProgressUpdateManyWithoutEpisodioNestedInput
 }
 
@@ -751,7 +660,7 @@ export type EpisodioUncheckedUpdateWithoutAnimeInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  temporadaId?: Prisma.IntFieldUpdateOperationsInput | number
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
   watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutEpisodioNestedInput
 }
 
@@ -762,48 +671,7 @@ export type EpisodioUncheckedUpdateManyWithoutAnimeInput = {
   sinopse?: Prisma.StringFieldUpdateOperationsInput | string
   imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  temporadaId?: Prisma.IntFieldUpdateOperationsInput | number
-}
-
-export type EpisodioCreateManyTemporadaInput = {
-  id?: number
-  numero: number
-  titulo: string
-  sinopse: string
-  imagemUrl?: string | null
-  dataExibicao?: Date | string | null
-  animeId: number
-}
-
-export type EpisodioUpdateWithoutTemporadaInput = {
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  titulo?: Prisma.StringFieldUpdateOperationsInput | string
-  sinopse?: Prisma.StringFieldUpdateOperationsInput | string
-  imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  anime?: Prisma.AnimeUpdateOneRequiredWithoutEpisodiosNestedInput
-  watchProgress?: Prisma.WatchProgressUpdateManyWithoutEpisodioNestedInput
-}
-
-export type EpisodioUncheckedUpdateWithoutTemporadaInput = {
-  id?: Prisma.IntFieldUpdateOperationsInput | number
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  titulo?: Prisma.StringFieldUpdateOperationsInput | string
-  sinopse?: Prisma.StringFieldUpdateOperationsInput | string
-  imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  animeId?: Prisma.IntFieldUpdateOperationsInput | number
-  watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutEpisodioNestedInput
-}
-
-export type EpisodioUncheckedUpdateManyWithoutTemporadaInput = {
-  id?: Prisma.IntFieldUpdateOperationsInput | number
-  numero?: Prisma.IntFieldUpdateOperationsInput | number
-  titulo?: Prisma.StringFieldUpdateOperationsInput | string
-  sinopse?: Prisma.StringFieldUpdateOperationsInput | string
-  imagemUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  dataExibicao?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  animeId?: Prisma.IntFieldUpdateOperationsInput | number
+  temporada?: Prisma.IntFieldUpdateOperationsInput | number
 }
 
 
@@ -844,9 +712,8 @@ export type EpisodioSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs
   sinopse?: boolean
   imagemUrl?: boolean
   dataExibicao?: boolean
-  temporadaId?: boolean
+  temporada?: boolean
   animeId?: boolean
-  temporada?: boolean | Prisma.TemporadaDefaultArgs<ExtArgs>
   anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
   watchProgress?: boolean | Prisma.Episodio$watchProgressArgs<ExtArgs>
   _count?: boolean | Prisma.EpisodioCountOutputTypeDefaultArgs<ExtArgs>
@@ -859,9 +726,8 @@ export type EpisodioSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Exte
   sinopse?: boolean
   imagemUrl?: boolean
   dataExibicao?: boolean
-  temporadaId?: boolean
+  temporada?: boolean
   animeId?: boolean
-  temporada?: boolean | Prisma.TemporadaDefaultArgs<ExtArgs>
   anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["episodio"]>
 
@@ -872,9 +738,8 @@ export type EpisodioSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Exte
   sinopse?: boolean
   imagemUrl?: boolean
   dataExibicao?: boolean
-  temporadaId?: boolean
+  temporada?: boolean
   animeId?: boolean
-  temporada?: boolean | Prisma.TemporadaDefaultArgs<ExtArgs>
   anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["episodio"]>
 
@@ -885,30 +750,26 @@ export type EpisodioSelectScalar = {
   sinopse?: boolean
   imagemUrl?: boolean
   dataExibicao?: boolean
-  temporadaId?: boolean
+  temporada?: boolean
   animeId?: boolean
 }
 
-export type EpisodioOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "numero" | "titulo" | "sinopse" | "imagemUrl" | "dataExibicao" | "temporadaId" | "animeId", ExtArgs["result"]["episodio"]>
+export type EpisodioOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "numero" | "titulo" | "sinopse" | "imagemUrl" | "dataExibicao" | "temporada" | "animeId", ExtArgs["result"]["episodio"]>
 export type EpisodioInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  temporada?: boolean | Prisma.TemporadaDefaultArgs<ExtArgs>
   anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
   watchProgress?: boolean | Prisma.Episodio$watchProgressArgs<ExtArgs>
   _count?: boolean | Prisma.EpisodioCountOutputTypeDefaultArgs<ExtArgs>
 }
 export type EpisodioIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  temporada?: boolean | Prisma.TemporadaDefaultArgs<ExtArgs>
   anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
 }
 export type EpisodioIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  temporada?: boolean | Prisma.TemporadaDefaultArgs<ExtArgs>
   anime?: boolean | Prisma.AnimeDefaultArgs<ExtArgs>
 }
 
 export type $EpisodioPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Episodio"
   objects: {
-    temporada: Prisma.$TemporadaPayload<ExtArgs>
     anime: Prisma.$AnimePayload<ExtArgs>
     watchProgress: Prisma.$WatchProgressPayload<ExtArgs>[]
   }
@@ -919,7 +780,7 @@ export type $EpisodioPayload<ExtArgs extends runtime.Types.Extensions.InternalAr
     sinopse: string
     imagemUrl: string | null
     dataExibicao: Date | null
-    temporadaId: number
+    temporada: number
     animeId: number
   }, ExtArgs["result"]["episodio"]>
   composites: {}
@@ -1315,7 +1176,6 @@ readonly fields: EpisodioFieldRefs;
  */
 export interface Prisma__EpisodioClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
-  temporada<T extends Prisma.TemporadaDefaultArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.TemporadaDefaultArgs<ExtArgs>>): Prisma.Prisma__TemporadaClient<runtime.Types.Result.GetResult<Prisma.$TemporadaPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
   anime<T extends Prisma.AnimeDefaultArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.AnimeDefaultArgs<ExtArgs>>): Prisma.Prisma__AnimeClient<runtime.Types.Result.GetResult<Prisma.$AnimePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
   watchProgress<T extends Prisma.Episodio$watchProgressArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Episodio$watchProgressArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$WatchProgressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
@@ -1353,7 +1213,7 @@ export interface EpisodioFieldRefs {
   readonly sinopse: Prisma.FieldRef<"Episodio", 'String'>
   readonly imagemUrl: Prisma.FieldRef<"Episodio", 'String'>
   readonly dataExibicao: Prisma.FieldRef<"Episodio", 'DateTime'>
-  readonly temporadaId: Prisma.FieldRef<"Episodio", 'Int'>
+  readonly temporada: Prisma.FieldRef<"Episodio", 'Int'>
   readonly animeId: Prisma.FieldRef<"Episodio", 'Int'>
 }
     
