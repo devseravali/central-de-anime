@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
 
 import { sendMail } from '../config/mailer';
+import { swaggerSpec } from '../config/swagger';
 
 const InfraRouter = Router();
 
@@ -73,7 +74,7 @@ InfraRouter.get(
  * /docs/openapi.json:
  *   get:
  *     summary: Retorna a especificação OpenAPI
- *     description: Retorna a especificação OpenAPI atualmente disponibilizada pelo endpoint de documentação.
+ *     description: Retorna a mesma especificação OpenAPI usada pelo Swagger UI.
  *     tags:
  *       - Infraestrutura
  *     responses:
@@ -102,13 +103,7 @@ InfraRouter.get(
 InfraRouter.get(
   '/docs/openapi.json',
   (_req: Request, res: Response) => {
-    res.status(200).json({
-      info: {
-        title: 'API',
-        version: '0.0.1',
-      },
-      paths: {},
-    });
+    res.status(200).json(swaggerSpec);
   }
 );
 
@@ -116,29 +111,20 @@ InfraRouter.get(
  * @swagger
  * /docs:
  *   get:
- *     summary: Exibe a página de documentação da API
- *     description: Retorna uma página HTML simples com informações sobre a documentação OpenAPI.
+ *     summary: Redireciona para o Swagger UI
+ *     description: Mantém compatibilidade e redireciona para /api-docs.
  *     tags:
  *       - Infraestrutura
  *     responses:
- *       200:
- *         description: Página de documentação retornada com sucesso
- *         content:
- *           text/html:
- *             schema:
- *               type: string
- *               example: <html><body><h1>API Docs</h1><p>OpenAPI JSON available at /docs/openapi.json</p></body></html>
+ *       302:
+ *         description: Redirecionamento para /api-docs
  *       500:
  *         description: Erro interno do servidor
  */
 InfraRouter.get(
   '/docs',
   (_req: Request, res: Response) => {
-    res
-      .status(200)
-      .send(
-        '<html><body><h1>API Docs</h1><p>OpenAPI JSON available at /docs/openapi.json</p></body></html>'
-      );
+    res.redirect('/api-docs');
   }
 );
 
