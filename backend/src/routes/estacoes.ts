@@ -21,6 +21,20 @@ type EstacaoItem = {
   nome: string;
 };
 
+/**
+ * @swagger
+ * /estacoes:
+ *   get:
+ *     summary: Lista estações
+ *     description: Retorna todas as estações cadastradas.
+ *     tags:
+ *       - Estações
+ *     responses:
+ *       200:
+ *         description: Estações retornadas com sucesso
+ *       500:
+ *         description: Erro interno do servidor
+ */
 EstacoesRouter.get('/estacoes', async (_req, res) => {
   try {
     const raw = fs.readFileSync(estacoesPath, 'utf-8');

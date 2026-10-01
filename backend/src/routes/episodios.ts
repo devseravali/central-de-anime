@@ -4,11 +4,70 @@ import { episodioController } from '../controllers/episodioController';
 
 const EpisodiosRouter = Router();
 
+/**
+ * @swagger
+ * /episodios/animes/{id}/episodios:
+ *   get:
+ *     summary: Lista episódios por anime
+ *     description: Retorna a lista de episódios de um anime pelo ID.
+ *     tags:
+ *       - Episódios
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: ID do anime
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Episódios retornados com sucesso
+ *       400:
+ *         description: ID inválido
+ *       404:
+ *         description: Anime não encontrado
+ *       500:
+ *         description: Erro interno do servidor
+ */
 EpisodiosRouter.get(
     '/animes/:id/episodios',
     episodioController.list
 );
 
+/**
+ * @swagger
+ * /episodios/animes/{id}/temporadas/{seasonNumber}/episodios:
+ *   get:
+ *     summary: Lista episódios por anime e temporada
+ *     description: Retorna a lista de episódios de um anime filtrada pelo número da temporada.
+ *     tags:
+ *       - Episódios
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: ID do anime
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *       - in: path
+ *         name: seasonNumber
+ *         required: true
+ *         description: Número da temporada
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Episódios da temporada retornados com sucesso
+ *       400:
+ *         description: Parâmetros inválidos
+ *       404:
+ *         description: Anime ou temporada não encontrado
+ *       500:
+ *         description: Erro interno do servidor
+ */
 EpisodiosRouter.get(
     '/animes/:id/temporadas/:seasonNumber/episodios',
     episodioController.listByAnimeAndSeasonNumber
