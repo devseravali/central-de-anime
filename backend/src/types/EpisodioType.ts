@@ -5,7 +5,7 @@ export type EpisodioType = {
     sinopse?: string | null;
     imagemUrl?: string | null;
     dataExibicao?: string | null;
-    temporadaId: number;
+    temporada: number;
     animeId: number;
     watchProgress?: number[];
 };
