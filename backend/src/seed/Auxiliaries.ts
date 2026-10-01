@@ -39,7 +39,6 @@ async function importEstudiosFromJson(): Promise<void> {
             });
         });
         const results = await prisma.$transaction(ops);
-        // count created/updated is not straightforward from upsert result; just count processed
         created += results.length;
     }
     console.log(`Estúdios processados: ${items.length}`);
@@ -154,3 +153,43 @@ async function importAuxiliariesFromJson(): Promise<void> {
 }
 
 export { importAuxiliariesFromJson };
+
+async function runAuxiliaryTarget(target: string): Promise<void> {
+    switch (target) {
+        case 'estudios':
+            await importEstudiosFromJson();
+            break;
+        case 'capas':
+            await importCapasFromJson();
+            break;
+        case 'status':
+            await importStatusFromJson();
+            break;
+        case 'franquias':
+            await importFranquiasFromJson();
+            break;
+        case 'plataformas':
+            await importPlataformasFromJson();
+            break;
+        case 'generos':
+            await importGenerosFromJson();
+            break;
+        case 'tags':
+            await importTagsFromJson();
+            break;
+        case 'all':
+            await importAuxiliariesFromJson();
+            return;
+        default:
+            throw new Error(`Alvo inválido para Auxiliaries: ${target}`);
+    }
+    await prisma.$disconnect();
+}
+
+if (process.argv[1] && (process.argv[1].endsWith('Auxiliaries.ts') || process.argv[1].endsWith('Auxiliaries.js'))) {
+    const target = (process.argv[2] ?? 'all').toLowerCase();
+    runAuxiliaryTarget(target).catch((e) => {
+        console.error('Seed auxiliar falhou:', e);
+        process.exit(1);
+    });
+}
