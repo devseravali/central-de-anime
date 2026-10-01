@@ -46,9 +46,7 @@
         "seed:episodios": "tsx src/seed/Episodios.ts",
         "seed:users": "tsx src/seed/Users.ts",
         "swagger-autogen": "tsx scripts/swagger-autogen.js",
-        "swagger-autogen:v1": "tsx scripts/swagger-autogen.js v1",
-        "swagger:generate": "npm run swagger-autogen",
-        "swagger:generate:v1": "npm run swagger-autogen:v1"
+        "swagger:generate": "npm run swagger-autogen"
     },
     "keywords": [
         "anime",
