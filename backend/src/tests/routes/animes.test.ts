@@ -17,9 +17,6 @@ const animeControllerMocks = vi.hoisted(() => ({
   remove: vi.fn((_req: unknown, res: { status: (code: number) => { send: () => unknown } }) => res.status(204).send()),
 }));
 
-const temporadaControllerMocks = vi.hoisted(() => ({
-  list: vi.fn((req: { query: { animeId?: string } }, res: { status: (code: number) => { json: (body: unknown) => unknown } }) => res.status(200).json({ animeId: req.query.animeId })),
-}));
 
 const personagemControllerMocks = vi.hoisted(() => ({
   list: vi.fn((_req: unknown, res: { status: (code: number) => { json: (body: unknown) => unknown } }) => res.status(200).json([])),
@@ -43,7 +40,7 @@ const prismaMocks = vi.hoisted(() => ({
 }));
 
 vi.mock('../../controllers/animeController', () => ({ animeController: animeControllerMocks }));
-vi.mock('../../controllers/temporadaController', () => ({ temporadaController: temporadaControllerMocks }));
+// temporadaController removed
 vi.mock('../../controllers/personagemController', () => ({ personagemController: personagemControllerMocks }));
 vi.mock('../../controllers/episodioController', () => ({ episodioController: episodioControllerMocks }));
 
@@ -297,16 +294,6 @@ describe('Rotas de animes', () => {
     expect(response.body).toEqual({ message: 'Erro ao criar capa' });
   });
 
-  it('deve encaminhar listagem de temporadas pelo id do anime', async () => {
-    const response = await request(app).get('/animes/7/temporadas');
-    const requisicaoEncaminhada = temporadaControllerMocks.list.mock.calls[0]?.[0] as {
-      query?: { animeId?: string };
-    } | undefined;
-
-    expect(response.status).toBe(200);
-    expect(temporadaControllerMocks.list).toHaveBeenCalled();
-    expect(requisicaoEncaminhada?.query?.animeId).toBe('7');
-  });
 
   it('deve retornar lista vazia quando o anime não tiver capa associada', async () => {
     prismaMocks.animeFindUnique.mockResolvedValueOnce({ capaUrl: null });
@@ -408,11 +395,5 @@ describe('Rotas de animes', () => {
     expect(personagemControllerMocks.listByAnimeId).toHaveBeenCalledTimes(1);
   });
 
-  it('deve delegar /animes/:id/temporadas/:temporadaId/episodios para episodioController.list com temporadaId', async () => {
-    const response = await request(app).get('/animes/2/temporadas/1/episodios');
-
-    expect(response.status).toBe(200);
-    expect(episodioControllerMocks.list).toHaveBeenCalled();
-    expect(response.body).toEqual({ temporadaId: '1' });
-  });
+  // Temporadas endpoints removed; tests adapted elsewhere
 });
