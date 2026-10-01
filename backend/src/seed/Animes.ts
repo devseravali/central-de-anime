@@ -90,3 +90,19 @@ async function importAnimeFromJson(filePath: string): Promise<void> {
 }
 
 export { importAnimeFromJson };
+
+if (process.argv[1] && process.argv[1].endsWith('Animes.ts')) {
+  const file = path.resolve(__dirname, '../../data/entidades/animes.json');
+  importAnimeFromJson(file)
+    .then(async () => {
+      console.log('Seed animes finalizado.');
+      const count = await prisma.anime.count();
+      console.log('Animes na base:', count);
+      await prisma.$disconnect();
+    })
+    .catch(async (e) => {
+      console.error('Seed animes falhou:', e);
+      await prisma.$disconnect();
+      process.exit(1);
+    });
+}

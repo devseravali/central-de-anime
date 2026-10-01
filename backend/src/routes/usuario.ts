@@ -104,8 +104,50 @@ async function handleUpdateProfile(
  */
 
 // Protected routes for profile and updates
+/**
+ * @swagger
+ * /usuario/me:
+ *   get:
+ *     summary: Obtém perfil do usuário autenticado
+ *     tags:
+ *       - Usuário
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Perfil retornado com sucesso
+ *       401:
+ *         description: Usuário não autenticado
+ */
 UsuarioRouter.get('/me', authMiddleware, usuarioController.getProfile);
 
+/**
+ * @swagger
+ * /usuario/me:
+ *   put:
+ *     summary: Atualiza perfil do usuário autenticado
+ *     tags:
+ *       - Usuário
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *     responses:
+ *       200:
+ *         description: Perfil atualizado com sucesso
+ *       400:
+ *         description: Dados de entrada inválidos
+ *       401:
+ *         description: Usuário não autenticado
+ *       404:
+ *         description: Usuário não encontrado
+ *       409:
+ *         description: Email já em uso
+ */
 UsuarioRouter.put('/me', authMiddleware, async (req: Request, res: Response) => {
   try {
     const anyReq = req as any;
@@ -135,6 +177,19 @@ UsuarioRouter.put('/me', authMiddleware, async (req: Request, res: Response) => 
 });
 
 // List users (safe select)
+/**
+ * @swagger
+ * /usuario:
+ *   get:
+ *     summary: Lista usuários
+ *     tags:
+ *       - Usuário
+ *     responses:
+ *       200:
+ *         description: Usuários listados com sucesso
+ *       500:
+ *         description: Erro ao listar usuários
+ */
 UsuarioRouter.get('/', async (_req: Request, res: Response) => {
   try {
     const users = await prisma.usuario.findMany({
@@ -157,11 +212,84 @@ UsuarioRouter.get('/', async (_req: Request, res: Response) => {
 });
 
 // Promote to admin (route may be used by admin flows)
+/**
+ * @swagger
+ * /usuario/promote:
+ *   post:
+ *     summary: Promove usuário para administrador
+ *     tags:
+ *       - Usuário
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Usuário promovido com sucesso
+ *       401:
+ *         description: Usuário não autenticado
+ *       403:
+ *         description: Acesso negado
+ */
 UsuarioRouter.post('/promote', authMiddleware, adminMiddleware, usuarioController.promoteToAdmin);
 
 // Ranking by user
+/**
+ * @swagger
+ * /usuario/{id}/ranking:
+ *   get:
+ *     summary: Retorna ranking do usuário
+ *     tags:
+ *       - Usuário
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Ranking retornado com sucesso
+ *       400:
+ *         description: ID inválido
+ *       404:
+ *         description: Usuário não encontrado
+ */
 UsuarioRouter.get('/:id/ranking', usuarioController.ranking);
 
+/**
+ * @swagger
+ * /usuario/{id}:
+ *   put:
+ *     summary: Atualiza usuário por ID
+ *     tags:
+ *       - Usuário
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *     responses:
+ *       200:
+ *         description: Usuário atualizado com sucesso
+ *       400:
+ *         description: Dados de entrada inválidos
+ *       403:
+ *         description: Acesso negado
+ *       404:
+ *         description: Usuário não encontrado
+ *       409:
+ *         description: Email já em uso
+ */
 UsuarioRouter.put('/:id', authMiddleware, async (req: Request, res: Response) => {
   try {
     const id = parseId(req.params.id);
@@ -205,6 +333,28 @@ UsuarioRouter.put('/:id', authMiddleware, async (req: Request, res: Response) =>
 });
 
 // Get user by id
+/**
+ * @swagger
+ * /usuario/{id}:
+ *   get:
+ *     summary: Busca usuário por ID
+ *     tags:
+ *       - Usuário
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Usuário retornado com sucesso
+ *       400:
+ *         description: ID inválido
+ *       404:
+ *         description: Usuário não encontrado
+ */
 UsuarioRouter.get('/:id', async (req: Request, res: Response) => {
   try {
     const id = parseId(req.params.id);
@@ -239,6 +389,34 @@ UsuarioRouter.get('/:id', async (req: Request, res: Response) => {
 });
 
 // Delete user
+/**
+ * @swagger
+ * /usuario/{id}:
+ *   delete:
+ *     summary: Exclui usuário por ID
+ *     tags:
+ *       - Usuário
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       204:
+ *         description: Usuário excluído com sucesso
+ *       400:
+ *         description: ID inválido
+ *       403:
+ *         description: Acesso negado
+ *       404:
+ *         description: Usuário não encontrado
+ *       409:
+ *         description: Usuário possui dependências externas
+ */
 UsuarioRouter.delete('/:id', authMiddleware, async (req: Request, res: Response) => {
   try {
     const id = parseId(req.params.id);
