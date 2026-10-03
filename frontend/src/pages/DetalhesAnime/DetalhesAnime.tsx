@@ -22,7 +22,10 @@ import {
     ErrorDetalhes,
     LoadingDetalhes,
     NoDataDetalhes,
+    DetalhesPersonagem,
 } from './DetalhesAnimeStyle';
+import { PersonagemCard } from '../../components/anime/PersonagemCard/PersonagemCard';
+import usePersonagens from '../../hooks/UsePersonagens/UsePersonagens';
 
 export const DetalhesAnime = () => {
     const { id } = useParams<{ id: string }>();
@@ -85,6 +88,9 @@ export const DetalhesAnime = () => {
     }, [id]);
 
     const animeId = Number(id);
+
+    const { data: personagens, loading: loadingPersonagens, error: errorPersonagens } =
+        usePersonagens({ animeId: animeId, enabled: Boolean(animeId) });
 
     if (!id || !Number.isInteger(animeId) || animeId <= 0) {
         return (
@@ -190,6 +196,29 @@ export const DetalhesAnime = () => {
             </ArticleDetalhes>
 
             <EpisodioItem animeId={anime.id} />
+
+            <SectionBlock aria-labelledby="personagens-anime">
+                <DetalhesH2 id="personagens-anime">Personagens</DetalhesH2>
+
+                {loadingPersonagens ? (
+                    <DetalhesParagraph>Carregando personagens...</DetalhesParagraph>
+                ) : errorPersonagens ? (
+                    <ErrorDetalhes>Erro: {errorPersonagens}</ErrorDetalhes>
+                ) : personagens && personagens.length > 0 ? (
+                    <DetalhesPersonagem>
+                        {personagens.map((p) => (
+                            <PersonagemCard
+                                key={String(p.id ?? p.nome)}
+                                id={p.id}
+                                nome={String(p.nome ?? 'Personagem')}
+                                imagem={String(p.imagem ?? '/placeholder/personagem.png')}
+                            />
+                        ))}
+                    </DetalhesPersonagem>
+                ) : (
+                    <DetalhesParagraph>Nenhum personagem encontrado.</DetalhesParagraph>
+                )}
+            </SectionBlock>
         </DetalhesAnimeContainer>
     );
 };
