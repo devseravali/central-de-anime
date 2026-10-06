@@ -141,17 +141,12 @@ export const TituloHeader = styled.h1`
 
   color: ${({ theme }) => theme.colors.textPrimary};
 
-  font-family: ${({ theme }) =>
-    theme.typography.headlineSmall.fontFamily};
+  font-family: ${({ theme }) => theme.typography.display.fontFamily};
 
-  font-size: ${({ theme }) =>
-    theme.typography.headlineSmall.fontSize};
-
-  font-weight: ${({ theme }) =>
-    theme.typography.headlineSmall.fontWeight};
-
-  line-height: ${({ theme }) =>
-    theme.typography.headlineSmall.lineHeight};
+  /* Increase logo title size to stand out on the Home page */
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1;
 
   white-space: nowrap;
 `;
