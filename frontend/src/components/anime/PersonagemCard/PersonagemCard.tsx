@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import usePersonagem from "../../../hooks/UsePersonagem/UsePersonagem";
 import { PersonagemCardContainer, PersonagemImage, FigurePersonagem, PersonagemCaption, PersonagemName } from "./PersonagemCardStyle";
     
@@ -7,6 +8,7 @@ type PersonagemCardProps = {
   imagem?: string;
   className?: string;
   id?: string | number;
+  onClick?: () => void;
   urlBase?: string;
 };
 
@@ -15,6 +17,7 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
   imagem,
   className,
   id,
+  onClick,
   urlBase,
 }) => {
   const urlBaseProp = urlBase;
@@ -44,22 +47,50 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
     normalizeImageSrc(imagem) ??
     "/placeholder/personagem.png";
 
+  const content = (
+    <>
+      <FigurePersonagem>
+        <PersonagemImage src={displayImagem} alt={`Imagem de ${displayNome}`} />
+
+        <PersonagemCaption>
+          <PersonagemName>{displayNome}</PersonagemName>
+        </PersonagemCaption>
+      </FigurePersonagem>
+    </>
+  );
+
   return (
-    <PersonagemCardContainer className={className}> 
+    <PersonagemCardContainer className={className}>
       {loading ? (
         <p>Carregando personagem...</p>
       ) : error ? (
         <p role="alert">Erro: {error}</p>
+      ) : id !== undefined && id !== null ? (
+        <Link
+          to={`/personagens/${id}`}
+          aria-label={`Ver detalhes de ${displayNome}`}
+          onClick={() => {
+            if (typeof onClick === 'function') onClick();
+          }}
+          style={{ display: 'block' }}
+        >
+          {content}
+        </Link>
       ) : (
-        <>
-          <FigurePersonagem>
-            <PersonagemImage src={displayImagem} alt={`Imagem de ${displayNome}`} />
-
-            <PersonagemCaption>
-              <PersonagemName>{displayNome}</PersonagemName>
-            </PersonagemCaption>
-          </FigurePersonagem>
-        </>
+        <div
+          onClick={() => {
+            if (typeof onClick === 'function') onClick();
+          }}
+          role={onClick ? 'button' : undefined}
+          tabIndex={onClick ? 0 : undefined}
+          onKeyDown={(e) => {
+            if (!onClick) return;
+            if (e.key === 'Enter' || e.key === ' ') onClick();
+          }}
+          style={{ cursor: onClick ? 'pointer' : undefined }}
+        >
+          {content}
+        </div>
       )}
     </PersonagemCardContainer>
   );
