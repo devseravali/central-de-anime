@@ -1,10 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-/* =========================
-   LAYOUT
-========================= */
-
 export const MainContainer = styled.main`
     width: min(1240px, 100% - 2rem);
     margin: 0 auto;
@@ -36,10 +32,6 @@ export const CharacterPanel = styled.section`
     }
 `;
 
-/* =========================
-   NAVIGATION
-========================= */
-
 export const TopNavigation = styled.nav`
     display: flex;
     align-items: center;
@@ -67,10 +59,6 @@ export const TopNavigation = styled.nav`
         font-weight: 600;
     }
 `;
-
-/* =========================
-   HERO
-========================= */
 
 export const Hero = styled.section`
     position: relative;
@@ -205,10 +193,6 @@ export const HeroSubtitle = styled.p`
         theme.typography.bodyLarge.fontSize};
 `;
 
-/* =========================
-   DETAILS
-========================= */
-
 export const DetailGrid = styled.dl`
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -285,10 +269,6 @@ export const DetailButton = styled.button`
     }
 `;
 
-/* =========================
-   CHARACTER SECTIONS
-========================= */
-
 export const CharacterSection = styled.section`
     display: grid;
     align-content: start;
@@ -314,10 +294,6 @@ export const Heading = styled.h2`
         theme.typography.headlineMedium.lineHeight};
 `;
 
-/* =========================
-   BIO
-========================= */
-
 export const BioCard = styled.article`
     display: grid;
 
@@ -336,10 +312,6 @@ export const BioText = styled.p`
     line-height: 1.6;
     white-space: pre-wrap;
 `;
-
-/* =========================
-   TRAITS
-========================= */
 
 export const TraitList = styled.ul`
     display: grid;
@@ -365,10 +337,6 @@ export const TraitChip = styled.li`
     font-size: ${({ theme }) =>
         theme.typography.labelMedium.fontSize};
 `;
-
-/* =========================
-   METRICS
-========================= */
 
 export const MetricList = styled.ul`
     display: grid;
@@ -456,9 +424,6 @@ export const Progress = styled.progress`
     }
 `;
 
-/* =========================
-   RELATED
-========================= */
 
 export const RelatedGrid = styled.section`
     display: grid;
@@ -525,10 +490,6 @@ export const RelatedRole = styled.p`
     font-size: ${({ theme }) =>
         theme.typography.labelMedium.fontSize};
 `;
-
-/* =========================
-   STATES
-========================= */
 
 export const StateShell = styled.main`
     width: min(1240px, 100% - 2rem);
