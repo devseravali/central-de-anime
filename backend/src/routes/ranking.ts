@@ -7,6 +7,32 @@ const RankingRouter = Router();
 
 /**
  * @swagger
+ * /ranking/top:
+ *   get:
+ *     summary: Lista os usuários com maior pontuação
+ *     description: Retorna o ranking geral dos usuários com maior pontuação.
+ *     tags:
+ *       - Ranking
+ *     responses:
+ *       200:
+ *         description: Ranking geral retornado com sucesso
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 description: Usuário e informações de ranking
+ *       500:
+ *         description: Erro interno do servidor
+ */
+RankingRouter.get(
+  '/ranking/top',
+  rankingController.getTop
+);
+
+/**
+ * @swagger
  * /ranking/{usuarioId}:
  *   get:
  *     summary: Busca o ranking de um usuário
@@ -44,7 +70,6 @@ const RankingRouter = Router();
  */
 RankingRouter.get(
   '/ranking/:usuarioId',
-  authMiddleware,
   rankingController.getByUsuarioId
 );
 
@@ -87,7 +112,6 @@ RankingRouter.get(
  */
 RankingRouter.get(
   '/ranking/:usuarioId/pontos',
-  authMiddleware,
   rankingController.getPontos
 );
 
@@ -175,32 +199,6 @@ RankingRouter.post(
   '/ranking/:usuarioId/recalcular',
   authMiddleware,
   rankingController.recalcular
-);
-
-/**
- * @swagger
- * /ranking/top:
- *   get:
- *     summary: Lista os usuários com maior pontuação
- *     description: Retorna o ranking geral dos usuários com maior pontuação.
- *     tags:
- *       - Ranking
- *     responses:
- *       200:
- *         description: Ranking geral retornado com sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 type: object
- *                 description: Usuário e informações de ranking
- *       500:
- *         description: Erro interno do servidor
- */
-RankingRouter.get(
-  '/ranking/top',
-  rankingController.getTop
 );
 
 export default RankingRouter;
