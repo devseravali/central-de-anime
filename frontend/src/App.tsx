@@ -4,6 +4,7 @@ import { Explorar } from './pages/Explorar/Explorar';
 import { DetalhesAnime } from './pages/DetalhesAnime/DetalhesAnime';
 import { DetalhesPersonagens } from './pages/DetalhesPersonagens/DetalhesPersonagens';
 import { Home } from './pages/Home/Home';
+import Ranking from './pages/Ranking/Ranking';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/animes/:id" element={<DetalhesAnime />} />
                 <Route path="/personagens/:id" element={<DetalhesPersonagens />} />
                 <Route path="*" element={<Home />} />
+                <Route path="/ranking" element={<Ranking />} />
             </Routes>
         </main>
         <Footer />
