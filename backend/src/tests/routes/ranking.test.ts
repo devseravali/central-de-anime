@@ -51,18 +51,8 @@ describe('Rotas de Ranking (/ranking)', () => {
   });
 
   describe('GET /ranking/:usuarioId', () => {
-    it('deve rejeitar sem autenticação retornando 401', async () => {
+    it('deve permitir acesso público e delegar ao rankingController.getByUsuarioId', async () => {
       const res = await request(app).get('/ranking/1');
-
-      expect(res.status).toBe(401);
-      expect(res.body).toEqual({ message: 'Token de autenticação não fornecido' });
-      expect(rankingControllerMocks.getByUsuarioId).not.toHaveBeenCalled();
-    });
-
-    it('deve permitir acesso autenticado e delegar ao rankingController.getByUsuarioId', async () => {
-      const res = await request(app)
-        .get('/ranking/1')
-        .set('Authorization', 'Bearer user-token');
 
       expect(res.status).toBe(200);
       expect(rankingControllerMocks.getByUsuarioId).toHaveBeenCalledTimes(1);
@@ -70,17 +60,8 @@ describe('Rotas de Ranking (/ranking)', () => {
   });
 
   describe('GET /ranking/:usuarioId/pontos', () => {
-    it('deve rejeitar sem autenticação retornando 401', async () => {
+    it('deve permitir acesso público e delegar ao rankingController.getPontos', async () => {
       const res = await request(app).get('/ranking/1/pontos');
-
-      expect(res.status).toBe(401);
-      expect(rankingControllerMocks.getPontos).not.toHaveBeenCalled();
-    });
-
-    it('deve permitir acesso autenticado e delegar ao rankingController.getPontos', async () => {
-      const res = await request(app)
-        .get('/ranking/1/pontos')
-        .set('Authorization', 'Bearer user-token');
 
       expect(res.status).toBe(200);
       expect(rankingControllerMocks.getPontos).toHaveBeenCalledTimes(1);
