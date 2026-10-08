@@ -2,7 +2,7 @@ import { api } from './api';
 
 export const rankingService = {
     UsuariosId: async (usuarioId: number) => {
-        const response = await api.get(`/ranking/usuario/${usuarioId}`);
+        const response = await api.get(`/ranking/${usuarioId}`);
         return response.data;
     },
 
@@ -21,7 +21,7 @@ export const rankingService = {
         return response.data;
     },
 
-    rakingTop: async () => {
+    rankingTop: async () => {
         const response = await api.get(`/ranking/top`);
         return response.data;
     },
