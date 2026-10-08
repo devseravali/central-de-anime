@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import usePersonagem from "../../../hooks/UsePersonagem/UsePersonagem";
-import { PersonagemCardContainer, PersonagemImage, FigurePersonagem, PersonagemCaption, PersonagemName } from "./PersonagemCardStyle";
+import { PersonagemCardContainer, PersonagemImage, FigurePersonagem, PersonagemCaption, PersonagemName, PersonagemRole } from "./PersonagemCardStyle";
     
 type PersonagemCardProps = {
   nome: string;
@@ -54,6 +54,9 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
 
         <PersonagemCaption>
           <PersonagemName>{displayNome}</PersonagemName>
+          {typeof data?.role === 'string' && (
+            <PersonagemRole onClick={onClick}>{data.role}</PersonagemRole>
+          )}
         </PersonagemCaption>
       </FigurePersonagem>
     </>
@@ -77,7 +80,7 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
           {content}
         </Link>
       ) : (
-        <div
+        <PersonagemRole
           onClick={() => {
             if (typeof onClick === 'function') onClick();
           }}
@@ -87,10 +90,9 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
             if (!onClick) return;
             if (e.key === 'Enter' || e.key === ' ') onClick();
           }}
-          style={{ cursor: onClick ? 'pointer' : undefined }}
         >
           {content}
-        </div>
+        </PersonagemRole>
       )}
     </PersonagemCardContainer>
   );
