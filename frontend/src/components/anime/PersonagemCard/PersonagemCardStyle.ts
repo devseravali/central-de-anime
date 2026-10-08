@@ -56,3 +56,7 @@ export const PersonagemName = styled.h2`
     cursor: pointer;
   }
 `;
+
+export const PersonagemRole = styled.p`
+  cursor: ${({ onClick }) => (onClick ? 'pointer' : 'default')};
+`;
