@@ -7,6 +7,7 @@ import { Home } from './pages/Home/Home';
 import Ranking from './pages/Ranking/Ranking';
 import { Favoritos } from './pages/Favoritos/Favoritos';
 import { Route, Routes } from 'react-router-dom';
+import { MeuProgresso } from './pages/MeuProgresso/MeuProgresso';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="*" element={<Home />} />
                 <Route path="/ranking" element={<Ranking />} />
                 <Route path="/favoritos" element={<Favoritos />} />
+                <Route path="/meu-progresso" element={<MeuProgresso />} />
             </Routes>
         </main>
         <Footer />
