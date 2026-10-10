@@ -267,6 +267,18 @@ export const DetailButton = styled.button`
         background: ${({ theme }) =>
             theme.colors.primaryHover};
     }
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+`;
+
+export const FavoriteFeedback = styled.small`
+    display: block;
+    margin-top: 0.4rem;
+
+    color: ${({ theme }) => theme.colors.textSecondary};
 `;
 
 export const CharacterSection = styled.section`
