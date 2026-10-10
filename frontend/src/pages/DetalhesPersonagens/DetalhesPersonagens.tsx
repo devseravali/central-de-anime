@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { favoritoService } from '../../services/favorito.service';
 import {
     personagemService,
     type Personagem,
 } from '../../services/personagem.service';
+import { userService } from '../../services/user.service';
 import {
     BioCard,
     BioText,
@@ -18,6 +20,7 @@ import {
     DetailValue,
     EmptyState,
     ErrorState,
+    FavoriteFeedback,
     Glow,
     Heading,
     Hero,
@@ -120,6 +123,14 @@ export const DetalhesPersonagens = () => {
 
     const [isFavorite, setIsFavorite] = useState(false);
 
+    const [favoriteLoading, setFavoriteLoading] = useState(false);
+
+    const [favoriteError, setFavoriteError] =
+        useState<string | null>(null);
+
+    const [usuarioId, setUsuarioId] =
+        useState<number | null>(null);
+
     const personagemId = Number(id);
 
     const validId =
@@ -177,6 +188,46 @@ export const DetalhesPersonagens = () => {
                     : [];
 
                 setRelated(relacionados);
+
+                try {
+                    const perfil =
+                        await userService.buscarMeuPerfil();
+
+                    const currentUserId = Number(perfil?.id);
+
+                    if (
+                        !Number.isInteger(currentUserId) ||
+                        currentUserId <= 0
+                    ) {
+                        setUsuarioId(null);
+                        setIsFavorite(false);
+                        return;
+                    }
+
+                    setUsuarioId(currentUserId);
+
+                    const favoritosResponse =
+                        await favoritoService.PersonagensFavoritos(
+                            currentUserId
+                        );
+
+                    const favoritos = Array.isArray(
+                        favoritosResponse
+                    )
+                        ? favoritosResponse
+                        : [];
+
+                    setIsFavorite(
+                        favoritos.some(
+                            (item) =>
+                                Number(item?.id) ===
+                                personagemId
+                        )
+                    );
+                } catch {
+                    setUsuarioId(null);
+                    setIsFavorite(false);
+                }
             } catch (err: unknown) {
                 if (!mounted) {
                     return;
@@ -249,6 +300,38 @@ export const DetalhesPersonagens = () => {
     const metrics = buildCombatMetrics(personagemId);
 
     const nome = normalizeText(personagem.nome);
+
+    const handleToggleFavorite = async () => {
+        if (!usuarioId) {
+            setFavoriteError(
+                'Faça login para atualizar os favoritos.'
+            );
+            return;
+        }
+
+        try {
+            setFavoriteError(null);
+            setFavoriteLoading(true);
+
+            if (isFavorite) {
+                await favoritoService.DesfavoritarPersonagem(
+                    personagemId
+                );
+            } else {
+                await favoritoService.FavoritarPersonagem(
+                    personagemId
+                );
+            }
+
+            setIsFavorite((previous) => !previous);
+        } catch {
+            setFavoriteError(
+                'Não foi possível atualizar favorito agora.'
+            );
+        } finally {
+            setFavoriteLoading(false);
+        }
+    };
 
     return (
         <MainContainer>
@@ -357,18 +440,24 @@ export const DetalhesPersonagens = () => {
                                 <DetailValue>
                                     <DetailButton
                                         type="button"
-                                        onClick={() =>
-                                            setIsFavorite(
-                                                (previous) =>
-                                                    !previous
-                                            )
-                                        }
+                                        onClick={() => {
+                                            void handleToggleFavorite();
+                                        }}
                                         aria-pressed={isFavorite}
+                                        disabled={favoriteLoading}
                                     >
-                                        {isFavorite
-                                            ? 'Remover dos favoritos'
-                                            : 'Adicionar aos favoritos'}
+                                        {favoriteLoading
+                                            ? 'Atualizando...'
+                                            : isFavorite
+                                                ? 'Remover dos favoritos'
+                                                : 'Adicionar aos favoritos'}
                                     </DetailButton>
+
+                                    {favoriteError && (
+                                        <FavoriteFeedback>
+                                            {favoriteError}
+                                        </FavoriteFeedback>
+                                    )}
                                 </DetailValue>
                             </DetailCard>
                         </DetailGrid>
