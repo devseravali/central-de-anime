@@ -21,7 +21,7 @@ function App() {
                 <Route path="*" element={<Home />} />
                 <Route path="/ranking" element={<Ranking />} />
                 <Route path="/favoritos" element={<Favoritos />} />
-                <Route path="/meu-progresso" element={<MeuProgresso />} />
+                <Route path="/progresso" element={<MeuProgresso />} />
             </Routes>
         </main>
         <Footer />
