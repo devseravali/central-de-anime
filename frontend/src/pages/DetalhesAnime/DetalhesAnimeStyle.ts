@@ -113,6 +113,44 @@ export const DetalhesParagraph = styled.p`
   white-space: pre-wrap;
 `;
 
+export const FavoriteButton = styled.button`
+  width: 100%;
+
+  padding: 0.6rem 0.8rem;
+
+  border: 1px solid ${({ theme }) => theme.colors.borderStrong};
+  border-radius: 8px;
+
+  background: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.white};
+
+  font-family: ${({ theme }) => theme.typography.labelLarge.fontFamily};
+  font-size: ${({ theme }) => theme.typography.labelLarge.fontSize};
+  font-weight: ${({ theme }) => theme.typography.labelLarge.fontWeight};
+
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    opacity 160ms ease;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+    background: ${({ theme }) => theme.colors.primaryHover};
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+`;
+
+export const FavoriteFeedback = styled.small`
+  display: block;
+  margin-top: 0.45rem;
+
+  color: ${({ theme }) => theme.colors.textSecondary};
+`;
+
 export const ArticleDetalhes = styled.article`
   display: flex;
   flex-direction: column;
