@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { animeService } from '../../services/anime.service';
+import { favoritoService } from '../../services/favorito.service';
+import { userService } from '../../services/user.service';
 import { AnimeInfo } from '../../components/anime/AnimeInfo/AnimeInfo';
 import { AnimeStats } from '../../components/anime/AnimeStats/AnimeStats';
 import { EpisodioItem } from '../../components/anime/EpisodioItem/EpisodioItem';
@@ -17,6 +19,8 @@ import {
     SectionBlock,
     DetalhesH2,
     DetalhesParagraph,
+    FavoriteButton,
+    FavoriteFeedback,
     ArticleDetalhes,
     DetalhesHeader,
     ErrorDetalhes,
@@ -38,6 +42,18 @@ export const DetalhesAnime = () => {
 
     const [error, setError] =
         useState<string | null>(null);
+
+    const [isFavorite, setIsFavorite] =
+        useState(false);
+
+    const [favoriteLoading, setFavoriteLoading] =
+        useState(false);
+
+    const [favoriteError, setFavoriteError] =
+        useState<string | null>(null);
+
+    const [usuarioId, setUsuarioId] =
+        useState<number | null>(null);
 
     useEffect(() => {
         if (!id) {
@@ -87,7 +103,96 @@ export const DetalhesAnime = () => {
         };
     }, [id]);
 
+    useEffect(() => {
+        if (!id) {
+            return;
+        }
+
+        const animeId = Number(id);
+
+        if (!Number.isInteger(animeId) || animeId <= 0) {
+            return;
+        }
+
+        let mounted = true;
+
+        const fetchFavoriteState = async () => {
+            try {
+                const perfil = await userService.buscarMeuPerfil();
+                const currentUserId = Number(perfil?.id);
+
+                if (!mounted) {
+                    return;
+                }
+
+                if (!Number.isInteger(currentUserId) || currentUserId <= 0) {
+                    setUsuarioId(null);
+                    setIsFavorite(false);
+                    return;
+                }
+
+                setUsuarioId(currentUserId);
+
+                const favoritesResponse =
+                    await favoritoService.AnimesFavoritos(currentUserId);
+
+                if (!mounted) {
+                    return;
+                }
+
+                const favorites = Array.isArray(favoritesResponse)
+                    ? favoritesResponse
+                    : [];
+
+                setIsFavorite(
+                    favorites.some(
+                        (item) => Number(item?.id) === animeId
+                    )
+                );
+            } catch {
+                if (mounted) {
+                    setUsuarioId(null);
+                    setIsFavorite(false);
+                }
+            }
+        };
+
+        fetchFavoriteState();
+
+        return () => {
+            mounted = false;
+        };
+    }, [id]);
+
     const animeId = Number(id);
+
+    const handleToggleFavorite = async () => {
+        if (!Number.isInteger(animeId) || animeId <= 0) {
+            return;
+        }
+
+        if (!usuarioId) {
+            setFavoriteError('Faça login para atualizar os favoritos.');
+            return;
+        }
+
+        try {
+            setFavoriteError(null);
+            setFavoriteLoading(true);
+
+            if (isFavorite) {
+                await favoritoService.Desfavoritar(animeId);
+            } else {
+                await favoritoService.Favoritar(animeId);
+            }
+
+            setIsFavorite((previous) => !previous);
+        } catch {
+            setFavoriteError('Não foi possível atualizar favorito agora.');
+        } finally {
+            setFavoriteLoading(false);
+        }
+    };
 
     const { data: personagens, loading: loadingPersonagens, error: errorPersonagens } =
         usePersonagens({ animeId: animeId, enabled: Boolean(animeId) });
@@ -190,6 +295,35 @@ export const DetalhesAnime = () => {
                             <DetalhesParagraph>
                                 {anime.sinopse}
                             </DetalhesParagraph>
+                        </SectionBlock>
+
+                        <SectionBlock
+                            aria-labelledby="favorito-anime"
+                        >
+                            <DetalhesH2 id="favorito-anime">
+                                Favorito
+                            </DetalhesH2>
+
+                            <FavoriteButton
+                                type="button"
+                                onClick={() => {
+                                    void handleToggleFavorite();
+                                }}
+                                aria-pressed={isFavorite}
+                                disabled={favoriteLoading}
+                            >
+                                {favoriteLoading
+                                    ? 'Atualizando...'
+                                    : isFavorite
+                                        ? 'Remover dos favoritos'
+                                        : 'Adicionar aos favoritos'}
+                            </FavoriteButton>
+
+                            {favoriteError && (
+                                <FavoriteFeedback>
+                                    {favoriteError}
+                                </FavoriteFeedback>
+                            )}
                         </SectionBlock>
                     </InfoColumn>
                 </DetalhesContent>
