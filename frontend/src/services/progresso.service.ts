@@ -6,8 +6,11 @@ export const progressoService = {
         return response.data;
     },
 
-    atualizarProgresso: async (episodioId: number, progresso: number) => {
-        const response = await api.put(`/episodios/${episodioId}/progresso`, { progresso });
+    atualizarProgresso: async (episodioId: number, porcentagem: number) => {
+        const response = await api.put(`/episodios/${episodioId}/progresso`, {
+            porcentagem,
+            assistido: porcentagem >= 100,
+        });
         return response.data;
     },
 
