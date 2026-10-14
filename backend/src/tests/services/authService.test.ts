@@ -80,16 +80,20 @@ describe('authService', () => {
 
   it('deve normalizar dados e remover senha do retorno no registro', async () => {
     prismaMocks.usuarioFindUnique.mockResolvedValueOnce(null);
-    bcryptMocks.hash.mockResolvedValueOnce('hash');
+    bcryptMocks.hash
+      .mockResolvedValueOnce('hash')
+      .mockResolvedValueOnce('hash-email-verificacao');
+    jwtMocks.sign.mockReturnValueOnce('jwt-verificacao');
     prismaMocks.usuarioCreate.mockResolvedValueOnce({
       id: 1,
       nome: 'Luffy',
       email: 'luffy@teste.com',
       senha: 'hash',
       avatar: null,
-      status: 'ACTIVE',
+      status: 'pendente',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
     });
+    prismaMocks.usuarioUpdate.mockResolvedValueOnce({ id: 1 });
     emailMocks.sendRegisterConfirmationEmail.mockResolvedValueOnce(undefined);
 
     const resultado = await authService.register('  Luffy ', ' LUFFY@teste.com ', '123456');
@@ -99,34 +103,57 @@ describe('authService', () => {
         nome: 'Luffy',
         email: 'luffy@teste.com',
         senha: 'hash',
+        status: 'pendente',
       },
     });
-    expect(emailMocks.sendRegisterConfirmationEmail).toHaveBeenCalledWith('luffy@teste.com', 'Luffy');
+    expect(prismaMocks.usuarioUpdate).toHaveBeenCalledWith({
+      where: { id: 1 },
+      data: expect.objectContaining({
+        verificaEmailTokenHash: 'hash-email-verificacao',
+      }),
+    });
+    expect(emailMocks.sendRegisterConfirmationEmail).toHaveBeenCalledWith('luffy@teste.com', 'Luffy', 'jwt-verificacao');
     expect((resultado as Record<string, unknown>).senha).toBeUndefined();
   });
 
   it('deve concluir registro mesmo se falhar o envio do email de confirmação', async () => {
     prismaMocks.usuarioFindUnique.mockResolvedValueOnce(null);
-    bcryptMocks.hash.mockResolvedValueOnce('hash');
+    bcryptMocks.hash
+      .mockResolvedValueOnce('hash')
+      .mockResolvedValueOnce('hash-email-verificacao');
+    jwtMocks.sign.mockReturnValueOnce('jwt-verificacao');
     prismaMocks.usuarioCreate.mockResolvedValueOnce({
       id: 7,
       nome: 'Nami',
       email: 'nami@teste.com',
       senha: 'hash',
       avatar: null,
-      status: 'ACTIVE',
+      status: 'pendente',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
     });
+    prismaMocks.usuarioUpdate.mockResolvedValueOnce({ id: 7 });
     emailMocks.sendRegisterConfirmationEmail.mockRejectedValueOnce(new Error('SMTP offline'));
 
     const resultado = await authService.register('Nami', 'nami@teste.com', '123456');
 
     expect(resultado.email).toBe('nami@teste.com');
-    expect(emailMocks.sendRegisterConfirmationEmail).toHaveBeenCalledWith('nami@teste.com', 'Nami');
+    expect(emailMocks.sendRegisterConfirmationEmail).toHaveBeenCalledWith('nami@teste.com', 'Nami', 'jwt-verificacao');
+  });
+
+  it('deve bloquear login quando email nao foi confirmado', async () => {
+    prismaMocks.usuarioFindUnique.mockResolvedValueOnce({
+      id: 1,
+      nome: 'Luffy',
+      email: 'luffy@teste.com',
+      senha: 'hash',
+      status: 'pendente',
+    });
+
+    await expect(authService.login('luffy@teste.com', '123456')).rejects.toThrow('Email ainda nao confirmado');
   });
 
   it('deve rejeitar login quando a senha não confere', async () => {
-    prismaMocks.usuarioFindUnique.mockResolvedValueOnce({ id: 1, email: 'a@teste.com', senha: 'hash' });
+    prismaMocks.usuarioFindUnique.mockResolvedValueOnce({ id: 1, email: 'a@teste.com', senha: 'hash', status: 'ativo' });
     bcryptMocks.compare.mockResolvedValueOnce(false);
 
     await expect(authService.login('a@teste.com', '123456')).rejects.toThrow('Email ou senha inválidos');
@@ -139,7 +166,7 @@ describe('authService', () => {
       email: 'luffy@teste.com',
       senha: 'hash',
       avatar: null,
-      status: 'ACTIVE',
+      status: 'ativo',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
     });
     bcryptMocks.compare.mockResolvedValueOnce(true);
@@ -326,6 +353,41 @@ describe('authService', () => {
     bcryptMocks.compare.mockResolvedValueOnce(false);
 
     await expect(authService.revoke('9.token-incorreto')).rejects.toThrow('Refresh token inválido');
+  });
+
+  it('deve confirmar email com token valido e ativar usuario', async () => {
+    jwtMocks.verify.mockReturnValueOnce({ usuarioId: 1 });
+    prismaMocks.usuarioFindUnique.mockResolvedValueOnce({
+      id: 1,
+      status: 'pendente',
+      verificaEmailTokenHash: 'hash-token',
+      verificaEmailExpiraEm: new Date(Date.now() + 60_000),
+    });
+    bcryptMocks.compare.mockResolvedValueOnce(true);
+    prismaMocks.usuarioUpdate.mockResolvedValueOnce({ id: 1, status: 'ativo' });
+
+    await expect(authService.verifyEmail('jwt-valido')).resolves.toBeUndefined();
+
+    expect(prismaMocks.usuarioUpdate).toHaveBeenCalledWith({
+      where: { id: 1 },
+      data: {
+        status: 'ativo',
+        verificaEmailTokenHash: null,
+        verificaEmailExpiraEm: null,
+      },
+    });
+  });
+
+  it('deve rejeitar confirmacao de email com token expirado ou invalido', async () => {
+    jwtMocks.verify.mockReturnValueOnce({ usuarioId: 1 });
+    prismaMocks.usuarioFindUnique.mockResolvedValueOnce({
+      id: 1,
+      status: 'pendente',
+      verificaEmailTokenHash: 'hash-token',
+      verificaEmailExpiraEm: new Date(Date.now() - 60_000),
+    });
+
+    await expect(authService.verifyEmail('jwt-invalido')).rejects.toThrow('Token de confirmacao expirado ou invalido');
   });
 
   it('deve rejeitar redefinição de senha com token JWT inválido ou corrompido', async () => {
