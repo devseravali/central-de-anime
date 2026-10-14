@@ -7,6 +7,8 @@ import { Home } from './pages/Home/Home';
 import Ranking from './pages/Ranking/Ranking';
 import { Favoritos } from './pages/Favoritos/Favoritos';
 import { Route, Routes } from 'react-router-dom';
+import { Login } from './pages/Login/Login';
+import { Registro } from './pages/Registro/Registro';
 import { MeuProgresso } from './pages/MeuProgresso/MeuProgresso';
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
                 <Route path="/ranking" element={<Ranking />} />
                 <Route path="/favoritos" element={<Favoritos />} />
                 <Route path="/progresso" element={<MeuProgresso />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/registro" element={<Registro />} />
+
             </Routes>
         </main>
         <Footer />
