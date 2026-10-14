@@ -13,6 +13,7 @@ import {
     forgotPasswordSchema,
     resetPasswordSchema,
     logoutSchema,
+    verifyEmailSchema,
 } from '../schemas/auth/auth.schemas';
 
 const AuthRouter = Router();
@@ -210,6 +211,38 @@ AuthRouter.post(
     '/reset-password',
     validationMiddleware({ body: resetPasswordSchema }),
     authController.resetPassword
+);
+
+/**
+ * @swagger
+ * /auth/verify-email:
+ *   post:
+ *     summary: Confirma email de cadastro
+ *     description: Valida o token de confirmação e ativa a conta do usuário.
+ *     tags:
+ *       - Autenticação
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               token:
+ *                 type: string
+ *                 example: jwt-token-de-confirmacao
+ *     responses:
+ *       200:
+ *         description: Email confirmado com sucesso
+ *       400:
+ *         description: Token inválido ou expirado
+ *       404:
+ *         description: Usuário não encontrado
+ */
+AuthRouter.post(
+    '/verify-email',
+    validationMiddleware({ body: verifyEmailSchema }),
+    authController.verifyEmail
 );
 
 /**
