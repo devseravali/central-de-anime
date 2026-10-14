@@ -27,3 +27,7 @@ export const resetPasswordSchema = z.object({
 export const logoutSchema = z.object({
     refreshToken: z.string().optional(),
 });
+
+export const verifyEmailSchema = z.object({
+    token: z.string().min(1),
+}).strict();
