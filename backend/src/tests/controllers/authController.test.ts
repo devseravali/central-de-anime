@@ -6,6 +6,7 @@ const authServiceMocks = vi.hoisted(() => ({
   register: vi.fn(),
   refresh: vi.fn(),
   requestPasswordReset: vi.fn(),
+  verifyEmail: vi.fn(),
   resetPassword: vi.fn(),
   logout: vi.fn(),
 }));
@@ -48,6 +49,17 @@ describe('authController', () => {
 
     expect(status).toHaveBeenCalledWith(401);
     expect(json).toHaveBeenCalledWith({ message: 'Email ou senha inválidos' });
+  });
+
+  it('deve mapear login sem confirmacao de email para 403', async () => {
+    const req = { body: { email: 'a@teste.com', senha: '123456' }, ip: '127.0.0.1', get: vi.fn(() => 'Vitest') } as unknown as Request;
+    const { res, status, json } = criarResponse();
+    authServiceMocks.login.mockRejectedValueOnce(new Error('Email ainda nao confirmado'));
+
+    await authController.login(req, res);
+
+    expect(status).toHaveBeenCalledWith(403);
+    expect(json).toHaveBeenCalledWith({ message: 'Email ainda nao confirmado' });
   });
 
   it('deve retornar cookie no login com sucesso', async () => {
@@ -223,6 +235,18 @@ describe('authController', () => {
 
     expect(status).toHaveBeenCalledWith(401);
     expect(json).toHaveBeenCalledWith({ message: 'Refresh token revogado' });
+  });
+
+  it('deve confirmar email com token valido', async () => {
+    const req = { body: { token: 'jwt-token' } } as Request;
+    const { res, status, json } = criarResponse();
+    authServiceMocks.verifyEmail.mockResolvedValueOnce(undefined);
+
+    await authController.verifyEmail(req, res);
+
+    expect(authServiceMocks.verifyEmail).toHaveBeenCalledWith('jwt-token');
+    expect(status).toHaveBeenCalledWith(200);
+    expect(json).toHaveBeenCalledWith({ message: 'Email confirmado com sucesso' });
   });
 
   it('deve rejeitar forgotPassword quando email for inválido ou vazio', async () => {
