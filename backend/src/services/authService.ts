@@ -45,6 +45,7 @@ export interface AuthService {
     ): Promise<LoginResult>;
     refresh(refreshToken: string): Promise<RefreshResult>;
     requestPasswordReset(email: string): Promise<string | null>;
+    verifyEmail(token: string): Promise<void>;
     resetPassword(token: string, newPassword: string): Promise<LoginResult>;
     revoke(refreshToken: string): Promise<void>;
     logout(refreshToken: string): Promise<void>;
@@ -69,6 +70,10 @@ const BCRYPT_SALT_ROUNDS = Number(
 
 const PASSWORD_RESET_EXPIRES_MINUTES = Number(
     process.env.PASSWORD_RESET_EXPIRES_MINUTES ?? 30
+);
+
+const EMAIL_VERIFICATION_EXPIRES_MINUTES = Number(
+    process.env.EMAIL_VERIFICATION_EXPIRES_MINUTES ?? 1440
 );
 
 const hashPassword = async (
@@ -208,6 +213,33 @@ const parsePasswordResetToken = (
     }
 };
 
+const parseEmailVerificationToken = (
+    token: string
+): { usuarioId: number; tokenPlain: string } => {
+    if (!token || typeof token !== 'string') {
+        throw new Error('Token de confirmacao invalido');
+    }
+
+    try {
+        const payloadRaw = jwt.verify(token, JWT_SECRET) as unknown;
+
+        if (typeof payloadRaw === 'string') {
+            throw new Error('Token de confirmacao invalido');
+        }
+
+        const payload = payloadRaw as { usuarioId?: number; sub?: number; id?: number };
+        const usuarioId = Number(payload.usuarioId ?? payload.sub ?? payload.id);
+
+        if (!Number.isSafeInteger(usuarioId) || usuarioId <= 0) {
+            throw new Error('Token de confirmacao invalido');
+        }
+
+        return { usuarioId, tokenPlain: token };
+    } catch (_err) {
+        throw new Error('Token de confirmacao invalido');
+    }
+};
+
 export const authService: AuthService = {
     hashPassword,
 
@@ -239,8 +271,34 @@ export const authService: AuthService = {
                     nome: nome.trim(),
                     email: normalizedEmail,
                     senha: senhaHash,
+                    status: 'pendente',
                 },
             });
+
+        const verificationToken = jwt.sign(
+            { usuarioId: user.id },
+            JWT_SECRET,
+            {
+                expiresIn: `${EMAIL_VERIFICATION_EXPIRES_MINUTES}m`,
+            }
+        );
+
+        const verificaEmailTokenHash = await bcrypt.hash(
+            verificationToken,
+            BCRYPT_SALT_ROUNDS
+        );
+
+        const verificaEmailExpiraEm = new Date(
+            Date.now() + EMAIL_VERIFICATION_EXPIRES_MINUTES * 60 * 1000
+        );
+
+        await prisma.usuario.update({
+            where: { id: user.id },
+            data: {
+                verificaEmailTokenHash,
+                verificaEmailExpiraEm,
+            },
+        });
 
         const {
             senha: _senha,
@@ -250,7 +308,8 @@ export const authService: AuthService = {
         try {
             await sendRegisterConfirmationEmail(
                 normalizedEmail,
-                user.nome
+                user.nome,
+                verificationToken
             );
         } catch (error) {
             console.error(
@@ -285,6 +344,10 @@ export const authService: AuthService = {
             throw new Error(
                 'Email ou senha inválidos'
             );
+        }
+
+        if (user.status !== 'ativo') {
+            throw new Error('Email ainda nao confirmado');
         }
 
         const passwordMatch =
@@ -490,6 +553,48 @@ export const authService: AuthService = {
         await sendPasswordResetEmail(normalizedEmail, jwtToken);
 
         return jwtToken;
+    },
+
+    verifyEmail: async (token: string): Promise<void> => {
+        const { usuarioId, tokenPlain } = parseEmailVerificationToken(token);
+
+        const usuario = await prisma.usuario.findUnique({
+            where: { id: usuarioId },
+        });
+
+        if (!usuario) {
+            throw new Error('Usuario nao encontrado');
+        }
+
+        if (usuario.status === 'ativo') {
+            return;
+        }
+
+        if (
+            !usuario.verificaEmailTokenHash ||
+            !usuario.verificaEmailExpiraEm ||
+            usuario.verificaEmailExpiraEm.getTime() <= Date.now()
+        ) {
+            throw new Error('Token de confirmacao expirado ou invalido');
+        }
+
+        const tokenMatch = await bcrypt.compare(
+            tokenPlain,
+            usuario.verificaEmailTokenHash
+        );
+
+        if (!tokenMatch) {
+            throw new Error('Token de confirmacao expirado ou invalido');
+        }
+
+        await prisma.usuario.update({
+            where: { id: usuario.id },
+            data: {
+                status: 'ativo',
+                verificaEmailTokenHash: null,
+                verificaEmailExpiraEm: null,
+            },
+        });
     },
 
     resetPassword: async (
