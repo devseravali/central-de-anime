@@ -105,21 +105,28 @@ const buildEmailLayout = (
 
 export const sendRegisterConfirmationEmail = async (
     email: string,
-    nome: string
+    nome: string,
+    token: string
 ): Promise<void> => {
     if (!MAIL_FROM) {
         throw new Error('Configuração de email não definida: MAIL_FROM ausente');
     }
 
-    const subject = 'Cadastro confirmado - Central de Anime';
-    const text = `Olá, ${nome}! Seu cadastro na Central de Anime foi confirmado com sucesso. Agora você já pode acessar sua conta e começar a acompanhar seus animes favoritos.`;
+    const verifyUrl = `${FRONTEND_URL}/confirmar-email?token=${encodeURIComponent(token)}`;
+    const subject = 'Confirme seu cadastro - Central de Anime';
+    const text = `Ola, ${nome}! Falta so um passo para ativar sua conta na Central de Anime. Acesse este link para confirmar seu email: ${verifyUrl}.`;
     const html = buildEmailLayout(
-        'Cadastro confirmado com sucesso',
-        'Sua conta está pronta para uso',
+        'Confirme seu email para ativar sua conta',
+        'A confirmacao protege sua conta e libera o acesso completo',
         `<p>Olá, <strong>${nome}</strong>!</p>
-         <p>Seu cadastro na <strong>Central de Anime</strong> foi confirmado com sucesso.</p>
-         <p>Agora você já pode acessar sua conta, montar sua lista e acompanhar seus episódios em tempo real.</p>
-         <p style="margin:20px 0 0;">Se você não reconhece este cadastro, recomendamos alterar a senha imediatamente.</p>`,
+         <p>Recebemos seu cadastro na <strong>Central de Anime</strong>.</p>
+         <p>Para ativar sua conta, confirme seu email clicando no botao abaixo:</p>
+         <p style="margin:24px 0;">
+            <a href="${verifyUrl}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:#4f46e5;color:#ffffff;text-decoration:none;font-weight:700;">Confirmar meu email</a>
+         </p>
+         <p>Se preferir, copie e cole este link no navegador:</p>
+         <p><a href="${verifyUrl}">${verifyUrl}</a></p>
+         <p style="margin:20px 0 0;">Se voce nao reconhece este cadastro, ignore este email.</p>`,
         'Este é um e-mail automático. Não responda esta mensagem.'
     );
 
