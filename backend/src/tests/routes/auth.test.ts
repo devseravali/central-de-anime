@@ -6,6 +6,7 @@ const authServiceMocks = vi.hoisted(() => ({
   login: vi.fn(),
   refresh: vi.fn(),
   requestPasswordReset: vi.fn(),
+  verifyEmail: vi.fn(),
   resetPassword: vi.fn(),
   logout: vi.fn(),
 }));
@@ -192,6 +193,28 @@ describe('Rotas de autenticação', () => {
     expect(response.status).toBe(400);
     expect(response.body.message).toBe('Dados de entrada inválidos');
     expect(authServiceMocks.resetPassword).not.toHaveBeenCalled();
+  });
+
+  it('deve confirmar email com token valido', async () => {
+    authServiceMocks.verifyEmail.mockResolvedValueOnce(undefined);
+
+    const response = await request(app)
+      .post('/auth/verify-email')
+      .send({ token: 'jwt-valido' });
+
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual({ message: 'Email confirmado com sucesso' });
+    expect(authServiceMocks.verifyEmail).toHaveBeenCalledWith('jwt-valido');
+  });
+
+  it('deve bloquear confirmação sem token', async () => {
+    const response = await request(app)
+      .post('/auth/verify-email')
+      .send({});
+
+    expect(response.status).toBe(400);
+    expect(response.body.message).toBe('Dados de entrada inválidos');
+    expect(authServiceMocks.verifyEmail).not.toHaveBeenCalled();
   });
 
   it('deve realizar logout usando refresh token enviado por cookie', async () => {
