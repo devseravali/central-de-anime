@@ -89,6 +89,9 @@ model Usuario {
   resetSenhaTokenHash String?
   resetSenhaExpiraEm  DateTime?
 
+  verificaEmailTokenHash String?
+  verificaEmailExpiraEm  DateTime?
+
   status String @default("ativo")
 
   criadoEm     DateTime @default(now())
