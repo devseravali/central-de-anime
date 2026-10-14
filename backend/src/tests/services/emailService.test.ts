@@ -101,12 +101,12 @@ describe('emailService', () => {
     vi.doMock('../../config/mailer', () => ({ sendMail }));
     const service = await import('../../services/emailService');
 
-    await expect(service.sendRegisterConfirmationEmail('user@teste.com', 'Nami')).resolves.toBeUndefined();
+    await expect(service.sendRegisterConfirmationEmail('user@teste.com', 'Nami', 'jwt-token')).resolves.toBeUndefined();
     expect(sendMail).toHaveBeenCalledWith(expect.objectContaining({
       to: 'user@teste.com',
-      subject: 'Cadastro confirmado - Central de Anime',
-      text: expect.stringContaining('Olá, Nami!'),
-      html: expect.stringContaining('Cadastro confirmado com sucesso'),
+      subject: 'Confirme seu cadastro - Central de Anime',
+      text: expect.stringContaining('confirmar seu email'),
+      html: expect.stringContaining('confirmar-email?token=jwt-token'),
     }));
   });
 
@@ -115,6 +115,6 @@ describe('emailService', () => {
     vi.doMock('../../config/mailer', () => ({ sendMail }));
     const service = await import('../../services/emailService');
 
-    await expect(service.sendRegisterConfirmationEmail('user@teste.com', 'Nami')).rejects.toThrow('Falha ao enviar email de confirmação de cadastro via SMTP');
+    await expect(service.sendRegisterConfirmationEmail('user@teste.com', 'Nami', 'jwt-token')).rejects.toThrow('Falha ao enviar email de confirmação de cadastro via SMTP');
   });
 });
