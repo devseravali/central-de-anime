@@ -71,3 +71,74 @@ export const sendPasswordResetConfirmationEmail = async (
         throw err;
     }
 };
+
+const buildEmailLayout = (
+    title: string,
+    subtitle: string,
+    bodyHtml: string,
+    footerText: string
+): string => {
+    return `
+        <div style="background:#f3f6ff;padding:24px;font-family:Arial,sans-serif;color:#1f2937;">
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;">
+                <tr>
+                    <td style="padding:24px;background:linear-gradient(135deg,#4f46e5,#6366f1);color:#ffffff;">
+                        <p style="margin:0 0 8px;font-size:12px;letter-spacing:1px;text-transform:uppercase;opacity:.9;">Central de Anime</p>
+                        <h1 style="margin:0;font-size:24px;line-height:1.3;">${title}</h1>
+                        <p style="margin:10px 0 0;font-size:14px;opacity:.95;">${subtitle}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:24px;line-height:1.7;font-size:15px;">
+                        ${bodyHtml}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px 24px;background:#f8fafc;border-top:1px solid #e5e7eb;font-size:12px;color:#6b7280;">
+                        ${footerText}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    `;
+};
+
+export const sendRegisterConfirmationEmail = async (
+    email: string,
+    nome: string
+): Promise<void> => {
+    if (!MAIL_FROM) {
+        throw new Error('Configuração de email não definida: MAIL_FROM ausente');
+    }
+
+    const subject = 'Cadastro confirmado - Central de Anime';
+    const text = `Olá, ${nome}! Seu cadastro na Central de Anime foi confirmado com sucesso. Agora você já pode acessar sua conta e começar a acompanhar seus animes favoritos.`;
+    const html = buildEmailLayout(
+        'Cadastro confirmado com sucesso',
+        'Sua conta está pronta para uso',
+        `<p>Olá, <strong>${nome}</strong>!</p>
+         <p>Seu cadastro na <strong>Central de Anime</strong> foi confirmado com sucesso.</p>
+         <p>Agora você já pode acessar sua conta, montar sua lista e acompanhar seus episódios em tempo real.</p>
+         <p style="margin:20px 0 0;">Se você não reconhece este cadastro, recomendamos alterar a senha imediatamente.</p>`,
+        'Este é um e-mail automático. Não responda esta mensagem.'
+    );
+
+    try {
+        const info = await sendMail({
+            from: MAIL_FROM,
+            to: email,
+            subject,
+            text,
+            html,
+        });
+
+        if (!info || !('messageId' in info)) {
+            throw new Error('Falha ao enviar email de confirmação de cadastro via SMTP');
+        }
+
+        return;
+    } catch (err) {
+        console.error('Erro ao enviar email de confirmação de cadastro via SMTP:', err instanceof Error ? err.message : String(err));
+        throw err;
+    }
+};
