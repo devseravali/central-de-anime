@@ -27,6 +27,7 @@ const cryptoMocks = vi.hoisted(() => ({
 const emailMocks = vi.hoisted(() => ({
   sendPasswordResetEmail: vi.fn(),
   sendPasswordResetConfirmationEmail: vi.fn(),
+  sendRegisterConfirmationEmail: vi.fn(),
 }));
 
 vi.mock('../../config/prisma', () => ({
@@ -89,6 +90,7 @@ describe('authService', () => {
       status: 'ACTIVE',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
     });
+    emailMocks.sendRegisterConfirmationEmail.mockResolvedValueOnce(undefined);
 
     const resultado = await authService.register('  Luffy ', ' LUFFY@teste.com ', '123456');
 
@@ -99,7 +101,28 @@ describe('authService', () => {
         senha: 'hash',
       },
     });
+    expect(emailMocks.sendRegisterConfirmationEmail).toHaveBeenCalledWith('luffy@teste.com', 'Luffy');
     expect((resultado as Record<string, unknown>).senha).toBeUndefined();
+  });
+
+  it('deve concluir registro mesmo se falhar o envio do email de confirmação', async () => {
+    prismaMocks.usuarioFindUnique.mockResolvedValueOnce(null);
+    bcryptMocks.hash.mockResolvedValueOnce('hash');
+    prismaMocks.usuarioCreate.mockResolvedValueOnce({
+      id: 7,
+      nome: 'Nami',
+      email: 'nami@teste.com',
+      senha: 'hash',
+      avatar: null,
+      status: 'ACTIVE',
+      criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+    });
+    emailMocks.sendRegisterConfirmationEmail.mockRejectedValueOnce(new Error('SMTP offline'));
+
+    const resultado = await authService.register('Nami', 'nami@teste.com', '123456');
+
+    expect(resultado.email).toBe('nami@teste.com');
+    expect(emailMocks.sendRegisterConfirmationEmail).toHaveBeenCalledWith('nami@teste.com', 'Nami');
   });
 
   it('deve rejeitar login quando a senha não confere', async () => {
