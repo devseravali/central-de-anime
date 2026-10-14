@@ -3,7 +3,11 @@ import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
 import { prisma } from '../config/prisma';
-import { sendPasswordResetEmail, sendPasswordResetConfirmationEmail } from './emailService';
+import {
+    sendPasswordResetEmail,
+    sendPasswordResetConfirmationEmail,
+    sendRegisterConfirmationEmail,
+} from './emailService';
 import type {
     UsuarioModel,
     SessaoModel,
@@ -242,6 +246,20 @@ export const authService: AuthService = {
             senha: _senha,
             ...safeUser
         } = user;
+
+        try {
+            await sendRegisterConfirmationEmail(
+                normalizedEmail,
+                user.nome
+            );
+        } catch (error) {
+            console.error(
+                'Falha ao enviar email de confirmação de cadastro:',
+                error instanceof Error
+                    ? error.message
+                    : String(error)
+            );
+        }
 
         return safeUser;
     },
