@@ -159,6 +159,8 @@ export const UsuarioScalarFieldEnum = {
   avatar: 'avatar',
   resetSenhaTokenHash: 'resetSenhaTokenHash',
   resetSenhaExpiraEm: 'resetSenhaExpiraEm',
+  verificaEmailTokenHash: 'verificaEmailTokenHash',
+  verificaEmailExpiraEm: 'verificaEmailExpiraEm',
   status: 'status',
   criadoEm: 'criadoEm',
   atualizadoEm: 'atualizadoEm'
