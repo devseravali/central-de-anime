@@ -95,4 +95,26 @@ describe('emailService', () => {
 
     await expect(service.sendPasswordResetConfirmationEmail('user@teste.com')).rejects.toThrow('Erro de rede');
   });
+
+  it('deve enviar email de confirmação de cadastro com sucesso', async () => {
+    const sendMail = vi.fn().mockResolvedValue({ messageId: 'register-123' });
+    vi.doMock('../../config/mailer', () => ({ sendMail }));
+    const service = await import('../../services/emailService');
+
+    await expect(service.sendRegisterConfirmationEmail('user@teste.com', 'Nami')).resolves.toBeUndefined();
+    expect(sendMail).toHaveBeenCalledWith(expect.objectContaining({
+      to: 'user@teste.com',
+      subject: 'Cadastro confirmado - Central de Anime',
+      text: expect.stringContaining('Olá, Nami!'),
+      html: expect.stringContaining('Cadastro confirmado com sucesso'),
+    }));
+  });
+
+  it('deve lançar erro quando envio de confirmação de cadastro não retornar messageId', async () => {
+    const sendMail = vi.fn().mockResolvedValue({});
+    vi.doMock('../../config/mailer', () => ({ sendMail }));
+    const service = await import('../../services/emailService');
+
+    await expect(service.sendRegisterConfirmationEmail('user@teste.com', 'Nami')).rejects.toThrow('Falha ao enviar email de confirmação de cadastro via SMTP');
+  });
 });
