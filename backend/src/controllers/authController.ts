@@ -58,6 +58,11 @@ export const authController = {
                 return;
             }
 
+            if (message === 'Email ainda nao confirmado') {
+                res.status(403).json({ message });
+                return;
+            }
+
             console.error('Erro no login:', error instanceof Error ? error.message : String(error));
 
             res.status(500).json({
@@ -191,6 +196,41 @@ export const authController = {
 
             console.error('Erro ao redefinir senha:', error instanceof Error ? error.message : String(error));
             res.status(500).json({ message: 'Erro ao redefinir senha' });
+        }
+    },
+
+    verifyEmail: async (req: Request, res: Response): Promise<void> => {
+        const { token } = req.body ?? {};
+
+        if (typeof token !== 'string' || !token.trim()) {
+            res.status(400).json({ message: 'Token de confirmacao e obrigatorio' });
+            return;
+        }
+
+        try {
+            await authService.verifyEmail(token);
+            res.status(200).json({ message: 'Email confirmado com sucesso' });
+        } catch (error) {
+            const message =
+                error instanceof Error
+                    ? error.message
+                    : 'Token de confirmacao expirado ou invalido';
+
+            if (message === 'Usuario nao encontrado') {
+                res.status(404).json({ message });
+                return;
+            }
+
+            if (
+                message === 'Token de confirmacao invalido' ||
+                message === 'Token de confirmacao expirado ou invalido'
+            ) {
+                res.status(400).json({ message });
+                return;
+            }
+
+            console.error('Erro ao confirmar email:', error instanceof Error ? error.message : String(error));
+            res.status(500).json({ message: 'Erro ao confirmar email' });
         }
     },
 
