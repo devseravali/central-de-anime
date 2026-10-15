@@ -35,6 +35,7 @@ const app = express();
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDir = path.dirname(currentFilePath);
 const imagesDir = path.resolve(currentDir, '..', 'images');
+const frontendUrl = (process.env.FRONTEND_URL ?? 'http://localhost:5173').replace(/\/+$/g, '');
 
 app.use(
     helmet({
@@ -89,6 +90,46 @@ app.get('/health', (_request, response) => {
         status: 'ok',
     });
 });
+
+const redirectToFrontendRoute = (req: express.Request, res: express.Response) => {
+    const host = req.get('host');
+    const apiOrigin = host ? `${req.protocol}://${host}` : null;
+
+    if (apiOrigin && frontendUrl === apiOrigin) {
+        res.status(500).json({
+            message: 'FRONTEND_URL aponta para a API. Configure FRONTEND_URL para o frontend.',
+        });
+        return;
+    }
+
+    res.redirect(302, `${frontendUrl}${req.originalUrl}`);
+};
+
+/**
+ * @swagger
+ * /reset-password:
+ *   get:
+ *     summary: Redireciona para a página de redefinição de senha no frontend
+ *     tags:
+ *       - Infra
+ *     responses:
+ *       302:
+ *         description: Redirecionamento para o frontend
+ */
+app.get('/reset-password', redirectToFrontendRoute);
+
+/**
+ * @swagger
+ * /confirmar-email:
+ *   get:
+ *     summary: Redireciona para a página de confirmação de email no frontend
+ *     tags:
+ *       - Infra
+ *     responses:
+ *       302:
+ *         description: Redirecionamento para o frontend
+ */
+app.get('/confirmar-email', redirectToFrontendRoute);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
