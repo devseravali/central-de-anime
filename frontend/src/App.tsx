@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Login } from './pages/Login/Login';
 import { Registro } from './pages/Registro/Registro';
 import { MeuProgresso } from './pages/MeuProgresso/MeuProgresso';
+import { ConfirmarEmail } from './pages/ConfirmarEmail/ConfirmarEmail';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/progresso" element={<MeuProgresso />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/registro" element={<Registro />} />
+                <Route path="/confirmar-email" element={<ConfirmarEmail />} />
 
             </Routes>
         </main>
