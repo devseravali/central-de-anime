@@ -24,6 +24,10 @@ export interface LogoutData {
   refreshToken?: string;
 }
 
+export interface VerifyEmailData {
+  token: string;
+}
+
 export const authService = {
   register: async (data: RegisterData) => {
     const response = await api.post('/auth/register', data);
@@ -55,6 +59,11 @@ export const authService = {
 
   logout: async (data?: LogoutData) => {
     const response = await api.post('/auth/logout', data);
+    return response.data;
+  },
+
+  verifyEmail: async (data: VerifyEmailData) => {
+    const response = await api.post('/auth/verify-email', data);
     return response.data;
   },
 };
