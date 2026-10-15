@@ -30,6 +30,7 @@ describe('emailService', () => {
       to: 'user@teste.com',
       subject: 'Recuperação de senha - Central de Anime',
       text: expect.stringContaining('https://frontend.test/reset-password?token=token%20xyz'),
+      html: expect.stringContaining('Redefinir minha senha'),
     }));
   });
 
@@ -85,6 +86,7 @@ describe('emailService', () => {
     expect(sendMail).toHaveBeenCalledWith(expect.objectContaining({
       to: 'user@teste.com',
       subject: 'Senha redefinida - Central de Anime',
+      html: expect.stringContaining('Senha atualizada com sucesso'),
     }));
   });
 
@@ -105,7 +107,7 @@ describe('emailService', () => {
     expect(sendMail).toHaveBeenCalledWith(expect.objectContaining({
       to: 'user@teste.com',
       subject: 'Confirme seu cadastro - Central de Anime',
-      text: expect.stringContaining('confirmar seu email'),
+      text: expect.stringContaining('Ative sua conta por este link'),
       html: expect.stringContaining('confirmar-email?token=jwt-token'),
     }));
   });
