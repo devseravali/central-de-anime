@@ -1,5 +1,9 @@
+import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Input } from "../../common/Input/Input";
+import { authService } from '../../../services/auth.service';
 import {
+  AuthActionButton,
   HeaderContainer,
   HeaderNav,
   AuthNav,
@@ -15,6 +19,28 @@ import {
 } from "./HeaderStyle";
 
 export const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    Boolean(localStorage.getItem('accessToken'))
+  );
+
+  useEffect(() => {
+    setIsAuthenticated(Boolean(localStorage.getItem('accessToken')));
+  }, [location.pathname]);
+
+  const handleLogout = async () => {
+    try {
+      await authService.logout();
+    } catch (_error) {
+    } finally {
+      localStorage.removeItem('accessToken');
+      localStorage.removeItem('refreshToken');
+      setIsAuthenticated(false);
+      navigate('/login');
+    }
+  };
+
   return (
     <HeaderContainer>
       <HeaderTwo>
@@ -52,17 +78,31 @@ export const Header = () => {
           />
         </SearchForm>
 
-        <AuthNav aria-label="Autenticação">
-          <UlHeader>
-            <LiHeader>
-              <LinkHerf href="/login">Entrar</LinkHerf>
-            </LiHeader>
+        {!isAuthenticated && (
+          <AuthNav aria-label="Autenticação">
+            <UlHeader>
+              <LiHeader>
+                <LinkHerf href="/login">Entrar</LinkHerf>
+              </LiHeader>
 
-            <LiHeader>
-              <LinkHerf href="/registro">Registrar</LinkHerf>
-            </LiHeader>
-          </UlHeader>
-        </AuthNav>
+              <LiHeader>
+                <LinkHerf href="/registro">Registrar</LinkHerf>
+              </LiHeader>
+            </UlHeader>
+          </AuthNav>
+        )}
+
+        {isAuthenticated && (
+          <AuthNav aria-label="Sessão">
+            <UlHeader>
+              <LiHeader>
+                <AuthActionButton type="button" onClick={handleLogout}>
+                  Sair
+                </AuthActionButton>
+              </LiHeader>
+            </UlHeader>
+          </AuthNav>
+        )}
 
         <ProfileLink href="/perfil" aria-label="Acessar meu perfil">
           <ImageHeader
