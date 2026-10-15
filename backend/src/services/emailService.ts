@@ -1,6 +1,6 @@
 import { sendMail } from '../config/mailer';
 const MAIL_FROM = process.env.MAIL_FROM;
-const FRONTEND_URL = process.env.FRONTEND_URL ?? 'http://localhost:3000';
+const FRONTEND_URL = process.env.FRONTEND_URL ?? 'http://localhost:5173';
 
 const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = Number(process.env.SMTP_PORT ?? 587);
