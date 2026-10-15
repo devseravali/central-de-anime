@@ -18,8 +18,22 @@ export const sendPasswordResetEmail = async (
     const resetUrl = `${FRONTEND_URL}/reset-password?token=${encodeURIComponent(token)}`;
 
     const subject = 'Recuperação de senha - Central de Anime';
-    const text = `Olá! Recebemos uma solicitação para redefinir sua senha na Central de Anime. Acesse este link para criar uma nova senha: ${resetUrl} Este link expira em 30 minutos. Se você não solicitou a redefinição, ignore este email.`;
-    const html = `<p>Olá!</p><p>Recebemos uma solicitação para redefinir sua senha na <strong>Central de Anime</strong>.</p><p><a href="${resetUrl}">Clique aqui para criar uma nova senha</a></p><p>Este link expira em 30 minutos.</p><p>Se você não solicitou a redefinição, ignore este email.</p>`;
+    const text = `Olá, treinador otaku! Recebemos um pedido para recuperar sua conta na Central de Anime. Use este link para criar uma nova senha: ${resetUrl}. Esse portal expira em 30 minutos. Se não foi você, pode ignorar esta mensagem.`;
+    const html = buildEmailLayout(
+        'Recupere seu acesso e volte para a maratona',
+        'Detectamos um pedido de recuperação da sua conta otaku',
+        `<p>Olá, treinador otaku!</p>
+         <p>Recebemos uma solicitação para redefinir a senha da sua conta na <strong>Central de Anime</strong>.</p>
+         <p>Para continuar sua jornada, clique no botão abaixo:</p>
+         <p style="margin:24px 0;">
+            <a href="${resetUrl}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:#4f46e5;color:#ffffff;text-decoration:none;font-weight:700;">Redefinir minha senha</a>
+         </p>
+         <p>Se preferir, copie e cole este link no navegador:</p>
+         <p><a href="${resetUrl}">${resetUrl}</a></p>
+         <p>Esse portal expira em <strong>30 minutos</strong>.</p>
+         <p style="margin:20px 0 0;">Se não foi você quem pediu a alteração, ignore este email com tranquilidade.</p>`,
+        'Mensagem automática de recuperação de conta. Não responda este email.'
+    );
 
     try {
         const info = await sendMail({
@@ -49,8 +63,16 @@ export const sendPasswordResetConfirmationEmail = async (
     }
 
     const subject = 'Senha redefinida - Central de Anime';
-    const text = `Sua senha foi alterada com sucesso. Se você não reconhece essa alteração, entre em contato com o suporte.`;
-    const html = `<p>Sua senha foi alterada com sucesso.</p><p>Se você não reconhece essa alteração, entre em contato com o suporte imediatamente.</p>`;
+    const text = `Sua senha foi alterada com sucesso na Central de Anime. Se não foi você, troque a senha imediatamente e contate o suporte.`;
+    const html = buildEmailLayout(
+        'Senha atualizada com sucesso',
+        'Seu perfil está protegido e pronto para novas temporadas',
+        `<p>Missão concluída!</p>
+         <p>Confirmamos que a senha da sua conta na <strong>Central de Anime</strong> foi redefinida com sucesso.</p>
+         <p>Se foi você quem realizou essa alteração, já pode voltar para sua lista e continuar a maratona.</p>
+         <p>Se você <strong>não reconhece</strong> essa alteração, recomendamos trocar sua senha imediatamente e entrar em contato com o suporte.</p>`,
+        'Se notar qualquer atividade suspeita, revise os dispositivos conectados e atualize suas credenciais.'
+    );
 
     try {
         const info = await sendMail({
@@ -114,20 +136,20 @@ export const sendRegisterConfirmationEmail = async (
 
     const verifyUrl = `${FRONTEND_URL}/confirmar-email?token=${encodeURIComponent(token)}`;
     const subject = 'Confirme seu cadastro - Central de Anime';
-    const text = `Ola, ${nome}! Falta so um passo para ativar sua conta na Central de Anime. Acesse este link para confirmar seu email: ${verifyUrl}.`;
+    const text = `Olá, ${nome}! Seu cadastro na Central de Anime está quase pronto. Ative sua conta por este link: ${verifyUrl}.`;
     const html = buildEmailLayout(
-        'Confirme seu email para ativar sua conta',
-        'A confirmacao protege sua conta e libera o acesso completo',
+        'Ative sua conta e entre na central otaku',
+        'Falta só um passo para liberar seu acesso completo',
         `<p>Olá, <strong>${nome}</strong>!</p>
          <p>Recebemos seu cadastro na <strong>Central de Anime</strong>.</p>
-         <p>Para ativar sua conta, confirme seu email clicando no botao abaixo:</p>
+         <p>Para ativar sua conta e começar sua jornada, confirme seu email clicando no botão abaixo:</p>
          <p style="margin:24px 0;">
             <a href="${verifyUrl}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:#4f46e5;color:#ffffff;text-decoration:none;font-weight:700;">Confirmar meu email</a>
          </p>
          <p>Se preferir, copie e cole este link no navegador:</p>
          <p><a href="${verifyUrl}">${verifyUrl}</a></p>
-         <p style="margin:20px 0 0;">Se voce nao reconhece este cadastro, ignore este email.</p>`,
-        'Este é um e-mail automático. Não responda esta mensagem.'
+         <p style="margin:20px 0 0;">Se você não reconhece este cadastro, ignore este email.</p>`,
+        'Mensagem automática da Central de Anime. Não responda este email.'
     );
 
     try {
