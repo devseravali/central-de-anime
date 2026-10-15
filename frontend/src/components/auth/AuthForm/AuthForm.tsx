@@ -41,6 +41,10 @@ interface AuthFormProps {
     mode: AuthMode;
 }
 
+const REMEMBER_CREDENTIALS_KEY = 'rememberCredentials';
+const REMEMBER_EMAIL_KEY = 'rememberedEmail';
+const REMEMBER_PASSWORD_KEY = 'rememberedPassword';
+
 const getErrorMessage = (error: unknown): string => {
     if (isAxiosError(error)) {
         const apiMessage = error.response?.data?.message;
@@ -54,7 +58,7 @@ const getErrorMessage = (error: unknown): string => {
         return error.message;
     }
 
-    return 'Nao foi possivel concluir a solicitacao. Tente novamente.';
+    return 'Não foi possível concluir a solicitação. Tente novamente.';
 };
 
 export const AuthForm = ({ mode }: AuthFormProps) => {
@@ -62,11 +66,38 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
 
     const isLogin = mode === 'login';
 
+    const rememberedLoginData = (() => {
+        if (!isLogin || typeof window === 'undefined') {
+            return {
+                lembrar: false,
+                email: '',
+                senha: '',
+            };
+        }
+
+        const shouldRemember =
+            localStorage.getItem(REMEMBER_CREDENTIALS_KEY) === 'true';
+
+        if (!shouldRemember) {
+            return {
+                lembrar: false,
+                email: '',
+                senha: '',
+            };
+        }
+
+        return {
+            lembrar: true,
+            email: localStorage.getItem(REMEMBER_EMAIL_KEY) ?? '',
+            senha: localStorage.getItem(REMEMBER_PASSWORD_KEY) ?? '',
+        };
+    })();
+
     const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
+    const [email, setEmail] = useState(rememberedLoginData.email);
+    const [senha, setSenha] = useState(rememberedLoginData.senha);
     const [confirmarSenha, setConfirmarSenha] = useState('');
-    const [lembrar, setLembrar] = useState(false);
+    const [lembrar, setLembrar] = useState(rememberedLoginData.lembrar);
     const [mostrarSenha, setMostrarSenha] = useState(false);
     const [mostrarConfirmarSenha, setMostrarConfirmarSenha] = useState(false);
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -79,16 +110,16 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
                 subtitle:
                     'Bem-vindo de volta. Digite suas credenciais para continuar acompanhando seus animes.',
                 submitLabel: 'Entrar na Central',
-                alternateText: 'Nao tem uma conta?',
+                alternateText: 'Não tem uma conta?',
                 alternateLinkLabel: 'Cadastre-se gratuitamente',
                 alternateLinkTo: '/registro',
             }
             : {
                 title: 'Crie sua conta',
                 subtitle:
-                    'Configure seu perfil para salvar favoritos, notas e acompanhar cada episodio.',
+                    'Configure seu perfil para salvar favoritos, notas e acompanhar cada episódio.',
                 submitLabel: 'Criar conta na Central',
-                alternateText: 'Ja possui uma conta?',
+                alternateText: 'Já possui uma conta?',
                 alternateLinkLabel: 'Entre agora',
                 alternateLinkTo: '/login',
             };
@@ -102,21 +133,37 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
 
             return authService.register({ nome, email, senha });
         },
-        onSuccess: () => {
+        onSuccess: (result) => {
             setErrorMessage(null);
 
             if (isLogin) {
+                const accessToken = (result as { accessToken?: string } | undefined)?.accessToken;
+
+                if (accessToken) {
+                    localStorage.setItem('accessToken', accessToken);
+                }
+
+                if (lembrar) {
+                    localStorage.setItem(REMEMBER_CREDENTIALS_KEY, 'true');
+                    localStorage.setItem(REMEMBER_EMAIL_KEY, email.trim());
+                    localStorage.setItem(REMEMBER_PASSWORD_KEY, senha);
+                } else {
+                    localStorage.removeItem(REMEMBER_CREDENTIALS_KEY);
+                    localStorage.removeItem(REMEMBER_EMAIL_KEY);
+                    localStorage.removeItem(REMEMBER_PASSWORD_KEY);
+                }
+
                 setSuccessMessage('Login realizado com sucesso.');
                 navigate('/explorar');
                 return;
             }
 
-            setSuccessMessage('Conta criada com sucesso. Faça login para continuar.');
+            setSuccessMessage('Conta criada. Enviamos um link de confirmação para o seu email.');
             setNome('');
             setEmail('');
             setSenha('');
             setConfirmarSenha('');
-            navigate('/login');
+            setLembrar(false);
         },
         onError: (error) => {
             setSuccessMessage(null);
@@ -126,15 +173,15 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
 
     const validateFields = (): string | null => {
         if (!isLogin && !nome.trim()) {
-            return 'Nome e obrigatorio.';
+            return 'Nome é obrigatório.';
         }
 
         if (!email.trim()) {
-            return 'Email e obrigatorio.';
+            return 'Email é obrigatório.';
         }
 
         if (!senha.trim()) {
-            return 'Senha e obrigatoria.';
+            return 'Senha é obrigatória.';
         }
 
         if (!isLogin && senha.trim().length < 6) {
@@ -142,7 +189,7 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
         }
 
         if (!isLogin && senha !== confirmarSenha) {
-            return 'As senhas nao conferem.';
+            return 'As senhas não conferem.';
         }
 
         return null;
@@ -167,22 +214,22 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
         <AuthPage>
             <AuthShell>
                 <LeftPanel>
-                    <Badge>Central de Anime v3.4</Badge>
+                    <Badge>Central de Anime</Badge>
 
                     <HeroTitle>
                         Organize sua <span>jornada otaku</span>
                         <br />
-                        com precisao.
+                        com precisão.
                     </HeroTitle>
 
                     <HeroText>
-                        Rastreamento em tempo real de cada episodio, analise de estatisticas da sua colecao e
+                        Rastreamento em tempo real de cada episódio, análise de estatísticas da sua coleção e
                         listas inteligentes.
                     </HeroText>
 
                     <Stats>
                         <StatCard>
-                            <StatValue>+12.400</StatValue>
+                            <StatValue>+150</StatValue>
                             <StatLabel>Obras catalogadas</StatLabel>
                         </StatCard>
 
@@ -283,8 +330,8 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
                                         disabled={authMutation.isPending}
                                         aria-label={
                                             mostrarConfirmarSenha
-                                                ? 'Ocultar confirmacao de senha'
-                                                : 'Mostrar confirmacao de senha'
+                                                ? 'Ocultar confirmação de senha'
+                                                : 'Mostrar confirmação de senha'
                                         }
                                     >
                                         {mostrarConfirmarSenha ? (
@@ -305,11 +352,14 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
                                     onChange={(event) => setLembrar(event.target.checked)}
                                     disabled={authMutation.isPending}
                                 />
-                                Lembrar de mim por 30 dias
+                                Lembrar minha senha
                             </CheckboxLabel>
 
                             {isLogin && (
-                                <InlineLinkButton type="button">
+                                <InlineLinkButton
+                                    type="button"
+                                    onClick={() => navigate('/esqueci-minha-senha')}
+                                >
                                     Esqueci minha senha
                                 </InlineLinkButton>
                             )}
