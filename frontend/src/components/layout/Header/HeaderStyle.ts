@@ -133,6 +133,27 @@ export const LinkHerf = styled.a`
   }
 `;
 
+export const AuthActionButton = styled.button`
+  color: ${({ theme }) => theme.colors.textPrimary};
+
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 0;
+  background: transparent;
+
+  white-space: nowrap;
+
+  transition:
+    background-color 120ms ease,
+    color 120ms ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    font-weight: ${({ theme }) => theme.typography.headlineSmall.fontWeight};
+    color: ${({ theme }) => theme.colors.primary};
+  }
+`;
+
 export const TituloHeader = styled.h1`
   display: inline;
 
