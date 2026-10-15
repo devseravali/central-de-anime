@@ -11,6 +11,8 @@ import { Login } from './pages/Login/Login';
 import { Registro } from './pages/Registro/Registro';
 import { MeuProgresso } from './pages/MeuProgresso/MeuProgresso';
 import { ConfirmarEmail } from './pages/ConfirmarEmail/ConfirmarEmail';
+import { EsqueciSenha } from './pages/EsqueciSenha/EsqueciSenha';
+import { ResetPassword } from './pages/ResetPassword/ResetPassword';
 
 function App() {
     return (
@@ -28,6 +30,8 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/registro" element={<Registro />} />
                 <Route path="/confirmar-email" element={<ConfirmarEmail />} />
+                <Route path="/esqueci-minha-senha" element={<EsqueciSenha />} />
+                <Route path="/reset-password" element={<ResetPassword />} />
 
             </Routes>
         </main>
