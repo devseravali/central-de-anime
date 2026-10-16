@@ -9,6 +9,8 @@ import { Favoritos } from './pages/Favoritos/Favoritos';
 import { Route, Routes } from 'react-router-dom';
 import { Login } from './pages/Login/Login';
 import { Registro } from './pages/Registro/Registro';
+import { EditarPerfil } from './pages/EditarPerfil/EditarPerfil';
+import { Perfil } from './pages/Perfil/Perfil';
 import { MeuProgresso } from './pages/MeuProgresso/MeuProgresso';
 import { ConfirmarEmail } from './pages/ConfirmarEmail/ConfirmarEmail';
 import { EsqueciSenha } from './pages/EsqueciSenha/EsqueciSenha';
@@ -32,6 +34,8 @@ function App() {
                 <Route path="/confirmar-email" element={<ConfirmarEmail />} />
                 <Route path="/esqueci-minha-senha" element={<EsqueciSenha />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
+                <Route path="/perfil" element={<Perfil />} />
+                <Route path="/editar-perfil" element={<EditarPerfil />} />
 
             </Routes>
         </main>
