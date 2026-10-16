@@ -1,0 +1,458 @@
+import { Edit3, Share2 } from 'lucide-react';
+import { useEffect, useMemo, useState } from 'react';
+import { isAxiosError } from 'axios';
+import { useNavigate } from 'react-router-dom';
+
+import { api } from '../../services/api';
+
+import {
+    ActionButton,
+    Avatar,
+    BadgeCard,
+    BadgeDesc,
+    BadgeName,
+    BadgesGrid,
+    BadgeRow,
+    BadgeTag,
+    Container,
+    GenreItem,
+    GenreList,
+    GenreName,
+    GenreValue,
+    Hero,
+    HeroActions,
+    HeroBanner,
+    HeroContent,
+    Identity,
+    IdentityRow,
+    LevelCard,
+    LevelTop,
+    Meta,
+    Name,
+    Page,
+    Panel,
+    PanelTitle,
+    Progress,
+    ProgressFill,
+    Section,
+    SectionHeader,
+    SectionHeading,
+    SectionKicker,
+    SectionTitle,
+    StatCard,
+    StatLabel,
+    StatSub,
+    StatusBadge,
+    StatValue,
+    GridStats,
+    TwoColumn,
+    SpanError,
+} from './PerfilStyle';
+
+type PerfilApiResponse = {
+    usuario?: {
+        id?: number;
+        nome?: string;
+        email?: string;
+        avatar?: string | null;
+        status?: string;
+    };
+};
+
+type RankingPontosResponse = {
+    pontos?: number;
+};
+
+type FavoritoAnime = {
+    id?: number;
+    tipo?: string;
+};
+
+type FavoritoPersonagem = {
+    id?: number;
+};
+
+type ProgressAnime = {
+    titulo?: string;
+};
+
+type ProgressEpisodio = {
+    titulo?: string;
+    numero?: number;
+    anime?: ProgressAnime;
+};
+
+type ProgressItem = {
+    assistido?: boolean;
+    porcentagem?: number;
+    atualizadoEm?: string;
+    episodio?: ProgressEpisodio;
+};
+
+const defaultAvatar = 'https://via.placeholder.com/200';
+
+const getApiOrigin = (): string | null => {
+    const baseUrl = import.meta.env.VITE_API_URL;
+
+    if (typeof baseUrl !== 'string' || baseUrl.trim() === '') {
+        return null;
+    }
+
+    try {
+        return new URL(baseUrl).origin;
+    } catch {
+        return null;
+    }
+};
+
+const normalizeMediaUrl = (value: string | null | undefined): string | null => {
+    if (!value) {
+        return null;
+    }
+
+    const normalized = value.trim();
+
+    if (!normalized) {
+        return null;
+    }
+
+    if (/^https?:\/\//i.test(normalized)) {
+        return normalized;
+    }
+
+    const origin = getApiOrigin();
+
+    if (!origin) {
+        return normalized;
+    }
+
+    const relative = normalized
+        .replace(/\\/g, '/')
+        .replace(/^(?:\.\.\/)+/, '')
+        .replace(/^\/+/, '');
+
+    return `${origin}/${relative}`;
+};
+
+const getErrorMessage = (error: unknown): string => {
+    if (isAxiosError(error)) {
+        const status = error.response?.status;
+
+        if (status === 401 || status === 403) {
+            return '';
+        }
+
+        const message = error.response?.data?.message;
+
+        if (typeof message === 'string' && message.trim()) {
+            const normalized = message.toLowerCase();
+
+            if (normalized.includes('token') || normalized.includes('autentic')) {
+                return '';
+            }
+
+            return message;
+        }
+    }
+
+    if (error instanceof Error && error.message.trim()) {
+        return error.message;
+    }
+
+    return 'Não foi possível carregar seu perfil.';
+};
+
+export const Perfil = () => {
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(true);
+    const [errorMessage, setErrorMessage] = useState<string | null>(null);
+    const [nome, setNome] = useState('Perfil');
+    const [email, setEmail] = useState('');
+    const [avatar, setAvatar] = useState<string | null>(null);
+    const [status, setStatus] = useState<string>('Status indisponivel');
+    const [pontosArquivo, setPontosArquivo] = useState<number | null>(null);
+    const [totalFavoritosAnimes, setTotalFavoritosAnimes] = useState(0);
+    const [totalFavoritosPersonagens, setTotalFavoritosPersonagens] = useState(0);
+    const [episodiosConcluidos, setEpisodiosConcluidos] = useState(0);
+    const [totalProgressos, setTotalProgressos] = useState(0);
+    const [bannerPerfil, setBannerPerfil] = useState<string | null>(() => {
+        return normalizeMediaUrl(localStorage.getItem('userProfileBanner'));
+    });
+
+    useEffect(() => {
+        const syncBanner = () => {
+            setBannerPerfil(normalizeMediaUrl(localStorage.getItem('userProfileBanner')));
+        };
+
+        window.addEventListener('user-banner-updated', syncBanner);
+
+        return () => {
+            window.removeEventListener('user-banner-updated', syncBanner);
+        };
+    }, []);
+
+    useEffect(() => {
+        let mounted = true;
+
+        const carregarPerfil = async () => {
+            setLoading(true);
+            setErrorMessage(null);
+
+            const token = localStorage.getItem('accessToken');
+
+            if (!token) {
+                if (mounted) {
+                    setErrorMessage('Sessão não encontrada. Faça login para ver seu perfil.');
+                    setLoading(false);
+                }
+                return;
+            }
+
+            try {
+                const response = await api.get<PerfilApiResponse>('/usuario/me', {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+                });
+
+                const usuario = response.data?.usuario;
+
+                if (!mounted) {
+                    return;
+                }
+
+                const id = Number(usuario?.id);
+
+                setNome(usuario?.nome?.trim() || 'Perfil');
+                setEmail(usuario?.email?.trim() || '');
+                setAvatar(normalizeMediaUrl(usuario?.avatar) ?? null);
+                setStatus(usuario?.status?.trim() || 'Status indisponivel');
+
+                if (!Number.isInteger(id) || id <= 0) {
+                    setErrorMessage('Não foi possível identificar seu usuário para carregar os demais dados.');
+                    return;
+                }
+
+                const [pontosRes, favoritosAnimesRes, favoritosPersonagensRes, progressosRes] = await Promise.allSettled([
+                    api.get<RankingPontosResponse>(`/ranking/${id}/pontos`, {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+                    }),
+                    api.get<FavoritoAnime[]>(`/usuarios/${id}/favoritos/animes`, {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+                    }),
+                    api.get<FavoritoPersonagem[]>(`/usuarios/${id}/favoritos/personagens`, {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+                    }),
+                    api.get<ProgressItem[]>(`/usuarios/${id}/progressos`, {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+                    }),
+                ]);
+
+                if (pontosRes.status === 'fulfilled') {
+                    const pontos = Number(pontosRes.value.data?.pontos);
+                    setPontosArquivo(Number.isFinite(pontos) ? pontos : null);
+                }
+
+                if (favoritosAnimesRes.status === 'fulfilled') {
+                    const favoritos = Array.isArray(favoritosAnimesRes.value.data)
+                        ? favoritosAnimesRes.value.data
+                        : [];
+
+                    setTotalFavoritosAnimes(favoritos.length);
+                }
+
+                if (favoritosPersonagensRes.status === 'fulfilled') {
+                    const favoritosPersonagens = Array.isArray(favoritosPersonagensRes.value.data)
+                        ? favoritosPersonagensRes.value.data
+                        : [];
+
+                    setTotalFavoritosPersonagens(favoritosPersonagens.length);
+                }
+
+                if (progressosRes.status === 'fulfilled') {
+                    const progressos = Array.isArray(progressosRes.value.data)
+                        ? progressosRes.value.data
+                        : [];
+
+                    setTotalProgressos(progressos.length);
+                    setEpisodiosConcluidos(progressos.filter((item) => item.assistido === true).length);
+                }
+            } catch (error) {
+                if (!mounted) {
+                    return;
+                }
+
+                setErrorMessage(getErrorMessage(error));
+            } finally {
+                if (mounted) {
+                    setLoading(false);
+                }
+            }
+        };
+
+        carregarPerfil();
+
+        return () => {
+            mounted = false;
+        };
+    }, []);
+
+    const metaPerfil = useMemo(() => {
+        const emailLabel = email || 'e-mail indisponível';
+        return `${emailLabel}`;
+    }, [email]);
+
+    const statCards = useMemo(() => {
+        return [
+            {
+                label: 'Registros',
+                value: String(totalProgressos),
+                sub: 'Entradas no logbook',
+            },
+            {
+                label: 'Concluídos',
+                value: String(episodiosConcluidos),
+                sub: 'Episódios finalizados',
+            },
+            {
+                label: 'Favoritos',
+                value: String(totalFavoritosAnimes + totalFavoritosPersonagens),
+                sub: `${totalFavoritosAnimes} animes + ${totalFavoritosPersonagens} personagens`,
+            },
+            {
+                label: 'Ranking',
+                value: pontosArquivo !== null ? pontosArquivo.toLocaleString('pt-BR') : '—',
+                sub: 'Pontos acumulados',
+            },
+        ];
+    }, [episodiosConcluidos, pontosArquivo, totalFavoritosAnimes, totalFavoritosPersonagens, totalProgressos]);
+
+    return (
+        <Page as="main" aria-labelledby="perfil-titulo-principal">
+            <Container>
+                <Hero as="header">
+                    <HeroBanner aria-hidden="true" $imageUrl={bannerPerfil} />
+
+                    <HeroContent>
+                        <IdentityRow>
+                            <Avatar
+                                src={avatar || defaultAvatar}
+                                alt="Avatar do usuário"
+                            />
+
+                            <Identity>
+                                <Name id="perfil-titulo-principal">{loading ? 'Carregando...' : nome}</Name>
+                                <Meta>{metaPerfil}</Meta>
+
+                                <BadgeRow aria-label="Status do perfil">
+                                    <StatusBadge as="li">{status}</StatusBadge>
+                                    <StatusBadge as="li">Dados sincronizados</StatusBadge>
+                                </BadgeRow>
+                            </Identity>
+                        </IdentityRow>
+
+                        <HeroActions aria-label="Ações do perfil">
+                            <ActionButton onClick={() => navigate('/editar-perfil')}>
+                                <Edit3 size={16} />
+                                Editar perfil
+                            </ActionButton>
+
+                            <ActionButton $variant="secondary">
+                                <Share2 size={16} />
+                                Compartilhar
+                            </ActionButton>
+                        </HeroActions>
+                    </HeroContent>
+                </Hero>
+
+                <LevelCard as="section" aria-label="Progresso de nível">
+                    <LevelTop>
+                        <span>Progresso no ranking</span>
+                        <strong>{pontosArquivo !== null ? `${pontosArquivo.toLocaleString('pt-BR')} pts` : 'Sem dados'}</strong>
+                    </LevelTop>
+                    <Progress>
+                        <ProgressFill $value={pontosArquivo !== null ? Math.min(100, Math.max(0, (pontosArquivo / 10000) * 100)) : 0} />
+                    </Progress>
+                </LevelCard>
+
+                {errorMessage && (
+                    <LevelCard as="section" aria-label="Erro no carregamento do perfil">
+                        <LevelTop>
+                            <SpanError>{errorMessage}</SpanError>
+                        </LevelTop>
+                    </LevelCard>
+                )}
+
+                <Section aria-labelledby="indicadores-arquivo">
+                    <SectionHeader>
+                        <SectionHeading>
+                            <SectionKicker>Visão geral</SectionKicker>
+                            <SectionTitle id="indicadores-arquivo">Indicadores da sua conta</SectionTitle>
+                        </SectionHeading>
+                    </SectionHeader>
+
+                    <GridStats>
+                        {statCards.map((item) => (
+                            <StatCard as="li" key={item.label}>
+                                <StatLabel>{item.label}</StatLabel>
+                                <StatValue>{item.value}</StatValue>
+                                <StatSub>{item.sub}</StatSub>
+                            </StatCard>
+                        ))}
+                    </GridStats>
+                </Section>
+
+                <TwoColumn>
+                    <Panel as="section" aria-labelledby="generos-afinidade">
+                        <PanelTitle as="h3" id="generos-afinidade">
+                            Resumo
+                        </PanelTitle>
+
+                        <GenreList aria-label="Mapa de afinidade por gênero">
+                            <GenreItem>
+                                <GenreName>Animes favoritados</GenreName>
+                                <GenreValue>{totalFavoritosAnimes}</GenreValue>
+                            </GenreItem>
+
+                            <GenreItem>
+                                <GenreName>Personagens favoritados</GenreName>
+                                <GenreValue>{totalFavoritosPersonagens}</GenreValue>
+                            </GenreItem>
+
+                            <GenreItem>
+                                <GenreName>Episódios concluídos</GenreName>
+                                <GenreValue>{episodiosConcluidos}</GenreValue>
+                            </GenreItem>
+                        </GenreList>
+                    </Panel>
+                </TwoColumn>
+
+                <Section aria-labelledby="conquistas-badges">
+                    <SectionHeader>
+                        <SectionTitle id="conquistas-badges">
+                            Conquistas e badges desbloqueadas
+                        </SectionTitle>
+                    </SectionHeader>
+
+                    <BadgesGrid>
+                        <BadgeCard as="li">
+                            <BadgeTag>Sem dados</BadgeTag>
+                            <BadgeName>Conquistas indisponíveis</BadgeName>
+                            <BadgeDesc>
+                                Esta seção será preenchida quando houver endpoint de badges/conquistas no backend.
+                            </BadgeDesc>
+                        </BadgeCard>
+                    </BadgesGrid>
+                </Section>
+            </Container>
+        </Page>
+    );
+};
