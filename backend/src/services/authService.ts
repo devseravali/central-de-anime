@@ -58,7 +58,7 @@ if (!JWT_SECRET) {
 }
 
 const ACCESS_TOKEN_EXPIRES =
-    process.env.ACCESS_TOKEN_EXPIRES ?? '15m';
+    process.env.ACCESS_TOKEN_EXPIRES ?? '12h';
 
 const REFRESH_TOKEN_EXPIRES_DAYS = Number(
     process.env.REFRESH_TOKEN_EXPIRES_DAYS ?? 30
