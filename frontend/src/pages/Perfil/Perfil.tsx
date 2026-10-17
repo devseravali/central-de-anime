@@ -89,6 +89,27 @@ type ProgressItem = {
     episodio?: ProgressEpisodio;
 };
 
+type ConquistaItem = {
+    id: string;
+    nome: string;
+    descricao: string;
+    categoria: string;
+    unlocked: boolean;
+    progress?: {
+        current?: number;
+        target?: number;
+        percent?: number;
+    };
+};
+
+type ConquistasResponse = {
+    resumo?: {
+        total?: number;
+        desbloqueadas?: number;
+    };
+    conquistas?: ConquistaItem[];
+};
+
 const defaultAvatar = 'https://via.placeholder.com/200';
 
 const getApiOrigin = (): string | null => {
@@ -175,6 +196,8 @@ export const Perfil = () => {
     const [totalFavoritosPersonagens, setTotalFavoritosPersonagens] = useState(0);
     const [episodiosConcluidos, setEpisodiosConcluidos] = useState(0);
     const [totalProgressos, setTotalProgressos] = useState(0);
+    const [conquistas, setConquistas] = useState<ConquistaItem[]>([]);
+    const [totalConquistasDesbloqueadas, setTotalConquistasDesbloqueadas] = useState(0);
     const [bannerPerfil, setBannerPerfil] = useState<string | null>(() => {
         return normalizeMediaUrl(localStorage.getItem('userProfileBanner'));
     });
@@ -233,7 +256,7 @@ export const Perfil = () => {
                     return;
                 }
 
-                const [pontosRes, favoritosAnimesRes, favoritosPersonagensRes, progressosRes] = await Promise.allSettled([
+                const [pontosRes, favoritosAnimesRes, favoritosPersonagensRes, progressosRes, conquistasRes] = await Promise.allSettled([
                     api.get<RankingPontosResponse>(`/ranking/${id}/pontos`, {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -250,6 +273,11 @@ export const Perfil = () => {
                         },
                     }),
                     api.get<ProgressItem[]>(`/usuarios/${id}/progressos`, {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+                    }),
+                    api.get<ConquistasResponse>(`/usuarios/${id}/conquistas`, {
                         headers: {
                             Authorization: `Bearer ${token}`,
                         },
@@ -284,6 +312,16 @@ export const Perfil = () => {
 
                     setTotalProgressos(progressos.length);
                     setEpisodiosConcluidos(progressos.filter((item) => item.assistido === true).length);
+                }
+
+                if (conquistasRes.status === 'fulfilled') {
+                    const payload = conquistasRes.value.data;
+                    const conquistasList = Array.isArray(payload?.conquistas)
+                        ? payload.conquistas
+                        : [];
+
+                    setConquistas(conquistasList);
+                    setTotalConquistasDesbloqueadas(Number(payload?.resumo?.desbloqueadas ?? 0));
                 }
             } catch (error) {
                 if (!mounted) {
@@ -438,19 +476,44 @@ export const Perfil = () => {
                 <Section aria-labelledby="conquistas-badges">
                     <SectionHeader>
                         <SectionTitle id="conquistas-badges">
-                            Conquistas e badges desbloqueadas
+                            Conquistas e badges
                         </SectionTitle>
                     </SectionHeader>
 
                     <BadgesGrid>
-                        <BadgeCard as="li">
-                            <BadgeTag>Sem dados</BadgeTag>
-                            <BadgeName>Conquistas indisponíveis</BadgeName>
-                            <BadgeDesc>
-                                Esta seção será preenchida quando houver endpoint de badges/conquistas no backend.
-                            </BadgeDesc>
-                        </BadgeCard>
+                        {conquistas.length > 0 ? (
+                            conquistas.map((conquista) => {
+                                const percent = Number(conquista.progress?.percent ?? 0);
+                                const current = Number(conquista.progress?.current ?? 0);
+                                const target = Number(conquista.progress?.target ?? 0);
+
+                                return (
+                                    <BadgeCard as="li" key={conquista.id}>
+                                        <BadgeTag>{conquista.unlocked ? 'Desbloqueada' : 'Em progresso'}</BadgeTag>
+                                        <BadgeName>{conquista.nome}</BadgeName>
+                                        <BadgeDesc>{conquista.descricao}</BadgeDesc>
+                                        <BadgeDesc>
+                                            Progresso: {current}/{target} ({Math.max(0, Math.min(100, percent))}%)
+                                        </BadgeDesc>
+                                    </BadgeCard>
+                                );
+                            })
+                        ) : (
+                            <BadgeCard as="li">
+                                <BadgeTag>Sem dados</BadgeTag>
+                                <BadgeName>Nenhuma conquista encontrada</BadgeName>
+                                <BadgeDesc>
+                                    Continue assistindo episodios e favoritando conteudos para desbloquear badges.
+                                </BadgeDesc>
+                            </BadgeCard>
+                        )}
                     </BadgesGrid>
+
+                    {conquistas.length > 0 && (
+                        <BadgeDesc>
+                            {totalConquistasDesbloqueadas} de {conquistas.length} conquistas desbloqueadas.
+                        </BadgeDesc>
+                    )}
                 </Section>
             </Container>
         </Page>
