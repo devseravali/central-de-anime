@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { animeService } from '../../services/anime.service';
 import { favoritoService } from '../../services/favorito.service';
+import { temporadaService } from '../../services/temporada.service';
 import { userService } from '../../services/user.service';
 import { AnimeInfo } from '../../components/anime/AnimeInfo/AnimeInfo';
 import { AnimeStats } from '../../components/anime/AnimeStats/AnimeStats';
-import { EpisodioItem } from '../../components/anime/EpisodioItem/EpisodioItem';
 import type { AnimeData } from '../../types/AnimeData';
+import type { TemporadaResumo } from '../../types/Temporada';
 import {
     DetalhesAnimeContainer,
     FigureImage,
@@ -30,6 +31,37 @@ import {
 } from './DetalhesAnimeStyle';
 import { PersonagemCard } from '../../components/anime/PersonagemCard/PersonagemCard';
 import usePersonagens from '../../hooks/UsePersonagens/UsePersonagens';
+import placeholder from '../../assets/placeholder.jpg';
+import {
+    EpisodiosGrid,
+    EpisodioItemContainer,
+    EpisodioItemImage,
+    EpisodioItemTitle,
+    Small,
+    EpisodioItemSinopse,
+} from '../../components/anime/EpisodioItem/EpisodioStyle';
+
+const apiUrl = (
+  import.meta.env.VITE_API_URL ?? 'http://localhost:3000'
+).replace(/\/+$/, '');
+
+const serverUrl = apiUrl.replace(/\/api\/v1$/, '');
+
+function resolveEpisodioImageUrl(imagemUrl: string): string {
+    if (/^https?:\/\//i.test(imagemUrl)) {
+        return imagemUrl;
+    }
+
+    const normalizedPath = imagemUrl
+        .trim()
+        .replace(/\\/g, '/');
+
+    if (normalizedPath.startsWith('/')) {
+        return `${serverUrl}${normalizedPath}`;
+    }
+
+    return `${serverUrl}/${normalizedPath}`;
+}
 
 export const DetalhesAnime = () => {
     const { id } = useParams<{ id: string }>();
@@ -54,6 +86,15 @@ export const DetalhesAnime = () => {
 
     const [usuarioId, setUsuarioId] =
         useState<number | null>(null);
+
+    const [temporadas, setTemporadas] =
+        useState<TemporadaResumo[]>([]);
+
+    const [loadingTemporadas, setLoadingTemporadas] =
+        useState(false);
+
+    const [errorTemporadas, setErrorTemporadas] =
+        useState<string | null>(null);
 
     useEffect(() => {
         if (!id) {
@@ -97,6 +138,57 @@ export const DetalhesAnime = () => {
         };
 
         fetchAnime();
+
+        return () => {
+            mounted = false;
+        };
+    }, [id]);
+
+    useEffect(() => {
+        if (!id) {
+            return;
+        }
+
+        const animeId = Number(id);
+
+        if (!Number.isInteger(animeId) || animeId <= 0) {
+            return;
+        }
+
+        let mounted = true;
+
+        const fetchTemporadas = async () => {
+            setLoadingTemporadas(true);
+            setErrorTemporadas(null);
+
+            try {
+                const data =
+                    await temporadaService.listarTemporadasPorAnime(animeId);
+
+                if (!mounted) {
+                    return;
+                }
+
+                setTemporadas(data);
+            } catch (err: unknown) {
+                if (!mounted) {
+                    return;
+                }
+
+                setTemporadas([]);
+                setErrorTemporadas(
+                    err instanceof Error
+                        ? err.message
+                        : 'Erro ao carregar temporadas.'
+                );
+            } finally {
+                if (mounted) {
+                    setLoadingTemporadas(false);
+                }
+            }
+        };
+
+        fetchTemporadas();
 
         return () => {
             mounted = false;
@@ -329,7 +421,57 @@ export const DetalhesAnime = () => {
                 </DetalhesContent>
             </ArticleDetalhes>
 
-            <EpisodioItem animeId={anime.id} />
+            <SectionBlock aria-labelledby="episodios-anime">
+                <DetalhesH2 id="episodios-anime">Episodios por temporada</DetalhesH2>
+
+                {loadingTemporadas ? (
+                    <DetalhesParagraph>Carregando episodios...</DetalhesParagraph>
+                ) : errorTemporadas ? (
+                    <ErrorDetalhes>Erro: {errorTemporadas}</ErrorDetalhes>
+                ) : temporadas.length > 0 ? (
+                    temporadas.map((temporada) => (
+                        <SectionBlock
+                            key={`${temporada.animeId ?? anime.id}-${temporada.numero}`}
+                            aria-label={`Temporada ${temporada.numero}`}
+                        >
+                            <DetalhesH2>
+                                Temporada {temporada.numero} ({temporada.quantidadeEpisodios} episodios)
+                            </DetalhesH2>
+
+                            <EpisodiosGrid>
+                                {temporada.episodios.map((episodio) => {
+                                    const imagemSrc = episodio.imagemUrl
+                                        ? resolveEpisodioImageUrl(episodio.imagemUrl)
+                                        : placeholder;
+
+                                    return (
+                                        <EpisodioItemContainer key={episodio.id}>
+                                            <EpisodioItemTitle>{episodio.titulo}</EpisodioItemTitle>
+                                            <Small>Ep. {episodio.numero ?? '-'}</Small>
+                                            <EpisodioItemImage
+                                                src={imagemSrc}
+                                                alt={episodio.titulo}
+                                                onError={(event) => {
+                                                    event.currentTarget.onerror = null;
+                                                    event.currentTarget.src = placeholder;
+                                                }}
+                                            />
+
+                                            {episodio.sinopse && (
+                                                <EpisodioItemSinopse>
+                                                    {episodio.sinopse}
+                                                </EpisodioItemSinopse>
+                                            )}
+                                        </EpisodioItemContainer>
+                                    );
+                                })}
+                            </EpisodiosGrid>
+                        </SectionBlock>
+                    ))
+                ) : (
+                    <DetalhesParagraph>Nenhum episodio disponivel para este anime.</DetalhesParagraph>
+                )}
+            </SectionBlock>
 
             <SectionBlock aria-labelledby="personagens-anime">
                 <DetalhesH2 id="personagens-anime">Personagens</DetalhesH2>
