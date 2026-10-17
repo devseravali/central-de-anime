@@ -6,8 +6,8 @@ export const exportService = {
         return response.data;
     },
 
-    animesBatch: async () => {
-        const response = await api.get('/animes/batch');
+    animesBatch: async (ids: number[] = []) => {
+        const response = await api.post('/animes/batch', { ids });
         return response.data;
     }
 };
