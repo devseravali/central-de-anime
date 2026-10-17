@@ -12,12 +12,12 @@ export const rankingService = {
     },
 
     atualizarPontos: async (usuarioId: number, pontos: number) => {
-        const response = await api.put(`/ranking/${usuarioId}/atualizar`, { pontos });
+        const response = await api.post(`/ranking/${usuarioId}/atualizar`, { pontos });
         return response.data;
     },
 
     recalcularPontos: async (usuarioId: number) => {
-        const response = await api.put(`/ranking/${usuarioId}/recalcular`);
+        const response = await api.post(`/ranking/${usuarioId}/recalcular`);
         return response.data;
     },
 
