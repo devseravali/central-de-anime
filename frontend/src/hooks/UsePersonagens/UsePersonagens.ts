@@ -1,5 +1,7 @@
 import React from "react";
 
+const DEFAULT_API_URL = (import.meta.env.VITE_API_URL ?? "http://localhost:3000").replace(/\/+$/, "");
+
 export type Personagem = {
   id?: number;
   nome?: string;
@@ -9,13 +11,13 @@ export type Personagem = {
 
 type UsePersonagensOptions = {
   animeId?: number | string;
-  urlBase?: string; // ex: http://localhost:3000/personagens
+  urlBase?: string; 
   enabled?: boolean;
 };
 
 export const usePersonagens = ({
   animeId,
-  urlBase = "http://localhost:3000/personagens",
+  urlBase = `${DEFAULT_API_URL}/personagens`,
   enabled = true,
 }: UsePersonagensOptions) => {
   const [data, setData] = React.useState<Personagem[] | null>(null);
