@@ -15,7 +15,7 @@ export const episodioService = {
 
     listarEpisodiosPorAnime: async (id: number) => {
         const response = await api.get(
-            `animes/${id}/episodios`
+            `/animes/${id}/episodios`
         );
 
         return response.data;
