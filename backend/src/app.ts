@@ -38,6 +38,62 @@ const currentDir = path.dirname(currentFilePath);
 const imagesDir = path.resolve(currentDir, '..', 'images');
 const frontendUrl = (process.env.FRONTEND_URL ?? 'http://localhost:5173').replace(/\/+$/g, '');
 
+const API_PORT = Number(process.env.PORT ?? 3000);
+
+const normalizeOrigin = (origin: string): string => origin.trim().replace(/\/+$/g, '');
+
+const parseAllowedOrigins = (): string[] => {
+    const origins = new Set<string>([
+        'http://localhost:5173',
+        'http://127.0.0.1:5173',
+    ]);
+
+    const configuredOrigins = [
+        process.env.FRONTEND_URL,
+        process.env.FRONTEND_ALLOWED_ORIGINS,
+    ]
+        .filter((value): value is string => typeof value === 'string' && value.trim().length > 0)
+        .flatMap((value) => value.split(','))
+        .map((value) => normalizeOrigin(value))
+        .filter((value) => value.length > 0);
+
+    configuredOrigins.forEach((origin) => origins.add(origin));
+
+    return Array.from(origins).filter((origin) => {
+        try {
+            const parsed = new URL(origin);
+            const apiHosts = new Set(['localhost', '127.0.0.1']);
+            const isLocalApiOrigin =
+                apiHosts.has(parsed.hostname) &&
+                Number(parsed.port || (parsed.protocol === 'https:' ? 443 : 80)) === API_PORT;
+
+            return !isLocalApiOrigin;
+        } catch {
+            return false;
+        }
+    });
+};
+
+const allowedOrigins = parseAllowedOrigins();
+const corsOptions: cors.CorsOptions = {
+    credentials: true,
+    origin: (origin, callback) => {
+        if (!origin) {
+            callback(null, true);
+            return;
+        }
+
+        const normalizedOrigin = normalizeOrigin(origin);
+
+        if (allowedOrigins.includes(normalizedOrigin)) {
+            callback(null, true);
+            return;
+        }
+
+        callback(new Error('Origem não permitida pelo CORS'));
+    },
+};
+
 app.use(
     helmet({
         contentSecurityPolicy: false,
@@ -47,7 +103,7 @@ app.use(
     })
 );
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
