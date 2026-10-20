@@ -28,42 +28,81 @@ export interface VerifyEmailData {
   token: string;
 }
 
+export interface AuthUser {
+  id: number;
+  nome: string;
+  email: string;
+  avatar?: string | null;
+  status?: string;
+  criadoEm?: string;
+  atualizadoEm?: string;
+}
+
+export interface LoginResponse {
+  user: AuthUser;
+  accessToken: string;
+  refreshExpiraEm: string;
+}
+
+export interface RefreshResponse {
+  accessToken: string;
+  user: AuthUser;
+  refreshExpiraEm: string;
+}
+
+export interface ForgotPasswordResponse {
+  message: string;
+  resetToken?: string;
+}
+
+export interface ResetPasswordResponse extends LoginResponse {
+  message: string;
+}
+
+export interface AuthMessageResponse {
+  message: string;
+}
+
 export const authService = {
-  register: async (data: RegisterData) => {
-    const response = await api.post('/auth/register', data);
+  register: async (data: RegisterData): Promise<AuthUser> => {
+    const response = await api.post<AuthUser>('/auth/register', data);
     return response.data;
   },
 
-  login: async (data: LoginData) => {
-    const response = await api.post('/auth/login', data);
+  login: async (data: LoginData): Promise<LoginResponse> => {
+    const response = await api.post<LoginResponse>('/auth/login', data);
     return response.data;
   },
 
-  refresh: async (data?: RefreshData) => {
-    const response = await api.post('/auth/refresh', data);
+  refresh: async (data?: RefreshData): Promise<RefreshResponse> => {
+    const response = await api.post<RefreshResponse>('/auth/refresh', data, {
+      withCredentials: true,
+    });
     return response.data;
   },
 
-  forgotPassword: async (email: string) => {
-    const response = await api.post('/auth/forgot-password', {
+  forgotPassword: async (email: string): Promise<ForgotPasswordResponse> => {
+    const response = await api.post<ForgotPasswordResponse>('/auth/forgot-password', {
       email,
     });
     return response.data;
   },
 
-  resetPassword: async (data: ResetPasswordData) => {
-    const response = await api.post('/auth/reset-password', data);
+  resetPassword: async (data: ResetPasswordData): Promise<ResetPasswordResponse> => {
+    const response = await api.post<ResetPasswordResponse>('/auth/reset-password', data);
 
     return response.data;
   },
 
-  logout: async (data?: LogoutData) => {
-    const response = await api.post('/auth/logout', data);
+  logout: async (data?: LogoutData): Promise<AuthMessageResponse> => {
+    const response = await api.post<AuthMessageResponse>('/auth/logout', data, {
+      withCredentials: true,
+    });
     return response.data;
   },
 
-  verifyEmail: async (data: VerifyEmailData) => {
-    const response = await api.post('/auth/verify-email', data);
+  verifyEmail: async (data: VerifyEmailData): Promise<AuthMessageResponse> => {
+    const response = await api.post<AuthMessageResponse>('/auth/verify-email', data);
     return response.data;
   },
 };
