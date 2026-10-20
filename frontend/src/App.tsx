@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Footer } from './components/layout/Footer/Footer';
 import { Header } from './components/layout/Header/Header';
 import { Erro404 } from './pages/Erro404/Erro404';
@@ -16,8 +17,13 @@ import { MeuProgresso } from './pages/MeuProgresso/MeuProgresso';
 import { ConfirmarEmail } from './pages/ConfirmarEmail/ConfirmarEmail';
 import { EsqueciSenha } from './pages/EsqueciSenha/EsqueciSenha';
 import { ResetPassword } from './pages/ResetPassword/ResetPassword';
+import { bootstrapAuthSession } from './services/api';
 
 function App() {
+    useEffect(() => {
+        void bootstrapAuthSession();
+    }, []);
+
     return (
         <>
         <Header />
