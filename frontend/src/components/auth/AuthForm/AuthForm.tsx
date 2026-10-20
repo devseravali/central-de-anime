@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { isAxiosError } from 'axios';
 import { useMutation } from '@tanstack/react-query';
 import { Lock, Mail, Eye, EyeOff } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 import { authService } from '../../../services/auth.service';
+import { setAccessToken } from '../../../services/api';
 import {
     AuthPage,
     AuthShell,
@@ -43,7 +44,7 @@ interface AuthFormProps {
 
 const REMEMBER_CREDENTIALS_KEY = 'rememberCredentials';
 const REMEMBER_EMAIL_KEY = 'rememberedEmail';
-const REMEMBER_PASSWORD_KEY = 'rememberedPassword';
+const LEGACY_REMEMBER_PASSWORD_KEY = 'rememberedPassword';
 
 const getErrorMessage = (error: unknown): string => {
     if (isAxiosError(error)) {
@@ -66,12 +67,19 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
 
     const isLogin = mode === 'login';
 
+    useEffect(() => {
+        if (typeof window === 'undefined') {
+            return;
+        }
+
+        localStorage.removeItem(LEGACY_REMEMBER_PASSWORD_KEY);
+    }, []);
+
     const rememberedLoginData = (() => {
         if (!isLogin || typeof window === 'undefined') {
             return {
                 lembrar: false,
                 email: '',
-                senha: '',
             };
         }
 
@@ -82,20 +90,18 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
             return {
                 lembrar: false,
                 email: '',
-                senha: '',
             };
         }
 
         return {
             lembrar: true,
             email: localStorage.getItem(REMEMBER_EMAIL_KEY) ?? '',
-            senha: localStorage.getItem(REMEMBER_PASSWORD_KEY) ?? '',
         };
     })();
 
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState(rememberedLoginData.email);
-    const [senha, setSenha] = useState(rememberedLoginData.senha);
+    const [senha, setSenha] = useState('');
     const [confirmarSenha, setConfirmarSenha] = useState('');
     const [lembrar, setLembrar] = useState(rememberedLoginData.lembrar);
     const [mostrarSenha, setMostrarSenha] = useState(false);
@@ -137,21 +143,27 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
             setErrorMessage(null);
 
             if (isLogin) {
-                const accessToken = (result as { accessToken?: string } | undefined)?.accessToken;
+                const accessToken =
+                    typeof result === 'object' &&
+                    result !== null &&
+                    'accessToken' in result &&
+                    typeof result.accessToken === 'string'
+                        ? result.accessToken
+                        : '';
 
                 if (accessToken) {
-                    localStorage.setItem('accessToken', accessToken);
+                    setAccessToken(accessToken);
                 }
 
                 if (lembrar) {
                     localStorage.setItem(REMEMBER_CREDENTIALS_KEY, 'true');
                     localStorage.setItem(REMEMBER_EMAIL_KEY, email.trim());
-                    localStorage.setItem(REMEMBER_PASSWORD_KEY, senha);
                 } else {
                     localStorage.removeItem(REMEMBER_CREDENTIALS_KEY);
                     localStorage.removeItem(REMEMBER_EMAIL_KEY);
-                    localStorage.removeItem(REMEMBER_PASSWORD_KEY);
                 }
+
+                localStorage.removeItem(LEGACY_REMEMBER_PASSWORD_KEY);
 
                 setSuccessMessage('Login realizado com sucesso.');
                 navigate('/explorar');
