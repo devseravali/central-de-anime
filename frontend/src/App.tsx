@@ -1,5 +1,6 @@
 import { Footer } from './components/layout/Footer/Footer';
 import { Header } from './components/layout/Header/Header';
+import { Erro404 } from './pages/Erro404/Erro404';
 import { Explorar } from './pages/Explorar/Explorar';
 import { DetalhesAnime } from './pages/DetalhesAnime/DetalhesAnime';
 import { DetalhesPersonagens } from './pages/DetalhesPersonagens/DetalhesPersonagens';
@@ -22,10 +23,10 @@ function App() {
         <Header />
         <main>
             <Routes>
+                <Route path="/" element={<Home />} />
                 <Route path="/explorar" element={<Explorar />} />
                 <Route path="/animes/:id" element={<DetalhesAnime />} />
                 <Route path="/personagens/:id" element={<DetalhesPersonagens />} />
-                <Route path="*" element={<Home />} />
                 <Route path="/ranking" element={<Ranking />} />
                 <Route path="/favoritos" element={<Favoritos />} />
                 <Route path="/progresso" element={<MeuProgresso />} />
@@ -36,7 +37,7 @@ function App() {
                 <Route path="/reset-password" element={<ResetPassword />} />
                 <Route path="/perfil" element={<Perfil />} />
                 <Route path="/editar-perfil" element={<EditarPerfil />} />
-
+                <Route path="*" element={<Erro404 />} />
             </Routes>
         </main>
         <Footer />
