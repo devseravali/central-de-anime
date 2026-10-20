@@ -5,6 +5,7 @@ import axios, {
 } from 'axios';
 
 const ACCESS_TOKEN_STORAGE_KEY = 'accessToken';
+const AUTH_SESSION_HINT_STORAGE_KEY = 'authSessionHint';
 const AUTH_STATE_CHANGED_EVENT = 'auth-state-changed';
 
 type RetriableRequestConfig = InternalAxiosRequestConfig & {
@@ -67,12 +68,21 @@ export const getAccessToken = (): string => {
   return localStorage.getItem(ACCESS_TOKEN_STORAGE_KEY) ?? '';
 };
 
+const hasAuthSessionHint = (): boolean => {
+  if (typeof window === 'undefined') {
+    return false;
+  }
+
+  return localStorage.getItem(AUTH_SESSION_HINT_STORAGE_KEY) === '1';
+};
+
 export const setAccessToken = (token: string) => {
   if (typeof window === 'undefined') {
     return;
   }
 
   localStorage.setItem(ACCESS_TOKEN_STORAGE_KEY, token);
+  localStorage.setItem(AUTH_SESSION_HINT_STORAGE_KEY, '1');
   dispatchAuthStateChanged();
 };
 
@@ -82,6 +92,7 @@ export const clearAuthSession = () => {
   }
 
   localStorage.removeItem(ACCESS_TOKEN_STORAGE_KEY);
+  localStorage.removeItem(AUTH_SESSION_HINT_STORAGE_KEY);
   localStorage.removeItem('refreshToken');
   dispatchAuthStateChanged();
 };
@@ -137,7 +148,7 @@ const queueRefreshToken = async (): Promise<string | null> => {
 export const bootstrapAuthSession = async (): Promise<void> => {
   const token = getAccessToken();
 
-  if (token) {
+  if (token || !hasAuthSessionHint()) {
     return;
   }
 
@@ -187,6 +198,10 @@ api.interceptors.response.use(
     }
 
     if (isAuthEndpoint(requestConfig.url)) {
+      return Promise.reject(error);
+    }
+
+    if (!getAccessToken() && !hasAuthSessionHint()) {
       return Promise.reject(error);
     }
 
