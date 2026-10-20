@@ -8,7 +8,7 @@ export const AnimeCardContainer = styled.article`
   padding: 12px;
   text-align: center;
   cursor: pointer;
-  background: ${({ theme }) => theme.colors.surface || '#fff'};
+  background: ${({ theme }) => theme.colors.surface};
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transition: transform 0.25s, box-shadow 0.25s;
   will-change: transform;
