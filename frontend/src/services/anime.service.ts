@@ -75,6 +75,13 @@ interface RespostaAnimesPaginada {
   perPage?: number;
 }
 
+interface RespostaBuscaAnimes {
+  items: AnimeComEstudio[];
+  total: number;
+  page: number;
+  perPage: number;
+}
+
 const normalizeStudio = (item: AnimeComEstudio): AnimeComEstudio => {
   if (typeof item.estudio === 'string') {
     return item;
@@ -256,14 +263,35 @@ export const animeService = {
     };
   },
 
-  buscarAnimes: async (query: string): Promise<AnimeData[]> => {
-    const response = await api.get<AnimeData[]>('/animes/search', {
+  buscarAnimes: async (
+    query: string,
+    params: ListarAnimesParams = {}
+  ): Promise<ListarAnimesResponse> => {
+    const response = await api.get<RespostaBuscaAnimes>('/animes/search', {
       params: {
         query,
+        limit: params.perPage,
+        page: params.page,
       },
     });
 
-    return response.data;
+    const payload = response.data;
+    let items = Array.isArray(payload.items)
+      ? payload.items.map(normalizeStudio)
+      : [];
+
+    items = await fillStudiosFromMap(items);
+    items = await fillEstacoesFromMap(items);
+
+    return {
+      items: items.map(toAnimeData),
+      total: typeof payload.total === 'number' ? payload.total : 0,
+      page: typeof payload.page === 'number' ? payload.page : params.page ?? 1,
+      perPage:
+        typeof payload.perPage === 'number'
+          ? payload.perPage
+          : params.perPage ?? 20,
+    };
   },
 
   buscarAnime: async (id: number): Promise<AnimeData> => {
@@ -344,8 +372,15 @@ export const animeService = {
       }
     }
 
-    return {
+    const normalizedGeneros = Array.isArray(data.generos)
+      ? data.generos.filter(
+          (genero): genero is string => typeof genero === 'string'
+        )
+      : undefined;
+
+    const normalizedAnime: AnimeData = {
       ...data,
+      generos: normalizedGeneros,
       temporada: Number(data.temporada ?? 0),
       quantidadeEpisodios: Number(data.quantidadeEpisodios ?? 0),
       franquiaId: data.franquiaId ?? undefined,
@@ -358,7 +393,9 @@ export const animeService = {
       status: typeof data.status === 'string' ? data.status : undefined,
       franquia: typeof data.franquia === 'string' ? data.franquia : undefined,
       estudioId: data.estudioId ?? undefined,
-    } as AnimeData;
+    };
+
+    return normalizedAnime;
   },
 
   criarAnime: async (data: AnimeData) => {
@@ -378,8 +415,8 @@ export const animeService = {
     return response.data;
   },
 
-  excluirAnime: async (id: number) => {
-    const response = await api.delete(`/animes/${id}`);
+  excluirAnime: async (id: number): Promise<void> => {
+    const response = await api.delete<void>(`/animes/${id}`);
     return response.data;
   },
 };
