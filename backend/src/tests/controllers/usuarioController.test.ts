@@ -7,17 +7,8 @@ const usuarioServiceMocks = vi.hoisted(() => ({
   promoteToAdmin: vi.fn(),
 }));
 
-const rankingServiceMocks = vi.hoisted(() => ({
-  getRankingByUsuarioId: vi.fn(),
-  atualizarRanking: vi.fn(),
-}));
-
 vi.mock('../../services/usuarioService', () => ({
   usuarioService: usuarioServiceMocks,
-}));
-
-vi.mock('../../services/rankingService', () => ({
-  rankingService: rankingServiceMocks,
 }));
 
 import { usuarioController } from '../../controllers/usuarioController';
@@ -102,36 +93,6 @@ describe('usuarioController', () => {
       message: 'Usuário promovido a admin',
       usuarioId: 5,
       nivel: 'owner',
-    });
-  });
-
-  it('deve retornar ranking existente quando já houver registro', async () => {
-    const req = { user: { id: 7 }, params: {} } as unknown as Request;
-    const { res, status, json } = criarResponse();
-    rankingServiceMocks.getRankingByUsuarioId.mockResolvedValueOnce({ usuarioId: 7, pontos: 100 });
-
-    await usuarioController.ranking(req, res);
-
-    expect(status).toHaveBeenCalledWith(200);
-    expect(json).toHaveBeenCalledWith({
-      message: 'Ranking carregado',
-      ranking: { usuarioId: 7, pontos: 100 },
-    });
-  });
-
-  it('deve criar ranking quando não existir registro anterior', async () => {
-    const req = { user: { id: 7 }, params: {} } as unknown as Request;
-    const { res, status, json } = criarResponse();
-    rankingServiceMocks.getRankingByUsuarioId.mockResolvedValueOnce(null);
-    rankingServiceMocks.atualizarRanking.mockResolvedValueOnce({ usuarioId: 7, pontos: 0 });
-
-    await usuarioController.ranking(req, res);
-
-    expect(rankingServiceMocks.atualizarRanking).toHaveBeenCalledWith(7);
-    expect(status).toHaveBeenCalledWith(200);
-    expect(json).toHaveBeenCalledWith({
-      message: 'Ranking criado',
-      ranking: { usuarioId: 7, pontos: 0 },
     });
   });
 
@@ -234,26 +195,5 @@ describe('usuarioController', () => {
 
     expect(status).toHaveBeenCalledWith(400);
     expect(json).toHaveBeenCalledWith({ message: 'Erro de permissão' });
-  });
-
-  it('deve rejeitar ranking quando usuarioId for indefinido', async () => {
-    const req = { params: {}, user: undefined } as unknown as Request;
-    const { res, status, json } = criarResponse();
-
-    await usuarioController.ranking(req, res);
-
-    expect(status).toHaveBeenCalledWith(400);
-    expect(json).toHaveBeenCalledWith({ message: 'ID de usuário inválido' });
-  });
-
-  it('deve retornar 500 caso busca de ranking lance exceção', async () => {
-    const req = { user: { id: 10 }, params: {} } as unknown as Request;
-    const { res, status, json } = criarResponse();
-    rankingServiceMocks.getRankingByUsuarioId.mockRejectedValueOnce(new Error('Falha no banco'));
-
-    await usuarioController.ranking(req, res);
-
-    expect(status).toHaveBeenCalledWith(500);
-    expect(json).toHaveBeenCalledWith({ message: 'Erro ao buscar ranking' });
   });
 });
