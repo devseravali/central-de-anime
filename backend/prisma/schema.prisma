@@ -107,8 +107,6 @@ model Usuario {
   personagensFav PersonagemFavorito[]
 
   watchProgress WatchProgress[]
-
-  ranking RankingUsuario?
 }
 
 model WatchProgress {
@@ -127,20 +125,6 @@ model WatchProgress {
   atualizadoEm DateTime @updatedAt
 
   @@unique([usuarioId, episodioId])
-}
-
-model RankingUsuario {
-  id Int @id @default(autoincrement())
-
-  usuarioId Int     @unique
-  usuario   Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
-
-  pontos Int @default(0)
-  nivel  Int @default(1)
-
-  totalEpisodiosAssistidos Int @default(0)
-
-  atualizadoEm DateTime @updatedAt
 }
 
 model CacheAnime {
