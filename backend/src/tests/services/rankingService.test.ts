@@ -1,19 +1,17 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const prismaMocks = vi.hoisted(() => ({
-  rankingFindUnique: vi.fn(),
-  rankingUpsert: vi.fn(),
-  watchProgressCount: vi.fn(),
+  animeFindMany: vi.fn(),
+  personagemFindMany: vi.fn(),
 }));
 
 vi.mock('../../config/prisma', () => ({
   prisma: {
-    rankingUsuario: {
-      findUnique: prismaMocks.rankingFindUnique,
-      upsert: prismaMocks.rankingUpsert,
+    anime: {
+      findMany: prismaMocks.animeFindMany,
     },
-    watchProgress: {
-      count: prismaMocks.watchProgressCount,
+    personagem: {
+      findMany: prismaMocks.personagemFindMany,
     },
   },
 }));
@@ -25,45 +23,101 @@ describe('rankingService', () => {
     vi.clearAllMocks();
   });
 
-  it('deve buscar ranking por usuarioId', async () => {
-    prismaMocks.rankingFindUnique.mockResolvedValueOnce({ usuarioId: 1, pontos: 30 });
+  it('deve listar top animes ordenados por favoritos', async () => {
+    prismaMocks.animeFindMany.mockResolvedValueOnce([
+      {
+        id: 1,
+        titulo: 'Naruto',
+        capaUrl: '/capas/naruto.jpg',
+        tipo: 'TV',
+        ano: 2002,
+        _count: { favoritosUsuarios: 12 },
+      },
+    ]);
 
-    const resultado = await rankingService.getRankingByUsuarioId(1);
+    const resultado = await rankingService.getTopAnimes();
 
-    expect(resultado).toEqual({ usuarioId: 1, pontos: 30 });
-    expect(prismaMocks.rankingFindUnique).toHaveBeenCalledWith({ where: { usuarioId: 1 } });
-  });
-
-  it('deve calcular pontos com base em episódios assistidos', async () => {
-    prismaMocks.watchProgressCount.mockResolvedValueOnce(7);
-
-    const pontos = await rankingService.calcularPontos(2);
-
-    expect(pontos).toBe(70);
-    expect(prismaMocks.watchProgressCount).toHaveBeenCalledWith({
-      where: { usuarioId: 2, assistido: true },
+    expect(prismaMocks.animeFindMany).toHaveBeenCalledWith({
+      select: {
+        id: true,
+        titulo: true,
+        capaUrl: true,
+        tipo: true,
+        ano: true,
+        _count: {
+          select: {
+            favoritosUsuarios: true,
+          },
+        },
+      },
+      orderBy: [
+        {
+          favoritosUsuarios: {
+            _count: 'desc',
+          },
+        },
+        { titulo: 'asc' },
+      ],
+      take: 10,
     });
+    expect(resultado).toEqual([
+      {
+        id: 1,
+        titulo: 'Naruto',
+        capaUrl: '/capas/naruto.jpg',
+        tipo: 'TV',
+        ano: 2002,
+        totalFavoritos: 12,
+      },
+    ]);
   });
 
-  it('deve atualizar ranking com pontos, nível e total assistido', async () => {
-    prismaMocks.watchProgressCount.mockResolvedValueOnce(12);
-    prismaMocks.rankingUpsert.mockResolvedValueOnce({ usuarioId: 3, pontos: 120, nivel: 2, totalEpisodiosAssistidos: 12 });
+  it('deve listar top personagens ordenados por favoritos', async () => {
+    prismaMocks.personagemFindMany.mockResolvedValueOnce([
+      {
+        id: 2,
+        nome: 'Luffy',
+        imagem: '/personagens/luffy.jpg',
+        papel: 'Protagonista',
+        afiliacao: 'Chapéus de Palha',
+        _count: { favoritos: 20 },
+      },
+    ]);
 
-    await rankingService.atualizarRanking(3);
+    const resultado = await rankingService.getTopPersonagens();
 
-    expect(prismaMocks.rankingUpsert).toHaveBeenCalledWith({
-      where: { usuarioId: 3 },
-      update: { pontos: 120, nivel: 2, totalEpisodiosAssistidos: 12 },
-      create: { usuarioId: 3, pontos: 120, nivel: 2, totalEpisodiosAssistidos: 12 },
+    expect(prismaMocks.personagemFindMany).toHaveBeenCalledWith({
+      select: {
+        id: true,
+        nome: true,
+        imagem: true,
+        papel: true,
+        afiliacao: true,
+        _count: {
+          select: {
+            favoritos: true,
+          },
+        },
+      },
+      orderBy: [
+        {
+          favoritos: {
+            _count: 'desc',
+          },
+        },
+        { nome: 'asc' },
+      ],
+      take: 10,
     });
-  });
-
-  it('deve recalcular ranking reaproveitando a atualização', async () => {
-    prismaMocks.watchProgressCount.mockResolvedValueOnce(1);
-    prismaMocks.rankingUpsert.mockResolvedValueOnce({ usuarioId: 4, pontos: 10, nivel: 1, totalEpisodiosAssistidos: 1 });
-
-    const resultado = await rankingService.recalcularRanking(4);
-
-    expect(resultado).toEqual({ usuarioId: 4, pontos: 10, nivel: 1, totalEpisodiosAssistidos: 1 });
+    expect(resultado).toEqual([
+      {
+        id: 2,
+        nome: 'Luffy',
+        imagem: '/personagens/luffy.jpg',
+        papel: 'Protagonista',
+        afiliacao: 'Chapéus de Palha',
+        totalFavoritos: 20,
+      },
+    ]);
   });
 });
