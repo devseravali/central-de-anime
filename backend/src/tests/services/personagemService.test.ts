@@ -57,6 +57,34 @@ describe('personagemService', () => {
 
     expect(prismaMocks.personagemFindUnique).toHaveBeenCalledWith({
       where: { id: 3 },
+      include: {
+        animes: {
+          select: {
+            animeId: true,
+            anime: {
+              select: {
+                id: true,
+                titulo: true,
+                personagens: {
+                  select: {
+                    personagem: {
+                      select: {
+                        id: true,
+                        nome: true,
+                        imagem: true,
+                        papel: true,
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          orderBy: {
+            animeId: 'asc',
+          },
+        },
+      },
     });
     expect(resultado).toEqual({ id: 3, nome: 'Nami' });
   });
