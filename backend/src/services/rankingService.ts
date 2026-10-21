@@ -1,80 +1,93 @@
 import { prisma } from '../config/prisma';
-import type { RankingUsuarioModel } from '../../generated/prisma/models/RankingUsuario';
 
-const PONTOS_POR_EPISODIO = 10;
+export type RankingAnimeItem = {
+    id: number;
+    titulo: string;
+    capaUrl: string | null;
+    tipo: string;
+    ano: number;
+    totalFavoritos: number;
+};
+
+export type RankingPersonagemItem = {
+    id: number;
+    nome: string;
+    imagem: string;
+    papel: string | null;
+    afiliacao: string | null;
+    totalFavoritos: number;
+};
 
 export class RankingService {
-    async getRankingByUsuarioId(
-        usuarioId: number
-    ): Promise<RankingUsuarioModel | null> {
-        return prisma.rankingUsuario.findUnique({
-            where: {
-                usuarioId,
-            },
-        });
-    }
-
-    async calcularPontos(
-        usuarioId: number
-    ): Promise<number> {
-        const totalEpisodiosAssistidos =
-            await prisma.watchProgress.count({
-                where: {
-                    usuarioId,
-                    assistido: true,
+    async getTopAnimes(limit = 10): Promise<RankingAnimeItem[]> {
+        const animes = await prisma.anime.findMany({
+            select: {
+                id: true,
+                titulo: true,
+                capaUrl: true,
+                tipo: true,
+                ano: true,
+                _count: {
+                    select: {
+                        favoritosUsuarios: true,
+                    },
                 },
-            });
-
-        return (
-            totalEpisodiosAssistidos *
-            PONTOS_POR_EPISODIO
-        );
-    }
-
-    async atualizarRanking(
-        usuarioId: number
-    ): Promise<RankingUsuarioModel> {
-        const totalEpisodiosAssistidos =
-            await prisma.watchProgress.count({
-                where: {
-                    usuarioId,
-                    assistido: true,
+            },
+            orderBy: [
+                {
+                    favoritosUsuarios: {
+                        _count: 'desc',
+                    },
                 },
-            });
-
-        const pontos =
-            totalEpisodiosAssistidos *
-            PONTOS_POR_EPISODIO;
-
-        const nivel =
-            Math.floor(pontos / 100) + 1;
-
-        return prisma.rankingUsuario.upsert({
-            where: {
-                usuarioId,
-            },
-            update: {
-                pontos,
-                nivel,
-                totalEpisodiosAssistidos,
-            },
-            create: {
-                usuarioId,
-                pontos,
-                nivel,
-                totalEpisodiosAssistidos,
-            },
+                { titulo: 'asc' },
+            ],
+            take: limit,
         });
+
+        return animes.map((anime) => ({
+            id: anime.id,
+            titulo: anime.titulo,
+            capaUrl: anime.capaUrl,
+            tipo: anime.tipo,
+            ano: anime.ano,
+            totalFavoritos: anime._count.favoritosUsuarios,
+        }));
     }
 
-    async recalcularRanking(
-        usuarioId: number
-    ): Promise<RankingUsuarioModel> {
-        return this.atualizarRanking(
-            usuarioId
-        );
+    async getTopPersonagens(limit = 10): Promise<RankingPersonagemItem[]> {
+        const personagens = await prisma.personagem.findMany({
+            select: {
+                id: true,
+                nome: true,
+                imagem: true,
+                papel: true,
+                afiliacao: true,
+                _count: {
+                    select: {
+                        favoritos: true,
+                    },
+                },
+            },
+            orderBy: [
+                {
+                    favoritos: {
+                        _count: 'desc',
+                    },
+                },
+                { nome: 'asc' },
+            ],
+            take: limit,
+        });
+
+        return personagens.map((personagem) => ({
+            id: personagem.id,
+            nome: personagem.nome,
+            imagem: personagem.imagem,
+            papel: personagem.papel,
+            afiliacao: personagem.afiliacao,
+            totalFavoritos: personagem._count.favoritos,
+        }));
     }
 }
 
-export const rankingService =
-    new RankingService();
+export const rankingService = new RankingService();
