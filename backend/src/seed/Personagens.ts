@@ -18,6 +18,33 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
                     return String(v);
                 };
 
+                const resolveNivelCombate = (value: unknown): number | null => {
+                    if (typeof value === 'number' && Number.isFinite(value)) {
+                        return Math.max(0, Math.min(100, Math.round(value)));
+                    }
+
+                    if (typeof value === 'string' && value.trim() !== '') {
+                        const parsed = Number(value);
+                        if (Number.isFinite(parsed)) {
+                            return Math.max(0, Math.min(100, Math.round(parsed)));
+                        }
+                    }
+
+                    const texto = `${personagem.papel ?? ''} ${personagem.afiliacao ?? ''} ${personagem.sobre ?? ''}`.toLowerCase();
+
+                    if (/(lendário|lendaria|mais forte|mais poderoso|mais poderosa|supremo|suprema|capitão|comandante|hashira|almirante|imperatriz|rei|rainha|titã|demônio|feiticeiro mais poderoso|soldado mais forte)/.test(texto)) {
+                        return 90;
+                    }
+
+                    if (/(protagonista|lider|líder|guerreiro|guerreira|soldado|exterminador|exterminadora|investigador|caçador|cacador|pirata|ninja)/.test(texto)) {
+                        return 70;
+                    }
+
+                    return 50;
+                };
+
+                const nivelCombate = resolveNivelCombate(personagem.nivelCombate);
+
                 const createData: Prisma.PersonagemUncheckedCreateInput = {
                     id: personagem.id,
                     nome: personagem.nome,
@@ -27,6 +54,7 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
                     aniversario: personagem.aniversario ?? null,
                     altura_inicial: normalizeToStringOrNull(personagem.altura_inicial),
                     afiliacao: personagem.afiliacao ?? null,
+                    nivelCombate,
                     sobre: personagem.sobre,
                     imagem: normalizedImage,
                 };
@@ -39,6 +67,7 @@ async function importPersonagensFromJson(filePath: string): Promise<void> {
                     aniversario: personagem.aniversario ?? null,
                     altura_inicial: normalizeToStringOrNull(personagem.altura_inicial),
                     afiliacao: personagem.afiliacao ?? null,
+                    nivelCombate,
                     sobre: personagem.sobre,
                     imagem: normalizedImage,
                 };
