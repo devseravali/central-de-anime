@@ -161,39 +161,8 @@ async function promoteToAdmin(
     }
 }
 
-async function ranking(
-    req: AuthenticatedRequest,
-    res: Response
-): Promise<void> {
-    try {
-        const usuarioId = getUsuarioId(req);
-
-        if (usuarioId === undefined) {
-            res.status(400).json({ message: 'ID de usuário inválido' });
-            return;
-        }
-
-        const { rankingService } = await import('../services/rankingService');
-
-        const rankingData = await rankingService.getRankingByUsuarioId(usuarioId);
-
-        if (!rankingData) {
-            // se não existir ranking, recalcula/atualiza (upsert) e retorna o novo registro
-            const created = await rankingService.atualizarRanking(usuarioId);
-            res.status(200).json({ message: 'Ranking criado', ranking: created });
-            return;
-        }
-
-        res.status(200).json({ message: 'Ranking carregado', ranking: rankingData });
-    } catch (error) {
-        console.error('Erro ao buscar ranking do usuário:', error);
-        res.status(500).json({ message: 'Erro ao buscar ranking' });
-    }
-}
-
 export const usuarioController = {
     getProfile,
     updateProfile,
     promoteToAdmin,
-    ranking,
 };
