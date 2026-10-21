@@ -278,7 +278,6 @@ export type UsuarioWhereInput = {
   notas?: Prisma.NotaAnimeUsuarioListRelationFilter
   personagensFav?: Prisma.PersonagemFavoritoListRelationFilter
   watchProgress?: Prisma.WatchProgressListRelationFilter
-  ranking?: Prisma.XOR<Prisma.RankingUsuarioNullableScalarRelationFilter, Prisma.RankingUsuarioWhereInput> | null
 }
 
 export type UsuarioOrderByWithRelationInput = {
@@ -300,7 +299,6 @@ export type UsuarioOrderByWithRelationInput = {
   notas?: Prisma.NotaAnimeUsuarioOrderByRelationAggregateInput
   personagensFav?: Prisma.PersonagemFavoritoOrderByRelationAggregateInput
   watchProgress?: Prisma.WatchProgressOrderByRelationAggregateInput
-  ranking?: Prisma.RankingUsuarioOrderByWithRelationInput
 }
 
 export type UsuarioWhereUniqueInput = Prisma.AtLeast<{
@@ -325,7 +323,6 @@ export type UsuarioWhereUniqueInput = Prisma.AtLeast<{
   notas?: Prisma.NotaAnimeUsuarioListRelationFilter
   personagensFav?: Prisma.PersonagemFavoritoListRelationFilter
   watchProgress?: Prisma.WatchProgressListRelationFilter
-  ranking?: Prisma.XOR<Prisma.RankingUsuarioNullableScalarRelationFilter, Prisma.RankingUsuarioWhereInput> | null
 }, "id" | "email">
 
 export type UsuarioOrderByWithAggregationInput = {
@@ -384,7 +381,6 @@ export type UsuarioCreateInput = {
   notas?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioUncheckedCreateInput = {
@@ -406,7 +402,6 @@ export type UsuarioUncheckedCreateInput = {
   notas?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioUncheckedCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioUpdateInput = {
@@ -427,7 +422,6 @@ export type UsuarioUpdateInput = {
   notas?: Prisma.NotaAnimeUsuarioUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioUncheckedUpdateInput = {
@@ -449,7 +443,6 @@ export type UsuarioUncheckedUpdateInput = {
   notas?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUncheckedUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioCreateManyInput = {
@@ -572,20 +565,6 @@ export type UsuarioUpdateOneRequiredWithoutWatchProgressNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.UsuarioUpdateToOneWithWhereWithoutWatchProgressInput, Prisma.UsuarioUpdateWithoutWatchProgressInput>, Prisma.UsuarioUncheckedUpdateWithoutWatchProgressInput>
 }
 
-export type UsuarioCreateNestedOneWithoutRankingInput = {
-  create?: Prisma.XOR<Prisma.UsuarioCreateWithoutRankingInput, Prisma.UsuarioUncheckedCreateWithoutRankingInput>
-  connectOrCreate?: Prisma.UsuarioCreateOrConnectWithoutRankingInput
-  connect?: Prisma.UsuarioWhereUniqueInput
-}
-
-export type UsuarioUpdateOneRequiredWithoutRankingNestedInput = {
-  create?: Prisma.XOR<Prisma.UsuarioCreateWithoutRankingInput, Prisma.UsuarioUncheckedCreateWithoutRankingInput>
-  connectOrCreate?: Prisma.UsuarioCreateOrConnectWithoutRankingInput
-  upsert?: Prisma.UsuarioUpsertWithoutRankingInput
-  connect?: Prisma.UsuarioWhereUniqueInput
-  update?: Prisma.XOR<Prisma.XOR<Prisma.UsuarioUpdateToOneWithWhereWithoutRankingInput, Prisma.UsuarioUpdateWithoutRankingInput>, Prisma.UsuarioUncheckedUpdateWithoutRankingInput>
-}
-
 export type UsuarioCreateNestedOneWithoutFavoritosInput = {
   create?: Prisma.XOR<Prisma.UsuarioCreateWithoutFavoritosInput, Prisma.UsuarioUncheckedCreateWithoutFavoritosInput>
   connectOrCreate?: Prisma.UsuarioCreateOrConnectWithoutFavoritosInput
@@ -673,7 +652,6 @@ export type UsuarioCreateWithoutWatchProgressInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutUsuarioInput
   notas?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioUncheckedCreateWithoutWatchProgressInput = {
@@ -694,7 +672,6 @@ export type UsuarioUncheckedCreateWithoutWatchProgressInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutUsuarioInput
   notas?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioUncheckedCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioCreateOrConnectWithoutWatchProgressInput = {
@@ -730,7 +707,6 @@ export type UsuarioUpdateWithoutWatchProgressInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutUsuarioNestedInput
   notas?: Prisma.NotaAnimeUsuarioUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioUncheckedUpdateWithoutWatchProgressInput = {
@@ -751,105 +727,6 @@ export type UsuarioUncheckedUpdateWithoutWatchProgressInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutUsuarioNestedInput
   notas?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUncheckedUpdateOneWithoutUsuarioNestedInput
-}
-
-export type UsuarioCreateWithoutRankingInput = {
-  nome: string
-  email: string
-  senha: string
-  avatar?: string | null
-  resetSenhaTokenHash?: string | null
-  resetSenhaExpiraEm?: Date | string | null
-  verificaEmailTokenHash?: string | null
-  verificaEmailExpiraEm?: Date | string | null
-  status?: string
-  criadoEm?: Date | string
-  atualizadoEm?: Date | string
-  admin?: Prisma.AdminCreateNestedOneWithoutUsuarioInput
-  sessoes?: Prisma.SessaoCreateNestedManyWithoutUsuarioInput
-  favoritos?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutUsuarioInput
-  notas?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutUsuarioInput
-  personagensFav?: Prisma.PersonagemFavoritoCreateNestedManyWithoutUsuarioInput
-  watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutUsuarioInput
-}
-
-export type UsuarioUncheckedCreateWithoutRankingInput = {
-  id?: number
-  nome: string
-  email: string
-  senha: string
-  avatar?: string | null
-  resetSenhaTokenHash?: string | null
-  resetSenhaExpiraEm?: Date | string | null
-  verificaEmailTokenHash?: string | null
-  verificaEmailExpiraEm?: Date | string | null
-  status?: string
-  criadoEm?: Date | string
-  atualizadoEm?: Date | string
-  admin?: Prisma.AdminUncheckedCreateNestedOneWithoutUsuarioInput
-  sessoes?: Prisma.SessaoUncheckedCreateNestedManyWithoutUsuarioInput
-  favoritos?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutUsuarioInput
-  notas?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutUsuarioInput
-  personagensFav?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutUsuarioInput
-  watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutUsuarioInput
-}
-
-export type UsuarioCreateOrConnectWithoutRankingInput = {
-  where: Prisma.UsuarioWhereUniqueInput
-  create: Prisma.XOR<Prisma.UsuarioCreateWithoutRankingInput, Prisma.UsuarioUncheckedCreateWithoutRankingInput>
-}
-
-export type UsuarioUpsertWithoutRankingInput = {
-  update: Prisma.XOR<Prisma.UsuarioUpdateWithoutRankingInput, Prisma.UsuarioUncheckedUpdateWithoutRankingInput>
-  create: Prisma.XOR<Prisma.UsuarioCreateWithoutRankingInput, Prisma.UsuarioUncheckedCreateWithoutRankingInput>
-  where?: Prisma.UsuarioWhereInput
-}
-
-export type UsuarioUpdateToOneWithWhereWithoutRankingInput = {
-  where?: Prisma.UsuarioWhereInput
-  data: Prisma.XOR<Prisma.UsuarioUpdateWithoutRankingInput, Prisma.UsuarioUncheckedUpdateWithoutRankingInput>
-}
-
-export type UsuarioUpdateWithoutRankingInput = {
-  nome?: Prisma.StringFieldUpdateOperationsInput | string
-  email?: Prisma.StringFieldUpdateOperationsInput | string
-  senha?: Prisma.StringFieldUpdateOperationsInput | string
-  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  verificaEmailTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  verificaEmailExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  status?: Prisma.StringFieldUpdateOperationsInput | string
-  criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  admin?: Prisma.AdminUpdateOneWithoutUsuarioNestedInput
-  sessoes?: Prisma.SessaoUpdateManyWithoutUsuarioNestedInput
-  favoritos?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutUsuarioNestedInput
-  notas?: Prisma.NotaAnimeUsuarioUpdateManyWithoutUsuarioNestedInput
-  personagensFav?: Prisma.PersonagemFavoritoUpdateManyWithoutUsuarioNestedInput
-  watchProgress?: Prisma.WatchProgressUpdateManyWithoutUsuarioNestedInput
-}
-
-export type UsuarioUncheckedUpdateWithoutRankingInput = {
-  id?: Prisma.IntFieldUpdateOperationsInput | number
-  nome?: Prisma.StringFieldUpdateOperationsInput | string
-  email?: Prisma.StringFieldUpdateOperationsInput | string
-  senha?: Prisma.StringFieldUpdateOperationsInput | string
-  avatar?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resetSenhaTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  resetSenhaExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  verificaEmailTokenHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  verificaEmailExpiraEm?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  status?: Prisma.StringFieldUpdateOperationsInput | string
-  criadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  atualizadoEm?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  admin?: Prisma.AdminUncheckedUpdateOneWithoutUsuarioNestedInput
-  sessoes?: Prisma.SessaoUncheckedUpdateManyWithoutUsuarioNestedInput
-  favoritos?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutUsuarioNestedInput
-  notas?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutUsuarioNestedInput
-  personagensFav?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutUsuarioNestedInput
-  watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutUsuarioNestedInput
 }
 
 export type UsuarioCreateWithoutFavoritosInput = {
@@ -869,7 +746,6 @@ export type UsuarioCreateWithoutFavoritosInput = {
   notas?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioUncheckedCreateWithoutFavoritosInput = {
@@ -890,7 +766,6 @@ export type UsuarioUncheckedCreateWithoutFavoritosInput = {
   notas?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioUncheckedCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioCreateOrConnectWithoutFavoritosInput = {
@@ -926,7 +801,6 @@ export type UsuarioUpdateWithoutFavoritosInput = {
   notas?: Prisma.NotaAnimeUsuarioUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioUncheckedUpdateWithoutFavoritosInput = {
@@ -947,7 +821,6 @@ export type UsuarioUncheckedUpdateWithoutFavoritosInput = {
   notas?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUncheckedUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioCreateWithoutNotasInput = {
@@ -967,7 +840,6 @@ export type UsuarioCreateWithoutNotasInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioUncheckedCreateWithoutNotasInput = {
@@ -988,7 +860,6 @@ export type UsuarioUncheckedCreateWithoutNotasInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioUncheckedCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioCreateOrConnectWithoutNotasInput = {
@@ -1024,7 +895,6 @@ export type UsuarioUpdateWithoutNotasInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioUncheckedUpdateWithoutNotasInput = {
@@ -1045,7 +915,6 @@ export type UsuarioUncheckedUpdateWithoutNotasInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUncheckedUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioCreateWithoutPersonagensFavInput = {
@@ -1065,7 +934,6 @@ export type UsuarioCreateWithoutPersonagensFavInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeCreateNestedManyWithoutUsuarioInput
   notas?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioUncheckedCreateWithoutPersonagensFavInput = {
@@ -1086,7 +954,6 @@ export type UsuarioUncheckedCreateWithoutPersonagensFavInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUncheckedCreateNestedManyWithoutUsuarioInput
   notas?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioUncheckedCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioCreateOrConnectWithoutPersonagensFavInput = {
@@ -1122,7 +989,6 @@ export type UsuarioUpdateWithoutPersonagensFavInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUpdateManyWithoutUsuarioNestedInput
   notas?: Prisma.NotaAnimeUsuarioUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioUncheckedUpdateWithoutPersonagensFavInput = {
@@ -1143,7 +1009,6 @@ export type UsuarioUncheckedUpdateWithoutPersonagensFavInput = {
   favoritos?: Prisma.UsuarioFavoritoAnimeUncheckedUpdateManyWithoutUsuarioNestedInput
   notas?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUncheckedUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioCreateWithoutAdminInput = {
@@ -1163,7 +1028,6 @@ export type UsuarioCreateWithoutAdminInput = {
   notas?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioUncheckedCreateWithoutAdminInput = {
@@ -1184,7 +1048,6 @@ export type UsuarioUncheckedCreateWithoutAdminInput = {
   notas?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioUncheckedCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioCreateOrConnectWithoutAdminInput = {
@@ -1220,7 +1083,6 @@ export type UsuarioUpdateWithoutAdminInput = {
   notas?: Prisma.NotaAnimeUsuarioUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioUncheckedUpdateWithoutAdminInput = {
@@ -1241,7 +1103,6 @@ export type UsuarioUncheckedUpdateWithoutAdminInput = {
   notas?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUncheckedUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioCreateWithoutSessoesInput = {
@@ -1261,7 +1122,6 @@ export type UsuarioCreateWithoutSessoesInput = {
   notas?: Prisma.NotaAnimeUsuarioCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioUncheckedCreateWithoutSessoesInput = {
@@ -1282,7 +1142,6 @@ export type UsuarioUncheckedCreateWithoutSessoesInput = {
   notas?: Prisma.NotaAnimeUsuarioUncheckedCreateNestedManyWithoutUsuarioInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedCreateNestedManyWithoutUsuarioInput
   watchProgress?: Prisma.WatchProgressUncheckedCreateNestedManyWithoutUsuarioInput
-  ranking?: Prisma.RankingUsuarioUncheckedCreateNestedOneWithoutUsuarioInput
 }
 
 export type UsuarioCreateOrConnectWithoutSessoesInput = {
@@ -1318,7 +1177,6 @@ export type UsuarioUpdateWithoutSessoesInput = {
   notas?: Prisma.NotaAnimeUsuarioUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUpdateOneWithoutUsuarioNestedInput
 }
 
 export type UsuarioUncheckedUpdateWithoutSessoesInput = {
@@ -1339,7 +1197,6 @@ export type UsuarioUncheckedUpdateWithoutSessoesInput = {
   notas?: Prisma.NotaAnimeUsuarioUncheckedUpdateManyWithoutUsuarioNestedInput
   personagensFav?: Prisma.PersonagemFavoritoUncheckedUpdateManyWithoutUsuarioNestedInput
   watchProgress?: Prisma.WatchProgressUncheckedUpdateManyWithoutUsuarioNestedInput
-  ranking?: Prisma.RankingUsuarioUncheckedUpdateOneWithoutUsuarioNestedInput
 }
 
 
@@ -1428,7 +1285,6 @@ export type UsuarioSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs 
   notas?: boolean | Prisma.Usuario$notasArgs<ExtArgs>
   personagensFav?: boolean | Prisma.Usuario$personagensFavArgs<ExtArgs>
   watchProgress?: boolean | Prisma.Usuario$watchProgressArgs<ExtArgs>
-  ranking?: boolean | Prisma.Usuario$rankingArgs<ExtArgs>
   _count?: boolean | Prisma.UsuarioCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["usuario"]>
 
@@ -1485,7 +1341,6 @@ export type UsuarioInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs
   notas?: boolean | Prisma.Usuario$notasArgs<ExtArgs>
   personagensFav?: boolean | Prisma.Usuario$personagensFavArgs<ExtArgs>
   watchProgress?: boolean | Prisma.Usuario$watchProgressArgs<ExtArgs>
-  ranking?: boolean | Prisma.Usuario$rankingArgs<ExtArgs>
   _count?: boolean | Prisma.UsuarioCountOutputTypeDefaultArgs<ExtArgs>
 }
 export type UsuarioIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
@@ -1500,7 +1355,6 @@ export type $UsuarioPayload<ExtArgs extends runtime.Types.Extensions.InternalArg
     notas: Prisma.$NotaAnimeUsuarioPayload<ExtArgs>[]
     personagensFav: Prisma.$PersonagemFavoritoPayload<ExtArgs>[]
     watchProgress: Prisma.$WatchProgressPayload<ExtArgs>[]
-    ranking: Prisma.$RankingUsuarioPayload<ExtArgs> | null
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: number
@@ -1915,7 +1769,6 @@ export interface Prisma__UsuarioClient<T, Null = never, ExtArgs extends runtime.
   notas<T extends Prisma.Usuario$notasArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Usuario$notasArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$NotaAnimeUsuarioPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   personagensFav<T extends Prisma.Usuario$personagensFavArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Usuario$personagensFavArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$PersonagemFavoritoPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   watchProgress<T extends Prisma.Usuario$watchProgressArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Usuario$watchProgressArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$WatchProgressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-  ranking<T extends Prisma.Usuario$rankingArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Usuario$rankingArgs<ExtArgs>>): Prisma.Prisma__RankingUsuarioClient<runtime.Types.Result.GetResult<Prisma.$RankingUsuarioPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -2486,25 +2339,6 @@ export type Usuario$watchProgressArgs<ExtArgs extends runtime.Types.Extensions.I
   take?: number
   skip?: number
   distinct?: Prisma.WatchProgressScalarFieldEnum | Prisma.WatchProgressScalarFieldEnum[]
-}
-
-/**
- * Usuario.ranking
- */
-export type Usuario$rankingArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  /**
-   * Select specific fields to fetch from the RankingUsuario
-   */
-  select?: Prisma.RankingUsuarioSelect<ExtArgs> | null
-  /**
-   * Omit specific fields from the RankingUsuario
-   */
-  omit?: Prisma.RankingUsuarioOmit<ExtArgs> | null
-  /**
-   * Choose, which related nodes to fetch as well
-   */
-  include?: Prisma.RankingUsuarioInclude<ExtArgs> | null
-  where?: Prisma.RankingUsuarioWhereInput
 }
 
 /**
