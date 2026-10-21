@@ -231,31 +231,6 @@ UsuarioRouter.get('/', async (_req: Request, res: Response) => {
  */
 UsuarioRouter.post('/promote', authMiddleware, adminMiddleware, usuarioController.promoteToAdmin);
 
-// Ranking by user
-/**
- * @swagger
- * /usuario/{id}/ranking:
- *   get:
- *     summary: Retorna ranking do usuário
- *     tags:
- *       - Usuário
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *           example: 1
- *     responses:
- *       200:
- *         description: Ranking retornado com sucesso
- *       400:
- *         description: ID inválido
- *       404:
- *         description: Usuário não encontrado
- */
-UsuarioRouter.get('/:id/ranking', usuarioController.ranking);
-
 /**
  * @swagger
  * /usuario/{id}:

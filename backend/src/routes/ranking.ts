@@ -1,204 +1,98 @@
 import { Router } from 'express';
 
 import { rankingController } from '../controllers/rankingController';
-import { authMiddleware } from '../middlewares/authMiddleware';
 
 const RankingRouter = Router();
 
 /**
  * @swagger
- * /ranking/top:
+ * /ranking/animes/top:
  *   get:
- *     summary: Lista os usuários com maior pontuação
- *     description: Retorna o ranking geral dos usuários com maior pontuação.
+ *     summary: Lista os animes mais favoritados
+ *     description: Retorna os animes com maior quantidade de favoritos.
  *     tags:
  *       - Ranking
  *     responses:
  *       200:
- *         description: Ranking geral retornado com sucesso
+ *         description: Ranking de animes retornado com sucesso
  *         content:
  *           application/json:
  *             schema:
  *               type: array
  *               items:
  *                 type: object
- *                 description: Usuário e informações de ranking
+ *                 properties:
+ *                   id:
+ *                     type: integer
+ *                     example: 1
+ *                   titulo:
+ *                     type: string
+ *                     example: Naruto
+ *                   capaUrl:
+ *                     type: string
+ *                     nullable: true
+ *                     example: /images/capas/naruto.jpg
+ *                   tipo:
+ *                     type: string
+ *                     example: TV
+ *                   ano:
+ *                     type: integer
+ *                     example: 2002
+ *                   totalFavoritos:
+ *                     type: integer
+ *                     example: 42
  *       500:
  *         description: Erro interno do servidor
  */
 RankingRouter.get(
-  '/ranking/top',
-  rankingController.getTop
+  '/ranking/animes/top',
+  rankingController.getTopAnimes
 );
 
 /**
  * @swagger
- * /ranking/{usuarioId}:
+ * /ranking/personagens/top:
  *   get:
- *     summary: Busca o ranking de um usuário
- *     description: Retorna as informações de ranking do usuário autenticado ou do usuário informado.
+ *     summary: Lista os personagens mais favoritados
+ *     description: Retorna os personagens com maior quantidade de favoritos.
  *     tags:
  *       - Ranking
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: usuarioId
- *         required: true
- *         description: ID do usuário
- *         schema:
- *           type: integer
- *           example: 1
  *     responses:
  *       200:
- *         description: Ranking do usuário retornado com sucesso
+ *         description: Ranking de personagens retornado com sucesso
  *         content:
  *           application/json:
  *             schema:
- *               type: object
- *               description: Dados do ranking do usuário
- *       400:
- *         description: ID do usuário inválido
- *       401:
- *         description: Token de autenticação ausente ou inválido
- *       403:
- *         description: Acesso negado
- *       404:
- *         description: Ranking ou usuário não encontrado
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: integer
+ *                     example: 1
+ *                   nome:
+ *                     type: string
+ *                     example: Monkey D. Luffy
+ *                   imagem:
+ *                     type: string
+ *                     example: /images/personagens/luffy.jpg
+ *                   papel:
+ *                     type: string
+ *                     nullable: true
+ *                     example: Protagonista
+ *                   afiliacao:
+ *                     type: string
+ *                     nullable: true
+ *                     example: Chapéus de Palha
+ *                   totalFavoritos:
+ *                     type: integer
+ *                     example: 35
  *       500:
  *         description: Erro interno do servidor
  */
 RankingRouter.get(
-  '/ranking/:usuarioId',
-  rankingController.getByUsuarioId
-);
-
-/**
- * @swagger
- * /ranking/{usuarioId}/pontos:
- *   get:
- *     summary: Consulta os pontos de um usuário
- *     description: Retorna a pontuação acumulada do usuário no ranking.
- *     tags:
- *       - Ranking
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: usuarioId
- *         required: true
- *         description: ID do usuário
- *         schema:
- *           type: integer
- *           example: 1
- *     responses:
- *       200:
- *         description: Pontos do usuário retornados com sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               description: Informações de pontuação do usuário
- *       400:
- *         description: ID do usuário inválido
- *       401:
- *         description: Token de autenticação ausente ou inválido
- *       403:
- *         description: Acesso negado
- *       404:
- *         description: Usuário ou pontuação não encontrada
- *       500:
- *         description: Erro interno do servidor
- */
-RankingRouter.get(
-  '/ranking/:usuarioId/pontos',
-  rankingController.getPontos
-);
-
-/**
- * @swagger
- * /ranking/{usuarioId}/atualizar:
- *   post:
- *     summary: Atualiza o ranking de um usuário
- *     description: Atualiza os dados de ranking do usuário informado.
- *     tags:
- *       - Ranking
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: usuarioId
- *         required: true
- *         description: ID do usuário
- *         schema:
- *           type: integer
- *           example: 1
- *     responses:
- *       200:
- *         description: Ranking atualizado com sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               description: Ranking atualizado
- *       400:
- *         description: ID do usuário inválido
- *       401:
- *         description: Token de autenticação ausente ou inválido
- *       403:
- *         description: Acesso negado
- *       404:
- *         description: Usuário não encontrado
- *       500:
- *         description: Erro interno do servidor
- */
-RankingRouter.post(
-  '/ranking/:usuarioId/atualizar',
-  authMiddleware,
-  rankingController.atualizar
-);
-
-/**
- * @swagger
- * /ranking/{usuarioId}/recalcular:
- *   post:
- *     summary: Recalcula o ranking de um usuário
- *     description: Recalcula a pontuação e os dados de ranking do usuário informado.
- *     tags:
- *       - Ranking
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: usuarioId
- *         required: true
- *         description: ID do usuário
- *         schema:
- *           type: integer
- *           example: 1
- *     responses:
- *       200:
- *         description: Ranking recalculado com sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               description: Ranking recalculado
- *       400:
- *         description: ID do usuário inválido
- *       401:
- *         description: Token de autenticação ausente ou inválido
- *       403:
- *         description: Acesso negado
- *       404:
- *         description: Usuário não encontrado
- *       500:
- *         description: Erro interno do servidor
- */
-RankingRouter.post(
-  '/ranking/:usuarioId/recalcular',
-  authMiddleware,
-  rankingController.recalcular
+  '/ranking/personagens/top',
+  rankingController.getTopPersonagens
 );
 
 export default RankingRouter;
