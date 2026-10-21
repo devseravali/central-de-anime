@@ -11,6 +11,7 @@ export type PersonagemType = {
     aniversario?: string;
     altura_inicial?: string;
     afiliacao?: string;
+    nivelCombate?: number;
 
     animes: AnimePersonagem[];
     favoritos: PersonagemFavorito[];
