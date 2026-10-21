@@ -1,46 +1,13 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import request from 'supertest';
 
-type UsuarioAutenticado = {
-  id: number;
-  role: 'ADMIN' | 'USER';
-  email: string;
-  nome: string;
-};
-
 const rankingControllerMocks = vi.hoisted(() => ({
-  getByUsuarioId: vi.fn((_req, res) => res.status(200).json({ usuarioId: 1, pontos: 100 })),
-  getPontos: vi.fn((_req, res) => res.status(200).json({ usuarioId: 1, pontos: 100 })),
-  atualizar: vi.fn((_req, res) => res.status(200).json({ usuarioId: 1, atualizado: true })),
-  recalcular: vi.fn((_req, res) => res.status(200).json({ usuarioId: 1, recalculado: true })),
-  getTop: vi.fn((_req, res) => res.status(200).json([{ usuarioId: 1, pontos: 100 }])),
+  getTopAnimes: vi.fn((_req, res) => res.status(200).json([{ id: 1, titulo: 'Naruto' }])),
+  getTopPersonagens: vi.fn((_req, res) => res.status(200).json([{ id: 1, nome: 'Luffy' }])),
 }));
 
 vi.mock('../../controllers/rankingController', () => ({
   rankingController: rankingControllerMocks,
-}));
-
-vi.mock('../../middlewares/authMiddleware', () => ({
-  authMiddleware: (
-    req: { headers: Record<string, string | undefined>; user?: UsuarioAutenticado },
-    res: { status: (code: number) => { json: (body: unknown) => unknown } },
-    next: () => void
-  ) => {
-    const header = req.headers.authorization;
-
-    if (!header) {
-      res.status(401).json({ message: 'Token de autenticação não fornecido' });
-      return;
-    }
-
-    if (header === 'Bearer user-token') {
-      req.user = { id: 1, role: 'USER', email: 'user@teste.com', nome: 'User' };
-      next();
-      return;
-    }
-
-    res.status(401).json({ message: 'Token inválido ou expirado' });
-  },
 }));
 
 import app from '../../app';
@@ -50,59 +17,21 @@ describe('Rotas de Ranking (/ranking)', () => {
     vi.clearAllMocks();
   });
 
-  describe('GET /ranking/:usuarioId', () => {
-    it('deve permitir acesso público e delegar ao rankingController.getByUsuarioId', async () => {
-      const res = await request(app).get('/ranking/1');
+  describe('GET /ranking/animes/top', () => {
+    it('deve delegar ao rankingController.getTopAnimes', async () => {
+      const res = await request(app).get('/ranking/animes/top');
 
       expect(res.status).toBe(200);
-      expect(rankingControllerMocks.getByUsuarioId).toHaveBeenCalledTimes(1);
+      expect(rankingControllerMocks.getTopAnimes).toHaveBeenCalledTimes(1);
     });
   });
 
-  describe('GET /ranking/:usuarioId/pontos', () => {
-    it('deve permitir acesso público e delegar ao rankingController.getPontos', async () => {
-      const res = await request(app).get('/ranking/1/pontos');
+  describe('GET /ranking/personagens/top', () => {
+    it('deve delegar ao rankingController.getTopPersonagens', async () => {
+      const res = await request(app).get('/ranking/personagens/top');
 
       expect(res.status).toBe(200);
-      expect(rankingControllerMocks.getPontos).toHaveBeenCalledTimes(1);
-    });
-  });
-
-  describe('POST /ranking/:usuarioId/atualizar', () => {
-    it('deve rejeitar sem autenticação retornando 401', async () => {
-      const res = await request(app).post('/ranking/1/atualizar').send({});
-
-      expect(res.status).toBe(401);
-      expect(rankingControllerMocks.atualizar).not.toHaveBeenCalled();
-    });
-
-    it('deve permitir acesso autenticado e delegar ao rankingController.atualizar', async () => {
-      const res = await request(app)
-        .post('/ranking/1/atualizar')
-        .set('Authorization', 'Bearer user-token')
-        .send({});
-
-      expect(res.status).toBe(200);
-      expect(rankingControllerMocks.atualizar).toHaveBeenCalledTimes(1);
-    });
-  });
-
-  describe('POST /ranking/:usuarioId/recalcular', () => {
-    it('deve rejeitar sem autenticação retornando 401', async () => {
-      const res = await request(app).post('/ranking/1/recalcular').send({});
-
-      expect(res.status).toBe(401);
-      expect(rankingControllerMocks.recalcular).not.toHaveBeenCalled();
-    });
-
-    it('deve permitir acesso autenticado e delegar ao rankingController.recalcular', async () => {
-      const res = await request(app)
-        .post('/ranking/1/recalcular')
-        .set('Authorization', 'Bearer user-token')
-        .send({});
-
-      expect(res.status).toBe(200);
-      expect(rankingControllerMocks.recalcular).toHaveBeenCalledTimes(1);
+      expect(rankingControllerMocks.getTopPersonagens).toHaveBeenCalledTimes(1);
     });
   });
 });
