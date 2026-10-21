@@ -193,6 +193,7 @@ model Personagem {
   aniversario    String?
   altura_inicial String?
   afiliacao      String?
+  nivelCombate   Int?
 
   animes    AnimePersonagem[]
   favoritos PersonagemFavorito[]
