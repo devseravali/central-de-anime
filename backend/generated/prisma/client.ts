@@ -77,11 +77,6 @@ export type Usuario = Prisma.UsuarioModel
  */
 export type WatchProgress = Prisma.WatchProgressModel
 /**
- * Model RankingUsuario
- * 
- */
-export type RankingUsuario = Prisma.RankingUsuarioModel
-/**
  * Model CacheAnime
  * 
  */
