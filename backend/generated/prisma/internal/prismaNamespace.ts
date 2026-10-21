@@ -391,7 +391,6 @@ export const ModelName = {
   Episodio: 'Episodio',
   Usuario: 'Usuario',
   WatchProgress: 'WatchProgress',
-  RankingUsuario: 'RankingUsuario',
   CacheAnime: 'CacheAnime',
   AnimeTag: 'AnimeTag',
   AnimeTagAnime: 'AnimeTagAnime',
@@ -423,7 +422,7 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "anime" | "franquia" | "estudio" | "status" | "episodio" | "usuario" | "watchProgress" | "rankingUsuario" | "cacheAnime" | "animeTag" | "animeTagAnime" | "usuarioFavoritoAnime" | "notaAnimeUsuario" | "personagem" | "animePersonagem" | "animeGenero" | "animePlataforma" | "personagemFavorito" | "admin" | "sessao" | "capas" | "genero" | "plataforma" | "filtro"
+    modelProps: "anime" | "franquia" | "estudio" | "status" | "episodio" | "usuario" | "watchProgress" | "cacheAnime" | "animeTag" | "animeTagAnime" | "usuarioFavoritoAnime" | "notaAnimeUsuario" | "personagem" | "animePersonagem" | "animeGenero" | "animePlataforma" | "personagemFavorito" | "admin" | "sessao" | "capas" | "genero" | "plataforma" | "filtro"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -942,80 +941,6 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         count: {
           args: Prisma.WatchProgressCountArgs<ExtArgs>
           result: runtime.Types.Utils.Optional<Prisma.WatchProgressCountAggregateOutputType> | number
-        }
-      }
-    }
-    RankingUsuario: {
-      payload: Prisma.$RankingUsuarioPayload<ExtArgs>
-      fields: Prisma.RankingUsuarioFieldRefs
-      operations: {
-        findUnique: {
-          args: Prisma.RankingUsuarioFindUniqueArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload> | null
-        }
-        findUniqueOrThrow: {
-          args: Prisma.RankingUsuarioFindUniqueOrThrowArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>
-        }
-        findFirst: {
-          args: Prisma.RankingUsuarioFindFirstArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload> | null
-        }
-        findFirstOrThrow: {
-          args: Prisma.RankingUsuarioFindFirstOrThrowArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>
-        }
-        findMany: {
-          args: Prisma.RankingUsuarioFindManyArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>[]
-        }
-        create: {
-          args: Prisma.RankingUsuarioCreateArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>
-        }
-        createMany: {
-          args: Prisma.RankingUsuarioCreateManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        createManyAndReturn: {
-          args: Prisma.RankingUsuarioCreateManyAndReturnArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>[]
-        }
-        delete: {
-          args: Prisma.RankingUsuarioDeleteArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>
-        }
-        update: {
-          args: Prisma.RankingUsuarioUpdateArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>
-        }
-        deleteMany: {
-          args: Prisma.RankingUsuarioDeleteManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        updateMany: {
-          args: Prisma.RankingUsuarioUpdateManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        updateManyAndReturn: {
-          args: Prisma.RankingUsuarioUpdateManyAndReturnArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>[]
-        }
-        upsert: {
-          args: Prisma.RankingUsuarioUpsertArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$RankingUsuarioPayload>
-        }
-        aggregate: {
-          args: Prisma.RankingUsuarioAggregateArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.AggregateRankingUsuario>
-        }
-        groupBy: {
-          args: Prisma.RankingUsuarioGroupByArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.RankingUsuarioGroupByOutputType>[]
-        }
-        count: {
-          args: Prisma.RankingUsuarioCountArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.RankingUsuarioCountAggregateOutputType> | number
         }
       }
     }
@@ -2331,18 +2256,6 @@ export const WatchProgressScalarFieldEnum = {
 export type WatchProgressScalarFieldEnum = (typeof WatchProgressScalarFieldEnum)[keyof typeof WatchProgressScalarFieldEnum]
 
 
-export const RankingUsuarioScalarFieldEnum = {
-  id: 'id',
-  usuarioId: 'usuarioId',
-  pontos: 'pontos',
-  nivel: 'nivel',
-  totalEpisodiosAssistidos: 'totalEpisodiosAssistidos',
-  atualizadoEm: 'atualizadoEm'
-} as const
-
-export type RankingUsuarioScalarFieldEnum = (typeof RankingUsuarioScalarFieldEnum)[keyof typeof RankingUsuarioScalarFieldEnum]
-
-
 export const CacheAnimeScalarFieldEnum = {
   id: 'id',
   animeId: 'animeId',
@@ -2399,7 +2312,8 @@ export const PersonagemScalarFieldEnum = {
   papel: 'papel',
   aniversario: 'aniversario',
   altura_inicial: 'altura_inicial',
-  afiliacao: 'afiliacao'
+  afiliacao: 'afiliacao',
+  nivelCombate: 'nivelCombate'
 } as const
 
 export type PersonagemScalarFieldEnum = (typeof PersonagemScalarFieldEnum)[keyof typeof PersonagemScalarFieldEnum]
@@ -2707,7 +2621,6 @@ export type GlobalOmitConfig = {
   episodio?: Prisma.EpisodioOmit
   usuario?: Prisma.UsuarioOmit
   watchProgress?: Prisma.WatchProgressOmit
-  rankingUsuario?: Prisma.RankingUsuarioOmit
   cacheAnime?: Prisma.CacheAnimeOmit
   animeTag?: Prisma.AnimeTagOmit
   animeTagAnime?: Prisma.AnimeTagAnimeOmit

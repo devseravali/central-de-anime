@@ -58,7 +58,6 @@ export const ModelName = {
   Episodio: 'Episodio',
   Usuario: 'Usuario',
   WatchProgress: 'WatchProgress',
-  RankingUsuario: 'RankingUsuario',
   CacheAnime: 'CacheAnime',
   AnimeTag: 'AnimeTag',
   AnimeTagAnime: 'AnimeTagAnime',
@@ -182,18 +181,6 @@ export const WatchProgressScalarFieldEnum = {
 export type WatchProgressScalarFieldEnum = (typeof WatchProgressScalarFieldEnum)[keyof typeof WatchProgressScalarFieldEnum]
 
 
-export const RankingUsuarioScalarFieldEnum = {
-  id: 'id',
-  usuarioId: 'usuarioId',
-  pontos: 'pontos',
-  nivel: 'nivel',
-  totalEpisodiosAssistidos: 'totalEpisodiosAssistidos',
-  atualizadoEm: 'atualizadoEm'
-} as const
-
-export type RankingUsuarioScalarFieldEnum = (typeof RankingUsuarioScalarFieldEnum)[keyof typeof RankingUsuarioScalarFieldEnum]
-
-
 export const CacheAnimeScalarFieldEnum = {
   id: 'id',
   animeId: 'animeId',
@@ -250,7 +237,8 @@ export const PersonagemScalarFieldEnum = {
   papel: 'papel',
   aniversario: 'aniversario',
   altura_inicial: 'altura_inicial',
-  afiliacao: 'afiliacao'
+  afiliacao: 'afiliacao',
+  nivelCombate: 'nivelCombate'
 } as const
 
 export type PersonagemScalarFieldEnum = (typeof PersonagemScalarFieldEnum)[keyof typeof PersonagemScalarFieldEnum]
