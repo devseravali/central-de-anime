@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         scroll-behavior: smooth;
+        color-scheme: ${({ theme }) => theme.mode};
+        background-color: ${({ theme }) => theme.colors.background};
     }
 
     body {
@@ -47,10 +49,21 @@ export const GlobalStyle = createGlobalStyle`
         cursor: not-allowed;
     }
 
+    input[type='checkbox'],
+    input[type='radio'],
+    progress {
+        accent-color: ${({ theme }) => theme.colors.primary};
+    }
+
     input,
     textarea,
     select {
         outline: none;
+    }
+
+    :where(a, button, input, textarea, select):focus-visible {
+        outline: 2px solid ${({ theme }) => theme.colors.primary};
+        outline-offset: 3px;
     }
 
     a {
@@ -87,5 +100,15 @@ export const GlobalStyle = createGlobalStyle`
     ::selection {
         background: ${({ theme }) => theme.colors.primary};
         color: ${({ theme }) => theme.colors.white};
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        body {
+            transition: none;
+        }
     }
 `;
