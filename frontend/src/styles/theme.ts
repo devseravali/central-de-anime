@@ -5,7 +5,10 @@ import { darkShadows, lightShadows } from './shadows';
 import { spacing } from './spacing';
 import { typography } from './typography';
 
+export type ThemeMode = 'dark' | 'light';
+
 export const darkTheme = {
+    mode: 'dark' as const,
     colors: darkColors,
     typography,
     spacing,
@@ -15,6 +18,7 @@ export const darkTheme = {
 };
 
 export const lightTheme = {
+    mode: 'light' as const,
     colors: lightColors,
     typography,
     spacing,
@@ -23,4 +27,4 @@ export const lightTheme = {
     shadows: lightShadows,
 };
 
-export type AppTheme = typeof darkTheme;
+export type AppTheme = Omit<typeof darkTheme, 'mode'> & { mode: ThemeMode };
