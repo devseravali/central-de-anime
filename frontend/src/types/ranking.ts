@@ -1,26 +1,29 @@
-export type RankingEntry = {
+export type RankingAnimeEntry = {
   id: number;
-  name: string;
-  subtitle?: string;
-  points: number;
+  titulo: string;
+  capaUrl: string | null;
+  tipo: string;
+  ano: number;
+  totalFavoritos: number;
   position?: number;
 };
 
-export type RankingResponse = {
-  podium: RankingEntry[];
-  ranking: RankingEntry[];
+export type RankingPersonagemEntry = {
+  id: number;
+  nome: string;
+  imagem: string;
+  papel: string | null;
+  afiliacao: string | null;
+  totalFavoritos: number;
+  position?: number;
 };
 
-export type RankingTopItem = {
-  id: number;
-  usuarioId: number;
-  pontos: number;
-  nivel: number;
-  totalEpisodiosAssistidos: number;
-  atualizadoEm: string;
-  usuario: {
-    id: number;
-    nome: string;
-    avatar: string | null;
-  };
+export type RankingAnimeResponse = {
+  podium: RankingAnimeEntry[];
+  ranking: RankingAnimeEntry[];
+};
+
+export type RankingPersonagemResponse = {
+  podium: RankingPersonagemEntry[];
+  ranking: RankingPersonagemEntry[];
 };
