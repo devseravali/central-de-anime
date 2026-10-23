@@ -43,7 +43,7 @@ export const HeroBanner = styled.div<{ $imageUrl?: string | null }>`
     background:
         linear-gradient(
             145deg,
-            ${({ theme, $imageUrl }) => ($imageUrl ? 'rgba(13, 20, 35, 0.55)' : theme.colors.surfaceElevated)},
+            ${({ theme, $imageUrl }) => ($imageUrl ? theme.colors.bannerOverlay : theme.colors.surfaceElevated)},
             ${({ theme }) => theme.colors.surface}
         ),
         radial-gradient(
