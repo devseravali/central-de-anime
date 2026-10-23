@@ -314,10 +314,10 @@ export const Rating = styled.span`
 
     padding: 0.18rem 0.5rem;
 
-    border: 1px solid rgba(6, 182, 212, 0.35);
+    border: 1px solid ${({ theme }) => theme.colors.imageBadgeBorder};
     border-radius: 999px;
 
-    background: rgba(6, 182, 212, 0.2);
+    background: ${({ theme }) => theme.colors.imageBadgeBackground};
     color: ${({ theme }) => theme.colors.cyan};
 
     font-family: ${({ theme }) => theme.typography.labelSmall.fontFamily};
@@ -421,6 +421,49 @@ export const EmptyText = styled.p`
 
     font-family: ${({ theme }) => theme.typography.bodyMedium.fontFamily};
     font-size: ${({ theme }) => theme.typography.bodyMedium.fontSize};
+`;
+
+export const AuthGateActions = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+`;
+
+export const AuthGateLink = styled.a<{ $variant?: 'secondary' }>`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+    padding: 0.56rem 0.95rem;
+
+    border-radius: 10px;
+    text-decoration: none;
+
+    font-family: ${({ theme }) => theme.typography.labelLarge.fontFamily};
+    font-size: ${({ theme }) => theme.typography.labelLarge.fontSize};
+    font-weight: ${({ theme }) => theme.typography.labelLarge.fontWeight};
+
+    ${({ $variant, theme }) =>
+        $variant === 'secondary'
+            ? css`
+                  border: 1px solid ${theme.colors.borderStrong};
+                  background: ${theme.colors.surface};
+                  color: ${theme.colors.textSecondary};
+
+                  &:hover {
+                      color: ${theme.colors.textPrimary};
+                      border-color: ${theme.colors.borderHover};
+                  }
+              `
+            : css`
+                  background: linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.primaryHover});
+                  color: ${theme.colors.white};
+                  box-shadow: ${theme.shadows.card};
+              `}
 `;
 
 export const LoadMoreWrap = styled.div`
