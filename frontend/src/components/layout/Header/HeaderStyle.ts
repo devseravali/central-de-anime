@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
 
   padding: 0.75rem 1rem;
 
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02) inset;
+  box-shadow: 0 1px 0 ${({ theme }) => theme.colors.headerInset} inset;
 `;
 
 export const HeaderTwo = styled.div`
@@ -19,7 +19,7 @@ export const HeaderTwo = styled.div`
 
   margin: 0 auto;
 
-  gap: 1.5rem;
+  gap: 1rem;
 
   flex-wrap: nowrap;
 `;
@@ -48,8 +48,6 @@ export const ProfileLink = styled.a`
   width: 40px;
   height: 40px;
 
-  margin-left: 0.5rem;
-
   border-radius: 50%;
 
   overflow: hidden;
@@ -70,7 +68,7 @@ export const SearchForm = styled.form`
 
   flex: 1 1 240px;
 
-  min-width: 160px;
+  min-width: 120px;
   max-width: 360px;
 
   margin-left: auto;
@@ -80,7 +78,7 @@ export const UlHeader = styled.ul`
   display: flex;
   align-items: center;
 
-  gap: 1.25rem;
+  gap: 0.75rem;
 
   padding: 0;
   margin: 0;
@@ -127,7 +125,7 @@ export const LinkHerf = styled.a`
     color 120ms ease;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: ${({ theme }) => theme.colors.headerHover};
     font-weight: ${({ theme }) => theme.typography.headlineSmall.fontWeight};
     color: ${({ theme }) => theme.colors.primary};
   }
@@ -148,10 +146,41 @@ export const AuthActionButton = styled.button`
     color 120ms ease;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: ${({ theme }) => theme.colors.headerHover};
     font-weight: ${({ theme }) => theme.typography.headlineSmall.fontWeight};
     color: ${({ theme }) => theme.colors.primary};
   }
+`;
+
+export const ThemeToggleButton = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  padding: 0.5rem 0.65rem;
+  flex-shrink: 0;
+  border: 1px solid ${({ theme }) => theme.colors.borderStrong};
+  border-radius: ${({ theme }) => theme.radii.button};
+  background: ${({ theme }) => theme.colors.surfaceElevated};
+  color: ${({ theme }) => theme.colors.textPrimary};
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.headerHover};
+    border-color: ${({ theme }) => theme.colors.primary};
+  }
+
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.colors.primary};
+    outline-offset: 3px;
+  }
+`;
+
+export const ThemeStorageNotice = styled.p`
+  max-width: 1200px;
+  margin: 0.5rem auto 0;
+  color: ${({ theme }) => theme.colors.danger};
+  font-size: 0.875rem;
 `;
 
 export const TituloHeader = styled.h1`
