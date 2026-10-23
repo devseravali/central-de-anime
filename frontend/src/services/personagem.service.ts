@@ -1,22 +1,13 @@
 import { api } from './api';
+import type { Personagem } from '../types/Personagem';
 
-export interface Personagem {
-    id: number;
-    nome: string;
-    idade_inicial?: number | null;
-    sexo?: string | null;
-    papel?: string | null;
-    aniversario?: string | null;
-    altura_inicial?: string | null;
-    afiliacao?: string | null;
-    sobre?: string | null;
-    imagem?: string | null;
-}
-
+export type { Personagem } from '../types/Personagem';
 
 export const personagemService = {
-    listarPersonagens: async (): Promise<Personagem[]> => {
-        const response = await api.get<Personagem[]>('/personagens');
+    listarPersonagens: async (animeId?: number): Promise<Personagem[]> => {
+        const response = await api.get<Personagem[]>('/personagens', {
+            params: animeId ? { animeId } : undefined,
+        });
         return response.data;
     },
 
