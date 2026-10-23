@@ -1,8 +1,12 @@
-import { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect, useMemo, useState, type FormEvent } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Moon, Sun } from 'lucide-react';
+import { useAppTheme } from '../../../providers/ThemeContext';
 import { Input } from "../../common/Input/Input";
 import { authService } from '../../../services/auth.service';
-import { api } from '../../../services/api';
+import { api, clearAuthSession, getAccessToken } from '../../../services/api';
+import type { UsuarioProfileResponse } from '../../../services/user.service';
+import { getApiOrigin } from '../../../utils/apiUrl';
 import {
   AuthActionButton,
   HeaderContainer,
@@ -17,29 +21,12 @@ import {
   ImageHeader,
   SpanHeader,
   TituloHeader,
+  ThemeToggleButton,
+  ThemeStorageNotice,
 } from "./HeaderStyle";
 
-type HeaderPerfilResponse = {
-  usuario?: {
-    avatar?: string | null;
-  };
-};
-
 const defaultAvatar = 'https://via.placeholder.com/40';
-
-const getApiOrigin = (): string | null => {
-  const baseUrl = import.meta.env.VITE_API_URL;
-
-  if (typeof baseUrl !== 'string' || !baseUrl.trim()) {
-    return null;
-  }
-
-  try {
-    return new URL(baseUrl).origin;
-  } catch {
-    return null;
-  }
-};
+const AUTH_STATE_CHANGED_EVENT = 'auth-state-changed';
 
 const toAbsoluteAvatar = (value: string | null | undefined): string => {
   if (!value) {
@@ -66,23 +53,28 @@ const toAbsoluteAvatar = (value: string | null | undefined): string => {
 };
 
 export const Header = () => {
+  const { mode, toggleTheme, storageError } = useAppTheme();
   const navigate = useNavigate();
   const location = useLocation();
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    Boolean(localStorage.getItem('accessToken'))
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() =>
+    Boolean(getAccessToken())
   );
   const [avatarUrl, setAvatarUrl] = useState<string>(() => {
     const localAvatar = localStorage.getItem('userAvatar');
     return toAbsoluteAvatar(localAvatar);
   });
+  const searchTermFromUrl = useMemo(() => {
+    if (location.pathname !== '/explorar') {
+      return '';
+    }
 
-  useEffect(() => {
-    setIsAuthenticated(Boolean(localStorage.getItem('accessToken')));
-  }, [location.pathname]);
+    const params = new URLSearchParams(location.search);
+    return (params.get('busca') ?? '').trim();
+  }, [location.pathname, location.search]);
 
   useEffect(() => {
     const loadAvatar = async () => {
-      const token = localStorage.getItem('accessToken');
+      const token = getAccessToken();
 
       if (!token) {
         setAvatarUrl(defaultAvatar);
@@ -96,7 +88,7 @@ export const Header = () => {
       }
 
       try {
-        const response = await api.get<HeaderPerfilResponse>('/usuario/me', {
+        const response = await api.get<UsuarioProfileResponse>('/usuario/me', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -106,6 +98,7 @@ export const Header = () => {
         localStorage.setItem('userAvatar', avatar ?? '');
         setAvatarUrl(toAbsoluteAvatar(avatar));
       } catch {
+        setAvatarUrl(toAbsoluteAvatar(cached));
       }
     };
 
@@ -113,14 +106,22 @@ export const Header = () => {
   }, [location.pathname]);
 
   useEffect(() => {
+    const syncAuthState = () => {
+      setIsAuthenticated(Boolean(getAccessToken()));
+    };
+
     const handleAvatarUpdated = () => {
       const localAvatar = localStorage.getItem('userAvatar');
       setAvatarUrl(toAbsoluteAvatar(localAvatar));
     };
 
+    window.addEventListener(AUTH_STATE_CHANGED_EVENT, syncAuthState);
+    window.addEventListener('storage', syncAuthState);
     window.addEventListener('user-avatar-updated', handleAvatarUpdated);
 
     return () => {
+      window.removeEventListener(AUTH_STATE_CHANGED_EVENT, syncAuthState);
+      window.removeEventListener('storage', syncAuthState);
       window.removeEventListener('user-avatar-updated', handleAvatarUpdated);
     };
   }, []);
@@ -128,21 +129,40 @@ export const Header = () => {
   const handleLogout = async () => {
     try {
       await authService.logout();
-    } catch (_error) {
+    } catch (error) {
+      console.error('Falha ao encerrar sessão no servidor:', error);
     } finally {
-      localStorage.removeItem('accessToken');
-      localStorage.removeItem('refreshToken');
+      clearAuthSession();
       localStorage.removeItem('userAvatar');
-      setIsAuthenticated(false);
       setAvatarUrl(defaultAvatar);
       navigate('/login');
     }
   };
 
+  const handleSearchSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const rawSearchTerm = formData.get('header-search');
+    const normalizedSearch =
+      typeof rawSearchTerm === 'string'
+        ? rawSearchTerm.trim()
+        : '';
+    const destination = normalizedSearch
+      ? `/explorar?busca=${encodeURIComponent(normalizedSearch)}`
+      : '/explorar';
+
+    if (`${location.pathname}${location.search}` === destination) {
+      return;
+    }
+
+    navigate(destination);
+  };
+
   return (
     <HeaderContainer>
       <HeaderTwo>
-        <LinkHerf href="/" aria-label="Central de Anime - Página inicial">
+        <LinkHerf as={Link} to="/" aria-label="Central de Anime - Página inicial">
           <TituloHeader>
             Central de <SpanHeader>Anime</SpanHeader>
           </TituloHeader>
@@ -151,40 +171,52 @@ export const Header = () => {
         <HeaderNav aria-label="Navegação principal">
           <UlHeader>
             <LiHeader>
-              <LinkHerf href="/explorar">Explorar</LinkHerf>
+              <LinkHerf as={Link} to="/explorar">Explorar</LinkHerf>
             </LiHeader>
 
             <LiHeader>
-              <LinkHerf href="/ranking">Ranking</LinkHerf>
+              <LinkHerf as={Link} to="/ranking">Ranking</LinkHerf>
             </LiHeader>
 
             <LiHeader>
-              <LinkHerf href="/favoritos">Favoritos</LinkHerf>
+              <LinkHerf as={Link} to="/favoritos">Favoritos</LinkHerf>
             </LiHeader>
 
             <LiHeader>
-              <LinkHerf href="/progresso">Meu Progresso</LinkHerf>
+              <LinkHerf as={Link} to="/progresso">Meu Progresso</LinkHerf>
             </LiHeader>
           </UlHeader>
         </HeaderNav>
 
-        <SearchForm role="search">
+        <SearchForm role="search" onSubmit={handleSearchSubmit}>
           <Input
+            key={`${location.pathname}:${location.search}`}
+            name="header-search"
             type="search"
             placeholder="Buscar animes"
             aria-label="Buscar animes"
+            defaultValue={searchTermFromUrl}
           />
         </SearchForm>
+
+        <ThemeToggleButton
+          type="button"
+          onClick={toggleTheme}
+          aria-label={mode === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'}
+          aria-pressed={mode === 'dark'}
+        >
+          {mode === 'dark' ? <Moon size={20} aria-hidden="true" /> : <Sun size={20} aria-hidden="true" />}
+        </ThemeToggleButton>
 
         {!isAuthenticated && (
           <AuthNav aria-label="Autenticação">
             <UlHeader>
               <LiHeader>
-                <LinkHerf href="/login">Entrar</LinkHerf>
+                <LinkHerf as={Link} to="/login">Entrar</LinkHerf>
               </LiHeader>
 
               <LiHeader>
-                <LinkHerf href="/registro">Registrar</LinkHerf>
+                <LinkHerf as={Link} to="/registro">Registrar</LinkHerf>
               </LiHeader>
             </UlHeader>
           </AuthNav>
@@ -202,13 +234,14 @@ export const Header = () => {
           </AuthNav>
         )}
 
-        <ProfileLink href="/perfil" aria-label="Acessar meu perfil">
+        <ProfileLink as={Link} to="/perfil" aria-label="Acessar meu perfil">
           <ImageHeader
             src={avatarUrl}
             alt="Avatar do usuário"
           />
         </ProfileLink>
       </HeaderTwo>
+      {storageError && <ThemeStorageNotice role="status">{storageError}</ThemeStorageNotice>}
     </HeaderContainer>
   );
 };
