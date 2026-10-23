@@ -1,12 +1,17 @@
-import { type ChangeEvent, useEffect, useMemo, useState } from "react";
+import { type ChangeEvent, useEffect, useMemo, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 import { animeService } from "../../services/anime.service";
 
-import { api } from "../../services/api";
+import { getAccessToken } from "../../services/api";
 
 import { episodioService } from "../../services/episodio.service";
+import { userService } from "../../services/user.service";
 
-import { progressoService } from "../../services/progresso.service";
+import {
+  progressoService,
+  type ProgressoEpisodio,
+} from "../../services/progresso.service";
 
 import type { AnimeData } from "../../types/AnimeData";
 
@@ -72,6 +77,11 @@ import {
   ProgressRowText,
   SidebarContent,
   WeekBarItem,
+  AuthGateCard,
+  AuthGateTitle,
+  AuthGateText,
+  AuthGateActions,
+  AuthGateLink,
 } from "./MeuProgressoStyle";
 
 type ProgressStatus =
@@ -93,29 +103,13 @@ type AnimeProgressItem = {
   sigla: string;
 };
 
-type MeuPerfilResponse = {
-  id?: number;
-  usuario?: {
-    id?: number;
-  };
-};
-
-type ProgressRecord = {
-  episodioId: number;
-  assistido: boolean;
-  porcentagem?: number;
-  atualizadoEm?: string;
-  episodio?: {
-    id?: number;
-    animeId?: number;
-    titulo?: string;
-    numero?: number;
-    anime?: {
-      id?: number;
-      titulo?: string;
-    };
-  };
-};
+type ProgressRecord = Pick<
+  ProgressoEpisodio,
+  "episodioId" | "assistido"
+> &
+  Partial<
+    Pick<ProgressoEpisodio, "porcentagem" | "atualizadoEm" | "episodio">
+  >;
 
 type FilterTab = "todos" | ProgressStatus;
 type SortMode = "recent" | "progress-desc" | "progress-asc" | "alpha";
@@ -173,22 +167,6 @@ const obterTemporadaAtual = ():
   }
 
   return "outono";
-};
-
-const toLista = <T,>(payload: unknown): T[] => {
-  if (Array.isArray(payload)) {
-    return payload as T[];
-  }
-
-  if (
-    payload &&
-    typeof payload === "object" &&
-    Array.isArray((payload as { items?: unknown[] }).items)
-  ) {
-    return (payload as { items: T[] }).items;
-  }
-
-  return [];
 };
 
 const toSigla = (titulo: string): string => {
@@ -478,7 +456,9 @@ export const MeuProgresso = () => {
 
   const [episodios, setEpisodios] = useState<Episodio[]>([]);
 
-  const [carregando, setCarregando] = useState(true);
+  const [carregando, setCarregando] = useState(() =>
+    Boolean(getAccessToken()),
+  );
 
   const [erroCarregamento, setErroCarregamento] = useState(false);
 
@@ -497,18 +477,61 @@ export const MeuProgresso = () => {
 
   const [ordenacao, setOrdenacao] = useState<SortMode>("recent");
 
+  const [sessaoDisponivel, setSessaoDisponivel] = useState<boolean>(() =>
+    Boolean(getAccessToken()),
+  );
+  const sessaoAtualRef = useRef(sessaoDisponivel);
+  const geracaoSessaoRef = useRef(0);
+
   useEffect(() => {
+    const sincronizarSessao = () => {
+      const disponivel = Boolean(getAccessToken());
+
+      if (sessaoAtualRef.current === disponivel) {
+        return;
+      }
+
+      sessaoAtualRef.current = disponivel;
+      geracaoSessaoRef.current += 1;
+      setSessaoDisponivel(disponivel);
+
+      if (!disponivel) {
+        setItens([]);
+        setEpisodios([]);
+        setAnimesPorId({});
+        setAtividadeSemanal([0, 0, 0, 0, 0, 0, 0]);
+        setUsuarioId(null);
+        setCarregando(false);
+        setErroCarregamento(false);
+        setAnimeAtualizandoId(null);
+      }
+    };
+
+    window.addEventListener("auth-state-changed", sincronizarSessao);
+    window.addEventListener("storage", sincronizarSessao);
+
+    return () => {
+      window.removeEventListener("auth-state-changed", sincronizarSessao);
+      window.removeEventListener("storage", sincronizarSessao);
+    };
+  }, []);
+
+  useEffect(() => {
+    let mounted = true;
+    const geracaoSessao = geracaoSessaoRef.current;
+
     const carregarDados = async () => {
       try {
         setCarregando(true);
 
         setErroCarregamento(false);
 
-        const perfilResponse = await api.get<MeuPerfilResponse>("/usuario/me");
+        const perfilResponse = await userService.buscarMeuPerfil();
+        if (!mounted || geracaoSessao !== geracaoSessaoRef.current) {
+          return;
+        }
 
-        const perfilId = Number(
-          perfilResponse.data?.usuario?.id ?? perfilResponse.data?.id,
-        );
+        const perfilId = Number(perfilResponse.usuario?.id);
 
         if (!Number.isInteger(perfilId) || perfilId <= 0) {
           throw new Error("Usuario autenticado invalido");
@@ -525,9 +548,9 @@ export const MeuProgresso = () => {
             animeService.listarAnimes({ page: 1, perPage: 1000 }),
           ]);
 
-        const progressos = toLista<ProgressRecord>(progressosResponse);
-
-        const episodiosLista = toLista<Episodio>(episodiosResponse);
+        if (!mounted || geracaoSessao !== geracaoSessaoRef.current) {
+          return;
+        }
 
         const mapaAnimes = (animesResponse.items ?? []).reduce<
           Record<number, AnimeData>
@@ -537,21 +560,35 @@ export const MeuProgresso = () => {
           return acc;
         }, {});
 
-        setEpisodios(episodiosLista);
+        setEpisodios(episodiosResponse);
 
         setAnimesPorId(mapaAnimes);
-        setAtividadeSemanal(extrairAtividadeSemanal(progressos));
+        setAtividadeSemanal(extrairAtividadeSemanal(progressosResponse));
 
-        setItens(montarItens(episodiosLista, progressos, mapaAnimes));
+        setItens(montarItens(episodiosResponse, progressosResponse, mapaAnimes));
       } catch {
-        setErroCarregamento(true);
+        if (mounted && geracaoSessao === geracaoSessaoRef.current) {
+          setErroCarregamento(true);
+        }
       } finally {
-        setCarregando(false);
+        if (mounted && geracaoSessao === geracaoSessaoRef.current) {
+          setCarregando(false);
+        }
       }
     };
 
+    if (!sessaoDisponivel) {
+      return () => {
+        mounted = false;
+      };
+    }
+
     carregarDados();
-  }, []);
+
+    return () => {
+      mounted = false;
+    };
+  }, [sessaoDisponivel]);
 
   const totaisPorStatus = useMemo(() => {
     return {
@@ -646,20 +683,15 @@ export const MeuProgresso = () => {
       return;
     }
 
-    const [progressosResponse, episodiosResponse] = await Promise.all([
-      progressoService.obterProgressosUsuario(usuarioId),
+    const geracaoSessao = geracaoSessaoRef.current;
+    const progressos = await progressoService.obterProgressosUsuario(usuarioId);
 
-      episodioService.listarEpisodios(),
-    ]);
+    if (geracaoSessao !== geracaoSessaoRef.current) {
+      return;
+    }
 
-    const progressos = toLista<ProgressRecord>(progressosResponse);
-
-    const episodiosLista = toLista<Episodio>(episodiosResponse);
-
-    setEpisodios(episodiosLista);
     setAtividadeSemanal(extrairAtividadeSemanal(progressos));
-
-    setItens(montarItens(episodiosLista, progressos, animesPorId));
+    setItens(montarItens(episodios, progressos, animesPorId));
   };
 
   const alterarEpisodio = async (animeId: number, delta: number) => {
@@ -667,6 +699,8 @@ export const MeuProgresso = () => {
       return;
     }
 
+    const usuarioAtual = usuarioId;
+    const geracaoSessao = geracaoSessaoRef.current;
     const episodiosDoAnime = ordenarEpisodios(
       episodios.filter((episodio) => episodio.animeId === animeId),
     );
@@ -679,12 +713,14 @@ export const MeuProgresso = () => {
       setAnimeAtualizandoId(animeId);
 
       const progressosResponse =
-        await progressoService.obterProgressosUsuario(usuarioId);
+        await progressoService.obterProgressosUsuario(usuarioAtual);
 
-      const progressos = toLista<ProgressRecord>(progressosResponse);
+      if (geracaoSessao !== geracaoSessaoRef.current) {
+        return;
+      }
 
       const assistidos = new Set<number>(
-        progressos
+        progressosResponse
 
           .filter((registro) => {
             const mesmoAnime = registro.episodio?.anime?.id === animeId;
@@ -722,11 +758,19 @@ export const MeuProgresso = () => {
         await progressoService.atualizarProgresso(ultimoAssistido.id, 0);
       }
 
+      if (geracaoSessao !== geracaoSessaoRef.current) {
+        return;
+      }
+
       await recarregarAnime();
     } catch {
-      setErroCarregamento(true);
+      if (geracaoSessao === geracaoSessaoRef.current) {
+        setErroCarregamento(true);
+      }
     } finally {
-      setAnimeAtualizandoId(null);
+      if (geracaoSessao === geracaoSessaoRef.current) {
+        setAnimeAtualizandoId(null);
+      }
     }
   };
 
@@ -737,6 +781,42 @@ export const MeuProgresso = () => {
   const handleOrdenacaoChange = (evento: ChangeEvent<HTMLSelectElement>) => {
     setOrdenacao(evento.target.value as SortMode);
   };
+
+  if (!sessaoDisponivel) {
+    return (
+      <Page>
+        <Hero>
+          <HeroContent>
+            <HeroEyebrow>{`Temporada de ${temporadaAtual}`}</HeroEyebrow>
+            <HeroTitle>
+              Meu Progresso de <Span>Animes</Span>
+            </HeroTitle>
+            <HeroSubtitle>
+              Acompanhe episódios assistidos, metas da temporada e sua lista em
+              andamento.
+            </HeroSubtitle>
+          </HeroContent>
+        </Hero>
+
+        <AuthGateCard>
+          <AuthGateTitle>Conteudo restrito</AuthGateTitle>
+          <AuthGateText>
+            Faca login ou cadastro para ver o seu progresso de animes.
+          </AuthGateText>
+
+          <AuthGateActions>
+            <AuthGateLink as={Link} to="/login">
+              Fazer login
+            </AuthGateLink>
+
+            <AuthGateLink as={Link} to="/registro" $variant="secondary">
+              Criar cadastro
+            </AuthGateLink>
+          </AuthGateActions>
+        </AuthGateCard>
+      </Page>
+    );
+  }
 
   return (
     <Page>
