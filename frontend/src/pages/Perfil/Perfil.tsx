@@ -4,6 +4,9 @@ import { isAxiosError } from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 import { api } from '../../services/api';
+import type { ProgressoEpisodio } from '../../services/progresso.service';
+import type { UsuarioProfileResponse } from '../../services/user.service';
+import { getApiOrigin } from '../../utils/apiUrl';
 
 import {
     ActionButton,
@@ -49,16 +52,6 @@ import {
     SpanError,
 } from './PerfilStyle';
 
-type PerfilApiResponse = {
-    usuario?: {
-        id?: number;
-        nome?: string;
-        email?: string;
-        avatar?: string | null;
-        status?: string;
-    };
-};
-
 type RankingPontosResponse = {
     pontos?: number;
 };
@@ -72,22 +65,10 @@ type FavoritoPersonagem = {
     id?: number;
 };
 
-type ProgressAnime = {
-    titulo?: string;
-};
-
-type ProgressEpisodio = {
-    titulo?: string;
-    numero?: number;
-    anime?: ProgressAnime;
-};
-
-type ProgressItem = {
-    assistido?: boolean;
-    porcentagem?: number;
-    atualizadoEm?: string;
-    episodio?: ProgressEpisodio;
-};
+type ProgressItem = Pick<
+    Partial<ProgressoEpisodio>,
+    'assistido' | 'porcentagem' | 'atualizadoEm' | 'episodio'
+>;
 
 type ConquistaItem = {
     id: string;
@@ -111,20 +92,6 @@ type ConquistasResponse = {
 };
 
 const defaultAvatar = 'https://via.placeholder.com/200';
-
-const getApiOrigin = (): string | null => {
-    const baseUrl = import.meta.env.VITE_API_URL;
-
-    if (typeof baseUrl !== 'string' || baseUrl.trim() === '') {
-        return null;
-    }
-
-    try {
-        return new URL(baseUrl).origin;
-    } catch {
-        return null;
-    }
-};
 
 const normalizeMediaUrl = (value: string | null | undefined): string | null => {
     if (!value) {
@@ -232,7 +199,7 @@ export const Perfil = () => {
             }
 
             try {
-                const response = await api.get<PerfilApiResponse>('/usuario/me', {
+                const response = await api.get<UsuarioProfileResponse>('/usuario/me', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
