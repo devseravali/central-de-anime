@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import usePersonagem from "../../../hooks/UsePersonagem/UsePersonagem";
+import type { PersonagemHookData } from "../../../types/Personagem";
 import { PersonagemCardContainer, PersonagemImage, FigurePersonagem, PersonagemCaption, PersonagemName, PersonagemRole } from "./PersonagemCardStyle";
     
 type PersonagemCardProps = {
@@ -8,6 +9,7 @@ type PersonagemCardProps = {
   imagem?: string;
   className?: string;
   id?: string | number;
+  personagem?: PersonagemHookData;
   onClick?: () => void;
   urlBase?: string;
 };
@@ -17,11 +19,22 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
   imagem,
   className,
   id,
+  personagem,
   onClick,
   urlBase,
 }) => {
   const urlBaseProp = urlBase;
-  const { data, loading, error } = usePersonagem({ url: undefined, id, urlBase: urlBaseProp });
+  const {
+    data: fetchedPersonagem,
+    loading,
+    error,
+  } = usePersonagem({
+    url: undefined,
+    id,
+    urlBase: urlBaseProp,
+    enabled: !personagem,
+  });
+  const data = personagem ?? fetchedPersonagem;
 
   const backendOrigin = React.useMemo(() => {
     try {
