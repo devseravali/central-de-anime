@@ -92,7 +92,7 @@ export const PrimaryCTA = styled.a`
     border-radius: 8px;
 
     background: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.onPrimaryCTA};
 
     font-weight: 600;
     text-decoration: none;
