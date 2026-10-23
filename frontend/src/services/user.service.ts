@@ -37,18 +37,6 @@ export interface UsuarioPromocaoResponse {
     nivel?: string;
 }
 
-export interface UsuarioRankingResponse {
-    message: string;
-    ranking: {
-        id: number;
-        usuarioId: number;
-        pontos: number;
-        nivel: number;
-        totalEpisodiosAssistidos: number;
-        atualizadoEm: string;
-    };
-}
-
 export const userService = {
     buscarMeuPerfil: async (): Promise<UsuarioProfileResponse> => {
         const response = await api.get<UsuarioProfileResponse>('/usuario/me');
@@ -69,11 +57,6 @@ export const userService = {
         const response = await api.post<UsuarioPromocaoResponse>('/usuario/promote', {
             usuarioId: id,
         });
-        return response.data;
-    },
-
-    buscarRankingUsuario: async (id: number): Promise<UsuarioRankingResponse> => {
-        const response = await api.get<UsuarioRankingResponse>(`/usuario/${id}/ranking`);
         return response.data;
     },
 
