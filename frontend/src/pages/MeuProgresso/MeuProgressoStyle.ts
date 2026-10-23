@@ -242,6 +242,65 @@ export const EmptyState = styled.div`
     background: ${({ theme }) => theme.colors.surface};
 `;
 
+export const AuthGateCard = styled.section`
+    display: grid;
+    gap: 0.8rem;
+    padding: 1.2rem;
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    border-radius: 14px;
+    background: ${({ theme }) => theme.colors.surface};
+`;
+
+export const AuthGateTitle = styled.h2`
+    font-family: ${({ theme }) => theme.typography.headlineSmall.fontFamily};
+    font-size: ${({ theme }) => theme.typography.headlineSmall.fontSize};
+    font-weight: ${({ theme }) => theme.typography.headlineSmall.fontWeight};
+    color: ${({ theme }) => theme.colors.textPrimary};
+`;
+
+export const AuthGateText = styled.p`
+    color: ${({ theme }) => theme.colors.textSecondary};
+    font-family: ${({ theme }) => theme.typography.bodyMedium.fontFamily};
+    font-size: ${({ theme }) => theme.typography.bodyMedium.fontSize};
+`;
+
+export const AuthGateActions = styled.div`
+    display: flex;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+`;
+
+export const AuthGateLink = styled.a<{ $variant?: 'secondary' }>`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.56rem 0.9rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: ${({ theme }) => theme.typography.labelLarge.fontFamily};
+    font-size: ${({ theme }) => theme.typography.labelLarge.fontSize};
+    font-weight: ${({ theme }) => theme.typography.labelLarge.fontWeight};
+
+    ${({ $variant, theme }) =>
+        $variant === 'secondary'
+            ? css`
+                  border: 1px solid ${theme.colors.borderStrong};
+                  background: ${theme.colors.surface};
+                  color: ${theme.colors.textSecondary};
+
+                  &:hover {
+                      color: ${theme.colors.textPrimary};
+                      border-color: ${theme.colors.borderHover};
+                  }
+              `
+            : css`
+                  background: linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.primaryHover});
+                  color: ${theme.colors.white};
+                  box-shadow: ${theme.shadows.card};
+              `}
+`;
+
 export const List = styled.div`
     display: grid;
     gap: 0.65rem;
