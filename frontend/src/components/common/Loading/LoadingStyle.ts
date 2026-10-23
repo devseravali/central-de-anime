@@ -13,24 +13,31 @@ export const LoadingContainer = styled.div`
 `;
 
 export const LoadingError = styled.div`
-  color: ${({ theme }) => theme.colors.danger || 'red'};
+  color: ${({ theme }) => theme.colors.danger};
   font-weight: 700;
   text-align: center;
   max-width: 640px;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  background: rgba(255,0,0,0.04);
+  background: ${({ theme }) => theme.colors.danger}0a;
 `;
 
 export const Progress = styled.progress`
   width: 120px;
   height: 8px;
   appearance: none;
+  background: ${({ theme }) => theme.colors.surfaceElevated};
+  border: 0;
+  border-radius: 999px;
   &::-webkit-progress-bar {
-    background: rgba(255,255,255,0.04);
+    background: ${({ theme }) => theme.colors.surfaceElevated};
     border-radius: 999px;
   }
   &::-webkit-progress-value {
+    background: ${({ theme }) => theme.colors.primary};
+    border-radius: 999px;
+  }
+  &::-moz-progress-bar {
     background: ${({ theme }) => theme.colors.primary};
     border-radius: 999px;
   }
@@ -58,7 +65,7 @@ export const LoadingMessage = styled.p`
 export const LoadingErrorMessage = styled.p`
   text-align: center;
   font-size: 1rem;
-  color: ${({ theme }) => theme.colors.danger || 'red'};
+  color: ${({ theme }) => theme.colors.danger};
 `;
 
 export const LoadingH2 = styled.h2`
