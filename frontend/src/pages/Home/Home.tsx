@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import {
@@ -60,79 +59,22 @@ import {
     Tiny,
 } from './HomeStyle';
 
-import { animeService } from '../../services/anime.service';
-import {
-    personagemService,
-    type Personagem,
-} from '../../services/personagem.service';
-
-import type { AnimeData } from '../../types/AnimeData';
+import { useHomeData } from '../../hooks/UseHomeData/useHomeData';
+import { resolveAnimeCoverUrl } from '../../utils/animeCoverUrl';
+import { resolveApiMediaUrl } from '../../utils/mediaUrl';
 
 export const Home = () => {
-    const [animes, setAnimes] = useState<AnimeData[]>([]);
-    const [personagens, setPersonagens] = useState<Personagem[]>([]);
-
-    const [loading, setLoading] = useState(true);
-    const [loadingPersonagens, setLoadingPersonagens] = useState(true);
-
-    const [error, setError] = useState(false);
-    const [personagemError, setPersonagemError] = useState(false);
-
-    useEffect(() => {
-        const loadAnimes = async () => {
-            try {
-                setLoading(true);
-                setError(false);
-
-                const response = await animeService.listarAnimes();
-
-                setAnimes(response.items ?? []);
-            } catch {
-                setError(true);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        loadAnimes();
-    }, []);
-
-    useEffect(() => {
-        const loadPersonagens = async () => {
-            try {
-                setLoadingPersonagens(true);
-                setPersonagemError(false);
-
-                const response = await personagemService.listarPersonagens();
-
-                const items = Array.isArray(response)
-                    ? response
-                    : response.items ?? [];
-
-                setPersonagens(items.slice(0, 4));
-            } catch {
-                setPersonagemError(true);
-            } finally {
-                setLoadingPersonagens(false);
-            }
-        };
-
-        loadPersonagens();
-    }, []);
+    const {
+        animes,
+        personagens,
+        loading,
+        loadingPersonagens,
+        error,
+        personagemError,
+    } = useHomeData();
 
     const featuredAnimes = animes.slice(0, 3);
     const trackedAnime = animes[0];
-
-    const apiBase = (import.meta.env.VITE_API_URL ?? 'http://localhost:3000').replace(/\/+$/, '');
-
-    const normalizeImageSrc = (value?: string | null) => {
-        if (!value) return null;
-        if (/^https?:\/\//i.test(value)) return value;
-
-        const cleaned = String(value).trim().replace(/^(?:\.\.\/)+/, '').replace(/^\/+/, '');
-
-        return `${apiBase}/${cleaned}`.replace(/\\/g, '/');
-    };
 
     return (
         <Page>
@@ -241,7 +183,7 @@ export const Home = () => {
                             <TrackerAnime>
                                 {trackedAnime.capaUrl && (
                                     <TrackerImage
-                                        src={trackedAnime.capaUrl}
+                                        src={resolveAnimeCoverUrl(trackedAnime.capaUrl)}
                                         alt={trackedAnime.titulo}
                                     />
                                 )}
@@ -301,7 +243,7 @@ export const Home = () => {
 
                         <CatalogLink
                             as={Link}
-                            to="/animes"
+                            to="/explorar"
                         >
                             Ver catálogo
                         </CatalogLink>
@@ -315,7 +257,7 @@ export const Home = () => {
                                     to={`/animes/${anime.id}`}
                                 >
                                     <AnimeImage
-                                        src={anime.capaUrl}
+                                        src={resolveAnimeCoverUrl(anime.capaUrl)}
                                         alt={anime.titulo}
                                     />
 
@@ -360,7 +302,7 @@ export const Home = () => {
 
                     <CatalogLink
                         as={Link}
-                        to="/personagens"
+                        to="/explorar"
                     >
                         Ver personagens
                     </CatalogLink>
@@ -392,7 +334,7 @@ export const Home = () => {
                                     >
                                         <PersonagemImage
                                             src={
-                                                normalizeImageSrc(personagem.imagem) ??
+                                                resolveApiMediaUrl(personagem.imagem) ??
                                                 '/placeholder/personagem.png'
                                             }
                                             alt={personagem.nome}
