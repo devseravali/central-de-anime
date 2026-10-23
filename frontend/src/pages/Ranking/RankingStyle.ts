@@ -1,5 +1,6 @@
 
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const RankingContainer = styled.div`
     background: ${({ theme }) => theme.colors.background};
@@ -35,11 +36,14 @@ export const Brand = styled.h2`
 `;
 
 export const BrandIcon = styled.span`
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 32px;
     height: 32px;
     flex-shrink: 0;
     background: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.white};
     border-radius: 8px;
 `;
 
@@ -84,22 +88,31 @@ export const Podium = styled.ol`
 
 export const RankingCard = styled.li`
     min-width: 0;
-    padding: 8px;
     background: ${({ theme }) => theme.colors.surface};
     border: 1px solid ${({ theme }) => theme.colors.border};
     border-radius: 10px;
+    overflow: hidden;
 `;
 
-export const RankingAvatar = styled.figure`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+export const RankingLink = styled(Link)`
+    display: block;
+    padding: 8px;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        background: ${({ theme }) => theme.colors.surfaceElevated};
+    }
+`;
+
+export const RankingCover = styled.img`
+    display: block;
+    width: 100%;
     min-height: 140px;
     margin: 0;
     background: ${({ theme }) => theme.colors.surfaceElevated};
     border-radius: 6px;
-    color: ${({ theme }) => theme.colors.textSecondary};
-    font-size: 13px;
+    object-fit: cover;
 `;
 
 export const RankingInfo = styled.figcaption`
@@ -129,13 +142,22 @@ export const RankingList = styled.ol`
 `;
 
 export const RankingItem = styled.li`
+    background: ${({ theme }) => theme.colors.surface};
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    border-radius: 8px;
+`;
+
+export const RankingItemLink = styled(Link)`
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 12px;
-    background: ${({ theme }) => theme.colors.surface};
-    border: 1px solid ${({ theme }) => theme.colors.border};
-    border-radius: 8px;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        background: ${({ theme }) => theme.colors.surfaceElevated};
+    }
 `;
 
 export const RankingPosition = styled.span`
