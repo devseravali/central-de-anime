@@ -1,3 +1,4 @@
+import { Medal } from 'lucide-react';
 import {
     RankingContainer,
     RankingHeader,
@@ -11,7 +12,7 @@ import {
     RankingSubtitle,
     Podium,
     RankingCard,
-    RankingAvatar,
+    RankingCover,
     RankingInfo,
     RankingTitle,
     RankingScore,
@@ -20,127 +21,152 @@ import {
     RankingPosition,
     RankingName,
     RankingRating,
+    RankingLink,
+    RankingItemLink,
 } from './RankingStyle.ts';
-import { useRanking } from '../../hooks/UseRanking/useRanking.ts';
+import { useAnimeRanking, usePersonagemRanking } from '../../hooks/UseRanking/useRanking.ts';
+import { resolveAnimeCoverUrl } from '../../utils/animeCoverUrl';
+import { resolveApiMediaUrl } from '../../utils/mediaUrl';
 
-const podiumUsuarios = [
-    {
-        id: 1,
-        name: 'Usuário Exemplo 1',
-        subtitle: 'Nível 12',
-        points: 942,
-    },
-    {
-        id: 2,
-        name: 'Usuário Exemplo 2',
-        subtitle: 'Nível 11',
-        points: 928,
-    },
-    {
-        id: 3,
-        name: 'Usuário Exemplo 3',
-        subtitle: 'Nível 10',
-        points: 914,
-    },
-];
+function toAnimeCoverImage(value: string | null | undefined): string {
+    return resolveAnimeCoverUrl(value) || '/placeholder/capa-anime.png';
+}
 
-const rankedUsuarios = [
-    { position: 4, name: 'Nome do Usuário', points: 902 },
-    { position: 5, name: 'Nome do Usuário', points: 895 },
-    { position: 6, name: 'Nome do Usuário', points: 890 },
-    { position: 7, name: 'Nome do Usuário', points: 885 },
-    { position: 8, name: 'Nome do Usuário', points: 880 },
-    { position: 9, name: 'Nome do Usuário', points: 875 },
-    { position: 10, name: 'Nome do Usuário', points: 870 },
-];
+function toAbsoluteImage(value: string | null | undefined): string {
+    return resolveApiMediaUrl(value) ?? '/placeholder/capa-anime.png';
+}
 
 export const Ranking = () => {
-    const { data, isLoading, error } = useRanking();
+    const animeQuery = useAnimeRanking();
+    const personagemQuery = usePersonagemRanking();
 
-    const podium = data?.podium?.length ? data.podium : podiumUsuarios;
-    const ranking = data?.ranking?.length ? data.ranking : rankedUsuarios;
-
-    if (isLoading) {
-        return <RankingContainer>Carregando...</RankingContainer>;
-    }
-
-    if (error) {
-        return <RankingContainer>Erro ao carregar ranking</RankingContainer>;
-    }
+    const animePodium = animeQuery.data?.podium ?? [];
+    const animeRanking = animeQuery.data?.ranking ?? [];
+    const personagemPodium = personagemQuery.data?.podium ?? [];
+    const personagemRanking = personagemQuery.data?.ranking ?? [];
 
     return (
         <RankingContainer>
             <RankingHeader>
                 <HeaderContent aria-label="Cabeçalho do ranking">
                     <Brand>
-                        <BrandIcon aria-hidden="true" />
+                        <BrandIcon aria-hidden="true">
+                            <Medal size={18} strokeWidth={2.2} />
+                        </BrandIcon>
                         Ranking
                     </Brand>
-
-
                 </HeaderContent>
             </RankingHeader>
 
             <RankingMain>
                 <RankingIntroduction>
-                    <h1>Ranking Geral</h1>
+                    <h1>Ranking de Animes e Personagens</h1>
 
                     <RankingSubtitle>
-                        Pontuação da Comunidade
+                        Conteúdos mais favoritados da comunidade
                     </RankingSubtitle>
                 </RankingIntroduction>
 
-                <Section aria-labelledby="podium-title">
-                    <SectionTitle id="podium-title">
-                        Pódio
-                    </SectionTitle>
+                <Section aria-labelledby="animes-title">
+                    <SectionTitle id="animes-title">Animes</SectionTitle>
 
-                    <Podium>
-                        {podium.map((usuario) => (
-                            <RankingCard key={usuario.id ?? usuario.name}>
-                                <RankingAvatar
-                                    aria-label={`Avatar de ${usuario.name}`}
-                                    role="img"
-                                >
-                                    Avatar
-                                </RankingAvatar>
+                    {animeQuery.isLoading ? (
+                        <RankingSubtitle>Carregando ranking de animes...</RankingSubtitle>
+                    ) : animeQuery.error ? (
+                        <RankingSubtitle>Erro ao carregar ranking de animes.</RankingSubtitle>
+                    ) : animePodium.length === 0 && animeRanking.length === 0 ? (
+                        <RankingSubtitle>Ainda não há animes suficientes para o ranking.</RankingSubtitle>
+                    ) : (
+                        <>
+                            <Podium>
+                                {animePodium.map((anime) => (
+                                    <RankingCard key={`anime-${anime.id}`}>
+                                        <RankingLink to={`/animes/${anime.id}`} aria-label={`Ver detalhes de ${anime.titulo}`}>
+                                            <RankingCover
+                                                src={toAnimeCoverImage(anime.capaUrl)}
+                                                alt={`Capa de ${anime.titulo}`}
+                                            />
 
-                                <RankingInfo>
-                                    <RankingTitle>
-                                        {usuario.name}
-                                    </RankingTitle>
+                                            <RankingInfo>
+                                                <RankingTitle>{anime.titulo}</RankingTitle>
 
-                                    <RankingScore>
-                                        {usuario.subtitle} — {usuario.points} pts
-                                    </RankingScore>
-                                </RankingInfo>
-                            </RankingCard>
-                        ))}
-                    </Podium>
+                                                <RankingScore>
+                                                    {anime.tipo} • {anime.ano} — {anime.totalFavoritos} favoritos
+                                                </RankingScore>
+                                            </RankingInfo>
+                                        </RankingLink>
+                                    </RankingCard>
+                                ))}
+                            </Podium>
+
+                            <RankingList>
+                                {animeRanking.map((anime) => (
+                                    <RankingItem key={`anime-${anime.position ?? anime.id}`}>
+                                        <RankingItemLink to={`/animes/${anime.id}`} aria-label={`Ver detalhes de ${anime.titulo}`}>
+                                            <RankingPosition>
+                                                {anime.position ? String(anime.position).padStart(2, '0') : '--'}
+                                            </RankingPosition>
+
+                                            <RankingName>{anime.titulo}</RankingName>
+
+                                            <RankingRating>{anime.totalFavoritos} favoritos</RankingRating>
+                                        </RankingItemLink>
+                                    </RankingItem>
+                                ))}
+                            </RankingList>
+                        </>
+                    )}
                 </Section>
 
-                <Section aria-labelledby="ranking-list-title">
-                    <SectionTitle id="ranking-list-title">
-                        Top 4–10
-                    </SectionTitle>
+                <Section aria-labelledby="personagens-title">
+                    <SectionTitle id="personagens-title">Personagens</SectionTitle>
 
-                    <RankingList>
-                        {ranking.map((usuario) => (
-                            <RankingItem key={usuario.position ?? usuario.name}>
-                                <RankingPosition>
-                                    {usuario.position ? String(usuario.position).padStart(2, '0') : '--'}
-                                </RankingPosition>
+                    {personagemQuery.isLoading ? (
+                        <RankingSubtitle>Carregando ranking de personagens...</RankingSubtitle>
+                    ) : personagemQuery.error ? (
+                        <RankingSubtitle>Erro ao carregar ranking de personagens.</RankingSubtitle>
+                    ) : personagemPodium.length === 0 && personagemRanking.length === 0 ? (
+                        <RankingSubtitle>Ainda não há personagens suficientes para o ranking.</RankingSubtitle>
+                    ) : (
+                        <>
+                            <Podium>
+                                {personagemPodium.map((personagem) => (
+                                    <RankingCard key={`personagem-${personagem.id}`}>
+                                        <RankingLink to={`/personagens/${personagem.id}`} aria-label={`Ver detalhes de ${personagem.nome}`}>
+                                            <RankingCover
+                                                src={toAbsoluteImage(personagem.imagem)}
+                                                alt={`Imagem de ${personagem.nome}`}
+                                            />
 
-                                <RankingName>
-                                    {usuario.name}
-                                </RankingName>
+                                            <RankingInfo>
+                                                <RankingTitle>{personagem.nome}</RankingTitle>
 
-                                <RankingRating>
-                                    {usuario.points} pts
-                                </RankingRating>
-                            </RankingItem>
-                        ))}
-                    </RankingList>
+                                                <RankingScore>
+                                                    {personagem.papel ?? 'Personagem'} — {personagem.totalFavoritos} favoritos
+                                                </RankingScore>
+                                            </RankingInfo>
+                                        </RankingLink>
+                                    </RankingCard>
+                                ))}
+                            </Podium>
+
+                            <RankingList>
+                                {personagemRanking.map((personagem) => (
+                                    <RankingItem key={`personagem-${personagem.position ?? personagem.id}`}>
+                                        <RankingItemLink to={`/personagens/${personagem.id}`} aria-label={`Ver detalhes de ${personagem.nome}`}>
+                                            <RankingPosition>
+                                                {personagem.position ? String(personagem.position).padStart(2, '0') : '--'}
+                                            </RankingPosition>
+
+                                            <RankingName>{personagem.nome}</RankingName>
+
+                                            <RankingRating>{personagem.totalFavoritos} favoritos</RankingRating>
+                                        </RankingItemLink>
+                                    </RankingItem>
+                                ))}
+                            </RankingList>
+                        </>
+                    )}
                 </Section>
             </RankingMain>
         </RankingContainer>
