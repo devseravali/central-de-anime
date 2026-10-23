@@ -11,7 +11,7 @@ export const ModalOverlay = styled.div`
 
   padding: ${({ theme }) => theme.spacing.page.mobile};
 
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: ${({ theme }) => theme.colors.overlay};
 
   overflow-y: auto;
 `;
