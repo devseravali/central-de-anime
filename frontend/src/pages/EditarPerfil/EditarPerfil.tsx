@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { api } from '../../services/api';
+import type { UsuarioProfileResponse } from '../../services/user.service';
+import { getApiOrigin } from '../../utils/apiUrl';
 import {
     AvatarOptionButton,
     AvatarOptionImage,
@@ -29,15 +31,6 @@ import {
     SubHeading,
     TopActions,
 } from './EditarPerfilStyle';
-
-type PerfilApiResponse = {
-    usuario?: {
-        nome?: string;
-        email?: string;
-        status?: string;
-        avatar?: string | null;
-    };
-};
 
 type PersonagemApiItem = {
     id?: number;
@@ -69,21 +62,6 @@ const profileBackgroundCandidates = [
     'spy-x-family-t1.jpg',
     'naruto-shippuden-t1.jpg',
 ];
-
-const getApiOrigin = (): string | null => {
-    const baseUrl = import.meta.env.VITE_API_URL;
-
-    if (typeof baseUrl !== 'string' || baseUrl.trim() === '') {
-        return null;
-    }
-
-    try {
-        const parsed = new URL(baseUrl);
-        return `${parsed.protocol}//${parsed.host}`;
-    } catch {
-        return null;
-    }
-};
 
 const normalizeAvatarUrl = (value: string): string => {
     const normalized = value.trim();
@@ -183,12 +161,12 @@ export const EditarPerfil = () => {
             try {
                 const [perfilRes, personagensRes] = await Promise.allSettled([
                     token
-                        ? api.get<PerfilApiResponse>('/usuario/me', {
+                        ? api.get<UsuarioProfileResponse>('/usuario/me', {
                               headers: {
                                   Authorization: `Bearer ${token}`,
                               },
                           })
-                        : Promise.resolve({ data: { usuario: { avatar: null } } } as { data: PerfilApiResponse }),
+                        : Promise.resolve<null>(null),
                     api.get<PersonagemApiItem[]>('/personagens'),
                 ]);
 
@@ -197,7 +175,7 @@ export const EditarPerfil = () => {
                 }
 
                 const avatar =
-                    perfilRes.status === 'fulfilled'
+                    perfilRes.status === 'fulfilled' && perfilRes.value
                         ? perfilRes.value.data?.usuario?.avatar ?? null
                         : null;
 
@@ -218,7 +196,7 @@ export const EditarPerfil = () => {
                 setAvatarSelecionado(avatarNormalizado ?? options[0]?.imagem ?? null);
                 setFundoSelecionado(localStorage.getItem('userProfileBanner') || backgroundOptions[0]?.imagem || null);
 
-                if (perfilRes.status === 'fulfilled') {
+                if (perfilRes.status === 'fulfilled' && perfilRes.value) {
                     setNome(perfilRes.value.data?.usuario?.nome?.trim() ?? '');
                     setEmail(perfilRes.value.data?.usuario?.email?.trim() ?? '');
                     setStatus(perfilRes.value.data?.usuario?.status?.trim() ?? '');
