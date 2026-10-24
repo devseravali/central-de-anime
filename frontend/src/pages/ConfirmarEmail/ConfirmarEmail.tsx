@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { isAxiosError } from 'axios';
 import { useSearchParams } from 'react-router-dom';
@@ -10,6 +10,7 @@ import {
     Card,
     Message,
     Page,
+    RetryButton,
     Title,
 } from './ConfirmarEmailStyle';
 
@@ -32,20 +33,28 @@ const getErrorMessage = (error: unknown): string => {
 export const ConfirmarEmail = () => {
     const [searchParams] = useSearchParams();
     const token = searchParams.get('token')?.trim() ?? '';
+    const lastRequestedToken = useRef<string | null>(null);
 
     const verifyMutation = useMutation({
         mutationFn: async (verifyToken: string) => {
             return authService.verifyEmail({ token: verifyToken });
         },
     });
+    const verifyEmail = verifyMutation.mutate;
+
+    const retryVerification = () => {
+        verifyMutation.reset();
+        verifyEmail(token);
+    };
 
     useEffect(() => {
-        if (!token || verifyMutation.isPending || verifyMutation.isSuccess) {
+        if (!token || lastRequestedToken.current === token) {
             return;
         }
 
-        verifyMutation.mutate(token);
-    }, [token, verifyMutation]);
+        lastRequestedToken.current = token;
+        verifyEmail(token);
+    }, [token, verifyEmail]);
 
     const renderState = () => {
         if (!token) {
@@ -70,6 +79,13 @@ export const ConfirmarEmail = () => {
                 <>
                     <Message $variant="error">{getErrorMessage(verifyMutation.error)}</Message>
                     <Actions>
+                        <RetryButton
+                            type="button"
+                            onClick={retryVerification}
+                            disabled={verifyMutation.isPending}
+                        >
+                            Tentar novamente
+                        </RetryButton>
                         <ActionLink to="/registro">Criar nova conta</ActionLink>
                     </Actions>
                 </>
