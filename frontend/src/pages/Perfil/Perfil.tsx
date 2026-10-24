@@ -1,11 +1,8 @@
 import { Edit3, Share2 } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { isAxiosError } from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-import { api } from '../../services/api';
-import type { ProgressoEpisodio } from '../../services/progresso.service';
-import type { UsuarioProfileResponse } from '../../services/user.service';
+import { useProfileData } from '../../hooks/UseProfileData/useProfileData';
 import { getApiOrigin } from '../../utils/apiUrl';
 
 import {
@@ -52,45 +49,6 @@ import {
     SpanError,
 } from './PerfilStyle';
 
-type RankingPontosResponse = {
-    pontos?: number;
-};
-
-type FavoritoAnime = {
-    id?: number;
-    tipo?: string;
-};
-
-type FavoritoPersonagem = {
-    id?: number;
-};
-
-type ProgressItem = Pick<
-    Partial<ProgressoEpisodio>,
-    'assistido' | 'porcentagem' | 'atualizadoEm' | 'episodio'
->;
-
-type ConquistaItem = {
-    id: string;
-    nome: string;
-    descricao: string;
-    categoria: string;
-    unlocked: boolean;
-    progress?: {
-        current?: number;
-        target?: number;
-        percent?: number;
-    };
-};
-
-type ConquistasResponse = {
-    resumo?: {
-        total?: number;
-        desbloqueadas?: number;
-    };
-    conquistas?: ConquistaItem[];
-};
-
 const defaultAvatar = 'https://via.placeholder.com/200';
 
 const normalizeMediaUrl = (value: string | null | undefined): string | null => {
@@ -122,49 +80,23 @@ const normalizeMediaUrl = (value: string | null | undefined): string | null => {
     return `${origin}/${relative}`;
 };
 
-const getErrorMessage = (error: unknown): string => {
-    if (isAxiosError(error)) {
-        const status = error.response?.status;
-
-        if (status === 401 || status === 403) {
-            return '';
-        }
-
-        const message = error.response?.data?.message;
-
-        if (typeof message === 'string' && message.trim()) {
-            const normalized = message.toLowerCase();
-
-            if (normalized.includes('token') || normalized.includes('autentic')) {
-                return '';
-            }
-
-            return message;
-        }
-    }
-
-    if (error instanceof Error && error.message.trim()) {
-        return error.message;
-    }
-
-    return 'Não foi possível carregar seu perfil.';
-};
-
 export const Perfil = () => {
     const navigate = useNavigate();
-    const [loading, setLoading] = useState(true);
-    const [errorMessage, setErrorMessage] = useState<string | null>(null);
-    const [nome, setNome] = useState('Perfil');
-    const [email, setEmail] = useState('');
-    const [avatar, setAvatar] = useState<string | null>(null);
-    const [status, setStatus] = useState<string>('Status indisponivel');
-    const [pontosArquivo, setPontosArquivo] = useState<number | null>(null);
-    const [totalFavoritosAnimes, setTotalFavoritosAnimes] = useState(0);
-    const [totalFavoritosPersonagens, setTotalFavoritosPersonagens] = useState(0);
-    const [episodiosConcluidos, setEpisodiosConcluidos] = useState(0);
-    const [totalProgressos, setTotalProgressos] = useState(0);
-    const [conquistas, setConquistas] = useState<ConquistaItem[]>([]);
-    const [totalConquistasDesbloqueadas, setTotalConquistasDesbloqueadas] = useState(0);
+    const {
+        loading,
+        errorMessage,
+        nome,
+        email,
+        avatar,
+        status,
+        pontosArquivo,
+        totalFavoritosAnimes,
+        totalFavoritosPersonagens,
+        episodiosConcluidos,
+        totalProgressos,
+        conquistas,
+        totalConquistasDesbloqueadas,
+    } = useProfileData();
     const [bannerPerfil, setBannerPerfil] = useState<string | null>(() => {
         return normalizeMediaUrl(localStorage.getItem('userProfileBanner'));
     });
@@ -174,139 +106,11 @@ export const Perfil = () => {
             setBannerPerfil(normalizeMediaUrl(localStorage.getItem('userProfileBanner')));
         };
 
+        syncBanner();
         window.addEventListener('user-banner-updated', syncBanner);
 
         return () => {
             window.removeEventListener('user-banner-updated', syncBanner);
-        };
-    }, []);
-
-    useEffect(() => {
-        let mounted = true;
-
-        const carregarPerfil = async () => {
-            setLoading(true);
-            setErrorMessage(null);
-
-            const token = localStorage.getItem('accessToken');
-
-            if (!token) {
-                if (mounted) {
-                    setErrorMessage('Sessão não encontrada. Faça login para ver seu perfil.');
-                    setLoading(false);
-                }
-                return;
-            }
-
-            try {
-                const response = await api.get<UsuarioProfileResponse>('/usuario/me', {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                    },
-                });
-
-                const usuario = response.data?.usuario;
-
-                if (!mounted) {
-                    return;
-                }
-
-                const id = Number(usuario?.id);
-
-                setNome(usuario?.nome?.trim() || 'Perfil');
-                setEmail(usuario?.email?.trim() || '');
-                setAvatar(normalizeMediaUrl(usuario?.avatar) ?? null);
-                setStatus(usuario?.status?.trim() || 'Status indisponivel');
-
-                if (!Number.isInteger(id) || id <= 0) {
-                    setErrorMessage('Não foi possível identificar seu usuário para carregar os demais dados.');
-                    return;
-                }
-
-                const [pontosRes, favoritosAnimesRes, favoritosPersonagensRes, progressosRes, conquistasRes] = await Promise.allSettled([
-                    api.get<RankingPontosResponse>(`/ranking/${id}/pontos`, {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    }),
-                    api.get<FavoritoAnime[]>(`/usuarios/${id}/favoritos/animes`, {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    }),
-                    api.get<FavoritoPersonagem[]>(`/usuarios/${id}/favoritos/personagens`, {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    }),
-                    api.get<ProgressItem[]>(`/usuarios/${id}/progressos`, {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    }),
-                    api.get<ConquistasResponse>(`/usuarios/${id}/conquistas`, {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    }),
-                ]);
-
-                if (pontosRes.status === 'fulfilled') {
-                    const pontos = Number(pontosRes.value.data?.pontos);
-                    setPontosArquivo(Number.isFinite(pontos) ? pontos : null);
-                }
-
-                if (favoritosAnimesRes.status === 'fulfilled') {
-                    const favoritos = Array.isArray(favoritosAnimesRes.value.data)
-                        ? favoritosAnimesRes.value.data
-                        : [];
-
-                    setTotalFavoritosAnimes(favoritos.length);
-                }
-
-                if (favoritosPersonagensRes.status === 'fulfilled') {
-                    const favoritosPersonagens = Array.isArray(favoritosPersonagensRes.value.data)
-                        ? favoritosPersonagensRes.value.data
-                        : [];
-
-                    setTotalFavoritosPersonagens(favoritosPersonagens.length);
-                }
-
-                if (progressosRes.status === 'fulfilled') {
-                    const progressos = Array.isArray(progressosRes.value.data)
-                        ? progressosRes.value.data
-                        : [];
-
-                    setTotalProgressos(progressos.length);
-                    setEpisodiosConcluidos(progressos.filter((item) => item.assistido === true).length);
-                }
-
-                if (conquistasRes.status === 'fulfilled') {
-                    const payload = conquistasRes.value.data;
-                    const conquistasList = Array.isArray(payload?.conquistas)
-                        ? payload.conquistas
-                        : [];
-
-                    setConquistas(conquistasList);
-                    setTotalConquistasDesbloqueadas(Number(payload?.resumo?.desbloqueadas ?? 0));
-                }
-            } catch (error) {
-                if (!mounted) {
-                    return;
-                }
-
-                setErrorMessage(getErrorMessage(error));
-            } finally {
-                if (mounted) {
-                    setLoading(false);
-                }
-            }
-        };
-
-        carregarPerfil();
-
-        return () => {
-            mounted = false;
         };
     }, []);
 
@@ -349,7 +153,7 @@ export const Perfil = () => {
                     <HeroContent>
                         <IdentityRow>
                             <Avatar
-                                src={avatar || defaultAvatar}
+                                src={normalizeMediaUrl(avatar) || defaultAvatar}
                                 alt="Avatar do usuário"
                             />
 
