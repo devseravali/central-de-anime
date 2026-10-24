@@ -96,9 +96,11 @@ export const useProfileData = () => {
     useEffect(() => {
         let mounted = true;
         let requestVersion = 0;
+        let avatarVersion = 0;
 
         const carregarPerfil = async () => {
             const currentRequest = ++requestVersion;
+            const currentAvatarVersion = avatarVersion;
             setLoading(true);
             setErrorMessage(null);
             setProfileData(initialProfileData);
@@ -125,7 +127,9 @@ export const useProfileData = () => {
                     ...current,
                     nome: usuario?.nome?.trim() || 'Perfil',
                     email: usuario?.email?.trim() || '',
-                    avatar: usuario?.avatar ?? null,
+                    ...(currentAvatarVersion === avatarVersion
+                        ? { avatar: usuario?.avatar ?? null }
+                        : {}),
                     status: usuario?.status?.trim() || 'Status indisponivel',
                 }));
 
@@ -220,15 +224,27 @@ export const useProfileData = () => {
         const sincronizarStorage = (event: StorageEvent) => {
             if (event.key === 'accessToken' || event.key === null) {
                 void carregarPerfil();
+            } else if (event.key === 'userAvatar') {
+                sincronizarAvatar();
             }
         };
 
+        const sincronizarAvatar = () => {
+            avatarVersion += 1;
+            setProfileData((current) => ({
+                ...current,
+                avatar: localStorage.getItem('userAvatar') || null,
+            }));
+        };
+
+        window.addEventListener('user-avatar-updated', sincronizarAvatar);
         window.addEventListener('auth-state-changed', sincronizarSessao);
         window.addEventListener('storage', sincronizarStorage);
         void carregarPerfil();
 
         return () => {
             mounted = false;
+            window.removeEventListener('user-avatar-updated', sincronizarAvatar);
             window.removeEventListener('auth-state-changed', sincronizarSessao);
             window.removeEventListener('storage', sincronizarStorage);
         };
