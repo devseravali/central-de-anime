@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState, type FormEvent } from 'react';
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
 import { useAppTheme } from '../../../providers/ThemeContext';
 import { Input } from "../../common/Input/Input";
 import { authService } from '../../../services/auth.service';
-import { api, clearAuthSession, getAccessToken } from '../../../services/api';
-import type { UsuarioProfileResponse } from '../../../services/user.service';
+import { clearAuthSession, getAccessToken } from '../../../services/api';
+import { userService } from '../../../services/user.service';
 import { getApiOrigin } from '../../../utils/apiUrl';
 import {
   AuthActionButton,
@@ -59,6 +59,8 @@ export const Header = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() =>
     Boolean(getAccessToken())
   );
+  const [avatarRefreshKey, setAvatarRefreshKey] = useState(0);
+  const avatarRequestVersion = useRef(0);
   const [avatarUrl, setAvatarUrl] = useState<string>(() => {
     const localAvatar = localStorage.getItem('userAvatar');
     return toAbsoluteAvatar(localAvatar);
@@ -73,11 +75,16 @@ export const Header = () => {
   }, [location.pathname, location.search]);
 
   useEffect(() => {
+    let mounted = true;
+
     const loadAvatar = async () => {
+      const currentRequest = ++avatarRequestVersion.current;
       const token = getAccessToken();
 
       if (!token) {
-        setAvatarUrl(defaultAvatar);
+        if (mounted && currentRequest === avatarRequestVersion.current) {
+          setAvatarUrl(defaultAvatar);
+        }
         return;
       }
 
@@ -88,40 +95,59 @@ export const Header = () => {
       }
 
       try {
-        const response = await api.get<UsuarioProfileResponse>('/usuario/me', {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+        const response = await userService.buscarMeuPerfil();
 
-        const avatar = response.data?.usuario?.avatar ?? null;
+        if (!mounted || currentRequest !== avatarRequestVersion.current) {
+          return;
+        }
+
+        const avatar = response.usuario?.avatar ?? null;
         localStorage.setItem('userAvatar', avatar ?? '');
         setAvatarUrl(toAbsoluteAvatar(avatar));
       } catch {
-        setAvatarUrl(toAbsoluteAvatar(cached));
+        if (mounted && currentRequest === avatarRequestVersion.current) {
+          setAvatarUrl(toAbsoluteAvatar(cached));
+        }
       }
     };
 
-    loadAvatar();
-  }, [location.pathname]);
+    void loadAvatar();
+
+    return () => {
+      mounted = false;
+      avatarRequestVersion.current += 1;
+    };
+  }, [avatarRefreshKey]);
 
   useEffect(() => {
     const syncAuthState = () => {
+      avatarRequestVersion.current += 1;
       setIsAuthenticated(Boolean(getAccessToken()));
+      setAvatarRefreshKey((current) => current + 1);
     };
 
     const handleAvatarUpdated = () => {
+      avatarRequestVersion.current += 1;
       const localAvatar = localStorage.getItem('userAvatar');
       setAvatarUrl(toAbsoluteAvatar(localAvatar));
     };
 
+    const handleStorage = (event: StorageEvent) => {
+      if (event.key === 'accessToken' || event.key === null) {
+        syncAuthState();
+      } else if (event.key === 'userAvatar') {
+        avatarRequestVersion.current += 1;
+        setAvatarUrl(toAbsoluteAvatar(event.newValue));
+      }
+    };
+
     window.addEventListener(AUTH_STATE_CHANGED_EVENT, syncAuthState);
-    window.addEventListener('storage', syncAuthState);
+    window.addEventListener('storage', handleStorage);
     window.addEventListener('user-avatar-updated', handleAvatarUpdated);
 
     return () => {
       window.removeEventListener(AUTH_STATE_CHANGED_EVENT, syncAuthState);
-      window.removeEventListener('storage', syncAuthState);
+      window.removeEventListener('storage', handleStorage);
       window.removeEventListener('user-avatar-updated', handleAvatarUpdated);
     };
   }, []);
