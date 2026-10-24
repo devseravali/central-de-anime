@@ -5,6 +5,7 @@ import {
     personagemService,
     type Personagem,
 } from '../../services/personagem.service';
+import type { PersonagemRelacionadoResumo } from '../../types/Personagem';
 import { userService } from '../../services/user.service';
 import {
     BioCard,
@@ -30,11 +31,6 @@ import {
     HeroTitle,
     MainContainer,
     MetaBadge,
-    MetricHeader,
-    MetricItem,
-    MetricList,
-    MetricValue,
-    Progress,
     RelatedCard,
     RelatedGrid,
     RelatedImage,
@@ -76,46 +72,13 @@ const toAbsoluteImage = (
     return `${fallbackOrigin}${normalized}`;
 };
 
-const buildCombatMetrics = (personagemId: number) => {
-    const base = Number.isFinite(personagemId)
-        ? personagemId
-        : 1;
-
-    return [
-        {
-            label: 'Poder ofensivo',
-            value: 72 + (base % 26),
-        },
-        {
-            label: 'Controle tático',
-            value: 68 + ((base * 3) % 29),
-        },
-        {
-            label: 'Resistência',
-            value: 64 + ((base * 5) % 33),
-        },
-        {
-            label: 'Velocidade',
-            value: 70 + ((base * 7) % 27),
-        },
-        {
-            label: 'Técnica',
-            value: 74 + ((base * 2) % 25),
-        },
-        {
-            label: 'Potencial',
-            value: 78 + ((base * 4) % 23),
-        },
-    ];
-};
-
 export const DetalhesPersonagens = () => {
     const { id } = useParams<{ id: string }>();
 
     const [personagem, setPersonagem] =
         useState<Personagem | null>(null);
 
-    const [related, setRelated] = useState<Personagem[]>([]);
+    const [related, setRelated] = useState<PersonagemRelacionadoResumo[]>([]);
 
     const [loading, setLoading] = useState(false);
 
@@ -162,30 +125,27 @@ export const DetalhesPersonagens = () => {
             setError(null);
 
             try {
-                const [personagemData, personagensData] =
-                    await Promise.all([
-                        personagemService.listarPersonagensPorId(
-                            personagemId
-                        ),
-                        personagemService.listarPersonagens(),
-                    ]);
+                const personagemData =
+                    await personagemService.listarPersonagensPorId(
+                        personagemId
+                    );
 
                 if (!mounted) {
                     return;
                 }
 
-                setPersonagem(personagemData as Personagem);
+                setPersonagem(personagemData);
 
-                const relacionados = Array.isArray(
-                    personagensData
-                )
-                    ? (personagensData as Personagem[])
-                          .filter(
-                              (item) =>
-                                  item.id !== personagemId
-                          )
-                          .slice(0, 4)
-                    : [];
+                const relacionados = Array.from(
+                    new Map(
+                        (personagemData.animes ?? [])
+                            .flatMap((relacao) =>
+                                (relacao.anime?.personagens ?? []).map((item) => item.personagem)
+                            )
+                            .filter((item) => item.id !== personagemId)
+                            .map((item) => [item.id, item])
+                    ).values()
+                ).slice(0, 4);
 
                 setRelated(relacionados);
 
@@ -193,7 +153,7 @@ export const DetalhesPersonagens = () => {
                     const perfil =
                         await userService.buscarMeuPerfil();
 
-                    const currentUserId = Number(perfil?.id);
+                    const currentUserId = Number(perfil?.usuario?.id);
 
                     if (
                         !Number.isInteger(currentUserId) ||
@@ -296,8 +256,6 @@ export const DetalhesPersonagens = () => {
         personagem.imagem,
         backendOrigin
     );
-
-    const metrics = buildCombatMetrics(personagemId);
 
     const nome = normalizeText(personagem.nome);
 
@@ -479,41 +437,17 @@ export const DetalhesPersonagens = () => {
                 <CharacterSection>
                     <Heading>Nível de poder em combate</Heading>
 
-                    <MetricList>
-                        {metrics.map((metric) => {
-                            const bounded = Math.max(
-                                0,
-                                Math.min(metric.value, 100)
-                            );
-
-                            const labelId = `metric-${metric.label
-                                .replace(/\s+/g, '-')
-                                .toLowerCase()}`;
-
-                            return (
-                                <MetricItem key={metric.label}>
-                                    <MetricHeader>
-                                        <span id={labelId}>
-                                            {metric.label}
-                                        </span>
-
-                                        <MetricValue>
-                                            {bounded}/100
-                                        </MetricValue>
-                                    </MetricHeader>
-
-                                    <Progress
-                                        aria-labelledby={labelId}
-                                        aria-valuemin={0}
-                                        aria-valuemax={100}
-                                        aria-valuenow={bounded}
-                                        value={bounded}
-                                        max={100}
-                                    />
-                                </MetricItem>
-                            );
-                        })}
-                    </MetricList>
+                    {personagem.nivelCombate !== null && personagem.nivelCombate !== undefined ? (
+                        <BioCard>
+                            <BioText>
+                                Nível {personagem.nivelCombate}
+                            </BioText>
+                        </BioCard>
+                    ) : (
+                        <EmptyState>
+                            Nível de poder em combate ainda não informado para este personagem.
+                        </EmptyState>
+                    )}
                 </CharacterSection>
 
                 <CharacterSection>
