@@ -10,7 +10,9 @@ interface ProgressBarProps {
 }
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({ value, label }) => {
-  const progress = Math.min(Math.max(value, 0), 100);
+  const validValue = Number.isFinite(value) ? value : 0;
+  const progress = Math.min(Math.max(validValue, 0), 100);
+  const accessibleLabel = label?.trim() || 'Progresso';
 
   return (
     <ProgressBarContainer
@@ -18,7 +20,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ value, label }) => {
       aria-valuenow={progress}
       aria-valuemin={0}
       aria-valuemax={100}
-      aria-label={label}
+      aria-label={accessibleLabel}
     >
       <ProgressBarFill $progress={progress} />
     </ProgressBarContainer>
