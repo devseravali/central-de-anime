@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
 import { useAppTheme } from '../../../providers/ThemeContext';
 import { Input } from "../../common/Input/Input";
+import { useAvatarImage } from '../../../hooks/UseAvatarImage/useAvatarImage';
 import { authService } from '../../../services/auth.service';
 import { clearAuthSession, getAccessToken } from '../../../services/api';
 import { userService } from '../../../services/user.service';
@@ -65,6 +66,7 @@ export const Header = () => {
     const localAvatar = localStorage.getItem('userAvatar');
     return toAbsoluteAvatar(localAvatar);
   });
+  const avatarImage = useAvatarImage(avatarUrl);
   const searchTermFromUrl = useMemo(() => {
     if (location.pathname !== '/explorar') {
       return '';
@@ -262,8 +264,9 @@ export const Header = () => {
 
         <ProfileLink as={Link} to="/perfil" aria-label="Acessar meu perfil">
           <ImageHeader
-            src={avatarUrl}
+            src={avatarImage.src}
             alt="Avatar do usuário"
+            onError={avatarImage.onError}
           />
         </ProfileLink>
       </HeaderTwo>
