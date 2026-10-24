@@ -1,4 +1,4 @@
-import type { InputHTMLAttributes, ReactNode } from 'react';
+import { useId, type InputHTMLAttributes, type ReactNode } from 'react';
 
 import { StyledInput, InputContainer, InputLabel, InputError } from './InputStyle';
 
@@ -14,19 +14,29 @@ export const Input = ({
     icon,
     ...props
 }: InputProps) => {
+    const generatedId = useId();
+    const inputId = props.id ?? generatedId;
+    const errorId = `${inputId}-error`;
+    const describedBy = [props['aria-describedby'], error ? errorId : null]
+        .filter(Boolean)
+        .join(' ') || undefined;
+
     return (
         <InputContainer>
-            {label && <InputLabel>{label}</InputLabel>}
+            {label && <InputLabel htmlFor={inputId}>{label}</InputLabel>}
 
             <div>
                 {icon}
                 <StyledInput
                     {...props}
+                    id={inputId}
                     aria-invalid={Boolean(error)}
+                    aria-describedby={describedBy}
+                    $hasError={Boolean(error)}
                 />
             </div>
 
-            {error && <InputError>{error}</InputError>}
+            {error && <InputError id={errorId}>{error}</InputError>}
         </InputContainer>
     );
 };
