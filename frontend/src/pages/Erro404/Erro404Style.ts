@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
-export const Page = styled.main`
+export const Page = styled.section`
     min-height: calc(100vh - 220px);
     padding: ${({ theme }) => theme.spacing.page.mobile};
 
