@@ -48,7 +48,7 @@ export const Ranking = () => {
     return (
         <RankingContainer>
             <RankingHeader>
-                <HeaderContent aria-label="Cabeçalho do ranking">
+                <HeaderContent>
                     <Brand>
                         <BrandIcon aria-hidden="true">
                             <Medal size={18} strokeWidth={2.2} />
