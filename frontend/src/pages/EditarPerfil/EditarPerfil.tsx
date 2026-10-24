@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { getAccessToken } from '../../services/api';
+import { useAvatarImage } from '../../hooks/UseAvatarImage/useAvatarImage';
 import { personagemService } from '../../services/personagem.service';
 import type { Personagem } from '../../services/personagem.service';
 import type { AtualizaPerfilData } from '../../services/user.service';
@@ -302,6 +303,7 @@ export const EditarPerfil = () => {
     });
 
     const avatarPreview = avatarSelecionado || avatarAtual || defaultAvatar;
+    const avatarPreviewImage = useAvatarImage(avatarPreview);
     const bannerPreview = fundoSelecionado || backgroundOptions[0]?.imagem || null;
 
     return (
@@ -378,7 +380,11 @@ export const EditarPerfil = () => {
                     </FormCard>
 
                     <PreviewRow>
-                        <AvatarPreview src={avatarPreview} alt="Prévia do avatar selecionado" />
+                        <AvatarPreview
+                            src={avatarPreviewImage.src}
+                            alt="Prévia do avatar selecionado"
+                            onError={avatarPreviewImage.onError}
+                        />
                         <SubHeading>{loading ? 'Carregando personagens...' : 'Selecione abaixo sua nova foto.'}</SubHeading>
                     </PreviewRow>
 
