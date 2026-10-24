@@ -18,7 +18,7 @@ export const RankingHeader = styled.header`
     padding: 12px 16px;
 `;
 
-export const HeaderContent = styled.nav`
+export const HeaderContent = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,7 @@ export const BrandIcon = styled.span`
     border-radius: 8px;
 `;
 
-export const RankingMain = styled.main`
+export const RankingMain = styled.section`
     width: min(1240px, 100% - 2rem);
     margin: 0 auto;
     padding: 1.5rem 0 3rem;
@@ -115,7 +115,7 @@ export const RankingCover = styled.img`
     object-fit: cover;
 `;
 
-export const RankingInfo = styled.figcaption`
+export const RankingInfo = styled.div`
     margin-top: 8px;
 `;
 
