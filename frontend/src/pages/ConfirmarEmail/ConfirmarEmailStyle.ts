@@ -75,3 +75,33 @@ export const ActionLink = styled(Link)`
         background: ${({ theme }) => theme.colors.primaryHover};
     }
 `;
+
+export const RetryButton = styled.button`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    padding: 0.65rem 1.1rem;
+
+    border-radius: ${({ theme }) => theme.radii.button};
+    border: 1px solid ${({ theme }) => theme.colors.borderStrong};
+
+    background: ${({ theme }) => theme.colors.surface};
+    color: ${({ theme }) => theme.colors.textPrimary};
+
+    font-family: ${({ theme }) => theme.typography.labelLarge.fontFamily};
+    font-size: ${({ theme }) => theme.typography.labelLarge.fontSize};
+    font-weight: ${({ theme }) => theme.typography.labelLarge.fontWeight};
+    line-height: ${({ theme }) => theme.typography.labelLarge.lineHeight};
+
+    &:hover:not(:disabled) {
+        border-color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors.primary};
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+`;
