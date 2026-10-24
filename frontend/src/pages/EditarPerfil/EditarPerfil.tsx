@@ -3,8 +3,11 @@ import { isAxiosError } from 'axios';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { api } from '../../services/api';
-import type { UsuarioProfileResponse } from '../../services/user.service';
+import { getAccessToken } from '../../services/api';
+import { personagemService } from '../../services/personagem.service';
+import type { Personagem } from '../../services/personagem.service';
+import type { AtualizaPerfilData } from '../../services/user.service';
+import { userService } from '../../services/user.service';
 import { getApiOrigin } from '../../utils/apiUrl';
 import {
     AvatarOptionButton,
@@ -31,12 +34,6 @@ import {
     SubHeading,
     TopActions,
 } from './EditarPerfilStyle';
-
-type PersonagemApiItem = {
-    id?: number;
-    nome?: string;
-    imagem?: string;
-};
 
 type AvatarOption = {
     id: number;
@@ -85,7 +82,7 @@ const normalizeAvatarUrl = (value: string): string => {
     return `${origin}/${relative}`;
 };
 
-const toAvatarOption = (item: PersonagemApiItem): AvatarOption | null => {
+const toAvatarOption = (item: Personagem): AvatarOption | null => {
     const id = Number(item.id);
     const nome = item.nome?.trim();
     const imagem = item.imagem?.trim();
@@ -156,18 +153,14 @@ export const EditarPerfil = () => {
         let mounted = true;
 
         const carregarDados = async () => {
-            const token = localStorage.getItem('accessToken');
+            const token = getAccessToken();
 
             try {
                 const [perfilRes, personagensRes] = await Promise.allSettled([
                     token
-                        ? api.get<UsuarioProfileResponse>('/usuario/me', {
-                              headers: {
-                                  Authorization: `Bearer ${token}`,
-                              },
-                          })
+                        ? userService.buscarMeuPerfil()
                         : Promise.resolve<null>(null),
-                    api.get<PersonagemApiItem[]>('/personagens'),
+                    personagemService.listarPersonagens(),
                 ]);
 
                 if (!mounted) {
@@ -176,12 +169,12 @@ export const EditarPerfil = () => {
 
                 const avatar =
                     perfilRes.status === 'fulfilled' && perfilRes.value
-                        ? perfilRes.value.data?.usuario?.avatar ?? null
+                        ? perfilRes.value.usuario?.avatar ?? null
                         : null;
 
                 const payload =
-                    personagensRes.status === 'fulfilled' && Array.isArray(personagensRes.value.data)
-                        ? personagensRes.value.data
+                    personagensRes.status === 'fulfilled' && Array.isArray(personagensRes.value)
+                        ? personagensRes.value
                         : [];
 
                 const options = payload
@@ -197,9 +190,9 @@ export const EditarPerfil = () => {
                 setFundoSelecionado(localStorage.getItem('userProfileBanner') || backgroundOptions[0]?.imagem || null);
 
                 if (perfilRes.status === 'fulfilled' && perfilRes.value) {
-                    setNome(perfilRes.value.data?.usuario?.nome?.trim() ?? '');
-                    setEmail(perfilRes.value.data?.usuario?.email?.trim() ?? '');
-                    setStatus(perfilRes.value.data?.usuario?.status?.trim() ?? '');
+                    setNome(perfilRes.value.usuario?.nome?.trim() ?? '');
+                    setEmail(perfilRes.value.usuario?.email?.trim() ?? '');
+                    setStatus(perfilRes.value.usuario?.status?.trim() ?? '');
                 }
 
                 if (!token) {
@@ -238,7 +231,7 @@ export const EditarPerfil = () => {
             return;
         }
 
-        const token = localStorage.getItem('accessToken');
+        const token = getAccessToken();
 
         if (!token) {
             setFeedback('Sessão não encontrada. Faça login novamente.');
@@ -264,12 +257,7 @@ export const EditarPerfil = () => {
             return;
         }
 
-        const payload: {
-            nome?: string;
-            email?: string;
-            senha?: string;
-            avatar?: string | null;
-        } = {
+        const payload: AtualizaPerfilData = {
             avatar: avatarSelecionado ?? null,
         };
 
@@ -286,15 +274,7 @@ export const EditarPerfil = () => {
         }
 
         try {
-            await api.put(
-                '/usuario/me',
-                payload,
-                {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                    },
-                }
-            );
+            await userService.atualizarMeuPerfil(payload);
 
             setAvatarAtual(avatarSelecionado);
             localStorage.setItem('userAvatar', avatarSelecionado ?? '');
