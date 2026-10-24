@@ -1,13 +1,10 @@
 import React from "react";
+import type { PersonagemHookData } from '../../types/Personagem';
+import { getApiBaseUrl } from '../../utils/apiUrl';
 
-const DEFAULT_API_URL = (import.meta.env.VITE_API_URL ?? "http://localhost:3000").replace(/\/+$/, "");
+const DEFAULT_API_URL = getApiBaseUrl();
 
-export type Personagem = {
-	id?: string | number;
-	nome?: string;
-	imagem?: string;
-	[key: string]: unknown;
-};
+export type Personagem = PersonagemHookData;
 
 type UsePersonagemOptions = {
 	url?: string;
