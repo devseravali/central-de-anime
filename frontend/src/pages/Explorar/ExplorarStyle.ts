@@ -9,6 +9,10 @@ export const H1Explorar = styled.h1`
   margin-bottom: 16px;
 `;
 
+export const EmptyStateText = styled.p`
+  margin: 8px 0 20px;
+`;
+
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
