@@ -20,6 +20,8 @@ export const ModalContainer = styled.div`
   width: 100%;
   max-width: 520px;
   max-height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
 
   background-color: ${({ theme }) => theme.colors.surface};
   color: ${({ theme }) => theme.colors.textPrimary};
@@ -98,5 +100,6 @@ export const CloseButton = styled.button`
 export const ModalContent = styled.div`
   padding: ${({ theme }) => theme.spacing.component.large};
 
+  min-height: 0;
   overflow-y: auto;
 `;
