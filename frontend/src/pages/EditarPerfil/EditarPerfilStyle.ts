@@ -234,7 +234,7 @@ export const BannerPreview = styled.div<{ $imageUrl?: string | null }>`
     background:
         linear-gradient(
             145deg,
-            rgba(13, 20, 35, 0.55),
+            ${({ theme }) => theme.colors.bannerOverlay},
             ${({ theme }) => theme.colors.surface}
         )
         ${({ $imageUrl }) => ($imageUrl ? `, url(${$imageUrl})` : '')};
