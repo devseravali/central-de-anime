@@ -130,10 +130,10 @@ export const MetaBadge = styled.figcaption`
 
     padding: 0.3rem 0.7rem;
 
-    border: 1px solid rgba(6, 182, 212, 0.35);
+    border: 1px solid ${({ theme }) => theme.colors.imageBadgeBorder};
     border-radius: 999px;
 
-    background: rgba(6, 182, 212, 0.2);
+    background: ${({ theme }) => theme.colors.imageBadgeBackground};
     color: ${({ theme }) => theme.colors.cyan};
 
     font-family: ${({ theme }) =>
