@@ -364,7 +364,7 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
                                     onChange={(event) => setLembrar(event.target.checked)}
                                     disabled={authMutation.isPending}
                                 />
-                                Lembrar minha senha
+                                Lembrar meu email
                             </CheckboxLabel>
 
                             {isLogin && (
