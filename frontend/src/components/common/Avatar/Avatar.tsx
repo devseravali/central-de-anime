@@ -1,3 +1,4 @@
+import { useAvatarImage } from '../../../hooks/UseAvatarImage/useAvatarImage';
 import { StyledAvatar } from './AvatarStyle';
 
 interface AvatarProps {
@@ -11,11 +12,14 @@ export const Avatar = ({
     alt = 'Avatar do usuário',
     size = 'medium',
 }: AvatarProps) => {
+    const avatarImage = useAvatarImage(src);
+
     return (
         <StyledAvatar
-            src={src}
+            src={avatarImage.src}
             alt={alt}
             $size={size}
+            onError={avatarImage.onError}
         />
     );
 };
