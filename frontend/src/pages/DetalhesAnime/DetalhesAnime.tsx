@@ -138,9 +138,7 @@ export const DetalhesAnime = () => {
                     </CoverWrapper>
 
                     <InfoColumn>
-                        <SectionInfo
-                            aria-labelledby="informacoes-anime"
-                        >
+                        <SectionInfo aria-label="Informações do anime">
                             <AnimeInfo
                                 temporada={anime.temporada}
                                 ano={anime.ano}
@@ -223,11 +221,17 @@ export const DetalhesAnime = () => {
                     temporadas.map((temporada) => (
                         <SectionBlock
                             key={`${temporada.animeId ?? anime.id}-${temporada.numero}`}
-                            aria-label={`Temporada ${temporada.numero}`}
+                            aria-label={
+                                temporada.numero > 0
+                                    ? `Temporada ${temporada.numero}`
+                                    : undefined
+                            }
                         >
-                            <DetalhesH2>
-                                Temporada {temporada.numero} ({temporada.quantidadeEpisodios} episodios)
-                            </DetalhesH2>
+                            {temporada.numero > 0 && (
+                                <DetalhesH2>
+                                    Temporada {temporada.numero} ({temporada.quantidadeEpisodios} episodios)
+                                </DetalhesH2>
+                            )}
 
                             <EpisodiosGrid>
                                 {temporada.episodios.map((episodio) => {
