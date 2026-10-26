@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { avaliacaoService } from '../../services/avaliacao.service';
 import { episodioService } from '../../services/episodio.service';
 import {
   favoritoService,
@@ -9,6 +8,7 @@ import {
 import { getAccessToken } from '../../services/api';
 import { type Personagem } from '../../services/personagem.service';
 import { userService } from '../../services/user.service';
+import { useFavoriteRatings } from '../../hooks/UseFavoriteRatings/useFavoriteRatings';
 import type { Episodio } from '../../types/Episodio';
 import { resolveAnimeCoverUrl } from '../../utils/animeCoverUrl';
 import { resolveApiMediaUrl } from '../../utils/mediaUrl';
@@ -115,10 +115,15 @@ export const Favoritos = () => {
   const [animesFavoritos, setAnimesFavoritos] = useState<FavoritoAnime[]>([]);
   const [personagensFavoritos, setPersonagensFavoritos] = useState<Personagem[]>([]);
   const [episodiosPorAnime, setEpisodiosPorAnime] = useState<Record<number, number>>({});
-  const [notasPorAnime, setNotasPorAnime] = useState<Record<number, number>>({});
   const [usuarioId, setUsuarioId] = useState<number | null>(null);
   const [removingKey, setRemovingKey] = useState<string | null>(null);
   const [actionError, setActionError] = useState<string | null>(null);
+  const {
+    ratingsByAnime: notasPorAnime,
+    error: ratingsError,
+    isLoading: isLoadingRatings,
+    retry: retryRatings,
+  } = useFavoriteRatings(usuarioId);
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -141,7 +146,6 @@ export const Favoritos = () => {
         setAnimesFavoritos([]);
         setPersonagensFavoritos([]);
         setEpisodiosPorAnime({});
-        setNotasPorAnime({});
         setUsuarioId(null);
         setActionError(null);
         setError(false);
@@ -179,11 +183,10 @@ export const Favoritos = () => {
 
         setUsuarioId(usuarioId);
 
-        const [animesResponse, personagensResponse, episodiosResponse, avaliacoesResponse] = await Promise.all([
+        const [animesResponse, personagensResponse, episodiosResponse] = await Promise.all([
           favoritoService.AnimesFavoritos(usuarioId),
           favoritoService.PersonagensFavoritos(usuarioId),
           episodioService.listarEpisodios(),
-          avaliacaoService.AvaliacoesUsuarios(usuarioId),
         ]);
 
         if (!mounted) {
@@ -195,21 +198,6 @@ export const Favoritos = () => {
         setAnimesFavoritos(Array.isArray(animesResponse) ? animesResponse : []);
         setPersonagensFavoritos(toPersonagensList(personagensResponse));
         setEpisodiosPorAnime(toEpisodeCountMap(episodios));
-
-        const notasMap = Array.isArray(avaliacoesResponse)
-          ? avaliacoesResponse.reduce<Record<number, number>>((acc, item) => {
-              const animeId = Number(item?.anime?.id);
-              const nota = Number(item?.nota);
-
-              if (Number.isInteger(animeId) && Number.isFinite(nota)) {
-                acc[animeId] = nota;
-              }
-
-              return acc;
-            }, {})
-          : {};
-
-        setNotasPorAnime(notasMap);
       } catch {
         if (mounted) {
           setError(true);
@@ -510,6 +498,21 @@ export const Favoritos = () => {
         <EmptyText role="alert">
           {actionError}
         </EmptyText>
+      )}
+
+      {ratingsError && (
+        <div role="alert">
+          <EmptyText>{ratingsError}</EmptyText>
+          <ActionButton
+            type="button"
+            onClick={retryRatings}
+            disabled={isLoadingRatings}
+          >
+            {isLoadingRatings
+              ? 'Carregando avaliações...'
+              : 'Tentar carregar avaliações novamente'}
+          </ActionButton>
+        </div>
       )}
 
       <SectionHeader>
