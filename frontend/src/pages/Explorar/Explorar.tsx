@@ -19,9 +19,12 @@ export const Explorar = () => {
     data,
     isLoading,
     error,
+    isFetchNextPageError,
     fetchNextPage,
     hasNextPage,
+    isRefetching,
     isFetchingNextPage,
+    refetch,
   } = useAnimes(buscaNormalizada);
 
   const animesExibidos =
@@ -32,7 +35,7 @@ export const Explorar = () => {
     return <Loading />;
   }
 
-  if (error) {
+  if (error && !data) {
     return (
       <ErrorMessage message="Não foi possível carregar os animes." />
     );
@@ -64,6 +67,28 @@ export const Explorar = () => {
 
       <AnimeGrid animes={animesExibidos} />
 
+      {error && data && (
+        <>
+          <div role="alert">
+            <ErrorMessage
+              message={
+                isFetchNextPageError
+                  ? 'Não foi possível carregar mais animes. Tente novamente.'
+                  : 'Não foi possível atualizar os animes. Os resultados carregados continuam disponíveis.'
+              }
+            />
+          </div>
+          {!isFetchNextPageError && (
+            <Button
+              onClick={() => void refetch()}
+              disabled={isRefetching}
+            >
+              {isRefetching ? 'Atualizando...' : 'Tentar atualizar'}
+            </Button>
+          )}
+        </>
+      )}
+
       {animesExibidos.length > 0 && (
         <ButtonContainer>
           <Button
@@ -72,6 +97,8 @@ export const Explorar = () => {
           >
             {isFetchingNextPage
               ? 'Carregando...'
+              : isFetchNextPageError
+              ? 'Tentar novamente'
               : hasNextPage
               ? 'Carregar mais animes'
               : 'Todos os animes foram carregados'}
