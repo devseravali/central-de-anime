@@ -23,6 +23,11 @@ export const AnimeInfo = ({
   estacao,
   generos,
 }: AnimeInfoProps) => {
+  const hasValidSeason =
+    typeof temporada === 'number' &&
+    Number.isInteger(temporada) &&
+    temporada > 0;
+
   return (
     <SectionInfo>
       {ano !== undefined && (
@@ -33,7 +38,7 @@ export const AnimeInfo = ({
         </InfoRow>
       )}
 
-      {temporada !== undefined && (
+      {hasValidSeason && (
         <InfoRow>
           <InfoP>
             <StrongInfo>Temporada:</StrongInfo> {temporada}
