@@ -5,7 +5,7 @@ export const AnimeGridContainer = styled.div`
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
