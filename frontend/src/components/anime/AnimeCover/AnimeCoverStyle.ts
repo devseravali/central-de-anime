@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-export const AnimeCoverStyle = styled.article`
+export const AnimeCoverStyle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 100%;
+  aspect-ratio: 3 / 4;
+  max-height: 320px;
 
   border-radius: 8px;
 
@@ -19,4 +21,3 @@ export const AnimeCoverImage = styled.img`
   height: 100%;
   object-fit: cover;
 `;
-
