@@ -12,14 +12,21 @@ interface AnimeStatsProps {
 export const AnimeStats = ({
   quantidadeEpisodios,
 }: AnimeStatsProps) => {
+  if (
+    typeof quantidadeEpisodios !== 'number' ||
+    !Number.isFinite(quantidadeEpisodios) ||
+    !Number.isInteger(quantidadeEpisodios) ||
+    quantidadeEpisodios < 0
+  ) {
+    return null;
+  }
+
   return (
     <StatsContainer aria-label="Estatísticas do anime">
-      {quantidadeEpisodios !== undefined && (
-        <StatItem>
-          <StatLabel>Episódios</StatLabel>
-          <StatValue>{quantidadeEpisodios}</StatValue>
-        </StatItem>
-      )}
+      <StatItem>
+        <StatLabel>Episódios</StatLabel>
+        <StatValue>{quantidadeEpisodios}</StatValue>
+      </StatItem>
     </StatsContainer>
   );
 };
