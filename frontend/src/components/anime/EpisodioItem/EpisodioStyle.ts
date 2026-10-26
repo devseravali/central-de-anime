@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const EpisodiosGrid = styled.section`
+export const EpisodiosGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
@@ -27,12 +27,6 @@ export const EpisodioItemImage = styled.img`
   border-radius: 5px;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
 `;
 
 export const EpisodioItemTitle = styled.h3`
@@ -43,11 +37,6 @@ export const EpisodioItemTitle = styled.h3`
   font-weight: ${({ theme }) =>
     theme.typography.headlineSmall.fontWeight ?? 700};
   color: ${({ theme }) => theme.colors.cyan};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.primaryHover};
-    cursor: pointer;
-  }
 `;
 
 export const Small = styled.small`
@@ -55,10 +44,6 @@ export const Small = styled.small`
   font-weight: ${({ theme }) =>
   theme.typography.bodyMedium.fontWeight ? 700 : 400};
   color: ${({ theme }) => theme.colors.textPrimary};
-  &:hover {
-    color: ${({ theme }) => theme.colors.primaryHover};
-    cursor: default;
-  }
 `;
 
 export const EpisodioItemSinopse = styled.p`
@@ -68,11 +53,6 @@ export const EpisodioItemSinopse = styled.p`
     theme.typography.bodyMedium.fontWeight ? 600 : 500};
   color: ${({ theme }) => theme.colors.textPrimary};
   line-height: ${({ theme }) => theme.typography.bodyMedium.lineHeight};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.primaryHover};
-    cursor: default;
-  }
 `;
 
 export const ErrorMessage = styled.p`
