@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SectionInfo = styled.section`
+export const SectionInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -43,12 +43,7 @@ export const GenreChip = styled.li`
   line-height: 1;
   font-weight: 700;
   box-shadow: 0 2px 6px rgba(0,0,0,0.22);
-  cursor: pointer;
   border: 1px solid ${({ theme }) => theme.colors.borderStrong};
-  &:hover {
-    background: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.textPrimary};
-  }
 `;
 
 export const StrongInfo = styled.strong`
