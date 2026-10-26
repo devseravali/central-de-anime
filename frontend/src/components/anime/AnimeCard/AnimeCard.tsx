@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import {
   AnimeCardContainer,
+  AnimeCardLink,
   AnimeCardTitle,
 } from './AnimeCardStyle';
 import { AnimeCover } from '../AnimeCover/AnimeCover';
@@ -22,14 +22,13 @@ interface AnimeCardProps {
 export const AnimeCard = ({ anime }: AnimeCardProps) => {
   return (
     <AnimeCardContainer>
-      <Link to={`/animes/${anime.id}`}>
+      <AnimeCardLink to={`/animes/${anime.id}`}>
         <AnimeCover
           src={anime.capaUrl}
           alt={`Capa do anime ${anime.titulo}`}
         />
-      </Link>
-
-      <AnimeCardTitle>{anime.titulo}</AnimeCardTitle>
+        <AnimeCardTitle>{anime.titulo}</AnimeCardTitle>
+      </AnimeCardLink>
     </AnimeCardContainer>
   );
 };
