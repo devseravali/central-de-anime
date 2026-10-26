@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const AnimeCardContainer = styled.article`
@@ -19,6 +20,19 @@ export const AnimeCardContainer = styled.article`
   &:active {
     transform: translateY(-2px) scale(0.995);
     box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+  }
+`;
+
+export const AnimeCardLink = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.colors.primary};
+    outline-offset: 4px;
   }
 `;
 
