@@ -24,7 +24,7 @@ export const FigureImage = styled.img`
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
     border-color: ${({ theme }) => theme.colors.primary};
   }
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 280px;
     height: 420px;
   }
@@ -41,7 +41,7 @@ export const DetalhesContent = styled.section`
   align-items: flex-start;
   width: 100%;
   flex-direction: row;
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
