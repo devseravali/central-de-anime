@@ -1,15 +1,7 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { episodioService } from '../../services/episodio.service';
-import {
-  favoritoService,
-  type FavoritoAnime,
-} from '../../services/favorito.service';
-import { getAccessToken } from '../../services/api';
-import { type Personagem } from '../../services/personagem.service';
-import { userService } from '../../services/user.service';
 import { useFavoriteRatings } from '../../hooks/UseFavoriteRatings/useFavoriteRatings';
-import type { Episodio } from '../../types/Episodio';
+import { useFavoriteData } from '../../hooks/UseFavoriteData/useFavoriteData';
 import { resolveAnimeCoverUrl } from '../../utils/animeCoverUrl';
 import { resolveApiMediaUrl } from '../../utils/mediaUrl';
 import {
@@ -79,45 +71,22 @@ const toAnimeCoverImage = (
   value: string | null | undefined,
 ): string => resolveAnimeCoverUrl(value) || '/placeholder/capa-anime.png';
 
-const toEpisodeCountMap = (episodios: Episodio[]): Record<number, number> => {
-  return episodios.reduce<Record<number, number>>((acc, episodio) => {
-    if (!episodio || typeof episodio.animeId !== 'number') {
-      return acc;
-    }
-
-    acc[episodio.animeId] = (acc[episodio.animeId] ?? 0) + 1;
-
-    return acc;
-  }, {});
-};
-
-const toEpisodiosList = (
-  response: Episodio[] | { items?: Episodio[] },
-): Episodio[] => {
-  if (Array.isArray(response)) {
-    return response;
-  }
-
-  return response.items ?? [];
-};
-
-const toPersonagensList = (
-  response: Personagem[] | { items?: Personagem[] },
-): Personagem[] => {
-  if (Array.isArray(response)) {
-    return response;
-  }
-
-  return response.items ?? [];
-};
-
 export const Favoritos = () => {
-  const [animesFavoritos, setAnimesFavoritos] = useState<FavoritoAnime[]>([]);
-  const [personagensFavoritos, setPersonagensFavoritos] = useState<Personagem[]>([]);
-  const [episodiosPorAnime, setEpisodiosPorAnime] = useState<Record<number, number>>({});
-  const [usuarioId, setUsuarioId] = useState<number | null>(null);
-  const [removingKey, setRemovingKey] = useState<string | null>(null);
-  const [actionError, setActionError] = useState<string | null>(null);
+  const {
+    actionError,
+    animeFavorites: animesFavoritos,
+    auxiliaryError,
+    characterFavorites: personagensFavoritos,
+    episodeCounts: episodiosPorAnime,
+    episodesLoading: loadingEpisodios,
+    error,
+    loading,
+    removeFavorite,
+    removingKey,
+    retry,
+    sessionAvailable: sessaoDisponivel,
+    userId: usuarioId,
+  } = useFavoriteData();
   const {
     ratingsByAnime: notasPorAnime,
     error: ratingsError,
@@ -125,100 +94,10 @@ export const Favoritos = () => {
     retry: retryRatings,
   } = useFavoriteRatings(usuarioId);
 
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
   const [activeTab, setActiveTab] = useState<'anime' | 'personagem'>('anime');
   const [query, setQuery] = useState('');
   const [sortBy, setSortBy] = useState<'recent' | 'rating' | 'title'>('recent');
   const [compactView, setCompactView] = useState(false);
-
-  const [sessaoDisponivel, setSessaoDisponivel] = useState<boolean>(() =>
-    Boolean(getAccessToken()),
-  );
-
-  useEffect(() => {
-    const sincronizarSessao = () => {
-      const disponivel = Boolean(getAccessToken());
-      setSessaoDisponivel(disponivel);
-
-      if (!disponivel) {
-        setAnimesFavoritos([]);
-        setPersonagensFavoritos([]);
-        setEpisodiosPorAnime({});
-        setUsuarioId(null);
-        setActionError(null);
-        setError(false);
-        setLoading(false);
-      }
-    };
-
-    window.addEventListener('auth-state-changed', sincronizarSessao);
-    window.addEventListener('storage', sincronizarSessao);
-
-    return () => {
-      window.removeEventListener('auth-state-changed', sincronizarSessao);
-      window.removeEventListener('storage', sincronizarSessao);
-    };
-  }, []);
-
-  useEffect(() => {
-    let mounted = true;
-
-    const loadData = async () => {
-      try {
-        setLoading(true);
-        setError(false);
-
-        const perfil = await userService.buscarMeuPerfil();
-        const usuarioId = Number(perfil?.usuario?.id);
-
-        if (!mounted) {
-          return;
-        }
-
-        if (!Number.isInteger(usuarioId) || usuarioId <= 0) {
-          throw new Error('Usuario autenticado invalido');
-        }
-
-        setUsuarioId(usuarioId);
-
-        const [animesResponse, personagensResponse, episodiosResponse] = await Promise.all([
-          favoritoService.AnimesFavoritos(usuarioId),
-          favoritoService.PersonagensFavoritos(usuarioId),
-          episodioService.listarEpisodios(),
-        ]);
-
-        if (!mounted) {
-          return;
-        }
-
-        const episodios = toEpisodiosList(episodiosResponse);
-
-        setAnimesFavoritos(Array.isArray(animesResponse) ? animesResponse : []);
-        setPersonagensFavoritos(toPersonagensList(personagensResponse));
-        setEpisodiosPorAnime(toEpisodeCountMap(episodios));
-      } catch {
-        if (mounted) {
-          setError(true);
-        }
-      } finally {
-        if (mounted) {
-          setLoading(false);
-        }
-      }
-    };
-
-    if (!sessaoDisponivel) {
-      return;
-    }
-
-    loadData();
-
-    return () => {
-      mounted = false;
-    };
-  }, [sessaoDisponivel]);
 
   const animeFavorites = useMemo<FavoriteItem[]>(() => {
     return animesFavoritos.map((anime, index) => {
@@ -272,6 +151,8 @@ export const Favoritos = () => {
 
   const animeCount = animeFavorites.length;
   const personagemCount = personagemFavorites.length;
+  const activeFavoriteCount =
+    activeTab === 'anime' ? animeCount : personagemCount;
   const episodiosTotal = Object.values(episodiosPorAnime).reduce((sum, total) => sum + total, 0);
 
   const filtered = useMemo(() => {
@@ -305,38 +186,6 @@ export const Favoritos = () => {
 
     return result;
   }, [activeTab, favorites, query, sortBy]);
-
-  const displayedItems = filtered;
-
-  const handleRemoveFavorite = async (item: FavoriteItem) => {
-    if (!usuarioId) {
-      setActionError('Sessao de usuario indisponivel para remover favorito.');
-      return;
-    }
-
-    const key = `${item.type}-${item.id}`;
-
-    try {
-      setActionError(null);
-      setRemovingKey(key);
-
-      if (item.type === 'anime') {
-        await favoritoService.Desfavoritar(item.id);
-        setAnimesFavoritos((current) =>
-          current.filter((anime) => Number(anime.id) !== item.id),
-        );
-      } else {
-        await favoritoService.DesfavoritarPersonagem(item.id);
-        setPersonagensFavoritos((current) =>
-          current.filter((personagem) => Number(personagem.id) !== item.id),
-        );
-      }
-    } catch {
-      setActionError('Nao foi possivel remover este item dos favoritos.');
-    } finally {
-      setRemovingKey(null);
-    }
-  };
 
   if (!sessaoDisponivel) {
     return (
@@ -388,8 +237,11 @@ export const Favoritos = () => {
         <EmptyState>
           <EmptyTitle>Erro ao carregar favoritos</EmptyTitle>
           <EmptyText>
-            Nao foi possivel buscar os favoritos reais de animes e personagens agora.
+            {error}
           </EmptyText>
+          <ActionButton type="button" onClick={retry} disabled={loading}>
+            {loading ? 'Carregando favoritos...' : 'Tentar novamente'}
+          </ActionButton>
         </EmptyState>
       </Page>
     );
@@ -420,7 +272,9 @@ export const Favoritos = () => {
           </StatCard>
 
           <StatCard>
-            <StatValue>{episodiosTotal}</StatValue>
+            <StatValue>
+              {auxiliaryError ? '--' : loadingEpisodios ? '...' : episodiosTotal}
+            </StatValue>
             <StatLabel>Episodios totais</StatLabel>
           </StatCard>
         </Stats>
@@ -515,17 +369,21 @@ export const Favoritos = () => {
         </div>
       )}
 
+      {auxiliaryError && (
+        <EmptyText role="status">{auxiliaryError}</EmptyText>
+      )}
+
       <SectionHeader>
         <Dot aria-hidden="true" />
 
         <SectionTitle>Obras Selecionadas</SectionTitle>
 
         <span>
-          (Exibindo {displayedItems.length} de {filtered.length})
+          (Exibindo {filtered.length} de {activeFavoriteCount})
         </span>
       </SectionHeader>
 
-      {displayedItems.length === 0 && (
+      {filtered.length === 0 && (
         <EmptyState>
           <EmptyTitle>Nenhum favorito encontrado</EmptyTitle>
 
@@ -535,9 +393,9 @@ export const Favoritos = () => {
         </EmptyState>
       )}
 
-      {displayedItems.length > 0 && (
+      {filtered.length > 0 && (
         <Grid $compact={compactView}>
-          {displayedItems.map((item) => (
+          {filtered.map((item) => (
             <AnimeCard key={`${item.type}-${item.id}`}>
               <Cover>
                 <img src={item.imageUrl} alt={`Capa de ${item.title}`} loading="lazy" />
@@ -549,9 +407,9 @@ export const Favoritos = () => {
                   type="button"
                   aria-label={`Remover ${item.title} dos favoritos`}
                   onClick={() => {
-                    void handleRemoveFavorite(item);
+                    void removeFavorite(item);
                   }}
-                  disabled={removingKey === `${item.type}-${item.id}`}
+                  disabled={removingKey !== null}
                 >
                   {removingKey === `${item.type}-${item.id}`
                     ? '...'
