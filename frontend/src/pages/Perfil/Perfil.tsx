@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { useProfileData } from '../../hooks/UseProfileData/useProfileData';
+import { useAvatarImage } from '../../hooks/UseAvatarImage/useAvatarImage';
 import { getApiOrigin } from '../../utils/apiUrl';
 
 import {
@@ -49,8 +50,6 @@ import {
     SpanError,
 } from './PerfilStyle';
 
-const defaultAvatar = 'https://via.placeholder.com/200';
-
 const normalizeMediaUrl = (value: string | null | undefined): string | null => {
     if (!value) {
         return null;
@@ -85,6 +84,7 @@ export const Perfil = () => {
     const {
         loading,
         errorMessage,
+        hasPartialData,
         nome,
         email,
         avatar,
@@ -118,6 +118,7 @@ export const Perfil = () => {
         const emailLabel = email || 'e-mail indisponível';
         return `${emailLabel}`;
     }, [email]);
+    const avatarImage = useAvatarImage(normalizeMediaUrl(avatar) ?? undefined);
 
     const statCards = useMemo(() => {
         return [
@@ -153,8 +154,9 @@ export const Perfil = () => {
                     <HeroContent>
                         <IdentityRow>
                             <Avatar
-                                src={normalizeMediaUrl(avatar) || defaultAvatar}
+                                src={avatarImage.src}
                                 alt="Avatar do usuário"
+                                onError={avatarImage.onError}
                             />
 
                             <Identity>
@@ -163,7 +165,15 @@ export const Perfil = () => {
 
                                 <BadgeRow aria-label="Status do perfil">
                                     <StatusBadge as="li">{status}</StatusBadge>
-                                    <StatusBadge as="li">Dados sincronizados</StatusBadge>
+                                    <StatusBadge as="li">
+                                        {loading
+                                            ? 'Carregando dados'
+                                            : hasPartialData
+                                              ? 'Dados parciais'
+                                              : errorMessage
+                                                ? 'Dados indisponíveis'
+                                                : 'Dados sincronizados'}
+                                    </StatusBadge>
                                 </BadgeRow>
                             </Identity>
                         </IdentityRow>
@@ -193,7 +203,11 @@ export const Perfil = () => {
                 </LevelCard>
 
                 {errorMessage && (
-                    <LevelCard as="section" aria-label="Erro no carregamento do perfil">
+                    <LevelCard
+                        as="section"
+                        aria-label="Erro no carregamento do perfil"
+                        role="alert"
+                    >
                         <LevelTop>
                             <SpanError>{errorMessage}</SpanError>
                         </LevelTop>
