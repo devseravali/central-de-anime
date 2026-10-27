@@ -9,6 +9,7 @@ import type { AnimeData } from '../../types/AnimeData';
 
 export const useHomeData = () => {
     const [animes, setAnimes] = useState<AnimeData[]>([]);
+    const [totalAnimes, setTotalAnimes] = useState(0);
     const [personagens, setPersonagens] = useState<Personagem[]>([]);
 
     const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ export const useHomeData = () => {
                 const response = await animeService.listarAnimes();
 
                 setAnimes(response.items ?? []);
+                setTotalAnimes(response.total);
             } catch {
                 setError(true);
             } finally {
@@ -58,6 +60,7 @@ export const useHomeData = () => {
 
     return {
         animes,
+        totalAnimes,
         personagens,
         loading,
         loadingPersonagens,
