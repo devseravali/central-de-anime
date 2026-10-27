@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
 import { useMutation } from '@tanstack/react-query';
-import { isAxiosError } from 'axios';
 
 import { authService } from '../../services/auth.service';
 import {
@@ -19,21 +18,8 @@ import {
     Title,
 } from './EsqueciSenhaStyle';
 
-const getErrorMessage = (error: unknown): string => {
-    if (isAxiosError(error)) {
-        const apiMessage = error.response?.data?.message;
-
-        if (typeof apiMessage === 'string' && apiMessage.trim()) {
-            return apiMessage;
-        }
-    }
-
-    if (error instanceof Error && error.message.trim()) {
-        return error.message;
-    }
-
-    return 'Não foi possível processar sua solicitação. Tente novamente.';
-};
+const ERROR_MESSAGE =
+    'Não foi possível processar sua solicitação. Tente novamente.';
 
 export const EsqueciSenha = () => {
     const [email, setEmail] = useState('');
@@ -41,9 +27,7 @@ export const EsqueciSenha = () => {
     const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
     const forgotMutation = useMutation({
-        mutationFn: async (inputEmail: string) => {
-            return authService.forgotPassword(inputEmail);
-        },
+        mutationFn: authService.forgotPassword,
         onSuccess: () => {
             setErrorMessage(null);
             setSuccessMessage(
@@ -51,14 +35,18 @@ export const EsqueciSenha = () => {
             );
             setEmail('');
         },
-        onError: (error) => {
+        onError: () => {
             setSuccessMessage(null);
-            setErrorMessage(getErrorMessage(error));
+            setErrorMessage(ERROR_MESSAGE);
         },
     });
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+
+        if (forgotMutation.isPending) {
+            return;
+        }
 
         const normalizedEmail = email.trim();
 
@@ -69,6 +57,7 @@ export const EsqueciSenha = () => {
         }
 
         setErrorMessage(null);
+        setSuccessMessage(null);
         forgotMutation.mutate(normalizedEmail);
     };
 
@@ -80,23 +69,51 @@ export const EsqueciSenha = () => {
                     Informe o email da sua conta para receber o link de recuperação.
                 </Subtitle>
 
-                <Form onSubmit={handleSubmit} noValidate>
+                <Form onSubmit={handleSubmit}>
                     <Field>
-                        <FieldLabel>E-mail</FieldLabel>
+                        <FieldLabel htmlFor="forgot-password-email">
+                            E-mail
+                        </FieldLabel>
                         <FieldInput
+                            id="forgot-password-email"
                             type="email"
                             name="email"
                             value={email}
-                            onChange={(event) => setEmail(event.target.value)}
+                            onChange={(event) => {
+                                setEmail(event.target.value);
+                                setErrorMessage(null);
+                                setSuccessMessage(null);
+                            }}
                             placeholder="seu.email@exemplo.com"
                             autoComplete="email"
+                            required
+                            aria-invalid={Boolean(errorMessage)}
+                            aria-describedby={
+                                errorMessage
+                                    ? 'forgot-password-error'
+                                    : undefined
+                            }
                             disabled={forgotMutation.isPending}
                         />
                     </Field>
 
-                    {errorMessage && <Message $variant="error">{errorMessage}</Message>}
+                    {errorMessage && (
+                        <Message
+                            id="forgot-password-error"
+                            role="alert"
+                            $variant="error"
+                        >
+                            {errorMessage}
+                        </Message>
+                    )}
                     {successMessage && (
-                        <Message $variant="success">{successMessage}</Message>
+                        <Message
+                            role="status"
+                            aria-live="polite"
+                            $variant="success"
+                        >
+                            {successMessage}
+                        </Message>
                     )}
 
                     <SubmitButton type="submit" disabled={forgotMutation.isPending}>
