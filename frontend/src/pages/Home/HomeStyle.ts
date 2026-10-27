@@ -20,6 +20,14 @@ export const Hero = styled.section`
 
     background: ${({ theme }) => theme.colors.surface};
     border-radius: 16px;
+
+    @media (max-width: 900px) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        padding: 1.25rem;
+    }
 `;
 
 export const HeroLeft = styled.div`
@@ -102,6 +110,14 @@ export const PrimaryCTA = styled.a`
     &:hover {
         transform: translateY(-2px);
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
 `;
 
 export const SecondaryCTA = styled.a`
@@ -124,6 +140,14 @@ export const SecondaryCTA = styled.a`
 
     &:hover {
         transform: translateY(-2px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
     }
 `;
 
@@ -177,6 +201,7 @@ export const TrackerTitle = styled.h2`
 
     font-size: 1rem;
     line-height: 1.3;
+    overflow-wrap: anywhere;
 `;
 
 export const TrackerSync = styled.span`
@@ -198,6 +223,10 @@ export const TrackerAnime = styled.div`
     gap: 1rem;
 
     margin-top: 1rem;
+
+    @media (max-width: 600px) {
+        gap: 0.75rem;
+    }
 `;
 
 export const TrackerImage = styled.img`
@@ -210,6 +239,11 @@ export const TrackerImage = styled.img`
     border-radius: 10px;
 
     background: ${({ theme }) => theme.colors.surface};
+
+    @media (max-width: 600px) {
+        width: 112px;
+        height: 160px;
+    }
 `;
 
 export const TrackerContent = styled.div`
@@ -223,6 +257,7 @@ export const TrackerDescription = styled.p`
     color: ${({ theme }) => theme.colors.textSecondary};
     font-size: 0.8rem;
     line-height: 1.5;
+    overflow-wrap: anywhere;
 `;
 
 export const TrackerMeta = styled.div`
@@ -265,6 +300,12 @@ export const FeaturedHeader = styled.header`
     align-items: end;
     justify-content: space-between;
     gap: 1rem;
+
+    @media (max-width: 600px) {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 `;
 
 export const FeaturedHeading = styled.div`
@@ -295,6 +336,14 @@ export const AnimeGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const AnimeCard = styled.article`
@@ -311,6 +360,14 @@ export const AnimeCard = styled.article`
     &:hover {
         transform: translateY(-3px);
         border-color: ${({ theme }) => theme.colors.primary};
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
     }
 `;
 
@@ -339,12 +396,9 @@ export const AnimeInfo = styled.div`
 export const AnimeTitle = styled.h3`
     margin: 0;
 
-    overflow: hidden;
-
     font-size: 1rem;
     line-height: 1.3;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    overflow-wrap: anywhere;
 `;
 
 export const AnimeMeta = styled.div`
@@ -401,6 +455,12 @@ export const PersonagemHeader = styled.header`
     align-items: end;
     justify-content: space-between;
     gap: 1rem;
+
+    @media (max-width: 600px) {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 `;
 
 export const PersonagemHeading = styled.div`
@@ -423,6 +483,14 @@ export const PersonagemGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const PersonagemCard = styled.article`
@@ -439,6 +507,14 @@ export const PersonagemCard = styled.article`
     &:hover {
         transform: translateY(-3px);
         border-color: ${({ theme }) => theme.colors.primary};
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
     }
 `;
 
@@ -458,6 +534,10 @@ export const PersonagemImage = styled.img`
     object-fit: cover;
 
     background: ${({ theme }) => theme.colors.surface};
+
+    @media (max-width: 600px) {
+        height: 200px;
+    }
 `;
 
 export const PersonagemInfo = styled.div`
@@ -467,12 +547,9 @@ export const PersonagemInfo = styled.div`
 export const PersonagemName = styled.h3`
     margin: 0;
 
-    overflow: hidden;
-
     font-size: 1rem;
     line-height: 1.3;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    overflow-wrap: anywhere;
 `;
 
 export const PersonagemAnime = styled.small`
