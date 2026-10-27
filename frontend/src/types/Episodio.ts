@@ -7,3 +7,5 @@ export interface Episodio {
   sinopse?: string;
   animeId?: number;
 }
+
+export type EpisodiosResponse = Episodio[] | { items?: Episodio[] };
