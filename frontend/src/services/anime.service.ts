@@ -135,7 +135,8 @@ const fillStudiosFromMap = async (
 
       return item;
     });
-  } catch {
+  } catch (error) {
+    console.error('Falha ao buscar estúdios para completar animes:', error);
     return items;
   }
 };
@@ -179,7 +180,8 @@ const fillEstacoesFromMap = async (
 
       return item;
     });
-  } catch {
+  } catch (error) {
+    console.error('Falha ao buscar estações para completar animes:', error);
     return items.map((item) => ({
       ...item,
       estacao:
@@ -303,31 +305,6 @@ export const animeService = {
 
     const data = response.data;
 
-    if (Array.isArray(data.generos)) {
-      data.generos = data.generos.map((genero) => {
-        if (!genero) {
-          return String(genero);
-        }
-
-        if (typeof genero === 'string') {
-          return genero;
-        }
-
-        if (
-          genero.genero &&
-          typeof genero.genero.nome === 'string'
-        ) {
-          return genero.genero.nome;
-        }
-
-        if (typeof genero.nome === 'string') {
-          return genero.nome;
-        }
-
-        return String(genero);
-      });
-    }
-
     if (data.estudio && typeof data.estudio === 'object') {
       data.estudio = data.estudio.nome || '';
     }
@@ -367,15 +344,25 @@ export const animeService = {
         if (encontrada) {
           data.estacao = encontrada.nome;
         }
-      } catch {
+      } catch (error) {
+        console.error('Falha ao buscar estações para o anime:', error);
         data.estacao = ESTACOES_FALLBACK.get(Number(data.estacaoId)) || '';
       }
     }
 
     const normalizedGeneros = Array.isArray(data.generos)
-      ? data.generos.filter(
-          (genero): genero is string => typeof genero === 'string'
-        )
+      ? data.generos.flatMap((genero) => {
+          if (typeof genero === 'string') {
+            return genero.trim() ? [genero] : [];
+          }
+
+          if (!genero) {
+            return [];
+          }
+
+          const nome = genero.genero?.nome ?? genero.nome;
+          return typeof nome === 'string' && nome.trim() ? [nome] : [];
+        })
       : undefined;
 
     const normalizedAnime: AnimeData = {
