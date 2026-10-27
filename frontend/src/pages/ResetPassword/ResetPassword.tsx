@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
 import { useMutation } from '@tanstack/react-query';
-import { isAxiosError } from 'axios';
 import { Eye, EyeOff } from 'lucide-react';
 import { useSearchParams } from 'react-router-dom';
 
-import { authService } from '../../services/auth.service';
+import { authService, type ResetPasswordData } from '../../services/auth.service';
 import {
     ActionLink,
     Actions,
@@ -23,21 +22,14 @@ import {
     Title,
 } from './ResetPasswordStyle';
 
-const getErrorMessage = (error: unknown): string => {
-    if (isAxiosError(error)) {
-        const apiMessage = error.response?.data?.message;
+const ERROR_MESSAGE = 'Não foi possível redefinir sua senha. Tente novamente.';
 
-        if (typeof apiMessage === 'string' && apiMessage.trim()) {
-            return apiMessage;
-        }
-    }
+type PasswordField = 'novaSenha' | 'confirmarSenha';
 
-    if (error instanceof Error && error.message.trim()) {
-        return error.message;
-    }
-
-    return 'Não foi possível redefinir sua senha. Tente novamente.';
-};
+interface PasswordValidationError {
+    field: PasswordField;
+    message: string;
+}
 
 export const ResetPassword = () => {
     const [searchParams] = useSearchParams();
@@ -49,25 +41,32 @@ export const ResetPassword = () => {
     const [mostrarConfirmarSenha, setMostrarConfirmarSenha] = useState(false);
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
     const [successMessage, setSuccessMessage] = useState<string | null>(null);
+    const [validationError, setValidationError] =
+        useState<PasswordValidationError | null>(null);
 
     const resetMutation = useMutation({
-        mutationFn: async () => {
-            return authService.resetPassword({ token, novaSenha: novaSenha.trim() });
+        mutationFn: async (data: ResetPasswordData): Promise<void> => {
+            await authService.resetPassword(data);
         },
         onSuccess: () => {
             setErrorMessage(null);
+            setValidationError(null);
             setSuccessMessage('Senha redefinida com sucesso. Agora você já pode entrar.');
             setNovaSenha('');
             setConfirmarSenha('');
         },
-        onError: (error) => {
+        onError: () => {
             setSuccessMessage(null);
-            setErrorMessage(getErrorMessage(error));
+            setErrorMessage(ERROR_MESSAGE);
         },
     });
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+
+        if (resetMutation.isPending) {
+            return;
+        }
 
         if (!token) {
             setSuccessMessage(null);
@@ -75,22 +74,56 @@ export const ResetPassword = () => {
             return;
         }
 
-        const normalizedPassword = novaSenha.trim();
-
-        if (normalizedPassword.length < 6) {
+        if (!novaSenha) {
             setSuccessMessage(null);
-            setErrorMessage('A nova senha deve ter pelo menos 6 caracteres.');
+            setErrorMessage(null);
+            setValidationError({
+                field: 'novaSenha',
+                message: 'Informe sua nova senha.',
+            });
             return;
         }
 
-        if (normalizedPassword !== confirmarSenha.trim()) {
+        if (novaSenha.length < 6) {
             setSuccessMessage(null);
-            setErrorMessage('As senhas não conferem.');
+            setErrorMessage(null);
+            setValidationError({
+                field: 'novaSenha',
+                message: 'A nova senha deve ter pelo menos 6 caracteres.',
+            });
+            return;
+        }
+
+        if (!confirmarSenha) {
+            setSuccessMessage(null);
+            setErrorMessage(null);
+            setValidationError({
+                field: 'confirmarSenha',
+                message: 'Confirme sua nova senha.',
+            });
+            return;
+        }
+
+        if (novaSenha !== confirmarSenha) {
+            setSuccessMessage(null);
+            setErrorMessage(null);
+            setValidationError({
+                field: 'confirmarSenha',
+                message: 'As senhas não conferem.',
+            });
             return;
         }
 
         setErrorMessage(null);
-        resetMutation.mutate();
+        setValidationError(null);
+        setSuccessMessage(null);
+        resetMutation.mutate({ token, novaSenha });
+    };
+
+    const clearFeedback = () => {
+        setErrorMessage(null);
+        setSuccessMessage(null);
+        setValidationError(null);
     };
 
     return (
@@ -101,70 +134,173 @@ export const ResetPassword = () => {
                     Digite sua nova senha para concluir a recuperação da conta.
                 </Subtitle>
 
-                <Form onSubmit={handleSubmit} noValidate>
-                    <Field>
-                        <FieldLabel>Nova senha</FieldLabel>
-                        <FieldControl>
-                            <FieldInput
-                                type={mostrarNovaSenha ? 'text' : 'password'}
-                                name="novaSenha"
-                                value={novaSenha}
-                                onChange={(event) => setNovaSenha(event.target.value)}
-                                placeholder="No mínimo 6 caracteres"
-                                autoComplete="new-password"
-                                disabled={resetMutation.isPending}
-                            />
-                            <FieldAction
-                                type="button"
-                                onClick={() => setMostrarNovaSenha((prevState) => !prevState)}
-                                disabled={resetMutation.isPending}
-                                aria-label={mostrarNovaSenha ? 'Ocultar senha' : 'Mostrar senha'}
+                {!token && (
+                    <Message role="alert" $variant="error">
+                        Token de recuperação ausente. Solicite um novo link.
+                    </Message>
+                )}
+
+                {successMessage && (
+                    <Message
+                        role="status"
+                        aria-live="polite"
+                        $variant="success"
+                    >
+                        {successMessage}
+                    </Message>
+                )}
+
+                {token && !successMessage && (
+                    <Form
+                        onSubmit={handleSubmit}
+                        noValidate
+                        aria-busy={resetMutation.isPending}
+                    >
+                        <Field>
+                            <FieldLabel htmlFor="reset-password-new">
+                                Nova senha
+                            </FieldLabel>
+                            <FieldControl>
+                                <FieldInput
+                                    id="reset-password-new"
+                                    type={mostrarNovaSenha ? 'text' : 'password'}
+                                    name="novaSenha"
+                                    value={novaSenha}
+                                    onChange={(event) => {
+                                        setNovaSenha(event.target.value);
+                                        clearFeedback();
+                                    }}
+                                    placeholder="No mínimo 6 caracteres"
+                                    autoComplete="new-password"
+                                    aria-invalid={
+                                        validationError?.field === 'novaSenha'
+                                    }
+                                    aria-describedby={
+                                        validationError?.field === 'novaSenha'
+                                            ? 'reset-password-new-error'
+                                            : undefined
+                                    }
+                                    disabled={resetMutation.isPending}
+                                    required
+                                />
+                                <FieldAction
+                                    type="button"
+                                    onClick={() =>
+                                        setMostrarNovaSenha((prevState) => !prevState)
+                                    }
+                                    disabled={resetMutation.isPending}
+                                    aria-label={
+                                        mostrarNovaSenha
+                                            ? 'Ocultar senha'
+                                            : 'Mostrar senha'
+                                    }
+                                >
+                                    {mostrarNovaSenha ? (
+                                        <EyeOff size={16} />
+                                    ) : (
+                                        <Eye size={16} />
+                                    )}
+                                </FieldAction>
+                            </FieldControl>
+                            {validationError?.field === 'novaSenha' && (
+                                <Message
+                                    id="reset-password-new-error"
+                                    role="alert"
+                                    $variant="error"
+                                >
+                                    {validationError.message}
+                                </Message>
+                            )}
+                        </Field>
+
+                        <Field>
+                            <FieldLabel htmlFor="reset-password-confirm">
+                                Confirmar nova senha
+                            </FieldLabel>
+                            <FieldControl>
+                                <FieldInput
+                                    id="reset-password-confirm"
+                                    type={
+                                        mostrarConfirmarSenha ? 'text' : 'password'
+                                    }
+                                    name="confirmarSenha"
+                                    value={confirmarSenha}
+                                    onChange={(event) => {
+                                        setConfirmarSenha(event.target.value);
+                                        clearFeedback();
+                                    }}
+                                    placeholder="Repita a nova senha"
+                                    autoComplete="new-password"
+                                    aria-invalid={
+                                        validationError?.field ===
+                                        'confirmarSenha'
+                                    }
+                                    aria-describedby={
+                                        validationError?.field ===
+                                        'confirmarSenha'
+                                            ? 'reset-password-confirm-error'
+                                            : undefined
+                                    }
+                                    disabled={resetMutation.isPending}
+                                    required
+                                />
+                                <FieldAction
+                                    type="button"
+                                    onClick={() =>
+                                        setMostrarConfirmarSenha(
+                                            (prevState) => !prevState
+                                        )
+                                    }
+                                    disabled={resetMutation.isPending}
+                                    aria-label={
+                                        mostrarConfirmarSenha
+                                            ? 'Ocultar confirmação de senha'
+                                            : 'Mostrar confirmação de senha'
+                                    }
+                                >
+                                    {mostrarConfirmarSenha ? (
+                                        <EyeOff size={16} />
+                                    ) : (
+                                        <Eye size={16} />
+                                    )}
+                                </FieldAction>
+                            </FieldControl>
+                            {validationError?.field === 'confirmarSenha' && (
+                                <Message
+                                    id="reset-password-confirm-error"
+                                    role="alert"
+                                    $variant="error"
+                                >
+                                    {validationError.message}
+                                </Message>
+                            )}
+                        </Field>
+
+                        {errorMessage && (
+                            <Message role="alert" $variant="error">
+                                {errorMessage}
+                            </Message>
+                        )}
+                        {resetMutation.isPending && (
+                            <Message
+                                role="status"
+                                aria-live="polite"
+                                $variant="info"
                             >
-                                {mostrarNovaSenha ? <EyeOff size={16} /> : <Eye size={16} />}
-                            </FieldAction>
-                        </FieldControl>
-                    </Field>
+                                Redefinindo sua senha...
+                            </Message>
+                        )}
 
-                    <Field>
-                        <FieldLabel>Confirmar nova senha</FieldLabel>
-                        <FieldControl>
-                            <FieldInput
-                                type={mostrarConfirmarSenha ? 'text' : 'password'}
-                                name="confirmarSenha"
-                                value={confirmarSenha}
-                                onChange={(event) => setConfirmarSenha(event.target.value)}
-                                placeholder="Repita a nova senha"
-                                autoComplete="new-password"
-                                disabled={resetMutation.isPending}
-                            />
-                            <FieldAction
-                                type="button"
-                                onClick={() => setMostrarConfirmarSenha((prevState) => !prevState)}
-                                disabled={resetMutation.isPending}
-                                aria-label={
-                                    mostrarConfirmarSenha
-                                        ? 'Ocultar confirmação de senha'
-                                        : 'Mostrar confirmação de senha'
-                                }
-                            >
-                                {mostrarConfirmarSenha ? (
-                                    <EyeOff size={16} />
-                                ) : (
-                                    <Eye size={16} />
-                                )}
-                            </FieldAction>
-                        </FieldControl>
-                    </Field>
-
-                    {errorMessage && <Message $variant="error">{errorMessage}</Message>}
-                    {successMessage && (
-                        <Message $variant="success">{successMessage}</Message>
-                    )}
-
-                    <SubmitButton type="submit" disabled={resetMutation.isPending || !token}>
-                        {resetMutation.isPending ? 'Redefinindo...' : 'Redefinir senha'}
-                    </SubmitButton>
-                </Form>
+                        <SubmitButton
+                            type="submit"
+                            disabled={resetMutation.isPending}
+                        >
+                            {resetMutation.isPending
+                                ? 'Redefinindo...'
+                                : 'Redefinir senha'}
+                        </SubmitButton>
+                    </Form>
+                )}
 
                 <Actions>
                     <ActionLink to="/login">Ir para login</ActionLink>
