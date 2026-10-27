@@ -4,6 +4,7 @@ import {
   AnimeCoverImage,
 } from './AnimeCoverStyle';
 import { resolveAnimeCoverUrl } from '../../../utils/animeCoverUrl';
+import { applyImageFallback } from '../../../utils/imageFallback';
 
 interface AnimeCoverProps {
   src: string | null | undefined;
@@ -21,10 +22,9 @@ export const AnimeCover = ({
       <AnimeCoverImage
         src={resolved || placeholder}
         alt={alt}
-        onError={(event) => {
-          event.currentTarget.onerror = null;
-          event.currentTarget.src = placeholder;
-        }}
+        onError={(event) =>
+          applyImageFallback(event.currentTarget, placeholder)
+        }
       />
     </AnimeCoverStyle>
   );
