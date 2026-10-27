@@ -62,10 +62,15 @@ import {
 import { useHomeData } from '../../hooks/UseHomeData/useHomeData';
 import { resolveAnimeCoverUrl } from '../../utils/animeCoverUrl';
 import { resolveApiMediaUrl } from '../../utils/mediaUrl';
+import { applyImageFallback } from '../../utils/imageFallback';
+import animeCoverPlaceholder from '../../assets/placeholder-capa.jpg';
+
+const characterImagePlaceholder = '/placeholder/personagem.png';
 
 export const Home = () => {
     const {
         animes,
+        totalAnimes,
         personagens,
         loading,
         loadingPersonagens,
@@ -94,7 +99,7 @@ export const Home = () => {
                         estatísticas em tempo real.
                     </Subtitle>
 
-                    <CTAGroup>
+                    <CTAGroup aria-label="Ações principais">
                         <PrimaryCTA
                             as={Link}
                             to="/explorar"
@@ -110,10 +115,13 @@ export const Home = () => {
                         </SecondaryCTA>
                     </CTAGroup>
 
-                    <Counters aria-label="Estatísticas do catálogo">
+                    <Counters
+                        role="group"
+                        aria-label="Estatísticas do catálogo"
+                    >
                         <Counter>
                             <CounterNumber>
-                                {loading ? '—' : animes.length}
+                                {loading || error ? '—' : totalAnimes}
                             </CounterNumber>
 
                             <Tiny>
@@ -146,7 +154,7 @@ export const Home = () => {
                 <HeroRight>
                     {loading && (
                         <TrackerCard>
-                            <LoadingCard>
+                            <LoadingCard role="status">
                                 <Tiny>
                                     Carregando catálogo...
                                 </Tiny>
@@ -156,7 +164,7 @@ export const Home = () => {
 
                     {!loading && error && (
                         <TrackerCard>
-                            <ErrorMessage>
+                            <ErrorMessage role="alert">
                                 Não foi possível carregar os animes.
                             </ErrorMessage>
                         </TrackerCard>
@@ -181,12 +189,19 @@ export const Home = () => {
                             </TrackerHeader>
 
                             <TrackerAnime>
-                                {trackedAnime.capaUrl && (
-                                    <TrackerImage
-                                        src={resolveAnimeCoverUrl(trackedAnime.capaUrl)}
-                                        alt={trackedAnime.titulo}
-                                    />
-                                )}
+                                <TrackerImage
+                                    src={
+                                        resolveAnimeCoverUrl(trackedAnime.capaUrl) ||
+                                        animeCoverPlaceholder
+                                    }
+                                    alt={trackedAnime.titulo}
+                                    onError={(event) =>
+                                        applyImageFallback(
+                                            event.currentTarget,
+                                            animeCoverPlaceholder
+                                        )
+                                    }
+                                />
 
                                 <TrackerContent>
                                     <TrackerDescription>
@@ -257,8 +272,17 @@ export const Home = () => {
                                     to={`/animes/${anime.id}`}
                                 >
                                     <AnimeImage
-                                        src={resolveAnimeCoverUrl(anime.capaUrl)}
+                                        src={
+                                            resolveAnimeCoverUrl(anime.capaUrl) ||
+                                            animeCoverPlaceholder
+                                        }
                                         alt={anime.titulo}
+                                        onError={(event) =>
+                                            applyImageFallback(
+                                                event.currentTarget,
+                                                animeCoverPlaceholder
+                                            )
+                                        }
                                     />
 
                                     <AnimeInfo>
@@ -309,7 +333,7 @@ export const Home = () => {
                 </PersonagemHeader>
 
                 {loadingPersonagens && (
-                    <LoadingCard>
+                    <LoadingCard role="status">
                         <Tiny>
                             Carregando personagens...
                         </Tiny>
@@ -317,7 +341,7 @@ export const Home = () => {
                 )}
 
                 {!loadingPersonagens && personagemError && (
-                    <ErrorMessage>
+                    <ErrorMessage role="alert">
                         Não foi possível carregar os personagens.
                     </ErrorMessage>
                 )}
@@ -335,9 +359,15 @@ export const Home = () => {
                                         <PersonagemImage
                                             src={
                                                 resolveApiMediaUrl(personagem.imagem) ??
-                                                '/placeholder/personagem.png'
+                                                characterImagePlaceholder
                                             }
                                             alt={personagem.nome}
+                                            onError={(event) =>
+                                                applyImageFallback(
+                                                    event.currentTarget,
+                                                    characterImagePlaceholder
+                                                )
+                                            }
                                         />
 
                                         <PersonagemInfo>
