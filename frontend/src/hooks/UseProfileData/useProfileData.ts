@@ -90,6 +90,7 @@ const getErrorMessage = (error: unknown): string => {
 export const useProfileData = () => {
     const [loading, setLoading] = useState(true);
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
+    const [hasPartialData, setHasPartialData] = useState(false);
     const [profileData, setProfileData] =
         useState<ProfileData>(initialProfileData);
 
@@ -103,6 +104,7 @@ export const useProfileData = () => {
             const currentAvatarVersion = avatarVersion;
             setLoading(true);
             setErrorMessage(null);
+            setHasPartialData(false);
             setProfileData(initialProfileData);
 
             if (!getAccessToken()) {
@@ -156,6 +158,21 @@ export const useProfileData = () => {
 
                 if (!mounted || currentRequest !== requestVersion) {
                     return;
+                }
+
+                const hasFailedRequests = [
+                    pontosRes,
+                    favoritosAnimesRes,
+                    favoritosPersonagensRes,
+                    progressosRes,
+                    conquistasRes,
+                ].some((result) => result.status === 'rejected');
+
+                if (hasFailedRequests) {
+                    setHasPartialData(true);
+                    setErrorMessage(
+                        'Alguns dados do perfil não puderam ser carregados.',
+                    );
                 }
 
                 setProfileData((current) => ({
@@ -253,6 +270,7 @@ export const useProfileData = () => {
     return {
         loading,
         errorMessage,
+        hasPartialData,
         ...profileData,
     };
 };
