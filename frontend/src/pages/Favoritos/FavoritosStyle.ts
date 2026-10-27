@@ -95,9 +95,17 @@ export const StatLabel = styled.span`
 
 export const Toolbar = styled.section`
     display: grid;
-    grid-template-columns: auto minmax(180px, 1fr) auto auto auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
     gap: 0.65rem;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        grid-template-columns: auto minmax(180px, 1fr) auto auto auto;
+
+        & > * {
+            grid-column: auto;
+        }
+    }
 `;
 
 export const Segmented = styled.div`
@@ -106,6 +114,7 @@ export const Segmented = styled.div`
     gap: 0.25rem;
 
     width: fit-content;
+    max-width: 100%;
     padding: 0.24rem;
 
     border: 1px solid ${({ theme }) => theme.colors.border};
@@ -155,6 +164,7 @@ export const SegmentCount = styled.span`
 
 export const SearchField = styled.input`
     width: 100%;
+    min-width: 0;
     min-height: 42px;
     padding: 0.72rem 0.95rem;
 
@@ -193,6 +203,7 @@ const controlBase = css`
 
 export const Select = styled.select`
     ${controlBase};
+    min-width: 0;
 `;
 
 export const ViewMode = styled.div`
@@ -222,22 +233,6 @@ export const ViewButton = styled.button<{ $active?: boolean }>`
         $active ? theme.colors.textPrimary : theme.colors.textSecondary};
 `;
 
-export const NeutralButton = styled.button`
-    ${controlBase};
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: fit-content;
-
-    transition: border-color 160ms ease;
-
-    &:hover {
-        border-color: ${({ theme }) => theme.colors.borderHover};
-    }
-`;
-
 export const SectionHeader = styled.header`
     display: flex;
     align-items: center;
@@ -265,7 +260,7 @@ export const Dot = styled.span`
     background: ${({ theme }) => theme.colors.primary};
 `;
 
-export const Grid = styled.section<{ $compact?: boolean }>`
+export const Grid = styled.div<{ $compact?: boolean }>`
     display: grid;
     grid-template-columns: ${({ $compact }) =>
         $compact
@@ -275,6 +270,7 @@ export const Grid = styled.section<{ $compact?: boolean }>`
 `;
 
 export const AnimeCard = styled.article`
+    min-width: 0;
     overflow: hidden;
 
     border: 1px solid ${({ theme }) => theme.colors.border};
@@ -349,6 +345,7 @@ export const CardBody = styled.div`
     display: grid;
     gap: 0.5rem;
 
+    min-width: 0;
     padding: 0.65rem;
 `;
 
@@ -382,6 +379,7 @@ export const CardTitle = styled.h3`
 
 export const Meta = styled.p`
     color: ${({ theme }) => theme.colors.textSecondary};
+    overflow-wrap: anywhere;
 
     font-family: ${({ theme }) => theme.typography.bodyMedium.fontFamily};
     font-size: ${({ theme }) => theme.typography.bodyMedium.fontSize};
@@ -389,6 +387,7 @@ export const Meta = styled.p`
 
 export const Status = styled.span`
     color: ${({ theme }) => theme.colors.success};
+    overflow-wrap: anywhere;
 
     font-family: ${({ theme }) => theme.typography.labelSmall.fontFamily};
     font-size: ${({ theme }) => theme.typography.labelSmall.fontSize};
@@ -464,35 +463,6 @@ export const AuthGateLink = styled.a<{ $variant?: 'secondary' }>`
                   color: ${theme.colors.white};
                   box-shadow: ${theme.shadows.card};
               `}
-`;
-
-export const LoadMoreWrap = styled.div`
-    display: flex;
-    justify-content: center;
-`;
-
-export const LoadMoreButton = styled.button`
-    min-height: 42px;
-    padding: 0.7rem 1.05rem;
-
-    border: 1px solid ${({ theme }) => theme.colors.border};
-    border-radius: ${({ theme }) => theme.radii.button};
-
-    background: ${({ theme }) => theme.colors.surface};
-    color: ${({ theme }) => theme.colors.textPrimary};
-
-    font-family: ${({ theme }) => theme.typography.labelLarge.fontFamily};
-    font-size: ${({ theme }) => theme.typography.labelLarge.fontSize};
-    font-weight: ${({ theme }) => theme.typography.labelLarge.fontWeight};
-
-    transition:
-        transform 160ms ease,
-        border-color 160ms ease;
-
-    &:hover {
-        transform: translateY(-1px);
-        border-color: ${({ theme }) => theme.colors.borderHover};
-    }
 `;
 
 export const SyncPanel = styled.section`
