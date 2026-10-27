@@ -77,7 +77,10 @@ export const useFavoriteRatings = (userId: number | null) => {
       failure?.userId === userId && failure.retryCount === retryCount
         ? failure.message
         : null,
-    isLoading: userId !== null && loadingUserId === userId,
+    isLoading:
+      userId !== null &&
+      (loadingUserId === userId ||
+        (result?.userId !== userId && failure?.userId !== userId)),
     retry: () => {
       if (userId !== null) {
         setLoadingUserId(userId);
