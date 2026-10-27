@@ -1,11 +1,12 @@
 import { api } from './api';
-import type { Episodio } from '../types/Episodio';
+import type { Episodio, EpisodiosResponse } from '../types/Episodio';
+import { normalizeEpisodiosResponse } from '../utils/normalizeEpisodiosResponse';
 
 export const episodioService = {
     listarEpisodios: async (): Promise<Episodio[]> => {
-        const response = await api.get<Episodio[]>('/episodios');
+        const response = await api.get<EpisodiosResponse>('/episodios');
 
-        return response.data;
+        return normalizeEpisodiosResponse(response.data);
     },
 
     listarEpisodiosPorId: async (id: number): Promise<Episodio> => {
