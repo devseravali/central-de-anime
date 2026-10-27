@@ -20,6 +20,11 @@ export const Hero = styled.section`
         radial-gradient(1200px 280px at 96% -40%, rgba(99, 102, 241, 0.18), transparent),
         radial-gradient(900px 220px at -10% 130%, rgba(6, 182, 212, 0.14), transparent),
         ${({ theme }) => theme.colors.surface};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        align-items: stretch;
+        flex-direction: column;
+    }
 `;
 
 export const HeroContent = styled.div`
@@ -56,6 +61,7 @@ export const Span = styled.span`
 
 export const MetaText = styled.span`
     color: ${({ theme }) => theme.colors.textSecondary};
+    overflow-wrap: anywhere;
 `;
 
 export const MetaValue = styled.strong`
@@ -79,6 +85,10 @@ export const ActionGroup = styled.div`
     display: inline-flex;
     align-items: center;
     gap: 0.65rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        flex-wrap: wrap;
+    }
 `;
 
 export const ActionButton = styled.button<{ $variant?: 'ghost' }>`
@@ -115,12 +125,24 @@ export const ActionButton = styled.button<{ $variant?: 'ghost' }>`
                       transform: translateY(-1px);
                   }
               `}
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 `;
 
 export const StatsGrid = styled.section`
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 0.7rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const StatDescription = styled.div`
@@ -160,6 +182,10 @@ export const MainLayout = styled.section`
     grid-template-columns: minmax(0, 1.9fr) minmax(290px, 1fr);
     gap: 0.85rem;
     align-items: start;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const ItemSection = styled.section`
@@ -208,8 +234,12 @@ export const TabCount = styled.span`
 
 export const FilterGroup = styled.div`
     display: grid;
-    grid-template-columns: minmax(180px, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     gap: 0.55rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const FilterInput = styled.input`
@@ -314,9 +344,14 @@ export const ItemCard = styled.article`
     border: 1px solid ${({ theme }) => theme.colors.border};
     border-radius: 14px;
     background: ${({ theme }) => theme.colors.surface};
+    min-width: 0;
 
     &:hover {
         border-color: ${({ theme }) => theme.colors.borderHover};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        grid-template-columns: 64px minmax(0, 1fr);
     }
 `;
 
@@ -333,6 +368,11 @@ export const Poster = styled.div`
     background:
         linear-gradient(150deg, rgba(99, 102, 241, 0.95) 0%, rgba(6, 182, 212, 0.78) 100%),
         radial-gradient(60px 60px at 20% 30%, rgba(255, 255, 255, 0.35), transparent);
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width: 64px;
+        height: 90px;
+    }
 `;
 
 export const PosterBadge = styled.span`
@@ -359,6 +399,10 @@ export const CardHeader = styled.div`
     align-items: flex-start;
     justify-content: space-between;
     gap: 0.8rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        flex-wrap: wrap;
+    }
 `;
 
 export const CardInfo = styled.div`
@@ -412,6 +456,7 @@ export const CardDescription = styled.p`
     color: ${({ theme }) => theme.colors.textSecondary};
     font-family: ${({ theme }) => theme.typography.bodyMedium.fontFamily};
     font-size: ${({ theme }) => theme.typography.bodyMedium.fontSize};
+    overflow-wrap: anywhere;
 `;
 
 export const CounterGroup = styled.div`
@@ -422,6 +467,7 @@ export const CounterGroup = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.border};
     border-radius: 10px;
     background: ${({ theme }) => theme.colors.surfaceElevated};
+    flex-shrink: 0;
 `;
 
 export const CounterButton = styled.button`
@@ -450,6 +496,10 @@ export const ItemMeta = styled.div`
     color: ${({ theme }) => theme.colors.textSecondary};
     font-family: ${({ theme }) => theme.typography.labelSmall.fontFamily};
     font-size: ${({ theme }) => theme.typography.labelSmall.fontSize};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        flex-wrap: wrap;
+    }
 `;
 
 export const CardProgress = styled.div`
@@ -463,6 +513,8 @@ export const StatRow = styled.div`
     color: ${({ theme }) => theme.colors.textMuted};
     font-family: ${({ theme }) => theme.typography.labelSmall.fontFamily};
     font-size: ${({ theme }) => theme.typography.labelSmall.fontSize};
+    gap: 0.5rem;
+    flex-wrap: wrap;
 `;
 
 export const ProgressRail = styled.div`
@@ -478,6 +530,10 @@ export const ProgressBar = styled.div<{ $value: number }>`
     border-radius: inherit;
     background: linear-gradient(90deg, ${({ theme }) => theme.colors.primary}, ${({ theme }) => theme.colors.cyan});
     transition: width 200ms ease;
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 `;
 
 export const ItemFooter = styled.div`
@@ -549,10 +605,6 @@ export const WeeklyGoalLegend = styled.div`
     font-size: ${({ theme }) => theme.typography.labelMedium.fontSize};
 `;
 
-export const SucessoStrong = styled.strong`
-    color: ${({ theme }) => theme.colors.success};
-`;
-
 export const WeekBars = styled.div`
     display: grid;
     grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -563,13 +615,6 @@ export const WeekBars = styled.div`
 
 
 export const WeekBarItem = styled.div`
-    height: 100%;
-    display: flex;
-    align-items: end;
-`;
-
-export const Example = styled.div`
-    color: ${({ theme }) => theme.colors.textPrimary};
     height: 100%;
     display: flex;
     align-items: end;
