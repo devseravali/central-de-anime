@@ -1,20 +1,7 @@
 import { api } from './api';
-import type { Episodio } from '../types/Episodio';
+import type { Episodio, EpisodiosResponse } from '../types/Episodio';
 import type { TemporadaResumo } from '../types/Temporada';
-
-type EpisodiosResponse = Episodio[] | { items?: Episodio[] };
-
-const toEpisodiosList = (data: EpisodiosResponse): Episodio[] => {
-    if (Array.isArray(data)) {
-        return data;
-    }
-
-    if (data && typeof data === 'object' && Array.isArray(data.items)) {
-        return data.items;
-    }
-
-    return [];
-};
+import { normalizeEpisodiosResponse } from '../utils/normalizeEpisodiosResponse';
 
 const toTemporadas = (episodios: Episodio[], animeIdPadrao?: number): TemporadaResumo[] => {
     const map = new Map<string, TemporadaResumo>();
@@ -53,7 +40,7 @@ const toTemporadas = (episodios: Episodio[], animeIdPadrao?: number): TemporadaR
 export const temporadaService = {
     listarTemporadas: async (): Promise<TemporadaResumo[]> => {
         const response = await api.get<EpisodiosResponse>('/episodios');
-        return toTemporadas(toEpisodiosList(response.data));
+        return toTemporadas(normalizeEpisodiosResponse(response.data));
     },
 
     buscarTemporada: async (id: number, animeId?: number): Promise<TemporadaResumo | null> => {
@@ -64,7 +51,10 @@ export const temporadaService = {
             },
         });
 
-        const temporadas = toTemporadas(toEpisodiosList(response.data), animeId);
+        const temporadas = toTemporadas(
+            normalizeEpisodiosResponse(response.data),
+            animeId,
+        );
         return temporadas.find((temporada) => temporada.numero === id) ?? null;
     },
 
@@ -75,6 +65,9 @@ export const temporadaService = {
             },
         });
 
-        return toTemporadas(toEpisodiosList(response.data), animeId);
+        return toTemporadas(
+            normalizeEpisodiosResponse(response.data),
+            animeId,
+        );
     },
 };
