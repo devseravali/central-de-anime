@@ -1,21 +1,13 @@
-import { type ChangeEvent, useEffect, useMemo, useRef, useState } from "react";
+import { type ChangeEvent, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { animeService } from "../../services/anime.service";
-
-import { getAccessToken } from "../../services/api";
-
-import { episodioService } from "../../services/episodio.service";
-import { userService } from "../../services/user.service";
-
+import { useMeuProgressoData } from "../../hooks/UseMeuProgressoData/useMeuProgressoData";
 import {
-  progressoService,
-  type ProgressoEpisodio,
-} from "../../services/progresso.service";
-
-import type { AnimeData } from "../../types/AnimeData";
-
-import type { Episodio } from "../../types/Episodio";
+  getCurrentAnimeSeason,
+  getProgressPercentage,
+  type AnimeProgressItem,
+  type ProgressStatus,
+} from "../../utils/meuProgresso";
 
 import {
   ActionButton,
@@ -84,33 +76,6 @@ import {
   AuthGateLink,
 } from "./MeuProgressoStyle";
 
-type ProgressStatus =
-  "assistindo" | "completo" | "pausado" | "planejado" | "desistido";
-
-type AnimeProgressItem = {
-  id: number;
-  titulo: string;
-  subtitulo: string;
-  temporada: string;
-  totalEpisodios: number;
-  episodiosAssistidos: number;
-  status: ProgressStatus;
-  proximoEpisodio: string;
-  ultimaAtualizacao: string;
-  ultimaAtualizacaoOrdem: number;
-  semanaAssistidos: number;
-
-  sigla: string;
-};
-
-type ProgressRecord = Pick<
-  ProgressoEpisodio,
-  "episodioId" | "assistido"
-> &
-  Partial<
-    Pick<ProgressoEpisodio, "porcentagem" | "atualizadoEm" | "episodio">
-  >;
-
 type FilterTab = "todos" | ProgressStatus;
 type SortMode = "recent" | "progress-desc" | "progress-asc" | "alpha";
 
@@ -143,452 +108,26 @@ const TABS: FilterTab[] = [
   "desistido",
 ];
 
-const obterTemporadaAtual = ():
-  "verao" | "outono" | "inverno" | "primavera" => {
-  const mesEmToquio = Number(
-    new Intl.DateTimeFormat("en-US", {
-      timeZone: "Asia/Tokyo",
-      month: "numeric",
-    }).format(new Date()),
-  );
-
-  // Temporadas de anime no Japão:
-  // Inverno (jan-mar), Primavera (abr-jun), Verao (jul-set), Outono (out-dez)
-  if (mesEmToquio >= 1 && mesEmToquio <= 3) {
-    return "inverno";
-  }
-
-  if (mesEmToquio >= 4 && mesEmToquio <= 6) {
-    return "primavera";
-  }
-
-  if (mesEmToquio >= 7 && mesEmToquio <= 9) {
-    return "verao";
-  }
-
-  return "outono";
-};
-
-const toSigla = (titulo: string): string => {
-  const parts = titulo
-
-    .split(/\s+/)
-
-    .map((value) => value.trim())
-
-    .filter(Boolean);
-
-  if (parts.length === 0) {
-    return "AN";
-  }
-
-  return parts
-
-    .slice(0, 2)
-
-    .map((value) => value[0] ?? "")
-
-    .join("")
-
-    .toUpperCase();
-};
-
-const formatarAtualizacao = (iso?: string): string => {
-  if (!iso) {
-    return "Sem atualizacao";
-  }
-
-  const timestamp = Date.parse(iso);
-
-  if (Number.isNaN(timestamp)) {
-    return "Atualizado recentemente";
-  }
-
-  const diffMs = Date.now() - timestamp;
-
-  const diffHoras = Math.floor(diffMs / (1000 * 60 * 60));
-
-  if (diffHoras <= 0) {
-    return "Atualizado agora";
-  }
-
-  if (diffHoras < 24) {
-    return `Ha ${diffHoras}h`;
-  }
-
-  const diffDias = Math.floor(diffHoras / 24);
-
-  if (diffDias === 1) {
-    return "Ontem";
-  }
-
-  if (diffDias < 7) {
-    return `Ha ${diffDias} dias`;
-  }
-
-  const diffSemanas = Math.floor(diffDias / 7);
-
-  return `Ha ${diffSemanas} semana${diffSemanas > 1 ? "s" : ""}`;
-};
-
-const ordenarEpisodios = (lista: Episodio[]): Episodio[] => {
-  return [...lista].sort((a, b) => {
-    const numeroA =
-      typeof a.numero === "number" ? a.numero : Number.MAX_SAFE_INTEGER;
-
-    const numeroB =
-      typeof b.numero === "number" ? b.numero : Number.MAX_SAFE_INTEGER;
-
-    if (numeroA !== numeroB) {
-      return numeroA - numeroB;
-    }
-
-    return a.id - b.id;
-  });
-};
-
-const toTemporadaLabel = (anime?: AnimeData): string => {
-  const estacao = String(anime?.estacao ?? "").trim();
-
-  if (estacao) {
-    return estacao;
-  }
-
-  const estacoesPorId: Record<number, string> = {
-    1: "Primavera",
-    2: "Verao",
-    3: "Outono",
-    4: "Inverno",
-  };
-
-  if (typeof anime?.estacaoId === "number" && estacoesPorId[anime.estacaoId]) {
-    return estacoesPorId[anime.estacaoId];
-  }
-
-  return "Temporada nao informada";
-};
-
-const extrairAtividadeSemanal = (progressos: ProgressRecord[]): number[] => {
-  const hoje = new Date();
-  const inicioHoje = new Date(
-    hoje.getFullYear(),
-    hoje.getMonth(),
-    hoje.getDate(),
-  );
-  const umDiaMs = 24 * 60 * 60 * 1000;
-
-  const marcadores = Array.from({ length: 7 }, (_valor, indice) => {
-    const data = new Date(inicioHoje.getTime() - (6 - indice) * umDiaMs);
-    return `${data.getFullYear()}-${data.getMonth()}-${data.getDate()}`;
-  });
-
-  const contagemPorDia = new Map<string, number>(
-    marcadores.map((chave) => [chave, 0]),
-  );
-
-  progressos.forEach((registro) => {
-    if (!registro.atualizadoEm) {
-      return;
-    }
-
-    const timestamp = Date.parse(registro.atualizadoEm);
-
-    if (Number.isNaN(timestamp)) {
-      return;
-    }
-
-    const data = new Date(timestamp);
-    const chave = `${data.getFullYear()}-${data.getMonth()}-${data.getDate()}`;
-
-    if (!contagemPorDia.has(chave)) {
-      return;
-    }
-
-    contagemPorDia.set(chave, (contagemPorDia.get(chave) ?? 0) + 1);
-  });
-
-  const contagens = marcadores.map((chave) => contagemPorDia.get(chave) ?? 0);
-  const maximo = Math.max(...contagens, 0);
-
-  if (maximo <= 0) {
-    return [0, 0, 0, 0, 0, 0, 0];
-  }
-
-  return contagens.map((valor) => Math.round((valor / maximo) * 100));
-};
-
-const montarItens = (
-  episodios: Episodio[],
-  progressos: ProgressRecord[],
-  animesPorId: Record<number, AnimeData>,
-): AnimeProgressItem[] => {
-  const episodiosPorAnime = episodios.reduce<Record<number, Episodio[]>>(
-    (acc, episodio) => {
-      if (typeof episodio.animeId !== "number") {
-        return acc;
-      }
-
-      if (!acc[episodio.animeId]) {
-        acc[episodio.animeId] = [];
-      }
-
-      acc[episodio.animeId].push(episodio);
-
-      return acc;
-    },
-    {},
-  );
-
-  const progressoPorAnime = new Map<number, ProgressRecord[]>();
-
-  progressos.forEach((registro) => {
-    const animeId = registro.episodio?.anime?.id;
-
-    if (typeof animeId !== "number") {
-      return;
-    }
-
-    const atual = progressoPorAnime.get(animeId) ?? [];
-
-    atual.push(registro);
-
-    progressoPorAnime.set(animeId, atual);
-  });
-
-  const seteDiasAtras = Date.now() - 7 * 24 * 60 * 60 * 1000;
-
-  return Array.from(progressoPorAnime.entries()).map(([animeId, registros]) => {
-    const listaEpisodios = ordenarEpisodios(episodiosPorAnime[animeId] ?? []);
-
-    const vistos = new Set<number>();
-
-    registros.forEach((registro) => {
-      const assistido =
-        registro.assistido || (registro.porcentagem ?? 0) >= 100;
-
-      if (assistido) {
-        vistos.add(registro.episodioId);
-      }
-    });
-
-    const totalEpisodios =
-      listaEpisodios.length > 0 ? listaEpisodios.length : registros.length;
-
-    const episodiosAssistidos = vistos.size;
-
-    let status: ProgressStatus = "planejado";
-
-    if (episodiosAssistidos > 0) {
-      status =
-        episodiosAssistidos >= totalEpisodios ? "completo" : "assistindo";
-    }
-
-    const ultimoRegistro = registros
-
-      .map((registro) => ({
-        registro,
-
-        valorOrdem: Date.parse(registro.atualizadoEm ?? ""),
-      }))
-
-      .sort((a, b) => {
-        const ordemA = Number.isNaN(a.valorOrdem) ? 0 : a.valorOrdem;
-
-        const ordemB = Number.isNaN(b.valorOrdem) ? 0 : b.valorOrdem;
-
-        return ordemB - ordemA;
-      })[0]?.registro;
-
-    const episodioPendente = listaEpisodios.find(
-      (episodio) => !vistos.has(episodio.id),
-    );
-
-    const tituloAnime =
-      registros[0]?.episodio?.anime?.titulo ?? `Anime #${animeId}`;
-
-    const semanaAssistidos = registros.filter((registro) => {
-      const timestamp = Date.parse(registro.atualizadoEm ?? "");
-
-      return (
-        !Number.isNaN(timestamp) &&
-        timestamp >= seteDiasAtras &&
-        (registro.assistido || (registro.porcentagem ?? 0) >= 100)
-      );
-    }).length;
-
-    return {
-      id: animeId,
-
-      titulo: tituloAnime,
-
-      subtitulo: `Anime #${animeId}`,
-
-      temporada: toTemporadaLabel(animesPorId[animeId]),
-
-      totalEpisodios,
-
-      episodiosAssistidos,
-
-      status,
-
-      proximoEpisodio: episodioPendente
-        ? `Ep. ${episodioPendente.numero ?? episodioPendente.id} - ${episodioPendente.titulo ?? "Sem titulo"}`
-        : "Temporada finalizada",
-
-      ultimaAtualizacao: formatarAtualizacao(ultimoRegistro?.atualizadoEm),
-
-      ultimaAtualizacaoOrdem:
-        Date.parse(ultimoRegistro?.atualizadoEm ?? "") || 0,
-
-      semanaAssistidos,
-
-      sigla: toSigla(tituloAnime),
-    };
-  });
-};
-
 export const MeuProgresso = () => {
-  const temporadaAtual = obterTemporadaAtual();
-
-  const [itens, setItens] = useState<AnimeProgressItem[]>([]);
-
-  const [usuarioId, setUsuarioId] = useState<number | null>(null);
-
-  const [episodios, setEpisodios] = useState<Episodio[]>([]);
-
-  const [carregando, setCarregando] = useState(() =>
-    Boolean(getAccessToken()),
-  );
-
-  const [erroCarregamento, setErroCarregamento] = useState(false);
-
-  const [animeAtualizandoId, setAnimeAtualizandoId] = useState<number | null>(
-    null,
-  );
-
-  const [animesPorId, setAnimesPorId] = useState<Record<number, AnimeData>>({});
-  const [atividadeSemanal, setAtividadeSemanal] = useState<number[]>([
-    0, 0, 0, 0, 0, 0, 0,
-  ]);
+  const temporadaAtual = getCurrentAnimeSeason();
+  const {
+    actionError,
+    alterarEpisodio,
+    dataNotice,
+    items: itens,
+    loadError: erroCarregamento,
+    loading: carregando,
+    retry,
+    sessionAvailable: sessaoDisponivel,
+    updatingAnimeId: animeAtualizandoId,
+    weeklyActivity: atividadeSemanal,
+  } = useMeuProgressoData();
 
   const [abaAtiva, setAbaAtiva] = useState<FilterTab>("assistindo");
 
   const [busca, setBusca] = useState("");
 
   const [ordenacao, setOrdenacao] = useState<SortMode>("recent");
-
-  const [sessaoDisponivel, setSessaoDisponivel] = useState<boolean>(() =>
-    Boolean(getAccessToken()),
-  );
-  const sessaoAtualRef = useRef(sessaoDisponivel);
-  const geracaoSessaoRef = useRef(0);
-
-  useEffect(() => {
-    const sincronizarSessao = () => {
-      const disponivel = Boolean(getAccessToken());
-
-      if (sessaoAtualRef.current === disponivel) {
-        return;
-      }
-
-      sessaoAtualRef.current = disponivel;
-      geracaoSessaoRef.current += 1;
-      setSessaoDisponivel(disponivel);
-
-      if (!disponivel) {
-        setItens([]);
-        setEpisodios([]);
-        setAnimesPorId({});
-        setAtividadeSemanal([0, 0, 0, 0, 0, 0, 0]);
-        setUsuarioId(null);
-        setCarregando(false);
-        setErroCarregamento(false);
-        setAnimeAtualizandoId(null);
-      }
-    };
-
-    window.addEventListener("auth-state-changed", sincronizarSessao);
-    window.addEventListener("storage", sincronizarSessao);
-
-    return () => {
-      window.removeEventListener("auth-state-changed", sincronizarSessao);
-      window.removeEventListener("storage", sincronizarSessao);
-    };
-  }, []);
-
-  useEffect(() => {
-    let mounted = true;
-    const geracaoSessao = geracaoSessaoRef.current;
-
-    const carregarDados = async () => {
-      try {
-        setCarregando(true);
-
-        setErroCarregamento(false);
-
-        const perfilResponse = await userService.buscarMeuPerfil();
-        if (!mounted || geracaoSessao !== geracaoSessaoRef.current) {
-          return;
-        }
-
-        const perfilId = Number(perfilResponse.usuario?.id);
-
-        if (!Number.isInteger(perfilId) || perfilId <= 0) {
-          throw new Error("Usuario autenticado invalido");
-        }
-
-        setUsuarioId(perfilId);
-
-        const [progressosResponse, episodiosResponse, animesResponse] =
-          await Promise.all([
-            progressoService.obterProgressosUsuario(perfilId),
-
-            episodioService.listarEpisodios(),
-
-            animeService.listarAnimes({ page: 1, perPage: 1000 }),
-          ]);
-
-        if (!mounted || geracaoSessao !== geracaoSessaoRef.current) {
-          return;
-        }
-
-        const mapaAnimes = (animesResponse.items ?? []).reduce<
-          Record<number, AnimeData>
-        >((acc, anime) => {
-          acc[anime.id] = anime;
-
-          return acc;
-        }, {});
-
-        setEpisodios(episodiosResponse);
-
-        setAnimesPorId(mapaAnimes);
-        setAtividadeSemanal(extrairAtividadeSemanal(progressosResponse));
-
-        setItens(montarItens(episodiosResponse, progressosResponse, mapaAnimes));
-      } catch {
-        if (mounted && geracaoSessao === geracaoSessaoRef.current) {
-          setErroCarregamento(true);
-        }
-      } finally {
-        if (mounted && geracaoSessao === geracaoSessaoRef.current) {
-          setCarregando(false);
-        }
-      }
-    };
-
-    if (!sessaoDisponivel) {
-      return () => {
-        mounted = false;
-      };
-    }
-
-    carregarDados();
-
-    return () => {
-      mounted = false;
-    };
-  }, [sessaoDisponivel]);
 
   const totaisPorStatus = useMemo(() => {
     return {
@@ -660,119 +199,21 @@ export const MeuProgresso = () => {
     }
 
     if (ordenacao === "progress-desc") {
-      return [...lista].sort(
-        (a, b) =>
-          b.episodiosAssistidos / b.totalEpisodios -
-          a.episodiosAssistidos / a.totalEpisodios,
-      );
-    }
+        return [...lista].sort(
+          (a, b) =>
+            getProgressPercentage(b) - getProgressPercentage(a),
+        );
+      }
 
     if (ordenacao === "progress-asc") {
       return [...lista].sort(
         (a, b) =>
-          a.episodiosAssistidos / a.totalEpisodios -
-          b.episodiosAssistidos / b.totalEpisodios,
+          getProgressPercentage(a) - getProgressPercentage(b),
       );
     }
 
     return [...lista].sort((a, b) => a.titulo.localeCompare(b.titulo));
   }, [abaAtiva, busca, itens, ordenacao]);
-
-  const recarregarAnime = async () => {
-    if (!usuarioId) {
-      return;
-    }
-
-    const geracaoSessao = geracaoSessaoRef.current;
-    const progressos = await progressoService.obterProgressosUsuario(usuarioId);
-
-    if (geracaoSessao !== geracaoSessaoRef.current) {
-      return;
-    }
-
-    setAtividadeSemanal(extrairAtividadeSemanal(progressos));
-    setItens(montarItens(episodios, progressos, animesPorId));
-  };
-
-  const alterarEpisodio = async (animeId: number, delta: number) => {
-    if (!usuarioId || animeAtualizandoId !== null) {
-      return;
-    }
-
-    const usuarioAtual = usuarioId;
-    const geracaoSessao = geracaoSessaoRef.current;
-    const episodiosDoAnime = ordenarEpisodios(
-      episodios.filter((episodio) => episodio.animeId === animeId),
-    );
-
-    if (episodiosDoAnime.length === 0) {
-      return;
-    }
-
-    try {
-      setAnimeAtualizandoId(animeId);
-
-      const progressosResponse =
-        await progressoService.obterProgressosUsuario(usuarioAtual);
-
-      if (geracaoSessao !== geracaoSessaoRef.current) {
-        return;
-      }
-
-      const assistidos = new Set<number>(
-        progressosResponse
-
-          .filter((registro) => {
-            const mesmoAnime = registro.episodio?.anime?.id === animeId;
-
-            const concluido =
-              registro.assistido || (registro.porcentagem ?? 0) >= 100;
-
-            return mesmoAnime && concluido;
-          })
-
-          .map((registro) => registro.episodioId),
-      );
-
-      if (delta > 0) {
-        const proximo = episodiosDoAnime.find(
-          (episodio) => !assistidos.has(episodio.id),
-        );
-
-        if (!proximo) {
-          return;
-        }
-
-        await progressoService.concluirEpisodio(proximo.id);
-      } else {
-        const reverso = [...episodiosDoAnime].reverse();
-
-        const ultimoAssistido = reverso.find((episodio) =>
-          assistidos.has(episodio.id),
-        );
-
-        if (!ultimoAssistido) {
-          return;
-        }
-
-        await progressoService.atualizarProgresso(ultimoAssistido.id, 0);
-      }
-
-      if (geracaoSessao !== geracaoSessaoRef.current) {
-        return;
-      }
-
-      await recarregarAnime();
-    } catch {
-      if (geracaoSessao === geracaoSessaoRef.current) {
-        setErroCarregamento(true);
-      }
-    } finally {
-      if (geracaoSessao === geracaoSessaoRef.current) {
-        setAnimeAtualizandoId(null);
-      }
-    }
-  };
 
   const handleBuscaChange = (evento: ChangeEvent<HTMLInputElement>) => {
     setBusca(evento.target.value);
@@ -847,6 +288,9 @@ export const MeuProgresso = () => {
         pontos={temporadaPontos}
       />
 
+      {dataNotice && <EmptyState role="status">{dataNotice}</EmptyState>}
+      {actionError && <EmptyState role="alert">{actionError}</EmptyState>}
+
       <MainLayout>
         <ItemSection aria-label="Lista de progresso dos animes">
           <ProgressFilters
@@ -864,6 +308,9 @@ export const MeuProgresso = () => {
           ) : erroCarregamento && itensFiltrados.length === 0 ? (
             <EmptyState role="alert">
               Não foi possível carregar os dados reais do seu progresso.
+              <ActionButton type="button" onClick={retry} disabled={carregando}>
+                {carregando ? "Carregando..." : "Tentar novamente"}
+              </ActionButton>
             </EmptyState>
           ) : itensFiltrados.length === 0 ? (
             <EmptyState>
@@ -1018,10 +465,7 @@ const AnimeProgressCard = ({
   atualizando,
   onAlterarEpisodio,
 }: AnimeProgressCardProps) => {
-  const percentual =
-    item.totalEpisodios > 0
-      ? Math.round((item.episodiosAssistidos / item.totalEpisodios) * 100)
-      : 0;
+  const percentual = getProgressPercentage(item);
 
   return (
     <ItemCard>
@@ -1113,7 +557,7 @@ const ProgressSidebar = ({
 }: ProgressSidebarProps) => (
   <RightPanel aria-label="Resumo complementar">
     <SidebarCard>
-      <SidebarTitle>Meta da semana</SidebarTitle>
+      <SidebarTitle as="h2">Meta da semana</SidebarTitle>
       <Grid>
         <WeeklyGoalCircle
           $value={percentualMeta}
@@ -1142,7 +586,7 @@ const ProgressSidebar = ({
     </SidebarCard>
 
     <SidebarCard>
-      <SidebarTitle>Ritmo de assistência</SidebarTitle>
+      <SidebarTitle as="h2">Ritmo de assistência</SidebarTitle>
       <WeekBars aria-label="Atividade de assistência durante a semana">
         {atividadeSemanal.map((altura, indice) => (
           <WeekBarItem key={`${altura}-${indice}`}>
@@ -1165,7 +609,7 @@ const ProgressSidebar = ({
     </SidebarCard>
 
     <SidebarCard>
-      <SidebarTitle>Sua central pessoal de registro</SidebarTitle>
+      <SidebarTitle as="h2">Sua central pessoal de registro</SidebarTitle>
       <SidebarText>
         O Central de Anime é um diário de catalogação e acompanhamento. Nenhum
         conteúdo de vídeo ou transmissão é mantido em nossos servidores.
