@@ -7,6 +7,14 @@ export const Page = styled.section`
 
     display: grid;
     place-items: center;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        padding: ${({ theme }) => theme.spacing.page.tablet};
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        padding: ${({ theme }) => theme.spacing.page.desktop};
+    }
 `;
 
 export const Card = styled.article`
@@ -19,6 +27,10 @@ export const Card = styled.article`
     box-shadow: ${({ theme }) => theme.shadows.card};
 
     padding: ${({ theme }) => theme.spacing.section.compact};
+
+    @media (max-width: 380px) {
+        padding: 1.25rem;
+    }
 `;
 
 export const Title = styled.h1`
@@ -49,13 +61,13 @@ export const Form = styled.form`
     gap: ${({ theme }) => theme.spacing.component.medium};
 `;
 
-export const Field = styled.label`
+export const Field = styled.div`
     display: flex;
     flex-direction: column;
     gap: ${({ theme }) => theme.spacing.component.compact};
 `;
 
-export const FieldLabel = styled.span`
+export const FieldLabel = styled.label`
     color: ${({ theme }) => theme.colors.textPrimary};
 
     font-family: ${({ theme }) => theme.typography.labelLarge.fontFamily};
@@ -90,6 +102,10 @@ export const FieldInput = styled.input`
         opacity: 0.65;
         cursor: not-allowed;
     }
+
+    &[aria-invalid='true'] {
+        border-color: ${({ theme }) => theme.colors.danger};
+    }
 `;
 
 export const Message = styled.p<{ $variant: 'success' | 'error' }>`
@@ -113,6 +129,7 @@ export const Message = styled.p<{ $variant: 'success' | 'error' }>`
     font-size: ${({ theme }) => theme.typography.bodyMedium.fontSize};
     font-weight: ${({ theme }) => theme.typography.bodyMedium.fontWeight};
     line-height: ${({ theme }) => theme.typography.bodyMedium.lineHeight};
+    overflow-wrap: anywhere;
 `;
 
 export const SubmitButton = styled.button`
@@ -142,6 +159,7 @@ export const SubmitButton = styled.button`
 export const Actions = styled.div`
     margin-top: ${({ theme }) => theme.spacing.component.medium};
     display: flex;
+    flex-wrap: wrap;
     gap: ${({ theme }) => theme.spacing.component.small};
 `;
 
