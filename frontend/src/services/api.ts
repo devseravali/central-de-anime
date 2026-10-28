@@ -8,6 +8,32 @@ const ACCESS_TOKEN_STORAGE_KEY = 'accessToken';
 const AUTH_SESSION_HINT_STORAGE_KEY = 'authSessionHint';
 const AUTH_STATE_CHANGED_EVENT = 'auth-state-changed';
 
+export const subscribeToAuthSessionChanges = (
+  onSessionChange: () => void,
+  onOtherStorageChange?: (event: StorageEvent) => void,
+): (() => void) => {
+  if (typeof window === 'undefined') {
+    return () => {};
+  }
+
+  const handleStorage = (event: StorageEvent) => {
+    if (event.key === ACCESS_TOKEN_STORAGE_KEY || event.key === null) {
+      onSessionChange();
+      return;
+    }
+
+    onOtherStorageChange?.(event);
+  };
+
+  window.addEventListener(AUTH_STATE_CHANGED_EVENT, onSessionChange);
+  window.addEventListener('storage', handleStorage);
+
+  return () => {
+    window.removeEventListener(AUTH_STATE_CHANGED_EVENT, onSessionChange);
+    window.removeEventListener('storage', handleStorage);
+  };
+};
+
 type RetriableRequestConfig = InternalAxiosRequestConfig & {
   _retry?: boolean;
   _skipAuthRefresh?: boolean;
