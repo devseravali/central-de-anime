@@ -5,7 +5,11 @@ import { useAppTheme } from '../../../providers/ThemeContext';
 import { Input } from "../../common/Input/Input";
 import { useAvatarImage } from '../../../hooks/UseAvatarImage/useAvatarImage';
 import { authService } from '../../../services/auth.service';
-import { clearAuthSession, getAccessToken } from '../../../services/api';
+import {
+  clearAuthSession,
+  getAccessToken,
+  subscribeToAuthSessionChanges,
+} from '../../../services/api';
 import { userService } from '../../../services/user.service';
 import { getApiOrigin } from '../../../utils/apiUrl';
 import {
@@ -27,7 +31,6 @@ import {
 } from "./HeaderStyle";
 
 const defaultAvatar = 'https://via.placeholder.com/40';
-const AUTH_STATE_CHANGED_EVENT = 'auth-state-changed';
 
 const toAbsoluteAvatar = (value: string | null | undefined): string => {
   if (!value) {
@@ -135,21 +138,18 @@ export const Header = () => {
     };
 
     const handleStorage = (event: StorageEvent) => {
-      if (event.key === 'accessToken' || event.key === null) {
-        syncAuthState();
-      } else if (event.key === 'userAvatar') {
+      if (event.key === 'userAvatar') {
         avatarRequestVersion.current += 1;
         setAvatarUrl(toAbsoluteAvatar(event.newValue));
       }
     };
 
-    window.addEventListener(AUTH_STATE_CHANGED_EVENT, syncAuthState);
-    window.addEventListener('storage', handleStorage);
+    const unsubscribeFromAuthSession =
+      subscribeToAuthSessionChanges(syncAuthState, handleStorage);
     window.addEventListener('user-avatar-updated', handleAvatarUpdated);
 
     return () => {
-      window.removeEventListener(AUTH_STATE_CHANGED_EVENT, syncAuthState);
-      window.removeEventListener('storage', handleStorage);
+      unsubscribeFromAuthSession();
       window.removeEventListener('user-avatar-updated', handleAvatarUpdated);
     };
   }, []);
