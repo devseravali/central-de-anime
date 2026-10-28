@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { useMutation } from '@tanstack/react-query';
-import { isAxiosError } from 'axios';
 import { useSearchParams } from 'react-router-dom';
 
 import { authService } from '../../services/auth.service';
+import { getSafeAuthErrorMessage } from '../../utils/authErrorMessage';
 import {
     ActionLink,
     Actions,
@@ -13,22 +13,6 @@ import {
     RetryButton,
     Title,
 } from './ConfirmarEmailStyle';
-
-const getErrorMessage = (error: unknown): string => {
-    if (isAxiosError(error)) {
-        const apiMessage = error.response?.data?.message;
-
-        if (typeof apiMessage === 'string' && apiMessage.trim()) {
-            return apiMessage;
-        }
-    }
-
-    if (error instanceof Error && error.message.trim()) {
-        return error.message;
-    }
-
-    return 'Não foi possível confirmar seu email. Tente novamente.';
-};
 
 export const ConfirmarEmail = () => {
     const [searchParams] = useSearchParams();
@@ -77,7 +61,12 @@ export const ConfirmarEmail = () => {
         if (verifyMutation.isError) {
             return (
                 <>
-                    <Message $variant="error">{getErrorMessage(verifyMutation.error)}</Message>
+                    <Message $variant="error">
+                        {getSafeAuthErrorMessage(
+                            verifyMutation.error,
+                            'emailVerification',
+                        )}
+                    </Message>
                     <Actions>
                         <RetryButton
                             type="button"
