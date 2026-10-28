@@ -31,5 +31,5 @@ export interface Personagem {
 
 export type PersonagemHookData = Omit<Partial<Personagem>, 'id'> & {
   id?: number | string;
-  [key: string]: unknown;
+  role?: string | null;
 };
