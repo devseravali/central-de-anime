@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
-import { isAxiosError } from 'axios';
 import { useMutation } from '@tanstack/react-query';
 import { Lock, Mail, Eye, EyeOff } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 import { authService } from '../../../services/auth.service';
 import { setAccessToken } from '../../../services/api';
+import { getSafeAuthErrorMessage } from '../../../utils/authErrorMessage';
 import {
     AuthPage,
     AuthShell,
@@ -45,22 +45,6 @@ interface AuthFormProps {
 const REMEMBER_CREDENTIALS_KEY = 'rememberCredentials';
 const REMEMBER_EMAIL_KEY = 'rememberedEmail';
 const LEGACY_REMEMBER_PASSWORD_KEY = 'rememberedPassword';
-
-const getErrorMessage = (error: unknown): string => {
-    if (isAxiosError(error)) {
-        const apiMessage = error.response?.data?.message;
-
-        if (typeof apiMessage === 'string' && apiMessage.trim()) {
-            return apiMessage;
-        }
-    }
-
-    if (error instanceof Error && error.message.trim()) {
-        return error.message;
-    }
-
-    return 'Não foi possível concluir a solicitação. Tente novamente.';
-};
 
 export const AuthForm = ({ mode }: AuthFormProps) => {
     const navigate = useNavigate();
@@ -179,7 +163,9 @@ export const AuthForm = ({ mode }: AuthFormProps) => {
         },
         onError: (error) => {
             setSuccessMessage(null);
-            setErrorMessage(getErrorMessage(error));
+            setErrorMessage(
+                getSafeAuthErrorMessage(error, isLogin ? 'login' : 'register'),
+            );
         },
     });
 
