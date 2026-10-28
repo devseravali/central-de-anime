@@ -1,10 +1,11 @@
 import React from "react";
-import type { PersonagemHookData } from '../../types/Personagem';
+import {
+	personagemService,
+	type Personagem,
+} from '../../services/personagem.service';
 import { getApiBaseUrl } from '../../utils/apiUrl';
 
 const DEFAULT_API_URL = getApiBaseUrl();
-
-export type Personagem = PersonagemHookData;
 
 type UsePersonagemOptions = {
 	url?: string;
@@ -23,26 +24,26 @@ export const usePersonagem = ({
 	const [loading, setLoading] = React.useState(false);
 	const [error, setError] = React.useState<string | null>(null);
 
-	const buildUrl = React.useCallback(() => {
-		if (url) return url;
-		if (id !== undefined && id !== null) return `${urlBase}/${id}`;
-		return null;
-	}, [url, id, urlBase]);
-
 	const fetchPersonagem = React.useCallback(async (forceUrl?: string): Promise<Personagem | undefined> => {
-		const fetchUrl = forceUrl ?? buildUrl();
-		if (!fetchUrl) {
+		const requestUrl = forceUrl ?? url;
+		if (!requestUrl && (id === undefined || id === null)) {
 			setData(null);
 			return;
 		}
 		setLoading(true);
 		setError(null);
 		try {
-			const res = await fetch(fetchUrl);
-			if (!res.ok) throw new Error(`HTTP ${res.status}`);
-			const json = await res.json();
-			setData(json as Personagem);
-			return json as Personagem;
+			let personagem: Personagem;
+			if (requestUrl) {
+				personagem = await personagemService.buscarPersonagemPorUrl(requestUrl);
+			} else if (id !== undefined && id !== null) {
+				personagem = await personagemService.listarPersonagensPorId(id, urlBase);
+			} else {
+				setData(null);
+				return;
+			}
+			setData(personagem);
+			return personagem;
 		} catch (err: unknown) {
 			const message = err instanceof Error ? err.message : String(err);
 			setError(message);
@@ -51,12 +52,11 @@ export const usePersonagem = ({
 		} finally {
 			setLoading(false);
 		}
-	}, [buildUrl]);
+	}, [id, url, urlBase]);
 
 	React.useEffect(() => {
 		if (!enabled) return;
-		const currentUrl = buildUrl();
-		if (!currentUrl) {
+		if (!url && (id === undefined || id === null)) {
 			queueMicrotask(() => {
 				setData(null);
 				setError(null);
@@ -65,7 +65,6 @@ export const usePersonagem = ({
 			return;
 		}
 
-		if (typeof window !== 'undefined') console.debug('[usePersonagem] fetch url:', currentUrl);
 		let mounted = true;
 		queueMicrotask(() => {
 			if (!mounted) return;
@@ -74,7 +73,7 @@ export const usePersonagem = ({
 		return () => {
 			mounted = false;
 		};
-	}, [buildUrl, enabled, fetchPersonagem]);
+	}, [enabled, fetchPersonagem, id, url]);
 
 	return {
 		data,
