@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import usePersonagem from "../../../hooks/UsePersonagem/UsePersonagem";
 import type { PersonagemHookData } from "../../../types/Personagem";
 import { PersonagemCardContainer, PersonagemImage, FigurePersonagem, PersonagemCaption, PersonagemName, PersonagemRole } from "./PersonagemCardStyle";
     
@@ -24,17 +23,6 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
   urlBase,
 }) => {
   const urlBaseProp = urlBase;
-  const {
-    data: fetchedPersonagem,
-    loading,
-    error,
-  } = usePersonagem({
-    url: undefined,
-    id,
-    urlBase: urlBaseProp,
-    enabled: !personagem,
-  });
-  const data = personagem ?? fetchedPersonagem;
 
   const backendOrigin = React.useMemo(() => {
     try {
@@ -44,15 +32,21 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
     }
   }, [urlBaseProp]);
 
-  const normalizeImageSrc = React.useCallback((value?: string | null) => {
+  const normalizeImageSrc = (value?: string | null) => {
     if (!value) return null;
     if (/^https?:\/\//i.test(value)) return value;
     const normalizedPath = value.startsWith("/") ? value : `/${value}`;
     return `${backendOrigin}${normalizedPath}`;
-  }, [backendOrigin]);
+  };
 
-  const dataNome = data?.nome ? String(data.nome) : null;
-  const dataImagem = data?.imagem ? String(data.imagem) : null;
+  const dataNome = personagem?.nome ? String(personagem.nome) : null;
+  const dataImagem = personagem?.imagem ? String(personagem.imagem) : null;
+  const personagemRole =
+    typeof personagem?.role === 'string'
+      ? personagem.role
+      : typeof personagem?.papel === 'string'
+        ? personagem.papel
+        : null;
 
   const displayNome = dataNome ?? nome;
   const displayImagem =
@@ -67,8 +61,8 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
 
         <PersonagemCaption>
           <PersonagemName>{displayNome}</PersonagemName>
-          {typeof data?.role === 'string' && (
-            <PersonagemRole onClick={onClick}>{data.role}</PersonagemRole>
+          {personagemRole && (
+            <PersonagemRole onClick={onClick}>{personagemRole}</PersonagemRole>
           )}
         </PersonagemCaption>
       </FigurePersonagem>
@@ -77,11 +71,7 @@ export const PersonagemCard: React.FC<PersonagemCardProps> = ({
 
   return (
     <PersonagemCardContainer className={className}>
-      {loading ? (
-        <p>Carregando personagem...</p>
-      ) : error ? (
-        <p role="alert">Erro: {error}</p>
-      ) : id !== undefined && id !== null ? (
+      {id !== undefined && id !== null ? (
         <Link
           to={`/personagens/${id}`}
           aria-label={`Ver detalhes de ${displayNome}`}
