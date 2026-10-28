@@ -5,7 +5,10 @@ import {
   favoritoService,
   type FavoritoAnime,
 } from '../../services/favorito.service';
-import { getAccessToken } from '../../services/api';
+import {
+  getAccessToken,
+  subscribeToAuthSessionChanges,
+} from '../../services/api';
 import type { Personagem } from '../../services/personagem.service';
 import { userService } from '../../services/user.service';
 import type { Episodio } from '../../types/Episodio';
@@ -79,19 +82,12 @@ export const useFavoriteData = () => {
       clearData();
     };
 
-    const synchronizeStorage = (event: StorageEvent) => {
-      if (event.key === 'accessToken' || event.key === null) {
-        synchronizeSession();
-      }
-    };
-
-    window.addEventListener('auth-state-changed', synchronizeSession);
-    window.addEventListener('storage', synchronizeStorage);
+    const unsubscribeFromAuthSession =
+      subscribeToAuthSessionChanges(synchronizeSession);
 
     return () => {
       requestVersion.current += 1;
-      window.removeEventListener('auth-state-changed', synchronizeSession);
-      window.removeEventListener('storage', synchronizeStorage);
+      unsubscribeFromAuthSession();
     };
   }, [clearData]);
 
