@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react';
 import { isAxiosError } from 'axios';
 
-import { api, getAccessToken } from '../../services/api';
+import {
+    api,
+    getAccessToken,
+    subscribeToAuthSessionChanges,
+} from '../../services/api';
 import { favoritoService } from '../../services/favorito.service';
 import { progressoService } from '../../services/progresso.service';
 import { userService } from '../../services/user.service';
@@ -238,14 +242,6 @@ export const useProfileData = () => {
             void carregarPerfil();
         };
 
-        const sincronizarStorage = (event: StorageEvent) => {
-            if (event.key === 'accessToken' || event.key === null) {
-                void carregarPerfil();
-            } else if (event.key === 'userAvatar') {
-                sincronizarAvatar();
-            }
-        };
-
         const sincronizarAvatar = () => {
             avatarVersion += 1;
             setProfileData((current) => ({
@@ -255,15 +251,18 @@ export const useProfileData = () => {
         };
 
         window.addEventListener('user-avatar-updated', sincronizarAvatar);
-        window.addEventListener('auth-state-changed', sincronizarSessao);
-        window.addEventListener('storage', sincronizarStorage);
+        const unsubscribeFromAuthSession =
+            subscribeToAuthSessionChanges(sincronizarSessao, (event) => {
+                if (event.key === 'userAvatar') {
+                    sincronizarAvatar();
+                }
+            });
         void carregarPerfil();
 
         return () => {
             mounted = false;
             window.removeEventListener('user-avatar-updated', sincronizarAvatar);
-            window.removeEventListener('auth-state-changed', sincronizarSessao);
-            window.removeEventListener('storage', sincronizarStorage);
+            unsubscribeFromAuthSession();
         };
     }, []);
 
