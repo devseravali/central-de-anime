@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Page = styled.main`
+export const Page = styled.div`
     width: min(1240px, 100% - 2rem);
     margin: 0 auto;
     padding: 1.5rem 0 3rem;
