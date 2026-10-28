@@ -1,7 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { animeService } from '../../services/anime.service';
-import { getAccessToken } from '../../services/api';
+import {
+  getAccessToken,
+  subscribeToAuthSessionChanges,
+} from '../../services/api';
 import { episodioService } from '../../services/episodio.service';
 import { progressoService } from '../../services/progresso.service';
 import { userService } from '../../services/user.service';
@@ -60,19 +63,12 @@ export const useMeuProgressoData = () => {
       clearSessionData();
     };
 
-    const synchronizeStorage = (event: StorageEvent) => {
-      if (event.key === 'accessToken' || event.key === null) {
-        synchronizeSession();
-      }
-    };
-
-    window.addEventListener('auth-state-changed', synchronizeSession);
-    window.addEventListener('storage', synchronizeStorage);
+    const unsubscribeFromAuthSession =
+      subscribeToAuthSessionChanges(synchronizeSession);
 
     return () => {
       sessionGeneration.current += 1;
-      window.removeEventListener('auth-state-changed', synchronizeSession);
-      window.removeEventListener('storage', synchronizeStorage);
+      unsubscribeFromAuthSession();
     };
   }, [clearSessionData]);
 
