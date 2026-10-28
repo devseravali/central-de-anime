@@ -1,5 +1,18 @@
 import { api } from './api';
 import type { AnimeData } from '../types/AnimeData';
+import {
+  applyStationFallback,
+  fillStationsFromLookup,
+  fillStudiosFromLookup,
+  normalizeAnimeDetails,
+  normalizeAnimeRelations,
+  normalizeStudio,
+  toAnimeData,
+  type AnimeComEstudio,
+  type AnimeDetalhado,
+  type Estacao,
+  type Estudio,
+} from '../utils/animeNormalization';
 
 interface ListarAnimesParams {
   page?: number;
@@ -12,61 +25,6 @@ export interface ListarAnimesResponse {
   page: number;
   perPage: number;
 }
-
-interface Estudio {
-  id: number;
-  nome: string;
-}
-
-interface Status {
-  id: number;
-  nome: string;
-}
-
-interface Franquia {
-  id: number;
-  nome: string;
-}
-
-interface Estacao {
-  id: number;
-  nome: string;
-}
-
-const ESTACOES_FALLBACK = new Map<number, string>([
-  [1, 'Primavera'],
-  [2, 'Verão'],
-  [3, 'Outono'],
-  [4, 'Inverno'],
-]);
-
-type AnimeComEstudio = Omit<AnimeData, 'estudio' | 'estudioId' | 'status' | 'franquia' | 'estacao'> & {
-  estudio?: string | Estudio | null;
-  status?: string | Status | null;
-  franquia?: string | Franquia | null;
-  estacao?: string | Estacao | null;
-  estudioId?: number;
-  franquiaId?: number;
-  estacaoId?: number;
-};
-
-interface GeneroRelacionamento {
-  genero?: {
-    nome?: string;
-  } | null;
-  nome?: string;
-}
-
-type AnimeDetalhado = Omit<AnimeData, 'generos' | 'estudio' | 'estudioId' | 'status' | 'franquia' | 'estacao'> & {
-  generos?: Array<string | GeneroRelacionamento | null>;
-  estudio?: string | Estudio | null;
-  status?: string | Status | null;
-  franquia?: string | Franquia | null;
-  estacao?: string | Estacao | null;
-  estudioId?: number;
-  franquiaId?: number;
-  estacaoId?: number;
-};
 
 interface RespostaAnimesPaginada {
   items?: AnimeComEstudio[];
@@ -81,21 +39,6 @@ interface RespostaBuscaAnimes {
   page: number;
   perPage: number;
 }
-
-const normalizeStudio = (item: AnimeComEstudio): AnimeComEstudio => {
-  if (typeof item.estudio === 'string') {
-    return item;
-  }
-
-  if (item.estudio && typeof item.estudio === 'object') {
-    return {
-      ...item,
-      estudio: item.estudio.nome || '',
-    };
-  }
-
-  return item;
-};
 
 const fillStudiosFromMap = async (
   items: AnimeComEstudio[]
@@ -113,28 +56,7 @@ const fillStudiosFromMap = async (
 
   try {
     const estudiosResponse = await api.get<Estudio[]>('/estudios');
-    const estudios = estudiosResponse.data;
-
-    const map = new Map<number, string>();
-
-    estudios.forEach((estudio) => {
-      map.set(Number(estudio.id), estudio.nome);
-    });
-
-    return items.map((item) => {
-      if (
-        (!item.estudio || item.estudio === '') &&
-        item.estudioId !== undefined &&
-        item.estudioId !== null
-      ) {
-        return {
-          ...item,
-          estudio: map.get(Number(item.estudioId)) || '',
-        };
-      }
-
-      return item;
-    });
+    return fillStudiosFromLookup(items, estudiosResponse.data);
   } catch (error) {
     console.error('Falha ao buscar estúdios para completar animes:', error);
     return items;
@@ -157,64 +79,12 @@ const fillEstacoesFromMap = async (
 
   try {
     const estacoesResponse = await api.get<Estacao[]>('/estacoes');
-    const map = new Map<number, string>();
-
-    estacoesResponse.data.forEach((estacao) => {
-      map.set(Number(estacao.id), estacao.nome);
-    });
-
-    return items.map((item) => {
-      if (
-        (!item.estacao || item.estacao === '') &&
-        item.estacaoId !== undefined &&
-        item.estacaoId !== null
-      ) {
-        return {
-          ...item,
-          estacao:
-            map.get(Number(item.estacaoId)) ||
-            ESTACOES_FALLBACK.get(Number(item.estacaoId)) ||
-            '',
-        };
-      }
-
-      return item;
-    });
+    return fillStationsFromLookup(items, estacoesResponse.data);
   } catch (error) {
     console.error('Falha ao buscar estações para completar animes:', error);
-    return items.map((item) => ({
-      ...item,
-      estacao:
-        typeof item.estacao === 'string'
-          ? item.estacao
-          : ESTACOES_FALLBACK.get(Number(item.estacaoId)) || '',
-    }));
+    return applyStationFallback(items);
   }
 };
-
-const toAnimeData = (item: AnimeComEstudio): AnimeData => ({
-  ...item,
-  temporada: Number(item.temporada ?? 0),
-  quantidadeEpisodios: Number(item.quantidadeEpisodios ?? 0),
-  franquiaId: item.franquiaId ?? undefined,
-  estacaoId: item.estacaoId ?? undefined,
-  estacao:
-    typeof item.estacao === 'string'
-      ? item.estacao
-      : item.estacao?.nome ||
-        ESTACOES_FALLBACK.get(Number(item.estacaoId)) ||
-        undefined,
-  estudio: typeof item.estudio === 'string' ? item.estudio : undefined,
-  status:
-    typeof item.status === 'string'
-      ? item.status
-      : item.status?.nome || undefined,
-  franquia:
-    typeof item.franquia === 'string'
-      ? item.franquia
-      : item.franquia?.nome || undefined,
-  estudioId: item.estudioId ?? undefined,
-});
 
 export const animeService = {
   listarAnimes: async (
@@ -303,23 +173,7 @@ export const animeService = {
       },
     });
 
-    const data = response.data;
-
-    if (data.estudio && typeof data.estudio === 'object') {
-      data.estudio = data.estudio.nome || '';
-    }
-
-    if (data.status && typeof data.status === 'object') {
-      data.status = data.status.nome || '';
-    }
-
-    if (data.franquia && typeof data.franquia === 'object') {
-      data.franquia = data.franquia.nome || '';
-    }
-
-    if (data.estacao && typeof data.estacao === 'object') {
-      data.estacao = data.estacao.nome || '';
-    }
+    let data = normalizeAnimeRelations(response.data);
 
     if (!data.estudio && data.estudioId !== undefined && data.estudioId !== null) {
       try {
@@ -346,43 +200,14 @@ export const animeService = {
         }
       } catch (error) {
         console.error('Falha ao buscar estações para o anime:', error);
-        data.estacao = ESTACOES_FALLBACK.get(Number(data.estacaoId)) || '';
+        data = {
+          ...data,
+          estacao: normalizeAnimeDetails(data).estacao || '',
+        };
       }
     }
 
-    const normalizedGeneros = Array.isArray(data.generos)
-      ? data.generos.flatMap((genero) => {
-          if (typeof genero === 'string') {
-            return genero.trim() ? [genero] : [];
-          }
-
-          if (!genero) {
-            return [];
-          }
-
-          const nome = genero.genero?.nome ?? genero.nome;
-          return typeof nome === 'string' && nome.trim() ? [nome] : [];
-        })
-      : undefined;
-
-    const normalizedAnime: AnimeData = {
-      ...data,
-      generos: normalizedGeneros,
-      temporada: Number(data.temporada ?? 0),
-      quantidadeEpisodios: Number(data.quantidadeEpisodios ?? 0),
-      franquiaId: data.franquiaId ?? undefined,
-      estacaoId: data.estacaoId ?? undefined,
-      estacao:
-        typeof data.estacao === 'string'
-          ? data.estacao
-          : ESTACOES_FALLBACK.get(Number(data.estacaoId)) || undefined,
-      estudio: typeof data.estudio === 'string' ? data.estudio : undefined,
-      status: typeof data.status === 'string' ? data.status : undefined,
-      franquia: typeof data.franquia === 'string' ? data.franquia : undefined,
-      estudioId: data.estudioId ?? undefined,
-    };
-
-    return normalizedAnime;
+    return normalizeAnimeDetails(data);
   },
 
   criarAnime: async (data: AnimeData) => {
