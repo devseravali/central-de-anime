@@ -1,12 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { favoritoService } from '../../services/favorito.service';
-import {
-    personagemService,
-    type Personagem,
-} from '../../services/personagem.service';
-import type { PersonagemRelacionadoResumo } from '../../types/Personagem';
-import { userService } from '../../services/user.service';
+import { usePersonagemDetailsData } from '../../hooks/UsePersonagemDetailsData/usePersonagemDetailsData';
 import {
     BioCard,
     BioText,
@@ -74,30 +68,19 @@ const toAbsoluteImage = (
 
 export const DetalhesPersonagens = () => {
     const { id } = useParams<{ id: string }>();
-
-    const [personagem, setPersonagem] =
-        useState<Personagem | null>(null);
-
-    const [related, setRelated] = useState<PersonagemRelacionadoResumo[]>([]);
-
-    const [loading, setLoading] = useState(false);
-
-    const [error, setError] = useState<string | null>(null);
-
-    const [isFavorite, setIsFavorite] = useState(false);
-
-    const [favoriteLoading, setFavoriteLoading] = useState(false);
-
-    const [favoriteError, setFavoriteError] =
-        useState<string | null>(null);
-
-    const [usuarioId, setUsuarioId] =
-        useState<number | null>(null);
-
     const personagemId = Number(id);
-
     const validId =
         Number.isInteger(personagemId) && personagemId > 0;
+    const {
+        personagem,
+        related,
+        loading,
+        error,
+        isFavorite,
+        favoriteLoading,
+        favoriteError,
+        handleToggleFavorite,
+    } = usePersonagemDetailsData(personagemId, validId);
 
     const backendOrigin = useMemo(() => {
         const apiUrl = import.meta.env.VITE_API_URL;
@@ -112,105 +95,6 @@ export const DetalhesPersonagens = () => {
             return window.location.origin;
         }
     }, []);
-
-    useEffect(() => {
-        if (!validId) {
-            return;
-        }
-
-        let mounted = true;
-
-        const fetchData = async () => {
-            setLoading(true);
-            setError(null);
-
-            try {
-                const personagemData =
-                    await personagemService.listarPersonagensPorId(
-                        personagemId
-                    );
-
-                if (!mounted) {
-                    return;
-                }
-
-                setPersonagem(personagemData);
-
-                const relacionados = Array.from(
-                    new Map(
-                        (personagemData.animes ?? [])
-                            .flatMap((relacao) =>
-                                (relacao.anime?.personagens ?? []).map((item) => item.personagem)
-                            )
-                            .filter((item) => item.id !== personagemId)
-                            .map((item) => [item.id, item])
-                    ).values()
-                ).slice(0, 4);
-
-                setRelated(relacionados);
-
-                try {
-                    const perfil =
-                        await userService.buscarMeuPerfil();
-
-                    const currentUserId = Number(perfil?.usuario?.id);
-
-                    if (
-                        !Number.isInteger(currentUserId) ||
-                        currentUserId <= 0
-                    ) {
-                        setUsuarioId(null);
-                        setIsFavorite(false);
-                        return;
-                    }
-
-                    setUsuarioId(currentUserId);
-
-                    const favoritosResponse =
-                        await favoritoService.PersonagensFavoritos(
-                            currentUserId
-                        );
-
-                    const favoritos = Array.isArray(
-                        favoritosResponse
-                    )
-                        ? favoritosResponse
-                        : [];
-
-                    setIsFavorite(
-                        favoritos.some(
-                            (item) =>
-                                Number(item?.id) ===
-                                personagemId
-                        )
-                    );
-                } catch {
-                    setUsuarioId(null);
-                    setIsFavorite(false);
-                }
-            } catch (err: unknown) {
-                if (!mounted) {
-                    return;
-                }
-
-                setError(
-                    err instanceof Error
-                        ? err.message
-                        : 'Erro ao carregar personagem.'
-                );
-            } finally {
-                if (mounted) {
-                    setLoading(false);
-                }
-            }
-        };
-
-        fetchData();
-
-        return () => {
-            mounted = false;
-        };
-    }, [personagemId, validId]);
 
     if (!validId) {
         return (
@@ -258,38 +142,6 @@ export const DetalhesPersonagens = () => {
     );
 
     const nome = normalizeText(personagem.nome);
-
-    const handleToggleFavorite = async () => {
-        if (!usuarioId) {
-            setFavoriteError(
-                'Faça login para atualizar os favoritos.'
-            );
-            return;
-        }
-
-        try {
-            setFavoriteError(null);
-            setFavoriteLoading(true);
-
-            if (isFavorite) {
-                await favoritoService.DesfavoritarPersonagem(
-                    personagemId
-                );
-            } else {
-                await favoritoService.FavoritarPersonagem(
-                    personagemId
-                );
-            }
-
-            setIsFavorite((previous) => !previous);
-        } catch {
-            setFavoriteError(
-                'Não foi possível atualizar favorito agora.'
-            );
-        } finally {
-            setFavoriteLoading(false);
-        }
-    };
 
     return (
         <MainContainer>
