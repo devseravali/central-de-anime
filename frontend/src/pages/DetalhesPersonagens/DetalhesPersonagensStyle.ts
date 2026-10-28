@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const MainContainer = styled.main`
+export const MainContainer = styled.div`
     width: min(1240px, 100% - 2rem);
     margin: 0 auto;
     padding: 1.25rem 0 2rem;
@@ -503,7 +503,7 @@ export const RelatedRole = styled.p`
         theme.typography.labelMedium.fontSize};
 `;
 
-export const StateShell = styled.main`
+export const StateShell = styled.div`
     width: min(1240px, 100% - 2rem);
     margin: 0 auto;
     padding: 1.25rem 0;
