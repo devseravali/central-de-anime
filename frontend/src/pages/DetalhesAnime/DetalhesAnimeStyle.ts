@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const DetalhesAnimeContainer = styled.main`
+export const DetalhesAnimeContainer = styled.div`
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 1rem;
