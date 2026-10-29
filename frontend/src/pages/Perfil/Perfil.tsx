@@ -146,7 +146,7 @@ export const Perfil = () => {
     }, [episodiosConcluidos, pontosArquivo, totalFavoritosAnimes, totalFavoritosPersonagens, totalProgressos]);
 
     return (
-        <Page as="main" aria-labelledby="perfil-titulo-principal">
+        <Page aria-labelledby="perfil-titulo-principal">
             <Container>
                 <Hero as="header">
                     <HeroBanner aria-hidden="true" $imageUrl={bannerPerfil} />
