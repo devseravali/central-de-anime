@@ -307,7 +307,7 @@ export const EditarPerfil = () => {
     const bannerPreview = fundoSelecionado || backgroundOptions[0]?.imagem || null;
 
     return (
-        <Page as="main" aria-labelledby="editar-perfil-titulo">
+        <Page aria-labelledby="editar-perfil-titulo">
             <Container>
                 <TopActions>
                     <BackButton type="button" onClick={() => navigate('/perfil')}>
