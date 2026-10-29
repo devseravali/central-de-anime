@@ -21,8 +21,10 @@ export const usePersonagens = ({
   const [data, setData] = React.useState<Personagem[] | null>(null);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
+  const requestVersion = React.useRef(0);
 
   const fetchPersonagens = React.useCallback(async (forceUrl?: string): Promise<Personagem[] | undefined> => {
+    const requestId = ++requestVersion.current;
     setLoading(true);
     setError(null);
     try {
@@ -37,15 +39,24 @@ export const usePersonagens = ({
             urlBase
           );
       const result = Array.isArray(personagens) ? personagens : [];
-      setData(result);
+
+      if (requestId === requestVersion.current) {
+        setData(result);
+      }
+
       return result;
     } catch (err: unknown) {
-      const message = err instanceof Error ? err.message : String(err);
-      setError(message);
-      setData(null);
+      if (requestId === requestVersion.current) {
+        const message = err instanceof Error ? err.message : String(err);
+        setError(message);
+        setData(null);
+      }
+
       throw err;
     } finally {
-      setLoading(false);
+      if (requestId === requestVersion.current) {
+        setLoading(false);
+      }
     }
   }, [animeId, urlBase]);
 
@@ -58,6 +69,7 @@ export const usePersonagens = ({
     });
     return () => {
       mounted = false;
+      requestVersion.current += 1;
     };
   }, [enabled, fetchPersonagens]);
 
