@@ -23,11 +23,15 @@ export const usePersonagem = ({
 	const [data, setData] = React.useState<Personagem | null>(null);
 	const [loading, setLoading] = React.useState(false);
 	const [error, setError] = React.useState<string | null>(null);
+	const requestVersion = React.useRef(0);
 
 	const fetchPersonagem = React.useCallback(async (forceUrl?: string): Promise<Personagem | undefined> => {
+		const requestId = ++requestVersion.current;
 		const requestUrl = forceUrl ?? url;
 		if (!requestUrl && (id === undefined || id === null)) {
 			setData(null);
+			setError(null);
+			setLoading(false);
 			return;
 		}
 		setLoading(true);
@@ -42,15 +46,21 @@ export const usePersonagem = ({
 				setData(null);
 				return;
 			}
-			setData(personagem);
+			if (requestId === requestVersion.current) {
+				setData(personagem);
+			}
 			return personagem;
 		} catch (err: unknown) {
-			const message = err instanceof Error ? err.message : String(err);
-			setError(message);
-			setData(null);
+			if (requestId === requestVersion.current) {
+				const message = err instanceof Error ? err.message : String(err);
+				setError(message);
+				setData(null);
+			}
 			throw err;
 		} finally {
-			setLoading(false);
+			if (requestId === requestVersion.current) {
+				setLoading(false);
+			}
 		}
 	}, [id, url, urlBase]);
 
@@ -72,6 +82,7 @@ export const usePersonagem = ({
 		});
 		return () => {
 			mounted = false;
+			requestVersion.current += 1;
 		};
 	}, [enabled, fetchPersonagem, id, url]);
 
