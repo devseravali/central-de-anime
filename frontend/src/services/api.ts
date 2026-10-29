@@ -130,6 +130,43 @@ export const api = axios.create({
   },
 });
 
+const getHttpUrl = (value: string, baseUrl?: string): URL | null => {
+  try {
+    const url = baseUrl ? new URL(value, baseUrl) : new URL(value);
+    if (
+      (url.protocol !== 'http:' && url.protocol !== 'https:') ||
+      url.username ||
+      url.password
+    ) {
+      return null;
+    }
+
+    return url;
+  } catch {
+    return null;
+  }
+};
+
+const configuredApiBaseUrl =
+  typeof api.defaults.baseURL === 'string' ? api.defaults.baseURL.trim() : '';
+const trustedApiOrigin = configuredApiBaseUrl
+  ? getHttpUrl(configuredApiBaseUrl)?.origin ?? null
+  : null;
+
+const isTrustedApiRequest = (config: RetriableRequestConfig): boolean => {
+  if (!trustedApiOrigin || typeof config.url !== 'string' || !config.url.trim()) {
+    return false;
+  }
+
+  const requestBaseUrl =
+    typeof config.baseURL === 'string' && config.baseURL.trim()
+      ? config.baseURL
+      : configuredApiBaseUrl;
+  const requestUrl = getHttpUrl(config.url, requestBaseUrl);
+
+  return requestUrl?.origin === trustedApiOrigin;
+};
+
 let refreshPromise: Promise<string | null> | null = null;
 
 const refreshAccessToken = async (): Promise<string | null> => {
@@ -184,6 +221,16 @@ export const bootstrapAuthSession = async (): Promise<void> => {
 api.interceptors.request.use((config) => {
   const requestConfig = config as RetriableRequestConfig;
 
+  if (!isTrustedApiRequest(requestConfig)) {
+    const headers = new AxiosHeaders(requestConfig.headers);
+    const authorization = headers.get('Authorization');
+    if (typeof authorization === 'string' && /^Bearer\s/i.test(authorization)) {
+      headers.delete('Authorization');
+    }
+    requestConfig.headers = headers;
+    return requestConfig;
+  }
+
   if (requestConfig._skipAuthRefresh) {
     return requestConfig;
   }
@@ -215,7 +262,11 @@ api.interceptors.response.use(
     const requestConfig = error.config as RetriableRequestConfig | undefined;
     const status = error.response?.status;
 
-    if (!requestConfig || status !== 401) {
+    if (
+      !requestConfig ||
+      status !== 401 ||
+      !isTrustedApiRequest(requestConfig)
+    ) {
       return Promise.reject(error);
     }
 
