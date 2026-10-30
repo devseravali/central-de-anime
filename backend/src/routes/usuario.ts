@@ -176,21 +176,27 @@ UsuarioRouter.put('/me', authMiddleware, async (req: Request, res: Response) => 
   }
 });
 
-// List users (safe select)
 /**
  * @swagger
  * /usuario:
  *   get:
  *     summary: Lista usuários
+ *     description: Requer autenticação e privilégios de administrador.
  *     tags:
  *       - Usuário
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
  *         description: Usuários listados com sucesso
+ *       401:
+ *         description: Usuário não autenticado
+ *       403:
+ *         description: Acesso negado
  *       500:
  *         description: Erro ao listar usuários
  */
-UsuarioRouter.get('/', async (_req: Request, res: Response) => {
+UsuarioRouter.get('/', authMiddleware, adminMiddleware, async (_req: Request, res: Response) => {
   try {
     const users = await prisma.usuario.findMany({
       select: {
@@ -200,11 +206,22 @@ UsuarioRouter.get('/', async (_req: Request, res: Response) => {
         avatar: true,
         status: true,
         criadoEm: true,
+        atualizadoEm: true,
       },
       take: 200,
     });
 
-    res.status(200).json({ users });
+    res.status(200).json({
+      users: users.map((user) => ({
+        id: user.id,
+        nome: user.nome,
+        email: user.email,
+        avatar: user.avatar,
+        status: user.status,
+        criadoEm: user.criadoEm,
+        atualizadoEm: user.atualizadoEm,
+      })),
+    });
   } catch (error) {
     console.error('Erro ao listar usuários', error);
     res.status(500).json({ message: 'Erro ao listar usuários' });
@@ -313,8 +330,11 @@ UsuarioRouter.put('/:id', authMiddleware, async (req: Request, res: Response) =>
  * /usuario/{id}:
  *   get:
  *     summary: Busca usuário por ID
+ *     description: Requer autenticação; somente o próprio usuário ou um administrador pode consultar.
  *     tags:
  *       - Usuário
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -327,15 +347,24 @@ UsuarioRouter.put('/:id', authMiddleware, async (req: Request, res: Response) =>
  *         description: Usuário retornado com sucesso
  *       400:
  *         description: ID inválido
+ *       401:
+ *         description: Usuário não autenticado
+ *       403:
+ *         description: Acesso negado
  *       404:
  *         description: Usuário não encontrado
  */
-UsuarioRouter.get('/:id', async (req: Request, res: Response) => {
+UsuarioRouter.get('/:id', authMiddleware, async (req: Request, res: Response) => {
   try {
     const id = parseId(req.params.id);
 
     if (id === undefined) {
       res.status(400).json({ message: 'Dados de entrada inválidos' });
+      return;
+    }
+
+    if (req.user?.id !== id && req.user?.role !== 'ADMIN') {
+      res.status(403).json({ message: 'Acesso negado' });
       return;
     }
 
@@ -348,6 +377,7 @@ UsuarioRouter.get('/:id', async (req: Request, res: Response) => {
         avatar: true,
         status: true,
         criadoEm: true,
+        atualizadoEm: true,
       },
     });
 
@@ -356,7 +386,18 @@ UsuarioRouter.get('/:id', async (req: Request, res: Response) => {
       return;
     }
 
-    res.status(200).json({ message: 'OK', user });
+    res.status(200).json({
+      message: 'OK',
+      user: {
+        id: user.id,
+        nome: user.nome,
+        email: user.email,
+        avatar: user.avatar,
+        status: user.status,
+        criadoEm: user.criadoEm,
+        atualizadoEm: user.atualizadoEm,
+      },
+    });
   } catch (error) {
     console.error('Erro ao buscar usuário', error);
     res.status(500).json({ message: 'Erro ao buscar usuário' });

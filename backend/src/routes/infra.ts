@@ -5,6 +5,19 @@ import { swaggerSpec } from '../config/swagger';
 
 const InfraRouter = Router();
 
+function disableTestEmailInProduction(
+  _req: Request,
+  res: Response,
+  next: () => void
+): void {
+  if (process.env.NODE_ENV === 'production') {
+    res.sendStatus(404);
+    return;
+  }
+
+  next();
+}
+
 /**
  * @swagger
  * /metrics:
@@ -134,69 +147,41 @@ InfraRouter.get(
  *   post:
  *     summary: Envia um email de teste
  *     description: >
- *       Envia um email de teste utilizando o serviço de email configurado na aplicação.
- *       O endereço de destino pode ser informado no body da requisição ou como parâmetro
- *       de query.
+ *       Disponível apenas em desenvolvimento e teste; retorna 404 em produção.
  *     tags:
  *       - Infraestrutura
  *     requestBody:
- *       required: false
+ *       required: true
  *       content:
  *         application/json:
  *           schema:
  *             type: object
+ *             required:
+ *               - to
  *             properties:
  *               to:
  *                 type: string
  *                 format: email
- *                 description: Endereço de email que receberá a mensagem de teste
- *                 example: teste@example.com
  *     parameters:
  *       - in: query
  *         name: to
  *         required: false
- *         description: Endereço de email que receberá a mensagem de teste
  *         schema:
  *           type: string
  *           format: email
- *           example: teste@example.com
  *     responses:
  *       200:
- *         description: Email enviado com sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 ok:
- *                   type: boolean
- *                   example: true
- *                 info:
- *                   type: object
- *                   description: Informações retornadas pelo serviço de email
+ *         description: Email de teste enviado
  *       400:
- *         description: Endereço de destino não informado
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 error:
- *                   type: string
- *                   example: 'Campo "to" é obrigatório (body ou query)'
+ *         description: Destinatário ausente
  *       500:
- *         description: Falha na configuração ou no envio do email
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 error:
- *                   type: string
- *                   example: Falha ao enviar email
+ *         description: Falha no envio ou configuração do email
+ *       404:
+ *         description: Endpoint desabilitado em produção
  */
 InfraRouter.post(
   '/test-email',
+  disableTestEmailInProduction,
   async (req: Request, res: Response) => {
     const to: string | undefined =
       req.body?.to || req.query?.to;
@@ -245,50 +230,31 @@ InfraRouter.post(
  * @swagger
  * /test-email:
  *   get:
- *     summary: Envia um email de teste via GET
- *     description: Envia um email de teste utilizando o endereço informado no parâmetro de query.
+ *     summary: Envia um email de teste
+ *     description: >
+ *       Disponível apenas em desenvolvimento e teste; retorna 404 em produção.
  *     tags:
  *       - Infraestrutura
  *     parameters:
  *       - in: query
  *         name: to
  *         required: true
- *         description: Endereço de email que receberá a mensagem de teste
  *         schema:
  *           type: string
  *           format: email
- *           example: teste@example.com
  *     responses:
  *       200:
- *         description: Email enviado com sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 ok:
- *                   type: boolean
- *                   example: true
- *                 info:
- *                   type: object
- *                   description: Informações retornadas pelo serviço de email
+ *         description: Email de teste enviado
  *       400:
- *         description: Parâmetro de email não informado
- *         content:
- *           text/plain:
- *             schema:
- *               type: string
- *               example: 'Parâmetro "to" é obrigatório na query, ex: /test-email?to=seu@email.com'
+ *         description: Destinatário ausente
  *       500:
- *         description: Falha na configuração ou no envio do email
- *         content:
- *           text/plain:
- *             schema:
- *               type: string
- *               example: Falha ao enviar email
+ *         description: Falha no envio ou configuração do email
+ *       404:
+ *         description: Endpoint desabilitado em produção
  */
 InfraRouter.get(
   '/test-email',
+  disableTestEmailInProduction,
   async (req: Request, res: Response) => {
     const to: string | undefined =
       req.query?.to as string | undefined;

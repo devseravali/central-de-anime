@@ -103,11 +103,28 @@ SessionsRouter.get(
         orderBy: {
           id: 'desc',
         },
+        select: {
+          id: true,
+          usuarioId: true,
+          dispositivo: true,
+          ip: true,
+          userAgent: true,
+          expiraEm: true,
+          revogadoEm: true,
+        },
       });
 
       res.status(200).json({
         message: 'OK',
-        sessions: sessoes,
+        sessions: sessoes.map((sessao) => ({
+          id: sessao.id,
+          usuarioId: sessao.usuarioId,
+          dispositivo: sessao.dispositivo,
+          ip: sessao.ip,
+          userAgent: sessao.userAgent,
+          expiraEm: sessao.expiraEm,
+          revogadoEm: sessao.revogadoEm,
+        })),
       });
     } catch (error) {
       console.error('Erro ao listar sessões', error);
