@@ -1,6 +1,23 @@
 import { Request, Response, CookieOptions } from 'express';
 import { authService } from '../services/authService';
 
+const getRefreshCookieOptions = (includeMaxAge = true): CookieOptions => ({
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    path: '/auth',
+    ...(includeMaxAge
+        ? {
+              maxAge:
+                  Number(process.env.REFRESH_TOKEN_EXPIRES_DAYS ?? 30) *
+                  24 *
+                  60 *
+                  60 *
+                  1000,
+          }
+        : {}),
+});
+
 export const authController = {
     login: async (req: Request, res: Response): Promise<void> => {
         try {
@@ -30,17 +47,11 @@ export const authController = {
                 userAgent
             );
 
-            const refreshCookieOptions: CookieOptions = {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
-                sameSite: process.env.NODE_ENV === 'production' ? 'lax' : 'lax',
-                path: '/auth',
-            };
-
-            const maxAgeDays = Number(process.env.REFRESH_TOKEN_EXPIRES_DAYS ?? 30);
-            refreshCookieOptions.maxAge = maxAgeDays * 24 * 60 * 60 * 1000;
-
-            res.cookie('refreshToken', result.refreshToken, refreshCookieOptions);
+            res.cookie(
+                'refreshToken',
+                result.refreshToken,
+                getRefreshCookieOptions()
+            );
 
             res.status(200).json({
                 user: result.user,
@@ -55,11 +66,6 @@ export const authController = {
                     
             if (message === 'Email ou senha inválidos') {
                 res.status(401).json({ message });
-                return;
-            }
-
-            if (message === 'Email ainda nao confirmado') {
-                res.status(403).json({ message });
                 return;
             }
 
@@ -115,28 +121,33 @@ export const authController = {
 
             const result = await authService.refresh(refreshToken);
 
-            const refreshCookieOptions: CookieOptions = {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
-                sameSite: process.env.NODE_ENV === 'production' ? 'lax' : 'lax',
-                path: '/auth',
-            };
-
-            const maxAgeDays = Number(process.env.REFRESH_TOKEN_EXPIRES_DAYS ?? 30);
-            refreshCookieOptions.maxAge = maxAgeDays * 24 * 60 * 60 * 1000;
-
-            res.cookie('refreshToken', result.refreshToken, refreshCookieOptions);
+            res.cookie(
+                'refreshToken',
+                result.refreshToken,
+                getRefreshCookieOptions()
+            );
 
             res.status(200).json({ accessToken: result.accessToken, user: result.user, refreshExpiraEm: result.refreshExpiraEm });
         } catch (error) {
-            const message =
-                error instanceof Error
-                    ? error.message
-                    : 'Refresh token inválido';
+            const expectedRefreshErrors = new Set([
+                'Refresh token inválido',
+                'Refresh token revogado',
+                'Refresh token expirado',
+                'Sessão não encontrada',
+            ]);
 
-            res.status(401).json({
-                message,
-            });
+            if (
+                error instanceof Error &&
+                expectedRefreshErrors.has(error.message)
+            ) {
+                res.status(401).json({
+                    message: 'Refresh token inválido ou expirado',
+                });
+                return;
+            }
+
+            console.error('Erro ao renovar sessão');
+            res.status(500).json({ message: 'Erro ao renovar sessão' });
         }
     },
 
@@ -159,8 +170,8 @@ export const authController = {
             }
 
             res.status(200).json(response);
-        } catch (error) {
-            console.error('Erro ao solicitar recuperação de senha:', error instanceof Error ? error.message : String(error));
+        } catch {
+            console.error('Falha ao processar solicitação de recuperação de senha');
             res.status(200).json({ message: 'Email enviado, você receberá instruções para redefinir sua senha' });
         }
     },
@@ -182,7 +193,17 @@ export const authController = {
 
         try {
             const result = await authService.resetPassword(token, novaSenha);
-            res.status(200).json({ message: 'Senha redefinida com sucesso', ...result });
+            res.cookie(
+                'refreshToken',
+                result.refreshToken,
+                getRefreshCookieOptions()
+            );
+            res.status(200).json({
+                message: 'Senha redefinida com sucesso',
+                user: result.user,
+                accessToken: result.accessToken,
+                refreshExpiraEm: result.refreshExpiraEm,
+            });
         } catch (error) {
             const message =
                 error instanceof Error
@@ -194,7 +215,7 @@ export const authController = {
                 return;
             }
 
-            console.error('Erro ao redefinir senha:', error instanceof Error ? error.message : String(error));
+            console.error('Falha ao redefinir senha');
             res.status(500).json({ message: 'Erro ao redefinir senha' });
         }
     },
@@ -249,30 +270,31 @@ export const authController = {
 
             await authService.logout(refreshToken);
 
-            const cookieOptions: CookieOptions = {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === 'production',
-                sameSite: process.env.NODE_ENV === 'production' ? 'lax' : 'lax',
-                path: '/auth',
-            };
-
-            res.clearCookie('refreshToken', cookieOptions);
+            res.clearCookie(
+                'refreshToken',
+                getRefreshCookieOptions(false)
+            );
 
             res.status(200).json({ message: 'Logout realizado com sucesso' });
         } catch (error) {
-            const message =
-                error instanceof Error
-                    ? error.message
-                    : 'Erro ao realizar logout';
             if (
-                message === 'Refresh token inválido' ||
-                message === 'Sessão não encontrada'
+                error instanceof Error &&
+                [
+                    'Refresh token inválido',
+                    'Sessão não encontrada',
+                ].includes(error.message)
             ) {
-                res.status(400).json({ message });
+                res.clearCookie(
+                    'refreshToken',
+                    getRefreshCookieOptions(false)
+                );
+                res.status(401).json({
+                    message: 'Refresh token inválido ou expirado',
+                });
                 return;
             }
 
-            console.error('Erro no logout:', error instanceof Error ? error.message : String(error));
+            console.error('Falha ao realizar logout');
 
             res.status(500).json({
                 message: 'Erro interno do servidor',
