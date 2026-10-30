@@ -77,6 +77,7 @@ describe('Configuração: mailer', () => {
         },
       })
     );
+    expect(createTransportMock.mock.calls[0][0]).not.toHaveProperty('tls');
 
     const opcoesEmail: nodemailer.SendMailOptions = {
       from: 'remetente@teste.com',
@@ -117,5 +118,6 @@ describe('Configuração: mailer', () => {
         secure: false,
       })
     );
+    expect(createTransportMock.mock.calls[0][0]).not.toHaveProperty('tls');
   });
 });
