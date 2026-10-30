@@ -13,7 +13,40 @@ import type {
     SessaoModel,
 } from '../../generated/prisma/models';
 
-type SafeUsuario = Omit<UsuarioModel, 'senha'>;
+type SafeUsuario = Pick<
+    UsuarioModel,
+    | 'id'
+    | 'nome'
+    | 'email'
+    | 'avatar'
+    | 'status'
+    | 'criadoEm'
+    | 'atualizadoEm'
+>;
+
+const safeUsuarioSelect = {
+    id: true,
+    nome: true,
+    email: true,
+    avatar: true,
+    status: true,
+    criadoEm: true,
+    atualizadoEm: true,
+} as const;
+
+function toSafeUsuario(
+    usuario: Pick<SafeUsuario, keyof SafeUsuario>
+): SafeUsuario {
+    return {
+        id: usuario.id,
+        nome: usuario.nome,
+        email: usuario.email,
+        avatar: usuario.avatar,
+        status: usuario.status,
+        criadoEm: usuario.criadoEm,
+        atualizadoEm: usuario.atualizadoEm,
+    };
+}
 
 export type LoginResult = {
     user: SafeUsuario;
@@ -189,14 +222,14 @@ const parsePasswordResetToken = (
     token: string
 ): { usuarioId: number; tokenPlain: string } => {
     if (!token || typeof token !== 'string') {
-        throw new Error('Token de recuperação inválido');
+        throw new Error('Token de recuperação expirado ou inválido');
     }
 
     try {
         const payloadRaw = jwt.verify(token, JWT_SECRET) as unknown;
 
         if (typeof payloadRaw === 'string') {
-            throw new Error('Token de recuperação inválido');
+            throw new Error('Token de recuperação expirado ou inválido');
         }
 
         const payload = payloadRaw as { usuarioId?: number; sub?: number; id?: number };
@@ -204,12 +237,12 @@ const parsePasswordResetToken = (
         const usuarioId = Number(payload.usuarioId ?? payload.sub ?? payload.id);
 
         if (!Number.isSafeInteger(usuarioId) || usuarioId <= 0) {
-            throw new Error('Token de recuperação inválido');
+            throw new Error('Token de recuperação expirado ou inválido');
         }
 
         return { usuarioId, tokenPlain: token };
-    } catch (err) {
-        throw new Error('Token de recuperação inválido');
+    } catch {
+        throw new Error('Token de recuperação expirado ou inválido');
     }
 };
 
@@ -256,6 +289,9 @@ export const authService: AuthService = {
                 where: {
                     email: normalizedEmail,
                 },
+                select: {
+                    id: true,
+                },
             });
 
         if (existing) {
@@ -273,6 +309,7 @@ export const authService: AuthService = {
                     senha: senhaHash,
                     status: 'pendente',
                 },
+                select: safeUsuarioSelect,
             });
 
         const verificationToken = jwt.sign(
@@ -300,27 +337,17 @@ export const authService: AuthService = {
             },
         });
 
-        const {
-            senha: _senha,
-            ...safeUser
-        } = user;
-
         try {
             await sendRegisterConfirmationEmail(
                 normalizedEmail,
                 user.nome,
                 verificationToken
             );
-        } catch (error) {
-            console.error(
-                'Falha ao enviar email de confirmação de cadastro:',
-                error instanceof Error
-                    ? error.message
-                    : String(error)
-            );
+        } catch {
+            console.error('Falha ao enviar email de confirmação de cadastro');
         }
 
-        return safeUser;
+        return toSafeUsuario(user);
     },
 
     login: async (
@@ -338,16 +365,16 @@ export const authService: AuthService = {
                 where: {
                     email: normalizedEmail,
                 },
+                select: {
+                    ...safeUsuarioSelect,
+                    senha: true,
+                },
             });
 
         if (!user) {
             throw new Error(
                 'Email ou senha inválidos'
             );
-        }
-
-        if (user.status !== 'ativo') {
-            throw new Error('Email ainda nao confirmado');
         }
 
         const passwordMatch =
@@ -362,10 +389,11 @@ export const authService: AuthService = {
             );
         }
 
-        const {
-            senha: _senha,
-            ...safeUser
-        } = user;
+        if (user.status !== 'ativo') {
+            throw new Error('Email ou senha inválidos');
+        }
+
+        const safeUser = toSafeUsuario(user);
 
         const accessToken =
             generateAccessToken(safeUser);
@@ -402,8 +430,17 @@ export const authService: AuthService = {
                 where: {
                     id: sessionId,
                 },
-                include: {
-                    usuario: true,
+                select: {
+                    id: true,
+                    refreshTokenHash: true,
+                    dispositivo: true,
+                    ip: true,
+                    userAgent: true,
+                    expiraEm: true,
+                    revogadoEm: true,
+                    usuario: {
+                        select: safeUsuarioSelect,
+                    },
                 },
             });
 
@@ -442,23 +479,31 @@ export const authService: AuthService = {
 
         const usuario = sessao.usuario;
 
-        const {
-            senha: _senha,
-            ...safeUser
-        } = usuario;
+        if (!usuario || usuario.status !== 'ativo') {
+            throw new Error('Refresh token inválido');
+        }
+
+        const safeUser = toSafeUsuario(usuario);
 
         const newRefreshSession =
             await prisma.$transaction(
                 async (tx) => {
-                    await tx.sessao.update({
+                    const consumedSession = await tx.sessao.updateMany({
                         where: {
                             id: sessionId,
+                            refreshTokenHash: sessao.refreshTokenHash,
+                            revogadoEm: null,
+                            expiraEm: { gt: new Date() },
                         },
                         data: {
                             revogadoEm:
                                 new Date(),
                         },
                     });
+
+                    if (consumedSession.count !== 1) {
+                        throw new Error('Refresh token inválido');
+                    }
 
                     const newTokenPlain =
                         crypto
@@ -560,6 +605,12 @@ export const authService: AuthService = {
 
         const usuario = await prisma.usuario.findUnique({
             where: { id: usuarioId },
+            select: {
+                id: true,
+                status: true,
+                verificaEmailTokenHash: true,
+                verificaEmailExpiraEm: true,
+            },
         });
 
         if (!usuario) {
@@ -604,6 +655,12 @@ export const authService: AuthService = {
         const { usuarioId, tokenPlain } = parsePasswordResetToken(token);
         const usuario = await prisma.usuario.findUnique({
             where: { id: usuarioId },
+            select: {
+                id: true,
+                email: true,
+                resetSenhaTokenHash: true,
+                resetSenhaExpiraEm: true,
+            },
         });
 
         if (
@@ -621,35 +678,83 @@ export const authService: AuthService = {
         }
 
         const senha = await hashPassword(newPassword);
+        const now = new Date();
+        const resetResult = await prisma.$transaction(async (tx) => {
+            const consumedToken = await tx.usuario.updateMany({
+                where: {
+                    id: usuario.id,
+                    resetSenhaTokenHash: usuario.resetSenhaTokenHash,
+                    resetSenhaExpiraEm: { gt: now },
+                },
+                data: {
+                    senha,
+                    resetSenhaTokenHash: null,
+                    resetSenhaExpiraEm: null,
+                },
+            });
 
-        const updatedUser = await prisma.usuario.update({
-            where: { id: usuario.id },
-            data: {
-                senha,
-                resetSenhaTokenHash: null,
-                resetSenhaExpiraEm: null,
-            },
+            if (consumedToken.count !== 1) {
+                throw new Error('Token de recuperação expirado ou inválido');
+            }
+
+            await tx.sessao.updateMany({
+                where: {
+                    usuarioId: usuario.id,
+                    revogadoEm: null,
+                },
+                data: { revogadoEm: now },
+            });
+
+            const updatedUser = await tx.usuario.findUnique({
+                where: { id: usuario.id },
+                select: safeUsuarioSelect,
+            });
+
+            if (!updatedUser) {
+                throw new Error('Token de recuperação expirado ou inválido');
+            }
+
+            const newTokenPlain = crypto
+                .randomBytes(64)
+                .toString('hex');
+            const refreshTokenHash = await bcrypt.hash(
+                newTokenPlain,
+                BCRYPT_SALT_ROUNDS
+            );
+            const expiraEm = new Date(
+                Date.now() +
+                    REFRESH_TOKEN_EXPIRES_DAYS * 24 * 60 * 60 * 1000
+            );
+            const sessao = await tx.sessao.create({
+                data: {
+                    refreshTokenHash,
+                    expiraEm,
+                    usuario: { connect: { id: usuario.id } },
+                },
+                select: {
+                    id: true,
+                    expiraEm: true,
+                },
+            });
+
+            return {
+                user: toSafeUsuario(updatedUser),
+                refreshToken: `${sessao.id}.${newTokenPlain}`,
+                refreshExpiraEm: sessao.expiraEm,
+            };
         });
 
-        const { senha: _senha, ...safeUser } = updatedUser;
+        const accessToken = generateAccessToken(resetResult.user);
 
-        const accessToken = generateAccessToken(safeUser as SafeUsuario);
-
-        const { token: refreshToken, sessao } = await generateRefreshTokenForUser(updatedUser.id);
-
-        (async () => {
-            try {
-                await sendPasswordResetConfirmationEmail(updatedUser.email);
-            } catch (err) {
-                console.error('Falha ao enviar email de confirmação de senha:', err instanceof Error ? err.message : String(err));
-            }
-        })();
+        void sendPasswordResetConfirmationEmail(usuario.email).catch(() => {
+            console.error('Falha ao enviar email de confirmação de senha');
+        });
 
         return {
-            user: safeUser as SafeUsuario,
+            user: resetResult.user,
             accessToken,
-            refreshToken,
-            refreshExpiraEm: sessao.expiraEm,
+            refreshToken: resetResult.refreshToken,
+            refreshExpiraEm: resetResult.refreshExpiraEm,
         };
     },
 
@@ -684,8 +789,12 @@ async function revokeRefreshToken(
         throw new Error('Refresh token inválido');
     }
 
-    await prisma.sessao.update({
-        where: { id: sessionId },
+    await prisma.sessao.updateMany({
+        where: {
+            id: sessionId,
+            refreshTokenHash: sessao.refreshTokenHash,
+            revogadoEm: null,
+        },
         data: { revogadoEm: new Date() },
     });
 }

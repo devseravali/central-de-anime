@@ -7,7 +7,40 @@ const BCRYPT_SALT_ROUNDS = Number(
     process.env.BCRYPT_SALT_ROUNDS ?? 10
 );
 
-type SafeUsuario = Omit<UsuarioModel, 'senha'>;
+type SafeUsuario = Pick<
+    UsuarioModel,
+    | 'id'
+    | 'nome'
+    | 'email'
+    | 'avatar'
+    | 'status'
+    | 'criadoEm'
+    | 'atualizadoEm'
+>;
+
+const safeUsuarioSelect = {
+    id: true,
+    nome: true,
+    email: true,
+    avatar: true,
+    status: true,
+    criadoEm: true,
+    atualizadoEm: true,
+} as const;
+
+function toSafeUsuario(
+    usuario: Pick<SafeUsuario, keyof SafeUsuario>
+): SafeUsuario {
+    return {
+        id: usuario.id,
+        nome: usuario.nome,
+        email: usuario.email,
+        avatar: usuario.avatar,
+        status: usuario.status,
+        criadoEm: usuario.criadoEm,
+        atualizadoEm: usuario.atualizadoEm,
+    };
+}
 
 export type UsuarioData = {
     nome?: string;
@@ -44,18 +77,14 @@ export class UsuarioService
                 where: {
                     id: usuarioId,
                 },
+                select: safeUsuarioSelect,
             });
 
         if (!user) {
             return null;
         }
 
-        const {
-            senha: _senha,
-            ...safeUser
-        } = user;
-
-        return safeUser;
+        return toSafeUsuario(user);
     }
 
     async updateProfile(
@@ -66,6 +95,10 @@ export class UsuarioService
             await prisma.usuario.findUnique({
                 where: {
                     id: usuarioId,
+                },
+                select: {
+                    id: true,
+                    email: true,
                 },
             });
 
@@ -134,14 +167,10 @@ export class UsuarioService
                     id: usuarioId,
                 },
                 data: updateData,
+                select: safeUsuarioSelect,
             });
 
-        const {
-            senha: _senha,
-            ...safeUser
-        } = user;
-
-        return safeUser;
+        return toSafeUsuario(user);
     }
 
     async promoteToAdmin(
@@ -152,6 +181,9 @@ export class UsuarioService
             await prisma.usuario.findUnique({
                 where: {
                     id: usuarioId,
+                },
+                select: {
+                    id: true,
                 },
             });
 

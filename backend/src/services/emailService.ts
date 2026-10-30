@@ -2,10 +2,18 @@ import { sendMail } from '../config/mailer';
 const MAIL_FROM = process.env.MAIL_FROM;
 const FRONTEND_URL = process.env.FRONTEND_URL ?? 'http://localhost:5173';
 
-const SMTP_HOST = process.env.SMTP_HOST;
-const SMTP_PORT = Number(process.env.SMTP_PORT ?? 587);
-const SMTP_USER = process.env.SMTP_USER;
-const SMTP_PASS = process.env.SMTP_PASS;
+const escapeHtml = (value: string): string =>
+    value.replace(/[&<>"']/g, (character) => {
+        const entities: Record<string, string> = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;',
+        };
+
+        return entities[character] ?? character;
+    });
 
 export const sendPasswordResetEmail = async (
     email: string,
@@ -16,6 +24,7 @@ export const sendPasswordResetEmail = async (
     }
 
     const resetUrl = `${FRONTEND_URL}/reset-password?token=${encodeURIComponent(token)}`;
+    const safeResetUrl = escapeHtml(resetUrl);
 
     const subject = 'Recuperação de senha - Central de Anime';
     const text = `Olá, treinador otaku! Recebemos um pedido para recuperar sua conta na Central de Anime. Use este link para criar uma nova senha: ${resetUrl}. Esse portal expira em 30 minutos. Se não foi você, pode ignorar esta mensagem.`;
@@ -26,10 +35,10 @@ export const sendPasswordResetEmail = async (
          <p>Recebemos uma solicitação para redefinir a senha da sua conta na <strong>Central de Anime</strong>.</p>
          <p>Para continuar sua jornada, clique no botão abaixo:</p>
          <p style="margin:24px 0;">
-            <a href="${resetUrl}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:#4f46e5;color:#ffffff;text-decoration:none;font-weight:700;">Redefinir minha senha</a>
+            <a href="${safeResetUrl}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:#4f46e5;color:#ffffff;text-decoration:none;font-weight:700;">Redefinir minha senha</a>
          </p>
          <p>Se preferir, copie e cole este link no navegador:</p>
-         <p><a href="${resetUrl}">${resetUrl}</a></p>
+         <p><a href="${safeResetUrl}">${safeResetUrl}</a></p>
          <p>Esse portal expira em <strong>30 minutos</strong>.</p>
          <p style="margin:20px 0 0;">Se não foi você quem pediu a alteração, ignore este email com tranquilidade.</p>`,
         'Mensagem automática de recuperação de conta. Não responda este email.'
@@ -50,7 +59,7 @@ export const sendPasswordResetEmail = async (
 
         return;
     } catch (err) {
-        console.error('Erro ao enviar email via SMTP:', err instanceof Error ? err.message : String(err));
+        console.error('Falha ao enviar email de recuperação de senha');
         throw err;
     }
 };
@@ -89,7 +98,7 @@ export const sendPasswordResetConfirmationEmail = async (
 
         return;
     } catch (err) {
-        console.error('Erro ao enviar email de confirmação via SMTP:', err instanceof Error ? err.message : String(err));
+        console.error('Falha ao enviar email de confirmação de senha');
         throw err;
     }
 };
@@ -135,19 +144,21 @@ export const sendRegisterConfirmationEmail = async (
     }
 
     const verifyUrl = `${FRONTEND_URL}/confirmar-email?token=${encodeURIComponent(token)}`;
+    const safeNome = escapeHtml(nome);
+    const safeVerifyUrl = escapeHtml(verifyUrl);
     const subject = 'Confirme seu cadastro - Central de Anime';
     const text = `Olá, ${nome}! Seu cadastro na Central de Anime está quase pronto. Ative sua conta por este link: ${verifyUrl}.`;
     const html = buildEmailLayout(
         'Ative sua conta e entre na central otaku',
         'Falta só um passo para liberar seu acesso completo',
-        `<p>Olá, <strong>${nome}</strong>!</p>
+        `<p>Olá, <strong>${safeNome}</strong>!</p>
          <p>Recebemos seu cadastro na <strong>Central de Anime</strong>.</p>
          <p>Para ativar sua conta e começar sua jornada, confirme seu email clicando no botão abaixo:</p>
          <p style="margin:24px 0;">
-            <a href="${verifyUrl}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:#4f46e5;color:#ffffff;text-decoration:none;font-weight:700;">Confirmar meu email</a>
+            <a href="${safeVerifyUrl}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:#4f46e5;color:#ffffff;text-decoration:none;font-weight:700;">Confirmar meu email</a>
          </p>
          <p>Se preferir, copie e cole este link no navegador:</p>
-         <p><a href="${verifyUrl}">${verifyUrl}</a></p>
+         <p><a href="${safeVerifyUrl}">${safeVerifyUrl}</a></p>
          <p style="margin:20px 0 0;">Se você não reconhece este cadastro, ignore este email.</p>`,
         'Mensagem automática da Central de Anime. Não responda este email.'
     );
@@ -167,7 +178,7 @@ export const sendRegisterConfirmationEmail = async (
 
         return;
     } catch (err) {
-        console.error('Erro ao enviar email de confirmação de cadastro via SMTP:', err instanceof Error ? err.message : String(err));
+        console.error('Falha ao enviar email de confirmação de cadastro');
         throw err;
     }
 };
