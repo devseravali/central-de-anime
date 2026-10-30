@@ -43,10 +43,12 @@ const API_PORT = Number(process.env.PORT ?? 3000);
 const normalizeOrigin = (origin: string): string => origin.trim().replace(/\/+$/g, '');
 
 const parseAllowedOrigins = (): string[] => {
-    const origins = new Set<string>([
-        'http://localhost:5173',
-        'http://127.0.0.1:5173',
-    ]);
+    const origins = new Set<string>();
+
+    if (process.env.NODE_ENV !== 'production') {
+        origins.add('http://localhost:5173');
+        origins.add('http://127.0.0.1:5173');
+    }
 
     const configuredOrigins = [
         process.env.FRONTEND_URL,
