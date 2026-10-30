@@ -69,6 +69,11 @@ export const authMiddleware = async (
             return;
         }
 
+        if (usuario.status !== 'ativo') {
+            res.status(401).json({ message: 'Token inválido ou expirado' });
+            return;
+        }
+
         req.user = {
             id: usuario.id,
             email: usuario.email,
@@ -97,6 +102,11 @@ export const authMiddleware = async (
 
                     if (!usuario) {
                         res.status(401).json({ message: 'Usuário não encontrado após refresh' });
+                        return;
+                    }
+
+                    if (usuario.status !== 'ativo') {
+                        res.status(401).json({ message: 'Token inválido ou expirado' });
                         return;
                     }
 
