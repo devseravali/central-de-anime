@@ -1,9 +1,11 @@
 const required = [
   'DATABASE_URL',
   'JWT_SECRET',
+  'FRONTEND_URL',
   'MAIL_FROM',
   'SMTP_HOST',
   'SMTP_USER',
+  'SMTP_PASS',
 ];
 
 export function checkCriticalEnv(): void {
