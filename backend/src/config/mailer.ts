@@ -15,9 +15,6 @@ export function getTransporter() {
         port: SMTP_PORT,
         secure: SMTP_PORT === 465,
         authMethod: 'LOGIN',
-        tls: {
-            rejectUnauthorized: false,
-        },
         auth: {
             user: SMTP_USER,
             pass: SMTP_PASS,
