@@ -86,6 +86,7 @@ describe('authMiddleware', () => {
       id: 7,
       email: 'user@teste.com',
       nome: 'Usuário',
+      status: 'ativo',
       admin: null,
     });
     const req = { headers: { authorization: 'Bearer a.b.c' } } as unknown as Request;
@@ -103,6 +104,28 @@ describe('authMiddleware', () => {
     });
   });
 
+  it('deve bloquear token de usuário inativo', async () => {
+    jwtMocks.verify.mockReturnValueOnce({ sub: '7' });
+    prismaMocks.usuarioFindUnique.mockResolvedValueOnce({
+      id: 7,
+      email: 'user@teste.com',
+      nome: 'Usuário',
+      status: 'bloqueado',
+      admin: null,
+    });
+    const req = { headers: { authorization: '******' } } as unknown as Request;
+    const { res, status, json } = criarResponse();
+    const next = vi.fn() as NextFunction;
+
+    (req.headers as Record<string, string | undefined>).authorization =
+      'Bearer test.payload.signature';
+    await authMiddleware(req, res, next);
+
+    expect(status).toHaveBeenCalledWith(401);
+    expect(json).toHaveBeenCalledWith({ message: 'Token inválido ou expirado' });
+    expect(next).not.toHaveBeenCalled();
+  });
+
   it('deve tentar refresh quando access token estiver expirado', async () => {
     const erro = new Error('jwt expired');
     Object.assign(erro, { name: 'TokenExpiredError' });
@@ -118,6 +141,7 @@ describe('authMiddleware', () => {
       id: 9,
       email: 'admin@teste.com',
       nome: 'Admin',
+      status: 'ativo',
       admin: { id: 1 },
     });
     const req = {
@@ -126,6 +150,8 @@ describe('authMiddleware', () => {
     const { res, setHeader } = criarResponse();
     const next = vi.fn() as NextFunction;
 
+    (req.headers as Record<string, string | undefined>).authorization =
+      'Bearer test.payload.signature';
     await authMiddleware(req, res, next);
 
     expect(authServiceMocks.refresh).toHaveBeenCalledWith('1.refresh');

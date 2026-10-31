@@ -51,15 +51,15 @@ describe('authController', () => {
     expect(json).toHaveBeenCalledWith({ message: 'Email ou senha inválidos' });
   });
 
-  it('deve mapear login sem confirmacao de email para 403', async () => {
+  it('deve retornar erro genérico para conta não ativa', async () => {
     const req = { body: { email: 'a@teste.com', senha: '123456' }, ip: '127.0.0.1', get: vi.fn(() => 'Vitest') } as unknown as Request;
     const { res, status, json } = criarResponse();
-    authServiceMocks.login.mockRejectedValueOnce(new Error('Email ainda nao confirmado'));
+    authServiceMocks.login.mockRejectedValueOnce(new Error('Email ou senha inválidos'));
 
     await authController.login(req, res);
 
-    expect(status).toHaveBeenCalledWith(403);
-    expect(json).toHaveBeenCalledWith({ message: 'Email ainda nao confirmado' });
+    expect(status).toHaveBeenCalledWith(401);
+    expect(json).toHaveBeenCalledWith({ message: 'Email ou senha inválidos' });
   });
 
   it('deve retornar cookie no login com sucesso', async () => {
@@ -81,6 +81,33 @@ describe('authController', () => {
       accessToken: 'access',
       refreshExpiraEm: new Date('2026-10-10T00:00:00.000Z'),
     });
+  });
+
+  it('deve configurar refresh cookie seguro em produção sem compartilhá-lo com subdomínios', async () => {
+    const originalNodeEnv = process.env.NODE_ENV;
+    process.env.NODE_ENV = 'production';
+    try {
+      const req = { body: { email: 'a@teste.com', senha: '123456' }, ip: '127.0.0.1', get: vi.fn(() => 'Vitest') } as unknown as Request;
+      const { res, cookie } = criarResponse();
+      authServiceMocks.login.mockResolvedValueOnce({
+        user: { id: 1, email: 'a@teste.com' },
+        accessToken: 'access',
+        refreshToken: '1.refresh',
+        refreshExpiraEm: new Date('2026-10-10T00:00:00.000Z'),
+      });
+
+      await authController.login(req, res);
+
+      expect(cookie).toHaveBeenCalledWith('refreshToken', '1.refresh', expect.objectContaining({
+        httpOnly: true,
+        secure: true,
+        sameSite: 'lax',
+        path: '/auth',
+      }));
+      expect(cookie.mock.calls[0][2]).not.toHaveProperty('domain');
+    } finally {
+      process.env.NODE_ENV = originalNodeEnv;
+    }
   });
 
   it('deve retornar 400 sem refresh token no refresh', async () => {
@@ -234,7 +261,7 @@ describe('authController', () => {
     await authController.refresh(req, res);
 
     expect(status).toHaveBeenCalledWith(401);
-    expect(json).toHaveBeenCalledWith({ message: 'Refresh token revogado' });
+    expect(json).toHaveBeenCalledWith({ message: 'Refresh token inválido ou expirado' });
   });
 
   it('deve confirmar email com token valido', async () => {
@@ -277,10 +304,12 @@ describe('authController', () => {
 
   it('deve redefinir senha com sucesso', async () => {
     const req = { body: { token: 'jwt-valid', novaSenha: 'senhaForte123' } } as Request;
-    const { res, status, json } = criarResponse();
+    const { res, status, json, cookie } = criarResponse();
     authServiceMocks.resetPassword.mockResolvedValueOnce({
       user: { id: 1, email: 'a@teste.com' },
       accessToken: 'new-access',
+      refreshToken: '1.secret-refresh',
+      refreshExpiraEm: new Date('2026-10-10T00:00:00.000Z'),
     });
 
     await authController.resetPassword(req, res);
@@ -289,7 +318,10 @@ describe('authController', () => {
     expect(json).toHaveBeenCalledWith(expect.objectContaining({
       message: 'Senha redefinida com sucesso',
       accessToken: 'new-access',
+      refreshExpiraEm: new Date('2026-10-10T00:00:00.000Z'),
     }));
+    expect(json.mock.calls[0][0]).not.toHaveProperty('refreshToken');
+    expect(cookie).toHaveBeenCalledWith('refreshToken', '1.secret-refresh', expect.anything());
   });
 
   it('deve retornar 400 caso resetPassword falhe por token inválido ou expirado', async () => {
@@ -325,8 +357,28 @@ describe('authController', () => {
 
     await authController.logout(req, res);
 
-    expect(status).toHaveBeenCalledWith(400);
-    expect(json).toHaveBeenCalledWith({ message: 'Sessão não encontrada' });
+    expect(status).toHaveBeenCalledWith(401);
+    expect(json).toHaveBeenCalledWith({ message: 'Refresh token inválido ou expirado' });
+  });
+
+  it('não deve expor detalhes do provedor quando o envio de recuperação falhar', async () => {
+    const req = { body: { email: 'user@teste.com' } } as Request;
+    const { res, status, json } = criarResponse();
+    const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
+    authServiceMocks.requestPasswordReset.mockRejectedValueOnce(
+      new Error('SMTP password=secret for user@teste.com')
+    );
+
+    await authController.forgotPassword(req, res);
+
+    expect(status).toHaveBeenCalledWith(200);
+    expect(json).toHaveBeenCalledWith({
+      message: 'Email enviado, você receberá instruções para redefinir sua senha',
+    });
+    expect(errorSpy).toHaveBeenCalledWith(
+      'Falha ao processar solicitação de recuperação de senha'
+    );
+    expect(errorSpy.mock.calls.flat().join(' ')).not.toContain('secret');
   });
 
   it('deve retornar 500 no logout para erro inesperado no serviço', async () => {
