@@ -47,6 +47,10 @@ describe('usuarioService', () => {
       avatar: null,
       status: 'ACTIVE',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+      resetSenhaTokenHash: 'reset-hash',
+      verificaEmailTokenHash: 'verification-hash',
+      resetSenhaExpiraEm: new Date('2026-09-05T00:00:00.000Z'),
     });
 
     const resultado = await usuarioService.getProfile(1);
@@ -58,6 +62,19 @@ describe('usuarioService', () => {
       avatar: null,
       status: 'ACTIVE',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+    });
+    expect(prismaMocks.usuarioFindUnique).toHaveBeenCalledWith({
+      where: { id: 1 },
+      select: {
+        id: true,
+        nome: true,
+        email: true,
+        avatar: true,
+        status: true,
+        criadoEm: true,
+        atualizadoEm: true,
+      },
     });
   });
 
@@ -93,6 +110,9 @@ describe('usuarioService', () => {
       avatar: null,
       status: 'ACTIVE',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+      resetSenhaTokenHash: 'reset-hash',
+      verificaEmailTokenHash: 'verification-hash',
     });
 
     const resultado = await usuarioService.updateProfile(1, {
@@ -110,8 +130,19 @@ describe('usuarioService', () => {
         senha: 'senha-hash',
         avatar: null,
       },
+      select: {
+        id: true,
+        nome: true,
+        email: true,
+        avatar: true,
+        status: true,
+        criadoEm: true,
+        atualizadoEm: true,
+      },
     });
     expect((resultado as Record<string, unknown>).senha).toBeUndefined();
+    expect((resultado as Record<string, unknown>).resetSenhaTokenHash).toBeUndefined();
+    expect((resultado as Record<string, unknown>).verificaEmailTokenHash).toBeUndefined();
   });
 
   it('deve retornar null se usuário não existir no getProfile', async () => {
@@ -147,6 +178,15 @@ describe('usuarioService', () => {
       data: {
         avatar: 'http://avatar.png',
         status: 'SUSPENDED',
+      },
+      select: {
+        id: true,
+        nome: true,
+        email: true,
+        avatar: true,
+        status: true,
+        criadoEm: true,
+        atualizadoEm: true,
       },
     });
     expect(resultado.avatar).toBe('http://avatar.png');
