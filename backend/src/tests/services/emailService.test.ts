@@ -70,11 +70,18 @@ describe('emailService', () => {
   });
 
   it('deve propagar exceção caso transporte falhe no envio de reset', async () => {
-    const sendMail = vi.fn().mockRejectedValue(new Error('Conexão SMTP recusada'));
+    const sendMail = vi.fn().mockRejectedValue(
+      new Error('SMTP password=secret for user@teste.com')
+    );
+    const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
     vi.doMock('../../config/mailer', () => ({ sendMail }));
     const service = await import('../../services/emailService');
 
-    await expect(service.sendPasswordResetEmail('user@teste.com', 'token')).rejects.toThrow('Conexão SMTP recusada');
+    await expect(service.sendPasswordResetEmail('user@teste.com', 'token')).rejects.toThrow('SMTP password=secret');
+    expect(errorSpy).toHaveBeenCalledWith(
+      'Falha ao enviar email de recuperação de senha'
+    );
+    expect(errorSpy.mock.calls.flat().join(' ')).not.toContain('secret');
   });
 
   it('deve enviar email de confirmação de senha com sucesso', async () => {
@@ -110,6 +117,22 @@ describe('emailService', () => {
       text: expect.stringContaining('Ative sua conta por este link'),
       html: expect.stringContaining('confirmar-email?token=jwt-token'),
     }));
+  });
+
+  it('deve escapar nome informado pelo usuário no HTML de confirmação de cadastro', async () => {
+    const sendMail = vi.fn().mockResolvedValue({ messageId: 'register-123' });
+    vi.doMock('../../config/mailer', () => ({ sendMail }));
+    const service = await import('../../services/emailService');
+
+    await service.sendRegisterConfirmationEmail(
+      'user@teste.com',
+      '<img src=x onerror=alert(1)>',
+      'jwt-token'
+    );
+
+    const html = sendMail.mock.calls[0][0].html as string;
+    expect(html).toContain('&lt;img src=x onerror=alert(1)&gt;');
+    expect(html).not.toContain('<img src=x onerror=alert(1)>');
   });
 
   it('deve lançar erro quando envio de confirmação de cadastro não retornar messageId', async () => {
