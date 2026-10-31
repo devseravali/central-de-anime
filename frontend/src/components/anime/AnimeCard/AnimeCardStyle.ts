@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const AnimeCardContainer = styled.article`
   display: flex;
+  min-width: 0;
   flex-direction: column;
   gap: 8px;
   border-radius: 12px;
@@ -50,6 +51,7 @@ export const AnimeCardImage = styled.img`
 `;
 
 export const AnimeCardTitle = styled.h2`
+  overflow-wrap: anywhere;
   margin-top: 8px;
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.textPrimary};
