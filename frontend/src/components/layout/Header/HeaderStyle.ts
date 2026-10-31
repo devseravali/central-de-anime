@@ -8,6 +8,10 @@ export const HeaderContainer = styled.header`
   padding: 0.75rem 1rem;
 
   box-shadow: 0 1px 0 ${({ theme }) => theme.colors.headerInset} inset;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding: 0.65rem 0.75rem;
+  }
 `;
 
 export const HeaderTwo = styled.div`
@@ -22,6 +26,12 @@ export const HeaderTwo = styled.div`
   gap: 1rem;
 
   flex-wrap: nowrap;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
 `;
 
 export const HeaderNav = styled.nav`
@@ -31,6 +41,12 @@ export const HeaderNav = styled.nav`
   flex: 0 0 auto;
 
   min-width: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    order: 4;
+    width: 100%;
+    flex: 1 1 100%;
+  }
 `;
 
 export const AuthNav = styled.nav`
@@ -38,6 +54,12 @@ export const AuthNav = styled.nav`
   align-items: center;
 
   flex: 0 0 auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    order: 6;
+    width: 100%;
+    flex: 1 1 100%;
+  }
 `;
 
 export const ProfileLink = styled.a`
@@ -53,6 +75,10 @@ export const ProfileLink = styled.a`
   overflow: hidden;
 
   flex-shrink: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    order: 3;
+  }
 
   img {
     width: 100%;
@@ -72,6 +98,15 @@ export const SearchForm = styled.form`
   max-width: 360px;
 
   margin-left: auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    order: 5;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin-left: 0;
+    flex: 1 1 100%;
+  }
 `;
 
 export const UlHeader = styled.ul`
@@ -86,6 +121,13 @@ export const UlHeader = styled.ul`
   list-style: none;
 
   white-space: nowrap;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    white-space: normal;
+  }
 `;
 
 export const LiHeader = styled.li`
@@ -96,6 +138,11 @@ export const LiHeader = styled.li`
   padding: 0 0.25rem;
 
   flex-shrink: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: 0;
+    justify-content: flex-start;
+  }
 `;
 
 export const ImageHeader = styled.img`
@@ -129,6 +176,10 @@ export const LinkHerf = styled.a`
     font-weight: ${({ theme }) => theme.typography.headlineSmall.fontWeight};
     color: ${({ theme }) => theme.colors.primary};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    white-space: normal;
+  }
 `;
 
 export const AuthActionButton = styled.button`
@@ -149,6 +200,10 @@ export const AuthActionButton = styled.button`
     background-color: ${({ theme }) => theme.colors.headerHover};
     font-weight: ${({ theme }) => theme.typography.headlineSmall.fontWeight};
     color: ${({ theme }) => theme.colors.primary};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    white-space: normal;
   }
 `;
 
@@ -173,6 +228,13 @@ export const ThemeToggleButton = styled.button`
   &:focus-visible {
     outline: 2px solid ${({ theme }) => theme.colors.primary};
     outline-offset: 3px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    order: 2;
+    margin-left: auto;
+    min-height: 40px;
+    padding: 0.45rem 0.55rem;
   }
 `;
 
@@ -199,6 +261,10 @@ export const TituloHeader = styled.h1`
   line-height: 1;
 
   white-space: nowrap;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: clamp(1.05rem, 5vw, 1.5rem);
+  }
 `;
 
 export const TituloHref = styled.a`
@@ -210,6 +276,11 @@ export const TituloHref = styled.a`
   text-decoration: none;
 
   flex-shrink: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    order: 1;
+    min-width: 0;
+  }
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
