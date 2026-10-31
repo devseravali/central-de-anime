@@ -4,7 +4,9 @@ export const PersonagemCardContainer = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
+  min-width: 0;
   padding: 12px;
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: 8px;
@@ -24,7 +26,8 @@ export const FigurePersonagem = styled.figure`
 export const PersonagemImage = styled.img`
   display: block;
   width: 100%;
-  height: 220px;
+  height: auto;
+  aspect-ratio: 7 / 10;
   object-fit: cover;
   object-position: center;
   border-radius: 6px;
@@ -50,6 +53,7 @@ export const PersonagemName = styled.h2`
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
+  overflow-wrap: anywhere;
   &:hover {
     text-decoration: underline;
     color: ${({ theme }) => theme.colors.cyan};
@@ -58,5 +62,6 @@ export const PersonagemName = styled.h2`
 `;
 
 export const PersonagemRole = styled.p`
+  overflow-wrap: anywhere;
   cursor: ${({ onClick }) => (onClick ? 'pointer' : 'default')};
 `;
