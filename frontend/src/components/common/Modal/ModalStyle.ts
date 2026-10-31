@@ -101,5 +101,6 @@ export const ModalContent = styled.div`
   padding: ${({ theme }) => theme.spacing.component.large};
 
   min-height: 0;
+  overflow-wrap: anywhere;
   overflow-y: auto;
 `;
