@@ -26,6 +26,7 @@ import {
   ImageHeader,
   SpanHeader,
   TituloHeader,
+  TituloHref,
   ThemeToggleButton,
   ThemeStorageNotice,
 } from "./HeaderStyle";
@@ -190,11 +191,11 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <HeaderTwo>
-        <LinkHerf as={Link} to="/" aria-label="Central de Anime - Página inicial">
+        <TituloHref as={Link} to="/" aria-label="Central de Anime - Página inicial">
           <TituloHeader>
             Central de <SpanHeader>Anime</SpanHeader>
           </TituloHeader>
-        </LinkHerf>
+        </TituloHref>
 
         <HeaderNav aria-label="Navegação principal">
           <UlHeader>
