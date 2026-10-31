@@ -4,9 +4,11 @@ const prismaMocks = vi.hoisted(() => ({
   usuarioFindUnique: vi.fn(),
   usuarioCreate: vi.fn(),
   usuarioUpdate: vi.fn(),
+  usuarioUpdateMany: vi.fn(),
   sessaoCreate: vi.fn(),
   sessaoFindUnique: vi.fn(),
   sessaoUpdate: vi.fn(),
+  sessaoUpdateMany: vi.fn(),
   transaction: vi.fn(),
 }));
 
@@ -36,11 +38,13 @@ vi.mock('../../config/prisma', () => ({
       findUnique: prismaMocks.usuarioFindUnique,
       create: prismaMocks.usuarioCreate,
       update: prismaMocks.usuarioUpdate,
+      updateMany: prismaMocks.usuarioUpdateMany,
     },
     sessao: {
       create: prismaMocks.sessaoCreate,
       findUnique: prismaMocks.sessaoFindUnique,
       update: prismaMocks.sessaoUpdate,
+      updateMany: prismaMocks.sessaoUpdateMany,
     },
     $transaction: prismaMocks.transaction,
   },
@@ -92,6 +96,9 @@ describe('authService', () => {
       avatar: null,
       status: 'pendente',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+      resetSenhaTokenHash: 'reset-hash',
+      verificaEmailTokenHash: 'verification-hash',
     });
     prismaMocks.usuarioUpdate.mockResolvedValueOnce({ id: 1 });
     emailMocks.sendRegisterConfirmationEmail.mockResolvedValueOnce(undefined);
@@ -105,6 +112,15 @@ describe('authService', () => {
         senha: 'hash',
         status: 'pendente',
       },
+      select: {
+        id: true,
+        nome: true,
+        email: true,
+        avatar: true,
+        status: true,
+        criadoEm: true,
+        atualizadoEm: true,
+      },
     });
     expect(prismaMocks.usuarioUpdate).toHaveBeenCalledWith({
       where: { id: 1 },
@@ -113,7 +129,15 @@ describe('authService', () => {
       }),
     });
     expect(emailMocks.sendRegisterConfirmationEmail).toHaveBeenCalledWith('luffy@teste.com', 'Luffy', 'jwt-verificacao');
-    expect((resultado as Record<string, unknown>).senha).toBeUndefined();
+    expect(resultado).toEqual({
+      id: 1,
+      nome: 'Luffy',
+      email: 'luffy@teste.com',
+      avatar: null,
+      status: 'pendente',
+      criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+    });
   });
 
   it('deve concluir registro mesmo se falhar o envio do email de confirmação', async () => {
@@ -140,7 +164,7 @@ describe('authService', () => {
     expect(emailMocks.sendRegisterConfirmationEmail).toHaveBeenCalledWith('nami@teste.com', 'Nami', 'jwt-verificacao');
   });
 
-  it('deve bloquear login quando email nao foi confirmado', async () => {
+  it('deve rejeitar conta não ativa sem revelar seu estado', async () => {
     prismaMocks.usuarioFindUnique.mockResolvedValueOnce({
       id: 1,
       nome: 'Luffy',
@@ -148,8 +172,9 @@ describe('authService', () => {
       senha: 'hash',
       status: 'pendente',
     });
+    bcryptMocks.compare.mockResolvedValueOnce(true);
 
-    await expect(authService.login('luffy@teste.com', '123456')).rejects.toThrow('Email ainda nao confirmado');
+    await expect(authService.login('luffy@teste.com', '123456')).rejects.toThrow('Email ou senha inválidos');
   });
 
   it('deve rejeitar login quando a senha não confere', async () => {
@@ -168,6 +193,9 @@ describe('authService', () => {
       avatar: null,
       status: 'ativo',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+      resetSenhaTokenHash: 'reset-hash',
+      verificaEmailTokenHash: 'verification-hash',
     });
     bcryptMocks.compare.mockResolvedValueOnce(true);
     jwtMocks.sign.mockReturnValueOnce('access-token');
@@ -187,12 +215,45 @@ describe('authService', () => {
     });
     expect(resultado.accessToken).toBe('access-token');
     expect(resultado.refreshToken).toBe('5.token-aleatorio');
+    expect(resultado.user).toEqual({
+      id: 1,
+      nome: 'Luffy',
+      email: 'luffy@teste.com',
+      avatar: null,
+      status: 'ativo',
+      criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+    });
   });
 
   it('deve rejeitar refresh token revogado', async () => {
     prismaMocks.sessaoFindUnique.mockResolvedValueOnce({ revogadoEm: new Date(), expiraEm: new Date(Date.now() + 1000), refreshTokenHash: 'hash', usuario: { id: 1 } });
 
     await expect(authService.refresh('5.token-aleatorio')).rejects.toThrow('Refresh token revogado');
+  });
+
+  it('deve impedir refresh para usuário inativo ou bloqueado', async () => {
+    prismaMocks.sessaoFindUnique.mockResolvedValueOnce({
+      id: 5,
+      revogadoEm: null,
+      expiraEm: new Date(Date.now() + 60_000),
+      refreshTokenHash: 'hash',
+      usuario: {
+        id: 1,
+        nome: 'Luffy',
+        email: 'luffy@teste.com',
+        avatar: null,
+        status: 'bloqueado',
+        criadoEm: new Date(),
+        atualizadoEm: new Date(),
+      },
+    });
+    bcryptMocks.compare.mockResolvedValueOnce(true);
+
+    await expect(authService.refresh('5.token-aleatorio')).rejects.toThrow(
+      'Refresh token inválido'
+    );
+    expect(prismaMocks.transaction).not.toHaveBeenCalled();
   });
 
   it('deve rotacionar sessão no refresh válido', async () => {
@@ -210,18 +271,22 @@ describe('authService', () => {
         email: 'luffy@teste.com',
         senha: 'hash',
         avatar: null,
-        status: 'ACTIVE',
+        status: 'ativo',
         criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+        atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+        resetSenhaTokenHash: 'reset-hash',
+        verificaEmailTokenHash: 'verification-hash',
       },
     };
     prismaMocks.sessaoFindUnique.mockResolvedValueOnce(sessaoAtual);
     bcryptMocks.compare.mockResolvedValueOnce(true);
     jwtMocks.sign.mockReturnValueOnce('novo-access-token');
     bcryptMocks.hash.mockResolvedValueOnce('novo-hash-refresh');
-    prismaMocks.transaction.mockImplementationOnce(async (callback: (tx: { sessao: { update: typeof prismaMocks.sessaoUpdate; create: typeof prismaMocks.sessaoCreate } }) => Promise<{ token: string; sessao: { expiraEm: Date } }>) => {
+    prismaMocks.sessaoUpdateMany.mockResolvedValueOnce({ count: 1 });
+    prismaMocks.transaction.mockImplementationOnce(async (callback: (tx: { sessao: { updateMany: typeof prismaMocks.sessaoUpdateMany; create: typeof prismaMocks.sessaoCreate } }) => Promise<unknown>) => {
       return callback({
         sessao: {
-          update: prismaMocks.sessaoUpdate,
+          updateMany: prismaMocks.sessaoUpdateMany,
           create: prismaMocks.sessaoCreate,
         },
       });
@@ -230,12 +295,86 @@ describe('authService', () => {
 
     const resultado = await authService.refresh('5.token-aleatorio');
 
-    expect(prismaMocks.sessaoUpdate).toHaveBeenCalledWith({
+    expect(prismaMocks.sessaoFindUnique).toHaveBeenCalledWith({
       where: { id: 5 },
+      select: {
+        id: true,
+        refreshTokenHash: true,
+        dispositivo: true,
+        ip: true,
+        userAgent: true,
+        expiraEm: true,
+        revogadoEm: true,
+        usuario: {
+          select: {
+            id: true,
+            nome: true,
+            email: true,
+            avatar: true,
+            status: true,
+            criadoEm: true,
+            atualizadoEm: true,
+          },
+        },
+      },
+    });
+    expect(prismaMocks.sessaoUpdateMany).toHaveBeenCalledWith({
+      where: {
+        id: 5,
+        refreshTokenHash: 'hash-antigo',
+        revogadoEm: null,
+        expiraEm: { gt: expect.any(Date) },
+      },
       data: { revogadoEm: expect.any(Date) },
     });
     expect(resultado.refreshToken).toBe('6.token-aleatorio');
     expect(resultado.accessToken).toBe('novo-access-token');
+    expect(resultado.user).toEqual({
+      id: 1,
+      nome: 'Luffy',
+      email: 'luffy@teste.com',
+      avatar: null,
+      status: 'ativo',
+      criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+    });
+
+  });
+
+  it('deve rejeitar uma segunda rotação concorrente do mesmo refresh token', async () => {
+    prismaMocks.sessaoFindUnique.mockResolvedValueOnce({
+      id: 5,
+      revogadoEm: null,
+      expiraEm: new Date(Date.now() + 60_000),
+      refreshTokenHash: 'hash-antigo',
+      dispositivo: null,
+      ip: null,
+      userAgent: null,
+      usuario: {
+        id: 1,
+        nome: 'Luffy',
+        email: 'luffy@teste.com',
+        avatar: null,
+        status: 'ativo',
+        criadoEm: new Date(),
+        atualizadoEm: new Date(),
+      },
+    });
+    bcryptMocks.compare.mockResolvedValueOnce(true);
+    prismaMocks.sessaoUpdateMany.mockResolvedValueOnce({ count: 0 });
+    prismaMocks.transaction.mockImplementationOnce(async (callback: (tx: { sessao: { updateMany: typeof prismaMocks.sessaoUpdateMany; create: typeof prismaMocks.sessaoCreate } }) => Promise<unknown>) =>
+      callback({
+        sessao: {
+          updateMany: prismaMocks.sessaoUpdateMany,
+          create: prismaMocks.sessaoCreate,
+        },
+      })
+    );
+
+    await expect(authService.refresh('5.token-aleatorio')).rejects.toThrow(
+      'Refresh token inválido'
+    );
+    expect(prismaMocks.sessaoCreate).not.toHaveBeenCalled();
   });
 
   it('deve retornar null ao pedir reset para usuário inexistente', async () => {
@@ -267,12 +406,16 @@ describe('authService', () => {
   it('deve revogar refresh token válido no logout', async () => {
     prismaMocks.sessaoFindUnique.mockResolvedValueOnce({ id: 5, revogadoEm: null, refreshTokenHash: 'hash' });
     bcryptMocks.compare.mockResolvedValueOnce(true);
-    prismaMocks.sessaoUpdate.mockResolvedValueOnce({ id: 5 });
+    prismaMocks.sessaoUpdateMany.mockResolvedValueOnce({ count: 1 });
 
     await authService.logout('5.token-aleatorio');
 
-    expect(prismaMocks.sessaoUpdate).toHaveBeenCalledWith({
-      where: { id: 5 },
+    expect(prismaMocks.sessaoUpdateMany).toHaveBeenCalledWith({
+      where: {
+        id: 5,
+        refreshTokenHash: 'hash',
+        revogadoEm: null,
+      },
       data: { revogadoEm: expect.any(Date) },
     });
   });
@@ -335,7 +478,7 @@ describe('authService', () => {
     await authService.revoke('8.token-aleatorio');
 
     expect(bcryptMocks.compare).not.toHaveBeenCalled();
-    expect(prismaMocks.sessaoUpdate).not.toHaveBeenCalled();
+    expect(prismaMocks.sessaoUpdateMany).not.toHaveBeenCalled();
   });
 
   it('deve lançar erro ao revogar sessão inexistente', async () => {
@@ -395,11 +538,11 @@ describe('authService', () => {
       throw new Error('jwt malformed');
     });
 
-    await expect(authService.resetPassword('token-invalido', 'novaSenha123')).rejects.toThrow('Token de recuperação inválido');
+    await expect(authService.resetPassword('token-invalido', 'novaSenha123')).rejects.toThrow('Token de recuperação expirado ou inválido');
   });
 
   it('deve rejeitar redefinição de senha com token vazio', async () => {
-    await expect(authService.resetPassword('', 'novaSenha123')).rejects.toThrow('Token de recuperação inválido');
+    await expect(authService.resetPassword('', 'novaSenha123')).rejects.toThrow('Token de recuperação expirado ou inválido');
   });
 
   it('deve rejeitar redefinição de senha quando usuário não tem token salvo ou já expirou', async () => {
@@ -436,7 +579,7 @@ describe('authService', () => {
     await expect(authService.resetPassword('jwt-valido', 'novaSenha123')).rejects.toThrow('Token de recuperação expirado ou inválido');
   });
 
-  it('deve redefinir senha com sucesso, atualizar banco e enviar email de confirmação', async () => {
+  it('deve rejeitar a reutilização concorrente de token de redefinição consumido', async () => {
     jwtMocks.verify.mockReturnValueOnce({ usuarioId: 1 });
     prismaMocks.usuarioFindUnique.mockResolvedValueOnce({
       id: 1,
@@ -445,18 +588,82 @@ describe('authService', () => {
       resetSenhaExpiraEm: new Date(Date.now() + 60_000),
     });
     bcryptMocks.compare.mockResolvedValueOnce(true);
+    bcryptMocks.hash.mockResolvedValueOnce('nova-senha-hash');
+    prismaMocks.usuarioUpdateMany.mockResolvedValueOnce({ count: 0 });
+    prismaMocks.transaction.mockImplementationOnce(async (callback: (tx: {
+      usuario: {
+        updateMany: typeof prismaMocks.usuarioUpdateMany;
+        findUnique: typeof prismaMocks.usuarioFindUnique;
+      };
+      sessao: {
+        updateMany: typeof prismaMocks.sessaoUpdateMany;
+        create: typeof prismaMocks.sessaoCreate;
+      };
+    }) => Promise<unknown>) =>
+      callback({
+        usuario: {
+          updateMany: prismaMocks.usuarioUpdateMany,
+          findUnique: prismaMocks.usuarioFindUnique,
+        },
+        sessao: {
+          updateMany: prismaMocks.sessaoUpdateMany,
+          create: prismaMocks.sessaoCreate,
+        },
+      })
+    );
+
+    await expect(
+      authService.resetPassword('jwt-valido', 'novaSenha123')
+    ).rejects.toThrow('Token de recuperação expirado ou inválido');
+    expect(prismaMocks.sessaoUpdateMany).not.toHaveBeenCalled();
+    expect(prismaMocks.sessaoCreate).not.toHaveBeenCalled();
+  });
+
+  it('deve redefinir senha com sucesso, atualizar banco e enviar email de confirmação', async () => {
+    jwtMocks.verify.mockReturnValueOnce({ usuarioId: 1 });
+    prismaMocks.usuarioFindUnique
+      .mockResolvedValueOnce({
+        id: 1,
+        email: 'usuario@teste.com',
+        resetSenhaTokenHash: 'hash-token',
+        resetSenhaExpiraEm: new Date(Date.now() + 60_000),
+      })
+      .mockResolvedValueOnce({
+        id: 1,
+        nome: 'Usuario Teste',
+        email: 'usuario@teste.com',
+        avatar: null,
+        status: 'ativo',
+        criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+        atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+      });
+    bcryptMocks.compare.mockResolvedValueOnce(true);
     bcryptMocks.hash
       .mockResolvedValueOnce('nova-senha-hash')
       .mockResolvedValueOnce('novo-refresh-hash');
-    prismaMocks.usuarioUpdate.mockResolvedValueOnce({
-      id: 1,
-      nome: 'Usuario Teste',
-      email: 'usuario@teste.com',
-      senha: 'nova-senha-hash',
-      avatar: null,
-      status: 'ACTIVE',
-      criadoEm: new Date('2026-09-03T00:00:00.000Z'),
-    });
+    prismaMocks.usuarioUpdateMany.mockResolvedValueOnce({ count: 1 });
+    prismaMocks.sessaoUpdateMany.mockResolvedValueOnce({ count: 2 });
+    prismaMocks.transaction.mockImplementationOnce(async (callback: (tx: {
+      usuario: {
+        updateMany: typeof prismaMocks.usuarioUpdateMany;
+        findUnique: typeof prismaMocks.usuarioFindUnique;
+      };
+      sessao: {
+        updateMany: typeof prismaMocks.sessaoUpdateMany;
+        create: typeof prismaMocks.sessaoCreate;
+      };
+    }) => Promise<unknown>) =>
+      callback({
+        usuario: {
+          updateMany: prismaMocks.usuarioUpdateMany,
+          findUnique: prismaMocks.usuarioFindUnique,
+        },
+        sessao: {
+          updateMany: prismaMocks.sessaoUpdateMany,
+          create: prismaMocks.sessaoCreate,
+        },
+      })
+    );
     jwtMocks.sign.mockReturnValueOnce('novo-access-token');
     prismaMocks.sessaoCreate.mockResolvedValueOnce({
       id: 20,
@@ -466,16 +673,32 @@ describe('authService', () => {
 
     const resultado = await authService.resetPassword('jwt-valido', 'novaSenha123');
 
-    expect(prismaMocks.usuarioUpdate).toHaveBeenCalledWith({
-      where: { id: 1 },
+    expect(prismaMocks.usuarioUpdateMany).toHaveBeenCalledWith({
+      where: {
+        id: 1,
+        resetSenhaTokenHash: 'hash-token',
+        resetSenhaExpiraEm: { gt: expect.any(Date) },
+      },
       data: {
         senha: 'nova-senha-hash',
         resetSenhaTokenHash: null,
         resetSenhaExpiraEm: null,
       },
     });
+    expect(prismaMocks.sessaoUpdateMany).toHaveBeenCalledWith({
+      where: { usuarioId: 1, revogadoEm: null },
+      data: { revogadoEm: expect.any(Date) },
+    });
     expect(resultado.accessToken).toBe('novo-access-token');
     expect(resultado.refreshToken).toBe('20.token-aleatorio');
-    expect(resultado.user.email).toBe('usuario@teste.com');
+    expect(resultado.user).toEqual({
+      id: 1,
+      nome: 'Usuario Teste',
+      email: 'usuario@teste.com',
+      avatar: null,
+      status: 'ativo',
+      criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+    });
   });
 });
