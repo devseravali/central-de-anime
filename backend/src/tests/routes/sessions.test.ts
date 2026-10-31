@@ -37,6 +37,24 @@ vi.mock('../../middlewares/authMiddleware', () => ({
       return;
     }
 
+    if (header === 'Bearer audit-admin') {
+      req.user = { id: 99, role: 'ADMIN', email: 'admin@teste.com', nome: 'Admin' };
+      next();
+      return;
+    }
+
+    if (header === 'Bearer audit-user-1') {
+      req.user = { id: 1, role: 'USER', email: 'user1@teste.com', nome: 'User 1' };
+      next();
+      return;
+    }
+
+    if (header === 'Bearer audit-user-2') {
+      req.user = { id: 2, role: 'USER', email: 'user2@teste.com', nome: 'User 2' };
+      next();
+      return;
+    }
+
     if (header === 'Bearer admin-token') {
       req.user = { id: 99, role: 'ADMIN', email: 'admin@teste.com', nome: 'Admin' };
       next();
@@ -95,13 +113,12 @@ describe('Rotas de sessões', () => {
       {
         id: 10,
         usuarioId: 1,
-        refreshTokenHash: 'hash',
         dispositivo: 'Chrome',
         ip: '127.0.0.1',
         userAgent: 'Vitest',
         expiraEm: agora,
         revogadoEm: null,
-        criadoEm: agora,
+        refreshTokenHash: 'must-not-be-returned',
       },
     ]);
 
@@ -113,9 +130,28 @@ describe('Rotas de sessões', () => {
     expect(response.status).toBe(200);
     expect(response.body.message).toBe('OK');
     expect(response.body.sessions).toHaveLength(1);
+    expect(response.body.sessions[0].refreshTokenHash).toBeUndefined();
+    expect(response.body.sessions[0]).toEqual({
+      id: 10,
+      usuarioId: 1,
+      dispositivo: 'Chrome',
+      ip: '127.0.0.1',
+      userAgent: 'Vitest',
+      expiraEm: agora.toISOString(),
+      revogadoEm: null,
+    });
     expect(sessaoFindManyMock).toHaveBeenCalledWith({
       where: { usuarioId: 1 },
       orderBy: { id: 'desc' },
+      select: {
+        id: true,
+        usuarioId: true,
+        dispositivo: true,
+        ip: true,
+        userAgent: true,
+        expiraEm: true,
+        revogadoEm: true,
+      },
     });
   });
 
@@ -132,6 +168,15 @@ describe('Rotas de sessões', () => {
     expect(sessaoFindManyMock).toHaveBeenCalledWith({
       where: { usuarioId: 2 },
       orderBy: { id: 'desc' },
+      select: {
+        id: true,
+        usuarioId: true,
+        dispositivo: true,
+        ip: true,
+        userAgent: true,
+        expiraEm: true,
+        revogadoEm: true,
+      },
     });
   });
 

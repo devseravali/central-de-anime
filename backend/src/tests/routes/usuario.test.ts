@@ -43,6 +43,24 @@ vi.mock('../../middlewares/authMiddleware', () => ({
       return;
     }
 
+    if (header === 'Bearer audit-admin') {
+      req.user = { id: 99, role: 'ADMIN', email: 'admin@teste.com', nome: 'Admin' };
+      next();
+      return;
+    }
+
+    if (header === 'Bearer audit-user-1') {
+      req.user = { id: 1, role: 'USER', email: 'user1@teste.com', nome: 'User 1' };
+      next();
+      return;
+    }
+
+    if (header === 'Bearer audit-user-2') {
+      req.user = { id: 2, role: 'USER', email: 'user2@teste.com', nome: 'User 2' };
+      next();
+      return;
+    }
+
     if (header === 'Bearer admin-token') {
       req.user = { id: 99, role: 'ADMIN', email: 'admin@teste.com', nome: 'Admin' };
       next();
@@ -88,7 +106,14 @@ describe('Rotas de usuário', () => {
     vi.clearAllMocks();
   });
 
-  it('deve listar usuários sem expor senha', async () => {
+  it('deve impedir listagem pública de usuários', async () => {
+    const response = await request(app).get('/usuario/');
+
+    expect(response.status).toBe(401);
+    expect(prismaMocks.usuarioFindMany).not.toHaveBeenCalled();
+  });
+
+  it('deve permitir listagem de usuários apenas para administradores', async () => {
     prismaMocks.usuarioFindMany.mockResolvedValueOnce([
       {
         id: 1,
@@ -97,14 +122,22 @@ describe('Rotas de usuário', () => {
         avatar: null,
         status: 'ACTIVE',
         criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+        atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+        senha: 'password-hash',
+        resetSenhaTokenHash: 'reset-hash',
+        verificaEmailTokenHash: 'verification-hash',
       },
     ]);
 
-    const response = await request(app).get('/usuario');
+    const response = await request(app)
+      .get('/usuario')
+      .set('Authorization', 'Bearer audit-admin');
 
     expect(response.status).toBe(200);
     expect(response.body.users).toHaveLength(1);
     expect(response.body.users[0].senha).toBeUndefined();
+    expect(response.body.users[0].resetSenhaTokenHash).toBeUndefined();
+    expect(response.body.users[0].verificaEmailTokenHash).toBeUndefined();
     expect(prismaMocks.usuarioFindMany).toHaveBeenCalledWith({
       select: {
         id: true,
@@ -113,15 +146,27 @@ describe('Rotas de usuário', () => {
         avatar: true,
         status: true,
         criadoEm: true,
+        atualizadoEm: true,
       },
       take: 200,
     });
   });
 
+  it('deve negar listagem a usuário autenticado sem privilégios de administrador', async () => {
+    const response = await request(app)
+      .get('/usuario')
+      .set('Authorization', 'Bearer audit-user-1');
+
+    expect(response.status).toBe(403);
+    expect(prismaMocks.usuarioFindMany).not.toHaveBeenCalled();
+  });
+
   it('deve retornar 500 quando falhar ao listar usuários', async () => {
     prismaMocks.usuarioFindMany.mockRejectedValueOnce(new Error('falha no banco'));
 
-    const response = await request(app).get('/usuario');
+    const response = await request(app)
+      .get('/usuario')
+      .set('Authorization', 'Bearer audit-admin');
 
     expect(response.status).toBe(500);
     expect(response.body).toEqual({ message: 'Erro ao listar usuários' });
@@ -174,7 +219,7 @@ describe('Rotas de usuário', () => {
     expect(usuarioServiceMocks.updateProfile).not.toHaveBeenCalled();
   });
 
-  it('deve buscar usuário por id com payload seguro', async () => {
+  it('deve buscar o próprio usuário por id com payload seguro', async () => {
     prismaMocks.usuarioFindUnique.mockResolvedValueOnce({
       id: 2,
       nome: 'Nami',
@@ -182,13 +227,21 @@ describe('Rotas de usuário', () => {
       avatar: null,
       status: 'ACTIVE',
       criadoEm: new Date('2026-09-03T00:00:00.000Z'),
+      atualizadoEm: new Date('2026-09-04T00:00:00.000Z'),
+      senha: 'password-hash',
+      resetSenhaTokenHash: 'reset-hash',
+      verificaEmailTokenHash: 'verification-hash',
     });
 
-    const response = await request(app).get('/usuario/2');
+    const response = await request(app)
+      .get('/usuario/2')
+      .set('Authorization', 'Bearer audit-user-2');
 
     expect(response.status).toBe(200);
     expect(response.body.message).toBe('OK');
     expect(response.body.user.senha).toBeUndefined();
+    expect(response.body.user.resetSenhaTokenHash).toBeUndefined();
+    expect(response.body.user.verificaEmailTokenHash).toBeUndefined();
     expect(prismaMocks.usuarioFindUnique).toHaveBeenCalledWith({
       where: { id: 2 },
       select: {
@@ -198,12 +251,31 @@ describe('Rotas de usuário', () => {
         avatar: true,
         status: true,
         criadoEm: true,
+        atualizadoEm: true,
       },
     });
   });
 
+  it('deve negar leitura do perfil de outro usuário', async () => {
+    const response = await request(app)
+      .get('/usuario/2')
+      .set('Authorization', 'Bearer audit-user-1');
+
+    expect(response.status).toBe(403);
+    expect(prismaMocks.usuarioFindUnique).not.toHaveBeenCalled();
+  });
+
+  it('deve exigir autenticação para buscar usuário por id', async () => {
+    const response = await request(app).get('/usuario/2');
+
+    expect(response.status).toBe(401);
+    expect(prismaMocks.usuarioFindUnique).not.toHaveBeenCalled();
+  });
+
   it('deve rejeitar id inválido ao buscar usuário por id', async () => {
-    const response = await request(app).get('/usuario/abc');
+    const response = await request(app)
+      .get('/usuario/abc')
+      .set('Authorization', 'Bearer audit-user-1');
 
     expect(response.status).toBe(400);
     expect(response.body.message).toBe('Dados de entrada inválidos');
@@ -213,7 +285,9 @@ describe('Rotas de usuário', () => {
   it('deve retornar 404 quando o usuário consultado não existir', async () => {
     prismaMocks.usuarioFindUnique.mockResolvedValueOnce(null);
 
-    const response = await request(app).get('/usuario/2');
+    const response = await request(app)
+      .get('/usuario/2')
+      .set('Authorization', 'Bearer audit-admin');
 
     expect(response.status).toBe(404);
     expect(response.body).toEqual({ message: 'Usuário não encontrado' });
@@ -222,7 +296,9 @@ describe('Rotas de usuário', () => {
   it('deve mascarar falha interna ao buscar usuário por id', async () => {
     prismaMocks.usuarioFindUnique.mockRejectedValueOnce(new Error('falha no banco'));
 
-    const response = await request(app).get('/usuario/2');
+    const response = await request(app)
+      .get('/usuario/2')
+      .set('Authorization', 'Bearer audit-admin');
 
     expect(response.status).toBe(500);
     expect(response.body).toEqual({ message: 'Erro ao buscar usuário' });
