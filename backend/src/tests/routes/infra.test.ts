@@ -67,6 +67,20 @@ describe('Rotas de infraestrutura', () => {
     expect(mailerMocks.sendMail).not.toHaveBeenCalled();
   });
 
+  it('deve indisponibilizar os endpoints de teste de email em produção', async () => {
+    process.env.NODE_ENV = 'production';
+
+    const postResponse = await request(app)
+      .post('/test-email')
+      .send({ to: 'destino@teste.com' });
+    const getResponse = await request(app)
+      .get('/test-email?to=destino@teste.com');
+
+    expect(postResponse.status).toBe(404);
+    expect(getResponse.status).toBe(404);
+    expect(mailerMocks.sendMail).not.toHaveBeenCalled();
+  });
+
   it('deve enviar email de teste com sucesso', async () => {
     mailerMocks.sendMail.mockResolvedValueOnce({ messageId: 'abc-123' });
 

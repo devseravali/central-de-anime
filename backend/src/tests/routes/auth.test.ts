@@ -87,6 +87,9 @@ describe('Rotas de autenticação', () => {
     expect(response.headers['set-cookie']).toBeDefined();
     expect(response.headers['set-cookie'][0]).toContain('refreshToken=1.refresh-token-valido');
     expect(response.headers['set-cookie'][0]).toContain('HttpOnly');
+    expect(response.headers['set-cookie'][0]).toContain('SameSite=Lax');
+    expect(response.headers['set-cookie'][0]).toContain('Path=/auth');
+    expect(response.headers['set-cookie'][0]).not.toContain('Domain=');
   });
 
   it('deve aceitar refresh token vindo do body', async () => {
@@ -182,6 +185,8 @@ describe('Rotas de autenticação', () => {
 
     expect(response.status).toBe(200);
     expect(response.body.message).toBe('Senha redefinida com sucesso');
+    expect(response.body.refreshToken).toBeUndefined();
+    expect(response.headers['set-cookie'][0]).toContain('refreshToken=5.refresh-pos-reset');
     expect(authServiceMocks.resetPassword).toHaveBeenCalledWith('jwt-reset', 'novaSenha123');
   });
 
