@@ -205,6 +205,11 @@ describe('authService', () => {
     const resultado = await authService.login('LUFFY@teste.com', '123456', 'Chrome', '127.0.0.1', 'Vitest');
 
     expect(jwtMocks.sign).toHaveBeenCalled();
+    expect(jwtMocks.sign).toHaveBeenCalledWith(
+      expect.objectContaining({ sub: 1, sid: 5 }),
+      expect.any(String),
+      expect.objectContaining({ expiresIn: expect.anything() })
+    );
     expect(prismaMocks.sessaoCreate).toHaveBeenCalledWith({
       data: expect.objectContaining({
         refreshTokenHash: 'refresh-hash',
@@ -329,6 +334,11 @@ describe('authService', () => {
     });
     expect(resultado.refreshToken).toBe('6.token-aleatorio');
     expect(resultado.accessToken).toBe('novo-access-token');
+    expect(jwtMocks.sign).toHaveBeenCalledWith(
+      expect.objectContaining({ sub: 1, sid: 6 }),
+      expect.any(String),
+      expect.any(Object)
+    );
     expect(resultado.user).toEqual({
       id: 1,
       nome: 'Luffy',
@@ -691,6 +701,11 @@ describe('authService', () => {
     });
     expect(resultado.accessToken).toBe('novo-access-token');
     expect(resultado.refreshToken).toBe('20.token-aleatorio');
+    expect(jwtMocks.sign).toHaveBeenCalledWith(
+      expect.objectContaining({ sub: 1, sid: 20 }),
+      expect.any(String),
+      expect.any(Object)
+    );
     expect(resultado.user).toEqual({
       id: 1,
       nome: 'Usuario Teste',
