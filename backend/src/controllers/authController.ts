@@ -1,5 +1,6 @@
 import { Request, Response, CookieOptions } from 'express';
 import { authService } from '../services/authService';
+import { InvalidRefreshCookieError, readRefreshCookie } from './refreshCookie';
 
 const getRefreshCookieOptions = (includeMaxAge = true): CookieOptions => ({
     httpOnly: true,
@@ -109,10 +110,7 @@ export const authController = {
     refresh: async (req: Request, res: Response): Promise<void> => {
         try {
             const refreshTokenFromBody = req.body?.refreshToken as string | undefined;
-            const cookieHeader = req.headers.cookie as string | undefined;
-            const refreshTokenFromCookie = req.cookies?.refreshToken ?? (cookieHeader ? cookieHeader.split(';').map(s => s.trim()).find(s => s.startsWith('refreshToken='))?.split('=')[1] : undefined);
-
-            const refreshToken = refreshTokenFromBody ?? refreshTokenFromCookie;
+            const refreshToken = refreshTokenFromBody ?? readRefreshCookie(req);
 
             if (!refreshToken) {
                 res.status(400).json({ message: 'Refresh token é obrigatório' });
@@ -137,8 +135,9 @@ export const authController = {
             ]);
 
             if (
-                error instanceof Error &&
-                expectedRefreshErrors.has(error.message)
+                error instanceof InvalidRefreshCookieError ||
+                (error instanceof Error &&
+                    expectedRefreshErrors.has(error.message))
             ) {
                 res.status(401).json({
                     message: 'Refresh token inválido ou expirado',
@@ -258,10 +257,7 @@ export const authController = {
     logout: async (req: Request, res: Response): Promise<void> => {
         try {
             const refreshTokenFromBody = req.body?.refreshToken as string | undefined;
-            const cookieHeader = req.headers.cookie as string | undefined;
-            const refreshTokenFromCookie = req.cookies?.refreshToken ?? (cookieHeader ? cookieHeader.split(';').map(s => s.trim()).find(s => s.startsWith('refreshToken='))?.split('=')[1] : undefined);
-
-            const refreshToken = refreshTokenFromBody ?? refreshTokenFromCookie;
+            const refreshToken = refreshTokenFromBody ?? readRefreshCookie(req);
 
             if (!refreshToken) {
                 res.status(400).json({ message: 'Refresh token é obrigatório' });
@@ -278,11 +274,12 @@ export const authController = {
             res.status(200).json({ message: 'Logout realizado com sucesso' });
         } catch (error) {
             if (
-                error instanceof Error &&
-                [
-                    'Refresh token inválido',
-                    'Sessão não encontrada',
-                ].includes(error.message)
+                error instanceof InvalidRefreshCookieError ||
+                (error instanceof Error &&
+                    [
+                        'Refresh token inválido',
+                        'Sessão não encontrada',
+                    ].includes(error.message))
             ) {
                 res.clearCookie(
                     'refreshToken',
