@@ -70,7 +70,9 @@ export const authService = {
   },
 
   login: async (data: LoginData): Promise<LoginResponse> => {
-    const response = await api.post<LoginResponse>('/auth/login', data);
+    const response = await api.post<LoginResponse>('/auth/login', data, {
+      withCredentials: true,
+    });
     return response.data;
   },
 
@@ -89,7 +91,9 @@ export const authService = {
   },
 
   resetPassword: async (data: ResetPasswordData): Promise<ResetPasswordResponse> => {
-    const response = await api.post<ResetPasswordResponse>('/auth/reset-password', data);
+    const response = await api.post<ResetPasswordResponse>('/auth/reset-password', data, {
+      withCredentials: true,
+    });
 
     return response.data;
   },
