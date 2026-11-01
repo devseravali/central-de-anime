@@ -8,6 +8,11 @@ export const MainContainer = styled.div`
 
     display: grid;
     gap: 1rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width: min(1240px, 100% - 1rem);
+        padding: 1rem 0 1.5rem;
+    }
 `;
 
 export const CharacterGrid = styled.section`
@@ -17,6 +22,16 @@ export const CharacterGrid = styled.section`
     display: grid;
     grid-template-columns: minmax(270px, 360px) minmax(0, 1fr);
     gap: 1rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+        gap: 0.85rem;
+    }
+
+    @media (max-width: 640px) {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.9rem;
+    }
 `;
 
 export const CharacterPanel = styled.section`
@@ -29,6 +44,16 @@ export const CharacterPanel = styled.section`
     > :nth-child(3),
     > :nth-child(4) {
         grid-column: 1 / -1;
+    }
+
+    @media (max-width: 640px) {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.85rem;
+
+        > :nth-child(3),
+        > :nth-child(4) {
+            grid-column: auto;
+        }
     }
 `;
 
@@ -55,8 +80,14 @@ export const TopNavigation = styled.nav`
     }
 
     strong {
+        min-width: 0;
+        overflow-wrap: anywhere;
         color: ${({ theme }) => theme.colors.textPrimary};
         font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 0.82rem;
     }
 `;
 
@@ -77,6 +108,10 @@ export const Hero = styled.section`
         ${({ theme }) => theme.colors.surface} 60%,
         ${({ theme }) => theme.colors.background} 100%
     );
+
+    @media (max-width: 640px) {
+        padding: 0.65rem;
+    }
 `;
 
 export const Glow = styled.span`
@@ -110,6 +145,15 @@ export const HeroImageWrap = styled.figure`
     border-radius: 12px;
 
     background: ${({ theme }) => theme.colors.surface};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        min-height: 360px;
+    }
+
+    @media (max-width: 640px) {
+        min-height: 0;
+        aspect-ratio: 3 / 4;
+    }
 `;
 
 export const CharacterImage = styled.img`
@@ -123,6 +167,8 @@ export const CharacterImage = styled.img`
 `;
 
 export const MetaBadge = styled.figcaption`
+    max-width: calc(100% - 1.5rem);
+    overflow-wrap: anywhere;
     position: absolute;
     top: 0.75rem;
     left: 0.75rem;
@@ -147,10 +193,17 @@ export const MetaBadge = styled.figcaption`
 
 export const HeroContent = styled.article`
     display: grid;
+    min-width: 0;
+    overflow-wrap: anywhere;
     align-content: start;
     gap: 0.8rem;
 
     padding: 0.4rem;
+
+    @media (max-width: 640px) {
+        padding: 0.1rem;
+        gap: 0.7rem;
+    }
 `;
 
 export const SectionTag = styled.span`
@@ -180,6 +233,11 @@ export const HeroTitle = styled.h1`
     font-size: clamp(2rem, 5vw, 3.15rem);
     line-height: 1;
     letter-spacing: -0.02em;
+
+    @media (max-width: 640px) {
+        font-size: clamp(1.65rem, 8vw, 2.25rem);
+        line-height: 1.08;
+    }
 `;
 
 export const HeroSubtitle = styled.p`
@@ -199,6 +257,10 @@ export const DetailGrid = styled.dl`
     gap: 0.65rem;
 
     margin: 0;
+
+    @media (max-width: 640px) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const DetailCard = styled.div`
@@ -318,6 +380,8 @@ export const BioCard = styled.article`
 `;
 
 export const BioText = styled.p`
+    min-width: 0;
+    overflow-wrap: anywhere;
     margin: 0;
 
     color: ${({ theme }) => theme.colors.textSecondary};
@@ -334,6 +398,10 @@ export const TraitList = styled.ul`
     padding: 0;
 
     list-style: none;
+
+    @media (max-width: 640px) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const TraitChip = styled.li`
@@ -348,6 +416,7 @@ export const TraitChip = styled.li`
         theme.typography.labelMedium.fontFamily};
     font-size: ${({ theme }) =>
         theme.typography.labelMedium.fontSize};
+    overflow-wrap: anywhere;
 `;
 
 export const MetricList = styled.ul`
@@ -359,6 +428,10 @@ export const MetricList = styled.ul`
     padding: 0;
 
     list-style: none;
+
+    @media (max-width: 640px) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const MetricItem = styled.li`
@@ -441,6 +514,10 @@ export const RelatedGrid = styled.section`
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.8rem;
+
+    @media (max-width: 640px) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const RelatedCard = styled(Link)`
@@ -478,6 +555,7 @@ export const RelatedImage = styled.img`
 `;
 
 export const RelatedName = styled.p`
+    overflow-wrap: anywhere;
     margin: 0;
     padding: 0.65rem 0.7rem 0.25rem;
 
@@ -492,6 +570,7 @@ export const RelatedName = styled.p`
 `;
 
 export const RelatedRole = styled.p`
+    overflow-wrap: anywhere;
     margin: 0;
     padding: 0 0.7rem 0.75rem;
 
@@ -509,6 +588,11 @@ export const StateShell = styled.div`
     padding: 1.25rem 0;
 
     display: grid;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width: min(1240px, 100% - 1rem);
+        padding: 1rem 0;
+    }
 `;
 
 export const ErrorState = styled.section`
