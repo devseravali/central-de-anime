@@ -88,6 +88,7 @@ export const Ranking = () => {
                                             />
 
                                             <RankingInfo>
+                                                <RankingPosition>{anime.position}º lugar</RankingPosition>
                                                 <RankingTitle>{anime.titulo}</RankingTitle>
 
                                                 <RankingScore>
@@ -139,6 +140,7 @@ export const Ranking = () => {
                                             />
 
                                             <RankingInfo>
+                                                <RankingPosition>{personagem.position}º lugar</RankingPosition>
                                                 <RankingTitle>{personagem.nome}</RankingTitle>
 
                                                 <RankingScore>
