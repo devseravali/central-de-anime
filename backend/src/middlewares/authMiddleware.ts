@@ -1,13 +1,88 @@
 import type { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { prisma } from '../config/prisma';
-import { authService } from '../services/authService';
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
 if (!JWT_SECRET) {
     throw new Error('JWT_SECRET não configurado');
 }
+
+class AccessAuthenticationError extends Error {}
+
+const verifyAccessToken = (token: string) => {
+    const decoded = jwt.verify(token, JWT_SECRET);
+
+    if (typeof decoded === 'string') {
+        throw new AccessAuthenticationError();
+    }
+
+    const userId =
+        typeof decoded.sub === 'string' || typeof decoded.sub === 'number'
+            ? Number(decoded.sub)
+            : NaN;
+    const sessionId = decoded.sid;
+
+    if (
+        !Number.isSafeInteger(userId) ||
+        userId <= 0 ||
+        typeof sessionId !== 'number' ||
+        !Number.isSafeInteger(sessionId) ||
+        sessionId <= 0 ||
+        typeof decoded.exp !== 'number' ||
+        !Number.isFinite(decoded.exp)
+    ) {
+        throw new AccessAuthenticationError();
+    }
+
+    return { userId, sessionId };
+};
+
+const authenticateSession = async (
+    identity: ReturnType<typeof verifyAccessToken>
+) => {
+    const sessao = await prisma.sessao.findUnique({
+        where: { id: identity.sessionId },
+        select: {
+            usuarioId: true,
+            expiraEm: true,
+            revogadoEm: true,
+            usuario: {
+                select: {
+                    id: true,
+                    email: true,
+                    nome: true,
+                    status: true,
+                    admin: { select: { id: true } },
+                },
+            },
+        },
+    });
+
+    if (
+        !sessao ||
+        sessao.usuarioId !== identity.userId ||
+        sessao.revogadoEm !== null ||
+        sessao.expiraEm.getTime() <= Date.now() ||
+        !sessao.usuario ||
+        sessao.usuario.id !== identity.userId ||
+        sessao.usuario.status !== 'ativo'
+    ) {
+        throw new AccessAuthenticationError();
+    }
+
+    const usuario = sessao.usuario;
+    return {
+        id: usuario.id,
+        email: usuario.email,
+        nome: usuario.nome,
+        role: usuario.admin ? 'ADMIN' : 'USER',
+    };
+};
+
+const isAuthenticationError = (error: unknown): boolean =>
+    error instanceof AccessAuthenticationError ||
+    error instanceof jwt.JsonWebTokenError;
 
 export const authMiddleware = async (
     req: Request,
@@ -50,86 +125,18 @@ export const authMiddleware = async (
     }
 
     try {
-        const decoded = jwt.verify(token, JWT_SECRET) as jwt.JwtPayload;
-
-        const userId = decoded.sub ? Number(decoded.sub) : NaN;
-
-        if (Number.isNaN(userId)) {
-            res.status(401).json({ message: 'Token inválido: sub inválido' });
-            return;
-        }
-
-        const usuario = await prisma.usuario.findUnique({
-            where: { id: userId },
-            include: { admin: true },
-        });
-
-        if (!usuario) {
-            res.status(401).json({ message: 'Usuário não encontrado' });
-            return;
-        }
-
-        if (usuario.status !== 'ativo') {
+        const identity = verifyAccessToken(token);
+        req.user = await authenticateSession(identity);
+    } catch (error) {
+        if (isAuthenticationError(error)) {
             res.status(401).json({ message: 'Token inválido ou expirado' });
             return;
         }
 
-        req.user = {
-            id: usuario.id,
-            email: usuario.email,
-            nome: usuario.nome,
-            role: usuario.admin ? 'ADMIN' : 'USER',
-        };
-
-
-        next();
-    } catch (error) {
-        console.error('Erro ao validar JWT:', error instanceof Error ? error.message : String(error));
-
-        if (error && typeof error === 'object' && (error as any).name === 'TokenExpiredError') {
-            const headerRefresh = req.headers['x-refresh-token'] as string | undefined;
-            const cookieRefresh = (req as any).cookies && (req as any).cookies.refreshToken;
-            const refreshToken = headerRefresh ?? cookieRefresh;
-
-            if (refreshToken && typeof refreshToken === 'string') {
-                try {
-                    const result = await authService.refresh(refreshToken);
-
-                    res.setHeader('x-access-token', result.accessToken);
-                    res.setHeader('x-refresh-token', result.refreshToken);
-
-                    const usuario = await prisma.usuario.findUnique({ where: { id: result.user.id }, include: { admin: true } });
-
-                    if (!usuario) {
-                        res.status(401).json({ message: 'Usuário não encontrado após refresh' });
-                        return;
-                    }
-
-                    if (usuario.status !== 'ativo') {
-                        res.status(401).json({ message: 'Token inválido ou expirado' });
-                        return;
-                    }
-
-                    req.user = {
-                        id: usuario.id,
-                        email: usuario.email,
-                        nome: usuario.nome,
-                        role: usuario.admin ? 'ADMIN' : 'USER',
-                    };
-
-                    next();
-                    return;
-                    } catch (refreshErr) {
-                    console.error('Falha ao renovar token via refresh:', refreshErr instanceof Error ? refreshErr.message : String(refreshErr));
-                    res.status(401).json({ message: 'Token expirado e refresh falhou' });
-                    return;
-                }
-            }
-
-            res.status(401).json({ message: 'Token expirado' });
-            return;
-        }
-
-        res.status(401).json({ message: 'Token inválido ou expirado' });
+        console.error('Falha de infraestrutura ao autenticar sessão');
+        res.status(500).json({ message: 'Erro interno do servidor' });
+        return;
     }
+
+    next();
 };
