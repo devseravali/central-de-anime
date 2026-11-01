@@ -33,6 +33,15 @@ describe('CORS de produção', () => {
     const localResponse = await request(app)
       .get('/health')
       .set('Origin', 'http://localhost:5173');
+    const preflight = await request(app)
+      .options('/auth/login')
+      .set('Origin', 'https://centraldeanime.com')
+      .set('Access-Control-Request-Method', 'POST')
+      .set('Access-Control-Request-Headers', 'content-type,authorization');
+    const rejected = await request(app)
+      .options('/auth/refresh')
+      .set('Origin', 'https://untrusted.example.test')
+      .set('Access-Control-Request-Method', 'POST');
 
     expect(allowedResponse.headers['access-control-allow-origin']).toBe(
       'https://centraldeanime.com'
@@ -41,5 +50,11 @@ describe('CORS de produção', () => {
       'true'
     );
     expect(localResponse.headers['access-control-allow-origin']).toBeUndefined();
+    expect(preflight.status).toBe(204);
+    expect(preflight.headers['access-control-allow-origin']).toBe('https://centraldeanime.com');
+    expect(preflight.headers['access-control-allow-credentials']).toBe('true');
+    expect(preflight.headers['access-control-allow-methods']).toContain('POST');
+    expect(preflight.headers['access-control-allow-headers']).toContain('authorization');
+    expect(rejected.headers['access-control-allow-origin']).toBeUndefined();
   }, 20000);
 });
