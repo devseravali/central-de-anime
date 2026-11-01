@@ -84,6 +84,10 @@ export const Podium = styled.ol`
     margin: 12px 0 0;
     padding: 0;
     list-style: none;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const RankingCard = styled.li`
@@ -103,6 +107,13 @@ export const RankingLink = styled(Link)`
     &:hover {
         background: ${({ theme }) => theme.colors.surfaceElevated};
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        display: grid;
+        grid-template-columns: 96px minmax(0, 1fr);
+        align-items: start;
+        gap: 12px;
+    }
 `;
 
 export const RankingCover = styled.img`
@@ -113,10 +124,20 @@ export const RankingCover = styled.img`
     background: ${({ theme }) => theme.colors.surfaceElevated};
     border-radius: 6px;
     object-fit: cover;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        height: 128px;
+        min-height: 0;
+    }
 `;
 
 export const RankingInfo = styled.div`
     margin-top: 8px;
+    min-width: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        margin-top: 0;
+    }
 `;
 
 export const RankingTitle = styled.h3`
@@ -130,6 +151,7 @@ export const RankingScore = styled.p`
     margin: 6px 0 0;
     color: ${({ theme }) => theme.colors.textSecondary};
     font-size: 12px;
+    overflow-wrap: anywhere;
 `;
 
 export const RankingList = styled.ol`
@@ -158,6 +180,16 @@ export const RankingItemLink = styled(Link)`
     &:hover {
         background: ${({ theme }) => theme.colors.surfaceElevated};
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 6px 12px;
+
+        > :last-child {
+            grid-column: 2;
+        }
+    }
 `;
 
 export const RankingPosition = styled.span`
@@ -178,4 +210,5 @@ export const RankingRating = styled.span`
     color: ${({ theme }) => theme.colors.textSecondary};
     font-size: 14px;
     font-variant-numeric: tabular-nums;
+    overflow-wrap: anywhere;
 `;
