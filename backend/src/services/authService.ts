@@ -62,6 +62,8 @@ export type RefreshResult = {
     refreshExpiraEm: Date;
 };
 
+export class RefreshAuthenticationError extends Error {}
+
 export interface AuthService {
     hashPassword(password: string): Promise<string>;
     register(
@@ -116,13 +118,15 @@ const hashPassword = async (
 };
 
 const generateAccessToken = (
-    user: SafeUsuario
+    user: SafeUsuario,
+    sessionId: number
 ): string => {
     return jwt.sign(
         {
             sub: user.id,
             email: user.email,
             nome: user.nome,
+            sid: sessionId,
         },
         JWT_SECRET,
         {
@@ -187,13 +191,13 @@ const parseRefreshToken = (
     tokenPlain: string;
 } => {
     if (!token || typeof token !== 'string') {
-        throw new Error('Refresh token inválido');
+        throw new RefreshAuthenticationError('Refresh token inválido');
     }
 
     const separatorIndex = token.indexOf('.');
 
     if (separatorIndex <= 0) {
-        throw new Error('Refresh token inválido');
+        throw new RefreshAuthenticationError('Refresh token inválido');
     }
 
     const sessionId = Number(
@@ -209,7 +213,7 @@ const parseRefreshToken = (
         sessionId <= 0 ||
         !tokenPlain
     ) {
-        throw new Error('Refresh token inválido');
+        throw new RefreshAuthenticationError('Refresh token inválido');
     }
 
     return {
@@ -395,9 +399,6 @@ export const authService: AuthService = {
 
         const safeUser = toSafeUsuario(user);
 
-        const accessToken =
-            generateAccessToken(safeUser);
-
         const {
             token: refreshToken,
             sessao,
@@ -407,6 +408,8 @@ export const authService: AuthService = {
             ip,
             userAgent
         );
+
+        const accessToken = generateAccessToken(safeUser, sessao.id);
 
         return {
             user: safeUser,
@@ -445,13 +448,13 @@ export const authService: AuthService = {
             });
 
         if (!sessao) {
-            throw new Error(
+            throw new RefreshAuthenticationError(
                 'Sessão não encontrada'
             );
         }
 
         if (sessao.revogadoEm) {
-            throw new Error(
+            throw new RefreshAuthenticationError(
                 'Refresh token revogado'
             );
         }
@@ -460,7 +463,7 @@ export const authService: AuthService = {
             sessao.expiraEm.getTime() <=
             Date.now()
         ) {
-            throw new Error(
+            throw new RefreshAuthenticationError(
                 'Refresh token expirado'
             );
         }
@@ -472,7 +475,7 @@ export const authService: AuthService = {
             );
 
         if (!tokenMatch) {
-            throw new Error(
+            throw new RefreshAuthenticationError(
                 'Refresh token inválido'
             );
         }
@@ -480,7 +483,7 @@ export const authService: AuthService = {
         const usuario = sessao.usuario;
 
         if (!usuario || usuario.status !== 'ativo') {
-            throw new Error('Refresh token inválido');
+            throw new RefreshAuthenticationError('Refresh token inválido');
         }
 
         const safeUser = toSafeUsuario(usuario);
@@ -502,7 +505,7 @@ export const authService: AuthService = {
                     });
 
                     if (consumedSession.count !== 1) {
-                        throw new Error('Refresh token inválido');
+                        throw new RefreshAuthenticationError('Refresh token inválido');
                     }
 
                     const newTokenPlain =
@@ -547,15 +550,13 @@ export const authService: AuthService = {
                     return {
                         token: `${newSession.id}.${newTokenPlain}`,
                         sessao: newSession,
+                        accessToken: generateAccessToken(safeUser, newSession.id),
                     };
                 }
             );
 
-        const accessToken =
-            generateAccessToken(safeUser);
-
         return {
-            accessToken,
+            accessToken: newRefreshSession.accessToken,
             refreshToken:
                 newRefreshSession.token,
             user: safeUser,
@@ -737,14 +738,14 @@ export const authService: AuthService = {
                 },
             });
 
+            const safeUser = toSafeUsuario(updatedUser);
             return {
-                user: toSafeUsuario(updatedUser),
+                user: safeUser,
+                accessToken: generateAccessToken(safeUser, sessao.id),
                 refreshToken: `${sessao.id}.${newTokenPlain}`,
                 refreshExpiraEm: sessao.expiraEm,
             };
         });
-
-        const accessToken = generateAccessToken(resetResult.user);
 
         void sendPasswordResetConfirmationEmail(usuario.email).catch(() => {
             console.error('Falha ao enviar email de confirmação de senha');
@@ -752,7 +753,7 @@ export const authService: AuthService = {
 
         return {
             user: resetResult.user,
-            accessToken,
+            accessToken: resetResult.accessToken,
             refreshToken: resetResult.refreshToken,
             refreshExpiraEm: resetResult.refreshExpiraEm,
         };
