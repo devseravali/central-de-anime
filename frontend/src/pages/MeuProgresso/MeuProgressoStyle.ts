@@ -396,6 +396,7 @@ export const ItemContent = styled.div`
 
 export const CardHeader = styled.div`
     display: flex;
+    min-width: 0;
     align-items: flex-start;
     justify-content: space-between;
     gap: 0.8rem;
@@ -407,6 +408,7 @@ export const CardHeader = styled.div`
 
 export const CardInfo = styled.div`
     min-width: 0;
+    max-width: 100%;
 `;
 
 export const CardMeta = styled.span<{ $tone?: 'info' | 'success' | 'muted' }>`
@@ -446,6 +448,7 @@ export const CardMeta = styled.span<{ $tone?: 'info' | 'success' | 'muted' }>`
 `;
 
 export const CardTitle = styled.h3`
+    overflow-wrap: anywhere;
     margin-top: 0.3rem;
     font-family: ${({ theme }) => theme.typography.headlineSmall.fontFamily};
     font-size: ${({ theme }) => theme.typography.headlineSmall.fontSize};
