@@ -7,17 +7,36 @@ export const Page = styled.div`
 
     display: grid;
     gap: 1.1rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width: min(1240px, 100% - 1rem);
+        padding: 1rem 0 2rem;
+    }
 `;
 
 export const Hero = styled.section`
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
     gap: 1rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+        gap: 0.85rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.75rem;
+    }
 `;
 
 export const HeroMain = styled.div`
     display: grid;
     gap: 0.55rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        gap: 0.45rem;
+    }
 `;
 
 export const Eyebrow = styled.span`
@@ -41,6 +60,11 @@ export const Title = styled.h1`
     font-weight: ${({ theme }) => theme.typography.headlineExtraLarge.fontWeight};
     letter-spacing: ${({ theme }) => theme.typography.headlineExtraLarge.letterSpacing};
     line-height: 1.03;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        font-size: clamp(1.55rem, 8vw, 2rem);
+        line-height: 1.08;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -50,6 +74,11 @@ export const Subtitle = styled.p`
 
     font-family: ${({ theme }) => theme.typography.bodyLarge.fontFamily};
     font-size: ${({ theme }) => theme.typography.bodyLarge.fontSize};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        max-width: none;
+        line-height: 1.55;
+    }
 `;
 
 export const Stats = styled.aside`
@@ -63,6 +92,14 @@ export const Stats = styled.aside`
     border-radius: 14px;
 
     background: ${({ theme }) => theme.colors.surface};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 `;
 
 export const StatCard = styled.div`
@@ -99,6 +136,16 @@ export const Toolbar = styled.section`
     align-items: center;
     gap: 0.65rem;
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: start;
+
+        & > input,
+        & > select {
+            width: 100%;
+        }
+    }
+
     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
         grid-template-columns: auto minmax(180px, 1fr) auto auto auto;
 
@@ -110,6 +157,7 @@ export const Toolbar = styled.section`
 
 export const Segmented = styled.div`
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.25rem;
 
@@ -366,6 +414,7 @@ export const Genre = styled.span`
 export const CardTitle = styled.h3`
     display: -webkit-box;
     overflow: hidden;
+    overflow-wrap: anywhere;
 
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
