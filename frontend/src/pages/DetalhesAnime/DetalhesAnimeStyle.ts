@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const DetalhesAnimeContainer = styled.div`
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto 1fr;
   gap: 1rem;
   padding: 1rem 1.25rem;
@@ -11,7 +12,9 @@ export const DetalhesAnimeContainer = styled.div`
 
 export const FigureImage = styled.img`
   width: 320px;
-  height: 480px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
   border: 2px solid ${({ theme }) => theme.colors.border};
   border-radius: 10px;
@@ -26,7 +29,6 @@ export const FigureImage = styled.img`
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 280px;
-    height: 420px;
   }
 `;
 
@@ -53,11 +55,13 @@ export const InfoColumn = styled.aside`
   flex-direction: column;
   gap: 0.75rem;
   width: 100%;
+  min-width: 0;
   max-width: 760px;
   flex: 1 1 auto;
 `;
 
 export const DetalhesH1 = styled.h1`
+  overflow-wrap: anywhere;
   font-size: 2rem;
   line-height: 1.1;
   font-weight: 800;
@@ -107,6 +111,7 @@ export const DetalhesH2 = styled.h2`
 `;
 
 export const DetalhesParagraph = styled.p`
+  overflow-wrap: anywhere;
   margin: 0;
   color: ${({ theme }) => theme.colors.textPrimary};
   line-height: 1.5;
@@ -198,6 +203,6 @@ export const NoDataDetalhes = styled.div`
 
 export const DetalhesPersonagem = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
   gap: 1rem;
 `;
