@@ -264,6 +264,82 @@ describe('authController', () => {
     expect(json).toHaveBeenCalledWith({ message: 'Refresh token inválido ou expirado' });
   });
 
+  describe.each(['refresh', 'logout'] as const)('%s: leitura compartilhada de cookie', (method) => {
+    it.each([
+      'refreshToken=3.header-token',
+      'other=1; refreshToken=3.header-token; tracking=2',
+    ])('aceita exclusivamente o cookie esperado: %s', async (header) => {
+      const req = { body: {}, headers: { cookie: header } } as Request;
+      const { res, status } = criarResponse();
+      authServiceMocks[method].mockResolvedValueOnce({
+        accessToken: 'access', refreshToken: '4.new-token', user: { id: 1 },
+        refreshExpiraEm: new Date(),
+      });
+      await authController[method](req, res);
+      expect(authServiceMocks[method]).toHaveBeenCalledWith('3.header-token');
+      expect(status).toHaveBeenCalledWith(200);
+    });
+
+    it.each([
+      'refreshToken',
+      'refreshToken=',
+      'refreshToken=3.one; refreshToken=3.two',
+      'refreshToken=3.one; refreshToken=3.one',
+      'refreshToken=3.unsafe value',
+      'refreshToken="3.quoted"',
+      'refreshToken=3.bad\\value',
+      'refreshToken =3.spaced-name',
+    ])('rejeita cookie malformado ou ambíguo sem chamar serviço: %s', async (header) => {
+      const req = {
+        body: {}, headers: { cookie: header }, cookies: { refreshToken: '3.parsed' },
+      } as unknown as Request;
+      const { res, status, json, clearCookie } = criarResponse();
+      await authController[method](req, res);
+      expect(status).toHaveBeenCalledWith(401);
+      expect(authServiceMocks[method]).not.toHaveBeenCalled();
+      expect(json).toHaveBeenCalledWith({
+        message: 'Refresh token inválido ou expirado',
+      });
+      if (method === 'logout') {
+        expect(clearCookie).toHaveBeenCalledWith('refreshToken', expect.anything());
+      }
+    });
+
+    it.each([undefined, '', 'other=3.token; prefixrefreshToken=3.token'])(
+      'cookie ausente retorna 400 sem chamar serviço: %s', async (header) => {
+        const req = { body: {}, headers: { cookie: header } } as Request;
+        const { res, status } = criarResponse();
+        await authController[method](req, res);
+        expect(status).toHaveBeenCalledWith(400);
+        expect(authServiceMocks[method]).not.toHaveBeenCalled();
+      },
+    );
+
+    it('preserva a separação no primeiro igual sem truncar o valor', async () => {
+      const req = { body: {}, headers: { cookie: 'refreshToken=3.token=tail' } } as Request;
+      const { res } = criarResponse();
+      authServiceMocks[method].mockResolvedValueOnce({
+        accessToken: 'access', refreshToken: '4.token', user: { id: 1 },
+      });
+      await authController[method](req, res);
+      expect(authServiceMocks[method]).toHaveBeenCalledWith('3.token=tail');
+    });
+
+    it('preserva a precedência do body inclusive sobre cookies duplicados', async () => {
+      const req = {
+        body: { refreshToken: '3.body' },
+        headers: { cookie: 'refreshToken=3.one; refreshToken=3.two' },
+      } as Request;
+      const { res, status } = criarResponse();
+      authServiceMocks[method].mockResolvedValueOnce({
+        accessToken: 'access', refreshToken: '4.token', user: { id: 1 },
+      });
+      await authController[method](req, res);
+      expect(authServiceMocks[method]).toHaveBeenCalledWith('3.body');
+      expect(status).toHaveBeenCalledWith(200);
+    });
+  });
+
   it('deve confirmar email com token valido', async () => {
     const req = { body: { token: 'jwt-token' } } as Request;
     const { res, status, json } = criarResponse();
