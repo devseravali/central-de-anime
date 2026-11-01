@@ -27,7 +27,7 @@ const swaggerDefinition = {
     },
 };
 
-const swaggerOptions = {
+const swaggerOptions: swaggerJSDoc.OAS3Options = {
     definition: swaggerDefinition,
 
     apis: [
@@ -37,4 +37,4 @@ const swaggerOptions = {
     ],
 };
 
-export const swaggerSpec = swaggerJSDoc(swaggerOptions);
+export const swaggerSpec = swaggerJSDoc(swaggerOptions) as swaggerJSDoc.OAS3Definition;
