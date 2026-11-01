@@ -218,6 +218,7 @@ export const AvatarOptionImage = styled.img`
 
 export const AvatarOptionName = styled.span`
     display: block;
+    overflow-wrap: anywhere;
     margin-top: 0.35rem;
     color: ${({ theme }) => theme.colors.textPrimary};
     font-family: ${({ theme }) => theme.typography.labelSmall.fontFamily};
