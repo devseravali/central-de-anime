@@ -71,11 +71,17 @@ export const IdentityRow = styled.figure`
     align-items: flex-end;
 
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 `;
 
 export const Avatar = styled.img`
     width: 92px;
     height: 92px;
+    flex-shrink: 0;
     border-radius: ${({ theme }) => theme.radii.card};
     border: 2px solid ${({ theme }) => theme.colors.borderStrong};
     object-fit: cover;
@@ -85,6 +91,8 @@ export const Avatar = styled.img`
 export const Identity = styled.figcaption`
     display: flex;
     flex-direction: column;
+    min-width: 0;
+    max-width: 100%;
     gap: ${({ theme }) => theme.spacing.component.compact};
 
     margin: 0;
@@ -95,12 +103,14 @@ export const Name = styled.h1`
     font-family: ${({ theme }) => theme.typography.headlineExtraLarge.fontFamily};
     font-size: clamp(1.6rem, 4vw, 2.6rem);
     line-height: 1.1;
+    overflow-wrap: anywhere;
 `;
 
 export const Meta = styled.p`
     color: ${({ theme }) => theme.colors.textSecondary};
     font-family: ${({ theme }) => theme.typography.bodyMedium.fontFamily};
     font-size: ${({ theme }) => theme.typography.bodyMedium.fontSize};
+    overflow-wrap: anywhere;
 `;
 
 export const BadgeRow = styled.ul`
@@ -113,6 +123,9 @@ export const StatusBadge = styled.span`
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
 
     border-radius: ${({ theme }) => theme.radii.badge};
     border: 1px solid ${({ theme }) => theme.colors.success}55;
@@ -354,6 +367,8 @@ export const BadgesGrid = styled.ul`
 `;
 
 export const BadgeCard = styled.li`
+    min-width: 0;
+    overflow-wrap: anywhere;
     border: 1px solid ${({ theme }) => theme.colors.borderStrong};
     border-radius: ${({ theme }) => theme.radii.card};
     background: ${({ theme }) => theme.colors.surface};
