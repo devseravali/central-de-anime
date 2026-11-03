@@ -1,4 +1,7 @@
+
 import swaggerJSDoc from 'swagger-jsdoc';
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 const swaggerDefinition = {
     openapi: '3.0.0',
@@ -11,8 +14,12 @@ const swaggerDefinition = {
 
     servers: [
         {
-            url: 'http://localhost:3000',
-            description: 'Servidor local',
+            url: isProduction
+                ? process.env.RENDER_EXTERNAL_URL ?? 'https://central-de-anime.onrender.com'
+                : 'http://localhost:3000',
+            description: isProduction
+                ? 'Servidor de produção'
+                : 'Servidor local',
         },
     ],
 
