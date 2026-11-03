@@ -28,7 +28,7 @@ dist/
 backend/.dockerignore
 
 # Código gerado
-backend/generated/
+/generated/
 
 # Agentes do GitHub/Copilot
 .github/agents/
@@ -41,3 +41,7 @@ backend/generated/
 # Sistema operacional
 .DS_Store
 Thumbs.db
+skill/
+
+# Contexto local do Neon
+/.neon
