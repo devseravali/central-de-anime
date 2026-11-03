@@ -329,6 +329,7 @@ describe('authService', () => {
         refreshTokenHash: 'hash-antigo',
         revogadoEm: null,
         expiraEm: { gt: expect.any(Date) },
+        usuario: { status: 'ativo' },
       },
       data: { revogadoEm: expect.any(Date) },
     });
@@ -517,12 +518,17 @@ describe('authService', () => {
       verificaEmailExpiraEm: new Date(Date.now() + 60_000),
     });
     bcryptMocks.compare.mockResolvedValueOnce(true);
-    prismaMocks.usuarioUpdate.mockResolvedValueOnce({ id: 1, status: 'ativo' });
+    prismaMocks.usuarioUpdateMany.mockResolvedValueOnce({ count: 1 });
 
     await expect(authService.verifyEmail('jwt-valido')).resolves.toBeUndefined();
 
-    expect(prismaMocks.usuarioUpdate).toHaveBeenCalledWith({
-      where: { id: 1 },
+    expect(prismaMocks.usuarioUpdateMany).toHaveBeenCalledWith({
+      where: {
+        id: 1,
+        status: 'pendente',
+        verificaEmailTokenHash: 'hash-token',
+        verificaEmailExpiraEm: { gt: expect.any(Date) },
+      },
       data: {
         status: 'ativo',
         verificaEmailTokenHash: null,
@@ -583,6 +589,7 @@ describe('authService', () => {
       id: 1,
       resetSenhaTokenHash: 'hash-token',
       resetSenhaExpiraEm: new Date(Date.now() + 60_000),
+      status: 'ativo',
     });
     bcryptMocks.compare.mockResolvedValueOnce(false);
 
@@ -594,6 +601,7 @@ describe('authService', () => {
     prismaMocks.usuarioFindUnique.mockResolvedValueOnce({
       id: 1,
       email: 'usuario@teste.com',
+      status: 'ativo',
       resetSenhaTokenHash: 'hash-token',
       resetSenhaExpiraEm: new Date(Date.now() + 60_000),
     });
@@ -635,6 +643,7 @@ describe('authService', () => {
       .mockResolvedValueOnce({
         id: 1,
         email: 'usuario@teste.com',
+        status: 'ativo',
         resetSenhaTokenHash: 'hash-token',
         resetSenhaExpiraEm: new Date(Date.now() + 60_000),
       })
@@ -686,6 +695,7 @@ describe('authService', () => {
     expect(prismaMocks.usuarioUpdateMany).toHaveBeenCalledWith({
       where: {
         id: 1,
+        status: 'ativo',
         resetSenhaTokenHash: 'hash-token',
         resetSenhaExpiraEm: { gt: expect.any(Date) },
       },
