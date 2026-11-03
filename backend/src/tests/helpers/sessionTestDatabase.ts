@@ -12,6 +12,8 @@ type User = {
   admin: { id: number } | null;
   resetSenhaTokenHash: string | null;
   resetSenhaExpiraEm: Date | null;
+  verificaEmailTokenHash: string | null;
+  verificaEmailExpiraEm: Date | null;
 };
 type Session = {
   id: number;
@@ -29,6 +31,7 @@ type SessionFilter = {
   refreshTokenHash?: string;
   revogadoEm?: null;
   expiraEm?: { gt: Date };
+  usuario?: { status: string };
 };
 
 export const db = {
@@ -50,6 +53,7 @@ export async function resetSessionTestDatabase() {
       avatar: null, status: 'ativo', criadoEm: new Date(), atualizadoEm: new Date(),
       admin: id === 99 ? { id: 1 } : null,
       resetSenhaTokenHash: null, resetSenhaExpiraEm: null,
+      verificaEmailTokenHash: null, verificaEmailExpiraEm: null,
     });
   }
 }
@@ -59,7 +63,8 @@ const matches = (s: Session, w: SessionFilter) =>
   (w.usuarioId === undefined || s.usuarioId === w.usuarioId) &&
   (w.refreshTokenHash === undefined || s.refreshTokenHash === w.refreshTokenHash) &&
   (w.revogadoEm === undefined || s.revogadoEm === null) &&
-  (w.expiraEm === undefined || s.expiraEm > w.expiraEm.gt);
+  (w.expiraEm === undefined || s.expiraEm > w.expiraEm.gt) &&
+  (w.usuario === undefined || db.users.get(s.usuarioId)?.status === w.usuario.status);
 
 export const sessionPersistence = {
   sessao: {
@@ -116,12 +121,25 @@ export const sessionPersistence = {
       return { ...u };
     },
     updateMany: async ({ where, data }: {
-      where: { id: number; resetSenhaTokenHash: string; resetSenhaExpiraEm: { gt: Date } };
+      where: {
+        id: number;
+        status?: string;
+        resetSenhaTokenHash?: string;
+        resetSenhaExpiraEm?: { gt: Date };
+        verificaEmailTokenHash?: string;
+        verificaEmailExpiraEm?: { gt: Date };
+      };
       data: Partial<User>;
     }) => {
       const u = db.users.get(where.id);
-      if (!u || u.resetSenhaTokenHash !== where.resetSenhaTokenHash ||
-          !u.resetSenhaExpiraEm || u.resetSenhaExpiraEm <= where.resetSenhaExpiraEm.gt) {
+      if (!u ||
+          (where.status !== undefined && u.status !== where.status) ||
+          (where.resetSenhaTokenHash !== undefined && u.resetSenhaTokenHash !== where.resetSenhaTokenHash) ||
+          (where.resetSenhaExpiraEm !== undefined &&
+            (!u.resetSenhaExpiraEm || u.resetSenhaExpiraEm <= where.resetSenhaExpiraEm.gt)) ||
+          (where.verificaEmailTokenHash !== undefined && u.verificaEmailTokenHash !== where.verificaEmailTokenHash) ||
+          (where.verificaEmailExpiraEm !== undefined &&
+            (!u.verificaEmailExpiraEm || u.verificaEmailExpiraEm <= where.verificaEmailExpiraEm.gt))) {
         return { count: 0 };
       }
       Object.assign(u, data);
