@@ -34,6 +34,10 @@ backend/generated/
 .github/agents/
 .github/copilot-instructions.md
 
+# Skills locais
+/.agents/
+/skills-lock.json
+
 # Editor / IDE
 .vscode/
 .idea/
