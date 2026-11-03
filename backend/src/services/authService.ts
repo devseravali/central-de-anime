@@ -497,6 +497,7 @@ export const authService: AuthService = {
                             refreshTokenHash: sessao.refreshTokenHash,
                             revogadoEm: null,
                             expiraEm: { gt: new Date() },
+                            usuario: { status: 'ativo' },
                         },
                         data: {
                             revogadoEm:
@@ -623,6 +624,7 @@ export const authService: AuthService = {
         }
 
         if (
+            usuario.status !== 'pendente' ||
             !usuario.verificaEmailTokenHash ||
             !usuario.verificaEmailExpiraEm ||
             usuario.verificaEmailExpiraEm.getTime() <= Date.now()
@@ -639,14 +641,23 @@ export const authService: AuthService = {
             throw new Error('Token de confirmacao expirado ou invalido');
         }
 
-        await prisma.usuario.update({
-            where: { id: usuario.id },
+        const activatedUser = await prisma.usuario.updateMany({
+            where: {
+                id: usuario.id,
+                status: 'pendente',
+                verificaEmailTokenHash: usuario.verificaEmailTokenHash,
+                verificaEmailExpiraEm: { gt: new Date() },
+            },
             data: {
                 status: 'ativo',
                 verificaEmailTokenHash: null,
                 verificaEmailExpiraEm: null,
             },
         });
+
+        if (activatedUser.count !== 1) {
+            throw new Error('Token de confirmacao expirado ou invalido');
+        }
     },
 
     resetPassword: async (
@@ -659,6 +670,7 @@ export const authService: AuthService = {
             select: {
                 id: true,
                 email: true,
+                status: true,
                 resetSenhaTokenHash: true,
                 resetSenhaExpiraEm: true,
             },
@@ -666,6 +678,7 @@ export const authService: AuthService = {
 
         if (
             !usuario?.resetSenhaTokenHash ||
+            usuario.status !== 'ativo' ||
             !usuario.resetSenhaExpiraEm ||
             usuario.resetSenhaExpiraEm.getTime() <= Date.now()
         ) {
@@ -684,6 +697,7 @@ export const authService: AuthService = {
             const consumedToken = await tx.usuario.updateMany({
                 where: {
                     id: usuario.id,
+                    status: 'ativo',
                     resetSenhaTokenHash: usuario.resetSenhaTokenHash,
                     resetSenhaExpiraEm: { gt: now },
                 },
