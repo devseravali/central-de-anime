@@ -180,7 +180,7 @@ AuthRouter.post(
  * /auth/reset-password:
  *   post:
  *     summary: Redefine a senha
- *     description: Define uma nova senha utilizando o token de recuperação.
+ *     description: Define uma nova senha utilizando o token de recuperação para uma conta ativa. Contas banidas não recebem novos tokens nem têm suas sessões alteradas por este endpoint.
  *     tags:
  *       - Autenticação
  *     requestBody:
@@ -218,7 +218,7 @@ AuthRouter.post(
  * /auth/verify-email:
  *   post:
  *     summary: Confirma email de cadastro
- *     description: Valida o token de confirmação e ativa a conta do usuário.
+ *     description: Valida o token de confirmação e ativa contas pendentes. Não remove banimento nem reativa contas bloqueadas.
  *     tags:
  *       - Autenticação
  *     requestBody:

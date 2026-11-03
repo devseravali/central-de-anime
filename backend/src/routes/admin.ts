@@ -39,7 +39,7 @@ AdminRouter.get(
  * /users/{id}/ban:
  *   post:
  *     summary: Bane um usuário
- *     description: Bloqueia um usuário da plataforma. Requer autenticação e privilégios de administrador.
+ *     description: Bloqueia acesso, login e refresh sem revogar ou alterar sessões existentes. Requer autenticação e privilégios de administrador.
  *     tags:
  *       - Administração
  *     security:
@@ -79,7 +79,7 @@ AdminRouter.post(
  * /users/{id}/unban:
  *   post:
  *     summary: Remove o banimento de um usuário
- *     description: Desbloqueia um usuário da plataforma. Requer autenticação e privilégios de administrador.
+ *     description: Reativa a conta sem criar sessões. Sessões anteriores não revogadas nem expiradas podem voltar a funcionar; JWTs expirados continuam inválidos. Requer autenticação e privilégios de administrador.
  *     tags:
  *       - Administração
  *     security:
