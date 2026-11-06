@@ -58,9 +58,9 @@ function loadSeedByAnimeId(): Map<number, number> {
     }
 }
 
-function enrichWithEstacao<T extends { id?: number; estacaoId?: number }>(
+function enrichWithEstacao<T extends { id?: number; estacaoId?: number | null }>(
     anime: T
-): T & { estacaoId?: number; estacao?: string } {
+): Omit<T, 'estacaoId'> & { estacaoId?: number | null; estacao?: string } {
     let estacaoId = anime.estacaoId;
 
     if (typeof estacaoId !== 'number' && typeof anime.id === 'number') {
