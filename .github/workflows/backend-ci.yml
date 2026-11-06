@@ -9,43 +9,13 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres:16
-        env:
-          POSTGRES_DB: centraldeanime
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U postgres -d centraldeanime"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
     env:
-      NODE_ENV: test
-      DB_NAME: centraldeanime
-      DB_USER: postgres
-      DB_PASSWORD: postgres
-      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/centraldeanime
-
+      APP_ENV: test
+      DATABASE_URL: postgresql://postgres:ci-only-password@localhost:5432/centraldeanimetest
+      DATABASE_URL_UNPOOLED: postgresql://postgres:ci-only-password@localhost:5432/centraldeanimetest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Criar arquivo .env do backend
-        shell: bash
-        run: |
-          printf '%s\n' '${{ secrets.YOUR_SECRETS_ANIME }}' |
-            grep -Ev '^(DB_NAME|DB_USER|DB_PASSWORD|DATABASE_URL|NODE_ENV)=' > backend/.env
-          cat <<'EOF' >> backend/.env
-          DB_NAME=centraldeanime
-          DB_USER=postgres
-          DB_PASSWORD=postgres
-          DATABASE_URL=postgresql://postgres:postgres@localhost:5432/centraldeanime
-          NODE_ENV=test
-          EOF
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
@@ -54,14 +24,18 @@ jobs:
           cache: npm
           cache-dependency-path: backend/package-lock.json
 
-      - name: Instalar dependências
+      - name: Instalar dependencias
         working-directory: backend
         run: npm ci
 
-      - name: Aplicar migrations no banco do CI
+      - name: Preparar ambiente isolado sem conexao
         working-directory: backend
-        run: npx prisma migrate deploy
+        run: npm run env:prepare
 
-      - name: Executar testes
+      - name: Build e verificacao de tipos sem banco
         working-directory: backend
-        run: npm test
+        run: npm run build
+
+      - name: Executar testes com conexoes PostgreSQL bloqueadas
+        working-directory: backend
+        run: npm run test:ci
