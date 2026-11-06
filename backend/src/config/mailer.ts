@@ -1,11 +1,15 @@
 import nodemailer from 'nodemailer';
-
-const SMTP_HOST = process.env.SMTP_HOST;
-const SMTP_PORT = Number(process.env.SMTP_PORT ?? 587);
-const SMTP_USER = process.env.SMTP_USER;
-const SMTP_PASS = process.env.SMTP_PASS;
+import { EnvironmentError, loadEnvironment } from './environment';
 
 export function getTransporter() {
+    const { mailEnabled, values } = loadEnvironment();
+    if (!mailEnabled) {
+        throw new EnvironmentError('Envio de email desabilitado fora do deploy de producao.');
+    }
+    const SMTP_HOST = values.SMTP_HOST;
+    const SMTP_PORT = Number(values.SMTP_PORT ?? 587);
+    const SMTP_USER = values.SMTP_USER;
+    const SMTP_PASS = values.SMTP_PASS;
     if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
         return null;
     }
