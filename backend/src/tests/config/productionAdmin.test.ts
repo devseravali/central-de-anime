@@ -115,6 +115,16 @@ describe('migration SQL e ticket de preflight', () => {
     expect(() => assertApprovedMigrationChecksum(MIGRATION, Buffer.concat([MIGRATION_SQL, Buffer.from('\n-- alterado')]))).toThrow(/SQL aprovado/);
   });
 
+  it('aceita o mesmo SQL com LF e CRLF em string ou bytes', () => {
+    const lf = MIGRATION_SQL.toString('utf8').replace(/\r\n/g, '\n');
+    const crlf = lf.replace(/\n/g, '\r\n');
+    for (const sql of [lf, crlf, Buffer.from(lf), Buffer.from(crlf)]) {
+      expect(() => assertApprovedMigrationChecksum(MIGRATION, sql)).not.toThrow();
+    }
+    expect(() => assertApprovedMigrationChecksum(MIGRATION, lf.replace('"Estacao"', '"OutraTabela"'))).toThrow(/SQL aprovado/);
+    expect(() => assertApprovedMigrationChecksum(MIGRATION, lf.replace('CREATE TABLE', 'CREATE  TABLE'))).toThrow(/SQL aprovado/);
+  });
+
   it('exige ticket aleatorio ligado ao processo executor e a migration aprovada', () => {
     const operation = migrationOperation(MIGRATION);
     const env = envFor(operation, { PROD_ADMIN_EXPIRES_AT: new Date(Date.now() + 10 * 60_000).toISOString() });

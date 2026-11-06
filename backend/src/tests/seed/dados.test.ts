@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
+import fs from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { assertUnique, readRows } from '../../seed/utils/arquivos';
 import { backendRoot } from '../../seed/utils/caminhos';
 import { inspectLocalImage, normalizeImage } from '../../seed/utils/imagens';
@@ -132,6 +133,27 @@ describe('Seeds: contratos das fontes e transformacoes', () => {
     expect(() => normalizeImage('http://localhost:3000/images/a.jpg', report, 1)).toThrow('loopback');
     expect(() => normalizeImage('https://user:secret@example.test/a.jpg', report, 1)).toThrow('credenciais');
     expect(() => normalizeImage('images/../../a.jpg', report, 1)).toThrow('invalido');
+  });
+
+  it('reutiliza listagens por validacao sem ocultar ausencias ou divergencias de caixa', () => {
+    const directoryEntries = new Map<string, string[]>();
+    const image = 'images/episodios/one-piece/t13/ep428.jpg';
+    const expected = inspectLocalImage(image);
+    const readdir = vi.spyOn(fs, 'readdirSync');
+    try {
+      expect(inspectLocalImage(image, directoryEntries)).toEqual(expected);
+      const reads = readdir.mock.calls.length;
+      expect(reads).toBeGreaterThan(0);
+      expect(inspectLocalImage(image, directoryEntries)).toEqual(expected);
+      expect(readdir).toHaveBeenCalledTimes(reads);
+      expect(inspectLocalImage('images/episodios/one-piece/t13/arquivo-inexistente.jpg', directoryEntries))
+        .toEqual({ estado: 'ausente' });
+      expect(readdir).toHaveBeenCalledTimes(reads);
+      expect(inspectLocalImage(image, new Map())).toEqual(expected);
+      expect(readdir).toHaveBeenCalledTimes(reads * 2);
+    } finally {
+      readdir.mockRestore();
+    }
   });
 
   it('bloqueia destino remoto, staging e producao mesmo com flags antigas', () => {
