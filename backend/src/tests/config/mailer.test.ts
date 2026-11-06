@@ -1,6 +1,14 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type nodemailer from 'nodemailer';
 
+vi.mock('../../config/environment', async importOriginal => ({
+  ...await importOriginal<typeof import('../../config/environment')>(),
+  loadEnvironment: () => ({
+    mailEnabled: process.env.APP_ENV === 'production' && process.env.RENDER === 'true',
+    values: { ...process.env },
+  }),
+}));
+
 describe('Configuração: mailer', () => {
   const envOriginal = {
     SMTP_HOST: process.env.SMTP_HOST,
@@ -11,6 +19,8 @@ describe('Configuração: mailer', () => {
 
   beforeEach(() => {
     vi.resetModules();
+    vi.stubEnv('APP_ENV', 'production');
+    vi.stubEnv('RENDER', 'true');
   });
 
   afterEach(() => {
@@ -19,6 +29,20 @@ describe('Configuração: mailer', () => {
     process.env.SMTP_USER = envOriginal.SMTP_USER;
     process.env.SMTP_PASS = envOriginal.SMTP_PASS;
     vi.restoreAllMocks();
+    vi.unstubAllEnvs();
+  });
+
+  it.each(['local', 'staging', 'test'])('bloqueia email real em %s mesmo com SMTP herdado', async environment => {
+    vi.stubEnv('APP_ENV', environment);
+    const { sendMail } = await import('../../config/mailer');
+    await expect(sendMail({ to: 'example@example.invalid', text: 'blocked' }))
+      .rejects.toThrow('desabilitado');
+  });
+
+  it('bloqueia email em producao iniciada fora do Render', async () => {
+    vi.stubEnv('RENDER', 'false');
+    const { sendMail } = await import('../../config/mailer');
+    await expect(sendMail({ text: 'blocked' })).rejects.toThrow('desabilitado');
   });
 
   it('deve retornar null em getTransporter quando credenciais SMTP estiverem incompletas', async () => {
