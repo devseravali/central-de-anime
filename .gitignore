@@ -15,6 +15,7 @@ node_modules/
 # Logs e relatórios
 *.log
 **/report.xml
+backend/.prod-admin-nonces/
 
 # Testes e cobertura
 coverage/
