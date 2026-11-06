@@ -55,6 +55,7 @@ export const ModelName = {
   Franquia: 'Franquia',
   Estudio: 'Estudio',
   Status: 'Status',
+  Estacao: 'Estacao',
   Episodio: 'Episodio',
   Usuario: 'Usuario',
   WatchProgress: 'WatchProgress',
@@ -103,7 +104,8 @@ export const AnimeScalarFieldEnum = {
   quantidadeEpisodios: 'quantidadeEpisodios',
   franquiaId: 'franquiaId',
   estudioId: 'estudioId',
-  statusId: 'statusId'
+  statusId: 'statusId',
+  estacaoId: 'estacaoId'
 } as const
 
 export type AnimeScalarFieldEnum = (typeof AnimeScalarFieldEnum)[keyof typeof AnimeScalarFieldEnum]
@@ -134,6 +136,14 @@ export const StatusScalarFieldEnum = {
 } as const
 
 export type StatusScalarFieldEnum = (typeof StatusScalarFieldEnum)[keyof typeof StatusScalarFieldEnum]
+
+
+export const EstacaoScalarFieldEnum = {
+  id: 'id',
+  nome: 'nome'
+} as const
+
+export type EstacaoScalarFieldEnum = (typeof EstacaoScalarFieldEnum)[keyof typeof EstacaoScalarFieldEnum]
 
 
 export const EpisodioScalarFieldEnum = {

@@ -388,6 +388,7 @@ export const ModelName = {
   Franquia: 'Franquia',
   Estudio: 'Estudio',
   Status: 'Status',
+  Estacao: 'Estacao',
   Episodio: 'Episodio',
   Usuario: 'Usuario',
   WatchProgress: 'WatchProgress',
@@ -422,7 +423,7 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "anime" | "franquia" | "estudio" | "status" | "episodio" | "usuario" | "watchProgress" | "cacheAnime" | "animeTag" | "animeTagAnime" | "usuarioFavoritoAnime" | "notaAnimeUsuario" | "personagem" | "animePersonagem" | "animeGenero" | "animePlataforma" | "personagemFavorito" | "admin" | "sessao" | "capas" | "genero" | "plataforma" | "filtro"
+    modelProps: "anime" | "franquia" | "estudio" | "status" | "estacao" | "episodio" | "usuario" | "watchProgress" | "cacheAnime" | "animeTag" | "animeTagAnime" | "usuarioFavoritoAnime" | "notaAnimeUsuario" | "personagem" | "animePersonagem" | "animeGenero" | "animePlataforma" | "personagemFavorito" | "admin" | "sessao" | "capas" | "genero" | "plataforma" | "filtro"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -719,6 +720,80 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         count: {
           args: Prisma.StatusCountArgs<ExtArgs>
           result: runtime.Types.Utils.Optional<Prisma.StatusCountAggregateOutputType> | number
+        }
+      }
+    }
+    Estacao: {
+      payload: Prisma.$EstacaoPayload<ExtArgs>
+      fields: Prisma.EstacaoFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.EstacaoFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.EstacaoFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>
+        }
+        findFirst: {
+          args: Prisma.EstacaoFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.EstacaoFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>
+        }
+        findMany: {
+          args: Prisma.EstacaoFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>[]
+        }
+        create: {
+          args: Prisma.EstacaoCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>
+        }
+        createMany: {
+          args: Prisma.EstacaoCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.EstacaoCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>[]
+        }
+        delete: {
+          args: Prisma.EstacaoDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>
+        }
+        update: {
+          args: Prisma.EstacaoUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>
+        }
+        deleteMany: {
+          args: Prisma.EstacaoDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.EstacaoUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.EstacaoUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>[]
+        }
+        upsert: {
+          args: Prisma.EstacaoUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$EstacaoPayload>
+        }
+        aggregate: {
+          args: Prisma.EstacaoAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateEstacao>
+        }
+        groupBy: {
+          args: Prisma.EstacaoGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.EstacaoGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.EstacaoCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.EstacaoCountAggregateOutputType> | number
         }
       }
     }
@@ -2178,7 +2253,8 @@ export const AnimeScalarFieldEnum = {
   quantidadeEpisodios: 'quantidadeEpisodios',
   franquiaId: 'franquiaId',
   estudioId: 'estudioId',
-  statusId: 'statusId'
+  statusId: 'statusId',
+  estacaoId: 'estacaoId'
 } as const
 
 export type AnimeScalarFieldEnum = (typeof AnimeScalarFieldEnum)[keyof typeof AnimeScalarFieldEnum]
@@ -2209,6 +2285,14 @@ export const StatusScalarFieldEnum = {
 } as const
 
 export type StatusScalarFieldEnum = (typeof StatusScalarFieldEnum)[keyof typeof StatusScalarFieldEnum]
+
+
+export const EstacaoScalarFieldEnum = {
+  id: 'id',
+  nome: 'nome'
+} as const
+
+export type EstacaoScalarFieldEnum = (typeof EstacaoScalarFieldEnum)[keyof typeof EstacaoScalarFieldEnum]
 
 
 export const EpisodioScalarFieldEnum = {
@@ -2618,6 +2702,7 @@ export type GlobalOmitConfig = {
   franquia?: Prisma.FranquiaOmit
   estudio?: Prisma.EstudioOmit
   status?: Prisma.StatusOmit
+  estacao?: Prisma.EstacaoOmit
   episodio?: Prisma.EpisodioOmit
   usuario?: Prisma.UsuarioOmit
   watchProgress?: Prisma.WatchProgressOmit
