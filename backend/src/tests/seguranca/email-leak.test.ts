@@ -1,18 +1,28 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import request from 'supertest';
+
+const login = vi.hoisted(() => vi.fn());
+vi.mock('../../services/authService', () => ({
+  authService: { login },
+}));
+
 import app from '../../app';
 
 describe('P1 - Não vazar emails/senhas em respostas e logs (segurança)', () => {
-  beforeEach(() => vi.restoreAllMocks());
+  beforeEach(() => login.mockReset());
 
   it('respostas não devem incluir senha', async () => {
+    login.mockResolvedValueOnce({
+      user: { id: 1, nome: 'Teste', email: 'test@example.com' },
+      accessToken: 'access-token-teste',
+      refreshToken: 'refresh-token-teste',
+      refreshExpiraEm: new Date('2030-01-01T00:00:00.000Z'),
+    });
     const res = await request(app).post('/auth/login').send({ email: 'test@example.com', senha: 'password' });
-    if (res.body && typeof res.body === 'object') {
-      const hasSenha = JSON.stringify(res.body).toLowerCase().includes('senha') || JSON.stringify(res.body).toLowerCase().includes('password');
-      expect([200, 400, 401, 404]).toContain(res.status);
-      if (res.status === 200 || res.status === 400) expect(!hasSenha).toBeTruthy();
-    } else {
-      expect([200, 401, 404]).toContain(res.status);
-    }
+    expect(res.status).toBe(200);
+    expect(res.body.user.email).toBe('test@example.com');
+    expect(res.body.accessToken).toBe('access-token-teste');
+    expect(JSON.stringify(res.body).toLowerCase()).not.toMatch(/senha|password|refresh-token-teste/);
+    expect(login).toHaveBeenCalledOnce();
   });
 });

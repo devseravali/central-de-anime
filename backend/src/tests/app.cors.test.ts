@@ -1,16 +1,30 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 import request from 'supertest';
 
 vi.mock('../config/prisma', () => ({ prisma: {} }));
+vi.mock('../config/swagger.js', () => ({
+  swaggerSpec: { openapi: '3.0.0', info: { title: 'Teste CORS', version: '1.0.0' }, paths: {} },
+}));
 
 describe('CORS de produção', () => {
+  let app: typeof import('../app')['default'];
   const originalEnvironment = {
     NODE_ENV: process.env.NODE_ENV,
     FRONTEND_URL: process.env.FRONTEND_URL,
     FRONTEND_ALLOWED_ORIGINS: process.env.FRONTEND_ALLOWED_ORIGINS,
   };
 
-  afterEach(() => {
+  beforeAll(async () => {
+    vi.resetModules();
+    const { loadEnvironment } = await import('../config/environment');
+    loadEnvironment();
+    process.env.NODE_ENV = 'production';
+    process.env.FRONTEND_URL = 'https://centraldeanime.com';
+    delete process.env.FRONTEND_ALLOWED_ORIGINS;
+    app = (await import('../app')).default;
+  }, 20000);
+
+  afterAll(() => {
     for (const [key, value] of Object.entries(originalEnvironment)) {
       if (value === undefined) {
         delete process.env[key];
@@ -23,12 +37,6 @@ describe('CORS de produção', () => {
   });
 
   it('permite a origem configurada com credenciais e não inclui localhost', async () => {
-    process.env.NODE_ENV = 'production';
-    process.env.FRONTEND_URL = 'https://centraldeanime.com';
-    delete process.env.FRONTEND_ALLOWED_ORIGINS;
-    vi.resetModules();
-
-    const { default: app } = await import('../app');
     const allowedResponse = await request(app)
       .get('/health')
       .set('Origin', 'https://centraldeanime.com');
@@ -45,6 +53,7 @@ describe('CORS de produção', () => {
       .set('Origin', 'https://untrusted.example.test')
       .set('Access-Control-Request-Method', 'POST');
 
+    expect(allowedResponse.status).toBe(200);
     expect(allowedResponse.headers['access-control-allow-origin']).toBe(
       'https://centraldeanime.com'
     );
