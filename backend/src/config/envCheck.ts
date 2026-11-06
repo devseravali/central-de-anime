@@ -3,14 +3,14 @@ const required = [
   'JWT_SECRET',
   'FRONTEND_URL',
   'MAIL_FROM',
-  'SMTP_HOST',
-  'SMTP_USER',
-  'SMTP_PASS',
 ];
 
 export function checkCriticalEnv(): void {
   const missing: string[] = [];
-  for (const key of required) {
+  const keys = process.env.APP_ENV === 'production' || !process.env.APP_ENV
+    ? [...required, 'SMTP_HOST', 'SMTP_USER', 'SMTP_PASS']
+    : required;
+  for (const key of keys) {
     if (!process.env[key]) missing.push(key);
   }
 
