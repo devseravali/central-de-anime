@@ -42,10 +42,11 @@ export async function validateInputs(): Promise<SeedReport> {
     assertReferences(animes.map(row => row.franquiaId), franquias, 'Animes.franquiaId');
     assertReferences(animes.map(row => row.estacaoId), estacoes, 'Animes.estacaoId');
     assertReferences(episodios.map(row => row.animeId), animes, 'Episodios.animeId');
-    for (const row of animes) normalizeImage(row.capaUrl, report, row.id, true);
-    for (const row of personagens) normalizeImage(row.imagem, report, row.id);
-    for (const row of episodios) normalizeImage(row.imagemUrl, report, row.id);
-    for (const row of capas) normalizeImage(row.caminho, report, row.id);
+    const directoryEntries = new Map<string, string[]>();
+    for (const row of animes) normalizeImage(row.capaUrl, report, row.id, true, directoryEntries);
+    for (const row of personagens) normalizeImage(row.imagem, report, row.id, false, directoryEntries);
+    for (const row of episodios) normalizeImage(row.imagemUrl, report, row.id, false, directoryEntries);
+    for (const row of capas) normalizeImage(row.caminho, report, row.id, false, directoryEntries);
     const generoPairs = await read('relacionamentos/anime_genero.json', schemas.animeGenero);
     const personagemPairs = await read('relacionamentos/anime_personagem.json', schemas.animePersonagem);
     const plataformaPairs = await read('relacionamentos/anime_plataforma.json', schemas.animePlataforma);

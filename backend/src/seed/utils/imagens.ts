@@ -13,7 +13,7 @@ const capaAliases: Record<string, string> = {
   'made-in-abyss-the-retsujitsu-no-ougonkyou.jpg': 'made-in-abyss-retsujitsu-no-ougonkyou.jpg',
 };
 
-export function inspectLocalImage(relative: string): {
+export function inspectLocalImage(relative: string, directoryEntries?: Map<string, string[]>): {
   estado: 'presente' | 'ausente' | 'caixa-divergente';
   caminhoFisico?: string;
 } {
@@ -22,7 +22,11 @@ export function inspectLocalImage(relative: string): {
   let divergent = false;
   for (const segment of relative.split('/')) {
     if (!fs.existsSync(current) || !fs.statSync(current).isDirectory()) return { estado: 'ausente' };
-    const entries = fs.readdirSync(current);
+    let entries = directoryEntries?.get(current);
+    if (!entries) {
+      entries = fs.readdirSync(current);
+      directoryEntries?.set(current, entries);
+    }
     const matches = entries.filter(entry => entry.toLowerCase() === segment.toLowerCase());
     const found = entries.includes(segment) ? segment : matches.length === 1 ? matches[0] : undefined;
     if (!found) return { estado: 'ausente' };
@@ -39,6 +43,7 @@ export function normalizeImage(
   report: SeedReport,
   recordId: number,
   cover = false,
+  directoryEntries?: Map<string, string[]>,
 ): string | null {
   if (!value) return null;
   if (/^https?:\/\//i.test(value)) {
@@ -62,7 +67,7 @@ export function normalizeImage(
     parts.push(capaAliases[filename] ?? (naruto ? `naruto-shippuden-t${naruto[1]}.jpg` : filename));
     relative = parts.join('/');
   }
-  const inspected = inspectLocalImage(relative);
+  const inspected = inspectLocalImage(relative, directoryEntries);
   if (inspected.estado !== 'presente') {
     report.avisos.push(`id=${recordId}: imagem ${inspected.estado}: ${relative}` +
       (inspected.caminhoFisico ? `; caminho fisico: ${inspected.caminhoFisico}` : ''));

@@ -6,7 +6,7 @@ import { isAbsolute } from 'node:path';
 // APP_ENV=production sozinho nunca autoriza nada.
 
 export const APPROVED_MIGRATION_SHA256 = Object.freeze({
-  '20261103220000_add_estacao_anime': 'ad3a73b2ba117daf25a237b7bf4ab9bc0c10d99a4b878944610803259e2d695d',
+  '20261103220000_add_estacao_anime': '88aef3166236823d52ac5a131492ab61e048fe83ce89d831b87df42066e15bda',
 });
 export const APPROVED_MIGRATIONS: readonly (keyof typeof APPROVED_MIGRATION_SHA256)[] = [
   '20261103220000_add_estacao_anime',
@@ -135,7 +135,9 @@ export function approvedMigrationFromEnv(env: NodeJS.ProcessEnv): string {
 
 export function assertApprovedMigrationChecksum(migration: string, sql: string | Uint8Array): void {
   const expected = APPROVED_MIGRATION_SHA256[migration as keyof typeof APPROVED_MIGRATION_SHA256];
-  const actual = createHash('sha256').update(sql).digest('hex');
+  // Git checkout pode converter LF em CRLF; nenhuma outra diferenca e normalizada.
+  const canonicalSql = (typeof sql === 'string' ? sql : Buffer.from(sql).toString('utf8')).replace(/\r\n/g, '\n');
+  const actual = createHash('sha256').update(canonicalSql).digest('hex');
   if (!expected || actual !== expected) {
     throw new AdminAuthorizationError('Conteudo da migration nao corresponde ao SQL aprovado.');
   }
