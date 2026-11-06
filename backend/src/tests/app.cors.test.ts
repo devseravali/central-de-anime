@@ -1,6 +1,8 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import request from 'supertest';
 
+vi.mock('../config/prisma', () => ({ prisma: {} }));
+
 describe('CORS de produção', () => {
   const originalEnvironment = {
     NODE_ENV: process.env.NODE_ENV,
