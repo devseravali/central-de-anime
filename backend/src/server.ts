@@ -1,6 +1,7 @@
-import 'dotenv/config';
+import { loadEnvironment } from './config/environment';
 
-import app from './app';
+loadEnvironment();
+const { default: app } = await import('./app');
 
 const port = Number(process.env.PORT ?? 3000);
 

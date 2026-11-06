@@ -7,6 +7,7 @@ import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './config/swagger.js';
 
 import { errorMiddleware } from './middlewares/errorMiddleware';
+import { readOnlyEnvironment } from './middlewares/readOnlyEnvironment';
 import checkCriticalEnv from './config/envCheck';
 
 import authRoutes from './routes/auth';
@@ -106,6 +107,7 @@ app.use(
 );
 
 app.use(cors(corsOptions));
+app.use(readOnlyEnvironment);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
