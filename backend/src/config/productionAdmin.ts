@@ -1,5 +1,6 @@
 import { createHash, timingSafeEqual } from 'node:crypto';
 import { isAbsolute } from 'node:path';
+import { sanitizeAdministrativeText } from './sanitization';
 
 // Operacoes administrativas em producao exigem autorizacao explicita, restrita
 // a UMA operacao aprovada, com confirmacao textual, motivo e expiracao curta.
@@ -12,7 +13,7 @@ export const APPROVED_MIGRATIONS: readonly (keyof typeof APPROVED_MIGRATION_SHA2
   '20261103220000_add_estacao_anime',
 ];
 
-export const PRODUCTION_DATABASE = 'neondb';
+export const PRODUCTION_DATABASE = 'postgres';
 export const MAX_AUTHORIZATION_MINUTES = 30;
 
 // Seeds individuais permitidos em producao, na ordem de dependencia.
@@ -213,7 +214,7 @@ export type DatabaseIdentity = {
 // Valida identidade retornada pelo servidor antes de qualquer operacao.
 export function assertProductionIdentity(identity: DatabaseIdentity, readOnlyExpected: boolean): void {
   if (identity.database !== PRODUCTION_DATABASE) {
-    throw new AdminAuthorizationError('Banco conectado nao e a producao (neondb).');
+    throw new AdminAuthorizationError('Banco conectado nao e o banco esperado (postgres).');
   }
   if (typeof identity.role !== 'string' || !identity.role) {
     throw new AdminAuthorizationError('Role de conexao nao identificada.');
@@ -228,6 +229,7 @@ export function fingerprint(value: string): string {
 }
 
 export type AuditRecord = {
+  provider: 'supabase';
   timestamp: string;
   operation: string;
   environment: string;
@@ -248,9 +250,10 @@ export function auditRecord(
   now: Date = new Date(),
 ): AuditRecord {
   return {
+    provider: 'supabase',
     timestamp: now.toISOString(), operation: auth.operation, environment: 'production',
     database: PRODUCTION_DATABASE, hostFingerprint: fingerprint(hostname),
-    reason: auth.reason, nonce: auth.nonce, result,
-    ...(detail ? { detail: detail.replace(/postgres(ql)?:\/\/\S+/gi, '[url omitida]').slice(0, 200) } : {}),
+    reason: `sha256:${createHash('sha256').update(auth.reason).digest('hex')}`, nonce: auth.nonce, result,
+    ...(detail ? { detail: sanitizeAdministrativeText(detail).slice(0, 200) } : {}),
   };
 }
