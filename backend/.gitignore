@@ -11,6 +11,7 @@ node_modules/
 .env.development.local
 .env.test.local
 .env.production.local
+.env.example
 
 # Logs e relatórios
 *.log
@@ -42,6 +43,3 @@ backend/.dockerignore
 .DS_Store
 Thumbs.db
 skill/
-
-# Contexto local do Neon
-/.neon
