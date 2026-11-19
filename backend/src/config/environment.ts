@@ -3,6 +3,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'dotenv';
 import { assertPrismaArguments } from './prismaArguments.mjs';
+import { assertValidationReplayArguments, loadValidationMigrationEnvironment } from './validationEnvironment.mjs';
+import { assertSupabaseDestination } from './supabase';
 import {
   approvedMigrationFromEnv, assertApprovedMigrationChecksum, assertApprovedMigrationCommand,
   assertProductionMigrationPreflight, authorizeProductionAdmin, migrationOperation,
@@ -33,12 +35,11 @@ const databases = {
   local: 'centraldeanime',
   staging: 'centraldeanime_staging',
   test: 'centraldeanimetest',
-  production: 'neondb',
+  production: 'postgres',
 } as const;
 
 const localHosts = new Set(['localhost', '127.0.0.1', '[::1]']);
-const productionHost = 'ep-withered-cherry-b6giwtqf.c-2.sa-east-1.aws.neon.tech';
-const serviceKey = /^(DATABASE_|DIRECT_URL$|PRISMA_|PG|DB_|JWT_|SESSION_|REDIS_|SMTP_|MAIL_|SENDGRID_|RESEND_|GOOGLE_|OAUTH_|FRONTEND_|SEED_)/;
+const serviceKey = /^(SUPABASE_|DATABASE_|DIRECT_URL$|PRISMA_|PG|DB_|JWT_|SESSION_|REDIS_|SMTP_|MAIL_|SENDGRID_|RESEND_|GOOGLE_|OAUTH_|FRONTEND_|SEED_)/;
 
 export function selectEnvironment(value: string | undefined): AppEnvironment {
   if (value !== 'local' && value !== 'staging' && value !== 'test' && value !== 'production') {
@@ -76,27 +77,24 @@ function databaseUrl(value: string | undefined, key: string): URL {
 export function validateDatabaseUrls(environment: AppEnvironment, values: EnvironmentValues) {
   const application = databaseUrl(values.DATABASE_URL, 'DATABASE_URL');
   const direct = databaseUrl(values.DATABASE_URL_UNPOOLED, 'DATABASE_URL_UNPOOLED');
-  for (const url of [application, direct]) {
+  for (const [url, administrative] of [[application, false], [direct, true]] as const) {
+    if (environment === 'production') {
+      assertSupabaseDestination(url, values, administrative);
+      continue;
+    }
     if (url.pathname !== `/${databases[environment]}` || (url.port || '5432') !== '5432') {
       throw new EnvironmentError('Database ou porta nao corresponde ao ambiente selecionado.');
     }
-    if (environment === 'production') {
-      if (![productionHost, productionHost.replace('.c-2.', '-pooler.c-2.')].includes(url.hostname)) {
-        throw new EnvironmentError('Producao exige o endpoint Neon autorizado.');
-      }
-      if (!['require', 'verify-full'].includes(url.searchParams.get('sslmode') ?? '')) {
-        throw new EnvironmentError('Producao exige TLS.');
-      }
-    } else if (!localHosts.has(url.hostname)) {
+    if (!localHosts.has(url.hostname)) {
       throw new EnvironmentError('Ambiente nao produtivo exige host PostgreSQL local.');
     }
   }
-  if (direct.hostname.includes('-pooler')) {
+  if (environment !== 'production' && direct.hostname.includes('-pooler')) {
     throw new EnvironmentError('DATABASE_URL_UNPOOLED nao pode utilizar pooler.');
   }
   const canonicalHost = (url: URL) => url.hostname.replace('-pooler.', '.');
-  if (canonicalHost(application) !== canonicalHost(direct) ||
-      application.username !== direct.username || application.password !== direct.password ||
+  if ((environment !== 'production' && (canonicalHost(application) !== canonicalHost(direct) ||
+      application.username !== direct.username)) || application.password !== direct.password ||
       application.searchParams.get('schema') !== direct.searchParams.get('schema')) {
     throw new EnvironmentError('As duas URLs devem identificar o mesmo destino e papel.');
   }
@@ -176,6 +174,9 @@ let resolvedEnvironment: SelectedEnvironment | undefined;
 const operationalKey = /^(APP_ENV|APP_RUNTIME|RENDER(?:_.*)?|NODE_OPTIONS|NODE_ENV)$/;
 
 export function loadEnvironment(): SelectedEnvironment {
+  if (process.env.APP_ENV === 'validation') {
+    throw new EnvironmentError('APP_ENV=validation e exclusivo dos comandos administrativos de validacao.');
+  }
   if (resolvedEnvironment) return resolvedEnvironment;
   const environment = selectEnvironment(process.env.APP_ENV);
   const runtime = process.env.APP_RUNTIME;
@@ -260,6 +261,10 @@ function assertMigrationSnapshot(ticket: MigrationPreflightTicket): void {
 
 export function prismaCliConfiguration(args: string[]): PrismaCliConfiguration {
   assertPrismaArguments(args);
+  if (process.env.APP_ENV === 'validation') {
+    assertValidationReplayArguments(args);
+    return { datasourceUrl: loadValidationMigrationEnvironment(process.env).connectionUrl };
+  }
   if (args[0] === 'generate' || args[0] === 'validate') return {};
   const environment = selectEnvironment(process.env.APP_ENV);
   if (environment === 'production' && process.env.PROD_ADMIN_OPERATION) {
@@ -268,10 +273,7 @@ export function prismaCliConfiguration(args: string[]): PrismaCliConfiguration {
     authorizeProductionAdmin(migrationOperation(approved), process.env);
     const ticket = readProductionMigrationTicket();
     assertMigrationSnapshot(ticket);
-    return {
-      datasourceUrl: loadEnvironment().values.DATABASE_URL_UNPOOLED,
-      migrationsPath: ticket.migrationsPath,
-    };
+    throw new EnvironmentError('Migration de producao bloqueada: identidade da sessao efetiva do Prisma e backup restauravel nao comprovados.');
   }
   assertAdministrativeWrite(environment);
   return { datasourceUrl: loadEnvironment().values.DATABASE_URL_UNPOOLED };
