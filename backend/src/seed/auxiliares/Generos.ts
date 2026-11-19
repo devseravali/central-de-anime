@@ -6,7 +6,7 @@ import { named } from '../validacoes/schemas';
 
 export function main(context?: SeedContext) {
   return executeSeed('Generos', async (ctx, report) => {
-    const rows = await readRows('entidades/generos.json', named, report);
+    const rows = await readRows('entidades/generos.json', named, report, ctx);
     await persistRecords(ctx, report, rows, {
       list: (db, ids) => db.genero.findMany({ where: ids ? { id: { in: ids } } : undefined }),
       create: (db, row) => db.genero.create({ data: row }),
