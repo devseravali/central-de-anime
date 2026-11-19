@@ -1,41 +1,42 @@
 import { readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { MigrationRow } from '../src/config/productionAdmin';
+import { loadEnvironment } from '../src/config/environment';
+import { sanitizeAdministrativeText } from '../src/config/sanitization';
+import { inspectSchema } from './database/inspection';
 import { assertCleanInvocation, openReadOnlyClient, safeMessage } from './prod-admin-common';
-
-// Inspecao somente leitura: sessao read-only, consultas fixas, sem parametros externos.
-const COUNT_QUERY = `select
-  (select count(*) from "Anime") as anime, (select count(*) from "Personagem") as personagem,
-  (select count(*) from "Episodio") as episodio, (select count(*) from "Genero") as genero,
-  (select count(*) from "Estudio") as estudio, (select count(*) from "Plataforma") as plataforma,
-  (select count(*) from "Franquia") as franquia, (select count(*) from "Status") as status,
-  (select count(*) from "AnimeTag") as anime_tag, (select count(*) from "Capas") as capas,
-  (select count(*) from "Usuario") as usuario`;
 
 try {
   assertCleanInvocation();
   if (process.env.APP_ENV !== 'production') throw new Error('Inspecao exige APP_ENV=production.');
-  const { client } = await openReadOnlyClient('DATABASE_URL_UNPOOLED');
+  const { client, hostname, identity } = await openReadOnlyClient('DATABASE_URL_UNPOOLED');
   try {
-    const migrations = await client.query<MigrationRow>(
-      'select migration_name, finished_at, rolled_back_at from _prisma_migrations order by migration_name',
+    const { rows: exists } = await client.query<{ exists: boolean }>(
+      "select to_regclass('public._prisma_migrations') is not null as exists",
     );
-    const counts = await client.query(COUNT_QUERY);
-    const schema = await client.query(
-      `select
-        exists(select 1 from information_schema.tables where table_schema = 'public' and table_name = 'Estacao') as estacao_table,
-        exists(select 1 from information_schema.columns where table_schema = 'public' and table_name = 'Anime' and column_name = 'estacaoId') as anime_estacao_id`,
-    );
+    const migrations = exists[0].exists
+      ? (await client.query<MigrationRow>('select migration_name, finished_at, rolled_back_at from public._prisma_migrations order by migration_name')).rows
+      : [];
+    const schema = await inspectSchema(client);
     const local = readdirSync(resolve(import.meta.dirname, '..', 'prisma', 'migrations'), { withFileTypes: true })
       .filter(entry => entry.isDirectory()).map(entry => entry.name).sort();
-    const applied = new Set(migrations.rows.filter(row => row.finished_at != null).map(row => row.migration_name));
+    const applied = migrations.filter(row => row.finished_at != null).map(row => row.migration_name);
+    const values = loadEnvironment().values;
     console.log(JSON.stringify({
-      database: 'neondb', readOnly: true,
-      appliedMigrations: [...applied], pendingMigrations: local.filter(name => !applied.has(name)),
-      counts: counts.rows[0], schema: schema.rows[0],
-    }, (_key, value) => (typeof value === 'bigint' ? Number(value) : value), 2));
+      provider: 'supabase', database: identity.database, role: sanitizeAdministrativeText(String(identity.role)),
+      host: hostname, projectRef: values.SUPABASE_PROJECT_REF, projectIdentity: 'Comparar host e projectRef com painel Connect; PostgreSQL sozinho nao comprova o projeto.',
+      branch: { verified: false, limitation: 'Nenhuma evidencia de branch obtida do provedor; nome do banco nao comprova branch.' },
+      readOnly: identity.transaction_read_only === 'on',
+      appliedMigrations: applied, pendingMigrations: local.filter(name => !applied.includes(name)),
+      incompleteMigrations: migrations.filter(row => row.finished_at == null && row.rolled_back_at == null).map(row => row.migration_name),
+      unknownMigrations: applied.filter(name => !local.includes(name)), ...schema,
+    }, null, 2));
   } finally {
-    await client.end();
+    try {
+      await client.query('ROLLBACK');
+    } finally {
+      await client.end();
+    }
   }
 } catch (error) {
   console.error(JSON.stringify({ result: 'falhou', message: safeMessage(error) }));
