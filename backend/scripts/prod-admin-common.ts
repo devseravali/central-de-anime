@@ -1,8 +1,9 @@
-import { appendFileSync, closeSync, mkdirSync, openSync, readFileSync, writeSync } from 'node:fs';
+import { closeSync, fsyncSync, mkdirSync, openSync, readFileSync, writeSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import pg from 'pg';
 import { parseIntoClientConfig } from 'pg-connection-string';
-import { loadEnvironment } from '../src/config/environment';
+import { EnvironmentError, loadEnvironment } from '../src/config/environment';
+import { sanitizeAdministrativeText } from '../src/config/sanitization';
 import {
   AdminAuthorizationError, assertProductionIdentity, auditRecord, type AdminAuthorization, type AuditRecord,
 } from '../src/config/productionAdmin';
@@ -16,7 +17,7 @@ export function readUsedNonces(file = AUDIT_FILE): Set<string> {
     contents = readFileSync(file, 'utf8');
   } catch (error) {
     if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') return new Set();
-    throw error;
+    throw new Error('Falha ao ler auditoria; operacao administrativa bloqueada.');
   }
   const nonces = new Set<string>();
   for (const line of contents.split('\n').filter(Boolean)) {
@@ -58,7 +59,13 @@ export function consumeAuthorizationNonce(auth: AdminAuthorization, directory = 
 }
 
 export function writeAudit(auth: AdminAuthorization, hostname: string, result: AuditRecord['result'], detail?: string): void {
-  appendFileSync(AUDIT_FILE, `${JSON.stringify(auditRecord(auth, hostname, result, detail))}\n`, { mode: 0o600 });
+  const descriptor = openSync(AUDIT_FILE, 'a', 0o600);
+  try {
+    writeSync(descriptor, `${JSON.stringify(auditRecord(auth, hostname, result, detail))}\n`);
+    fsyncSync(descriptor);
+  } finally {
+    closeSync(descriptor);
+  }
 }
 
 export function assertCleanInvocation(allowedArgs = 0): void {
@@ -73,18 +80,30 @@ export async function openReadOnlyClient(kind: 'DATABASE_URL' | 'DATABASE_URL_UN
   if (!url) throw new Error(`${kind} obrigatoria.`);
   const client = new pg.Client({
     ...parseIntoClientConfig(url),
-    options: '-c default_transaction_read_only=on -c statement_timeout=10000 -c row_security=off',
+    options: '-c default_transaction_read_only=on -c statement_timeout=10000',
   });
-  await client.connect();
-  const { rows } = await client.query(
-    "select current_database() as database, current_user as role, current_setting('transaction_read_only') as transaction_read_only",
-  );
-  assertProductionIdentity(rows[0], true);
-  const hostname = new URL(url).hostname;
-  return { client, hostname };
+  try {
+    await client.connect();
+    await client.query('BEGIN READ ONLY');
+    const { rows } = await client.query(
+      "select current_database() as database, current_user as role, current_setting('transaction_read_only') as transaction_read_only",
+    );
+    assertProductionIdentity(rows[0], true);
+    const hostname = new URL(url).hostname;
+    return { client, hostname, identity: rows[0] };
+  } catch (error) {
+    try {
+      await client.end();
+    } catch (cleanup) {
+      throw new Error(`Falha na inspecao e no fechamento: ${safeMessage(error)}; ${safeMessage(cleanup)}`);
+    }
+    throw error;
+  }
 }
 
 export function safeMessage(error: unknown): string {
-  const text = error instanceof Error ? error.message : 'erro desconhecido';
-  return text.replace(/postgres(ql)?:\/\/\S+/gi, '[url omitida]').slice(0, 300);
+  if (error instanceof AdminAuthorizationError || error instanceof EnvironmentError) {
+    return sanitizeAdministrativeText(error.message).slice(0, 300);
+  }
+  return 'Falha administrativa; detalhes internos omitidos.';
 }
