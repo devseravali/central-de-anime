@@ -2,7 +2,7 @@ import bcrypt from 'bcryptjs';
 import type { SeedContext } from '../config/context';
 import { executeSeed, runDirect } from '../utils/executar';
 import { SeedInputError } from '../utils/relatorio';
-import { assertSeedDestination } from '../config/context';
+import { assertSeedDestination, inSeedTransaction } from '../config/context';
 
 export function assertFixtureEnvironment(env: NodeJS.ProcessEnv): string {
   if (env.APP_ENV !== 'test' || env.NODE_ENV !== 'test' || env.SEED_ALLOW_FIXTURES !== 'true') {
@@ -31,7 +31,7 @@ export function main(context?: SeedContext) {
     report.lidos = users.length;
     report.validos = users.length;
     const hash = await bcrypt.hash(password, 10);
-    const counts = await ctx.prisma.$transaction(async db => {
+    const counts = await inSeedTransaction(ctx, async db => {
       let inserted = 0;
       let unchanged = 0;
       for (const user of users) {
