@@ -102,7 +102,7 @@ describe('Preparacao offline de inspecao staging', () => {
       transport.mockRestore();
     }
   });
-  it.each(['centraldeanime', 'centraldeanimetest', 'neondb'])('rejeita database %s no driver e nas duas URLs', database => {
+  it.each(['centraldeanime', 'centraldeanimetest', 'postgres'])('rejeita database %s no driver e nas duas URLs', database => {
     expect(() => stagingInspectionConfig(policy(), { ...connection(), database }, [])).toThrow();
     for (const key of ['application', 'direct'] as const) {
       const selected = policy();
@@ -111,7 +111,7 @@ describe('Preparacao offline de inspecao staging', () => {
       }, connection(), [])).toThrow();
     }
   });
-  it.each(['127.0.0.1', '[::1]', '::1', 'ep-example.neon.tech'])('rejeita host alternativo %s', host => {
+  it.each(['127.0.0.1', '[::1]', '::1', 'foreign.example.invalid'])('rejeita host alternativo %s', host => {
     const selected = policy();
     for (const key of ['application', 'direct'] as const) {
       expect(() => stagingInspectionConfig({
