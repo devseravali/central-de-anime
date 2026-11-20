@@ -1,0 +1,4 @@
+# Preserve the exact bytes recorded in docs/json-inventory.json on every platform.
+backend/data/**/*.json text eol=crlf
+backend/data/entidades/animes.json text eol=lf
+backend/data/entidades/episodios.json text eol=lf
