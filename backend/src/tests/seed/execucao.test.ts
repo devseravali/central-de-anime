@@ -97,6 +97,7 @@ describe('Seeds: execucao independente e conexao compartilhada', () => {
 describe('Seeds: persistencia por ID e resultados reais', () => {
   it('insere, atualiza sem ID no payload e nao modifica nada na segunda execucao', async () => {
     const context = createSeedContext();
+    context.insertOnly = false;
     const data = new Map([[1, { id: 1, nome: 'Antigo' }]]);
     const create = vi.fn(async (_db, row: { id: number; nome: string }) => { data.set(row.id, row); });
     const update = vi.fn(async (_db, id: number, fields: { nome: string }) => { data.set(id, { id, ...fields }); });
