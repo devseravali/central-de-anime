@@ -3,16 +3,27 @@ import path from 'node:path';
 import { z } from 'zod';
 import { dataRoot } from './caminhos';
 import { SeedInputError, type SeedReport } from './relatorio';
+import { assertSeedContext, type SeedContext } from '../config/context';
 
 export async function readRows<S extends z.ZodType>(
   relative: string,
   schema: S,
   report: SeedReport,
+  context?: SeedContext,
 ): Promise<z.output<S>[]> {
   let value: unknown;
   try {
-    value = JSON.parse(await readFile(path.join(dataRoot, relative), 'utf8'));
-  } catch {
+    if (process.env.APP_ENV === 'validation' || context?.kind === 'validation') {
+      if (!context || context.kind !== 'validation') {
+        throw new SeedInputError(`${relative}: snapshot validado obrigatorio.`);
+      }
+      assertSeedContext(context);
+      value = JSON.parse(context.source(relative));
+    } else {
+      value = JSON.parse(await readFile(path.join(dataRoot, relative), 'utf8'));
+    }
+  } catch (error) {
+    if (error instanceof SeedInputError) throw error;
     throw new SeedInputError(`${relative}: arquivo obrigatorio ausente, inacessivel ou JSON invalido.`);
   }
   if (!Array.isArray(value)) throw new SeedInputError(`${relative}: esperado array.`);
