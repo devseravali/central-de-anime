@@ -7,7 +7,7 @@ import { animePlataforma } from '../validacoes/schemas';
 
 export function main(context?: SeedContext) {
   return executeSeed('AnimePlataforma', async (ctx, report) => {
-    const rows = await readRows('relacionamentos/anime_plataforma.json', animePlataforma, report);
+    const rows = await readRows('relacionamentos/anime_plataforma.json', animePlataforma, report, ctx);
     const [animes, plataformas] = await Promise.all([
       ctx.prisma.anime.findMany({ select: { id: true } }),
       ctx.prisma.plataforma.findMany({ select: { id: true } }),

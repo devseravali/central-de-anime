@@ -7,7 +7,7 @@ import { animeTag } from '../validacoes/schemas';
 
 export function main(context?: SeedContext) {
   return executeSeed('AnimeTag', async (ctx, report) => {
-    const rows = await readRows('relacionamentos/anime_tag.json', animeTag, report);
+    const rows = await readRows('relacionamentos/anime_tag.json', animeTag, report, ctx);
     const [animes, tags] = await Promise.all([
       ctx.prisma.anime.findMany({ select: { id: true } }),
       ctx.prisma.animeTag.findMany({ select: { id: true } }),
