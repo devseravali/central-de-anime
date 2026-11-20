@@ -1,0 +1,1165 @@
+{
+  "source": "JSONs atuais, sem fontes alternativas",
+  "files": [
+    {
+      "path": "data/entidades/animes.json",
+      "records": 151,
+      "sha256": "c530af6b6db253bd9fd251ba28eebc2ec8f0190555b060094868800417b92f81",
+      "seed": "src/seed/entidades/Animes.ts",
+      "references": {
+        "estudioId": "estudios.id",
+        "statusId": "status.id",
+        "franquiaId": "franquia.id",
+        "estacaoId": "estacoes.id"
+      },
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "titulo",
+        "tipo",
+        "temporada",
+        "ano",
+        "quantidadeEpisodios",
+        "estudioId",
+        "statusId",
+        "estacaoId",
+        "sinopse"
+      ],
+      "optionalFields": [
+        "capaUrl",
+        "franquiaId"
+      ],
+      "ids": {
+        "count": 151,
+        "min": 1,
+        "max": 151,
+        "unique": 151
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "titulo",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "tipo",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "temporada",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "ano",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "quantidadeEpisodios",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "franquiaId",
+          "types": [
+            "number",
+            "null"
+          ],
+          "missing": 0,
+          "nulls": 30
+        },
+        {
+          "field": "estudioId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "statusId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "estacaoId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "sinopse",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "capaUrl",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/capa.json",
+      "records": 121,
+      "sha256": "65e45bff7d824a932436b38a74af2aac8049775235e9e634c1db99a8c81110b1",
+      "seed": "src/seed/auxiliares/Capas.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome_original",
+        "nome_salvo",
+        "caminho",
+        "mime_type"
+      ],
+      "optionalFields": [],
+      "ids": {
+        "count": 121,
+        "min": 1,
+        "max": 121,
+        "unique": 121
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome_original",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome_salvo",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "caminho",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "mime_type",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/episodios.json",
+      "records": 4172,
+      "sha256": "9ac12056342dd911d6ff5319db1ee047266a5a58af4c7ce3a526bb4b9e5e6a2f",
+      "seed": "src/seed/entidades/Episodios.ts",
+      "references": {
+        "animeId": "animes.id"
+      },
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "numero",
+        "titulo",
+        "sinopse",
+        "temporadaId",
+        "animeId"
+      ],
+      "optionalFields": [
+        "imagemUrl",
+        "dataExibicao"
+      ],
+      "compatibility": "temporadaId mapeado para temporada sem alterar fonte",
+      "ids": {
+        "count": 4172,
+        "min": 1,
+        "max": 4172,
+        "unique": 4172
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "numero",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "titulo",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "sinopse",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "imagemUrl",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "dataExibicao",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "temporadaId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "animeId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/estacoes.json",
+      "records": 4,
+      "sha256": "03f481071e91e8055318aca1312e462262778916c7a93c1ce9d6864a99e240a7",
+      "seed": "src/seed/auxiliares/Estacoes.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome"
+      ],
+      "optionalFields": [],
+      "ids": {
+        "count": 4,
+        "min": 1,
+        "max": 4,
+        "unique": 4
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/estudios.json",
+      "records": 12,
+      "sha256": "c8ce6405b72a13c7ca5cb8cbc5aba623ed33143515b0c02daca205fc12154de9",
+      "seed": "src/seed/auxiliares/Estudios.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome",
+        "principaisObras"
+      ],
+      "optionalFields": [],
+      "ids": {
+        "count": 12,
+        "min": 1,
+        "max": 12,
+        "unique": 12
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "principaisObras",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/franquia.json",
+      "records": 20,
+      "sha256": "6b5a96567b151c5b2be66e2ab5e4ebae47153bebe63a31c6a539de42c582eae4",
+      "seed": "src/seed/auxiliares/Franquias.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome"
+      ],
+      "optionalFields": [
+        "descricao",
+        "anoInicio"
+      ],
+      "ids": {
+        "count": 20,
+        "min": 1,
+        "max": 20,
+        "unique": 20
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "descricao",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "anoInicio",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/generos.json",
+      "records": 33,
+      "sha256": "4bb7799a6a64860b0155ac4468dd446b2e0b8080df1cb9b3f5cc7c710df96313",
+      "seed": "src/seed/auxiliares/Generos.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome"
+      ],
+      "optionalFields": [],
+      "ids": {
+        "count": 33,
+        "min": 1,
+        "max": 33,
+        "unique": 33
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/personagens.json",
+      "records": 304,
+      "sha256": "7d6facb4830032dfb7a7f88e1db5e2ee4a19aac8fbc7f204d2c0285035e398ae",
+      "seed": "src/seed/entidades/Personagens.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome",
+        "nivelCombate",
+        "sobre",
+        "imagem"
+      ],
+      "optionalFields": [
+        "idade_inicial",
+        "sexo",
+        "papel",
+        "aniversario",
+        "altura_inicial",
+        "afiliacao"
+      ],
+      "compatibility": "nivelCombate preservado, inclusive inteiro textual validado",
+      "ids": {
+        "count": 304,
+        "min": 1,
+        "max": 304,
+        "unique": 304
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "idade_inicial",
+          "types": [
+            "number",
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "sexo",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "papel",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "aniversario",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "altura_inicial",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nivelCombate",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "afiliacao",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "sobre",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "imagem",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/plataformas.json",
+      "records": 13,
+      "sha256": "59be0b83233b041fb309e64b8fe43ddb883c913e3472d3a99b02c96a9e126550",
+      "seed": "src/seed/auxiliares/Plataformas.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome"
+      ],
+      "optionalFields": [],
+      "ids": {
+        "count": 13,
+        "min": 1,
+        "max": 13,
+        "unique": 13
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/status.json",
+      "records": 7,
+      "sha256": "f775db847b67565f482c3d7280a65f3c714679b2d9b16af00986558f2122954d",
+      "seed": "src/seed/auxiliares/Status.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome"
+      ],
+      "optionalFields": [],
+      "ids": {
+        "count": 7,
+        "min": 1,
+        "max": 7,
+        "unique": 7
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/entidades/tags.json",
+      "records": 40,
+      "sha256": "a7b27e6591b19938ac58a8b808b4926ddbe1b14e12c0c06d9e1b4496ff0aaae5",
+      "seed": "src/seed/auxiliares/Tags.ts",
+      "references": {},
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "id",
+        "nome"
+      ],
+      "optionalFields": [],
+      "ids": {
+        "count": 40,
+        "min": 1,
+        "max": 40,
+        "unique": 40
+      },
+      "fields": [
+        {
+          "field": "id",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "nome",
+          "types": [
+            "string"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/relacionamentos/anime_genero.json",
+      "records": 711,
+      "sha256": "43cf48f2a908eb737fc392ea2fb6724e39913b33f5df86f29034d6a81dc791db",
+      "seed": "src/seed/relacionamentos/AnimeGenero.ts",
+      "references": {
+        "animeId": "animes.id",
+        "generoId": "generos.id"
+      },
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "animeId",
+        "generoId"
+      ],
+      "optionalFields": [],
+      "ids": "chave composta",
+      "fields": [
+        {
+          "field": "animeId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "generoId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/relacionamentos/anime_personagem.json",
+      "records": 1002,
+      "sha256": "c22d2a6cffe6c098810a0723cda577492dee4823a2b17c98a36a7028a1d3ba8b",
+      "seed": "src/seed/relacionamentos/AnimePersonagem.ts",
+      "references": {
+        "animeId": "animes.id",
+        "personagemId": "personagens.id"
+      },
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "animeId",
+        "personagemId"
+      ],
+      "optionalFields": [],
+      "ids": "chave composta",
+      "fields": [
+        {
+          "field": "animeId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "personagemId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/relacionamentos/anime_plataforma.json",
+      "records": 228,
+      "sha256": "4b517a2c644f16e2f0b19686256e3ddf6f4abec3d073685d3514e40e53063cd9",
+      "seed": "src/seed/relacionamentos/AnimePlataforma.ts",
+      "references": {
+        "animeId": "animes.id",
+        "plataformaId": "plataformas.id"
+      },
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "animeId",
+        "plataformaId"
+      ],
+      "optionalFields": [],
+      "ids": "chave composta",
+      "fields": [
+        {
+          "field": "animeId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "plataformaId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/relacionamentos/anime_status.json",
+      "records": 151,
+      "sha256": "12f1101486e8c89f0e1356df23641637fcf33d1755a7647a268c4a1b653d4319",
+      "seed": "src/seed/atualizacoes/AnimeStatus.ts",
+      "references": {
+        "animeId": "animes.id",
+        "statusId": "status.id"
+      },
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "animeId",
+        "statusId"
+      ],
+      "optionalFields": [],
+      "ids": "chave composta",
+      "fields": [
+        {
+          "field": "animeId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "statusId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    },
+    {
+      "path": "data/relacionamentos/anime_tag.json",
+      "records": 552,
+      "sha256": "b224914876c5f0dc82964e976e75290f713222c78aa8bac7ed29b19723dd3e3f",
+      "seed": "src/seed/relacionamentos/AnimeTag.ts",
+      "references": {
+        "animeId": "animes.id",
+        "tagId": "tags.id"
+      },
+      "referenceIntegrity": "validada por validateInputs antes de gerar este inventario",
+      "requiredFields": [
+        "animeId",
+        "tagId"
+      ],
+      "optionalFields": [],
+      "ids": "chave composta",
+      "fields": [
+        {
+          "field": "animeId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        },
+        {
+          "field": "tagId",
+          "types": [
+            "number"
+          ],
+          "missing": 0,
+          "nulls": 0
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "records": 7521,
+    "warnings": [
+      "id=17: imagem ausente: images/episodios/shingeki-no-kyojin/t1/ep17.jpg",
+      "id=49: imagem ausente: images/episodios/shingeki-no-kyojin/t3/ep12.jpg",
+      "id=71: imagem ausente: images/episodios/shingeki-no-kyojin/t4/ep12.jpg",
+      "id=83: imagem ausente: images/episodios/shingeki-no-kyojin/t4/ep24.jpg",
+      "id=90: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep1.jpg",
+      "id=91: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep2.jpg",
+      "id=92: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep3.jpg",
+      "id=93: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep4.jpg",
+      "id=94: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep5.jpg",
+      "id=95: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep6.jpg",
+      "id=96: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep7.jpg",
+      "id=97: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep8.jpg",
+      "id=98: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep9.jpg",
+      "id=99: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep10.jpg",
+      "id=100: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep11.jpg",
+      "id=101: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep12.jpg",
+      "id=102: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep13.jpg",
+      "id=103: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep14.jpg",
+      "id=104: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep15.jpg",
+      "id=105: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep16.jpg",
+      "id=106: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep17.jpg",
+      "id=107: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep18.jpg",
+      "id=108: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep19.jpg",
+      "id=109: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep20.jpg",
+      "id=110: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep21.jpg",
+      "id=111: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep22.jpg",
+      "id=112: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep23.jpg",
+      "id=113: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep24.jpg",
+      "id=114: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep25.jpg",
+      "id=115: imagem ausente: images/episodios/kimetsu-no-yaiba/t1/ep26.jpg",
+      "id=203: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep1.jpg",
+      "id=204: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep2.jpg",
+      "id=205: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep3.jpg",
+      "id=206: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep4.jpg",
+      "id=207: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep5.jpg",
+      "id=208: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep6.jpg",
+      "id=209: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep7.jpg",
+      "id=210: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep8.jpg",
+      "id=211: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep9.jpg",
+      "id=212: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep10.jpg",
+      "id=213: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep11.jpg",
+      "id=214: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep12.jpg",
+      "id=215: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep13.jpg",
+      "id=216: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep14.jpg",
+      "id=217: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep15.jpg",
+      "id=218: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep16.jpg",
+      "id=219: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep17.jpg",
+      "id=220: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep18.jpg",
+      "id=221: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep19.jpg",
+      "id=222: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep20.jpg",
+      "id=223: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep21.jpg",
+      "id=224: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep22.jpg",
+      "id=225: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep23.jpg",
+      "id=226: imagem ausente: images/episodios/jujutsu-kaisen/t1/ep24.jpg",
+      "id=227: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep1.jpg",
+      "id=228: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep2.jpg",
+      "id=229: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep3.jpg",
+      "id=230: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep4.jpg",
+      "id=231: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep5.jpg",
+      "id=232: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep6.jpg",
+      "id=233: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep7.jpg",
+      "id=234: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep8.jpg",
+      "id=235: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep9.jpg",
+      "id=236: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep10.jpg",
+      "id=237: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep11.jpg",
+      "id=238: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep12.jpg",
+      "id=239: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep13.jpg",
+      "id=240: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep14.jpg",
+      "id=241: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep15.jpg",
+      "id=242: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep16.jpg",
+      "id=243: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep17.jpg",
+      "id=244: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep18.jpg",
+      "id=245: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep19.jpg",
+      "id=246: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep20.jpg",
+      "id=247: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep21.jpg",
+      "id=248: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep22.jpg",
+      "id=249: imagem ausente: images/episodios/jujutsu-kaisen/t2/ep23.jpg",
+      "id=344: imagem ausente: images/episodios/viland-saga/t2/ep19.jpg",
+      "id=669: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep1.jpg",
+      "id=670: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep2.jpg",
+      "id=671: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep3.jpg",
+      "id=672: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep4.jpg",
+      "id=673: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep5.jpg",
+      "id=674: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep6.jpg",
+      "id=675: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep7.jpg",
+      "id=676: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep8.jpg",
+      "id=677: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep9.jpg",
+      "id=678: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep10.jpg",
+      "id=679: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep11.jpg",
+      "id=680: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep12.jpg",
+      "id=681: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep13.jpg",
+      "id=682: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep14.jpg",
+      "id=683: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep15.jpg",
+      "id=684: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep16.jpg",
+      "id=685: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep17.jpg",
+      "id=686: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep18.jpg",
+      "id=687: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep19.jpg",
+      "id=688: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep20.jpg",
+      "id=689: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep21.jpg",
+      "id=690: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep22.jpg",
+      "id=691: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep23.jpg",
+      "id=692: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep24.jpg",
+      "id=693: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep25.jpg",
+      "id=694: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep26.jpg",
+      "id=695: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep27.jpg",
+      "id=696: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep28.jpg",
+      "id=697: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep29.jpg",
+      "id=698: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep30.jpg",
+      "id=699: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep31.jpg",
+      "id=700: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep32.jpg",
+      "id=701: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep33.jpg",
+      "id=702: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep34.jpg",
+      "id=703: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep35.jpg",
+      "id=704: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep36.jpg",
+      "id=705: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep37.jpg",
+      "id=706: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep38.jpg",
+      "id=707: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep39.jpg",
+      "id=708: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep40.jpg",
+      "id=709: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep41.jpg",
+      "id=710: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep42.jpg",
+      "id=711: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep43.jpg",
+      "id=712: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep44.jpg",
+      "id=713: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep45.jpg",
+      "id=714: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep46.jpg",
+      "id=715: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep47.jpg",
+      "id=716: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep48.jpg",
+      "id=717: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep49.jpg",
+      "id=718: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep50.jpg",
+      "id=719: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep51.jpg",
+      "id=720: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep52.jpg",
+      "id=721: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep53.jpg",
+      "id=722: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep54.jpg",
+      "id=723: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep55.jpg",
+      "id=724: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep56.jpg",
+      "id=725: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep57.jpg",
+      "id=726: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep58.jpg",
+      "id=727: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep59.jpg",
+      "id=728: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep60.jpg",
+      "id=729: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep61.jpg",
+      "id=730: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep62.jpg",
+      "id=731: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep63.jpg",
+      "id=732: imagem ausente: images/episodios/fullmetal-alchemist-brotherhood/t1/ep64.jpg",
+      "id=733: imagem ausente: images/episodios/mob-psycho-100/t1/ep1.jpg",
+      "id=734: imagem ausente: images/episodios/mob-psycho-100/t1/ep2.jpg",
+      "id=735: imagem ausente: images/episodios/mob-psycho-100/t1/ep3.jpg",
+      "id=736: imagem ausente: images/episodios/mob-psycho-100/t1/ep4.jpg",
+      "id=737: imagem ausente: images/episodios/mob-psycho-100/t1/ep5.jpg",
+      "id=738: imagem ausente: images/episodios/mob-psycho-100/t1/ep6.jpg",
+      "id=739: imagem ausente: images/episodios/mob-psycho-100/t1/ep7.jpg",
+      "id=740: imagem ausente: images/episodios/mob-psycho-100/t1/ep8.jpg",
+      "id=741: imagem ausente: images/episodios/mob-psycho-100/t1/ep9.jpg",
+      "id=742: imagem ausente: images/episodios/mob-psycho-100/t1/ep10.jpg",
+      "id=743: imagem ausente: images/episodios/mob-psycho-100/t1/ep11.jpg",
+      "id=744: imagem ausente: images/episodios/mob-psycho-100/t1/ep12.jpg",
+      "id=745: imagem ausente: images/episodios/mob-psycho-100/t2/ep1.jpg",
+      "id=746: imagem ausente: images/episodios/mob-psycho-100/t2/ep2.jpg",
+      "id=747: imagem ausente: images/episodios/mob-psycho-100/t2/ep3.jpg",
+      "id=748: imagem ausente: images/episodios/mob-psycho-100/t2/ep4.jpg",
+      "id=749: imagem ausente: images/episodios/mob-psycho-100/t2/ep5.jpg",
+      "id=750: imagem ausente: images/episodios/mob-psycho-100/t2/ep6.jpg",
+      "id=751: imagem ausente: images/episodios/mob-psycho-100/t2/ep7.jpg",
+      "id=752: imagem ausente: images/episodios/mob-psycho-100/t2/ep8.jpg",
+      "id=753: imagem ausente: images/episodios/mob-psycho-100/t2/ep9.jpg",
+      "id=754: imagem ausente: images/episodios/mob-psycho-100/t2/ep10.jpg",
+      "id=755: imagem ausente: images/episodios/mob-psycho-100/t3/ep1.jpg",
+      "id=756: imagem ausente: images/episodios/mob-psycho-100/t3/ep2.jpg",
+      "id=757: imagem ausente: images/episodios/mob-psycho-100/t3/ep3.jpg",
+      "id=758: imagem ausente: images/episodios/mob-psycho-100/t3/ep4.jpg",
+      "id=759: imagem ausente: images/episodios/mob-psycho-100/t3/ep5.jpg",
+      "id=760: imagem ausente: images/episodios/mob-psycho-100/t3/ep6.jpg",
+      "id=761: imagem ausente: images/episodios/mob-psycho-100/t3/ep7.jpg",
+      "id=762: imagem ausente: images/episodios/mob-psycho-100/t3/ep8.jpg",
+      "id=763: imagem ausente: images/episodios/mob-psycho-100/t3/ep9.jpg",
+      "id=764: imagem ausente: images/episodios/mob-psycho-100/t3/ep10.jpg",
+      "id=765: imagem ausente: images/episodios/mob-psycho-100/t3/ep11.jpg",
+      "id=766: imagem ausente: images/episodios/mob-psycho-100/t3/ep12.jpg",
+      "id=1337: imagem caixa-divergente: images/episodios/one-piece/t13/ep428.jpg; caminho fisico: images/episodios/one-piece/t13/EP428.jpg",
+      "id=2243: imagem ausente: images/episodios/dragon-ball-z/t5/ep14.jpg",
+      "id=2990: imagem ausente: images/episodios/naruto-shippuden/t18/ep389.jpg",
+      "id=3578: imagem ausente: images/episodios/psycho-pass/filme/ep1.jpg",
+      "id=3579: imagem ausente: images/episodios/psycho-pass/filme/ep2.jpg",
+      "id=3631: imagem ausente: images/episodios/great-pretender/t1/ep13.jpg",
+      "id=3815: imagem ausente: images/episodios/made-in-abyss/filme/dawn-of-the-deep-soul.jpg",
+      "id=3851: imagem ausente: images/episodios/black-clover/t1/ep24.jpg",
+      "id=3: imagem ausente: images/capas/shingeki-no-kyojin-t3-p1.jpg",
+      "id=4: imagem ausente: images/capas/shingeki-no-kyojin-t3-p2.jpg",
+      "id=5: imagem ausente: images/capas/shingeki-no-kyojin-t4-p1.jpg",
+      "id=6: imagem ausente: images/capas/shingeki-no-kyojin-t4-p2.jpg",
+      "id=7: imagem ausente: images/capas/shingeki-no-kyojin-t4-p3.jpg",
+      "id=11: imagem ausente: images/capas/kimetsu-no-yaiba-mugen-t2.jpg",
+      "id=13: imagem ausente: images/capas/kimetsu-no-yaiba-t4.jpg",
+      "id=14: imagem ausente: images/capas/kimetsu-no-yaiba-t5.jpg",
+      "id=15: imagem ausente: images/capas/kimetsu-no-yaiba-filme-1-akaza-sairai.jpg",
+      "id=32: imagem ausente: images/capas/hunter-x-hunter-2011.jpg",
+      "id=76: imagem ausente: images/capas/bleach-t3.jpg",
+      "id=77: imagem ausente: images/capas/bleach-t4.jpg",
+      "id=81: imagem ausente: images/capas/haikyuu-t4-1.jpg",
+      "id=82: imagem ausente: images/capas/haikyuu-t4-2.jpg",
+      "id=99: imagem ausente: images/capas/spy-x-family-t2-pt-1.jpg",
+      "id=100: imagem ausente: images/capas/spy-x-family-t2-pt-2.jpg",
+      "id=108: imagem ausente: images/capas/made-in-abyss-the-retsujitsu-no-ougonkyou.jpg",
+      "Episodio id=117: divergencia de temporada preservada.",
+      "Episodio id=118: divergencia de temporada preservada.",
+      "Episodio id=119: divergencia de temporada preservada.",
+      "Episodio id=120: divergencia de temporada preservada.",
+      "Episodio id=121: divergencia de temporada preservada.",
+      "Episodio id=122: divergencia de temporada preservada.",
+      "Episodio id=123: divergencia de temporada preservada.",
+      "Episodio id=124: divergencia de temporada preservada.",
+      "Episodio id=125: divergencia de temporada preservada.",
+      "Episodio id=126: divergencia de temporada preservada.",
+      "Episodio id=127: divergencia de temporada preservada.",
+      "Episodio id=128: divergencia de temporada preservada.",
+      "Episodio id=129: divergencia de temporada preservada.",
+      "Episodio id=130: divergencia de temporada preservada.",
+      "Episodio id=131: divergencia de temporada preservada.",
+      "Episodio id=132: divergencia de temporada preservada.",
+      "Episodio id=133: divergencia de temporada preservada.",
+      "Episodio id=134: divergencia de temporada preservada.",
+      "Episodio id=135: divergencia de temporada preservada.",
+      "Episodio id=136: divergencia de temporada preservada.",
+      "Episodio id=137: divergencia de temporada preservada.",
+      "Episodio id=138: divergencia de temporada preservada.",
+      "Episodio id=139: divergencia de temporada preservada.",
+      "Episodio id=140: divergencia de temporada preservada.",
+      "Episodio id=141: divergencia de temporada preservada.",
+      "Episodio id=142: divergencia de temporada preservada.",
+      "Episodio id=143: divergencia de temporada preservada.",
+      "Episodio id=144: divergencia de temporada preservada.",
+      "Episodio id=145: divergencia de temporada preservada.",
+      "Episodio id=146: divergencia de temporada preservada.",
+      "Episodio id=147: divergencia de temporada preservada.",
+      "Episodio id=148: divergencia de temporada preservada.",
+      "Episodio id=149: divergencia de temporada preservada.",
+      "Episodio id=150: divergencia de temporada preservada.",
+      "Episodio id=151: divergencia de temporada preservada.",
+      "Episodio id=152: divergencia de temporada preservada.",
+      "Episodio id=153: divergencia de temporada preservada.",
+      "Episodio id=2129: divergencia de temporada preservada.",
+      "Episodio id=3014: divergencia de temporada preservada.",
+      "Episodio id=3570: divergencia de temporada preservada.",
+      "Episodio id=3571: divergencia de temporada preservada.",
+      "Episodio id=3572: divergencia de temporada preservada.",
+      "Episodio id=3573: divergencia de temporada preservada.",
+      "Episodio id=3574: divergencia de temporada preservada.",
+      "Episodio id=3575: divergencia de temporada preservada.",
+      "Episodio id=3576: divergencia de temporada preservada.",
+      "Episodio id=3577: divergencia de temporada preservada.",
+      "Episodio id=3593: divergencia de temporada preservada.",
+      "Episodio id=3594: divergencia de temporada preservada.",
+      "Episodio id=3595: divergencia de temporada preservada.",
+      "Episodio id=3596: divergencia de temporada preservada.",
+      "Episodio id=3597: divergencia de temporada preservada.",
+      "Episodio id=3598: divergencia de temporada preservada.",
+      "Episodio id=3599: divergencia de temporada preservada.",
+      "Episodio id=3600: divergencia de temporada preservada.",
+      "Episodio id=3601: divergencia de temporada preservada.",
+      "Episodio id=3602: divergencia de temporada preservada.",
+      "Episodio id=3603: divergencia de temporada preservada.",
+      "Episodio id=3604: divergencia de temporada preservada.",
+      "Anime id=20: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=21: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=22: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=33: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=35: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=37: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=50: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=51: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=74: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=116: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=122: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=130: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=132: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=135: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=138: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=140: conflito de status; fontes preservadas, atualizacao explicita.",
+      "Anime id=141: conflito de status; fontes preservadas, atualizacao explicita."
+    ],
+    "errors": []
+  },
+  "requiredFields": "src/seed/validacoes/schemas.ts; campos presentes nao implicam obrigatoriedade do schema"
+}
