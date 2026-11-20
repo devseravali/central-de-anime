@@ -1,4 +1,5 @@
 import path from 'node:path';
+import fs from 'node:fs';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 const harness = vi.hoisted(() => {
@@ -8,7 +9,10 @@ const harness = vi.hoisted(() => {
   const constructor = vi.fn();
   const disconnect = vi.fn();
   const transaction = vi.fn();
+  const identity = vi.fn();
   const files: Record<string, Row[]> = {};
+  const overrides: Record<string, string | null> = {};
+  const state: { inventory?: string } = {};
   function delegate(name: string, keys = ['id']) {
     const key = (row: Row) => keys.map(k => String(row[k])).join(':');
     const table = () => {
@@ -77,12 +81,17 @@ const harness = vi.hoisted(() => {
       throw error;
     }
   });
-  return { tables, files, database, writes, constructor, disconnect };
+  const transactionDatabase = { ...database, $queryRaw: identity, $transaction: undefined, $disconnect: undefined };
+  const validationClient = { $transaction: transaction, $disconnect: disconnect };
+  return { tables, files, overrides, state, database, transactionDatabase, validationClient, identity, transaction, writes, constructor, disconnect };
 });
 
 vi.mock('../../../generated/prisma/client', () => ({
   PrismaClient: class {
-    constructor() { harness.constructor(); return harness.database; }
+    constructor() {
+      harness.constructor();
+      return process.env.APP_ENV === 'validation' ? harness.validationClient : harness.database;
+    }
   },
 }));
 vi.mock('@prisma/adapter-pg', () => ({ PrismaPg: class {} }));
@@ -91,10 +100,22 @@ vi.mock('../../config/environment', async importOriginal => ({
   loadEnvironment: vi.fn(),
 }));
 vi.mock('node:fs/promises', () => ({
-  readFile: vi.fn(async (filename: string) => {
-    const rows = harness.files[path.basename(filename)];
+  readFile: vi.fn(async (filename: string, encoding?: string) => {
+    const basename = path.basename(filename);
+    if (basename === 'json-inventory.json') {
+      if (harness.state.inventory !== undefined) return harness.state.inventory;
+      const { createHash } = await import('node:crypto');
+      const { allSeedSources } = await import('../../seed/utils/fontes');
+      return JSON.stringify({ files: allSeedSources.map(relative => ({
+        path: `data/${relative}`,
+        sha256: createHash('sha256').update(JSON.stringify(harness.files[path.basename(relative)])).digest('hex'),
+      })) });
+    }
+    if (harness.overrides[basename] === null) throw new Error('ENOENT');
+    const rows = harness.files[basename];
     if (!rows) throw new Error('ENOENT');
-    return JSON.stringify(rows);
+    const contents = harness.overrides[basename] ?? JSON.stringify(rows);
+    return encoding ? contents : Buffer.from(contents);
   }),
 }));
 
@@ -104,12 +125,21 @@ import { main as animes } from '../../seed/entidades/Animes';
 import { main as personagens } from '../../seed/entidades/Personagens';
 import { main as episodios } from '../../seed/entidades/Episodios';
 import { main as animeTag } from '../../seed/relacionamentos/AnimeTag';
+import { main as animeStatus } from '../../seed/atualizacoes/AnimeStatus';
 import { runDirect } from '../../seed/utils/executar';
 import { readFile } from 'node:fs/promises';
+import { backendRoot } from '../../seed/utils/caminhos';
+import { createSeedContext, withValidatedImport, type SeedContext } from '../../seed/config/context';
+import { allSeedSources, seedSources } from '../../seed/utils/fontes';
+import { readRows } from '../../seed/utils/arquivos';
+import { newReport } from '../../seed/utils/relatorio';
+import { personagem } from '../../seed/validacoes/schemas';
 
 beforeEach(() => {
   vi.clearAllMocks();
   harness.tables.clear();
+  for (const key of Object.keys(harness.overrides)) delete harness.overrides[key];
+  harness.state.inventory = undefined;
   Object.assign(harness.files, {
     'status.json': [{ id: 1, nome: 'Concluido' }, { id: 2, nome: 'Planejado' }],
     'generos.json': [{ id: 1, nome: 'Aventura' }],
@@ -170,7 +200,45 @@ describe('Seeds: modulos reais com persistencia simulada', () => {
     const snapshot = JSON.stringify([...harness.tables].map(([name, table]) => [name, [...table]]));
     const reports = await all();
     expect(reports.slice(1).reduce((sum, report) => sum + report.inseridos, 0)).toBe(0);
+    expect(reports.slice(1).reduce((sum, report) => sum + report.atualizados, 0)).toBe(0);
     expect(JSON.stringify([...harness.tables].map(([name, table]) => [name, [...table]]))).toBe(snapshot);
+  });
+
+  it('persiste caminhos literalmente nas quatro entidades, inclusive os sete animes oficiais, e na reexecucao', async () => {
+    const ids = [8, 10, 11, 12, 20, 21, 137];
+    const source: { id: number; capaUrl: string }[] = JSON.parse(fs.readFileSync(
+      path.join(backendRoot, 'data', 'entidades', 'animes.json'), 'utf8',
+    ));
+    for (const id of ids) {
+      const original = source.find(row => row.id === id);
+      expect(original).toBeDefined();
+      harness.files['animes.json'].push({
+        ...harness.files['animes.json'][0], id, capaUrl: original?.capaUrl, titulo: `Anime ${id}`,
+      });
+    }
+    harness.files['animes.json'][0].capaUrl = '..\\..\\images\\capas\\Título-Original.JpG';
+    harness.files['capa.json'][0].caminho = '../../images/capas/Capa-Original.PNG';
+    harness.files['personagens.json'][0].imagem = '..\\..\\images\\personagens\\Personagem-Original.WeBp';
+    harness.files['episodios.json'][0].imagemUrl = '../../images/episodios/Episódio-Original.JPEG';
+
+    await all();
+    for (const row of harness.files['animes.json']) {
+      expect(harness.tables.get('Anime')?.get(String(row.id))?.capaUrl).toBe(row.capaUrl);
+    }
+    expect(harness.tables.get('Capas')?.get('1')?.caminho).toBe(harness.files['capa.json'][0].caminho);
+    expect(harness.tables.get('Personagem')?.get('1')?.imagem).toBe(harness.files['personagens.json'][0].imagem);
+    expect(harness.tables.get('Episodio')?.get('1')?.imagemUrl).toBe(harness.files['episodios.json'][0].imagemUrl);
+    expect(harness.tables.get('Anime')?.get('1')?.statusId).toBe(2);
+
+    const reports = await all();
+    expect(reports.slice(1).reduce((sum, report) => sum + report.inseridos, 0)).toBe(0);
+    const snapshot = JSON.stringify([...harness.tables].map(([name, table]) => [name, [...table]]));
+    await all();
+    expect(JSON.stringify([...harness.tables].map(([name, table]) => [name, [...table]]))).toBe(snapshot);
+    harness.tables.get('Anime')!.get('8')!.capaUrl = 'images/capas/kimestu-no-yaiba-t2.jpg';
+    await expect(all()).rejects.toMatchObject({
+      report: { estado: 'falhou', erros: [expect.stringContaining('nenhuma sobrescrita autorizada')] },
+    });
   });
 
   it('preflight impede qualquer gravacao quando personagens tem nivelCombate textual', async () => {
@@ -213,9 +281,10 @@ describe('Seeds: modulos reais com persistencia simulada', () => {
   });
 
   it('animes exige estacoes persistidas mesmo quando os outros catalogos existem', async () => {
-    for (const name of ['Estudio', 'Status', 'Franquia']) {
+    for (const name of ['Estudio', 'Franquia']) {
       harness.tables.set(name, new Map([['1', { id: 1 }]]));
     }
+    harness.tables.set('Status', new Map([['1', { id: 1 }], ['2', { id: 2 }]]));
     await expect(animes()).rejects.toMatchObject({
       report: { estado: 'falhou', erros: ['Animes.estacaoId: IDs ausentes 1.'] },
     });
@@ -249,6 +318,43 @@ describe('Seeds: modulos reais com persistencia simulada', () => {
     expect(harness.tables.get('Episodio')?.get('1')?.imagemUrl).toBe('images/episodios/ausente.jpg');
   });
 
+  it('AnimeStatus preserva identicos e bloqueia divergencia sem atualizar', async () => {
+    await all();
+    const report = await animeStatus();
+    expect(report.inalterados).toBe(1);
+    expect(report.atualizados).toBe(0);
+    expect(harness.database.anime.update).not.toHaveBeenCalled();
+    harness.tables.get('Anime')!.get('1')!.statusId = 1;
+    await expect(animeStatus()).rejects.toMatchObject({
+      report: { erros: [expect.stringContaining('animeId=1, status existente=1, prioritario=2')] },
+    });
+    expect(harness.tables.get('Anime')?.get('1')?.statusId).toBe(1);
+    expect(harness.database.anime.update).not.toHaveBeenCalled();
+  });
+
+  it('Animes insere status prioritario e preserva o da origem quando nao ha overlay', async () => {
+    harness.files['animes.json'].push({ ...harness.files['animes.json'][0], id: 2, titulo: 'Segundo' });
+    await all();
+    expect(harness.tables.get('Anime')?.get('1')?.statusId).toBe(2);
+    expect(harness.tables.get('Anime')?.get('2')?.statusId).toBe(1);
+    await all();
+    expect(harness.database.anime.update).not.toHaveBeenCalled();
+  });
+
+  it('AnimeStatus nao cria anime ausente na fonte nem no banco', async () => {
+    harness.files['anime_status.json'].push({ animeId: 99, statusId: 1 });
+    await expect(animeStatus()).rejects.toMatchObject({ report: { estado: 'falhou' } });
+    expect(harness.database.anime.create).not.toHaveBeenCalled();
+    expect(harness.database.anime.update).not.toHaveBeenCalled();
+  });
+
+  it('AnimeStatus nao cria anime presente na fonte mas ausente no banco', async () => {
+    harness.tables.set('Status', new Map([['2', { id: 2 }]]));
+    await expect(animeStatus()).rejects.toMatchObject({ report: { estado: 'falhou' } });
+    expect(harness.database.anime.create).not.toHaveBeenCalled();
+    expect(harness.database.anime.update).not.toHaveBeenCalled();
+  });
+
   it('execucao direta sinaliza exit code 1 quando main falha', async () => {
     const originalArg = process.argv[1];
     const originalCode = process.exitCode;
@@ -261,5 +367,204 @@ describe('Seeds: modulos reais com persistencia simulada', () => {
       process.argv[1] = originalArg;
       process.exitCode = originalCode;
     }
+  });
+
+  describe('Importacao validation: transacao e identidade na sessao de escrita', () => {
+    const validIdentity = {
+      database: 'centraldeanime_import_validation_20261112',
+      role: 'centraldeanime_validation', host: '127.0.0.1', port: 55432,
+    };
+    beforeEach(() => {
+      const password = 'a'.repeat(96);
+      const url = `postgresql://centraldeanime_validation:${password}@127.0.0.1:55432/centraldeanime_import_validation_20261112`;
+      vi.stubEnv('APP_ENV', 'validation');
+      vi.stubEnv('VALIDATION_OPERATION', 'import');
+      vi.stubEnv('DATABASE_URL', url);
+      vi.stubEnv('DATABASE_URL_UNPOOLED', url);
+      harness.identity.mockResolvedValue([validIdentity]);
+      harness.transaction.mockImplementation(async (callback: (db: typeof harness.transactionDatabase) => Promise<unknown>) => {
+        const backup = new Map([...harness.tables].map(([name, rows]) => [
+          name, new Map([...rows].map(([key, row]) => [key, { ...row }])),
+        ]));
+        try {
+          return await callback(harness.transactionDatabase);
+        } catch (error) {
+          harness.tables.clear();
+          for (const [name, rows] of backup) harness.tables.set(name, rows);
+          throw error;
+        }
+      });
+    });
+
+    it.each([
+      ['banco', { ...validIdentity, database: 'outro' }],
+      ['role', { ...validIdentity, role: 'outra' }],
+      ['host', { ...validIdentity, host: '127.0.0.2' }],
+      ['porta', { ...validIdentity, port: 5432 }],
+      ['campo ausente', { ...validIdentity, host: null }],
+    ])('bloqueia %s divergente antes de qualquer escrita apesar de URL valida', async (_label, actual) => {
+      harness.identity.mockResolvedValue([actual]);
+      await expect(all()).rejects.toThrow();
+      expect(harness.transaction).toHaveBeenCalledTimes(1);
+      expect(harness.identity).toHaveBeenCalledTimes(1);
+      expect(harness.writes).not.toHaveBeenCalled();
+      expect(harness.disconnect).toHaveBeenCalledTimes(1);
+    });
+
+    it('bloqueia resposta de identidade ausente ou ambigua', async () => {
+      for (const rows of [[], [validIdentity, validIdentity]]) {
+        harness.identity.mockResolvedValueOnce(rows);
+        await expect(all()).rejects.toThrow();
+      }
+      expect(harness.writes).not.toHaveBeenCalled();
+    });
+
+    it('bloqueia destino divergente antes de criar o cliente, sem fallback', async () => {
+      vi.stubEnv('DATABASE_URL_UNPOOLED', 'postgresql://localhost/centraldeanimetest');
+      await expect(all()).rejects.toThrow();
+      expect(harness.constructor).not.toHaveBeenCalled();
+      expect(harness.transaction).not.toHaveBeenCalled();
+      expect(harness.writes).not.toHaveBeenCalled();
+    });
+
+    it.each(['alterado', 'ausente'])('bloqueia fonte %s antes de qualquer escrita', async condition => {
+      harness.overrides['episodios.json'] = condition === 'ausente' ? null : '[{"id":999}]';
+      await expect(all()).rejects.toThrow();
+      expect(harness.writes).not.toHaveBeenCalled();
+    });
+
+    it.each(['incompleto', 'inesperado', 'duplicado'])('bloqueia inventario %s antes de escrever', async condition => {
+      const manifest = JSON.parse(String(await readFile('json-inventory.json', 'utf8')));
+      if (condition === 'incompleto') manifest.files.pop();
+      if (condition === 'inesperado') manifest.files[0].path = 'data/entidades/extra.json';
+      if (condition === 'duplicado') manifest.files[0] = manifest.files[1];
+      harness.state.inventory = JSON.stringify(manifest);
+      await expect(all()).rejects.toThrow();
+      expect(harness.writes).not.toHaveBeenCalled();
+    });
+
+    it('mantem snapshot aprovado mesmo quando a fonte muda depois da captura', async () => {
+      const original = String(harness.files['personagens.json'][0].nome);
+      await withValidatedImport(async context => {
+        harness.files['personagens.json'][0].nome = 'alterado depois';
+        await personagens(context);
+      });
+      expect(harness.tables.get('Personagem')?.get('1')?.nome).toBe(original);
+      const fileReads = vi.mocked(readFile).mock.calls.filter(([filename]) =>
+        path.basename(String(filename)) === 'personagens.json');
+      expect(fileReads).toHaveLength(1);
+    });
+
+    it('rejeita leitura sem contexto validado e isola alteracoes nos objetos analisados', async () => {
+      await expect(readRows('entidades/personagens.json', personagem, newReport('Teste'))).rejects.toThrow('snapshot');
+      await withValidatedImport(async context => {
+        const first = await readRows('entidades/personagens.json', personagem, newReport('Teste'), context);
+        first[0].nome = 'alterado em memoria';
+        const second = await readRows('entidades/personagens.json', personagem, newReport('Teste'), context);
+        expect(second[0].nome).toBe(harness.files['personagens.json'][0].nome);
+      });
+      expect(harness.writes).not.toHaveBeenCalled();
+    });
+
+    it.each(['alterado', 'ausente'])('runner individual bloqueia arquivo nao utilizado %s', async condition => {
+      harness.overrides['episodios.json'] = condition === 'ausente' ? null : '[{"id":999}]';
+      await expect(personagens()).rejects.toMatchObject({ report: { estado: 'falhou' } });
+      expect(harness.writes).not.toHaveBeenCalled();
+    });
+
+    it('cada runner individual captura as 16 fontes e bloqueia divergencia em outra fonte', async () => {
+      await all();
+      for (const main of modules) {
+        vi.mocked(readFile).mockClear();
+        const report = await main();
+        const actual = vi.mocked(readFile).mock.calls
+          .map(([filename]) => path.basename(String(filename)))
+          .filter(filename => filename !== 'json-inventory.json')
+          .sort();
+        expect(actual).toEqual(allSeedSources.map(relative => path.basename(relative)).sort());
+        const other = allSeedSources.find(relative => !seedSources[report.modulo].includes(relative));
+        if (!other) throw new Error(`Nenhuma outra fonte para ${report.modulo}`);
+        const filename = path.basename(other);
+        harness.overrides[filename] = '[]';
+        harness.writes.mockClear();
+        await expect(main()).rejects.toMatchObject({ report: { estado: 'falhou' } });
+        expect(harness.writes).not.toHaveBeenCalled();
+        delete harness.overrides[filename];
+      }
+    });
+
+    it('todos os modulos usam somente o tx verificado e a verificacao precede as escritas', async () => {
+      const reports = await all();
+      expect(reports).toHaveLength(17);
+      expect(harness.transaction).toHaveBeenCalledTimes(1);
+      expect(harness.identity).toHaveBeenCalledTimes(1);
+      const sql = String(harness.identity.mock.calls[0][0]);
+      for (const expression of ['current_database()', 'current_user', 'inet_server_addr()', 'inet_server_port()']) {
+        expect(sql).toContain(expression);
+      }
+      expect(harness.writes).toHaveBeenCalled();
+      for (const relative of allSeedSources) {
+        expect(vi.mocked(readFile).mock.calls.filter(([filename]) =>
+          path.basename(String(filename)) === path.basename(relative))).toHaveLength(1);
+      }
+      expect(harness.identity.mock.invocationCallOrder[0]).toBeLessThan(harness.writes.mock.invocationCallOrder[0]);
+      expect(harness.tables.get('Anime')?.get('1')?.statusId).toBe(2);
+      expect(harness.database.anime.update).not.toHaveBeenCalled();
+      expect(harness.disconnect).toHaveBeenCalledTimes(1);
+    });
+
+    it('falha tardia reverte escritas anteriores e nao confirma os relatorios', async () => {
+      harness.database.episodio.create.mockRejectedValueOnce(new Error('falha simulada'));
+      await expect(all()).rejects.toThrow();
+      expect(harness.writes).toHaveBeenCalled();
+      expect([...harness.tables.values()].every(table => table.size === 0)).toBe(true);
+      expect(harness.disconnect).toHaveBeenCalledTimes(1);
+    });
+
+    it('distingue falha de encerramento apos commit de uma transacao revertida', async () => {
+      harness.disconnect.mockRejectedValueOnce(new Error('credential-secret'));
+      await expect(all()).rejects.toThrow('Importacao confirmada, mas falhou o encerramento');
+      expect(harness.tables.get('Anime')?.get('1')?.statusId).toBe(2);
+      const output = JSON.stringify(vi.mocked(console.log).mock.calls);
+      expect(output).not.toContain('credential-secret');
+      expect(output).not.toContain('Transacao sem confirmacao de commit');
+    });
+
+    it('execucao individual tambem usa a transacao e consulta de identidade', async () => {
+      const report = await personagens();
+      expect(report.inseridos).toBe(1);
+      expect(harness.transaction).toHaveBeenCalledTimes(1);
+      expect(harness.identity.mock.invocationCallOrder[0]).toBeLessThan(harness.writes.mock.invocationCallOrder[0]);
+      expect(harness.disconnect).toHaveBeenCalledTimes(1);
+    });
+
+    it('bloqueia contexto global nao validado e contexto transacional expirado', async () => {
+      vi.stubEnv('APP_ENV', 'test');
+      vi.stubEnv('DATABASE_URL', 'postgresql://localhost/centraldeanimetest');
+      vi.stubEnv('DATABASE_URL_UNPOOLED', 'postgresql://localhost/centraldeanimetest');
+      const global = createSeedContext();
+      const password = 'a'.repeat(96);
+      const url = `postgresql://centraldeanime_validation:${password}@127.0.0.1:55432/centraldeanime_import_validation_20261112`;
+      vi.stubEnv('APP_ENV', 'validation');
+      vi.stubEnv('DATABASE_URL', url);
+      vi.stubEnv('DATABASE_URL_UNPOOLED', url);
+      await expect(personagens(global)).rejects.toMatchObject({ report: { estado: 'falhou' } });
+      let captured: SeedContext | undefined;
+      await withValidatedImport(async context => {
+        expect(Object.isFrozen(context)).toBe(true);
+        captured = context;
+      });
+      expect(captured).toBeDefined();
+      await expect(personagens(captured)).rejects.toMatchObject({ report: { estado: 'falhou' } });
+      expect(harness.writes).not.toHaveBeenCalled();
+    });
+
+    it('nao reutiliza contexto se a operacao mudar durante a transacao', async () => {
+      await expect(withValidatedImport(async context => {
+        vi.stubEnv('VALIDATION_OPERATION', 'replay');
+        await personagens(context);
+      })).rejects.toThrow();
+      expect(harness.writes).not.toHaveBeenCalled();
+    });
   });
 });
