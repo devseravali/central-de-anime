@@ -1,4 +1,5 @@
 import type { SeedContext, SeedDatabase } from '../config/context';
+import { assertSeedContext, inSeedTransaction } from '../config/context';
 import { assertUnique } from './arquivos';
 import { SeedInputError, type SeedReport } from './relatorio';
 
@@ -26,6 +27,7 @@ export async function persistRecords<T extends { id: number }>(
   rows: T[],
   store: RecordStore<T>,
 ): Promise<void> {
+  assertSeedContext(context);
   assertUnique(rows, row => row.id, report.modulo);
   const existing = await store.list(context.prisma);
   for (const key of store.unique ?? []) {
@@ -40,7 +42,7 @@ export async function persistRecords<T extends { id: number }>(
   }
   for (let offset = 0; offset < rows.length; offset += 50) {
     const batch = rows.slice(offset, offset + 50);
-    const committed = await context.prisma.$transaction(async db => {
+    const committed = await inSeedTransaction(context, async db => {
       const current = new Map((await store.list(db, batch.map(row => row.id))).map(row => [row.id, row]));
       const counts = { inseridos: 0, atualizados: 0, inalterados: 0 };
       for (const row of batch) {
@@ -48,9 +50,10 @@ export async function persistRecords<T extends { id: number }>(
         if (!found) {
           await store.create(db, row);
           counts.inseridos++;
-        } else if (equalFields(found, row) || context.insertOnly) {
-          // insertOnly: dados existentes em producao nunca sao sobrescritos.
+        } else if (equalFields(found, row)) {
           counts.inalterados++;
+        } else if (context.insertOnly) {
+          throw new SeedInputError(`${report.modulo}: conflito com registro existente, id=${row.id}; nenhuma sobrescrita autorizada.`);
         } else {
           const { id, ...fields } = row;
           await store.update(db, id, fields);
@@ -75,10 +78,11 @@ export async function persistPairs<T>(
     createMany: (db: SeedDatabase, rows: T[]) => Promise<{ count: number }>;
   },
 ): Promise<void> {
+  assertSeedContext(context);
   assertUnique(rows, key, report.modulo);
   for (let offset = 0; offset < rows.length; offset += 100) {
     const batch = rows.slice(offset, offset + 100);
-    const committed = await context.prisma.$transaction(async db => {
+    const committed = await inSeedTransaction(context, async db => {
       const existing = new Set((await store.list(db)).map(key));
       const missing = batch.filter(row => !existing.has(key(row)));
       const inserted = missing.length ? (await store.createMany(db, missing)).count : 0;

@@ -3,20 +3,15 @@ import path from 'node:path';
 import { backendRoot } from './caminhos';
 import { SeedInputError, type SeedReport } from './relatorio';
 
-const capaAliases: Record<string, string> = {
-  'kimetsu-no-yaiba-mugen-t2.jpg': 'kimestu-no-yaiba-t2.jpg',
-  'kimetsu-no-yaiba-t4.jpg': 'kimestu-no-yaiba-t4.jpg',
-  'kimetsu-no-yaiba-t5.jpg': 'kimestu-no-yaiba-t5.jpg',
-  'kimetsu-no-yaiba-filme-1-akaza-sairai.jpg': 'kimestu-no-yaiba-filme-1-akaza-sairai.jpg',
-  'jujutsu-kaisen-inventario-oculto.jpg': 'jujutsu-kaisen-kaigyoku-gyokusetsu.jpg',
-  'jujutsu-kaisen-incidente-de-shibuya.jpg': 'jujutsu-kaisen-shibuya-x-shimetsu.jpg',
-  'made-in-abyss-the-retsujitsu-no-ougonkyou.jpg': 'made-in-abyss-retsujitsu-no-ougonkyou.jpg',
-};
-
 export function inspectLocalImage(relative: string, directoryEntries?: Map<string, string[]>): {
   estado: 'presente' | 'ausente' | 'caixa-divergente';
   caminhoFisico?: string;
 } {
+  if (!relative.startsWith('images/') ||
+      relative.split('/').some(part => !part || part === '..' || part === '.') ||
+      relative.includes('\\') || relative.includes('\0')) {
+    throw new SeedInputError('Caminho de imagem invalido.');
+  }
   let current = backendRoot;
   const actual: string[] = [];
   let divergent = false;
@@ -33,16 +28,18 @@ export function inspectLocalImage(relative: string, directoryEntries?: Map<strin
     divergent ||= found !== segment;
     actual.push(found);
     current = path.join(current, found);
+    if (fs.lstatSync(current).isSymbolicLink()) {
+      throw new SeedInputError('Link simbolico em caminho de imagem proibido.');
+    }
   }
   if (!fs.statSync(current).isFile()) return { estado: 'ausente' };
   return { estado: divergent ? 'caixa-divergente' : 'presente', caminhoFisico: actual.join('/') };
 }
 
-export function normalizeImage(
+export function resolveImagePath(
   value: string | null,
   report: SeedReport,
   recordId: number,
-  cover = false,
   directoryEntries?: Map<string, string[]>,
 ): string | null {
   if (!value) return null;
@@ -56,16 +53,14 @@ export function normalizeImage(
     }
     return value;
   }
-  let relative = value.replace(/\\/g, '/').replace(/^(?:\.\.\/)+/, '').replace(/^\/+/, '');
-  if (!relative.startsWith('images/') || relative.split('/').some(part => part === '..' || part === '.')) {
+  if (path.win32.isAbsolute(value) || path.posix.isAbsolute(value)) {
     throw new SeedInputError(`${report.modulo} id=${recordId}: caminho de imagem invalido.`);
   }
-  if (cover) {
-    const parts = relative.split('/');
-    const filename = parts.pop()!;
-    const naruto = filename.match(/^naruto-shippuden(?:-t)?(\d+)\.jpg$/i);
-    parts.push(capaAliases[filename] ?? (naruto ? `naruto-shippuden-t${naruto[1]}.jpg` : filename));
-    relative = parts.join('/');
+  const relative = value.replace(/\\/g, '/').replace(/^(?:\.\.\/)+/, '');
+  if (!relative.startsWith('images/') ||
+      relative.split('/').some(part => !part || part === '..' || part === '.') ||
+      relative.includes('\0')) {
+    throw new SeedInputError(`${report.modulo} id=${recordId}: caminho de imagem invalido.`);
   }
   const inspected = inspectLocalImage(relative, directoryEntries);
   if (inspected.estado !== 'presente') {
