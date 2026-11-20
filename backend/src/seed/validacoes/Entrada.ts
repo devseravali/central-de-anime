@@ -4,14 +4,15 @@ import { isDirectExecution } from '../utils/caminhos';
 import { newReport, safeError, SeedFailure, type SeedReport } from '../utils/relatorio';
 import { assertReferences } from './referencias';
 import * as schemas from './schemas';
-import { normalizeImage } from '../utils/imagens';
+import { resolveImagePath } from '../utils/imagens';
+import type { SeedContext } from '../config/context';
 
-export async function validateInputs(): Promise<SeedReport> {
+export async function validateInputs(context?: SeedContext): Promise<SeedReport> {
   const report = newReport('Entrada');
   const read = async <S extends z.ZodType>(file: string, schema: S) => {
     const fileReport = newReport(file);
     try {
-      return await readRows(file, schema, fileReport);
+      return await readRows(file, schema, fileReport, context);
     } finally {
       report.lidos += fileReport.lidos;
       report.validos += fileReport.validos;
@@ -43,10 +44,10 @@ export async function validateInputs(): Promise<SeedReport> {
     assertReferences(animes.map(row => row.estacaoId), estacoes, 'Animes.estacaoId');
     assertReferences(episodios.map(row => row.animeId), animes, 'Episodios.animeId');
     const directoryEntries = new Map<string, string[]>();
-    for (const row of animes) normalizeImage(row.capaUrl, report, row.id, true, directoryEntries);
-    for (const row of personagens) normalizeImage(row.imagem, report, row.id, false, directoryEntries);
-    for (const row of episodios) normalizeImage(row.imagemUrl, report, row.id, false, directoryEntries);
-    for (const row of capas) normalizeImage(row.caminho, report, row.id, false, directoryEntries);
+    for (const row of animes) resolveImagePath(row.capaUrl, report, row.id, directoryEntries);
+    for (const row of personagens) resolveImagePath(row.imagem, report, row.id, directoryEntries);
+    for (const row of episodios) resolveImagePath(row.imagemUrl, report, row.id, directoryEntries);
+    for (const row of capas) resolveImagePath(row.caminho, report, row.id, directoryEntries);
     const generoPairs = await read('relacionamentos/anime_genero.json', schemas.animeGenero);
     const personagemPairs = await read('relacionamentos/anime_personagem.json', schemas.animePersonagem);
     const plataformaPairs = await read('relacionamentos/anime_plataforma.json', schemas.animePlataforma);
