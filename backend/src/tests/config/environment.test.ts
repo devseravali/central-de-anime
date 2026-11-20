@@ -24,8 +24,10 @@ const localValues = (environment: 'local' | 'staging' | 'test' = 'local'): Envir
   };
 };
 const prodValues = (): EnvironmentValues => ({
-  DATABASE_URL: 'postgresql://ep-withered-cherry-b6giwtqf-pooler.c-2.sa-east-1.aws.neon.tech/neondb?sslmode=require',
-  DATABASE_URL_UNPOOLED: 'postgresql://ep-withered-cherry-b6giwtqf.c-2.sa-east-1.aws.neon.tech/neondb?sslmode=require',
+  SUPABASE_PROJECT_REF: 'abcdefghijklmnopqrst',
+  SUPABASE_POOLER_HOST: 'aws-0-test.pooler.supabase.com',
+  DATABASE_URL: 'postgresql://postgres.abcdefghijklmnopqrst@aws-0-test.pooler.supabase.com/postgres?sslmode=verify-full',
+  DATABASE_URL_UNPOOLED: 'postgresql://postgres@db.abcdefghijklmnopqrst.supabase.co/postgres?sslmode=verify-full',
 });
 
 afterEach(() => { vi.unstubAllEnvs(); vi.restoreAllMocks(); });
@@ -92,16 +94,16 @@ describe('Selecao explicita de ambiente', () => {
     })).toThrow('mesmo destino');
   });
 
-  it('aceita Neon autorizado com TLS e rejeita endpoint alternativo e pooler direto', () => {
+  it('aceita Supabase autorizado com TLS e rejeita endpoint alternativo e pooler direto', () => {
     expect(validateDatabaseUrls('production', prodValues()).direct.hostname).not.toContain('-pooler');
     expect(() => validateDatabaseUrls('production', {
-      ...prodValues(), DATABASE_URL_UNPOOLED: prodValues().DATABASE_URL,
+      ...prodValues(), DATABASE_URL_UNPOOLED: prodValues().DATABASE_URL?.replace(':5432', ':6543').replace('.com/', '.com:6543/'),
     })).toThrow('pooler');
     expect(() => validateDatabaseUrls('production', {
-      ...prodValues(), DATABASE_URL: 'postgresql://other.neon.tech/neondb?sslmode=require',
+      ...prodValues(), DATABASE_URL: 'postgresql://postgres@other.supabase.co/postgres?sslmode=verify-full',
     })).toThrow('endpoint');
     expect(() => validateDatabaseUrls('production', {
-      ...prodValues(), DATABASE_URL: prodValues().DATABASE_URL?.replace('?sslmode=require', ''),
+      ...prodValues(), DATABASE_URL: prodValues().DATABASE_URL?.replace('?sslmode=verify-full', ''),
     })).toThrow('TLS');
   });
 
