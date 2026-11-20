@@ -184,9 +184,9 @@ describe('assertOnlyApprovedPending', () => {
 
 describe('assertProductionIdentity', () => {
   it('valida banco e modo somente leitura', () => {
-    expect(() => assertProductionIdentity({ database: 'neondb', role: 'r', transaction_read_only: 'on' }, true)).not.toThrow();
-    expect(() => assertProductionIdentity({ database: 'neondb_staging', role: 'r', transaction_read_only: 'on' }, true)).toThrow();
-    expect(() => assertProductionIdentity({ database: 'neondb', role: 'r', transaction_read_only: 'off' }, true)).toThrow();
+    expect(() => assertProductionIdentity({ database: 'postgres', role: 'r', transaction_read_only: 'on' }, true)).not.toThrow();
+    expect(() => assertProductionIdentity({ database: 'other_database', role: 'r', transaction_read_only: 'on' }, true)).toThrow();
+    expect(() => assertProductionIdentity({ database: 'postgres', role: 'r', transaction_read_only: 'off' }, true)).toThrow();
   });
 });
 
@@ -194,7 +194,7 @@ describe('auditoria', () => {
   it('nao registra credenciais nem host em claro', () => {
     const op = migrationOperation(MIGRATION);
     const auth = authorizeProductionAdmin(op, envFor(op), now);
-    const record = auditRecord(auth, 'ep-secret.neon.tech', 'falhou', 'erro postgresql://user:senha@host/db', now);
+    const record = auditRecord(auth, 'secret.example.invalid', 'falhou', 'erro postgresql://user:senha@host/db', now);
     const text = JSON.stringify(record);
     expect(text).not.toMatch(/senha|ep-secret|postgresql:\/\//);
     expect(record.hostFingerprint).toHaveLength(12);
@@ -277,7 +277,7 @@ describe('prismaCliDatasource em producao', () => {
 });
 
 describe('persistRecords insertOnly', () => {
-  it('nao atualiza registros existentes divergentes', async () => {
+  it('bloqueia registros existentes divergentes sem sobrescrever', async () => {
     const update = vi.fn();
     const create = vi.fn();
     const store = {
@@ -286,9 +286,9 @@ describe('persistRecords insertOnly', () => {
     } as never;
     const prisma = { $transaction: async (fn: (db: unknown) => unknown) => fn({}) };
     const report = { modulo: 't', lidos: 2, inseridos: 0, atualizados: 0, inalterados: 0, naoExecutados: 0, erros: [] } as never;
-    await persistRecords({ prisma, log: () => undefined, insertOnly: true } as never, report,
-      [{ id: 1, nome: 'json' }, { id: 2, nome: 'novo' }] as never, store);
+    await expect(persistRecords({ prisma, log: () => undefined, insertOnly: true } as never, report,
+      [{ id: 1, nome: 'json' }, { id: 2, nome: 'novo' }] as never, store)).rejects.toThrow(/conflito/);
     expect(update).not.toHaveBeenCalled();
-    expect(create).toHaveBeenCalledTimes(1);
+    expect(create).not.toHaveBeenCalled();
   });
 });

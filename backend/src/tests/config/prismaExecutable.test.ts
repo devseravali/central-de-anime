@@ -12,7 +12,7 @@ const barrier = path.join(root, 'src', 'tests', 'fixtures', 'prisma-no-connectio
 const rejection = 'Substituicao de datasource ou configuracao Prisma bloqueada';
 const sentinel = 'PRISMA_TEST_STOP_BEFORE_CONNECTION_CONFIG';
 const foreignUrls = [
-  'postgresql://not-used.invalid/neondb?sslmode=require',
+  'postgresql://not-used.invalid/postgres?sslmode=require',
   'postgresql://not-used.invalid/centraldeanime_staging',
 ];
 
