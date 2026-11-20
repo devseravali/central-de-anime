@@ -24,10 +24,11 @@ vi.mock('nodemailer', () => ({
   default: { createTransport: mocks.transport },
 }));
 
-const sourceHost = 'ep-withered-cherry-b6giwtqf.c-2.sa-east-1.aws.neon.tech';
-const prod = (query = 'sslmode=require') => ({
-  DATABASE_URL: `postgresql://${sourceHost}/neondb?${query}`,
-  DATABASE_URL_UNPOOLED: `postgresql://${sourceHost}/neondb?${query}`,
+const sourceHost = 'db.abcdefghijklmnopqrst.supabase.co';
+const prod = (query = 'sslmode=verify-full') => ({
+  SUPABASE_PROJECT_REF: 'abcdefghijklmnopqrst',
+  DATABASE_URL: `postgresql://postgres@${sourceHost}/postgres?${query}`,
+  DATABASE_URL_UNPOOLED: `postgresql://postgres@${sourceHost}/postgres?${query}`,
 });
 const file = () => Object.entries({
   ...prod(), RENDER: 'true', APP_RUNTIME: 'production-deploy', NODE_ENV: 'production',
@@ -37,7 +38,7 @@ beforeEach(() => {
   vi.resetModules();
   vi.clearAllMocks();
   for (const key of Object.keys(process.env)) {
-    if (/^(DATABASE_|JWT_|FRONTEND_|MAIL_|SESSION_|REDIS_|SMTP_|PG|DB_|PRISMA_|SEED_)/.test(key)) {
+    if (/^(SUPABASE_|DATABASE_|JWT_|FRONTEND_|MAIL_|SESSION_|REDIS_|SMTP_|PG|DB_|PRISMA_|SEED_)/.test(key)) {
       vi.stubEnv(key, undefined);
     }
   }
@@ -146,10 +147,10 @@ describe('Regressao: URLs TLS ambiguas rejeitadas antes do adapter', () => {
     const pgRequire = createRequire(require.resolve('pg'));
     const parser: { parse: (value: string) => { ssl?: unknown } } = pgRequire('pg-connection-string');
     const { validateDatabaseUrls } = await import('../../config/environment');
-    for (const mode of ['require', 'verify-full']) {
+    for (const mode of ['verify-full']) {
       const values = prod(`sslmode=${mode}`);
       validateDatabaseUrls('production', values);
-      for (const value of Object.values(values)) {
+      for (const value of [values.DATABASE_URL, values.DATABASE_URL_UNPOOLED]) {
         const ssl = parser.parse(value).ssl;
         expect(ssl).toBeTruthy();
         expect(ssl).not.toBe(false);

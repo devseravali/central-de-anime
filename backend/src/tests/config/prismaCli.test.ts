@@ -10,12 +10,12 @@ afterEach(() => { vi.unstubAllEnvs(); vi.restoreAllMocks(); });
 
 describe('Prisma CLI: isolamento', () => {
   it.each([
-    ['--url', 'postgresql://not-used.invalid/neondb'],
-    ['--url=postgresql://not-used.invalid/neondb'],
-    ['--URL=postgresql://not-used.invalid/neondb'],
+    ['--url', 'postgresql://not-used.invalid/postgres'],
+    ['--url=postgresql://not-used.invalid/postgres'],
+    ['--URL=postgresql://not-used.invalid/postgres'],
     ['--config', 'alternative.ts'],
     ['--schema=alternative.prisma'],
-    ['--from-url=postgresql://not-used.invalid/neondb'],
+    ['--from-url=postgresql://not-used.invalid/postgres'],
     ['--to-config-datasource'],
   ])('rejeita substituicao antes de exigir ambiente: %j', (...extra) => {
     vi.stubEnv('APP_ENV', undefined);
