@@ -1,17 +1,16 @@
 import type { SeedContext } from '../config/context';
 import { assertUnique, readRows } from '../utils/arquivos';
 import { executeSeed, runDirect } from '../utils/executar';
-import { normalizeImage } from '../utils/imagens';
+import { resolveImagePath } from '../utils/imagens';
 import { persistRecords } from '../utils/persistencia';
 import { assertReferences } from '../validacoes/referencias';
 import { episodio } from '../validacoes/schemas';
 
 export function main(context?: SeedContext) {
   return executeSeed('Episodios', async (ctx, report) => {
-    const source = await readRows('entidades/episodios.json', episodio, report);
-    const rows = source.map(({ temporadaId, ...row }) => ({
-      ...row, temporada: temporadaId, imagemUrl: normalizeImage(row.imagemUrl, report, row.id),
-    }));
+    const source = await readRows('entidades/episodios.json', episodio, report, ctx);
+    for (const row of source) resolveImagePath(row.imagemUrl, report, row.id);
+    const rows = source.map(({ temporadaId, ...row }) => ({ ...row, temporada: temporadaId }));
     assertUnique(rows, row => `${row.animeId}:${row.temporada}:${row.numero}`, 'Episodios.anime/temporada/numero');
     const animes = await ctx.prisma.anime.findMany({ select: { id: true, temporada: true } });
     assertReferences(rows.map(row => row.animeId), animes, 'Episodios.animeId');
