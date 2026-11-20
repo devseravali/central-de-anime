@@ -26,27 +26,31 @@ describe('resolveAnimeCoverUrl', () => {
     );
   });
 
-  it('corrige nomes de capas cadastrados no mapa de compatibilidade', () => {
+  it('preserva os sete nomes originais sem substituir por aliases', () => {
     vi.stubEnv('VITE_API_URL', 'https://api.example.test');
-
-    expect(resolveAnimeCoverUrl('/capas/kimetsu-no-yaiba-mugen-t2.jpg')).toBe(
-      'https://api.example.test/capas/kimestu-no-yaiba-t2.jpg',
-    );
-    expect(
-      resolveAnimeCoverUrl('capas/jujutsu-kaisen-incidente-de-shibuya.jpg'),
-    ).toBe(
-      'https://api.example.test/capas/jujutsu-kaisen-shibuya-x-shimetsu.jpg',
-    );
+    for (const filename of [
+      'kimetsu-no-yaiba-mugen-t2.jpg',
+      'kimetsu-no-yaiba-t4.jpg',
+      'kimetsu-no-yaiba-t5.jpg',
+      'kimetsu-no-yaiba-filme-1-akaza-sairai.jpg',
+      'jujutsu-kaisen-inventario-oculto.jpg',
+      'jujutsu-kaisen-incidente-de-shibuya.jpg',
+      'made-in-abyss-the-retsujitsu-no-ougonkyou.jpg',
+    ]) {
+      const source = `..\\..\\images\\capas\\${filename}`;
+      expect(resolveAnimeCoverUrl(source)).toBe(`https://api.example.test/images/capas/${filename}`);
+      expect(source).toBe(`..\\..\\images\\capas\\${filename}`);
+    }
   });
 
-  it('normaliza variações conhecidas do nome das temporadas de Naruto Shippuden', () => {
+  it('não altera capitalização nem nomes das temporadas de Naruto Shippuden', () => {
     vi.stubEnv('VITE_API_URL', 'https://api.example.test');
 
     expect(resolveAnimeCoverUrl('naruto-shippuden-4.jpg')).toBe(
-      'https://api.example.test/naruto-shippuden-t4.jpg',
+      'https://api.example.test/naruto-shippuden-4.jpg',
     );
     expect(resolveAnimeCoverUrl('NARUTO-SHIPPUDEN-t12.jpg')).toBe(
-      'https://api.example.test/naruto-shippuden-t12.jpg',
+      'https://api.example.test/NARUTO-SHIPPUDEN-t12.jpg',
     );
   });
 
